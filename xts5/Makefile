@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-# $Header: /cvs/xtest/xtest/xts5/Makefile,v 1.1 2005-02-12 15:14:15 anderson Exp $
+# $Header: /cvs/xtest/xtest/xts5/Makefile,v 1.2 2005-02-12 16:50:15 anderson Exp $
 #
 # Copyright (c) Applied Testing and Technology, Inc. 1995
 # All Rights Reserved.
@@ -33,8 +33,12 @@
 #
 # Modifications:
 # $Log: Makefile,v $
-# Revision 1.1  2005-02-12 15:14:15  anderson
-# Initial revision
+# Revision 1.2  2005-02-12 16:50:15  anderson
+# Build the local version of libXaw & Xmu to make all of this stand-alone
+#
+# Revision 1.1.1.1  2005/02/12 15:14:15  anderson
+# VSW5 Source under an MIT license This is version 5.0.2 as received from
+# AppTest with the new license applied.
 #
 # Revision 8.0  1998/12/23 23:39:33  mar
 # Branch point for Release 5.0.2
@@ -144,6 +148,10 @@ build:
 	@(cd $(TET_ROOT)/vsw5/fonts; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
 	@(echo Building libXR5 |tee -a $(TET_ROOT)/vsw5/results/install.log)
 	@(cd $(TET_ROOT)/vsw5/src/libXR5; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
+	@(echo Building libXtaw |tee -a $(TET_ROOT)/vsw5/results/install.log)
+	@(cd $(TET_ROOT)/vsw5/src/libXtaw; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
+	@(echo Building libXtmu |tee -a $(TET_ROOT)/vsw5/results/install.log)
+	@(cd $(TET_ROOT)/vsw5/src/libXtmu; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
 #not included in the Lite version
 	@if [ -d $(TET_ROOT)/vsw5/src/libXtTest ]; \
 	then \
