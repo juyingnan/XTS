@@ -1,0 +1,275 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/Xlib3_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:        Xlib3_scen
+#
+# Description:
+#       Scenario file xlib chapter3
+#
+# Modifications:
+# $Log: Xlib3_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:21  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:28  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:23  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:26:56  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:22  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:11  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XAllPlanes 2"
+	/tset/Xlib3/allplns/Test
+	"VSW5TESTSUITE CASE XBlackPixel 1"
+	/tset/Xlib3/blckpxl/Test
+	"VSW5TESTSUITE CASE XBlackPixelOfScreen 1"
+	/tset/Xlib3/blckpxlofs/Test
+	"VSW5TESTSUITE CASE XBitmapBitOrder 1"
+	/tset/Xlib3/btmpbtordr/Test
+	"VSW5TESTSUITE CASE XBitmapPad 1"
+	/tset/Xlib3/btmppd/Test
+	"VSW5TESTSUITE CASE XBitmapUnit 1"
+	/tset/Xlib3/btmpunt/Test
+	"VSW5TESTSUITE CASE XCellsOfScreen 1"
+	/tset/Xlib3/cllsofscrn/Test
+	"VSW5TESTSUITE CASE XCloseDisplay 28"
+	/tset/Xlib3/clsdsply/Test
+	"VSW5TESTSUITE CASE XConnectionNumber 1"
+	/tset/Xlib3/cnnctnnmbr/Test
+	"VSW5TESTSUITE CASE XDefaultColormap 1"
+	/tset/Xlib3/dfltclrmp/Test
+	"VSW5TESTSUITE CASE XDefaultColormapOfScreen 1"
+	/tset/Xlib3/dfltclrmpo/Test
+	"VSW5TESTSUITE CASE XDefaultDepth 1"
+	/tset/Xlib3/dfltdpth/Test
+	"VSW5TESTSUITE CASE XDefaultDepthOfScreen 1"
+	/tset/Xlib3/dfltdpthof/Test
+	"VSW5TESTSUITE CASE XDefaultGC 1"
+	/tset/Xlib3/dfltgc/Test
+	"VSW5TESTSUITE CASE XDefaultGCOfScreen 2"
+	/tset/Xlib3/dfltgcofsc/Test
+	"VSW5TESTSUITE CASE XDefaultRootWindow 1"
+	/tset/Xlib3/dfltrtwdw/Test
+	"VSW5TESTSUITE CASE XDefaultScreen 1"
+	/tset/Xlib3/dfltscrn/Test
+	"VSW5TESTSUITE CASE XDefaultScreenOfDisplay 1"
+	/tset/Xlib3/dfltscrnof/Test
+	"VSW5TESTSUITE CASE XDefaultVisual 1"
+	/tset/Xlib3/dfltvsl/Test
+	"VSW5TESTSUITE CASE XDefaultVisualOfScreen 1"
+	/tset/Xlib3/dfltvslofs/Test
+	"VSW5TESTSUITE CASE XDoesBackingStore 1"
+	/tset/Xlib3/dsbckngstr/Test
+	"VSW5TESTSUITE CASE XDisplayCells 1"
+	/tset/Xlib3/dsplyclls/Test
+	"VSW5TESTSUITE CASE XDisplayHeight 1"
+	/tset/Xlib3/dsplyhght/Test
+	"VSW5TESTSUITE CASE XDisplayHeightMM 1"
+	/tset/Xlib3/dsplyhghtm/Test
+	"VSW5TESTSUITE CASE XDisplayOfScreen 1"
+	/tset/Xlib3/dsplyofscr/Test
+	"VSW5TESTSUITE CASE XDisplayPlanes 1"
+	/tset/Xlib3/dsplyplns/Test
+	"VSW5TESTSUITE CASE XDisplayString 2"
+	/tset/Xlib3/dsplystr/Test
+	"VSW5TESTSUITE CASE XDisplayWidth 1"
+	/tset/Xlib3/dsplywdth/Test
+	"VSW5TESTSUITE CASE XDisplayWidthMM 1"
+	/tset/Xlib3/dsplywdthm/Test
+	"VSW5TESTSUITE CASE XDoesSaveUnders 1"
+	/tset/Xlib3/dssvundrs/Test
+	"VSW5TESTSUITE CASE XEventMaskOfScreen 1"
+	/tset/Xlib3/evntmskofs/Test
+	"VSW5TESTSUITE CASE XFree 1"
+	/tset/Xlib3/fr/Test
+	"VSW5TESTSUITE CASE XHeightMMOfScreen 1"
+	/tset/Xlib3/hghtmmofsc/Test
+	"VSW5TESTSUITE CASE XHeightOfScreen 1"
+	/tset/Xlib3/hghtofscrn/Test
+	"VSW5TESTSUITE CASE XImageByteOrder 1"
+	/tset/Xlib3/imgbytordr/Test
+	"VSW5TESTSUITE CASE XListDepths 3"
+	/tset/Xlib3/lstdpths/Test
+	"VSW5TESTSUITE CASE XLastKnownRequestProcessed 1"
+	/tset/Xlib3/lstknwnrqs/Test
+	"VSW5TESTSUITE CASE XListPixmapFormats 2"
+	/tset/Xlib3/lstpxmpfrm/Test
+	"VSW5TESTSUITE CASE XMinCmapsOfScreen 1"
+	/tset/Xlib3/mncmpsofsc/Test
+	"VSW5TESTSUITE CASE XMaxCmapsOfScreen 1"
+	/tset/Xlib3/mxcmpsofsc/Test
+	"VSW5TESTSUITE CASE XNoOp 1"
+	/tset/Xlib3/nop/Test
+	"VSW5TESTSUITE CASE XNextRequest 2"
+	/tset/Xlib3/nxtrqst/Test
+	"VSW5TESTSUITE CASE XOpenDisplay 10"
+	/tset/Xlib3/opndsply/Test
+	"VSW5TESTSUITE CASE XPlanesOfScreen 1"
+	/tset/Xlib3/plnsofscrn/Test
+	"VSW5TESTSUITE CASE XProtocolRevision 1"
+	/tset/Xlib3/prtclrvsn/Test
+	"VSW5TESTSUITE CASE XProtocolVersion 1"
+	/tset/Xlib3/prtclvrsn/Test
+	"VSW5TESTSUITE CASE XQLength 1"
+	/tset/Xlib3/qlngth/Test
+	"VSW5TESTSUITE CASE XRootWindow 1"
+	/tset/Xlib3/rtwdw/Test
+	"VSW5TESTSUITE CASE XRootWindowOfScreen 1"
+	/tset/Xlib3/rtwdwofscr/Test
+	"VSW5TESTSUITE CASE XScreenCount 1"
+	/tset/Xlib3/scrncnt/Test
+	"VSW5TESTSUITE CASE XScreenNumberOfScreen 1"
+	/tset/Xlib3/scrnnmbrof/Test
+	"VSW5TESTSUITE CASE XScreenOfDisplay 1"
+	/tset/Xlib3/scrnofdspl/Test
+	"VSW5TESTSUITE CASE XVendorRelease 1"
+	/tset/Xlib3/vndrrls/Test
+	"VSW5TESTSUITE CASE XServerVendor 1"
+	/tset/Xlib3/srvrvndr/Test
+	"VSW5TESTSUITE CASE XSetCloseDownMode 7"
+	/tset/Xlib3/stclsdwnmd/Test
+	"VSW5TESTSUITE CASE XWidthMMOfScreen 1"
+	/tset/Xlib3/wdthmmofsc/Test
+	"VSW5TESTSUITE CASE XWidthOfScreen 1"
+	/tset/Xlib3/wdthofscrn/Test
+	"VSW5TESTSUITE CASE XWhitePixel 1"
+	/tset/Xlib3/whtpxl/Test
+	"VSW5TESTSUITE CASE XWhitePixelOfScreen 1"
+	/tset/Xlib3/whtpxlofsc/Test
+	"VSW5TESTSUITE CASE BlackPixel 1"
+	/tset/Xlib3/blckpxl/MTest
+	"VSW5TESTSUITE CASE BlackPixelOfScreen 1"
+	/tset/Xlib3/blckpxlofs/MTest
+	"VSW5TESTSUITE CASE BitmapBitOrder 1"
+	/tset/Xlib3/btmpbtordr/MTest
+	"VSW5TESTSUITE CASE BitmapPad 1"
+	/tset/Xlib3/btmppd/MTest
+	"VSW5TESTSUITE CASE BitmapUnit 1"
+	/tset/Xlib3/btmpunt/MTest
+	"VSW5TESTSUITE CASE CellsOfScreen 1"
+	/tset/Xlib3/cllsofscrn/MTest
+	"VSW5TESTSUITE CASE ConnectionNumber 1"
+	/tset/Xlib3/cnnctnnmbr/MTest
+	"VSW5TESTSUITE CASE DefaultColormap 1"
+	/tset/Xlib3/dfltclrmp/MTest
+	"VSW5TESTSUITE CASE DefaultColormapOfScreen 1"
+	/tset/Xlib3/dfltclrmpo/MTest
+	"VSW5TESTSUITE CASE DefaultDepth 1"
+	/tset/Xlib3/dfltdpth/MTest
+	"VSW5TESTSUITE CASE DefaultDepthOfScreen 1"
+	/tset/Xlib3/dfltdpthof/MTest
+	"VSW5TESTSUITE CASE DefaultGC 1"
+	/tset/Xlib3/dfltgc/MTest
+	"VSW5TESTSUITE CASE DefaultGCOfScreen 2"
+	/tset/Xlib3/dfltgcofsc/MTest
+	"VSW5TESTSUITE CASE DefaultRootWindow 1"
+	/tset/Xlib3/dfltrtwdw/MTest
+	"VSW5TESTSUITE CASE DefaultScreen 1"
+	/tset/Xlib3/dfltscrn/MTest
+	"VSW5TESTSUITE CASE DefaultScreenOfDisplay 1"
+	/tset/Xlib3/dfltscrnof/MTest
+	"VSW5TESTSUITE CASE DefaultVisual 1"
+	/tset/Xlib3/dfltvsl/MTest
+	"VSW5TESTSUITE CASE DefaultVisualOfScreen 1"
+	/tset/Xlib3/dfltvslofs/MTest
+	"VSW5TESTSUITE CASE DoesBackingStore 1"
+	/tset/Xlib3/dsbckngstr/MTest
+	"VSW5TESTSUITE CASE DisplayCells 1"
+	/tset/Xlib3/dsplyclls/MTest
+	"VSW5TESTSUITE CASE DisplayHeight 1"
+	/tset/Xlib3/dsplyhght/MTest
+	"VSW5TESTSUITE CASE DisplayHeightMM 1"
+	/tset/Xlib3/dsplyhghtm/MTest
+	"VSW5TESTSUITE CASE DisplayOfScreen 1"
+	/tset/Xlib3/dsplyofscr/MTest
+	"VSW5TESTSUITE CASE DisplayPlanes 1"
+	/tset/Xlib3/dsplyplns/MTest
+	"VSW5TESTSUITE CASE DisplayString 2"
+	/tset/Xlib3/dsplystr/MTest
+	"VSW5TESTSUITE CASE DisplayWidth 1"
+	/tset/Xlib3/dsplywdth/MTest
+	"VSW5TESTSUITE CASE DisplayWidthMM 1"
+	/tset/Xlib3/dsplywdthm/MTest
+	"VSW5TESTSUITE CASE DoesSaveUnders 1"
+	/tset/Xlib3/dssvundrs/MTest
+	"VSW5TESTSUITE CASE EventMaskOfScreen 1"
+	/tset/Xlib3/evntmskofs/MTest
+	"VSW5TESTSUITE CASE HeightMMOfScreen 1"
+	/tset/Xlib3/hghtmmofsc/MTest
+	"VSW5TESTSUITE CASE HeightOfScreen 1"
+	/tset/Xlib3/hghtofscrn/MTest
+	"VSW5TESTSUITE CASE ImageByteOrder 1"
+	/tset/Xlib3/imgbytordr/MTest
+	"VSW5TESTSUITE CASE LastKnownRequestProcessed 1"
+	/tset/Xlib3/lstknwnrqs/MTest
+	"VSW5TESTSUITE CASE MinCmapsOfScreen 1"
+	/tset/Xlib3/mncmpsofsc/MTest
+	"VSW5TESTSUITE CASE MaxCmapsOfScreen 1"
+	/tset/Xlib3/mxcmpsofsc/MTest
+	"VSW5TESTSUITE CASE NextRequest 2"
+	/tset/Xlib3/nxtrqst/MTest
+	"VSW5TESTSUITE CASE PlanesOfScreen 1"
+	/tset/Xlib3/plnsofscrn/MTest
+	"VSW5TESTSUITE CASE ProtocolRevision 1"
+	/tset/Xlib3/prtclrvsn/MTest
+	"VSW5TESTSUITE CASE ProtocolVersion 1"
+	/tset/Xlib3/prtclvrsn/MTest
+	"VSW5TESTSUITE CASE QLength 1"
+	/tset/Xlib3/qlngth/MTest
+	"VSW5TESTSUITE CASE RootWindow 1"
+	/tset/Xlib3/rtwdw/MTest
+	"VSW5TESTSUITE CASE RootWindowOfScreen 1"
+	/tset/Xlib3/rtwdwofscr/MTest
+	"VSW5TESTSUITE CASE ScreenCount 1"
+	/tset/Xlib3/scrncnt/MTest
+	"VSW5TESTSUITE CASE ScreenOfDisplay 1"
+	/tset/Xlib3/scrnofdspl/MTest
+	"VSW5TESTSUITE CASE VendorRelease 1"
+	/tset/Xlib3/vndrrls/MTest
+	"VSW5TESTSUITE CASE ServerVendor 1"
+	/tset/Xlib3/srvrvndr/MTest
+	"VSW5TESTSUITE CASE WidthMMOfScreen 1"
+	/tset/Xlib3/wdthmmofsc/MTest
+	"VSW5TESTSUITE CASE WidthOfScreen 1"
+	/tset/Xlib3/wdthofscrn/MTest
+	"VSW5TESTSUITE CASE WhitePixel 1"
+	/tset/Xlib3/whtpxl/MTest
+	"VSW5TESTSUITE CASE WhitePixelOfScreen 1"
+	/tset/Xlib3/whtpxlofsc/MTest

@@ -1,0 +1,167 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/Xlib17_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:        Xlib17_scen
+#
+# Description:
+#       Scenario file xlib chapter17
+#
+# Modifications:
+# $Log: Xlib17_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:21  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:27  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:22  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:26:56  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:20  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:10  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XAddPixel 1"
+	/tset/Xlib17/addpxl/Test
+	"VSW5TESTSUITE CASE XClipBox 1"
+	/tset/Xlib17/clpbx/Test
+	"VSW5TESTSUITE CASE XCreateBitmapFromData 4"
+	/tset/Xlib17/crtbtmpfrm/Test
+	"VSW5TESTSUITE CASE XCreateImage 3"
+	/tset/Xlib17/crtimg/Test
+	"VSW5TESTSUITE CASE XCreatePixmapFromBitmapData 5"
+	/tset/Xlib17/crtpxmpfrm/Test
+	"VSW5TESTSUITE CASE XCreateRegion 2"
+	/tset/Xlib17/crtrgn/Test
+	"VSW5TESTSUITE CASE XDeleteContext 2"
+	/tset/Xlib17/dltcntxt/Test
+	"VSW5TESTSUITE CASE XDestroyImage 1"
+	/tset/Xlib17/dstryimg/Test
+	"VSW5TESTSUITE CASE XDestroyRegion 1"
+	/tset/Xlib17/dstryrgn/Test
+	"VSW5TESTSUITE CASE XEmptyRegion 2"
+	/tset/Xlib17/emptyrgn/Test
+	"VSW5TESTSUITE CASE XEqualRegion 4"
+	/tset/Xlib17/eqlrgn/Test
+	"VSW5TESTSUITE CASE XFindContext 2"
+	/tset/Xlib17/fndcntxt/Test
+	"VSW5TESTSUITE CASE XFetchBuffer 2"
+	/tset/Xlib17/ftchbffr/Test
+	"VSW5TESTSUITE CASE XFetchBytes 2"
+	/tset/Xlib17/ftchbyts/Test
+	"VSW5TESTSUITE CASE XGetDefault 5"
+	/tset/Xlib17/gtdflt/Test
+	"VSW5TESTSUITE CASE XGetPixel 1"
+	/tset/Xlib17/gtpxl/Test
+	"VSW5TESTSUITE CASE XGetVisualInfo 3"
+	/tset/Xlib17/gtvslinf/Test
+	"VSW5TESTSUITE CASE XIntersectRegion 1"
+	/tset/Xlib17/intrsctrgn/Test
+	"VSW5TESTSUITE CASE IsCursorKey 2"
+	/tset/Xlib17/iscrsrky/Test
+	"VSW5TESTSUITE CASE IsFunctionKey 2"
+	/tset/Xlib17/isfnctnky/Test
+	"VSW5TESTSUITE CASE IsKeypadKey 2"
+	/tset/Xlib17/iskypdky/Test
+	"VSW5TESTSUITE CASE IsModifierKey 2"
+	/tset/Xlib17/ismdfrky/Test
+	"VSW5TESTSUITE CASE IsMiscFunctionKey 2"
+	/tset/Xlib17/ismscfnctn/Test
+	"VSW5TESTSUITE CASE IsPFKey 2"
+	/tset/Xlib17/ispfky/Test
+	"VSW5TESTSUITE CASE XKeycodeToKeysym 2"
+	/tset/Xlib17/kycdtkysym/Test
+	"VSW5TESTSUITE CASE XKeysymToKeycode 2"
+	/tset/Xlib17/kysymtkycd/Test
+	"VSW5TESTSUITE CASE XKeysymToString 2"
+	/tset/Xlib17/kysymtstr/Test
+	"VSW5TESTSUITE CASE XLookupKeysym 2"
+	/tset/Xlib17/lkpkysym/Test
+	"VSW5TESTSUITE CASE XLookupString 3"
+	/tset/Xlib17/lkpstr/Test
+	"VSW5TESTSUITE CASE XMatchVisualInfo 2"
+	/tset/Xlib17/mtchvslinf/Test
+	"VSW5TESTSUITE CASE XOffsetRegion 1"
+	/tset/Xlib17/offstrgn/Test
+	"VSW5TESTSUITE CASE XPolygonRegion 1"
+	/tset/Xlib17/plygnrgn/Test
+	"VSW5TESTSUITE CASE XPointInRegion 2"
+	/tset/Xlib17/pntinrgn/Test
+	"VSW5TESTSUITE CASE Xpermalloc 2"
+	/tset/Xlib17/prmllc/Test
+	"VSW5TESTSUITE CASE XParseGeometry 3"
+	/tset/Xlib17/prsgmtry/Test
+	"VSW5TESTSUITE CASE XPutPixel 1"
+	/tset/Xlib17/ptpxl/Test
+	"VSW5TESTSUITE CASE XRebindKeysym 2"
+	/tset/Xlib17/rbndkysym/Test
+	"VSW5TESTSUITE CASE XRectInRegion 3"
+	/tset/Xlib17/rctinrgn/Test
+	"VSW5TESTSUITE CASE XReadBitmapFile 9"
+	/tset/Xlib17/rdbtmpfl/Test
+	"VSW5TESTSUITE CASE XRefreshKeyboardMapping 3"
+	/tset/Xlib17/rfrshkybrd/Test
+	"VSW5TESTSUITE CASE XRotateBuffers 2"
+	/tset/Xlib17/rttbffrs/Test
+	"VSW5TESTSUITE CASE XSubImage 1"
+	/tset/Xlib17/sbimg/Test
+	"VSW5TESTSUITE CASE XSubtractRegion 1"
+	/tset/Xlib17/sbtrctrgn/Test
+	"VSW5TESTSUITE CASE XShrinkRegion 3"
+	/tset/Xlib17/shrnkrgn/Test
+	"VSW5TESTSUITE CASE XStoreBuffer 2"
+	/tset/Xlib17/strbffr/Test
+	"VSW5TESTSUITE CASE XStoreBytes 2"
+	/tset/Xlib17/strbyts/Test
+	"VSW5TESTSUITE CASE XSetRegion 2"
+	/tset/Xlib17/strgn/Test
+	"VSW5TESTSUITE CASE XStringToKeysym 2"
+	/tset/Xlib17/strtkysym/Test
+	"VSW5TESTSUITE CASE XSaveContext 3"
+	/tset/Xlib17/svcntxt/Test
+	"VSW5TESTSUITE CASE XUnionRectWithRegion 1"
+	/tset/Xlib17/unnrctwthr/Test
+	"VSW5TESTSUITE CASE XUnionRegion 1"
+	/tset/Xlib17/unnrgn/Test
+	"VSW5TESTSUITE CASE XUniqueContext 1"
+	/tset/Xlib17/unqcntxt/Test
+	"VSW5TESTSUITE CASE XWMGeometry 9"
+	/tset/Xlib17/wmgmtry/Test
+	"VSW5TESTSUITE CASE XWriteBitmapFile 6"
+	/tset/Xlib17/wrtbtmpfl/Test
+	"VSW5TESTSUITE CASE XXorRegion 1"
+	/tset/Xlib17/xrrgn/Test

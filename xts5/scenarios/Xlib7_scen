@@ -1,0 +1,173 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/Xlib7_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:        Xlib7_scen
+#
+# Description:
+#       Scenario file xlib chapter 7
+#
+# Modifications:
+# $Log: Xlib7_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:23  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:30  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:24  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:26:58  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:18  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:16  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XAllocColor 5"
+	/tset/Xlib7/allcclr/Test
+	"VSW5TESTSUITE CASE XAllocColorCells 9"
+	/tset/Xlib7/allcclrcll/Test
+	"VSW5TESTSUITE CASE XAllocColorPlanes 7"
+	/tset/Xlib7/allcclrpln/Test
+	"VSW5TESTSUITE CASE XAllocNamedColor 6"
+	/tset/Xlib7/allcnmdclr/Test
+	"VSW5TESTSUITE CASE XCopyColormapAndFree 5"
+	/tset/Xlib7/cpyclrmpan/Test
+	"VSW5TESTSUITE CASE XCreateColormap 13"
+	/tset/Xlib7/crtclrmp/Test
+	"VSW5TESTSUITE CASE XFreeColormap 5"
+	/tset/Xlib7/frclrmp/Test
+	"VSW5TESTSUITE CASE XFreeColors 9"
+	/tset/Xlib7/frclrs/Test
+	"VSW5TESTSUITE CASE XLookupColor 4"
+	/tset/Xlib7/lkpclr/Test
+	"VSW5TESTSUITE CASE XParseColor 10"
+	/tset/Xlib7/prsclr/Test
+	"VSW5TESTSUITE CASE XQueryColor 3"
+	/tset/Xlib7/qryclr/Test
+	"VSW5TESTSUITE CASE XQueryColors 3"
+	/tset/Xlib7/qryclrs/Test
+	"VSW5TESTSUITE CASE XStoreColor 8"
+	/tset/Xlib7/strclr/Test
+	"VSW5TESTSUITE CASE XStoreColors 9"
+	/tset/Xlib7/strclrs/Test
+	"VSW5TESTSUITE CASE XStoreNamedColor 9"
+	/tset/Xlib7/strnmdclr/Test
+	"VSW5TESTSUITE CASE XcmsAllocColor 2"
+	/tset/Xlib7/cmsac/Test
+	"VSW5TESTSUITE CASE XcmsAddColorSpace 1"
+	/tset/Xlib7/cmsacs/Test
+	"VSW5TESTSUITE CASE XcmsAddFunctionSet 1"
+	/tset/Xlib7/cmsadfs/Test
+	"VSW5TESTSUITE CASE XcmsAllocNamedColor 2"
+	/tset/Xlib7/cmsanc/Test
+	"VSW5TESTSUITE CASE XcmsCCCOfColormap 1"
+	/tset/Xlib7/cmsccoc/Test
+	"VSW5TESTSUITE CASE XcmsConvertColors 1"
+	/tset/Xlib7/cmsccol/Test
+	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxLC 1"
+	/tset/Xlib7/cmscielq/Test
+	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxC 1"
+	/tset/Xlib7/cmscieqc/Test
+	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxL 1"
+	/tset/Xlib7/cmscieql/Test
+	"VSW5TESTSUITE CASE XcmsConversionProc 9"
+	/tset/Xlib7/cmscproc/Test
+	"VSW5TESTSUITE CASE XcmsConversionProc 4"
+	/tset/Xlib7/cmscprocd/Test
+	"VSW5TESTSUITE CASE XcmsCreateCCC 1"
+	/tset/Xlib7/cmscrcc/Test
+	"VSW5TESTSUITE CASE XcmsDefaultCCC 1"
+	/tset/Xlib7/cmsdcc/Test
+	"VSW5TESTSUITE CASE XcmsDisplayOfCCC 1"
+	/tset/Xlib7/cmsdocc/Test
+	"VSW5TESTSUITE CASE XcmsFreeCCC 1"
+	/tset/Xlib7/cmsfccc/Test
+	"VSW5TESTSUITE CASE XcmsFormatOfPrefix 2"
+	/tset/Xlib7/cmsfopr/Test
+	"VSW5TESTSUITE CASE XcmsLookupColor 1"
+	/tset/Xlib7/cmslkcl/Test
+	"VSW5TESTSUITE CASE XcmsCIELabQueryMinL 1"
+	/tset/Xlib7/cmslqml/Test
+	"VSW5TESTSUITE CASE XcmsPrefixOfFormat 1"
+	/tset/Xlib7/cmspoft/Test
+	"VSW5TESTSUITE CASE XcmsQueryBlack 1"
+	/tset/Xlib7/cmsqbk/Test
+	"VSW5TESTSUITE CASE XcmsQueryBlue 1"
+	/tset/Xlib7/cmsqbl/Test
+	"VSW5TESTSUITE CASE XcmsQueryColor 1"
+	/tset/Xlib7/cmsqc/Test
+	"VSW5TESTSUITE CASE XcmsQueryColors 3"
+	/tset/Xlib7/cmsqcl/Test
+	"VSW5TESTSUITE CASE XcmsQueryGreen 1"
+	/tset/Xlib7/cmsqgr/Test
+	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxC 1"
+	/tset/Xlib7/cmsqmc/Test
+	"VSW5TESTSUITE CASE XcmsCIELuvQueryMinL 1"
+	/tset/Xlib7/cmsqmil/Test
+	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxL 1"
+	/tset/Xlib7/cmsqml/Test
+	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxLC 1"
+	/tset/Xlib7/cmsqmlc/Test
+	"VSW5TESTSUITE CASE XcmsQueryRed 1"
+	/tset/Xlib7/cmsqred/Test
+	"VSW5TESTSUITE CASE XcmsQueryWhite 1"
+	/tset/Xlib7/cmsqwt/Test
+	"VSW5TESTSUITE CASE XcmsScreenNumberOfCCC 1"
+	/tset/Xlib7/cmssnoc/Test
+	"VSW5TESTSUITE CASE XcmsStoreColor 4"
+	/tset/Xlib7/cmsstclr/Test
+	"VSW5TESTSUITE CASE XcmsStoreColors 4"
+	/tset/Xlib7/cmsstcls/Test
+	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxC 1"
+	/tset/Xlib7/cmstqmc/Test
+	"VSW5TESTSUITE CASE XcmsTekHVCQueryMinV 1"
+	/tset/Xlib7/cmstqmiv/Test
+	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxV 1"
+	/tset/Xlib7/cmstqmv/Test
+	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxVC 1"
+	/tset/Xlib7/cmstqmvc/Test
+	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxVSamples 1"
+	/tset/Xlib7/cmstqmvs/Test
+	"VSW5TESTSUITE CASE XcmsVisualOfCCC 1"
+	/tset/Xlib7/cmsvofcc/Test
+	"VSW5TESTSUITE CASE XcmsSetWhiteAdjustProc 3"
+	/tset/Xlib7/cmswapr/Test
+	"VSW5TESTSUITE CASE XcmsScreenWhitePointOfCCC 1"
+	/tset/Xlib7/cmswpcc/Test
+	"VSW5TESTSUITE CASE XcmsClientWhitePointOfCCC 1"
+	/tset/Xlib7/cmswpoc/Test
+	"VSW5TESTSUITE CASE XcmsSetWhitePoint 1"
+	/tset/Xlib7/cmswpt/Test

@@ -1,0 +1,147 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/Xlib14_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:        Xlib14_scen
+#
+# Description:
+#       Scenario file xlib chapter14
+#
+# Modifications:
+# $Log: Xlib14_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:19  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:26  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:21  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:26:55  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:17  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.2  1995/12/15  01:59:06  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XBaseFontNameListOfFontSet 1"
+	/tset/Xlib14/bfnlofs/Test
+	"VSW5TESTSUITE CASE XCloseIM 1"
+	/tset/Xlib14/closeim/Test
+	"VSW5TESTSUITE CASE XContextDependentDrawing 1"
+	/tset/Xlib14/condd/Test
+	"VSW5TESTSUITE CASE XCreateFontSet 1"
+	/tset/Xlib14/crfset/Test
+	"VSW5TESTSUITE CASE XCreateIC 1"
+	/tset/Xlib14/crtic/Test
+	"VSW5TESTSUITE CASE XDestroyIC 1"
+	/tset/Xlib14/desic/Test
+	"VSW5TESTSUITE CASE XDisplayOfIM 1"
+	/tset/Xlib14/dispim/Test
+	"VSW5TESTSUITE CASE XExtentsOfFontSet 1"
+	/tset/Xlib14/exofset/Test
+	"VSW5TESTSUITE CASE XFilterEvent 1"
+	/tset/Xlib14/fltrevnt/Test
+	"VSW5TESTSUITE CASE XFontsOfFontSet 1"
+	/tset/Xlib14/fntofnts/Test
+	"VSW5TESTSUITE CASE XFreeFontSet 1"
+	/tset/Xlib14/freefs/Test
+	"VSW5TESTSUITE CASE XGetICValues 3"
+	/tset/Xlib14/gticvals/Test
+	"VSW5TESTSUITE CASE XGetIMValues 1"
+	/tset/Xlib14/gtimvls/Test
+	"VSW5TESTSUITE CASE XIMOfIC 1"
+	/tset/Xlib14/imofic/Test
+	"VSW5TESTSUITE CASE XLocaleOfFontSet 1"
+	/tset/Xlib14/loffs/Test
+	"VSW5TESTSUITE CASE XLocaleOfIM 1"
+	/tset/Xlib14/lofim/Test
+	"VSW5TESTSUITE CASE XmbDrawImageString 1"
+	/tset/Xlib14/mbdistr/Test
+	"VSW5TESTSUITE CASE XmbDrawString 1"
+	/tset/Xlib14/mbdstr/Test
+	"VSW5TESTSUITE CASE XmbDrawText 1"
+	/tset/Xlib14/mbdtext/Test
+	"VSW5TESTSUITE CASE XmbLookupString 3"
+	/tset/Xlib14/mblstr/Test
+	"VSW5TESTSUITE CASE XmbResetIC 1"
+	/tset/Xlib14/mbresic/Test
+	"VSW5TESTSUITE CASE XmbSetWMProperties 2"
+	/tset/Xlib14/mbswmprp/Test
+	"VSW5TESTSUITE CASE XmbTextEscapement 1"
+	/tset/Xlib14/mbtesc/Test
+	"VSW5TESTSUITE CASE XmbTextExtents 1"
+	/tset/Xlib14/mbtext/Test
+	"VSW5TESTSUITE CASE XmbTextListToTextProperty 1"
+	/tset/Xlib14/mbtlttp/Test
+	"VSW5TESTSUITE CASE XmbTextPerCharExtents 1"
+	/tset/Xlib14/mbtpcex/Test
+	"VSW5TESTSUITE CASE XmbTextPropertyToTextList 1"
+	/tset/Xlib14/mbtpttl/Test
+	"VSW5TESTSUITE CASE XOpenIM 1"
+	/tset/Xlib14/openim/Test
+	"VSW5TESTSUITE CASE XSetICFocus 1"
+	/tset/Xlib14/sicfoc/Test
+	"VSW5TESTSUITE CASE XSetICValues 4"
+	/tset/Xlib14/sicvals/Test
+	"VSW5TESTSUITE CASE XSupportsLocale 1"
+	/tset/Xlib14/slocale/Test
+	"VSW5TESTSUITE CASE XSetLocaleModifiers 1"
+	/tset/Xlib14/stlmod/Test
+	"VSW5TESTSUITE CASE XUnsetICFocus 1"
+	/tset/Xlib14/uicfoc/Test
+	"VSW5TESTSUITE CASE XVaCreateNestedList 4"
+	/tset/Xlib14/vcnlist/Test
+	"VSW5TESTSUITE CASE XwcDrawImageString 1"
+	/tset/Xlib14/wcdistr/Test
+	"VSW5TESTSUITE CASE XwcDrawString 1"
+	/tset/Xlib14/wcdstr/Test
+	"VSW5TESTSUITE CASE XwcDrawText 1"
+	/tset/Xlib14/wcdtext/Test
+	"VSW5TESTSUITE CASE XwcFreeStringList 1"
+	/tset/Xlib14/wcfstli/Test
+	"VSW5TESTSUITE CASE XwcLookupString 3"
+	/tset/Xlib14/wclustr/Test
+	"VSW5TESTSUITE CASE XwcResetIC 1"
+	/tset/Xlib14/wcreic/Test
+	"VSW5TESTSUITE CASE XwcTextEscapement 1"
+	/tset/Xlib14/wctesc/Test
+	"VSW5TESTSUITE CASE XwcTextListToTextProperty 1"
+	/tset/Xlib14/wctlttp/Test
+	"VSW5TESTSUITE CASE XwcTextPerCharExtents 1"
+	/tset/Xlib14/wctpcex/Test
+	"VSW5TESTSUITE CASE XwcTextPropertyToTextList 1"
+	/tset/Xlib14/wctpttl/Test
+	"VSW5TESTSUITE CASE XwcTextExtents 1"
+	/tset/Xlib14/wctxtex/Test

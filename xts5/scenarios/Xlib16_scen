@@ -1,0 +1,123 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/Xlib16_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:        Xlib16_scen
+#
+# Description:
+#       Scenario file xlib chapter 16
+#
+# Modifications:
+# $Log: Xlib16_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:20  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:27  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:22  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:26:55  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.2  1996/09/24 23:18:24  srini
+# updated test numbers for Xlib 16
+#
+# Revision 4.1  1996/09/19  20:51:50  andy
+# Added 5 tests to XrmCombineDatabase
+#
+# Revision 4.0  1995/12/15  09:25:49  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:08  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XrmDestroyDatabase 3"
+	/tset/Xlib16/rmdstrydtb/Test
+	"VSW5TESTSUITE CASE XrmGetFileDatabase 3"
+	/tset/Xlib16/rmgtfldtbs/Test
+	"VSW5TESTSUITE CASE XrmGetResource 2"
+	/tset/Xlib16/rmgtrsrc/Test
+	"VSW5TESTSUITE CASE XrmGetStringDatabase 2"
+	/tset/Xlib16/rmgtstrdtb/Test
+	"VSW5TESTSUITE CASE XrmInitialize 1"
+	/tset/Xlib16/rmintlz/Test
+	"VSW5TESTSUITE CASE XrmMergeDatabases 6"
+	/tset/Xlib16/rmmrgdtbss/Test
+	"VSW5TESTSUITE CASE XrmParseCommand 12"
+	/tset/Xlib16/rmprscmmnd/Test
+	"VSW5TESTSUITE CASE XrmPutFileDatabase 3"
+	/tset/Xlib16/rmptfldtbs/Test
+	"VSW5TESTSUITE CASE XrmPutLineResource 9"
+	/tset/Xlib16/rmptlnrsrc/Test
+	"VSW5TESTSUITE CASE XrmPutResource 4"
+	/tset/Xlib16/rmptrsrc/Test
+	"VSW5TESTSUITE CASE XrmPutStringResource 4"
+	/tset/Xlib16/rmptstrrsr/Test
+	"VSW5TESTSUITE CASE XrmQGetResource 2"
+	/tset/Xlib16/rmqgtrsrc/Test
+	"VSW5TESTSUITE CASE XrmQGetSearchList 4"
+	/tset/Xlib16/rmqgtsrchl/Test
+	"VSW5TESTSUITE CASE XrmQGetSearchResource 2"
+	/tset/Xlib16/rmqgtsrchr/Test
+	"VSW5TESTSUITE CASE XrmQPutResource 3"
+	/tset/Xlib16/rmqptrsrc/Test
+	"VSW5TESTSUITE CASE XrmQPutStringResource 3"
+	/tset/Xlib16/rmqptstrrs/Test
+	"VSW5TESTSUITE CASE XrmQuarkToString 3"
+	/tset/Xlib16/rmqrktstr/Test
+	"VSW5TESTSUITE CASE XrmStringToBindingQuarkList 6"
+	/tset/Xlib16/rmstrtbndn/Test
+	"VSW5TESTSUITE CASE XrmStringToQuark 3"
+	/tset/Xlib16/rmstrtqrk/Test
+	"VSW5TESTSUITE CASE XrmStringToQuarkList 3"
+	/tset/Xlib16/rmstrtqrkl/Test
+	"VSW5TESTSUITE CASE XrmUniqueQuark 1"
+	/tset/Xlib16/rmunqqrk/Test
+	"VSW5TESTSUITE CASE XResourceManagerString 2"
+	/tset/Xlib16/rsrcmngrst/Test
+	"VSW5TESTSUITE CASE XrmCombineDatabase 6"
+	/tset/Xlib16/rmcomdt/Test
+	"VSW5TESTSUITE CASE XrmCombineFileDatabase 6"
+	/tset/Xlib16/rmcomfdt/Test
+	"VSW5TESTSUITE CASE XrmEnumerateDatabase 3"
+	/tset/Xlib16/rmedata/Test
+	"VSW5TESTSUITE CASE XrmGetDatabase 2"
+	/tset/Xlib16/rmgtdb/Test
+	"VSW5TESTSUITE CASE XrmLocaleOfDatabase 1"
+	/tset/Xlib16/rmloofdt/Test
+	"VSW5TESTSUITE CASE XrmPermStringToQuark 2"
+	/tset/Xlib16/rmpstoq/Test
+	"VSW5TESTSUITE CASE XrmSetDatabase 2"
+	/tset/Xlib16/rmstdb/Test
+	"VSW5TESTSUITE CASE XScreenResourceString 2"
+	/tset/Xlib16/scrrs/Test

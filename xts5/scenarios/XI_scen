@@ -1,0 +1,129 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/XI_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:        XI_scen
+#
+# Description:
+#       Scenario file Input Device Extension APIs
+#
+# Modifications:
+# $Log: XI_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:16  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:23  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:18  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:26:52  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:11  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:58:58  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XAllowDeviceEvents 22"
+	/tset/XI/alldvevnts/Test
+	"VSW5TESTSUITE CASE XChangeDeviceControl 10"
+	/tset/XI/chgdvctl/Test
+	"VSW5TESTSUITE CASE XChangeFeedbackControl 8"
+	/tset/XI/chgfctl/Test
+	"VSW5TESTSUITE CASE XChangeKeyboardDevice 10"
+	/tset/XI/chgkbd/Test
+	"VSW5TESTSUITE CASE XChangeDeviceDontPropagateList 7"
+	/tset/XI/chgprop/Test
+	"VSW5TESTSUITE CASE XChangePointerDevice 10"
+	/tset/XI/chgptr/Test
+	"VSW5TESTSUITE CASE XChangeDeviceKeyMapping 7"
+	/tset/XI/chngdvkmap/Test
+	"VSW5TESTSUITE CASE XCloseDevice 7"
+	/tset/XI/closdev/Test
+	"VSW5TESTSUITE CASE XDeviceBell 6"
+	/tset/XI/dvbell/Test
+	"VSW5TESTSUITE CASE XGetDeviceControl 4"
+	/tset/XI/getdctl/Test
+	"VSW5TESTSUITE CASE XGetFeedbackControl 3"
+	/tset/XI/getfctl/Test
+	"VSW5TESTSUITE CASE XGetDeviceFocus 2"
+	/tset/XI/getfocus/Test
+	"VSW5TESTSUITE CASE XGetDeviceDontPropagateList 2"
+	/tset/XI/getprop/Test
+	"VSW5TESTSUITE CASE XGetExtensionVersion 2"
+	/tset/XI/getvers/Test
+	"VSW5TESTSUITE CASE XGrabDevice 18"
+	/tset/XI/grbdev/Test
+	"VSW5TESTSUITE CASE XGrabDeviceButton 21"
+	/tset/XI/grbdvbtn/Test
+	"VSW5TESTSUITE CASE XGrabDeviceKey 21"
+	/tset/XI/grbdvky/Test
+	"VSW5TESTSUITE CASE XGetDeviceButtonMapping 5"
+	/tset/XI/gtbtnmppn/Test
+	"VSW5TESTSUITE CASE XGetDeviceKeyMapping 10"
+	/tset/XI/gtdvkmap/Test
+	"VSW5TESTSUITE CASE XGetDeviceModifierMapping 4"
+	/tset/XI/gtdvmmap/Test
+	"VSW5TESTSUITE CASE XGetDeviceMotionEvents 9"
+	/tset/XI/gtdvmtnev/Test
+	"VSW5TESTSUITE CASE XGetSelectedExtensionEvents 2"
+	/tset/XI/gtslctevnt/Test
+	"VSW5TESTSUITE CASE XListInputDevices 2"
+	/tset/XI/listdev/Test
+	"VSW5TESTSUITE CASE Miscellaneous 6"
+	/tset/XI/misc/Test
+	"VSW5TESTSUITE CASE XOpenDevice 4"
+	/tset/XI/opendev/Test
+	"VSW5TESTSUITE CASE XQueryDeviceState 8"
+	/tset/XI/querydvst/Test
+	"VSW5TESTSUITE CASE XSetDeviceValuators 6"
+	/tset/XI/setdval/Test
+	"VSW5TESTSUITE CASE XSetDeviceButtonMapping 8"
+	/tset/XI/setdvbmap/Test
+	"VSW5TESTSUITE CASE XSetDeviceFocus 17"
+	/tset/XI/setdvfocus/Test
+	"VSW5TESTSUITE CASE XSetDeviceModifierMapping 9"
+	/tset/XI/setdvmmap/Test
+	"VSW5TESTSUITE CASE XSetDeviceMode 6"
+	/tset/XI/setdvmode/Test
+	"VSW5TESTSUITE CASE XSelectExtensionEvent 13"
+	/tset/XI/slextevnt/Test
+	"VSW5TESTSUITE CASE XSendExtensionEvent 20"
+	/tset/XI/sndextevnt/Test
+	"VSW5TESTSUITE CASE XUngrabDevice 4"
+	/tset/XI/ungrbdv/Test
+	"VSW5TESTSUITE CASE XUngrabDeviceButton 11"
+	/tset/XI/ungrbdvbtn/Test
+	"VSW5TESTSUITE CASE XUngrabDeviceKey 12"
+	/tset/XI/ungrbdvky/Test

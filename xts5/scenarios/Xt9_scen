@@ -1,0 +1,123 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+#$Header: /cvs/xtest/xtest/xts5/scenarios/Xt9_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:	vsw5/scenarios/Xt9_scen
+#
+# Description:
+#       Scenario file Xt chapter 9 
+#
+# Modifications:
+# $Log: Xt9_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:31  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:39  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:32  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:27:06  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:41  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.2  1995/12/15  01:59:37  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XtAppAddInput 5"
+	/tset/Xt9/tapaddinp/Test
+	"VSW5TESTSUITE CASE XtRemoveInput 1"
+	/tset/Xt9/trminput/Test
+	"VSW5TESTSUITE CASE XtAppAddTimeOut 3"
+	/tset/Xt9/tapatmout/Test
+	"VSW5TESTSUITE CASE XtRemoveTimeOut 1"
+	/tset/Xt9/trmtmout/Test
+	"VSW5TESTSUITE CASE XtAddGrab 5"
+	/tset/Xt9/taddgrab/Test
+	"VSW5TESTSUITE CASE XtRemoveGrab 2"
+	/tset/Xt9/trmgrab/Test
+	"VSW5TESTSUITE CASE XtGrabKey 5"
+	/tset/Xt9/tgrabkey/Test
+	"VSW5TESTSUITE CASE XtUngrabKey 2"
+	/tset/Xt9/tungrabky/Test
+	"VSW5TESTSUITE CASE XtGrabKeyboard 2"
+	/tset/Xt9/tgrabkybd/Test
+	"VSW5TESTSUITE CASE XtUngrabKeyboard 1"
+	/tset/Xt9/tunkybord/Test
+	"VSW5TESTSUITE CASE XtGrabButton 5"
+	/tset/Xt9/tgrabbutn/Test
+	"VSW5TESTSUITE CASE XtUngrabButton 2"
+	/tset/Xt9/tunbutton/Test
+	"VSW5TESTSUITE CASE XtGrabPointer 2"
+	/tset/Xt9/tgrbpoint/Test
+	"VSW5TESTSUITE CASE XtUngrabPointer 1"
+	/tset/Xt9/tunpointr/Test
+	"VSW5TESTSUITE CASE XtSetKeyboardFocus 17"
+	/tset/Xt9/tstkbfocs/Test
+	"VSW5TESTSUITE CASE XtCallAcceptFocus 2"
+	/tset/Xt9/tcalafocs/Test
+	"VSW5TESTSUITE CASE XtAppPending 5"
+	/tset/Xt9/tappendng/Test
+	"VSW5TESTSUITE CASE XtAppPeekEvent 3"
+	/tset/Xt9/tappkevnt/Test
+	"VSW5TESTSUITE CASE XtAppNextEvent 4"
+	/tset/Xt9/tapnxevnt/Test
+	"VSW5TESTSUITE CASE XtAppProcessEvent 11"
+	/tset/Xt9/tapprcevt/Test
+	"VSW5TESTSUITE CASE XtDispatchEvent 11"
+	/tset/Xt9/tdispatet/Test
+	"VSW5TESTSUITE CASE XtAppMainLoop 28"
+	/tset/Xt9/tapmnloop/Test
+	"VSW5TESTSUITE CASE XtIsSensitive 4"
+	/tset/Xt9/tissenstv/Test
+	"VSW5TESTSUITE CASE XtSetSensitive 6"
+	/tset/Xt9/tstsenstv/Test
+	"VSW5TESTSUITE CASE XtAppAddWorkProc 5"
+	/tset/Xt9/tapawkprc/Test
+	"VSW5TESTSUITE CASE XtRemoveWorkProc 2"
+	/tset/Xt9/trmwkproc/Test
+	"VSW5TESTSUITE CASE XtAddEventHandler 8"
+	/tset/Xt9/tadevnthr/Test
+	"VSW5TESTSUITE CASE XtRemoveEventHandler 7"
+	/tset/Xt9/trmevthdr/Test
+	"VSW5TESTSUITE CASE XtInsertEventHandler 10"
+	/tset/Xt9/tinevthdr/Test
+	"VSW5TESTSUITE CASE XtAddRawEventHandler 9"
+	/tset/Xt9/tadrwevhr/Test
+	"VSW5TESTSUITE CASE XtRemoveRawEventHandler 7"
+	/tset/Xt9/trmrevthr/Test
+	"VSW5TESTSUITE CASE XtInsertRawEventHandler 10"
+	/tset/Xt9/tinrevthr/Test
+	"VSW5TESTSUITE CASE XtBuildEventMask 3"
+	/tset/Xt9/tbuevtmsk/Test

@@ -1,0 +1,165 @@
+>># $Header: /cvs/xtest/xtest/xts5/tset/Xopen/strtkysym/Attic/asserts,v 1.1 2005-02-12 14:37:44 anderson Exp $
+>># 
+>># Project: VSW5
+>># 
+>># File: vsw5/tset/Xopen/strtkysym/asserts
+>># 
+>># Description:
+>># 	Assertions for XStringToKeysym()
+>># 
+>># Modifications:
+>># $Log: asserts,v $
+>># Revision 1.1  2005-02-12 14:37:44  anderson
+>># Initial revision
+>>#
+>># Revision 8.0  1998/12/23 23:36:00  mar
+>># Branch point for Release 5.0.2
+>>#
+>># Revision 7.0  1998/10/30 22:58:45  mar
+>># Branch point for Release 5.0.2b1
+>>#
+>># Revision 6.0  1998/03/02 05:27:13  tbr
+>># Branch point for Release 5.0.1
+>>#
+>># Revision 5.0  1998/01/26 03:23:46  tbr
+>># Branch point for Release 5.0.1b1
+>>#
+>># Revision 4.0  1995/12/15 09:14:53  tbr
+>># Branch point for Release 5.0.0
+>>#
+>># Revision 3.1  1995/12/15  01:18:17  andy
+>># Prepare for GA Release
+>>#
+>># 
+>># 
+>># 
+>># 
+>># 
+>># 
+>>TITLE XStringToKeysym Xopen
+>>ASSERTION A XStringToKeysym-1
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code 1:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.
+>>ASSERTION A XStringToKeysym-2
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code 2:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.
+>>ASSERTION A XStringToKeysym-3
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code 3:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.
+>>ASSERTION A XStringToKeysym-4
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code 4:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.
+>>ASSERTION A XStringToKeysym-5
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code A:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.
+>>ASSERTION A XStringToKeysym-6
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code C:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.
+>>ASSERTION A XStringToKeysym-7
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code G:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.
+>>ASSERTION A XStringToKeysym-8
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code H:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.
+>>ASSERTION A XStringToKeysym-9
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code K:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.
+>>ASSERTION A XStringToKeysym-10
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code L:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.
+>>ASSERTION A XStringToKeysym-11
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code M:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.
+>>ASSERTION A XStringToKeysym-12
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code P:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.
+>>ASSERTION A XStringToKeysym-13
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code S:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.
+>>ASSERTION A XStringToKeysym-14
+When the string argument is the name of a KeySym in the
+table with the prefix XK_ removed, then a call to
+XStringToKeysym returns that KeySym.
+>>STRATEGY
+For each KeySym name in table with code T:
+	Call XStringToKeysym to obtain the KeySym defined for that string.
+	Verify that XStringToKeysym did not return NoSymbol.
+	Verify that the returned string is correct.

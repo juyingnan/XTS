@@ -1,0 +1,93 @@
+.\"
+.\"Copyright (c) 2005 X.Org Foundation LLC
+.\"
+.\"Permission is hereby granted, free of charge, to any person obtaining a copy of
+.\"this software and associated documentation files (the "Software"), to deal in
+.\"the Software without restriction, including without limitation the rights to
+.\"use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+.\"of the Software, and to permit persons to whom the Software is furnished to do
+.\"so, subject to the following conditions:
+.\"
+.\"The above copyright notice and this permission notice shall be included in all
+.\"copies or substantial portions of the Software.
+.\"
+.\"THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+.\"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+.\"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+.\"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+.\"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+.\"OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+.\"SOFTWARE.
+.\"
+.\"$Header: /cvs/xtest/xtest/xts5/man/run_assert.man,v 1.1 2005-02-12 14:37:14 anderson Exp $
+.\"Copyright (c) 1994, 1995 Applied Testing and Technology, Inc.
+.\"All rights reserved
+.TH run_assert "1" "July 1995" "APTEST" "VSW5"
+.SH NAME
+run_assert \- run one or more assertions for a single VSW5 Test Case
+.SH SYNOPSIS
+.in +10n
+.ti -10n
+\fBrun_assert\fR
+[
+.B -Truss
+] [
+.B -NoClean
+] 
+.I TestCase AssertionNumber...
+.SH DESCRIPTION
+\fRrun_assert creates a temporary scenario file for the Test Case
+and assertions (Test Purposes) specified then uses that scenario
+to launch a tcc run.
+
+TestCase is the full name of a scenario file test target (i.e. basename,
+log1p, gethostent, c89). If the specified target is not found an
+error will be printed and run_assert will abort.
+
+AssertionNumber... is a space separated list of Test Purposes to
+execute. If a nonexistent Test Purpose is specified an error
+will be printed. The program will continue and run all valid
+purposes specified. Test Purposes are run in the order specified.
+.SH OPTIONS
+.PP
+.B -Truss
+.PP
+.in +5
+Use truss to trace the ttc command as it executes. Truss must be
+be available on the system under test for this option to
+work. This option executes truss using the -f and -a options.
+Output is to standard out and standard error unless
+redirected manually.
+.PP
+.B -NoClean
+.PP
+.in +5
+run_assert normally executes tcc such that it removes any test
+files created during the run (-bec options). This option executes
+tcc such that test files remain for later examination (-be option).
+.PP
+Options can be entered in any combination and in any order. Specifying
+an option which is not cumulative in nature more than once is allowed.
+The program will ignore all but the last occurrence of the option.
+.PP
+This document presents options with certain letters capitalized.
+This is solely for readability. You may enter options
+entirely in lower case if you prefer. For example, the noclean
+option may be entered as -noclean as well as -NoClean.
+.PP
+It is often possible to save time by entering only the first few
+characters of an option. For example, the program accepts -tr
+as an abbreviation for the -Truss option. These abbreviations
+are unsupported and may change at any time. If you run this
+program automatically via other programs be sure to use full
+option names, not abbreviations.
+.PP
+-Help and -Usage options exist. They print a Usage summary to
+the screen.
+.SH ERRORS
+.PP
+This program is unsupported.
+.SH "SEE ALSO"
+creport tcc truss
+.PP
+Copyright (c) 1994, 1995 Applied Testing and Technology, Inc.

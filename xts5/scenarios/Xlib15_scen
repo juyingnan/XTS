@@ -1,0 +1,147 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/Xlib15_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:        Xlib15_scen
+#
+# Description:
+#       Scenario file xlib chapter15
+#
+# Modifications:
+# $Log: Xlib15_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:20  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:26  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:21  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:26:55  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:29  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:07  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XAllocClassHint 2"
+	/tset/Xlib15/allcclsshn/Test
+	"VSW5TESTSUITE CASE XAllocIconSize 2"
+	/tset/Xlib15/allcicnsz/Test
+	"VSW5TESTSUITE CASE XAllocStandardColormap 2"
+	/tset/Xlib15/allcstndrd/Test
+	"VSW5TESTSUITE CASE XAllocSizeHints 2"
+	/tset/Xlib15/allcszhnts/Test
+	"VSW5TESTSUITE CASE XAllocWMHints 2"
+	/tset/Xlib15/allcwmhnts/Test
+	"VSW5TESTSUITE CASE XFreeStringList 1"
+	/tset/Xlib15/frstrlst/Test
+	"VSW5TESTSUITE CASE XFetchName 3"
+	/tset/Xlib15/ftchnm/Test
+	"VSW5TESTSUITE CASE XGetClassHint 3"
+	/tset/Xlib15/gtclsshnt/Test
+	"VSW5TESTSUITE CASE XGetCommand 3"
+	/tset/Xlib15/gtcmmnd/Test
+	"VSW5TESTSUITE CASE XGetIconName 3"
+	/tset/Xlib15/gticnnm/Test
+	"VSW5TESTSUITE CASE XGetIconSizes 3"
+	/tset/Xlib15/gticnszs/Test
+	"VSW5TESTSUITE CASE XGetRGBColormaps 6"
+	/tset/Xlib15/gtrgbclrmp/Test
+	"VSW5TESTSUITE CASE XGetTransientForHint 3"
+	/tset/Xlib15/gttrnsntfr/Test
+	"VSW5TESTSUITE CASE XGetTextProperty 4"
+	/tset/Xlib15/gttxtprprt/Test
+	"VSW5TESTSUITE CASE XGetWMClientMachine 3"
+	/tset/Xlib15/gtwmclntmc/Test
+	"VSW5TESTSUITE CASE XGetWMColormapWindows 4"
+	/tset/Xlib15/gtwmclrmpw/Test
+	"VSW5TESTSUITE CASE XGetWMHints 3"
+	/tset/Xlib15/gtwmhnts/Test
+	"VSW5TESTSUITE CASE XGetWMIconName 3"
+	/tset/Xlib15/gtwmicnnm/Test
+	"VSW5TESTSUITE CASE XGetWMName 3"
+	/tset/Xlib15/gtwmnm/Test
+	"VSW5TESTSUITE CASE XGetWMNormalHints 5"
+	/tset/Xlib15/gtwmnrmlhn/Test
+	"VSW5TESTSUITE CASE XGetWMProtocols 4"
+	/tset/Xlib15/gtwmprtcls/Test
+	"VSW5TESTSUITE CASE XGetWMSizeHints 6"
+	/tset/Xlib15/gtwmszhnts/Test
+	"VSW5TESTSUITE CASE XIconifyWindow 3"
+	/tset/Xlib15/icnfywdw/Test
+	"VSW5TESTSUITE CASE XReconfigureWMWindow 5"
+	/tset/Xlib15/rcnfgrwmwd/Test
+	"VSW5TESTSUITE CASE XSetClassHint 3"
+	/tset/Xlib15/stclsshnt/Test
+	"VSW5TESTSUITE CASE XSetCommand 3"
+	/tset/Xlib15/stcmmnd/Test
+	"VSW5TESTSUITE CASE XSetIconName 3"
+	/tset/Xlib15/sticnnm/Test
+	"VSW5TESTSUITE CASE XSetIconSizes 3"
+	/tset/Xlib15/sticnszs/Test
+	"VSW5TESTSUITE CASE XSetRGBColormaps 4"
+	/tset/Xlib15/strgbclrmp/Test
+	"VSW5TESTSUITE CASE XStringListToTextProperty 3"
+	/tset/Xlib15/strlstttxt/Test
+	"VSW5TESTSUITE CASE XStoreName 3"
+	/tset/Xlib15/strnm/Test
+	"VSW5TESTSUITE CASE XSetTransientForHint 3"
+	/tset/Xlib15/sttrnsntfr/Test
+	"VSW5TESTSUITE CASE XSetTextProperty 5"
+	/tset/Xlib15/sttxtprprt/Test
+	"VSW5TESTSUITE CASE XSetWMClientMachine 5"
+	/tset/Xlib15/stwmclntmc/Test
+	"VSW5TESTSUITE CASE XSetWMColormapWindows 4"
+	/tset/Xlib15/stwmclrmpw/Test
+	"VSW5TESTSUITE CASE XSetWMHints 3"
+	/tset/Xlib15/stwmhnts/Test
+	"VSW5TESTSUITE CASE XSetWMIconName 5"
+	/tset/Xlib15/stwmicnnm/Test
+	"VSW5TESTSUITE CASE XSetWMName 5"
+	/tset/Xlib15/stwmnm/Test
+	"VSW5TESTSUITE CASE XSetWMNormalHints 3"
+	/tset/Xlib15/stwmnrmlhn/Test
+	"VSW5TESTSUITE CASE XSetWMProperties 10"
+	/tset/Xlib15/stwmprprts/Test
+	"VSW5TESTSUITE CASE XSetWMProtocols 4"
+	/tset/Xlib15/stwmprtcls/Test
+	"VSW5TESTSUITE CASE XSetWMSizeHints 4"
+	/tset/Xlib15/stwmszhnts/Test
+	"VSW5TESTSUITE CASE XTextPropertyToStringList 4"
+	/tset/Xlib15/txtprprtyt/Test
+	"VSW5TESTSUITE CASE XWithdrawWindow 3"
+	/tset/Xlib15/wthdrwwdw/Test
+	"VSW5TESTSUITE CASE XDefaultString 1"
+	/tset/Xlib15/defstr/Test

@@ -1,0 +1,111 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/Xlib12_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:        Xlib12_scen
+#
+# Description:
+#       Scenario file xlib chapter12
+#
+# Modifications:
+# $Log: Xlib12_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:18  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:25  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:20  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:26:54  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:15  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:03  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XCheckIfEvent 6"
+	/tset/Xlib12/chckifevnt/Test
+	"VSW5TESTSUITE CASE XCheckMaskEvent 6"
+	/tset/Xlib12/chckmskevn/Test
+	"VSW5TESTSUITE CASE XCheckTypedEvent 6"
+	/tset/Xlib12/chcktypdev/Test
+	"VSW5TESTSUITE CASE XCheckTypedWindowEvent 6"
+	/tset/Xlib12/chcktypdwd/Test
+	"VSW5TESTSUITE CASE XCheckWindowEvent 6"
+	/tset/Xlib12/chckwdwevn/Test
+	"VSW5TESTSUITE CASE XDisplayMotionBufferSize 2"
+	/tset/Xlib12/dsplymtnbf/Test
+	"VSW5TESTSUITE CASE XDisplayName 1"
+	/tset/Xlib12/dsplynm/Test
+	"VSW5TESTSUITE CASE XEventsQueued 6"
+	/tset/Xlib12/evntsqd/Test
+	"VSW5TESTSUITE CASE XFlush 1"
+	/tset/Xlib12/flsh/Test
+	"VSW5TESTSUITE CASE XGetErrorDatabaseText 5"
+	/tset/Xlib12/gterrrdtbs/Test
+	"VSW5TESTSUITE CASE XGetErrorText 2"
+	/tset/Xlib12/gterrrtxt/Test
+	"VSW5TESTSUITE CASE XGetMotionEvents 7"
+	/tset/Xlib12/gtmtnevnts/Test
+	"VSW5TESTSUITE CASE XIfEvent 4"
+	/tset/Xlib12/ifevnt/Test
+	"VSW5TESTSUITE CASE XMaskEvent 3"
+	/tset/Xlib12/mskevnt/Test
+	"VSW5TESTSUITE CASE XNextEvent 3"
+	/tset/Xlib12/nxtevnt/Test
+	"VSW5TESTSUITE CASE XPeekEvent 3"
+	/tset/Xlib12/pkevnt/Test
+	"VSW5TESTSUITE CASE XPeekIfEvent 4"
+	/tset/Xlib12/pkifevnt/Test
+	"VSW5TESTSUITE CASE XPending 3"
+	/tset/Xlib12/pndng/Test
+	"VSW5TESTSUITE CASE XPutBackEvent 2"
+	/tset/Xlib12/ptbckevnt/Test
+	"VSW5TESTSUITE CASE XSelectInput 8"
+	/tset/Xlib12/slctinpt/Test
+	"VSW5TESTSUITE CASE XSendEvent 22"
+	/tset/Xlib12/sndevnt/Test
+	"VSW5TESTSUITE CASE XSetAfterFunction 3"
+	/tset/Xlib12/staftrfnct/Test
+	"VSW5TESTSUITE CASE XSetErrorHandler 9"
+	/tset/Xlib12/sterrrhndl/Test
+	"VSW5TESTSUITE CASE XSetIOErrorHandler 7"
+	/tset/Xlib12/stioerrrhn/Test
+	"VSW5TESTSUITE CASE XSync 5"
+	/tset/Xlib12/sync/Test
+	"VSW5TESTSUITE CASE XSynchronize 5"
+	/tset/Xlib12/synchrnz/Test
+	"VSW5TESTSUITE CASE XWindowEvent 3"
+	/tset/Xlib12/wdwevnt/Test

@@ -1,0 +1,126 @@
+#!/bin/sh
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+:
+# $Header: /cvs/xtest/xtest/xts5/bin/vswrptx2,v 1.1 2005-02-12 14:37:13 anderson Exp $
+#
+#                Copyright (c) Applied Testing and Technology, Inc. 1993, 1994
+#                All Rights Reserved.
+#
+# Project:        VSW5
+#
+# File:           vswrptx2
+#
+# Description:
+#                Called from vswrptx to produces X/Open conformance
+#		 summary report for VSW
+#
+# Modifications:
+# $Log: vswrptx2,v $
+# Revision 1.1  2005-02-12 14:37:13  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:22:44  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 22:40:43  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:15:19  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:11:51  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 1.2  1998/01/13 01:58:43  andy
+# Changed X/Open to Open Group.
+#
+# Revision 1.1  1998/01/13 00:53:43  andy
+# Replace xreport[2]
+#
+# Revision 4.0  1995/12/15 08:37:36  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.2  1995/12/15  00:33:27  andy
+# Prepare for GA Release
+#
+
+echo "\t\t\tVSW5 OPEN GROUP SUMMARY REPORT\n"
+echo "\t\t\t       VSW Release \c"
+cat $TET_ROOT/vsw5/doc/VSW_RELEASE
+echo "\n\n"
+echo "\tTest Engineer:\t\t\t\tSignature:\n"
+echo "\tJob Title:\t\t\t\tDate:\n"
+echo "\tOrganization:\n"
+echo "\tAddress:\n\n\n"
+echo "\tClient Name:\t\t\t\tSignature:\n"
+echo "\tJob Title:\t\t\t\tDate:\n"
+echo "\tOrganization:\n"
+echo "\tAddress:\n\n\n"
+echo "\tTest Date:\n"
+echo "\tTest System:"
+echo "\f"
+echo "\t\t\tVSW5 OPEN GROUP SUMMARY REPORT\n"
+echo "\t\t\t       VSW Release \c"
+cat $TET_ROOT/vsw5/doc/VSW_RELEASE
+echo "\n"
+echo "\t\t\t   OPERATIONAL SUMMARY\n\n"
+echo "\tTest Date:\n"
+echo "\tTest Agency:\n"
+echo "\tTest Operator:\n\n\n"
+echo "\tReport Date: \c"
+date
+echo "\n"
+echo "\tSystem Configuration:\n"
+echo "\t\tHardware Description:\n\n\n\n"
+echo "\t\tSoftware Description and Release:\n\n\n\n"
+echo "\f"
+echo "\t\t\tVSW5 OPEN GROUP SUMMARY REPORT\n"
+echo "\t\t\t       VSW Release \c"
+cat $TET_ROOT/vsw5/doc/VSW_RELEASE
+echo "\n"
+echo "\t\t\t      CONFORMANCE SUMMARY\n\n"
+echo "\tThis is to certify that this system when tested for conformance to the"
+echo "\tOpen Group X Window (X11R5) Document Set achieved the result below\n"
+vswrpt -x 1 -d 2 $*
+echo "\n\n\tNumber of amendements ______________________\n"
+echo "\n\tApproval Signature/Date _____________________________________\n"
+echo "\f"
+echo "\t\t\tVSW5 OPEN GROUP SUMMARY REPORT\n"
+echo "\t\t\t       VSW Release \c"
+cat $TET_ROOT/vsw5/doc/VSW_RELEASE
+echo "\n"
+echo "\t\t\t     CONFIGURATION SUMMARY\n\n"
+vswrpt -c $*|sort|uniq
+echo "\f"
+echo "\t\t\tVSW5 OPEN GROUP SUMMARY REPORT\n"
+echo "\t\t\t       VSW Release \c"
+cat $TET_ROOT/vsw5/doc/VSW_RELEASE
+echo "\n"
+echo "\t\t\t       FIP SIGN-OFFS\n\n"
+vswrpt -d 0 -x 2 $*
+echo "\f"
+echo "\t\t\tVSW5 OPEN GROUP SUMMARY REPORT\n"
+echo "\t\t\t       VSW Release \c"
+cat $TET_ROOT/vsw5/doc/VSW_RELEASE
+echo "\n"
+echo "\t\t\t          OTHER FAILURES\n\n"
+vswrpt -d 0 -x 3 $*

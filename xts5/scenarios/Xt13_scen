@@ -1,0 +1,135 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/Xt13_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:	vsw5/scenarios/Xt13_scen
+#
+# Description:
+#       Scenario file for Xt chapter 13
+#
+# Modifications:
+# $Log: Xt13_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:27  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:34  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:28  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:27:02  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:45  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:26  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XtNumber 1"
+	/tset/Xt13/tnumber/Test
+	"VSW5TESTSUITE CASE XtNameToWidget 7"
+	/tset/Xt13/tnmtowidg/Test
+	"VSW5TESTSUITE CASE XtMalloc 6"
+	/tset/Xt13/tmalloc/Test
+	"VSW5TESTSUITE CASE XtCalloc 6"
+	/tset/Xt13/tcalloc/Test
+	"VSW5TESTSUITE CASE XtRealloc 12"
+	/tset/Xt13/trealloc/Test
+	"VSW5TESTSUITE CASE XtFree 4"
+	/tset/Xt13/tfree/Test
+	"VSW5TESTSUITE CASE XtNew 5"
+	/tset/Xt13/tnew/Test
+	"VSW5TESTSUITE CASE XtNewString 5"
+	/tset/Xt13/tnewstrg/Test
+	"VSW5TESTSUITE CASE XtAllocateGC 9"
+	/tset/Xt13/tallocgc/Test
+	"VSW5TESTSUITE CASE XtGetGC 4"
+	/tset/Xt13/tgtgc/Test
+	"VSW5TESTSUITE CASE XtReleaseGC 2"
+	/tset/Xt13/trelasegc/Test
+	"VSW5TESTSUITE CASE XtAppSetSelectionTimeout 1"
+	/tset/Xt13/tapststmo/Test
+	"VSW5TESTSUITE CASE XtAppGetSelectionTimeout 2"
+	/tset/Xt13/tapgtstot/Test
+	"VSW5TESTSUITE CASE XtGetSelectionRequest 3"
+	/tset/Xt13/tgtsreque/Test
+	"VSW5TESTSUITE CASE XtGetSelectionValue 4"
+	/tset/Xt13/tgtsvalue/Test
+	"VSW5TESTSUITE CASE XtGetSelectionValues 5"
+	/tset/Xt13/tgtslvals/Test
+	"VSW5TESTSUITE CASE XtOwnSelection 8"
+	/tset/Xt13/townselec/Test
+	"VSW5TESTSUITE CASE XtDisownSelection 5"
+	/tset/Xt13/tdisownsl/Test
+	"VSW5TESTSUITE CASE XtGetSelectionValueIncremental 6"
+	/tset/Xt13/tgtsvainc/Test
+	"VSW5TESTSUITE CASE XtGetSelectionValuesIncremental 7"
+	/tset/Xt13/tgtslvali/Test
+	"VSW5TESTSUITE CASE XtOwnSelectionIncremental 10"
+	/tset/Xt13/townselin/Test
+	"VSW5TESTSUITE CASE XtLastTimestampProcessed 2"
+	/tset/Xt13/tltmsproc/Test
+	"VSW5TESTSUITE CASE XtAddExposureToRegion 3"
+	/tset/Xt13/tadexptor/Test
+	"VSW5TESTSUITE CASE XtTranslateCoords 1"
+	/tset/Xt13/ttranslcd/Test
+	"VSW5TESTSUITE CASE XtWindowToWidget 2"
+	/tset/Xt13/twindtowd/Test
+	"VSW5TESTSUITE CASE XtGetApplicationNameAndClass 3"
+	/tset/Xt13/tgtapnacl/Test
+	"VSW5TESTSUITE CASE XtAppGetErrorDatabase 1"
+	/tset/Xt13/tapgterdb/Test
+	"VSW5TESTSUITE CASE XtAppGetErrorDatabaseText 4"
+	/tset/Xt13/tapgterdt/Test
+	"VSW5TESTSUITE CASE XtAppSetErrorMsgHandler 2"
+	/tset/Xt13/tapstermh/Test
+	"VSW5TESTSUITE CASE XtAppErrorMsg 3"
+	/tset/Xt13/taperrmsg/Test
+	"VSW5TESTSUITE CASE XtAppSetWarningMsgHandler 2"
+	/tset/Xt13/tapstwmhr/Test
+	"VSW5TESTSUITE CASE XtAppWarningMsg 3"
+	/tset/Xt13/tapwrnmsg/Test
+	"VSW5TESTSUITE CASE XtAppSetErrorHandler 2"
+	/tset/Xt13/tapsterhd/Test
+	"VSW5TESTSUITE CASE XtAppError 3"
+	/tset/Xt13/taperror/Test
+	"VSW5TESTSUITE CASE XtAppSetWarningHandler 2"
+	/tset/Xt13/tapstwhdr/Test
+	"VSW5TESTSUITE CASE XtAppWarning 3"
+	/tset/Xt13/tapwrning/Test
+	"VSW5TESTSUITE CASE XtSetWMColormapWindows 3"
+	/tset/Xt13/tstwmcmw/Test
+	"VSW5TESTSUITE CASE XtFindFile 7"
+	/tset/Xt13/tfindfile/Test
+	"VSW5TESTSUITE CASE XtResolvePathname 20"
+	/tset/Xt13/trspathnm/Test

@@ -1,0 +1,127 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/XIproto_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:        XIproto_scen
+#
+# Description:
+#       Scenario file Input Device Extension protocol extensions
+#
+# Modifications:
+# $Log: XIproto_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:17  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:24  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:19  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:26:52  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:47  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:00  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE AllowDeviceEvents 3"
+	/tset/XIproto/alldvevnts/Test
+	"VSW5TESTSUITE CASE ChangeDeviceControl 3"
+	/tset/XIproto/chgdvctl/Test
+	"VSW5TESTSUITE CASE ChangeDeviceDontPropagateList 3"
+	/tset/XIproto/chgdvprop/Test
+	"VSW5TESTSUITE CASE ChangeFeedbackControl 3"
+	/tset/XIproto/chgfctl/Test
+	"VSW5TESTSUITE CASE ChangeKeyboardDevice 4"
+	/tset/XIproto/chgkbd/Test
+	"VSW5TESTSUITE CASE ChangePointerDevice 4"
+	/tset/XIproto/chgptr/Test
+	"VSW5TESTSUITE CASE ChangeDeviceKeyMapping 3"
+	/tset/XIproto/chngdvkmap/Test
+	"VSW5TESTSUITE CASE CloseDevice 3"
+	/tset/XIproto/closdev/Test
+	"VSW5TESTSUITE CASE DeviceBell 3"
+	/tset/XIproto/dvbell/Test
+	"VSW5TESTSUITE CASE GetDeviceModifierMapping 3"
+	/tset/XIproto/getdvmmap/Test
+	"VSW5TESTSUITE CASE GetFeedbackControl 3"
+	/tset/XIproto/getfctl/Test
+	"VSW5TESTSUITE CASE GetExtensionVersion 3"
+	/tset/XIproto/getvers/Test
+	"VSW5TESTSUITE CASE GrabDevice 3"
+	/tset/XIproto/grbdev/Test
+	"VSW5TESTSUITE CASE GrabDeviceButton 3"
+	/tset/XIproto/grbdvbtn/Test
+	"VSW5TESTSUITE CASE GrabDeviceKey 3"
+	/tset/XIproto/grbdvky/Test
+	"VSW5TESTSUITE CASE GetDeviceButtonMapping 3"
+	/tset/XIproto/gtbtnmppn/Test
+	"VSW5TESTSUITE CASE GetDeviceControl 3"
+	/tset/XIproto/gtdvctl/Test
+	"VSW5TESTSUITE CASE GetDeviceFocus 3"
+	/tset/XIproto/gtdvfcs/Test
+	"VSW5TESTSUITE CASE GetDeviceMotionEvents 3"
+	/tset/XIproto/gtdvmtnev/Test
+	"VSW5TESTSUITE CASE GetDeviceDontPropagateList 3"
+	/tset/XIproto/gtdvprop/Test
+	"VSW5TESTSUITE CASE GetDeviceKeyMapping 3"
+	/tset/XIproto/gtkeymppn/Test
+	"VSW5TESTSUITE CASE GetSelectedExtensionEvents 3"
+	/tset/XIproto/gtslctexev/Test
+	"VSW5TESTSUITE CASE ListInputDevices 3"
+	/tset/XIproto/listdev/Test
+	"VSW5TESTSUITE CASE OpenDevice 3"
+	/tset/XIproto/opendev/Test
+	"VSW5TESTSUITE CASE QueryDeviceState 3"
+	/tset/XIproto/qrydvstat/Test
+	"VSW5TESTSUITE CASE SetDeviceValuators 3"
+	/tset/XIproto/setdval/Test
+	"VSW5TESTSUITE CASE SetDeviceButtonMapping 3"
+	/tset/XIproto/setdvbmap/Test
+	"VSW5TESTSUITE CASE SetDeviceFocus 3"
+	/tset/XIproto/setdvfcs/Test
+	"VSW5TESTSUITE CASE SetDeviceModifierMapping 3"
+	/tset/XIproto/setdvmmap/Test
+	"VSW5TESTSUITE CASE SetDeviceMode 3"
+	/tset/XIproto/setdvmode/Test
+	"VSW5TESTSUITE CASE SelectExtensionEvent 3"
+	/tset/XIproto/slctexevnt/Test
+	"VSW5TESTSUITE CASE SendExtensionEvent 3"
+	/tset/XIproto/sndextevnt/Test
+	"VSW5TESTSUITE CASE UngrabDevice 3"
+	/tset/XIproto/ungrbdev/Test
+	"VSW5TESTSUITE CASE UngrabDeviceButton 3"
+	/tset/XIproto/ungrbdvbtn/Test
+	"VSW5TESTSUITE CASE UngrabDeviceKey 3"
+	/tset/XIproto/ungrbdvky/Test

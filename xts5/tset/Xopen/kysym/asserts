@@ -1,0 +1,102 @@
+>># $Header: /cvs/xtest/xtest/xts5/tset/Xopen/kysym/Attic/asserts,v 1.1 2005-02-12 14:37:43 anderson Exp $
+>># 
+>># Project: VSW5
+>># 
+>># File: vsw5/tset/Xopen/kysym/aserts
+>># 
+>># Description:
+>># 	Assertions for keysym()
+>># 
+>># Modifications:
+>># $Log: asserts,v $
+>># Revision 1.1  2005-02-12 14:37:43  anderson
+>># Initial revision
+>>#
+>># Revision 8.0  1998/12/23 23:35:34  mar
+>># Branch point for Release 5.0.2
+>>#
+>># Revision 7.0  1998/10/30 22:58:07  mar
+>># Branch point for Release 5.0.2b1
+>>#
+>># Revision 6.0  1998/03/02 05:26:48  tbr
+>># Branch point for Release 5.0.1
+>>#
+>># Revision 5.0  1998/01/26 03:23:21  tbr
+>># Branch point for Release 5.0.1b1
+>>#
+>># Revision 4.0  1995/12/15 09:13:37  tbr
+>># Branch point for Release 5.0.0
+>>#
+>># Revision 3.1  1995/12/15  01:16:51  andy
+>># Prepare for GA Release
+>>#
+>># 
+>># 
+>># 
+>># 
+>># 
+>># 
+>>TITLE keysym Xopen
+>>ASSERTION A keysym-1
+When the header file <X11/keysym.h> is included, then the
+symbols in the table which have code 1 are defined to have
+the hexadecimal values given in the table.
+>>STRATEGY
+Include header file <X11/keysym.h>
+For each KeySym in table with code 1:
+	Verify that the symbol is defined using #ifdef.
+	Verify that the symbol has the expected value using #if.
+>>ASSERTION A keysym-2
+When the header file <X11/keysym.h> is included, then the
+symbols in the table which have code 2 are defined to have
+the hexadecimal values given in the table.
+>>STRATEGY
+Include header file <X11/keysym.h>
+For each KeySym in table with code 2:
+	Verify that the symbol is defined using #ifdef.
+	Verify that the symbol has the expected value using #if.
+>>ASSERTION A keysym-3
+When the header file <X11/keysym.h> is included, then the
+symbols in the table which have code 3 are defined to have
+the hexadecimal values given in the table.
+>>STRATEGY
+Include header file <X11/keysym.h>
+For each KeySym in table with code 3:
+	Verify that the symbol is defined using #ifdef.
+	Verify that the symbol has the expected value using #if.
+>>ASSERTION A keysym-4
+When the header file <X11/keysym.h> is included, then the
+symbols in the table which have code 4 are defined to have
+the hexadecimal values given in the table.
+>>STRATEGY
+Include header file <X11/keysym.h>
+For each KeySym in table with code 4:
+	Verify that the symbol is defined using #ifdef.
+	Verify that the symbol has the expected value using #if.
+>>ASSERTION A keysym-5
+When the header file <X11/keysym.h> is included, then the
+symbols in the table which have code G are defined to have
+the hexadecimal values given in the table.
+>>STRATEGY
+Include header file <X11/keysym.h>
+For each KeySym in table with code G:
+	Verify that the symbol is defined using #ifdef.
+	Verify that the symbol has the expected value using #if.
+>>ASSERTION A keysym-6
+When the header file <X11/keysym.h> is included, then the
+symbols in the table which have code M are defined to have
+the hexadecimal values given in the table.
+>>STRATEGY
+Include header file <X11/keysym.h>
+For each KeySym in table with code M:
+	Verify that the symbol is defined using #ifdef.
+	Verify that the symbol has the expected value using #if.
+>>ASSERTION A keysym-7
+When the header file <X11/keysym.h> is included, then the
+symbols in the table are defined to have the hexadecimal
+values given in the table.
+>>STRATEGY
+Include header file <X11/keysym.h>
+For each KeySym in table:
+	Verify that the symbol is defined using #ifdef.
+	Verify that the symbol has the expected value using #if.

@@ -1,0 +1,99 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/Xt3_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:	vsw5/scenarios/Xt3_scen
+#
+# Description:
+#       Scenario file Xt chapter 3 
+#
+# Modifications:
+# $Log: Xt3_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:28  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:36  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:29  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:27:03  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:32  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:30  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE DataTypes 9"
+	/tset/Xt3/dttyps/Test
+	"VSW5TESTSUITE CASE CoreWidget 9"
+	/tset/Xt3/wdgtcr/Test
+	"VSW5TESTSUITE CASE CompositeWidget 11"
+	/tset/Xt3/wdgtcmpst/Test
+	"VSW5TESTSUITE CASE ConstraintWidget 11"
+	/tset/Xt3/wdgtcnstrn/Test
+	"VSW5TESTSUITE CASE XtClass 1"
+	/tset/Xt3/tclss/Test
+	"VSW5TESTSUITE CASE XtSuperClass 1"
+	/tset/Xt3/tsprclss/Test
+	"VSW5TESTSUITE CASE XtIsSubclass 2"
+	/tset/Xt3/tissbclss/Test
+	"VSW5TESTSUITE CASE XtIsObject 2"
+	/tset/Xt3/tisobjct/Test
+	"VSW5TESTSUITE CASE XtIsRectObj 2"
+	/tset/Xt3/tisrctobj/Test
+	"VSW5TESTSUITE CASE XtIsWidget 2"
+	/tset/Xt3/tiswdgt/Test
+	"VSW5TESTSUITE CASE XtIsComposite 2"
+	/tset/Xt3/tiscmpst/Test
+	"VSW5TESTSUITE CASE XtIsConstraint 2"
+	/tset/Xt3/tiscnstrnt/Test
+	"VSW5TESTSUITE CASE XtIsShell 2"
+	/tset/Xt3/tisshll/Test
+	"VSW5TESTSUITE CASE XtIsOverrideShell 2"
+	/tset/Xt3/tisovrrdsh/Test
+	"VSW5TESTSUITE CASE XtIsWMShell 2"
+	/tset/Xt3/tiswmshll/Test
+	"VSW5TESTSUITE CASE XtIsVendorShell 2"
+	/tset/Xt3/tisvndrshl/Test
+	"VSW5TESTSUITE CASE XtIsTransientShell 2"
+	/tset/Xt3/tistrnsnts/Test
+	"VSW5TESTSUITE CASE XtIsTopLevelShell 2"
+	/tset/Xt3/tistplvlsh/Test
+	"VSW5TESTSUITE CASE XtIsApplicationShell 2"
+	/tset/Xt3/tisapplctn/Test
+	"VSW5TESTSUITE CASE XtCheckSubclass 3"
+	/tset/Xt3/tchcksbcls/Test
+	"VSW5TESTSUITE CASE XtInitializeWidgetClass 2"
+	/tset/Xt3/tintlzwdgt/Test

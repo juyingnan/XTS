@@ -1,0 +1,270 @@
+>># $Header: /cvs/xtest/xtest/xts5/tset/Xopen/crsrfnt/Attic/asserts,v 1.1 2005-02-12 14:37:43 anderson Exp $
+>># 
+>># Project: VSW5
+>># 
+>># File: vsw5/tset/Xopen/crsrfnt/asserts
+>># 
+>># Description:
+>># 	Assertions for cursorfont()
+>># 
+>># Modifications:
+>># $Log: asserts,v $
+>># Revision 1.1  2005-02-12 14:37:43  anderson
+>># Initial revision
+>>#
+>># Revision 8.0  1998/12/23 23:35:28  mar
+>># Branch point for Release 5.0.2
+>>#
+>># Revision 7.0  1998/10/30 22:57:56  mar
+>># Branch point for Release 5.0.2b1
+>>#
+>># Revision 6.0  1998/03/02 05:26:42  tbr
+>># Branch point for Release 5.0.1
+>>#
+>># Revision 5.0  1998/01/26 03:23:16  tbr
+>># Branch point for Release 5.0.1b1
+>>#
+>># Revision 4.0  1995/12/15 09:13:20  tbr
+>># Branch point for Release 5.0.0
+>>#
+>># Revision 3.1  1995/12/15  01:16:31  andy
+>># Prepare for GA Release
+>>#
+>># 
+>># 
+>># 
+>># 
+>># 
+>># 
+>>TITLE cursorfont Xopen
+>>ASSERTION A cursorfont-1
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_X_cursor is defined with the value 0.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_X_cursor is defined.
+Verify that the symbol is defined to have value 0.
+>>ASSERTION A cursorfont-2
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_bottom_left_corner is defined with the value
+12.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_bottom_left_corner is defined.
+Verify that the symbol is defined to have value 12.
+>>ASSERTION A cursorfont-3
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_bottom_right_corner is defined with the value
+14.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_bottom_right_corner is defined.
+Verify that the symbol is defined to have value 14.
+>>ASSERTION A cursorfont-4
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_top_left_corner is defined with the value 134.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_top_left_corner is defined.
+Verify that the symbol is defined to have value 134.
+>>ASSERTION A cursorfont-5
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_top_right_corner is defined with the value
+136.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_top_right_corner is defined.
+Verify that the symbol is defined to have value 136.
+>>ASSERTION A cursorfont-6
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_arrow is defined with the value 2.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_arrow is defined.
+Verify that the symbol is defined to have value 2.
+>>ASSERTION A cursorfont-7
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_based_arrow_down is defined with the value 4.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_based_arrow_down is defined.
+Verify that the symbol is defined to have value 4.
+>>ASSERTION A cursorfont-8
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_based_arrow_up is defined with the value 6.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_based_arrow_up is defined.
+Verify that the symbol is defined to have value 6.
+>>ASSERTION A cursorfont-9
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_double_arrow is defined with the value 42.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_double_arrow is defined.
+Verify that the symbol is defined to have value 42.
+>>ASSERTION A cursorfont-10
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_question_arrow is defined with the value 92.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_question_arrow is defined.
+Verify that the symbol is defined to have value 92.
+>>ASSERTION A cursorfont-11
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_sb_h_double_arrow is defined with the value
+108.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_sb_h_double_arrow is defined.
+Verify that the symbol is defined to have value 108.
+>>ASSERTION A cursorfont-12
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_sb_v_double_arrow is defined with the value
+116.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_sb_v_double_arrow is defined.
+Verify that the symbol is defined to have value 116.
+>>ASSERTION A cursorfont-13
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_top_left_arrow is defined with the value 132.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_top_left_arrow is defined.
+Verify that the symbol is defined to have value 132.
+>>ASSERTION A cursorfont-14
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_bottom_tee is defined with the value 18.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_bottom_tee is defined.
+Verify that the symbol is defined to have value 18.
+>>ASSERTION A cursorfont-15
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_left_tee is defined with the value 72.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_left_tee is defined.
+Verify that the symbol is defined to have value 72.
+>>ASSERTION A cursorfont-16
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_right_tee is defined with the value 98.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_right_tee is defined.
+Verify that the symbol is defined to have value 98.
+>>ASSERTION A cursorfont-17
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_top_tee is defined with the value 140.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_top_tee is defined.
+Verify that the symbol is defined to have value 140.
+>>ASSERTION A cursorfont-18
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_bottom_side is defined with the value 16.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_bottom_side is defined.
+Verify that the symbol is defined to have value 16.
+>>ASSERTION A cursorfont-19
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_left_side is defined with the value 70.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_left_side is defined.
+Verify that the symbol is defined to have value 70.
+>>ASSERTION A cursorfont-20
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_right_side is defined with the value 96.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_right_side is defined.
+Verify that the symbol is defined to have value 96.
+>>ASSERTION A cursorfont-21
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_top_side is defined with the value 138.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_top_side is defined.
+Verify that the symbol is defined to have value 138.
+>>ASSERTION A cursorfont-22
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_ll_angle is defined with the value 76.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_ll_angle is defined.
+Verify that the symbol is defined to have value 76.
+>>ASSERTION A cursorfont-23
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_lr_angle is defined with the value 78.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_lr_angle is defined.
+Verify that the symbol is defined to have value 78.
+>>ASSERTION A cursorfont-24
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_ul_angle is defined with the value 144.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_ul_angle is defined.
+Verify that the symbol is defined to have value 144.
+>>ASSERTION A cursorfont-25
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_ur_angle is defined with the value 148.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_ur_angle is defined.
+Verify that the symbol is defined to have value 148.
+>>ASSERTION A cursorfont-26
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_circle is defined with the value 24.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_circle is defined.
+Verify that the symbol is defined to have value 24.
+>>ASSERTION A cursorfont-27
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_cross is defined with the value 30.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_cross is defined.
+Verify that the symbol is defined to have value 30.
+>>ASSERTION A cursorfont-28
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_crosshair is defined with the value 34.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_crosshair is defined.
+Verify that the symbol is defined to have value 34.
+>>ASSERTION A cursorfont-29
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_center_ptr is defined with the value 22.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_center_ptr is defined.
+Verify that the symbol is defined to have value 22.
+>>ASSERTION A cursorfont-30
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_left_ptr is defined with the value 68.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_left_ptr is defined.
+Verify that the symbol is defined to have value 68.
+>>ASSERTION A cursorfont-31
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_right_ptr is defined with the value 94.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_right_ptr is defined.
+Verify that the symbol is defined to have value 94.
+>>ASSERTION A cursorfont-32
+When the header file <X11/cursorfont.h> is included, then
+the symbol XC_num_glyphs is defined with a value which is
+even and is not less than 150.
+>>STRATEGY
+Include the file <X11/cursorfont.h>
+Verify that the symbol XC_num_glyphs is defined.
+Verify that the sumbol value is even.
+Verify that the symbol is defined to have value not less than 150.

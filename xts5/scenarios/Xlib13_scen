@@ -1,0 +1,121 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/Xlib13_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:        Xlib13_scen
+#
+# Description:
+#       Scenario file xlib chapter13
+#
+# Modifications:
+# $Log: Xlib13_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:19  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:25  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:20  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:26:54  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:16  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:05  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XAllowEvents 29"
+	/tset/Xlib13/allwevnts/Test
+	"VSW5TESTSUITE CASE XAutoRepeatOff 1"
+	/tset/Xlib13/atrptoff/Test
+	"VSW5TESTSUITE CASE XAutoRepeatOn 1"
+	/tset/Xlib13/atrpton/Test
+	"VSW5TESTSUITE CASE XBell 3"
+	/tset/Xlib13/bll/Test
+	"VSW5TESTSUITE CASE XChangeActivePointerGrab 5"
+	/tset/Xlib13/chngactvpn/Test
+	"VSW5TESTSUITE CASE XChangeKeyboardControl 20"
+	/tset/Xlib13/chngkybrdc/Test
+	"VSW5TESTSUITE CASE XChangeKeyboardMapping 7"
+	/tset/Xlib13/chngkybrdm/Test
+	"VSW5TESTSUITE CASE XChangePointerControl 11"
+	/tset/Xlib13/chngpntrcn/Test
+	"VSW5TESTSUITE CASE XDeleteModifiermapEntry 1"
+	/tset/Xlib13/dltmdfrmpe/Test
+	"VSW5TESTSUITE CASE XDisplayKeycodes 3"
+	/tset/Xlib13/dsplykycds/Test
+	"VSW5TESTSUITE CASE XFreeModifiermap 1"
+	/tset/Xlib13/frmdfrmp/Test
+	"VSW5TESTSUITE CASE XGrabButton 39"
+	/tset/Xlib13/grbbttn/Test
+	"VSW5TESTSUITE CASE XGrabKey 16"
+	/tset/Xlib13/grbky/Test
+	"VSW5TESTSUITE CASE XGrabKeyboard 25"
+	/tset/Xlib13/grbkybrd/Test
+	"VSW5TESTSUITE CASE XGrabPointer 34"
+	/tset/Xlib13/grbpntr/Test
+	"VSW5TESTSUITE CASE XGetInputFocus 1"
+	/tset/Xlib13/gtinptfcs/Test
+	"VSW5TESTSUITE CASE XGetKeyboardControl 1"
+	/tset/Xlib13/gtkybrdcnt/Test
+	"VSW5TESTSUITE CASE XGetKeyboardMapping 6"
+	/tset/Xlib13/gtkybrdmpp/Test
+	"VSW5TESTSUITE CASE XGetModifierMapping 2"
+	/tset/Xlib13/gtmdfrmppn/Test
+	"VSW5TESTSUITE CASE XGetPointerControl 1"
+	/tset/Xlib13/gtpntrcntr/Test
+	"VSW5TESTSUITE CASE XGetPointerMapping 3"
+	/tset/Xlib13/gtpntrmppn/Test
+	"VSW5TESTSUITE CASE XInsertModifiermapEntry 1"
+	/tset/Xlib13/insrtmdfrm/Test
+	"VSW5TESTSUITE CASE XNewModifiermap 1"
+	/tset/Xlib13/nwmdfrmp/Test
+	"VSW5TESTSUITE CASE XQueryKeymap 1"
+	/tset/Xlib13/qrykymp/Test
+	"VSW5TESTSUITE CASE XSetInputFocus 13"
+	/tset/Xlib13/stinptfcs/Test
+	"VSW5TESTSUITE CASE XSetModifierMapping 8"
+	/tset/Xlib13/stmdfrmppn/Test
+	"VSW5TESTSUITE CASE XSetPointerMapping 7"
+	/tset/Xlib13/stpntrmppn/Test
+	"VSW5TESTSUITE CASE XUngrabButton 6"
+	/tset/Xlib13/ungrbbttn/Test
+	"VSW5TESTSUITE CASE XUngrabKey 7"
+	/tset/Xlib13/ungrbky/Test
+	"VSW5TESTSUITE CASE XUngrabKeyboard 3"
+	/tset/Xlib13/ungrbkybrd/Test
+	"VSW5TESTSUITE CASE XUngrabPointer 3"
+	/tset/Xlib13/ungrbpntr/Test
+	"VSW5TESTSUITE CASE XWarpPointer 9"
+	/tset/Xlib13/wrppntr/Test

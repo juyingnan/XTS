@@ -1,0 +1,101 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/Xt12_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:	vsw5/scenarios/Xt12_scen
+#
+# Description:
+#       Scenario file for Xt chapter 12
+#
+# Modifications:
+# $Log: Xt12_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:26  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:34  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:28  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:27:01  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:44  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:25  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XtAppAddActions 4"
+	/tset/Xt12/tapadactn/Test
+	"VSW5TESTSUITE CASE XtAppAddActionHook 6"
+	/tset/Xt12/tapadachk/Test
+	"VSW5TESTSUITE CASE XtRemoveActionHook 1"
+	/tset/Xt12/trmvachok/Test
+	"VSW5TESTSUITE CASE XtSetMultiClickTime 1"
+	/tset/Xt12/tstmclktm/Test
+	"VSW5TESTSUITE CASE XtGetMultiClickTime 2"
+	/tset/Xt12/tgtmctime/Test
+	"VSW5TESTSUITE CASE XtParseTranslationTable 1"
+	/tset/Xt12/tprsttbl/Test
+	"VSW5TESTSUITE CASE XtAugmentTranslations 4"
+	/tset/Xt12/taugtrtns/Test
+	"VSW5TESTSUITE CASE XtOverrideTranslations 4"
+	/tset/Xt12/tovertrsl/Test
+	"VSW5TESTSUITE CASE XtUninstallTranslations 1"
+	/tset/Xt12/tuntrnsls/Test
+	"VSW5TESTSUITE CASE XtParseAcceleratorTable 1"
+	/tset/Xt12/tprsactbl/Test
+	"VSW5TESTSUITE CASE XtInstallAccelerators 2"
+	/tset/Xt12/tinaclrts/Test
+	"VSW5TESTSUITE CASE XtInstallAllAccelerators 1"
+	/tset/Xt12/tinaaclrt/Test
+	"VSW5TESTSUITE CASE XtGetKeysymTable 4"
+	/tset/Xt12/tgtkytbl/Test
+	"VSW5TESTSUITE CASE XtSetKeyTranslator 1"
+	/tset/Xt12/tstkytrlr/Test
+	"VSW5TESTSUITE CASE XtTranslateKeycode 2"
+	/tset/Xt12/ttranskcd/Test
+	"VSW5TESTSUITE CASE XtRegisterCaseConverter 2"
+	/tset/Xt12/tregccon/Test
+	"VSW5TESTSUITE CASE XtConvertCase 2"
+	/tset/Xt12/tcnvrtcas/Test
+	"VSW5TESTSUITE CASE XtGetActionKeysym 8"
+	/tset/Xt12/tgtacksym/Test
+	"VSW5TESTSUITE CASE XtKeysymToKeycodeList 2"
+	/tset/Xt12/tkytoklst/Test
+	"VSW5TESTSUITE CASE XtCallActionProc 2"
+	/tset/Xt12/tcalacprc/Test
+	"VSW5TESTSUITE CASE XtRegisterGrabAction 11"
+	/tset/Xt12/tregraba/Test
+	"VSW5TESTSUITE CASE XtGetActionList 5"
+	/tset/Xt12/tgtactlst/Test

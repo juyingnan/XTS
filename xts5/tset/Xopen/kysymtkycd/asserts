@@ -1,0 +1,166 @@
+>># $Header: /cvs/xtest/xtest/xts5/tset/Xopen/kysymtkycd/Attic/asserts,v 1.1 2005-02-12 14:37:43 anderson Exp $
+>># 
+>># Project: VSW5
+>># 
+>># File: vsw5/tset/Xopen/kysymtkycd/asserts
+>># 
+>># Description:
+>># 	Assertions for XKeysymToKeycode()
+>># 
+>># Modifications:
+>># $Log: asserts,v $
+>># Revision 1.1  2005-02-12 14:37:43  anderson
+>># Initial revision
+>>#
+>># Revision 8.0  1998/12/23 23:35:50  mar
+>># Branch point for Release 5.0.2
+>>#
+>># Revision 7.0  1998/10/30 22:58:32  mar
+>># Branch point for Release 5.0.2b1
+>>#
+>># Revision 6.0  1998/03/02 05:27:04  tbr
+>># Branch point for Release 5.0.1
+>>#
+>># Revision 5.0  1998/01/26 03:23:37  tbr
+>># Branch point for Release 5.0.1b1
+>>#
+>># Revision 4.0  1995/12/15 09:14:26  tbr
+>># Branch point for Release 5.0.0
+>>#
+>># Revision 3.1  1995/12/15  01:17:46  andy
+>># Prepare for GA Release
+>>#
+>># 
+>># 
+>># 
+>># 
+>># 
+>># 
+>># 
+>>TITLE XKeysymToKeycode XOPEN
+>>ASSERTION A XKeysymToKeycode-1
+When the keysym argument is a KeySym in the table which is
+defined and has code 1, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code 1:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.
+>>ASSERTION A XKeysymToKeycode-2
+When the keysym argument is a KeySym in the table which is
+defined and has code 2, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code 2:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.
+>>ASSERTION A XKeysymToKeycode-3
+When the keysym argument is a KeySym in the table which is
+defined and has code 3, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code 3:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.
+>>ASSERTION A XKeysymToKeycode-4
+When the keysym argument is a KeySym in the table which is
+defined and has code 4, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code 4:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.
+>>ASSERTION A XKeysymToKeycode-5
+When the keysym argument is a KeySym in the table which is
+defined and has code A, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code A:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.
+>>ASSERTION A XKeysymToKeycode-6
+When the keysym argument is a KeySym in the table which is
+defined and has code C, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code C:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.
+>>ASSERTION A XKeysymToKeycode-7
+When the keysym argument is a KeySym in the table which is
+defined and has code G, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code G:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.
+>>ASSERTION A XKeysymToKeycode-8
+When the keysym argument is a KeySym in the table which is
+defined and has code H, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code H:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.
+>>ASSERTION A XKeysymToKeycode-9
+When the keysym argument is a KeySym in the table which is
+defined and has code K, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code K:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.
+>>ASSERTION A XKeysymToKeycode-10
+When the keysym argument is a KeySym in the table which is
+defined and has code L, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code L:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.
+>>ASSERTION A XKeysymToKeycode-11
+When the keysym argument is a KeySym in the table which is
+defined and has code M, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code M:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.
+>>ASSERTION A XKeysymToKeycode-12
+When the keysym argument is a KeySym in the table which is
+defined and has code P, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code P:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.
+>>ASSERTION A XKeysymToKeycode-13
+When the keysym argument is a KeySym in the table which is
+defined and has code S, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code S:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.
+>>ASSERTION A XKeysymToKeycode-14
+When the keysym argument is a KeySym in the table which is
+defined and has code T, then a call to XKeysymToKeycode
+returns the KeyCode defined for that KeySym.
+>>STRATEGY
+For each KeySym in table with code T:
+	Call XKeysymToKeycode to obtain the KeyCode defined for that KeySym.
+	Call XKeycodeToKeysym to obtain each KeySym for that KeyCode.
+	Verify that one of the KeySyms returned is the original KeySym.

@@ -1,0 +1,123 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/Xlib11_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:        Xlib11_scen
+#
+# Description:
+#       Scenario file xlib chapter11
+#
+# Modifications:
+# $Log: Xlib11_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:18  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:25  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:20  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:26:53  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:14  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:02  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE ButtonPress 12"
+	/tset/Xlib11/bttnprss/Test
+	"VSW5TESTSUITE CASE ButtonRelease 9"
+	/tset/Xlib11/bttnrls/Test
+	"VSW5TESTSUITE CASE ClientMessage 1"
+	/tset/Xlib11/clntmssg/Test
+	"VSW5TESTSUITE CASE ColormapNotify 2"
+	/tset/Xlib11/clrmpntfy/Test
+	"VSW5TESTSUITE CASE ConfigureNotify 3"
+	/tset/Xlib11/cnfgrntfy/Test
+	"VSW5TESTSUITE CASE ConfigureRequest 7"
+	/tset/Xlib11/cnfgrrqst/Test
+	"VSW5TESTSUITE CASE CirculateNotify 3"
+	/tset/Xlib11/crcltntfy/Test
+	"VSW5TESTSUITE CASE CirculateRequest 2"
+	/tset/Xlib11/crcltrqst/Test
+	"VSW5TESTSUITE CASE CreateNotify 2"
+	/tset/Xlib11/crtntfy/Test
+	"VSW5TESTSUITE CASE DestroyNotify 3"
+	/tset/Xlib11/dstryntfy/Test
+	"VSW5TESTSUITE CASE EnterNotify 13"
+	/tset/Xlib11/entrntfy/Test
+	"VSW5TESTSUITE CASE Expose 7"
+	/tset/Xlib11/exps/Test
+	"VSW5TESTSUITE CASE FocusIn 21"
+	/tset/Xlib11/fcsin/Test
+	"VSW5TESTSUITE CASE FocusOut 19"
+	/tset/Xlib11/fcsot/Test
+	"VSW5TESTSUITE CASE GraphicsExpose 1"
+	/tset/Xlib11/grphcsexps/Test
+	"VSW5TESTSUITE CASE GravityNotify 3"
+	/tset/Xlib11/grvtyntfy/Test
+	"VSW5TESTSUITE CASE KeymapNotify 4"
+	/tset/Xlib11/kympntfy/Test
+	"VSW5TESTSUITE CASE KeyPress 9"
+	/tset/Xlib11/kyprss/Test
+	"VSW5TESTSUITE CASE KeyRelease 9"
+	/tset/Xlib11/kyrls/Test
+	"VSW5TESTSUITE CASE LeaveNotify 15"
+	/tset/Xlib11/lvntfy/Test
+	"VSW5TESTSUITE CASE MapNotify 4"
+	/tset/Xlib11/mpntfy/Test
+	"VSW5TESTSUITE CASE MappingNotify 1"
+	/tset/Xlib11/mppngntfy/Test
+	"VSW5TESTSUITE CASE MapRequest 2"
+	/tset/Xlib11/mprqst/Test
+	"VSW5TESTSUITE CASE MotionNotify 19"
+	/tset/Xlib11/mtnntfy/Test
+	"VSW5TESTSUITE CASE NoExpose 1"
+	/tset/Xlib11/nexps/Test
+	"VSW5TESTSUITE CASE PropertyNotify 2"
+	/tset/Xlib11/prprtyntfy/Test
+	"VSW5TESTSUITE CASE ReparentNotify 4"
+	/tset/Xlib11/rprntntfy/Test
+	"VSW5TESTSUITE CASE ResizeRequest 2"
+	/tset/Xlib11/rszrqst/Test
+	"VSW5TESTSUITE CASE SelectionClear 1"
+	/tset/Xlib11/slctnclr/Test
+	"VSW5TESTSUITE CASE SelectionNotify 1"
+	/tset/Xlib11/slctnntfy/Test
+	"VSW5TESTSUITE CASE SelectionRequest 1"
+	/tset/Xlib11/slctnrqst/Test
+	"VSW5TESTSUITE CASE UnmapNotify 3"
+	/tset/Xlib11/unmpntfy/Test
+	"VSW5TESTSUITE CASE VisibilityNotify 9"
+	/tset/Xlib11/vsbltyntfy/Test

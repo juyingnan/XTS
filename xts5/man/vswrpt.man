@@ -1,0 +1,244 @@
+.\"
+.\"Copyright (c) 2005 X.Org Foundation LLC
+.\"
+.\"Permission is hereby granted, free of charge, to any person obtaining a copy of
+.\"this software and associated documentation files (the "Software"), to deal in
+.\"the Software without restriction, including without limitation the rights to
+.\"use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+.\"of the Software, and to permit persons to whom the Software is furnished to do
+.\"so, subject to the following conditions:
+.\"
+.\"The above copyright notice and this permission notice shall be included in all
+.\"copies or substantial portions of the Software.
+.\"
+.\"THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+.\"IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+.\"FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+.\"AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+.\"LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+.\"OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+.\"SOFTWARE.
+.\"
+.\"$Header: /cvs/xtest/xtest/xts5/man/vswrpt.man,v 1.1 2005-02-12 14:37:14 anderson Exp $
+.\"Copyright (c) 1994, 1995 Applied Testing and Technology, Inc.
+.\"All rights reserved
+.TH vswrpt "1" "4 July 1995" "APTEST" "VSW5"
+.SH NAME
+vswrpt \- Report Generator for the VSW5 Test Suite
+.SH SYNOPSIS
+.in +10n
+.ti -10n
+\fBvswrpt\fR
+[
+.B -d
+.I detail
+] [
+.B -f
+.I file_name
+] [
+.B -h
+] [
+.B -j
+.I dir_number
+] [
+.B -s
+.I scope
+] [
+.B -t
+.I test-case
+] [
+.B -u
+] [
+.B -v
+] [
+.B -w
+]
+.SH DESCRIPTION
+\fRThe VSW5 Report Generator (vswrpt) produces a 
+report from a Test Environment Toolkit (TET) journal file produced from
+a run of the VSW5 Test Suite.  The report is written to stdout.
+.PP
+vswrpt employs the standard TET journal information along with additional
+information provided by the Test Suite via the scenario file and the tests
+themselves.  This data provides the names of Test Suite Sections and Test Cases
+as well as invariant Test Purpose numbering to allow vswrpt to detect
+missing Test Cases or Purposes.
+.PP
+The journal file given to vswrpt must be the result of a tcc command which
+includes the -e option.  The -b and/or -c options may also have been used.
+vswrpt cannot be used on journal files which do not contain the additional
+information provided by VSW5.
+.SH OPTIONS
+.TP 5
+.B Journal File Selection
+.PP
+By default vswrpt uses the most recent journal file under the
+directory $TET_ROOT/vsw5/results as input.  Three options allow specification
+of alternative files for use as the input journal. 
+.PP
+.B -f file_name
+.PP
+.in +5
+Use the file 
+.I file_name
+as the input journal.
+.PP
+.B -j dir_number
+.PP
+.in +5
+Use the file
+.I journal
+in the directory under $TET_ROOT/vsw5/results with the specified number as the
+input journal.  Leading zeros and additional portions of the directory
+name need not be specified, i.e. -j 30 matches 0030bec/journal, 0030b/journal,
+etc.
+.TP 5
+.B -u
+Use the most recent journal created by the user running vswrpt as the input journal.
+.PP
+These options cannot be used in combination.
+.PP
+.B Detail and Scope
+.PP
+vswrpt always produces a summary report of the results of the test run in
+the input journal.  It can also provide detailed information about the
+execution of Test Cases and Test Purposes.  Three options control
+what additional information is reported.
+.PP 
+.B -d detail
+.PP
+Specifies the level of detail to be provided.
+.P
+.in +5
+0 - All information output by the test run.
+.P
+.in +5
+1 - All information but information output during the build stage truncated after 10 lines.
+.P
+.in +5
+2 - Nothing - no detail information is generated.
+.P
+.in +5
+3 - Results only
+.P
+.in +5
+4 - Assertions and results only.
+.PP
+The default level of detail is 1.
+.PP
+.B -s scope
+.PP
+.in +5
+Specifies the type of Test Purposes for which the requested detailed information
+will be reported.
+.P
+.in +5
+0 - All Test Purposes.
+.P
+.in +5
+1 - Tests Purposes with result codes of FAIL, UNRESOLVED, UNINITIATED NORESULT, WARNING, or FIP.
+.P
+.in +5
+2 - Test Purposes with result codes of UNINITIATED.
+.P
+.in +5
+3 - Test Purposes with result codes of UNSUPPORTED.
+.P
+.in +5
+4 - Test Purposes with result codes of WARNING or FIP.
+.P
+.in +5
+5 - Test Purposes with result codes of NOTINUSE.
+.P
+.in +5
+6 - Test Purposes with result codes of UNTESTED.
+.P
+.in +5
+7 - Test Purposes with result codes of NORESULT.
+.PP
+The default scope of detail is 1.
+.TP 5
+.B -t test_case
+.PP
+.in +5
+Report additional information only for the Test Case
+.I test_case.
+.PP
+The default is to report information for all Test Cases.
+.PP
+These options may be used in combination.
+.PP
+.B Other Options
+.PP
+.TP 10
+.B -h
+Display usage information.
+.TP 10
+.B -v
+Display program version.
+.TP 10
+.B -w
+Do not report on a specific journal but rather print a summary of the journals
+in $TET_ROOT/vsw5/results.
+.PP
+.SH FIP RESULTS
+\fRA Further Information Provided (FIP) result code indicates that manual
+analysis is required to resolve an anomaly.  In some cases FIP results
+are generated by Test Purposes themselves but primarily they are
+produced during report generation.  If compiler warnings are present in the 
+journal for the build phase of a test suite file and the result of a
+Test Purpose in that file would otherwise be PASS vswrpt changes the
+result to FIP.  This indicates the compiler warnings must be manually
+examined and either corrected or justified.
+.PP
+.SH UNINITIATED RESULTS
+\fRAn UNINITIATED result code indicate that a Test Purpose was not
+executed, usually due to a compiler error during the build phase.
+vswrpt is aware of which Test Purposes are executed and will report
+result of UNINITIATED for each Test Purpose which is not run.  This
+indicates that the compiler error should be corrected and the test
+re-run.
+.PP
+.SH REPORT FORMATS
+\fRThe summary report produced by vswrpt has two formats, depending on
+whether a Section or Sections of VSW5 were run
+or merely one or more specific Test Cases.  Each report format
+provides a summary of the result codes reported by the Test Purposes in
+the test run.
+.PP
+Detail information varies in format depending on what is requested with the
+-d option.
+.PP
+If all detail information is requested (-d 0 or 1), for each Test Purpose
+in the requested scope the assertion is given followed by all
+the messages output by the Test Purpose followed by the result code reported.  
+If compiler detail is requested (-d 0), compiler messages causing FIP
+or UNINITIATED result codes are also given.
+.P
+Within the messages output by Test Purposes indenting is used
+to indicate the context (e.g. parent process, child process, etc.)
+which produced the message.  Each new context created causes
+vswrpt to indent Test Purpose messages an additional two spaces.
+.PP
+Subsets of the full detail information are produced if detail information
+containing only results and assertions or results only is requested.
+.PP
+.SH ERRORS
+\fRIf the number of Test Purposes in a Test Case or Section does not match the
+expected number vswrpt will print error messages following the summary
+report.
+.PP
+If the activity numbers of statements in the journal file are not
+sequential vswrpt will print an error message to stderr.
+No report is generated.
+.PP
+vswrpt will print an error and usage message to stderr if illegal options
+are specified. No report is generated.
+.PP
+vswrpt will print an error message to stderr if format errors are encountered
+in the journal file.  No report is generated.
+.SH SEE ALSO
+.PP
+vswrptm
+.PP
+Copyright (c) 1994, 1995 Applied Testing and Technology, Inc.

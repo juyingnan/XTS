@@ -1,0 +1,173 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/Xt11_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:	vsw5/scenarios/Xt11_scen
+#
+# Description:
+#       Scenario file for Xt chapter 11
+#
+# Modifications:
+# $Log: Xt11_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:26  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:33  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:27  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:27:01  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:34  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:24  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XtGetResourceList 2"
+	/tset/Xt11/tgtreslst/Test
+	"VSW5TESTSUITE CASE XtGetConstraintResourceList 3"
+	/tset/Xt11/tgtconrsl/Test
+	"VSW5TESTSUITE CASE XtOffsetOf 1"
+	/tset/Xt11/toffsetof/Test
+	"VSW5TESTSUITE CASE XtOffset 1"
+	/tset/Xt11/toffset/Test
+	"VSW5TESTSUITE CASE XtGetSubresources 2"
+	/tset/Xt11/tgtsubres/Test
+	"VSW5TESTSUITE CASE XtVaGetSubresources 4"
+	/tset/Xt11/tvagtsres/Test
+	"VSW5TESTSUITE CASE XtGetApplicationResources 2"
+	/tset/Xt11/tgtapres/Test
+	"VSW5TESTSUITE CASE XtVaGetApplicationResources 4"
+	/tset/Xt11/tvagtares/Test
+	"VSW5TESTSUITE CASE XtCvtStringToAcceleratorTable 4"
+	/tset/Xt11/tcstatbl/Test
+	"VSW5TESTSUITE CASE XtCvtStringToAtom 4"
+	/tset/Xt11/tcstatom/Test
+	"VSW5TESTSUITE CASE XtCvtStringToBoolean 4"
+	/tset/Xt11/tcstboln/Test
+	"VSW5TESTSUITE CASE XtCvtStringToBool 4"
+	/tset/Xt11/tcstbool/Test
+	"VSW5TESTSUITE CASE XtCvtStringToCursor 5"
+	/tset/Xt11/tcstcurs/Test
+	"VSW5TESTSUITE CASE XtCvtStringToDimension 4"
+	/tset/Xt11/tcstdim/Test
+	"VSW5TESTSUITE CASE XtCvtStringToDisplay 4"
+	/tset/Xt11/tcstdisp/Test
+	"VSW5TESTSUITE CASE XtCvtStringToFile 4"
+	/tset/Xt11/tcstfile/Test
+	"VSW5TESTSUITE CASE XtCvtStringToFloat 4"
+	/tset/Xt11/tcstflt/Test
+	"VSW5TESTSUITE CASE XtCvtStringToFont 8"
+	/tset/Xt11/tcstfont/Test
+	"VSW5TESTSUITE CASE XtCvtStringToFontSet 11"
+	/tset/Xt11/tcstfset/Test
+	"VSW5TESTSUITE CASE XtCvtStringToFontStruct 8"
+	/tset/Xt11/tcstfstr/Test
+	"VSW5TESTSUITE CASE XtCvtStringToInitialState 6"
+	/tset/Xt11/tcstinit/Test
+	"VSW5TESTSUITE CASE XtCvtStringToInt 4"
+	/tset/Xt11/tcstint/Test
+	"VSW5TESTSUITE CASE XtCvtStringToPixel 9"
+	/tset/Xt11/tcstpix/Test
+	"VSW5TESTSUITE CASE XtCvtStringToShort 4"
+	/tset/Xt11/tcstshrt/Test
+	"VSW5TESTSUITE CASE XtCvtStringToTranslationTable 4"
+	/tset/Xt11/tcstttbl/Test
+	"VSW5TESTSUITE CASE XtCvtStringToPosition 4"
+	/tset/Xt11/tcstpos/Test
+	"VSW5TESTSUITE CASE XtCvtStringToUnsignedChar 4"
+	/tset/Xt11/tcstuchr/Test
+	"VSW5TESTSUITE CASE XtCvtStringToVisual 5"
+	/tset/Xt11/tcstvis/Test
+	"VSW5TESTSUITE CASE XtCvtColorToPixel 3"
+	/tset/Xt11/tccolpix/Test
+	"VSW5TESTSUITE CASE XtCvtIntToBoolean 3"
+	/tset/Xt11/tcinboln/Test
+	"VSW5TESTSUITE CASE XtCvtIntToBool 3"
+	/tset/Xt11/tcinbool/Test
+	"VSW5TESTSUITE CASE XtCvtIntToColor 4"
+	/tset/Xt11/tcincolr/Test
+	"VSW5TESTSUITE CASE XtCvtIntToDimension 3"
+	/tset/Xt11/tcindim/Test
+	"VSW5TESTSUITE CASE XtCvtIntToFloat 3"
+	/tset/Xt11/tcinflt/Test
+	"VSW5TESTSUITE CASE XtCvtIntToFont 3"
+	/tset/Xt11/tcinfont/Test
+	"VSW5TESTSUITE CASE XtCvtIntToPixel 3"
+	/tset/Xt11/tcinpix/Test
+	"VSW5TESTSUITE CASE XtCvtIntToPixmap 3"
+	/tset/Xt11/tcinpixm/Test
+	"VSW5TESTSUITE CASE XtCvtIntToPosition 3"
+	/tset/Xt11/tcinpos/Test
+	"VSW5TESTSUITE CASE XtCvtIntToShort 3"
+	/tset/Xt11/tcinshrt/Test
+	"VSW5TESTSUITE CASE XtCvtIntToUnsignedChar 3"
+	/tset/Xt11/tcinuchr/Test
+	"VSW5TESTSUITE CASE XtCvtPixelToColor 3"
+	/tset/Xt11/tcpixcol/Test
+	"VSW5TESTSUITE CASE XtDisplayStringConversionWarning 2"
+	/tset/Xt11/tdisplscw/Test
+	"VSW5TESTSUITE CASE XtDisplayToApplicationContext 2"
+	/tset/Xt11/tdispltac/Test
+	"VSW5TESTSUITE CASE XtSetTypeConverter 15"
+	/tset/Xt11/tstyconv/Test
+	"VSW5TESTSUITE CASE XtAppSetTypeConverter 15"
+	/tset/Xt11/tapsttpec/Test
+	"VSW5TESTSUITE CASE XtCallConverter 15"
+	/tset/Xt11/tcalcnvtr/Test
+	"VSW5TESTSUITE CASE XtAppReleaseCacheRefs 2"
+	/tset/Xt11/taprelcre/Test
+	"VSW5TESTSUITE CASE XtCallbackReleaseCacheRef 1"
+	/tset/Xt11/tcalbkrlc/Test
+	"VSW5TESTSUITE CASE XtCallbackReleaseCacheRefList 1"
+	/tset/Xt11/tcalbrcrl/Test
+	"VSW5TESTSUITE CASE XtConvertAndStore 18"
+	/tset/Xt11/tcnvrtast/Test
+	"VSW5TESTSUITE CASE XtGetValues 5"
+	/tset/Xt11/tgtvalues/Test
+	"VSW5TESTSUITE CASE XtVaGetValues 7"
+	/tset/Xt11/tvagtvals/Test
+	"VSW5TESTSUITE CASE XtGetSubvalues 2"
+	/tset/Xt11/tgtsubval/Test
+	"VSW5TESTSUITE CASE XtVaGetSubvalues 3"
+	/tset/Xt11/tvagtsval/Test
+	"VSW5TESTSUITE CASE XtSetValues 13"
+	/tset/Xt11/tstvalues/Test
+	"VSW5TESTSUITE CASE XtVaSetValues 15"
+	/tset/Xt11/tvastvals/Test
+	"VSW5TESTSUITE CASE XtSetSubvalues 2"
+	/tset/Xt11/tstsvals/Test
+	"VSW5TESTSUITE CASE XtVaSetSubvalues 4"
+	/tset/Xt11/tvastsvls/Test

@@ -1,0 +1,115 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/scenarios/XtC_scen,v 1.1 2005-02-12 14:37:14 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:	vsw5/scenarios/XtC_scen
+#
+# Description:
+#       Scenario file Xt Appendix C
+#
+# Modifications:
+# $Log: XtC_scen,v $
+# Revision 1.1  2005-02-12 14:37:14  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:39:31  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:39  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:32  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:27:06  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.0  1995/12/15 09:25:46  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  01:59:38  andy
+# Prepare for GA Release
+#
+
+	"VSW5TESTSUITE CASE XtGetErrorDatabase 1"
+	/tset/XtC/tgterrdbs/Test
+	"VSW5TESTSUITE CASE XtGetErrorDatabaseText 2"
+	/tset/XtC/tgterrdbt/Test
+	"VSW5TESTSUITE CASE XtInitialize 27"
+	/tset/XtC/tinitlize/Test
+	"VSW5TESTSUITE CASE XtMainLoop 28"
+	/tset/XtC/tmainloop/Test
+	"VSW5TESTSUITE CASE XtNextEvent 4"
+	/tset/XtC/tnxtevnt/Test
+	"VSW5TESTSUITE CASE XtProcessEvent 12"
+	/tset/XtC/tprocevnt/Test
+	"VSW5TESTSUITE CASE XtPeekEvent 3"
+	/tset/XtC/tpeekevnt/Test
+	"VSW5TESTSUITE CASE XtPending 2"
+	/tset/XtC/tpending/Test
+	"VSW5TESTSUITE CASE XtAddInput 5"
+	/tset/XtC/taddinput/Test
+	"VSW5TESTSUITE CASE XtAddTimeOut 2"
+	/tset/XtC/taddtmout/Test
+	"VSW5TESTSUITE CASE XtAddWorkProc 5"
+	/tset/XtC/tadwkproc/Test
+	"VSW5TESTSUITE CASE XtCreateApplicationShell 7"
+	/tset/XtC/tcrappshl/Test
+	"VSW5TESTSUITE CASE XtStringConversionWarning 1"
+	/tset/XtC/tstconwg/Test
+	"VSW5TESTSUITE CASE XtAddConverter 10"
+	/tset/XtC/tadconvtr/Test
+	"VSW5TESTSUITE CASE XtAppAddConverter 10"
+	/tset/XtC/tapadconv/Test
+	"VSW5TESTSUITE CASE XtConvert 1"
+	/tset/XtC/tconvert/Test
+	"VSW5TESTSUITE CASE XtDirectConvert 3"
+	/tset/XtC/tdircnvrt/Test
+	"VSW5TESTSUITE CASE XtDestroyGC 2"
+	/tset/XtC/tdestygc/Test
+	"VSW5TESTSUITE CASE XtAddActions 3"
+	/tset/XtC/tadaction/Test
+	"VSW5TESTSUITE CASE XtSetSelectionTimeout 1"
+	/tset/XtC/tststmout/Test
+	"VSW5TESTSUITE CASE XtGetSelectionTimeout 2"
+	/tset/XtC/tgtstmout/Test
+	"VSW5TESTSUITE CASE XtSetErrorMsgHandler 1"
+	/tset/XtC/tsterrmhd/Test
+	"VSW5TESTSUITE CASE XtErrorMsg 3"
+	/tset/XtC/terrormsg/Test
+	"VSW5TESTSUITE CASE XtSetWarningHandler 1"
+	/tset/XtC/tstwhndlr/Test
+	"VSW5TESTSUITE CASE XtSetWarningMsgHandler 1"
+	/tset/XtC/tstwmsghr/Test
+	"VSW5TESTSUITE CASE XtWarning 3"
+	/tset/XtC/twarning/Test
+	"VSW5TESTSUITE CASE XtWarningMsg 3"
+	/tset/XtC/twarngmsg/Test
+	"VSW5TESTSUITE CASE XtSetErrorHandler 1"
+	/tset/XtC/tsterrhnd/Test
+	"VSW5TESTSUITE CASE XtError 3"
+	/tset/XtC/terror/Test
