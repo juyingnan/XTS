@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-# $Header: /cvs/xtest/xtest/xts5/configs/tetbuild.cfg.Linux,v 1.2 2005-02-13 19:40:35 anderson Exp $
+# $Header: /cvs/xtest/xtest/xts5/configs/tetbuild.cfg.Linux,v 1.3 2005-03-04 19:38:55 anderson Exp $
 #
 # Copyright (c) Applied Testing and Technology, Inc. 1995
 # All Rights Reserved.
@@ -33,8 +33,8 @@
 #
 # Modifications:
 # $Log: tetbuild.cfg.Linux,v $
-# Revision 1.2  2005-02-13 19:40:35  anderson
-# Just use the src tree for the location of the xtest fonts
+# Revision 1.3  2005-03-04 19:38:55  anderson
+# Passing GNU_SOURCE so we see caddr_t
 #
 # Revision 8.0  1998/12/23 23:39:35  mar
 # Branch point for Release 5.0.2
@@ -360,7 +360,7 @@ COPTS=
 # AIXV3	: DEFINES=-D_XOPEN_SOURCE -D_ALL_SOURCE
 # SVR4	: DEFINES=-D_XOPEN_SOURCE
 # OSF1	: DEFINES=-D_XOPEN_SOURCE_EXTENDED -DXTESTEXTENSION
-DEFINES=-D_XOPEN_SOURCE -DXTESTEXTENSION
+DEFINES=-D_XOPEN_SOURCE -DXTESTEXTENSION -D_GNU_SOURCE
 
 # XP_DEFINES - C compiler defines specific to the X Protocol tests.
 # This can be set as DEFINES, but you can build support for additional 
@@ -383,7 +383,7 @@ DEFINES=-D_XOPEN_SOURCE -DXTESTEXTENSION
 # AIXV3	: XP_DEFINES=-D_XOPEN_SOURCE -D_ALL_SOURCE
 # SVR4	: XP_DEFINES=-D_XOPEN_SOURCE
 # OSF1	: XP_DEFINES=-D_XOPEN_SOURCE_EXTENDED -DUNIXCONN
-XP_DEFINES=-D_XOPEN_SOURCE
+XP_DEFINES=-D_XOPEN_SOURCE -D_GNU_SOURCE
 
 # XT_DEFINES - C compiler defines specific to the Xt Toolkit tests.
 # If you wish to build the tests to make use of the XTEST extension, you
@@ -398,7 +398,7 @@ XP_DEFINES=-D_XOPEN_SOURCE
 # AIXV3	: XP_DEFINES=-D_XOPEN_SOURCE -D_ALL_SOURCE -DNeedFunctionPrototypes=1
 # SVR4	: XP_DEFINES=-DNeedFunctionPrototypes=1 -D_XOPEN_SOURCE
 # OSF1	: XT_DEFINES=-D_XOPEN_SOURCE_EXTENDED -DNeedFunctionPrototypes=1 -DXTESTEXTENSION
-XT_DEFINES=-D_XOPEN_SOURCE -DXTESTEXTENSION
+XT_DEFINES=-D_XOPEN_SOURCE -DXTESTEXTENSION -D_GNU_SOURCE
 
 # LINKOBJOPTS - options to give to the LD program to link object
 # files together into one object file that can be further linked.
