@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xlib3/dsplystr/Test1.c,v 1.1 2005-02-12 14:37:32 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/tset/Xlib3/dsplystr/Test1.c,v 1.2 2005-02-12 15:25:33 anderson Exp $
 * 
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
@@ -34,8 +34,12 @@ SOFTWARE.
 * 
 * Modifications:
 * $Log: Test1.c,v $
-* Revision 1.1  2005-02-12 14:37:32  anderson
-* Initial revision
+* Revision 1.2  2005-02-12 15:25:33  anderson
+* Don't expect the 3rd arg to tet_main() to be envp
+*
+* Revision 1.1.1.1  2005/02/12 14:37:32  anderson
+* VSW5 Source under an MIT license This is version 5.0.2 as received from
+* AppTest with the new license applied.
 *
 * Revision 8.0  1998/12/23 23:35:11  mar
 * Branch point for Release 5.0.2
@@ -123,10 +127,9 @@ struct tet_testlist tet_testlist[] = {
 };
 int 	ntests = sizeof(tet_testlist)/sizeof(struct tet_testlist)-1;
 
-tet_main(argc, argv, envp)
+tet_main(argc, argv)
 int argc;	
 char *argv[];
-char *envp[];
 {
 int		pass = 0, fail = 0;
 char		*res_name;
