@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/bin/mc/main.c,v 1.1 2005-02-12 14:37:14 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/bin/mc/main.c,v 1.2 2005-02-12 15:20:01 anderson Exp $
 *
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
@@ -34,8 +34,12 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: main.c,v $
-* Revision 1.1  2005-02-12 14:37:14  anderson
-* Initial revision
+* Revision 1.2  2005-02-12 15:20:01  anderson
+* Don't initialize FpSource w/ stdin. stdin isn't a constant
+*
+* Revision 1.1.1.1  2005/02/12 14:37:14  anderson
+* VSW5 Source under an MIT license This is version 5.0.2 as received from
+* AppTest with the new license applied.
 *
 * Revision 8.0  1998/12/23 23:24:14  mar
 * Branch point for Release 5.0.2
@@ -122,7 +126,7 @@ char	*Filename;
 
 char	*OutFile;	/* Output file name */
 
-FILE	*FpSource = stdin;
+FILE	*FpSource;
 
 int 	aflag;
 int 	dflag;
