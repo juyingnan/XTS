@@ -1,0 +1,129 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/src/xim/Makefile,v 1.1 2005-02-12 15:14:15 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project: VSW5
+#
+# File: vsw5/src/xim/Makefile
+#
+# Description:
+#	 Makefile for Input Method tests' library
+#
+# Modifications
+# $Log: Makefile,v $
+# Revision 1.1  2005-02-12 15:14:15  anderson
+# Initial revision
+#
+# Revision 8.0  1998/12/23 23:25:22  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 22:43:35  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:17:43  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:14:14  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.2  1996/03/22 16:54:55  andy
+# removed excess tabs and space from blank lines
+#
+# Revision 4.1  1996/01/25  02:35:55  andy
+# Added IGNORE target
+#
+# Revision 4.0  1995/12/15  08:44:35  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  00:42:21  andy
+# Prepare for GA Release
+#
+
+# Default directory locations
+#
+# The location of TET_ROOT.  This must not contain variable expansions.
+#
+#
+# Location of Test Suite
+#
+SUITE_ROOT = ${TET_ROOT}/vsw5
+SUITE_LIB = ${SUITE_ROOT}/lib
+SUITE_BIN = ${SUITE_ROOT}/bin
+SUITE_INC = ${SUITE_ROOT}/include
+
+INSTLIB = $(SUITE_LIB)
+INSTBIN = $(SUITE_BIN)
+
+################################
+##### C compiler Directives Section
+################################
+
+.IGNORE:
+
+CFILES = linklocale.c clnlocale.c ic.c nextlocale.c nextlclmod.c \
+         nxtfontset.c parse.c xim_cb.c xim_comp.c response.c \
+         xim_save.c stimulus.c
+OFILES = linklocale.o clnlocale.o ic.o nextlocale.o nextlclmod.o \
+         nxtfontset.o parse.o xim_cb.o xim_comp.o response.o \
+         xim_save.o stimulus.o
+
+LIBRARY = libximtest.a
+
+##############################################################################
+
+install: all
+	$(CP) $(LIBRARY) $(INSTLIB)/$(LIBRARY)
+	@$(RANLIB) $(INSTLIB)/$(LIBRARY)
+
+all: $(LIBRARY)
+
+$(LIBRARY): $P 	$(OFILES)
+	$(AR) $@ `$(LORDER) $(OFILES) | $(TSORT)`
+	@$(RANLIB) $@
+
+FORCE: CLOBBER all
+
+LINT:
+	$(LINT) $(LINTFLAGS) $(CFILES) $(LINTTCM) $(LINTLIBS)
+
+LINTLIB: $(LINTSUNTEST)
+
+$(LINTXTEST): llib-lsuntest.ln
+	cp $? $@
+	@echo "	$? made and installed"
+
+llib-lsuntest.ln: $(CFILES)
+	$(LINT) -Csuite $(LINTFLAGS) -u $?
+
+CLEAN:
+	$(RM) $(OFILES) $(LIBRARY) makefile.bak 
+
+CLOBBER: CLEAN
+	$(RM) $(INSTLIB)/$(LIBRARY)
+
+clean: CLEAN
+
+shar:
+	shar Makefile $(SUITE_INC)/*.h $(CFILES) > libsuntest.shar
