@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-# $Header: /cvs/xtest/xtest/xts5/configs/tetbuild.cfg.Linux,v 1.1 2005-02-12 16:50:53 anderson Exp $
+# $Header: /cvs/xtest/xtest/xts5/configs/tetbuild.cfg.Linux,v 1.2 2005-02-13 19:40:35 anderson Exp $
 #
 # Copyright (c) Applied Testing and Technology, Inc. 1995
 # All Rights Reserved.
@@ -33,8 +33,8 @@
 #
 # Modifications:
 # $Log: tetbuild.cfg.Linux,v $
-# Revision 1.1  2005-02-12 16:50:53  anderson
-# A configuration tuned for linux
+# Revision 1.2  2005-02-13 19:40:35  anderson
+# Just use the src tree for the location of the xtest fonts
 #
 # Revision 8.0  1998/12/23 23:39:35  mar
 # Branch point for Release 5.0.2
@@ -250,6 +250,7 @@ XTESTHOST=`hostname`
 
 # XTESTFONTDIR - location of installed VSW5 compiled fonts
 XTESTFONTDIR=/usr/lib/X11/fonts/xtest
+XTESTFONTDIR=$TET_ROOT/vsw5/fonts
 
 # XTESTROOT
 XTESTROOT=${TET_ROOT}/vsw5
