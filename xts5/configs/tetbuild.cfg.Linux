@@ -1,0 +1,506 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+# $Header: /cvs/xtest/xtest/xts5/configs/tetbuild.cfg.Linux,v 1.1 2005-02-12 16:50:53 anderson Exp $
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:        tetbuild.cfg/tetclean/cfg
+#
+# Description:
+#       Build/clean configuration file for VSW5
+#
+# Modifications:
+# $Log: tetbuild.cfg.Linux,v $
+# Revision 1.1  2005-02-12 16:50:53  anderson
+# A configuration tuned for linux
+#
+# Revision 8.0  1998/12/23 23:39:35  mar
+# Branch point for Release 5.0.2
+#
+# Revision 7.0  1998/10/30 23:02:43  mar
+# Branch point for Release 5.0.2b1
+#
+# Revision 6.0  1998/03/02 05:30:35  tbr
+# Branch point for Release 5.0.1
+#
+# Revision 5.0  1998/01/26 03:27:09  tbr
+# Branch point for Release 5.0.1b1
+#
+# Revision 4.2  1998/01/22 01:28:18  tbr
+# Changes necessary to compile tests that genrate .dat files
+#
+# Revision 4.1  1997/10/26 22:35:22  andy
+# Editorial
+#
+# Revision 4.0  1995/12/15  09:25:58  tbr
+# Branch point for Release 5.0.0
+#
+# Revision 3.1  1995/12/15  00:33:05  andy
+# Prepare for GA Release
+#
+
+# Portions of this software are based on Xlib and X Protocol Test Suite.
+# We have used this material under the terms of its copyright, which grants
+# free use, subject to the conditions below.  Note however that those
+# portions of this software that are based on the original Test Suite have
+# been significantly revised and that all such revisions are copyright (c)
+# 1995 Applied Testing and Technology, Inc.  Insomuch as the proprietary
+# revisions cannot be separated from the freely copyable material, the net
+# result is that use of this software is governed by the ApTest copyright.
+#
+# Copyright (c) 1990, 1991  X Consortium
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.  IN NO EVENT SHALL THE
+# X CONSORTIUM BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN
+# AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
+# CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+# 
+# Except as contained in this notice, the name of the X Consortium shall not be
+# used in advertising or otherwise to promote the sale, use or other dealings
+# in this Software without prior written authorization from the X Consortium.
+#
+# Copyright 1990, 1991 UniSoft Group Limited.
+#
+# Permission to use, copy, modify, distribute, and sell this software and
+# its documentation for any purpose is hereby granted without fee,
+# provided that the above copyright notice appear in all copies and that
+# both that copyright notice and this permission notice appear in
+# supporting documentation, and that the names of MIT and UniSoft not be
+# used in advertising or publicity pertaining to distribution of the
+# software without specific, written prior permission.  MIT and UniSoft
+# make no representations about the suitability of this software for any
+# purpose.  It is provided "as is" without express or implied warranty.
+
+#########################
+# Note
+#########################
+
+#  For certain variables, there are lines of the form:
+#  # System: CONFIGVAR=foo
+#  
+#  These are suggested values for these options, and may not
+#  always be correct and up-to-date for any given system.
+
+#########################
+# TET Parameters
+#########################
+
+# TET_BUILD_TOOL - The program to use as the build tool.
+# This should normally be the wbuild program supplied as part
+# of the test suite.
+TET_BUILD_TOOL=wbuild
+
+# TET_BUILD_FILE - This is intended to be used for the arguments to the TET
+# build tool - this should be empty, since no arguments are accepted by pmake.
+TET_BUILD_FILE=
+
+# TET_CLEAN_TOOL - The program to use as the TET clean tool.
+# This should normally be the wclean program supplied as part 
+# of the test suite.
+TET_CLEAN_TOOL=wclean
+
+# TET_CLEAN_FILE - This is intended to be used for the arguments to the TET
+# clean tool - this should be empty, since no arguments are accepted by wclean.
+TET_CLEAN_FILE=
+
+# TET_OUTPUT_CAPTURE - This must be set to True.
+TET_OUTPUT_CAPTURE=TRUE
+
+##########################
+# X RELEASE
+##########################
+
+#XT_X_RELEASE - The X11 Release, e.g. 4 for X11R4, 5 for X11R5, 6 for X11R6
+#XT_X_RELEASE=4
+#XT_X_RELEASE=5
+#XT_X_RELEASE=6
+XT_X_RELEASE=6
+
+##########################
+# Commands
+##########################
+
+# SHELL - The following line should cause the Bourne shell to be used 
+# by make.
+SHELL=/bin/sh
+
+# CC - C compiler
+# AIXV3	: CC=xlc
+CC=cc
+
+# RM - Command to remove files
+RM=rm -f
+
+# AR - command to generate an archive
+AR=ar cr
+
+# LD - command to link object files.
+LD=ld
+
+# LN - command to make hard links to files.  This could be a copy command
+# if no link command exists.
+LN=ln
+
+# RANLIB - If the system requires ranlib then this is set to
+# ranlib else set to true
+# SunOS	: RANLIB=ranlib
+# ULTRIX: RANLIB=ranlib
+# HP-UX	: RANLIB=true
+# DYNIX	: RANLIB=ranlib
+# A/UX	: RANLIB=true
+# AIXV3	: RANLIB=ranlib
+# SVR4	: RANLIB=true
+RANLIB=true
+
+# TSORT - Set to cat if archiver inserts its own symbol table
+# or the system uses ranlib
+TSORT=cat
+
+# LORDER - Set to echo if archiver inserts its own symbol table
+# or the system uses ranlib
+LORDER=echo
+
+# CP - copy file
+CP=cp
+
+# CODEMAKER - this is the utility supplied with the test suite
+# to extract the code from the combined source files.
+CODEMAKER=mc
+
+##################
+# TET locations
+##################
+
+# The location of TET_ROOT.  This must not contain variable expansions.
+TET_ROOT=/home/anderson/vsw5/linux
+
+# TETBASE - The location of the TET directories
+TETBASE=${TET_ROOT}
+TETBASE=/home/anderson/vsw5/linux/tet3
+
+# TETINCDIR - The directory containing the TET API headers.
+TETINCDIR=${TETBASE}/inc/posix_c
+TETINCDIR=${TETBASE}/inc/tet3
+
+# TETLIB - The library containing the TET API library
+TETLIB=${TETBASE}/lib/posix_c
+TETLIB=${TETBASE}/lib/tet3
+
+# TCM - The Test Control Manager
+TCM=${TETLIB}/tcm.o
+
+# TCMCHILD - The Test Control Manager for files executed by tet_exec. 
+TCMCHILD=${TETLIB}/tcmchild.o
+
+# APILIB - The TET API library
+APILIB=${TETLIB}/libapi.a
+
+####################
+# Xtest variables
+####################
+
+# XTESTHOST - name of host on which test suite clients are to be executed.
+# This may be set to the value returned by a command which can be executed
+# using the PATH you have set on your host, or may be set to a specific name.
+# This is used to produce a resource file named .Xdefaults-$(XTESTHOST) in the
+# test execution directory.
+# The resource file is created when building the test for XGetDefault.
+# This parameter is only used in the Makefile of the test for XGetDefault.
+# Examples are:
+# XTESTHOST=`hostname`
+# XTESTHOST=`uname -n`
+# XTESTHOST=triton
+#
+# SVR4	: XTESTHOST=`uname -n`
+XTESTHOST=`hostname`
+
+# XTESTFONTDIR - location of installed VSW5 compiled fonts
+XTESTFONTDIR=/usr/lib/X11/fonts/xtest
+
+# XTESTROOT
+XTESTROOT=${TET_ROOT}/vsw5
+
+# XTTESTLIB - the Xt Tests' libraries
+XTTESTLIB=${XTESTLIBDIR}/libXtTest.a
+
+# XTESTLIBDIR - location of the VSW5 library files
+XTESTLIBDIR=${XTESTROOT}/lib
+
+# XTESTLIB - the VSW5 library
+XTESTLIB=${XTESTLIBDIR}/libxtest.a
+
+# XSTLIB - library for linking the X Protocol tests
+XSTLIB=${XTESTLIBDIR}/libXst.a
+
+# XTESTFONTLIB - supplementary library with font metrics.
+XTESTFONTLIB=${XTESTLIBDIR}/libfont.a
+
+# XTESTXIMLIB - supplementary library for input methods.
+XTESTXIMLIB=${XTESTLIBDIR}/libximtest.a
+
+# XTESTINCDIR - the VSW5 header file directory
+XTESTINCDIR=${XTESTROOT}/include
+
+# XTESTBIN - location for VSW5 binaries.
+XTESTBIN=${XTESTROOT}/bin
+
+####################
+# System files
+####################
+
+# SYSLIBS - Any system libraries that are needed, will almost certainly
+# include Xlib.
+# If you wish to build the tests to make use of the XTEST extension, you
+# will need to include the X extension library and the XTEST library.
+# If you wish to build the tests to test the Input Device extension, you
+# will need to include the necessary libraries for it.
+# These are usually included by adding -lXi -lXext before -lX11.
+# SVR4	: SYSLIBS=-lXi -lXtst -lXext -lX11 -lsocket -lnsl
+# OSF1  : SYSLIBS=-lXi -lXtst -lXext -lX11
+SYSLIBS=-lXi -lXtst -lXext -lX11
+
+# XP_SYSLIBS - Any system libraries that are needed, to link the
+# X Protocol tests. This will include Xlib, since libXst.a
+# (which is part of the test suite) will include at least a call
+# on XOpenDisplay.
+# If you wish to build the tests to test the Input Device extension, you
+# will need to include the necessary libraries for it.
+# These are usually included by adding -lXi -lXext before -lX11.
+# SVR4	: XP_SYSLIBS=-L/X11/lib -lXi -lXext -lX11 -lnsl
+# OSF1	: XP_SYSLIBS=-lXi -lXtst -lXext -lX11
+XP_SYSLIBS=-lXi -lXtst -lXext -lX11
+
+# XT_SYSLIBS - Any system libraries that are needed, to link the
+# Xt Toolkit tests. This will include Xlib and Xt.
+# Do not include Athena widgets in this list (see XT_ATHENA below)
+# If you wish to build the tests to make use of the XTEST extension, you
+# will need to include the X extension library and the XTEST library.
+# SVR4	: XT_SYSLIBS=-L/X11/lib -lXext -lXt -lX11 -lnsl
+# OSF1  : XT_SYSLIBS= -lXt -lXtst -lXext -lX11
+XT_SYSLIBS=-lXt -lXtst -lXext -lX11
+
+# XT_ATHENA - System libraries that are needed provide the Athena
+# widgets.
+# If your implementation provides Athena widgets:
+# XT_ATHENA=-lXaw -lXmu
+# If your implementation does not provide Athena widgets, use the
+# VSW5 provided versions:
+# XT_ATHENA=${XTESTLIBDIR}/libXtaw.a ${XTESTLIBDIR}/libXtmu.a
+XT_ATHENA=${XTESTLIBDIR}/libXtaw.a ${XTESTLIBDIR}/libXtmu.a
+
+# SYSINC - Any commands that should be given to the C compiler
+# to cause include file directories to be searched.  Probably
+# needs to include /usr/include/X11.  Note: when the implementation
+# provides Athena widgets /usr/include must be included here to ensure
+# the implementation's Athena headers are used rather than those
+# provided by the test suite.
+SYSINC=-I/usr/include -I/usr/include/X11
+
+DEPHEADERS=/usr/include/X11/Xlib.h
+
+################################
+##### C compiler Directives Section
+################################
+
+# COPTS - Option to C compiler
+# SunOS	: COPTS=-O
+# ULTRIX: COPTS=-O
+# HP-UX	: COPTS=-O -Aa
+# DYNIX	: COPTS=-O
+# OSF1	: COPTS=-O
+# A/UX  : COPTS=-A4 -O
+# SVR4	: COPTS=-O -Xc
+COPTS=
+
+# DEFINES - C compiler defines.
+# If you wish to build the tests to make use of the XTEST extension, you
+# will need to define XTESTEXTENSION.
+# If you wish to test the Input Device Extension, you will need to define
+# INPUTEXTENSION.
+# SunOS	: DEFINES=
+# ULTRIX: DEFINES=
+# HP-UX	: DEFINES=-D_XOPEN_SOURCE -D_HPUX_SOURCE
+# DYNIX	: DEFINES=
+# A/UX  : DEFINES=
+# AIXV3	: DEFINES=-D_XOPEN_SOURCE -D_ALL_SOURCE
+# SVR4	: DEFINES=-D_XOPEN_SOURCE
+# OSF1	: DEFINES=-D_XOPEN_SOURCE_EXTENDED -DXTESTEXTENSION
+DEFINES=-D_XOPEN_SOURCE -DXTESTEXTENSION
+
+# XP_DEFINES - C compiler defines specific to the X Protocol tests.
+# This can be set as DEFINES, but you can build support for additional 
+# connection methods beyond TCP/IP, using the following defines, 
+# if XP_OPEN_DIS is XlibNoXtst.c (R4/R5 XOpenDisplay emulation):
+#	-DDNETCONN - Connections can also use DECnet.
+#	-DUNIXCONN - Connections can also use UNIX domain sockets.
+# Refer to your documentation for building and installing Xlib on
+# your platform.
+# If XP_OPEN_DIS is one of XlibXtst.c or XlibOpaque.c then none of
+# the defines listed above will be required.
+# If you wish to test the Input Device Extension, you will need to define
+# INPUTEXTENSION.
+#
+# SunOS	: XP_DEFINES=-DUNIXCONN
+# ULTRIX: XP_DEFINES=-DUNIXCONN
+# HP-UX	: XP_DEFINES=-D_XOPEN_SOURCE -D_HPUX_SOURCE -DUNIXCONN
+# DYNIX	: XP_DEFINES=-D_POSIX_SOURCE -DUNIXCONN
+# A/UX 	: XP_DEFINES=-D_POSIX_SOURCE -DUNIXCONN
+# AIXV3	: XP_DEFINES=-D_XOPEN_SOURCE -D_ALL_SOURCE
+# SVR4	: XP_DEFINES=-D_XOPEN_SOURCE
+# OSF1	: XP_DEFINES=-D_XOPEN_SOURCE_EXTENDED -DUNIXCONN
+XP_DEFINES=-D_XOPEN_SOURCE
+
+# XT_DEFINES - C compiler defines specific to the Xt Toolkit tests.
+# If you wish to build the tests to make use of the XTEST extension, you
+# will need to define XTESTEXTENSION.
+# -DNeedFunctionPrototypes=1 is needed on many implementations to avoid
+# compiler warnings about the definition of XtPointer.
+# SunOS	: XP_DEFINES=-DNeedFunctionPrototypes=1
+# ULTRIX: XP_DEFINES=-DNeedFunctionPrototypes=1
+# HP-UX	: XP_DEFINES=-D_XOPEN_SOURCE -D_HPUX_SOURCE -DNeedFunctionPrototypes=1
+# DYNIX	: XP_DEFINES=-D_POSIX_SOURCE -DNeedFunctionPrototypes=1
+# A/UX 	: XP_DEFINES=-D_POSIX_SOURCE -DNeedFunctionPrototypes=1
+# AIXV3	: XP_DEFINES=-D_XOPEN_SOURCE -D_ALL_SOURCE -DNeedFunctionPrototypes=1
+# SVR4	: XP_DEFINES=-DNeedFunctionPrototypes=1 -D_XOPEN_SOURCE
+# OSF1	: XT_DEFINES=-D_XOPEN_SOURCE_EXTENDED -DNeedFunctionPrototypes=1 -DXTESTEXTENSION
+XT_DEFINES=-D_XOPEN_SOURCE -DXTESTEXTENSION
+
+# LINKOBJOPTS - options to give to the LD program to link object
+# files together into one object file that can be further linked.
+LINKOBJOPTS=-r
+
+# LDFLAGS - Flags for the loader.
+# SunOS	: LDFLAGS=
+# ULTRIX: LDFLAGS=
+# HP-UX	: LDFLAGS=
+# DYNIX	: LDFLAGS=
+# A/UX 	: LDFLAGS=-ZP
+# AIXV3	: LDFLAGS=
+# SVR4	: LDFLAGS=-Xc -L/usr/lib/X11
+LDFLAGS=-Xc -L/usr/lib/X11
+LDFLAGS=-L/usr/X11R6/lib
+
+# XP_OPEN_DIS - A choice of which code to build in the X Protocol library 
+# to make an X server connection.
+# This must be set to one of three possible values:
+#
+#	XlibXtst.c	Your Xlib includes enhancements to _XConnectDisplay 
+#			ensuring maximum portable protocol test coverage.
+#	XlibOpaque.c	You have a normal R4 Xlib or early R5 Xlib which you 
+#			cannot patch to include the enhancements to 
+#			_XConnectDisplay, and you cannot emulate these by 
+#			building XlibNoXtst.c, so only client-native testing 
+#			can be done portably, and no failure testing of 
+#			XOpenDisplay can be done.
+#			This option uses XOpenDisplay to make the connection, 
+#			from which the file descriptor is recovered for 
+#			our own use. XCloseDisplay shuts down the connection.
+#	XlibNoXtst.c	As for XlibOpaque.c but you can use the R4/R5 
+#			connection emulation supplied. (Note: R4/R5 independent)
+#			This will ensure maximum protocol test coverage
+#			but may not be portable to all platforms.
+#
+# Reasons for not being able to build XlibNoXtst.c might include:
+# i)  different interfaces to connection setup and connection read/write;
+# ii) different access control mechanisms.
+# Refer to your Xlib documentation for further details.
+#
+#XP_OPEN_DIS=XlibXtst.c
+#XP_OPEN_DIS=XlibNoXtst.c
+#XP_OPEN_DIS=XlibOpaque.c
+XP_OPEN_DIS=XlibOpaque.c
+XP_OPEN_DIS=XlibXtst.c
+
+# INCLUDES - Options to cause C compiler to search correct directories
+# for headers.
+INCLUDES=-I. -I${TETINCDIR} ${SYSINC} -I${XTESTINCDIR}
+
+# CFLAGS - Flags for C compiler
+# 
+# for generating .dat files
+# CFLAGS=-DXT_X_RELEASE=$(XT_X_RELEASE) -DGENERATE_PIXMAPS \
+#    $(CFLOCAL) $(COPTS) $(INCLUDES) $(DEFINES)
+#
+CFLAGS=-DXT_X_RELEASE=$(XT_X_RELEASE) $(CFLOCAL) $(COPTS) $(INCLUDES) $(DEFINES)
+
+# XP_CFLAGS - Flags for C compiler specific to the X Protocol tests.
+XP_CFLAGS=-DXT_X_RELEASE=$(XT_X_RELEASE) $(CFLOCAL) $(COPTS) $(INCLUDES) $(XP_DEFINES)
+
+# XT_CFLAGS - Flags for C compiler specific to the Xt Toolkit tests.
+XT_CFLAGS=-DXT_X_RELEASE=$(XT_X_RELEASE) $(CFLOCAL) $(COPTS) $(INCLUDES) $(XT_DEFINES)
+
+# LIBS - List of libraries.
+#
+# for generating .dat files
+# LIBS=${XTESTXIMLIB} ${XTESTLIB} ${XTESTFONTLIB} ${PIXLIB} 
+#    {APILIB} ${SYSMATHLIB}
+#
+LIBS=${XTESTXIMLIB} ${XTESTLIB} ${XTESTFONTLIB} ${APILIB}
+
+# XP_LIBS - List of libraries specific to the X Protocol tests.
+XP_LIBS=${XSTLIB} ${XTESTLIB} ${XTESTFONTLIB} ${APILIB}
+
+# XT_LIBS - List of libraries specific to the Xt Toolkit tests.
+XT_LIBS= ${XTESTLIB} ${XTTESTLIB} ${APILIB}
+
+################################
+##### Pixel Validation Section.
+################################
+
+PVXTESTLIB=${XTESTLIBDIR}/libxtstpv.a
+PIXLIB=${XTESTLIBDIR}/libpvt.a
+PVLIBS=${PVXTESTLIB} ${XTESTFONTLIB} ${PIXLIB} ${APILIB}
+
+# SYSMATHLIB - system math library.  Directive to be given to the C compiler
+# to cause the maths routines to be available.
+SYSMATHLIB=-lm
+
+################################
+##### Lint Section.
+################################
+
+LINT=lint
+LINTFLAGS=$(INCLUDES) $(DEFINES) -u -n
+LINTXTEST=$(XTESTLIBDIR)/llib-lxtest.ln
+LINTXST=$(XTESTLIBDIR)/llib-lXst.ln
+LINTFONTS=$(XTESTLIBDIR)/llib-lfonts.ln
+LINTTCM=$(XTESTLIBDIR)/llib-ltcm.ln
+LINTTCMC=$(XTESTLIBDIR)/llib-ltcmc.ln
+LINTLIBS=$(LINTXTEST) $(LINTFONTS)
+
+XP_LINTFLAGS=$(INCLUDES) $(XP_DEFINES) -u -n
+XP_LINTLIBS=$(LINTXST) $(LINTXTEST) $(LINTFONTS)
