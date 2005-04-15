@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/include/X11/Xmu/Initer.h,v 1.1 2005-02-12 14:37:14 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/include/X11/Xmu/Initer.h,v 1.2 2005-04-15 14:27:44 anderson Exp $
 *
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
@@ -34,7 +34,10 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: Initer.h,v $
-* Revision 1.1  2005-02-12 14:37:14  anderson
+* Revision 1.2  2005-04-15 14:27:44  anderson
+* Merge basline changes
+*
+* Revision 1.1  2005/02/12 14:37:14  anderson
 * Initial revision
 *
 * Revision 8.0  1998/12/23 23:23:18  mar

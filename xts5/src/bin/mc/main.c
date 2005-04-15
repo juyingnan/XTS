@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/bin/mc/main.c,v 1.2 2005-02-12 15:20:01 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/bin/mc/main.c,v 1.3 2005-04-15 14:30:27 anderson Exp $
 *
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
@@ -34,7 +34,10 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: main.c,v $
-* Revision 1.2  2005-02-12 15:20:01  anderson
+* Revision 1.3  2005-04-15 14:30:27  anderson
+* Merge basline changes
+*
+* Revision 1.2  2005/02/12 15:20:01  anderson
 * Don't initialize FpSource w/ stdin. stdin isn't a constant
 *
 * Revision 1.1.1.1  2005/02/12 14:37:14  anderson
