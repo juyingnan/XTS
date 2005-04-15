@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib16/rmptrsrc/fn.mc,v 1.1 2005-02-12 14:37:27 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib16/rmptrsrc/fn.mc,v 1.2 2005-04-15 14:37:14 anderson Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
@@ -31,7 +31,10 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: fn.mc,v $
->># Revision 1.1  2005-02-12 14:37:27  anderson
+>># Revision 1.2  2005-04-15 14:37:14  anderson
+>># Merge baseline changes
+>>#
+>># Revision 1.1  2005/02/12 14:37:27  anderson
 >># Initial revision
 >>#
 >># Revision 8.0  1998/12/23 23:34:17  mar

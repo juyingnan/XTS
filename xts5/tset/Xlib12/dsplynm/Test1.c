@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xlib12/dsplynm/Test1.c,v 1.2 2005-02-12 15:27:38 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/tset/Xlib12/dsplynm/Test1.c,v 1.3 2005-04-15 14:37:14 anderson Exp $
 * 
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
@@ -34,7 +34,10 @@ SOFTWARE.
 * 
 * Modifications:
 * $Log: Test1.c,v $
-* Revision 1.2  2005-02-12 15:27:38  anderson
+* Revision 1.3  2005-04-15 14:37:14  anderson
+* Merge baseline changes
+*
+* Revision 1.2  2005/02/12 15:27:38  anderson
 * Don't expect the 3rd arg to tet_main() to be envp
 *
 * Revision 1.1.1.1  2005/02/12 14:37:19  anderson
