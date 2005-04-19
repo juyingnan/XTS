@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-# $Header: /cvs/xtest/xtest/xts5/Makefile,v 1.2 2005-02-12 16:50:15 anderson Exp $
+# $Header: /cvs/xtest/xtest/xts5/Makefile,v 1.3 2005-04-19 05:13:34 anderson Exp $
 #
 # Copyright (c) Applied Testing and Technology, Inc. 1995
 # All Rights Reserved.
@@ -33,7 +33,10 @@
 #
 # Modifications:
 # $Log: Makefile,v $
-# Revision 1.2  2005-02-12 16:50:15  anderson
+# Revision 1.3  2005-04-19 05:13:34  anderson
+# Add a step to ensure the wbuild scrpt is executable
+#
+# Revision 1.2  2005/02/12 16:50:15  anderson
 # Build the local version of libXaw & Xmu to make all of this stand-alone
 #
 # Revision 1.1.1.1  2005/02/12 15:14:15  anderson
@@ -115,7 +118,7 @@
 # "INSTALLING VSW5" in the User's Guide. This involves 
 # setting the configuration parameters correctly for your system.
 #
-# Ensure your PATH environment variable is set to include $TET_ROOT/vsw5/bin.
+# Ensure your PATH environment variable is set to include $TET_ROOT/xts5/bin.
 #
 # Then, just type "make" in this directory:
 #
@@ -128,6 +131,7 @@
 all: build install
 
 build:
+	chmod ugo+x bin/wbuild
 	@if [ -s $(TET_ROOT)/vsw5/results/install.log ]; \
 	then \
 	mv -f $(TET_ROOT)/vsw5/results/install.log $(TET_ROOT)/vsw5/results/install.log.o; \
