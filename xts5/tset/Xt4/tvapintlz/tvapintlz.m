@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xt4/tvapintlz/tvapintlz.m,v 1.1 2005-02-12 14:38:13 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xt4/tvapintlz/tvapintlz.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2001 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
 All Rights Reserved.
@@ -33,8 +34,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: tvapintlz.m,v $
->># Revision 1.1  2005-02-12 14:38:13  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/21 12:18:22  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  2001/04/12 14:48:03  vsx
+>># tp9 - argv_string was uninitialised
 >>#
 >># Revision 8.0  1998/12/23 23:36:26  mar
 >># Branch point for Release 5.0.2
@@ -494,7 +501,7 @@ A successful call to
 Widget XtVaAppInitialize(app_context_return, application_class, options,
 num_options, argc_in_out, argv_in_out, fallback_resources, ...) 
 when the -name option is not specified in argv_in_out, the environment variable 
-RESOURCE_NAME is not set, and argv[0] is an empty string shall use the 
+RESOURCE_NAME is not set, and argv_in_out[0] is an empty string shall use the 
 string "main" as the application name to query the server and screen resource 
 databases for the name.xnlLanguage resource to create the resource database 
 for the display.
@@ -518,11 +525,15 @@ char    *argvals[4];
 	sprintf(ebuf, "DISPLAY=%s", config.display);
 	putenv(ebuf);
 	tet_infoline("TEST: Initialize toolkit and open display");
+	argvals[0] = "";
+        argvals[1] = (char *)NULL;
+        argc_count = count;
+        argv_string = &argvals[0];
 	widget_good = XtVaAppInitialize(&app_ctext_return,
 		"TAppInitialize",
 		(XrmOptionDescList)NULL,
 		(Cardinal)0,
-		&argcount,
+		&argc_count,
 		argv_string,
 		(String *)NULL,
 		(char *)NULL

@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,8 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/TestMng.c,v 1.1 2005-02-12 14:37:16 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libproto/TestMng.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
+* Copyright (c) 2001 The Open Group
 * Copyright Applied Testing and Technology Inc. 1995
 * All rights reserved
 *
@@ -34,8 +35,14 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: TestMng.c,v $
-* Revision 1.1  2005-02-12 14:37:16  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.2  2005/01/20 16:08:51  gwc
+* Updated copyright notice
+*
+* Revision 8.1  2001/02/05 12:10:51  vsx
+* fix for Abort/Delete/Exit with case-insenitive linkers
 *
 * Revision 8.0  1998/12/23 23:25:11  mar
 * Branch point for Release 5.0.2
@@ -199,38 +206,38 @@ Exit_OK ()
 }
 
 void
-Exit () {
+XstExit () {
     /*
      * This routine is called when the test wishes to exit 
      * on encountering an error.
      * Log_Close() is called to report the number of errors.
      */
     if(Log_Close() != EXIT_FAILURE) {
-	report("Exit() was called when the error count was zero.");
+	report("XstExit() was called when the error count was zero.");
         tet_result(TET_UNRESOLVED);
     }
     exit(EXIT_FAILURE);
 }
 
 void
-Abort () {
+XstAbort () {
     if (Xst_error_count <= 0)
 	Xst_error_count++;
-    Exit();
+    XstExit();
 }
 
 void
-Delete () {
+XstDelete () {
     if (Xst_delete_count <= 0)
 	Xst_delete_count++;
-    Exit();
+    XstExit();
 }
 
 void
 Untested () {
     if (Xst_untested_count <= 0)
 	Xst_untested_count++;
-    Exit();
+    XstExit();
 }
 
 void
@@ -238,9 +245,9 @@ Finish(client)
 int client;
 {
 	if (Get_Test_Type(client) == SETUP)
-		Delete();
+		XstDelete();
 	else
-		Abort();
+		XstAbort();
 }
 
 void

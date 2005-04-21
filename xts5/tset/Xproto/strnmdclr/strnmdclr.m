@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xproto/strnmdclr/strnmdclr.m,v 1.1 2005-02-12 14:37:49 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xproto/strnmdclr/strnmdclr.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2001 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
@@ -31,8 +32,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: strnmdclr.m,v $
->># Revision 1.1  2005-02-12 14:37:49  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/21 12:11:21  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  2001/01/05 17:24:19  vsx
+>># TSD4W.00169: changed reply_pixel from unsigned long to CARD32
 >>#
 >># Revision 8.0  1998/12/23 23:33:09  mar
 >># Branch point for Release 5.0.2
@@ -123,7 +130,7 @@ xResourceReq *req;
 xAllocColorCellsReply *acreply;
 xAllocNamedColorReply *anreply;
 xError *err;
-extern unsigned long reply_pixel;
+extern CARD32 reply_pixel;
 
 /* 
    intent:	If a read-write color cell can be allocated:
@@ -164,7 +171,7 @@ tester_rw()
 		 * This line gets the first pixel value OR'd with 
 		 * zero of the returned masks
 		 */
-		reply_pixel = *(unsigned long*) (acreply + 1);
+		reply_pixel = *(CARD32 *) (acreply + 1);
 		Free_Reply(acreply);
 	}
 

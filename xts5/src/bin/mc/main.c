@@ -20,8 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/bin/mc/main.c,v 1.3 2005-04-15 14:30:27 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/bin/mc/main.c,v 1.4 2005-04-21 09:40:42 ajosey Exp $
 *
+* Copyright (c) 1999,2001 The Open Group
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
 *
@@ -34,15 +35,17 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: main.c,v $
-* Revision 1.3  2005-04-15 14:30:27  anderson
-* Merge basline changes
+* Revision 1.4  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
 *
-* Revision 1.2  2005/02/12 15:20:01  anderson
-* Don't initialize FpSource w/ stdin. stdin isn't a constant
+* Revision 8.3  2005/01/20 15:49:50  gwc
+* Updated copyright notice
 *
-* Revision 1.1.1.1  2005/02/12 14:37:14  anderson
-* VSW5 Source under an MIT license This is version 5.0.2 as received from
-* AppTest with the new license applied.
+* Revision 8.2  2001/02/05 12:51:59  vsx
+* rename OutFile to OutFileName, to avoid clash with outfile()
+*
+* Revision 8.1  1999/11/25 17:13:16  vsx
+* missing stdlib.h and string.h; malloc() arg wrong type
 *
 * Revision 8.0  1998/12/23 23:24:14  mar
 * Branch point for Release 5.0.2
@@ -111,14 +114,14 @@ purpose.  It is provided "as is" without express or implied warranty.
 */
 
 #include	<stdio.h>
+#include	<stdlib.h>
+#include	<string.h>
 #include	<sys/types.h>
 #include	<signal.h>
 #include	<ctype.h>
 
 #include "mc.h"
 
-extern	char	*strtok();
-extern	char	*strrchr();
 
 /*
  * The input buffer
@@ -127,7 +130,7 @@ char	Ibuf[MAXLINE];
 int 	Lineno;
 char	*Filename;
 
-char	*OutFile;	/* Output file name */
+char	*OutFileName;	/* Output file name */
 
 FILE	*FpSource;
 
@@ -196,6 +199,8 @@ struct	cmdinfo	*cip;
 extern	int 	optind;
 extern	char	*optarg;
 
+	FpSource = stdin;
+
 newcmd:
 	cp = strrchr(argv[0], '/');
 	if (cp == NULL)
@@ -239,7 +244,7 @@ newcmd:
 			sopt = optarg;
 			break;
 		case 'o':
-			OutFile = optarg;
+			OutFileName = optarg;
 			break;
 		case 'c':
 			argv[0] = optarg;
@@ -444,7 +449,7 @@ char	*bp;
 	if (s == 0)
 		return(s);
 
-	bp = (char*)malloc((unsigned)strlen(s)+1);
+	bp = malloc((size_t)(strlen(s)+1));
 	if (bp)
 		(void) strcpy(bp, s);
 

@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,8 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/include/XtTestProto.h,v 1.1 2005-02-12 14:37:13 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/include/XtTestProto.h,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
+* Copyright (c) 2004 The Open Group
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 * Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
 * All Rights Reserved.
@@ -35,8 +36,14 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: XtTestProto.h,v $
-* Revision 1.1  2005-02-12 14:37:13  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.2  2005/01/14 11:18:10  gwc
+* Updated copyright notice
+*
+* Revision 8.1  2004/02/12 16:33:57  gwc
+* Changed return type of mem_limit() to size_t
 *
 * Revision 8.0  1998/12/23 23:23:31  mar
 * Branch point for Release 5.0.2
@@ -98,7 +105,7 @@ char	*title(char *);
 void	PostMenu(Widget, XtPointer, XButtonEvent*);
 void	ConfigureDimension(Widget, Widget);
 void	DestroyTree(Widget, XtPointer, XtPointer);
-unsigned	mem_limit(void);
+size_t	mem_limit(void);
 void	alloc_handler(String, String, String, String, String*, Cardinal*);
 Widget	avs_xt_hier(char*, char*);
 Widget	avs_xt_hier_no_warn(char*, char*);
@@ -175,7 +182,7 @@ char	*title();
 void	PostMenu();
 void	ConfigureDimension();
 void	DestroyTree();
-unsigned	mem_limit();
+size_t	mem_limit();
 void	alloc_handler();
 Widget	avs_xt_hier_no_warn();
 Widget	avs_xt_hier();

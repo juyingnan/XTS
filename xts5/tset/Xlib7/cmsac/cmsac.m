@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib7/cmsac/cmsac.m,v 1.1 2005-02-12 14:37:35 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib7/cmsac/cmsac.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2003 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
 All Rights Reserved.
@@ -33,8 +34,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: cmsac.m,v $
->># Revision 1.1  2005-02-12 14:37:35  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/21 10:49:31  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  2003/12/08 12:15:12  gwc
+>># PR1854: incorrect bits_per_rgb bit shift in svccmsAllocColor
 >>#
 >># Revision 8.0  1998/12/23 23:27:02  mar
 >># Branch point for Release 5.0.2
@@ -87,6 +94,7 @@ int x_init, y_init, h_init, w_init;
 XColor goodColorSpec;
 char tmpbuf[255];
 
+void
 svccmsAllocColor(display, colormap, color, format)
 Display              *display ;
 Colormap             colormap ;
@@ -175,13 +183,13 @@ Status           svc_ret_value;
 	{
 		check_dec(XcmsSuccess, svc_ret_value, "return value") ;
 		tmpRGB = (goodColorSpec.red &
-			((0xFFFF << ccc_good->visual->bits_per_rgb) & 0xFFFF));
+			((0xFFFF << (16 - ccc_good->visual->bits_per_rgb)) & 0xFFFF));
 		check_dec(tmpRGB, color.spec.RGB.red, "red") ;
 		tmpRGB = (goodColorSpec.green &
-			((0xFFFF << ccc_good->visual->bits_per_rgb) & 0xFFFF));
+			((0xFFFF << (16 - ccc_good->visual->bits_per_rgb)) & 0xFFFF));
 		check_dec(tmpRGB, color.spec.RGB.green, "green") ;
 		tmpRGB = (goodColorSpec.blue &
-			((0xFFFF << ccc_good->visual->bits_per_rgb) & 0xFFFF));
+			((0xFFFF << (16 - ccc_good->visual->bits_per_rgb)) & 0xFFFF));
 		check_dec(tmpRGB, color.spec.RGB.blue, "blue") ;
 	}
 	XSync(display_arg, 0);

@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/MakeReq.c,v 1.1 2005-02-12 14:37:15 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libproto/MakeReq.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
 * Copyright Applied Testing and Technology Inc. 1995
 * All rights reserved
@@ -34,8 +34,11 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: MakeReq.c,v $
-* Revision 1.1  2005-02-12 14:37:15  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.1  1999/04/03 01:23:44  mar
+* req.4.W.00136: add low-level BigRequests support to Xlib-less connections
 *
 * Revision 8.0  1998/12/23 23:24:58  mar
 * Branch point for Release 5.0.2
@@ -421,7 +424,7 @@ int type;
 	*/
 	if (Get_Test_Type(client) == TOO_LONG &&
 		dpy->max_request_size >= (unsigned)0x0000ffff &&
-		XExtendedMaxRequestSize(Dsp) == 0) {
+		dpy->bigreq_size == 0) {
 		unsigned n = dpy->max_request_size;
 
 		Log_Msg("This server accepts the largest requests possible (%d words, %d bytes)\n", n, n<<2);

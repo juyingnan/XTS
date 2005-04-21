@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/bin/mc/code.c,v 1.1 2005-02-12 14:37:14 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/bin/mc/code.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
@@ -34,8 +34,11 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: code.c,v $
-* Revision 1.1  2005-02-12 14:37:14  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.1  1999/11/24 16:57:12  vsx
+* removed commented-out code in mcend()
 *
 * Revision 8.0  1998/12/23 23:24:10  mar
 * Branch point for Release 5.0.2
@@ -207,48 +210,6 @@ char	*buf;
 {
 int 	i;
 FILE *fout;
-
-/*make scenario file*/
-/*
-	fout = fopen("head", "a+");
-	fprintf(fout, "$Header: /cvs/xtest/xtest/xts5/src/bin/mc/code.c,v 1.1 2005-02-12 14:37:14 anderson Exp $\n\n");
-	fprintf(fout, "Copyright (c) Applied Testing and Technology, Inc. 1995\n");
-	fprintf(fout, "All Rights Reserved.\n\n");
-	fprintf(fout, ">># Project: VSW5\n");
-	fprintf(fout, ">># \n");
-	fprintf(fout, ">># File: vsw5/tset/%s/%s/%s.m\n", State.chap, name10lc(State.name), name10lc(State.name));
-	fprintf(fout, ">># \n");
-	fprintf(fout, ">># Description:\n");
-	fprintf(fout, ">># 	Tests for %s()\n", State.name);
-	fprintf(fout, ">># \n");
-	fprintf(fout, ">># Modifications:\n");
-	fprintf(fout, ">># $Log: code.c,v $
-	fprintf(fout, ">># Revision 1.1  2005-02-12 14:37:14  anderson
-	fprintf(fout, ">># Initial revision
-	fprintf(fout, ">>#
-	fprintf(fout, ">># Revision 8.0  1998/12/23 23:24:10  mar
-	fprintf(fout, ">># Branch point for Release 5.0.2
-	fprintf(fout, ">>#
-	fprintf(fout, ">># Revision 7.0  1998/10/30 22:42:21  mar
-	fprintf(fout, ">># Branch point for Release 5.0.2b1
-	fprintf(fout, ">>#
-	fprintf(fout, ">># Revision 6.0  1998/03/02 05:16:37  tbr
-	fprintf(fout, ">># Branch point for Release 5.0.1
-	fprintf(fout, ">>#
-	fprintf(fout, ">># Revision 5.0  1998/01/26 03:13:09  tbr
-	fprintf(fout, ">># Branch point for Release 5.0.1b1
-	fprintf(fout, ">>#
-	fprintf(fout, ">># Revision 4.0  1995/12/15 08:41:10  tbr
-	fprintf(fout, ">># Branch point for Release 5.0.0
-	fprintf(fout, ">>#
-* Revision 3.2  1995/12/15  02:09:59  andy
-* Prepare for GA Release
-*
-	fout = fopen("scen", "w+");
-	fprintf(fout, "%s\n", State.name);
-	fprintf(fout, "	\"VSW5TESTSUITE CASE %s %d\"\n", State.name, State.assertion);
-	fclose(fout);
-*/
 
 	/* Finish the copyright banner */
 	(void) fprintf(FpBanner, "*/\n");

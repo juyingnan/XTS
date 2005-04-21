@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-$Header: /cvs/xtest/xtest/xts5/src/bin/reports/vswrptm.c,v 1.1 2005-02-12 14:37:15 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/src/bin/reports/vswrptm.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
 * Copyright Applied Testing and Technology Inc. 1994, 1995
 * All rights reserved
@@ -34,8 +34,11 @@ $Header: /cvs/xtest/xtest/xts5/src/bin/reports/vswrptm.c,v 1.1 2005-02-12 14:37:
 *
 * Modifications:
 *  $Log: vswrptm.c,v $
-*  Revision 1.1  2005-02-12 14:37:15  anderson
-*  Initial revision
+*  Revision 1.2  2005-04-21 09:40:42  ajosey
+*  resync to VSW5.1.5
+*
+*  Revision 8.1  1999/11/09 17:06:26  vsx
+*  Release 5.1.1beta
 *
 *  Revision 8.0  1998/12/23 23:24:20  mar
 *  Branch point for Release 5.0.2
@@ -890,7 +893,7 @@ int main(char argc, char * const argv[])
 		strcpy(test_flag, "SPEC1170TESTSUITE");
 		strcpy(test_name, "VSU4");
 		strcpy(test_prefix, "VSU4");
-		strcpy(vendor_name, "APPLIED TESTING AND TECHNOLOGY");
+		strcpy(vendor_name, "THE OPEN GROUP");
 		strcpy(special1, "AREA");
 		strcpy(special2, "CASE");
 		strcpy(doc_dir, "DOC");
@@ -899,14 +902,14 @@ int main(char argc, char * const argv[])
 			strcpy(test_dir, "vsw5");
 			strcpy(test_flag, "VSW5TESTSUITE");
 			strcpy(test_name, "VSW5");
-			strcpy(vendor_name, "APPLIED TESTING AND TECHNOLOGY");
+			strcpy(vendor_name, "THE OPEN GROUP");
 			strcpy(test_prefix, "VSW");
 		} else {
 			if (strcmp((const char *)basename(argv[0]), "vsmrptm")  == 0) {
 				strcpy(test_dir, "vsm4");
 				strcpy(test_flag, "VSM4TESTSUITE");
 				strcpy(test_name, "VSM4");
-				strcpy(vendor_name, "X/OPEN COMPANY LIMITED");
+				strcpy(vendor_name, "THE OPEN GROUP");
 				strcpy(test_prefix, "VSM");
 			} else {
 				fprintf(stderr, "Unknown argv[0] value = %s\n", basename(argv[0]));
@@ -999,9 +1002,6 @@ int main(char argc, char * const argv[])
 		parse_file(files[curfile]);
 	}
 
-/*
-	printf("                        APPLIED TESTING AND TECHNOLOGY INC.\n");
-*/
 	printf("                        %s JOURNAL FILE COMPARISON REPORT\n", test_name);
 
 	sprintf(verbuf, "%s/%s/%s/%s_RELEASE", getenv("TET_ROOT"), test_dir, doc_dir, test_prefix);

@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xt11/taprelcre/taprelcre.m,v 1.1 2005-02-12 14:37:51 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xt11/taprelcre/taprelcre.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
@@ -33,8 +33,12 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: taprelcre.m,v $
->># Revision 1.1  2005-02-12 14:37:51  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.1  1999/04/05 22:28:03  mar
+>># req.4.W.00138: tp2 - destructor should not free to_val.  The Intrinsics handle
+>># it internally (it happens to be a stack variable).
 >>#
 >># Revision 8.0  1998/12/23 23:37:36  mar
 >># Branch point for Release 5.0.2
@@ -108,7 +112,6 @@ XrmValue *args;
 Cardinal *num_args;
 {
 	avs_set_event(2,avs_get_event(2)+1);
-	XtFree((void *) to_val);
 }
 >>SET tpstartup avs_alloc_sem
 >>SET tpcleanup avs_free_sem

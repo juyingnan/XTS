@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib5/gtwdwprprt/gtwdwprprt.m,v 1.1 2005-02-12 14:37:35 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib5/gtwdwprprt/gtwdwprprt.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2001 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
@@ -31,8 +32,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: gtwdwprprt.m,v $
->># Revision 1.1  2005-02-12 14:37:35  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/21 10:48:22  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  2001/10/04 09:44:52  vsx
+>># req.4.W.00157: fix incorrect comments about 32 bit longs
 >>#
 >># Revision 8.0  1998/12/23 23:26:46  mar
 >># Branch point for Release 5.0.2
@@ -477,7 +484,7 @@ For req_type is the required type and AnyPropertyType:
 int ret;
 int mode;
 char *cdata = "a tested property";
->># Unsigned longs _must_ be 32 bits, or this won't work...
+>># Note that this _must_ be an array of longs, even if longs are 64 bit
 unsigned long idata[4];
 XEvent ev;
 
@@ -667,7 +674,7 @@ For req_type is the required type and AnyPropertyType:
 int ret;
 int mode;
 char *cdata = "a tested property";
->># Unsigned longs _must_ be 32 bits, or this won't work...
+>># Note that this _must_ be an array of longs, even if longs are 64 bit
 unsigned long idata[4];
 XEvent ev;
 

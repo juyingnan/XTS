@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libXtTest/avs_xext.c,v 1.1 2005-02-12 14:37:15 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libXtTest/avs_xext.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 * Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
@@ -37,8 +37,11 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: avs_xext.c,v $
-* Revision 1.1  2005-02-12 14:37:15  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.1  2003/12/08 16:49:41  gwc
+* Removed bogus window_arg == NULL check in avs_xext_init()
 *
 * Revision 8.0  1998/12/23 23:25:37  mar
 * Branch point for Release 5.0.2
@@ -148,12 +151,6 @@ Window avs_xext_init()
 		 BorderPixel,
 		 BackgroundPixel
 		 );
-
-	if (window_arg == NULL) {
-		tet_infoline("ERROR: avs_xext_init: Window creation failed");
-		tet_result(TET_UNRESOLVED);
-		exit(1);
-	}
 
 	XMapWindow (display, window_arg);
 	XSync (display, 0);

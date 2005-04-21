@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,8 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/SendXIReq.c,v 1.1 2005-02-12 14:37:16 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libproto/SendXIReq.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
+* Copyright (c) 1999 The Open Group
 * Copyright Applied Testing and Technology Inc. 1995
 * All rights reserved
 *
@@ -34,8 +35,17 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: SendXIReq.c,v $
-* Revision 1.1  2005-02-12 14:37:16  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.3  2005/01/20 16:06:51  gwc
+* Updated copyright notice
+*
+* Revision 8.2  1999/11/24 10:54:59  vsx
+* TSD4.W.00166: use big request length 1 when normal length would have been 0
+*
+* Revision 8.1  1999/04/03 01:25:39  mar
+* req.4.W.00136: Check Xlib-less connection and not Dsp connection
 *
 * Revision 8.0  1998/12/23 23:25:05  mar
 * Branch point for Release 5.0.2
@@ -129,7 +139,7 @@ SOFTWARE.
 */
 
 #ifndef lint
-static char rcsid[]="$Header: /cvs/xtest/xtest/xts5/src/libproto/SendXIReq.c,v 1.1 2005-02-12 14:37:16 anderson Exp $";
+static char rcsid[]="$Header: /cvs/xtest/xtest/xts5/src/libproto/SendXIReq.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $";
 #endif
 
 #include "XstlibInt.h"
@@ -171,10 +181,10 @@ int pollreq;
 
 	if (rp->length == 0)
 		{
-		bigRequestLength = 0;
+		bigRequestLength = 1; /* equivalent to `normal' length 0 */
 #if XT_X_RELEASE > 5
 		/* returns 0 if Big Requests are not enabled */
-		bigRequestsAreEnabled = XExtendedMaxRequestSize(Dsp);
+		bigRequestsAreEnabled = dpy->bigreq_size;
 		if (bigRequestsAreEnabled)
 			{ isABigRequest = 1; }
 #endif
@@ -192,7 +202,7 @@ int pollreq;
 		bytesToSend = (newlen << 2);
 #if XT_X_RELEASE > 5
 		/* returns 0 if Big Requests are not enabled */
-		bigRequestsAreEnabled = XExtendedMaxRequestSize(Dsp);
+		bigRequestsAreEnabled = dpy->bigreq_size;
 #endif
 		if (bigRequestsAreEnabled)
 			{

@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xt13/trspathnm/trspathnm.m,v 1.1 2005-02-12 14:37:58 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xt13/trspathnm/trspathnm.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 1999 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
 All Rights Reserved.
@@ -33,8 +34,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: trspathnm.m,v $
->># Revision 1.1  2005-02-12 14:37:58  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/21 12:16:55  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  1999/11/26 10:40:47  vsx
+>># avoid fixed file locations (for exec-in-place false)
 >>#
 >># Revision 8.0  1998/12/23 23:38:26  mar
 >># Branch point for Release 5.0.2
@@ -673,9 +680,12 @@ pid_t pid2;
 	avs_xt_hier("Trspathnm2", "XtResolvePathname");
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	strcpy(path, getenv("TET_ROOT"));
-	strcat(path, "/vsw5/tset/Xt13/tfindfile/");
-	strcat(path, "%s");
+	if (getcwd(path, sizeof(path)-3) == NULL) {
+		tet_infoline("ERROR: getcwd() returned NULL");
+		tet_result(TET_UNRESOLVED);
+		exit(0);
+	}
+	strcat(path, "/%s");
 	tet_infoline("TEST: Call XtResolvePathname for non-existent file");
 	sub[0].match = 's';
 	sub[0].substitution = "data5";
@@ -1152,8 +1162,12 @@ pid_t pid2;
 	avs_xt_hier("Trspathnm7", "XtResolvePathname");
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	strcpy(path, (char *)getenv("TET_ROOT"));
-	strcat(path, "/vsw5/tset/Xt13/trspathnm/%s");
+	if (getcwd(path, sizeof(path)-3) == NULL) {
+		tet_infoline("ERROR: getcwd() returned NULL");
+		tet_result(TET_UNRESOLVED);
+		exit(0);
+	}
+	strcat(path, "/%s");
 	tet_infoline("TEST: Call XtResolvePathname with NULL predicate");
 	display = XtDisplay(topLevel);
 	sub[0].match = 's';
@@ -1165,8 +1179,12 @@ pid_t pid2;
 		tet_result(TET_FAIL);
 		exit(0);
 	}
-	strcpy(string_good, (char *)getenv("TET_ROOT"));
-	strcat(string_good, "/vsw5/tset/Xt13/trspathnm/data1");
+	if (getcwd(string_good, sizeof(string_good)-6) == NULL) {
+		tet_infoline("ERROR: getcwd() returned NULL");
+		tet_result(TET_UNRESOLVED);
+		exit(0);
+	}
+	strcat(string_good, "/data1");
 	tet_infoline("TEST: Returned string");
 	check_str(string_good, str, "String");
 	LKROF(pid2, AVSXTTIMEOUT-2);

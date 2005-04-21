@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xproto/ptimg/ptimg.m,v 1.1 2005-02-12 14:37:48 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xproto/ptimg/ptimg.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 1999 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
@@ -31,8 +32,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: ptimg.m,v $
->># Revision 1.1  2005-02-12 14:37:48  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/21 12:08:31  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  1999/12/03 11:33:31  vsx
+>># TSD4W.00165: in TOO_LONG test don't try to allocate image buffer when Big-Requests are enabled
 >>#
 >># Revision 8.0  1998/12/23 23:32:57  mar
 >># Branch point for Release 5.0.2
@@ -180,21 +187,22 @@ tester()
 			pir->length += rep->length;
 			break;
 		case TOO_LONG:
-			/* this must match, or exceed, the munged in max_length
-			   used in SendReq.c
-			*/
-			pir->length = Get_Max_Request(CLIENT) + 1;
+			/* Send_Req() won't access any request data, so
+			   no need to allocate it */
+			pir->length = 0;
 			break;
 		}
 		len = pir->length<<2;
-		pir = (xPutImageReq *) Xstrealloc((char *) pir, len);
-		if (pir == NULL) {
-			Log_Del ("client %d could not reallocate %d bytes for request buffer\n", CLIENT, len);
-			Exit ();
+		if (len != 0) {
+			pir = (xPutImageReq *) Xstrealloc((char *) pir, len);
+			if (pir == NULL) {
+				Log_Del ("client %d could not reallocate %d bytes for request buffer\n", CLIENT, len);
+				Exit ();
+			}
+			to = (unsigned char *) (pir+1);
+			from = (unsigned char *) (rep+1);
+			wbcopy(from, to, rep->length << 2);
 		}
-		to = (unsigned char *) (pir+1);
-		from = (unsigned char *) (rep+1);
-		wbcopy(from, to, rep->length << 2);
 	}
 
 	Send_Req(CLIENT, (xReq *) pir);

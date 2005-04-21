@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,8 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/include/Xstlib.h,v 1.1 2005-02-12 14:37:13 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/include/Xstlib.h,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
+* Copyright (c) 2001 The Open Group
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
 *
@@ -34,8 +35,14 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: Xstlib.h,v $
-* Revision 1.1  2005-02-12 14:37:13  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.2  2005/01/20 15:43:55  gwc
+* Updated copyright notice
+*
+* Revision 8.1  2001/02/05 12:06:24  vsx
+* fix for Abort/Delete/Exit with case-insenitive linkers
 *
 * Revision 8.0  1998/12/23 23:23:29  mar
 * Branch point for Release 5.0.2
@@ -365,10 +372,18 @@ void	fontprotocleanup();
 void	checkconfig();
 
 /*
+ *	The following names clash with other functions on systems with
+ *	case-insenitive linkers, so #define them to a different name.
+ */
+#define Abort	XstAbort
+#define Delete	XstDelete
+#define Exit	XstExit
+
+/*
  *	Xstlib routine definitions
  */
-void	Abort();
-void	Delete ();
+void	XstAbort();
+void	XstDelete ();
 void	Finish ();
 Atom	Create_Atom();
 void	Create_Client ();
@@ -386,7 +401,7 @@ Font	Create_Font();
 GContext	Create_GContext();
 Pixmap	Create_Pixmap();
 Window	Create_Window();
-void	Exit();
+void	XstExit();
 void	Exit_OK();
 xReply *Expect();
 char	*Get_Date();

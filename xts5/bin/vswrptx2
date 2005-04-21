@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (c) 2005 X.Org Foundation LLC
+# Copyright (c) 2005 X.Org Foundation L.L.C.
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy of
 # this software and associated documentation files (the "Software"), to deal in
@@ -20,10 +20,11 @@
 # SOFTWARE.
 #
 :
-# $Header: /cvs/xtest/xtest/xts5/bin/vswrptx2,v 1.1 2005-02-12 14:37:13 anderson Exp $
+# $Header: /cvs/xtest/xtest/xts5/bin/vswrptx2,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 #
-#                Copyright (c) Applied Testing and Technology, Inc. 1993, 1994
-#                All Rights Reserved.
+# Copyright (c) 2003 The Open Group
+# Copyright (c) Applied Testing and Technology, Inc. 1993, 1994
+# All Rights Reserved.
 #
 # Project:        VSW5
 #
@@ -35,8 +36,17 @@
 #
 # Modifications:
 # $Log: vswrptx2,v $
-# Revision 1.1  2005-02-12 14:37:13  anderson
-# Initial revision
+# Revision 1.2  2005-04-21 09:40:42  ajosey
+# resync to VSW5.1.5
+#
+# Revision 8.3  2005/01/20 15:41:57  gwc
+# Updated copyright notice
+#
+# Revision 8.2  2003/12/09 10:05:18  gwc
+# Avoid using echo with backslash escapes
+#
+# Revision 8.1  2003/12/09 10:02:29  gwc
+# Output new declaration
 #
 # Revision 8.0  1998/12/23 23:22:44  mar
 # Branch point for Release 5.0.2
@@ -63,64 +73,118 @@
 # Prepare for GA Release
 #
 
-echo "\t\t\tVSW5 OPEN GROUP SUMMARY REPORT\n"
-echo "\t\t\t       VSW Release \c"
-cat $TET_ROOT/vsw5/doc/VSW_RELEASE
-echo "\n\n"
-echo "\tTest Engineer:\t\t\t\tSignature:\n"
-echo "\tJob Title:\t\t\t\tDate:\n"
-echo "\tOrganization:\n"
-echo "\tAddress:\n\n\n"
-echo "\tClient Name:\t\t\t\tSignature:\n"
-echo "\tJob Title:\t\t\t\tDate:\n"
-echo "\tOrganization:\n"
-echo "\tAddress:\n\n\n"
-echo "\tTest Date:\n"
-echo "\tTest System:"
-echo "\f"
-echo "\t\t\tVSW5 OPEN GROUP SUMMARY REPORT\n"
-echo "\t\t\t       VSW Release \c"
-cat $TET_ROOT/vsw5/doc/VSW_RELEASE
-echo "\n"
-echo "\t\t\t   OPERATIONAL SUMMARY\n\n"
-echo "\tTest Date:\n"
-echo "\tTest Agency:\n"
-echo "\tTest Operator:\n\n\n"
-echo "\tReport Date: \c"
-date
-echo "\n"
-echo "\tSystem Configuration:\n"
-echo "\t\tHardware Description:\n\n\n\n"
-echo "\t\tSoftware Description and Release:\n\n\n\n"
-echo "\f"
-echo "\t\t\tVSW5 OPEN GROUP SUMMARY REPORT\n"
-echo "\t\t\t       VSW Release \c"
-cat $TET_ROOT/vsw5/doc/VSW_RELEASE
-echo "\n"
-echo "\t\t\t      CONFORMANCE SUMMARY\n\n"
-echo "\tThis is to certify that this system when tested for conformance to the"
-echo "\tOpen Group X Window (X11R5) Document Set achieved the result below\n"
+RELEASE=`cat $TET_ROOT/vsw5/doc/VSW_RELEASE`
+
+echo "			VSW5 OPEN GROUP SUMMARY REPORT
+"
+echo "			       VSW Release $RELEASE
+
+
+"
+echo "	Test Engineer:				Signature:
+"
+echo "	Job Title:				Date:
+"
+echo "	Organization:
+"
+echo "	Address:
+
+
+"
+echo "	Client Name:				Signature:
+"
+echo "	Job Title:				Date:
+"
+echo "	Organization:
+"
+echo "	Address:
+
+
+"
+echo "	Test Date:
+"
+echo "	Test System:"
+echo ""
+echo "			VSW5 OPEN GROUP SUMMARY REPORT
+"
+echo "			       VSW Release $RELEASE
+
+"
+echo "			   OPERATIONAL SUMMARY
+
+"
+echo "	Test Date:
+"
+echo "	Test Agency:
+"
+echo "	Test Operator:
+
+
+"
+echo "	Report Date: `date`
+
+"
+echo "	System Configuration:
+"
+echo "		Hardware Description:
+
+
+
+"
+echo "		Software Description and Release:
+
+
+
+"
+echo ""
+echo "			VSW5 OPEN GROUP SUMMARY REPORT
+"
+echo "			       VSW Release $RELEASE
+
+"
+echo "			      CONFORMANCE SUMMARY
+
+"
+echo "	This is to certify that this system when tested for conformance to the"
+echo "	Open Group X Window (X11R5) Document Set achieved the result below
+"
 vswrpt -x 1 -d 2 $*
-echo "\n\n\tNumber of amendements ______________________\n"
-echo "\n\tApproval Signature/Date _____________________________________\n"
-echo "\f"
-echo "\t\t\tVSW5 OPEN GROUP SUMMARY REPORT\n"
-echo "\t\t\t       VSW Release \c"
-cat $TET_ROOT/vsw5/doc/VSW_RELEASE
-echo "\n"
-echo "\t\t\t     CONFIGURATION SUMMARY\n\n"
+echo "
+
+	I declare that no changes have been made to the test suite code
+	or test suite data other than those detailed in the user and
+	installation guide.
+"
+echo "
+	Signature/Date _____________________________________
+"
+echo ""
+echo "			VSW5 OPEN GROUP SUMMARY REPORT
+"
+echo "			       VSW Release $RELEASE
+
+"
+echo "			     CONFIGURATION SUMMARY
+
+"
 vswrpt -c $*|sort|uniq
-echo "\f"
-echo "\t\t\tVSW5 OPEN GROUP SUMMARY REPORT\n"
-echo "\t\t\t       VSW Release \c"
-cat $TET_ROOT/vsw5/doc/VSW_RELEASE
-echo "\n"
-echo "\t\t\t       FIP SIGN-OFFS\n\n"
+echo ""
+echo "			VSW5 OPEN GROUP SUMMARY REPORT
+"
+echo "			       VSW Release $RELEASE
+
+"
+echo "			       FIP SIGN-OFFS
+
+"
 vswrpt -d 0 -x 2 $*
-echo "\f"
-echo "\t\t\tVSW5 OPEN GROUP SUMMARY REPORT\n"
-echo "\t\t\t       VSW Release \c"
-cat $TET_ROOT/vsw5/doc/VSW_RELEASE
-echo "\n"
-echo "\t\t\t          OTHER FAILURES\n\n"
+echo ""
+echo "			VSW5 OPEN GROUP SUMMARY REPORT
+"
+echo "			       VSW Release $RELEASE
+
+"
+echo "			          OTHER FAILURES
+
+"
 vswrpt -d 0 -x 3 $*

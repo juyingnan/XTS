@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,8 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libXtTest/avs_func.c,v 1.1 2005-02-12 14:37:15 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libXtTest/avs_func.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
+* Copyright (c) 2004 The Open Group
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 * Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
 * All Rights Reserved.
@@ -36,8 +37,14 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: avs_func.c,v $
-* Revision 1.1  2005-02-12 14:37:15  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.2  2005/01/14 11:19:53  gwc
+* Updated copyright notice
+*
+* Revision 8.1  2004/02/12 16:46:28  gwc
+* Changed mem_limit() to use/return size_t
 *
 * Revision 8.0  1998/12/23 23:25:34  mar
 * Branch point for Release 5.0.2
@@ -124,16 +131,16 @@ XtPointer client_data, call_data;
 	XtDestroyWidget(root);
 }
 
-unsigned
+size_t
 mem_limit()
 {
 	char	*ptr;
-	unsigned int hbit,i,j;
+	size_t	hbit,i,j;
 
 	j = 0;
-	for (hbit=((unsigned int)(UINT_MAX)>>1)+1;hbit;hbit=(ptr)?(i>>1):(i>>2)){
+	for (hbit=(((size_t)-1)>>1)+1;hbit;hbit=(ptr)?(i>>1):(i>>2)){
 		for(i=1;
-			(ptr=(char *)malloc(i|j)) && (free(ptr),1) && (i<hbit);
+			(ptr=malloc(i|j)) && (free(ptr),1) && (i<hbit);
 		i<<=1);
 			j |= (ptr) ? i : i >> 1;
 	}

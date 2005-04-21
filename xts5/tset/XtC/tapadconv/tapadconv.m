@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/XtC/tapadconv/tapadconv.m,v 1.1 2005-02-12 14:38:24 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/XtC/tapadconv/tapadconv.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 1999,2002 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
 All Rights Reserved.
@@ -33,8 +34,17 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: tapadconv.m,v $
->># Revision 1.1  2005-02-12 14:38:24  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.3  2005/01/21 12:27:09  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.2  2002/11/27 15:50:34  gwc
+>># TSD4W.00173: separate case 3 in XtCVT_ProcA()
+>>#
+>># Revision 8.1  1999/11/24 16:11:32  vsx
+>># req.4.W.00142: 64-bit problem passing int values using XtImmediate
 >>#
 >># Revision 8.0  1998/12/23 23:38:33  mar
 >># Branch point for Release 5.0.2
@@ -137,11 +147,11 @@ XrmValue *value;
 	value->size = sizeof(argdata[7]);
 }
 
-void init_args(checknum)
-int checknum;
+void init_args(pchecknum)
+int *pchecknum;
 {
-	cargs[0].address_mode = XtImmediate;
-	cargs[0].address_id = (XtPointer)checknum;
+	cargs[0].address_mode = XtAddress;
+	cargs[0].address_id = (XtPointer)pchecknum;
 	cargs[0].size = sizeof(XtPointer);
 
 /*XtAddress*/
@@ -157,17 +167,17 @@ int checknum;
 /*XtImmediate*/
 	cargs[3].address_mode = XtImmediate;
 	cargs[3].address_id = (XtPointer)argdata[3];
-	cargs[3].size = sizeof(XtPointer);
+	cargs[3].size = sizeof(argdata[3]);
 
 /*XtResourceString*/
 	cargs[4].address_mode = XtImmediate;
 	cargs[4].address_id = (XtPointer)argdata[4];
-	cargs[4].size = sizeof(XtPointer);
+	cargs[4].size = sizeof(argdata[4]);
 
 /*XtResourceQuark*/
 	cargs[5].address_mode = XtImmediate;
 	cargs[5].address_id = (XtPointer)argdata[5];
-	cargs[5].size = sizeof(XtPointer);
+	cargs[5].size = sizeof(argdata[5]);
 
 /*XtWidgetBaseOffset*/
 	cargs[6].address_mode = XtWidgetBaseOffset;
@@ -220,7 +230,6 @@ int	checknum;
 
 	switch (checknum) {
 	case 1:
-	case 3:
 	case 7:
 		if (((int)*(int *)args[checknum].addr) != argdata[checknum]) {
 			sprintf(ebuf, "ERROR: expected args[%d].addr to point to %d points to %d", checknum, argdata[checknum], ((int)*(int *)args[checknum].addr));
@@ -232,6 +241,14 @@ int	checknum;
 	case 2:
 		if (((Screen*)*(Screen**)args[checknum].addr) != topLevel->core.screen) {
 			sprintf(ebuf, "ERROR: expected args[%d].addr to point to %p points to %p", checknum, topLevel->core.screen, ((Screen*)*(Screen**)args[checknum].addr));
+			tet_infoline(ebuf);
+			tet_result(TET_FAIL);
+			return;
+		}
+		break;
+	case 3:
+		if (((int)*(XPointer *)args[checknum].addr) != argdata[checknum]) {
+			sprintf(ebuf, "ERROR: expected args[%d].addr to point to %d points to %d", checknum, argdata[checknum], ((int)*(XPointer *)args[checknum].addr));
 			tet_infoline(ebuf);
 			tet_result(TET_FAIL);
 			return;
@@ -425,6 +442,7 @@ XrmValue from;
 XrmValue to_in_out;
 XtCacheRef cache_ref_return;
 int status;
+int checknum;
 pid_t pid2;
 char	charret;
 
@@ -433,7 +451,8 @@ char	charret;
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
 	tet_infoline("TEST: Register resource converter");
-	init_args(1);
+	checknum = 1;
+	init_args(&checknum);
 	XtAppAddConverter(app_ctext,
 		 XtRString,
 		 XavsRChar,
@@ -474,6 +493,7 @@ XrmValue from;
 XrmValue to_in_out;
 XtCacheRef cache_ref_return;
 int status;
+int checknum;
 pid_t pid2;
 char	charret;
 
@@ -482,7 +502,8 @@ char	charret;
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
 	tet_infoline("TEST: Register resource converter");
-	init_args(2);
+	checknum = 2;
+	init_args(&checknum);
 	XtAppAddConverter(app_ctext,
 		 XtRString,
 		 XavsRChar,
@@ -524,6 +545,7 @@ XrmValue to_in_out;
 char	charret;
 XtCacheRef cache_ref_return;
 int status;
+int checknum;
 pid_t pid2;
 
 	FORK(pid2);
@@ -531,7 +553,8 @@ pid_t pid2;
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
 	tet_infoline("TEST: Register resource converter");
-	init_args(3);
+	checknum = 3;
+	init_args(&checknum);
 	XtAppAddConverter(app_ctext,
 		 XtRString,
 		 XavsRChar,
@@ -596,6 +619,7 @@ XrmValue to_in_out;
 char	charret;
 XtCacheRef cache_ref_return;
 int status;
+int checknum;
 pid_t pid2;
 Widget test_widget;
 
@@ -606,7 +630,8 @@ Widget test_widget;
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
 	tet_infoline("TEST: Register resource converter");
-	init_args(7);
+	checknum = 7;
+	init_args(&checknum);
 	XtAppAddConverter(app_ctext,
 		 XtRString,
 		 XavsRChar,
@@ -651,6 +676,7 @@ XrmValue to_in_out;
 char	charret;
 XtCacheRef cache_ref_return;
 int status;
+int checknum;
 pid_t pid2;
 
 	FORK(pid2);
@@ -658,7 +684,8 @@ pid_t pid2;
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
 	tet_infoline("TEST: Register resource converter");
-	init_args(7);
+	checknum = 7;
+	init_args(&checknum);
 	XtAppAddConverter(app_ctext,
 		 XtRString,
 		 XavsRChar,

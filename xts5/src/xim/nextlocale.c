@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,8 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/xim/nextlocale.c,v 1.1 2005-02-12 14:37:16 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/xim/nextlocale.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
+* Copyright (c) 1999 The Open Group
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
 *
@@ -34,8 +35,14 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: nextlocale.c,v $
-* Revision 1.1  2005-02-12 14:37:16  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.2  2005/01/20 16:48:13  gwc
+* Updated copyright notice
+*
+* Revision 8.1  1999/12/02 18:04:23  vsx
+* make localestartup() set the font path
 *
 * Revision 8.0  1998/12/23 23:25:24  mar
 * Branch point for Release 5.0.2
@@ -266,7 +273,9 @@ char *old_locale;
 void
 localestartup()
 {
-        startup();
+	/* Use the startup function which sets the font path, as most
+	   tests which use localestartup() also need the fp set */
+        fontstartup();
         if (Dsp == (Display *)0)
                 return;
 
@@ -278,5 +287,5 @@ localecleanup()
 {
         if (Dsp) setlocale(LC_CTYPE,old_locale_str);
  
-        cleanup();
+        fontcleanup();
 }

@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -19,8 +19,9 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-/* $Header: /cvs/xtest/xtest/xts5/src/bin/reports/vswrpt.c,v 1.1 2005-02-12 14:37:15 anderson Exp $
+/* $Header: /cvs/xtest/xtest/xts5/src/bin/reports/vswrpt.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
+* (C) Copyright 2000-2001 The Open Group
 * (C) Copyright 1996 Applied Testing Technology, Inc.
 * (C) Copyright 1996 X/Open Company Limited
 *
@@ -43,8 +44,20 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: vswrpt.c,v $
-* Revision 1.1  2005-02-12 14:37:15  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.4  2005/01/20 15:53:34  gwc
+* Updated copyright notice
+*
+* Revision 8.3  2001/09/11 15:35:17  vsx
+* Make commandline[] bigger to allow for v. long command lines
+*
+* Revision 8.2  2000/01/05 11:21:06  vsx
+* Fix Year2000 bug reading year from journal
+*
+* Revision 8.1  1999/11/09 17:06:26  vsx
+* Release 5.1.1beta
 *
 * Revision 8.0  1998/12/23 23:24:19  mar
 * Branch point for Release 5.0.2
@@ -130,7 +143,7 @@ char	endtime[64];
 /*test run user (from TCC start)*/
 char	username[64];
 /*test command line (from TCC start)*/
-char	commandline[128];
+char	commandline[512];
 /*number of build errors*/
 int	nbuilderr = 0;
 /*number of TCC errors*/
@@ -351,10 +364,11 @@ fflush(stderr);
 			pline = strtok(NULL, " ");
 			mytm.tm_sec=atoi(pline);
 			pline = strtok(NULL, "\0");
-			strncpy(ttmp, pline+2, 2);	
-			ttmp[2]= 0;
-			mytm.tm_year=atoi(ttmp);
+			strncpy(ttmp, pline, 4);	
+			ttmp[4]= 0;
+			mytm.tm_year=atoi(ttmp)-1900;
 			strncpy(ttmp, pline+4, 2);	
+			ttmp[2]= 0;
 			mytm.tm_mon=atoi(ttmp)-1;
 			strncpy(ttmp, pline+6, 2);	
 			mytm.tm_mday=atoi(ttmp);
@@ -1523,10 +1537,11 @@ static void print_summary(void)
 			fprintf(stderr, "Null pline in %s\n", linebuf);
 			exit(2);
 		}
-	strncpy(ttmp, pline+2, 2);	
-	ttmp[2]= 0;
-	mytm.tm_year=atoi(ttmp);
+	strncpy(ttmp, pline, 4);	
+	ttmp[4]= 0;
+	mytm.tm_year=atoi(ttmp)-1900;
 	strncpy(ttmp, pline+4, 2);	
+	ttmp[2]= 0;
 	mytm.tm_mon=atoi(ttmp)-1;
 	strncpy(ttmp, pline+6, 2);	
 	mytm.tm_mday=atoi(ttmp);
@@ -1687,10 +1702,7 @@ static void print_summary(void)
 extern int optind, opterr, optopt;
 extern char *optarg;
 
-/*keep ANSI happy*/
-void main(char, char * const []);
-
-void main(char argc, char * const argv[])
+int main(int argc, char * const argv[])
 {
 	int	optlet;
  	int	errflag = 0;
@@ -1728,7 +1740,7 @@ void main(char argc, char * const argv[])
 		strcpy(test_flag, "SPEC1170TESTSUITE");
 		strcpy(test_name, "VSU4");
 		strcpy(test_prefix, "VSU4");
-		strcpy(vendor_name, "APPLIED TESTING AND TECHNOLOGY");
+		strcpy(vendor_name, "THE OPEN GROUP");
 		strcpy(special1, "AREA");
 		strcpy(special2, "CASE");
 		strcpy(doc_dir, "DOC");
@@ -1737,14 +1749,14 @@ void main(char argc, char * const argv[])
 			strcpy(test_dir, "vsw5");
 			strcpy(test_flag, "VSW5TESTSUITE");
 			strcpy(test_name, "VSW5");
-			strcpy(vendor_name, "APPLIED TESTING AND TECHNOLOGY");
+			strcpy(vendor_name, "THE OPEN GROUP");
 			strcpy(test_prefix, "VSW");
 		} else {
 			if (strcmp(bname, "vsmrpt")  == 0) {
 				strcpy(test_dir, "vsm4");
 				strcpy(test_flag, "VSM4TESTSUITE");
 				strcpy(test_name, "VSM4");
-				strcpy(vendor_name, "X/OPEN COMPANY LIMITED");
+				strcpy(vendor_name, "THE OPEN GROUP");
 				strcpy(test_prefix, "VSM");
 			} else {
 				fprintf(stderr, "Unknown argv[0] value = %s\n", bname);
@@ -1994,4 +2006,6 @@ fprintf(stderr, "dir: %s\n", tmpbuf);
 		print_summary();
 
 	exit(0);
+
+	return 0;
 }

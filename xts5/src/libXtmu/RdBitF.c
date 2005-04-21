@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,8 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libXtmu/RdBitF.c,v 1.1 2005-02-12 14:37:15 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libXtmu/RdBitF.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
+* Copyright (c) 2001 The Open Group
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 * All Rights Reserved.
 *
@@ -35,8 +36,14 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: RdBitF.c,v $
-* Revision 1.1  2005-02-12 14:37:15  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.2  2005/01/20 16:03:42  gwc
+* Updated copyright notice
+*
+* Revision 8.1  2001/02/05 11:28:45  vsx
+* change rindex() calls to strrchr()
 *
 * Revision 8.0  1998/12/23 23:26:03  mar
 * Branch point for Release 5.0.2
@@ -100,8 +107,10 @@ SOFTWARE.
 #include <X11/Xos.h>
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
+#include <stdlib.h>
 #include <stdio.h>
 #include <ctype.h>
+#include <string.h>
 
 
 #define MAX_SIZE 255
@@ -148,7 +157,7 @@ static void initHexTable()
 /*
  *	read next hex value in the input stream, return -1 if EOF
  */
-static NextInt (fstream)
+static int NextInt (fstream)
     FILE *fstream;
 {
     int	ch;
@@ -217,7 +226,7 @@ int XmuReadBitmapData (fstream, width, height, datap, x_hot, y_hot)
 	    RETURN (BitmapFileInvalid);
 	}
 	if (sscanf(line,"#define %s %d",name_and_type,&value) == 2) {
-	    if (!(type = rindex(name_and_type, '_')))
+	    if (!(type = strrchr(name_and_type, '_')))
 	      type = name_and_type;
 	    else
 	      type++;
@@ -246,7 +255,7 @@ int XmuReadBitmapData (fstream, width, height, datap, x_hot, y_hot)
 	else
 	  continue;
 
-	if (!(type = rindex(name_and_type, '_')))
+	if (!(type = strrchr(name_and_type, '_')))
 	  type = name_and_type;
 	else
 	  type++;

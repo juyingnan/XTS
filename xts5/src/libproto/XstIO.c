@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,8 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/XstIO.c,v 1.1 2005-02-12 14:37:16 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libproto/XstIO.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
+* Copyright (c) 2003 The Open Group
 * Copyright Applied Testing and Technology Inc. 1995
 * All rights reserved
 *
@@ -34,8 +35,15 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: XstIO.c,v $
-* Revision 1.1  2005-02-12 14:37:16  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.2  2005/01/20 16:43:59  gwc
+* Updated copyright notice
+*
+* Revision 8.1  2003/12/18 10:53:23  gwc
+* Save errno after ReadFromServer() and use the saved value in
+* later comparisons
 *
 * Revision 8.0  1998/12/23 23:25:16  mar
 * Branch point for Release 5.0.2
@@ -162,6 +170,7 @@ register long   size;
 {
     long   bytes_read = 0;
     long   this_read;
+    int    err;
 
 
     if (size == 0) {
@@ -175,7 +184,8 @@ register long   size;
     Reset_Some();
     while (1) {
 	Xst_tr = this_read = ReadFromServer (dpy -> fd, data, (int) size);
-	Log_Some("Xst_Read(%d, 0x%x, %d) -> %d, errno = %d\n",dpy->fd,(unsigned)data,(int)size,(int)this_read,(int)errno);
+	err = errno;
+	Log_Some("Xst_Read(%d, 0x%x, %d) -> %d, errno = %d\n",dpy->fd,(unsigned)data,(int)size,(int)this_read,err);
 	if (this_read == size)
 		break;
 	if (this_read > 0) {
@@ -185,7 +195,6 @@ register long   size;
 	    Xst_size = size;
 	    Xst_br = bytes_read;
 	}
-
 	else if (this_read == 0) {
 		_XstWaitForReadable(dpy);
 	}
@@ -194,24 +203,24 @@ register long   size;
 		 * rescue us from spinning forever (known SVR4 bug).
 		 */
 #ifdef EWOULDBLOCK
-		if (errno == EWOULDBLOCK)
+		if (err == EWOULDBLOCK)
 			_XstWaitForReadable(dpy);
 		else
 #endif
 #ifdef EAGAIN
-		if (errno == EAGAIN)
+		if (err == EAGAIN)
 			_XstWaitForReadable(dpy);
 		else
 #endif
 #ifdef EINTR
-		if (errno == EINTR)
+		if (err == EINTR)
 			_XstWaitForReadable(dpy);
 		else
 #endif
 		{
 		    Reset_Some();
 		    Log_Debug("Xst_Read(%d, 0x%x, %d) returning %d, errno = %d\n",
-			dpy->fd,(unsigned)data,(int)size,(int)this_read,(int)errno);
+			dpy->fd,(unsigned)data,(int)size,(int)this_read,err);
 		    return(this_read);
 		}
 	}

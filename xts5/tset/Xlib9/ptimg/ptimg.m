@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib9/ptimg/ptimg.m,v 1.1 2005-02-12 14:37:43 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib9/ptimg/ptimg.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2002 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
@@ -31,8 +32,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: ptimg.m,v $
->># Revision 1.1  2005-02-12 14:37:43  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/21 10:52:46  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  2002/11/27 16:04:20  gwc
+>># TSD4W.00174: tp33 - skip drawables with depth > 24
 >>#
 >># Revision 8.0  1998/12/23 23:30:47  mar
 >># Branch point for Release 5.0.2
@@ -361,6 +368,7 @@ are used.
 >>#		seems to allow 4,8,12,16,20,24,28,32.... Is 1 treated just
 >>#		like XYPixmap with depth 1??? What about the other values?
 >>#		Protocol allows it to be > depth with extra bits ignored!
+>>#NOTE gwc	Untestable for depths > 24.
 >>ASSERTION Good A
 If drawables with depth < 32 are supported:
 When the image differs from the X server's format in bits-per-pixel,
@@ -394,7 +402,7 @@ static int legal_bpps[] = {1, 4, 8, 16, 24, 32, 0};
 #define ROUNDUP(nbytes, pad) ((((nbytes) + ((pad)-1)) / (pad)) * ((pad)>>3))
 
 	for (resetvinf(VI_WIN_PIX); nextvinf(&vp); ) {
-		if (vp->depth == 32)
+		if (vp->depth > 24)
 			continue;
 
 		supported++;

@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib9/cpypln/cpypln.m,v 1.1 2005-02-12 14:37:37 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib9/cpypln/cpypln.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2003 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
@@ -31,8 +32,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: cpypln.m,v $
->># Revision 1.1  2005-02-12 14:37:37  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/21 10:51:46  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  2003/12/08 12:27:28  gwc
+>># PR2288: tp42 - changed (1<<vp->depth) to (1UL<<vp->depth)
 >>#
 >># Revision 8.0  1998/12/23 23:27:43  mar
 >># Branch point for Release 5.0.2
@@ -569,7 +576,7 @@ int 	unsupp = 0;
 		winpair(display, vp, &src, &dest);
 
 		gc = makegc(display, dest);
-		plane = (1<<vp->depth);
+		plane = (1UL<<vp->depth);
 
 		XCALL;
 

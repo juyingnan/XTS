@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xt4/tstlnggprc/tstlnggprc.m,v 1.1 2005-02-12 14:38:09 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xt4/tstlnggprc/tstlnggprc.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2004 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
 All Rights Reserved.
@@ -33,8 +34,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: tstlnggprc.m,v $
->># Revision 1.1  2005-02-12 14:38:09  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/14 12:15:44  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  2004/02/12 15:54:44  gwc
+>># Set LC_ALL in environment instead of LANG in test 7
 >>#
 >># Revision 8.0  1998/12/23 23:36:18  mar
 >># Branch point for Release 5.0.2
@@ -81,7 +88,7 @@ XtPointer client_data;
 	avs_set_event(1,avs_get_event(1)+1);
 	tet_infoline("TEST: Client data correctly passed to language procedure");
 	if (strcmp(client_data, client_stuff) != 0) {
-		sprintf(ebuf, "ERROR: Expected client_data \"%s\", received \"%s\"", client_stuff, client_data);
+		sprintf(ebuf, "ERROR: Expected client_data \"%s\", received \"%s\"", client_stuff, (char *)client_data);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 	}
@@ -348,7 +355,7 @@ int 	status;
 #endif
 
 #if XT_X_RELEASE > 4
-	putenv("LANG=unreal");
+	putenv("LC_ALL=unreal");
 	tet_infoline("PREP: Initialize the Xt toolkit");
 	XtToolkitInitialize();
 	tet_infoline("PREP: Create an application context");

@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,8 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/XlibXtst.c,v 1.1 2005-02-12 14:37:16 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libproto/XlibXtst.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
+* Copyright (c) 2001 The Open Group
 * Copyright Applied Testing and Technology Inc. 1995
 * All rights reserved
 *
@@ -34,8 +35,17 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: XlibXtst.c,v $
-* Revision 1.1  2005-02-12 14:37:16  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.3  2005/01/20 16:42:55  gwc
+* Updated copyright notice
+*
+* Revision 8.2  2001/02/05 12:45:17  vsx
+* fix fd_set usage; return value in XstDisconnectDisplay
+*
+* Revision 8.1  1999/04/03 01:26:48  mar
+* req.4.W.00136: add low-level BigRequests support to Xlib-less connections
 *
 * Revision 8.0  1998/12/23 23:25:15  mar
 * Branch point for Release 5.0.2
@@ -255,7 +265,7 @@ int XstDisconnectDisplay (server)
     int server;
 
 {
-    (void) close(server);
+    return close(server);
 }
 
 #undef NULL
@@ -264,13 +274,13 @@ int XstDisconnectDisplay (server)
 _XstWaitForReadable(dpy)
   XstDisplay *dpy;
 {
-    fd_set r_mask[MSKCNT];
+    fd_set r_mask;
     int result;
 	
-    FD_ZERO(r_mask);
+    FD_ZERO(&r_mask);
     do {
-	FD_SET(dpy->fd, r_mask);
-	result = select(dpy->fd + 1, r_mask, (fd_set *) 0, (fd_set *) 0, (struct timeval *)NULL);
+	FD_SET(dpy->fd, &r_mask);
+	result = select(dpy->fd + 1, &r_mask, (fd_set *) 0, (fd_set *) 0, (struct timeval *)NULL);
 	if (result == -1 && errno != EINTR) {
 	    XstIOError(dpy,"_XstWaitForReadable",1);
 	}
@@ -596,3 +606,182 @@ int     needswap;
 	}
     }
 }
+
+/* Big Request additions */
+
+#define X_BigReqEnable		0
+
+#define XBigReqNumberEvents	0
+
+#define XBigReqNumberErrors	0
+
+#define XBigReqExtensionName	"BIG-REQUESTS"
+
+typedef struct {
+    CARD8	reqType;	/* always XBigReqCode */
+    CARD8	brReqType;	/* always X_BigReqEnable */
+    CARD16	length B16;
+} xBigReqEnableReq;
+#define sz_xBigReqEnableReq 4
+
+typedef struct {
+    BYTE	type;			/* X_Reply */
+    CARD8	pad0;
+    CARD16	sequenceNumber B16;
+    CARD32	length B32;
+    CARD32	max_request_size B32;
+    CARD32	pad1 B32;
+    CARD32	pad2 B32;
+    CARD32	pad3 B32;
+    CARD32	pad4 B32;
+    CARD32	pad5 B32;
+} xBigReqEnableReply;
+#define sz_xBigReqEnableReply 32
+
+
+typedef struct {
+	CARD8 reqType;
+	CARD8 data;
+	CARD16 zero B16;
+        CARD32 length B32;
+} xBigReq;
+
+#define bignamelen (sizeof(XBigReqExtensionName) - 1)
+
+BigRequestsSetup(client, dpy, needswap)
+int client;
+XstDisplay  *dpy;
+int     needswap;
+{
+    xQueryExtensionReq queryreq;
+    xQueryExtensionReply queryreply;
+    xBigReqEnableReq bigreq;
+    xBigReqEnableReply bigreply;
+    char pad[3];
+    char buffer[BUFSIZ], *bptr;
+    char *query_name = XBigReqExtensionName;
+    int query_len;
+    int bytes;
+    
+    dpy->bigreq_size = 0;
+
+    /* QueryExtension for BIG-REQUESTS to see if it is supported */
+
+    query_len = strlen(query_name);
+    bytes = sizeof(xQueryExtensionReq) + query_len + padlength[query_len & 3];
+
+    queryreq.reqType = X_QueryExtension;
+    queryreq.length = 2 + (query_len+padlength[query_len & 3]) / 4;
+    queryreq.nbytes = query_len;
+    
+    bptr = buffer;
+    BPRINTF1 ("QueryExtension message:\n");
+    pack1(&bptr, queryreq.reqType);
+    BPRINTF2 ("\topcode = %d\n", queryreq.reqType);
+    packpad(&bptr,sizeof(queryreq.pad));
+    BPRINTF2 ("\tpad = %d\n", (int) *(bptr-1));
+    pack2(&bptr,(short)queryreq.length,needswap);
+    BPRINTF2 ("\tlength = %d\n", queryreq.length);
+    pack2(&bptr,(short)queryreq.nbytes,needswap);
+    BPRINTF2 ("\tnbytes = %d\n", queryreq.nbytes);
+    packpad(&bptr,sizeof(queryreq.pad1));
+    BPRINTF2 ("\tpad1 = %d\n", (int) *(bptr-1));
+    packpad(&bptr,sizeof(queryreq.pad2));
+    BPRINTF2 ("\tpad2 = %d\n", (int) *(bptr-1));
+    BPRINTF2 ("\tQueryName = %d bytes\n", queryreq.length);
+    wbcopy(query_name, bptr, query_len);
+            bptr += query_len;
+            if (padlength[query_len & 3])
+	    {
+		wbcopy(pad, bptr, padlength[query_len & 3]);
+	        bptr += padlength[query_len & 3];
+		BPRINTF2 ("\tQueryName pad = %d bytes\n", padlength[query_len & 3]);
+	    }
+    BPRINTF2 ("\tTotal QueryExtension message length = %d bytes\n", bytes);
+    BPRINTF2 ("\t\ton fd %d\n", dpy->fd);
+    BPRINTF2 ("\t\t%d bytes used of buffer\n", bptr - buffer);
+    dpy->request++; /* increment sequence counter */
+    (void) WriteToServer(dpy->fd, buffer, bytes);
+    if (Get_Req_Type(client) == OPEN_DISPLAY_REQUEST_TYPE) {
+	if (Get_Test_Type(client) == OPEN_DISPLAY) {
+		Log_Msg ("INTERNAL ERROR: should not be getting QueryExtensionReply with TestType == OPEN_DISPLAY.");
+		Delete();
+		/*NOT REACHED*/
+	}
+	time_proc = Good_Open_Timeout_Func;
+    } else
+	time_proc = Normal_Timeout_Func;
+
+    Set_Timer (CONNECT_TIMER_ID, Xst_timeout_value, time_proc);
+    if (!needswap) {
+	Xst_EINTR_Read (dpy, &queryreply, sizeof(queryreply));
+	Stop_Timer (CONNECT_TIMER_ID);
+	BPRINTF2 ("Total Query reply read %d bytes\n",sizeof(queryreply));
+    }
+    else {
+	Xst_EINTR_Read (dpy, (char *) buffer, sizeof(queryreply));
+	Stop_Timer (CONNECT_TIMER_ID);
+	BPRINTF2 ("Total swapped Query reply read %d bytes\n",sizeof(queryreply));
+	bptr = buffer;
+
+	queryreply.type = unpack1 (&bptr);
+	queryreply.pad1 = unpack1 (&bptr);
+	queryreply.sequenceNumber = unpack2 (&bptr, needswap);
+	queryreply.length = unpack4 (&bptr, needswap);
+	queryreply.present = unpack1 (&bptr);
+	queryreply.major_opcode = unpack1 (&bptr);
+	queryreply.first_event = unpack1 (&bptr);
+	queryreply.first_error = unpack1 (&bptr);
+    }
+
+    /* If present then enable the extension */
+    if (queryreply.present) {
+
+	/* Send big request enable request */
+
+	bptr = buffer;
+	bytes = sizeof(bigreq);
+
+	bigreq.reqType = queryreply.major_opcode; /* XBigReqCode */
+	bigreq.brReqType = X_BigReqEnable;
+	bigreq.length = 1;
+
+	bptr = buffer;
+	BPRINTF1 ("BigReqEnable message:\n");
+	pack1(&bptr, bigreq.reqType);
+	BPRINTF2 ("\topcode = %d\n", bigreq.reqType);
+	pack1(&bptr, bigreq.brReqType);
+	BPRINTF2 ("\tbrReqType = %d\n", bigreq.brReqType);
+	pack2(&bptr,(short)bigreq.length,needswap);
+	BPRINTF2 ("\tlength = %d\n", bigreq.length);
+
+	BPRINTF2 ("\tTotal BigReqEnable message length = %d bytes\n", bytes);
+	BPRINTF2 ("\t\ton fd %d\n", dpy->fd);
+	BPRINTF2 ("\t\t%d bytes used of buffer\n", bptr - buffer);
+	dpy->request++; /* increment sequence counter */
+	(void) WriteToServer(dpy->fd, buffer, bytes);
+
+	/* time_proc already set */
+	Set_Timer (CONNECT_TIMER_ID, Xst_timeout_value, time_proc);
+	if (!needswap) {
+	    Xst_EINTR_Read (dpy, &bigreply, sizeof(bigreply));
+	    Stop_Timer (CONNECT_TIMER_ID);
+	}
+	else {
+	    Xst_EINTR_Read (dpy, (char *) buffer, sizeof(bigreply));
+	    Stop_Timer (CONNECT_TIMER_ID);
+	    bptr = buffer;
+
+	    bigreply.type = unpack1 (&bptr);
+	    bigreply.pad0 = unpack1 (&bptr);
+	    bigreply.sequenceNumber = unpack2 (&bptr, needswap);
+	    bigreply.length = unpack4 (&bptr, needswap);
+	    bigreply.max_request_size = unpack4 (&bptr, needswap);
+	}
+	dpy->bigreq_size = bigreply.max_request_size;
+	BPRINTF2 ("Big Request Size set to %d\n", dpy->bigreq_size);
+    }
+    else
+      	BPRINTF1 ("Big Requests not supported\n");
+}
+

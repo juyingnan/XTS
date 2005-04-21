@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/XstosInt.h,v 1.1 2005-02-12 14:37:16 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libproto/XstosInt.h,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
 * Copyright Applied Testing and Technology Inc. 1995
 * All rights reserved
@@ -34,8 +34,11 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: XstosInt.h,v $
-* Revision 1.1  2005-02-12 14:37:16  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.1  2001/02/05 12:42:44  vsx
+* removed lots of unused code; updated #includes
 *
 * Revision 8.0  1998/12/23 23:25:17  mar
 * Branch point for Release 5.0.2
@@ -131,86 +134,12 @@ SOFTWARE.
 #include <netinet/in.h>
 #include <sys/ioctl.h>
 #include <netdb.h>
-
-#include <sys/uio.h>
-#include <sys/param.h>
-
+#include <sys/types.h>
+#include <unistd.h>
+#include <sys/time.h>
 
 #ifdef SVR4
 #include <sys/select.h>
-#define MAXSOCKS FD_SETSIZE
-#else
-#define MAXSOCKS ( NOFILE - 1 )
-#endif
-#define MSKCNT ((MAXSOCKS + 31) / 32)	/* size of bit array */
-
-#if (MSKCNT==1)
-#define BITMASK(i) (1 << (i))
-#define MASKIDX(i) 0
-#endif
-#if (MSKCNT>1)
-#define BITMASK(i) (1 << ((i) & 31))
-#define MASKIDX(i) ((i) >> 5)
-#endif
-
-#define MASKWORD(buf, i) buf[MASKIDX(i)]
-#define BITSET(buf, i) MASKWORD(buf, i) |= BITMASK(i)
-#define BITCLEAR(buf, i) MASKWORD(buf, i) &= ~BITMASK(i)
-#define GETBIT(buf, i) (MASKWORD(buf, i) & BITMASK(i))
-
-#if (MSKCNT==1)
-#define COPYBITS(src, dst) dst[0] = src[0]
-#define CLEARBITS(buf) buf[0] = 0
-#define MASKANDSETBITS(dst, b1, b2) dst[0] = (b1[0] & b2[0])
-#define ORBITS(dst, b1, b2) dst[0] = (b1[0] | b2[0])
-#define UNSETBITS(dst, b1) (dst[0] &= ~b1[0])
-#define ANYSET(src) (src[0])
-#endif
-#if (MSKCNT==2)
-#define COPYBITS(src, dst) { dst[0] = src[0]; dst[1] = src[1]; }
-#define CLEARBITS(buf) { buf[0] = 0; buf[1] = 0; }
-#define MASKANDSETBITS(dst, b1, b2)  {\
-		      dst[0] = (b1[0] & b2[0]);\
-		      dst[1] = (b1[1] & b2[1]); }
-#define ORBITS(dst, b1, b2)  {\
-		      dst[0] = (b1[0] | b2[0]);\
-		      dst[1] = (b1[1] | b2[1]); }
-#define UNSETBITS(dst, b1) {\
-                      dst[0] &= ~b1[0]; \
-                      dst[1] &= ~b1[1]; }
-#define ANYSET(src) (src[0] || src[1])
-#endif
-#if (MSKCNT==3)
-#define COPYBITS(src, dst) { dst[0] = src[0]; dst[1] = src[1]; dst[2] = src[2]; }
-#define CLEARBITS(buf) { buf[0] = 0; buf[1] = 0; buf[2] = 0; }
-#define MASKANDSETBITS(dst, b1, b2)  {\
-		      dst[0] = (b1[0] & b2[0]);\
-		      dst[1] = (b1[1] & b2[1]);\
-		      dst[2] = (b1[2] & b2[2]); }
-#define ORBITS(dst, b1, b2)  {\
-		      dst[0] = (b1[0] | b2[0]);\
-		      dst[1] = (b1[1] | b2[1]);\
-		      dst[2] = (b1[2] | b2[2]); }
-#define UNSETBITS(dst, b1) {\
-                      dst[0] &= ~b1[0]; \
-                      dst[1] &= ~b1[1]; \
-                      dst[2] &= ~b1[2]; }
-#define ANYSET(src) (src[0] || src[1] || src[2])
-#endif
-#if (MSKCNT>3)
-#define COPYBITS(src, dst) wbcopy((caddr_t) src, (caddr_t) dst,\
-				 MSKCNT*sizeof(long))
-#define CLEARBITS(buf) wbzero((caddr_t) buf, MSKCNT*sizeof(long))
-#define MASKANDSETBITS(dst, b1, b2)  { int cri;\
-		      for (cri=0; i<MSKCNT; cri++) \
-		          dst[cri] = (b1[cri] & b2[cri]); }
-#define ORBITS(dst, b1, b2)  { int cri;\
-		      for (cri=0; i<MSKCNT; cri++) \
-		          dst[cri] = (b1[cri] | b2[cri]); }
-#define UNSETBITS(dst, b1)  { int cri;\
-		      for (cri=0; i<MSKCNT; cri++) \
-		          dst[cri] &= ~b1[cri]; }
-#define ANYSET(src) (src[0] || src[1] || src[2])
 #endif
 
 #define BytesReadable(fd, ptr) ioctl ((fd), FIONREAD, (ptr))

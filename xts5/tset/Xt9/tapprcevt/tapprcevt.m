@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xt9/tapprcevt/tapprcevt.m,v 1.1 2005-02-12 14:38:24 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xt9/tapprcevt/tapprcevt.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 1999 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
 All Rights Reserved.
@@ -33,8 +34,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: tapprcevt.m,v $
->># Revision 1.1  2005-02-12 14:38:24  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/21 12:24:09  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  1999/11/26 11:26:51  vsx
+>># avoid fixed file locations (for exec-in-place false)
 >>#
 >># Revision 8.0  1998/12/23 23:37:08  mar
 >># Branch point for Release 5.0.2
@@ -251,11 +258,9 @@ pid_t pid2;
 int status;
 Display *display;
 XEvent loop_event;
-char data[1024];
+char *data;
 
-	tet_infoline("PREP: Get the file name to read contents");
-	strcpy(data, (char *)getenv("TET_ROOT"));
-	strcat(data, "/vsw5/tset/Xt9/tapprcevt/tapprcevt.dat");
+	data = "tapprcevt.dat";
 	FORK(pid2);
 	avs_xt_hier("Tapprcevt1", "XtAppProcessEvent");
 	tet_infoline("PREP: Create a test labelw_msg widget");
@@ -298,12 +303,10 @@ pid_t pid2;
 int status;
 Display *display;
 XEvent loop_event;
-char data[1024];
+char *data;
 int i;
 
-	tet_infoline("PREP: Get the file name to read contents");
-	strcpy(data, (char *)getenv("TET_ROOT"));
-	strcat(data, "/vsw5/tset/Xt9/tapprcevt/tapprcevt.dat");
+	data = "tapprcevt.dat";
 	FORK(pid2);
 	avs_xt_hier("Tapprcevt1", "XtAppProcessEvent");
 	tet_infoline("PREP: Create a test labelw_msg widget");
@@ -364,12 +367,10 @@ pid_t pid2;
 int status;
 Display *display;
 XEvent loop_event;
-char data[1024];
+char *data;
 int i;
 
-	tet_infoline("PREP: Get the file name to read contents");
-	strcpy(data, (char *)getenv("TET_ROOT"));
-	strcat(data, "/vsw5/tset/Xt9/tapprcevt/tapprcevt.dat");
+	data = "tapprcevt.dat";
 	FORK(pid2);
 	avs_xt_hier("Tapprcevt1", "XtAppProcessEvent");
 	tet_infoline("PREP: Create a test labelw_msg widget");

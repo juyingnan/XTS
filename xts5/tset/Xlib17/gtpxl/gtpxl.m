@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib17/gtpxl/gtpxl.m,v 1.1 2005-02-12 14:37:30 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib17/gtpxl/gtpxl.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2004 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
@@ -31,8 +32,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: gtpxl.m,v $
->># Revision 1.1  2005-02-12 14:37:30  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/14 12:03:49  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  2004/02/12 12:40:33  gwc
+>># Fixed uses of 1<<depth to handle depth 32
 >>#
 >># Revision 8.0  1998/12/23 23:34:39  mar
 >># Branch point for Release 5.0.2
@@ -138,7 +145,10 @@ static int	fmats[2] = { XYPixmap, ZPixmap };
 
 		pm = makepixm(Dsp, vi);
 		gc = makegc(Dsp, pm);
-		mask = (1<<vi->depth) - 1;
+		if (vi->depth < 32)
+			mask = (1UL<<vi->depth) - 1;
+		else
+			mask = 0xffffffffUL;
 		for(i = 0; i <= (15 & mask); i++) {
 			pixel =  mask & (i | i<<4 | i<<12 | i<<20);
 			XSetForeground(Dsp, gc, pixel);
@@ -174,7 +184,10 @@ static int	fmats[2] = { XYPixmap, ZPixmap };
 
 		win = makewin(Dsp, vi);
 		gc = makegc(Dsp, win);
-		mask = (1<<vi->depth) - 1;
+		if (vi->depth < 32)
+			mask = (1UL<<vi->depth) - 1;
+		else
+			mask = 0xffffffffUL;
 		for(i = 0; i <= (15 & mask); i++) {
 			pixel =  mask & (i | i<<4 | i<<12 | i<<20);
 			XSetForeground(Dsp, gc, pixel);

@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/wcfstli/wcfstli.m,v 1.1 2005-02-12 14:37:22 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/wcfstli/wcfstli.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2001 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
 All Rights Reserved.
@@ -33,8 +34,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: wcfstli.m,v $
->># Revision 1.1  2005-02-12 14:37:22  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/21 10:43:23  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  2001/03/28 12:01:46  vsx
+>># added XStoreName() call & fixed XGetTextProperty() return value check
 >>#
 >># Revision 8.0  1998/12/23 23:39:09  mar
 >># Branch point for Release 5.0.2
@@ -238,6 +245,7 @@ if ((window_arg = XCreateSimpleWindow(display_arg,
 	return;
 	}
 
+XStoreName (display_arg, window_arg, "Test");
 XMapWindow (display_arg, window_arg);
 XSync (display_arg, 0);	
 	
@@ -253,10 +261,10 @@ regr_args.iter = 1;
 estatus[0] = 1;
 
 tet_infoline("PREP: Get the XA_WM_NAME text property for the window.");
-if ((status = XGetTextProperty(display_arg, window_arg, &prop_return,
-	XA_WM_NAME)) != Success)
+if (XGetTextProperty(display_arg, window_arg, &prop_return,
+	XA_WM_NAME) == 0)
 	{
-	sprintf(tmpbuf, "ERROR: XGetTextProperty failed with status(%d)", status);
+	sprintf(tmpbuf, "ERROR: XGetTextProperty failed to get XA_WM_NAME");
 	tet_infoline(tmpbuf);
 	tet_result(TET_UNRESOLVED);
 	return;

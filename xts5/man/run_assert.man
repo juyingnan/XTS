@@ -1,5 +1,5 @@
 .\"
-.\"Copyright (c) 2005 X.Org Foundation LLC
+.\"Copyright (c) 2005 X.Org Foundation L.L.C.
 .\"
 .\"Permission is hereby granted, free of charge, to any person obtaining a copy of
 .\"this software and associated documentation files (the "Software"), to deal in
@@ -19,10 +19,10 @@
 .\"OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 .\"SOFTWARE.
 .\"
-.\"$Header: /cvs/xtest/xtest/xts5/man/run_assert.man,v 1.1 2005-02-12 14:37:14 anderson Exp $
+.\"$Header: /cvs/xtest/xtest/xts5/man/run_assert.man,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 .\"Copyright (c) 1994, 1995 Applied Testing and Technology, Inc.
 .\"All rights reserved
-.TH run_assert "1" "July 1995" "APTEST" "VSW5"
+.TH run_assert "1" "November 1999" "The Open Group" "VSW5"
 .SH NAME
 run_assert \- run one or more assertions for a single VSW5 Test Case
 .SH SYNOPSIS

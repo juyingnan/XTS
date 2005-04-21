@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,8 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/ShowReq.c,v 1.1 2005-02-12 14:37:16 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libproto/ShowReq.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
+* Copyright (c) 2001 The Open Group
 * Copyright Applied Testing and Technology Inc. 1995
 * All rights reserved
 *
@@ -34,8 +35,14 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: ShowReq.c,v $
-* Revision 1.1  2005-02-12 14:37:16  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.2  2005/01/20 16:07:58  gwc
+* Updated copyright notice
+*
+* Revision 8.1  2001/08/21 16:07:03  vsx
+* pass non-NULL last arg to Show_Strs() for X_SetFontPath
 *
 * Revision 8.0  1998/12/23 23:25:10  mar
 * Branch point for Release 5.0.2
@@ -540,7 +547,7 @@ xReq *mp;
 		BPRINTF2("\treqType = %ld\n",(long) ((xSetFontPathReq *)mp)->reqType);
 		BPRINTF2("\tlength = %ld\n",(long) ((xSetFontPathReq *)mp)->length);
 		BPRINTF2("\tnFonts = %d\n",((xSetFontPathReq *)mp)->nFonts);
-		Show_Strs((unsigned char *)((unsigned char *)mp)+sizeof(xSetFontPathReq),((xSetFontPathReq *)mp)->nFonts,0/*unused*/,NULL/*unused*/);
+		Show_Strs((unsigned char *)((unsigned char *)mp)+sizeof(xSetFontPathReq),((xSetFontPathReq *)mp)->nFonts,0/*unused*/,"path");
 		break;
 	case X_GetFontPath:
 		BPRINTF1("GetFontPath:\n");

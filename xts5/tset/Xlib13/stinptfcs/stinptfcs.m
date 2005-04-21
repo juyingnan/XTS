@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib13/stinptfcs/stinptfcs.m,v 1.1 2005-02-12 14:37:21 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib13/stinptfcs/stinptfcs.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2001 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
@@ -31,8 +32,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: stinptfcs.m,v $
->># Revision 1.1  2005-02-12 14:37:21  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/21 10:40:21  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  2001/03/28 11:33:08  vsx
+>># tp9 - sleep for 1 second after getting "earlier" time
 >>#
 >># Revision 8.0  1998/12/23 23:33:43  mar
 >># Branch point for Release 5.0.2
@@ -846,6 +853,7 @@ Attempt xname at time equal to time and focus = root.
 Check focus is now root.
 
 Get time before with gettime(display).
+Sleep for 1 second.
 Call xname with time = CurrentTime and focus = window.
 Call XGetInputFocus and verify that focus_return is window.
 Attempt xname at time before with focus = root.
@@ -914,6 +922,8 @@ int	junk;
 	} else
 		CHECK;
 
+	(void) sleep(1);  /* make sure the current time is != t1 */
+
 	thetime = CurrentTime;
 	focus = win;
 	XCALL;
@@ -932,7 +942,7 @@ int	junk;
 	} else
 		CHECK;
 
-	trace("Focus changed at time between 0x%lx and 0x%lx (diff = %d).",t1,t2,t2-t1);
+	trace("Focus changed at time between 0x%lx and 0x%lx (diff = %ld).",t1,t2,t2-t1);
 	thetime = t1;
 	focus = DRW(display);
 	XCALL;

@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/XtC/tnxtevnt/tnxtevnt.m,v 1.1 2005-02-12 14:38:25 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/XtC/tnxtevnt/tnxtevnt.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 1999 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
 All Rights Reserved.
@@ -33,8 +34,17 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: tnxtevnt.m,v $
->># Revision 1.1  2005-02-12 14:38:25  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.3  2005/01/21 12:28:54  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.2  1999/11/26 12:23:41  vsx
+>># avoid fixed file locations (for exec-in-place false)
+>>#
+>># Revision 8.1  1999/11/24 11:23:11  vsx
+>># TSD4.W.00161: avoid semctl ERANGE error on fast systems
 >>#
 >># Revision 8.0  1998/12/23 23:38:28  mar
 >># Branch point for Release 5.0.2
@@ -128,7 +138,7 @@ XtPointer client_data;
 int *source;
 XtInputId *id;
 {
-	avs_set_event(2,avs_get_event(2)+1);
+	avs_set_event(2, 1);
 }
 >>SET tpstartup avs_alloc_sem
 >>SET tpcleanup avs_free_sem
@@ -293,13 +303,11 @@ XtInputMask processing;
 int i;
 pid_t pid3;
 int pstatus;
-char data[1024];
+char *data;
 
 	FORK(pid3);
 	avs_xt_hier_def("Tnxtevnt3", "XtNextEvent");
-	tet_infoline("PREP: Get the file name to register");
-	strcpy(data, getenv("TET_ROOT"));
-	strcat(data, "/vsw5/tset/XtC/taddinput/data1");
+	data = "data1";
 	sprintf(ebuf, "PREP: Open file %s for read", data);
 	tet_infoline(ebuf);
 	if ((fid = (FILE *)fopen(data, "w+")) == NULL) {
@@ -322,7 +330,7 @@ char data[1024];
 		XtDispatchEvent(&loop_event);
 	} /*end for*/
 	LKROF(pid2, AVSXTTIMEOUT-4);
-	unlink(msg);
+	unlink(data);
 	KROF3(pid3, pstatus, AVSXTTIMEOUT-2);
         if (pstatus != 0) {
 		tet_infoline("ERROR: Test process exited abnormally");

@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,8 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/SendReq.c,v 1.1 2005-02-12 14:37:16 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libproto/SendReq.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
+* Copyright (c) 1999,2001 The Open Group
 * Copyright Applied Testing and Technology Inc. 1995
 * All rights reserved
 *
@@ -34,8 +35,20 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: SendReq.c,v $
-* Revision 1.1  2005-02-12 14:37:16  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.4  2005/01/20 16:06:05  gwc
+* Updated copyright notice
+*
+* Revision 8.3  2001/11/27 16:00:27  vsx
+* TSD4W.00171: fix BigRequest handling for PutImage
+*
+* Revision 8.2  1999/11/23 17:44:30  vsx
+* TSD4.W.00166: use big request length 1 when normal length would have been 0
+*
+* Revision 8.1  1999/04/03 01:25:21  mar
+* req.4.W.00136: Check Xlib-less connection and not Dsp connection
 *
 * Revision 8.0  1998/12/23 23:25:04  mar
 * Branch point for Release 5.0.2
@@ -163,10 +176,10 @@ int pollreq;
 
 	if (rp->length == 0)
 		{
-		bigRequestLength = 0;
+		bigRequestLength = 1; /* equivalent to `normal' length 0 */
 #if XT_X_RELEASE > 5
 		/* returns 0 if Big Requests are not enabled */
-		bigRequestsAreEnabled = XExtendedMaxRequestSize(Dsp);
+		bigRequestsAreEnabled = dpy->bigreq_size;
 		if (bigRequestsAreEnabled) isABigRequest = 1; 
 #endif
 		}
@@ -184,7 +197,7 @@ int pollreq;
 			bytesToSend = (newlen << 2);
 #if XT_X_RELEASE > 5
 			/* returns 0 if Big Requests are not enabled */
-			bigRequestsAreEnabled = XExtendedMaxRequestSize(Dsp);
+			bigRequestsAreEnabled = dpy->bigreq_size;
 #endif
 			if (bigRequestsAreEnabled)
 				{
@@ -897,7 +910,8 @@ int pollreq;
 
 		send1(client,(long) ((xPutImageReq *)rp)->reqType);
 		send1(client,(long) ((xPutImageReq *)rp)->format);
-		send2(client,(short) (bytesToSend >> 2));
+		send2(client,(short) ((xPutImageReq *)rp)->length);
+		if (isABigRequest) send4(client, (unsigned long)bigRequestLength);
 		send4(client,(long) ((xPutImageReq *)rp)->drawable);
 		send4(client,(long) ((xPutImageReq *)rp)->gc);
 		send2(client,(short) ((xPutImageReq *)rp)->width);

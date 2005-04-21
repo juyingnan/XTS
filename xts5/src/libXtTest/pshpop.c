@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,8 +20,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libXtTest/pshpop.c,v 1.1 2005-02-12 14:37:15 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libXtTest/pshpop.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
+* Copyright (c) 2001 The Open Group
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 * Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
 * All Rights Reserved.
@@ -35,8 +36,14 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: pshpop.c,v $
-* Revision 1.1  2005-02-12 14:37:15  anderson
-* Initial revision
+* Revision 1.2  2005-04-21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.2  2005/01/20 15:59:56  gwc
+* Updated copyright notice
+*
+* Revision 8.1  2001/02/05 17:36:09  vsx
+* use a more portable method to redirect stdout and stderr
 *
 * Revision 8.0  1998/12/23 23:25:40  mar
 * Branch point for Release 5.0.2
@@ -59,12 +66,41 @@ SOFTWARE.
 */
 
 #include <XtTest.h>
+#include <fcntl.h>
 
 /*error messages formatted here*/
 char ebuf[4096];
 
 static	int	Dup_stdout = -1;	/* Duplicate of stdout fd */
 static	int	Dup_stderr = -1;	/* Duplicate of stderr fd */
+
+/* Internal routine to reopen the fd for stdout or stderr */
+
+static int
+reopen(pathname, omode, fp)
+char *pathname;
+int omode;
+FILE *fp;
+{
+	int newfd;
+
+	newfd = open(pathname, omode|O_CREAT|O_TRUNC, S_IRWXU|S_IRWXG|S_IRWXO);
+	if (newfd == -1)
+		return -1;
+
+	if (fflush(fp) != 0) {
+		close(newfd);
+		return -1;
+	}
+
+	if (dup2(newfd, fileno(fp)) == -1) {
+		close(newfd);
+		return -1;
+	}
+
+	close(newfd);
+	return 0;
+}
 
 /*
 ** push_stdout
@@ -74,7 +110,7 @@ static	int	Dup_stderr = -1;	/* Duplicate of stderr fd */
 **
 ** Arguments
 **	file	Filename to open stdout to
-**	mode	What mode to open the file to
+**	mode	Unused
 */
 
 int push_stdout(file,mode)
@@ -86,19 +122,18 @@ char	*mode;
 	if ((Dup_stdout = dup(fileno(stdout))) == -1){
 		sprintf(ebuf, "ERROR: push_stdout: dup of fileno(stdout) failed");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return -1;
 	}
 
 	strcpy(pathname, "/tmp/");
 	strcat(pathname,file);
 
-	if (freopen(pathname,mode,stdout) == NULL) {
-		fclose(stdout);
-		fdopen(Dup_stdout,"w");
-		sprintf(ebuf, "ERROR: push_stdout: could not freopen(stdout)");
+	if (reopen(pathname,O_WRONLY,stdout) != 0) {
+		dup2(Dup_stdout,fileno(stdout));
+		sprintf(ebuf, "ERROR: push_stdout: could not reopen stdout");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return -1;
 	}
 	return 0;
@@ -117,27 +152,19 @@ void pop_stdout()
 	if (Dup_stdout == -1) {
 		sprintf(ebuf, "ERROR: pop_stdout: push_stdout never called");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return;
 	}
 
-	fclose(stdout);
-	if (dup2(Dup_stdout,1) != 1) {
-		sprintf(ebuf, "ERROR: pop_stdout: dup of stdout back to 1 failed");
+	(void) fflush(stdout);
+	if (dup2(Dup_stdout,fileno(stdout)) == -1) {
+		sprintf(ebuf, "ERROR: pop_stdout: could not restore stdout");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
-		return;
-	}
-
-	if ((FILE *)fdopen(1,"w") != stdout) {
-		sprintf(ebuf, "ERROR: pop_stdout: couldn't fdopen stdout");
-		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return;
 	}
 
 	close(Dup_stdout);
-
 	Dup_stdout = -1;
 }
 
@@ -151,7 +178,7 @@ void pop_stdout()
 **
 ** Arguments
 **	file	Filename to open stderr to
-**	mode	What mode to open the file to
+**	mode	Unused
 */
 
 int push_stderr(file,mode)
@@ -163,26 +190,25 @@ char	*mode;
 	if (Dup_stderr != -1)  {
 		sprintf(ebuf, "ERROR: push_stderr: stderr has already been pushed\n");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return -1;
 	}
 
 	if ((Dup_stderr = dup(fileno(stderr))) == -1) {
 		sprintf(ebuf, "ERROR: push_stderr: dup of fileno(stderr) failed");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return -1;
 	}
 
 	strcpy(pathname, "/tmp/");
 	strcat(pathname,file);
 
-	if (freopen(pathname,mode,stderr) == NULL) {
-		fclose(stderr);
-		fdopen(Dup_stderr,"w");
-		sprintf(ebuf, "ERROR: push_stderr: could not freopen(stderr). pathname = %s", pathname);
+	if (reopen(pathname,O_WRONLY,stderr) != 0) {
+		dup2(Dup_stderr,fileno(stderr));
+		sprintf(ebuf, "ERROR: push_stderr: could not reopen stderr");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return -1;
 	}
 	return 0;
@@ -201,23 +227,15 @@ void pop_stderr()
 	if (Dup_stderr == -1) {
 		sprintf(ebuf, "ERROR: pop_stderr: push_stderr never called");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return;
 	}
 
-	fclose(stderr);
-
-	if (dup2(Dup_stderr,2) != 2) {
-		sprintf(ebuf, "ERROR: pop_stderr: dup of stderr back to 2 failed");
+	(void) fflush(stderr);
+	if (dup2(Dup_stderr,fileno(stderr)) == -1) {
+		sprintf(ebuf, "ERROR: pop_stderr: could not restore stderr");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
-		return;
-	}
-
-	if ((FILE *)fdopen (2,"w") != stderr) {
-		sprintf(ebuf, "ERROR: pop_stderr: couldn't fdopen stderr");
-		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return;
 	}
 
@@ -237,39 +255,37 @@ char    *mode;
 	if ((Dup_stdout = dup(fileno(stdout))) == -1) {
 		sprintf(ebuf, "ERROR: push_to_devnull: dup of fileno(stdout) failed");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return;
 	}
 
-	if (freopen(file,mode,stdout) == NULL) {
-		fclose(stdout);
-		fdopen(Dup_stdout,"w");
-		sprintf(ebuf, "ERROR: push_to_devnull: could not freopen(stdout)");
+	if (reopen(file,O_WRONLY,stdout) != 0) {
+		dup2(Dup_stdout,fileno(stdout));
+		sprintf(ebuf, "ERROR: push_to_devnull: could not reopen stdout");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return;
 	}
 
 	if (Dup_stderr != -1) {
 		sprintf(ebuf, "ERROR: push_to_devnull: stderr has already been pushed\n");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return;
 	}
 
 	if ((Dup_stderr = dup(fileno(stderr))) == -1) {
-		sprintf(ebuf, "ERROR: dup of fileno(stderr) failed");
+		sprintf(ebuf, "ERROR: push_to_devnull: dup of fileno(stderr) failed");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return;
 	}
 
-	if (freopen(file,mode,stderr) == NULL) {
-		fclose(stderr);
-		fdopen(Dup_stderr,"w");
-		sprintf(ebuf, "ERROR: push_to_devnull: could not freopen(stderr)");
+	if (reopen(file,O_WRONLY,stderr) != 0) {
+		dup2(Dup_stderr,fileno(stderr));
+		sprintf(ebuf, "ERROR: push_to_devnull: could not reopen stderr");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return;
 	}
 }
@@ -279,53 +295,38 @@ int restore_from_devnull()
 	if (Dup_stdout == -1) {
 			sprintf(ebuf, "ERROR: restore_from_devnull: push_to_devnull never called");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return -1;
 	}
 
-	fclose(stdout);
-
-	if (dup2(Dup_stdout,1) != 1) {
-		sprintf(ebuf, "ERROR: restore_from_devnull: dup of stdout back to 1 failed");
+	(void) fflush(stdout);
+	if (dup2(Dup_stdout,fileno(stdout)) == -1) {
+		sprintf(ebuf, "ERROR: restore_from_devnull: could not restore stdout");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
-		return -1;
-	}
-
-	if ((FILE *)fdopen(1,"w") != stdout) {
-		sprintf(ebuf, "ERROR: restore_from_devnull: couldn't fdopen stdout");
-		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return -1;
 	}
 
 	close(Dup_stdout);
+	Dup_stdout = -1;
 
 	if (Dup_stderr == -1) {
 		sprintf(ebuf, "ERROR: restore_from_devnull: push_to_devnull never called");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return -1;
 	}
 
-	fclose(stderr);
-
-	if (dup2(Dup_stderr,2) != 2) {
-		sprintf(ebuf, "ERROR: restore_from_devnull: dup of stderr back to 2 failed");
+	(void) fflush(stderr);
+	if (dup2(Dup_stderr,fileno(stderr)) == -1) {
+		sprintf(ebuf, "ERROR: restore_from_devnull: could not restore stderr");
 		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
-		return -1;
-	}
-
-	if ((FILE *)fdopen (2,"w") != stderr) {
-		sprintf(ebuf, "ERROR: restore_from_devnull: couldn't fdopen stderr");
-		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
+		tet_result(TET_UNRESOLVED);
 		return -1;
 	}
 
 	close(Dup_stderr);
-
 	Dup_stderr = -1;
+
 	return 0;
 }

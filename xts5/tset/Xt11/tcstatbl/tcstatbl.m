@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
- Header: /usr4/cvs/vsw5/tset/Xt11/tcstatbl/tcstatbl.m,v 5.0 1998/01/26 03:25:05 tbr Rel $
+$Header: /cvs/xtest/xtest/xts5/tset/Xt11/tcstatbl/tcstatbl.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
@@ -33,8 +33,11 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: tcstatbl.m,v $
->># Revision 1.1  2005-02-12 14:37:52  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.1  1999/12/06 14:19:52  vsx
+>># fixed CVS header
 >>#
 >># Revision 8.0  1998/12/23 23:37:26  mar
 >># Branch point for Release 5.0.2

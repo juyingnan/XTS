@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib17/addpxl/addpxl.m,v 1.1 2005-02-12 14:37:29 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib17/addpxl/addpxl.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2004 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
@@ -31,8 +32,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: addpxl.m,v $
->># Revision 1.1  2005-02-12 14:37:29  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/14 12:02:32  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  2004/02/12 12:17:02  gwc
+>># Fixed uses of 1<<dep[th] to handle depth 32
 >>#
 >># Revision 8.0  1998/12/23 23:34:29  mar
 >># Branch point for Release 5.0.2
@@ -101,6 +108,7 @@ XAddPixel(ximage, value)
 XImage	*ximage;
 long	value;
 >>EXTERN
+void
 mpattern(display, d, w, h, dep)
 Display		*display;
 Drawable	d;
@@ -110,18 +118,22 @@ int		dep;
 {
 int		i;
 int		j;
-int		mod;
+unsigned long	mod;
 GC		gc;
 unsigned long	val;
 
 	gc = makegc(display, d);
-	mod = 1<<dep;
+	if (dep < 32)
+		mod = 1UL<<dep;
 	val = 0;
 	for(j=0; j<h; j++)
 		for(i=0; i<w; i++) {
 			XSetForeground(display, gc, val);
 			XDrawPoint(display, d, gc, i, j);
-			val = (val + 1) % mod;
+			if (dep < 32)
+				val = (val + 1) % mod;
+			else
+				val = (val + 1);
 		}
 }
 
@@ -134,17 +146,21 @@ int		dep;
 {
 int		i;
 int		j;
-int		mod;
+unsigned long	mod;
 unsigned long	val;
 
-	mod = 1<<dep;
+	if (dep < 32)
+		mod = 1UL<<dep;
 	val = value;
 	for(j=0; j<h; j++)
 		for(i=0; i<w; i++) {
 			if(XGetPixel(ximage, i, j) != val){
 				return 0;
 			}
-			val = (val + 1) % mod;
+			if (dep < 32)
+				val = (val + 1) % mod;
+			else
+				val = (val + 1);
 		}
 	return 1;
 }
@@ -188,7 +204,10 @@ static int	fmats[2] = { XYPixmap, ZPixmap };
 				return;
 			} else {
 
-				value = (1 << vi->depth) - 1;
+				if (vi->depth <= 30)
+					value = (1L << vi->depth) - 1;
+				else
+					value = (1L << 30) - 1;
 				XCALL;
 				if(mcheck(ximage, width, height, vi->depth) == 0) {
 					report("XImage structure was not correct.");
@@ -217,7 +236,10 @@ static int	fmats[2] = { XYPixmap, ZPixmap };
 				delete("XGetImage() returned NULL.");
 				return;
 			} else {
-				value = (1 << vi->depth) - 1;
+				if (vi->depth <= 30)
+					value = (1L << vi->depth) - 1;
+				else
+					value = (1L << 30) - 1;
 				XCALL;
 				if(mcheck(ximage, width, height, vi->depth) == 0) {
 					report("XImage structure was not correct.");

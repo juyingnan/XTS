@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/sicfoc/sicfoc.m,v 1.1 2005-02-12 14:37:22 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/sicfoc/sicfoc.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2001 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
 All Rights Reserved.
@@ -33,8 +34,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: sicfoc.m,v $
->># Revision 1.1  2005-02-12 14:37:22  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/21 10:41:21  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  2001/04/05 10:18:23  vsx
+>># TSD4W.00168: query supported input styles before XCreateIC()
 >>#
 >># Revision 8.0  1998/12/23 23:39:00  mar
 >># Branch point for Release 5.0.2
@@ -63,6 +70,7 @@ All Rights Reserved.
 void
 XSetICFocus()
 >>EXTERN
+#include <ximtest.h>
 
 Display	   *display_good;
 Window	window_id_good;
@@ -91,6 +99,7 @@ char fmtstr[256], *call_string;
 union msglst fmt_lst[1];        
 int skip_pixcheck;
 XIM   im_value ;
+XIMStyle which_style;
 Window ret_window ;
 
 int ss_status, 	/* save stat return status */	
@@ -151,12 +160,12 @@ for (i1 = 0; i1 < regr_args.iter; i1++) {
 			tet_result(TET_UNRESOLVED);
 			return(-1);
 			}
-		ic_value = XCreateIC(im_value,
-			XNClientWindow, window_id_good,
-			XNInputStyle, (XIMPreeditNothing | XIMStatusNothing),
-			NULL);
+		reset_ic_style(im_value);
+		if (!next_ic_style(&which_style))
+			which_style = (XIMPreeditNothing | XIMStatusNothing);
+		ic_value = ic_open(im_value, window_id_good, which_style);
 		if (ic_value == NULL) {
-			tet_infoline("ERROR: XCreateIC returned a NULL input method");
+			tet_infoline("ERROR: ic_open() returned NULL");
 			tet_result(TET_UNRESOLVED);
 			return(-1);
 			}

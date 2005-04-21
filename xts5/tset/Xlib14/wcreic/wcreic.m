@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/wcreic/wcreic.m,v 1.1 2005-02-12 14:37:22 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/wcreic/wcreic.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2001 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
 All Rights Reserved.
@@ -33,8 +34,17 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: wcreic.m,v $
->># Revision 1.1  2005-02-12 14:37:22  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.3  2005/01/21 10:44:37  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.2  2001/08/21 16:24:00  vsx
+>># TSD4W.00170: give UNTESTED instead of UNRESOLVED if no usable input style supported
+>>#
+>># Revision 8.1  2001/04/05 12:04:25  vsx
+>># TSD4W.00168: query supported input styles before XCreateIC()
 >>#
 >># Revision 8.0  1998/12/23 23:39:10  mar
 >># Branch point for Release 5.0.2
@@ -62,6 +72,7 @@ All Rights Reserved.
 void
 XwcResetIC()
 >>EXTERN
+#include <ximtest.h>
 
 Display	   *display_good;
 Window	window_id_good;
@@ -299,26 +310,43 @@ A call to xname shall reset the state of an input context to its initial state.
                 {
                     XIM  input_method ;
                     XIC  input_context ;
+		    XIMStyle which_style;
 
                     setup_locale() ;
                     input_method = XOpenIM(display_good, (XrmDatabase)0,
                                           (char *)0, (char *)0 ) ;
 
-                    input_context = XCreateIC(input_method,
-                               XNInputStyle,
-                               (XIMPreeditNothing | XIMStatusNothing),
-                               XNClientWindow,
-                               window_id_good,
-                               XNFocusWindow,
-                               window_id_good,
-                               (char  *)0
-                               ) ;
-
-                    svcwcResetIC(display_good, input_context) ;
-
+		    /* Find a supported style we can use */
+		    /* NB PreeditNone and StatusNone are no good because
+		       XNFocusWindow is ignored for that style */
+		    reset_ic_style(input_method);
+		    which_style = 0;
+		    while (next_ic_style(&which_style)) {
+			if ((which_style & XIMPreeditNone) == 0 &&
+			    (which_style & XIMStatusNone) == 0)
+			    break;
+			which_style = 0;
+		    }
+		    if (which_style == 0) {
+			tet_infoline("INFO: could not find a supported IM style the test can use");
+			tet_result(TET_UNTESTED);
+		    }
+		    else if ((input_context = ic_open(input_method,
+				window_id_good, which_style)) == NULL) {
+			tet_infoline("ERROR: ic_open() returned NULL");
+			tet_result(TET_UNRESOLVED);
+		    }
+		    else if (XSetICValues(input_context, XNFocusWindow,
+				window_id_good, (char  *)0) != NULL) {
+			tet_infoline("ERROR: XSetICValues() failed to set XNFocusWindow");
+			tet_result(TET_UNRESOLVED);
+		    }
+		    else {
+			svcwcResetIC(display_good, input_context) ;
+			tet_result(TET_PASS);
+		    }
                 } 
 	} /* end if */
-	tet_result(TET_PASS);
 #else
 	tet_infoline("INFO: Implementation not X11R5 or greater");
 	tet_result(TET_UNSUPPORTED);

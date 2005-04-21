@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -17,8 +17,9 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib11/prprtyntfy/prprtyntfy.m,v 1.1 2005-02-12 14:37:19 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib11/prprtyntfy/prprtyntfy.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
+Copyright (c) 2001 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
@@ -31,8 +32,14 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: prprtyntfy.m,v $
->># Revision 1.1  2005-02-12 14:37:19  anderson
->># Initial revision
+>># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># resync to VSW5.1.5
+>>#
+>># Revision 8.2  2005/01/21 10:36:58  gwc
+>># Updated copyright notice
+>>#
+>># Revision 8.1  2001/11/27 16:27:19  vsx
+>># TSD4W.00172: tp1 - pass 32 bit data to XChangeProperty as a long (not int)
 >>#
 >># Revision 8.0  1998/12/23 23:31:21  mar
 >># Branch point for Release 5.0.2
@@ -132,7 +139,7 @@ int	count;
 XEvent	event_return;
 XPropertyEvent good;
 Atom	atom;
-int	data = 42;
+long	data = 42;
 
 /* Create clients client2 and client3. */
 	if ((client2 = opendisplay()) == (Display *) NULL) {
