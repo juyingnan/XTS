@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-# $Header: /cvs/xtest/xtest/xts5/configs/tetbuild.cfg.Linux,v 1.5 2005-04-19 04:45:44 anderson Exp $
+# $Header: /cvs/xtest/xtest/xts5/configs/tetbuild.cfg.Linux,v 1.6 2005-07-06 05:55:50 anderson Exp $
 #
 # Copyright (c) Applied Testing and Technology, Inc. 1995
 # All Rights Reserved.
@@ -33,7 +33,10 @@
 #
 # Modifications:
 # $Log: tetbuild.cfg.Linux,v $
-# Revision 1.5  2005-04-19 04:45:44  anderson
+# Revision 1.6  2005-07-06 05:55:50  anderson
+# Get TET_ROOT from the env where it can be more easily set
+#
+# Revision 1.5  2005/04/19 04:45:44  anderson
 # s/vsw5/xts5/
 #
 # Revision 1.4  2005/04/19 04:24:53  anderson
@@ -212,7 +215,8 @@ CODEMAKER=mc
 ##################
 
 # The location of TET_ROOT.  This must not contain variable expansions.
-TET_ROOT=/set_your_dir_here
+# This must be set in the environment
+#TET_ROOT=/set_your_dir_here
 
 # TETBASE - The location of the TET directories
 TETBASE=${TET_ROOT}
