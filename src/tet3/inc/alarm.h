@@ -1,0 +1,68 @@
+/*
+ *	SCCS: @(#)alarm.h	1.4 (98/08/28)
+ *
+ *	UniSoft Ltd., London, England
+ *
+ * (C) Copyright 1996 X/Open Company Limited
+ *
+ * All rights reserved.  No part of this source code may be reproduced,
+ * stored in a retrieval system, or transmitted, in any form or by any
+ * means, electronic, mechanical, photocopying, recording or otherwise,
+ * except as stated in the end-user licence agreement, without the prior
+ * permission of the copyright owners.
+ * A copy of the end-user licence agreement is contained in the file
+ * Licence which accompanies this distribution.
+ * 
+ * X/Open and the 'X' symbol are trademarks of X/Open Company Limited in
+ * the UK and other countries.
+ */
+
+/************************************************************************
+
+SCCS:   	@(#)alarm.h	1.4 98/08/28 TETware release 3.3
+NAME:		alarm.h
+PRODUCT:	TETware
+AUTHOR:		Geoff Clare, UniSoft Ltd.
+DATE CREATED:	Sept 1996 (extracted from dtthr.h)
+
+DESCRIPTION:
+	thread-safe alarm functions
+
+	requires prior inclusion of <signal.h> and "dtthr.h"
+
+	note that alarms are not implemented on WIN32 platforms
+
+MODIFICATIONS:
+
+	Andrew Dingwall, UniSoft Ltd., February 1998
+	Use TETware-specific macros to access threads functions and
+	data items.
+
+************************************************************************/
+
+
+/* structure for tet_set_alarm() and tet_clr_alarm() */
+
+struct alrmaction {
+	unsigned int waittime;
+	struct sigaction sa;
+	sigset_t mask;
+#ifdef TET_THREADS
+	tet_thread_t join_tid;
+	tet_cond_t *cvp;
+#endif
+};
+
+/* per-thread alarm flag */
+
+#ifdef TET_THREADS
+#define alrm_flag	(*tet_thr_alrm_flag())
+extern int *	tet_thr_alrm_flag();
+#endif
+
+/* extern function declarations */
+
+extern int tet_set_alarm PROTOLIST((struct alrmaction *, struct alrmaction *));
+extern int tet_clr_alarm PROTOLIST((struct alrmaction *));
+
+

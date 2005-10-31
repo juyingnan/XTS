@@ -1,0 +1,391 @@
+SCCS: @(#)README.FIRST	1.3 99/09/07 TET release 3.3
+
+TET3 is the latest version of the Test Environment Toolkit.
+This is an UNSUPPORTED  source release.
+
+See http://tetworks.opengroup.org for more information
+
+For quick installation instructions see below.
+
+For full  documentation refer to the TETware 3.3 documentation
+available on http://tetworks.opengroup.org/docs.html
+
+Please note that TET3.3 does not include support
+for Microsoft Windows NT, Windows 95 or Java - that support
+is only included in the supported TETware releases.
+
+
+
+Quick Start for Installation.
+-----------------------------
+
+Typical installation is as follows:
+
+Install a .profile for the test suite user
+Example:
+        TET_ROOT=/home/tet
+        PATH=$PATH:$TET_ROOT/bin
+        export TET_ROOT PATH 
+
+To configure TET3
+	cd $TET_ROOT
+	sh configure -t lite   # for TETware lite
+	cd src
+	make install    
+(the final command below is not necessary)
+	make compat  # for backwards compatibility for include directories
+	
+If the build fails check the makefiles in src/defines
+
+Note: some Make utilities may have trouble with the include directive,
+this is a known problem on BSDI systems. In this case use GNU Make
+(gmake). Version 3.75 and higher is known to work.
+
+
+
+New features in this release
+----------------------------
+
+The following features appear for the first time in this release of TETware:
+
+   + Support is provided to enable shared versions of the C API libraries to
+     be built.  The shared library schemes that are supported on UNIX systems
+     are described in the chapter entitled ``Support for shared API
+     libraries'' in the TETware Installation Guide for UNIX Operating Systems.
+
+     Information regarding the use of shared API libraries is presented in the
+     chapter entitled ``Using shared API libraries'' in the TETware
+     Programmers Guide.
+
+
+ + A document has been added to the TETware document set; its title is
+     TETware Knowledge Base.  It contains information extracted from replies
+     to requests that have been handled by the TETware support service.  An
+     HTML version of this document is included in the distribution in addition
+     to the usual PostScript version.
+
+   + A shell script exec tool has been added to the distribution which enables
+     user interaction with test cases when Distributed TETware is used.  The
+     name of this tool is tet_start and it is described in the chapter
+     entitled ``Interacting with test cases in Distributed TETware'' in the
+     TETware User Guide.
+
+   + It is now possible to specify tccd's well-known port number in the
+     systems file when Distributed TETware is built to use the socket network
+     interface.  Thus it is possible to have tccd listening on different port
+     numbers on different systems, or to have several instances of tccd
+     running with different options on a particular system.
+
+   + Support for multiple network interfaces has been added when Distributed
+     TETware is built to use the socket interface.  This support is provided
+     through the TET_LOCALHOST distributed configuration variable.
+
+     Note:  The circumstances under which you might need to specify
+           TET_LOCALHOST are rare when Distributed TETware is built to use the
+           socket interface. Do not specify this variable unless you really
+           need it.
+
+   + A keyword %include has been added to the scenario language.  This keyword
+     can be used in a scenario file in much the same way as #include is used
+     in a C program.
+
+    Note that the %include keyword provides different functionality from that
+    provided by the :include: scenario directive.
+
+   + A configuration variable expansion mechanism has been added to tcc.  This
+     feature is described in the section entitled ``Configuration variable
+     expansion'' in the TETware Programmers Guide.
+
+
+
+   + It is now possible to specify a number range with the :remote: and
+     :distributed: scenario directives.
+
+   + The maximum number of test cases that tcc can process in parallel has
+     been increased from 26 to 676.
+
+
+
+   + New makefile variables have been introduced to provide a finer degree of
+     control over the specification of compiler options when the Thread-safe
+     APIs are built.  The names of these variables are TET_THR_CDEFS and
+     DTET_THR_CDEFS, and they are described in the section entitled ``Support
+     for Threads'' in the TETware Installation Guide for UNIX Operating
+     Systems.
+
+   + A command-line option has been added to tcc.  When tcc is invoked with
+     the -V option, it prints out version information and exits.
+
+   + A shell script called configure has been added to the distribution in the
+     tet-root directory.  On platforms for which a suitable defines.mk file is
+     provided in the distribution this script automates the tasks that must be
+     performed before TETware can be built.
+
+   + A shell script called sigtool has been added to the distribution in the
+     tet-root/src/helpers directory.  This script is useful when preparing to
+     build TETware on a platform for which no defines.mk file is provided in
+     the distribution.  The function of this script is to generate values for
+     makefile variables that must be specified for use when the Shell APIs are
+     built.
+
+   + The header files inc/tet3/tet_api.h and inc/tet3/tet_jrnl.h are now
+     protected against multiple inclusion.
+
+   + The Korn Shell API has been updated to work with ksh93.
+
+   + A number of problems reported after the previous TETware release have
+     been fixed.  All the source code patches issued since the last TETware
+     release have been incorporated into this release.
+
+   + The documentation has been revised and updated.
+
+
+
+
+
+
+===========================================================================
+Problems fixed since the last release
+
+
+The following problems have been fixed since the last TETware release:
+
+   + When a test purpose failed to register a result in Distributed TETware,
+     the result generated by the API was UNRESOLVED instead of NORESULT.
+
+   + When the underlying call to execve() failed in a call to tet_spawn() on a
+     UNIX system, the error condition was not returned to the process that
+     called tet_spawn().
+
+
+
+
+   + When remote (non-distributed) test cases were processed on more than one
+     system, the test cases on the second and subsequent systems did not print
+     TCM Start, IC Start and IC End messages to the journal, and a call to
+     tet_result() failed with an ER_DONE error.
+
+   + When a ^scenario-name appeared within the scope of a :distributed:
+     scenario directive, test cases in the scenario referenced by scenario-
+     name were unable to synchronise with each other.
+
+   + Under certain circumstances it was possible for tcc to terminate with a
+     memory fault when removing the temporary directory after processing a
+     test case in execute mode.
+
+   + When the TET_RUN environment variable was specified, tcc attempted to
+     create a file with a garbage name on some platforms.
+
+   + When tcc processed a test case in execute mode with TET_EXEC_IN_PLACE set
+     to False, the test case was copied to a location immediately below the
+     temporary directory and executed from there rather than to a location
+     below the temporary directory which included the path name of the test
+     case relative to the test suite root directory.  Thus it was not possible
+     for a test case to use the tet_pname variable in the C API to determine
+     its full path name relative to the test suite root directory.
+
+   + The thread cleanup code in the Thread-safe API assumed that a thread ID
+     would not be re-used by the implementation immediately after the
+     corresponding thread had been joined.  This caused problems on threads
+     implementations where this assumption is not true.
+
+   + If none of the test cases within the scope of a :timed_loop: directive
+     can be built, the loop is effectively empty during execute mode.  Under
+     these circumstances, tcc -be would thrash when in execute mode (possibly
+     generating huge volumes of journal output).
+
+   + There was a name space clash when building the Thread-safe APIs on some
+     platforms which support both UI threads and POSIX threads.
+
+   + If a locking failure prevented tcc -be from building a test case, tcc
+     still attempted to execute the test case that could not be built.
+
+   + There were a few references in the code to the non-standard interfaces
+     sys_errlist and sys_nerr.  The functions that referred to these symbols
+     have been re-written to make calls to strerror() instead.
+
+   + Descriptions of compiler options used when building Distributed TETware
+     to use XTI were missing from the TETware Installation Guide for UNIX
+     Operating Systems.
+
+   + In Distributed TETware, if a configuration variable exchange between the
+     local system and a remote system failed because the related configuration
+     file was missing on the remote system, the error message printed by tcc
+     was not particularly useful.  The error message now states that the
+     remote configuration file could not be opened.
+
+   + A feature of the Linux implementation of getopt() caused tcc to terminate
+     with a memory fault when tcc was invoked in rerun or resume mode.  The
+     code that calls getopt() has been changed to work around this feature.
+
+   + The -I option was missing in tcc's usage message.
+
+
+
+Other problems fixed:
+
+Problem:
+When TET_EXEC_IN_PLACE=false, tcc/tccd copies the contents of the test
+case execution directory to a location below the temporary directory.
+During this processing the code attempts to detect a recursive copy.
+This code incorrectly reports a recursive copy when the source directory
+name is an initial substring of the destination directory name.
+
+Fixed.
+
+Files changed:
+src/tet3/dtet2lib/fcopy.c	1.14
+
+------------------------------------------------------------------------
+Problem:
+On UNIX systems, tet_eaccess() doesn't check group access permissions
+w.r.t. the supplementary groups list.
+
+Fixed.
+
+Files changed:
+src/tet3/dtet2lib/eaccess.c	1.12
+src/tet3/dtet2lib/shared.mk	1.14
+
+------------------------------------------------------------------------
+Problem:
+tccd dies on RedHat Linux while performing a configuration variable
+exchange with tcc.
+
+Analysis:
+When tcc sends the result code file to tccd, the file gets closed twice
+in tccd.
+It seems that the glibc version of fclose(fp) frees the area at *fp.
+This causes problems with the malloc subsystem when fclose() is called a
+second time.
+
+Fixed.
+
+Files changed:
+src/tet3/servlib/fio.c          1.7
+
+------------------------------------------------------------------------
+Problem:
+If a test case changes the system time, this can sometimes confuse the
+timeout mechanism in tcc's execution engine.
+When this happens, tcc fails with an ASSERT error.
+
+Fix:
+Instead of checking the delay with ASSERT(), just change it so that it
+is within the expected range.
+
+Files changed:
+src/tet3/tcc/scenario.c		1.8
+
+------------------------------------------------------------------------
+Enhancement:
+Added user-contributed defines.mk files for DYNIX/ptx, Solaris 2.7, BSDI.
+Enhanced configure and GuessOS to recognise these systems and choose the
+appropriate defines.mk file.
+
+Originally these files were written by their contributors for use with
+the TETware 3.2 makefile scheme.
+The makefile scheme changed between release 3.2 and release 3.3.
+The contributed files have been modified for use with the 3.3 makefile
+scheme but haven't been tested yet.
+
+Files changed:
+configure                       1.9
+src/helpers/GuessOS             1.3
+
+New files:
+src/defines/UNTESTED/bsdi.mk    1.1
+src/defines/UNTESTED/dynix.mk   1.1
+src/defines/UNTESTED/solaris7.mk        1.1
+
+Problem:
+There is no makefile target to remove the compatibility links that are
+installed below {inc|lib}/{dtet2|posix_c} by 'make compat'.
+
+Fix:
+Added new target: compat_clean
+The following commands can now be used to remove the compatibility links
+that are installed by 'make compat':
+
+	cd $TET_ROOT/src
+	make compat_clean
+
+Note:
+As with make compat, make compat_clean is not supported on Win32 systems.
+
+Files changed:
+src/makefile		1.7
+
+------------------------------------------------------------------------
+Problem:
+'tcc -i results-dir' can overwrite an existing journal file in
+results-dir.
+
+Fixed.
+
+Files changed:
+src/tet3/tcc/journal.c	1.12
+
+------------------------------------------------------------------------
+Problem:
+tcm/ictp.c needs <string.h> when building TETware-Lite.
+
+Fixed.
+
+Files changed:
+src/tet3/tcm/ictp.c	1.22
+
+------------------------------------------------------------------------
+Problem:
+In TETware-Lite, expanded configuration variables are not visible to
+test cases.
+
+The Lite version of tcc passes the master configs to a test case.
+Since configuration variable expansion is performed on the per-system
+configurations, the test case only sees the unexpanded variables.
+
+Fix:
+Write the per-system configurations for the local system to the
+TET_CONFIG file(s) instead of the master configurations.
+
+Files changed:
+src/tet3/tcc/config.c	1.12
+
+------------------------------------------------------------------------
+Problem:
+Korn Shell API fails with EBADF error when used with ksh 93.
+
+This is due to a bug in ksh 93.
+When a numbered file descriptor is closed in a subshell (i.e., a
+sequence of commands enclosed in parentheses) this has the effect of
+closing the file descriptor in the parent shell as well.
+Previous versions of ksh did not contain this bug.
+
+The TCM main loop reads IC numbers from fd 3.
+Each test purpose defined in the IC list is executed in a subshell.
+If the test purpose also manipulates fd 3 (as does the SHELL-API demo),
+it upsets the execution of the main loop when ksh93 is used.
+
+Workaround:
+The main IC loop has been recoded to eliminate the use of numbered file
+descriptors in the parent shell.
+
+
+Files changed:
+src/ksh/api/tcm.ksh	1.6
+
+------------------------------------------------------------------------
+Enhancement:
+Added support for FreeBSD.
+
+Note:
+This enhancement based on information kindly supplied by someone at
+freebsd.org.
+It has not been tested by the TETware development team at this time.
+
+Files changed:
+configure			1.8
+src/defines/UNTESTED/freebsd.mk	1.1
+src/tet3/inc/tetdir.h		1.3
+src/tet3/tcclib/lsdir.c		1.3
+

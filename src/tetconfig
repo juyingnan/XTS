@@ -1,0 +1,160 @@
+#
+#      SCCS:  @(#)tetconfig	1.9 (98/08/28) 
+#
+#	UniSoft Ltd., London, England
+#
+# (C) Copyright 1993 X/Open Company Limited
+# (C) Copyright 1994 UniSoft Ltd.
+#
+# All rights reserved.  No part of this source code may be reproduced,
+# stored in a retrieval system, or transmitted, in any form or by any
+# means, electronic, mechanical, photocopying, recording or otherwise,
+# except as stated in the end-user licence agreement, without the prior
+# permission of the copyright owners.
+#
+# X/Open and the 'X' symbol are trademarks of X/Open Company Limited in
+# the UK and other countries.
+#
+#
+# ************************************************************************
+#
+# SCCS:   	@(#)tetconfig	1.9 98/08/28 TETware release 3.3
+# NAME:		tetconfig
+# PRODUCT:	TETware
+# AUTHOR:	Denis McConalogue, UniSoft Ltd.
+# DATE CREATED:	September 1993
+#
+# DESCRIPTION:
+#	TETware configuration script
+# 
+# MODIFICATIONS:
+# 
+#	Denis McConalogue, UniSoft Limited, December 1993
+#	added support for fifolib
+#
+#	Geoff Clare, UniSoft Ltd., July 1996
+#	Changes for TETWare.
+# 
+#	Geoff Clare, UniSoft Ltd., Sept 1996
+#	Changes for TETWare-Lite and Windows NT.
+#	Moved from src/tet3/dtetcfg to src/tetconfig.
+#	Added check for defines.mk file.
+#
+#	Andrew Dingwall, UniSoft Ltd., August 1998
+#	Added support for shared libraries.
+#	Removed fixup of tet3/common.mk.
+# 
+# ************************************************************************
+
+USAGE="Usage:${0} [-t transport]"
+FIX="      To fix: specify \"-t xti\", \"-t inet\", or \"-t lite\""
+PROMPT="Enter one of xti, inet, lite, or type 'q' to exit"
+
+alldirs=". apithr apishlib apithrshlib tcc tcm"
+distdirs="syncd tccd xresd"
+
+# doconfig - configure tet3/*/ts.mk for selected transport
+doconfig() {
+	cd tet3 || exit 1
+
+	tplib=${1:?}
+
+	for i in $alldirs
+	do
+		do1config $tplib $i
+	done
+
+	if test $tplib != lite
+	then
+		for i in $distdirs
+		do
+			do1config $tplib $i
+		done
+	fi
+
+	cd ..
+	return 0
+}
+
+# do1config - extend the doconfig processing for a single subdirectory
+do1config()
+{
+	name=${1:?}
+	dir=${2:?}
+
+	rm -f $dir/ts.mk
+	cp $dir/${name}lib.mk $dir/ts.mk
+}
+
+# index - return 0 if $1 is in the set $2 ...
+# otherwise return 1
+index(){
+        X=${1:?}
+        shift
+        for Y in $*
+        do
+                if test "$X" = "$Y"
+                then
+                        return 0
+                fi
+        done
+        return 1
+}
+
+while :
+do
+	case "$1" in
+		-t)
+			shift
+			TPLIB=${1:?"-t parameter not set"}
+			shift
+			;;
+		"")
+			break
+			;;
+
+		*)
+			echo "$USAGE" 1>&2
+			echo "$FIX" 1>&2
+			exit 2
+	esac
+done
+
+if test "$TPLIB" != "" && index ${TPLIB} inet xti lite
+then
+	doconfig ${TPLIB}
+else
+	
+	echo "$PROMPT"
+	while read TPLIB
+	do
+		case $TPLIB in
+		inet|xti|lite)
+			doconfig $TPLIB
+			break
+			;;
+
+		q|Q)
+			exit 1
+			;;
+
+		*)
+			echo "$PROMPT"
+			;;
+		esac
+	done
+fi
+
+case $TPLIB in
+lite) echo "TETware-Lite configuration completed" ;;
+*)    echo "TETware configuration for $TPLIB transport completed" ;;
+esac
+
+if test ! -f defines.mk
+then
+	echo "
+You need to create a defines.mk file before running make"
+fi
+
+exit 0
+

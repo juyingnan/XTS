@@ -1,0 +1,175 @@
+#
+#	SCCS: @(#)shared.mk	1.4 (98/09/01)
+#
+#	UniSoft Ltd., London, England
+#
+# (C) Copyright 1996 X/Open Company Limited
+#
+# All rights reserved.  No part of this source code may be reproduced,
+# stored in a retrieval system, or transmitted, in any form or by any
+# means, electronic, mechanical, photocopying, recording or otherwise,
+# except as stated in the end-user licence agreement, without the prior
+# permission of the copyright owners.
+# A copy of the end-user licence agreement is contained in the file
+# Licence which accompanies this distribution.
+# 
+# X/Open and the 'X' symbol are trademarks of X/Open Company Limited in
+# the UK and other countries.
+#
+# ************************************************************************
+#
+# SCCS:   	@(#)shared.mk	1.4 98/09/01
+# NAME:		shared.mk
+# PRODUCT:	TETware
+# AUTHOR:	Geoff Clare, UniSoft Ltd.
+# DATE CREATED:	October 1996
+#
+# DESCRIPTION:
+#	make include file, shared between tcm, tcmthr, tcmshlib and tcmthrshlib
+# 
+# MODIFICATIONS:
+#
+#	Andrew Dingwall, UniSoft Ltd., August 1998
+#	Added support for shared libraries.
+#
+# ************************************************************************
+
+#
+# tcm object files that go in the API library
+#
+
+# list of object files to be included in shared API libraries
+TCM_SHARED_OFILES = ictp$O $(TCM_SHARED_OFILES_TS)
+
+# list of object files to be included in the static part of the shared
+# API libraries
+TCM_STATIC_OFILES = child$O ckversion$O dtcm$O dynlink$O tcmfuncs$O \
+	$(TCM_STATIC_OFILES_TS)
+
+# list of object files to be included in the static API libraries
+TCM_OFILES = $(TCM_SHARED_OFILES) $(TCM_STATIC_OFILES)
+
+# compilations using TET_CFLAGS
+
+child$O: $(TCMSRC)child.c
+	$(LOCAL_CC) $(TET_CFLAGS) -c $(TCMSRC)child.c
+
+ckversion$O: $(TCMSRC)ckversion.c
+	$(LOCAL_CC) $(TET_CFLAGS) -c $(TCMSRC)ckversion.c
+
+dynlink$O: $(TCMSRC)dynlink.c dynlink_gen_made
+	$(LOCAL_CC) -I$(APISHLIBSRC). $(TET_CFLAGS) -c $(TCMSRC)dynlink.c
+
+# note that the dependences in the following rule are incomplete,
+# but it's the best we can do;
+# the higher level makefile makes api*shlib before tcm*shlib, so it doesn't
+# usually matter
+dynlink_gen_made:
+	@set -x;							\
+	if test -n "$(APISHLIBSRC)";					\
+	then								\
+		cd $(APISHLIBSRC);					\
+		$(MAKE) dynlink.gen;					\
+	fi
+	touch $@
+
+ictp$O: $(TCMSRC)ictp.c
+	$(LOCAL_CC) $(TET_CFLAGS) -c $(TCMSRC)ictp.c
+
+tcm$O: $(TCMSRC)tcm.c
+	$(LOCAL_CC) $(TET_CFLAGS) -c $(TCMSRC)tcm.c
+
+tcmchild$O: $(TCMSRC)tcmchild.c
+	$(LOCAL_CC) $(TET_CFLAGS) -c $(TCMSRC)tcmchild.c
+
+tcmfuncs$O: $(TCMSRC)tcmfuncs.c
+	$(LOCAL_CC) $(TET_CFLAGS) -c $(TCMSRC)tcmfuncs.c
+
+tcmrem$O: $(TCMSRC)tcmrem.c
+	$(LOCAL_CC) $(TET_CFLAGS) -c $(TCMSRC)tcmrem.c
+
+tcm_bs$O: $(TCMSRC)tcm_bs.c
+	$(LOCAL_CC) $(TET_CFLAGS) -c $(TCMSRC)tcm_bs.c
+
+# compilations using DTET_CFLAGS
+
+dtcm$O: $(TCMSRC)dtcm.c
+	$(LOCAL_CC) $(DTET_CFLAGS) -c $(TCMSRC)dtcm.c
+
+tcm_in$O: $(TCMSRC)tcm_in.c
+	$(LOCAL_CC) $(DTET_CFLAGS) -c $(TCMSRC)tcm_in.c
+
+tcm_xt$O: $(TCMSRC)tcm_xt.c
+	$(LOCAL_CC) $(DTET_CFLAGS) -c $(TCMSRC)tcm_xt.c
+
+# C++ compilations
+
+Ctcm$O: $(TCMSRC)tcm.c
+	rm -f Ctcm.$(C_SUFFIX)
+	cp $(TCMSRC)tcm.c Ctcm.$(C_SUFFIX)
+	$(C_PLUS) $(TET_CFLAGS) -I$(TCMSRC). -c Ctcm.$(C_SUFFIX)
+	rm -f Ctcm.$(C_SUFFIX)
+
+Ctcmchild$O: $(TCMSRC)tcmchild.c
+	rm -f Ctcmchild.$(C_SUFFIX)
+	cp $(TCMSRC)tcmchild.c Ctcmchild.$(C_SUFFIX)
+	$(C_PLUS) $(TET_CFLAGS) -I$(TCMSRC). -c Ctcmchild.$(C_SUFFIX)
+	rm -f Ctcmchild.$(C_SUFFIX)
+
+
+# dependencies
+
+Ctcm$O tcm$O: $(INC)/apilib.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
+	$(INC)/dtthr.h $(INC)/error.h $(INC)/globals.h $(INC)/ptab.h \
+	$(INC)/server.h $(INC)/sigsafe.h $(INC)/synreq.h $(INC)/tslib.h \
+	$(TCMSRC)tcmfuncs.h
+
+Ctcmchild$O tcmchild$O: $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
+	$(INC)/dtthr.h $(INC)/error.h $(INC)/globals.h $(INC)/ptab.h \
+	$(INC)/server.h $(INC)/servlib.h $(INC)/sigsafe.h $(INC)/synreq.h \
+	$(INC)/tslib.h $(TCMSRC)tcmfuncs.h
+
+child$O: $(DINC)/tet_api.h $(INC)/alarm.h $(INC)/apilib.h $(INC)/dtetlib.h \
+	$(INC)/dtmac.h $(INC)/dtmsg.h $(INC)/dtthr.h $(INC)/error.h \
+	$(INC)/globals.h $(INC)/sigsafe.h $(INC)/synreq.h $(TCMSRC)tcmfuncs.h
+
+ckversion$O: $(DINC)/tet_api.h $(INC)/apilib.h $(INC)/dtmac.h \
+	$(INC)/globals.h $(TCMSRC)tcmfuncs.h ../apilib/version.c
+
+dtcm$O: $(DINC)/tet_api.h $(INC)/alarm.h $(INC)/apilib.h $(INC)/bstring.h \
+	$(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h $(INC)/dtthr.h \
+	$(INC)/error.h $(INC)/ltoa.h $(INC)/servlib.h $(INC)/sigsafe.h \
+	$(INC)/synreq.h $(TCMSRC)tcmfuncs.h
+
+dynlink$O: $(DINC)/tet_api.h $(INC)/apilib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
+	$(INC)/dtthr.h $(INC)/error.h $(INC)/globals.h $(INC)/ptab.h \
+	$(INC)/server.h $(INC)/server_bs.h $(INC)/server_in.h $(INC)/synreq.h \
+	$(TCMSRC)tcmfuncs.h
+
+ictp$O: $(DINC)/tet_api.h $(DINC)/tet_jrnl.h $(INC)/apilib.h $(INC)/dtetlib.h \
+	$(INC)/dtmac.h $(INC)/dtmsg.h $(INC)/dtthr.h $(INC)/error.h \
+	$(INC)/globals.h $(INC)/ltoa.h $(INC)/servlib.h $(INC)/synreq.h \
+	$(TCMSRC)tcmfuncs.h
+
+tcm_bs$O: $(INC)/avmsg.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
+	$(INC)/error.h $(INC)/ptab.h $(INC)/server_bs.h $(INC)/valmsg.h \
+	$(TCMSRC)tcmfuncs.h
+
+tcm_in$O: $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h $(INC)/error.h \
+	$(INC)/globals.h $(INC)/inetlib_in.h $(INC)/ltoa.h $(INC)/ptab.h \
+	$(INC)/server.h $(INC)/tptab_in.h $(INC)/tsinfo_in.h \
+	$(TCMSRC)tcmfuncs.h
+
+tcm_xt$O: $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h $(INC)/error.h \
+	$(INC)/ltoa.h $(INC)/ptab.h $(INC)/server.h $(INC)/tptab_xt.h \
+	$(INC)/tsinfo_xt.h $(INC)/xtilib_xt.h $(TCMSRC)tcmfuncs.h
+
+tcmfuncs$O: $(DINC)/tet_api.h $(INC)/apilib.h $(INC)/dtetlib.h \
+	$(INC)/dtmac.h $(INC)/dtmsg.h $(INC)/error.h $(INC)/globals.h \
+	$(INC)/ltoa.h $(INC)/ptab.h $(INC)/server.h $(INC)/servlib.h \
+	$(INC)/synreq.h $(INC)/tslib.h $(TCMSRC)tcmfuncs.h
+
+tcmrem$O: $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h $(INC)/error.h \
+	$(INC)/globals.h $(INC)/ptab.h $(INC)/server.h $(INC)/sigsafe.h \
+	$(INC)/synreq.h $(INC)/tslib.h $(TCMSRC)tcmfuncs.h
+

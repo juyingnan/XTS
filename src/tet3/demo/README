@@ -1,0 +1,9 @@
+SCCS: @(#)README	1.2 (96/08/15)
+TETware release 3.3
+
+This directory contains the source code for a simple distributed test suite.
+
+Please refer to the chapter entitled ``Running the TETware
+demonstration'' in the TETware Installation and User Guide for
+instructions on how to install and run the demonstration.
+
