@@ -1,5 +1,5 @@
 #!/bin/sh
-# Copyright (c) 2005 X.Org Foundation LLC
+# Copyright (c) 2005 X.Org Foundation L.L.C.
 # 
 # Permission is hereby granted, free of charge, to any person obtaining a copy of
 # this software and associated documentation files (the "Software"), to deal in
@@ -20,7 +20,7 @@
 # SOFTWARE.
 #
 #!/bin/sh
-# $Header: /cvs/xtest/xtest/xts5/bin/wbuild,v 1.1 2005-02-12 14:37:13 anderson Exp $
+# $Header: /cvs/xtest/xtest/xts5/bin/wbuild,v 1.2 2005-11-01 00:48:39 idr Exp $
 #
 # Copyright (c) Applied Testing and Technology, Inc. 1993, 1994
 # All Rights Reserved.
@@ -31,33 +31,6 @@
 #
 # Description:
 #	VSW5 build tool
-#
-# Modifications:
-# $Log: wbuild,v $
-# Revision 1.1  2005-02-12 14:37:13  anderson
-# Initial revision
-#
-# Revision 8.0  1998/12/23 23:22:43  mar
-# Branch point for Release 5.0.2
-#
-# Revision 7.0  1998/10/30 22:40:42  mar
-# Branch point for Release 5.0.2b1
-#
-# Revision 6.0  1998/03/02 05:15:18  tbr
-# Branch point for Release 5.0.1
-#
-# Revision 5.0  1998/01/26 03:11:50  tbr
-# Branch point for Release 5.0.1b1
-#
-# Revision 4.3  1996/01/25 01:51:20  andy
-# Repaired logic again
-#
-# Revision 4.0  1995/12/15  08:37:32  tbr
-# Branch point for Release 5.0.0
-#
-# Revision 3.1  1995/12/15  00:33:22  andy
-# Prepare for GA Release
-#
 
 # Portions of this software are based on Xlib and X Protocol Test Suite.
 # We have used this material under the terms of its copyright, which grants
@@ -97,19 +70,5 @@ trap 'rm -f $TMP; exit ${EXIT_STATUS}' 0 1 2 3 15
 BCONFIG=${TET_BUILDCONFIG-${TET_ROOT}/vsw5/tetbuild.cfg}
 
 cat $BCONFIG Makefile > $TMP
-if [ $# = 0 ]; then
-	make -sqf $TMP
-	EXIT_STATUS=$?
-	if [ $EXIT_STATUS != 0 ]
-	then
-		make -sf $TMP
-	fi
-else
-	make -sqf $TMP "$@"
-	EXIT_STATUS=$?
-	if [ $EXIT_STATUS != 0 ]
-	then
-		make -sf $TMP "$@"
-	fi
-	EXIT_STATUS=$?
-fi
+
+make -sf $TMP "$@"
