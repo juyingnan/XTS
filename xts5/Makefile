@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-# $Header: /cvs/xtest/xtest/xts5/Makefile,v 1.3 2005-04-19 05:13:34 anderson Exp $
+# $Header: /cvs/xtest/xtest/xts5/Makefile,v 1.4 2005-11-01 00:41:26 jamey Exp $
 #
 # Copyright (c) Applied Testing and Technology, Inc. 1995
 # All Rights Reserved.
@@ -33,7 +33,10 @@
 #
 # Modifications:
 # $Log: Makefile,v $
-# Revision 1.3  2005-04-19 05:13:34  anderson
+# Revision 1.4  2005-11-01 00:41:26  jamey
+# Copy tetbuild.cfg from the configs directory if possible and needed; cvsignore output from make build.
+#
+# Revision 1.3  2005/04/19 05:13:34  anderson
 # Add a step to ensure the wbuild scrpt is executable
 #
 # Revision 1.2  2005/02/12 16:50:15  anderson
@@ -130,7 +133,7 @@
 
 all: build install
 
-build:
+build: tetbuild.cfg
 	chmod ugo+x bin/wbuild
 	@if [ -s $(TET_ROOT)/vsw5/results/install.log ]; \
 	then \
@@ -169,6 +172,9 @@ build:
 	@(echo Building blowup utility |tee -a $(TET_ROOT)/vsw5/results/install.log)
 	@(cd $(TET_ROOT)/vsw5/src/pixval/blowup; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
 	@(echo |tee -a $(TET_ROOT)/vsw5/results/install.log)
+
+tetbuild.cfg:
+	cp configs/tetbuild.cfg.`uname` tetbuild.cfg
 
 install:
 	@(echo Setting 775 directory permissions |tee -a $(TET_ROOT)/vsw5/results/install.log)
