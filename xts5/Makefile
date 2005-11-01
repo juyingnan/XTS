@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-# $Header: /cvs/xtest/xtest/xts5/Makefile,v 1.5 2005-11-01 01:23:34 jamey Exp $
+# $Header: /cvs/xtest/xtest/xts5/Makefile,v 1.6 2005-11-01 01:38:05 idr Exp $
 #
 # Copyright (c) Applied Testing and Technology, Inc. 1995
 # All Rights Reserved.
@@ -33,7 +33,11 @@
 #
 # Modifications:
 # $Log: Makefile,v $
-# Revision 1.5  2005-11-01 01:23:34  jamey
+# Revision 1.6  2005-11-01 01:38:05  idr
+# Numerous changes to eliminate the need for wclean.  It is replaced by doing
+# 'wbuild clean'.  tetclean.cfg will soon get the axe as well.
+#
+# Revision 1.5  2005/11/01 01:23:34  jamey
 # Add a target for compiling the tests, and include it in make all.
 #
 # Revision 1.4  2005/11/01 00:41:26  jamey
@@ -194,17 +198,17 @@ athena:
 	@(cd $(TET_ROOT)/vsw5/src/libXtmu; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
 
 clean:
-	@(cd src/lib; wclean)
-	@(cd src/libXR5; wclean)
+	@(cd src/lib; wbuild clean)
+	@(cd src/libXR5; wbuild clean)
 	@if [ -d $(TET_ROOT)/vsw5/src/libXtTest ]; \
 	then \
-	cd src/libXtTest; wclean; \
+	cd src/libXtTest; wbuild clean; \
 	fi
-	@(cd src/libproto; wclean)
-	@(cd src/libXtaw; wclean)
-	@(cd src/libXtmu; wclean)
-	@(cd src/xim; wclean)
-	@(cd fonts; wclean)
-	@(cd src/bin/mc ; wclean)
-	@(cd src/bin/reports ; wclean)
-	@(cd src/pixval/blowup; wclean)
+	@(cd src/libproto; wbuild clean)
+	@(cd src/libXtaw; wbuild clean)
+	@(cd src/libXtmu; wbuild clean)
+	@(cd src/xim; wbuild clean)
+	@(cd fonts; wbuild clean)
+	@(cd src/bin/mc ; wbuild clean)
+	@(cd src/bin/reports ; wbuild clean)
+	@(cd src/pixval/blowup; wbuild clean)

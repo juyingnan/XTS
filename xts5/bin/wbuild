@@ -20,7 +20,7 @@
 # SOFTWARE.
 #
 #!/bin/sh
-# $Header: /cvs/xtest/xtest/xts5/bin/wbuild,v 1.2 2005-11-01 00:48:39 idr Exp $
+# $Header: /cvs/xtest/xtest/xts5/bin/wbuild,v 1.3 2005-11-01 01:38:05 idr Exp $
 #
 # Copyright (c) Applied Testing and Technology, Inc. 1993, 1994
 # All Rights Reserved.
@@ -71,4 +71,5 @@ BCONFIG=${TET_BUILDCONFIG-${TET_ROOT}/vsw5/tetbuild.cfg}
 
 cat $BCONFIG Makefile > $TMP
 
-make -sf $TMP "$@"
+make -f $TMP "$@"
+EXIT_STATUS=$?
