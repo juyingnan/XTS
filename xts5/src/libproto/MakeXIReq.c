@@ -20,21 +20,24 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/MakeXIReq.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libproto/MakeXIReq.c,v 1.3 2005-11-03 08:42:02 jmichael Exp $
 *
 * Copyright Applied Testing and Technology Inc. 1995
 * All rights reserved
 *
 * Project: VSW5
 *
-* File:	vsw5/src/libproto/MakeXIReq.c
+* File:	xts5/src/libproto/MakeXIReq.c
 *
 * Description:
 *	Protocol test support routines
 *
 * Modifications:
 * $Log: MakeXIReq.c,v $
-* Revision 1.2  2005-04-21 09:40:42  ajosey
+* Revision 1.3  2005-11-03 08:42:02  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.2  2005/04/21 09:40:42  ajosey
 * resync to VSW5.1.5
 *
 * Revision 8.1  1999/04/03 01:24:51  mar
@@ -144,11 +147,11 @@ SOFTWARE.
 */
 
 /*
- *	$Header: /cvs/xtest/xtest/xts5/src/libproto/MakeXIReq.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+ *	$Header: /cvs/xtest/xtest/xts5/src/libproto/MakeXIReq.c,v 1.3 2005-11-03 08:42:02 jmichael Exp $
  */
 
 #ifndef lint
-static char rcsid[]="$Header: /cvs/xtest/xtest/xts5/src/libproto/MakeXIReq.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $";
+static char rcsid[]="$Header: /cvs/xtest/xtest/xts5/src/libproto/MakeXIReq.c,v 1.3 2005-11-03 08:42:02 jmichael Exp $";
 #endif
 
 #include "DataMove.h"

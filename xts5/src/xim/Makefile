@@ -19,22 +19,26 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-# $Header: /cvs/xtest/xtest/xts5/src/xim/Makefile,v 1.1 2005-02-12 15:14:15 anderson Exp $
+# $Header: /cvs/xtest/xtest/xts5/src/xim/Makefile,v 1.2 2005-11-03 08:42:02 jmichael Exp $
 #
 # Copyright (c) Applied Testing and Technology, Inc. 1995
 # All Rights Reserved.
 #
 # Project: VSW5
 #
-# File: vsw5/src/xim/Makefile
+# File: xts5/src/xim/Makefile
 #
 # Description:
 #	 Makefile for Input Method tests' library
 #
 # Modifications
 # $Log: Makefile,v $
-# Revision 1.1  2005-02-12 15:14:15  anderson
-# Initial revision
+# Revision 1.2  2005-11-03 08:42:02  jmichael
+# clean up all vsw5 paths to use xts5 instead.
+#
+# Revision 1.1.1.1  2005/02/12 15:14:15  anderson
+# VSW5 Source under an MIT license This is version 5.0.2 as received from
+# AppTest with the new license applied.
 #
 # Revision 8.0  1998/12/23 23:25:22  mar
 # Branch point for Release 5.0.2
@@ -68,7 +72,7 @@
 #
 # Location of Test Suite
 #
-SUITE_ROOT = ${TET_ROOT}/vsw5
+SUITE_ROOT = ${TET_ROOT}/xts5
 SUITE_LIB = ${SUITE_ROOT}/lib
 SUITE_BIN = ${SUITE_ROOT}/bin
 SUITE_INC = ${SUITE_ROOT}/include

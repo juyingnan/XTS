@@ -19,22 +19,26 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-#$Header: /cvs/xtest/xtest/xts5/src/bin/reports/Makefile,v 1.1 2005-02-12 15:14:15 anderson Exp $
+#$Header: /cvs/xtest/xtest/xts5/src/bin/reports/Makefile,v 1.2 2005-11-03 08:42:01 jmichael Exp $
 #
 # Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 # All Rights Reserved.
 #
 # Project: VSW5
 #
-# File: vsw5/src/bin/reports/Makefile
+# File: xts5/src/bin/reports/Makefile
 #
 # Description:
 #	Makefile for report generators
 #
 # Modifications:
 # $Log: Makefile,v $
-# Revision 1.1  2005-02-12 15:14:15  anderson
-# Initial revision
+# Revision 1.2  2005-11-03 08:42:01  jmichael
+# clean up all vsw5 paths to use xts5 instead.
+#
+# Revision 1.1.1.1  2005/02/12 15:14:15  anderson
+# VSW5 Source under an MIT license This is version 5.0.2 as received from
+# AppTest with the new license applied.
 #
 # Revision 8.0  1998/12/23 23:24:18  mar
 # Branch point for Release 5.0.2
@@ -80,11 +84,11 @@ clean:
 	@rm -f vswrpt vswrptm vsw_pr
 
 clobber: clean
-	@rm -f $(TET_ROOT)/vsw5/bin/vswrpt
-	@rm -f $(TET_ROOT)/vsw5/bin/vswrptm
-	@rm -f $(TET_ROOT)/vsw5/bin/vsw_pr
+	@rm -f $(TET_ROOT)/xts5/bin/vswrpt
+	@rm -f $(TET_ROOT)/xts5/bin/vswrptm
+	@rm -f $(TET_ROOT)/xts5/bin/vsw_pr
 
 install: all
-	@(cp $(TET_ROOT)/vsw5/src/bin/reports/vswrpt $(TET_ROOT)/vsw5/bin)
-	@(cp $(TET_ROOT)/vsw5/src/bin/reports/vswrptm $(TET_ROOT)/vsw5/bin)
-	@(cp $(TET_ROOT)/vsw5/src/bin/reports/vsw_pr $(TET_ROOT)/vsw5/bin)
+	@(cp $(TET_ROOT)/xts5/src/bin/reports/vswrpt $(TET_ROOT)/xts5/bin)
+	@(cp $(TET_ROOT)/xts5/src/bin/reports/vswrptm $(TET_ROOT)/xts5/bin)
+	@(cp $(TET_ROOT)/xts5/src/bin/reports/vsw_pr $(TET_ROOT)/xts5/bin)

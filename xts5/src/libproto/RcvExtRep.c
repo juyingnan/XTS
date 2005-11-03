@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,22 +20,25 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/RcvExtRep.c,v 1.1 2005-02-12 14:37:15 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libproto/RcvExtRep.c,v 1.2 2005-11-03 08:42:02 jmichael Exp $
 *
 * Copyright Applied Testing and Technology Inc. 1995
 * All rights reserved
 *
 * Project: VSW5
 *
-* File:	vsw5/src/libproto/RcvExtRep.c
+* File:	xts5/src/libproto/RcvExtRep.c
 *
 * Description:
 *	Protocol test support routines
 *
 * Modifications:
 * $Log: RcvExtRep.c,v $
-* Revision 1.1  2005-02-12 14:37:15  anderson
-* Initial revision
+* Revision 1.2  2005-11-03 08:42:02  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.1.1.2  2005/04/15 14:05:11  anderson
+* Reimport of the base with the legal name in the copyright fixed.
 *
 * Revision 8.0  1998/12/23 23:25:02  mar
 * Branch point for Release 5.0.2
@@ -127,7 +130,7 @@ SOFTWARE.
 */
 
 #ifndef lint
-static char rcsid[]="$Header: /cvs/xtest/xtest/xts5/src/libproto/RcvExtRep.c,v 1.1 2005-02-12 14:37:15 anderson Exp $";
+static char rcsid[]="$Header: /cvs/xtest/xtest/xts5/src/libproto/RcvExtRep.c,v 1.2 2005-11-03 08:42:02 jmichael Exp $";
 #endif
 
 #include "stdio.h"

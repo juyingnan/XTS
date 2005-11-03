@@ -77,10 +77,10 @@ if [ "$DISPLAY" != "" ]; then
 	echo "XT_DISPLAY=$DISPLAY" >> CONFIG
 fi
 
-# config=${TET_CONFIG:-$TET_ROOT/vsw5/tetexec.cfg}
+# config=${TET_CONFIG:-$TET_ROOT/xts5/tetexec.cfg}
 # Since :- is not universal, and I really want that functionality.
 if [ x"$TET_CONFIG" = x"" ]; then
-	config=$TET_ROOT/vsw5/tetexec.cfg
+	config=$TET_ROOT/xts5/tetexec.cfg
 else
 	config=$TET_CONFIG
 fi
@@ -92,9 +92,9 @@ echo "junk=junk" >> CONFIG	# TEMP
 TET_CONFIG=CONFIG
 export TET_CONFIG
 
-#TET_CODE=${TET_CODE:-$TET_ROOT/vsw5/tet_code}
+#TET_CODE=${TET_CODE:-$TET_ROOT/xts5/tet_code}
 if [ x"$TET_CODE" = x"" ]; then
-	TET_CODE=$TET_ROOT/vsw5/tet_code
+	TET_CODE=$TET_ROOT/xts5/tet_code
 fi
 export TET_CODE
 

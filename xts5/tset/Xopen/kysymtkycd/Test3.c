@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,19 +20,22 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xopen/kysymtkycd/Test3.c,v 1.1 2005-02-12 14:37:43 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/tset/Xopen/kysymtkycd/Test3.c,v 1.2 2005-11-03 08:44:00 jmichael Exp $
 * 
 * Project: VSW5
 * 
-* File: vsw5/tset/Xopen/kysymtkycd/Test3.c
+* File: xts5/tset/Xopen/kysymtkycd/Test3.c
 * 
 * Description:
 * 	Tests for XKeysymToKeycode()
 * 
 * Modifications:
 * $Log: Test3.c,v $
-* Revision 1.1  2005-02-12 14:37:43  anderson
-* Initial revision
+* Revision 1.2  2005-11-03 08:44:00  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.1.1.2  2005/04/15 14:05:40  anderson
+* Reimport of the base with the legal name in the copyright fixed.
 *
 * Revision 8.0  1998/12/23 23:35:44  mar
 * Branch point for Release 5.0.2

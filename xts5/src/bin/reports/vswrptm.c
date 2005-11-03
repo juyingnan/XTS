@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-$Header: /cvs/xtest/xtest/xts5/src/bin/reports/vswrptm.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+$Header: /cvs/xtest/xtest/xts5/src/bin/reports/vswrptm.c,v 1.3 2005-11-03 08:42:01 jmichael Exp $
 *
 * Copyright Applied Testing and Technology Inc. 1994, 1995
 * All rights reserved
@@ -34,7 +34,10 @@ $Header: /cvs/xtest/xtest/xts5/src/bin/reports/vswrptm.c,v 1.2 2005-04-21 09:40:
 *
 * Modifications:
 *  $Log: vswrptm.c,v $
-*  Revision 1.2  2005-04-21 09:40:42  ajosey
+*  Revision 1.3  2005-11-03 08:42:01  jmichael
+*  clean up all vsw5 paths to use xts5 instead.
+*
+*  Revision 1.2  2005/04/21 09:40:42  ajosey
 *  resync to VSW5.1.5
 *
 *  Revision 8.1  1999/11/09 17:06:26  vsx
@@ -899,7 +902,7 @@ int main(char argc, char * const argv[])
 		strcpy(doc_dir, "DOC");
 	} else {
 		if (strcmp((const char *)basename(argv[0]), "vswrptm") == 0) {
-			strcpy(test_dir, "vsw5");
+			strcpy(test_dir, "xts5");
 			strcpy(test_flag, "VSW5TESTSUITE");
 			strcpy(test_name, "VSW5");
 			strcpy(vendor_name, "THE OPEN GROUP");

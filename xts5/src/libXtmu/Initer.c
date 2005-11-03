@@ -20,14 +20,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libXtmu/Initer.c,v 1.2 2005-04-15 14:32:12 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libXtmu/Initer.c,v 1.3 2005-11-03 08:42:02 jmichael Exp $
 *
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 * All Rights Reserved.
 *
 * Project: VSW5
 *
-* File: vsw5/src/lib/libXtaw/Initer.c
+* File: xts5/src/lib/libXtaw/Initer.c
 *
 * Description:
 *	Subset of libXmu need for VSW5.  Use if implementation does not
@@ -35,7 +35,10 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: Initer.c,v $
-* Revision 1.2  2005-04-15 14:32:12  anderson
+* Revision 1.3  2005-11-03 08:42:02  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.2  2005/04/15 14:32:12  anderson
 * Merge basline changes
 *
 * Revision 1.1  2005/02/12 14:37:15  anderson

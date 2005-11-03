@@ -20,21 +20,24 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xlib17/gtdflt/Test3.c,v 1.4 2005-04-21 09:40:42 ajosey Exp $
+* $Header: /cvs/xtest/xtest/xts5/tset/Xlib17/gtdflt/Test3.c,v 1.5 2005-11-03 08:43:04 jmichael Exp $
 * 
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
 * 
 * Project: VSW5
 * 
-* File: vsw5/tset/Xlib17/gtdflt/Test3.c
+* File: xts5/tset/Xlib17/gtdflt/Test3.c
 * 
 * Description:
 * 	Tests for XGetDefault()
 * 
 * Modifications:
 * $Log: Test3.c,v $
-* Revision 1.4  2005-04-21 09:40:42  ajosey
+* Revision 1.5  2005-11-03 08:43:04  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.4  2005/04/21 09:40:42  ajosey
 * resync to VSW5.1.5
 *
 * Revision 8.1  2000/02/04 15:29:49  vsx

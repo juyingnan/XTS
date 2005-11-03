@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib9/ptimg/ptimg.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib9/ptimg/ptimg.m,v 1.3 2005-11-03 08:43:58 jmichael Exp $
 
 Copyright (c) 2002 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1995
@@ -25,14 +25,17 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: vsw5/tset/Xlib9/ptimg/ptimg.m
+>># File: xts5/tset/Xlib9/ptimg/ptimg.m
 >># 
 >># Description:
 >># 	Tests for XPutImage()
 >># 
 >># Modifications:
 >># $Log: ptimg.m,v $
->># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># Revision 1.3  2005-11-03 08:43:58  jmichael
+>># clean up all vsw5 paths to use xts5 instead.
+>>#
+>># Revision 1.2  2005/04/21 09:40:42  ajosey
 >># resync to VSW5.1.5
 >>#
 >># Revision 8.2  2005/01/21 10:52:46  gwc

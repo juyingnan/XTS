@@ -19,22 +19,26 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-# $Header: /cvs/xtest/xtest/xts5/fonts/Makefile,v 1.1 2005-02-12 15:14:15 anderson Exp $
+# $Header: /cvs/xtest/xtest/xts5/fonts/Makefile,v 1.2 2005-11-03 08:42:00 jmichael Exp $
 #
 # Copyright (c) Applied Testing and Technology, Inc. 1995
 # All Rights Reserved.
 #
 # Project:     VSW5
 #
-# File:        vsw5/fonts/Makefile
+# File:        xts5/fonts/Makefile
 #
 # Description:
 #       Makefile for installing VSW5 fonts
 #
 # Modifications:
 # $Log: Makefile,v $
-# Revision 1.1  2005-02-12 15:14:15  anderson
-# Initial revision
+# Revision 1.2  2005-11-03 08:42:00  jmichael
+# clean up all vsw5 paths to use xts5 instead.
+#
+# Revision 1.1.1.1  2005/02/12 15:14:15  anderson
+# VSW5 Source under an MIT license This is version 5.0.2 as received from
+# AppTest with the new license applied.
 #
 # Revision 8.0  1998/12/23 23:22:49  mar
 # Branch point for Release 5.0.2

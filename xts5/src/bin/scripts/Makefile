@@ -27,7 +27,7 @@ clean:
 	@rm -f *.o
 
 clobber: clean
-	@cd $(TET_ROOT)/vsw5/bin;rm -f $(SCRIPTS)
+	@cd $(TET_ROOT)/xts5/bin;rm -f $(SCRIPTS)
 
 install: all
-	@(cd $(TET_ROOT)/vsw5/src/bin/scripts;cp $(SCRIPTS) $(TET_ROOT)/vsw5/bin)
+	@(cd $(TET_ROOT)/xts5/src/bin/scripts;cp $(SCRIPTS) $(TET_ROOT)/xts5/bin)

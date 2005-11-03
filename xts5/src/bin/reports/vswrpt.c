@@ -19,7 +19,7 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
-/* $Header: /cvs/xtest/xtest/xts5/src/bin/reports/vswrpt.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+/* $Header: /cvs/xtest/xtest/xts5/src/bin/reports/vswrpt.c,v 1.3 2005-11-03 08:42:01 jmichael Exp $
 *
 * (C) Copyright 2000-2001 The Open Group
 * (C) Copyright 1996 Applied Testing Technology, Inc.
@@ -44,7 +44,10 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: vswrpt.c,v $
-* Revision 1.2  2005-04-21 09:40:42  ajosey
+* Revision 1.3  2005-11-03 08:42:01  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.2  2005/04/21 09:40:42  ajosey
 * resync to VSW5.1.5
 *
 * Revision 8.4  2005/01/20 15:53:34  gwc
@@ -1746,7 +1749,7 @@ int main(int argc, char * const argv[])
 		strcpy(doc_dir, "DOC");
 	} else {
 		if (strcmp(bname, "vswrpt") == 0) {
-			strcpy(test_dir, "vsw5");
+			strcpy(test_dir, "xts5");
 			strcpy(test_flag, "VSW5TESTSUITE");
 			strcpy(test_name, "VSW5");
 			strcpy(vendor_name, "THE OPEN GROUP");

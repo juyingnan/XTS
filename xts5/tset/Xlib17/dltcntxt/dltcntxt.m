@@ -17,21 +17,24 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib17/dltcntxt/dltcntxt.m,v 1.2 2005-04-15 14:37:14 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib17/dltcntxt/dltcntxt.m,v 1.3 2005-11-03 08:43:03 jmichael Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: vsw5/tset/Xlib17/dltcntxt/dltcntxt.m
+>># File: xts5/tset/Xlib17/dltcntxt/dltcntxt.m
 >># 
 >># Description:
 >># 	Tests for XDeleteContext()
 >># 
 >># Modifications:
 >># $Log: dltcntxt.m,v $
->># Revision 1.2  2005-04-15 14:37:14  anderson
+>># Revision 1.3  2005-11-03 08:43:03  jmichael
+>># clean up all vsw5 paths to use xts5 instead.
+>>#
+>># Revision 1.2  2005/04/15 14:37:14  anderson
 >># Merge baseline changes
 >>#
 >># Revision 1.1  2005/02/12 14:37:30  anderson

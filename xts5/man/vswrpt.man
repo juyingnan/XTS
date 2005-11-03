@@ -19,7 +19,7 @@
 .\"OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 .\"SOFTWARE.
 .\"
-.\"$Header: /cvs/xtest/xtest/xts5/man/vswrpt.man,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+.\"$Header: /cvs/xtest/xtest/xts5/man/vswrpt.man,v 1.3 2005-11-03 08:42:01 jmichael Exp $
 .\"Copyright (c) 1994, 1995 Applied Testing and Technology, Inc.
 .\"All rights reserved
 .TH vswrpt "1" "November 1999" "The Open Group" "VSW5"
@@ -73,7 +73,7 @@ information provided by VSW5.
 .B Journal File Selection
 .PP
 By default vswrpt uses the most recent journal file under the
-directory $TET_ROOT/vsw5/results as input.  Three options allow specification
+directory $TET_ROOT/xts5/results as input.  Three options allow specification
 of alternative files for use as the input journal. 
 .PP
 .B -f file_name
@@ -88,7 +88,7 @@ as the input journal.
 .in +5
 Use the file
 .I journal
-in the directory under $TET_ROOT/vsw5/results with the specified number as the
+in the directory under $TET_ROOT/xts5/results with the specified number as the
 input journal.  Leading zeros and additional portions of the directory
 name need not be specified, i.e. -j 30 matches 0030bec/journal, 0030b/journal,
 etc.
@@ -179,7 +179,7 @@ Display program version.
 .TP 10
 .B -w
 Do not report on a specific journal but rather print a summary of the journals
-in $TET_ROOT/vsw5/results.
+in $TET_ROOT/xts5/results.
 .PP
 .SH FIP RESULTS
 \fRA Further Information Provided (FIP) result code indicates that manual

@@ -20,21 +20,24 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/include/X11/Xmu/CloseHook.h,v 1.2 2005-04-15 14:27:44 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/include/X11/Xmu/CloseHook.h,v 1.3 2005-11-03 08:42:01 jmichael Exp $
 *
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
 *
 * Project: VSW5
 *
-* File: vsw5/include/X11/Xmu/CloseHook.h
+* File: xts5/include/X11/Xmu/CloseHook.h
 *
 * Description:
 *	Defines used by the version of Athena widgets include in VSW5
 *
 * Modifications:
 * $Log: CloseHook.h,v $
-* Revision 1.2  2005-04-15 14:27:44  anderson
+* Revision 1.3  2005-11-03 08:42:01  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.2  2005/04/15 14:27:44  anderson
 * Merge basline changes
 *
 * Revision 1.1  2005/02/12 14:37:13  anderson

@@ -1,4 +1,4 @@
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -18,22 +18,25 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
  */
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/mbtesc/mbtesc.m,v 1.1 2005-02-12 14:37:21 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/mbtesc/mbtesc.m,v 1.2 2005-11-03 08:42:45 jmichael Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: vsw5/tset/Xlib14/mbtesc/mbtesc.m
+>># File: xts5/tset/Xlib14/mbtesc/mbtesc.m
 >># 
 >># Description:
 >># 	Tests for XmbTextEscapement()
 >># 
 >># Modifications:
 >># $Log: mbtesc.m,v $
->># Revision 1.1  2005-02-12 14:37:21  anderson
->># Initial revision
+>># Revision 1.2  2005-11-03 08:42:45  jmichael
+>># clean up all vsw5 paths to use xts5 instead.
+>>#
+>># Revision 1.1.1.2  2005/04/15 14:05:19  anderson
+>># Reimport of the base with the legal name in the copyright fixed.
 >>#
 >># Revision 8.0  1998/12/23 23:38:57  mar
 >># Branch point for Release 5.0.2

@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/include/XtTestProto.h,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+* $Header: /cvs/xtest/xtest/xts5/include/XtTestProto.h,v 1.3 2005-11-03 08:42:00 jmichael Exp $
 *
 * Copyright (c) 2004 The Open Group
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
@@ -29,14 +29,17 @@ SOFTWARE.
 *
 * Project: VSW5
 *
-* File: vsw5/include/XtTestProto.h
+* File: xts5/include/XtTestProto.h
 *
 * Description:
-*	Library routine prototypes for vsw5 specific to the Xt tests
+*	Library routine prototypes for xts5 specific to the Xt tests
 *
 * Modifications:
 * $Log: XtTestProto.h,v $
-* Revision 1.2  2005-04-21 09:40:42  ajosey
+* Revision 1.3  2005-11-03 08:42:00  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.2  2005/04/21 09:40:42  ajosey
 * resync to VSW5.1.5
 *
 * Revision 8.2  2005/01/14 11:18:10  gwc

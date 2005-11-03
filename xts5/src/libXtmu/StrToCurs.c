@@ -1,5 +1,5 @@
 /*
-Copyright (c) 2005 X.Org Foundation LLC
+Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -20,14 +20,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libXtmu/StrToCurs.c,v 1.1 2005-02-12 14:37:15 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libXtmu/StrToCurs.c,v 1.2 2005-11-03 08:42:02 jmichael Exp $
 *
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 * All Rights Reserved.
 *
 * Project: VSW5
 *
-* File: vsw5/src/lib/libXtaw/StrToCurs.c
+* File: xts5/src/lib/libXtaw/StrToCurs.c
 *
 * Description:
 *	Subset of libXmu need for VSW5.  Use if implementation does not
@@ -35,8 +35,11 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: StrToCurs.c,v $
-* Revision 1.1  2005-02-12 14:37:15  anderson
-* Initial revision
+* Revision 1.2  2005-11-03 08:42:02  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.1.1.2  2005/04/15 14:05:11  anderson
+* Reimport of the base with the legal name in the copyright fixed.
 *
 * Revision 8.0  1998/12/23 23:26:05  mar
 * Branch point for Release 5.0.2

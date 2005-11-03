@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/SendReq.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libproto/SendReq.c,v 1.3 2005-11-03 08:42:02 jmichael Exp $
 *
 * Copyright (c) 1999,2001 The Open Group
 * Copyright Applied Testing and Technology Inc. 1995
@@ -28,14 +28,17 @@ SOFTWARE.
 *
 * Project: VSW5
 *
-* File:	vsw5/src/libproto/SendReq.c
+* File:	xts5/src/libproto/SendReq.c
 *
 * Description:
 *	Protocol test support routines
 *
 * Modifications:
 * $Log: SendReq.c,v $
-* Revision 1.2  2005-04-21 09:40:42  ajosey
+* Revision 1.3  2005-11-03 08:42:02  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.2  2005/04/21 09:40:42  ajosey
 * resync to VSW5.1.5
 *
 * Revision 8.4  2005/01/20 16:06:05  gwc

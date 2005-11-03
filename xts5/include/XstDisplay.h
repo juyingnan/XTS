@@ -20,21 +20,24 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/include/XstDisplay.h,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+* $Header: /cvs/xtest/xtest/xts5/include/XstDisplay.h,v 1.3 2005-11-03 08:42:00 jmichael Exp $
 *
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
 *
 * Project: VSW5
 *
-* File: vsw5/include/XstDisplay.h
+* File: xts5/include/XstDisplay.h
 *
 * Description:
 *	Defines used by the X tests
 *
 * Modifications:
 * $Log: XstDisplay.h,v $
-* Revision 1.2  2005-04-21 09:40:42  ajosey
+* Revision 1.3  2005-11-03 08:42:00  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.2  2005/04/21 09:40:42  ajosey
 * resync to VSW5.1.5
 *
 * Revision 8.1  1999/04/03 01:23:22  mar

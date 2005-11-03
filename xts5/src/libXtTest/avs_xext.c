@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libXtTest/avs_xext.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libXtTest/avs_xext.c,v 1.3 2005-11-03 08:42:02 jmichael Exp $
 *
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 * Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
@@ -28,7 +28,7 @@ SOFTWARE.
 *
 * Project: VSW5
 *
-* File: vsw5/src/lib/libXtTest/avs_xext.c
+* File: xts5/src/lib/libXtTest/avs_xext.c
 *
 * Description:
 *	Function avs_xext_init()
@@ -37,7 +37,10 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: avs_xext.c,v $
-* Revision 1.2  2005-04-21 09:40:42  ajosey
+* Revision 1.3  2005-11-03 08:42:02  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.2  2005/04/21 09:40:42  ajosey
 * resync to VSW5.1.5
 *
 * Revision 8.1  2003/12/08 16:49:41  gwc

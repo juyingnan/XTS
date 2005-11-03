@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/bin/mc/files.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/bin/mc/files.c,v 1.3 2005-11-03 08:42:01 jmichael Exp $
 *
 * Copyright (c) 1999,2001 The Open Group
 * Copyright (c) Applied Testing and Technology, Inc. 1995
@@ -35,7 +35,10 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: files.c,v $
-* Revision 1.2  2005-04-21 09:40:42  ajosey
+* Revision 1.3  2005-11-03 08:42:01  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.2  2005/04/21 09:40:42  ajosey
 * resync to VSW5.1.5
 *
 * Revision 8.3  2005/01/20 15:48:56  gwc
@@ -117,7 +120,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 #include "stdlib.h"
 #include "mc.h"
 
-#define	MC_LOC		"/vsw5/lib/"
+#define	MC_LOC		"/xts5/lib/"
 
 extern	char	*Filename;
 extern	int 	Lineno;
@@ -326,7 +329,7 @@ int 	i;
 }
 
 /*
- * Return path name of file in the vsw5 lib directory.
+ * Return path name of file in the xts5 lib directory.
  */
 char *
 mcpath(file)

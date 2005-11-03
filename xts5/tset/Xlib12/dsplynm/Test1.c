@@ -20,21 +20,24 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xlib12/dsplynm/Test1.c,v 1.4 2005-04-21 09:40:42 ajosey Exp $
+* $Header: /cvs/xtest/xtest/xts5/tset/Xlib12/dsplynm/Test1.c,v 1.5 2005-11-03 08:42:34 jmichael Exp $
 * 
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
 * 
 * Project: VSW5
 * 
-* File: vsw5/tset/Xlib12/dsplynm/Test1.c
+* File: xts5/tset/Xlib12/dsplynm/Test1.c
 * 
 * Description:
 * 	Tests for XDisplayName()
 * 
 * Modifications:
 * $Log: Test1.c,v $
-* Revision 1.4  2005-04-21 09:40:42  ajosey
+* Revision 1.5  2005-11-03 08:42:34  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.4  2005/04/21 09:40:42  ajosey
 * resync to VSW5.1.5
 *
 * Revision 8.1  2000/02/04 15:24:44  vsx

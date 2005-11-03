@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libXtmu/RdBitF.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libXtmu/RdBitF.c,v 1.3 2005-11-03 08:42:02 jmichael Exp $
 *
 * Copyright (c) 2001 The Open Group
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
@@ -28,7 +28,7 @@ SOFTWARE.
 *
 * Project: VSW5
 *
-* File: vsw5/src/lib/libXtaw/RdBitF.c
+* File: xts5/src/lib/libXtaw/RdBitF.c
 *
 * Description:
 *	Subset of libXmu need for VSW5.  Use if implementation does not
@@ -36,7 +36,10 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: RdBitF.c,v $
-* Revision 1.2  2005-04-21 09:40:42  ajosey
+* Revision 1.3  2005-11-03 08:42:02  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.2  2005/04/21 09:40:42  ajosey
 * resync to VSW5.1.5
 *
 * Revision 8.2  2005/01/20 16:03:42  gwc

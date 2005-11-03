@@ -19,7 +19,7 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 #
-# $Header: /cvs/xtest/xtest/xts5/Makefile,v 1.6 2005-11-01 01:38:05 idr Exp $
+# $Header: /cvs/xtest/xtest/xts5/Makefile,v 1.7 2005-11-03 08:42:00 jmichael Exp $
 #
 # Copyright (c) Applied Testing and Technology, Inc. 1995
 # All Rights Reserved.
@@ -33,7 +33,10 @@
 #
 # Modifications:
 # $Log: Makefile,v $
-# Revision 1.6  2005-11-01 01:38:05  idr
+# Revision 1.7  2005-11-03 08:42:00  jmichael
+# clean up all vsw5 paths to use xts5 instead.
+#
+# Revision 1.6  2005/11/01 01:38:05  idr
 # Numerous changes to eliminate the need for wclean.  It is replaced by doing
 # 'wbuild clean'.  tetclean.cfg will soon get the axe as well.
 #
@@ -142,43 +145,43 @@ all: build install tests
 
 build: tetbuild.cfg
 	chmod ugo+x bin/wbuild
-	@if [ -s $(TET_ROOT)/vsw5/results/install.log ]; \
+	@if [ -s $(TET_ROOT)/xts5/results/install.log ]; \
 	then \
-	mv -f $(TET_ROOT)/vsw5/results/install.log $(TET_ROOT)/vsw5/results/install.log.o; \
+	mv -f $(TET_ROOT)/xts5/results/install.log $(TET_ROOT)/xts5/results/install.log.o; \
 	fi
-	@(echo VSW5 INSTALLATION LOG|tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(echo |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(date |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(uname -a |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(id |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(echo |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(echo Building libxtest |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(cd $(TET_ROOT)/vsw5/src/lib; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(echo Building libXst |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(cd $(TET_ROOT)/vsw5/src/libproto; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(echo Building libximtest |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(cd $(TET_ROOT)/vsw5/src/xim; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(echo Building libfonts |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(cd $(TET_ROOT)/vsw5/fonts; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(echo Building libXR5 |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(cd $(TET_ROOT)/vsw5/src/libXR5; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(echo Building libXtaw |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(cd $(TET_ROOT)/vsw5/src/libXtaw; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(echo Building libXtmu |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(cd $(TET_ROOT)/vsw5/src/libXtmu; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
+	@(echo VSW5 INSTALLATION LOG|tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(echo |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(date |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(uname -a |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(id |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(echo |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(echo Building libxtest |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(cd $(TET_ROOT)/xts5/src/lib; wbuild install 2>&1 | tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(echo Building libXst |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(cd $(TET_ROOT)/xts5/src/libproto; wbuild install 2>&1 | tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(echo Building libximtest |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(cd $(TET_ROOT)/xts5/src/xim; wbuild install 2>&1 | tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(echo Building libfonts |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(cd $(TET_ROOT)/xts5/fonts; wbuild install 2>&1 | tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(echo Building libXR5 |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(cd $(TET_ROOT)/xts5/src/libXR5; wbuild install 2>&1 | tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(echo Building libXtaw |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(cd $(TET_ROOT)/xts5/src/libXtaw; wbuild install 2>&1 | tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(echo Building libXtmu |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(cd $(TET_ROOT)/xts5/src/libXtmu; wbuild install 2>&1 | tee -a $(TET_ROOT)/xts5/results/install.log)
 #not included in the Lite version
-	@if [ -d $(TET_ROOT)/vsw5/src/libXtTest ]; \
+	@if [ -d $(TET_ROOT)/xts5/src/libXtTest ]; \
 	then \
-	echo Building libXtTest |tee -a $(TET_ROOT)/vsw5/results/install.log; \
-	cd $(TET_ROOT)/vsw5/src/libXtTest; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log; \
+	echo Building libXtTest |tee -a $(TET_ROOT)/xts5/results/install.log; \
+	cd $(TET_ROOT)/xts5/src/libXtTest; wbuild install 2>&1 | tee -a $(TET_ROOT)/xts5/results/install.log; \
 	fi
-	@(echo Building mc utility |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(cd $(TET_ROOT)/vsw5/src/bin/mc; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(echo Building report generators |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(cd $(TET_ROOT)/vsw5/src/bin/reports; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(echo Building blowup utility |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(cd $(TET_ROOT)/vsw5/src/pixval/blowup; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(echo |tee -a $(TET_ROOT)/vsw5/results/install.log)
+	@(echo Building mc utility |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(cd $(TET_ROOT)/xts5/src/bin/mc; wbuild install 2>&1 | tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(echo Building report generators |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(cd $(TET_ROOT)/xts5/src/bin/reports; wbuild install 2>&1 | tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(echo Building blowup utility |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(cd $(TET_ROOT)/xts5/src/pixval/blowup; wbuild install 2>&1 | tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(echo |tee -a $(TET_ROOT)/xts5/results/install.log)
 
 tetbuild.cfg:
 	cp configs/tetbuild.cfg.`uname` tetbuild.cfg
@@ -187,20 +190,20 @@ tests:
 	tcc -b
 
 install:
-	@(echo Setting 775 directory permissions |tee -a $(TET_ROOT)/vsw5/results/install.log)
+	@(echo Setting 775 directory permissions |tee -a $(TET_ROOT)/xts5/results/install.log)
 	@(find . -type d -print | xargs chmod 775)
-	@(echo INSTALLATION OF LIBRARIES AND TOOLS COMPLETED |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(echo FONTS MUST ALSO BE INSTALLED BEFORE RUNNING TESTS |tee -a $(TET_ROOT)/vsw5/results/install.log)
+	@(echo INSTALLATION OF LIBRARIES AND TOOLS COMPLETED |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(echo FONTS MUST ALSO BE INSTALLED BEFORE RUNNING TESTS |tee -a $(TET_ROOT)/xts5/results/install.log)
 
 athena:
-	@(echo Building VSW Xaw and Xmu libraries |tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(cd $(TET_ROOT)/vsw5/src/libXtaw; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
-	@(cd $(TET_ROOT)/vsw5/src/libXtmu; wbuild install 2>&1 | tee -a $(TET_ROOT)/vsw5/results/install.log)
+	@(echo Building VSW Xaw and Xmu libraries |tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(cd $(TET_ROOT)/xts5/src/libXtaw; wbuild install 2>&1 | tee -a $(TET_ROOT)/xts5/results/install.log)
+	@(cd $(TET_ROOT)/xts5/src/libXtmu; wbuild install 2>&1 | tee -a $(TET_ROOT)/xts5/results/install.log)
 
 clean:
 	@(cd src/lib; wbuild clean)
 	@(cd src/libXR5; wbuild clean)
-	@if [ -d $(TET_ROOT)/vsw5/src/libXtTest ]; \
+	@if [ -d $(TET_ROOT)/xts5/src/libXtTest ]; \
 	then \
 	cd src/libXtTest; wbuild clean; \
 	fi
