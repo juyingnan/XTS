@@ -1,0 +1,136 @@
+#!/usr/bin/perl -pi.bak
+
+use warnings;
+use strict;
+use Sys::Hostname;
+
+BEGIN
+{
+	open(XSET, "xset q |") or die "xset q failed, giving up.\n";
+	while(<XSET>)
+	{
+		next unless /^Font Path:/;
+		<XSET> =~ /^\s*(.*)/;
+		$::vars{"XT_FONTPATH"} = '$TET_ROOT/xts5/fonts,' . $1;
+		$::vars{"XT_FONTPATH_GOOD"} = $1;
+	}
+	close(XSET);
+	die "xset q failed, giving up.\n" if $?;
+
+	open(INFO, "xdpyinfo |") or die "xdpyinfo failed, giving up.\n";
+	my @xdpyinfopats = (
+		[qr/^name of display:\s*(.*)/, qw(XT_DISPLAY)],
+		[qr/^version number:\s*(\d+)\.(\d+)/, qw(XT_PROTOCOL_VERSION XT_PROTOCOL_REVISION)],
+		[qr/^vendor string:\s*(.*)/, qw(XT_SERVER_VENDOR)],
+		[qr/^vendor release number:\s*(\d+)/, qw(XT_VENDOR_RELEASE)],
+		[qr/^motion buffer size:\s*(\d+)/, qw(XT_DISPLAYMOTIONBUFFERSIZE)],
+		[qr/^default screen number:\s*(\d+)/, qw(screen)],
+		[qr/^number of screens:\s*(\d+)/, qw(XT_SCREEN_COUNT)],
+		[qr/^  dimensions:\s*\d+x\d+ pixels \((\d+)x(\d+) millimeters\)/, qw(XT_WIDTH_MM XT_HEIGHT_MM)],
+		[qr/^  preallocated pixels:\s*black (\d+), white (\d+)/, qw(XT_BLACK_PIXEL XT_WHITE_PIXEL)],
+		[qr/^  options:\s*backing-store (.*), save-unders (.*)/, qw(XT_DOES_BACKING_STORE XT_DOES_SAVE_UNDERS)],
+		[qr/^  depths.*:\s*(.*)/, qw(XT_PIXMAP_DEPTHS)],
+	);
+	my $skip = 0;
+	my %visuals = ();
+	while(<INFO>)
+	{
+		if(/^screen #(\d+):$/)
+		{
+			$skip = ($1 != $::vars{"screen"});
+		}
+		elsif($skip)
+		{
+			next;
+		}
+		elsif(/^    class:\s*(.*)/)
+		{
+			my $class = $1;
+			<INFO> =~ /^    depth:\s*(\d+) planes/;
+			$visuals{"$class($1)"} = 1;
+		}
+		else
+		{
+			foreach my $pat (@xdpyinfopats)
+			{
+				my ($re, @vars) = @$pat;
+				my @match = /$re/;
+				next unless @match;
+				@::vars{@vars} = @match;
+				last;
+			}
+		}
+	}
+	close(INFO);
+	die "xdpyinfo failed, giving up.\n" if $?;
+
+	$::vars{"XT_VISUAL_CLASSES"} = join ' ', keys %visuals;
+
+	if($::vars{"XT_DISPLAY"} =~ /^:(\d+)\.(\d+)$/)
+	{
+		$::vars{"XT_LOCAL"} = "Yes";
+		my $hostname = hostname();
+
+		# have xdpyinfo try connecting to the same display via TCP;
+		# just check its exit status.
+		$ENV{"DISPLAY"} = "$hostname:$1.$2";
+		open(INFO, "xset q |") or die "xset q on TCP failed, giving up.\n";
+		<INFO>; # discard output
+		close(INFO);
+		if(not $?)
+		{
+			$::vars{"XT_TCP"} = "Yes";
+			$::vars{"XT_DISPLAYHOST"} = $hostname;
+		}
+		else
+		{
+			$::vars{"XT_TCP"} = "No";
+			$::vars{"XT_DISPLAYHOST"} = "";
+		}
+	}
+
+	if($::vars{"XT_SCREEN_COUNT"} > 1)
+	{
+		$::vars{"XT_ALT_SCREEN"} = ($::vars{"screen"} == 0) ? 1 : 0;
+	}
+	else
+	{
+		$::vars{"XT_ALT_SCREEN"} = "UNSUPPORTED";
+	}
+
+	$::vars{"XT_PIXMAP_DEPTHS"} =~ s/,?\s+/ /g;
+
+	foreach my $var qw(TET_EXEC_IN_PLACE XT_EXTENSIONS
+			XT_DOES_BACKING_STORE XT_DOES_SAVE_UNDERS
+			XT_POSIX_SYSTEM XT_DECNET XT_TCP XT_LOCAL
+			XT_SAVE_SERVER_IMAGE XT_OPTION_NO_CHECK XT_OPTION_NO_TRACE
+			XT_DEBUG_OVERRIDE_REDIRECT XT_DEBUG_PAUSE_AFTER
+			XT_DEBUG_PIXMAP_ONLY XT_DEBUG_WINDOW_ONLY
+			XT_DEBUG_DEFAULT_DEPTHS XT_DEBUG_NO_PIXCHECK)
+	{
+		$::vars{$var} = ucfirst (lc $::vars{$var}) if exists $::vars{$var};
+	}
+
+	delete $::vars{"screen"};
+
+	%::savedvars = %::vars;
+}
+
+if(/^[ \t]*([A-Za-z0-9_]*)=/ and exists $::vars{$1})
+{
+	$_ = "$1=$::vars{$1}\n";
+	delete $::vars{$1};
+}
+
+if(eof)
+{
+	if(keys %::vars)
+	{
+		$_ .= "\n# Undocumented variables:\n\n";
+		foreach my $var (keys %::vars)
+		{
+			$_ .= $var . "=" . $::vars{$var} . "\n";
+		}
+	}
+	%::vars = %::savedvars;
+}
