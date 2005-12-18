@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib12/evntsqd/evntsqd.m,v 1.2 2005-11-03 08:42:34 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib12/evntsqd/evntsqd.m,v 1.3 2005-12-18 11:25:59 jamey Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
@@ -31,7 +31,10 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: evntsqd.m,v $
->># Revision 1.2  2005-11-03 08:42:34  jmichael
+>># Revision 1.3  2005-12-18 11:25:59  jamey
+>># Check for an auto-flushing Xlib and report UNTESTED in that case.
+>>#
+>># Revision 1.2  2005/11/03 08:42:34  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:18  anderson
@@ -332,6 +335,14 @@ Display *client2;
 		CHECK;
 /* Discard all events on the event queue. */
 	XSync(display, True);
+/* Check whether this Xlib auto-flushes. */
+	XNoOp(display);
+	if (!XTestDiscard(display))
+	{
+		report("Flushing appears to happen automatically");
+		UNTESTED;
+		return;
+	}
 /* Create pixmap. */
 	/* avoid using makepixm() */
 	pm = XCreatePixmap(display, DRW(display), 10, 10, 1);
