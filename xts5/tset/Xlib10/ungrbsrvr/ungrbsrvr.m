@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib10/ungrbsrvr/ungrbsrvr.m,v 1.2 2005-11-03 08:42:19 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib10/ungrbsrvr/ungrbsrvr.m,v 1.3 2006-02-20 18:28:14 jamey Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
@@ -31,7 +31,11 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: ungrbsrvr.m,v $
->># Revision 1.2  2005-11-03 08:42:19  jmichael
+>># Revision 1.3  2006-02-20 18:28:14  jamey
+>># Displays must not be shared across a fork(2), but opendisplay causes XCloseDisplay to be called in the parent at test end.
+>># Just use XOpenDisplay for the connection used in the child.
+>>#
+>># Revision 1.2  2005/11/03 08:42:19  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:16  anderson
@@ -134,7 +138,7 @@ static int 	waittime;
 >>CODE
 int 	ret;
 
-	client2 = opendisplay();
+	client2 = XOpenDisplay(config.display);
 
 	win = defwin(Dsp);
 	XSelectInput(display, win, PropertyChangeMask);
