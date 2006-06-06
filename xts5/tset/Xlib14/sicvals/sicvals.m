@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/sicvals/sicvals.m,v 1.3 2005-11-03 08:42:45 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/sicvals/sicvals.m,v 1.4 2006-06-06 14:42:50 gwc Exp $
 
 Copyright (c) 1999 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1995
@@ -32,7 +32,10 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: sicvals.m,v $
->># Revision 1.3  2005-11-03 08:42:45  jmichael
+>># Revision 1.4  2006-06-06 14:42:50  gwc
+>># Various portability fixes
+>>#
+>># Revision 1.3  2005/11/03 08:42:45  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.2  2005/04/21 09:40:42  ajosey
@@ -113,6 +116,7 @@ THE USE OR PERFORMANCE OF THIS SOFTWARE.
 */
 >>EXTERN
 #include <locale.h>
+#include <string.h>
 #include <ximtest.h>
 
 typedef struct {
@@ -167,7 +171,7 @@ char *
 XIC ic;
 char *ic_name;
 ic_val_def *ic_val;
-int endlist = 0;
+char *endlist = NULL;
 >>SET startup fontstartup
 >>SET cleanup fontcleanup
 >>EXTERN
@@ -186,8 +190,10 @@ ic_val_def *return_val;
 			if(return_val->win != base_val->win)
 			{
 				report("Returned value does not match expected value for %s",name);
-				report("     returned 0x%x",return_val->win);
-				report("     expected 0x%x",base_val->win);
+				report("     returned 0x%lx",
+					(unsigned long)return_val->win);
+				report("     expected 0x%lx",
+					(unsigned long)base_val->win);
 				return(False);
 			}
 			break;
@@ -195,8 +201,10 @@ ic_val_def *return_val;
 			if(return_val->style != base_val->style)
 			{
 				report("Returned value does not match expected value for %s",name);
-				report("     returned 0x%x",return_val->style);
-				report("     expected 0x%x",base_val->style);
+				report("     returned 0x%lx",
+					(unsigned long)return_val->style);
+				report("     expected 0x%lx",
+					(unsigned long)base_val->style);
 				return(False);
 			}
 			break;
@@ -245,8 +253,10 @@ ic_val_def *return_val;
 			if(return_val->cmap != base_val->cmap)
 			{
 				report("Returned value does not match expected value for %s",name);
-				report("     returned 0x%x",return_val->cmap);
-				report("     expected 0x%x",base_val->cmap);
+				report("     returned 0x%lx",
+					(unsigned long)return_val->cmap);
+				report("     expected 0x%lx",
+					(unsigned long)base_val->cmap);
 				return(False);
 			}
 			break;
@@ -254,11 +264,12 @@ ic_val_def *return_val;
 			if(return_val->val_long != base_val->val_long)
 			{
 				report("Returned value does not match expected value for %s",name);
-				report("     returned %d",return_val->val_long);
-				report("     expected %d",base_val->val_long);
+				report("     returned %lu",return_val->val_long);
+				report("     expected %lu",base_val->val_long);
 				return(False);
 			}
 			break;
+#if 0 /* not used */
 		case ICV_ATOM:
 			if(return_val->atom != base_val->atom)
 			{
@@ -268,15 +279,19 @@ ic_val_def *return_val;
 				return(False);
 			}
 			break;
+#endif
 		case ICV_PMAP:
 			if(return_val->pmap != base_val->pmap)
 			{
 				report("Returned value does not match expected value for %s",name);
-				report("     returned 0x%x",return_val->pmap);
-				report("     expected 0x%x",base_val->pmap);
+				report("     returned 0x%lx",
+					(unsigned long)return_val->pmap);
+				report("     expected 0x%lx",
+					(unsigned long)base_val->pmap);
 				return(False);
 			}
 			break;
+#if 0 /* not used */
 		case ICV_FS:
 			if(return_val->fs != base_val->fs)
 			{
@@ -286,6 +301,7 @@ ic_val_def *return_val;
 				return(False);
 			}
 			break;
+#endif
 		case ICV_INT:
 			if(return_val->val_int != base_val->val_int)
 			{
@@ -298,8 +314,9 @@ ic_val_def *return_val;
 		case ICV_CURSOR:
 			if(return_val->cur != base_val->cur)
 			{
-				report("Returned base_value for %s, 0x%x does not match expected base_value 0x%x",
-					name,return_val->cur,base_val->cur);
+				report("Returned base_value for %s, 0x%lx does not match expected base_value 0x%lx",
+					name,(unsigned long)return_val->cur,
+					(unsigned long)base_val->cur);
 				return(False);
 			}
 			break;
@@ -308,11 +325,11 @@ ic_val_def *return_val;
 			   (return_val->cb.client_data != base_val->cb.client_data))
 			{
 				report("Returned value does not match expected value for %s",name);
-				report("     returned (0x%x,%c)",
-					return_val->cb.callback,
+				report("     returned (%p,%p)",
+					(void *)return_val->cb.callback,
 					return_val->cb.client_data);
-				report("     expected (0x%x,%c)",
-					base_val->cb.callback,
+				report("     expected (%p,%p)",
+					(void *)base_val->cb.callback,
 					base_val->cb.client_data);
 				return(False);
 			}
@@ -416,7 +433,6 @@ char *pstr;
 ic_val_def icv,*picv,*ret_icv;
 int num_ic;
 ic_list_def *il;
-int *val;
 #endif
 
 #if XT_X_RELEASE > 4
@@ -495,17 +511,14 @@ int *val;
 				ncheck++;
 
 				ic_name = il->name;
-				if(il->type == ICV_LONG	||
-					il->type == ICV_ATOM	||
-				   il->type == ICV_WINDOW ||
-				   il->type == ICV_INT)
-				{
-					val = (int*)il->val;
-					val = (int*)*val;
-     				ic_val = (ic_val_def *)val; 
-				}
+				if(il->type == ICV_LONG)
+					ic_val = (ic_val_def *)il->val->val_long;
+				else if(il->type == ICV_WINDOW)
+					ic_val = (ic_val_def *)il->val->win;
+				else if(il->type == ICV_INT)
+					ic_val = (ic_val_def *)il->val->val_int;
 				else
-     				ic_val = il->val; 
+					ic_val = il->val; 
 
 				pstr = XCALL;
 				if(pstr != NULL && *pstr != '\0')
@@ -518,7 +531,8 @@ int *val;
 				{
 					/* fetch the values */
 					ret_icv = &icv;
-					pstr = XGetICValues(ic,ic_name,&ret_icv,NULL);
+					pstr = XGetICValues(ic,ic_name,
+						(XPointer)&ret_icv,endlist);
 					if(pstr != NULL && *pstr != '\0')
 					{
 						report("XGetICValues returns non-null result, %s",
@@ -607,7 +621,6 @@ int type,dummy;
 att_def *att,ret_att;
 char name_sub[128];
 char name[128];
-int *val;
 #endif
 
 #if XT_X_RELEASE > 4
@@ -691,19 +704,37 @@ int *val;
 	     			continue;
 				ncheck++;
  
-				if(ils->type == ICV_LONG	|| 
-				   ils->type == ICV_ATOM	||
-				   ils->type == ICV_WINDOW	||
-				   ils->type == ICV_INT)
+				if(ils->type == ICV_LONG)
 				{
-					val = (int*)ils->val;
-     				att->va = XVaCreateNestedList(dummy,ils->name,*val,NULL);
+					att->va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)ils->val->val_long,
+						endlist);
+				}
+				else if(ils->type == ICV_WINDOW)
+				{
+					att->va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)ils->val->win,
+						endlist);
+				}
+				else if(ils->type == ICV_INT)
+				{
+					att->va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)ils->val->val_int,
+						endlist);
 				}
 				else
-     				att->va = XVaCreateNestedList(dummy,ils->name,ils->val,NULL);
+				{
+					att->va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)ils->val,
+						endlist);
+				}
 
-        		ic_name = name;
-        		ic_val = (ic_val_def *)att->va;
+				ic_name = name;
+				ic_val = (ic_val_def *)att->va;
 
 				pstr = XCALL;
 				if(pstr != NULL && *pstr != '\0')
@@ -716,8 +747,12 @@ int *val;
 				{
 					/* fetch the values */
 					ret_icv = &icv;
-        			ret_att.va = XVaCreateNestedList(dummy,ils->name,&ret_icv,NULL);
-					pstr = XGetICValues(ic,ic_name,ret_att.va,NULL);
+					ret_att.va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)&ret_icv,
+						endlist);
+					pstr = XGetICValues(ic,ic_name,
+						(XPointer)ret_att.va,endlist);
 					if(pstr != NULL && *pstr != '\0')
 					{
 						report("XGetICValues returns non-null result, %s",
@@ -813,7 +848,6 @@ int type,dummy;
 att_def *att,ret_att;
 char name_sub[128];
 char name[128];
-int *val;
 #endif
 
 #if XT_X_RELEASE > 4
@@ -898,18 +932,36 @@ int *val;
 	        		continue;
 				ncheck++;
  
-				if(ils->type == ICV_LONG	|| 
-				   ils->type == ICV_ATOM	||
-				   ils->type == ICV_WINDOW	||
-				   ils->type == ICV_INT)
+				if(ils->type == ICV_LONG)
 				{
-					val = (int*)ils->val;
-    				att->va = XVaCreateNestedList(dummy,ils->name,*val,NULL);
+					att->va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)ils->val->val_long,
+						endlist);
+				}
+				else if(ils->type == ICV_WINDOW)
+				{
+					att->va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)ils->val->win,
+						endlist);
+				}
+				else if(ils->type == ICV_INT)
+				{
+					att->va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)ils->val->val_int,
+						endlist);
 				}
 				else
-     				att->va = XVaCreateNestedList(dummy,ils->name,ils->val,NULL);
-        		ic_name = name;
-        		ic_val = (ic_val_def *)att->va;
+				{
+					att->va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)ils->val,
+						endlist);
+				}
+				ic_name = name;
+				ic_val = (ic_val_def *)att->va;
 
 				pstr = XCALL;
 				if(pstr != NULL && *pstr != '\0')
@@ -922,8 +974,12 @@ int *val;
 				{
 					/* fetch the values */
 					ret_icv = &icv;
-       			ret_att.va = XVaCreateNestedList(dummy,ils->name,&ret_icv,NULL);
-					pstr = XGetICValues(ic,ic_name,ret_att.va,NULL);
+					ret_att.va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)&ret_icv,
+						endlist);
+					pstr = XGetICValues(ic,ic_name,
+						(XPointer)ret_att.va,endlist);
 					if(pstr != NULL && *pstr != '\0')
 					{
 						report("XGetICValues returns non-null result, %s",
@@ -999,7 +1055,6 @@ XFontSet fs = NULL;
 XrmDatabase db = NULL;
 int ncheck = 0;
 char *pstr;
-int *val;
 int cur_cnt;
 XEvent ev;
 #endif

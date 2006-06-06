@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/vcnlist/vcnlist.m,v 1.2 2005-11-03 08:42:46 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/vcnlist/vcnlist.m,v 1.3 2006-06-06 14:41:29 gwc Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
@@ -31,7 +31,10 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: vcnlist.m,v $
->># Revision 1.2  2005-11-03 08:42:46  jmichael
+>># Revision 1.3  2006-06-06 14:41:29  gwc
+>># Various portability fixes
+>>#
+>># Revision 1.2  2005/11/03 08:42:46  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:20  anderson
@@ -109,6 +112,7 @@ THE USE OR PERFORMANCE OF THIS SOFTWARE.
 */
 >>EXTERN
 #include <locale.h>
+#include <string.h>
 #include <ximtest.h>
 
 /* Stuff from SetICValues */
@@ -162,7 +166,7 @@ typedef struct ICL {
 XVaNestedList
 
 int dummy;
-int endlist=0;
+char *endlist = NULL;
 >>SET startup localestartup
 >>SET cleanup localecleanup
 >>EXTERN
@@ -176,6 +180,7 @@ ic_val_def *return_val;
 	/* check the base_value returned in ic_base_val */
 	switch(type)
 	{
+#if 0 /* not used */
 		case ICV_WINDOW:
 			if(return_val->win != base_val->win)
 			{
@@ -185,6 +190,8 @@ ic_val_def *return_val;
 				return(False);
 			}
 			break;
+#endif
+#if 0 /* not used */
 		case ICV_STYLE:
 			if(return_val->style != base_val->style)
 			{
@@ -194,6 +201,7 @@ ic_val_def *return_val;
 				return(False);
 			}
 			break;
+#endif
 		case ICV_STR:
 			if(strcmp(return_val->str,base_val->str) != 0)
 			{
@@ -248,11 +256,12 @@ ic_val_def *return_val;
 			if(return_val->val_long != base_val->val_long)
 			{
 				report("Returned value does not match expected value for %s",name);
-				report("     returned %d",return_val->val_long);
-				report("     expected %d",base_val->val_long);
+				report("     returned %lu",return_val->val_long);
+				report("     expected %lu",base_val->val_long);
 				return(False);
 			}
 			break;
+#if 0 /* not used */
 		case ICV_ATOM:
 			if(return_val->atom != base_val->atom)
 			{
@@ -262,6 +271,7 @@ ic_val_def *return_val;
 				return(False);
 			}
 			break;
+#endif
 		case ICV_PMAP:
 			if(return_val->pmap != base_val->pmap)
 			{
@@ -271,6 +281,7 @@ ic_val_def *return_val;
 				return(False);
 			}
 			break;
+#if 0 /* not used */
 		case ICV_FS:
 			if(return_val->fs != base_val->fs)
 			{
@@ -280,6 +291,7 @@ ic_val_def *return_val;
 				return(False);
 			}
 			break;
+#endif
 		case ICV_INT:
 			if(return_val->val_int != base_val->val_int)
 			{
@@ -302,11 +314,11 @@ ic_val_def *return_val;
 			   (return_val->cb.client_data != base_val->cb.client_data))
 			{
 				report("Returned value does not match expected value for %s",name);
-				report("     returned (0x%x,%c)",
-					return_val->cb.callback,
+				report("     returned (%p,%p)",
+					(void *)return_val->cb.callback,
 					return_val->cb.client_data);
-				report("     expected (0x%x,%c)",
-					base_val->cb.callback,
+				report("     expected (%p,%p)",
+					(void *)base_val->cb.callback,
 					base_val->cb.client_data);
 				return(False);
 			}
@@ -455,7 +467,7 @@ char 		*ic_name1, *ic_name2, *ic_name3;
 XIC ic;
 char *ic_name;
 ic_val_def *ic_val;
-int endlist = 0;
+char *endlist = NULL;
 Display *dpy;
 XIM im = NULL;
 XFontSet fs = NULL;
@@ -469,7 +481,6 @@ int type,dummy;
 att_def *att,ret_att;
 char name_sub[128];
 char name[128];
-int *val;
 #endif
 
 #if XT_X_RELEASE > 4
@@ -554,23 +565,32 @@ int *val;
 					continue;
 					ncheck++;
 
-				if(ils->type == ICV_LONG	|| 
-				   ils->type == ICV_ATOM	||
-				   ils->type == ICV_WINDOW	||
-				   ils->type == ICV_INT)
+				if(ils->type == ICV_LONG)
 				{
-					val = (int*)ils->val;
-					att->va = 
-					  XVaCreateNestedList(dummy,ils->name,*val,NULL);
+					att->va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)ils->val->val_long,
+						endlist);
+				}
+				else if(ils->type == ICV_INT)
+				{
+					att->va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)ils->val->val_int,
+						endlist);
 				}
 				else
-					att->va = 
-					  XVaCreateNestedList(dummy,ils->name,ils->val,NULL);
+				{
+					att->va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)ils->val,
+						endlist);
+				}
 				ic_name = name;
 				ic_val = (ic_val_def *)att->va;
 
 				pstr = XSetICValues(ic, ic_name, 
-						    ic_val, endlist);
+					(XPointer)ic_val, endlist);
 				if(pstr != NULL && *pstr != '\0')
 				{
 					report("%s() returns non-null result, %s",
@@ -581,8 +601,12 @@ int *val;
 				{
 					/* fetch the values */
 					ret_icv = &icv;
-					ret_att.va = XVaCreateNestedList(dummy,ils->name,&ret_icv,NULL);
-					pstr = XGetICValues(ic,ic_name,ret_att.va,NULL);
+					ret_att.va = XVaCreateNestedList(dummy,
+						ils->name,
+						(XPointer)&ret_icv,
+						endlist);
+					pstr = XGetICValues(ic,ic_name,
+						(XPointer)ret_att.va,endlist);
 					if(pstr != NULL && *pstr != '\0')
 					{
 						report("XGetICValues returns non-null result, %s",
@@ -651,7 +675,7 @@ char *ic_name;
 ic_val_def 	*ic_val;
 char 		*ic_name1, *ic_name2;
 ic_val_def 	icv1, icv2, *picv, *ret_icv1, *ret_icv2;
-int endlist = 0;
+char *endlist = NULL;
 Display *dpy;
 XIM im = NULL;
 XFontSet fs = NULL;
@@ -665,7 +689,7 @@ int type, dummy;
 att_def *att, ret_att;
 char name_sub[128];
 char name[128];
-int 		*val, *val1, *val2;
+XPointer	val1, val2;
 int		index1, index2;
 ic_val_def 	ic_val1, ic_val2, ic_val3;
 #endif
@@ -754,31 +778,23 @@ ic_val_def 	ic_val1, ic_val2, ic_val3;
 
 				if (ncheck == 1)
 				{
-					if(ils->type == ICV_LONG	|| 
-				   	ils->type == ICV_ATOM	||
-				   	ils->type == ICV_WINDOW	||
-				   	ils->type == ICV_INT)
-					{
-						val = (int*)ils->val;
-						val1 = (int *)*val;
-					}
+					if(ils->type == ICV_LONG)
+						val1 = (XPointer)ils->val->val_long;
+					else if(ils->type == ICV_INT)
+						val1 = (XPointer)ils->val->val_int;
 					else
-						val1 = (int*)ils->val;
+						val1 = (XPointer)ils->val;
 					ic_name1 = ils->name;
 					index1 = j;
 				}
 				else if (ncheck == 2)
 				{
-					if(ils->type == ICV_LONG	|| 
-				   	ils->type == ICV_ATOM	||
-				   	ils->type == ICV_WINDOW	||
-				   	ils->type == ICV_INT)
-					{
-						val = (int*)ils->val;
-						val2 = (int *)*val;
-					}
+					if(ils->type == ICV_LONG)
+						val2 = (XPointer)ils->val->val_long;
+					else if(ils->type == ICV_INT)
+						val2 = (XPointer)ils->val->val_int;
 					else
-						val2 = (int*)ils->val;
+						val2 = (XPointer)ils->val;
 					ic_name2 = ils->name;
 					index2 = j;
 				}
@@ -787,11 +803,14 @@ ic_val_def 	ic_val1, ic_val2, ic_val3;
 			
 			if (ncheck >= 2)
 			{
-			 	att->va = XVaCreateNestedList(dummy, ic_name1, val1, ic_name2, val2, NULL);
+			 	att->va = XVaCreateNestedList(dummy,
+					ic_name1, val1, ic_name2, val2,
+					endlist);
 				ic_val = (ic_val_def *)att->va;
 				ic_name = name;
 
-				pstr = XSetICValues(ic, ic_name, ic_val, endlist);
+				pstr = XSetICValues(ic, ic_name,
+					(XPointer)ic_val, endlist);
 				if(pstr != NULL && *pstr != '\0')
 				{
 					report("%s() returns non-null result, %s",
@@ -816,8 +835,12 @@ ic_val_def 	ic_val1, ic_val2, ic_val3;
 						}
 						/* fetch the values */
 						ret_icv = &icv;
-						ret_att.va = XVaCreateNestedList(dummy,ils->name,&ret_icv,NULL);
-						pstr = XGetICValues(ic,ic_name,ret_att.va,NULL);
+						ret_att.va = XVaCreateNestedList(dummy,
+							ils->name,
+							(XPointer)&ret_icv,
+							endlist);
+						pstr = XGetICValues(ic,ic_name,
+							(XPointer)ret_att.va,endlist);
 						if(pstr != NULL && *pstr != '\0')
 						{
 							report("XGetICValues returns non-null result, %s",
@@ -890,7 +913,7 @@ char *ic_name;
 ic_val_def 	*ic_val;
 char 		*ic_name1, *ic_name2;
 ic_val_def 	icv1, icv2, *picv, *ret_icv1, *ret_icv2;
-int endlist = 0;
+char *endlist = NULL;
 Display *dpy;
 XIM im = NULL;
 XFontSet fs = NULL;
@@ -904,7 +927,7 @@ int type, dummy;
 att_def 	*att, *att1, ret_att;
 char name_sub[128];
 char 	name[128];
-int 		*val, *val1, *val2;
+XPointer	val1, val2;
 int		index1, index2;
 ic_val_def 	ic_val1, ic_val2, ic_val3;
 XVaNestedList	va_temp;
@@ -994,31 +1017,23 @@ XVaNestedList	va_temp;
 
 				if (ncheck == 1)
 				{
-					if(ils->type == ICV_LONG	|| 
-				   	ils->type == ICV_ATOM	||
-				   	ils->type == ICV_WINDOW	||
-				   	ils->type == ICV_INT)
-					{
-						val = (int*)ils->val;
-						val1 = (int *)*val;
-					}
+					if(ils->type == ICV_LONG)
+						val1 = (XPointer)ils->val->val_long;
+					else if(ils->type == ICV_INT)
+						val1 = (XPointer)ils->val->val_int;
 					else
-						val1 = (int*)ils->val;
+						val1 = (XPointer)ils->val;
 					ic_name1 = ils->name;
 					index1 = j;
 				}
 				else if (ncheck == 2)
 				{
-					if(ils->type == ICV_LONG	|| 
-				   	ils->type == ICV_ATOM	||
-				   	ils->type == ICV_WINDOW	||
-				   	ils->type == ICV_INT)
-					{
-						val = (int*)ils->val;
-						val2 = (int *)*val;
-					}
+					if(ils->type == ICV_LONG)
+						val2 = (XPointer)ils->val->val_long;
+					else if(ils->type == ICV_INT)
+						val2 = (XPointer)ils->val->val_int;
 					else
-						val2 = (int*)ils->val;
+						val2 = (XPointer)ils->val;
 					ic_name2 = ils->name;
 					index2 = j;
 				}
@@ -1027,12 +1042,18 @@ XVaNestedList	va_temp;
 			
 			if (ncheck >= 2)
 			{
-			 	va_temp = XVaCreateNestedList(dummy, ic_name1, val1, NULL);
-			 	att->va = XVaCreateNestedList(dummy, XNVaNestedList, (char *)va_temp, ic_name2, val2, NULL);
+			 	va_temp = XVaCreateNestedList(dummy,
+					ic_name1, (XPointer)val1,
+					endlist);
+			 	att->va = XVaCreateNestedList(dummy,
+					XNVaNestedList, (XPointer)va_temp,
+					ic_name2, (XPointer)val2,
+					endlist);
 				ic_val = (ic_val_def *)att->va;
 				ic_name = name;
 
-				pstr = XSetICValues(ic, ic_name, ic_val, endlist);
+				pstr = XSetICValues(ic, ic_name,
+					(XPointer)ic_val, endlist);
 				if(pstr != NULL && *pstr != '\0')
 				{
 					report("%s() returns non-null result, %s",
@@ -1059,8 +1080,12 @@ tet_infoline("4");
 tet_infoline("5");
 						/* fetch the values */
 						ret_icv = &icv;
-						ret_att.va = XVaCreateNestedList(dummy,ils->name,&ret_icv,NULL);
-						pstr = XGetICValues(ic,ic_name,ret_att.va,NULL);
+						ret_att.va = XVaCreateNestedList(dummy,
+							ils->name,
+							(XPointer)&ret_icv,
+							endlist);
+						pstr = XGetICValues(ic,ic_name,
+							(XPointer)ret_att.va,endlist);
 						if(pstr != NULL && *pstr != '\0')
 						{
 							report("XGetICValues returns non-null result, %s",
