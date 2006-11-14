@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xt13/trealloc/trealloc.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xt13/trealloc/trealloc.m,v 1.3 2006-11-14 14:52:55 anderson Exp $
 
 Copyright (c) 2002 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
@@ -34,7 +34,10 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: trealloc.m,v $
->># Revision 1.2  2005-04-21 09:40:42  ajosey
+>># Revision 1.3  2006-11-14 14:52:55  anderson
+>># Fix bug #4528 - avoid potential double free()
+>>#
+>># Revision 1.2  2005/04/21 09:40:42  ajosey
 >># resync to VSW5.1.5
 >>#
 >># Revision 8.2  2005/01/21 12:15:59  gwc
@@ -138,7 +141,8 @@ pid_t pid2;
 		break;
 		}
 	tet_infoline("CLEANUP: Free memory");
-	XtFree(ptr2);
+	if( ptr2 != ptr1 )
+		XtFree(ptr2);
 	XtFree(ptr1);
 	LKROF(pid2, AVSXTTIMEOUT-2);
 	tet_result(TET_PASS);
