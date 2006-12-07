@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib13/stpntrmppn/stpntrmppn.m,v 1.2 2005-11-03 08:42:41 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib13/stpntrmppn/stpntrmppn.m,v 1.3 2006-12-07 15:52:49 gwc Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
@@ -31,7 +31,10 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: stpntrmppn.m,v $
->># Revision 1.2  2005-11-03 08:42:41  jmichael
+>># Revision 1.3  2006-12-07 15:52:49  gwc
+>># Patch from bug #7428 - remove MAXBUTTON=5 constraints
+>>#
+>># Revision 1.2  2005/11/03 08:42:41  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:19  anderson
@@ -107,9 +110,6 @@ unsigned char	*map = Map;
 int 	nmap;
 >>EXTERN
 
-/* Maximum button number allowed. */
-#define	MAXBUTTON	5
-
 /*
  * MAPSIZE must be at least one greater than the maximum number of buttons
  * allowed.  We use a much larger value.
@@ -179,7 +179,7 @@ int 	i;
 	 */
 	for (i = 0; i < numbuttons; i++) {
 		map[i] = map[i] + 1;
-		if (map[i] > MAXBUTTON)
+		if (map[i] > numbuttons)
 			map[i] = 1;
 	}
 
@@ -253,7 +253,7 @@ else
   Report untested.
 >>CODE
 int	i;
-unsigned char zmap[5];
+unsigned char zmap[MAPSIZE];
 Window	win;
 
 	if (noext(numbuttons))
@@ -261,8 +261,8 @@ Window	win;
 	else
 		CHECK;
 
-	if (numbuttons<1 || numbuttons>5) {
-		report("Protocol limit of 1..5 buttons exceeded (%d).", numbuttons);
+	if (numbuttons<1 || numbuttons>MAPSIZE) {
+		report("Limit of 1..%d buttons exceeded (%d).", MAPSIZE, numbuttons);
 		return;
 	} else
 		CHECK;
@@ -358,8 +358,8 @@ int	ret;
 	else
 		CHECK;
 
-	if (numbuttons<1 || numbuttons>5) {
-		delete("Protocol limit of 1..5 buttons exceeded (%d).", numbuttons);
+	if (numbuttons<1 || numbuttons>MAPSIZE) {
+		delete("Limit of 1..%d buttons exceeded (%d).", MAPSIZE, numbuttons);
 		return;
 	} else
 		CHECK;

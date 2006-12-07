@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib13/gtpntrmppn/gtpntrmppn.m,v 1.2 2005-11-03 08:42:40 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib13/gtpntrmppn/gtpntrmppn.m,v 1.3 2006-12-07 15:51:28 gwc Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
@@ -31,7 +31,10 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: gtpntrmppn.m,v $
->># Revision 1.2  2005-11-03 08:42:40  jmichael
+>># Revision 1.3  2006-12-07 15:51:28  gwc
+>># Patch from bug #7428 - remove MAXBUTTON=5 constraints
+>>#
+>># Revision 1.2  2005/11/03 08:42:40  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:19  anderson
@@ -106,11 +109,7 @@ unsigned char	*map_return = Map;
 int 	nmap = MAPSIZE;
 >>EXTERN
 
-/*
- * The number of buttons should be between 1 and 5 -- allow more space
- * in the array than this.
- */
-#define	MAPSIZE	20
+#define	MAPSIZE	32
 static	unsigned char	Map[MAPSIZE];
 
 >>ASSERTION Good B 3
@@ -192,9 +191,9 @@ A call to xname
 returns the number of physical buttons actually on the pointer.
 >>STRATEGY
 Call xname to get number of buttons.
-Check this lies within the protocol limit of 1..5.
+Check this lies within the limit.
 If extension available:
-  Simulate the pressing of buttons 1..5 and check that
+  Simulate the pressing of buttons 1..n and check that
     we got Success for buttons in the range returned by xname, and
     we got BadValue for the rest.
   Release all buttons.
@@ -203,8 +202,8 @@ int	nbuttons;
 int	i;
 
 	nbuttons = XCALL;
-	if (nbuttons < 1 || nbuttons > 5) {
-		report("Protocol limit of 1..5 buttons exceeded (%d).", nbuttons);
+	if (nbuttons < 1 || nbuttons > MAPSIZE) {
+		report("Limit of 1..%d buttons exceeded (%d).", MAPSIZE, nbuttons);
 		FAIL;
 	} else
 		CHECK;
@@ -216,7 +215,7 @@ int	i;
 	} else
 		CHECK;
 
-	for(i=0; i<5; i++) {
+	for(i=0; i<MAPSIZE; i++) {
 		_startcall(display); /* install and reset error handlers */
 		buttonpress(display, (unsigned int)i+1);
 		if (geterr() != ((i<nbuttons)?Success:BadValue)) {
@@ -228,7 +227,7 @@ int	i;
 		relalldev();
 		_endcall(display); /* back to catching unexpected ones */
 	}
-	CHECKPASS(2+5);
+	CHECKPASS(2+MAPSIZE);
 
 >>ASSERTION Good A
 When the
