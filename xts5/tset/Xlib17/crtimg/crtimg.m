@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib17/crtimg/crtimg.m,v 1.2 2005-11-03 08:43:03 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib17/crtimg/crtimg.m,v 1.3 2007-05-14 15:29:46 gwc Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
@@ -31,7 +31,10 @@ All Rights Reserved.
 >># 
 >># Modifications:
 >># $Log: crtimg.m,v $
->># Revision 1.2  2005-11-03 08:43:03  jmichael
+>># Revision 1.3  2007-05-14 15:29:46  gwc
+>># In test 1 calculate a valid bytes_per_line value for each visual
+>>#
+>># Revision 1.2  2005/11/03 08:43:03  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:23  anderson
@@ -235,6 +238,7 @@ unsigned long	bm;
 		return 1;
 	return 0;
 }
+#define ROUNDUP(nbytes, pad) ((((nbytes) + ((pad) - 1)) / (pad)) * (pad)) /* Courtesy of Xlib */
 >>ASSERTION Good A
 A call to xname allocates and returns an
 .S XImage
@@ -277,8 +281,6 @@ int			npv;
 	width = 10;
 	height = 20;
 	bitmap_pad = bmpad;
-	bytes_per_line = 11;
-
 
 	for(resetvinf(VI_WIN_PIX); nextvinf(&vi);) {
 		
@@ -287,6 +289,22 @@ int			npv;
 		rm = vi->red_mask;
 		gm = vi->green_mask;
 		bm = vi->blue_mask;
+
+		bpp = -1;
+		for(i=npv, f=pv; i>0; i--,f++)
+			if(f->depth == depth) {
+				bpp = f->bits_per_pixel;
+				break;
+			}
+
+		if(bpp == -1) {
+			delete("Could not determine the bits_per_pixel component for depth %d.", depth);
+			fail++; /* Avoid path checking in CHECKPASS */
+			continue;
+		} else
+			CHECK;
+
+		bytes_per_line = ROUNDUP((bpp * (width+1)), bmpad) >> 3;
 
 		trace("ZPixmap.");
 		format = ZPixmap;
@@ -298,28 +316,15 @@ int			npv;
 		} else {
 			CHECK;
 
-			bpp = -1;
-			for(i=npv, f=pv; i>0; i--,f++)
-				if(f->depth == depth) {
-					bpp = f->bits_per_pixel;
-					break;
-				}
-
-			if(bpp == -1) {
-				delete("Could not determine the bits_per_pixel component for depth %d.", depth);
-				fail++; /* Avoid path checking in CHECKPASS */
-				bpp = depth;
-			} else
-				CHECK;
 
 			if(checkstruct(im, width, height, offset, format, data, byteord, bmunit, bmbitord, bitmap_pad, depth, bytes_per_line, bpp, rm, gm, bm) == 0)
 				FAIL;
 			else
 				CHECK;
-		}
 
-		im->data = (char *) NULL;
-		XDestroyImage(im);
+			im->data = (char *) NULL;
+			XDestroyImage(im);
+		}
 
 		trace("XYPixmap.");
 		format = XYPixmap;
@@ -336,10 +341,9 @@ int			npv;
 			else
 				CHECK;
 
+			im->data = (char *) NULL;
+			XDestroyImage(im);
 		}
-
-		im->data = (char *) NULL;
-		XDestroyImage(im);
 	}
 
 
@@ -359,7 +363,6 @@ For format XYPixmap and ZPixmap:
    Verify that the call did not return NULL.
    Verify that the bytes_per_line component of the structure is correct.
 >>CODE
-#define ROUNDUP(nbytes, pad) ((((nbytes) + ((pad) - 1)) / (pad)) * (pad)) /* Courtesy of Xlib */
 XVisualInfo	*vi;
 XImage		*im;
 int		bmpad;
