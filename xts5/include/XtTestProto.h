@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/include/XtTestProto.h,v 1.3 2005-11-03 08:42:00 jmichael Exp $
+* $Header: /cvs/xtest/xtest/xts5/include/XtTestProto.h,v 1.4 2007-10-15 20:44:37 anholt Exp $
 *
 * Copyright (c) 2004 The Open Group
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
@@ -36,6 +36,13 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: XtTestProto.h,v $
+* Revision 1.4  2007-10-15 20:44:37  anholt
+* Bug #8081: Fix bad prototypes that broke xtest on I32LP64.
+*
+* While here, fix some printf formatting.
+*
+* Submitted by:	Gordon Jin <gordon.jin@intel.com>
+*
 * Revision 1.3  2005-11-03 08:42:00  jmichael
 * clean up all vsw5 paths to use xts5 instead.
 *
@@ -71,10 +78,6 @@ SOFTWARE.
 #ifndef _XTTESTPROTO_H
 #define _XTTESTPROTO_H
 
-#ifdef MIXOLDANDNEW
-/*
-#if defined(FUNCPROTO) || defined(__STDC__) || defined(__cplusplus) || defined(c_plusplus)
-*/
 int     avs_alloc_sem(void);
 void    avs_free_sem(void);
 int     avs_wait_event(int, int);
@@ -129,9 +132,9 @@ Widget	CreatePushButtonGadget(char*, Widget);
 Widget	CreateMenuShellWidget(Widget);
 Widget	CreateDialogShellWidget(Widget);
 Window	avs_xext_init(void);
-int	avs_xext_close(void);
-int	check_dec(int, int, char*);
-int	check_not_dec(int, int, char*);
+void	avs_xext_close(void);
+int	check_dec(long, long, char*);
+int	check_not_dec(long, long, char*);
 int	check_str(char *, char *, char *);
 int	check_char(char, char, char *);
 int	check_size(char *, char *, size_t, size_t);
@@ -150,83 +153,5 @@ void	trace(char *fmt, ...);
 void report_purpose(int);
 void report_assertion(char *);
 void report_strategy(char *);
-#else
-
-int     avs_alloc_sem();
-void    avs_free_sem();
-int     avs_wait_event();
-int     avs_post_event();
-int     avs_get_event();
-int     avs_set_event();
-char	*err_lookup();
-void	lsah();
-int	wait_for();
-int	avs_signal();
-int	avs_set_alarm();
-int	avs_clear_alarm();
-int	avs_expect_alarm();
-int	avs_ignore_alarm();
-int	push_stdout();
-void	pop_stdout();
-int	push_stderr();
-void	pop_stderr();
-void	push_to_devnull();
-int	restore_from_devnull();
-char	*get_token();
-char	*get_nth_token();
-void	uwerrno();
-void	fwerrno();
-void	ferrno();
-void	vsw_debug();
-void	vsw_debug_enter();
-void	vsw_debug_exit();
-Widget	avs_xt_def(char *);
-char	*title();
-void	PostMenu();
-void	ConfigureDimension();
-void	DestroyTree();
-size_t	mem_limit();
-void	alloc_handler();
-Widget	avs_xt_hier_no_warn();
-Widget	avs_xt_hier();
-Widget	avs_xt_hier_args();
-Widget	avs_xt_hier_def();
-Widget	avs_xt_init();
-Widget	avs_xt_tree();
-Widget	CreateMainWidget();
-Widget	CreateDrawWidget();
-Widget	CreateFormWidget();
-Widget	CreateScrollWidget();
-Widget	CreateRowColWidget();
-Widget	CreateFrameWidget();
-Widget	CreatePanedWidget();
-Widget	CreateBoxWidget();
-Widget	CreateLabelWidget();
-Widget	CreatePushButtonGadget();
-Widget	CreateMenuShellWidget();
-Widget	CreateDialogShellWidget();
-Window	avs_xext_init();
-void	avs_xext_close();
-int	check_dec();
-int	check_not_dec();
-int 	check_str();
-int 	check_char();
-int	check_size();
-void	x_event_name();
-void	send_event_time();
-void	send_event();
-void	send_event_mask_time();
-void	send_event_mask();
-int	x_handler();
-void	xt_handler();
-int	x_unexperr();
-/*from xtest library*/
-void	initconfig();
-void	report();
-void	trace();
-void	report_purpose();
-void	report_assertion();
-void	report_strategy();
-#endif
 
 #endif /* _XTTESTPROTO_H */

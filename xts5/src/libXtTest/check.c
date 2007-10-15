@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libXtTest/check.c,v 1.2 2005-11-03 08:42:02 jmichael Exp $
+* $Header: /cvs/xtest/xtest/xts5/src/libXtTest/check.c,v 1.3 2007-10-15 20:44:37 anholt Exp $
 *
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 * Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
@@ -35,6 +35,13 @@ SOFTWARE.
 *
 * Modifications:
 * $Log: check.c,v $
+* Revision 1.3  2007-10-15 20:44:37  anholt
+* Bug #8081: Fix bad prototypes that broke xtest on I32LP64.
+*
+* While here, fix some printf formatting.
+*
+* Submitted by:	Gordon Jin <gordon.jin@intel.com>
+*
 * Revision 1.2  2005-11-03 08:42:02  jmichael
 * clean up all vsw5 paths to use xts5 instead.
 *
@@ -74,7 +81,7 @@ long shouldbe;
 char *item_name;
 {
 	if (goesin != shouldbe) {
-		sprintf(ebuf, "ERROR: Expected %s of %d, Received %d", item_name, goesin, shouldbe);
+		sprintf(ebuf, "ERROR: Expected %s of %ld, Received %ld", item_name, goesin, shouldbe);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 		return 1;
@@ -88,7 +95,7 @@ long shouldnotbe;
 char *item_name;
 {
 	if (goesin == shouldnotbe) {
-		sprintf(ebuf, "ERROR: Expected %s not = %d, received %d", item_name, goesin, shouldnotbe);
+		sprintf(ebuf, "ERROR: Expected %s not = %ld, received %ld", item_name, goesin, shouldnotbe);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 		return 1;
