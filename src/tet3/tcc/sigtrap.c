@@ -62,7 +62,6 @@ static char srcFile[] = __FILE__;	/* file name for error reporting */
 #endif
 
 /* signal dispositions on startup */
-static void (*orig_sigint) PROTOLIST((int));
 static void (*orig_sighup) PROTOLIST((int));
 static void (*orig_sigquit) PROTOLIST((int));
 static void (*orig_sigpipe) PROTOLIST((int));
@@ -75,7 +74,6 @@ static void (*orig_sigterm) PROTOLIST((int));
 static int eng1_tcinterrupt PROTOLIST((struct proctab *));
 static void engine_abort PROTOLIST((int));
 static int engine_tcinterrupt PROTOLIST((int));
-static void engine_tcskip PROTOLIST((int));
 static void initial_sigtrap PROTOLIST((int));
 static void (*install_handler PROTOLIST((int, void (*) PROTOLIST((int)))))
 	PROTOLIST((int));
@@ -93,7 +91,6 @@ static void tes2 PROTOLIST((int, void (*) PROTOLIST((int))));
 
 void initsigtrap()
 {
-	orig_sigint = install_handler(SIGINT, initial_sigtrap);
 	orig_sighup = install_handler(SIGHUP, initial_sigtrap);
 	orig_sigquit = install_handler(SIGQUIT, initial_sigtrap);
 	orig_sigpipe = install_handler(SIGPIPE, initial_sigtrap);
@@ -124,7 +121,6 @@ int sig;
 void execsigtrap()
 {
 	exec_block_signals();
-	(void) install_handler(SIGINT, engine_tcskip);
 	(void) install_handler(SIGHUP, engine_sigterm);
 	(void) install_handler(SIGQUIT, engine_abort);
 	(void) install_handler(SIGPIPE, engine_sigterm);
@@ -160,7 +156,6 @@ int how;
 
 	(void) sigemptyset(&mask);
 	(void) sigaddset(&mask, SIGHUP);
-	(void) sigaddset(&mask, SIGINT);
 	(void) sigaddset(&mask, SIGQUIT);
 	(void) sigaddset(&mask, SIGPIPE);
 	(void) sigaddset(&mask, SIGTERM);
@@ -187,25 +182,6 @@ int sig;
 }
 
 
-
-/*
-**	engine_tcskip() - SIGINT signal handler for use once the execution
-**		engine is running
-*/
-
-static void engine_tcskip(sig)
-int sig;
-{
-
-	(void) fprintf(stderr, "TCC: user interrupt\n");
-	(void) fflush(stderr);
-
-	if (engine_tcinterrupt(sig) == 0) {
-		(void) fprintf(stderr, "TCC: no test cases to interrupt !\nTCC: try SIGQUIT if you want to abort the tcc.\n\n");
-		(void) fflush(stderr);
-	}
-
-}
 
 /*
 **	engine_abort() - SIGQUIT (or SIGBREAK) signal handler for use once
@@ -430,7 +406,6 @@ void (*func) PROTOLIST((int));
 
 void tcc_exec_signals()
 {
-	tes2(SIGINT, orig_sigint);
 	tes2(SIGHUP, orig_sighup);
 	tes2(SIGQUIT, orig_sigquit);
 	tes2(SIGPIPE, orig_sigpipe);
