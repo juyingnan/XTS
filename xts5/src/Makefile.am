@@ -1,0 +1,1 @@
+SUBDIRS = lib libproto libXR5 libXtaw libXtmu libXtTest pixval xim
