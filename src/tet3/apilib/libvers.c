@@ -69,6 +69,43 @@ MODIFICATIONS:
 ** apilib/version.c contains a definition of TET_VERSION_STRINGS in terms
 ** of the #defines supplied in this file
 */
-#include "version.c"
+
+#ifndef lint
+static char sccsid1[] = "@(#)version.c	1.1 (98/09/01) TET3 release 3.3";
+#endif
+
+/************************************************************************
+
+SCCS:   	@(#)version.c	1.1 98/09/01 TETware release 3.3
+NAME:		version.c
+PRODUCT:	TETware
+AUTHOR:		Andrew Dingwall, UniSoft Ltd.
+DATE CREATED:	July 1998
+
+DESCRIPTION:
+	library version strings
+
+	this file in #include'd in apilib/libvers.c and tcm/ckversion.c
+
+	the file that includes this one should define TET_VERSION,
+	TET_VERSION_STRINGS and TET_VERSION_STORAGE_CLASS
+
+MODIFICATIONS:
+
+************************************************************************/
+
+/* the version strings themselves */
+TET_VERSION_STORAGE_CLASS char *TET_VERSION_STRINGS[] = {
+
+
+#ifdef TET_THREADS
+	"Thread-safe",
+#else
+	"Single-threaded",
+#endif
+
+	TET_VERSION,
+	(char *) 0
+};
 
 
