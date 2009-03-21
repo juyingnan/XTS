@@ -15,3 +15,4 @@ libapi_a_SOURCES = \
 		tptab.c \
 		tsinfo.c \
 		tstcmenv.c
+

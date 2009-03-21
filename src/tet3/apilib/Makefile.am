@@ -1,8 +1,8 @@
+AM_CPPFLAGS=-DTET_LITE
 noinst_LIBRARIES = libapi.a
 libapi_adir = $(top_srcdir)/lib
 libapi_a_CFLAGS = -I ../inc -I $(top_srcdir)/include
 libapi_a_SOURCES = \
-		dcancel.c \
 		dconfig.c \
 		dresfile.c \
 		errno.c \
@@ -22,3 +22,6 @@ libapi_a_SOURCES = \
 		tet_exec.c \
 		tet_fork.c \
 		tet_spawn.c
+
+# This file didn't get compiled before the autotools conversion
+#		dcancel.c 

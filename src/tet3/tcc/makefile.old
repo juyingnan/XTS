@@ -235,27 +235,27 @@ tcc_xt$O: tcc_xt.c
 # dependencies
 cleanup$O: $(DINC)/tet_api.h $(INC)/dtmac.h $(INC)/ltoa.h tcc.h
 
-config$O: $(INC)/config.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
+config$O: $(INC)/tet3_config.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
 	$(INC)/error.h $(INC)/globals.h $(INC)/ltoa.h $(INC)/ptab.h \
 	$(INC)/servlib.h dtcc.h systab.h tcc.h
 
-copysave$O: $(INC)/config.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
+copysave$O: $(INC)/tet3_config.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
 	$(INC)/error.h $(INC)/ltoa.h $(INC)/servlib.h $(INC)/tcclib.h \
 	proctab.h scentab.h systab.h tcc.h
 
 dirtab$O: $(INC)/dtmac.h $(INC)/ltoa.h dirtab.h
 
-dtcc$O: $(INC)/config.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
+dtcc$O: $(INC)/tet3_config.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
 	$(INC)/error.h $(INC)/globals.h $(INC)/ltoa.h $(INC)/ptab.h \
 	$(INC)/server.h $(INC)/servlib.h $(INC)/tslib.h dtcc.h systab.h tcc.h
 
-environ$O: $(INC)/config.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/error.h \
+environ$O: $(INC)/tet3_config.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/error.h \
 	$(INC)/ltoa.h $(INC)/servlib.h systab.h tcc.h
 
 error$O: $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/globals.h $(INC)/ltoa.h \
 	proctab.h scentab.h tcc.h
 
-exec$O: $(INC)/config.h $(INC)/dtmac.h $(INC)/error.h $(INC)/ltoa.h \
+exec$O: $(INC)/tet3_config.h $(INC)/dtmac.h $(INC)/error.h $(INC)/ltoa.h \
 	$(INC)/servlib.h $(INC)/tcclib.h proctab.h scentab.h systab.h tcc.h
 
 fake$O: $(INC)/dtmac.h $(INC)/dtmsg.h $(INC)/error.h $(INC)/ptab.h \
@@ -273,7 +273,7 @@ jnlproc$O: $(DINC)/tet_api.h $(DINC)/tet_jrnl.h $(INC)/dtetlib.h \
 	$(INC)/dtmac.h $(INC)/error.h $(INC)/ltoa.h $(INC)/servlib.h \
 	proctab.h scentab.h tcc.h
 
-journal$O: $(DINC)/tet_jrnl.h $(INC)/bstring.h $(INC)/config.h \
+journal$O: $(DINC)/tet_jrnl.h $(INC)/bstring.h $(INC)/tet3_config.h \
 	$(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/error.h $(INC)/globals.h \
 	$(INC)/ltoa.h proctab.h scentab.h tcc.h
 
@@ -292,10 +292,10 @@ proctab$O: $(INC)/bstring.h $(INC)/dtmac.h $(INC)/error.h $(INC)/ftoa.h \
 proctc$O: $(DINC)/tet_jrnl.h $(INC)/dtmac.h $(INC)/error.h $(INC)/ltoa.h \
 	proctab.h scentab.h tcc.h
 
-proctcd$O: $(INC)/config.h $(INC)/dtmac.h $(INC)/error.h $(INC)/ltoa.h \
+proctcd$O: $(INC)/tet3_config.h $(INC)/dtmac.h $(INC)/error.h $(INC)/ltoa.h \
 	$(INC)/servlib.h proctab.h scentab.h systab.h tcc.h
 
-rescode$O: $(INC)/config.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
+rescode$O: $(INC)/tet3_config.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
 	$(INC)/error.h $(INC)/globals.h $(INC)/ltoa.h $(INC)/restab.h \
 	$(INC)/servlib.h systab.h tcc.h
 
@@ -330,7 +330,7 @@ sigtrap$O: $(INC)/dtmac.h $(INC)/error.h $(INC)/ltoa.h $(INC)/tcclib.h \
 syscall$O: $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h $(INC)/error.h \
 	$(INC)/ltoa.h $(INC)/servlib.h $(INC)/tcclib.h tcc.h
 
-systab$O: $(INC)/bstring.h $(INC)/config.h $(INC)/dtmac.h $(INC)/dtmsg.h \
+systab$O: $(INC)/bstring.h $(INC)/tet3_config.h $(INC)/dtmac.h $(INC)/dtmsg.h \
 	$(INC)/error.h $(INC)/llist.h $(INC)/ltoa.h $(INC)/ptab.h dirtab.h \
 	scentab.h systab.h tcc.h
 
@@ -341,20 +341,20 @@ tcc_bs$O: $(INC)/avmsg.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
 	$(INC)/error.h $(INC)/ptab.h $(INC)/server_bs.h $(INC)/servlib.h \
 	$(INC)/valmsg.h dtcc.h tcc.h
 
-tcc_in$O: $(INC)/bstring.h $(INC)/config.h $(INC)/dtetlib.h $(INC)/dtmac.h \
+tcc_in$O: $(INC)/bstring.h $(INC)/tet3_config.h $(INC)/dtetlib.h $(INC)/dtmac.h \
 	$(INC)/dtmsg.h $(INC)/error.h $(INC)/globals.h $(INC)/inetlib_in.h \
 	$(INC)/ltoa.h $(INC)/ptab.h $(INC)/server.h $(INC)/server_in.h \
 	$(INC)/sysent.h $(INC)/tptab_in.h $(INC)/tsinfo_in.h $(INC)/tslib.h \
 	dtcc.h tcc.h
 
-tcc_xt$O: $(INC)/config.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
+tcc_xt$O: $(INC)/tet3_config.h $(INC)/dtetlib.h $(INC)/dtmac.h $(INC)/dtmsg.h \
 	$(INC)/error.h $(INC)/globals.h $(INC)/ltoa.h $(INC)/ptab.h \
 	$(INC)/server.h $(INC)/server_xt.h $(INC)/sysent.h $(INC)/tptab_xt.h \
 	$(INC)/tsinfo_xt.h $(INC)/tslib.h $(INC)/xtilib_xt.h dtcc.h tcc.h
 
 tcname$O: $(INC)/dtmac.h $(INC)/error.h proctab.h scentab.h tcc.h
 
-tool$O: $(DINC)/tet_jrnl.h $(INC)/config.h $(INC)/dtetlib.h $(INC)/dtmac.h \
+tool$O: $(DINC)/tet_jrnl.h $(INC)/tet3_config.h $(INC)/dtetlib.h $(INC)/dtmac.h \
 	$(INC)/dtmsg.h $(INC)/error.h $(INC)/ltoa.h $(INC)/servlib.h \
 	proctab.h scentab.h systab.h tcc.h
 

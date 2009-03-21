@@ -1,6 +1,8 @@
+AM_CPPFLAGS=-DTET_LITE
 bin_PROGRAMS = tcc
 tcc_CFLAGS = -I ../inc -I $(top_srcdir)/include
-tcc_LDADD = ../tcm/libapi.a ../apilib/libapi.a ../dtet2lib/libapi.a ../tcclib/libtcc.a ../servlib/libapi.a ../inetlib/libapi.a
+# Note: the order of these is important
+tcc_LDADD = ../tcm/libapi.a ../apilib/libapi.a ../tcclib/libapi.a ../dtet2lib/libapi.a
 tcc_SOURCES = cleanup.c \
 		config.c \
 		copysave.c \
@@ -37,11 +39,10 @@ tcc_SOURCES = cleanup.c \
 		utils.c \
 		ynstr.c
 
-# Not sure about these ones - maybe if LITE isn't defined?
-
-#		tcc_in.c 
+# These didn't get compiled before the autotools conversion.
 #		fake_in.c 
 #		fake_xt.c
 #		scenpp.c 
 #		tcc_bs.c 
+#		tcc_in.c
 #		tcc_xt.c 

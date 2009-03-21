@@ -21,7 +21,7 @@
 # Process this file with autoconf to produce a configure script
 
 AC_PREREQ(2.57)
-AC_INIT([xtest]
+AC_INIT([xtest],
         1.0.0,
         [http://xorg.freedesktop.org/wiki/BuildingXtest],
         XTest)
@@ -38,7 +38,7 @@ AM_CONFIG_HEADER([config.h])
 AC_DISABLE_STATIC
 AC_PROG_LIBTOOL
 AC_PROG_CC
-XORG_CWARNFLAGS
+#AM_PROG_CC_C_O
 
 PKG_CHECK_MODULES(XORG, x11 xproto)
 
@@ -47,4 +47,12 @@ AC_HEADER_STDC
 
 AC_OUTPUT([Makefile
            src/Makefile
+           src/tet3/Makefile
+           src/tet3/apilib/Makefile
+           src/tet3/dtet2lib/Makefile
+           src/tet3/inetlib/Makefile
+           src/tet3/servlib/Makefile
+           src/tet3/tcm/Makefile
+           src/tet3/tcc/Makefile
+           src/tet3/tcclib/Makefile
            xts5/Makefile])
