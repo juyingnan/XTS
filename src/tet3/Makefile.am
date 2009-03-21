@@ -1,3 +1,4 @@
-SUBDIRS = tcm 
+SUBDIRS = tcm tcclib apilib dtet2lib tcclib tcc 
+CFLAGS = -DTET_LITE
 
-#apilib dtet2lib tcclib tcc tcmthr apithr apishlib tcmshlib apithrshlib tcmthrshlib
+#tcmthr apithr apishlib tcmshlib apithrshlib tcmthrshlib
