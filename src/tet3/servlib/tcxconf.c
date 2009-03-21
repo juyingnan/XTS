@@ -44,7 +44,7 @@ MODIFICATIONS:
 #include "ltoa.h"
 #include "servlib.h"
 #include "dtetlib.h"
-#include "config.h"
+#include "tet3_config.h"
 
 #ifdef NEEDsrcFile
 static char srcFile[] = __FILE__;	/* file name for error reporting */

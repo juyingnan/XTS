@@ -99,7 +99,7 @@ MODIFICATIONS:
 #include "error.h"
 #include "globals.h"
 #include "sysent.h"
-#include "config.h"
+#include "tet3_config.h"
 #include "servlib.h"
 #include "dtetlib.h"
 #include "apilib.h"

@@ -78,7 +78,7 @@ MODIFICATIONS:
 #include "inetlib_in.h"
 #include "sysent.h"
 #include "dtetlib.h"
-#include "config.h"
+#include "tet3_config.h"
 #include "tslib.h"
 #include "tcc.h"
 #include "dtcc.h"

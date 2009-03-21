@@ -46,7 +46,7 @@ MODIFICATIONS:
 #include "error.h"
 #include "ltoa.h"
 #include "servlib.h"
-#include "config.h"
+#include "tet3_config.h"
 #include "systab.h"
 #include "scentab.h"
 #include "proctab.h"

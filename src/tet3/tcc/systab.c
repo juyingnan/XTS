@@ -47,7 +47,7 @@ MODIFICATIONS:
 #include "bstring.h"
 #include "error.h"
 #include "llist.h"
-#include "config.h"
+#include "tet3_config.h"
 #include "scentab.h"
 #include "dirtab.h"
 #include "systab.h"

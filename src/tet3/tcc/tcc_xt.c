@@ -67,6 +67,7 @@ MODIFICATIONS:
 #ifdef TCPTPI
 #  include <netdb.h>
 #endif
+#include "tet_api.h"
 #include "dtmac.h"
 #include "ltoa.h"
 #include "error.h"
@@ -77,7 +78,7 @@ MODIFICATIONS:
 #include "tptab_xt.h"
 #include "tcc.h"
 #include "dtcc.h"
-#include "config.h"
+#include "tet3_config.h"
 #include "server.h"
 #include "server_xt.h"
 #include "xtilib_xt.h"

@@ -75,11 +75,11 @@ MODIFICATIONS:
 #include "globals.h"
 #include "ltoa.h"
 #include "bstring.h"
-#include "config.h"
 #include "dtetlib.h"
 #include "scentab.h"
 #include "proctab.h"
 #include "tcc.h"
+#include "tet3_config.h"
 #include "tet_jrnl.h"
 
 #ifdef NEEDsrcFile

@@ -55,7 +55,7 @@ MODIFICATIONS:
 #include "dtmsg.h"
 #include "error.h"
 #include "ltoa.h"
-#include "config.h"
+#include "tet3_config.h"
 #include "servlib.h"
 #include "dtetlib.h"
 #include "scentab.h"

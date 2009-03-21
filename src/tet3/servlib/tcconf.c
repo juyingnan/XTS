@@ -42,7 +42,7 @@ MODIFICATIONS:
 #include "dtmsg.h"
 #include "avmsg.h"
 #include "valmsg.h"
-#include "config.h"
+#include "tet3_config.h"
 #include "error.h"
 #include "servlib.h"
 #include "dtetlib.h"

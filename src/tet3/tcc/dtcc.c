@@ -57,7 +57,7 @@ MODIFICATIONS:
 #include "servlib.h"
 #include "dtetlib.h"
 #include "tslib.h"
-#include "config.h"
+#include "tet3_config.h"
 #include "systab.h"
 #include "tcc.h"
 #include "dtcc.h"
