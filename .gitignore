@@ -1,2 +1,11 @@
 CVS/
 *.o
+*.mk
+Makefile
+Makefile.in
+.deps
+.libs
+*.lo
+*.a
+*.la
+
