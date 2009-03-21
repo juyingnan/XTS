@@ -1,5 +1,5 @@
 /*
- *	SCCS: @(#)libvers.c	1.1 (98/09/01)
+ *	SCCS: @(#)version.c	1.1 (98/09/01)
  *
  *	UniSoft Ltd., London, England
  *
@@ -24,51 +24,42 @@
  */
 
 #ifndef lint
-static char sccsid[] = "@(#)libvers.c	1.1 (98/09/01) TET3 release 3.3";
+static char sccsid1[] = "@(#)version.c	1.1 (98/09/01) TET3 release 3.3";
 #endif
 
 /************************************************************************
 
-SCCS:   	@(#)libvers.c	1.1 98/09/01 TETware release 3.3
-NAME:		libvers.c
+SCCS:   	@(#)version.c	1.1 98/09/01 TETware release 3.3
+NAME:		version.c
 PRODUCT:	TETware
 AUTHOR:		Andrew Dingwall, UniSoft Ltd.
 DATE CREATED:	July 1998
 
 DESCRIPTION:
-	API library version strings
+	library version strings
+
+	this file in #include'd in apilib/libvers.c and tcm/ckversion.c
+
+	the file that includes this one should define TET_VERSION,
+	TET_VERSION_STRINGS and TET_VERSION_STORAGE_CLASS
 
 MODIFICATIONS:
 
 ************************************************************************/
 
-#include <stdio.h>
-#include "dtmac.h"
-#include "apilib.h"
+
+/* the version strings themselves */
+TET_VERSION_STORAGE_CLASS char *TET_VERSION_STRINGS[] = {
 
 
-/*
-** the definition of TET_VERSION must be here and not in a header file
-** because we want to pick up the value of the Q keyword that is defined
-** in this file
-**
-** this definition of TET_VERSION (before expansion by SCCS) must be the same
-** as the one in tcm/ckversion.c
-*/
-#ifdef TET_LITE /* -LITE-CUT-LINE- */
-#  define TET_VERSION			"3.3-lite"
-#else /* -START-LITE-CUT- */
-#  define TET_VERSION			"3.3"
-#endif /* -END-LITE-CUT- */
+#ifdef TET_THREADS
+	"Thread-safe",
+#else
+	"Single-threaded",
+#endif
 
-#define TET_VERSION_STRINGS		tet_apilib_version
-#define TET_VERSION_STORAGE_CLASS	TET_IMPORT
-
-
-/*
-** apilib/version.c contains a definition of TET_VERSION_STRINGS in terms
-** of the #defines supplied in this file
-*/
-#include "version.c"
+	TET_VERSION,
+	(char *) 0
+};
 
 
