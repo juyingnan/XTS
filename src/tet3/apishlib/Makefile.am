@@ -1,6 +1,5 @@
 AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include
 noinst_LIBRARIES = libapi.a
-libapi_adir = $(top_srcdir)/lib
 libapi_a_SOURCES = \
 		dcancel.c \
 		dconfig.c \
