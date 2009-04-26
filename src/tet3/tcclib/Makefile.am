@@ -1,7 +1,5 @@
-AM_CPPFLAGS=-DTET_LITE
+AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include -DTET_LITE
 noinst_LIBRARIES = libapi.a
-
-libapi_a_CFLAGS = -I ../inc -I $(top_srcdir)/include
 libapi_a_SOURCES = \
 		lockfile.c \
 		lsdir.c \

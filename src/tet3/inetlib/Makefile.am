@@ -1,5 +1,5 @@
+AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include
 noinst_LIBRARIES = libapi.a
-libapi_a_CFLAGS = -I ../inc -I $(top_srcdir)/include
 libapi_a_SOURCES = \
 		accept.c \
 		connect.c \

@@ -1,6 +1,5 @@
-AM_CPPFLAGS=-DTET_LITE
+AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include -DTET_LITE
 bin_PROGRAMS = tcc
-tcc_CFLAGS = -I ../inc -I $(top_srcdir)/include
 # Note: the order of these is important
 tcc_LDADD = ../tcm/libapi.a ../apilib/libapi.a ../tcclib/libapi.a ../dtet2lib/libapi.a
 tcc_SOURCES = cleanup.c \
