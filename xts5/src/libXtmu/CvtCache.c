@@ -88,11 +88,10 @@ SOFTWARE.
  */
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <X11/Xlib.h>
 #include <X11/Xos.h>
 #include <X11/Xmu/CvtCache.h>
-
-extern char *malloc();
 
 static XmuDisplayQueue *dq = NULL;
 static int _CloseDisplay(), _FreeCCDQ();

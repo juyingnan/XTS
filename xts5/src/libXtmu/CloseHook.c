@@ -111,11 +111,10 @@ SOFTWARE.
  */
 
 #include <stdio.h>					/* for NULL */
+#include <stdlib.h>
 #include <X11/Xos.h>
 #include <X11/Xlib.h>
 #include <X11/Xmu/CloseHook.h>
-
-extern char *malloc();					/* should be void * */
 
 /*
  *				 Private data
