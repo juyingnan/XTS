@@ -84,6 +84,8 @@ SOFTWARE.
  * Author:  Jim Fulton, MIT X Consortium
  */
 
+#include <stdlib.h>
+#include <string.h>
 #include <X11/Xlib.h>
 #include <X11/Xresource.h>
 #include <X11/Xutil.h>

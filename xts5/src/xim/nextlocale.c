@@ -131,16 +131,16 @@ THE USE OR PERFORMANCE OF THIS SOFTWARE.
  * Functions to cycle through all the locales that are supported.
  */
 
+#include <stdio.h>
+#include <string.h>
 #include <locale.h>
-
-#include	"xtest.h"
-#include	"X11/Xlib.h"
-#include	"X11/Xutil.h"
-#include "X11/Xresource.h"
-#include	"xtestlib.h"
-#include	"tet_api.h"
-#include	"pixval.h"
-#include	<string.h>
+#include "xtest.h"
+#include <X11/Xlib.h>
+#include <X11/Xutil.h>
+#include <X11/Xresource.h>
+#include "xtestlib.h"
+#include "tet_api.h"
+#include "pixval.h"
 #include "ximtest.h"
 
 Display	*Dsp;

@@ -112,12 +112,13 @@ makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
 
-#include "unistd.h"
-#include "string.h"
+#include <stdlib.h>
+#include <unistd.h>
+#include <string.h>
 #include "tet_api.h"
 #include "xtest.h"
-#include "X11/Xlib.h"
-#include "X11/Xutil.h"
+#include <X11/Xlib.h>
+#include <X11/Xutil.h>
 #include "xtestlib.h"
 #include "pixval.h"
 

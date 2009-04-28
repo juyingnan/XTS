@@ -109,11 +109,11 @@ makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
 
-#include	"stdlib.h"
-
+#include	<stdlib.h>
+#include	<stdio.h>
 #include	"xtest.h"
-#include	"X11/Xlib.h"
-#include	"X11/Xutil.h"
+#include	<X11/Xlib.h>
+#include	<X11/Xutil.h>
 #include	"xtestlib.h"
 #include	"tet_api.h"
 #include	"pixval.h"

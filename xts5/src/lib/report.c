@@ -128,10 +128,11 @@ purpose.  It is provided "as is" without express or implied warranty.
  *    Path trace line.
  */
 
-#include	"stdio.h"
+#include	<stdio.h>
+#include	<string.h>
 #include	"xtest.h"
-#include	"X11/Xlib.h"
-#include	"X11/Xutil.h"
+#include	<X11/Xlib.h>
+#include	<X11/Xutil.h>
 #include	"xtestlib.h"
 #include	"tet_api.h"
 

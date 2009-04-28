@@ -127,16 +127,17 @@ THE USE OR PERFORMANCE OF THIS SOFTWARE.
  * Functions to cycle through all the locale modifiers that are supported.
  */
 
+#include	<stdlib.h>
+#include	<stdio.h>
+#include	<string.h>
 #include	"xtest.h"
-#include	"X11/Xlib.h"
-#include	"X11/Xutil.h"
-#include "X11/Xresource.h"
+#include	<X11/Xlib.h>
+#include	<X11/Xutil.h>
+#include	<X11/Xresource.h>
 #include	"xtestlib.h"
 #include	"tet_api.h"
 #include	"pixval.h"
-#include	<string.h>
 #include 	"ximtest.h"
-#include	<stdlib.h>
 
 Display	*Dsp;
 

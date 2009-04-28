@@ -116,6 +116,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 #include	"tet_api.h"
 #include	<setjmp.h>
 #include	<stdio.h>
+#include	<stdlib.h>
 #include	<signal.h>
 #include	<unistd.h>
 

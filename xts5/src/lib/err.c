@@ -110,6 +110,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 */
 
 
+#include	<stdlib.h>
 #include	<unistd.h>
 #include	"xtest.h"
 #include	"tet_api.h"

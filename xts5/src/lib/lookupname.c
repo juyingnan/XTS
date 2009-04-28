@@ -112,16 +112,18 @@ makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
 
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 #include "xtest.h"
-#include "X11/Xlib.h"
-#include "X11/Xproto.h"
+#include <X11/Xlib.h>
+#include <X11/Xproto.h>
 #ifdef INPUTEXTENSION
-#include "X11/extensions/XIproto.h"
+#include <X11/extensions/XIproto.h>
 #endif
-#include "X11/Xutil.h"
-#include "X11/Xatom.h"
+#include <X11/Xutil.h>
+#include <X11/Xatom.h>
 #include "xtestlib.h"
-#include "stdlib.h"
 
 #ifdef INPUTEXTENSION
 #define	   XInputNumErrors	5

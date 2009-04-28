@@ -117,14 +117,15 @@ purpose.  It is provided "as is" without express or implied warranty.
  * on the screen under test.
  */
 
+#include	<string.h>
+#include	<stdlib.h>
+#include	<stdio.h>
 #include	"xtest.h"
-#include	"X11/Xlib.h"
-#include	"X11/Xutil.h"
+#include	<X11/Xlib.h>
+#include	<X11/Xutil.h>
 #include	"xtestlib.h"
 #include	"tet_api.h"
 #include	"pixval.h"
-#include	<string.h>
-#include	<stdlib.h>
 
 Display	*Dsp;
 
