@@ -1,2 +1,2 @@
-SUBDIRS = src
+SUBDIRS = src fonts
 #SUBDIRS = src tset

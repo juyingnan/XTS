@@ -45,6 +45,12 @@ PKG_CHECK_MODULES(XORG, x11 xproto)
 # Checks for header files.
 AC_HEADER_STDC
 
+AC_PATH_PROG([BDFTOPCF], [bdftopcf])
+AC_PATH_PROG([MKFONTDIR], [mkfontdir])
+if test "x$BDFTOPCF" = x || test "x$MKFONTDIR" = x; then
+    AC_MSG_ERROR([bdftopcf and mkfontdir are required to build the test fonts])
+fi
+
 AC_OUTPUT([
 Makefile
 src/Makefile
@@ -65,4 +71,5 @@ xts5/src/libXtaw/Makefile
 xts5/src/libXtmu/Makefile
 xts5/src/libXtTest/Makefile
 xts5/src/xim/Makefile
+xts5/fonts/Makefile
 ])

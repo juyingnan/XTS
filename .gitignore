@@ -3,6 +3,7 @@
 *.lo
 *.mk
 *.o
+*.pcf
 .deps
 .libs
 COPYING
@@ -20,6 +21,7 @@ config.status
 config.sub
 configure
 depcomp
+fonts.dir
 install-sh
 libtool
 ltmain.sh
