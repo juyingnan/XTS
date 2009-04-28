@@ -59,4 +59,10 @@ src/tet3/tcclib/Makefile
 xts5/Makefile
 xts5/src/Makefile
 xts5/src/lib/Makefile
+xts5/src/libproto/Makefile
+xts5/src/libXR5/Makefile
+xts5/src/libXtaw/Makefile
+xts5/src/libXtmu/Makefile
+xts5/src/libXtTest/Makefile
+xts5/src/xim/Makefile
 ])
