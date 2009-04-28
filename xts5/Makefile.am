@@ -1,1 +1,2 @@
-SUBDIRS = tset src
+SUBDIRS = src
+#SUBDIRS = src tset

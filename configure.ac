@@ -45,14 +45,18 @@ PKG_CHECK_MODULES(XORG, x11 xproto)
 # Checks for header files.
 AC_HEADER_STDC
 
-AC_OUTPUT([Makefile
-           src/Makefile
-           src/tet3/Makefile
-           src/tet3/apilib/Makefile
-           src/tet3/dtet2lib/Makefile
-           src/tet3/inetlib/Makefile
-           src/tet3/servlib/Makefile
-           src/tet3/tcm/Makefile
-           src/tet3/tcc/Makefile
-           src/tet3/tcclib/Makefile
-           xts5/Makefile])
+AC_OUTPUT([
+Makefile
+src/Makefile
+src/tet3/Makefile
+src/tet3/apilib/Makefile
+src/tet3/dtet2lib/Makefile
+src/tet3/inetlib/Makefile
+src/tet3/servlib/Makefile
+src/tet3/tcm/Makefile
+src/tet3/tcc/Makefile
+src/tet3/tcclib/Makefile
+xts5/Makefile
+xts5/src/Makefile
+xts5/src/lib/Makefile
+])

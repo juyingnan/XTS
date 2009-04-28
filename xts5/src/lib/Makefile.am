@@ -1,6 +1,8 @@
-LTLIBRARIES=libxtest.la
+include ../../common.mk
 
-libxtest_la_SOURCES = badcmap.c \
+AM_CFLAGS = $(XTS_CFLAGS)
+noinst_LIBRARIES = libxtest.a
+libxtest_a_SOURCES = badcmap.c \
 			badfont.c\
 			badgc.c\
 			badpixm.c\
