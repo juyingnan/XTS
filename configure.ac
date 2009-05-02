@@ -71,5 +71,7 @@ xts5/src/libXtaw/Makefile
 xts5/src/libXtmu/Makefile
 xts5/src/libXtTest/Makefile
 xts5/src/xim/Makefile
+xts5/src/bin/Makefile
+xts5/src/bin/mc/Makefile
 xts5/fonts/Makefile
 ])
