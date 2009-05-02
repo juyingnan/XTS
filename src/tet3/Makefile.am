@@ -1,2 +1,2 @@
-SUBDIRS = tcm tcclib apilib dtet2lib tcclib tcc 
+SUBDIRS = tcm dtet2lib apilib tcclib tcc
 

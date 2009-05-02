@@ -1,6 +1,6 @@
 AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include -DTET_LITE
-noinst_LIBRARIES = libapi.a
-libapi_a_SOURCES = child.c \
+noinst_LTLIBRARIES = libtcm.la
+libtcm_la_SOURCES = child.c \
 			ckversion.c \
 			dynlink.c \
 			ictp.c \

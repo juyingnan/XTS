@@ -1,6 +1,6 @@
-AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include
-noinst_LIBRARIES = libapi.a
-libapi_a_SOURCES = \
+AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include -DTET_LITE
+noinst_LTLIBRARIES = libdtet2.la
+libdtet2_la_SOURCES = \
 		addarg.c \
 		alarm.c \
 		amsg.c \
@@ -77,5 +77,4 @@ libapi_a_SOURCES = \
 		valmsg.c \
 		w32err.c \
 		wait3.c \
-		wsaerr.c 
-
+		wsaerr.c

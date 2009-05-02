@@ -1,6 +1,7 @@
 AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include -DTET_LITE
-noinst_LIBRARIES = libapi.a
-libapi_a_SOURCES = \
+noinst_LTLIBRARIES = libtcc.la
+libtcc_la_LIBADD = ../apilib/libapi.la
+libtcc_la_SOURCES = \
 		lockfile.c \
 		lsdir.c \
 		mktmpdir.c \

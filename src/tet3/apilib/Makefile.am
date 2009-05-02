@@ -1,6 +1,9 @@
 AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include -DTET_LITE
-noinst_LIBRARIES = libapi.a
-libapi_a_SOURCES = \
+noinst_LTLIBRARIES = libapi.la
+# If we weren't building TeT lite, this could also add inetlib, servlib
+# and xtilib
+libapi_la_LIBADD = ../tcm/libtcm.la ../dtet2lib/libdtet2.la
+libapi_la_SOURCES = \
 		dconfig.c \
 		dresfile.c \
 		errno.c \
