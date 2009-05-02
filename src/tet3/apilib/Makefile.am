@@ -4,6 +4,7 @@ noinst_LTLIBRARIES = libapi.la
 # and xtilib
 libapi_la_LIBADD = ../tcm/libtcm.la ../dtet2lib/libdtet2.la
 libapi_la_SOURCES = \
+		dcancel.c \
 		dconfig.c \
 		dresfile.c \
 		errno.c \
@@ -23,6 +24,3 @@ libapi_la_SOURCES = \
 		tet_exec.c \
 		tet_fork.c \
 		tet_spawn.c
-
-# This file didn't get compiled before the autotools conversion
-#		dcancel.c 
