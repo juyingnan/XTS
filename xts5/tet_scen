@@ -3106,7 +3106,7 @@ xXStringToKeysym
 
 pAllocColor
 	"VSW5TESTSUITE CASE AllocColor 3"
-	/tset/Xproto/allcclr/Test
+	/tset/Xproto/allcclr/allcclr
 
 pAllocColorCells
 	"VSW5TESTSUITE CASE AllocColorCells 3"
