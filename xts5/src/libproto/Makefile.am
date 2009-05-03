@@ -5,7 +5,7 @@ noinst_LIBRARIES = libXst.a
 libXst_a_SOURCES =\
 	XstlibInt.h\
 	XstosInt.h\
-	DataMove.h
+	DataMove.h\
 	ShowReq.c\
 	ShowExtReq.c\
 	SendReq.c\
