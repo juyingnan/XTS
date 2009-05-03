@@ -57,31 +57,27 @@ CODEMAKER=mc
 
 # The location of TET_ROOT.  This must not contain variable expansions.
 # This must be set in the environment
-TET_ROOT = $(top_srcdir)
+TET_ROOT = $(abs_top_srcdir)
 
-# TETBASE - The location of the TET directories
-TETBASE = $(TET_ROOT)
+# The location of the TET directories
+TETBASE = $(top_srcdir)/src/tet3
+TETBUILD = $(top_builddir)/src/tet3
 
 # TETINCDIR - The directory containing the TET API headers.
 #TETINCDIR = $(TETBASE)/inc/posix_c
 #TETINCDIR = $(TETBASE)/inc/tet3
-TETINCDIR = $(TETBASE)/src/tet3/inc
-
-# TETLIB - The library containing the TET API library
-#TETLIB = $(TETBASE)/lib/posix_c
-#TETLIB = $(TETBASE)/lib/tet3
-TETLIB = $(TETBASE)/src/tet3
+TETINCDIR = $(TETBASE)/inc
 
 # TCM - The Test Control Manager
 #TCM = $(TETLIB)/tcm/tcm.o
-TCM = $(TETLIB)/tcm/tcm.c
+TCM = $(TETBASE)/tcm/tcm.c $(TETBASE)/tcm/dtcm.c
 
 # TCMCHILD - The Test Control Manager for files executed by tet_exec. 
 #TCMCHILD = $(TETLIB)/tcmchild.o
-TCMCHILD = $(TETLIB)/tcmchild.c
+TCMCHILD = $(TETBASE)/tcm/tcmchild.c
 
 # APILIB - The TET API library
-APILIB = $(TETLIB)/libapi/libapi.a
+APILIB = $(TETBASE)/apilib/libapi.la
 
 ####################
 # Xtest variables
@@ -104,33 +100,34 @@ XTESTHOST=`hostname`
 
 # XTESTFONTDIR - location of installed VSW5 compiled fonts
 #XTESTFONTDIR=/usr/lib/X11/fonts/xtest
-XTESTFONTDIR = $(TETBASE)/xts5/fonts
+XTESTFONTDIR = $(TET_ROOT)/xts5/fonts
 
 # XTESTROOT
-XTESTROOT = $(TETBASE)/xts5
+XTESTROOT = $(top_srcdir)/xts5
+XTESTBUILD = $(top_builddir)/xts5
 
 # XTESTLIBDIR - location of the VSW5 library files
-XTESTLIBDIR = $(XTESTROOT)/lib
+XTESTLIBDIR = $(XTESTBUILD)/lib
 
 # XTTESTLIB - the Xt Tests' libraries
 #XTTESTLIB = $(XTESTLIBDIR)/libXtTest.a
-XTTESTLIB = $(XTESTROOT)/src/libXtTest/libXtTest.a
+XTTESTLIB = $(XTESTBUILD)/src/libXtTest/libXtTest.a
 
 # XTESTLIB - the VSW5 library
 #XTESTLIB = $(XTESTLIBDIR)/libxtest.a
-XTESTLIB = $(XTESTROOT)/src/lib/libxtest.a
+XTESTLIB = $(XTESTBUILD)/src/lib/libxtest.a
 
 # XSTLIB - library for linking the X Protocol tests
 #XSTLIB = ${XTESTLIBDIR}/libXst.a
-XSTLIB = $(XTESTROOT)/src/libproto/libXst.a
+XSTLIB = $(XTESTBUILD)/src/libproto/libXst.a
 
 # XTESTFONTLIB - supplementary library with font metrics.
 #XTESTFONTLIB = $(XTESTLIBDIR)/libfont.a
-XTESTFONTLIB = $(XTESTROOT)/fonts/libfont.a
+XTESTFONTLIB = $(XTESTBUILD)/fonts/libfont.a
 
 # XTESTXIMLIB - supplementary library for input methods.
 #XTESTXIMLIB = $(XTESTLIBDIR)/libximtest.a
-XTESTXIMLIB = $(XTESTROOT)/src/xim/libximtest.a
+XTESTXIMLIB = $(XTESTBUILD)/src/xim/libximtest.a
 
 # XTESTINCDIR - the VSW5 header file directory
 XTESTINCDIR = $(XTESTROOT)/include
@@ -180,8 +177,8 @@ XT_SYSLIBS=-lXt -lXtst -lXext -lX11
 # If your implementation does not provide Athena widgets, use the
 # VSW5 provided versions:
 #XT_ATHENA = $(XTESTLIBDIR)/libXtaw.a $(XTESTLIBDIR)/libXtmu.a
-XT_ATHENA = $(XTESTROOT)/src/libXtaw/libXtaw.a \
-	$(XTESTROOT)/src/libXtmu/libXtmu.a
+XT_ATHENA = $(XTESTBUILD)/src/libXtaw/libXtaw.a \
+	$(XTESTBUILD)/src/libXtmu/libXtmu.a
 
 # SYSINC - Any commands that should be given to the C compiler
 # to cause include file directories to be searched.  Probably
@@ -303,11 +300,9 @@ LINKOBJOPTS=-r
 # ii) different access control mechanisms.
 # Refer to your Xlib documentation for further details.
 #
-#XP_OPEN_DIS=XlibXtst.c
+XP_OPEN_DIS=XlibXtst.c
 #XP_OPEN_DIS=XlibNoXtst.c
 #XP_OPEN_DIS=XlibOpaque.c
-#XP_OPEN_DIS=XlibOpaque.c
-XP_OPEN_DIS=XlibXtst.c
 
 # INCLUDES - Options to cause C compiler to search correct directories
 # for headers.
@@ -321,7 +316,7 @@ XP_OPEN_DIS=XlibXtst.c
 #
 #CFLAGS=-DXT_X_RELEASE=$(XT_X_RELEASE) $(CFLOCAL) $(COPTS) $(INCLUDES) $(DEFINES)
 
-COMMON_CFLAGS = -I$(TETBASE)/include -I$(TETINCDIR) -I$(XTESTINCDIR) \
+COMMON_CFLAGS = -I$(top_srcdir)/include -I$(TETINCDIR) -I$(XTESTINCDIR) \
 	-DXT_X_RELEASE='$(XT_X_RELEASE)' -DTET_LITE
 XTS_CFLAGS = $(COMMON_CFLAGS) $(DEFINES)
 
@@ -339,7 +334,7 @@ XT_CFLAGS = $(COMMON_CFLAGS) $(XT_DEFINES)
 # LIBS=${XTESTXIMLIB} ${XTESTLIB} ${XTESTFONTLIB} ${PIXLIB} 
 #    {APILIB} ${SYSMATHLIB}
 #
-LIBS=${XTESTXIMLIB} ${XTESTLIB} ${XTESTFONTLIB} ${APILIB}
+DLIBS=${XTESTXIMLIB} ${XTESTLIB} ${XTESTFONTLIB} ${APILIB}
 
 # XP_LIBS - List of libraries specific to the X Protocol tests.
 XP_LIBS=${XSTLIB} ${XTESTLIB} ${XTESTFONTLIB} ${APILIB}
