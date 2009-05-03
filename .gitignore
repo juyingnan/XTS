@@ -1,7 +1,6 @@
 *.a
 *.la
 *.lo
-*.mk
 *.o
 *.pcf
 .deps
