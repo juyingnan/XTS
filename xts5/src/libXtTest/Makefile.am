@@ -1,6 +1,6 @@
 include ../../common.mk
 
-AM_CFLAGS = $(XT_CFLAGS)
+AM_CFLAGS = $(XT_LCFLAGS) $(XT_CFLAGS)
 noinst_LIBRARIES = libXtTest.a
 libXtTest_a_SOURCES = avs_def.c \
 		avs_func.c \

@@ -1,6 +1,6 @@
 include ../common.mk
 
-AM_CFLAGS = $(XTS_CFLAGS)
+AM_CFLAGS = $(XTS_LCFLAGS) $(XTS_CFLAGS)
 noinst_LIBRARIES = libfont.a
 libfont_a_SOURCES = xtfont0.c xtfont1.c xtfont2.c xtfont3.c xtfont4.c \
 	xtfont5.c xtfont6.c

@@ -1,6 +1,6 @@
 include ../../common.mk
 
-AM_CFLAGS = $(XTS_CFLAGS)
+AM_CFLAGS = $(XTS_LCFLAGS) $(XTS_CFLAGS)
 noinst_LIBRARIES = libximtest.a
 libximtest_a_SOURCES = \
 	linklocale.c \

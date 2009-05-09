@@ -1,6 +1,6 @@
 include ../../common.mk
 
-AM_CFLAGS = $(XP_CFLAGS)
+AM_CFLAGS = $(XP_LCFLAGS) $(XP_CFLAGS)
 noinst_LIBRARIES = libXst.a
 libXst_a_SOURCES =\
 	XstlibInt.h\
