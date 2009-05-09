@@ -37,6 +37,7 @@ MODIFICATIONS:
 ************************************************************************/
 
 #include <stdio.h>
+#include <stdlib.h>
 #include <sys/types.h>
 #include <time.h>
 #include "dtmac.h"
@@ -72,10 +73,11 @@ static void wakeup PROTOLIST((struct proctab *));
 **	service all entries in the run queue which need attention
 */
 
-void tcc_sloop()
+int tcc_sloop()
 {
 	register struct proctab *prp, *rqforw;
 	register int done;
+	int status = EXIT_SUCCESS;
 
 	TRACE1(tet_Texec, 2, "tcc_sloop() START");
 
@@ -88,6 +90,8 @@ void tcc_sloop()
 			if (prp->pr_flags & PRF_ATTENTION) {
 				prp->pr_flags &= ~PRF_ATTENTION;
 				tcc_service(prp);
+				status = tet_addresult(status,
+						prp->pr_jnlstatus);
 				done = 0;
 			}
 		}
@@ -95,6 +99,8 @@ void tcc_sloop()
 	} while (!done);
 
 	TRACE1(tet_Texec, 2, "tcc_sloop() END");
+
+	return status;
 }
 
 /*

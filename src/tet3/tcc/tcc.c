@@ -121,7 +121,7 @@ char **argv;
 	char *codelist = (char *) 0;
 	char *old_journal_file = (char *) 0;
 	char *scenario = "all";
-	int errors = 0;
+	int errors = 0, status = EXIT_SUCCESS;
 
 	/*
 	** initialise the global variables for use by the library -
@@ -501,10 +501,10 @@ char **argv;
 	initenviron();
 
 	/* fire up the execution engine and process the scenario */
-	execscen();
+	status = execscen();
 
 	/* here if all has been successful */
-	tcc_exit(0);
+	tcc_exit(status);
 	/* NOTREACHED */
 	return(1);
 }

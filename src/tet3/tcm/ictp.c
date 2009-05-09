@@ -565,7 +565,7 @@ int icno, tpno, testnum;
 		return(-1);
 	}
 
-	return(0);
+	return(result);
 }
 
 #else		/* -START-LITE-CUT- */

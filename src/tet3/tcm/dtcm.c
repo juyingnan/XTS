@@ -218,8 +218,8 @@ static	long	start_sequence;
 static void build_icl2 PROTOLIST((char *, int, int));
 static void build_icl3 PROTOLIST((char *, int, int));
 static void build_iclist PROTOLIST((char **, int));
-static void call_1tp PROTOLIST((int, int, int));
-static int call_tps PROTOLIST((int, int));
+static int call_1tp PROTOLIST((int, int, int));
+static int call_tps PROTOLIST((int, int *));
 static struct iclist *iclalloc PROTOLIST((void));
 static int split PROTOLIST((char *, char **, int, int));
 
@@ -243,7 +243,7 @@ char	**argv;
 {
 	char *cp;
 	struct iclist *icp;
-	int iccount, tpcount, icnum, rc;
+	int iccount, tpcount, icnum, rc, ret = TET_PASS;
 #ifndef TET_LITE	/* -START-LITE-CUT */
 	int nsys;
 #endif			/* -END-LITE-CUT- */
@@ -366,7 +366,8 @@ char	**argv;
 				ASSERT_LITE(rc == 0);
 				if (rc < 0)
 					tet_docleanup(EXIT_FAILURE);
-				tpcount = call_tps(icnum, tpcount);
+				ret = tet_addresult(ret,
+						call_tps(icnum, &tpcount));
 				tet_icend(icnum, tpcount);
 			}
 
@@ -374,7 +375,7 @@ char	**argv;
 	setsigs(sigabandon);
 
 	/* call the user-supplied cleanup routine (if any) and exit */
-	tet_docleanup(EXIT_SUCCESS);
+	tet_docleanup(ret);
 
 	/* NOTREACHED */
 	return(EXIT_SUCCESS);
@@ -388,18 +389,20 @@ char	**argv;
 */
 
 static int call_tps(icnum, tpcount)
-int icnum, tpcount;
+int icnum, *tpcount;
 {
-	int testcount, testnum, tpnum;
+	int testcount, testnum, tpnum, result = TET_PASS;
 #ifndef TET_LITE /* -START-LITE-CUT- */
 	long spno;
 #endif /* -END-LITE-CUT- */
 
+	ASSERT(tpcount)
+
 	TRACE3(tet_Ttcm, 6, "call_tps(): icnum = %s, tpcount = %s",
-		tet_i2a(icnum), tet_i2a(tpcount));
+		tet_i2a(icnum), tet_i2a(*tpcount));
 
 	testcount = 0;
-	for (tpnum = 1; tpnum <= tpcount; tpnum++) {
+	for (tpnum = 1; tpnum <= *tpcount; tpnum++) {
 #ifndef TET_LITE /* -START-LITE-CUT- */
 		spno = MK_ASPNO(0, tpnum, S_TPSTART);
 		if (EX_TPNO(spno) != tpnum) {
@@ -408,20 +411,24 @@ int icnum, tpcount;
 		}
 #endif /* -END-LITE-CUT- */
 		testnum = tet_gettestnum(icnum, tpnum);
-		call_1tp(icnum, tpnum, testnum);
+		result = tet_addresult(result,
+				call_1tp(icnum, tpnum, testnum));
 		testcount++;
 	}
 
-	return(testcount);
+	*tpcount = testcount;
+	return(result);
 }
 
 /*
 **	call_1tp() - call a single test purpose function
 */
 
-static void call_1tp(icnum, tpnum, testnum)
+static int call_1tp(icnum, tpnum, testnum)
 int icnum, tpnum, testnum;
 {
+	int result;
+
 	TRACE4(tet_Ttcm, 6, "call_1tp(): icnum = %s, tpnum = %s, testnum = %s",
 		tet_i2a(icnum), tet_i2a(tpnum), tet_i2a(testnum));
 
@@ -522,8 +529,10 @@ int icnum, tpnum, testnum;
 	** if the action code for the result is ABORT, call the user-supplied
 	** cleanup function and exit
 	*/
-	if (tet_tpend(icnum, tpnum, testnum) < 0)
+	if ((result = tet_tpend(icnum, tpnum, testnum)) < 0)
 		tet_docleanup(EXIT_FAILURE);
+
+	return result;
 }
 
 

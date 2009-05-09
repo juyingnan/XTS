@@ -175,11 +175,11 @@ char *scenario, *sopt, *cwd;
 **	execscen() - execute (process) the scenario
 */
 
-void execscen()
+int execscen()
 {
 	register struct proctab *prp, *q;
 	static int sys0 = 0;
-	int delay, ndelay;
+	int delay, ndelay, status = EXIT_SUCCESS;
 	time_t now, next;
 
 	/* return now if the scenario is empty */
@@ -228,7 +228,7 @@ void execscen()
 #endif /* NOTRACE */
 			SLEEP((unsigned) ndelay);
 		}
-		tcc_sloop();
+		status = tet_addresult(status, tcc_sloop());
 		if (prp->pr_state == PRS_IDLE)
 			break;
 		now = time((time_t *) 0);
@@ -245,6 +245,8 @@ void execscen()
 
 	/* all finished so free the proctab and return */
 	prfree(prp);
+
+	return status;
 }
 
 /*
