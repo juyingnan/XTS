@@ -143,6 +143,13 @@ char *jopt, *cwd;
 	TRACE3(tet_Ttcc, 2, "jnl_init(): jopt = \"%s\", cwd = \"%s\"",
 		jopt ? jopt : "", cwd);
 
+	/* Empty string means no journal file */
+	if (jopt && !*jopt) {
+		jfp = NULL;
+		jfname = NULL;
+		return;
+	}
+
 	/* determine the name of the journal file */
 	if (jopt && *jopt)
 		fullpath(cwd, jopt, fname, sizeof fname, 0);
@@ -933,6 +940,9 @@ FILE *fp;
 	char *s0 = tet_i2a(id);
 	int len0, len1, len2, s2max;
 	char msg[TET_JNL_LEN];
+
+	if (!fp)
+		return;
 
 	if (!s1)
 		s1 = nullstr;

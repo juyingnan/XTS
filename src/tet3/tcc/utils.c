@@ -47,6 +47,7 @@ MODIFICATIONS:
 #include <time.h>
 #include <ctype.h>
 #include <string.h>
+#include <errno.h>
 #include "dtmac.h"
 #include "error.h"
 #include "globals.h"
@@ -224,6 +225,15 @@ int pathlen, remote;
 
 	ASSERT(file && *file);
 
+	/* Use the current directory if none specified */
+	if (!dir) {
+		char cwd[MAXPATH];
+
+		errno = 0;
+		if (!GETCWD(cwd, MAXPATH))
+			fatal(errno, "getcwd() failed", NULL);
+		dir = cwd;
+	}
 
 	if (
 		(remote && !isabspathrem(file)) ||

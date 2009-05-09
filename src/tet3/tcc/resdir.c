@@ -73,6 +73,12 @@ char *iopt, *cwd;
 	char resroot[MAXPATH], resdir[MAXPATH];
 	int n, rc;
 
+	/* Empty string means no results directory. */
+	if (iopt && !*iopt) {
+		results_dir = NULL;
+		return;
+	}
+
 	/*
 	** determine the name of the results directory
 	**
@@ -108,7 +114,8 @@ char *iopt, *cwd;
 
 char *resdirname()
 {
-	ASSERT(results_dir && isabspathloc(results_dir));
+	if (results_dir)
+		ASSERT(isabspathloc(results_dir));
 	return(results_dir);
 }
 

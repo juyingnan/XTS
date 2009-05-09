@@ -484,7 +484,8 @@ char **argv;
 
 	/* open the journal file and write the start messages to it */
 	jnl_init(jopt, cwd);
-	(void) printf("%s: journal file is %s\n", tet_progname, jnl_jfname());
+	if (jnl_jfname())
+		printf("%s: journal file is %s\n", tet_progname, jnl_jfname());
 	(void) fflush(stdout);
 	jnl_tcc_start(argcsave, argvsave);
 	jnl_uname();
