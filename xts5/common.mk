@@ -70,11 +70,11 @@ TETINCDIR = $(TETBASE)/inc
 
 # TCM - The Test Control Manager
 #TCM = $(TETLIB)/tcm/tcm.o
-TCM = $(TETBASE)/tcm/tcm.c $(TETBASE)/tcm/dtcm.c
+TCM = $(TETBUILD)/tcm/libtcmmain.la
 
 # TCMCHILD - The Test Control Manager for files executed by tet_exec. 
 #TCMCHILD = $(TETLIB)/tcmchild.o
-TCMCHILD = $(TETBASE)/tcm/tcmchild.c
+TCMCHILD = $(TETBUILD)/tcm/libtcmchild.la
 
 # APILIB - The TET API library
 APILIB = $(TETBASE)/apilib/libapi.la
