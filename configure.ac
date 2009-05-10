@@ -48,10 +48,17 @@ dnl PKG_CHECK_MODULES([XAW], [x11 xext xt xtst xaw7])
 # Checks for header files.
 AC_HEADER_STDC
 
+dnl Needed for generating fonts
 AC_PATH_PROG([BDFTOPCF], [bdftopcf])
 AC_PATH_PROG([MKFONTDIR], [mkfontdir])
 if test "x$BDFTOPCF" = x || test "x$MKFONTDIR" = x; then
     AC_MSG_ERROR([bdftopcf and mkfontdir are required to build the test fonts])
+fi
+
+dnl Needed for generating tetexec.cfg with xts-config
+AC_PATH_PROG([PERL], [perl])
+if test "x$PERL" = x; then
+    AC_MSG_ERROR([perl is required to run xts-config])
 fi
 
 AC_CONFIG_FILES([
@@ -82,7 +89,8 @@ xts5/tset/Xproto/Makefile
 ])
 
 AC_CONFIG_COMMANDS([tetexec.cfg],
-    [TET_ROOT=`pwd` perl -p $srcdir/xts5/bin/xts-config \
-        < $srcdir/xts5/tetexec.cfg.in > xts5/tetexec.cfg])
+    [TET_ROOT=`pwd` $PERL -p $srcdir/xts5/bin/xts-config \
+        < $srcdir/xts5/tetexec.cfg.in > xts5/tetexec.cfg],
+    [PERL="$PERL"])
 
 AC_OUTPUT
