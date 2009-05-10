@@ -57,8 +57,10 @@ fi
 
 dnl Needed for generating tetexec.cfg with xts-config
 AC_PATH_PROG([PERL], [perl])
-if test "x$PERL" = x; then
-    AC_MSG_ERROR([perl is required to run xts-config])
+AC_PATH_PROG([XSET], [xset])
+AC_PATH_PROG([XDPYINFO], [xdpyinfo])
+if test "x$PERL" = x || test "x$XSET" = x || test "x$XDPYINFO" = x; then
+    AC_MSG_ERROR([perl, xset and xdpyinfo are required to run xts-config])
 fi
 
 dnl See what display the user wants to use for testing
@@ -100,10 +102,5 @@ xts5/fonts/Makefile
 xts5/tset/Makefile
 xts5/tset/Xproto/Makefile
 ])
-
-AC_CONFIG_COMMANDS([tetexec.cfg],
-    [TET_ROOT=`pwd` DISPLAY=$XT_DISPLAY $PERL -p $srcdir/xts5/bin/xts-config \
-        < $srcdir/xts5/tetexec.cfg.in > xts5/tetexec.cfg],
-    [PERL="$PERL"; XT_DISPLAY="$XT_DISPLAY"])
 
 AC_OUTPUT

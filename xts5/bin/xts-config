@@ -6,7 +6,12 @@ use Sys::Hostname;
 
 BEGIN
 {
-	open(XSET, "xset q |") or die "xset q failed, giving up.\n";
+	my $xset;
+	$xset = $ENV{"XSET"} or $xset = "xset";
+	my $xdpyinfo;
+	$xdpyinfo = $ENV{"XDPYINFO"} or $xdpyinfo = "xdpyinfo";
+
+	open(XSET, "$xset q |") or die "$xset q failed, giving up.\n";
 	while(<XSET>)
 	{
 		next unless /^Font Path:/;
@@ -15,9 +20,9 @@ BEGIN
 		$::vars{"XT_FONTPATH_GOOD"} = $1;
 	}
 	close(XSET);
-	die "xset q failed, giving up.\n" if $?;
+	die "$xset q failed, giving up.\n" if $?;
 
-	open(INFO, "xdpyinfo |") or die "xdpyinfo failed, giving up.\n";
+	open(INFO, "$xdpyinfo |") or die "$xdpyinfo failed, giving up.\n";
 	my @xdpyinfopats = (
 		[qr/^name of display:\s*(.*)/, qw(XT_DISPLAY)],
 		[qr/^version number:\s*(\d+)\.(\d+)/, qw(XT_PROTOCOL_VERSION XT_PROTOCOL_REVISION)],
@@ -62,7 +67,7 @@ BEGIN
 		}
 	}
 	close(INFO);
-	die "xdpyinfo failed, giving up.\n" if $?;
+	die "$xdpyinfo failed, giving up.\n" if $?;
 
 	$::vars{"XT_VISUAL_CLASSES"} = join ' ', keys %visuals;
 
@@ -74,7 +79,7 @@ BEGIN
 		# have xdpyinfo try connecting to the same display via TCP;
 		# just check its exit status.
 		$ENV{"DISPLAY"} = "$hostname:$1.$2";
-		open(INFO, "xset q 2>/dev/null |") or die "xset q on TCP failed, giving up.\n";
+		open(INFO, "$xset q 2>/dev/null |") or die "$xset q on TCP failed, giving up.\n";
 		<INFO>; # discard output
 		close(INFO);
 		if(not $?)
