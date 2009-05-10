@@ -61,6 +61,19 @@ if test "x$PERL" = x; then
     AC_MSG_ERROR([perl is required to run xts-config])
 fi
 
+dnl See what display the user wants to use for testing
+AC_ARG_WITH([display],
+    [AS_HELP_STRING([--with-display=DPY],
+        [X display to connect to @<:@default=DISPLAY variable@:>@])],
+    [XT_DISPLAY=$withval],
+    [XT_DISPLAY=$DISPLAY])
+if test "x$XT_DISPLAY" = x; then
+    AC_MSG_ERROR([no display specified; set DISPLAY variable or use --with-display])
+fi
+AC_MSG_CHECKING([display to test])
+AC_MSG_RESULT([$XT_DISPLAY])
+AC_SUBST([XT_DISPLAY])
+
 AC_CONFIG_FILES([
 Makefile
 src/Makefile
@@ -89,8 +102,8 @@ xts5/tset/Xproto/Makefile
 ])
 
 AC_CONFIG_COMMANDS([tetexec.cfg],
-    [TET_ROOT=`pwd` $PERL -p $srcdir/xts5/bin/xts-config \
+    [TET_ROOT=`pwd` DISPLAY=$XT_DISPLAY $PERL -p $srcdir/xts5/bin/xts-config \
         < $srcdir/xts5/tetexec.cfg.in > xts5/tetexec.cfg],
-    [PERL="$PERL"])
+    [PERL="$PERL"; XT_DISPLAY="$XT_DISPLAY"])
 
 AC_OUTPUT
