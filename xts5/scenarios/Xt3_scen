@@ -59,44 +59,44 @@
 #
 
 	"VSW5TESTSUITE CASE DataTypes 9"
-	/tset/Xt3/dttyps/Test
+	/tset/Xt3/dttyps/dttyps
 	"VSW5TESTSUITE CASE CoreWidget 9"
-	/tset/Xt3/wdgtcr/Test
+	/tset/Xt3/wdgtcr/wdgtcr
 	"VSW5TESTSUITE CASE CompositeWidget 11"
-	/tset/Xt3/wdgtcmpst/Test
+	/tset/Xt3/wdgtcmpst/wdgtcmpst
 	"VSW5TESTSUITE CASE ConstraintWidget 11"
-	/tset/Xt3/wdgtcnstrn/Test
+	/tset/Xt3/wdgtcnstrn/wdgtcnstrn
 	"VSW5TESTSUITE CASE XtClass 1"
-	/tset/Xt3/tclss/Test
+	/tset/Xt3/tclss/tclss
 	"VSW5TESTSUITE CASE XtSuperClass 1"
-	/tset/Xt3/tsprclss/Test
+	/tset/Xt3/tsprclss/tsprclss
 	"VSW5TESTSUITE CASE XtIsSubclass 2"
-	/tset/Xt3/tissbclss/Test
+	/tset/Xt3/tissbclss/tissbclss
 	"VSW5TESTSUITE CASE XtIsObject 2"
-	/tset/Xt3/tisobjct/Test
+	/tset/Xt3/tisobjct/tisobjct
 	"VSW5TESTSUITE CASE XtIsRectObj 2"
-	/tset/Xt3/tisrctobj/Test
+	/tset/Xt3/tisrctobj/tisrctobj
 	"VSW5TESTSUITE CASE XtIsWidget 2"
-	/tset/Xt3/tiswdgt/Test
+	/tset/Xt3/tiswdgt/tiswdgt
 	"VSW5TESTSUITE CASE XtIsComposite 2"
-	/tset/Xt3/tiscmpst/Test
+	/tset/Xt3/tiscmpst/tiscmpst
 	"VSW5TESTSUITE CASE XtIsConstraint 2"
-	/tset/Xt3/tiscnstrnt/Test
+	/tset/Xt3/tiscnstrnt/tiscnstrnt
 	"VSW5TESTSUITE CASE XtIsShell 2"
-	/tset/Xt3/tisshll/Test
+	/tset/Xt3/tisshll/tisshll
 	"VSW5TESTSUITE CASE XtIsOverrideShell 2"
-	/tset/Xt3/tisovrrdsh/Test
+	/tset/Xt3/tisovrrdsh/tisovrrdsh
 	"VSW5TESTSUITE CASE XtIsWMShell 2"
-	/tset/Xt3/tiswmshll/Test
+	/tset/Xt3/tiswmshll/tiswmshll
 	"VSW5TESTSUITE CASE XtIsVendorShell 2"
-	/tset/Xt3/tisvndrshl/Test
+	/tset/Xt3/tisvndrshl/tisvndrshl
 	"VSW5TESTSUITE CASE XtIsTransientShell 2"
-	/tset/Xt3/tistrnsnts/Test
+	/tset/Xt3/tistrnsnts/tistrnsnts
 	"VSW5TESTSUITE CASE XtIsTopLevelShell 2"
-	/tset/Xt3/tistplvlsh/Test
+	/tset/Xt3/tistplvlsh/tistplvlsh
 	"VSW5TESTSUITE CASE XtIsApplicationShell 2"
-	/tset/Xt3/tisapplctn/Test
+	/tset/Xt3/tisapplctn/tisapplctn
 	"VSW5TESTSUITE CASE XtCheckSubclass 3"
-	/tset/Xt3/tchcksbcls/Test
+	/tset/Xt3/tchcksbcls/tchcksbcls
 	"VSW5TESTSUITE CASE XtInitializeWidgetClass 2"
-	/tset/Xt3/tintlzwdgt/Test
+	/tset/Xt3/tintlzwdgt/tintlzwdgt

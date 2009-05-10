@@ -56,74 +56,74 @@
 #
 
 	"VSW5TESTSUITE CASE XAllowDeviceEvents 22"
-	/tset/XI/alldvevnts/Test
+	/tset/XI/alldvevnts/alldvevnts
 	"VSW5TESTSUITE CASE XChangeDeviceControl 10"
-	/tset/XI/chgdvctl/Test
+	/tset/XI/chgdvctl/chgdvctl
 	"VSW5TESTSUITE CASE XChangeFeedbackControl 8"
-	/tset/XI/chgfctl/Test
+	/tset/XI/chgfctl/chgfctl
 	"VSW5TESTSUITE CASE XChangeKeyboardDevice 10"
-	/tset/XI/chgkbd/Test
+	/tset/XI/chgkbd/chgkbd
 	"VSW5TESTSUITE CASE XChangeDeviceDontPropagateList 7"
-	/tset/XI/chgprop/Test
+	/tset/XI/chgprop/chgprop
 	"VSW5TESTSUITE CASE XChangePointerDevice 10"
-	/tset/XI/chgptr/Test
+	/tset/XI/chgptr/chgptr
 	"VSW5TESTSUITE CASE XChangeDeviceKeyMapping 7"
-	/tset/XI/chngdvkmap/Test
+	/tset/XI/chngdvkmap/chngdvkmap
 	"VSW5TESTSUITE CASE XCloseDevice 7"
-	/tset/XI/closdev/Test
+	/tset/XI/closdev/closdev
 	"VSW5TESTSUITE CASE XDeviceBell 6"
-	/tset/XI/dvbell/Test
+	/tset/XI/dvbell/dvbell
 	"VSW5TESTSUITE CASE XGetDeviceControl 4"
-	/tset/XI/getdctl/Test
+	/tset/XI/getdctl/getdctl
 	"VSW5TESTSUITE CASE XGetFeedbackControl 3"
-	/tset/XI/getfctl/Test
+	/tset/XI/getfctl/getfctl
 	"VSW5TESTSUITE CASE XGetDeviceFocus 2"
-	/tset/XI/getfocus/Test
+	/tset/XI/getfocus/getfocus
 	"VSW5TESTSUITE CASE XGetDeviceDontPropagateList 2"
-	/tset/XI/getprop/Test
+	/tset/XI/getprop/getprop
 	"VSW5TESTSUITE CASE XGetExtensionVersion 2"
-	/tset/XI/getvers/Test
+	/tset/XI/getvers/getvers
 	"VSW5TESTSUITE CASE XGrabDevice 18"
-	/tset/XI/grbdev/Test
+	/tset/XI/grbdev/grbdev
 	"VSW5TESTSUITE CASE XGrabDeviceButton 21"
-	/tset/XI/grbdvbtn/Test
+	/tset/XI/grbdvbtn/grbdvbtn
 	"VSW5TESTSUITE CASE XGrabDeviceKey 21"
-	/tset/XI/grbdvky/Test
+	/tset/XI/grbdvky/grbdvky
 	"VSW5TESTSUITE CASE XGetDeviceButtonMapping 5"
-	/tset/XI/gtbtnmppn/Test
+	/tset/XI/gtbtnmppn/gtbtnmppn
 	"VSW5TESTSUITE CASE XGetDeviceKeyMapping 10"
-	/tset/XI/gtdvkmap/Test
+	/tset/XI/gtdvkmap/gtdvkmap
 	"VSW5TESTSUITE CASE XGetDeviceModifierMapping 4"
-	/tset/XI/gtdvmmap/Test
+	/tset/XI/gtdvmmap/gtdvmmap
 	"VSW5TESTSUITE CASE XGetDeviceMotionEvents 9"
-	/tset/XI/gtdvmtnev/Test
+	/tset/XI/gtdvmtnev/gtdvmtnev
 	"VSW5TESTSUITE CASE XGetSelectedExtensionEvents 2"
-	/tset/XI/gtslctevnt/Test
+	/tset/XI/gtslctevnt/gtslctevnt
 	"VSW5TESTSUITE CASE XListInputDevices 2"
-	/tset/XI/listdev/Test
+	/tset/XI/listdev/listdev
 	"VSW5TESTSUITE CASE Miscellaneous 6"
-	/tset/XI/misc/Test
+	/tset/XI/misc/misc
 	"VSW5TESTSUITE CASE XOpenDevice 4"
-	/tset/XI/opendev/Test
+	/tset/XI/opendev/opendev
 	"VSW5TESTSUITE CASE XQueryDeviceState 8"
-	/tset/XI/querydvst/Test
+	/tset/XI/querydvst/querydvst
 	"VSW5TESTSUITE CASE XSetDeviceValuators 6"
-	/tset/XI/setdval/Test
+	/tset/XI/setdval/setdval
 	"VSW5TESTSUITE CASE XSetDeviceButtonMapping 8"
-	/tset/XI/setdvbmap/Test
+	/tset/XI/setdvbmap/setdvbmap
 	"VSW5TESTSUITE CASE XSetDeviceFocus 17"
-	/tset/XI/setdvfocus/Test
+	/tset/XI/setdvfocus/setdvfocus
 	"VSW5TESTSUITE CASE XSetDeviceModifierMapping 9"
-	/tset/XI/setdvmmap/Test
+	/tset/XI/setdvmmap/setdvmmap
 	"VSW5TESTSUITE CASE XSetDeviceMode 6"
-	/tset/XI/setdvmode/Test
+	/tset/XI/setdvmode/setdvmode
 	"VSW5TESTSUITE CASE XSelectExtensionEvent 13"
-	/tset/XI/slextevnt/Test
+	/tset/XI/slextevnt/slextevnt
 	"VSW5TESTSUITE CASE XSendExtensionEvent 20"
-	/tset/XI/sndextevnt/Test
+	/tset/XI/sndextevnt/sndextevnt
 	"VSW5TESTSUITE CASE XUngrabDevice 4"
-	/tset/XI/ungrbdv/Test
+	/tset/XI/ungrbdv/ungrbdv
 	"VSW5TESTSUITE CASE XUngrabDeviceButton 11"
-	/tset/XI/ungrbdvbtn/Test
+	/tset/XI/ungrbdvbtn/ungrbdvbtn
 	"VSW5TESTSUITE CASE XUngrabDeviceKey 12"
-	/tset/XI/ungrbdvky/Test
+	/tset/XI/ungrbdvky/ungrbdvky

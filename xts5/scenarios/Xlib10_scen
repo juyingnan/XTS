@@ -56,48 +56,48 @@
 #
 
 	"VSW5TESTSUITE CASE XActivateScreenSaver 2"
-	/tset/Xlib10/actvtscrns/Test
+	/tset/Xlib10/actvtscrns/actvtscrns
 	"VSW5TESTSUITE CASE XAddHost 3"
-	/tset/Xlib10/addhst/Test
+	/tset/Xlib10/addhst/addhst
 	"VSW5TESTSUITE CASE XAddHosts 3"
-	/tset/Xlib10/addhsts/Test
+	/tset/Xlib10/addhsts/addhsts
 	"VSW5TESTSUITE CASE XAddToSaveSet 8"
-	/tset/Xlib10/addtsvst/Test
+	/tset/Xlib10/addtsvst/addtsvst
 	"VSW5TESTSUITE CASE XChangeSaveSet 5"
-	/tset/Xlib10/chngsvst/Test
+	/tset/Xlib10/chngsvst/chngsvst
 	"VSW5TESTSUITE CASE XDisableAccessControl 2"
-	/tset/Xlib10/dsblaccssc/Test
+	/tset/Xlib10/dsblaccssc/dsblaccssc
 	"VSW5TESTSUITE CASE XEnableAccessControl 2"
-	/tset/Xlib10/enblaccssc/Test
+	/tset/Xlib10/enblaccssc/enblaccssc
 	"VSW5TESTSUITE CASE XForceScreenSaver 3"
-	/tset/Xlib10/frcscrnsvr/Test
+	/tset/Xlib10/frcscrnsvr/frcscrnsvr
 	"VSW5TESTSUITE CASE XGrabServer 1"
-	/tset/Xlib10/grbsrvr/Test
+	/tset/Xlib10/grbsrvr/grbsrvr
 	"VSW5TESTSUITE CASE XGetScreenSaver 1"
-	/tset/Xlib10/gtscrnsvr/Test
+	/tset/Xlib10/gtscrnsvr/gtscrnsvr
 	"VSW5TESTSUITE CASE XInstallColormap 6"
-	/tset/Xlib10/instllclrm/Test
+	/tset/Xlib10/instllclrm/instllclrm
 	"VSW5TESTSUITE CASE XKillClient 4"
-	/tset/Xlib10/kllclnt/Test
+	/tset/Xlib10/kllclnt/kllclnt
 	"VSW5TESTSUITE CASE XListHosts 2"
-	/tset/Xlib10/lsthsts/Test
+	/tset/Xlib10/lsthsts/lsthsts
 	"VSW5TESTSUITE CASE XListInstalledColormaps 2"
-	/tset/Xlib10/lstinstlld/Test
+	/tset/Xlib10/lstinstlld/lstinstlld
 	"VSW5TESTSUITE CASE XRemoveFromSaveSet 3"
-	/tset/Xlib10/rmvfrmsvst/Test
+	/tset/Xlib10/rmvfrmsvst/rmvfrmsvst
 	"VSW5TESTSUITE CASE XRemoveHost 3"
-	/tset/Xlib10/rmvhst/Test
+	/tset/Xlib10/rmvhst/rmvhst
 	"VSW5TESTSUITE CASE XRemoveHosts 3"
-	/tset/Xlib10/rmvhsts/Test
+	/tset/Xlib10/rmvhsts/rmvhsts
 	"VSW5TESTSUITE CASE XReparentWindow 13"
-	/tset/Xlib10/rprntwdw/Test
+	/tset/Xlib10/rprntwdw/rprntwdw
 	"VSW5TESTSUITE CASE XResetScreenSaver 2"
-	/tset/Xlib10/rstscrnsvr/Test
+	/tset/Xlib10/rstscrnsvr/rstscrnsvr
 	"VSW5TESTSUITE CASE XSetAccessControl 4"
-	/tset/Xlib10/staccsscnt/Test
+	/tset/Xlib10/staccsscnt/staccsscnt
 	"VSW5TESTSUITE CASE XSetScreenSaver 17"
-	/tset/Xlib10/stscrnsvr/Test
+	/tset/Xlib10/stscrnsvr/stscrnsvr
 	"VSW5TESTSUITE CASE XUngrabServer 1"
-	/tset/Xlib10/ungrbsrvr/Test
+	/tset/Xlib10/ungrbsrvr/ungrbsrvr
 	"VSW5TESTSUITE CASE XUninstallColormap 5"
-	/tset/Xlib10/unnstllclr/Test
+	/tset/Xlib10/unnstllclr/unnstllclr

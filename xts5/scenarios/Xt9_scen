@@ -59,68 +59,68 @@
 #
 
 	"VSW5TESTSUITE CASE XtAppAddInput 5"
-	/tset/Xt9/tapaddinp/Test
+	/tset/Xt9/tapaddinp/tapaddinp
 	"VSW5TESTSUITE CASE XtRemoveInput 1"
-	/tset/Xt9/trminput/Test
+	/tset/Xt9/trminput/trminput
 	"VSW5TESTSUITE CASE XtAppAddTimeOut 3"
-	/tset/Xt9/tapatmout/Test
+	/tset/Xt9/tapatmout/tapatmout
 	"VSW5TESTSUITE CASE XtRemoveTimeOut 1"
-	/tset/Xt9/trmtmout/Test
+	/tset/Xt9/trmtmout/trmtmout
 	"VSW5TESTSUITE CASE XtAddGrab 5"
-	/tset/Xt9/taddgrab/Test
+	/tset/Xt9/taddgrab/taddgrab
 	"VSW5TESTSUITE CASE XtRemoveGrab 2"
-	/tset/Xt9/trmgrab/Test
+	/tset/Xt9/trmgrab/trmgrab
 	"VSW5TESTSUITE CASE XtGrabKey 5"
-	/tset/Xt9/tgrabkey/Test
+	/tset/Xt9/tgrabkey/tgrabkey
 	"VSW5TESTSUITE CASE XtUngrabKey 2"
-	/tset/Xt9/tungrabky/Test
+	/tset/Xt9/tungrabky/tungrabky
 	"VSW5TESTSUITE CASE XtGrabKeyboard 2"
-	/tset/Xt9/tgrabkybd/Test
+	/tset/Xt9/tgrabkybd/tgrabkybd
 	"VSW5TESTSUITE CASE XtUngrabKeyboard 1"
-	/tset/Xt9/tunkybord/Test
+	/tset/Xt9/tunkybord/tunkybord
 	"VSW5TESTSUITE CASE XtGrabButton 5"
-	/tset/Xt9/tgrabbutn/Test
+	/tset/Xt9/tgrabbutn/tgrabbutn
 	"VSW5TESTSUITE CASE XtUngrabButton 2"
-	/tset/Xt9/tunbutton/Test
+	/tset/Xt9/tunbutton/tunbutton
 	"VSW5TESTSUITE CASE XtGrabPointer 2"
-	/tset/Xt9/tgrbpoint/Test
+	/tset/Xt9/tgrbpoint/tgrbpoint
 	"VSW5TESTSUITE CASE XtUngrabPointer 1"
-	/tset/Xt9/tunpointr/Test
+	/tset/Xt9/tunpointr/tunpointr
 	"VSW5TESTSUITE CASE XtSetKeyboardFocus 17"
-	/tset/Xt9/tstkbfocs/Test
+	/tset/Xt9/tstkbfocs/tstkbfocs
 	"VSW5TESTSUITE CASE XtCallAcceptFocus 2"
-	/tset/Xt9/tcalafocs/Test
+	/tset/Xt9/tcalafocs/tcalafocs
 	"VSW5TESTSUITE CASE XtAppPending 5"
-	/tset/Xt9/tappendng/Test
+	/tset/Xt9/tappendng/tappendng
 	"VSW5TESTSUITE CASE XtAppPeekEvent 3"
-	/tset/Xt9/tappkevnt/Test
+	/tset/Xt9/tappkevnt/tappkevnt
 	"VSW5TESTSUITE CASE XtAppNextEvent 4"
-	/tset/Xt9/tapnxevnt/Test
+	/tset/Xt9/tapnxevnt/tapnxevnt
 	"VSW5TESTSUITE CASE XtAppProcessEvent 11"
-	/tset/Xt9/tapprcevt/Test
+	/tset/Xt9/tapprcevt/tapprcevt
 	"VSW5TESTSUITE CASE XtDispatchEvent 11"
-	/tset/Xt9/tdispatet/Test
+	/tset/Xt9/tdispatet/tdispatet
 	"VSW5TESTSUITE CASE XtAppMainLoop 28"
-	/tset/Xt9/tapmnloop/Test
+	/tset/Xt9/tapmnloop/tapmnloop
 	"VSW5TESTSUITE CASE XtIsSensitive 4"
-	/tset/Xt9/tissenstv/Test
+	/tset/Xt9/tissenstv/tissenstv
 	"VSW5TESTSUITE CASE XtSetSensitive 6"
-	/tset/Xt9/tstsenstv/Test
+	/tset/Xt9/tstsenstv/tstsenstv
 	"VSW5TESTSUITE CASE XtAppAddWorkProc 5"
-	/tset/Xt9/tapawkprc/Test
+	/tset/Xt9/tapawkprc/tapawkprc
 	"VSW5TESTSUITE CASE XtRemoveWorkProc 2"
-	/tset/Xt9/trmwkproc/Test
+	/tset/Xt9/trmwkproc/trmwkproc
 	"VSW5TESTSUITE CASE XtAddEventHandler 8"
-	/tset/Xt9/tadevnthr/Test
+	/tset/Xt9/tadevnthr/tadevnthr
 	"VSW5TESTSUITE CASE XtRemoveEventHandler 7"
-	/tset/Xt9/trmevthdr/Test
+	/tset/Xt9/trmevthdr/trmevthdr
 	"VSW5TESTSUITE CASE XtInsertEventHandler 10"
-	/tset/Xt9/tinevthdr/Test
+	/tset/Xt9/tinevthdr/tinevthdr
 	"VSW5TESTSUITE CASE XtAddRawEventHandler 9"
-	/tset/Xt9/tadrwevhr/Test
+	/tset/Xt9/tadrwevhr/tadrwevhr
 	"VSW5TESTSUITE CASE XtRemoveRawEventHandler 7"
-	/tset/Xt9/trmrevthr/Test
+	/tset/Xt9/trmrevthr/trmrevthr
 	"VSW5TESTSUITE CASE XtInsertRawEventHandler 10"
-	/tset/Xt9/tinrevthr/Test
+	/tset/Xt9/tinrevthr/tinrevthr
 	"VSW5TESTSUITE CASE XtBuildEventMask 3"
-	/tset/Xt9/tbuevtmsk/Test
+	/tset/Xt9/tbuevtmsk/tbuevtmsk

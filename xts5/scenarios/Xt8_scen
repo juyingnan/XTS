@@ -59,16 +59,16 @@
 #
 
 	"VSW5TESTSUITE CASE XtMakeGeometryRequest 11"
-	/tset/Xt8/tmkgmreqt/Test
+	/tset/Xt8/tmkgmreqt/tmkgmreqt
 	"VSW5TESTSUITE CASE XtMakeResizeRequest 12"
-	/tset/Xt8/tmkrsizrt/Test
+	/tset/Xt8/tmkrsizrt/tmkrsizrt
 	"VSW5TESTSUITE CASE XtMoveWidget 3"
-	/tset/Xt8/tmvwidget/Test
+	/tset/Xt8/tmvwidget/tmvwidget
 	"VSW5TESTSUITE CASE XtResizeWidget 4"
-	/tset/Xt8/trszewdgt/Test
+	/tset/Xt8/trszewdgt/trszewdgt
 	"VSW5TESTSUITE CASE XtConfigureWidget 5"
-	/tset/Xt8/tconwidgt/Test
+	/tset/Xt8/tconwidgt/tconwidgt
 	"VSW5TESTSUITE CASE XtResizeWindow 2"
-	/tset/Xt8/trszwindw/Test
+	/tset/Xt8/trszwindw/trszwindw
 	"VSW5TESTSUITE CASE XtQueryGeometry 6"
-	/tset/Xt8/tqrygomty/Test
+	/tset/Xt8/tqrygomty/tqrygomty

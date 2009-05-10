@@ -56,92 +56,92 @@
 #
 
 	"VSW5TESTSUITE CASE XBaseFontNameListOfFontSet 1"
-	/tset/Xlib14/bfnlofs/Test
+	/tset/Xlib14/bfnlofs/bfnlofs
 	"VSW5TESTSUITE CASE XCloseIM 1"
-	/tset/Xlib14/closeim/Test
+	/tset/Xlib14/closeim/closeim
 	"VSW5TESTSUITE CASE XContextDependentDrawing 1"
-	/tset/Xlib14/condd/Test
+	/tset/Xlib14/condd/condd
 	"VSW5TESTSUITE CASE XCreateFontSet 1"
-	/tset/Xlib14/crfset/Test
+	/tset/Xlib14/crfset/crfset
 	"VSW5TESTSUITE CASE XCreateIC 1"
-	/tset/Xlib14/crtic/Test
+	/tset/Xlib14/crtic/crtic
 	"VSW5TESTSUITE CASE XDestroyIC 1"
-	/tset/Xlib14/desic/Test
+	/tset/Xlib14/desic/desic
 	"VSW5TESTSUITE CASE XDisplayOfIM 1"
-	/tset/Xlib14/dispim/Test
+	/tset/Xlib14/dispim/dispim
 	"VSW5TESTSUITE CASE XExtentsOfFontSet 1"
-	/tset/Xlib14/exofset/Test
+	/tset/Xlib14/exofset/exofset
 	"VSW5TESTSUITE CASE XFilterEvent 1"
-	/tset/Xlib14/fltrevnt/Test
+	/tset/Xlib14/fltrevnt/fltrevnt
 	"VSW5TESTSUITE CASE XFontsOfFontSet 1"
-	/tset/Xlib14/fntofnts/Test
+	/tset/Xlib14/fntofnts/fntofnts
 	"VSW5TESTSUITE CASE XFreeFontSet 1"
-	/tset/Xlib14/freefs/Test
+	/tset/Xlib14/freefs/freefs
 	"VSW5TESTSUITE CASE XGetICValues 3"
-	/tset/Xlib14/gticvals/Test
+	/tset/Xlib14/gticvals/gticvals
 	"VSW5TESTSUITE CASE XGetIMValues 1"
-	/tset/Xlib14/gtimvls/Test
+	/tset/Xlib14/gtimvls/gtimvls
 	"VSW5TESTSUITE CASE XIMOfIC 1"
-	/tset/Xlib14/imofic/Test
+	/tset/Xlib14/imofic/imofic
 	"VSW5TESTSUITE CASE XLocaleOfFontSet 1"
-	/tset/Xlib14/loffs/Test
+	/tset/Xlib14/loffs/loffs
 	"VSW5TESTSUITE CASE XLocaleOfIM 1"
-	/tset/Xlib14/lofim/Test
+	/tset/Xlib14/lofim/lofim
 	"VSW5TESTSUITE CASE XmbDrawImageString 1"
-	/tset/Xlib14/mbdistr/Test
+	/tset/Xlib14/mbdistr/mbdistr
 	"VSW5TESTSUITE CASE XmbDrawString 1"
-	/tset/Xlib14/mbdstr/Test
+	/tset/Xlib14/mbdstr/mbdstr
 	"VSW5TESTSUITE CASE XmbDrawText 1"
-	/tset/Xlib14/mbdtext/Test
+	/tset/Xlib14/mbdtext/mbdtext
 	"VSW5TESTSUITE CASE XmbLookupString 3"
-	/tset/Xlib14/mblstr/Test
+	/tset/Xlib14/mblstr/mblstr
 	"VSW5TESTSUITE CASE XmbResetIC 1"
-	/tset/Xlib14/mbresic/Test
+	/tset/Xlib14/mbresic/mbresic
 	"VSW5TESTSUITE CASE XmbSetWMProperties 2"
-	/tset/Xlib14/mbswmprp/Test
+	/tset/Xlib14/mbswmprp/mbswmprp
 	"VSW5TESTSUITE CASE XmbTextEscapement 1"
-	/tset/Xlib14/mbtesc/Test
+	/tset/Xlib14/mbtesc/mbtesc
 	"VSW5TESTSUITE CASE XmbTextExtents 1"
-	/tset/Xlib14/mbtext/Test
+	/tset/Xlib14/mbtext/mbtext
 	"VSW5TESTSUITE CASE XmbTextListToTextProperty 1"
-	/tset/Xlib14/mbtlttp/Test
+	/tset/Xlib14/mbtlttp/mbtlttp
 	"VSW5TESTSUITE CASE XmbTextPerCharExtents 1"
-	/tset/Xlib14/mbtpcex/Test
+	/tset/Xlib14/mbtpcex/mbtpcex
 	"VSW5TESTSUITE CASE XmbTextPropertyToTextList 1"
-	/tset/Xlib14/mbtpttl/Test
+	/tset/Xlib14/mbtpttl/mbtpttl
 	"VSW5TESTSUITE CASE XOpenIM 1"
-	/tset/Xlib14/openim/Test
+	/tset/Xlib14/openim/openim
 	"VSW5TESTSUITE CASE XSetICFocus 1"
-	/tset/Xlib14/sicfoc/Test
+	/tset/Xlib14/sicfoc/sicfoc
 	"VSW5TESTSUITE CASE XSetICValues 4"
-	/tset/Xlib14/sicvals/Test
+	/tset/Xlib14/sicvals/sicvals
 	"VSW5TESTSUITE CASE XSupportsLocale 1"
-	/tset/Xlib14/slocale/Test
+	/tset/Xlib14/slocale/slocale
 	"VSW5TESTSUITE CASE XSetLocaleModifiers 1"
-	/tset/Xlib14/stlmod/Test
+	/tset/Xlib14/stlmod/stlmod
 	"VSW5TESTSUITE CASE XUnsetICFocus 1"
-	/tset/Xlib14/uicfoc/Test
+	/tset/Xlib14/uicfoc/uicfoc
 	"VSW5TESTSUITE CASE XVaCreateNestedList 4"
-	/tset/Xlib14/vcnlist/Test
+	/tset/Xlib14/vcnlist/vcnlist
 	"VSW5TESTSUITE CASE XwcDrawImageString 1"
-	/tset/Xlib14/wcdistr/Test
+	/tset/Xlib14/wcdistr/wcdistr
 	"VSW5TESTSUITE CASE XwcDrawString 1"
-	/tset/Xlib14/wcdstr/Test
+	/tset/Xlib14/wcdstr/wcdstr
 	"VSW5TESTSUITE CASE XwcDrawText 1"
-	/tset/Xlib14/wcdtext/Test
+	/tset/Xlib14/wcdtext/wcdtext
 	"VSW5TESTSUITE CASE XwcFreeStringList 1"
-	/tset/Xlib14/wcfstli/Test
+	/tset/Xlib14/wcfstli/wcfstli
 	"VSW5TESTSUITE CASE XwcLookupString 3"
-	/tset/Xlib14/wclustr/Test
+	/tset/Xlib14/wclustr/wclustr
 	"VSW5TESTSUITE CASE XwcResetIC 1"
-	/tset/Xlib14/wcreic/Test
+	/tset/Xlib14/wcreic/wcreic
 	"VSW5TESTSUITE CASE XwcTextEscapement 1"
-	/tset/Xlib14/wctesc/Test
+	/tset/Xlib14/wctesc/wctesc
 	"VSW5TESTSUITE CASE XwcTextListToTextProperty 1"
-	/tset/Xlib14/wctlttp/Test
+	/tset/Xlib14/wctlttp/wctlttp
 	"VSW5TESTSUITE CASE XwcTextPerCharExtents 1"
-	/tset/Xlib14/wctpcex/Test
+	/tset/Xlib14/wctpcex/wctpcex
 	"VSW5TESTSUITE CASE XwcTextPropertyToTextList 1"
-	/tset/Xlib14/wctpttl/Test
+	/tset/Xlib14/wctpttl/wctpttl
 	"VSW5TESTSUITE CASE XwcTextExtents 1"
-	/tset/Xlib14/wctxtex/Test
+	/tset/Xlib14/wctxtex/wctxtex

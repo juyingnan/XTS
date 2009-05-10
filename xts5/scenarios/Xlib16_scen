@@ -62,62 +62,62 @@
 #
 
 	"VSW5TESTSUITE CASE XrmDestroyDatabase 3"
-	/tset/Xlib16/rmdstrydtb/Test
+	/tset/Xlib16/rmdstrydtb/rmdstrydtb
 	"VSW5TESTSUITE CASE XrmGetFileDatabase 3"
-	/tset/Xlib16/rmgtfldtbs/Test
+	/tset/Xlib16/rmgtfldtbs/rmgtfldtbs
 	"VSW5TESTSUITE CASE XrmGetResource 2"
-	/tset/Xlib16/rmgtrsrc/Test
+	/tset/Xlib16/rmgtrsrc/rmgtrsrc
 	"VSW5TESTSUITE CASE XrmGetStringDatabase 2"
-	/tset/Xlib16/rmgtstrdtb/Test
+	/tset/Xlib16/rmgtstrdtb/rmgtstrdtb
 	"VSW5TESTSUITE CASE XrmInitialize 1"
-	/tset/Xlib16/rmintlz/Test
+	/tset/Xlib16/rmintlz/rmintlz
 	"VSW5TESTSUITE CASE XrmMergeDatabases 6"
-	/tset/Xlib16/rmmrgdtbss/Test
+	/tset/Xlib16/rmmrgdtbss/rmmrgdtbss
 	"VSW5TESTSUITE CASE XrmParseCommand 12"
-	/tset/Xlib16/rmprscmmnd/Test
+	/tset/Xlib16/rmprscmmnd/rmprscmmnd
 	"VSW5TESTSUITE CASE XrmPutFileDatabase 3"
-	/tset/Xlib16/rmptfldtbs/Test
+	/tset/Xlib16/rmptfldtbs/rmptfldtbs
 	"VSW5TESTSUITE CASE XrmPutLineResource 9"
-	/tset/Xlib16/rmptlnrsrc/Test
+	/tset/Xlib16/rmptlnrsrc/rmptlnrsrc
 	"VSW5TESTSUITE CASE XrmPutResource 4"
-	/tset/Xlib16/rmptrsrc/Test
+	/tset/Xlib16/rmptrsrc/rmptrsrc
 	"VSW5TESTSUITE CASE XrmPutStringResource 4"
-	/tset/Xlib16/rmptstrrsr/Test
+	/tset/Xlib16/rmptstrrsr/rmptstrrsr
 	"VSW5TESTSUITE CASE XrmQGetResource 2"
-	/tset/Xlib16/rmqgtrsrc/Test
+	/tset/Xlib16/rmqgtrsrc/rmqgtrsrc
 	"VSW5TESTSUITE CASE XrmQGetSearchList 4"
-	/tset/Xlib16/rmqgtsrchl/Test
+	/tset/Xlib16/rmqgtsrchl/rmqgtsrchl
 	"VSW5TESTSUITE CASE XrmQGetSearchResource 2"
-	/tset/Xlib16/rmqgtsrchr/Test
+	/tset/Xlib16/rmqgtsrchr/rmqgtsrchr
 	"VSW5TESTSUITE CASE XrmQPutResource 3"
-	/tset/Xlib16/rmqptrsrc/Test
+	/tset/Xlib16/rmqptrsrc/rmqptrsrc
 	"VSW5TESTSUITE CASE XrmQPutStringResource 3"
-	/tset/Xlib16/rmqptstrrs/Test
+	/tset/Xlib16/rmqptstrrs/rmqptstrrs
 	"VSW5TESTSUITE CASE XrmQuarkToString 3"
-	/tset/Xlib16/rmqrktstr/Test
+	/tset/Xlib16/rmqrktstr/rmqrktstr
 	"VSW5TESTSUITE CASE XrmStringToBindingQuarkList 6"
-	/tset/Xlib16/rmstrtbndn/Test
+	/tset/Xlib16/rmstrtbndn/rmstrtbndn
 	"VSW5TESTSUITE CASE XrmStringToQuark 3"
-	/tset/Xlib16/rmstrtqrk/Test
+	/tset/Xlib16/rmstrtqrk/rmstrtqrk
 	"VSW5TESTSUITE CASE XrmStringToQuarkList 3"
-	/tset/Xlib16/rmstrtqrkl/Test
+	/tset/Xlib16/rmstrtqrkl/rmstrtqrkl
 	"VSW5TESTSUITE CASE XrmUniqueQuark 1"
-	/tset/Xlib16/rmunqqrk/Test
+	/tset/Xlib16/rmunqqrk/rmunqqrk
 	"VSW5TESTSUITE CASE XResourceManagerString 2"
-	/tset/Xlib16/rsrcmngrst/Test
+	/tset/Xlib16/rsrcmngrst/rsrcmngrst
 	"VSW5TESTSUITE CASE XrmCombineDatabase 6"
-	/tset/Xlib16/rmcomdt/Test
+	/tset/Xlib16/rmcomdt/rmcomdt
 	"VSW5TESTSUITE CASE XrmCombineFileDatabase 6"
-	/tset/Xlib16/rmcomfdt/Test
+	/tset/Xlib16/rmcomfdt/rmcomfdt
 	"VSW5TESTSUITE CASE XrmEnumerateDatabase 3"
-	/tset/Xlib16/rmedata/Test
+	/tset/Xlib16/rmedata/rmedata
 	"VSW5TESTSUITE CASE XrmGetDatabase 2"
-	/tset/Xlib16/rmgtdb/Test
+	/tset/Xlib16/rmgtdb/rmgtdb
 	"VSW5TESTSUITE CASE XrmLocaleOfDatabase 1"
-	/tset/Xlib16/rmloofdt/Test
+	/tset/Xlib16/rmloofdt/rmloofdt
 	"VSW5TESTSUITE CASE XrmPermStringToQuark 2"
-	/tset/Xlib16/rmpstoq/Test
+	/tset/Xlib16/rmpstoq/rmpstoq
 	"VSW5TESTSUITE CASE XrmSetDatabase 2"
-	/tset/Xlib16/rmstdb/Test
+	/tset/Xlib16/rmstdb/rmstdb
 	"VSW5TESTSUITE CASE XScreenResourceString 2"
-	/tset/Xlib16/scrrs/Test
+	/tset/Xlib16/scrrs/scrrs

@@ -59,60 +59,60 @@
 #
 
 	"VSW5TESTSUITE CASE XtGetErrorDatabase 1"
-	/tset/XtC/tgterrdbs/Test
+	/tset/XtC/tgterrdbs/tgterrdbs
 	"VSW5TESTSUITE CASE XtGetErrorDatabaseText 2"
-	/tset/XtC/tgterrdbt/Test
+	/tset/XtC/tgterrdbt/tgterrdbt
 	"VSW5TESTSUITE CASE XtInitialize 27"
-	/tset/XtC/tinitlize/Test
+	/tset/XtC/tinitlize/tinitlize
 	"VSW5TESTSUITE CASE XtMainLoop 28"
-	/tset/XtC/tmainloop/Test
+	/tset/XtC/tmainloop/tmainloop
 	"VSW5TESTSUITE CASE XtNextEvent 4"
-	/tset/XtC/tnxtevnt/Test
+	/tset/XtC/tnxtevnt/tnxtevnt
 	"VSW5TESTSUITE CASE XtProcessEvent 12"
-	/tset/XtC/tprocevnt/Test
+	/tset/XtC/tprocevnt/tprocevnt
 	"VSW5TESTSUITE CASE XtPeekEvent 3"
-	/tset/XtC/tpeekevnt/Test
+	/tset/XtC/tpeekevnt/tpeekevnt
 	"VSW5TESTSUITE CASE XtPending 2"
-	/tset/XtC/tpending/Test
+	/tset/XtC/tpending/tpending
 	"VSW5TESTSUITE CASE XtAddInput 5"
-	/tset/XtC/taddinput/Test
+	/tset/XtC/taddinput/taddinput
 	"VSW5TESTSUITE CASE XtAddTimeOut 2"
-	/tset/XtC/taddtmout/Test
+	/tset/XtC/taddtmout/taddtmout
 	"VSW5TESTSUITE CASE XtAddWorkProc 5"
-	/tset/XtC/tadwkproc/Test
+	/tset/XtC/tadwkproc/tadwkproc
 	"VSW5TESTSUITE CASE XtCreateApplicationShell 7"
-	/tset/XtC/tcrappshl/Test
+	/tset/XtC/tcrappshl/tcrappshl
 	"VSW5TESTSUITE CASE XtStringConversionWarning 1"
-	/tset/XtC/tstconwg/Test
+	/tset/XtC/tstconwg/tstconwg
 	"VSW5TESTSUITE CASE XtAddConverter 10"
-	/tset/XtC/tadconvtr/Test
+	/tset/XtC/tadconvtr/tadconvtr
 	"VSW5TESTSUITE CASE XtAppAddConverter 10"
-	/tset/XtC/tapadconv/Test
+	/tset/XtC/tapadconv/tapadconv
 	"VSW5TESTSUITE CASE XtConvert 1"
-	/tset/XtC/tconvert/Test
+	/tset/XtC/tconvert/tconvert
 	"VSW5TESTSUITE CASE XtDirectConvert 3"
-	/tset/XtC/tdircnvrt/Test
+	/tset/XtC/tdircnvrt/tdircnvrt
 	"VSW5TESTSUITE CASE XtDestroyGC 2"
-	/tset/XtC/tdestygc/Test
+	/tset/XtC/tdestygc/tdestygc
 	"VSW5TESTSUITE CASE XtAddActions 3"
-	/tset/XtC/tadaction/Test
+	/tset/XtC/tadaction/tadaction
 	"VSW5TESTSUITE CASE XtSetSelectionTimeout 1"
-	/tset/XtC/tststmout/Test
+	/tset/XtC/tststmout/tststmout
 	"VSW5TESTSUITE CASE XtGetSelectionTimeout 2"
-	/tset/XtC/tgtstmout/Test
+	/tset/XtC/tgtstmout/tgtstmout
 	"VSW5TESTSUITE CASE XtSetErrorMsgHandler 1"
-	/tset/XtC/tsterrmhd/Test
+	/tset/XtC/tsterrmhd/tsterrmhd
 	"VSW5TESTSUITE CASE XtErrorMsg 3"
-	/tset/XtC/terrormsg/Test
+	/tset/XtC/terrormsg/terrormsg
 	"VSW5TESTSUITE CASE XtSetWarningHandler 1"
-	/tset/XtC/tstwhndlr/Test
+	/tset/XtC/tstwhndlr/tstwhndlr
 	"VSW5TESTSUITE CASE XtSetWarningMsgHandler 1"
-	/tset/XtC/tstwmsghr/Test
+	/tset/XtC/tstwmsghr/tstwmsghr
 	"VSW5TESTSUITE CASE XtWarning 3"
-	/tset/XtC/twarning/Test
+	/tset/XtC/twarning/twarning
 	"VSW5TESTSUITE CASE XtWarningMsg 3"
-	/tset/XtC/twarngmsg/Test
+	/tset/XtC/twarngmsg/twarngmsg
 	"VSW5TESTSUITE CASE XtSetErrorHandler 1"
-	/tset/XtC/tsterrhnd/Test
+	/tset/XtC/tsterrhnd/tsterrhnd
 	"VSW5TESTSUITE CASE XtError 3"
-	/tset/XtC/terror/Test
+	/tset/XtC/terror/terror

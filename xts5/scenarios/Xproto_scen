@@ -58,244 +58,244 @@
 	"VSW5TESTSUITE CASE AllocColor 3"
 	/tset/Xproto/allcclr/allcclr
 	"VSW5TESTSUITE CASE AllocColorCells 3"
-	/tset/Xproto/allcclrcll/Test
+	/tset/Xproto/allcclrcll/allcclrcll
 	"VSW5TESTSUITE CASE AllocColorPlanes 3"
-	/tset/Xproto/allcclrpln/Test
+	/tset/Xproto/allcclrpln/allcclrpln
 	"VSW5TESTSUITE CASE AllocNamedColor 3"
-	/tset/Xproto/allcnmdclr/Test
+	/tset/Xproto/allcnmdclr/allcnmdclr
 	"VSW5TESTSUITE CASE AllowEvents 3"
-	/tset/Xproto/allwevnts/Test
+	/tset/Xproto/allwevnts/allwevnts
 	"VSW5TESTSUITE CASE BadRequest 1"
-	/tset/Xproto/bdrqst/Test
+	/tset/Xproto/bdrqst/bdrqst
 	"VSW5TESTSUITE CASE Bell 3"
-	/tset/Xproto/bll/Test
+	/tset/Xproto/bll/bll
 	"VSW5TESTSUITE CASE ChangeActivePointerGrab 3"
-	/tset/Xproto/chngactvpn/Test
+	/tset/Xproto/chngactvpn/chngactvpn
 	"VSW5TESTSUITE CASE ChangeGC 4"
-	/tset/Xproto/chnggc/Test
+	/tset/Xproto/chnggc/chnggc
 	"VSW5TESTSUITE CASE ChangeHosts 3"
-	/tset/Xproto/chnghsts/Test
+	/tset/Xproto/chnghsts/chnghsts
 	"VSW5TESTSUITE CASE ChangeKeyboardControl 4"
-	/tset/Xproto/chngkybrdc/Test
+	/tset/Xproto/chngkybrdc/chngkybrdc
 	"VSW5TESTSUITE CASE ChangeKeyboardMapping 3"
-	/tset/Xproto/chngkybrdm/Test
+	/tset/Xproto/chngkybrdm/chngkybrdm
 	"VSW5TESTSUITE CASE ChangePointerControl 3"
-	/tset/Xproto/chngpntrcn/Test
+	/tset/Xproto/chngpntrcn/chngpntrcn
 	"VSW5TESTSUITE CASE ChangeProperty 3"
-	/tset/Xproto/chngprprty/Test
+	/tset/Xproto/chngprprty/chngprprty
 	"VSW5TESTSUITE CASE ChangeSaveSet 3"
-	/tset/Xproto/chngsvst/Test
+	/tset/Xproto/chngsvst/chngsvst
 	"VSW5TESTSUITE CASE ChangeWindowAttributes 4"
-	/tset/Xproto/chngwdwatt/Test
+	/tset/Xproto/chngwdwatt/chngwdwatt
 	"VSW5TESTSUITE CASE ClearArea 3"
-	/tset/Xproto/clrar/Test
+	/tset/Xproto/clrar/clrar
 	"VSW5TESTSUITE CASE CloseFont 3"
-	/tset/Xproto/clsfnt/Test
+	/tset/Xproto/clsfnt/clsfnt
 	"VSW5TESTSUITE CASE ConfigureWindow 4"
-	/tset/Xproto/cnfgrwdw/Test
+	/tset/Xproto/cnfgrwdw/cnfgrwdw
 	"VSW5TESTSUITE CASE ConvertSelection 3"
-	/tset/Xproto/cnvrtslctn/Test
+	/tset/Xproto/cnvrtslctn/cnvrtslctn
 	"VSW5TESTSUITE CASE CopyArea 3"
-	/tset/Xproto/cpyar/Test
+	/tset/Xproto/cpyar/cpyar
 	"VSW5TESTSUITE CASE CopyColormapAndFree 5"
-	/tset/Xproto/cpyclrmpan/Test
+	/tset/Xproto/cpyclrmpan/cpyclrmpan
 	"VSW5TESTSUITE CASE CopyGC 4"
-	/tset/Xproto/cpygc/Test
+	/tset/Xproto/cpygc/cpygc
 	"VSW5TESTSUITE CASE CopyPlane 3"
-	/tset/Xproto/cpypln/Test
+	/tset/Xproto/cpypln/cpypln
 	"VSW5TESTSUITE CASE CirculateWindow 3"
-	/tset/Xproto/crcltwdw/Test
+	/tset/Xproto/crcltwdw/crcltwdw
 	"VSW5TESTSUITE CASE CreateColormap 5"
-	/tset/Xproto/crtclrmp/Test
+	/tset/Xproto/crtclrmp/crtclrmp
 	"VSW5TESTSUITE CASE CreateCursor 5"
-	/tset/Xproto/crtcrsr/Test
+	/tset/Xproto/crtcrsr/crtcrsr
 	"VSW5TESTSUITE CASE CreateGC 6"
-	/tset/Xproto/crtgc/Test
+	/tset/Xproto/crtgc/crtgc
 	"VSW5TESTSUITE CASE CreateGlyphCursor 5"
-	/tset/Xproto/crtglyphcr/Test
+	/tset/Xproto/crtglyphcr/crtglyphcr
 	"VSW5TESTSUITE CASE CreatePixmap 5"
-	/tset/Xproto/crtpxmp/Test
+	/tset/Xproto/crtpxmp/crtpxmp
 	"VSW5TESTSUITE CASE CreateWindow 6"
-	/tset/Xproto/crtwdw/Test
+	/tset/Xproto/crtwdw/crtwdw
 	"VSW5TESTSUITE CASE DeleteProperty 3"
-	/tset/Xproto/dltprprty/Test
+	/tset/Xproto/dltprprty/dltprprty
 	"VSW5TESTSUITE CASE DestroySubwindows 3"
-	/tset/Xproto/dstrysbws/Test
+	/tset/Xproto/dstrysbws/dstrysbws
 	"VSW5TESTSUITE CASE DestroyWindow 3"
-	/tset/Xproto/dstrywdw/Test
+	/tset/Xproto/dstrywdw/dstrywdw
 	"VSW5TESTSUITE CASE FillPoly 3"
-	/tset/Xproto/fllply/Test
+	/tset/Xproto/fllply/fllply
 	"VSW5TESTSUITE CASE FreeColormap 3"
-	/tset/Xproto/frclrmp/Test
+	/tset/Xproto/frclrmp/frclrmp
 	"VSW5TESTSUITE CASE FreeColors 3"
-	/tset/Xproto/frclrs/Test
+	/tset/Xproto/frclrs/frclrs
 	"VSW5TESTSUITE CASE FreeCursor 3"
-	/tset/Xproto/frcrsr/Test
+	/tset/Xproto/frcrsr/frcrsr
 	"VSW5TESTSUITE CASE ForceScreenSaver 3"
-	/tset/Xproto/frcscrnsvr/Test
+	/tset/Xproto/frcscrnsvr/frcscrnsvr
 	"VSW5TESTSUITE CASE FreeGC 3"
-	/tset/Xproto/frgc/Test
+	/tset/Xproto/frgc/frgc
 	"VSW5TESTSUITE CASE FreePixmap 3"
-	/tset/Xproto/frpxmp/Test
+	/tset/Xproto/frpxmp/frpxmp
 	"VSW5TESTSUITE CASE GrabButton 3"
-	/tset/Xproto/grbbttn/Test
+	/tset/Xproto/grbbttn/grbbttn
 	"VSW5TESTSUITE CASE GrabKey 3"
-	/tset/Xproto/grbky/Test
+	/tset/Xproto/grbky/grbky
 	"VSW5TESTSUITE CASE GrabKeyboard 3"
-	/tset/Xproto/grbkybrd/Test
+	/tset/Xproto/grbkybrd/grbkybrd
 	"VSW5TESTSUITE CASE GrabPointer 3"
-	/tset/Xproto/grbpntr/Test
+	/tset/Xproto/grbpntr/grbpntr
 	"VSW5TESTSUITE CASE GrabServer 3"
-	/tset/Xproto/grbsrvr/Test
+	/tset/Xproto/grbsrvr/grbsrvr
 	"VSW5TESTSUITE CASE GetAtomName 3"
-	/tset/Xproto/gtatmnm/Test
+	/tset/Xproto/gtatmnm/gtatmnm
 	"VSW5TESTSUITE CASE GetFontPath 3"
-	/tset/Xproto/gtfntpth/Test
+	/tset/Xproto/gtfntpth/gtfntpth
 	"VSW5TESTSUITE CASE GetGeometry 3"
-	/tset/Xproto/gtgmtry/Test
+	/tset/Xproto/gtgmtry/gtgmtry
 	"VSW5TESTSUITE CASE GetImage 3"
-	/tset/Xproto/gtimg/Test
+	/tset/Xproto/gtimg/gtimg
 	"VSW5TESTSUITE CASE GetInputFocus 3"
-	/tset/Xproto/gtinptfcs/Test
+	/tset/Xproto/gtinptfcs/gtinptfcs
 	"VSW5TESTSUITE CASE GetKeyboardControl 3"
-	/tset/Xproto/gtkybrdcnt/Test
+	/tset/Xproto/gtkybrdcnt/gtkybrdcnt
 	"VSW5TESTSUITE CASE GetKeyboardMapping 3"
-	/tset/Xproto/gtkybrdmpp/Test
+	/tset/Xproto/gtkybrdmpp/gtkybrdmpp
 	"VSW5TESTSUITE CASE GetModifierMapping 3"
-	/tset/Xproto/gtmdfrmppn/Test
+	/tset/Xproto/gtmdfrmppn/gtmdfrmppn
 	"VSW5TESTSUITE CASE GetMotionEvents 3"
-	/tset/Xproto/gtmtnevnts/Test
+	/tset/Xproto/gtmtnevnts/gtmtnevnts
 	"VSW5TESTSUITE CASE GetPointerControl 3"
-	/tset/Xproto/gtpntrcntr/Test
+	/tset/Xproto/gtpntrcntr/gtpntrcntr
 	"VSW5TESTSUITE CASE GetPointerMapping 3"
-	/tset/Xproto/gtpntrmppn/Test
+	/tset/Xproto/gtpntrmppn/gtpntrmppn
 	"VSW5TESTSUITE CASE GetProperty 3"
-	/tset/Xproto/gtprprty/Test
+	/tset/Xproto/gtprprty/gtprprty
 	"VSW5TESTSUITE CASE GetScreenSaver 3"
-	/tset/Xproto/gtscrnsvr/Test
+	/tset/Xproto/gtscrnsvr/gtscrnsvr
 	"VSW5TESTSUITE CASE GetSelectionOwner 3"
-	/tset/Xproto/gtslctnown/Test
+	/tset/Xproto/gtslctnown/gtslctnown
 	"VSW5TESTSUITE CASE GetWindowAttributes 3"
-	/tset/Xproto/gtwdwattrb/Test
+	/tset/Xproto/gtwdwattrb/gtwdwattrb
 	"VSW5TESTSUITE CASE ImageText16 3"
-	/tset/Xproto/imgtxt16/Test
+	/tset/Xproto/imgtxt16/imgtxt16
 	"VSW5TESTSUITE CASE ImageText8 3"
-	/tset/Xproto/imgtxt8/Test
+	/tset/Xproto/imgtxt8/imgtxt8
 	"VSW5TESTSUITE CASE InstallColormap 3"
-	/tset/Xproto/instllclrm/Test
+	/tset/Xproto/instllclrm/instllclrm
 	"VSW5TESTSUITE CASE InternAtom 3"
-	/tset/Xproto/intrnatm/Test
+	/tset/Xproto/intrnatm/intrnatm
 	"VSW5TESTSUITE CASE KillClient 3"
-	/tset/Xproto/kllclnt/Test
+	/tset/Xproto/kllclnt/kllclnt
 	"VSW5TESTSUITE CASE LookupColor 3"
-	/tset/Xproto/lkpclr/Test
+	/tset/Xproto/lkpclr/lkpclr
 	"VSW5TESTSUITE CASE ListExtensions 3"
-	/tset/Xproto/lstextnsns/Test
+	/tset/Xproto/lstextnsns/lstextnsns
 	"VSW5TESTSUITE CASE ListFonts 3"
-	/tset/Xproto/lstfnts/Test
+	/tset/Xproto/lstfnts/lstfnts
 	"VSW5TESTSUITE CASE ListFontsWithInfo 3"
-	/tset/Xproto/lstfntswth/Test
+	/tset/Xproto/lstfntswth/lstfntswth
 	"VSW5TESTSUITE CASE ListHosts 3"
-	/tset/Xproto/lsthsts/Test
+	/tset/Xproto/lsthsts/lsthsts
 	"VSW5TESTSUITE CASE ListInstalledColormaps 3"
-	/tset/Xproto/lstinstlld/Test
+	/tset/Xproto/lstinstlld/lstinstlld
 	"VSW5TESTSUITE CASE ListProperties 3"
-	/tset/Xproto/lstprprts/Test
+	/tset/Xproto/lstprprts/lstprprts
 	"VSW5TESTSUITE CASE MapSubwindows 3"
-	/tset/Xproto/mpsbws/Test
+	/tset/Xproto/mpsbws/mpsbws
 	"VSW5TESTSUITE CASE MapWindow 3"
-	/tset/Xproto/mpwdw/Test
+	/tset/Xproto/mpwdw/mpwdw
 	"VSW5TESTSUITE CASE NoOperation 4"
-	/tset/Xproto/noprtn/Test
+	/tset/Xproto/noprtn/noprtn
 	"VSW5TESTSUITE CASE OpenDisplay 2"
-	/tset/Xproto/opndsply/Test
+	/tset/Xproto/opndsply/opndsply
 	"VSW5TESTSUITE CASE OpenFont 5"
-	/tset/Xproto/opnfnt/Test
+	/tset/Xproto/opnfnt/opnfnt
 	"VSW5TESTSUITE CASE PolyArc 3"
-	/tset/Xproto/plyarc/Test
+	/tset/Xproto/plyarc/plyarc
 	"VSW5TESTSUITE CASE PolyFillArc 3"
-	/tset/Xproto/plyfllarc/Test
+	/tset/Xproto/plyfllarc/plyfllarc
 	"VSW5TESTSUITE CASE PolyFillRectangle 3"
-	/tset/Xproto/plyfllrctn/Test
+	/tset/Xproto/plyfllrctn/plyfllrctn
 	"VSW5TESTSUITE CASE PolyLine 3"
-	/tset/Xproto/plyln/Test
+	/tset/Xproto/plyln/plyln
 	"VSW5TESTSUITE CASE PolyPoint 3"
-	/tset/Xproto/plypnt/Test
+	/tset/Xproto/plypnt/plypnt
 	"VSW5TESTSUITE CASE PolyRectangle 3"
-	/tset/Xproto/plyrctngl/Test
+	/tset/Xproto/plyrctngl/plyrctngl
 	"VSW5TESTSUITE CASE PolySegment 3"
-	/tset/Xproto/plysgmnt/Test
+	/tset/Xproto/plysgmnt/plysgmnt
 	"VSW5TESTSUITE CASE PolyText16 3"
-	/tset/Xproto/plytxt16/Test
+	/tset/Xproto/plytxt16/plytxt16
 	"VSW5TESTSUITE CASE PolyText8 3"
-	/tset/Xproto/plytxt8/Test
+	/tset/Xproto/plytxt8/plytxt8
 	"VSW5TESTSUITE CASE PutImage 3"
-	/tset/Xproto/ptimg/Test
+	/tset/Xproto/ptimg/ptimg
 	"VSW5TESTSUITE CASE QueryBestSize 3"
-	/tset/Xproto/qrybstsz/Test
+	/tset/Xproto/qrybstsz/qrybstsz
 	"VSW5TESTSUITE CASE QueryColors 3"
-	/tset/Xproto/qryclrs/Test
+	/tset/Xproto/qryclrs/qryclrs
 	"VSW5TESTSUITE CASE QueryExtension 3"
-	/tset/Xproto/qryextnsn/Test
+	/tset/Xproto/qryextnsn/qryextnsn
 	"VSW5TESTSUITE CASE QueryFont 3"
-	/tset/Xproto/qryfnt/Test
+	/tset/Xproto/qryfnt/qryfnt
 	"VSW5TESTSUITE CASE QueryKeymap 3"
-	/tset/Xproto/qrykymp/Test
+	/tset/Xproto/qrykymp/qrykymp
 	"VSW5TESTSUITE CASE QueryPointer 3"
-	/tset/Xproto/qrypntr/Test
+	/tset/Xproto/qrypntr/qrypntr
 	"VSW5TESTSUITE CASE QueryTree 3"
-	/tset/Xproto/qrytr/Test
+	/tset/Xproto/qrytr/qrytr
 	"VSW5TESTSUITE CASE QueryTextExtents 3"
-	/tset/Xproto/qrytxtextn/Test
+	/tset/Xproto/qrytxtextn/qrytxtextn
 	"VSW5TESTSUITE CASE RecolorCursor 3"
-	/tset/Xproto/rclrcrsr/Test
+	/tset/Xproto/rclrcrsr/rclrcrsr
 	"VSW5TESTSUITE CASE ReparentWindow 3"
-	/tset/Xproto/rprntwdw/Test
+	/tset/Xproto/rprntwdw/rprntwdw
 	"VSW5TESTSUITE CASE RotateProperties 3"
-	/tset/Xproto/rttprprts/Test
+	/tset/Xproto/rttprprts/rttprprts
 	"VSW5TESTSUITE CASE SendEvent 3"
-	/tset/Xproto/sndevnt/Test
+	/tset/Xproto/sndevnt/sndevnt
 	"VSW5TESTSUITE CASE SetAccessControl 3"
-	/tset/Xproto/staccsscnt/Test
+	/tset/Xproto/staccsscnt/staccsscnt
 	"VSW5TESTSUITE CASE SetClipRectangles 3"
-	/tset/Xproto/stclprctng/Test
+	/tset/Xproto/stclprctng/stclprctng
 	"VSW5TESTSUITE CASE SetCloseDownMode 3"
-	/tset/Xproto/stclsdwnmd/Test
+	/tset/Xproto/stclsdwnmd/stclsdwnmd
 	"VSW5TESTSUITE CASE SetDashes 3"
-	/tset/Xproto/stdshs/Test
+	/tset/Xproto/stdshs/stdshs
 	"VSW5TESTSUITE CASE SetFontPath 3"
-	/tset/Xproto/stfntpth/Test
+	/tset/Xproto/stfntpth/stfntpth
 	"VSW5TESTSUITE CASE SetInputFocus 3"
-	/tset/Xproto/stinptfcs/Test
+	/tset/Xproto/stinptfcs/stinptfcs
 	"VSW5TESTSUITE CASE SetModifierMapping 3"
-	/tset/Xproto/stmdfrmppn/Test
+	/tset/Xproto/stmdfrmppn/stmdfrmppn
 	"VSW5TESTSUITE CASE SetPointerMapping 3"
-	/tset/Xproto/stpntrmppn/Test
+	/tset/Xproto/stpntrmppn/stpntrmppn
 	"VSW5TESTSUITE CASE StoreColors 4"
-	/tset/Xproto/strclrs/Test
+	/tset/Xproto/strclrs/strclrs
 	"VSW5TESTSUITE CASE StoreNamedColor 4"
-	/tset/Xproto/strnmdclr/Test
+	/tset/Xproto/strnmdclr/strnmdclr
 	"VSW5TESTSUITE CASE SetScreenSaver 3"
-	/tset/Xproto/stscrnsvr/Test
+	/tset/Xproto/stscrnsvr/stscrnsvr
 	"VSW5TESTSUITE CASE SetSelectionOwner 3"
-	/tset/Xproto/stslctnown/Test
+	/tset/Xproto/stslctnown/stslctnown
 	"VSW5TESTSUITE CASE TranslateCoords 3"
-	/tset/Xproto/trnsltcrds/Test
+	/tset/Xproto/trnsltcrds/trnsltcrds
 	"VSW5TESTSUITE CASE UngrabButton 3"
-	/tset/Xproto/ungrbbttn/Test
+	/tset/Xproto/ungrbbttn/ungrbbttn
 	"VSW5TESTSUITE CASE UngrabKey 3"
-	/tset/Xproto/ungrbky/Test
+	/tset/Xproto/ungrbky/ungrbky
 	"VSW5TESTSUITE CASE UngrabKeyboard 3"
-	/tset/Xproto/ungrbkybrd/Test
+	/tset/Xproto/ungrbkybrd/ungrbkybrd
 	"VSW5TESTSUITE CASE UngrabPointer 3"
-	/tset/Xproto/ungrbpntr/Test
+	/tset/Xproto/ungrbpntr/ungrbpntr
 	"VSW5TESTSUITE CASE UngrabServer 3"
-	/tset/Xproto/ungrbsrvr/Test
+	/tset/Xproto/ungrbsrvr/ungrbsrvr
 	"VSW5TESTSUITE CASE UnmapSubwindows 3"
-	/tset/Xproto/unmpsbws/Test
+	/tset/Xproto/unmpsbws/unmpsbws
 	"VSW5TESTSUITE CASE UnmapWindow 3"
-	/tset/Xproto/unmpwdw/Test
+	/tset/Xproto/unmpwdw/unmpwdw
 	"VSW5TESTSUITE CASE UninstallColormap 3"
-	/tset/Xproto/unnstllclr/Test
+	/tset/Xproto/unnstllclr/unnstllclr
 	"VSW5TESTSUITE CASE WarpPointer 3"
-	/tset/Xproto/wrppntr/Test
+	/tset/Xproto/wrppntr/wrppntr

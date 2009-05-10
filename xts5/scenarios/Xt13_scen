@@ -59,80 +59,80 @@
 #
 
 	"VSW5TESTSUITE CASE XtNumber 1"
-	/tset/Xt13/tnumber/Test
+	/tset/Xt13/tnumber/tnumber
 	"VSW5TESTSUITE CASE XtNameToWidget 7"
-	/tset/Xt13/tnmtowidg/Test
+	/tset/Xt13/tnmtowidg/tnmtowidg
 	"VSW5TESTSUITE CASE XtMalloc 6"
-	/tset/Xt13/tmalloc/Test
+	/tset/Xt13/tmalloc/tmalloc
 	"VSW5TESTSUITE CASE XtCalloc 6"
-	/tset/Xt13/tcalloc/Test
+	/tset/Xt13/tcalloc/tcalloc
 	"VSW5TESTSUITE CASE XtRealloc 12"
-	/tset/Xt13/trealloc/Test
+	/tset/Xt13/trealloc/trealloc
 	"VSW5TESTSUITE CASE XtFree 4"
-	/tset/Xt13/tfree/Test
+	/tset/Xt13/tfree/tfree
 	"VSW5TESTSUITE CASE XtNew 5"
-	/tset/Xt13/tnew/Test
+	/tset/Xt13/tnew/tnew
 	"VSW5TESTSUITE CASE XtNewString 5"
-	/tset/Xt13/tnewstrg/Test
+	/tset/Xt13/tnewstrg/tnewstrg
 	"VSW5TESTSUITE CASE XtAllocateGC 9"
-	/tset/Xt13/tallocgc/Test
+	/tset/Xt13/tallocgc/tallocgc
 	"VSW5TESTSUITE CASE XtGetGC 4"
-	/tset/Xt13/tgtgc/Test
+	/tset/Xt13/tgtgc/tgtgc
 	"VSW5TESTSUITE CASE XtReleaseGC 2"
-	/tset/Xt13/trelasegc/Test
+	/tset/Xt13/trelasegc/trelasegc
 	"VSW5TESTSUITE CASE XtAppSetSelectionTimeout 1"
-	/tset/Xt13/tapststmo/Test
+	/tset/Xt13/tapststmo/tapststmo
 	"VSW5TESTSUITE CASE XtAppGetSelectionTimeout 2"
-	/tset/Xt13/tapgtstot/Test
+	/tset/Xt13/tapgtstot/tapgtstot
 	"VSW5TESTSUITE CASE XtGetSelectionRequest 3"
-	/tset/Xt13/tgtsreque/Test
+	/tset/Xt13/tgtsreque/tgtsreque
 	"VSW5TESTSUITE CASE XtGetSelectionValue 4"
-	/tset/Xt13/tgtsvalue/Test
+	/tset/Xt13/tgtsvalue/tgtsvalue
 	"VSW5TESTSUITE CASE XtGetSelectionValues 5"
-	/tset/Xt13/tgtslvals/Test
+	/tset/Xt13/tgtslvals/tgtslvals
 	"VSW5TESTSUITE CASE XtOwnSelection 8"
-	/tset/Xt13/townselec/Test
+	/tset/Xt13/townselec/townselec
 	"VSW5TESTSUITE CASE XtDisownSelection 5"
-	/tset/Xt13/tdisownsl/Test
+	/tset/Xt13/tdisownsl/tdisownsl
 	"VSW5TESTSUITE CASE XtGetSelectionValueIncremental 6"
-	/tset/Xt13/tgtsvainc/Test
+	/tset/Xt13/tgtsvainc/tgtsvainc
 	"VSW5TESTSUITE CASE XtGetSelectionValuesIncremental 7"
-	/tset/Xt13/tgtslvali/Test
+	/tset/Xt13/tgtslvali/tgtslvali
 	"VSW5TESTSUITE CASE XtOwnSelectionIncremental 10"
-	/tset/Xt13/townselin/Test
+	/tset/Xt13/townselin/townselin
 	"VSW5TESTSUITE CASE XtLastTimestampProcessed 2"
-	/tset/Xt13/tltmsproc/Test
+	/tset/Xt13/tltmsproc/tltmsproc
 	"VSW5TESTSUITE CASE XtAddExposureToRegion 3"
-	/tset/Xt13/tadexptor/Test
+	/tset/Xt13/tadexptor/tadexptor
 	"VSW5TESTSUITE CASE XtTranslateCoords 1"
-	/tset/Xt13/ttranslcd/Test
+	/tset/Xt13/ttranslcd/ttranslcd
 	"VSW5TESTSUITE CASE XtWindowToWidget 2"
-	/tset/Xt13/twindtowd/Test
+	/tset/Xt13/twindtowd/twindtowd
 	"VSW5TESTSUITE CASE XtGetApplicationNameAndClass 3"
-	/tset/Xt13/tgtapnacl/Test
+	/tset/Xt13/tgtapnacl/tgtapnacl
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabase 1"
-	/tset/Xt13/tapgterdb/Test
+	/tset/Xt13/tapgterdb/tapgterdb
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabaseText 4"
-	/tset/Xt13/tapgterdt/Test
+	/tset/Xt13/tapgterdt/tapgterdt
 	"VSW5TESTSUITE CASE XtAppSetErrorMsgHandler 2"
-	/tset/Xt13/tapstermh/Test
+	/tset/Xt13/tapstermh/tapstermh
 	"VSW5TESTSUITE CASE XtAppErrorMsg 3"
-	/tset/Xt13/taperrmsg/Test
+	/tset/Xt13/taperrmsg/taperrmsg
 	"VSW5TESTSUITE CASE XtAppSetWarningMsgHandler 2"
-	/tset/Xt13/tapstwmhr/Test
+	/tset/Xt13/tapstwmhr/tapstwmhr
 	"VSW5TESTSUITE CASE XtAppWarningMsg 3"
-	/tset/Xt13/tapwrnmsg/Test
+	/tset/Xt13/tapwrnmsg/tapwrnmsg
 	"VSW5TESTSUITE CASE XtAppSetErrorHandler 2"
-	/tset/Xt13/tapsterhd/Test
+	/tset/Xt13/tapsterhd/tapsterhd
 	"VSW5TESTSUITE CASE XtAppError 3"
-	/tset/Xt13/taperror/Test
+	/tset/Xt13/taperror/taperror
 	"VSW5TESTSUITE CASE XtAppSetWarningHandler 2"
-	/tset/Xt13/tapstwhdr/Test
+	/tset/Xt13/tapstwhdr/tapstwhdr
 	"VSW5TESTSUITE CASE XtAppWarning 3"
-	/tset/Xt13/tapwrning/Test
+	/tset/Xt13/tapwrning/tapwrning
 	"VSW5TESTSUITE CASE XtSetWMColormapWindows 3"
-	/tset/Xt13/tstwmcmw/Test
+	/tset/Xt13/tstwmcmw/tstwmcmw
 	"VSW5TESTSUITE CASE XtFindFile 7"
-	/tset/Xt13/tfindfile/Test
+	/tset/Xt13/tfindfile/tfindfile
 	"VSW5TESTSUITE CASE XtResolvePathname 20"
-	/tset/Xt13/trspathnm/Test
+	/tset/Xt13/trspathnm/trspathnm

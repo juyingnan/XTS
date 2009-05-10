@@ -56,18 +56,18 @@
 #
 
 	"VSW5TESTSUITE CASE XCreatePixmap 6"
-	/tset/Xlib6/crtpxmp/Test
+	/tset/Xlib6/crtpxmp/crtpxmp
 	"VSW5TESTSUITE CASE XCreateFontCursor 3"
-	/tset/Xlib6/crtfntcrsr/Test
+	/tset/Xlib6/crtfntcrsr/crtfntcrsr
 	"VSW5TESTSUITE CASE XCreateGlyphCursor 17"
-	/tset/Xlib6/crtglyphcr/Test
+	/tset/Xlib6/crtglyphcr/crtglyphcr
 	"VSW5TESTSUITE CASE XCreatePixmapCursor 13"
-	/tset/Xlib6/crtpxmpcrs/Test
+	/tset/Xlib6/crtpxmpcrs/crtpxmpcrs
 	"VSW5TESTSUITE CASE XFreeCursor 3"
-	/tset/Xlib6/frcrsr/Test
+	/tset/Xlib6/frcrsr/frcrsr
 	"VSW5TESTSUITE CASE XFreePixmap 3"
-	/tset/Xlib6/frpxmp/Test
+	/tset/Xlib6/frpxmp/frpxmp
 	"VSW5TESTSUITE CASE XQueryBestCursor 2"
-	/tset/Xlib6/qrybstcrsr/Test
+	/tset/Xlib6/qrybstcrsr/qrybstcrsr
 	"VSW5TESTSUITE CASE XRecolorCursor 3"
-	/tset/Xlib6/rclrcrsr/Test
+	/tset/Xlib6/rclrcrsr/rclrcrsr

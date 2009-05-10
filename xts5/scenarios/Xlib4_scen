@@ -56,60 +56,60 @@
 #
 
 	"VSW5TESTSUITE CASE XChangeWindowAttributes 46"
-	/tset/Xlib4/chngwdwatt/Test
+	/tset/Xlib4/chngwdwatt/chngwdwatt
 	"VSW5TESTSUITE CASE XConfigureWindow 34"
-	/tset/Xlib4/cnfgrwdw/Test
+	/tset/Xlib4/cnfgrwdw/cnfgrwdw
 	"VSW5TESTSUITE CASE XCirculateSubwindows 7"
-	/tset/Xlib4/crcltsbws/Test
+	/tset/Xlib4/crcltsbws/crcltsbws
 	"VSW5TESTSUITE CASE XCirculateSubwindowsDown 5"
-	/tset/Xlib4/crcltsbwsd/Test
+	/tset/Xlib4/crcltsbwsd/crcltsbwsd
 	"VSW5TESTSUITE CASE XCirculateSubwindowsUp 5"
-	/tset/Xlib4/crcltsbwsu/Test
+	/tset/Xlib4/crcltsbwsu/crcltsbwsu
 	"VSW5TESTSUITE CASE XCreateSimpleWindow 12"
-	/tset/Xlib4/crtsmplwdw/Test
+	/tset/Xlib4/crtsmplwdw/crtsmplwdw
 	"VSW5TESTSUITE CASE XCreateWindow 49"
-	/tset/Xlib4/crtwdw/Test
+	/tset/Xlib4/crtwdw/crtwdw
 	"VSW5TESTSUITE CASE XDefineCursor 6"
-	/tset/Xlib4/dfncrsr/Test
+	/tset/Xlib4/dfncrsr/dfncrsr
 	"VSW5TESTSUITE CASE XDestroySubwindows 5"
-	/tset/Xlib4/dstrysbws/Test
+	/tset/Xlib4/dstrysbws/dstrysbws
 	"VSW5TESTSUITE CASE XDestroyWindow 6"
-	/tset/Xlib4/dstrywdw/Test
+	/tset/Xlib4/dstrywdw/dstrywdw
 	"VSW5TESTSUITE CASE XLowerWindow 4"
-	/tset/Xlib4/lwrwdw/Test
+	/tset/Xlib4/lwrwdw/lwrwdw
 	"VSW5TESTSUITE CASE XMapRaised 15"
-	/tset/Xlib4/mprsd/Test
+	/tset/Xlib4/mprsd/mprsd
 	"VSW5TESTSUITE CASE XMapSubwindows 14"
-	/tset/Xlib4/mpsbws/Test
+	/tset/Xlib4/mpsbws/mpsbws
 	"VSW5TESTSUITE CASE XMapWindow 15"
-	/tset/Xlib4/mpwdw/Test
+	/tset/Xlib4/mpwdw/mpwdw
 	"VSW5TESTSUITE CASE XMoveResizeWindow 15"
-	/tset/Xlib4/mvrszwdw/Test
+	/tset/Xlib4/mvrszwdw/mvrszwdw
 	"VSW5TESTSUITE CASE XMoveWindow 8"
-	/tset/Xlib4/mvwdw/Test
+	/tset/Xlib4/mvwdw/mvwdw
 	"VSW5TESTSUITE CASE XRestackWindows 6"
-	/tset/Xlib4/rstckwdws/Test
+	/tset/Xlib4/rstckwdws/rstckwdws
 	"VSW5TESTSUITE CASE XRaiseWindow 4"
-	/tset/Xlib4/rswdw/Test
+	/tset/Xlib4/rswdw/rswdw
 	"VSW5TESTSUITE CASE XResizeWindow 13"
-	/tset/Xlib4/rszwdw/Test
+	/tset/Xlib4/rszwdw/rszwdw
 	"VSW5TESTSUITE CASE XSetWindowBackground 4"
-	/tset/Xlib4/stwdwbg/Test
+	/tset/Xlib4/stwdwbg/stwdwbg
 	"VSW5TESTSUITE CASE XSetWindowBackgroundPixmap 11"
-	/tset/Xlib4/stwdwbgpxm/Test
+	/tset/Xlib4/stwdwbgpxm/stwdwbgpxm
 	"VSW5TESTSUITE CASE XSetWindowBorder 5"
-	/tset/Xlib4/stwdwbrdr/Test
+	/tset/Xlib4/stwdwbrdr/stwdwbrdr
 	"VSW5TESTSUITE CASE XSetWindowBorderPixmap 9"
-	/tset/Xlib4/stwdwbrdrp/Test
+	/tset/Xlib4/stwdwbrdrp/stwdwbrdrp
 	"VSW5TESTSUITE CASE XSetWindowBorderWidth 7"
-	/tset/Xlib4/stwdwbrdrw/Test
+	/tset/Xlib4/stwdwbrdrw/stwdwbrdrw
 	"VSW5TESTSUITE CASE XSetWindowColormap 4"
-	/tset/Xlib4/stwdwclrmp/Test
+	/tset/Xlib4/stwdwclrmp/stwdwclrmp
 	"VSW5TESTSUITE CASE XUndefineCursor 3"
-	/tset/Xlib4/undfncrsr/Test
+	/tset/Xlib4/undfncrsr/undfncrsr
 	"VSW5TESTSUITE CASE XUnmapSubwindows 5"
-	/tset/Xlib4/unmpsbws/Test
+	/tset/Xlib4/unmpsbws/unmpsbws
 	"VSW5TESTSUITE CASE XUnmapWindow 6"
-	/tset/Xlib4/unmpwdw/Test
+	/tset/Xlib4/unmpwdw/unmpwdw
 	"VSW5TESTSUITE CASE XVisualIDFromVisual 1"
-	/tset/Xlib4/vslidfrmvs/Test
+	/tset/Xlib4/vslidfrmvs/vslidfrmvs

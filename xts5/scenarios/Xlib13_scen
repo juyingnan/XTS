@@ -56,66 +56,66 @@
 #
 
 	"VSW5TESTSUITE CASE XAllowEvents 29"
-	/tset/Xlib13/allwevnts/Test
+	/tset/Xlib13/allwevnts/allwevnts
 	"VSW5TESTSUITE CASE XAutoRepeatOff 1"
-	/tset/Xlib13/atrptoff/Test
+	/tset/Xlib13/atrptoff/atrptoff
 	"VSW5TESTSUITE CASE XAutoRepeatOn 1"
-	/tset/Xlib13/atrpton/Test
+	/tset/Xlib13/atrpton/atrpton
 	"VSW5TESTSUITE CASE XBell 3"
-	/tset/Xlib13/bll/Test
+	/tset/Xlib13/bll/bll
 	"VSW5TESTSUITE CASE XChangeActivePointerGrab 5"
-	/tset/Xlib13/chngactvpn/Test
+	/tset/Xlib13/chngactvpn/chngactvpn
 	"VSW5TESTSUITE CASE XChangeKeyboardControl 20"
-	/tset/Xlib13/chngkybrdc/Test
+	/tset/Xlib13/chngkybrdc/chngkybrdc
 	"VSW5TESTSUITE CASE XChangeKeyboardMapping 7"
-	/tset/Xlib13/chngkybrdm/Test
+	/tset/Xlib13/chngkybrdm/chngkybrdm
 	"VSW5TESTSUITE CASE XChangePointerControl 11"
-	/tset/Xlib13/chngpntrcn/Test
+	/tset/Xlib13/chngpntrcn/chngpntrcn
 	"VSW5TESTSUITE CASE XDeleteModifiermapEntry 1"
-	/tset/Xlib13/dltmdfrmpe/Test
+	/tset/Xlib13/dltmdfrmpe/dltmdfrmpe
 	"VSW5TESTSUITE CASE XDisplayKeycodes 3"
-	/tset/Xlib13/dsplykycds/Test
+	/tset/Xlib13/dsplykycds/dsplykycds
 	"VSW5TESTSUITE CASE XFreeModifiermap 1"
-	/tset/Xlib13/frmdfrmp/Test
+	/tset/Xlib13/frmdfrmp/frmdfrmp
 	"VSW5TESTSUITE CASE XGrabButton 39"
-	/tset/Xlib13/grbbttn/Test
+	/tset/Xlib13/grbbttn/grbbttn
 	"VSW5TESTSUITE CASE XGrabKey 16"
-	/tset/Xlib13/grbky/Test
+	/tset/Xlib13/grbky/grbky
 	"VSW5TESTSUITE CASE XGrabKeyboard 25"
-	/tset/Xlib13/grbkybrd/Test
+	/tset/Xlib13/grbkybrd/grbkybrd
 	"VSW5TESTSUITE CASE XGrabPointer 34"
-	/tset/Xlib13/grbpntr/Test
+	/tset/Xlib13/grbpntr/grbpntr
 	"VSW5TESTSUITE CASE XGetInputFocus 1"
-	/tset/Xlib13/gtinptfcs/Test
+	/tset/Xlib13/gtinptfcs/gtinptfcs
 	"VSW5TESTSUITE CASE XGetKeyboardControl 1"
-	/tset/Xlib13/gtkybrdcnt/Test
+	/tset/Xlib13/gtkybrdcnt/gtkybrdcnt
 	"VSW5TESTSUITE CASE XGetKeyboardMapping 6"
-	/tset/Xlib13/gtkybrdmpp/Test
+	/tset/Xlib13/gtkybrdmpp/gtkybrdmpp
 	"VSW5TESTSUITE CASE XGetModifierMapping 2"
-	/tset/Xlib13/gtmdfrmppn/Test
+	/tset/Xlib13/gtmdfrmppn/gtmdfrmppn
 	"VSW5TESTSUITE CASE XGetPointerControl 1"
-	/tset/Xlib13/gtpntrcntr/Test
+	/tset/Xlib13/gtpntrcntr/gtpntrcntr
 	"VSW5TESTSUITE CASE XGetPointerMapping 3"
-	/tset/Xlib13/gtpntrmppn/Test
+	/tset/Xlib13/gtpntrmppn/gtpntrmppn
 	"VSW5TESTSUITE CASE XInsertModifiermapEntry 1"
-	/tset/Xlib13/insrtmdfrm/Test
+	/tset/Xlib13/insrtmdfrm/insrtmdfrm
 	"VSW5TESTSUITE CASE XNewModifiermap 1"
-	/tset/Xlib13/nwmdfrmp/Test
+	/tset/Xlib13/nwmdfrmp/nwmdfrmp
 	"VSW5TESTSUITE CASE XQueryKeymap 1"
-	/tset/Xlib13/qrykymp/Test
+	/tset/Xlib13/qrykymp/qrykymp
 	"VSW5TESTSUITE CASE XSetInputFocus 13"
-	/tset/Xlib13/stinptfcs/Test
+	/tset/Xlib13/stinptfcs/stinptfcs
 	"VSW5TESTSUITE CASE XSetModifierMapping 8"
-	/tset/Xlib13/stmdfrmppn/Test
+	/tset/Xlib13/stmdfrmppn/stmdfrmppn
 	"VSW5TESTSUITE CASE XSetPointerMapping 7"
-	/tset/Xlib13/stpntrmppn/Test
+	/tset/Xlib13/stpntrmppn/stpntrmppn
 	"VSW5TESTSUITE CASE XUngrabButton 6"
-	/tset/Xlib13/ungrbbttn/Test
+	/tset/Xlib13/ungrbbttn/ungrbbttn
 	"VSW5TESTSUITE CASE XUngrabKey 7"
-	/tset/Xlib13/ungrbky/Test
+	/tset/Xlib13/ungrbky/ungrbky
 	"VSW5TESTSUITE CASE XUngrabKeyboard 3"
-	/tset/Xlib13/ungrbkybrd/Test
+	/tset/Xlib13/ungrbkybrd/ungrbkybrd
 	"VSW5TESTSUITE CASE XUngrabPointer 3"
-	/tset/Xlib13/ungrbpntr/Test
+	/tset/Xlib13/ungrbpntr/ungrbpntr
 	"VSW5TESTSUITE CASE XWarpPointer 9"
-	/tset/Xlib13/wrppntr/Test
+	/tset/Xlib13/wrppntr/wrppntr

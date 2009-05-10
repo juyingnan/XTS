@@ -59,22 +59,22 @@
 #
 
 	"VSW5TESTSUITE CASE XtManageChildren 7"
-	/tset/Xt5/tmngchdrn/Test
+	/tset/Xt5/tmngchdrn/tmngchdrn
 	"VSW5TESTSUITE CASE XtManageChild 6"
-	/tset/Xt5/tmngchild/Test
+	/tset/Xt5/tmngchild/tmngchild
 	"VSW5TESTSUITE CASE XtCreateManagedWidget 15"
-	/tset/Xt5/tcramnwid/Test
+	/tset/Xt5/tcramnwid/tcramnwid
 	"VSW5TESTSUITE CASE XtVaCreateManagedWidget 19"
-	/tset/Xt5/tvacrmwdt/Test
+	/tset/Xt5/tvacrmwdt/tvacrmwdt
 	"VSW5TESTSUITE CASE XtUnmanageChildren 8"
-	/tset/Xt5/tunmgchdn/Test
+	/tset/Xt5/tunmgchdn/tunmgchdn
 	"VSW5TESTSUITE CASE XtUnmanageChild 7"
-	/tset/Xt5/tunmgchld/Test
+	/tset/Xt5/tunmgchld/tunmgchld
 	"VSW5TESTSUITE CASE XtIsManaged 3"
-	/tset/Xt5/tismanage/Test
+	/tset/Xt5/tismanage/tismanage
 	"VSW5TESTSUITE CASE XtSetMappedWhenManaged 2"
-	/tset/Xt5/tstmpwmng/Test
+	/tset/Xt5/tstmpwmng/tstmpwmng
 	"VSW5TESTSUITE CASE XtMapWidget 1"
-	/tset/Xt5/tmpwidget/Test
+	/tset/Xt5/tmpwidget/tmpwidget
 	"VSW5TESTSUITE CASE XtUnmapWidget 1"
-	/tset/Xt5/tunmpwdgt/Test
+	/tset/Xt5/tunmpwdgt/tunmpwdgt

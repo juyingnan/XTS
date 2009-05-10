@@ -56,72 +56,72 @@
 #
 
 	"VSW5TESTSUITE CASE AllowDeviceEvents 3"
-	/tset/XIproto/alldvevnts/Test
+	/tset/XIproto/alldvevnts/alldvevnts
 	"VSW5TESTSUITE CASE ChangeDeviceControl 3"
-	/tset/XIproto/chgdvctl/Test
+	/tset/XIproto/chgdvctl/chgdvctl
 	"VSW5TESTSUITE CASE ChangeDeviceDontPropagateList 3"
-	/tset/XIproto/chgdvprop/Test
+	/tset/XIproto/chgdvprop/chgdvprop
 	"VSW5TESTSUITE CASE ChangeFeedbackControl 3"
-	/tset/XIproto/chgfctl/Test
+	/tset/XIproto/chgfctl/chgfctl
 	"VSW5TESTSUITE CASE ChangeKeyboardDevice 4"
-	/tset/XIproto/chgkbd/Test
+	/tset/XIproto/chgkbd/chgkbd
 	"VSW5TESTSUITE CASE ChangePointerDevice 4"
-	/tset/XIproto/chgptr/Test
+	/tset/XIproto/chgptr/chgptr
 	"VSW5TESTSUITE CASE ChangeDeviceKeyMapping 3"
-	/tset/XIproto/chngdvkmap/Test
+	/tset/XIproto/chngdvkmap/chngdvkmap
 	"VSW5TESTSUITE CASE CloseDevice 3"
-	/tset/XIproto/closdev/Test
+	/tset/XIproto/closdev/closdev
 	"VSW5TESTSUITE CASE DeviceBell 3"
-	/tset/XIproto/dvbell/Test
+	/tset/XIproto/dvbell/dvbell
 	"VSW5TESTSUITE CASE GetDeviceModifierMapping 3"
-	/tset/XIproto/getdvmmap/Test
+	/tset/XIproto/getdvmmap/getdvmmap
 	"VSW5TESTSUITE CASE GetFeedbackControl 3"
-	/tset/XIproto/getfctl/Test
+	/tset/XIproto/getfctl/getfctl
 	"VSW5TESTSUITE CASE GetExtensionVersion 3"
-	/tset/XIproto/getvers/Test
+	/tset/XIproto/getvers/getvers
 	"VSW5TESTSUITE CASE GrabDevice 3"
-	/tset/XIproto/grbdev/Test
+	/tset/XIproto/grbdev/grbdev
 	"VSW5TESTSUITE CASE GrabDeviceButton 3"
-	/tset/XIproto/grbdvbtn/Test
+	/tset/XIproto/grbdvbtn/grbdvbtn
 	"VSW5TESTSUITE CASE GrabDeviceKey 3"
-	/tset/XIproto/grbdvky/Test
+	/tset/XIproto/grbdvky/grbdvky
 	"VSW5TESTSUITE CASE GetDeviceButtonMapping 3"
-	/tset/XIproto/gtbtnmppn/Test
+	/tset/XIproto/gtbtnmppn/gtbtnmppn
 	"VSW5TESTSUITE CASE GetDeviceControl 3"
-	/tset/XIproto/gtdvctl/Test
+	/tset/XIproto/gtdvctl/gtdvctl
 	"VSW5TESTSUITE CASE GetDeviceFocus 3"
-	/tset/XIproto/gtdvfcs/Test
+	/tset/XIproto/gtdvfcs/gtdvfcs
 	"VSW5TESTSUITE CASE GetDeviceMotionEvents 3"
-	/tset/XIproto/gtdvmtnev/Test
+	/tset/XIproto/gtdvmtnev/gtdvmtnev
 	"VSW5TESTSUITE CASE GetDeviceDontPropagateList 3"
-	/tset/XIproto/gtdvprop/Test
+	/tset/XIproto/gtdvprop/gtdvprop
 	"VSW5TESTSUITE CASE GetDeviceKeyMapping 3"
-	/tset/XIproto/gtkeymppn/Test
+	/tset/XIproto/gtkeymppn/gtkeymppn
 	"VSW5TESTSUITE CASE GetSelectedExtensionEvents 3"
-	/tset/XIproto/gtslctexev/Test
+	/tset/XIproto/gtslctexev/gtslctexev
 	"VSW5TESTSUITE CASE ListInputDevices 3"
-	/tset/XIproto/listdev/Test
+	/tset/XIproto/listdev/listdev
 	"VSW5TESTSUITE CASE OpenDevice 3"
-	/tset/XIproto/opendev/Test
+	/tset/XIproto/opendev/opendev
 	"VSW5TESTSUITE CASE QueryDeviceState 3"
-	/tset/XIproto/qrydvstat/Test
+	/tset/XIproto/qrydvstat/qrydvstat
 	"VSW5TESTSUITE CASE SetDeviceValuators 3"
-	/tset/XIproto/setdval/Test
+	/tset/XIproto/setdval/setdval
 	"VSW5TESTSUITE CASE SetDeviceButtonMapping 3"
-	/tset/XIproto/setdvbmap/Test
+	/tset/XIproto/setdvbmap/setdvbmap
 	"VSW5TESTSUITE CASE SetDeviceFocus 3"
-	/tset/XIproto/setdvfcs/Test
+	/tset/XIproto/setdvfcs/setdvfcs
 	"VSW5TESTSUITE CASE SetDeviceModifierMapping 3"
-	/tset/XIproto/setdvmmap/Test
+	/tset/XIproto/setdvmmap/setdvmmap
 	"VSW5TESTSUITE CASE SetDeviceMode 3"
-	/tset/XIproto/setdvmode/Test
+	/tset/XIproto/setdvmode/setdvmode
 	"VSW5TESTSUITE CASE SelectExtensionEvent 3"
-	/tset/XIproto/slctexevnt/Test
+	/tset/XIproto/slctexevnt/slctexevnt
 	"VSW5TESTSUITE CASE SendExtensionEvent 3"
-	/tset/XIproto/sndextevnt/Test
+	/tset/XIproto/sndextevnt/sndextevnt
 	"VSW5TESTSUITE CASE UngrabDevice 3"
-	/tset/XIproto/ungrbdev/Test
+	/tset/XIproto/ungrbdev/ungrbdev
 	"VSW5TESTSUITE CASE UngrabDeviceButton 3"
-	/tset/XIproto/ungrbdvbtn/Test
+	/tset/XIproto/ungrbdvbtn/ungrbdvbtn
 	"VSW5TESTSUITE CASE UngrabDeviceKey 3"
-	/tset/XIproto/ungrbdvky/Test
+	/tset/XIproto/ungrbdvky/ungrbdvky

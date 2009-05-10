@@ -56,94 +56,94 @@
 #
 
 	"VSW5TESTSUITE CASE XClearArea 11"
-	/tset/Xlib9/clrar/Test
+	/tset/Xlib9/clrar/clrar
 	"VSW5TESTSUITE CASE XClearWindow 7"
-	/tset/Xlib9/clrwdw/Test
+	/tset/Xlib9/clrwdw/clrwdw
 	"VSW5TESTSUITE CASE XCopyArea 36"
-	/tset/Xlib9/cpyar/Test
+	/tset/Xlib9/cpyar/cpyar
 	"VSW5TESTSUITE CASE XCopyPlane 43"
-	/tset/Xlib9/cpypln/Test
+	/tset/Xlib9/cpypln/cpypln
 	"VSW5TESTSUITE CASE XDrawArc 102"
-	/tset/Xlib9/drwarc/Test
+	/tset/Xlib9/drwarc/drwarc
 	"VSW5TESTSUITE CASE XDrawArcs 112"
-	/tset/Xlib9/drwarcs/Test
+	/tset/Xlib9/drwarcs/drwarcs
 	"VSW5TESTSUITE CASE XDrawImageString16 24"
-	/tset/Xlib9/drwimgst16/Test
+	/tset/Xlib9/drwimgst16/drwimgst16
 	"VSW5TESTSUITE CASE XDrawImageString 24"
-	/tset/Xlib9/drwimgstr/Test
+	/tset/Xlib9/drwimgstr/drwimgstr
 	"VSW5TESTSUITE CASE XDrawLine 91"
-	/tset/Xlib9/drwln/Test
+	/tset/Xlib9/drwln/drwln
 	"VSW5TESTSUITE CASE XDrawLines 104"
-	/tset/Xlib9/drwlns/Test
+	/tset/Xlib9/drwlns/drwlns
 	"VSW5TESTSUITE CASE XDrawPoint 34"
-	/tset/Xlib9/drwpnt/Test
+	/tset/Xlib9/drwpnt/drwpnt
 	"VSW5TESTSUITE CASE XDrawPoints 38"
-	/tset/Xlib9/drwpnts/Test
+	/tset/Xlib9/drwpnts/drwpnts
 	"VSW5TESTSUITE CASE XDrawRectangle 83"
-	/tset/Xlib9/drwrctngl/Test
+	/tset/Xlib9/drwrctngl/drwrctngl
 	"VSW5TESTSUITE CASE XDrawRectangles 85"
-	/tset/Xlib9/drwrctngls/Test
+	/tset/Xlib9/drwrctngls/drwrctngls
 	"VSW5TESTSUITE CASE XDrawSegments 92"
-	/tset/Xlib9/drwsgmnts/Test
+	/tset/Xlib9/drwsgmnts/drwsgmnts
 	"VSW5TESTSUITE CASE XDrawString 44"
-	/tset/Xlib9/drwstr/Test
+	/tset/Xlib9/drwstr/drwstr
 	"VSW5TESTSUITE CASE XDrawString16 44"
-	/tset/Xlib9/drwstr16/Test
+	/tset/Xlib9/drwstr16/drwstr16
 	"VSW5TESTSUITE CASE XDrawText 50"
-	/tset/Xlib9/drwtxt/Test
+	/tset/Xlib9/drwtxt/drwtxt
 	"VSW5TESTSUITE CASE XDrawText16 50"
-	/tset/Xlib9/drwtxt16/Test
+	/tset/Xlib9/drwtxt16/drwtxt16
 	"VSW5TESTSUITE CASE XFillArc 44"
-	/tset/Xlib9/fllarc/Test
+	/tset/Xlib9/fllarc/fllarc
 	"VSW5TESTSUITE CASE XFillArcs 46"
-	/tset/Xlib9/fllarcs/Test
+	/tset/Xlib9/fllarcs/fllarcs
 	"VSW5TESTSUITE CASE XFillPolygon 55"
-	/tset/Xlib9/fllplygn/Test
+	/tset/Xlib9/fllplygn/fllplygn
 	"VSW5TESTSUITE CASE XFillRectangle 43"
-	/tset/Xlib9/fllrctngl/Test
+	/tset/Xlib9/fllrctngl/fllrctngl
 	"VSW5TESTSUITE CASE XFillRectangles 44"
-	/tset/Xlib9/fllrctngls/Test
+	/tset/Xlib9/fllrctngls/fllrctngls
 	"VSW5TESTSUITE CASE XFreeFont 3"
-	/tset/Xlib9/frfnt/Test
+	/tset/Xlib9/frfnt/frfnt
 	"VSW5TESTSUITE CASE XFreeFontInfo 2"
-	/tset/Xlib9/frfntinf/Test
+	/tset/Xlib9/frfntinf/frfntinf
 	"VSW5TESTSUITE CASE XFreeFontNames 1"
-	/tset/Xlib9/frfntnms/Test
+	/tset/Xlib9/frfntnms/frfntnms
 	"VSW5TESTSUITE CASE XFreeFontPath 1"
-	/tset/Xlib9/frfntpth/Test
+	/tset/Xlib9/frfntpth/frfntpth
 	"VSW5TESTSUITE CASE XGetFontProperty 2"
-	/tset/Xlib9/gtfntprprt/Test
+	/tset/Xlib9/gtfntprprt/gtfntprprt
 	"VSW5TESTSUITE CASE XGetFontPath 1"
-	/tset/Xlib9/gtfntpth/Test
+	/tset/Xlib9/gtfntpth/gtfntpth
 	"VSW5TESTSUITE CASE XGetImage 17"
-	/tset/Xlib9/gtimg/Test
+	/tset/Xlib9/gtimg/gtimg
 	"VSW5TESTSUITE CASE XGetSubImage 17"
-	/tset/Xlib9/gtsbimg/Test
+	/tset/Xlib9/gtsbimg/gtsbimg
 	"VSW5TESTSUITE CASE XLoadFont 5"
-	/tset/Xlib9/ldfnt/Test
+	/tset/Xlib9/ldfnt/ldfnt
 	"VSW5TESTSUITE CASE XLoadQueryFont 5"
-	/tset/Xlib9/ldqryfnt/Test
+	/tset/Xlib9/ldqryfnt/ldqryfnt
 	"VSW5TESTSUITE CASE XListFonts 6"
-	/tset/Xlib9/lstfnts/Test
+	/tset/Xlib9/lstfnts/lstfnts
 	"VSW5TESTSUITE CASE XListFontsWithInfo 7"
-	/tset/Xlib9/lstfntswth/Test
+	/tset/Xlib9/lstfntswth/lstfntswth
 	"VSW5TESTSUITE CASE XPutImage 40"
-	/tset/Xlib9/ptimg/Test
+	/tset/Xlib9/ptimg/ptimg
 	"VSW5TESTSUITE CASE XQueryFont 3"
-	/tset/Xlib9/qryfnt/Test
+	/tset/Xlib9/qryfnt/qryfnt
 	"VSW5TESTSUITE CASE XQueryTextExtents16 13"
-	/tset/Xlib9/qrytxtex16/Test
+	/tset/Xlib9/qrytxtex16/qrytxtex16
 	"VSW5TESTSUITE CASE XQueryTextExtents 12"
-	/tset/Xlib9/qrytxtextn/Test
+	/tset/Xlib9/qrytxtextn/qrytxtextn
 	"VSW5TESTSUITE CASE XSetFontPath 4"
-	/tset/Xlib9/stfntpth/Test
+	/tset/Xlib9/stfntpth/stfntpth
 	"VSW5TESTSUITE CASE XTextExtents16 11"
-	/tset/Xlib9/txtextnt16/Test
+	/tset/Xlib9/txtextnt16/txtextnt16
 	"VSW5TESTSUITE CASE XTextExtents 10"
-	/tset/Xlib9/txtextnts/Test
+	/tset/Xlib9/txtextnts/txtextnts
 	"VSW5TESTSUITE CASE XTextWidth 1"
-	/tset/Xlib9/txtwdth/Test
+	/tset/Xlib9/txtwdth/txtwdth
 	"VSW5TESTSUITE CASE XTextWidth16 2"
-	/tset/Xlib9/txtwdth16/Test
+	/tset/Xlib9/txtwdth16/txtwdth16
 	"VSW5TESTSUITE CASE XUnloadFont 3"
-	/tset/Xlib9/unldfnt/Test
+	/tset/Xlib9/unldfnt/unldfnt

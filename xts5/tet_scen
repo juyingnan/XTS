@@ -502,2604 +502,2604 @@ ShapeExt
 
 XAllowDeviceEvents
 	"VSW5TESTSUITE CASE XAllowDeviceEvents 22"
-	/tset/XI/alldvevnts/Test
+	/tset/XI/alldvevnts/alldvevnts
 
 XChangeDeviceControl
 	"VSW5TESTSUITE CASE XChangeDeviceControl 10"
-	/tset/XI/chgdvctl/Test
+	/tset/XI/chgdvctl/chgdvctl
 
 XChangeFeedbackControl
 	"VSW5TESTSUITE CASE XChangeFeedbackControl 8"
-	/tset/XI/chgfctl/Test
+	/tset/XI/chgfctl/chgfctl
 
 XChangeKeyboardDevice
 	"VSW5TESTSUITE CASE XChangeKeyboardDevice 10"
-	/tset/XI/chgkbd/Test
+	/tset/XI/chgkbd/chgkbd
 
 XChangeDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XChangeDeviceDontPropagateList 7"
-	/tset/XI/chgprop/Test
+	/tset/XI/chgprop/chgprop
 
 XChangePointerDevice
 	"VSW5TESTSUITE CASE XChangePointerDevice 10"
-	/tset/XI/chgptr/Test
+	/tset/XI/chgptr/chgptr
 
 XChangeDeviceKeyMapping
 	"VSW5TESTSUITE CASE XChangeDeviceKeyMapping 7"
-	/tset/XI/chngdvkmap/Test
+	/tset/XI/chngdvkmap/chngdvkmap
 
 XCloseDevice
 	"VSW5TESTSUITE CASE XCloseDevice 7"
-	/tset/XI/closdev/Test
+	/tset/XI/closdev/closdev
 
 XDeviceBell
 	"VSW5TESTSUITE CASE XDeviceBell 6"
-	/tset/XI/dvbell/Test
+	/tset/XI/dvbell/dvbell
 
 XGetDeviceControl
 	"VSW5TESTSUITE CASE XGetDeviceControl 4"
-	/tset/XI/getdctl/Test
+	/tset/XI/getdctl/getdctl
 
 XGetFeedbackControl
 	"VSW5TESTSUITE CASE XGetFeedbackControl 3"
-	/tset/XI/getfctl/Test
+	/tset/XI/getfctl/getfctl
 
 XGetDeviceFocus
 	"VSW5TESTSUITE CASE XGetDeviceFocus 2"
-	/tset/XI/getfocus/Test
+	/tset/XI/getfocus/getfocus
 
 XGetDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XGetDeviceDontPropagateList 2"
-	/tset/XI/getprop/Test
+	/tset/XI/getprop/getprop
 
 XGetExtensionVersion
 	"VSW5TESTSUITE CASE XGetExtensionVersion 2"
-	/tset/XI/getvers/Test
+	/tset/XI/getvers/getvers
 
 XGrabDevice
 	"VSW5TESTSUITE CASE XGrabDevice 18"
-	/tset/XI/grbdev/Test
+	/tset/XI/grbdev/grbdev
 
 XGrabDeviceButton
 	"VSW5TESTSUITE CASE XGrabDeviceButton 21"
-	/tset/XI/grbdvbtn/Test
+	/tset/XI/grbdvbtn/grbdvbtn
 
 XGrabDeviceKey
 	"VSW5TESTSUITE CASE XGrabDeviceKey 21"
-	/tset/XI/grbdvky/Test
+	/tset/XI/grbdvky/grbdvky
 
 XGetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XGetDeviceButtonMapping 5"
-	/tset/XI/gtbtnmppn/Test
+	/tset/XI/gtbtnmppn/gtbtnmppn
 
 XGetDeviceKeyMapping
 	"VSW5TESTSUITE CASE XGetDeviceKeyMapping 10"
-	/tset/XI/gtdvkmap/Test
+	/tset/XI/gtdvkmap/gtdvkmap
 
 XGetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XGetDeviceModifierMapping 4"
-	/tset/XI/gtdvmmap/Test
+	/tset/XI/gtdvmmap/gtdvmmap
 
 XGetDeviceMotionEvents
 	"VSW5TESTSUITE CASE XGetDeviceMotionEvents 9"
-	/tset/XI/gtdvmtnev/Test
+	/tset/XI/gtdvmtnev/gtdvmtnev
 
 XGetSelectedExtensionEvents
 	"VSW5TESTSUITE CASE XGetSelectedExtensionEvents 2"
-	/tset/XI/gtslctevnt/Test
+	/tset/XI/gtslctevnt/gtslctevnt
 
 XListInputDevices
 	"VSW5TESTSUITE CASE XListInputDevices 2"
-	/tset/XI/listdev/Test
+	/tset/XI/listdev/listdev
 
 Miscellaneous
 	"VSW5TESTSUITE CASE Miscellaneous 6"
-	/tset/XI/misc/Test
+	/tset/XI/misc/misc
 
 XOpenDevice
 	"VSW5TESTSUITE CASE XOpenDevice 4"
-	/tset/XI/opendev/Test
+	/tset/XI/opendev/opendev
 
 XQueryDeviceState
 	"VSW5TESTSUITE CASE XQueryDeviceState 8"
-	/tset/XI/querydvst/Test
+	/tset/XI/querydvst/querydvst
 
 XSetDeviceValuators
 	"VSW5TESTSUITE CASE XSetDeviceValuators 6"
-	/tset/XI/setdval/Test
+	/tset/XI/setdval/setdval
 
 XSetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XSetDeviceButtonMapping 8"
-	/tset/XI/setdvbmap/Test
+	/tset/XI/setdvbmap/setdvbmap
 
 XSetDeviceFocus
 	"VSW5TESTSUITE CASE XSetDeviceFocus 17"
-	/tset/XI/setdvfocus/Test
+	/tset/XI/setdvfocus/setdvfocus
 
 XSetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XSetDeviceModifierMapping 9"
-	/tset/XI/setdvmmap/Test
+	/tset/XI/setdvmmap/setdvmmap
 
 XSetDeviceMode
 	"VSW5TESTSUITE CASE XSetDeviceMode 6"
-	/tset/XI/setdvmode/Test
+	/tset/XI/setdvmode/setdvmode
 
 XSelectExtensionEvent
 	"VSW5TESTSUITE CASE XSelectExtensionEvent 13"
-	/tset/XI/slextevnt/Test
+	/tset/XI/slextevnt/slextevnt
 
 XSendExtensionEvent
 	"VSW5TESTSUITE CASE XSendExtensionEvent 20"
-	/tset/XI/sndextevnt/Test
+	/tset/XI/sndextevnt/sndextevnt
 
 XUngrabDevice
 	"VSW5TESTSUITE CASE XUngrabDevice 4"
-	/tset/XI/ungrbdv/Test
+	/tset/XI/ungrbdv/ungrbdv
 
 XUngrabDeviceButton
 	"VSW5TESTSUITE CASE XUngrabDeviceButton 11"
-	/tset/XI/ungrbdvbtn/Test
+	/tset/XI/ungrbdvbtn/ungrbdvbtn
 
 XUngrabDeviceKey
 	"VSW5TESTSUITE CASE XUngrabDeviceKey 12"
-	/tset/XI/ungrbdvky/Test
+	/tset/XI/ungrbdvky/ungrbdvky
 
 # Discrete tests for Shape Extension Tests
 
 XShapeOffsetShape
 	"VSW5TESTSUITE CASE XShapeOffsetShape 1"
-	/tset/SHAPE/tshoffshp/Test
+	/tset/SHAPE/tshoffshp/tshoffshp
 
 XShapeCombineMask
 	"VSW5TESTSUITE CASE XShapeCombineMask 1"
-	/tset/SHAPE/tshpcmask/Test
+	/tset/SHAPE/tshpcmask/tshpcmask
 
 XShapeCombineRectangles
 	"VSW5TESTSUITE CASE XShapeCombineRectangles 1"
-	/tset/SHAPE/tshpcrect/Test
+	/tset/SHAPE/tshpcrect/tshpcrect
 
 XShapeCombineRegion
 	"VSW5TESTSUITE CASE XShapeCombineRegion 1"
-	/tset/SHAPE/tshpcregn/Test
+	/tset/SHAPE/tshpcregn/tshpcregn
 
 XShapeCombineShape
 	"VSW5TESTSUITE CASE XShapeCombineShape 1"
-	/tset/SHAPE/tshpcshap/Test
+	/tset/SHAPE/tshpcshap/tshpcshap
 
 XShapeGetRectangles
 	"VSW5TESTSUITE CASE XShapeGetRectangles 1"
-	/tset/SHAPE/tshpgtrec/Test
+	/tset/SHAPE/tshpgtrec/tshpgtrec
 
 XShapeInputSelected
 	"VSW5TESTSUITE CASE XShapeInputSelected 1"
-	/tset/SHAPE/tshpinsel/Test
+	/tset/SHAPE/tshpinsel/tshpinsel
 
 XShapeQueryExtension
 	"VSW5TESTSUITE CASE XShapeQueryExtension 1"
-	/tset/SHAPE/tshpqyetn/Test
+	/tset/SHAPE/tshpqyetn/tshpqyetn
 
 XShapeQueryExtents
 	"VSW5TESTSUITE CASE XShapeQueryExtents 1"
-	/tset/SHAPE/tshpqyets/Test
+	/tset/SHAPE/tshpqyets/tshpqyets
 
 XShapeQueryVersion
 	"VSW5TESTSUITE CASE XShapeQueryVersion 1"
-	/tset/SHAPE/tshpqyver/Test
+	/tset/SHAPE/tshpqyver/tshpqyver
 
 XShapeSelectInput
 	"VSW5TESTSUITE CASE XShapeSelectInput 1"
-	/tset/SHAPE/tshpstinp/Test
+	/tset/SHAPE/tshpstinp/tshpstinp
 
 # Discrete tests for Xlib Chapter 10-Window and Session Manager Functions
 
 XActivateScreenSaver
 	"VSW5TESTSUITE CASE XActivateScreenSaver 2"
-	/tset/Xlib10/actvtscrns/Test
+	/tset/Xlib10/actvtscrns/actvtscrns
 
 XAddHost
 	"VSW5TESTSUITE CASE XAddHost 3"
-	/tset/Xlib10/addhst/Test
+	/tset/Xlib10/addhst/addhst
 
 XAddHosts
 	"VSW5TESTSUITE CASE XAddHosts 3"
-	/tset/Xlib10/addhsts/Test
+	/tset/Xlib10/addhsts/addhsts
 
 XAddToSaveSet
 	"VSW5TESTSUITE CASE XAddToSaveSet 8"
-	/tset/Xlib10/addtsvst/Test
+	/tset/Xlib10/addtsvst/addtsvst
 
 XChangeSaveSet
 	"VSW5TESTSUITE CASE XChangeSaveSet 5"
-	/tset/Xlib10/chngsvst/Test
+	/tset/Xlib10/chngsvst/chngsvst
 
 XDisableAccessControl
 	"VSW5TESTSUITE CASE XDisableAccessControl 2"
-	/tset/Xlib10/dsblaccssc/Test
+	/tset/Xlib10/dsblaccssc/dsblaccssc
 
 XEnableAccessControl
 	"VSW5TESTSUITE CASE XEnableAccessControl 2"
-	/tset/Xlib10/enblaccssc/Test
+	/tset/Xlib10/enblaccssc/enblaccssc
 
 XForceScreenSaver
 	"VSW5TESTSUITE CASE XForceScreenSaver 3"
-	/tset/Xlib10/frcscrnsvr/Test
+	/tset/Xlib10/frcscrnsvr/frcscrnsvr
 
 XGrabServer
 	"VSW5TESTSUITE CASE XGrabServer 1"
-	/tset/Xlib10/grbsrvr/Test
+	/tset/Xlib10/grbsrvr/grbsrvr
 
 XGetScreenSaver
 	"VSW5TESTSUITE CASE XGetScreenSaver 1"
-	/tset/Xlib10/gtscrnsvr/Test
+	/tset/Xlib10/gtscrnsvr/gtscrnsvr
 
 XInstallColormap
 	"VSW5TESTSUITE CASE XInstallColormap 6"
-	/tset/Xlib10/instllclrm/Test
+	/tset/Xlib10/instllclrm/instllclrm
 
 XKillClient
 	"VSW5TESTSUITE CASE XKillClient 4"
-	/tset/Xlib10/kllclnt/Test
+	/tset/Xlib10/kllclnt/kllclnt
 
 XListHosts
 	"VSW5TESTSUITE CASE XListHosts 2"
-	/tset/Xlib10/lsthsts/Test
+	/tset/Xlib10/lsthsts/lsthsts
 
 XListInstalledColormaps
 	"VSW5TESTSUITE CASE XListInstalledColormaps 2"
-	/tset/Xlib10/lstinstlld/Test
+	/tset/Xlib10/lstinstlld/lstinstlld
 
 XRemoveFromSaveSet
 	"VSW5TESTSUITE CASE XRemoveFromSaveSet 3"
-	/tset/Xlib10/rmvfrmsvst/Test
+	/tset/Xlib10/rmvfrmsvst/rmvfrmsvst
 
 XRemoveHost
 	"VSW5TESTSUITE CASE XRemoveHost 3"
-	/tset/Xlib10/rmvhst/Test
+	/tset/Xlib10/rmvhst/rmvhst
 
 XRemoveHosts
 	"VSW5TESTSUITE CASE XRemoveHosts 3"
-	/tset/Xlib10/rmvhsts/Test
+	/tset/Xlib10/rmvhsts/rmvhsts
 
 XReparentWindow
 	"VSW5TESTSUITE CASE XReparentWindow 13"
-	/tset/Xlib10/rprntwdw/Test
+	/tset/Xlib10/rprntwdw/rprntwdw
 
 XResetScreenSaver
 	"VSW5TESTSUITE CASE XResetScreenSaver 2"
-	/tset/Xlib10/rstscrnsvr/Test
+	/tset/Xlib10/rstscrnsvr/rstscrnsvr
 
 XSetAccessControl
 	"VSW5TESTSUITE CASE XSetAccessControl 4"
-	/tset/Xlib10/staccsscnt/Test
+	/tset/Xlib10/staccsscnt/staccsscnt
 
 XSetScreenSaver
 	"VSW5TESTSUITE CASE XSetScreenSaver 17"
-	/tset/Xlib10/stscrnsvr/Test
+	/tset/Xlib10/stscrnsvr/stscrnsvr
 
 XUngrabServer
 	"VSW5TESTSUITE CASE XUngrabServer 1"
-	/tset/Xlib10/ungrbsrvr/Test
+	/tset/Xlib10/ungrbsrvr/ungrbsrvr
 
 XUninstallColormap
 	"VSW5TESTSUITE CASE XUninstallColormap 5"
-	/tset/Xlib10/unnstllclr/Test
+	/tset/Xlib10/unnstllclr/unnstllclr
 
 # Discrete tests for Xlib Chapter 11-Events
 
 ButtonPress
 	"VSW5TESTSUITE CASE ButtonPress 12"
-	/tset/Xlib11/bttnprss/Test
+	/tset/Xlib11/bttnprss/bttnprss
 
 ButtonRelease
 	"VSW5TESTSUITE CASE ButtonRelease 9"
-	/tset/Xlib11/bttnrls/Test
+	/tset/Xlib11/bttnrls/bttnrls
 
 ClientMessage
 	"VSW5TESTSUITE CASE ClientMessage 1"
-	/tset/Xlib11/clntmssg/Test
+	/tset/Xlib11/clntmssg/clntmssg
 
 ColormapNotify
 	"VSW5TESTSUITE CASE ColormapNotify 2"
-	/tset/Xlib11/clrmpntfy/Test
+	/tset/Xlib11/clrmpntfy/clrmpntfy
 
 ConfigureNotify
 	"VSW5TESTSUITE CASE ConfigureNotify 3"
-	/tset/Xlib11/cnfgrntfy/Test
+	/tset/Xlib11/cnfgrntfy/cnfgrntfy
 
 ConfigureRequest
 	"VSW5TESTSUITE CASE ConfigureRequest 7"
-	/tset/Xlib11/cnfgrrqst/Test
+	/tset/Xlib11/cnfgrrqst/cnfgrrqst
 
 CirculateNotify
 	"VSW5TESTSUITE CASE CirculateNotify 3"
-	/tset/Xlib11/crcltntfy/Test
+	/tset/Xlib11/crcltntfy/crcltntfy
 
 CirculateRequest
 	"VSW5TESTSUITE CASE CirculateRequest 2"
-	/tset/Xlib11/crcltrqst/Test
+	/tset/Xlib11/crcltrqst/crcltrqst
 
 CreateNotify
 	"VSW5TESTSUITE CASE CreateNotify 2"
-	/tset/Xlib11/crtntfy/Test
+	/tset/Xlib11/crtntfy/crtntfy
 
 DestroyNotify
 	"VSW5TESTSUITE CASE DestroyNotify 3"
-	/tset/Xlib11/dstryntfy/Test
+	/tset/Xlib11/dstryntfy/dstryntfy
 
 EnterNotify
 	"VSW5TESTSUITE CASE EnterNotify 13"
-	/tset/Xlib11/entrntfy/Test
+	/tset/Xlib11/entrntfy/entrntfy
 
 Expose
 	"VSW5TESTSUITE CASE Expose 7"
-	/tset/Xlib11/exps/Test
+	/tset/Xlib11/exps/exps
 
 FocusIn
 	"VSW5TESTSUITE CASE FocusIn 21"
-	/tset/Xlib11/fcsin/Test
+	/tset/Xlib11/fcsin/fcsin
 
 FocusOut
 	"VSW5TESTSUITE CASE FocusOut 19"
-	/tset/Xlib11/fcsot/Test
+	/tset/Xlib11/fcsot/fcsot
 
 GraphicsExpose
 	"VSW5TESTSUITE CASE GraphicsExpose 1"
-	/tset/Xlib11/grphcsexps/Test
+	/tset/Xlib11/grphcsexps/grphcsexps
 
 GravityNotify
 	"VSW5TESTSUITE CASE GravityNotify 3"
-	/tset/Xlib11/grvtyntfy/Test
+	/tset/Xlib11/grvtyntfy/grvtyntfy
 
 KeymapNotify
 	"VSW5TESTSUITE CASE KeymapNotify 4"
-	/tset/Xlib11/kympntfy/Test
+	/tset/Xlib11/kympntfy/kympntfy
 
 KeyPress
 	"VSW5TESTSUITE CASE KeyPress 9"
-	/tset/Xlib11/kyprss/Test
+	/tset/Xlib11/kyprss/kyprss
 
 KeyRelease
 	"VSW5TESTSUITE CASE KeyRelease 9"
-	/tset/Xlib11/kyrls/Test
+	/tset/Xlib11/kyrls/kyrls
 
 LeaveNotify
 	"VSW5TESTSUITE CASE LeaveNotify 15"
-	/tset/Xlib11/lvntfy/Test
+	/tset/Xlib11/lvntfy/lvntfy
 
 MapNotify
 	"VSW5TESTSUITE CASE MapNotify 4"
-	/tset/Xlib11/mpntfy/Test
+	/tset/Xlib11/mpntfy/mpntfy
 
 MappingNotify
 	"VSW5TESTSUITE CASE MappingNotify 1"
-	/tset/Xlib11/mppngntfy/Test
+	/tset/Xlib11/mppngntfy/mppngntfy
 
 MapRequest
 	"VSW5TESTSUITE CASE MapRequest 2"
-	/tset/Xlib11/mprqst/Test
+	/tset/Xlib11/mprqst/mprqst
 
 MotionNotify
 	"VSW5TESTSUITE CASE MotionNotify 19"
-	/tset/Xlib11/mtnntfy/Test
+	/tset/Xlib11/mtnntfy/mtnntfy
 
 NoExpose
 	"VSW5TESTSUITE CASE NoExpose 1"
-	/tset/Xlib11/nexps/Test
+	/tset/Xlib11/nexps/nexps
 
 PropertyNotify
 	"VSW5TESTSUITE CASE PropertyNotify 2"
-	/tset/Xlib11/prprtyntfy/Test
+	/tset/Xlib11/prprtyntfy/prprtyntfy
 
 ReparentNotify
 	"VSW5TESTSUITE CASE ReparentNotify 4"
-	/tset/Xlib11/rprntntfy/Test
+	/tset/Xlib11/rprntntfy/rprntntfy
 
 ResizeRequest
 	"VSW5TESTSUITE CASE ResizeRequest 2"
-	/tset/Xlib11/rszrqst/Test
+	/tset/Xlib11/rszrqst/rszrqst
 
 SelectionClear
 	"VSW5TESTSUITE CASE SelectionClear 1"
-	/tset/Xlib11/slctnclr/Test
+	/tset/Xlib11/slctnclr/slctnclr
 
 SelectionNotify
 	"VSW5TESTSUITE CASE SelectionNotify 1"
-	/tset/Xlib11/slctnntfy/Test
+	/tset/Xlib11/slctnntfy/slctnntfy
 
 SelectionRequest
 	"VSW5TESTSUITE CASE SelectionRequest 1"
-	/tset/Xlib11/slctnrqst/Test
+	/tset/Xlib11/slctnrqst/slctnrqst
 
 UnmapNotify
 	"VSW5TESTSUITE CASE UnmapNotify 3"
-	/tset/Xlib11/unmpntfy/Test
+	/tset/Xlib11/unmpntfy/unmpntfy
 
 VisibilityNotify
 	"VSW5TESTSUITE CASE VisibilityNotify 9"
-	/tset/Xlib11/vsbltyntfy/Test
+	/tset/Xlib11/vsbltyntfy/vsbltyntfy
 
 
 # Discrete tests for Xlib Chapter 12-Event Handling Functions
 
 XCheckIfEvent
 	"VSW5TESTSUITE CASE XCheckIfEvent 6"
-	/tset/Xlib12/chckifevnt/Test
+	/tset/Xlib12/chckifevnt/chckifevnt
 
 XCheckMaskEvent
 	"VSW5TESTSUITE CASE XCheckMaskEvent 6"
-	/tset/Xlib12/chckmskevn/Test
+	/tset/Xlib12/chckmskevn/chckmskevn
 
 XCheckTypedEvent
 	"VSW5TESTSUITE CASE XCheckTypedEvent 6"
-	/tset/Xlib12/chcktypdev/Test
+	/tset/Xlib12/chcktypdev/chcktypdev
 
 XCheckTypedWindowEvent
 	"VSW5TESTSUITE CASE XCheckTypedWindowEvent 6"
-	/tset/Xlib12/chcktypdwd/Test
+	/tset/Xlib12/chcktypdwd/chcktypdwd
 
 XCheckWindowEvent
 	"VSW5TESTSUITE CASE XCheckWindowEvent 6"
-	/tset/Xlib12/chckwdwevn/Test
+	/tset/Xlib12/chckwdwevn/chckwdwevn
 
 XDisplayMotionBufferSize
 	"VSW5TESTSUITE CASE XDisplayMotionBufferSize 2"
-	/tset/Xlib12/dsplymtnbf/Test
+	/tset/Xlib12/dsplymtnbf/dsplymtnbf
 
 XDisplayName
 	"VSW5TESTSUITE CASE XDisplayName 1"
-	/tset/Xlib12/dsplynm/Test
+	/tset/Xlib12/dsplynm/dsplynm
 
 XEventsQueued
 	"VSW5TESTSUITE CASE XEventsQueued 6"
-	/tset/Xlib12/evntsqd/Test
+	/tset/Xlib12/evntsqd/evntsqd
 
 XFlush
 	"VSW5TESTSUITE CASE XFlush 1"
-	/tset/Xlib12/flsh/Test
+	/tset/Xlib12/flsh/flsh
 
 XGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XGetErrorDatabaseText 5"
-	/tset/Xlib12/gterrrdtbs/Test
+	/tset/Xlib12/gterrrdtbs/gterrrdtbs
 
 XGetErrorText
 	"VSW5TESTSUITE CASE XGetErrorText 2"
-	/tset/Xlib12/gterrrtxt/Test
+	/tset/Xlib12/gterrrtxt/gterrrtxt
 
 XGetMotionEvents
 	"VSW5TESTSUITE CASE XGetMotionEvents 7"
-	/tset/Xlib12/gtmtnevnts/Test
+	/tset/Xlib12/gtmtnevnts/gtmtnevnts
 
 XIfEvent
 	"VSW5TESTSUITE CASE XIfEvent 4"
-	/tset/Xlib12/ifevnt/Test
+	/tset/Xlib12/ifevnt/ifevnt
 
 XMaskEvent
 	"VSW5TESTSUITE CASE XMaskEvent 3"
-	/tset/Xlib12/mskevnt/Test
+	/tset/Xlib12/mskevnt/mskevnt
 
 XNextEvent
 	"VSW5TESTSUITE CASE XNextEvent 3"
-	/tset/Xlib12/nxtevnt/Test
+	/tset/Xlib12/nxtevnt/nxtevnt
 
 XPeekEvent
 	"VSW5TESTSUITE CASE XPeekEvent 3"
-	/tset/Xlib12/pkevnt/Test
+	/tset/Xlib12/pkevnt/pkevnt
 
 XPeekIfEvent
 	"VSW5TESTSUITE CASE XPeekIfEvent 4"
-	/tset/Xlib12/pkifevnt/Test
+	/tset/Xlib12/pkifevnt/pkifevnt
 
 XPending
 	"VSW5TESTSUITE CASE XPending 3"
-	/tset/Xlib12/pndng/Test
+	/tset/Xlib12/pndng/pndng
 
 XPutBackEvent
 	"VSW5TESTSUITE CASE XPutBackEvent 2"
-	/tset/Xlib12/ptbckevnt/Test
+	/tset/Xlib12/ptbckevnt/ptbckevnt
 
 XSelectInput
 	"VSW5TESTSUITE CASE XSelectInput 8"
-	/tset/Xlib12/slctinpt/Test
+	/tset/Xlib12/slctinpt/slctinpt
 
 XSendEvent
 	"VSW5TESTSUITE CASE XSendEvent 22"
-	/tset/Xlib12/sndevnt/Test
+	/tset/Xlib12/sndevnt/sndevnt
 
 XSetAfterFunction
 	"VSW5TESTSUITE CASE XSetAfterFunction 3"
-	/tset/Xlib12/staftrfnct/Test
+	/tset/Xlib12/staftrfnct/staftrfnct
 
 XSetErrorHandler
 	"VSW5TESTSUITE CASE XSetErrorHandler 9"
-	/tset/Xlib12/sterrrhndl/Test
+	/tset/Xlib12/sterrrhndl/sterrrhndl
 
 XSetIOErrorHandler
 	"VSW5TESTSUITE CASE XSetIOErrorHandler 7"
-	/tset/Xlib12/stioerrrhn/Test
+	/tset/Xlib12/stioerrrhn/stioerrrhn
 
 XSync
 	"VSW5TESTSUITE CASE XSync 5"
-	/tset/Xlib12/sync/Test
+	/tset/Xlib12/sync/sync
 
 XSynchronize
 	"VSW5TESTSUITE CASE XSynchronize 5"
-	/tset/Xlib12/synchrnz/Test
+	/tset/Xlib12/synchrnz/synchrnz
 
 XWindowEvent
 	"VSW5TESTSUITE CASE XWindowEvent 3"
-	/tset/Xlib12/wdwevnt/Test
+	/tset/Xlib12/wdwevnt/wdwevnt
 
 
 # Discrete tests for Xlib Chapter 13-Input Device Functions
 
 XAllowEvents
 	"VSW5TESTSUITE CASE XAllowEvents 29"
-	/tset/Xlib13/allwevnts/Test
+	/tset/Xlib13/allwevnts/allwevnts
 
 XAutoRepeatOff
 	"VSW5TESTSUITE CASE XAutoRepeatOff 1"
-	/tset/Xlib13/atrptoff/Test
+	/tset/Xlib13/atrptoff/atrptoff
 
 XAutoRepeatOn
 	"VSW5TESTSUITE CASE XAutoRepeatOn 1"
-	/tset/Xlib13/atrpton/Test
+	/tset/Xlib13/atrpton/atrpton
 
 XBell
 	"VSW5TESTSUITE CASE XBell 3"
-	/tset/Xlib13/bll/Test
+	/tset/Xlib13/bll/bll
 
 XChangeActivePointerGrab
 	"VSW5TESTSUITE CASE XChangeActivePointerGrab 5"
-	/tset/Xlib13/chngactvpn/Test
+	/tset/Xlib13/chngactvpn/chngactvpn
 
 XChangeKeyboardControl
 	"VSW5TESTSUITE CASE XChangeKeyboardControl 20"
-	/tset/Xlib13/chngkybrdc/Test
+	/tset/Xlib13/chngkybrdc/chngkybrdc
 
 XChangeKeyboardMapping
 	"VSW5TESTSUITE CASE XChangeKeyboardMapping 7"
-	/tset/Xlib13/chngkybrdm/Test
+	/tset/Xlib13/chngkybrdm/chngkybrdm
 
 XChangePointerControl
 	"VSW5TESTSUITE CASE XChangePointerControl 11"
-	/tset/Xlib13/chngpntrcn/Test
+	/tset/Xlib13/chngpntrcn/chngpntrcn
 
 XDeleteModifiermapEntry
 	"VSW5TESTSUITE CASE XDeleteModifiermapEntry 1"
-	/tset/Xlib13/dltmdfrmpe/Test
+	/tset/Xlib13/dltmdfrmpe/dltmdfrmpe
 
 XDisplayKeycodes
 	"VSW5TESTSUITE CASE XDisplayKeycodes 3"
-	/tset/Xlib13/dsplykycds/Test
+	/tset/Xlib13/dsplykycds/dsplykycds
 
 XFreeModifiermap
 	"VSW5TESTSUITE CASE XFreeModifiermap 1"
-	/tset/Xlib13/frmdfrmp/Test
+	/tset/Xlib13/frmdfrmp/frmdfrmp
 
 XGrabButton
 	"VSW5TESTSUITE CASE XGrabButton 39"
-	/tset/Xlib13/grbbttn/Test
+	/tset/Xlib13/grbbttn/grbbttn
 
 XGrabKey
 	"VSW5TESTSUITE CASE XGrabKey 16"
-	/tset/Xlib13/grbky/Test
+	/tset/Xlib13/grbky/grbky
 
 XGrabKeyboard
 	"VSW5TESTSUITE CASE XGrabKeyboard 25"
-	/tset/Xlib13/grbkybrd/Test
+	/tset/Xlib13/grbkybrd/grbkybrd
 
 XGrabPointer
 	"VSW5TESTSUITE CASE XGrabPointer 34"
-	/tset/Xlib13/grbpntr/Test
+	/tset/Xlib13/grbpntr/grbpntr
 
 XGetInputFocus
 	"VSW5TESTSUITE CASE XGetInputFocus 1"
-	/tset/Xlib13/gtinptfcs/Test
+	/tset/Xlib13/gtinptfcs/gtinptfcs
 
 XGetKeyboardControl
 	"VSW5TESTSUITE CASE XGetKeyboardControl 1"
-	/tset/Xlib13/gtkybrdcnt/Test
+	/tset/Xlib13/gtkybrdcnt/gtkybrdcnt
 
 XGetKeyboardMapping
 	"VSW5TESTSUITE CASE XGetKeyboardMapping 6"
-	/tset/Xlib13/gtkybrdmpp/Test
+	/tset/Xlib13/gtkybrdmpp/gtkybrdmpp
 
 XGetModifierMapping
 	"VSW5TESTSUITE CASE XGetModifierMapping 2"
-	/tset/Xlib13/gtmdfrmppn/Test
+	/tset/Xlib13/gtmdfrmppn/gtmdfrmppn
 
 XGetPointerControl
 	"VSW5TESTSUITE CASE XGetPointerControl 1"
-	/tset/Xlib13/gtpntrcntr/Test
+	/tset/Xlib13/gtpntrcntr/gtpntrcntr
 
 XGetPointerMapping
 	"VSW5TESTSUITE CASE XGetPointerMapping 3"
-	/tset/Xlib13/gtpntrmppn/Test
+	/tset/Xlib13/gtpntrmppn/gtpntrmppn
 
 XInsertModifiermapEntry
 	"VSW5TESTSUITE CASE XInsertModifiermapEntry 1"
-	/tset/Xlib13/insrtmdfrm/Test
+	/tset/Xlib13/insrtmdfrm/insrtmdfrm
 
 XNewModifiermap
 	"VSW5TESTSUITE CASE XNewModifiermap 1"
-	/tset/Xlib13/nwmdfrmp/Test
+	/tset/Xlib13/nwmdfrmp/nwmdfrmp
 
 XQueryKeymap
 	"VSW5TESTSUITE CASE XQueryKeymap 1"
-	/tset/Xlib13/qrykymp/Test
+	/tset/Xlib13/qrykymp/qrykymp
 
 XSetInputFocus
 	"VSW5TESTSUITE CASE XSetInputFocus 13"
-	/tset/Xlib13/stinptfcs/Test
+	/tset/Xlib13/stinptfcs/stinptfcs
 
 XSetModifierMapping
 	"VSW5TESTSUITE CASE XSetModifierMapping 8"
-	/tset/Xlib13/stmdfrmppn/Test
+	/tset/Xlib13/stmdfrmppn/stmdfrmppn
 
 XSetPointerMapping
 	"VSW5TESTSUITE CASE XSetPointerMapping 7"
-	/tset/Xlib13/stpntrmppn/Test
+	/tset/Xlib13/stpntrmppn/stpntrmppn
 
 XUngrabButton
 	"VSW5TESTSUITE CASE XUngrabButton 6"
-	/tset/Xlib13/ungrbbttn/Test
+	/tset/Xlib13/ungrbbttn/ungrbbttn
 
 XUngrabKey
 	"VSW5TESTSUITE CASE XUngrabKey 7"
-	/tset/Xlib13/ungrbky/Test
+	/tset/Xlib13/ungrbky/ungrbky
 
 XUngrabKeyboard
 	"VSW5TESTSUITE CASE XUngrabKeyboard 3"
-	/tset/Xlib13/ungrbkybrd/Test
+	/tset/Xlib13/ungrbkybrd/ungrbkybrd
 
 XUngrabPointer
 	"VSW5TESTSUITE CASE XUngrabPointer 3"
-	/tset/Xlib13/ungrbpntr/Test
+	/tset/Xlib13/ungrbpntr/ungrbpntr
 
 XWarpPointer
 	"VSW5TESTSUITE CASE XWarpPointer 9"
-	/tset/Xlib13/wrppntr/Test
+	/tset/Xlib13/wrppntr/wrppntr
 
 # Discrete tests for Xlib Chapter 14-Locales and Internationalized Text Functions
 
 XBaseFontNameListOfFontSet
 	"VSW5TESTSUITE CASE XBaseFontNameListOfFontSet 1"
-	/tset/Xlib14/bfnlofs/Test
+	/tset/Xlib14/bfnlofs/bfnlofs
 
 XCloseIM
 	"VSW5TESTSUITE CASE XCloseIM 1"
-	/tset/Xlib14/closeim/Test
+	/tset/Xlib14/closeim/closeim
 
 XContextDependentDrawing
 	"VSW5TESTSUITE CASE XContextDependentDrawing 1"
-	/tset/Xlib14/condd/Test
+	/tset/Xlib14/condd/condd
 
 XCreateFontSet
 	"VSW5TESTSUITE CASE XCreateFontSet 1"
-	/tset/Xlib14/crfset/Test
+	/tset/Xlib14/crfset/crfset
 
 XCreateIC
 	"VSW5TESTSUITE CASE XCreateIC 1"
-	/tset/Xlib14/crtic/Test
+	/tset/Xlib14/crtic/crtic
 
 XDestroyIC
 	"VSW5TESTSUITE CASE XDestroyIC 1"
-	/tset/Xlib14/desic/Test
+	/tset/Xlib14/desic/desic
 
 XDisplayOfIM
 	"VSW5TESTSUITE CASE XDisplayOfIM 1"
-	/tset/Xlib14/dispim/Test
+	/tset/Xlib14/dispim/dispim
 
 XExtentsOfFontSet
 	"VSW5TESTSUITE CASE XExtentsOfFontSet 1"
-	/tset/Xlib14/exofset/Test
+	/tset/Xlib14/exofset/exofset
 
 XFilterEvent
 	"VSW5TESTSUITE CASE XFilterEvent 1"
-	/tset/Xlib14/fltrevnt/Test
+	/tset/Xlib14/fltrevnt/fltrevnt
 
 XFontsOfFontSet
 	"VSW5TESTSUITE CASE XFontsOfFontSet 1"
-	/tset/Xlib14/fntofnts/Test
+	/tset/Xlib14/fntofnts/fntofnts
 
 XFreeFontSet
 	"VSW5TESTSUITE CASE XFreeFontSet 1"
-	/tset/Xlib14/freefs/Test
+	/tset/Xlib14/freefs/freefs
 
 XGetICValues
 	"VSW5TESTSUITE CASE XGetICValues 3"
-	/tset/Xlib14/gticvals/Test
+	/tset/Xlib14/gticvals/gticvals
 
 XGetIMValues
 	"VSW5TESTSUITE CASE XGetIMValues 1"
-	/tset/Xlib14/gtimvls/Test
+	/tset/Xlib14/gtimvls/gtimvls
 
 XIMOfIC
 	"VSW5TESTSUITE CASE XIMOfIC 1"
-	/tset/Xlib14/imofic/Test
+	/tset/Xlib14/imofic/imofic
 
 XLocaleOfFontSet
 	"VSW5TESTSUITE CASE XLocaleOfFontSet 1"
-	/tset/Xlib14/loffs/Test
+	/tset/Xlib14/loffs/loffs
 
 XLocaleOfIM
 	"VSW5TESTSUITE CASE XLocaleOfIM 1"
-	/tset/Xlib14/lofim/Test
+	/tset/Xlib14/lofim/lofim
 
 XmbDrawImageString
 	"VSW5TESTSUITE CASE XmbDrawImageString 1"
-	/tset/Xlib14/mbdistr/Test
+	/tset/Xlib14/mbdistr/mbdistr
 
 XmbDrawString
 	"VSW5TESTSUITE CASE XmbDrawString 1"
-	/tset/Xlib14/mbdstr/Test
+	/tset/Xlib14/mbdstr/mbdstr
 
 XmbDrawText
 	"VSW5TESTSUITE CASE XmbDrawText 1"
-	/tset/Xlib14/mbdtext/Test
+	/tset/Xlib14/mbdtext/mbdtext
 
 XmbLookupString
 	"VSW5TESTSUITE CASE XmbLookupString 3"
-	/tset/Xlib14/mblstr/Test
+	/tset/Xlib14/mblstr/mblstr
 
 XmbResetIC
 	"VSW5TESTSUITE CASE XmbResetIC 1"
-	/tset/Xlib14/mbresic/Test
+	/tset/Xlib14/mbresic/mbresic
 
 XmbSetWMProperties
 	"VSW5TESTSUITE CASE XmbSetWMProperties 2"
-	/tset/Xlib14/mbswmprp/Test
+	/tset/Xlib14/mbswmprp/mbswmprp
 
 XmbTextEscapement
 	"VSW5TESTSUITE CASE XmbTextEscapement 1"
-	/tset/Xlib14/mbtesc/Test
+	/tset/Xlib14/mbtesc/mbtesc
 
 XmbTextExtents
 	"VSW5TESTSUITE CASE XmbTextExtents 1"
-	/tset/Xlib14/mbtext/Test
+	/tset/Xlib14/mbtext/mbtext
 
 XmbTextListToTextProperty
 	"VSW5TESTSUITE CASE XmbTextListToTextProperty 1"
-	/tset/Xlib14/mbtlttp/Test
+	/tset/Xlib14/mbtlttp/mbtlttp
 
 XmbTextPerCharExtents
 	"VSW5TESTSUITE CASE XmbTextPerCharExtents 1"
-	/tset/Xlib14/mbtpcex/Test
+	/tset/Xlib14/mbtpcex/mbtpcex
 
 XmbTextPropertyToTextList
 	"VSW5TESTSUITE CASE XmbTextPropertyToTextList 1"
-	/tset/Xlib14/mbtpttl/Test
+	/tset/Xlib14/mbtpttl/mbtpttl
 
 XOpenIM
 	"VSW5TESTSUITE CASE XOpenIM 1"
-	/tset/Xlib14/openim/Test
+	/tset/Xlib14/openim/openim
 
 XSetICFocus
 	"VSW5TESTSUITE CASE XSetICFocus 1"
-	/tset/Xlib14/sicfoc/Test
+	/tset/Xlib14/sicfoc/sicfoc
 
 XSetICValues
 	"VSW5TESTSUITE CASE XSetICValues 4"
-	/tset/Xlib14/sicvals/Test
+	/tset/Xlib14/sicvals/sicvals
 
 XSupportsLocale
 	"VSW5TESTSUITE CASE XSupportsLocale 1"
-	/tset/Xlib14/slocale/Test
+	/tset/Xlib14/slocale/slocale
 
 XSetLocaleModifiers
 	"VSW5TESTSUITE CASE XSetLocaleModifiers 1"
-	/tset/Xlib14/stlmod/Test
+	/tset/Xlib14/stlmod/stlmod
 
 XUnsetICFocus
 	"VSW5TESTSUITE CASE XUnsetICFocus 1"
-	/tset/Xlib14/uicfoc/Test
+	/tset/Xlib14/uicfoc/uicfoc
 
 XVaCreateNestedList
 	"VSW5TESTSUITE CASE XVaCreateNestedList 4"
-	/tset/Xlib14/vcnlist/Test
+	/tset/Xlib14/vcnlist/vcnlist
 
 XwcDrawImageString
 	"VSW5TESTSUITE CASE XwcDrawImageString 1"
-	/tset/Xlib14/wcdistr/Test
+	/tset/Xlib14/wcdistr/wcdistr
 
 XwcDrawString
 	"VSW5TESTSUITE CASE XwcDrawString 1"
-	/tset/Xlib14/wcdstr/Test
+	/tset/Xlib14/wcdstr/wcdstr
 
 XwcDrawText
 	"VSW5TESTSUITE CASE XwcDrawText 1"
-	/tset/Xlib14/wcdtext/Test
+	/tset/Xlib14/wcdtext/wcdtext
 
 XwcFreeStringList
 	"VSW5TESTSUITE CASE XwcFreeStringList 1"
-	/tset/Xlib14/wcfstli/Test
+	/tset/Xlib14/wcfstli/wcfstli
 
 XwcLookupString
 	"VSW5TESTSUITE CASE XwcLookupString 3"
-	/tset/Xlib14/wclustr/Test
+	/tset/Xlib14/wclustr/wclustr
 
 XwcResetIC
 	"VSW5TESTSUITE CASE XwcResetIC 1"
-	/tset/Xlib14/wcreic/Test
+	/tset/Xlib14/wcreic/wcreic
 
 XwcTextEscapement
 	"VSW5TESTSUITE CASE XwcTextEscapement 1"
-	/tset/Xlib14/wctesc/Test
+	/tset/Xlib14/wctesc/wctesc
 
 XwcTextListToTextProperty
 	"VSW5TESTSUITE CASE XwcTextListToTextProperty 1"
-	/tset/Xlib14/wctlttp/Test
+	/tset/Xlib14/wctlttp/wctlttp
 
 XwcTextPerCharExtents
 	"VSW5TESTSUITE CASE XwcTextPerCharExtents 1"
-	/tset/Xlib14/wctpcex/Test
+	/tset/Xlib14/wctpcex/wctpcex
 
 XwcTextPropertyToTextList
 	"VSW5TESTSUITE CASE XwcTextPropertyToTextList 1"
-	/tset/Xlib14/wctpttl/Test
+	/tset/Xlib14/wctpttl/wctpttl
 
 XwcTextExtents
 	"VSW5TESTSUITE CASE XwcTextExtents 1"
-	/tset/Xlib14/wctxtex/Test
+	/tset/Xlib14/wctxtex/wctxtex
 
 
 # Discrete tests for Xlib Chapter 15-Inter-Client Communication Functions
 
 XAllocClassHint
 	"VSW5TESTSUITE CASE XAllocClassHint 2"
-	/tset/Xlib15/allcclsshn/Test
+	/tset/Xlib15/allcclsshn/allcclsshn
 
 XAllocIconSize
 	"VSW5TESTSUITE CASE XAllocIconSize 2"
-	/tset/Xlib15/allcicnsz/Test
+	/tset/Xlib15/allcicnsz/allcicnsz
 
 XAllocStandardColormap
 	"VSW5TESTSUITE CASE XAllocStandardColormap 2"
-	/tset/Xlib15/allcstndrd/Test
+	/tset/Xlib15/allcstndrd/allcstndrd
 
 XAllocSizeHints
 	"VSW5TESTSUITE CASE XAllocSizeHints 2"
-	/tset/Xlib15/allcszhnts/Test
+	/tset/Xlib15/allcszhnts/allcszhnts
 
 XAllocWMHints
 	"VSW5TESTSUITE CASE XAllocWMHints 2"
-	/tset/Xlib15/allcwmhnts/Test
+	/tset/Xlib15/allcwmhnts/allcwmhnts
 
 XFreeStringList
 	"VSW5TESTSUITE CASE XFreeStringList 1"
-	/tset/Xlib15/frstrlst/Test
+	/tset/Xlib15/frstrlst/frstrlst
 
 XFetchName
 	"VSW5TESTSUITE CASE XFetchName 3"
-	/tset/Xlib15/ftchnm/Test
+	/tset/Xlib15/ftchnm/ftchnm
 
 XGetClassHint
 	"VSW5TESTSUITE CASE XGetClassHint 3"
-	/tset/Xlib15/gtclsshnt/Test
+	/tset/Xlib15/gtclsshnt/gtclsshnt
 
 XGetCommand
 	"VSW5TESTSUITE CASE XGetCommand 3"
-	/tset/Xlib15/gtcmmnd/Test
+	/tset/Xlib15/gtcmmnd/gtcmmnd
 
 XGetIconName
 	"VSW5TESTSUITE CASE XGetIconName 3"
-	/tset/Xlib15/gticnnm/Test
+	/tset/Xlib15/gticnnm/gticnnm
 
 XGetIconSizes
 	"VSW5TESTSUITE CASE XGetIconSizes 3"
-	/tset/Xlib15/gticnszs/Test
+	/tset/Xlib15/gticnszs/gticnszs
 
 XGetRGBColormaps
 	"VSW5TESTSUITE CASE XGetRGBColormaps 6"
-	/tset/Xlib15/gtrgbclrmp/Test
+	/tset/Xlib15/gtrgbclrmp/gtrgbclrmp
 
 XGetTransientForHint
 	"VSW5TESTSUITE CASE XGetTransientForHint 3"
-	/tset/Xlib15/gttrnsntfr/Test
+	/tset/Xlib15/gttrnsntfr/gttrnsntfr
 
 XGetTextProperty
 	"VSW5TESTSUITE CASE XGetTextProperty 4"
-	/tset/Xlib15/gttxtprprt/Test
+	/tset/Xlib15/gttxtprprt/gttxtprprt
 
 XGetWMClientMachine
 	"VSW5TESTSUITE CASE XGetWMClientMachine 3"
-	/tset/Xlib15/gtwmclntmc/Test
+	/tset/Xlib15/gtwmclntmc/gtwmclntmc
 
 XGetWMColormapWindows
 	"VSW5TESTSUITE CASE XGetWMColormapWindows 4"
-	/tset/Xlib15/gtwmclrmpw/Test
+	/tset/Xlib15/gtwmclrmpw/gtwmclrmpw
 
 XGetWMHints
 	"VSW5TESTSUITE CASE XGetWMHints 3"
-	/tset/Xlib15/gtwmhnts/Test
+	/tset/Xlib15/gtwmhnts/gtwmhnts
 
 XGetWMIconName
 	"VSW5TESTSUITE CASE XGetWMIconName 3"
-	/tset/Xlib15/gtwmicnnm/Test
+	/tset/Xlib15/gtwmicnnm/gtwmicnnm
 
 XGetWMName
 	"VSW5TESTSUITE CASE XGetWMName 3"
-	/tset/Xlib15/gtwmnm/Test
+	/tset/Xlib15/gtwmnm/gtwmnm
 
 XGetWMNormalHints
 	"VSW5TESTSUITE CASE XGetWMNormalHints 5"
-	/tset/Xlib15/gtwmnrmlhn/Test
+	/tset/Xlib15/gtwmnrmlhn/gtwmnrmlhn
 
 XGetWMProtocols
 	"VSW5TESTSUITE CASE XGetWMProtocols 4"
-	/tset/Xlib15/gtwmprtcls/Test
+	/tset/Xlib15/gtwmprtcls/gtwmprtcls
 
 XGetWMSizeHints
 	"VSW5TESTSUITE CASE XGetWMSizeHints 6"
-	/tset/Xlib15/gtwmszhnts/Test
+	/tset/Xlib15/gtwmszhnts/gtwmszhnts
 
 XIconifyWindow
 	"VSW5TESTSUITE CASE XIconifyWindow 3"
-	/tset/Xlib15/icnfywdw/Test
+	/tset/Xlib15/icnfywdw/icnfywdw
 
 XReconfigureWMWindow
 	"VSW5TESTSUITE CASE XReconfigureWMWindow 5"
-	/tset/Xlib15/rcnfgrwmwd/Test
+	/tset/Xlib15/rcnfgrwmwd/rcnfgrwmwd
 
 XSetClassHint
 	"VSW5TESTSUITE CASE XSetClassHint 3"
-	/tset/Xlib15/stclsshnt/Test
+	/tset/Xlib15/stclsshnt/stclsshnt
 
 XSetCommand
 	"VSW5TESTSUITE CASE XSetCommand 3"
-	/tset/Xlib15/stcmmnd/Test
+	/tset/Xlib15/stcmmnd/stcmmnd
 
 XSetIconName
 	"VSW5TESTSUITE CASE XSetIconName 3"
-	/tset/Xlib15/sticnnm/Test
+	/tset/Xlib15/sticnnm/sticnnm
 
 XSetIconSizes
 	"VSW5TESTSUITE CASE XSetIconSizes 3"
-	/tset/Xlib15/sticnszs/Test
+	/tset/Xlib15/sticnszs/sticnszs
 
 XSetRGBColormaps
 	"VSW5TESTSUITE CASE XSetRGBColormaps 4"
-	/tset/Xlib15/strgbclrmp/Test
+	/tset/Xlib15/strgbclrmp/strgbclrmp
 
 XStringListToTextProperty
 	"VSW5TESTSUITE CASE XStringListToTextProperty 3"
-	/tset/Xlib15/strlstttxt/Test
+	/tset/Xlib15/strlstttxt/strlstttxt
 
 XStoreName
 	"VSW5TESTSUITE CASE XStoreName 3"
-	/tset/Xlib15/strnm/Test
+	/tset/Xlib15/strnm/strnm
 
 XSetTransientForHint
 	"VSW5TESTSUITE CASE XSetTransientForHint 3"
-	/tset/Xlib15/sttrnsntfr/Test
+	/tset/Xlib15/sttrnsntfr/sttrnsntfr
 
 XSetTextProperty
 	"VSW5TESTSUITE CASE XSetTextProperty 5"
-	/tset/Xlib15/sttxtprprt/Test
+	/tset/Xlib15/sttxtprprt/sttxtprprt
 
 XSetWMClientMachine
 	"VSW5TESTSUITE CASE XSetWMClientMachine 5"
-	/tset/Xlib15/stwmclntmc/Test
+	/tset/Xlib15/stwmclntmc/stwmclntmc
 
 XSetWMColormapWindows
 	"VSW5TESTSUITE CASE XSetWMColormapWindows 4"
-	/tset/Xlib15/stwmclrmpw/Test
+	/tset/Xlib15/stwmclrmpw/stwmclrmpw
 
 XSetWMHints
 	"VSW5TESTSUITE CASE XSetWMHints 3"
-	/tset/Xlib15/stwmhnts/Test
+	/tset/Xlib15/stwmhnts/stwmhnts
 
 XSetWMIconName
 	"VSW5TESTSUITE CASE XSetWMIconName 5"
-	/tset/Xlib15/stwmicnnm/Test
+	/tset/Xlib15/stwmicnnm/stwmicnnm
 
 XSetWMName
 	"VSW5TESTSUITE CASE XSetWMName 5"
-	/tset/Xlib15/stwmnm/Test
+	/tset/Xlib15/stwmnm/stwmnm
 
 XSetWMNormalHints
 	"VSW5TESTSUITE CASE XSetWMNormalHints 3"
-	/tset/Xlib15/stwmnrmlhn/Test
+	/tset/Xlib15/stwmnrmlhn/stwmnrmlhn
 
 XSetWMProperties
 	"VSW5TESTSUITE CASE XSetWMProperties 10"
-	/tset/Xlib15/stwmprprts/Test
+	/tset/Xlib15/stwmprprts/stwmprprts
 
 XSetWMProtocols
 	"VSW5TESTSUITE CASE XSetWMProtocols 4"
-	/tset/Xlib15/stwmprtcls/Test
+	/tset/Xlib15/stwmprtcls/stwmprtcls
 
 XSetWMSizeHints
 	"VSW5TESTSUITE CASE XSetWMSizeHints 4"
-	/tset/Xlib15/stwmszhnts/Test
+	/tset/Xlib15/stwmszhnts/stwmszhnts
 
 XTextPropertyToStringList
 	"VSW5TESTSUITE CASE XTextPropertyToStringList 4"
-	/tset/Xlib15/txtprprtyt/Test
+	/tset/Xlib15/txtprprtyt/txtprprtyt
 
 XWithdrawWindow
 	"VSW5TESTSUITE CASE XWithdrawWindow 3"
-	/tset/Xlib15/wthdrwwdw/Test
+	/tset/Xlib15/wthdrwwdw/wthdrwwdw
 
 XDefaultString
 	"VSW5TESTSUITE CASE XDefaultString 1"
-	/tset/Xlib15/defstr/Test
+	/tset/Xlib15/defstr/defstr
 
 
 # Discrete tests for Xlib Chapter 16 - Resource Manager Functions
 
 XrmDestroyDatabase
 	"VSW5TESTSUITE CASE XrmDestroyDatabase 3"
-	/tset/Xlib16/rmdstrydtb/Test
+	/tset/Xlib16/rmdstrydtb/rmdstrydtb
 
 XrmGetFileDatabase
 	"VSW5TESTSUITE CASE XrmGetFileDatabase 3"
-	/tset/Xlib16/rmgtfldtbs/Test
+	/tset/Xlib16/rmgtfldtbs/rmgtfldtbs
 
 XrmGetResource
 	"VSW5TESTSUITE CASE XrmGetResource 2"
-	/tset/Xlib16/rmgtrsrc/Test
+	/tset/Xlib16/rmgtrsrc/rmgtrsrc
 
 XrmGetStringDatabase
 	"VSW5TESTSUITE CASE XrmGetStringDatabase 2"
-	/tset/Xlib16/rmgtstrdtb/Test
+	/tset/Xlib16/rmgtstrdtb/rmgtstrdtb
 
 XrmInitialize
 	"VSW5TESTSUITE CASE XrmInitialize 1"
-	/tset/Xlib16/rmintlz/Test
+	/tset/Xlib16/rmintlz/rmintlz
 
 XrmMergeDatabases
 	"VSW5TESTSUITE CASE XrmMergeDatabases 6"
-	/tset/Xlib16/rmmrgdtbss/Test
+	/tset/Xlib16/rmmrgdtbss/rmmrgdtbss
 
 XrmParseCommand
 	"VSW5TESTSUITE CASE XrmParseCommand 12"
-	/tset/Xlib16/rmprscmmnd/Test
+	/tset/Xlib16/rmprscmmnd/rmprscmmnd
 
 XrmPutFileDatabase
 	"VSW5TESTSUITE CASE XrmPutFileDatabase 3"
-	/tset/Xlib16/rmptfldtbs/Test
+	/tset/Xlib16/rmptfldtbs/rmptfldtbs
 
 XrmPutLineResource
 	"VSW5TESTSUITE CASE XrmPutLineResource 9"
-	/tset/Xlib16/rmptlnrsrc/Test
+	/tset/Xlib16/rmptlnrsrc/rmptlnrsrc
 
 XrmPutResource
 	"VSW5TESTSUITE CASE XrmPutResource 4"
-	/tset/Xlib16/rmptrsrc/Test
+	/tset/Xlib16/rmptrsrc/rmptrsrc
 
 XrmPutStringResource
 	"VSW5TESTSUITE CASE XrmPutStringResource 4"
-	/tset/Xlib16/rmptstrrsr/Test
+	/tset/Xlib16/rmptstrrsr/rmptstrrsr
 
 XrmQGetResource
 	"VSW5TESTSUITE CASE XrmQGetResource 2"
-	/tset/Xlib16/rmqgtrsrc/Test
+	/tset/Xlib16/rmqgtrsrc/rmqgtrsrc
 
 XrmQGetSearchList
 	"VSW5TESTSUITE CASE XrmQGetSearchList 4"
-	/tset/Xlib16/rmqgtsrchl/Test
+	/tset/Xlib16/rmqgtsrchl/rmqgtsrchl
 
 XrmQGetSearchResource
 	"VSW5TESTSUITE CASE XrmQGetSearchResource 2"
-	/tset/Xlib16/rmqgtsrchr/Test
+	/tset/Xlib16/rmqgtsrchr/rmqgtsrchr
 
 XrmQPutResource
 	"VSW5TESTSUITE CASE XrmQPutResource 3"
-	/tset/Xlib16/rmqptrsrc/Test
+	/tset/Xlib16/rmqptrsrc/rmqptrsrc
 
 XrmQPutStringResource
 	"VSW5TESTSUITE CASE XrmQPutStringResource 3"
-	/tset/Xlib16/rmqptstrrs/Test
+	/tset/Xlib16/rmqptstrrs/rmqptstrrs
 
 XrmQuarkToString
 	"VSW5TESTSUITE CASE XrmQuarkToString 3"
-	/tset/Xlib16/rmqrktstr/Test
+	/tset/Xlib16/rmqrktstr/rmqrktstr
 
 XrmStringToBindingQuarkList
 	"VSW5TESTSUITE CASE XrmStringToBindingQuarkList 6"
-	/tset/Xlib16/rmstrtbndn/Test
+	/tset/Xlib16/rmstrtbndn/rmstrtbndn
 
 XrmStringToQuark
 	"VSW5TESTSUITE CASE XrmStringToQuark 3"
-	/tset/Xlib16/rmstrtqrk/Test
+	/tset/Xlib16/rmstrtqrk/rmstrtqrk
 
 XrmStringToQuarkList
 	"VSW5TESTSUITE CASE XrmStringToQuarkList 3"
-	/tset/Xlib16/rmstrtqrkl/Test
+	/tset/Xlib16/rmstrtqrkl/rmstrtqrkl
 
 XrmUniqueQuark
 	"VSW5TESTSUITE CASE XrmUniqueQuark 1"
-	/tset/Xlib16/rmunqqrk/Test
+	/tset/Xlib16/rmunqqrk/rmunqqrk
 
 XResourceManagerString
 	"VSW5TESTSUITE CASE XResourceManagerString 2"
-	/tset/Xlib16/rsrcmngrst/Test
+	/tset/Xlib16/rsrcmngrst/rsrcmngrst
 
 XrmCombineDatabase
 	"VSW5TESTSUITE CASE XrmCombineDatabase 6"
-	/tset/Xlib16/rmcomdt/Test
+	/tset/Xlib16/rmcomdt/rmcomdt
 
 XrmCombineFileDatabase
 	"VSW5TESTSUITE CASE XrmCombineFileDatabase 6"
-	/tset/Xlib16/rmcomfdt/Test
+	/tset/Xlib16/rmcomfdt/rmcomfdt
 
 XrmEnumerateDatabase
 	"VSW5TESTSUITE CASE XrmEnumerateDatabase 3"
-	/tset/Xlib16/rmedata/Test
+	/tset/Xlib16/rmedata/rmedata
 
 XrmGetDatabase
 	"VSW5TESTSUITE CASE XrmGetDatabase 2"
-	/tset/Xlib16/rmgtdb/Test
+	/tset/Xlib16/rmgtdb/rmgtdb
 
 XrmLocaleOfDatabase
 	"VSW5TESTSUITE CASE XrmLocaleOfDatabase 1"
-	/tset/Xlib16/rmloofdt/Test
+	/tset/Xlib16/rmloofdt/rmloofdt
 
 XrmPermStringToQuark
 	"VSW5TESTSUITE CASE XrmPermStringToQuark 2"
-	/tset/Xlib16/rmpstoq/Test
+	/tset/Xlib16/rmpstoq/rmpstoq
 
 XrmSetDatabase
 	"VSW5TESTSUITE CASE XrmSetDatabase 2"
-	/tset/Xlib16/rmstdb/Test
+	/tset/Xlib16/rmstdb/rmstdb
 
 XScreenResourceString
 	"VSW5TESTSUITE CASE XScreenResourceString 2"
-	/tset/Xlib16/scrrs/Test
+	/tset/Xlib16/scrrs/scrrs
 
 # Discrete tests for Xlib Chapter 17-Application Utility Functions
 
 XAddPixel
 	"VSW5TESTSUITE CASE XAddPixel 1"
-	/tset/Xlib17/addpxl/Test
+	/tset/Xlib17/addpxl/addpxl
 
 XClipBox
 	"VSW5TESTSUITE CASE XClipBox 1"
-	/tset/Xlib17/clpbx/Test
+	/tset/Xlib17/clpbx/clpbx
 
 XCreateBitmapFromData
 	"VSW5TESTSUITE CASE XCreateBitmapFromData 4"
-	/tset/Xlib17/crtbtmpfrm/Test
+	/tset/Xlib17/crtbtmpfrm/crtbtmpfrm
 
 XCreateImage
 	"VSW5TESTSUITE CASE XCreateImage 3"
-	/tset/Xlib17/crtimg/Test
+	/tset/Xlib17/crtimg/crtimg
 
 XCreatePixmapFromBitmapData
 	"VSW5TESTSUITE CASE XCreatePixmapFromBitmapData 5"
-	/tset/Xlib17/crtpxmpfrm/Test
+	/tset/Xlib17/crtpxmpfrm/crtpxmpfrm
 
 XCreateRegion
 	"VSW5TESTSUITE CASE XCreateRegion 2"
-	/tset/Xlib17/crtrgn/Test
+	/tset/Xlib17/crtrgn/crtrgn
 
 XDeleteContext
 	"VSW5TESTSUITE CASE XDeleteContext 2"
-	/tset/Xlib17/dltcntxt/Test
+	/tset/Xlib17/dltcntxt/dltcntxt
 
 XDestroyImage
 	"VSW5TESTSUITE CASE XDestroyImage 1"
-	/tset/Xlib17/dstryimg/Test
+	/tset/Xlib17/dstryimg/dstryimg
 
 XDestroyRegion
 	"VSW5TESTSUITE CASE XDestroyRegion 1"
-	/tset/Xlib17/dstryrgn/Test
+	/tset/Xlib17/dstryrgn/dstryrgn
 
 XEmptyRegion
 	"VSW5TESTSUITE CASE XEmptyRegion 2"
-	/tset/Xlib17/emptyrgn/Test
+	/tset/Xlib17/emptyrgn/emptyrgn
 
 XEqualRegion
 	"VSW5TESTSUITE CASE XEqualRegion 4"
-	/tset/Xlib17/eqlrgn/Test
+	/tset/Xlib17/eqlrgn/eqlrgn
 
 XFindContext
 	"VSW5TESTSUITE CASE XFindContext 2"
-	/tset/Xlib17/fndcntxt/Test
+	/tset/Xlib17/fndcntxt/fndcntxt
 
 XFetchBuffer
 	"VSW5TESTSUITE CASE XFetchBuffer 2"
-	/tset/Xlib17/ftchbffr/Test
+	/tset/Xlib17/ftchbffr/ftchbffr
 
 XFetchBytes
 	"VSW5TESTSUITE CASE XFetchBytes 2"
-	/tset/Xlib17/ftchbyts/Test
+	/tset/Xlib17/ftchbyts/ftchbyts
 
 XGetDefault
 	"VSW5TESTSUITE CASE XGetDefault 5"
-	/tset/Xlib17/gtdflt/Test
+	/tset/Xlib17/gtdflt/gtdflt
 
 XGetPixel
 	"VSW5TESTSUITE CASE XGetPixel 1"
-	/tset/Xlib17/gtpxl/Test
+	/tset/Xlib17/gtpxl/gtpxl
 
 XGetVisualInfo
 	"VSW5TESTSUITE CASE XGetVisualInfo 3"
-	/tset/Xlib17/gtvslinf/Test
+	/tset/Xlib17/gtvslinf/gtvslinf
 
 XIntersectRegion
 	"VSW5TESTSUITE CASE XIntersectRegion 1"
-	/tset/Xlib17/intrsctrgn/Test
+	/tset/Xlib17/intrsctrgn/intrsctrgn
 
 IsCursorKey
 	"VSW5TESTSUITE CASE IsCursorKey 2"
-	/tset/Xlib17/iscrsrky/Test
+	/tset/Xlib17/iscrsrky/iscrsrky
 
 IsFunctionKey
 	"VSW5TESTSUITE CASE IsFunctionKey 2"
-	/tset/Xlib17/isfnctnky/Test
+	/tset/Xlib17/isfnctnky/isfnctnky
 
 IsKeypadKey
 	"VSW5TESTSUITE CASE IsKeypadKey 2"
-	/tset/Xlib17/iskypdky/Test
+	/tset/Xlib17/iskypdky/iskypdky
 
 IsModifierKey
 	"VSW5TESTSUITE CASE IsModifierKey 2"
-	/tset/Xlib17/ismdfrky/Test
+	/tset/Xlib17/ismdfrky/ismdfrky
 
 IsMiscFunctionKey
 	"VSW5TESTSUITE CASE IsMiscFunctionKey 2"
-	/tset/Xlib17/ismscfnctn/Test
+	/tset/Xlib17/ismscfnctn/ismscfnctn
 
 IsPFKey
 	"VSW5TESTSUITE CASE IsPFKey 2"
-	/tset/Xlib17/ispfky/Test
+	/tset/Xlib17/ispfky/ispfky
 
 XKeycodeToKeysym
 	"VSW5TESTSUITE CASE XKeycodeToKeysym 2"
-	/tset/Xlib17/kycdtkysym/Test
+	/tset/Xlib17/kycdtkysym/kycdtkysym
 
 XKeysymToKeycode
 	"VSW5TESTSUITE CASE XKeysymToKeycode 2"
-	/tset/Xlib17/kysymtkycd/Test
+	/tset/Xlib17/kysymtkycd/kysymtkycd
 
 XKeysymToString
 	"VSW5TESTSUITE CASE XKeysymToString 2"
-	/tset/Xlib17/kysymtstr/Test
+	/tset/Xlib17/kysymtstr/kysymtstr
 
 XLookupKeysym
 	"VSW5TESTSUITE CASE XLookupKeysym 2"
-	/tset/Xlib17/lkpkysym/Test
+	/tset/Xlib17/lkpkysym/lkpkysym
 
 XLookupString
 	"VSW5TESTSUITE CASE XLookupString 3"
-	/tset/Xlib17/lkpstr/Test
+	/tset/Xlib17/lkpstr/lkpstr
 
 XMatchVisualInfo
 	"VSW5TESTSUITE CASE XMatchVisualInfo 2"
-	/tset/Xlib17/mtchvslinf/Test
+	/tset/Xlib17/mtchvslinf/mtchvslinf
 
 XOffsetRegion
 	"VSW5TESTSUITE CASE XOffsetRegion 1"
-	/tset/Xlib17/offstrgn/Test
+	/tset/Xlib17/offstrgn/offstrgn
 
 XPolygonRegion
 	"VSW5TESTSUITE CASE XPolygonRegion 1"
-	/tset/Xlib17/plygnrgn/Test
+	/tset/Xlib17/plygnrgn/plygnrgn
 
 XPointInRegion
 	"VSW5TESTSUITE CASE XPointInRegion 2"
-	/tset/Xlib17/pntinrgn/Test
+	/tset/Xlib17/pntinrgn/pntinrgn
 
 Xpermalloc
 	"VSW5TESTSUITE CASE Xpermalloc 2"
-	/tset/Xlib17/prmllc/Test
+	/tset/Xlib17/prmllc/prmllc
 
 XParseGeometry
 	"VSW5TESTSUITE CASE XParseGeometry 3"
-	/tset/Xlib17/prsgmtry/Test
+	/tset/Xlib17/prsgmtry/prsgmtry
 
 XPutPixel
 	"VSW5TESTSUITE CASE XPutPixel 1"
-	/tset/Xlib17/ptpxl/Test
+	/tset/Xlib17/ptpxl/ptpxl
 
 XRebindKeysym
 	"VSW5TESTSUITE CASE XRebindKeysym 2"
-	/tset/Xlib17/rbndkysym/Test
+	/tset/Xlib17/rbndkysym/rbndkysym
 
 XRectInRegion
 	"VSW5TESTSUITE CASE XRectInRegion 3"
-	/tset/Xlib17/rctinrgn/Test
+	/tset/Xlib17/rctinrgn/rctinrgn
 
 XReadBitmapFile
 	"VSW5TESTSUITE CASE XReadBitmapFile 9"
-	/tset/Xlib17/rdbtmpfl/Test
+	/tset/Xlib17/rdbtmpfl/rdbtmpfl
 
 XRefreshKeyboardMapping
 	"VSW5TESTSUITE CASE XRefreshKeyboardMapping 3"
-	/tset/Xlib17/rfrshkybrd/Test
+	/tset/Xlib17/rfrshkybrd/rfrshkybrd
 
 XRotateBuffers
 	"VSW5TESTSUITE CASE XRotateBuffers 2"
-	/tset/Xlib17/rttbffrs/Test
+	/tset/Xlib17/rttbffrs/rttbffrs
 
 XSubImage
 	"VSW5TESTSUITE CASE XSubImage 1"
-	/tset/Xlib17/sbimg/Test
+	/tset/Xlib17/sbimg/sbimg
 
 XSubtractRegion
 	"VSW5TESTSUITE CASE XSubtractRegion 1"
-	/tset/Xlib17/sbtrctrgn/Test
+	/tset/Xlib17/sbtrctrgn/sbtrctrgn
 
 XShrinkRegion
 	"VSW5TESTSUITE CASE XShrinkRegion 3"
-	/tset/Xlib17/shrnkrgn/Test
+	/tset/Xlib17/shrnkrgn/shrnkrgn
 
 XStoreBuffer
 	"VSW5TESTSUITE CASE XStoreBuffer 2"
-	/tset/Xlib17/strbffr/Test
+	/tset/Xlib17/strbffr/strbffr
 
 XStoreBytes
 	"VSW5TESTSUITE CASE XStoreBytes 2"
-	/tset/Xlib17/strbyts/Test
+	/tset/Xlib17/strbyts/strbyts
 
 XSetRegion
 	"VSW5TESTSUITE CASE XSetRegion 2"
-	/tset/Xlib17/strgn/Test
+	/tset/Xlib17/strgn/strgn
 
 XStringToKeysym
 	"VSW5TESTSUITE CASE XStringToKeysym 2"
-	/tset/Xlib17/strtkysym/Test
+	/tset/Xlib17/strtkysym/strtkysym
 
 XSaveContext
 	"VSW5TESTSUITE CASE XSaveContext 3"
-	/tset/Xlib17/svcntxt/Test
+	/tset/Xlib17/svcntxt/svcntxt
 
 XUnionRectWithRegion
 	"VSW5TESTSUITE CASE XUnionRectWithRegion 1"
-	/tset/Xlib17/unnrctwthr/Test
+	/tset/Xlib17/unnrctwthr/unnrctwthr
 
 XUnionRegion
 	"VSW5TESTSUITE CASE XUnionRegion 1"
-	/tset/Xlib17/unnrgn/Test
+	/tset/Xlib17/unnrgn/unnrgn
 
 XUniqueContext
 	"VSW5TESTSUITE CASE XUniqueContext 1"
-	/tset/Xlib17/unqcntxt/Test
+	/tset/Xlib17/unqcntxt/unqcntxt
 
 XWMGeometry
 	"VSW5TESTSUITE CASE XWMGeometry 9"
-	/tset/Xlib17/wmgmtry/Test
+	/tset/Xlib17/wmgmtry/wmgmtry
 
 XWriteBitmapFile
 	"VSW5TESTSUITE CASE XWriteBitmapFile 6"
-	/tset/Xlib17/wrtbtmpfl/Test
+	/tset/Xlib17/wrtbtmpfl/wrtbtmpfl
 
 XXorRegion
 	"VSW5TESTSUITE CASE XXorRegion 1"
-	/tset/Xlib17/xrrgn/Test
+	/tset/Xlib17/xrrgn/xrrgn
 
 
 # Discrete tests for Xlib Chapter 3-Display Functions
 
 XAllPlanes
 	"VSW5TESTSUITE CASE XAllPlanes 2"
-	/tset/Xlib3/allplns/Test
+	/tset/Xlib3/allplns/allplns
 
 XBlackPixel
 	"VSW5TESTSUITE CASE XBlackPixel 1"
-	/tset/Xlib3/blckpxl/Test
+	/tset/Xlib3/blckpxl/blckpxl
 
 XBlackPixelOfScreen
 	"VSW5TESTSUITE CASE XBlackPixelOfScreen 1"
-	/tset/Xlib3/blckpxlofs/Test
+	/tset/Xlib3/blckpxlofs/blckpxlofs
 
 XBitmapBitOrder
 	"VSW5TESTSUITE CASE XBitmapBitOrder 1"
-	/tset/Xlib3/btmpbtordr/Test
+	/tset/Xlib3/btmpbtordr/btmpbtordr
 
 XBitmapPad
 	"VSW5TESTSUITE CASE XBitmapPad 1"
-	/tset/Xlib3/btmppd/Test
+	/tset/Xlib3/btmppd/btmppd
 
 XBitmapUnit
 	"VSW5TESTSUITE CASE XBitmapUnit 1"
-	/tset/Xlib3/btmpunt/Test
+	/tset/Xlib3/btmpunt/btmpunt
 
 XCellsOfScreen
 	"VSW5TESTSUITE CASE XCellsOfScreen 1"
-	/tset/Xlib3/cllsofscrn/Test
+	/tset/Xlib3/cllsofscrn/cllsofscrn
 
 XCloseDisplay
 	"VSW5TESTSUITE CASE XCloseDisplay 28"
-	/tset/Xlib3/clsdsply/Test
+	/tset/Xlib3/clsdsply/clsdsply
 
 XConnectionNumber
 	"VSW5TESTSUITE CASE XConnectionNumber 1"
-	/tset/Xlib3/cnnctnnmbr/Test
+	/tset/Xlib3/cnnctnnmbr/cnnctnnmbr
 
 XDefaultColormap
 	"VSW5TESTSUITE CASE XDefaultColormap 1"
-	/tset/Xlib3/dfltclrmp/Test
+	/tset/Xlib3/dfltclrmp/dfltclrmp
 
 XDefaultColormapOfScreen
 	"VSW5TESTSUITE CASE XDefaultColormapOfScreen 1"
-	/tset/Xlib3/dfltclrmpo/Test
+	/tset/Xlib3/dfltclrmpo/dfltclrmpo
 
 XDefaultDepth
 	"VSW5TESTSUITE CASE XDefaultDepth 1"
-	/tset/Xlib3/dfltdpth/Test
+	/tset/Xlib3/dfltdpth/dfltdpth
 
 XDefaultDepthOfScreen
 	"VSW5TESTSUITE CASE XDefaultDepthOfScreen 1"
-	/tset/Xlib3/dfltdpthof/Test
+	/tset/Xlib3/dfltdpthof/dfltdpthof
 
 XDefaultGC
 	"VSW5TESTSUITE CASE XDefaultGC 1"
-	/tset/Xlib3/dfltgc/Test
+	/tset/Xlib3/dfltgc/dfltgc
 
 XDefaultGCOfScreen
 	"VSW5TESTSUITE CASE XDefaultGCOfScreen 2"
-	/tset/Xlib3/dfltgcofsc/Test
+	/tset/Xlib3/dfltgcofsc/dfltgcofsc
 
 XDefaultRootWindow
 	"VSW5TESTSUITE CASE XDefaultRootWindow 1"
-	/tset/Xlib3/dfltrtwdw/Test
+	/tset/Xlib3/dfltrtwdw/dfltrtwdw
 
 XDefaultScreen
 	"VSW5TESTSUITE CASE XDefaultScreen 1"
-	/tset/Xlib3/dfltscrn/Test
+	/tset/Xlib3/dfltscrn/dfltscrn
 
 XDefaultScreenOfDisplay
 	"VSW5TESTSUITE CASE XDefaultScreenOfDisplay 1"
-	/tset/Xlib3/dfltscrnof/Test
+	/tset/Xlib3/dfltscrnof/dfltscrnof
 
 XDefaultVisual
 	"VSW5TESTSUITE CASE XDefaultVisual 1"
-	/tset/Xlib3/dfltvsl/Test
+	/tset/Xlib3/dfltvsl/dfltvsl
 
 XDefaultVisualOfScreen
 	"VSW5TESTSUITE CASE XDefaultVisualOfScreen 1"
-	/tset/Xlib3/dfltvslofs/Test
+	/tset/Xlib3/dfltvslofs/dfltvslofs
 
 XDoesBackingStore
 	"VSW5TESTSUITE CASE XDoesBackingStore 1"
-	/tset/Xlib3/dsbckngstr/Test
+	/tset/Xlib3/dsbckngstr/dsbckngstr
 
 XDisplayCells
 	"VSW5TESTSUITE CASE XDisplayCells 1"
-	/tset/Xlib3/dsplyclls/Test
+	/tset/Xlib3/dsplyclls/dsplyclls
 
 XDisplayHeight
 	"VSW5TESTSUITE CASE XDisplayHeight 1"
-	/tset/Xlib3/dsplyhght/Test
+	/tset/Xlib3/dsplyhght/dsplyhght
 
 XDisplayHeightMM
 	"VSW5TESTSUITE CASE XDisplayHeightMM 1"
-	/tset/Xlib3/dsplyhghtm/Test
+	/tset/Xlib3/dsplyhghtm/dsplyhghtm
 
 XDisplayOfScreen
 	"VSW5TESTSUITE CASE XDisplayOfScreen 1"
-	/tset/Xlib3/dsplyofscr/Test
+	/tset/Xlib3/dsplyofscr/dsplyofscr
 
 XDisplayPlanes
 	"VSW5TESTSUITE CASE XDisplayPlanes 1"
-	/tset/Xlib3/dsplyplns/Test
+	/tset/Xlib3/dsplyplns/dsplyplns
 
 XDisplayString
 	"VSW5TESTSUITE CASE XDisplayString 2"
-	/tset/Xlib3/dsplystr/Test
+	/tset/Xlib3/dsplystr/dsplystr
 
 XDisplayWidth
 	"VSW5TESTSUITE CASE XDisplayWidth 1"
-	/tset/Xlib3/dsplywdth/Test
+	/tset/Xlib3/dsplywdth/dsplywdth
 
 XDisplayWidthMM
 	"VSW5TESTSUITE CASE XDisplayWidthMM 1"
-	/tset/Xlib3/dsplywdthm/Test
+	/tset/Xlib3/dsplywdthm/dsplywdthm
 
 XDoesSaveUnders
 	"VSW5TESTSUITE CASE XDoesSaveUnders 1"
-	/tset/Xlib3/dssvundrs/Test
+	/tset/Xlib3/dssvundrs/dssvundrs
 
 XEventMaskOfScreen
 	"VSW5TESTSUITE CASE XEventMaskOfScreen 1"
-	/tset/Xlib3/evntmskofs/Test
+	/tset/Xlib3/evntmskofs/evntmskofs
 
 XFree
 	"VSW5TESTSUITE CASE XFree 1"
-	/tset/Xlib3/fr/Test
+	/tset/Xlib3/fr/fr
 
 XHeightMMOfScreen
 	"VSW5TESTSUITE CASE XHeightMMOfScreen 1"
-	/tset/Xlib3/hghtmmofsc/Test
+	/tset/Xlib3/hghtmmofsc/hghtmmofsc
 
 XHeightOfScreen
 	"VSW5TESTSUITE CASE XHeightOfScreen 1"
-	/tset/Xlib3/hghtofscrn/Test
+	/tset/Xlib3/hghtofscrn/hghtofscrn
 
 XImageByteOrder
 	"VSW5TESTSUITE CASE XImageByteOrder 1"
-	/tset/Xlib3/imgbytordr/Test
+	/tset/Xlib3/imgbytordr/imgbytordr
 
 XListDepths
 	"VSW5TESTSUITE CASE XListDepths 3"
-	/tset/Xlib3/lstdpths/Test
+	/tset/Xlib3/lstdpths/lstdpths
 
 XLastKnownRequestProcessed
 	"VSW5TESTSUITE CASE XLastKnownRequestProcessed 1"
-	/tset/Xlib3/lstknwnrqs/Test
+	/tset/Xlib3/lstknwnrqs/lstknwnrqs
 
 XListPixmapFormats
 	"VSW5TESTSUITE CASE XListPixmapFormats 2"
-	/tset/Xlib3/lstpxmpfrm/Test
+	/tset/Xlib3/lstpxmpfrm/lstpxmpfrm
 
 XMinCmapsOfScreen
 	"VSW5TESTSUITE CASE XMinCmapsOfScreen 1"
-	/tset/Xlib3/mncmpsofsc/Test
+	/tset/Xlib3/mncmpsofsc/mncmpsofsc
 
 XMaxCmapsOfScreen
 	"VSW5TESTSUITE CASE XMaxCmapsOfScreen 1"
-	/tset/Xlib3/mxcmpsofsc/Test
+	/tset/Xlib3/mxcmpsofsc/mxcmpsofsc
 
 XNoOp
 	"VSW5TESTSUITE CASE XNoOp 1"
-	/tset/Xlib3/nop/Test
+	/tset/Xlib3/nop/nop
 
 XNextRequest
 	"VSW5TESTSUITE CASE XNextRequest 2"
-	/tset/Xlib3/nxtrqst/Test
+	/tset/Xlib3/nxtrqst/nxtrqst
 
 XOpenDisplay
 	"VSW5TESTSUITE CASE XOpenDisplay 10"
-	/tset/Xlib3/opndsply/Test
+	/tset/Xlib3/opndsply/opndsply
 
 XPlanesOfScreen
 	"VSW5TESTSUITE CASE XPlanesOfScreen 1"
-	/tset/Xlib3/plnsofscrn/Test
+	/tset/Xlib3/plnsofscrn/plnsofscrn
 
 XProtocolRevision
 	"VSW5TESTSUITE CASE XProtocolRevision 1"
-	/tset/Xlib3/prtclrvsn/Test
+	/tset/Xlib3/prtclrvsn/prtclrvsn
 
 XProtocolVersion
 	"VSW5TESTSUITE CASE XProtocolVersion 1"
-	/tset/Xlib3/prtclvrsn/Test
+	/tset/Xlib3/prtclvrsn/prtclvrsn
 
 XQLength
 	"VSW5TESTSUITE CASE XQLength 1"
-	/tset/Xlib3/qlngth/Test
+	/tset/Xlib3/qlngth/qlngth
 
 XRootWindow
 	"VSW5TESTSUITE CASE XRootWindow 1"
-	/tset/Xlib3/rtwdw/Test
+	/tset/Xlib3/rtwdw/rtwdw
 
 XRootWindowOfScreen
 	"VSW5TESTSUITE CASE XRootWindowOfScreen 1"
-	/tset/Xlib3/rtwdwofscr/Test
+	/tset/Xlib3/rtwdwofscr/rtwdwofscr
 
 XScreenCount
 	"VSW5TESTSUITE CASE XScreenCount 1"
-	/tset/Xlib3/scrncnt/Test
+	/tset/Xlib3/scrncnt/scrncnt
 
 XScreenNumberOfScreen
 	"VSW5TESTSUITE CASE XScreenNumberOfScreen 1"
-	/tset/Xlib3/scrnnmbrof/Test
+	/tset/Xlib3/scrnnmbrof/scrnnmbrof
 
 XScreenOfDisplay
 	"VSW5TESTSUITE CASE XScreenOfDisplay 1"
-	/tset/Xlib3/scrnofdspl/Test
+	/tset/Xlib3/scrnofdspl/scrnofdspl
 
 XVendorRelease
 	"VSW5TESTSUITE CASE XVendorRelease 1"
-	/tset/Xlib3/vndrrls/Test
+	/tset/Xlib3/vndrrls/vndrrls
 
 XServerVendor
 	"VSW5TESTSUITE CASE XServerVendor 1"
-	/tset/Xlib3/srvrvndr/Test
+	/tset/Xlib3/srvrvndr/srvrvndr
 
 XSetCloseDownMode
 	"VSW5TESTSUITE CASE XSetCloseDownMode 7"
-	/tset/Xlib3/stclsdwnmd/Test
+	/tset/Xlib3/stclsdwnmd/stclsdwnmd
 
 XWidthMMOfScreen
 	"VSW5TESTSUITE CASE XWidthMMOfScreen 1"
-	/tset/Xlib3/wdthmmofsc/Test
+	/tset/Xlib3/wdthmmofsc/wdthmmofsc
 
 XWidthOfScreen
 	"VSW5TESTSUITE CASE XWidthOfScreen 1"
-	/tset/Xlib3/wdthofscrn/Test
+	/tset/Xlib3/wdthofscrn/wdthofscrn
 
 XWhitePixel
 	"VSW5TESTSUITE CASE XWhitePixel 1"
-	/tset/Xlib3/whtpxl/Test
+	/tset/Xlib3/whtpxl/whtpxl
 
 XWhitePixelOfScreen
 	"VSW5TESTSUITE CASE XWhitePixelOfScreen 1"
-	/tset/Xlib3/whtpxlofsc/Test
+	/tset/Xlib3/whtpxlofsc/whtpxlofsc
 
 BlackPixel
 	"VSW5TESTSUITE CASE BlackPixel 1"
-	/tset/Xlib3/blckpxl/Test
+	/tset/Xlib3/blckpxl/blckpxl
 
 BlackPixelOfScreen
 	"VSW5TESTSUITE CASE BlackPixelOfScreen 1"
-	/tset/Xlib3/blckpxlofs/Test
+	/tset/Xlib3/blckpxlofs/blckpxlofs
 
 BitmapBitOrder
 	"VSW5TESTSUITE CASE BitmapBitOrder 1"
-	/tset/Xlib3/btmpbtordr/Test
+	/tset/Xlib3/btmpbtordr/btmpbtordr
 
 BitmapPad
 	"VSW5TESTSUITE CASE BitmapPad 1"
-	/tset/Xlib3/btmppd/Test
+	/tset/Xlib3/btmppd/btmppd
 
 BitmapUnit
 	"VSW5TESTSUITE CASE BitmapUnit 1"
-	/tset/Xlib3/btmpunt/Test
+	/tset/Xlib3/btmpunt/btmpunt
 
 CellsOfScreen
 	"VSW5TESTSUITE CASE CellsOfScreen 1"
-	/tset/Xlib3/cllsofscrn/Test
+	/tset/Xlib3/cllsofscrn/cllsofscrn
 
 ConnectionNumber
 	"VSW5TESTSUITE CASE ConnectionNumber 1"
-	/tset/Xlib3/cnnctnnmbr/Test
+	/tset/Xlib3/cnnctnnmbr/cnnctnnmbr
 
 DefaultColormap
 	"VSW5TESTSUITE CASE DefaultColormap 1"
-	/tset/Xlib3/dfltclrmp/Test
+	/tset/Xlib3/dfltclrmp/dfltclrmp
 
 DefaultColormapOfScreen
 	"VSW5TESTSUITE CASE DefaultColormapOfScreen 1"
-	/tset/Xlib3/dfltclrmpo/Test
+	/tset/Xlib3/dfltclrmpo/dfltclrmpo
 
 DefaultDepth
 	"VSW5TESTSUITE CASE DefaultDepth 1"
-	/tset/Xlib3/dfltdpth/Test
+	/tset/Xlib3/dfltdpth/dfltdpth
 
 DefaultDepthOfScreen
 	"VSW5TESTSUITE CASE DefaultDepthOfScreen 1"
-	/tset/Xlib3/dfltdpthof/Test
+	/tset/Xlib3/dfltdpthof/dfltdpthof
 
 DefaultGC
 	"VSW5TESTSUITE CASE DefaultGC 1"
-	/tset/Xlib3/dfltgc/Test
+	/tset/Xlib3/dfltgc/dfltgc
 
 DefaultGCOfScreen
 	"VSW5TESTSUITE CASE DefaultGCOfScreen 2"
-	/tset/Xlib3/dfltgcofsc/Test
+	/tset/Xlib3/dfltgcofsc/dfltgcofsc
 
 DefaultRootWindow
 	"VSW5TESTSUITE CASE DefaultRootWindow 1"
-	/tset/Xlib3/dfltrtwdw/Test
+	/tset/Xlib3/dfltrtwdw/dfltrtwdw
 
 DefaultScreen
 	"VSW5TESTSUITE CASE DefaultScreen 1"
-	/tset/Xlib3/dfltscrn/Test
+	/tset/Xlib3/dfltscrn/dfltscrn
 
 DefaultScreenOfDisplay
 	"VSW5TESTSUITE CASE DefaultScreenOfDisplay 1"
-	/tset/Xlib3/dfltscrnof/Test
+	/tset/Xlib3/dfltscrnof/dfltscrnof
 
 DefaultVisual
 	"VSW5TESTSUITE CASE DefaultVisual 1"
-	/tset/Xlib3/dfltvsl/Test
+	/tset/Xlib3/dfltvsl/dfltvsl
 
 DefaultVisualOfScreen
 	"VSW5TESTSUITE CASE DefaultVisualOfScreen 1"
-	/tset/Xlib3/dfltvslofs/Test
+	/tset/Xlib3/dfltvslofs/dfltvslofs
 
 DoesBackingStore
 	"VSW5TESTSUITE CASE DoesBackingStore 1"
-	/tset/Xlib3/dsbckngstr/Test
+	/tset/Xlib3/dsbckngstr/dsbckngstr
 
 DisplayCells
 	"VSW5TESTSUITE CASE DisplayCells 1"
-	/tset/Xlib3/dsplyclls/Test
+	/tset/Xlib3/dsplyclls/dsplyclls
 
 DisplayHeight
 	"VSW5TESTSUITE CASE DisplayHeight 1"
-	/tset/Xlib3/dsplyhght/Test
+	/tset/Xlib3/dsplyhght/dsplyhght
 
 DisplayHeightMM
 	"VSW5TESTSUITE CASE DisplayHeightMM 1"
-	/tset/Xlib3/dsplyhghtm/Test
+	/tset/Xlib3/dsplyhghtm/dsplyhghtm
 
 DisplayOfScreen
 	"VSW5TESTSUITE CASE DisplayOfScreen 1"
-	/tset/Xlib3/dsplyofscr/Test
+	/tset/Xlib3/dsplyofscr/dsplyofscr
 
 DisplayPlanes
 	"VSW5TESTSUITE CASE DisplayPlanes 1"
-	/tset/Xlib3/dsplyplns/Test
+	/tset/Xlib3/dsplyplns/dsplyplns
 
 DisplayString
 	"VSW5TESTSUITE CASE DisplayString 2"
-	/tset/Xlib3/dsplystr/Test
+	/tset/Xlib3/dsplystr/dsplystr
 
 DisplayWidth
 	"VSW5TESTSUITE CASE DisplayWidth 1"
-	/tset/Xlib3/dsplywdth/Test
+	/tset/Xlib3/dsplywdth/dsplywdth
 
 DisplayWidthMM
 	"VSW5TESTSUITE CASE DisplayWidthMM 1"
-	/tset/Xlib3/dsplywdthm/Test
+	/tset/Xlib3/dsplywdthm/dsplywdthm
 
 DoesSaveUnders
 	"VSW5TESTSUITE CASE DoesSaveUnders 1"
-	/tset/Xlib3/dssvundrs/Test
+	/tset/Xlib3/dssvundrs/dssvundrs
 
 EventMaskOfScreen
 	"VSW5TESTSUITE CASE EventMaskOfScreen 1"
-	/tset/Xlib3/evntmskofs/Test
+	/tset/Xlib3/evntmskofs/evntmskofs
 
 HeightMMOfScreen
 	"VSW5TESTSUITE CASE HeightMMOfScreen 1"
-	/tset/Xlib3/hghtmmofsc/Test
+	/tset/Xlib3/hghtmmofsc/hghtmmofsc
 
 HeightOfScreen
 	"VSW5TESTSUITE CASE HeightOfScreen 1"
-	/tset/Xlib3/hghtofscrn/Test
+	/tset/Xlib3/hghtofscrn/hghtofscrn
 
 ImageByteOrder
 	"VSW5TESTSUITE CASE ImageByteOrder 1"
-	/tset/Xlib3/imgbytordr/Test
+	/tset/Xlib3/imgbytordr/imgbytordr
 
 LastKnownRequestProcessed
 	"VSW5TESTSUITE CASE LastKnownRequestProcessed 1"
-	/tset/Xlib3/lstknwnrqs/Test
+	/tset/Xlib3/lstknwnrqs/lstknwnrqs
 
 MinCmapsOfScreen
 	"VSW5TESTSUITE CASE MinCmapsOfScreen 1"
-	/tset/Xlib3/mncmpsofsc/Test
+	/tset/Xlib3/mncmpsofsc/mncmpsofsc
 
 MaxCmapsOfScreen
 	"VSW5TESTSUITE CASE MaxCmapsOfScreen 1"
-	/tset/Xlib3/mxcmpsofsc/Test
+	/tset/Xlib3/mxcmpsofsc/mxcmpsofsc
 
 NextRequest
 	"VSW5TESTSUITE CASE NextRequest 2"
-	/tset/Xlib3/nxtrqst/Test
+	/tset/Xlib3/nxtrqst/nxtrqst
 
 PlanesOfScreen
 	"VSW5TESTSUITE CASE PlanesOfScreen 1"
-	/tset/Xlib3/plnsofscrn/Test
+	/tset/Xlib3/plnsofscrn/plnsofscrn
 
 ProtocolRevision
 	"VSW5TESTSUITE CASE ProtocolRevision 1"
-	/tset/Xlib3/prtclrvsn/Test
+	/tset/Xlib3/prtclrvsn/prtclrvsn
 
 ProtocolVersion
 	"VSW5TESTSUITE CASE ProtocolVersion 1"
-	/tset/Xlib3/prtclvrsn/Test
+	/tset/Xlib3/prtclvrsn/prtclvrsn
 
 QLength
 	"VSW5TESTSUITE CASE QLength 1"
-	/tset/Xlib3/qlngth/Test
+	/tset/Xlib3/qlngth/qlngth
 
 RootWindow
 	"VSW5TESTSUITE CASE RootWindow 1"
-	/tset/Xlib3/rtwdw/Test
+	/tset/Xlib3/rtwdw/rtwdw
 
 RootWindowOfScreen
 	"VSW5TESTSUITE CASE RootWindowOfScreen 1"
-	/tset/Xlib3/rtwdwofscr/Test
+	/tset/Xlib3/rtwdwofscr/rtwdwofscr
 
 ScreenCount
 	"VSW5TESTSUITE CASE ScreenCount 1"
-	/tset/Xlib3/scrncnt/Test
+	/tset/Xlib3/scrncnt/scrncnt
 
 ScreenOfDisplay
 	"VSW5TESTSUITE CASE ScreenOfDisplay 1"
-	/tset/Xlib3/scrnofdspl/Test
+	/tset/Xlib3/scrnofdspl/scrnofdspl
 
 VendorRelease
 	"VSW5TESTSUITE CASE VendorRelease 1"
-	/tset/Xlib3/vndrrls/Test
+	/tset/Xlib3/vndrrls/vndrrls
 
 ServerVendor
 	"VSW5TESTSUITE CASE ServerVendor 1"
-	/tset/Xlib3/srvrvndr/Test
+	/tset/Xlib3/srvrvndr/srvrvndr
 
 WidthMMOfScreen
 	"VSW5TESTSUITE CASE WidthMMOfScreen 1"
-	/tset/Xlib3/wdthmmofsc/Test
+	/tset/Xlib3/wdthmmofsc/wdthmmofsc
 
 WidthOfScreen
 	"VSW5TESTSUITE CASE WidthOfScreen 1"
-	/tset/Xlib3/wdthofscrn/Test
+	/tset/Xlib3/wdthofscrn/wdthofscrn
 
 WhitePixel
 	"VSW5TESTSUITE CASE WhitePixel 1"
-	/tset/Xlib3/whtpxl/Test
+	/tset/Xlib3/whtpxl/whtpxl
 
 WhitePixelOfScreen
 	"VSW5TESTSUITE CASE WhitePixelOfScreen 1"
-	/tset/Xlib3/whtpxlofsc/Test
+	/tset/Xlib3/whtpxlofsc/whtpxlofsc
 
 
 # Discrete tests for Xlib Chapter 4-Window Functions
 
 XChangeWindowAttributes
 	"VSW5TESTSUITE CASE XChangeWindowAttributes 46"
-	/tset/Xlib4/chngwdwatt/Test
+	/tset/Xlib4/chngwdwatt/chngwdwatt
 
 XConfigureWindow
 	"VSW5TESTSUITE CASE XConfigureWindow 34"
-	/tset/Xlib4/cnfgrwdw/Test
+	/tset/Xlib4/cnfgrwdw/cnfgrwdw
 
 XCirculateSubwindows
 	"VSW5TESTSUITE CASE XCirculateSubwindows 7"
-	/tset/Xlib4/crcltsbws/Test
+	/tset/Xlib4/crcltsbws/crcltsbws
 
 XCirculateSubwindowsDown
 	"VSW5TESTSUITE CASE XCirculateSubwindowsDown 5"
-	/tset/Xlib4/crcltsbwsd/Test
+	/tset/Xlib4/crcltsbwsd/crcltsbwsd
 
 XCirculateSubwindowsUp
 	"VSW5TESTSUITE CASE XCirculateSubwindowsUp 5"
-	/tset/Xlib4/crcltsbwsu/Test
+	/tset/Xlib4/crcltsbwsu/crcltsbwsu
 
 XCreateSimpleWindow
 	"VSW5TESTSUITE CASE XCreateSimpleWindow 12"
-	/tset/Xlib4/crtsmplwdw/Test
+	/tset/Xlib4/crtsmplwdw/crtsmplwdw
 
 XCreateWindow
 	"VSW5TESTSUITE CASE XCreateWindow 49"
-	/tset/Xlib4/crtwdw/Test
+	/tset/Xlib4/crtwdw/crtwdw
 
 XDefineCursor
 	"VSW5TESTSUITE CASE XDefineCursor 6"
-	/tset/Xlib4/dfncrsr/Test
+	/tset/Xlib4/dfncrsr/dfncrsr
 
 XDestroySubwindows
 	"VSW5TESTSUITE CASE XDestroySubwindows 5"
-	/tset/Xlib4/dstrysbws/Test
+	/tset/Xlib4/dstrysbws/dstrysbws
 
 XDestroyWindow
 	"VSW5TESTSUITE CASE XDestroyWindow 6"
-	/tset/Xlib4/dstrywdw/Test
+	/tset/Xlib4/dstrywdw/dstrywdw
 
 XLowerWindow
 	"VSW5TESTSUITE CASE XLowerWindow 4"
-	/tset/Xlib4/lwrwdw/Test
+	/tset/Xlib4/lwrwdw/lwrwdw
 
 XMapRaised
 	"VSW5TESTSUITE CASE XMapRaised 15"
-	/tset/Xlib4/mprsd/Test
+	/tset/Xlib4/mprsd/mprsd
 
 XMapSubwindows
 	"VSW5TESTSUITE CASE XMapSubwindows 14"
-	/tset/Xlib4/mpsbws/Test
+	/tset/Xlib4/mpsbws/mpsbws
 
 XMapWindow
 	"VSW5TESTSUITE CASE XMapWindow 15"
-	/tset/Xlib4/mpwdw/Test
+	/tset/Xlib4/mpwdw/mpwdw
 
 XMoveResizeWindow
 	"VSW5TESTSUITE CASE XMoveResizeWindow 15"
-	/tset/Xlib4/mvrszwdw/Test
+	/tset/Xlib4/mvrszwdw/mvrszwdw
 
 XMoveWindow
 	"VSW5TESTSUITE CASE XMoveWindow 8"
-	/tset/Xlib4/mvwdw/Test
+	/tset/Xlib4/mvwdw/mvwdw
 
 XRestackWindows
 	"VSW5TESTSUITE CASE XRestackWindows 6"
-	/tset/Xlib4/rstckwdws/Test
+	/tset/Xlib4/rstckwdws/rstckwdws
 
 XRaiseWindow
 	"VSW5TESTSUITE CASE XRaiseWindow 4"
-	/tset/Xlib4/rswdw/Test
+	/tset/Xlib4/rswdw/rswdw
 
 XResizeWindow
 	"VSW5TESTSUITE CASE XResizeWindow 13"
-	/tset/Xlib4/rszwdw/Test
+	/tset/Xlib4/rszwdw/rszwdw
 
 XSetWindowBackground
 	"VSW5TESTSUITE CASE XSetWindowBackground 4"
-	/tset/Xlib4/stwdwbg/Test
+	/tset/Xlib4/stwdwbg/stwdwbg
 
 XSetWindowBackgroundPixmap
 	"VSW5TESTSUITE CASE XSetWindowBackgroundPixmap 11"
-	/tset/Xlib4/stwdwbgpxm/Test
+	/tset/Xlib4/stwdwbgpxm/stwdwbgpxm
 
 XSetWindowBorder
 	"VSW5TESTSUITE CASE XSetWindowBorder 5"
-	/tset/Xlib4/stwdwbrdr/Test
+	/tset/Xlib4/stwdwbrdr/stwdwbrdr
 
 XSetWindowBorderPixmap
 	"VSW5TESTSUITE CASE XSetWindowBorderPixmap 9"
-	/tset/Xlib4/stwdwbrdrp/Test
+	/tset/Xlib4/stwdwbrdrp/stwdwbrdrp
 
 XSetWindowBorderWidth
 	"VSW5TESTSUITE CASE XSetWindowBorderWidth 7"
-	/tset/Xlib4/stwdwbrdrw/Test
+	/tset/Xlib4/stwdwbrdrw/stwdwbrdrw
 
 XSetWindowColormap
 	"VSW5TESTSUITE CASE XSetWindowColormap 4"
-	/tset/Xlib4/stwdwclrmp/Test
+	/tset/Xlib4/stwdwclrmp/stwdwclrmp
 
 XUndefineCursor
 	"VSW5TESTSUITE CASE XUndefineCursor 3"
-	/tset/Xlib4/undfncrsr/Test
+	/tset/Xlib4/undfncrsr/undfncrsr
 
 XUnmapSubwindows
 	"VSW5TESTSUITE CASE XUnmapSubwindows 5"
-	/tset/Xlib4/unmpsbws/Test
+	/tset/Xlib4/unmpsbws/unmpsbws
 
 XUnmapWindow
 	"VSW5TESTSUITE CASE XUnmapWindow 6"
-	/tset/Xlib4/unmpwdw/Test
+	/tset/Xlib4/unmpwdw/unmpwdw
 
 XVisualIDFromVisual
 	"VSW5TESTSUITE CASE XVisualIDFromVisual 1"
-	/tset/Xlib4/vslidfrmvs/Test
+	/tset/Xlib4/vslidfrmvs/vslidfrmvs
 
 
 # Discrete tests for Xlib Chapter 5-Window Information Functions
 
 XChangeProperty
 	"VSW5TESTSUITE CASE XChangeProperty 13"
-	/tset/Xlib5/chngprprty/Test
+	/tset/Xlib5/chngprprty/chngprprty
 
 XConvertSelection
 	"VSW5TESTSUITE CASE XConvertSelection 5"
-	/tset/Xlib5/cnvrtslctn/Test
+	/tset/Xlib5/cnvrtslctn/cnvrtslctn
 
 XDeleteProperty
 	"VSW5TESTSUITE CASE XDeleteProperty 4"
-	/tset/Xlib5/dltprprty/Test
+	/tset/Xlib5/dltprprty/dltprprty
 
 XGetAtomName
 	"VSW5TESTSUITE CASE XGetAtomName 2"
-	/tset/Xlib5/gtatmnm/Test
+	/tset/Xlib5/gtatmnm/gtatmnm
 
 XGetGeometry
 	"VSW5TESTSUITE CASE XGetGeometry 4"
-	/tset/Xlib5/gtgmtry/Test
+	/tset/Xlib5/gtgmtry/gtgmtry
 
 XGetSelectionOwner
 	"VSW5TESTSUITE CASE XGetSelectionOwner 3"
-	/tset/Xlib5/gtslctnown/Test
+	/tset/Xlib5/gtslctnown/gtslctnown
 
 XGetWindowAttributes
 	"VSW5TESTSUITE CASE XGetWindowAttributes 3"
-	/tset/Xlib5/gtwdwattrb/Test
+	/tset/Xlib5/gtwdwattrb/gtwdwattrb
 
 XGetWindowProperty
 	"VSW5TESTSUITE CASE XGetWindowProperty 10"
-	/tset/Xlib5/gtwdwprprt/Test
+	/tset/Xlib5/gtwdwprprt/gtwdwprprt
 
 XInternAtom
 	"VSW5TESTSUITE CASE XInternAtom 8"
-	/tset/Xlib5/intrnatm/Test
+	/tset/Xlib5/intrnatm/intrnatm
 
 XListProperties
 	"VSW5TESTSUITE CASE XListProperties 3"
-	/tset/Xlib5/lstprprts/Test
+	/tset/Xlib5/lstprprts/lstprprts
 
 XQueryPointer
 	"VSW5TESTSUITE CASE XQueryPointer 6"
-	/tset/Xlib5/qrypntr/Test
+	/tset/Xlib5/qrypntr/qrypntr
 
 XQueryTree
 	"VSW5TESTSUITE CASE XQueryTree 3"
-	/tset/Xlib5/qrytr/Test
+	/tset/Xlib5/qrytr/qrytr
 
 XRotateWindowProperties
 	"VSW5TESTSUITE CASE XRotateWindowProperties 6"
-	/tset/Xlib5/rttwdwprpr/Test
+	/tset/Xlib5/rttwdwprpr/rttwdwprpr
 
 XSetSelectionOwner
 	"VSW5TESTSUITE CASE XSetSelectionOwner 9"
-	/tset/Xlib5/stslctnown/Test
+	/tset/Xlib5/stslctnown/stslctnown
 
 XTranslateCoordinates
 	"VSW5TESTSUITE CASE XTranslateCoordinates 5"
-	/tset/Xlib5/trnsltcrdn/Test
+	/tset/Xlib5/trnsltcrdn/trnsltcrdn
 
 
 # Discrete tests for Xlib Chapter 6-Pixmap and Cursor Functions
 
 XCreatePixmap
 	"VSW5TESTSUITE CASE XCreatePixmap 6"
-	/tset/Xlib6/crtpxmp/Test
+	/tset/Xlib6/crtpxmp/crtpxmp
 
 XCreateFontCursor
 	"VSW5TESTSUITE CASE XCreateFontCursor 3"
-	/tset/Xlib6/crtfntcrsr/Test
+	/tset/Xlib6/crtfntcrsr/crtfntcrsr
 
 XCreateGlyphCursor
 	"VSW5TESTSUITE CASE XCreateGlyphCursor 17"
-	/tset/Xlib6/crtglyphcr/Test
+	/tset/Xlib6/crtglyphcr/crtglyphcr
 
 XCreatePixmapCursor
 	"VSW5TESTSUITE CASE XCreatePixmapCursor 13"
-	/tset/Xlib6/crtpxmpcrs/Test
+	/tset/Xlib6/crtpxmpcrs/crtpxmpcrs
 
 XFreeCursor
 	"VSW5TESTSUITE CASE XFreeCursor 3"
-	/tset/Xlib6/frcrsr/Test
+	/tset/Xlib6/frcrsr/frcrsr
 
 XFreePixmap
 	"VSW5TESTSUITE CASE XFreePixmap 3"
-	/tset/Xlib6/frpxmp/Test
+	/tset/Xlib6/frpxmp/frpxmp
 
 XQueryBestCursor
 	"VSW5TESTSUITE CASE XQueryBestCursor 2"
-	/tset/Xlib6/qrybstcrsr/Test
+	/tset/Xlib6/qrybstcrsr/qrybstcrsr
 
 XRecolorCursor
 	"VSW5TESTSUITE CASE XRecolorCursor 3"
-	/tset/Xlib6/rclrcrsr/Test
+	/tset/Xlib6/rclrcrsr/rclrcrsr
 
 
 # Discrete tests for Xlib Chapter 7-Color Management Functions
 
 XAllocColor
 	"VSW5TESTSUITE CASE XAllocColor 5"
-	/tset/Xlib7/allcclr/Test
+	/tset/Xlib7/allcclr/allcclr
 
 XAllocColorCells
 	"VSW5TESTSUITE CASE XAllocColorCells 9"
-	/tset/Xlib7/allcclrcll/Test
+	/tset/Xlib7/allcclrcll/allcclrcll
 
 XAllocColorPlanes
 	"VSW5TESTSUITE CASE XAllocColorPlanes 7"
-	/tset/Xlib7/allcclrpln/Test
+	/tset/Xlib7/allcclrpln/allcclrpln
 
 XAllocNamedColor
 	"VSW5TESTSUITE CASE XAllocNamedColor 6"
-	/tset/Xlib7/allcnmdclr/Test
+	/tset/Xlib7/allcnmdclr/allcnmdclr
 
 XCopyColormapAndFree
 	"VSW5TESTSUITE CASE XCopyColormapAndFree 5"
-	/tset/Xlib7/cpyclrmpan/Test
+	/tset/Xlib7/cpyclrmpan/cpyclrmpan
 
 XCreateColormap
 	"VSW5TESTSUITE CASE XCreateColormap 13"
-	/tset/Xlib7/crtclrmp/Test
+	/tset/Xlib7/crtclrmp/crtclrmp
 
 XFreeColormap
 	"VSW5TESTSUITE CASE XFreeColormap 5"
-	/tset/Xlib7/frclrmp/Test
+	/tset/Xlib7/frclrmp/frclrmp
 
 XFreeColors
 	"VSW5TESTSUITE CASE XFreeColors 9"
-	/tset/Xlib7/frclrs/Test
+	/tset/Xlib7/frclrs/frclrs
 
 XLookupColor
 	"VSW5TESTSUITE CASE XLookupColor 4"
-	/tset/Xlib7/lkpclr/Test
+	/tset/Xlib7/lkpclr/lkpclr
 
 XParseColor
 	"VSW5TESTSUITE CASE XParseColor 10"
-	/tset/Xlib7/prsclr/Test
+	/tset/Xlib7/prsclr/prsclr
 
 XQueryColor
 	"VSW5TESTSUITE CASE XQueryColor 3"
-	/tset/Xlib7/qryclr/Test
+	/tset/Xlib7/qryclr/qryclr
 
 XQueryColors
 	"VSW5TESTSUITE CASE XQueryColors 3"
-	/tset/Xlib7/qryclrs/Test
+	/tset/Xlib7/qryclrs/qryclrs
 
 XStoreColor
 	"VSW5TESTSUITE CASE XStoreColor 8"
-	/tset/Xlib7/strclr/Test
+	/tset/Xlib7/strclr/strclr
 
 XStoreColors
 	"VSW5TESTSUITE CASE XStoreColors 9"
-	/tset/Xlib7/strclrs/Test
+	/tset/Xlib7/strclrs/strclrs
 
 XStoreNamedColor
 	"VSW5TESTSUITE CASE XStoreNamedColor 9"
-	/tset/Xlib7/strnmdclr/Test
+	/tset/Xlib7/strnmdclr/strnmdclr
 
 XcmsAllocColor
 	"VSW5TESTSUITE CASE XcmsAllocColor 2"
-	/tset/Xlib7/cmsac/Test
+	/tset/Xlib7/cmsac/cmsac
 
 XcmsAddColorSpace
 	"VSW5TESTSUITE CASE XcmsAddColorSpace 1"
-	/tset/Xlib7/cmsacs/Test
+	/tset/Xlib7/cmsacs/cmsacs
 
 XcmsAddFunctionSet
 	"VSW5TESTSUITE CASE XcmsAddFunctionSet 1"
-	/tset/Xlib7/cmsadfs/Test
+	/tset/Xlib7/cmsadfs/cmsadfs
 
 XcmsAllocNamedColor
 	"VSW5TESTSUITE CASE XcmsAllocNamedColor 2"
-	/tset/Xlib7/cmsanc/Test
+	/tset/Xlib7/cmsanc/cmsanc
 
 XcmsCCCOfColormap
 	"VSW5TESTSUITE CASE XcmsCCCOfColormap 1"
-	/tset/Xlib7/cmsccoc/Test
+	/tset/Xlib7/cmsccoc/cmsccoc
 
 XcmsConvertColors
 	"VSW5TESTSUITE CASE XcmsConvertColors 1"
-	/tset/Xlib7/cmsccol/Test
+	/tset/Xlib7/cmsccol/cmsccol
 
 XcmsCIELabQueryMaxLC
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxLC 1"
-	/tset/Xlib7/cmscielq/Test
+	/tset/Xlib7/cmscielq/cmscielq
 
 XcmsCIELabQueryMaxC
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxC 1"
-	/tset/Xlib7/cmscieqc/Test
+	/tset/Xlib7/cmscieqc/cmscieqc
 
 XcmsCIELabQueryMaxL
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxL 1"
-	/tset/Xlib7/cmscieql/Test
+	/tset/Xlib7/cmscieql/cmscieql
 
 XcmsConversionProc
 	"VSW5TESTSUITE CASE XcmsConversionProc 9"
-	/tset/Xlib7/cmscproc/Test
+	/tset/Xlib7/cmscproc/cmscproc
 
 XcmsConversionProc2
 	"VSW5TESTSUITE CASE XcmsConversionProc 4"
-	/tset/Xlib7/cmscprocd/Test
+	/tset/Xlib7/cmscprocd/cmscprocd
 
 XcmsCreateCCC
 	"VSW5TESTSUITE CASE XcmsCreateCCC 1"
-	/tset/Xlib7/cmscrcc/Test
+	/tset/Xlib7/cmscrcc/cmscrcc
 
 XcmsDefaultCCC
 	"VSW5TESTSUITE CASE XcmsDefaultCCC 1"
-	/tset/Xlib7/cmsdcc/Test
+	/tset/Xlib7/cmsdcc/cmsdcc
 
 XcmsDisplayOfCCC
 	"VSW5TESTSUITE CASE XcmsDisplayOfCCC 1"
-	/tset/Xlib7/cmsdocc/Test
+	/tset/Xlib7/cmsdocc/cmsdocc
 
 XcmsFreeCCC
 	"VSW5TESTSUITE CASE XcmsFreeCCC 1"
-	/tset/Xlib7/cmsfccc/Test
+	/tset/Xlib7/cmsfccc/cmsfccc
 
 XcmsFormatOfPrefix
 	"VSW5TESTSUITE CASE XcmsFormatOfPrefix 2"
-	/tset/Xlib7/cmsfopr/Test
+	/tset/Xlib7/cmsfopr/cmsfopr
 
 XcmsLookupColor
 	"VSW5TESTSUITE CASE XcmsLookupColor 1"
-	/tset/Xlib7/cmslkcl/Test
+	/tset/Xlib7/cmslkcl/cmslkcl
 
 XcmsCIELabQueryMinL
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMinL 1"
-	/tset/Xlib7/cmslqml/Test
+	/tset/Xlib7/cmslqml/cmslqml
 
 XcmsPrefixOfFormat
 	"VSW5TESTSUITE CASE XcmsPrefixOfFormat 1"
-	/tset/Xlib7/cmspoft/Test
+	/tset/Xlib7/cmspoft/cmspoft
 
 XcmsQueryBlack
 	"VSW5TESTSUITE CASE XcmsQueryBlack 1"
-	/tset/Xlib7/cmsqbk/Test
+	/tset/Xlib7/cmsqbk/cmsqbk
 
 XcmsQueryBlue
 	"VSW5TESTSUITE CASE XcmsQueryBlue 1"
-	/tset/Xlib7/cmsqbl/Test
+	/tset/Xlib7/cmsqbl/cmsqbl
 
 XcmsQueryColor
 	"VSW5TESTSUITE CASE XcmsQueryColor 1"
-	/tset/Xlib7/cmsqc/Test
+	/tset/Xlib7/cmsqc/cmsqc
 
 XcmsQueryColors
 	"VSW5TESTSUITE CASE XcmsQueryColors 3"
-	/tset/Xlib7/cmsqcl/Test
+	/tset/Xlib7/cmsqcl/cmsqcl
 
 XcmsQueryGreen
 	"VSW5TESTSUITE CASE XcmsQueryGreen 1"
-	/tset/Xlib7/cmsqgr/Test
+	/tset/Xlib7/cmsqgr/cmsqgr
 
 XcmsCIELuvQueryMaxC
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxC 1"
-	/tset/Xlib7/cmsqmc/Test
+	/tset/Xlib7/cmsqmc/cmsqmc
 
 XcmsCIELuvQueryMinL
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMinL 1"
-	/tset/Xlib7/cmsqmil/Test
+	/tset/Xlib7/cmsqmil/cmsqmil
 
 XcmsCIELuvQueryMaxL
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxL 1"
-	/tset/Xlib7/cmsqml/Test
+	/tset/Xlib7/cmsqml/cmsqml
 
 XcmsCIELuvQueryMaxLC
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxLC 1"
-	/tset/Xlib7/cmsqmlc/Test
+	/tset/Xlib7/cmsqmlc/cmsqmlc
 
 XcmsQueryRed
 	"VSW5TESTSUITE CASE XcmsQueryRed 1"
-	/tset/Xlib7/cmsqred/Test
+	/tset/Xlib7/cmsqred/cmsqred
 
 XcmsQueryWhite
 	"VSW5TESTSUITE CASE XcmsQueryWhite 1"
-	/tset/Xlib7/cmsqwt/Test
+	/tset/Xlib7/cmsqwt/cmsqwt
 
 XcmsScreenNumberOfCCC
 	"VSW5TESTSUITE CASE XcmsScreenNumberOfCCC 1"
-	/tset/Xlib7/cmssnoc/Test
+	/tset/Xlib7/cmssnoc/cmssnoc
 
 XcmsStoreColor
 	"VSW5TESTSUITE CASE XcmsStoreColor 4"
-	/tset/Xlib7/cmsstclr/Test
+	/tset/Xlib7/cmsstclr/cmsstclr
 
 XcmsStoreColors
 	"VSW5TESTSUITE CASE XcmsStoreColors 4"
-	/tset/Xlib7/cmsstcls/Test
+	/tset/Xlib7/cmsstcls/cmsstcls
 
 XcmsTekHVCQueryMaxC
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxC 1"
-	/tset/Xlib7/cmstqmc/Test
+	/tset/Xlib7/cmstqmc/cmstqmc
 
 XcmsTekHVCQueryMinV
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMinV 1"
-	/tset/Xlib7/cmstqmiv/Test
+	/tset/Xlib7/cmstqmiv/cmstqmiv
 
 XcmsTekHVCQueryMaxV
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxV 1"
-	/tset/Xlib7/cmstqmv/Test
+	/tset/Xlib7/cmstqmv/cmstqmv
 
 XcmsTekHVCQueryMaxVC
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxVC 1"
-	/tset/Xlib7/cmstqmvc/Test
+	/tset/Xlib7/cmstqmvc/cmstqmvc
 
 XcmsTekHVCQueryMaxVSamples
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxVSamples 1"
-	/tset/Xlib7/cmstqmvs/Test
+	/tset/Xlib7/cmstqmvs/cmstqmvs
 
 XcmsVisualOfCCC
 	"VSW5TESTSUITE CASE XcmsVisualOfCCC 1"
-	/tset/Xlib7/cmsvofcc/Test
+	/tset/Xlib7/cmsvofcc/cmsvofcc
 
 XcmsSetWhiteAdjustProc
 	"VSW5TESTSUITE CASE XcmsSetWhiteAdjustProc 3"
-	/tset/Xlib7/cmswapr/Test
+	/tset/Xlib7/cmswapr/cmswapr
 
 XcmsScreenWhitePointOfCCC
 	"VSW5TESTSUITE CASE XcmsScreenWhitePointOfCCC 1"
-	/tset/Xlib7/cmswpcc/Test
+	/tset/Xlib7/cmswpcc/cmswpcc
 
 XcmsClientWhitePointOfCCC
 	"VSW5TESTSUITE CASE XcmsClientWhitePointOfCCC 1"
-	/tset/Xlib7/cmswpoc/Test
+	/tset/Xlib7/cmswpoc/cmswpoc
 
 XcmsSetWhitePoint
 	"VSW5TESTSUITE CASE XcmsSetWhitePoint 1"
-	/tset/Xlib7/cmswpt/Test
+	/tset/Xlib7/cmswpt/cmswpt
 
 # Discrete tests for Xlib Chapter 8-Graphics Context Functions
 
 XChangeGC
 	"VSW5TESTSUITE CASE XChangeGC 25"
-	/tset/Xlib8/chnggc/Test
+	/tset/Xlib8/chnggc/chnggc
 
 XCopyGC
 	"VSW5TESTSUITE CASE XCopyGC 5"
-	/tset/Xlib8/cpygc/Test
+	/tset/Xlib8/cpygc/cpygc
 
 XCreateGC
 	"VSW5TESTSUITE CASE XCreateGC 26"
-	/tset/Xlib8/crtgc/Test
+	/tset/Xlib8/crtgc/crtgc
 
 XFreeGC
 	"VSW5TESTSUITE CASE XFreeGC 2"
-	/tset/Xlib8/frgc/Test
+	/tset/Xlib8/frgc/frgc
 
 XGContextFromGC
 	"VSW5TESTSUITE CASE XGContextFromGC 1"
-	/tset/Xlib8/gcntxtfrmg/Test
+	/tset/Xlib8/gcntxtfrmg/gcntxtfrmg
 
 XGetGCValues
 	"VSW5TESTSUITE CASE XGetGCValues 3"
-	/tset/Xlib8/gtgcvls/Test
+	/tset/Xlib8/gtgcvls/gtgcvls
 
 XQueryBestStipple
 	"VSW5TESTSUITE CASE XQueryBestStipple 3"
-	/tset/Xlib8/qrybststpp/Test
+	/tset/Xlib8/qrybststpp/qrybststpp
 
 XQueryBestSize
 	"VSW5TESTSUITE CASE XQueryBestSize 7"
-	/tset/Xlib8/qrybstsz/Test
+	/tset/Xlib8/qrybstsz/qrybstsz
 
 XQueryBestTile
 	"VSW5TESTSUITE CASE XQueryBestTile 3"
-	/tset/Xlib8/qrybsttl/Test
+	/tset/Xlib8/qrybsttl/qrybsttl
 
 XSetArcMode
 	"VSW5TESTSUITE CASE XSetArcMode 4"
-	/tset/Xlib8/starcmd/Test
+	/tset/Xlib8/starcmd/starcmd
 
 XSetBackground
 	"VSW5TESTSUITE CASE XSetBackground 3"
-	/tset/Xlib8/stbg/Test
+	/tset/Xlib8/stbg/stbg
 
 XSetClipMask
 	"VSW5TESTSUITE CASE XSetClipMask 7"
-	/tset/Xlib8/stclpmsk/Test
+	/tset/Xlib8/stclpmsk/stclpmsk
 
 XSetClipOrigin
 	"VSW5TESTSUITE CASE XSetClipOrigin 3"
-	/tset/Xlib8/stclporgn/Test
+	/tset/Xlib8/stclporgn/stclporgn
 
 XSetClipRectangles
 	"VSW5TESTSUITE CASE XSetClipRectangles 9"
-	/tset/Xlib8/stclprctng/Test
+	/tset/Xlib8/stclprctng/stclprctng
 
 XSetDashes
 	"VSW5TESTSUITE CASE XSetDashes 7"
-	/tset/Xlib8/stdshs/Test
+	/tset/Xlib8/stdshs/stdshs
 
 XSetFillRule
 	"VSW5TESTSUITE CASE XSetFillRule 4"
-	/tset/Xlib8/stfllrl/Test
+	/tset/Xlib8/stfllrl/stfllrl
 
 XSetFillStyle
 	"VSW5TESTSUITE CASE XSetFillStyle 4"
-	/tset/Xlib8/stfllstyl/Test
+	/tset/Xlib8/stfllstyl/stfllstyl
 
 XSetFunction
 	"VSW5TESTSUITE CASE XSetFunction 4"
-	/tset/Xlib8/stfnctn/Test
+	/tset/Xlib8/stfnctn/stfnctn
 
 XSetFont
 	"VSW5TESTSUITE CASE XSetFont 4"
-	/tset/Xlib8/stfnt/Test
+	/tset/Xlib8/stfnt/stfnt
 
 XSetForeground
 	"VSW5TESTSUITE CASE XSetForeground 3"
-	/tset/Xlib8/stfrgrnd/Test
+	/tset/Xlib8/stfrgrnd/stfrgrnd
 
 XSetGraphicsExposures
 	"VSW5TESTSUITE CASE XSetGraphicsExposures 4"
-	/tset/Xlib8/stgrphcsex/Test
+	/tset/Xlib8/stgrphcsex/stgrphcsex
 
 XSetLineAttributes
 	"VSW5TESTSUITE CASE XSetLineAttributes 6"
-	/tset/Xlib8/stlnattrbt/Test
+	/tset/Xlib8/stlnattrbt/stlnattrbt
 
 XSetPlaneMask
 	"VSW5TESTSUITE CASE XSetPlaneMask 3"
-	/tset/Xlib8/stplnmsk/Test
+	/tset/Xlib8/stplnmsk/stplnmsk
 
 XSetSubwindowMode
 	"VSW5TESTSUITE CASE XSetSubwindowMode 4"
-	/tset/Xlib8/stsbwmd/Test
+	/tset/Xlib8/stsbwmd/stsbwmd
 
 XSetStipple
 	"VSW5TESTSUITE CASE XSetStipple 6"
-	/tset/Xlib8/ststppl/Test
+	/tset/Xlib8/ststppl/ststppl
 
 XSetState
 	"VSW5TESTSUITE CASE XSetState 4"
-	/tset/Xlib8/ststt/Test
+	/tset/Xlib8/ststt/ststt
 
 XSetTile
 	"VSW5TESTSUITE CASE XSetTile 6"
-	/tset/Xlib8/sttl/Test
+	/tset/Xlib8/sttl/sttl
 
 XSetTSOrigin
 	"VSW5TESTSUITE CASE XSetTSOrigin 3"
-	/tset/Xlib8/sttsorgn/Test
+	/tset/Xlib8/sttsorgn/sttsorgn
 
 XFlushGC
 	"VSW5TESTSUITE CASE XFlushGC 2"
-	/tset/Xlib8/flushgc/Test
+	/tset/Xlib8/flushgc/flushgc
 
 
 # Discrete tests for Xlib Chapter 9-Graphics Functions
 
 XClearArea
 	"VSW5TESTSUITE CASE XClearArea 11"
-	/tset/Xlib9/clrar/Test
+	/tset/Xlib9/clrar/clrar
 
 XClearWindow
 	"VSW5TESTSUITE CASE XClearWindow 7"
-	/tset/Xlib9/clrwdw/Test
+	/tset/Xlib9/clrwdw/clrwdw
 
 XCopyArea
 	"VSW5TESTSUITE CASE XCopyArea 36"
-	/tset/Xlib9/cpyar/Test
+	/tset/Xlib9/cpyar/cpyar
 
 XCopyPlane
 	"VSW5TESTSUITE CASE XCopyPlane 43"
-	/tset/Xlib9/cpypln/Test
+	/tset/Xlib9/cpypln/cpypln
 
 XDrawArc
 	"VSW5TESTSUITE CASE XDrawArc 102"
-	/tset/Xlib9/drwarc/Test
+	/tset/Xlib9/drwarc/drwarc
 
 XDrawArcs
 	"VSW5TESTSUITE CASE XDrawArcs 112"
-	/tset/Xlib9/drwarcs/Test
+	/tset/Xlib9/drwarcs/drwarcs
 
 XDrawImageString16
 	"VSW5TESTSUITE CASE XDrawImageString16 24"
-	/tset/Xlib9/drwimgst16/Test
+	/tset/Xlib9/drwimgst16/drwimgst16
 
 XDrawImageString
 	"VSW5TESTSUITE CASE XDrawImageString 24"
-	/tset/Xlib9/drwimgstr/Test
+	/tset/Xlib9/drwimgstr/drwimgstr
 
 XDrawLine
 	"VSW5TESTSUITE CASE XDrawLine 91"
-	/tset/Xlib9/drwln/Test
+	/tset/Xlib9/drwln/drwln
 
 XDrawLines
 	"VSW5TESTSUITE CASE XDrawLines 104"
-	/tset/Xlib9/drwlns/Test
+	/tset/Xlib9/drwlns/drwlns
 
 XDrawPoint
 	"VSW5TESTSUITE CASE XDrawPoint 34"
-	/tset/Xlib9/drwpnt/Test
+	/tset/Xlib9/drwpnt/drwpnt
 
 XDrawPoints
 	"VSW5TESTSUITE CASE XDrawPoints 38"
-	/tset/Xlib9/drwpnts/Test
+	/tset/Xlib9/drwpnts/drwpnts
 
 XDrawRectangle
 	"VSW5TESTSUITE CASE XDrawRectangle 83"
-	/tset/Xlib9/drwrctngl/Test
+	/tset/Xlib9/drwrctngl/drwrctngl
 
 XDrawRectangles
 	"VSW5TESTSUITE CASE XDrawRectangles 85"
-	/tset/Xlib9/drwrctngls/Test
+	/tset/Xlib9/drwrctngls/drwrctngls
 
 XDrawSegments
 	"VSW5TESTSUITE CASE XDrawSegments 92"
-	/tset/Xlib9/drwsgmnts/Test
+	/tset/Xlib9/drwsgmnts/drwsgmnts
 
 XDrawString
 	"VSW5TESTSUITE CASE XDrawString 44"
-	/tset/Xlib9/drwstr/Test
+	/tset/Xlib9/drwstr/drwstr
 
 XDrawString16
 	"VSW5TESTSUITE CASE XDrawString16 44"
-	/tset/Xlib9/drwstr16/Test
+	/tset/Xlib9/drwstr16/drwstr16
 
 XDrawText
 	"VSW5TESTSUITE CASE XDrawText 50"
-	/tset/Xlib9/drwtxt/Test
+	/tset/Xlib9/drwtxt/drwtxt
 
 XDrawText16
 	"VSW5TESTSUITE CASE XDrawText16 50"
-	/tset/Xlib9/drwtxt16/Test
+	/tset/Xlib9/drwtxt16/drwtxt16
 
 XFillArc
 	"VSW5TESTSUITE CASE XFillArc 44"
-	/tset/Xlib9/fllarc/Test
+	/tset/Xlib9/fllarc/fllarc
 
 XFillArcs
 	"VSW5TESTSUITE CASE XFillArcs 46"
-	/tset/Xlib9/fllarcs/Test
+	/tset/Xlib9/fllarcs/fllarcs
 
 XFillPolygon
 	"VSW5TESTSUITE CASE XFillPolygon 55"
-	/tset/Xlib9/fllplygn/Test
+	/tset/Xlib9/fllplygn/fllplygn
 
 XFillRectangle
 	"VSW5TESTSUITE CASE XFillRectangle 43"
-	/tset/Xlib9/fllrctngl/Test
+	/tset/Xlib9/fllrctngl/fllrctngl
 
 XFillRectangles
 	"VSW5TESTSUITE CASE XFillRectangles 44"
-	/tset/Xlib9/fllrctngls/Test
+	/tset/Xlib9/fllrctngls/fllrctngls
 
 XFreeFont
 	"VSW5TESTSUITE CASE XFreeFont 3"
-	/tset/Xlib9/frfnt/Test
+	/tset/Xlib9/frfnt/frfnt
 
 XFreeFontInfo
 	"VSW5TESTSUITE CASE XFreeFontInfo 2"
-	/tset/Xlib9/frfntinf/Test
+	/tset/Xlib9/frfntinf/frfntinf
 
 XFreeFontNames
 	"VSW5TESTSUITE CASE XFreeFontNames 1"
-	/tset/Xlib9/frfntnms/Test
+	/tset/Xlib9/frfntnms/frfntnms
 
 XFreeFontPath
 	"VSW5TESTSUITE CASE XFreeFontPath 1"
-	/tset/Xlib9/frfntpth/Test
+	/tset/Xlib9/frfntpth/frfntpth
 
 XGetFontProperty
 	"VSW5TESTSUITE CASE XGetFontProperty 2"
-	/tset/Xlib9/gtfntprprt/Test
+	/tset/Xlib9/gtfntprprt/gtfntprprt
 
 XGetFontPath
 	"VSW5TESTSUITE CASE XGetFontPath 1"
-	/tset/Xlib9/gtfntpth/Test
+	/tset/Xlib9/gtfntpth/gtfntpth
 
 XGetImage
 	"VSW5TESTSUITE CASE XGetImage 17"
-	/tset/Xlib9/gtimg/Test
+	/tset/Xlib9/gtimg/gtimg
 
 XGetSubImage
 	"VSW5TESTSUITE CASE XGetSubImage 17"
-	/tset/Xlib9/gtsbimg/Test
+	/tset/Xlib9/gtsbimg/gtsbimg
 
 XLoadFont
 	"VSW5TESTSUITE CASE XLoadFont 5"
-	/tset/Xlib9/ldfnt/Test
+	/tset/Xlib9/ldfnt/ldfnt
 
 XLoadQueryFont
 	"VSW5TESTSUITE CASE XLoadQueryFont 5"
-	/tset/Xlib9/ldqryfnt/Test
+	/tset/Xlib9/ldqryfnt/ldqryfnt
 
 XListFonts
 	"VSW5TESTSUITE CASE XListFonts 6"
-	/tset/Xlib9/lstfnts/Test
+	/tset/Xlib9/lstfnts/lstfnts
 
 XListFontsWithInfo
 	"VSW5TESTSUITE CASE XListFontsWithInfo 7"
-	/tset/Xlib9/lstfntswth/Test
+	/tset/Xlib9/lstfntswth/lstfntswth
 
 XPutImage
 	"VSW5TESTSUITE CASE XPutImage 40"
-	/tset/Xlib9/ptimg/Test
+	/tset/Xlib9/ptimg/ptimg
 
 XQueryFont
 	"VSW5TESTSUITE CASE XQueryFont 3"
-	/tset/Xlib9/qryfnt/Test
+	/tset/Xlib9/qryfnt/qryfnt
 
 XQueryTextExtents16
 	"VSW5TESTSUITE CASE XQueryTextExtents16 13"
-	/tset/Xlib9/qrytxtex16/Test
+	/tset/Xlib9/qrytxtex16/qrytxtex16
 
 XQueryTextExtents
 	"VSW5TESTSUITE CASE XQueryTextExtents 12"
-	/tset/Xlib9/qrytxtextn/Test
+	/tset/Xlib9/qrytxtextn/qrytxtextn
 
 XSetFontPath
 	"VSW5TESTSUITE CASE XSetFontPath 4"
-	/tset/Xlib9/stfntpth/Test
+	/tset/Xlib9/stfntpth/stfntpth
 
 XTextExtents16
 	"VSW5TESTSUITE CASE XTextExtents16 11"
-	/tset/Xlib9/txtextnt16/Test
+	/tset/Xlib9/txtextnt16/txtextnt16
 
 XTextExtents
 	"VSW5TESTSUITE CASE XTextExtents 10"
-	/tset/Xlib9/txtextnts/Test
+	/tset/Xlib9/txtextnts/txtextnts
 
 XTextWidth
 	"VSW5TESTSUITE CASE XTextWidth 1"
-	/tset/Xlib9/txtwdth/Test
+	/tset/Xlib9/txtwdth/txtwdth
 
 XTextWidth16
 	"VSW5TESTSUITE CASE XTextWidth16 2"
-	/tset/Xlib9/txtwdth16/Test
+	/tset/Xlib9/txtwdth16/txtwdth16
 
 XUnloadFont
 	"VSW5TESTSUITE CASE XUnloadFont 3"
-	/tset/Xlib9/unldfnt/Test
+	/tset/Xlib9/unldfnt/unldfnt
 
 
 # Discrete tests for XOpen Specific Requirements
 
 xXAllocNamedColor
 	"VSW5TESTSUITE CASE XAllocNamedColor 7"
-	/tset/Xopen/allcnmdclr/Test
+	/tset/Xopen/allcnmdclr/allcnmdclr
 
 xcursorfont
 	"VSW5TESTSUITE CASE cursorfont 32"
-	/tset/Xopen/crsrfnt/Test
+	/tset/Xopen/crsrfnt/crsrfnt
 
 xXCreateFontCursor
 	"VSW5TESTSUITE CASE XCreateFontCursor 31"
-	/tset/Xopen/crtfntcrsr/Test
+	/tset/Xopen/crtfntcrsr/crtfntcrsr
 
 xkeysym
 	"VSW5TESTSUITE CASE keysym 7"
-	/tset/Xopen/kysym/Test
+	/tset/Xopen/kysym/kysym
 
 xkeysymdef
 	"VSW5TESTSUITE CASE keysymdef 15"
-	/tset/Xopen/kysymdf/Test
+	/tset/Xopen/kysymdf/kysymdf
 
 xXKeysymToKeycode
 	"VSW5TESTSUITE CASE XKeysymToKeycode 14"
-	/tset/Xopen/kysymtkycd/Test
+	/tset/Xopen/kysymtkycd/kysymtkycd
 
 xXLookupColor
 	"VSW5TESTSUITE CASE XLookupColor 7"
-	/tset/Xopen/lkpclr/Test
+	/tset/Xopen/lkpclr/lkpclr
 
 xXStringToKeysym
 	"VSW5TESTSUITE CASE XStringToKeysym 14"
-	/tset/Xopen/strtkysym/Test
+	/tset/Xopen/strtkysym/strtkysym
 
 
 # Discrete tests for X Server Protocol
@@ -3110,1643 +3110,1643 @@ pAllocColor
 
 pAllocColorCells
 	"VSW5TESTSUITE CASE AllocColorCells 3"
-	/tset/Xproto/allcclrcll/Test
+	/tset/Xproto/allcclrcll/allcclrcll
 
 pAllocColorPlanes
 	"VSW5TESTSUITE CASE AllocColorPlanes 3"
-	/tset/Xproto/allcclrpln/Test
+	/tset/Xproto/allcclrpln/allcclrpln
 
 pAllocNamedColor
 	"VSW5TESTSUITE CASE AllocNamedColor 3"
-	/tset/Xproto/allcnmdclr/Test
+	/tset/Xproto/allcnmdclr/allcnmdclr
 
 pAllowEvents
 	"VSW5TESTSUITE CASE AllowEvents 3"
-	/tset/Xproto/allwevnts/Test
+	/tset/Xproto/allwevnts/allwevnts
 
 pBadRequest
 	"VSW5TESTSUITE CASE BadRequest 1"
-	/tset/Xproto/bdrqst/Test
+	/tset/Xproto/bdrqst/bdrqst
 
 pBell
 	"VSW5TESTSUITE CASE Bell 3"
-	/tset/Xproto/bll/Test
+	/tset/Xproto/bll/bll
 
 pChangeActivePointerGrab
 	"VSW5TESTSUITE CASE ChangeActivePointerGrab 3"
-	/tset/Xproto/chngactvpn/Test
+	/tset/Xproto/chngactvpn/chngactvpn
 
 pChangeGC
 	"VSW5TESTSUITE CASE ChangeGC 4"
-	/tset/Xproto/chnggc/Test
+	/tset/Xproto/chnggc/chnggc
 
 pChangeHosts
 	"VSW5TESTSUITE CASE ChangeHosts 3"
-	/tset/Xproto/chnghsts/Test
+	/tset/Xproto/chnghsts/chnghsts
 
 pChangeKeyboardControl
 	"VSW5TESTSUITE CASE ChangeKeyboardControl 4"
-	/tset/Xproto/chngkybrdc/Test
+	/tset/Xproto/chngkybrdc/chngkybrdc
 
 pChangeKeyboardMapping
 	"VSW5TESTSUITE CASE ChangeKeyboardMapping 3"
-	/tset/Xproto/chngkybrdm/Test
+	/tset/Xproto/chngkybrdm/chngkybrdm
 
 pChangePointerControl
 	"VSW5TESTSUITE CASE ChangePointerControl 3"
-	/tset/Xproto/chngpntrcn/Test
+	/tset/Xproto/chngpntrcn/chngpntrcn
 
 pChangeProperty
 	"VSW5TESTSUITE CASE ChangeProperty 3"
-	/tset/Xproto/chngprprty/Test
+	/tset/Xproto/chngprprty/chngprprty
 
 pChangeSaveSet
 	"VSW5TESTSUITE CASE ChangeSaveSet 3"
-	/tset/Xproto/chngsvst/Test
+	/tset/Xproto/chngsvst/chngsvst
 
 pChangeWindowAttributes
 	"VSW5TESTSUITE CASE ChangeWindowAttributes 4"
-	/tset/Xproto/chngwdwatt/Test
+	/tset/Xproto/chngwdwatt/chngwdwatt
 
 pClearArea
 	"VSW5TESTSUITE CASE ClearArea 3"
-	/tset/Xproto/clrar/Test
+	/tset/Xproto/clrar/clrar
 
 pCloseFont
 	"VSW5TESTSUITE CASE CloseFont 3"
-	/tset/Xproto/clsfnt/Test
+	/tset/Xproto/clsfnt/clsfnt
 
 pConfigureWindow
 	"VSW5TESTSUITE CASE ConfigureWindow 4"
-	/tset/Xproto/cnfgrwdw/Test
+	/tset/Xproto/cnfgrwdw/cnfgrwdw
 
 pConvertSelection
 	"VSW5TESTSUITE CASE ConvertSelection 3"
-	/tset/Xproto/cnvrtslctn/Test
+	/tset/Xproto/cnvrtslctn/cnvrtslctn
 
 pCopyArea
 	"VSW5TESTSUITE CASE CopyArea 3"
-	/tset/Xproto/cpyar/Test
+	/tset/Xproto/cpyar/cpyar
 
 pCopyColormapAndFree
 	"VSW5TESTSUITE CASE CopyColormapAndFree 5"
-	/tset/Xproto/cpyclrmpan/Test
+	/tset/Xproto/cpyclrmpan/cpyclrmpan
 
 pCopyGC
 	"VSW5TESTSUITE CASE CopyGC 4"
-	/tset/Xproto/cpygc/Test
+	/tset/Xproto/cpygc/cpygc
 
 pCopyPlane
 	"VSW5TESTSUITE CASE CopyPlane 3"
-	/tset/Xproto/cpypln/Test
+	/tset/Xproto/cpypln/cpypln
 
 pCirculateWindow
 	"VSW5TESTSUITE CASE CirculateWindow 3"
-	/tset/Xproto/crcltwdw/Test
+	/tset/Xproto/crcltwdw/crcltwdw
 
 pCreateColormap
 	"VSW5TESTSUITE CASE CreateColormap 5"
-	/tset/Xproto/crtclrmp/Test
+	/tset/Xproto/crtclrmp/crtclrmp
 
 pCreateCursor
 	"VSW5TESTSUITE CASE CreateCursor 5"
-	/tset/Xproto/crtcrsr/Test
+	/tset/Xproto/crtcrsr/crtcrsr
 
 pCreateGC
 	"VSW5TESTSUITE CASE CreateGC 6"
-	/tset/Xproto/crtgc/Test
+	/tset/Xproto/crtgc/crtgc
 
 pCreateGlyphCursor
 	"VSW5TESTSUITE CASE CreateGlyphCursor 5"
-	/tset/Xproto/crtglyphcr/Test
+	/tset/Xproto/crtglyphcr/crtglyphcr
 
 pCreatePixmap
 	"VSW5TESTSUITE CASE CreatePixmap 5"
-	/tset/Xproto/crtpxmp/Test
+	/tset/Xproto/crtpxmp/crtpxmp
 
 pCreateWindow
 	"VSW5TESTSUITE CASE CreateWindow 6"
-	/tset/Xproto/crtwdw/Test
+	/tset/Xproto/crtwdw/crtwdw
 
 pDeleteProperty
 	"VSW5TESTSUITE CASE DeleteProperty 3"
-	/tset/Xproto/dltprprty/Test
+	/tset/Xproto/dltprprty/dltprprty
 
 pDestroySubwindows
 	"VSW5TESTSUITE CASE DestroySubwindows 3"
-	/tset/Xproto/dstrysbws/Test
+	/tset/Xproto/dstrysbws/dstrysbws
 
 pDestroyWindow
 	"VSW5TESTSUITE CASE DestroyWindow 3"
-	/tset/Xproto/dstrywdw/Test
+	/tset/Xproto/dstrywdw/dstrywdw
 
 pFillPoly
 	"VSW5TESTSUITE CASE FillPoly 3"
-	/tset/Xproto/fllply/Test
+	/tset/Xproto/fllply/fllply
 
 pFreeColormap
 	"VSW5TESTSUITE CASE FreeColormap 3"
-	/tset/Xproto/frclrmp/Test
+	/tset/Xproto/frclrmp/frclrmp
 
 pFreeColors
 	"VSW5TESTSUITE CASE FreeColors 3"
-	/tset/Xproto/frclrs/Test
+	/tset/Xproto/frclrs/frclrs
 
 pFreeCursor
 	"VSW5TESTSUITE CASE FreeCursor 3"
-	/tset/Xproto/frcrsr/Test
+	/tset/Xproto/frcrsr/frcrsr
 
 pForceScreenSaver
 	"VSW5TESTSUITE CASE ForceScreenSaver 3"
-	/tset/Xproto/frcscrnsvr/Test
+	/tset/Xproto/frcscrnsvr/frcscrnsvr
 
 pFreeGC
 	"VSW5TESTSUITE CASE FreeGC 3"
-	/tset/Xproto/frgc/Test
+	/tset/Xproto/frgc/frgc
 
 pFreePixmap
 	"VSW5TESTSUITE CASE FreePixmap 3"
-	/tset/Xproto/frpxmp/Test
+	/tset/Xproto/frpxmp/frpxmp
 
 pGrabButton
 	"VSW5TESTSUITE CASE GrabButton 3"
-	/tset/Xproto/grbbttn/Test
+	/tset/Xproto/grbbttn/grbbttn
 
 pGrabKey
 	"VSW5TESTSUITE CASE GrabKey 3"
-	/tset/Xproto/grbky/Test
+	/tset/Xproto/grbky/grbky
 
 pGrabKeyboard
 	"VSW5TESTSUITE CASE GrabKeyboard 3"
-	/tset/Xproto/grbkybrd/Test
+	/tset/Xproto/grbkybrd/grbkybrd
 
 pGrabPointer
 	"VSW5TESTSUITE CASE GrabPointer 3"
-	/tset/Xproto/grbpntr/Test
+	/tset/Xproto/grbpntr/grbpntr
 
 pGrabServer
 	"VSW5TESTSUITE CASE GrabServer 3"
-	/tset/Xproto/grbsrvr/Test
+	/tset/Xproto/grbsrvr/grbsrvr
 
 pGetAtomName
 	"VSW5TESTSUITE CASE GetAtomName 3"
-	/tset/Xproto/gtatmnm/Test
+	/tset/Xproto/gtatmnm/gtatmnm
 
 pGetFontPath
 	"VSW5TESTSUITE CASE GetFontPath 3"
-	/tset/Xproto/gtfntpth/Test
+	/tset/Xproto/gtfntpth/gtfntpth
 
 pGetGeometry
 	"VSW5TESTSUITE CASE GetGeometry 3"
-	/tset/Xproto/gtgmtry/Test
+	/tset/Xproto/gtgmtry/gtgmtry
 
 pGetImage
 	"VSW5TESTSUITE CASE GetImage 3"
-	/tset/Xproto/gtimg/Test
+	/tset/Xproto/gtimg/gtimg
 
 pGetInputFocus
 	"VSW5TESTSUITE CASE GetInputFocus 3"
-	/tset/Xproto/gtinptfcs/Test
+	/tset/Xproto/gtinptfcs/gtinptfcs
 
 pGetKeyboardControl
 	"VSW5TESTSUITE CASE GetKeyboardControl 3"
-	/tset/Xproto/gtkybrdcnt/Test
+	/tset/Xproto/gtkybrdcnt/gtkybrdcnt
 
 pGetKeyboardMapping
 	"VSW5TESTSUITE CASE GetKeyboardMapping 3"
-	/tset/Xproto/gtkybrdmpp/Test
+	/tset/Xproto/gtkybrdmpp/gtkybrdmpp
 
 pGetModifierMapping
 	"VSW5TESTSUITE CASE GetModifierMapping 3"
-	/tset/Xproto/gtmdfrmppn/Test
+	/tset/Xproto/gtmdfrmppn/gtmdfrmppn
 
 pGetMotionEvents
 	"VSW5TESTSUITE CASE GetMotionEvents 3"
-	/tset/Xproto/gtmtnevnts/Test
+	/tset/Xproto/gtmtnevnts/gtmtnevnts
 
 pGetPointerControl
 	"VSW5TESTSUITE CASE GetPointerControl 3"
-	/tset/Xproto/gtpntrcntr/Test
+	/tset/Xproto/gtpntrcntr/gtpntrcntr
 
 pGetPointerMapping
 	"VSW5TESTSUITE CASE GetPointerMapping 3"
-	/tset/Xproto/gtpntrmppn/Test
+	/tset/Xproto/gtpntrmppn/gtpntrmppn
 
 pGetProperty
 	"VSW5TESTSUITE CASE GetProperty 3"
-	/tset/Xproto/gtprprty/Test
+	/tset/Xproto/gtprprty/gtprprty
 
 pGetScreenSaver
 	"VSW5TESTSUITE CASE GetScreenSaver 3"
-	/tset/Xproto/gtscrnsvr/Test
+	/tset/Xproto/gtscrnsvr/gtscrnsvr
 
 pGetSelectionOwner
 	"VSW5TESTSUITE CASE GetSelectionOwner 3"
-	/tset/Xproto/gtslctnown/Test
+	/tset/Xproto/gtslctnown/gtslctnown
 
 pGetWindowAttributes
 	"VSW5TESTSUITE CASE GetWindowAttributes 3"
-	/tset/Xproto/gtwdwattrb/Test
+	/tset/Xproto/gtwdwattrb/gtwdwattrb
 
 pImageText16
 	"VSW5TESTSUITE CASE ImageText16 3"
-	/tset/Xproto/imgtxt16/Test
+	/tset/Xproto/imgtxt16/imgtxt16
 
 pImageText8
 	"VSW5TESTSUITE CASE ImageText8 3"
-	/tset/Xproto/imgtxt8/Test
+	/tset/Xproto/imgtxt8/imgtxt8
 
 pInstallColormap
 	"VSW5TESTSUITE CASE InstallColormap 3"
-	/tset/Xproto/instllclrm/Test
+	/tset/Xproto/instllclrm/instllclrm
 
 pInternAtom
 	"VSW5TESTSUITE CASE InternAtom 3"
-	/tset/Xproto/intrnatm/Test
+	/tset/Xproto/intrnatm/intrnatm
 
 pKillClient
 	"VSW5TESTSUITE CASE KillClient 3"
-	/tset/Xproto/kllclnt/Test
+	/tset/Xproto/kllclnt/kllclnt
 
 pLookupColor
 	"VSW5TESTSUITE CASE LookupColor 3"
-	/tset/Xproto/lkpclr/Test
+	/tset/Xproto/lkpclr/lkpclr
 
 pListExtensions
 	"VSW5TESTSUITE CASE ListExtensions 3"
-	/tset/Xproto/lstextnsns/Test
+	/tset/Xproto/lstextnsns/lstextnsns
 
 pListFonts
 	"VSW5TESTSUITE CASE ListFonts 3"
-	/tset/Xproto/lstfnts/Test
+	/tset/Xproto/lstfnts/lstfnts
 
 pListFontsWithInfo
 	"VSW5TESTSUITE CASE ListFontsWithInfo 3"
-	/tset/Xproto/lstfntswth/Test
+	/tset/Xproto/lstfntswth/lstfntswth
 
 pListHosts
 	"VSW5TESTSUITE CASE ListHosts 3"
-	/tset/Xproto/lsthsts/Test
+	/tset/Xproto/lsthsts/lsthsts
 
 pListInstalledColormaps
 	"VSW5TESTSUITE CASE ListInstalledColormaps 3"
-	/tset/Xproto/lstinstlld/Test
+	/tset/Xproto/lstinstlld/lstinstlld
 
 pListProperties
 	"VSW5TESTSUITE CASE ListProperties 3"
-	/tset/Xproto/lstprprts/Test
+	/tset/Xproto/lstprprts/lstprprts
 
 pMapSubwindows
 	"VSW5TESTSUITE CASE MapSubwindows 3"
-	/tset/Xproto/mpsbws/Test
+	/tset/Xproto/mpsbws/mpsbws
 
 pMapWindow
 	"VSW5TESTSUITE CASE MapWindow 3"
-	/tset/Xproto/mpwdw/Test
+	/tset/Xproto/mpwdw/mpwdw
 
 pNoOperation
 	"VSW5TESTSUITE CASE NoOperation 4"
-	/tset/Xproto/noprtn/Test
+	/tset/Xproto/noprtn/noprtn
 
 pOpenDisplay
 	"VSW5TESTSUITE CASE OpenDisplay 2"
-	/tset/Xproto/opndsply/Test
+	/tset/Xproto/opndsply/opndsply
 
 pOpenFont
 	"VSW5TESTSUITE CASE OpenFont 5"
-	/tset/Xproto/opnfnt/Test
+	/tset/Xproto/opnfnt/opnfnt
 
 pPolyArc
 	"VSW5TESTSUITE CASE PolyArc 3"
-	/tset/Xproto/plyarc/Test
+	/tset/Xproto/plyarc/plyarc
 
 pPolyFillArc
 	"VSW5TESTSUITE CASE PolyFillArc 3"
-	/tset/Xproto/plyfllarc/Test
+	/tset/Xproto/plyfllarc/plyfllarc
 
 pPolyFillRectangle
 	"VSW5TESTSUITE CASE PolyFillRectangle 3"
-	/tset/Xproto/plyfllrctn/Test
+	/tset/Xproto/plyfllrctn/plyfllrctn
 
 pPolyLine
 	"VSW5TESTSUITE CASE PolyLine 3"
-	/tset/Xproto/plyln/Test
+	/tset/Xproto/plyln/plyln
 
 pPolyPoint
 	"VSW5TESTSUITE CASE PolyPoint 3"
-	/tset/Xproto/plypnt/Test
+	/tset/Xproto/plypnt/plypnt
 
 pPolyRectangle
 	"VSW5TESTSUITE CASE PolyRectangle 3"
-	/tset/Xproto/plyrctngl/Test
+	/tset/Xproto/plyrctngl/plyrctngl
 
 pPolySegment
 	"VSW5TESTSUITE CASE PolySegment 3"
-	/tset/Xproto/plysgmnt/Test
+	/tset/Xproto/plysgmnt/plysgmnt
 
 pPolyText16
 	"VSW5TESTSUITE CASE PolyText16 3"
-	/tset/Xproto/plytxt16/Test
+	/tset/Xproto/plytxt16/plytxt16
 
 pPolyText8
 	"VSW5TESTSUITE CASE PolyText8 3"
-	/tset/Xproto/plytxt8/Test
+	/tset/Xproto/plytxt8/plytxt8
 
 pPutImage
 	"VSW5TESTSUITE CASE PutImage 3"
-	/tset/Xproto/ptimg/Test
+	/tset/Xproto/ptimg/ptimg
 
 pQueryBestSize
 	"VSW5TESTSUITE CASE QueryBestSize 3"
-	/tset/Xproto/qrybstsz/Test
+	/tset/Xproto/qrybstsz/qrybstsz
 
 pQueryColors
 	"VSW5TESTSUITE CASE QueryColors 3"
-	/tset/Xproto/qryclrs/Test
+	/tset/Xproto/qryclrs/qryclrs
 
 pQueryExtension
 	"VSW5TESTSUITE CASE QueryExtension 3"
-	/tset/Xproto/qryextnsn/Test
+	/tset/Xproto/qryextnsn/qryextnsn
 
 pQueryFont
 	"VSW5TESTSUITE CASE QueryFont 3"
-	/tset/Xproto/qryfnt/Test
+	/tset/Xproto/qryfnt/qryfnt
 
 pQueryKeymap
 	"VSW5TESTSUITE CASE QueryKeymap 3"
-	/tset/Xproto/qrykymp/Test
+	/tset/Xproto/qrykymp/qrykymp
 
 pQueryPointer
 	"VSW5TESTSUITE CASE QueryPointer 3"
-	/tset/Xproto/qrypntr/Test
+	/tset/Xproto/qrypntr/qrypntr
 
 pQueryTree
 	"VSW5TESTSUITE CASE QueryTree 3"
-	/tset/Xproto/qrytr/Test
+	/tset/Xproto/qrytr/qrytr
 
 pQueryTextExtents
 	"VSW5TESTSUITE CASE QueryTextExtents 3"
-	/tset/Xproto/qrytxtextn/Test
+	/tset/Xproto/qrytxtextn/qrytxtextn
 
 pRecolorCursor
 	"VSW5TESTSUITE CASE RecolorCursor 3"
-	/tset/Xproto/rclrcrsr/Test
+	/tset/Xproto/rclrcrsr/rclrcrsr
 
 pReparentWindow
 	"VSW5TESTSUITE CASE ReparentWindow 3"
-	/tset/Xproto/rprntwdw/Test
+	/tset/Xproto/rprntwdw/rprntwdw
 
 pRotateProperties
 	"VSW5TESTSUITE CASE RotateProperties 3"
-	/tset/Xproto/rttprprts/Test
+	/tset/Xproto/rttprprts/rttprprts
 
 pSendEvent
 	"VSW5TESTSUITE CASE SendEvent 3"
-	/tset/Xproto/sndevnt/Test
+	/tset/Xproto/sndevnt/sndevnt
 
 pSetAccessControl
 	"VSW5TESTSUITE CASE SetAccessControl 3"
-	/tset/Xproto/staccsscnt/Test
+	/tset/Xproto/staccsscnt/staccsscnt
 
 pSetClipRectangles
 	"VSW5TESTSUITE CASE SetClipRectangles 3"
-	/tset/Xproto/stclprctng/Test
+	/tset/Xproto/stclprctng/stclprctng
 
 pSetCloseDownMode
 	"VSW5TESTSUITE CASE SetCloseDownMode 3"
-	/tset/Xproto/stclsdwnmd/Test
+	/tset/Xproto/stclsdwnmd/stclsdwnmd
 
 pSetDashes
 	"VSW5TESTSUITE CASE SetDashes 3"
-	/tset/Xproto/stdshs/Test
+	/tset/Xproto/stdshs/stdshs
 
 pSetFontPath
 	"VSW5TESTSUITE CASE SetFontPath 3"
-	/tset/Xproto/stfntpth/Test
+	/tset/Xproto/stfntpth/stfntpth
 
 pSetInputFocus
 	"VSW5TESTSUITE CASE SetInputFocus 3"
-	/tset/Xproto/stinptfcs/Test
+	/tset/Xproto/stinptfcs/stinptfcs
 
 pSetModifierMapping
 	"VSW5TESTSUITE CASE SetModifierMapping 3"
-	/tset/Xproto/stmdfrmppn/Test
+	/tset/Xproto/stmdfrmppn/stmdfrmppn
 
 pSetPointerMapping
 	"VSW5TESTSUITE CASE SetPointerMapping 3"
-	/tset/Xproto/stpntrmppn/Test
+	/tset/Xproto/stpntrmppn/stpntrmppn
 
 pStoreColors
 	"VSW5TESTSUITE CASE StoreColors 4"
-	/tset/Xproto/strclrs/Test
+	/tset/Xproto/strclrs/strclrs
 
 pStoreNamedColor
 	"VSW5TESTSUITE CASE StoreNamedColor 4"
-	/tset/Xproto/strnmdclr/Test
+	/tset/Xproto/strnmdclr/strnmdclr
 
 pSetScreenSaver
 	"VSW5TESTSUITE CASE SetScreenSaver 3"
-	/tset/Xproto/stscrnsvr/Test
+	/tset/Xproto/stscrnsvr/stscrnsvr
 
 pSetSelectionOwner
 	"VSW5TESTSUITE CASE SetSelectionOwner 3"
-	/tset/Xproto/stslctnown/Test
+	/tset/Xproto/stslctnown/stslctnown
 
 pTranslateCoords
 	"VSW5TESTSUITE CASE TranslateCoords 3"
-	/tset/Xproto/trnsltcrds/Test
+	/tset/Xproto/trnsltcrds/trnsltcrds
 
 pUngrabButton
 	"VSW5TESTSUITE CASE UngrabButton 3"
-	/tset/Xproto/ungrbbttn/Test
+	/tset/Xproto/ungrbbttn/ungrbbttn
 
 pUngrabKey
 	"VSW5TESTSUITE CASE UngrabKey 3"
-	/tset/Xproto/ungrbky/Test
+	/tset/Xproto/ungrbky/ungrbky
 
 pUngrabKeyboard
 	"VSW5TESTSUITE CASE UngrabKeyboard 3"
-	/tset/Xproto/ungrbkybrd/Test
+	/tset/Xproto/ungrbkybrd/ungrbkybrd
 
 pUngrabPointer
 	"VSW5TESTSUITE CASE UngrabPointer 3"
-	/tset/Xproto/ungrbpntr/Test
+	/tset/Xproto/ungrbpntr/ungrbpntr
 
 pUngrabServer
 	"VSW5TESTSUITE CASE UngrabServer 3"
-	/tset/Xproto/ungrbsrvr/Test
+	/tset/Xproto/ungrbsrvr/ungrbsrvr
 
 pUnmapSubwindows
 	"VSW5TESTSUITE CASE UnmapSubwindows 3"
-	/tset/Xproto/unmpsbws/Test
+	/tset/Xproto/unmpsbws/unmpsbws
 
 pUnmapWindow
 	"VSW5TESTSUITE CASE UnmapWindow 3"
-	/tset/Xproto/unmpwdw/Test
+	/tset/Xproto/unmpwdw/unmpwdw
 
 pUninstallColormap
 	"VSW5TESTSUITE CASE UninstallColormap 3"
-	/tset/Xproto/unnstllclr/Test
+	/tset/Xproto/unnstllclr/unnstllclr
 
 pWarpPointer
 	"VSW5TESTSUITE CASE WarpPointer 3"
-	/tset/Xproto/wrppntr/Test
+	/tset/Xproto/wrppntr/wrppntr
 
 #Discrete tests for Xt Chapter 3
 
 XtDataTypes
 	"VSW5TESTSUITE CASE DataTypes 9"
-	/tset/Xt3/dttyps/Test
+	/tset/Xt3/dttyps/dttyps
 
 CoreWidget
 	"VSW5TESTSUITE CASE CoreWidget 9"
-	/tset/Xt3/wdgtcr/Test
+	/tset/Xt3/wdgtcr/wdgtcr
 
 CompositeWidget
 	"VSW5TESTSUITE CASE CompositeWidget 11"
-	/tset/Xt3/wdgtcmpst/Test
+	/tset/Xt3/wdgtcmpst/wdgtcmpst
 
 ConstraintWidget
 	"VSW5TESTSUITE CASE ConstraintWidget 11"
-	/tset/Xt3/wdgtcnstrn/Test
+	/tset/Xt3/wdgtcnstrn/wdgtcnstrn
 
 XtClass
 	"VSW5TESTSUITE CASE XtClass 1"
-	/tset/Xt3/tclss/Test
+	/tset/Xt3/tclss/tclss
 
 XtSuperClass
 	"VSW5TESTSUITE CASE XtSuperClass 1"
-	/tset/Xt3/tsprclss/Test
+	/tset/Xt3/tsprclss/tsprclss
 
 XtIsSubclass
 	"VSW5TESTSUITE CASE XtIsSubclass 2"
-	/tset/Xt3/tissbclss/Test
+	/tset/Xt3/tissbclss/tissbclss
 
 XtIsObject
 	"VSW5TESTSUITE CASE XtIsObject 2"
-	/tset/Xt3/tisobjct/Test
+	/tset/Xt3/tisobjct/tisobjct
 
 XtIsRectObj
 	"VSW5TESTSUITE CASE XtIsRectObj 2"
-	/tset/Xt3/tisrctobj/Test
+	/tset/Xt3/tisrctobj/tisrctobj
 
 XtIsWidget
 	"VSW5TESTSUITE CASE XtIsWidget 2"
-	/tset/Xt3/tiswdgt/Test
+	/tset/Xt3/tiswdgt/tiswdgt
 
 XtIsComposite
 	"VSW5TESTSUITE CASE XtIsComposite 2"
-	/tset/Xt3/tiscmpst/Test
+	/tset/Xt3/tiscmpst/tiscmpst
 
 XtIsConstraint
 	"VSW5TESTSUITE CASE XtIsConstraint 2"
-	/tset/Xt3/tiscnstrnt/Test
+	/tset/Xt3/tiscnstrnt/tiscnstrnt
 
 XtIsShell
 	"VSW5TESTSUITE CASE XtIsShell 2"
-	/tset/Xt3/tisshll/Test
+	/tset/Xt3/tisshll/tisshll
 
 XtIsOverrideShell
 	"VSW5TESTSUITE CASE XtIsOverrideShell 2"
-	/tset/Xt3/tisovrrdsh/Test
+	/tset/Xt3/tisovrrdsh/tisovrrdsh
 
 XtIsWMShell
 	"VSW5TESTSUITE CASE XtIsWMShell 2"
-	/tset/Xt3/tiswmshll/Test
+	/tset/Xt3/tiswmshll/tiswmshll
 
 XtIsVendorShell
 	"VSW5TESTSUITE CASE XtIsVendorShell 2"
-	/tset/Xt3/tisvndrshl/Test
+	/tset/Xt3/tisvndrshl/tisvndrshl
 
 XtIsTransientShell
 	"VSW5TESTSUITE CASE XtIsTransientShell 2"
-	/tset/Xt3/tistrnsnts/Test
+	/tset/Xt3/tistrnsnts/tistrnsnts
 
 XtIsTopLevelShell
 	"VSW5TESTSUITE CASE XtIsTopLevelShell 2"
-	/tset/Xt3/tistplvlsh/Test
+	/tset/Xt3/tistplvlsh/tistplvlsh
 
 XtIsApplicationShell
 	"VSW5TESTSUITE CASE XtIsApplicationShell 2"
-	/tset/Xt3/tisapplctn/Test
+	/tset/Xt3/tisapplctn/tisapplctn
 
 XtCheckSubclass
 	"VSW5TESTSUITE CASE XtCheckSubclass 3"
-	/tset/Xt3/tchcksbcls/Test
+	/tset/Xt3/tchcksbcls/tchcksbcls
 
 XtInitializeWidgetClass
 	"VSW5TESTSUITE CASE XtInitializeWidgetClass 2"
-	/tset/Xt3/tintlzwdgt/Test
+	/tset/Xt3/tintlzwdgt/tintlzwdgt
 
 #Discrete tests for Xt Chapter 4
 
 XtToolkitInitialize
 	"VSW5TESTSUITE CASE XtToolkitInitialize 1"
-	/tset/Xt4/ttlktintlz/Test
+	/tset/Xt4/ttlktintlz/ttlktintlz
 
 XtCreateApplicationContext
 	"VSW5TESTSUITE CASE XtCreateApplicationContext 1"
-	/tset/Xt4/tcrtapplct/Test
+	/tset/Xt4/tcrtapplct/tcrtapplct
 
 XtDestroyApplicationContext
 	"VSW5TESTSUITE CASE XtDestoryApplicationContext 2"
-	/tset/Xt4/tdstryappl/Test
+	/tset/Xt4/tdstryappl/tdstryappl
 
 XtWidgetToApplicationContext
 	"VSW5TESTSUITE CASE XtWidgetToApplicationContext 1"
-	/tset/Xt4/twdgttappl/Test
+	/tset/Xt4/twdgttappl/twdgttappl
 
 XtDisplayInitialize
 	"VSW5TESTSUITE CASE XtDisplayInitialize 20"
-	/tset/Xt4/tdsplyintl/Test
+	/tset/Xt4/tdsplyintl/tdsplyintl
 
 XtOpenDisplay
 	"VSW5TESTSUITE CASE XtOpenDisplay 28"
-	/tset/Xt4/topndsply/Test
+	/tset/Xt4/topndsply/topndsply
 
 XtCloseDisplay
 	"VSW5TESTSUITE CASE XtCloseDisplay 2"
-	/tset/Xt4/tclsdsply/Test
+	/tset/Xt4/tclsdsply/tclsdsply
 
 XtSetLanguageProc
 	"VSW5TESTSUITE CASE XtSetLanguageProc 8"
-	/tset/Xt4/tstlnggprc/Test
+	/tset/Xt4/tstlnggprc/tstlnggprc
 
 XtScreenDatabase
 	"VSW5TESTSUITE CASE XtScreenDatabase 1"
-	/tset/Xt4/tscrndtbs/Test
+	/tset/Xt4/tscrndtbs/tscrndtbs
 
 XtDatabase
 	"VSW5TESTSUITE CASE XtDatabase 2"
-	/tset/Xt4/tdtbs/Test
+	/tset/Xt4/tdtbs/tdtbs
 
 XtAppSetFallbackResources
 	"VSW5TESTSUITE CASE XtAppSetFallbackResources 2"
-	/tset/Xt4/tappstfllb/Test
+	/tset/Xt4/tappstfllb/tappstfllb
 
 XtSetArg
 	"VSW5TESTSUITE CASE XtSetArg 2"
-	/tset/Xt4/tstarg/Test
+	/tset/Xt4/tstarg/tstarg
 
 XtMergeArgLists
 	"VSW5TESTSUITE CASE XtMergeArgLists 3"
-	/tset/Xt4/tmrgarglst/Test
+	/tset/Xt4/tmrgarglst/tmrgarglst
 
 XtVaCreateArgsList
 	"VSW5TESTSUITE CASE XtVaCreateArgsList 2"
-	/tset/Xt4/tvcrtargsl/Test
+	/tset/Xt4/tvcrtargsl/tvcrtargsl
 
 XtCreateWidget
 	"VSW5TESTSUITE CASE XtCreateWidget 4"
-	/tset/Xt4/tcrtwdgt/Test
+	/tset/Xt4/tcrtwdgt/tcrtwdgt
 
 XtVaCreateWidget
 	"VSW5TESTSUITE CASE XtVaCreateWidget 8"
-	/tset/Xt4/tvcrtwdgt/Test
+	/tset/Xt4/tvcrtwdgt/tvcrtwdgt
 
 XtAppCreateShell
 	"VSW5TESTSUITE CASE XtAppCreateShell 7"
-	/tset/Xt4/tapcrshel/Test
+	/tset/Xt4/tapcrshel/tapcrshel
 
 XtVaAppCreateShell
 	"VSW5TESTSUITE CASE XtVaAppCreateShell 7"
-	/tset/Xt4/tvapcrshl/Test
+	/tset/Xt4/tvapcrshl/tvapcrshl
 
 XtAppInitialize
 	"VSW5TESTSUITE CASE XtAppInitialize 29"
-	/tset/Xt4/tapintlze/Test
+	/tset/Xt4/tapintlze/tapintlze
 
 XtVaAppInitialize
 	"VSW5TESTSUITE CASE XtVaAppInitialize 29"
-	/tset/Xt4/tvapintlz/Test
+	/tset/Xt4/tvapintlz/tvapintlz
 
 XtRealizeWidget
 	"VSW5TESTSUITE CASE XtRealizeWidget 11"
-	/tset/Xt4/trealwdgt/Test
+	/tset/Xt4/trealwdgt/trealwdgt
 
 XtIsRealized
 	"VSW5TESTSUITE CASE XtIsRealized 3"
-	/tset/Xt4/tisrealiz/Test
+	/tset/Xt4/tisrealiz/tisrealiz
 
 XtCreateWindow
 	"VSW5TESTSUITE CASE XtCreateWindow 1"
-	/tset/Xt4/tcrwindow/Test
+	/tset/Xt4/tcrwindow/tcrwindow
 
 XtDisplay
 	"VSW5TESTSUITE CASE XtDisplay 1"
-      	/tset/Xt4/tdisplay/Test
+      	/tset/Xt4/tdisplay/tdisplay
 
 XtParent
 	"VSW5TESTSUITE CASE XtParent 1"
-	/tset/Xt4/tparent/Test
+	/tset/Xt4/tparent/tparent
 
 XtScreen
 	"VSW5TESTSUITE CASE XtScreen 1"
-	/tset/Xt4/tscreen/Test
+	/tset/Xt4/tscreen/tscreen
 
 XtWindow
 	"VSW5TESTSUITE CASE XtWindow 1"
-	/tset/Xt4/twindow/Test
+	/tset/Xt4/twindow/twindow
 
 XtDisplayOfObject
 	"VSW5TESTSUITE CASE XtDisplayOfObject 2"
-	/tset/Xt4/tdisplofo/Test
+	/tset/Xt4/tdisplofo/tdisplofo
 
 XtScreenOfObject
 	"VSW5TESTSUITE CASE XtScreenOfObject 2"
-	/tset/Xt4/tscnofobt/Test
+	/tset/Xt4/tscnofobt/tscnofobt
 
 XtWindowOfObject
 	"VSW5TESTSUITE CASE XtWindowOfObject 2"
-	/tset/Xt4/twindwofo/Test
+	/tset/Xt4/twindwofo/twindwofo
 
 XtName
 	"VSW5TESTSUITE CASE XtName 1"
-	/tset/Xt4/tname/Test
+	/tset/Xt4/tname/tname
 
 XtUnrealizeWidget
 	"VSW5TESTSUITE CASE XtUnrealizeWidget 4"
-	/tset/Xt4/tunrlzwgt/Test
+	/tset/Xt4/tunrlzwgt/tunrlzwgt
 
 XtDestroyWidget
 	"VSW5TESTSUITE CASE XtDestroyWidget 3"
-	/tset/Xt4/tdestywid/Test
+	/tset/Xt4/tdestywid/tdestywid
 
 #Discrete tests for Xt Chapter 5
 
 XtManageChildren
 	"VSW5TESTSUITE CASE XtManageChildren 7"
-	/tset/Xt5/tmngchdrn/Test
+	/tset/Xt5/tmngchdrn/tmngchdrn
 
 XtManageChild
 	"VSW5TESTSUITE CASE XtManageChild 6"
-	/tset/Xt5/tmngchild/Test
+	/tset/Xt5/tmngchild/tmngchild
 
 XtCreateManagedWidget
 	"VSW5TESTSUITE CASE XtCreateManagedWidget 16"
-	/tset/Xt5/tcramnwid/Test
+	/tset/Xt5/tcramnwid/tcramnwid
 
 XtVaCreateManagedWidget
 	"VSW5TESTSUITE CASE XtVaCreateManagedWidget 20"
-	/tset/Xt5/tvacrmwdt/Test
+	/tset/Xt5/tvacrmwdt/tvacrmwdt
 
 XtUnmanageChildren
 	"VSW5TESTSUITE CASE XtUnmanageChildren 8"
-	/tset/Xt5/tunmgchdn/Test
+	/tset/Xt5/tunmgchdn/tunmgchdn
 
 XtUnmanageChild
 	"VSW5TESTSUITE CASE XtUnmanageChild 7"
-	/tset/Xt5/tunmgchld/Test
+	/tset/Xt5/tunmgchld/tunmgchld
 
 XtIsManaged
 	"VSW5TESTSUITE CASE XtIsManaged 3"
-	/tset/Xt5/tismanage/Test
+	/tset/Xt5/tismanage/tismanage
 
 XtSetMappedWhenManaged
 	"VSW5TESTSUITE CASE XtSetMappedWhenManaged 2"
-	/tset/Xt5/tstmpwmng/Test
+	/tset/Xt5/tstmpwmng/tstmpwmng
 
 XtMapWidget
 	"VSW5TESTSUITE CASE XtMapWidget 2"
-	/tset/Xt5/tmpwidget/Test
+	/tset/Xt5/tmpwidget/tmpwidget
 
 XtUnmapWidget
 	"VSW5TESTSUITE CASE XtUnmapWidget 2"
-	/tset/Xt5/tunmpwdgt/Test
+	/tset/Xt5/tunmpwdgt/tunmpwdgt
 
 #Discrete tests for Xt Chapter 6
 
 ShellWidget
 	"VSW5TESTSUITE CASE ShellWidget 11"
-	/tset/Xt6/wdgtshll/Test
+	/tset/Xt6/wdgtshll/wdgtshll
 
 OverrideShellWidget
 	"VSW5TESTSUITE CASE OverrideShellWidget 10"
-	/tset/Xt6/wdgtovrrds/Test
+	/tset/Xt6/wdgtovrrds/wdgtovrrds
 
 WMShellWidget
 	"VSW5TESTSUITE CASE WMShellWidget 10"
-	/tset/Xt6/wdgtwmshll/Test
+	/tset/Xt6/wdgtwmshll/wdgtwmshll
 
 VendorShellWidget
 	"VSW5TESTSUITE CASE VendorShellWidget 10"
-	/tset/Xt6/wdgtvndrsh/Test
+	/tset/Xt6/wdgtvndrsh/wdgtvndrsh
 
 TransientShellWidgets
 	"VSW5TESTSUITE CASE TransientShellWidgets 10"
-	/tset/Xt6/wdgttrnsnt/Test
+	/tset/Xt6/wdgttrnsnt/wdgttrnsnt
 
 TopLevelShellWidgets
 	"VSW5TESTSUITE CASE TopLevelShellWidgets 10"
-	/tset/Xt6/wdgttplvls/Test
+	/tset/Xt6/wdgttplvls/wdgttplvls
 
 ApplicationShellWidget
 	"VSW5TESTSUITE CASE ApplicationShellWidget 10"
-	/tset/Xt6/wdgtapplct/Test
+	/tset/Xt6/wdgtapplct/wdgtapplct
 
 #Discrete tests for Xt Chapter 7
 
 XtCreatePopupShell
 	"VSW5TESTSUITE CASE XtCreatePopupShell 8"
-	/tset/Xt7/tcrpopshl/Test
+	/tset/Xt7/tcrpopshl/tcrpopshl
 
 XtVaCreatePopupShell
 	"VSW5TESTSUITE CASE XtVaCreatePopupShell 8"
-	/tset/Xt7/tvacrpshl/Test
+	/tset/Xt7/tvacrpshl/tvacrpshl
 
 XtPopup
 	"VSW5TESTSUITE CASE XtPopup 11"
-	/tset/Xt7/tpopup/Test
+	/tset/Xt7/tpopup/tpopup
 
 XtPopdown
 	"VSW5TESTSUITE CASE XtPopdown 8"
-	/tset/Xt7/tpopdown/Test
+	/tset/Xt7/tpopdown/tpopdown
 
 XtPopupSpringLoaded
 	"VSW5TESTSUITE CASE XtPopupSpringLoaded 9"
-	/tset/Xt7/tpopupsld/Test
+	/tset/Xt7/tpopupsld/tpopupsld
 
 XtCallbackNone
 	"VSW5TESTSUITE CASE XtCallbackNone 8"
-	/tset/Xt7/tcalbknon/Test
+	/tset/Xt7/tcalbknon/tcalbknon
 
 XtCallbackNonexclusive
 	"VSW5TESTSUITE CASE XtCallbackNonexclusive 8"
-	/tset/Xt7/tcalbknex/Test
+	/tset/Xt7/tcalbknex/tcalbknex
 
 XtCallbackExclusive
 	"VSW5TESTSUITE CASE XtCallbackExclusive 8"
-	/tset/Xt7/tcalbkexc/Test
+	/tset/Xt7/tcalbkexc/tcalbkexc
 
 XtMenuPopup
 	"VSW5TESTSUITE CASE XtMenuPopup 22"
-	/tset/Xt7/tmpopup/Test
+	/tset/Xt7/tmpopup/tmpopup
 
 XtCallbackPopdown
 	"VSW5TESTSUITE CASE XtCallbackPopdown 9"
-	/tset/Xt7/tcalbkpdn/Test
+	/tset/Xt7/tcalbkpdn/tcalbkpdn
 
 XtMenuPopdown
 	"VSW5TESTSUITE CASE XtMenuPopdown 11"
-	/tset/Xt7/tmpopdown/Test
+	/tset/Xt7/tmpopdown/tmpopdown
 
 #Discrete tests for Xt Chapter 8
 
 XtMakeGeometryRequest
 	"VSW5TESTSUITE CASE XtMakeGeometryRequest 11"
-	/tset/Xt8/tmkgmreqt/Test
+	/tset/Xt8/tmkgmreqt/tmkgmreqt
 
 XtMakeResizeRequest
 	"VSW5TESTSUITE CASE XtMakeResizeRequest 12"
-	/tset/Xt8/tmkrsizrt/Test
+	/tset/Xt8/tmkrsizrt/tmkrsizrt
 
 XtMoveWidget
 	"VSW5TESTSUITE CASE XtMoveWidget 3"
-	/tset/Xt8/tmvwidget/Test
+	/tset/Xt8/tmvwidget/tmvwidget
 
 XtResizeWidget
 	"VSW5TESTSUITE CASE XtResizeWidget 4"
-	/tset/Xt8/trszewdgt/Test
+	/tset/Xt8/trszewdgt/trszewdgt
 
 XtConfigureWidget
 	"VSW5TESTSUITE CASE XtConfigureWidget 5"
-	/tset/Xt8/tconwidgt/Test
+	/tset/Xt8/tconwidgt/tconwidgt
 
 XtResizeWindow
 	"VSW5TESTSUITE CASE XtResizeWindow 2"
-	/tset/Xt8/trszwindw/Test
+	/tset/Xt8/trszwindw/trszwindw
 
 XtQueryGeometry
 	"VSW5TESTSUITE CASE XtQueryGeometry 6"
-	/tset/Xt8/tqrygomty/Test
+	/tset/Xt8/tqrygomty/tqrygomty
 
 #Discrete tests for Xt Chapter 9
 
 XtAppAddInput
 	"VSW5TESTSUITE CASE XtAppAddInput 5"
-	/tset/Xt9/tapaddinp/Test
+	/tset/Xt9/tapaddinp/tapaddinp
 
 XtRemoveInput
 	"VSW5TESTSUITE CASE XtRemoveInput 1"
-	/tset/Xt9/trminput/Test
+	/tset/Xt9/trminput/trminput
 
 XtAppAddTimeOut
 	"VSW5TESTSUITE CASE XtAppAddTimeOut 3"
-	/tset/Xt9/tapatmout/Test
+	/tset/Xt9/tapatmout/tapatmout
 
 XtRemoveTimeOut
 	"VSW5TESTSUITE CASE XtRemoveTimeOut 1"
-	/tset/Xt9/trmtmout/Test
+	/tset/Xt9/trmtmout/trmtmout
 
 XtAddGrab
 	"VSW5TESTSUITE CASE XtAddGrab 5"
-	/tset/Xt9/taddgrab/Test
+	/tset/Xt9/taddgrab/taddgrab
 
 XtRemoveGrab
 	"VSW5TESTSUITE CASE XtRemoveGrab 2"
-	/tset/Xt9/trmgrab/Test
+	/tset/Xt9/trmgrab/trmgrab
 
 XtGrabKey
 	"VSW5TESTSUITE CASE XtGrabKey 5"
-	/tset/Xt9/tgrabkey/Test
+	/tset/Xt9/tgrabkey/tgrabkey
 
 XtUngrabKey
 	"VSW5TESTSUITE CASE XtUngrabKey 2"
-	/tset/Xt9/tungrabky/Test
+	/tset/Xt9/tungrabky/tungrabky
 
 XtGrabKeyboard
 	"VSW5TESTSUITE CASE XtGrabKeyboard 2"
-	/tset/Xt9/tgrabkybd/Test
+	/tset/Xt9/tgrabkybd/tgrabkybd
 
 XtUngrabKeyboard
 	"VSW5TESTSUITE CASE XtUngrabKeyboard 1"
-	/tset/Xt9/tunkybord/Test
+	/tset/Xt9/tunkybord/tunkybord
 
 XtGrabButton
 	"VSW5TESTSUITE CASE XtGrabButton 5"
-	/tset/Xt9/tgrabbutn/Test
+	/tset/Xt9/tgrabbutn/tgrabbutn
 
 XtUngrabButton
 	"VSW5TESTSUITE CASE XtUngrabButton 2"
-	/tset/Xt9/tunbutton/Test
+	/tset/Xt9/tunbutton/tunbutton
 
 XtGrabPointer
 	"VSW5TESTSUITE CASE XtGrabPointer 2"
-	/tset/Xt9/tgrbpoint/Test
+	/tset/Xt9/tgrbpoint/tgrbpoint
 
 XtUngrabPointer
 	"VSW5TESTSUITE CASE XtUngrabPointer 1"
-	/tset/Xt9/tunpointr/Test
+	/tset/Xt9/tunpointr/tunpointr
 
 XtSetKeyboardFocus
 	"VSW5TESTSUITE CASE XtSetKeyboardFocus 17"
-	/tset/Xt9/tstkbfocs/Test
+	/tset/Xt9/tstkbfocs/tstkbfocs
 
 XtCallAcceptFocus
 	"VSW5TESTSUITE CASE XtCallAcceptFocus 2"
-	/tset/Xt9/tcalafocs/Test
+	/tset/Xt9/tcalafocs/tcalafocs
 
 XtAppPending
 	"VSW5TESTSUITE CASE XtAppPending 5"
-	/tset/Xt9/tappendng/Test
+	/tset/Xt9/tappendng/tappendng
 
 XtAppPeekEvent
 	"VSW5TESTSUITE CASE XtAppPeekEvent 3"
-	/tset/Xt9/tappkevnt/Test
+	/tset/Xt9/tappkevnt/tappkevnt
 
 XtAppNextEvent
 	"VSW5TESTSUITE CASE XtAppNextEvent 4"
-	/tset/Xt9/tapnxevnt/Test
+	/tset/Xt9/tapnxevnt/tapnxevnt
 
 XtAppProcessEvent
 	"VSW5TESTSUITE CASE XtAppProcessEvent 11"
-	/tset/Xt9/tapprcevt/Test
+	/tset/Xt9/tapprcevt/tapprcevt
 
 XtDispatchEvent
 	"VSW5TESTSUITE CASE XtDispatchEvent 11"
-	/tset/Xt9/tdispatet/Test
+	/tset/Xt9/tdispatet/tdispatet
 
 XtAppMainLoop
 	"VSW5TESTSUITE CASE XtAppMainLoop 28"
-	/tset/Xt9/tapmnloop/Test
+	/tset/Xt9/tapmnloop/tapmnloop
 
 XtIsSensitive
 	"VSW5TESTSUITE CASE XtIsSensitive 4"
-	/tset/Xt9/tissenstv/Test
+	/tset/Xt9/tissenstv/tissenstv
 
 XtSetSensitive
 	"VSW5TESTSUITE CASE XtSetSensitive 6"
-	/tset/Xt9/tstsenstv/Test
+	/tset/Xt9/tstsenstv/tstsenstv
 
 XtAppAddWorkProc
 	"VSW5TESTSUITE CASE XtAppAddWorkProc 5"
-	/tset/Xt9/tapawkprc/Test
+	/tset/Xt9/tapawkprc/tapawkprc
 
 XtRemoveWorkProc
 	"VSW5TESTSUITE CASE XtRemoveWorkProc 2"
-	/tset/Xt9/trmwkproc/Test
+	/tset/Xt9/trmwkproc/trmwkproc
 
 XtAddEventHandler
 	"VSW5TESTSUITE CASE XtAddEventHandler 8"
-	/tset/Xt9/tadevnthr/Test
+	/tset/Xt9/tadevnthr/tadevnthr
 
 XtRemoveEventHandler
 	"VSW5TESTSUITE CASE XtRemoveEventHandler 7"
-	/tset/Xt9/trmevthdr/Test
+	/tset/Xt9/trmevthdr/trmevthdr
 
 XtInsertEventHandler
 	"VSW5TESTSUITE CASE XtInsertEventHandler 10"
-	/tset/Xt9/tinevthdr/Test
+	/tset/Xt9/tinevthdr/tinevthdr
 
 XtAddRawEventHandler
 	"VSW5TESTSUITE CASE XtAddRawEventHandler 9"
-	/tset/Xt9/tadrwevhr/Test
+	/tset/Xt9/tadrwevhr/tadrwevhr
 
 XtRemoveRawEventHandler
 	"VSW5TESTSUITE CASE XtRemoveRawEventHandler 7"
-	/tset/Xt9/trmrevthr/Test
+	/tset/Xt9/trmrevthr/trmrevthr
 
 XtInsertRawEventHandler
 	"VSW5TESTSUITE CASE XtInsertRawEventHandler 10"
-	/tset/Xt9/tinrevthr/Test
+	/tset/Xt9/tinrevthr/tinrevthr
 
 XtBuildEventMask
 	"VSW5TESTSUITE CASE XtBuildEventMask 3"
-	/tset/Xt9/tbuevtmsk/Test
+	/tset/Xt9/tbuevtmsk/tbuevtmsk
 
 #Discrete tests for Xt Chapter 10
 
 XtAddCallback
 	"VSW5TESTSUITE CASE XtAddCallback 3"
-	/tset/Xt10/tadclback/Test
+	/tset/Xt10/tadclback/tadclback
 
 XtAddCallbacks
 	"VSW5TESTSUITE CASE XtAddCallbacks 3"
-	/tset/Xt10/tadclbcks/Test
+	/tset/Xt10/tadclbcks/tadclbcks
 
 XtRemoveCallback
 	"VSW5TESTSUITE CASE XtRemoveCallback 2"
-	/tset/Xt10/trmclback/Test
+	/tset/Xt10/trmclback/trmclback
 
 XtRemoveCallbacks
 	"VSW5TESTSUITE CASE XtRemoveCallbacks 1"
-	/tset/Xt10/trmcalbks/Test
+	/tset/Xt10/trmcalbks/trmcalbks
 
 XtRemoveAllCallbacks
 	"VSW5TESTSUITE CASE XtRemoveAllCallbacks 2"
-	/tset/Xt10/trmalcbks/Test
+	/tset/Xt10/trmalcbks/trmalcbks
 
 XtCallCallbacks
 	"VSW5TESTSUITE CASE XtCallCallbacks 1"
-	/tset/Xt10/tcalcbcks/Test
+	/tset/Xt10/tcalcbcks/tcalcbcks
 
 XtCallCallbackList
 	"VSW5TESTSUITE CASE XtCallCallbackList 2"
-	/tset/Xt10/tcalcbckl/Test
+	/tset/Xt10/tcalcbckl/tcalcbckl
 
 XtHasCallbacks
 	"VSW5TESTSUITE CASE XtHasCallbacks 3"
-	/tset/Xt10/thscbacks/Test
+	/tset/Xt10/thscbacks/thscbacks
 
 
 #Discrete tests for Xt Chapter 11
 
 XtGetResourceList
 	"VSW5TESTSUITE CASE XtGetResourceList 2"
-	/tset/Xt11/tgtreslst/Test
+	/tset/Xt11/tgtreslst/tgtreslst
 
 XtGetConstraintResourceList
 	"VSW5TESTSUITE CASE XtGetConstraintResourceList 3"
-	/tset/Xt11/tgtconrsl/Test
+	/tset/Xt11/tgtconrsl/tgtconrsl
 
 XtOffsetOf
 	"VSW5TESTSUITE CASE XtOffsetOf 1"
-	/tset/Xt11/toffsetof/Test
+	/tset/Xt11/toffsetof/toffsetof
 
 XtOffset
 	"VSW5TESTSUITE CASE XtOffset 1"
-	/tset/Xt11/toffset/Test
+	/tset/Xt11/toffset/toffset
 
 XtGetSubresources
 	"VSW5TESTSUITE CASE XtGetSubresources 2"
-	/tset/Xt11/tgtsubres/Test
+	/tset/Xt11/tgtsubres/tgtsubres
 
 XtVaGetSubresources
 	"VSW5TESTSUITE CASE XtVaGetSubresources 4"
-	/tset/Xt11/tvagtsres/Test
+	/tset/Xt11/tvagtsres/tvagtsres
 
 XtGetApplicationResources
 	"VSW5TESTSUITE CASE XtGetApplicationResources 2"
-	/tset/Xt11/tgtapres/Test
+	/tset/Xt11/tgtapres/tgtapres
 
 XtVaGetApplicationResources
 	"VSW5TESTSUITE CASE XtVaGetApplicationResources 4"
-	/tset/Xt11/tvagtares/Test
+	/tset/Xt11/tvagtares/tvagtares
 
 XtCvtStringToAcceleratorTable
 	"VSW5TESTSUITE CASE XtCvtStringToAcceleratorTable 4"
-	/tset/Xt11/tcstatbl/Test
+	/tset/Xt11/tcstatbl/tcstatbl
 
 XtCvtStringToAtom
 	"VSW5TESTSUITE CASE XtCvtStringToAtom 4"
-	/tset/Xt11/tcstatom/Test
+	/tset/Xt11/tcstatom/tcstatom
 
 XtCvtStringToBoolean
 	"VSW5TESTSUITE CASE XtCvtStringToBoolean 4"
-	/tset/Xt11/tcstboln/Test
+	/tset/Xt11/tcstboln/tcstboln
 
 XtCvtStringToBool
 	"VSW5TESTSUITE CASE XtCvtStringToBool 4"
-	/tset/Xt11/tcstbool/Test
+	/tset/Xt11/tcstbool/tcstbool
 
 XtCvtStringToCursor
 	"VSW5TESTSUITE CASE XtCvtStringToCursor 5"
-	/tset/Xt11/tcstcurs/Test
+	/tset/Xt11/tcstcurs/tcstcurs
 
 XtCvtStringToDimension
 	"VSW5TESTSUITE CASE XtCvtStringToDimension 4"
-	/tset/Xt11/tcstdim/Test
+	/tset/Xt11/tcstdim/tcstdim
 
 XtCvtStringToDisplay
 	"VSW5TESTSUITE CASE XtCvtStringToDisplay 4"
-	/tset/Xt11/tcstdisp/Test
+	/tset/Xt11/tcstdisp/tcstdisp
 
 XtCvtStringToFile
 	"VSW5TESTSUITE CASE XtCvtStringToFile 4"
-	/tset/Xt11/tcstfile/Test
+	/tset/Xt11/tcstfile/tcstfile
 
 XtCvtStringToFloat
 	"VSW5TESTSUITE CASE XtCvtStringToFloat 4"
-	/tset/Xt11/tcstflt/Test
+	/tset/Xt11/tcstflt/tcstflt
 
 XtCvtStringToFont
 	"VSW5TESTSUITE CASE XtCvtStringToFont 8"
-	/tset/Xt11/tcstfont/Test
+	/tset/Xt11/tcstfont/tcstfont
 
 XtCvtStringToFontSet
 	"VSW5TESTSUITE CASE XtCvtStringToFontSet 11"
-	/tset/Xt11/tcstfset/Test
+	/tset/Xt11/tcstfset/tcstfset
 
 XtCvtStringToFontStruct
 	"VSW5TESTSUITE CASE XtCvtStringToFontStruct 8"
-	/tset/Xt11/tcstfstr/Test
+	/tset/Xt11/tcstfstr/tcstfstr
 
 XtCvtStringToInitialState
 	"VSW5TESTSUITE CASE XtCvtStringToInitialState 6"
-	/tset/Xt11/tcstinit/Test
+	/tset/Xt11/tcstinit/tcstinit
 
 XtCvtStringToInt
 	"VSW5TESTSUITE CASE XtCvtStringToInt 4"
-	/tset/Xt11/tcstint/Test
+	/tset/Xt11/tcstint/tcstint
 
 XtCvtStringToPixel
 	"VSW5TESTSUITE CASE XtCvtStringToPixel 9"
-	/tset/Xt11/tcstpix/Test
+	/tset/Xt11/tcstpix/tcstpix
 
 XtCvtStringToShort
 	"VSW5TESTSUITE CASE XtCvtStringToShort 4"
-	/tset/Xt11/tcstshrt/Test
+	/tset/Xt11/tcstshrt/tcstshrt
 
 XtCvtStringToTranslationTable
 	"VSW5TESTSUITE CASE XtCvtStringToTranslationTable 4"
-	/tset/Xt11/tcstttbl/Test
+	/tset/Xt11/tcstttbl/tcstttbl
 
 XtCvtStringToPosition
 	"VSW5TESTSUITE CASE XtCvtStringToPosition 4"
-	/tset/Xt11/tcstpos/Test
+	/tset/Xt11/tcstpos/tcstpos
 
 XtCvtStringToUnsignedChar
 	"VSW5TESTSUITE CASE XtCvtStringToUnsignedChar 4"
-	/tset/Xt11/tcstuchr/Test
+	/tset/Xt11/tcstuchr/tcstuchr
 
 XtCvtStringToVisual
 	"VSW5TESTSUITE CASE XtCvtStringToVisual 5"
-	/tset/Xt11/tcstvis/Test
+	/tset/Xt11/tcstvis/tcstvis
 
 XtCvtColorToPixel
 	"VSW5TESTSUITE CASE XtCvtColorToPixel 3"
-	/tset/Xt11/tccolpix/Test
+	/tset/Xt11/tccolpix/tccolpix
 
 XtCvtIntToBoolean
 	"VSW5TESTSUITE CASE XtCvtIntToBoolean 3"
-	/tset/Xt11/tcinboln/Test
+	/tset/Xt11/tcinboln/tcinboln
 
 XtCvtIntToBool
 	"VSW5TESTSUITE CASE XtCvtIntToBool 3"
-	/tset/Xt11/tcinbool/Test
+	/tset/Xt11/tcinbool/tcinbool
 
 XtCvtIntToColor
 	"VSW5TESTSUITE CASE XtCvtIntToColor 4"
-	/tset/Xt11/tcincolr/Test
+	/tset/Xt11/tcincolr/tcincolr
 
 XtCvtIntToDimension
 	"VSW5TESTSUITE CASE XtCvtIntToDimension 3"
-	/tset/Xt11/tcindim/Test
+	/tset/Xt11/tcindim/tcindim
 
 XtCvtIntToFloat
 	"VSW5TESTSUITE CASE XtCvtIntToFloat 3"
-	/tset/Xt11/tcinflt/Test
+	/tset/Xt11/tcinflt/tcinflt
 
 XtCvtIntToFont
 	"VSW5TESTSUITE CASE XtCvtIntToFont 3"
-	/tset/Xt11/tcinfont/Test
+	/tset/Xt11/tcinfont/tcinfont
 
 XtCvtIntToPixel
 	"VSW5TESTSUITE CASE XtCvtIntToPixel 3"
-	/tset/Xt11/tcinpix/Test
+	/tset/Xt11/tcinpix/tcinpix
 
 XtCvtIntToPixmap
 	"VSW5TESTSUITE CASE XtCvtIntToPixmap 3"
-	/tset/Xt11/tcinpixm/Test
+	/tset/Xt11/tcinpixm/tcinpixm
 
 XtCvtIntToPosition
 	"VSW5TESTSUITE CASE XtCvtIntToPosition 3"
-	/tset/Xt11/tcinpos/Test
+	/tset/Xt11/tcinpos/tcinpos
 
 XtCvtIntToShort
 	"VSW5TESTSUITE CASE XtCvtIntToShort 3"
-	/tset/Xt11/tcinshrt/Test
+	/tset/Xt11/tcinshrt/tcinshrt
 
 XtCvtIntToUnsignedChar
 	"VSW5TESTSUITE CASE XtCvtIntToUnsignedChar 3"
-	/tset/Xt11/tcinuchr/Test
+	/tset/Xt11/tcinuchr/tcinuchr
 
 XtCvtPixelToColor
 	"VSW5TESTSUITE CASE XtCvtPixelToColor 3"
-	/tset/Xt11/tcpixcol/Test
+	/tset/Xt11/tcpixcol/tcpixcol
 
 XtDisplayStringConversionWarn
 	"VSW5TESTSUITE CASE XtDisplayStringConversionWarning 2"
-	/tset/Xt11/tdisplscw/Test
+	/tset/Xt11/tdisplscw/tdisplscw
 
 XtDisplayToApplicationContext
 	"VSW5TESTSUITE CASE XtDisplayToApplicationContext 2"
-	/tset/Xt11/tdispltac/Test
+	/tset/Xt11/tdispltac/tdispltac
 
 XtSetTypeConverter
 	"VSW5TESTSUITE CASE XtSetTypeConverter 15"
-	/tset/Xt11/tstyconv/Test
+	/tset/Xt11/tstyconv/tstyconv
 
 XtAppSetTypeConverter
 	"VSW5TESTSUITE CASE XtAppSetTypeConverter 15"
-	/tset/Xt11/tapsttpec/Test
+	/tset/Xt11/tapsttpec/tapsttpec
 
 XtCallConverter
 	"VSW5TESTSUITE CASE XtCallConverter 15"
-	/tset/Xt11/tcalcnvtr/Test
+	/tset/Xt11/tcalcnvtr/tcalcnvtr
 
 XtAppReleaseCacheRefs
 	"VSW5TESTSUITE CASE XtAppReleaseCacheRefs 2"
-	/tset/Xt11/taprelcre/Test
+	/tset/Xt11/taprelcre/taprelcre
 
 XtCallbackReleaseCacheRef
 	"VSW5TESTSUITE CASE XtCallbackReleaseCacheRef 1"
-	/tset/Xt11/tcalbkrlc/Test
+	/tset/Xt11/tcalbkrlc/tcalbkrlc
 
 XtCallbackReleaseCacheRefList
 	"VSW5TESTSUITE CASE XtCallbackReleaseCacheRefList 1"
-	/tset/Xt11/tcalbrcrl/Test
+	/tset/Xt11/tcalbrcrl/tcalbrcrl
 
 XtConvertAndStore
 	"VSW5TESTSUITE CASE XtConvertAndStore 18"
-	/tset/Xt11/tcnvrtast/Test
+	/tset/Xt11/tcnvrtast/tcnvrtast
 
 XtGetValues
 	"VSW5TESTSUITE CASE XtGetValues 5"
-	/tset/Xt11/tgtvalues/Test
+	/tset/Xt11/tgtvalues/tgtvalues
 
 XtVaGetValues
 	"VSW5TESTSUITE CASE XtVaGetValues 7"
-	/tset/Xt11/tvagtvals/Test
+	/tset/Xt11/tvagtvals/tvagtvals
 
 XtGetSubvalues
 	"VSW5TESTSUITE CASE XtGetSubvalues 2"
-	/tset/Xt11/tgtsubval/Test
+	/tset/Xt11/tgtsubval/tgtsubval
 
 XtVaGetSubvalues
 	"VSW5TESTSUITE CASE XtVaGetSubvalues 3"
-	/tset/Xt11/tvagtsval/Test
+	/tset/Xt11/tvagtsval/tvagtsval
 
 XtSetValues
 	"VSW5TESTSUITE CASE XtSetValues 13"
-	/tset/Xt11/tstvalues/Test
+	/tset/Xt11/tstvalues/tstvalues
 
 XtVaSetValues
 	"VSW5TESTSUITE CASE XtVaSetValues 15"
-	/tset/Xt11/tvastvals/Test
+	/tset/Xt11/tvastvals/tvastvals
 
 XtSetSubvalues
 	"VSW5TESTSUITE CASE XtSetSubvalues 2"
-	/tset/Xt11/tstsvals/Test
+	/tset/Xt11/tstsvals/tstsvals
 
 XtVaSetSubvalues
 	"VSW5TESTSUITE CASE XtVaSetSubvalues 4"
-	/tset/Xt11/tvastsvls/Test
+	/tset/Xt11/tvastsvls/tvastsvls
 
 #Discrete tests for Xt Chapter 12
 
 XtAppAddActions
 	"VSW5TESTSUITE CASE XtAppAddActions 4"
-	/tset/Xt12/tapadactn/Test
+	/tset/Xt12/tapadactn/tapadactn
 
 XtAppAddActionHook
 	"VSW5TESTSUITE CASE XtAppAddActionHook 6"
-	/tset/Xt12/tapadachk/Test
+	/tset/Xt12/tapadachk/tapadachk
 
 XtRemoveActionHook
 	"VSW5TESTSUITE CASE XtRemoveActionHook 1"
-	/tset/Xt12/trmvachok/Test
+	/tset/Xt12/trmvachok/trmvachok
 
 XtSetMultiClickTime
 	"VSW5TESTSUITE CASE XtSetMultiClickTime 1"
-	/tset/Xt12/tstmclktm/Test
+	/tset/Xt12/tstmclktm/tstmclktm
 
 XtGetMultiClickTime
 	"VSW5TESTSUITE CASE XtGetMultiClickTime 2"
-	/tset/Xt12/tgtmctime/Test
+	/tset/Xt12/tgtmctime/tgtmctime
 
 XtParseTranslationTable
 	"VSW5TESTSUITE CASE XtParseTranslationTable 1"
-	/tset/Xt12/tprsttbl/Test
+	/tset/Xt12/tprsttbl/tprsttbl
 
 XtAugmentTranslations
 	"VSW5TESTSUITE CASE XtAugmentTranslations 4"
-	/tset/Xt12/taugtrtns/Test
+	/tset/Xt12/taugtrtns/taugtrtns
 
 XtOverrideTranslations
 	"VSW5TESTSUITE CASE XtOverrideTranslations 4"
-	/tset/Xt12/tovertrsl/Test
+	/tset/Xt12/tovertrsl/tovertrsl
 
 XtUninstallTranslations
 	"VSW5TESTSUITE CASE XtUninstallTranslations 1"
-	/tset/Xt12/tuntrnsls/Test
+	/tset/Xt12/tuntrnsls/tuntrnsls
 
 XtParseAcceleratorTable
 	"VSW5TESTSUITE CASE XtParseAcceleratorTable 1"
-	/tset/Xt12/tprsactbl/Test
+	/tset/Xt12/tprsactbl/tprsactbl
 
 XtInstallAccelerators
 	"VSW5TESTSUITE CASE XtInstallAccelerators 2"
-	/tset/Xt12/tinaclrts/Test
+	/tset/Xt12/tinaclrts/tinaclrts
 
 XtInstallAllAccelerators
 	"VSW5TESTSUITE CASE XtInstallAllAccelerators 1"
-	/tset/Xt12/tinaaclrt/Test
+	/tset/Xt12/tinaaclrt/tinaaclrt
 
 XtGetKeysymTable
 	"VSW5TESTSUITE CASE XtGetKeysymTable 4"
-	/tset/Xt12/tgtkytbl/Test
+	/tset/Xt12/tgtkytbl/tgtkytbl
 
 XtSetKeyTranslator
 	"VSW5TESTSUITE CASE XtSetKeyTranslator 1"
-	/tset/Xt12/tstkytrlr/Test
+	/tset/Xt12/tstkytrlr/tstkytrlr
 
 XtTranslateKeycode
 	"VSW5TESTSUITE CASE XtTranslateKeycode 2"
-	/tset/Xt12/ttranskcd/Test
+	/tset/Xt12/ttranskcd/ttranskcd
 
 XtRegisterCaseConverter
 	"VSW5TESTSUITE CASE XtRegisterCaseConverter 2"
-	/tset/Xt12/tregccon/Test
+	/tset/Xt12/tregccon/tregccon
 
 XtConvertCase
 	"VSW5TESTSUITE CASE XtConvertCase 2"
-	/tset/Xt12/tcnvrtcas/Test
+	/tset/Xt12/tcnvrtcas/tcnvrtcas
 
 XtGetActionKeysym
 	"VSW5TESTSUITE CASE XtGetActionKeysym 8"
-	/tset/Xt12/tgtacksym/Test
+	/tset/Xt12/tgtacksym/tgtacksym
 
 XtKeysymToKeycodeList
 	"VSW5TESTSUITE CASE XtKeysymToKeycodeList 2"
-	/tset/Xt12/tkytoklst/Test
+	/tset/Xt12/tkytoklst/tkytoklst
 
 XtRegisterGrabAction
 	"VSW5TESTSUITE CASE XtRegisterGrabAction 11"
-	/tset/Xt12/tregraba/Test
+	/tset/Xt12/tregraba/tregraba
 
 XtCallActionProc
 	"VSW5TESTSUITE CASE XtCallActionProc 2"
-	/tset/Xt12/tcalacprc/Test
+	/tset/Xt12/tcalacprc/tcalacprc
 
 XtGetActionList
 	"VSW5TESTSUITE CASE XtGetActionList 5"
-	/tset/Xt12/tgtactlst/Test
+	/tset/Xt12/tgtactlst/tgtactlst
 
 #Discrete tests for Xt Chapter 13
 
 XtNumber
 	"VSW5TESTSUITE CASE XtNumber 1"
-	/tset/Xt13/tnumber/Test
+	/tset/Xt13/tnumber/tnumber
 
 XtNameToWidget
 	"VSW5TESTSUITE CASE XtNameToWidget 7"
-	/tset/Xt13/tnmtowidg/Test
+	/tset/Xt13/tnmtowidg/tnmtowidg
 
 XtMalloc
 	"VSW5TESTSUITE CASE XtMalloc 6"
-	/tset/Xt13/tmalloc/Test
+	/tset/Xt13/tmalloc/tmalloc
 
 XtCalloc
 	"VSW5TESTSUITE CASE XtCalloc 6"
-	/tset/Xt13/tcalloc/Test
+	/tset/Xt13/tcalloc/tcalloc
 
 XtRealloc
 	"VSW5TESTSUITE CASE XtRealloc 12"
-	/tset/Xt13/trealloc/Test
+	/tset/Xt13/trealloc/trealloc
 
 XtFree
 	"VSW5TESTSUITE CASE XtFree 4"
-	/tset/Xt13/tfree/Test
+	/tset/Xt13/tfree/tfree
 
 XtNew
 	"VSW5TESTSUITE CASE XtNew 5"
-	/tset/Xt13/tnew/Test
+	/tset/Xt13/tnew/tnew
 
 XtNewString
 	"VSW5TESTSUITE CASE XtNewString 5"
-	/tset/Xt13/tnewstrg/Test
+	/tset/Xt13/tnewstrg/tnewstrg
 
 XtAllocateGC
 	"VSW5TESTSUITE CASE XtAllocateGC 9"
-	/tset/Xt13/tallocgc/Test
+	/tset/Xt13/tallocgc/tallocgc
 
 XtGetGC
 	"VSW5TESTSUITE CASE XtGetGC 4"
-	/tset/Xt13/tgtgc/Test
+	/tset/Xt13/tgtgc/tgtgc
 
 XtReleaseGC
 	"VSW5TESTSUITE CASE XtReleaseGC 2"
-	/tset/Xt13/trelasegc/Test
+	/tset/Xt13/trelasegc/trelasegc
 
 XtAppSetSelectionTimeout
 	"VSW5TESTSUITE CASE XtAppSetSelectionTimeout 1"
-	/tset/Xt13/tapststmo/Test
+	/tset/Xt13/tapststmo/tapststmo
 
 XtAppGetSelectionTimeout
 	"VSW5TESTSUITE CASE XtAppGetSelectionTimeout 2"
-	/tset/Xt13/tapgtstot/Test
+	/tset/Xt13/tapgtstot/tapgtstot
 
 XtGetSelectionRequest
 	"VSW5TESTSUITE CASE XtGetSelectionRequest 3"
-	/tset/Xt13/tgtsreque/Test
+	/tset/Xt13/tgtsreque/tgtsreque
 
 XtGetSelectionValue
 	"VSW5TESTSUITE CASE XtGetSelectionValue 4"
-	/tset/Xt13/tgtsvalue/Test
+	/tset/Xt13/tgtsvalue/tgtsvalue
 
 XtGetSelectionValues
 	"VSW5TESTSUITE CASE XtGetSelectionValues 5"
-	/tset/Xt13/tgtslvals/Test
+	/tset/Xt13/tgtslvals/tgtslvals
 
 XtOwnSelection
 	"VSW5TESTSUITE CASE XtOwnSelection 8"
-	/tset/Xt13/townselec/Test
+	/tset/Xt13/townselec/townselec
 
 XtDisownSelection
 	"VSW5TESTSUITE CASE XtDisownSelection 5"
-	/tset/Xt13/tdisownsl/Test
+	/tset/Xt13/tdisownsl/tdisownsl
 
 XtGetSelectionValueIncremental
 	"VSW5TESTSUITE CASE XtGetSelectionValueIncremental 6"
-	/tset/Xt13/tgtsvainc/Test
+	/tset/Xt13/tgtsvainc/tgtsvainc
 
 XtGetSelectionValuesIncremental
 	"VSW5TESTSUITE CASE XtGetSelectionValuesIncremental 7"
-	/tset/Xt13/tgtslvali/Test
+	/tset/Xt13/tgtslvali/tgtslvali
 
 XtOwnSelectionIncremental
 	"VSW5TESTSUITE CASE XtOwnSelectionIncremental 10"
-	/tset/Xt13/townselin/Test
+	/tset/Xt13/townselin/townselin
 
 XtLastTimestampProcessed
 	"VSW5TESTSUITE CASE XtLastTimestampProcessed 2"
-	/tset/Xt13/tltmsproc/Test
+	/tset/Xt13/tltmsproc/tltmsproc
 
 XtAddExposureToRegion
 	"VSW5TESTSUITE CASE XtAddExposureToRegion 3"
-	/tset/Xt13/tadexptor/Test
+	/tset/Xt13/tadexptor/tadexptor
 
 XtTranslateCoords
 	"VSW5TESTSUITE CASE XtTranslateCoords 1"
-	/tset/Xt13/ttranslcd/Test
+	/tset/Xt13/ttranslcd/ttranslcd
 
 XtWindowToWidget
 	"VSW5TESTSUITE CASE XtWindowToWidget 2"
-	/tset/Xt13/twindtowd/Test
+	/tset/Xt13/twindtowd/twindtowd
 
 XtGetApplicationNameAndClass
 	"VSW5TESTSUITE CASE XtGetApplicationNameAndClass 3"
-	/tset/Xt13/tgtapnacl/Test
+	/tset/Xt13/tgtapnacl/tgtapnacl
 
 XtAppGetErrorDatabase
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabase 1"
-	/tset/Xt13/tapgterdb/Test
+	/tset/Xt13/tapgterdb/tapgterdb
 
 XtAppGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabaseText 4"
-	/tset/Xt13/tapgterdt/Test
+	/tset/Xt13/tapgterdt/tapgterdt
 
 XtAppSetErrorMsgHandler
 	"VSW5TESTSUITE CASE XtAppSetErrorMsgHandler 2"
-	/tset/Xt13/tapstermh/Test
+	/tset/Xt13/tapstermh/tapstermh
 
 XtAppErrorMsg
 	"VSW5TESTSUITE CASE XtAppErrorMsg 3"
-	/tset/Xt13/taperrmsg/Test
+	/tset/Xt13/taperrmsg/taperrmsg
 
 XtAppSetWarningMsgHandler
 	"VSW5TESTSUITE CASE XtAppSetWarningMsgHandler 2"
-	/tset/Xt13/tapstwmhr/Test
+	/tset/Xt13/tapstwmhr/tapstwmhr
 
 XtAppWarningMsg
 	"VSW5TESTSUITE CASE XtAppWarningMsg 3"
-	/tset/Xt13/tapwrnmsg/Test
+	/tset/Xt13/tapwrnmsg/tapwrnmsg
 
 XtAppSetErrorHandler
 	"VSW5TESTSUITE CASE XtAppSetErrorHandler 2"
-	/tset/Xt13/tapsterhd/Test
+	/tset/Xt13/tapsterhd/tapsterhd
 
 XtAppError
 	"VSW5TESTSUITE CASE XtAppError 3"
-	/tset/Xt13/taperror/Test
+	/tset/Xt13/taperror/taperror
 
 XtAppSetWarningHandler
 	"VSW5TESTSUITE CASE XtAppSetWarningHandler 2"
-	/tset/Xt13/tapstwhdr/Test
+	/tset/Xt13/tapstwhdr/tapstwhdr
 
 XtAppWarning
 	"VSW5TESTSUITE CASE XtAppWarning 3"
-	/tset/Xt13/tapwrning/Test
+	/tset/Xt13/tapwrning/tapwrning
 
 XtSetWMColormapWindows
 	"VSW5TESTSUITE CASE XtSetWMColormapWindows 3"
-	/tset/Xt13/tstwmcmw/Test
+	/tset/Xt13/tstwmcmw/tstwmcmw
 
 XtFindFile
 	"VSW5TESTSUITE CASE XtFindFile 7"
-	/tset/Xt13/tfindfile/Test
+	/tset/Xt13/tfindfile/tfindfile
 
 XtResolvePathname
 	"VSW5TESTSUITE CASE XtResolvePathname 20"
-	/tset/Xt13/trspathnm/Test
+	/tset/Xt13/trspathnm/trspathnm
 
 #Discrete tests for Xt Chapter 14
 
 ObjectObject
 	"VSW5TESTSUITE CASE ObjectObject 9"
-	/tset/Xt14/objctobjct/Test
+	/tset/Xt14/objctobjct/objctobjct
 
 RectangleObject
 	"VSW5TESTSUITE CASE RectangleObject 9"
-	/tset/Xt14/objctrctng/Test
+	/tset/Xt14/objctrctng/objctrctng
 
 #Discrete tests for Xt Chapter 15
 
 XtSpecificationRelease
 	"VSW5TESTSUITE CASE XtSpecificationRelease 2"
-	/tset/Xt15/spcfctnr/Test
+	/tset/Xt15/spcfctnr/spcfctnr
 
 #Discrete tests for Xt Appendix C
 
 XtGetErrorDatabase
 	"VSW5TESTSUITE CASE XtGetErrorDatabase 1"
-	/tset/XtC/tgterrdbs/Test
+	/tset/XtC/tgterrdbs/tgterrdbs
 
 XtGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XtGetErrorDatabaseText 2"
-	/tset/XtC/tgterrdbt/Test
+	/tset/XtC/tgterrdbt/tgterrdbt
 
 XtInitialize
 	"VSW5TESTSUITE CASE XtInitialize 27"
-	/tset/XtC/tinitlize/Test
+	/tset/XtC/tinitlize/tinitlize
 
 XtMainLoop
 	"VSW5TESTSUITE CASE XtMainLoop 28"
-	/tset/XtC/tmainloop/Test
+	/tset/XtC/tmainloop/tmainloop
 
 XtNextEvent
 	"VSW5TESTSUITE CASE XtNextEvent 4"
-	/tset/XtC/tnxtevnt/Test
+	/tset/XtC/tnxtevnt/tnxtevnt
 
 XtProcessEvent
 	"VSW5TESTSUITE CASE XtProcessEvent 12"
-	/tset/XtC/tprocevnt/Test
+	/tset/XtC/tprocevnt/tprocevnt
 
 XtPeekEvent
 	"VSW5TESTSUITE CASE XtPeekEvent 3"
-	/tset/XtC/tpeekevnt/Test
+	/tset/XtC/tpeekevnt/tpeekevnt
 
 XtPending
 	"VSW5TESTSUITE CASE XtPending 2"
-	/tset/XtC/tpending/Test
+	/tset/XtC/tpending/tpending
 
 XtAddInput
 	"VSW5TESTSUITE CASE XtAddInput 5"
-	/tset/XtC/taddinput/Test
+	/tset/XtC/taddinput/taddinput
 
 XtAddTimeOut
 	"VSW5TESTSUITE CASE XtAddTimeOut 2"
-	/tset/XtC/taddtmout/Test
+	/tset/XtC/taddtmout/taddtmout
 
 XtAddWorkProc
 	"VSW5TESTSUITE CASE XtAddWorkProc 5"
-	/tset/XtC/tadwkproc/Test
+	/tset/XtC/tadwkproc/tadwkproc
 
 XtCreateApplicationShell
 	"VSW5TESTSUITE CASE XtCreateApplicationShell 7"
-	/tset/XtC/tcrappshl/Test
+	/tset/XtC/tcrappshl/tcrappshl
 
 XtStringConversionWarning
 	"VSW5TESTSUITE CASE XtStringConversionWarning 1"
-	/tset/XtC/tstconwg/Test
+	/tset/XtC/tstconwg/tstconwg
 
 XtAddConverter
 	"VSW5TESTSUITE CASE XtAddConverter 10"
-	/tset/XtC/tadconvtr/Test
+	/tset/XtC/tadconvtr/tadconvtr
 
 XtAppAddConverter
 	"VSW5TESTSUITE CASE XtAppAddConverter 10"
-	/tset/XtC/tapadconv/Test
+	/tset/XtC/tapadconv/tapadconv
 
 XtConvert
 	"VSW5TESTSUITE CASE XtConvert 1"
-	/tset/XtC/tconvert/Test
+	/tset/XtC/tconvert/tconvert
 
 XtDirectConvert
 	"VSW5TESTSUITE CASE XtDirectConvert 3"
-	/tset/XtC/tdircnvrt/Test
+	/tset/XtC/tdircnvrt/tdircnvrt
 
 XtDestroyGC
 	"VSW5TESTSUITE CASE XtDestroyGC 2"
-	/tset/XtC/tdestygc/Test
+	/tset/XtC/tdestygc/tdestygc
 
 XtAddActions
 	"VSW5TESTSUITE CASE XtAddActions 3"
-	/tset/XtC/tadaction/Test
+	/tset/XtC/tadaction/tadaction
 
 XtSetSelectionTimeout
 	"VSW5TESTSUITE CASE XtSetSelectionTimeout 1"
-	/tset/XtC/tststmout/Test
+	/tset/XtC/tststmout/tststmout
 
 XtGetSelectionTimeout
 	"VSW5TESTSUITE CASE XtGetSelectionTimeout 2"
-	/tset/XtC/tgtstmout/Test
+	/tset/XtC/tgtstmout/tgtstmout
 
 XtSetErrorMsgHandler
 	"VSW5TESTSUITE CASE XtSetErrorMsgHandler 1"
-	/tset/XtC/tsterrmhd/Test
+	/tset/XtC/tsterrmhd/tsterrmhd
 
 XtErrorMsg
 	"VSW5TESTSUITE CASE XtErrorMsg 3"
-	/tset/XtC/terrormsg/Test
+	/tset/XtC/terrormsg/terrormsg
 
 XtSetWarningHandler
 	"VSW5TESTSUITE CASE XtSetWarningHandler 1"
-	/tset/XtC/tstwhndlr/Test
+	/tset/XtC/tstwhndlr/tstwhndlr
 
 XtSetWarningMsgHandler
 	"VSW5TESTSUITE CASE XtSetWarningMsgHandler 1"
-	/tset/XtC/tstwmsghr/Test
+	/tset/XtC/tstwmsghr/tstwmsghr
 
 XtWarning
 	"VSW5TESTSUITE CASE XtWarning 3"
-	/tset/XtC/twarning/Test
+	/tset/XtC/twarning/twarning
 
 XtWarningMsg
 	"VSW5TESTSUITE CASE XtWarningMsg 3"
-	/tset/XtC/twarngmsg/Test
+	/tset/XtC/twarngmsg/twarngmsg
 
 XtSetErrorHandler
 	"VSW5TESTSUITE CASE XtSetErrorHandler 1"
-	/tset/XtC/tsterrhnd/Test
+	/tset/XtC/tsterrhnd/tsterrhnd
 
 XtError
 	"VSW5TESTSUITE CASE XtError 3"
-	/tset/XtC/terror/Test
+	/tset/XtC/terror/terror
 
 #Discrete tests for Xt Appendix E
 
 StringDefs.h
 	"VSW5TESTSUITE CASE StringDefs.h 1"
-	/tset/XtE/strngdfs/Test
+	/tset/XtE/strngdfs/strngdfs

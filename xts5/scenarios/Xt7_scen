@@ -59,24 +59,24 @@
 #
 
 	"VSW5TESTSUITE CASE XtCreatePopupShell 6"
-	/tset/Xt7/tcrpopshl/Test
+	/tset/Xt7/tcrpopshl/tcrpopshl
 	"VSW5TESTSUITE CASE XtVaCreatePopupShell 6"
-	/tset/Xt7/tvacrpshl/Test
+	/tset/Xt7/tvacrpshl/tvacrpshl
 	"VSW5TESTSUITE CASE XtPopup 11"
-	/tset/Xt7/tpopup/Test
+	/tset/Xt7/tpopup/tpopup
 	"VSW5TESTSUITE CASE XtPopdown 8"
-	/tset/Xt7/tpopdown/Test
+	/tset/Xt7/tpopdown/tpopdown
 	"VSW5TESTSUITE CASE XtPopupSpringLoaded 9"
-	/tset/Xt7/tpopupsld/Test
+	/tset/Xt7/tpopupsld/tpopupsld
 	"VSW5TESTSUITE CASE XtCallbackNone 8"
-	/tset/Xt7/tcalbknon/Test
+	/tset/Xt7/tcalbknon/tcalbknon
 	"VSW5TESTSUITE CASE XtCallbackNonexclusive 8"
-	/tset/Xt7/tcalbknex/Test
+	/tset/Xt7/tcalbknex/tcalbknex
 	"VSW5TESTSUITE CASE XtCallbackExclusive 8"
-	/tset/Xt7/tcalbkexc/Test
+	/tset/Xt7/tcalbkexc/tcalbkexc
 	"VSW5TESTSUITE CASE XtMenuPopup 22"
-	/tset/Xt7/tmpopup/Test
+	/tset/Xt7/tmpopup/tmpopup
 	"VSW5TESTSUITE CASE XtCallbackPopdown 9"
-	/tset/Xt7/tcalbkpdn/Test
+	/tset/Xt7/tcalbkpdn/tcalbkpdn
 	"VSW5TESTSUITE CASE XtMenuPopdown 11"
-	/tset/Xt7/tmpopdown/Test
+	/tset/Xt7/tmpopdown/tmpopdown

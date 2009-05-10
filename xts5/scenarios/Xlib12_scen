@@ -56,56 +56,56 @@
 #
 
 	"VSW5TESTSUITE CASE XCheckIfEvent 6"
-	/tset/Xlib12/chckifevnt/Test
+	/tset/Xlib12/chckifevnt/chckifevnt
 	"VSW5TESTSUITE CASE XCheckMaskEvent 6"
-	/tset/Xlib12/chckmskevn/Test
+	/tset/Xlib12/chckmskevn/chckmskevn
 	"VSW5TESTSUITE CASE XCheckTypedEvent 6"
-	/tset/Xlib12/chcktypdev/Test
+	/tset/Xlib12/chcktypdev/chcktypdev
 	"VSW5TESTSUITE CASE XCheckTypedWindowEvent 6"
-	/tset/Xlib12/chcktypdwd/Test
+	/tset/Xlib12/chcktypdwd/chcktypdwd
 	"VSW5TESTSUITE CASE XCheckWindowEvent 6"
-	/tset/Xlib12/chckwdwevn/Test
+	/tset/Xlib12/chckwdwevn/chckwdwevn
 	"VSW5TESTSUITE CASE XDisplayMotionBufferSize 2"
-	/tset/Xlib12/dsplymtnbf/Test
+	/tset/Xlib12/dsplymtnbf/dsplymtnbf
 	"VSW5TESTSUITE CASE XDisplayName 1"
-	/tset/Xlib12/dsplynm/Test
+	/tset/Xlib12/dsplynm/dsplynm
 	"VSW5TESTSUITE CASE XEventsQueued 6"
-	/tset/Xlib12/evntsqd/Test
+	/tset/Xlib12/evntsqd/evntsqd
 	"VSW5TESTSUITE CASE XFlush 1"
-	/tset/Xlib12/flsh/Test
+	/tset/Xlib12/flsh/flsh
 	"VSW5TESTSUITE CASE XGetErrorDatabaseText 5"
-	/tset/Xlib12/gterrrdtbs/Test
+	/tset/Xlib12/gterrrdtbs/gterrrdtbs
 	"VSW5TESTSUITE CASE XGetErrorText 2"
-	/tset/Xlib12/gterrrtxt/Test
+	/tset/Xlib12/gterrrtxt/gterrrtxt
 	"VSW5TESTSUITE CASE XGetMotionEvents 7"
-	/tset/Xlib12/gtmtnevnts/Test
+	/tset/Xlib12/gtmtnevnts/gtmtnevnts
 	"VSW5TESTSUITE CASE XIfEvent 4"
-	/tset/Xlib12/ifevnt/Test
+	/tset/Xlib12/ifevnt/ifevnt
 	"VSW5TESTSUITE CASE XMaskEvent 3"
-	/tset/Xlib12/mskevnt/Test
+	/tset/Xlib12/mskevnt/mskevnt
 	"VSW5TESTSUITE CASE XNextEvent 3"
-	/tset/Xlib12/nxtevnt/Test
+	/tset/Xlib12/nxtevnt/nxtevnt
 	"VSW5TESTSUITE CASE XPeekEvent 3"
-	/tset/Xlib12/pkevnt/Test
+	/tset/Xlib12/pkevnt/pkevnt
 	"VSW5TESTSUITE CASE XPeekIfEvent 4"
-	/tset/Xlib12/pkifevnt/Test
+	/tset/Xlib12/pkifevnt/pkifevnt
 	"VSW5TESTSUITE CASE XPending 3"
-	/tset/Xlib12/pndng/Test
+	/tset/Xlib12/pndng/pndng
 	"VSW5TESTSUITE CASE XPutBackEvent 2"
-	/tset/Xlib12/ptbckevnt/Test
+	/tset/Xlib12/ptbckevnt/ptbckevnt
 	"VSW5TESTSUITE CASE XSelectInput 8"
-	/tset/Xlib12/slctinpt/Test
+	/tset/Xlib12/slctinpt/slctinpt
 	"VSW5TESTSUITE CASE XSendEvent 22"
-	/tset/Xlib12/sndevnt/Test
+	/tset/Xlib12/sndevnt/sndevnt
 	"VSW5TESTSUITE CASE XSetAfterFunction 3"
-	/tset/Xlib12/staftrfnct/Test
+	/tset/Xlib12/staftrfnct/staftrfnct
 	"VSW5TESTSUITE CASE XSetErrorHandler 9"
-	/tset/Xlib12/sterrrhndl/Test
+	/tset/Xlib12/sterrrhndl/sterrrhndl
 	"VSW5TESTSUITE CASE XSetIOErrorHandler 7"
-	/tset/Xlib12/stioerrrhn/Test
+	/tset/Xlib12/stioerrrhn/stioerrrhn
 	"VSW5TESTSUITE CASE XSync 5"
-	/tset/Xlib12/sync/Test
+	/tset/Xlib12/sync/sync
 	"VSW5TESTSUITE CASE XSynchronize 5"
-	/tset/Xlib12/synchrnz/Test
+	/tset/Xlib12/synchrnz/synchrnz
 	"VSW5TESTSUITE CASE XWindowEvent 3"
-	/tset/Xlib12/wdwevnt/Test
+	/tset/Xlib12/wdwevnt/wdwevnt

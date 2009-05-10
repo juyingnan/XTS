@@ -59,46 +59,46 @@
 #
 
 	"VSW5TESTSUITE CASE XtAppAddActions 4"
-	/tset/Xt12/tapadactn/Test
+	/tset/Xt12/tapadactn/tapadactn
 	"VSW5TESTSUITE CASE XtAppAddActionHook 6"
-	/tset/Xt12/tapadachk/Test
+	/tset/Xt12/tapadachk/tapadachk
 	"VSW5TESTSUITE CASE XtRemoveActionHook 1"
-	/tset/Xt12/trmvachok/Test
+	/tset/Xt12/trmvachok/trmvachok
 	"VSW5TESTSUITE CASE XtSetMultiClickTime 1"
-	/tset/Xt12/tstmclktm/Test
+	/tset/Xt12/tstmclktm/tstmclktm
 	"VSW5TESTSUITE CASE XtGetMultiClickTime 2"
-	/tset/Xt12/tgtmctime/Test
+	/tset/Xt12/tgtmctime/tgtmctime
 	"VSW5TESTSUITE CASE XtParseTranslationTable 1"
-	/tset/Xt12/tprsttbl/Test
+	/tset/Xt12/tprsttbl/tprsttbl
 	"VSW5TESTSUITE CASE XtAugmentTranslations 4"
-	/tset/Xt12/taugtrtns/Test
+	/tset/Xt12/taugtrtns/taugtrtns
 	"VSW5TESTSUITE CASE XtOverrideTranslations 4"
-	/tset/Xt12/tovertrsl/Test
+	/tset/Xt12/tovertrsl/tovertrsl
 	"VSW5TESTSUITE CASE XtUninstallTranslations 1"
-	/tset/Xt12/tuntrnsls/Test
+	/tset/Xt12/tuntrnsls/tuntrnsls
 	"VSW5TESTSUITE CASE XtParseAcceleratorTable 1"
-	/tset/Xt12/tprsactbl/Test
+	/tset/Xt12/tprsactbl/tprsactbl
 	"VSW5TESTSUITE CASE XtInstallAccelerators 2"
-	/tset/Xt12/tinaclrts/Test
+	/tset/Xt12/tinaclrts/tinaclrts
 	"VSW5TESTSUITE CASE XtInstallAllAccelerators 1"
-	/tset/Xt12/tinaaclrt/Test
+	/tset/Xt12/tinaaclrt/tinaaclrt
 	"VSW5TESTSUITE CASE XtGetKeysymTable 4"
-	/tset/Xt12/tgtkytbl/Test
+	/tset/Xt12/tgtkytbl/tgtkytbl
 	"VSW5TESTSUITE CASE XtSetKeyTranslator 1"
-	/tset/Xt12/tstkytrlr/Test
+	/tset/Xt12/tstkytrlr/tstkytrlr
 	"VSW5TESTSUITE CASE XtTranslateKeycode 2"
-	/tset/Xt12/ttranskcd/Test
+	/tset/Xt12/ttranskcd/ttranskcd
 	"VSW5TESTSUITE CASE XtRegisterCaseConverter 2"
-	/tset/Xt12/tregccon/Test
+	/tset/Xt12/tregccon/tregccon
 	"VSW5TESTSUITE CASE XtConvertCase 2"
-	/tset/Xt12/tcnvrtcas/Test
+	/tset/Xt12/tcnvrtcas/tcnvrtcas
 	"VSW5TESTSUITE CASE XtGetActionKeysym 8"
-	/tset/Xt12/tgtacksym/Test
+	/tset/Xt12/tgtacksym/tgtacksym
 	"VSW5TESTSUITE CASE XtKeysymToKeycodeList 2"
-	/tset/Xt12/tkytoklst/Test
+	/tset/Xt12/tkytoklst/tkytoklst
 	"VSW5TESTSUITE CASE XtCallActionProc 2"
-	/tset/Xt12/tcalacprc/Test
+	/tset/Xt12/tcalacprc/tcalacprc
 	"VSW5TESTSUITE CASE XtRegisterGrabAction 11"
-	/tset/Xt12/tregraba/Test
+	/tset/Xt12/tregraba/tregraba
 	"VSW5TESTSUITE CASE XtGetActionList 5"
-	/tset/Xt12/tgtactlst/Test
+	/tset/Xt12/tgtactlst/tgtactlst

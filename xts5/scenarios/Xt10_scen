@@ -59,18 +59,18 @@
 #
 
 	"VSW5TESTSUITE CASE XtAddCallback 3"
-	/tset/Xt10/tadclback/Test
+	/tset/Xt10/tadclback/tadclback
 	"VSW5TESTSUITE CASE XtAddCallbacks 3"
-	/tset/Xt10/tadclbcks/Test
+	/tset/Xt10/tadclbcks/tadclbcks
 	"VSW5TESTSUITE CASE XtRemoveCallback 2"
-	/tset/Xt10/trmclback/Test
+	/tset/Xt10/trmclback/trmclback
 	"VSW5TESTSUITE CASE XtRemoveCallbacks 1"
-	/tset/Xt10/trmcalbks/Test
+	/tset/Xt10/trmcalbks/trmcalbks
 	"VSW5TESTSUITE CASE XtRemoveAllCallbacks 2"
-	/tset/Xt10/trmalcbks/Test
+	/tset/Xt10/trmalcbks/trmalcbks
 	"VSW5TESTSUITE CASE XtCallCallbacks 1"
-	/tset/Xt10/tcalcbcks/Test
+	/tset/Xt10/tcalcbcks/tcalcbcks
 	"VSW5TESTSUITE CASE XtCallCallbackList 2"
-	/tset/Xt10/tcalcbckl/Test
+	/tset/Xt10/tcalcbckl/tcalcbckl
 	"VSW5TESTSUITE CASE XtHasCallbacks 3"
-	/tset/Xt10/thscbacks/Test
+	/tset/Xt10/thscbacks/thscbacks

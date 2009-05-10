@@ -62,68 +62,68 @@
 #
 
 	"VSW5TESTSUITE CASE XtToolkitInitialize 1"
-	/tset/Xt4/ttlktintlz/Test
+	/tset/Xt4/ttlktintlz/ttlktintlz
 	"VSW5TESTSUITE CASE XtCreateApplicationContext 1"
-	/tset/Xt4/tcrtapplct/Test
+	/tset/Xt4/tcrtapplct/tcrtapplct
 	"VSW5TESTSUITE CASE XtDestoryApplicationContext 2"
-	/tset/Xt4/tdstryappl/Test
+	/tset/Xt4/tdstryappl/tdstryappl
 	"VSW5TESTSUITE CASE XtWidgetToApplicationContext 1"
-	/tset/Xt4/twdgttappl/Test
+	/tset/Xt4/twdgttappl/twdgttappl
 	"VSW5TESTSUITE CASE XtDisplayInitialize 20"
-	/tset/Xt4/tdsplyintl/Test
+	/tset/Xt4/tdsplyintl/tdsplyintl
 	"VSW5TESTSUITE CASE XtOpenDisplay 28"
-	/tset/Xt4/topndsply/Test
+	/tset/Xt4/topndsply/topndsply
 	"VSW5TESTSUITE CASE XtCloseDisplay 2"
-	/tset/Xt4/tclsdsply/Test
+	/tset/Xt4/tclsdsply/tclsdsply
 	"VSW5TESTSUITE CASE XtSetLanguageProc 8"
-	/tset/Xt4/tstlnggprc/Test
+	/tset/Xt4/tstlnggprc/tstlnggprc
 	"VSW5TESTSUITE CASE XtScreenDatabase 1"
-	/tset/Xt4/tscrndtbs/Test
+	/tset/Xt4/tscrndtbs/tscrndtbs
 	"VSW5TESTSUITE CASE XtDatabase 2"
-	/tset/Xt4/tdtbs/Test
+	/tset/Xt4/tdtbs/tdtbs
 	"VSW5TESTSUITE CASE XtAppSetFallbackResources 2"
-	/tset/Xt4/tappstfllb/Test
+	/tset/Xt4/tappstfllb/tappstfllb
 	"VSW5TESTSUITE CASE XtSetArg 2"
-	/tset/Xt4/tstarg/Test
+	/tset/Xt4/tstarg/tstarg
 	"VSW5TESTSUITE CASE XtMergeArgLists 3"
-	/tset/Xt4/tmrgarglst/Test
+	/tset/Xt4/tmrgarglst/tmrgarglst
 	"VSW5TESTSUITE CASE XtVaCreateArgsList 2"
-	/tset/Xt4/tvcrtargsl/Test
+	/tset/Xt4/tvcrtargsl/tvcrtargsl
 	"VSW5TESTSUITE CASE XtCreateWidget 4"
-	/tset/Xt4/tcrtwdgt/Test
+	/tset/Xt4/tcrtwdgt/tcrtwdgt
 	"VSW5TESTSUITE CASE XtVaCreateWidget 8"
-	/tset/Xt4/tvcrtwdgt/Test
+	/tset/Xt4/tvcrtwdgt/tvcrtwdgt
 	"VSW5TESTSUITE CASE XtAppCreateShell 7"
-	/tset/Xt4/tapcrshel/Test
+	/tset/Xt4/tapcrshel/tapcrshel
 	"VSW5TESTSUITE CASE XtVaAppCreateShell 7"
-	/tset/Xt4/tvapcrshl/Test
+	/tset/Xt4/tvapcrshl/tvapcrshl
 	"VSW5TESTSUITE CASE XtAppInitialize 29"
-	/tset/Xt4/tapintlze/Test
+	/tset/Xt4/tapintlze/tapintlze
 	"VSW5TESTSUITE CASE XtVaAppInitialize 29"
-	/tset/Xt4/tvapintlz/Test
+	/tset/Xt4/tvapintlz/tvapintlz
 	"VSW5TESTSUITE CASE XtRealizeWidget 11"
-	/tset/Xt4/trealwdgt/Test
+	/tset/Xt4/trealwdgt/trealwdgt
 	"VSW5TESTSUITE CASE XtIsRealized 3"
-	/tset/Xt4/tisrealiz/Test
+	/tset/Xt4/tisrealiz/tisrealiz
 	"VSW5TESTSUITE CASE XtCreateWindow 1"
-	/tset/Xt4/tcrwindow/Test
+	/tset/Xt4/tcrwindow/tcrwindow
 	"VSW5TESTSUITE CASE XtDisplay 1"
-      	/tset/Xt4/tdisplay/Test
+      	/tset/Xt4/tdisplay/tdisplay
 	"VSW5TESTSUITE CASE XtParent 1"
-	/tset/Xt4/tparent/Test
+	/tset/Xt4/tparent/tparent
 	"VSW5TESTSUITE CASE XtScreen 1"
-	/tset/Xt4/tscreen/Test
+	/tset/Xt4/tscreen/tscreen
 	"VSW5TESTSUITE CASE XtWindow 1"
-	/tset/Xt4/twindow/Test
+	/tset/Xt4/twindow/twindow
 	"VSW5TESTSUITE CASE XtDisplayOfObject 2"
-	/tset/Xt4/tdisplofo/Test
+	/tset/Xt4/tdisplofo/tdisplofo
 	"VSW5TESTSUITE CASE XtScreenOfObject 2"
-	/tset/Xt4/tscnofobt/Test
+	/tset/Xt4/tscnofobt/tscnofobt
 	"VSW5TESTSUITE CASE XtWindowOfObject 2"
-	/tset/Xt4/twindwofo/Test
+	/tset/Xt4/twindwofo/twindwofo
 	"VSW5TESTSUITE CASE XtName 1"
-	/tset/Xt4/tname/Test
+	/tset/Xt4/tname/tname
 	"VSW5TESTSUITE CASE XtUnrealizeWidget 4"
-	/tset/Xt4/tunrlzwgt/Test
+	/tset/Xt4/tunrlzwgt/tunrlzwgt
 	"VSW5TESTSUITE CASE XtDestroyWidget 3"
-	/tset/Xt4/tdestywid/Test
+	/tset/Xt4/tdestywid/tdestywid

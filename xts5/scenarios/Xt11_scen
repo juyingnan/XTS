@@ -59,118 +59,118 @@
 #
 
 	"VSW5TESTSUITE CASE XtGetResourceList 2"
-	/tset/Xt11/tgtreslst/Test
+	/tset/Xt11/tgtreslst/tgtreslst
 	"VSW5TESTSUITE CASE XtGetConstraintResourceList 3"
-	/tset/Xt11/tgtconrsl/Test
+	/tset/Xt11/tgtconrsl/tgtconrsl
 	"VSW5TESTSUITE CASE XtOffsetOf 1"
-	/tset/Xt11/toffsetof/Test
+	/tset/Xt11/toffsetof/toffsetof
 	"VSW5TESTSUITE CASE XtOffset 1"
-	/tset/Xt11/toffset/Test
+	/tset/Xt11/toffset/toffset
 	"VSW5TESTSUITE CASE XtGetSubresources 2"
-	/tset/Xt11/tgtsubres/Test
+	/tset/Xt11/tgtsubres/tgtsubres
 	"VSW5TESTSUITE CASE XtVaGetSubresources 4"
-	/tset/Xt11/tvagtsres/Test
+	/tset/Xt11/tvagtsres/tvagtsres
 	"VSW5TESTSUITE CASE XtGetApplicationResources 2"
-	/tset/Xt11/tgtapres/Test
+	/tset/Xt11/tgtapres/tgtapres
 	"VSW5TESTSUITE CASE XtVaGetApplicationResources 4"
-	/tset/Xt11/tvagtares/Test
+	/tset/Xt11/tvagtares/tvagtares
 	"VSW5TESTSUITE CASE XtCvtStringToAcceleratorTable 4"
-	/tset/Xt11/tcstatbl/Test
+	/tset/Xt11/tcstatbl/tcstatbl
 	"VSW5TESTSUITE CASE XtCvtStringToAtom 4"
-	/tset/Xt11/tcstatom/Test
+	/tset/Xt11/tcstatom/tcstatom
 	"VSW5TESTSUITE CASE XtCvtStringToBoolean 4"
-	/tset/Xt11/tcstboln/Test
+	/tset/Xt11/tcstboln/tcstboln
 	"VSW5TESTSUITE CASE XtCvtStringToBool 4"
-	/tset/Xt11/tcstbool/Test
+	/tset/Xt11/tcstbool/tcstbool
 	"VSW5TESTSUITE CASE XtCvtStringToCursor 5"
-	/tset/Xt11/tcstcurs/Test
+	/tset/Xt11/tcstcurs/tcstcurs
 	"VSW5TESTSUITE CASE XtCvtStringToDimension 4"
-	/tset/Xt11/tcstdim/Test
+	/tset/Xt11/tcstdim/tcstdim
 	"VSW5TESTSUITE CASE XtCvtStringToDisplay 4"
-	/tset/Xt11/tcstdisp/Test
+	/tset/Xt11/tcstdisp/tcstdisp
 	"VSW5TESTSUITE CASE XtCvtStringToFile 4"
-	/tset/Xt11/tcstfile/Test
+	/tset/Xt11/tcstfile/tcstfile
 	"VSW5TESTSUITE CASE XtCvtStringToFloat 4"
-	/tset/Xt11/tcstflt/Test
+	/tset/Xt11/tcstflt/tcstflt
 	"VSW5TESTSUITE CASE XtCvtStringToFont 8"
-	/tset/Xt11/tcstfont/Test
+	/tset/Xt11/tcstfont/tcstfont
 	"VSW5TESTSUITE CASE XtCvtStringToFontSet 11"
-	/tset/Xt11/tcstfset/Test
+	/tset/Xt11/tcstfset/tcstfset
 	"VSW5TESTSUITE CASE XtCvtStringToFontStruct 8"
-	/tset/Xt11/tcstfstr/Test
+	/tset/Xt11/tcstfstr/tcstfstr
 	"VSW5TESTSUITE CASE XtCvtStringToInitialState 6"
-	/tset/Xt11/tcstinit/Test
+	/tset/Xt11/tcstinit/tcstinit
 	"VSW5TESTSUITE CASE XtCvtStringToInt 4"
-	/tset/Xt11/tcstint/Test
+	/tset/Xt11/tcstint/tcstint
 	"VSW5TESTSUITE CASE XtCvtStringToPixel 9"
-	/tset/Xt11/tcstpix/Test
+	/tset/Xt11/tcstpix/tcstpix
 	"VSW5TESTSUITE CASE XtCvtStringToShort 4"
-	/tset/Xt11/tcstshrt/Test
+	/tset/Xt11/tcstshrt/tcstshrt
 	"VSW5TESTSUITE CASE XtCvtStringToTranslationTable 4"
-	/tset/Xt11/tcstttbl/Test
+	/tset/Xt11/tcstttbl/tcstttbl
 	"VSW5TESTSUITE CASE XtCvtStringToPosition 4"
-	/tset/Xt11/tcstpos/Test
+	/tset/Xt11/tcstpos/tcstpos
 	"VSW5TESTSUITE CASE XtCvtStringToUnsignedChar 4"
-	/tset/Xt11/tcstuchr/Test
+	/tset/Xt11/tcstuchr/tcstuchr
 	"VSW5TESTSUITE CASE XtCvtStringToVisual 5"
-	/tset/Xt11/tcstvis/Test
+	/tset/Xt11/tcstvis/tcstvis
 	"VSW5TESTSUITE CASE XtCvtColorToPixel 3"
-	/tset/Xt11/tccolpix/Test
+	/tset/Xt11/tccolpix/tccolpix
 	"VSW5TESTSUITE CASE XtCvtIntToBoolean 3"
-	/tset/Xt11/tcinboln/Test
+	/tset/Xt11/tcinboln/tcinboln
 	"VSW5TESTSUITE CASE XtCvtIntToBool 3"
-	/tset/Xt11/tcinbool/Test
+	/tset/Xt11/tcinbool/tcinbool
 	"VSW5TESTSUITE CASE XtCvtIntToColor 4"
-	/tset/Xt11/tcincolr/Test
+	/tset/Xt11/tcincolr/tcincolr
 	"VSW5TESTSUITE CASE XtCvtIntToDimension 3"
-	/tset/Xt11/tcindim/Test
+	/tset/Xt11/tcindim/tcindim
 	"VSW5TESTSUITE CASE XtCvtIntToFloat 3"
-	/tset/Xt11/tcinflt/Test
+	/tset/Xt11/tcinflt/tcinflt
 	"VSW5TESTSUITE CASE XtCvtIntToFont 3"
-	/tset/Xt11/tcinfont/Test
+	/tset/Xt11/tcinfont/tcinfont
 	"VSW5TESTSUITE CASE XtCvtIntToPixel 3"
-	/tset/Xt11/tcinpix/Test
+	/tset/Xt11/tcinpix/tcinpix
 	"VSW5TESTSUITE CASE XtCvtIntToPixmap 3"
-	/tset/Xt11/tcinpixm/Test
+	/tset/Xt11/tcinpixm/tcinpixm
 	"VSW5TESTSUITE CASE XtCvtIntToPosition 3"
-	/tset/Xt11/tcinpos/Test
+	/tset/Xt11/tcinpos/tcinpos
 	"VSW5TESTSUITE CASE XtCvtIntToShort 3"
-	/tset/Xt11/tcinshrt/Test
+	/tset/Xt11/tcinshrt/tcinshrt
 	"VSW5TESTSUITE CASE XtCvtIntToUnsignedChar 3"
-	/tset/Xt11/tcinuchr/Test
+	/tset/Xt11/tcinuchr/tcinuchr
 	"VSW5TESTSUITE CASE XtCvtPixelToColor 3"
-	/tset/Xt11/tcpixcol/Test
+	/tset/Xt11/tcpixcol/tcpixcol
 	"VSW5TESTSUITE CASE XtDisplayStringConversionWarning 2"
-	/tset/Xt11/tdisplscw/Test
+	/tset/Xt11/tdisplscw/tdisplscw
 	"VSW5TESTSUITE CASE XtDisplayToApplicationContext 2"
-	/tset/Xt11/tdispltac/Test
+	/tset/Xt11/tdispltac/tdispltac
 	"VSW5TESTSUITE CASE XtSetTypeConverter 15"
-	/tset/Xt11/tstyconv/Test
+	/tset/Xt11/tstyconv/tstyconv
 	"VSW5TESTSUITE CASE XtAppSetTypeConverter 15"
-	/tset/Xt11/tapsttpec/Test
+	/tset/Xt11/tapsttpec/tapsttpec
 	"VSW5TESTSUITE CASE XtCallConverter 15"
-	/tset/Xt11/tcalcnvtr/Test
+	/tset/Xt11/tcalcnvtr/tcalcnvtr
 	"VSW5TESTSUITE CASE XtAppReleaseCacheRefs 2"
-	/tset/Xt11/taprelcre/Test
+	/tset/Xt11/taprelcre/taprelcre
 	"VSW5TESTSUITE CASE XtCallbackReleaseCacheRef 1"
-	/tset/Xt11/tcalbkrlc/Test
+	/tset/Xt11/tcalbkrlc/tcalbkrlc
 	"VSW5TESTSUITE CASE XtCallbackReleaseCacheRefList 1"
-	/tset/Xt11/tcalbrcrl/Test
+	/tset/Xt11/tcalbrcrl/tcalbrcrl
 	"VSW5TESTSUITE CASE XtConvertAndStore 18"
-	/tset/Xt11/tcnvrtast/Test
+	/tset/Xt11/tcnvrtast/tcnvrtast
 	"VSW5TESTSUITE CASE XtGetValues 5"
-	/tset/Xt11/tgtvalues/Test
+	/tset/Xt11/tgtvalues/tgtvalues
 	"VSW5TESTSUITE CASE XtVaGetValues 7"
-	/tset/Xt11/tvagtvals/Test
+	/tset/Xt11/tvagtvals/tvagtvals
 	"VSW5TESTSUITE CASE XtGetSubvalues 2"
-	/tset/Xt11/tgtsubval/Test
+	/tset/Xt11/tgtsubval/tgtsubval
 	"VSW5TESTSUITE CASE XtVaGetSubvalues 3"
-	/tset/Xt11/tvagtsval/Test
+	/tset/Xt11/tvagtsval/tvagtsval
 	"VSW5TESTSUITE CASE XtSetValues 13"
-	/tset/Xt11/tstvalues/Test
+	/tset/Xt11/tstvalues/tstvalues
 	"VSW5TESTSUITE CASE XtVaSetValues 15"
-	/tset/Xt11/tvastvals/Test
+	/tset/Xt11/tvastvals/tvastvals
 	"VSW5TESTSUITE CASE XtSetSubvalues 2"
-	/tset/Xt11/tstsvals/Test
+	/tset/Xt11/tstsvals/tstsvals
 	"VSW5TESTSUITE CASE XtVaSetSubvalues 4"
-	/tset/Xt11/tvastsvls/Test
+	/tset/Xt11/tvastsvls/tvastsvls

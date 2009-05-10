@@ -62,24 +62,24 @@
 #
 
 	"VSW5TESTSUITE CASE XShapeOffsetShape 1"
-	/tset/SHAPE/tshoffshp/Test
+	/tset/SHAPE/tshoffshp/tshoffshp
 	"VSW5TESTSUITE CASE XShapeCombineMask 1"
-	/tset/SHAPE/tshpcmask/Test
+	/tset/SHAPE/tshpcmask/tshpcmask
 	"VSW5TESTSUITE CASE XShapeCombineRectangles 1"
-	/tset/SHAPE/tshpcrect/Test
+	/tset/SHAPE/tshpcrect/tshpcrect
 	"VSW5TESTSUITE CASE XShapeCombineRegion 1"
-	/tset/SHAPE/tshpcregn/Test
+	/tset/SHAPE/tshpcregn/tshpcregn
 	"VSW5TESTSUITE CASE XShapeCombineShape 1"
-	/tset/SHAPE/tshpcshap/Test
+	/tset/SHAPE/tshpcshap/tshpcshap
 	"VSW5TESTSUITE CASE XShapeGetRectangles 1"
-	/tset/SHAPE/tshpgtrec/Test
+	/tset/SHAPE/tshpgtrec/tshpgtrec
 	"VSW5TESTSUITE CASE XShapeInputSelected 1"
-	/tset/SHAPE/tshpinsel/Test
+	/tset/SHAPE/tshpinsel/tshpinsel
 	"VSW5TESTSUITE CASE XShapeQueryExtension 1"
-	/tset/SHAPE/tshpqyetn/Test
+	/tset/SHAPE/tshpqyetn/tshpqyetn
 	"VSW5TESTSUITE CASE XShapeQueryExtents 1"
-	/tset/SHAPE/tshpqyets/Test
+	/tset/SHAPE/tshpqyets/tshpqyets
 	"VSW5TESTSUITE CASE XShapeQueryVersion 1"
-	/tset/SHAPE/tshpqyver/Test
+	/tset/SHAPE/tshpqyver/tshpqyver
 	"VSW5TESTSUITE CASE XShapeSelectInput 1"
-	/tset/SHAPE/tshpstinp/Test
+	/tset/SHAPE/tshpstinp/tshpstinp

@@ -56,118 +56,118 @@
 #
 
 	"VSW5TESTSUITE CASE XAllocColor 5"
-	/tset/Xlib7/allcclr/Test
+	/tset/Xlib7/allcclr/allcclr
 	"VSW5TESTSUITE CASE XAllocColorCells 9"
-	/tset/Xlib7/allcclrcll/Test
+	/tset/Xlib7/allcclrcll/allcclrcll
 	"VSW5TESTSUITE CASE XAllocColorPlanes 7"
-	/tset/Xlib7/allcclrpln/Test
+	/tset/Xlib7/allcclrpln/allcclrpln
 	"VSW5TESTSUITE CASE XAllocNamedColor 6"
-	/tset/Xlib7/allcnmdclr/Test
+	/tset/Xlib7/allcnmdclr/allcnmdclr
 	"VSW5TESTSUITE CASE XCopyColormapAndFree 5"
-	/tset/Xlib7/cpyclrmpan/Test
+	/tset/Xlib7/cpyclrmpan/cpyclrmpan
 	"VSW5TESTSUITE CASE XCreateColormap 13"
-	/tset/Xlib7/crtclrmp/Test
+	/tset/Xlib7/crtclrmp/crtclrmp
 	"VSW5TESTSUITE CASE XFreeColormap 5"
-	/tset/Xlib7/frclrmp/Test
+	/tset/Xlib7/frclrmp/frclrmp
 	"VSW5TESTSUITE CASE XFreeColors 9"
-	/tset/Xlib7/frclrs/Test
+	/tset/Xlib7/frclrs/frclrs
 	"VSW5TESTSUITE CASE XLookupColor 4"
-	/tset/Xlib7/lkpclr/Test
+	/tset/Xlib7/lkpclr/lkpclr
 	"VSW5TESTSUITE CASE XParseColor 10"
-	/tset/Xlib7/prsclr/Test
+	/tset/Xlib7/prsclr/prsclr
 	"VSW5TESTSUITE CASE XQueryColor 3"
-	/tset/Xlib7/qryclr/Test
+	/tset/Xlib7/qryclr/qryclr
 	"VSW5TESTSUITE CASE XQueryColors 3"
-	/tset/Xlib7/qryclrs/Test
+	/tset/Xlib7/qryclrs/qryclrs
 	"VSW5TESTSUITE CASE XStoreColor 8"
-	/tset/Xlib7/strclr/Test
+	/tset/Xlib7/strclr/strclr
 	"VSW5TESTSUITE CASE XStoreColors 9"
-	/tset/Xlib7/strclrs/Test
+	/tset/Xlib7/strclrs/strclrs
 	"VSW5TESTSUITE CASE XStoreNamedColor 9"
-	/tset/Xlib7/strnmdclr/Test
+	/tset/Xlib7/strnmdclr/strnmdclr
 	"VSW5TESTSUITE CASE XcmsAllocColor 2"
-	/tset/Xlib7/cmsac/Test
+	/tset/Xlib7/cmsac/cmsac
 	"VSW5TESTSUITE CASE XcmsAddColorSpace 1"
-	/tset/Xlib7/cmsacs/Test
+	/tset/Xlib7/cmsacs/cmsacs
 	"VSW5TESTSUITE CASE XcmsAddFunctionSet 1"
-	/tset/Xlib7/cmsadfs/Test
+	/tset/Xlib7/cmsadfs/cmsadfs
 	"VSW5TESTSUITE CASE XcmsAllocNamedColor 2"
-	/tset/Xlib7/cmsanc/Test
+	/tset/Xlib7/cmsanc/cmsanc
 	"VSW5TESTSUITE CASE XcmsCCCOfColormap 1"
-	/tset/Xlib7/cmsccoc/Test
+	/tset/Xlib7/cmsccoc/cmsccoc
 	"VSW5TESTSUITE CASE XcmsConvertColors 1"
-	/tset/Xlib7/cmsccol/Test
+	/tset/Xlib7/cmsccol/cmsccol
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxLC 1"
-	/tset/Xlib7/cmscielq/Test
+	/tset/Xlib7/cmscielq/cmscielq
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxC 1"
-	/tset/Xlib7/cmscieqc/Test
+	/tset/Xlib7/cmscieqc/cmscieqc
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxL 1"
-	/tset/Xlib7/cmscieql/Test
+	/tset/Xlib7/cmscieql/cmscieql
 	"VSW5TESTSUITE CASE XcmsConversionProc 9"
-	/tset/Xlib7/cmscproc/Test
+	/tset/Xlib7/cmscproc/cmscproc
 	"VSW5TESTSUITE CASE XcmsConversionProc 4"
-	/tset/Xlib7/cmscprocd/Test
+	/tset/Xlib7/cmscprocd/cmscprocd
 	"VSW5TESTSUITE CASE XcmsCreateCCC 1"
-	/tset/Xlib7/cmscrcc/Test
+	/tset/Xlib7/cmscrcc/cmscrcc
 	"VSW5TESTSUITE CASE XcmsDefaultCCC 1"
-	/tset/Xlib7/cmsdcc/Test
+	/tset/Xlib7/cmsdcc/cmsdcc
 	"VSW5TESTSUITE CASE XcmsDisplayOfCCC 1"
-	/tset/Xlib7/cmsdocc/Test
+	/tset/Xlib7/cmsdocc/cmsdocc
 	"VSW5TESTSUITE CASE XcmsFreeCCC 1"
-	/tset/Xlib7/cmsfccc/Test
+	/tset/Xlib7/cmsfccc/cmsfccc
 	"VSW5TESTSUITE CASE XcmsFormatOfPrefix 2"
-	/tset/Xlib7/cmsfopr/Test
+	/tset/Xlib7/cmsfopr/cmsfopr
 	"VSW5TESTSUITE CASE XcmsLookupColor 1"
-	/tset/Xlib7/cmslkcl/Test
+	/tset/Xlib7/cmslkcl/cmslkcl
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMinL 1"
-	/tset/Xlib7/cmslqml/Test
+	/tset/Xlib7/cmslqml/cmslqml
 	"VSW5TESTSUITE CASE XcmsPrefixOfFormat 1"
-	/tset/Xlib7/cmspoft/Test
+	/tset/Xlib7/cmspoft/cmspoft
 	"VSW5TESTSUITE CASE XcmsQueryBlack 1"
-	/tset/Xlib7/cmsqbk/Test
+	/tset/Xlib7/cmsqbk/cmsqbk
 	"VSW5TESTSUITE CASE XcmsQueryBlue 1"
-	/tset/Xlib7/cmsqbl/Test
+	/tset/Xlib7/cmsqbl/cmsqbl
 	"VSW5TESTSUITE CASE XcmsQueryColor 1"
-	/tset/Xlib7/cmsqc/Test
+	/tset/Xlib7/cmsqc/cmsqc
 	"VSW5TESTSUITE CASE XcmsQueryColors 3"
-	/tset/Xlib7/cmsqcl/Test
+	/tset/Xlib7/cmsqcl/cmsqcl
 	"VSW5TESTSUITE CASE XcmsQueryGreen 1"
-	/tset/Xlib7/cmsqgr/Test
+	/tset/Xlib7/cmsqgr/cmsqgr
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxC 1"
-	/tset/Xlib7/cmsqmc/Test
+	/tset/Xlib7/cmsqmc/cmsqmc
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMinL 1"
-	/tset/Xlib7/cmsqmil/Test
+	/tset/Xlib7/cmsqmil/cmsqmil
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxL 1"
-	/tset/Xlib7/cmsqml/Test
+	/tset/Xlib7/cmsqml/cmsqml
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxLC 1"
-	/tset/Xlib7/cmsqmlc/Test
+	/tset/Xlib7/cmsqmlc/cmsqmlc
 	"VSW5TESTSUITE CASE XcmsQueryRed 1"
-	/tset/Xlib7/cmsqred/Test
+	/tset/Xlib7/cmsqred/cmsqred
 	"VSW5TESTSUITE CASE XcmsQueryWhite 1"
-	/tset/Xlib7/cmsqwt/Test
+	/tset/Xlib7/cmsqwt/cmsqwt
 	"VSW5TESTSUITE CASE XcmsScreenNumberOfCCC 1"
-	/tset/Xlib7/cmssnoc/Test
+	/tset/Xlib7/cmssnoc/cmssnoc
 	"VSW5TESTSUITE CASE XcmsStoreColor 4"
-	/tset/Xlib7/cmsstclr/Test
+	/tset/Xlib7/cmsstclr/cmsstclr
 	"VSW5TESTSUITE CASE XcmsStoreColors 4"
-	/tset/Xlib7/cmsstcls/Test
+	/tset/Xlib7/cmsstcls/cmsstcls
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxC 1"
-	/tset/Xlib7/cmstqmc/Test
+	/tset/Xlib7/cmstqmc/cmstqmc
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMinV 1"
-	/tset/Xlib7/cmstqmiv/Test
+	/tset/Xlib7/cmstqmiv/cmstqmiv
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxV 1"
-	/tset/Xlib7/cmstqmv/Test
+	/tset/Xlib7/cmstqmv/cmstqmv
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxVC 1"
-	/tset/Xlib7/cmstqmvc/Test
+	/tset/Xlib7/cmstqmvc/cmstqmvc
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxVSamples 1"
-	/tset/Xlib7/cmstqmvs/Test
+	/tset/Xlib7/cmstqmvs/cmstqmvs
 	"VSW5TESTSUITE CASE XcmsVisualOfCCC 1"
-	/tset/Xlib7/cmsvofcc/Test
+	/tset/Xlib7/cmsvofcc/cmsvofcc
 	"VSW5TESTSUITE CASE XcmsSetWhiteAdjustProc 3"
-	/tset/Xlib7/cmswapr/Test
+	/tset/Xlib7/cmswapr/cmswapr
 	"VSW5TESTSUITE CASE XcmsScreenWhitePointOfCCC 1"
-	/tset/Xlib7/cmswpcc/Test
+	/tset/Xlib7/cmswpcc/cmswpcc
 	"VSW5TESTSUITE CASE XcmsClientWhitePointOfCCC 1"
-	/tset/Xlib7/cmswpoc/Test
+	/tset/Xlib7/cmswpoc/cmswpoc
 	"VSW5TESTSUITE CASE XcmsSetWhitePoint 1"
-	/tset/Xlib7/cmswpt/Test
+	/tset/Xlib7/cmswpt/cmswpt

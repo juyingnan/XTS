@@ -56,112 +56,112 @@
 #
 
 	"VSW5TESTSUITE CASE XAddPixel 1"
-	/tset/Xlib17/addpxl/Test
+	/tset/Xlib17/addpxl/addpxl
 	"VSW5TESTSUITE CASE XClipBox 1"
-	/tset/Xlib17/clpbx/Test
+	/tset/Xlib17/clpbx/clpbx
 	"VSW5TESTSUITE CASE XCreateBitmapFromData 4"
-	/tset/Xlib17/crtbtmpfrm/Test
+	/tset/Xlib17/crtbtmpfrm/crtbtmpfrm
 	"VSW5TESTSUITE CASE XCreateImage 3"
-	/tset/Xlib17/crtimg/Test
+	/tset/Xlib17/crtimg/crtimg
 	"VSW5TESTSUITE CASE XCreatePixmapFromBitmapData 5"
-	/tset/Xlib17/crtpxmpfrm/Test
+	/tset/Xlib17/crtpxmpfrm/crtpxmpfrm
 	"VSW5TESTSUITE CASE XCreateRegion 2"
-	/tset/Xlib17/crtrgn/Test
+	/tset/Xlib17/crtrgn/crtrgn
 	"VSW5TESTSUITE CASE XDeleteContext 2"
-	/tset/Xlib17/dltcntxt/Test
+	/tset/Xlib17/dltcntxt/dltcntxt
 	"VSW5TESTSUITE CASE XDestroyImage 1"
-	/tset/Xlib17/dstryimg/Test
+	/tset/Xlib17/dstryimg/dstryimg
 	"VSW5TESTSUITE CASE XDestroyRegion 1"
-	/tset/Xlib17/dstryrgn/Test
+	/tset/Xlib17/dstryrgn/dstryrgn
 	"VSW5TESTSUITE CASE XEmptyRegion 2"
-	/tset/Xlib17/emptyrgn/Test
+	/tset/Xlib17/emptyrgn/emptyrgn
 	"VSW5TESTSUITE CASE XEqualRegion 4"
-	/tset/Xlib17/eqlrgn/Test
+	/tset/Xlib17/eqlrgn/eqlrgn
 	"VSW5TESTSUITE CASE XFindContext 2"
-	/tset/Xlib17/fndcntxt/Test
+	/tset/Xlib17/fndcntxt/fndcntxt
 	"VSW5TESTSUITE CASE XFetchBuffer 2"
-	/tset/Xlib17/ftchbffr/Test
+	/tset/Xlib17/ftchbffr/ftchbffr
 	"VSW5TESTSUITE CASE XFetchBytes 2"
-	/tset/Xlib17/ftchbyts/Test
+	/tset/Xlib17/ftchbyts/ftchbyts
 	"VSW5TESTSUITE CASE XGetDefault 5"
-	/tset/Xlib17/gtdflt/Test
+	/tset/Xlib17/gtdflt/gtdflt
 	"VSW5TESTSUITE CASE XGetPixel 1"
-	/tset/Xlib17/gtpxl/Test
+	/tset/Xlib17/gtpxl/gtpxl
 	"VSW5TESTSUITE CASE XGetVisualInfo 3"
-	/tset/Xlib17/gtvslinf/Test
+	/tset/Xlib17/gtvslinf/gtvslinf
 	"VSW5TESTSUITE CASE XIntersectRegion 1"
-	/tset/Xlib17/intrsctrgn/Test
+	/tset/Xlib17/intrsctrgn/intrsctrgn
 	"VSW5TESTSUITE CASE IsCursorKey 2"
-	/tset/Xlib17/iscrsrky/Test
+	/tset/Xlib17/iscrsrky/iscrsrky
 	"VSW5TESTSUITE CASE IsFunctionKey 2"
-	/tset/Xlib17/isfnctnky/Test
+	/tset/Xlib17/isfnctnky/isfnctnky
 	"VSW5TESTSUITE CASE IsKeypadKey 2"
-	/tset/Xlib17/iskypdky/Test
+	/tset/Xlib17/iskypdky/iskypdky
 	"VSW5TESTSUITE CASE IsModifierKey 2"
-	/tset/Xlib17/ismdfrky/Test
+	/tset/Xlib17/ismdfrky/ismdfrky
 	"VSW5TESTSUITE CASE IsMiscFunctionKey 2"
-	/tset/Xlib17/ismscfnctn/Test
+	/tset/Xlib17/ismscfnctn/ismscfnctn
 	"VSW5TESTSUITE CASE IsPFKey 2"
-	/tset/Xlib17/ispfky/Test
+	/tset/Xlib17/ispfky/ispfky
 	"VSW5TESTSUITE CASE XKeycodeToKeysym 2"
-	/tset/Xlib17/kycdtkysym/Test
+	/tset/Xlib17/kycdtkysym/kycdtkysym
 	"VSW5TESTSUITE CASE XKeysymToKeycode 2"
-	/tset/Xlib17/kysymtkycd/Test
+	/tset/Xlib17/kysymtkycd/kysymtkycd
 	"VSW5TESTSUITE CASE XKeysymToString 2"
-	/tset/Xlib17/kysymtstr/Test
+	/tset/Xlib17/kysymtstr/kysymtstr
 	"VSW5TESTSUITE CASE XLookupKeysym 2"
-	/tset/Xlib17/lkpkysym/Test
+	/tset/Xlib17/lkpkysym/lkpkysym
 	"VSW5TESTSUITE CASE XLookupString 3"
-	/tset/Xlib17/lkpstr/Test
+	/tset/Xlib17/lkpstr/lkpstr
 	"VSW5TESTSUITE CASE XMatchVisualInfo 2"
-	/tset/Xlib17/mtchvslinf/Test
+	/tset/Xlib17/mtchvslinf/mtchvslinf
 	"VSW5TESTSUITE CASE XOffsetRegion 1"
-	/tset/Xlib17/offstrgn/Test
+	/tset/Xlib17/offstrgn/offstrgn
 	"VSW5TESTSUITE CASE XPolygonRegion 1"
-	/tset/Xlib17/plygnrgn/Test
+	/tset/Xlib17/plygnrgn/plygnrgn
 	"VSW5TESTSUITE CASE XPointInRegion 2"
-	/tset/Xlib17/pntinrgn/Test
+	/tset/Xlib17/pntinrgn/pntinrgn
 	"VSW5TESTSUITE CASE Xpermalloc 2"
-	/tset/Xlib17/prmllc/Test
+	/tset/Xlib17/prmllc/prmllc
 	"VSW5TESTSUITE CASE XParseGeometry 3"
-	/tset/Xlib17/prsgmtry/Test
+	/tset/Xlib17/prsgmtry/prsgmtry
 	"VSW5TESTSUITE CASE XPutPixel 1"
-	/tset/Xlib17/ptpxl/Test
+	/tset/Xlib17/ptpxl/ptpxl
 	"VSW5TESTSUITE CASE XRebindKeysym 2"
-	/tset/Xlib17/rbndkysym/Test
+	/tset/Xlib17/rbndkysym/rbndkysym
 	"VSW5TESTSUITE CASE XRectInRegion 3"
-	/tset/Xlib17/rctinrgn/Test
+	/tset/Xlib17/rctinrgn/rctinrgn
 	"VSW5TESTSUITE CASE XReadBitmapFile 9"
-	/tset/Xlib17/rdbtmpfl/Test
+	/tset/Xlib17/rdbtmpfl/rdbtmpfl
 	"VSW5TESTSUITE CASE XRefreshKeyboardMapping 3"
-	/tset/Xlib17/rfrshkybrd/Test
+	/tset/Xlib17/rfrshkybrd/rfrshkybrd
 	"VSW5TESTSUITE CASE XRotateBuffers 2"
-	/tset/Xlib17/rttbffrs/Test
+	/tset/Xlib17/rttbffrs/rttbffrs
 	"VSW5TESTSUITE CASE XSubImage 1"
-	/tset/Xlib17/sbimg/Test
+	/tset/Xlib17/sbimg/sbimg
 	"VSW5TESTSUITE CASE XSubtractRegion 1"
-	/tset/Xlib17/sbtrctrgn/Test
+	/tset/Xlib17/sbtrctrgn/sbtrctrgn
 	"VSW5TESTSUITE CASE XShrinkRegion 3"
-	/tset/Xlib17/shrnkrgn/Test
+	/tset/Xlib17/shrnkrgn/shrnkrgn
 	"VSW5TESTSUITE CASE XStoreBuffer 2"
-	/tset/Xlib17/strbffr/Test
+	/tset/Xlib17/strbffr/strbffr
 	"VSW5TESTSUITE CASE XStoreBytes 2"
-	/tset/Xlib17/strbyts/Test
+	/tset/Xlib17/strbyts/strbyts
 	"VSW5TESTSUITE CASE XSetRegion 2"
-	/tset/Xlib17/strgn/Test
+	/tset/Xlib17/strgn/strgn
 	"VSW5TESTSUITE CASE XStringToKeysym 2"
-	/tset/Xlib17/strtkysym/Test
+	/tset/Xlib17/strtkysym/strtkysym
 	"VSW5TESTSUITE CASE XSaveContext 3"
-	/tset/Xlib17/svcntxt/Test
+	/tset/Xlib17/svcntxt/svcntxt
 	"VSW5TESTSUITE CASE XUnionRectWithRegion 1"
-	/tset/Xlib17/unnrctwthr/Test
+	/tset/Xlib17/unnrctwthr/unnrctwthr
 	"VSW5TESTSUITE CASE XUnionRegion 1"
-	/tset/Xlib17/unnrgn/Test
+	/tset/Xlib17/unnrgn/unnrgn
 	"VSW5TESTSUITE CASE XUniqueContext 1"
-	/tset/Xlib17/unqcntxt/Test
+	/tset/Xlib17/unqcntxt/unqcntxt
 	"VSW5TESTSUITE CASE XWMGeometry 9"
-	/tset/Xlib17/wmgmtry/Test
+	/tset/Xlib17/wmgmtry/wmgmtry
 	"VSW5TESTSUITE CASE XWriteBitmapFile 6"
-	/tset/Xlib17/wrtbtmpfl/Test
+	/tset/Xlib17/wrtbtmpfl/wrtbtmpfl
 	"VSW5TESTSUITE CASE XXorRegion 1"
-	/tset/Xlib17/xrrgn/Test
+	/tset/Xlib17/xrrgn/xrrgn

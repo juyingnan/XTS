@@ -59,16 +59,16 @@
 #
 
 	"VSW5TESTSUITE CASE ShellWidget 11"
-	/tset/Xt6/wdgtshll/Test
+	/tset/Xt6/wdgtshll/wdgtshll
 	"VSW5TESTSUITE CASE OverrideShellWidget 10"
-	/tset/Xt6/wdgtovrrds/Test
+	/tset/Xt6/wdgtovrrds/wdgtovrrds
 	"VSW5TESTSUITE CASE WMShellWidget 10"
-	/tset/Xt6/wdgtwmshll/Test
+	/tset/Xt6/wdgtwmshll/wdgtwmshll
 	"VSW5TESTSUITE CASE VendorShellWidget 10"
-	/tset/Xt6/wdgtvndrsh/Test
+	/tset/Xt6/wdgtvndrsh/wdgtvndrsh
 	"VSW5TESTSUITE CASE TransientShellWidget 10"
-	/tset/Xt6/wdgttrnsnt/Test
+	/tset/Xt6/wdgttrnsnt/wdgttrnsnt
 	"VSW5TESTSUITE CASE TopLevelShellWidget 10"
-	/tset/Xt6/wdgttplvls/Test
+	/tset/Xt6/wdgttplvls/wdgttplvls
 	"VSW5TESTSUITE CASE ApplicationShellWidget 10"
-	/tset/Xt6/wdgtapplct/Test
+	/tset/Xt6/wdgtapplct/wdgtapplct
