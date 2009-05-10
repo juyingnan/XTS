@@ -54,7 +54,7 @@ if test "x$BDFTOPCF" = x || test "x$MKFONTDIR" = x; then
     AC_MSG_ERROR([bdftopcf and mkfontdir are required to build the test fonts])
 fi
 
-AC_OUTPUT([
+AC_CONFIG_FILES([
 Makefile
 src/Makefile
 src/tet3/Makefile
@@ -80,3 +80,9 @@ xts5/fonts/Makefile
 xts5/tset/Makefile
 xts5/tset/Xproto/Makefile
 ])
+
+AC_CONFIG_COMMANDS([tetexec.cfg],
+    [TET_ROOT=`pwd` perl -p $srcdir/xts5/bin/xts-config \
+        < $srcdir/xts5/tetexec.cfg.in > xts5/tetexec.cfg])
+
+AC_OUTPUT
