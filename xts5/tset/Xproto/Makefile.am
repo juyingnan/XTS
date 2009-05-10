@@ -1,4 +1,3 @@
-include ../build.mk
 include ../../common.mk
 
 AM_CFLAGS = $(XP_LCFLAGS) $(XP_CFLAGS)

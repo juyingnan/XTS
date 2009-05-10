@@ -1,30 +1,5 @@
 # Common variables and rules for building xts
 
-#########################
-# TET Parameters
-#########################
-
-# TET_BUILD_TOOL - The program to use as the build tool.
-# This should normally be the wbuild program supplied as part
-# of the test suite.
-TET_BUILD_TOOL = wbuild
-
-# TET_BUILD_FILE - This is intended to be used for the arguments to the TET
-# build tool - this should be empty, since no arguments are accepted by pmake.
-TET_BUILD_FILE =
-
-# TET_CLEAN_TOOL - The program to use as the TET clean tool.
-# This should normally be the wclean program supplied as part 
-# of the test suite.
-TET_CLEAN_TOOL = wbuild
-
-# TET_CLEAN_FILE - This is intended to be used for the arguments to the TET
-# clean tool - this *must* be 'clean'
-TET_CLEAN_FILE = clean
-
-# TET_OUTPUT_CAPTURE - This must be set to True.
-TET_OUTPUT_CAPTURE = TRUE
-
 ##########################
 # X RELEASE
 ##########################
@@ -39,17 +14,15 @@ XT_X_RELEASE=6
 # Commands
 ##########################
 
-# TSORT - Set to cat if archiver inserts its own symbol table
-# or the system uses ranlib
-TSORT=cat
+# The code generator for turning .m files to .c files.
+MC = $(top_builddir)/xts5/src/bin/mc/mc
+.m.c:
+	TET_ROOT='$(TET_ROOT)' $(MC) -o $@ $<
 
-# LORDER - Set to echo if archiver inserts its own symbol table
-# or the system uses ranlib
-LORDER=echo
-
-# CODEMAKER - this is the utility supplied with the test suite
-# to extract the code from the combined source files.
-CODEMAKER=mc
+# Test scenario executor - The tests are run by tcc where the argument
+# is the scenario file (using the all target).
+TCC = $(top_builddir)/src/tet3/tcc/tcc$(EXEEXT)
+TESTS_ENVIRONMENT = TET_ROOT='$(TET_ROOT)' $(TCC) -e -j '' -i '' -s
 
 ##################
 # TET locations
@@ -57,27 +30,23 @@ CODEMAKER=mc
 
 # The location of TET_ROOT.  This must not contain variable expansions.
 # This must be set in the environment
-TET_ROOT = $(abs_top_srcdir)
+TET_ROOT = $(abs_top_builddir)
 
 # The location of the TET directories
-TETBASE = $(top_srcdir)/src/tet3
+TETSRC = $(top_srcdir)/src/tet3
 TETBUILD = $(top_builddir)/src/tet3
 
 # TETINCDIR - The directory containing the TET API headers.
-#TETINCDIR = $(TETBASE)/inc/posix_c
-#TETINCDIR = $(TETBASE)/inc/tet3
-TETINCDIR = $(TETBASE)/inc
+TETINCDIR = $(TETSRC)/inc
 
 # TCM - The Test Control Manager
-#TCM = $(TETLIB)/tcm/tcm.o
 TCM = $(TETBUILD)/tcm/libtcmmain.la
 
 # TCMCHILD - The Test Control Manager for files executed by tet_exec. 
-#TCMCHILD = $(TETLIB)/tcmchild.o
 TCMCHILD = $(TETBUILD)/tcm/libtcmchild.la
 
 # APILIB - The TET API library
-APILIB = $(TETBASE)/apilib/libapi.la
+APILIB = $(TETSRC)/apilib/libapi.la
 
 ####################
 # Xtest variables
@@ -96,113 +65,36 @@ APILIB = $(TETBASE)/apilib/libapi.la
 # XTESTHOST=triton
 #
 # SVR4	: XTESTHOST=`uname -n`
-XTESTHOST=`hostname`
+XTESTHOST = `hostname`
 
 # XTESTFONTDIR - location of installed VSW5 compiled fonts
-#XTESTFONTDIR=/usr/lib/X11/fonts/xtest
 XTESTFONTDIR = $(TET_ROOT)/xts5/fonts
 
-# XTESTROOT
-XTESTROOT = $(top_srcdir)/xts5
+# XTESTSRC
+XTESTSRC = $(top_srcdir)/xts5
 XTESTBUILD = $(top_builddir)/xts5
 
-# XTESTLIBDIR - location of the VSW5 library files
-XTESTLIBDIR = $(XTESTBUILD)/lib
-
 # XTTESTLIB - the Xt Tests' libraries
-#XTTESTLIB = $(XTESTLIBDIR)/libXtTest.a
 XTTESTLIB = $(XTESTBUILD)/src/libXtTest/libXtTest.a
 
 # XTESTLIB - the VSW5 library
-#XTESTLIB = $(XTESTLIBDIR)/libxtest.a
 XTESTLIB = $(XTESTBUILD)/src/lib/libxtest.a
 
 # XSTLIB - library for linking the X Protocol tests
-#XSTLIB = ${XTESTLIBDIR}/libXst.a
 XSTLIB = $(XTESTBUILD)/src/libproto/libXst.a
 
 # XTESTFONTLIB - supplementary library with font metrics.
-#XTESTFONTLIB = $(XTESTLIBDIR)/libfont.a
 XTESTFONTLIB = $(XTESTBUILD)/fonts/libfont.a
 
 # XTESTXIMLIB - supplementary library for input methods.
-#XTESTXIMLIB = $(XTESTLIBDIR)/libximtest.a
 XTESTXIMLIB = $(XTESTBUILD)/src/xim/libximtest.a
 
 # XTESTINCDIR - the VSW5 header file directory
-XTESTINCDIR = $(XTESTROOT)/include
-
-# XTESTBIN - location for VSW5 binaries.
-XTESTBIN = $(XTESTROOT)/bin
-
-####################
-# System files
-####################
-
-# SYSLIBS - Any system libraries that are needed, will almost certainly
-# include Xlib.
-# If you wish to build the tests to make use of the XTEST extension, you
-# will need to include the X extension library and the XTEST library.
-# If you wish to build the tests to test the Input Device extension, you
-# will need to include the necessary libraries for it.
-# These are usually included by adding -lXi -lXext before -lX11.
-# SVR4	: SYSLIBS=-lXi -lXtst -lXext -lX11 -lsocket -lnsl
-# OSF1  : SYSLIBS=-lXi -lXtst -lXext -lX11
-SYSLIBS=-lXi -lXtst -lXext -lX11
-
-# XP_SYSLIBS - Any system libraries that are needed, to link the
-# X Protocol tests. This will include Xlib, since libXst.a
-# (which is part of the test suite) will include at least a call
-# on XOpenDisplay.
-# If you wish to build the tests to test the Input Device extension, you
-# will need to include the necessary libraries for it.
-# These are usually included by adding -lXi -lXext before -lX11.
-# SVR4	: XP_SYSLIBS=-L/X11/lib -lXi -lXext -lX11 -lnsl
-# OSF1	: XP_SYSLIBS=-lXi -lXtst -lXext -lX11
-XP_SYSLIBS=-lXi -lXtst -lXext -lX11
-
-# XT_SYSLIBS - Any system libraries that are needed, to link the
-# Xt Toolkit tests. This will include Xlib and Xt.
-# Do not include Athena widgets in this list (see XT_ATHENA below)
-# If you wish to build the tests to make use of the XTEST extension, you
-# will need to include the X extension library and the XTEST library.
-# SVR4	: XT_SYSLIBS=-L/X11/lib -lXext -lXt -lX11 -lnsl
-# OSF1  : XT_SYSLIBS= -lXt -lXtst -lXext -lX11
-XT_SYSLIBS=-lXt -lXtst -lXext -lX11
-
-# XT_ATHENA - System libraries that are needed provide the Athena
-# widgets.
-# If your implementation provides Athena widgets:
-# XT_ATHENA=-lXaw -lXmu
-# If your implementation does not provide Athena widgets, use the
-# VSW5 provided versions:
-#XT_ATHENA = $(XTESTLIBDIR)/libXtaw.a $(XTESTLIBDIR)/libXtmu.a
-XT_ATHENA = $(XTESTBUILD)/src/libXtaw/libXtaw.a \
-	$(XTESTBUILD)/src/libXtmu/libXtmu.a
-
-# SYSINC - Any commands that should be given to the C compiler
-# to cause include file directories to be searched.  Probably
-# needs to include /usr/include/X11.  Note: when the implementation
-# provides Athena widgets /usr/include must be included here to ensure
-# the implementation's Athena headers are used rather than those
-# provided by the test suite.
-SYSINC=-I/usr/include -I/usr/include/X11
-
-DEPHEADERS=/usr/include/X11/Xlib.h
+XTESTINCDIR = $(XTESTSRC)/include
 
 ################################
 ##### C compiler Directives Section
 ################################
-
-# COPTS - Option to C compiler
-# SunOS	: COPTS=-O
-# ULTRIX: COPTS=-O
-# HP-UX	: COPTS=-O -Aa
-# DYNIX	: COPTS=-O
-# OSF1	: COPTS=-O
-# A/UX  : COPTS=-A4 -O
-# SVR4	: COPTS=-O -Xc
-COPTS=
 
 # DEFINES - C compiler defines.
 # If you wish to build the tests to make use of the XTEST extension, you
@@ -260,21 +152,6 @@ XP_DEFINES =
 #XT_DEFINES = -D_XOPEN_SOURCE -DXTESTEXTENSION -D_GNU_SOURCE
 XT_DEFINES = -DXTESTEXTENSION
 
-# LINKOBJOPTS - options to give to the LD program to link object
-# files together into one object file that can be further linked.
-LINKOBJOPTS=-r
-
-# LDFLAGS - Flags for the loader.
-# SunOS	: LDFLAGS=
-# ULTRIX: LDFLAGS=
-# HP-UX	: LDFLAGS=
-# DYNIX	: LDFLAGS=
-# A/UX 	: LDFLAGS=-ZP
-# AIXV3	: LDFLAGS=
-# SVR4	: LDFLAGS=-Xc -L/usr/lib/X11
-#LDFLAGS=-Xc -L/usr/lib/X11
-#LDFLAGS=-L/usr/X11R6/lib
-
 # XP_OPEN_DIS - A choice of which code to build in the X Protocol library 
 # to make an X server connection.
 # This must be set to one of three possible values:
@@ -304,43 +181,30 @@ XP_OPEN_DIS=XlibXtst.c
 #XP_OPEN_DIS=XlibNoXtst.c
 #XP_OPEN_DIS=XlibOpaque.c
 
-# INCLUDES - Options to cause C compiler to search correct directories
-# for headers.
-#INCLUDES=-I. -I${TETINCDIR} ${SYSINC} -I${XTESTINCDIR}
-
 # CFLAGS - Flags for C compiler
-# 
-# for generating .dat files
-# CFLAGS=-DXT_X_RELEASE=$(XT_X_RELEASE) -DGENERATE_PIXMAPS \
-#    $(CFLOCAL) $(COPTS) $(INCLUDES) $(DEFINES)
 #
-#CFLAGS=-DXT_X_RELEASE=$(XT_X_RELEASE) $(CFLOCAL) $(COPTS) $(INCLUDES) $(DEFINES)
-
 COMMON_CFLAGS = -I$(top_srcdir)/include -I$(TETINCDIR) -I$(XTESTINCDIR) \
 	-DXT_X_RELEASE='$(XT_X_RELEASE)' -DTET_LITE
+
+# XTS_LCFLAGS - Flags for C compiler for generic xts5 programs
 XTS_LCFLAGS = $(COMMON_CFLAGS) $(DEFINES)
 
-# XP_CFLAGS - Flags for C compiler specific to the X Protocol tests.
-#XP_CFLAGS = -DXT_X_RELEASE=$(XT_X_RELEASE) $(CFLOCAL) $(COPTS) $(INCLUDES) $(XP_DEFINES)
+# XP_LCFLAGS - Flags for C compiler specific to the X Protocol tests.
 XP_LCFLAGS = $(COMMON_CFLAGS) $(XP_DEFINES)
 
-# XT_CFLAGS - Flags for C compiler specific to the Xt Toolkit tests.
-#XT_CFLAGS=-DXT_X_RELEASE=$(XT_X_RELEASE) $(CFLOCAL) $(COPTS) $(INCLUDES) $(XT_DEFINES)
+# XT_LCFLAGS - Flags for C compiler specific to the Xt Toolkit tests.
 XT_LCFLAGS = $(COMMON_CFLAGS) $(XT_DEFINES)
 
 # LIBS - List of libraries.
 #
-# for generating .dat files
-# LIBS=${XTESTXIMLIB} ${XTESTLIB} ${XTESTFONTLIB} ${PIXLIB} 
-#    {APILIB} ${SYSMATHLIB}
-#
-XTS_LLIBS=${XTESTXIMLIB} ${XTESTLIB} ${XTESTFONTLIB} ${APILIB}
+# XTS_LLIBS - Libraries for generic xts5 programs
+XTS_LLIBS = $(XTESTXIMLIB) $(XTESTLIB) $(XTESTFONTLIB) $(APILIB)
 
 # XP_LIBS - List of libraries specific to the X Protocol tests.
-XP_LLIBS=${XSTLIB} ${XTESTLIB} ${XTESTFONTLIB} ${APILIB}
+XP_LLIBS = $(XSTLIB) $(XTESTLIB) $(XTESTFONTLIB) $(APILIB)
 
 # XT_LIBS - List of libraries specific to the Xt Toolkit tests.
-XT_LLIBS= ${XTESTLIB} ${XTTESTLIB} ${APILIB}
+XT_LLIBS = $(XTESTLIB) $(XTTESTLIB) $(APILIB)
 
 ################################
 ##### Pixel Validation Section.
@@ -359,14 +223,14 @@ SYSMATHLIB = -lm
 ##### Lint Section.
 ################################
 
-LINT=lint
-LINTFLAGS=$(INCLUDES) $(DEFINES) -u -n
-LINTXTEST=$(XTESTLIBDIR)/llib-lxtest.ln
-LINTXST=$(XTESTLIBDIR)/llib-lXst.ln
-LINTFONTS=$(XTESTLIBDIR)/llib-lfonts.ln
-LINTTCM=$(XTESTLIBDIR)/llib-ltcm.ln
-LINTTCMC=$(XTESTLIBDIR)/llib-ltcmc.ln
-LINTLIBS=$(LINTXTEST) $(LINTFONTS)
+LINT = lint
+LINTFLAGS = $(INCLUDES) $(DEFINES) -u -n
+LINTXTEST = $(XTESTLIBDIR)/llib-lxtest.ln
+LINTXST = $(XTESTLIBDIR)/llib-lXst.ln
+LINTFONTS = $(XTESTLIBDIR)/llib-lfonts.ln
+LINTTCM = $(XTESTLIBDIR)/llib-ltcm.ln
+LINTTCMC = $(XTESTLIBDIR)/llib-ltcmc.ln
+LINTLIBS = $(LINTXTEST) $(LINTFONTS)
 
-XP_LINTFLAGS=$(INCLUDES) $(XP_DEFINES) -u -n
-XP_LINTLIBS=$(LINTXST) $(LINTXTEST) $(LINTFONTS)
+XP_LINTFLAGS = $(INCLUDES) $(XP_DEFINES) -u -n
+XP_LINTLIBS = $(LINTXST) $(LINTXTEST) $(LINTFONTS)
