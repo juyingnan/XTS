@@ -192,7 +192,7 @@ XT_FONTPATH=
 # time to the X server can be very long ( >15 seconds); in this case set this
 # parameter to a value larger than the maximum round trip time divided
 # by 3.
-XT_SPEEDFACTOR=5
+XT_SPEEDFACTOR=1
 
 # XT_RESET_DELAY - Specifies a delay time in seconds.
 # Set this to be a time which is greater than or equal to the maximum time
@@ -202,7 +202,7 @@ XT_SPEEDFACTOR=5
 # The server may be resetting when the test case is entered (in startup())
 # as a result of closing the last connection in the previous test case.
 # The server also resets in a few places in the test for XCloseDisplay().
-XT_RESET_DELAY=5
+XT_RESET_DELAY=1
 
 # XT_EXTENSIONS - Specifies whether you wish to test the extended assertions
 # which require the XTEST extension.
