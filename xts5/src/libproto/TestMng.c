@@ -263,7 +263,7 @@ checkconfig ()
      * from TET execution configuration parameters.
      */
     Xst_server_node = config.display;
-    Xst_timeout_value = 10 * ((config.speedfactor<=0)?1:config.speedfactor);
+    Xst_timeout_value = 5 * ((config.speedfactor<=0)?1:config.speedfactor);
     Xst_visual_check = config.debug_visual_check;
     Xst_protocol_version = config.protocol_version;
     Xst_protocol_revision = config.protocol_revision;
