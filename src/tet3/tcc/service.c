@@ -46,6 +46,7 @@ MODIFICATIONS:
 #include "scentab.h"
 #include "dirtab.h"
 #include "tcc.h"
+#include "tet_api.h"
 
 #ifndef NOTRACE
 #include "ltoa.h"
@@ -77,7 +78,7 @@ int tcc_sloop()
 {
 	register struct proctab *prp, *rqforw;
 	register int done;
-	int status = EXIT_SUCCESS;
+	int status = TET_EXIT_SUCCESS;
 
 	TRACE1(tet_Texec, 2, "tcc_sloop() START");
 
@@ -90,7 +91,7 @@ int tcc_sloop()
 			if (prp->pr_flags & PRF_ATTENTION) {
 				prp->pr_flags &= ~PRF_ATTENTION;
 				tcc_service(prp);
-				status = tet_addresult(status,
+				status = tet_addstatus(status,
 						prp->pr_jnlstatus);
 				done = 0;
 			}

@@ -243,7 +243,7 @@ char	**argv;
 {
 	char *cp;
 	struct iclist *icp;
-	int iccount, tpcount, icnum, rc, ret = TET_PASS;
+	int iccount, tpcount, icnum, rc, status = TET_EXIT_SUCCESS;
 #ifndef TET_LITE	/* -START-LITE-CUT */
 	int nsys;
 #endif			/* -END-LITE-CUT- */
@@ -361,13 +361,16 @@ char	**argv;
 	for (icp = iclist; icp < iclist + niclist; icp++)
 		for (icnum = icp->ic_start; icnum <= icp->ic_end; icnum++)
 			if (tet_isdefic(icnum)) {
+				int ret;
+
 				tpcount = tet_gettpcount(icnum);
 				rc = tet_icstart(icnum, tpcount);
 				ASSERT_LITE(rc == 0);
 				if (rc < 0)
 					tet_docleanup(EXIT_FAILURE);
-				ret = tet_addresult(ret,
-						call_tps(icnum, &tpcount));
+				ret = call_tps(icnum, &tpcount);
+				status = tet_addstatus(status,
+						tet_resulttostatus(ret));
 				tet_icend(icnum, tpcount);
 			}
 
@@ -375,7 +378,7 @@ char	**argv;
 	setsigs(sigabandon);
 
 	/* call the user-supplied cleanup routine (if any) and exit */
-	tet_docleanup(ret);
+	tet_docleanup(status);
 
 	/* NOTREACHED */
 	return(EXIT_SUCCESS);

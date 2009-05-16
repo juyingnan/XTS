@@ -497,3 +497,69 @@ register int lastresult, thisresult;
 	}
 }
 
+/*
+**	tet_resulttostatus() - convert result code to exit status
+**
+**	return exit status corresponding to result code
+*/
+
+int tet_resulttostatus(result)
+int result;
+{
+	switch (result) {
+	case TET_PASS:
+		return TET_EXIT_SUCCESS;
+	case TET_FAIL:
+	case TET_UNRESOLVED:
+	case TET_UNINITIATED:
+		return TET_EXIT_FAILURE;
+	case TET_NOTINUSE:
+	case TET_UNSUPPORTED:
+	case TET_UNTESTED:
+		return TET_EXIT_SKIP;
+	default:
+		/* Pass everything else (include TET_NORESULT) */
+		return result;
+	}
+}
+
+/*
+**	tet_addstatus() - arbitrate between exit status codes
+**
+**	return status with highest priority
+*/
+
+int tet_addstatus(laststatus, thisstatus)
+register int laststatus, thisstatus;
+{
+	if (laststatus < 0)
+		return(thisstatus);
+
+	switch (thisstatus) {
+	case TET_EXIT_SUCCESS:
+		/* lowest priority */
+		return(laststatus);
+
+	case TET_EXIT_FAILURE:
+		/* highest priority */
+		return(thisstatus);
+
+	case TET_EXIT_SKIP:
+		/* low priority */
+		switch (laststatus) {
+		case TET_EXIT_SUCCESS:
+			return(thisstatus);
+		default:
+			return(laststatus);
+		}
+
+	default:
+		/* user-supplied codes: high priority */
+		switch (laststatus) {
+		case TET_EXIT_FAILURE:
+			return(laststatus);
+		default:
+			return(thisstatus);
+		}
+	}
+}

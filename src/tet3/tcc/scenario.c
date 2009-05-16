@@ -58,6 +58,7 @@ MODIFICATIONS:
 #include "dirtab.h"
 #include "proctab.h"
 #include "tcc.h"
+#include "tet_api.h"
 
 #ifndef NOTRACE
 #include "ltoa.h"
@@ -179,7 +180,7 @@ int execscen()
 {
 	register struct proctab *prp, *q;
 	static int sys0 = 0;
-	int delay, ndelay, status = EXIT_SUCCESS;
+	int delay, ndelay, status = TET_EXIT_SUCCESS;
 	time_t now, next;
 
 	/* return now if the scenario is empty */
@@ -228,7 +229,7 @@ int execscen()
 #endif /* NOTRACE */
 			SLEEP((unsigned) ndelay);
 		}
-		status = tet_addresult(status, tcc_sloop());
+		status = tet_addstatus(status, tcc_sloop());
 		if (prp->pr_state == PRS_IDLE)
 			break;
 		now = time((time_t *) 0);

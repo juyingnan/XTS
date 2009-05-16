@@ -188,6 +188,12 @@ extern "C" {
 #define TET_NORESULT	7
 
 
+/* values of the standard exit codes */
+#define TET_EXIT_SUCCESS    0
+#define TET_EXIT_FAILURE	1
+#define TET_EXIT_SKIP	    77  /* automake defined skip code */
+
+
 /* tet_errno values, may be used to index into tet_errlist[] */
 #define TET_ER_OK		0	/* ok  success */
 #define TET_ER_ERR		1	/* general error code */

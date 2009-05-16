@@ -57,6 +57,8 @@ MODIFICATIONS:
 /* extern function declarations */
 extern char **tet_addargv PROTOLIST((char **, char **));
 extern int tet_addresult PROTOLIST((int, int));
+extern int tet_resulttostatus PROTOLIST((int));
+extern int tet_addstatus PROTOLIST((int, int));
 TET_IMPORT_FUNC(char *, tet_basename, PROTOLIST((char *)));
 TET_IMPORT_FUNC(int, tet_bufchk, PROTOLIST((char **, int *, int)));
 TET_IMPORT_FUNC(int, tet_buftrace,
