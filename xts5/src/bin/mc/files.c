@@ -116,8 +116,12 @@ makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
 
-#include "stdio.h"
-#include "stdlib.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <limits.h>
+#include <sys/types.h>
+#include <unistd.h>
 #include "mc.h"
 
 #define	MC_LOC		"/xts5/lib/"
@@ -201,12 +205,14 @@ cretmpfile(file)
 char	*file;
 {
 register FILE	*fp;
+char tmpfile[PATH_MAX];
 
-	if ((fp = fopen(file, "w+")) == NULL) {
-		(void) fprintf(stderr, "Could not open %s\n", file);
+	snprintf(tmpfile, PATH_MAX, "%s.%d", file, (int)getpid());
+	if ((fp = fopen(tmpfile, "w+")) == NULL) {
+		(void) fprintf(stderr, "Could not open %s\n", tmpfile);
 		errexit();
 	}
-	filetemp(file);
+	filetemp(strdup(tmpfile));
 	return(fp);
 }
 
@@ -259,8 +265,11 @@ remfiles()
 {
 int 	i;
 
-	for (i = 0; i < Filetind; i++)
+	for (i = 0; i < Filetind; i++) {
 		(void) unlink(Filetemp[i]);
+		free(Filetemp[i]);
+		Filetemp[i] = NULL;
+	}
 	Filetind = 0;
 }
 

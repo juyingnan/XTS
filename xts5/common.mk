@@ -17,7 +17,7 @@ XT_X_RELEASE=6
 # The code generator for turning .m files to .c files.
 MC = $(top_builddir)/xts5/src/bin/mc/mc
 .m.c:
-	TET_ROOT='$(TET_ROOT)' $(MC) < $< > $@
+	TET_ROOT='$(TET_ROOT)' $(MC) -o $@ $<
 
 # Test scenario executor - The tests are run by tcc where the argument
 # is the scenario file (using the all target).
