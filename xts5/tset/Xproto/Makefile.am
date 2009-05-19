@@ -5,6 +5,7 @@ LDADD = $(TCM) $(XP_LLIBS) $(XP_LIBS)
 
 BUILT_SOURCES = $(check_PROGRAMS:$(EXEEXT)=.c)
 TESTS = $(check_PROGRAMS:$(EXEEXT)=.scen)
+DISTCLEANFILES = $(BUILT_SOURCES)
 check_PROGRAMS = \
 	allcclr/allcclr \
 	allcclrcll/allcclrcll \
