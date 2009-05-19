@@ -1,7 +1,7 @@
 include ../../common.mk
 
 AM_CFLAGS = $(XP_LCFLAGS) $(XP_CFLAGS)
-LIBS = $(TCM) $(XP_LLIBS) $(XP_LIBS) @LIBS@
+LDADD = $(TCM) $(XP_LLIBS) $(XP_LIBS)
 
 BUILT_SOURCES = $(check_PROGRAMS:$(EXEEXT)=.c)
 TESTS = $(check_PROGRAMS:$(EXEEXT)=.scen)
