@@ -45,6 +45,15 @@ PKG_CHECK_MODULES([XP], [x11 xext xi xtst])
 PKG_CHECK_MODULES([XT], [x11 xext xt xtst])
 dnl PKG_CHECK_MODULES([XAW], [x11 xext xt xtst xaw7])
 
+dnl Sadly, we need an Xlib with _XConnectDisplay, and this means a
+dnl non-xcb Xlib.
+_save_LDFLAGS=$LDFLAGS
+LDFLAGS="$LDFLAGS `$PKG_CONFIG --libs-only-L x11 2>/dev/null`"
+AC_CHECK_LIB([X11], [_XConnectDisplay], [],
+    [AC_MSG_ERROR([XTest requires an Xlib with _XConnectDisplay]
+                  [Try building libX11 --without-xcb])])
+LDFLAGS=$_save_LDFLAGS
+
 # Checks for header files.
 AC_HEADER_STDC
 
