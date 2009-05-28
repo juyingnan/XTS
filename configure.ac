@@ -28,7 +28,7 @@ AC_INIT([xtest],
 
 AC_CONFIG_SRCDIR([Makefile.am])
 AC_CONFIG_AUX_DIR(.)
-AM_INIT_AUTOMAKE([dist-bzip2 foreign])
+AM_INIT_AUTOMAKE([dist-bzip2 foreign subdir-objects])
 
 AM_MAINTAINER_MODE
 
@@ -38,7 +38,7 @@ AM_CONFIG_HEADER([config.h])
 AC_DISABLE_STATIC
 AC_PROG_LIBTOOL
 AC_PROG_CC
-#AM_PROG_CC_C_O
+AM_PROG_CC_C_O
 
 PKG_CHECK_MODULES([XTS], [x11 xext xi xtst])
 PKG_CHECK_MODULES([XP], [x11 xext xi xtst])
