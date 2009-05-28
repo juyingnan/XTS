@@ -110,6 +110,7 @@ xts5/src/bin/mc/Makefile
 xts5/fonts/Makefile
 xts5/tset/Makefile
 xts5/tset/Xproto/Makefile
+xts5/tset/Xopen/Makefile
 ])
 
 AC_OUTPUT

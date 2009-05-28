@@ -1,1 +1,1 @@
-SUBDIRS = Xproto
+SUBDIRS = Xproto Xopen
