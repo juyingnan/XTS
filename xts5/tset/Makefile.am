@@ -1,1 +1,1 @@
-SUBDIRS = Xproto Xopen
+SUBDIRS = Xproto Xopen Xlib3

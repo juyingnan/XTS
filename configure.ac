@@ -111,6 +111,7 @@ xts5/fonts/Makefile
 xts5/tset/Makefile
 xts5/tset/Xproto/Makefile
 xts5/tset/Xopen/Makefile
+xts5/tset/Xlib3/Makefile
 ])
 
 AC_OUTPUT
