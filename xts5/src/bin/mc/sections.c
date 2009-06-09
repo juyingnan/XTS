@@ -593,6 +593,7 @@ char	*buf;
 {
 FILE	*fp;
 int 	needed;
+char	*tmpfile;
 
 	/*
 	 * If there is any supplied strategy or code then there are no defaults.
@@ -609,7 +610,7 @@ int 	needed;
 	}
 
 	/* Default code stub */
-	fp = cretmpfile(F_TDEFCODE);
+	fp = cretmpfile(F_TDEFCODE, &tmpfile);
 
 	switch (State.category) {
 	case CAT_B: case CAT_D:	/* Untested */
@@ -641,5 +642,5 @@ int 	needed;
 	}
 	fclose(fp);
 
-	includefile(F_TDEFCODE, buf);
+	includefile(tmpfile, buf);
 }

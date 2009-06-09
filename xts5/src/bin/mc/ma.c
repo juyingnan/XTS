@@ -192,8 +192,8 @@ void
 mastart(buf)
 char	*buf;
 {
-	FpBanner = cretmpfile(F_BANNER);
-	FpText = cretmpfile(F_TEXT);
+	FpBanner = cretmpfile(F_BANNER, NULL);
+	FpText = cretmpfile(F_TEXT, NULL);
 }
 
 /*ARGSUSED*/
@@ -205,7 +205,7 @@ char	*buf;
 	outfile(FpBanner);
 	if (hflag) {
 		if (sflag) {
-			FpHeader = cretmpfile(F_HEADER);
+			FpHeader = cretmpfile(F_HEADER, NULL);
 			(void) fprintf(FpHeader, ".so head.t\n");
 			outfile(FpHeader);
 		} else {

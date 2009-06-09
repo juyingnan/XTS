@@ -191,12 +191,12 @@ void
 mcstart(buf)
 char	*buf;
 {
-	FpBanner = cretmpfile(F_BANNER);
-	FpSynopsis = cretmpfile(F_SYNOPSIS);
-	FpExtern = cretmpfile(F_EXTERN);
-	FpInclude = cretmpfile(F_INCLUDE);
-	FpCode = cretmpfile(F_CODE);
-	FpStrategy = cretmpfile(F_STRATEGY);
+	FpBanner = cretmpfile(F_BANNER, NULL);
+	FpSynopsis = cretmpfile(F_SYNOPSIS, NULL);
+	FpExtern = cretmpfile(F_EXTERN, NULL);
+	FpInclude = cretmpfile(F_INCLUDE, NULL);
+	FpCode = cretmpfile(F_CODE, NULL);
+	FpStrategy = cretmpfile(F_STRATEGY, NULL);
 	FpAssertion = (FILE *)-1;
 	FpStrategy = (FILE *)-1;
 	setoutline();
@@ -657,7 +657,7 @@ char	**cpp;
 		fclose(FpAssertion);
 		unlink(F_ASSERTION);
 	}
-	FpAssertion = cretmpfile(F_ASSERTION);
+	FpAssertion = cretmpfile(F_ASSERTION, NULL);
 
 	if (State.type == NULL) {
 		err("Missing type\n");
@@ -832,7 +832,7 @@ char	*buf;
 		fclose(FpStrategy);
 		unlink(F_STRATEGY);
 	}
-	FpStrategy = cretmpfile(F_STRATEGY);
+	FpStrategy = cretmpfile(F_STRATEGY, NULL);
 	while (newline(fp, buf) != NULL && !SECSTART(buf)) {
 		(void) fprintf(FpStrategy, "%s", buf);
 	}

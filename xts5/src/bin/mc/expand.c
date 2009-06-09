@@ -142,8 +142,8 @@ void
 mepstart(buf)
 char	*buf;
 {
-	FpExp = cretmpfile(F_EXPAND);
-	FpBanner = cretmpfile(F_BANNER);
+	FpExp = cretmpfile(F_EXPAND, NULL);
+	FpBanner = cretmpfile(F_BANNER, NULL);
 }
 
 /*ARGSUSED*/

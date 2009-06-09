@@ -201,18 +201,30 @@ char 	buf[BUFSIZ];
  * and return the stream pointer.
  */
 FILE *
-cretmpfile(file)
+cretmpfile(file, crefile)
 char	*file;
+char	**crefile;
 {
 register FILE	*fp;
-char tmpfile[PATH_MAX];
+char *tmpfile;
+
+	tmpfile = malloc(PATH_MAX);
+	if (!tmpfile) {
+		fprintf(stderr, "Could not allocate memory for tmpfile %s\n",
+			file);
+		errexit();
+	}
 
 	snprintf(tmpfile, PATH_MAX, "%s.%d", file, (int)getpid());
 	if ((fp = fopen(tmpfile, "w+")) == NULL) {
 		(void) fprintf(stderr, "Could not open %s\n", tmpfile);
 		errexit();
 	}
-	filetemp(strdup(tmpfile));
+
+	if (crefile)
+		*crefile = tmpfile;
+	filetemp(tmpfile);
+
 	return(fp);
 }
 

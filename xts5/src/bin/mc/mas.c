@@ -193,8 +193,8 @@ void
 masstart(buf)
 char	*buf;
 {
-	FpBanner = cretmpfile(F_BANNER);
-	FpText = cretmpfile(F_TEXT);
+	FpBanner = cretmpfile(F_BANNER, NULL);
+	FpText = cretmpfile(F_TEXT, NULL);
 }
 
 /*ARGSUSED*/

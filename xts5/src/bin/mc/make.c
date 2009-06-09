@@ -178,10 +178,10 @@ char	*buf;
 	/* Index into files is one more than number of files */
 	filenames = createmclist();
 
-	FpBanner = cretmpfile(F_BANNER);
-	FpDefines = cretmpfile(F_DEFINES);
-	FpDepends = cretmpfile(F_DEPS);
-	FpTop = cretmpfile(F_TOP);
+	FpBanner = cretmpfile(F_BANNER, NULL);
+	FpDefines = cretmpfile(F_DEFINES, NULL);
+	FpDepends = cretmpfile(F_DEPS, NULL);
+	FpTop = cretmpfile(F_TOP, NULL);
 }
 
 

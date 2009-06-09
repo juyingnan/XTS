@@ -205,10 +205,11 @@ char	*buf;
 {
 int 	i;
 FILE	*fp;
+char	*tmpfile;
 
 	State.err = ER_VALUE;
 
-	fp = cretmpfile(F_TVAL);
+	fp = cretmpfile(F_TVAL, &tmpfile);
 
 	(void) fprintf(fp, ">>ASSERTION Bad A\n");
 	(void) fprintf(fp, "When the value of\n.A %s\n", Alts[1]);
@@ -248,7 +249,7 @@ FILE	*fp;
 	(void) fprintf(fp, "};\n\n");
 	(void) fclose(fp);
 
-	includefile(F_TVAL, buf);
+	includefile(tmpfile, buf);
 }
 
 valerrdefs()
