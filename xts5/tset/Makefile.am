@@ -2,6 +2,9 @@ include ../common.mk
 
 SUBDIRS = Xproto Xopen Xlib3
 
+CLEANFILES = */*/tet_lock
+DISTCLEANFILES = */*/*.log */*/*.log.tmp
+
 .PHONY: $(TESTS)
 TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS)
 
