@@ -122,7 +122,7 @@ TET_IMPORT_FUNC(void, tet_tpstart, PROTOLIST((int, int, int)));
 
 #ifdef TET_LITE /* -LITE-CUT-LINE- */
    extern char *tet_get_code PROTOLIST((int, int *));
-   TET_IMPORT_FUNC(void, tet_openres, PROTOLIST((void)));
+   TET_IMPORT_FUNC(void, tet_openres, PROTOLIST((char *)));
 #else		/* -START-LITE-CUT- */
    extern void tet_disconnect PROTOLIST((void));
    TET_IMPORT_FUNC(void, tet_init_synreq, PROTOLIST((void)));

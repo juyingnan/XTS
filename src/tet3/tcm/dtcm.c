@@ -293,7 +293,7 @@ char	**argv;
 
 #ifdef TET_LITE
 	/* open execution results file (do early, so tet_error() can use it) */
-	tet_openres();
+	tet_openres(argv[0]);
 #endif /* TET_LITE */
 
 	/* initialise the server and transport stuff */

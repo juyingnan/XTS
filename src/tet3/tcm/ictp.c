@@ -792,13 +792,41 @@ static int ismaster()
 **	tet_openres() - open the tet_xres file in TETware-Lite
 */
 
-TET_IMPORT void tet_openres()
+TET_IMPORT void tet_openres(progname)
+char *progname;
 {
 	char cwdbuf[MAXPATH];
 	static char resvar[] = "TET_RESFILE";
-	static char resname[] = "tet_xres";
+	char *resname;
 	static char tmpvar[] = "TET_TMPRESFILE";
-	static char tmpname[] = "tet_res.tmp";
+	char *tmpname;
+
+	/* set results filename from the program name */
+	if (progname) {
+		/* results file is prog.log */
+		resname = malloc(strlen(tet_basename(progname)) + 5);
+		if (!resname)
+			fatal(errno, "can't allocate resname in tet_openres()",
+				NULL);
+		sprintf(resname, "%s.log", tet_basename(progname));
+
+		/* temporary results file is prog.log.tmp */
+		tmpname = malloc(strlen(resname) + 5);
+		if (!tmpname)
+			fatal(errno, "can't allocate tmpname in tet_openres()",
+				NULL);
+		sprintf(tmpname, "%s.tmp", resname);
+	}
+	else {
+		resname = strdup("tet_xres");
+		if (!resname)
+			fatal(errno, "can't allocate resname in tet_openres()",
+				NULL);
+		tmpname = strdup("tet_res.tmp");
+		if (!tmpname)
+			fatal(errno, "can't allocate tmpname in tet_openres()",
+				NULL);
+	}
 
 	/* set full path name of execution results file and temp results
 	   file, in a form convenient for placing in the environment */
@@ -806,13 +834,13 @@ TET_IMPORT void tet_openres()
 	if (GETCWD(cwdbuf, (size_t)MAXPATH) == NULL)
 		fatal(errno, "getcwd() failed", (char *) 0);
 
-	resenv = malloc(strlen(cwdbuf)+sizeof(resvar)+sizeof(resname)+4);
+	resenv = malloc(strlen(cwdbuf)+sizeof(resvar)+strlen(resname)+5);
 	if (resenv == NULL)
 		fatal(errno, "can't allocate resenv in tet_openres()",
 			(char *) 0);
 	TRACE2(tet_Tbuf, 6, "allocate resenv = %s", tet_i2x(resenv));
 
-	tmpresenv = malloc(strlen(cwdbuf)+sizeof(tmpvar)+sizeof(tmpname)+4);
+	tmpresenv = malloc(strlen(cwdbuf)+sizeof(tmpvar)+strlen(tmpname)+5);
 	if (tmpresenv == NULL)
 		fatal(errno, "can't allocate tmpresenv in tet_openres()",
 			(char *) 0);
