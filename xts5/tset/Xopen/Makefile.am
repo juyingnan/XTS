@@ -3,19 +3,34 @@ include ../../common.mk
 AM_CFLAGS = $(XTS_LCFLAGS) $(XTS_CFLAGS)
 LDADD = $(TCM) $(XTS_LLIBS) $(XTS_LIBS)
 
-BUILT_SOURCES = $(check_PROGRAMS:$(EXEEXT)=.c)
-TESTS = $(check_PROGRAMS:$(EXEEXT)=.scen)
-DISTCLEANFILES = $(BUILT_SOURCES)
+check_PROGRAMS = $(tprogs)
+BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
+CLEANFILES = $(BUILT_SOURCES)
+.PHONY: $(TESTS)
 
-check_PROGRAMS = \
-	allcnmdclr/allcnmdclr \
-	crsrfnt/crsrfnt \
-	crtfntcrsr/crtfntcrsr \
-	kysym/kysym \
-	kysymdf/kysymdf \
-	kysymtkycd/kysymtkycd \
-	lkpclr/lkpclr \
-	strtkysym/strtkysym
+tprogs = allcnmdclr/allcnmdclr
+TESTS = xXAllocNamedColor
+
+tprogs += crsrfnt/crsrfnt
+TESTS += xcursorfont
+
+tprogs += crtfntcrsr/crtfntcrsr
+TESTS += xXCreateFontCursor
+
+tprogs += kysym/kysym
+TESTS += xkeysym
+
+tprogs += kysymdf/kysymdf
+TESTS += xkeysymdef
+
+tprogs += kysymtkycd/kysymtkycd
+TESTS += xXKeysymToKeycode
+
+tprogs += lkpclr/lkpclr
+TESTS += xXLookupColor
+
+tprogs += strtkysym/strtkysym
+TESTS += xXStringToKeysym
 
 kysym_kysym_SOURCES = \
 	kysym/kysym.c \
