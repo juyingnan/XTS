@@ -6,31 +6,16 @@ LDADD = $(TCM) $(XTS_LLIBS) $(XTS_LIBS)
 check_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
-.PHONY: $(TESTS)
 
-tprogs = allcnmdclr/allcnmdclr
-TESTS = xXAllocNamedColor
-
-tprogs += crsrfnt/crsrfnt
-TESTS += xcursorfont
-
-tprogs += crtfntcrsr/crtfntcrsr
-TESTS += xXCreateFontCursor
-
-tprogs += kysym/kysym
-TESTS += xkeysym
-
-tprogs += kysymdf/kysymdf
-TESTS += xkeysymdef
-
-tprogs += kysymtkycd/kysymtkycd
-TESTS += xXKeysymToKeycode
-
-tprogs += lkpclr/lkpclr
-TESTS += xXLookupColor
-
-tprogs += strtkysym/strtkysym
-TESTS += xXStringToKeysym
+tprogs = \
+	allcnmdclr/allcnmdclr \
+	crsrfnt/crsrfnt \
+	crtfntcrsr/crtfntcrsr \
+	kysym/kysym \
+	kysymdf/kysymdf \
+	kysymtkycd/kysymtkycd \
+	lkpclr/lkpclr \
+	strtkysym/strtkysym
 
 kysym_kysym_SOURCES = \
 	kysym/kysym.c \
