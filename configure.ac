@@ -115,6 +115,7 @@ xts5/tset/Xlib3/Makefile
 xts5/tset/Xlib4/Makefile
 xts5/tset/Xlib5/Makefile
 xts5/tset/Xlib6/Makefile
+xts5/tset/Xlib7/Makefile
 ])
 
 AC_OUTPUT

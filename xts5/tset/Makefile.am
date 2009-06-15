@@ -1,13 +1,13 @@
 include ../common.mk
 
-SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6
+SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
 
 .PHONY: $(TESTS)
 TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS) \
-	$(Xlib5_TESTS) $(Xlib6_TESTS)
+	$(Xlib5_TESTS) $(Xlib6_TESTS) $(Xlib7_TESTS)
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
@@ -315,3 +315,63 @@ Xlib6_TESTS = \
 	XFreePixmap \
 	XQueryBestCursor \
 	XRecolorCursor
+
+Xlib7_TESTS = \
+	XAllocColor \
+	XAllocColorCells \
+	XAllocColorPlanes \
+	XAllocNamedColor \
+	XCopyColormapAndFree \
+	XCreateColormap \
+	XFreeColormap \
+	XFreeColors \
+	XLookupColor \
+	XParseColor \
+	XQueryColor \
+	XQueryColors \
+	XStoreColor \
+	XStoreColors \
+	XStoreNamedColor \
+	XcmsAllocColor \
+	XcmsAddColorSpace \
+	XcmsAddFunctionSet \
+	XcmsAllocNamedColor \
+	XcmsCCCOfColormap \
+	XcmsConvertColors \
+	XcmsCIELabQueryMaxLC \
+	XcmsCIELabQueryMaxC \
+	XcmsCIELabQueryMaxL \
+	XcmsConversionProc \
+	XcmsConversionProc \
+	XcmsCreateCCC \
+	XcmsDefaultCCC \
+	XcmsDisplayOfCCC \
+	XcmsFreeCCC \
+	XcmsFormatOfPrefix \
+	XcmsLookupColor \
+	XcmsCIELabQueryMinL \
+	XcmsPrefixOfFormat \
+	XcmsQueryBlack \
+	XcmsQueryBlue \
+	XcmsQueryColor \
+	XcmsQueryColors \
+	XcmsQueryGreen \
+	XcmsCIELuvQueryMaxC \
+	XcmsCIELuvQueryMinL \
+	XcmsCIELuvQueryMaxL \
+	XcmsCIELuvQueryMaxLC \
+	XcmsQueryRed \
+	XcmsQueryWhite \
+	XcmsScreenNumberOfCCC \
+	XcmsStoreColor \
+	XcmsStoreColors \
+	XcmsTekHVCQueryMaxC \
+	XcmsTekHVCQueryMinV \
+	XcmsTekHVCQueryMaxV \
+	XcmsTekHVCQueryMaxVC \
+	XcmsTekHVCQueryMaxVSamples \
+	XcmsVisualOfCCC \
+	XcmsSetWhiteAdjustProc \
+	XcmsScreenWhitePointOfCCC \
+	XcmsClientWhitePointOfCCC \
+	XcmsSetWhitePoint
