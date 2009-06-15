@@ -106,12 +106,20 @@ makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
 
+#include	<stdlib.h>
 #include	<stdio.h>
 #include	<ctype.h>
-#include	"string.h"
+#include	<string.h>
+#include	<sys/types.h>
+#include	<sys/stat.h>
+#include	<fcntl.h>
+#include	<unistd.h>
+#include	<libgen.h>
+#include	<limits.h>
 
 #include	"mc.h"
 
+extern	char	*Filename;
 extern	int 	Cmdname;
 extern	struct	state	State;
 extern	struct	settings Settings;
@@ -269,6 +277,44 @@ struct	secname {
 	{D_AVSCODE, SEC_AVSCODE},
 };
 
+
+/*
+ * Include files specified in INCLUDE commands. Change to the directory of
+ * the source file temporarily to resolve relative names.
+ */
+static void
+handle_include(char *file, char *buf)
+{
+	int cwd;
+	char source[PATH_MAX], *sourcedir, *tmp;
+	FILE *incfp;
+
+	cwd = open(".", O_RDONLY);
+	strncpy(source, Filename, PATH_MAX);
+	source[PATH_MAX - 1] = '\0';
+	sourcedir = dirname(source);
+
+	chdir(sourcedir);
+	tmp = mcstrdup(file);
+	file = strtok(tmp, " \t\n");
+
+	if (!(incfp = fopen(file, "r"))) {
+		char *mcfile;
+
+		mcfile = mcpath(file);
+		if (!(incfp = fopen(mcfile, "r"))) {
+			fprintf(stderr, "Cannot open include file %s\n",
+				file);
+			errexit();
+		}
+	}
+	fchdir(cwd);
+
+	includefilep(incfp, file, buf);
+	fclose(incfp);
+	free(tmp);
+}
+
 /*
  * Loop through all sections and branch out to the appropriate strategy
  * routines.
@@ -300,7 +346,7 @@ int 	sec;
 
 		if (sec == -1) {
 			if (strncmp(buf, D_INCLUDE, strlen(D_INCLUDE)) == 0) {
-				includefile(buf+strlen(D_INCLUDE), buf);
+				handle_include(buf + strlen(D_INCLUDE), buf);
 				newline(fp, buf);
 				continue;
 			} else {
