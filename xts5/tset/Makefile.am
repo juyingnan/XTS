@@ -1,12 +1,13 @@
 include ../common.mk
 
-SUBDIRS = Xproto Xopen Xlib3 Xlib4
+SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
 
 .PHONY: $(TESTS)
-TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS)
+TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS) \
+	$(Xlib5_TESTS)
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
@@ -287,3 +288,20 @@ Xlib4_TESTS = \
 	XUnmapSubwindows \
 	XUnmapWindow \
 	XVisualIDFromVisual
+
+Xlib5_TESTS = \
+	XChangeProperty \
+	XConvertSelection \
+	XDeleteProperty \
+	XGetAtomName \
+	XGetGeometry \
+	XGetSelectionOwner \
+	XGetWindowAttributes \
+	XGetWindowProperty \
+	XInternAtom \
+	XListProperties \
+	XQueryPointer \
+	XQueryTree \
+	XRotateWindowProperties \
+	XSetSelectionOwner \
+	XTranslateCoordinates

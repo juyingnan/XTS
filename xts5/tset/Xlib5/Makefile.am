@@ -1,0 +1,25 @@
+include ../../common.mk
+
+AM_CFLAGS = $(XTS_LCFLAGS) $(XTS_CFLAGS)
+LDADD = $(TCM) $(XTS_LLIBS) $(XTS_LIBS)
+
+check_PROGRAMS = $(tprogs)
+BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
+CLEANFILES = $(BUILT_SOURCES)
+
+tprogs = \
+	chngprprty/chngprprty \
+	cnvrtslctn/cnvrtslctn \
+	dltprprty/dltprprty \
+	gtatmnm/gtatmnm \
+	gtgmtry/gtgmtry \
+	gtslctnown/gtslctnown \
+	gtwdwattrb/gtwdwattrb \
+	gtwdwprprt/gtwdwprprt \
+	intrnatm/intrnatm \
+	lstprprts/lstprprts \
+	qrypntr/qrypntr \
+	qrytr/qrytr \
+	rttwdwprpr/rttwdwprpr \
+	stslctnown/stslctnown \
+	trnsltcrdn/trnsltcrdn
