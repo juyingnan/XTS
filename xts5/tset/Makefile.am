@@ -1,13 +1,13 @@
 include ../common.mk
 
-SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7
+SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
 
 .PHONY: $(TESTS)
 TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS) \
-	$(Xlib5_TESTS) $(Xlib6_TESTS) $(Xlib7_TESTS)
+	$(Xlib5_TESTS) $(Xlib6_TESTS) $(Xlib7_TESTS) $(Xlib8_TESTS)
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
@@ -375,3 +375,34 @@ Xlib7_TESTS = \
 	XcmsScreenWhitePointOfCCC \
 	XcmsClientWhitePointOfCCC \
 	XcmsSetWhitePoint
+
+Xlib8_TESTS = \
+	XChangeGC \
+	XCopyGC \
+	XCreateGC \
+	XFreeGC \
+	XGContextFromGC \
+	XGetGCValues \
+	XQueryBestStipple \
+	XQueryBestSize \
+	XQueryBestTile \
+	XSetArcMode \
+	XSetBackground \
+	XSetClipMask \
+	XSetClipOrigin \
+	XSetClipRectangles \
+	XSetDashes \
+	XSetFillRule \
+	XSetFillStyle \
+	XSetFunction \
+	XSetFont \
+	XSetForeground \
+	XSetGraphicsExposures \
+	XSetLineAttributes \
+	XSetPlaneMask \
+	XSetSubwindowMode \
+	XSetStipple \
+	XSetState \
+	XSetTile \
+	XSetTSOrigin \
+	XFlushGC
