@@ -1,12 +1,12 @@
 include ../common.mk
 
-SUBDIRS = Xproto Xopen Xlib3
+SUBDIRS = Xproto Xopen Xlib3 Xlib4
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
 
 .PHONY: $(TESTS)
-TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS)
+TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS)
 
 Xproto_TESTS = \
 	pAllocColor \
@@ -252,3 +252,34 @@ Xlib3_TESTS = \
 	WhitePixel \
 	XWhitePixelOfScreen \
 	WhitePixelOfScreen
+
+Xlib4_TESTS = \
+	XChangeWindowAttributes \
+	XConfigureWindow \
+	XCirculateSubwindows \
+	XCirculateSubwindowsDown \
+	XCirculateSubwindowsUp \
+	XCreateSimpleWindow \
+	XCreateWindow \
+	XDefineCursor \
+	XDestroySubwindows \
+	XDestroyWindow \
+	XLowerWindow \
+	XMapRaised \
+	XMapSubwindows \
+	XMapWindow \
+	XMoveResizeWindow \
+	XMoveWindow \
+	XRestackWindows \
+	XRaiseWindow \
+	XResizeWindow \
+	XSetWindowBackground \
+	XSetWindowBackgroundPixmap \
+	XSetWindowBorder \
+	XSetWindowBorderPixmap \
+	XSetWindowBorderWidth \
+	XSetWindowColormap \
+	XUndefineCursor \
+	XUnmapSubwindows \
+	XUnmapWindow \
+	XVisualIDFromVisual
