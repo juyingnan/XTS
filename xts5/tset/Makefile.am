@@ -8,6 +8,10 @@ DISTCLEANFILES = */*/*.log */*/*.log.tmp
 .PHONY: $(TESTS)
 TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS)
 
+# Helpful pattern target for testing subsets (test-Xopen, etc.)
+test-%:
+	@$(MAKE) $(AM_MAKEFLAGS) check TESTS='$($*_TESTS)'
+
 Xproto_TESTS = \
 	pAllocColor \
 	pAllocColorCells \

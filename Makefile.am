@@ -5,3 +5,7 @@ SUBDIRS = src xts5
 tetexec.cfg:
 	@rm -f xts5/$@
 	@cd xts5 && $(MAKE) $(AM_MAKEFLAGS) $@
+
+# Helper target for testing subsets
+test-%:
+	@cd xts5/tset && $(MAKE) $(AM_MAKEFLAGS) $@
