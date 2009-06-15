@@ -1,13 +1,13 @@
 include ../common.mk
 
-SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5
+SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
 
 .PHONY: $(TESTS)
 TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS) \
-	$(Xlib5_TESTS)
+	$(Xlib5_TESTS) $(Xlib6_TESTS)
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
@@ -305,3 +305,13 @@ Xlib5_TESTS = \
 	XRotateWindowProperties \
 	XSetSelectionOwner \
 	XTranslateCoordinates
+
+Xlib6_TESTS = \
+	XCreatePixmap \
+	XCreateFontCursor \
+	XCreateGlyphCursor \
+	XCreatePixmapCursor \
+	XFreeCursor \
+	XFreePixmap \
+	XQueryBestCursor \
+	XRecolorCursor
