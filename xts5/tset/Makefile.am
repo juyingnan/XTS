@@ -1,13 +1,14 @@
 include ../common.mk
 
-SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8
+SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8 Xlib9
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
 
 .PHONY: $(TESTS)
 TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS) \
-	$(Xlib5_TESTS) $(Xlib6_TESTS) $(Xlib7_TESTS) $(Xlib8_TESTS)
+	$(Xlib5_TESTS) $(Xlib6_TESTS) $(Xlib7_TESTS) $(Xlib8_TESTS) \
+	$(Xlib9_TESTS)
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
@@ -406,3 +407,51 @@ Xlib8_TESTS = \
 	XSetTile \
 	XSetTSOrigin \
 	XFlushGC
+
+Xlib9_TESTS = \
+	XClearArea \
+	XClearWindow \
+	XCopyArea \
+	XCopyPlane \
+	XDrawArc \
+	XDrawArcs \
+	XDrawImageString16 \
+	XDrawImageString \
+	XDrawLine \
+	XDrawLines \
+	XDrawPoint \
+	XDrawPoints \
+	XDrawRectangle \
+	XDrawRectangles \
+	XDrawSegments \
+	XDrawString \
+	XDrawString16 \
+	XDrawText \
+	XDrawText16 \
+	XFillArc \
+	XFillArcs \
+	XFillPolygon \
+	XFillRectangle \
+	XFillRectangles \
+	XFreeFont \
+	XFreeFontInfo \
+	XFreeFontNames \
+	XFreeFontPath \
+	XGetFontProperty \
+	XGetFontPath \
+	XGetImage \
+	XGetSubImage \
+	XLoadFont \
+	XLoadQueryFont \
+	XListFonts \
+	XListFontsWithInfo \
+	XPutImage \
+	XQueryFont \
+	XQueryTextExtents16 \
+	XQueryTextExtents \
+	XSetFontPath \
+	XTextExtents16 \
+	XTextExtents \
+	XTextWidth \
+	XTextWidth16 \
+	XUnloadFont
