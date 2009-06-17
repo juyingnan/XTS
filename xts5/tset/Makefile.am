@@ -1,7 +1,7 @@
 include ../common.mk
 
 SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8 Xlib9 Xlib10 \
-	Xlib11 Xlib12 Xlib13 Xlib14
+	Xlib11 Xlib12 Xlib13 Xlib14 Xlib15
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
@@ -10,7 +10,7 @@ DISTCLEANFILES = */*/*.log */*/*.log.tmp
 TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS) \
 	$(Xlib5_TESTS) $(Xlib6_TESTS) $(Xlib7_TESTS) $(Xlib8_TESTS) \
 	$(Xlib9_TESTS) $(Xlib10_TESTS) $(Xlib11_TESTS) $(Xlib12_TESTS) \
-	$(Xlib13_TESTS) $(Xlib14_TESTS)
+	$(Xlib13_TESTS) $(Xlib14_TESTS) $(Xlib15_TESTS)
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
@@ -627,3 +627,50 @@ Xlib14_TESTS = \
 	XwcTextPerCharExtents \
 	XwcTextPropertyToTextList \
 	XwcTextExtents
+
+Xlib15_TESTS = \
+	XAllocClassHint \
+	XAllocIconSize \
+	XAllocStandardColormap \
+	XAllocSizeHints \
+	XAllocWMHints \
+	XFreeStringList \
+	XFetchName \
+	XGetClassHint \
+	XGetCommand \
+	XGetIconName \
+	XGetIconSizes \
+	XGetRGBColormaps \
+	XGetTransientForHint \
+	XGetTextProperty \
+	XGetWMClientMachine \
+	XGetWMColormapWindows \
+	XGetWMHints \
+	XGetWMIconName \
+	XGetWMName \
+	XGetWMNormalHints \
+	XGetWMProtocols \
+	XGetWMSizeHints \
+	XIconifyWindow \
+	XReconfigureWMWindow \
+	XSetClassHint \
+	XSetCommand \
+	XSetIconName \
+	XSetIconSizes \
+	XSetRGBColormaps \
+	XStringListToTextProperty \
+	XStoreName \
+	XSetTransientForHint \
+	XSetTextProperty \
+	XSetWMClientMachine \
+	XSetWMColormapWindows \
+	XSetWMHints \
+	XSetWMIconName \
+	XSetWMName \
+	XSetWMNormalHints \
+	XSetWMProperties \
+	XSetWMProtocols \
+	XSetWMSizeHints \
+	XTextPropertyToStringList \
+	XWithdrawWindow \
+	XDefaultString
