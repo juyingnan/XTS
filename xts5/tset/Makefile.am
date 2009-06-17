@@ -1,6 +1,6 @@
 include ../common.mk
 
-SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8 Xlib9
+SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8 Xlib9 Xlib10
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
@@ -8,7 +8,7 @@ DISTCLEANFILES = */*/*.log */*/*.log.tmp
 .PHONY: $(TESTS)
 TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS) \
 	$(Xlib5_TESTS) $(Xlib6_TESTS) $(Xlib7_TESTS) $(Xlib8_TESTS) \
-	$(Xlib9_TESTS)
+	$(Xlib9_TESTS) $(Xlib10_TESTS)
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
@@ -455,3 +455,28 @@ Xlib9_TESTS = \
 	XTextWidth \
 	XTextWidth16 \
 	XUnloadFont
+
+Xlib10_TESTS = \
+	XActivateScreenSaver \
+	XAddHost \
+	XAddHosts \
+	XAddToSaveSet \
+	XChangeSaveSet \
+	XDisableAccessControl \
+	XEnableAccessControl \
+	XForceScreenSaver \
+	XGrabServer \
+	XGetScreenSaver \
+	XInstallColormap \
+	XKillClient \
+	XListHosts \
+	XListInstalledColormaps \
+	XRemoveFromSaveSet \
+	XRemoveHost \
+	XRemoveHosts \
+	XReparentWindow \
+	XResetScreenSaver \
+	XSetAccessControl \
+	XSetScreenSaver \
+	XUngrabServer \
+	XUninstallColormap

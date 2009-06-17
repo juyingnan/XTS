@@ -1,0 +1,33 @@
+include ../../common.mk
+
+AM_CFLAGS = $(XTS_LCFLAGS) $(XTS_CFLAGS)
+LDADD = $(TCM) $(XTS_LLIBS) $(XTS_LIBS)
+
+check_PROGRAMS = $(tprogs)
+BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
+CLEANFILES = $(BUILT_SOURCES)
+
+tprogs = \
+	actvtscrns/actvtscrns \
+	addhst/addhst \
+	addhsts/addhsts \
+	addtsvst/addtsvst \
+	chngsvst/chngsvst \
+	dsblaccssc/dsblaccssc \
+	enblaccssc/enblaccssc \
+	frcscrnsvr/frcscrnsvr \
+	grbsrvr/grbsrvr \
+	gtscrnsvr/gtscrnsvr \
+	instllclrm/instllclrm \
+	kllclnt/kllclnt \
+	lsthsts/lsthsts \
+	lstinstlld/lstinstlld \
+	rmvfrmsvst/rmvfrmsvst \
+	rmvhst/rmvhst \
+	rmvhsts/rmvhsts \
+	rprntwdw/rprntwdw \
+	rstscrnsvr/rstscrnsvr \
+	staccsscnt/staccsscnt \
+	stscrnsvr/stscrnsvr \
+	ungrbsrvr/ungrbsrvr \
+	unnstllclr/unnstllclr
