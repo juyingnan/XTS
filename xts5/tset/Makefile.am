@@ -1,7 +1,7 @@
 include ../common.mk
 
 SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8 Xlib9 Xlib10 \
-	Xlib11 Xlib12
+	Xlib11 Xlib12 Xlib13
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
@@ -9,7 +9,8 @@ DISTCLEANFILES = */*/*.log */*/*.log.tmp
 .PHONY: $(TESTS)
 TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS) \
 	$(Xlib5_TESTS) $(Xlib6_TESTS) $(Xlib7_TESTS) $(Xlib8_TESTS) \
-	$(Xlib9_TESTS) $(Xlib10_TESTS) $(Xlib11_TESTS) $(Xlib12_TESTS)
+	$(Xlib9_TESTS) $(Xlib10_TESTS) $(Xlib11_TESTS) $(Xlib12_TESTS) \
+	$(Xlib13_TESTS)
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
@@ -545,3 +546,37 @@ Xlib12_TESTS = \
 	XSync \
 	XSynchronize \
 	XWindowEvent
+
+Xlib13_TESTS = \
+	XAllowEvents \
+	XAutoRepeatOff \
+	XAutoRepeatOn \
+	XBell \
+	XChangeActivePointerGrab \
+	XChangeKeyboardControl \
+	XChangeKeyboardMapping \
+	XChangePointerControl \
+	XDeleteModifiermapEntry \
+	XDisplayKeycodes \
+	XFreeModifiermap \
+	XGrabButton \
+	XGrabKey \
+	XGrabKeyboard \
+	XGrabPointer \
+	XGetInputFocus \
+	XGetKeyboardControl \
+	XGetKeyboardMapping \
+	XGetModifierMapping \
+	XGetPointerControl \
+	XGetPointerMapping \
+	XInsertModifiermapEntry \
+	XNewModifiermap \
+	XQueryKeymap \
+	XSetInputFocus \
+	XSetModifierMapping \
+	XSetPointerMapping \
+	XUngrabButton \
+	XUngrabKey \
+	XUngrabKeyboard \
+	XUngrabPointer \
+	XWarpPointer
