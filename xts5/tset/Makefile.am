@@ -1,7 +1,7 @@
 include ../common.mk
 
 SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8 Xlib9 Xlib10 \
-	Xlib11
+	Xlib11 Xlib12
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
@@ -9,7 +9,7 @@ DISTCLEANFILES = */*/*.log */*/*.log.tmp
 .PHONY: $(TESTS)
 TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS) \
 	$(Xlib5_TESTS) $(Xlib6_TESTS) $(Xlib7_TESTS) $(Xlib8_TESTS) \
-	$(Xlib9_TESTS) $(Xlib10_TESTS) $(Xlib11_TESTS)
+	$(Xlib9_TESTS) $(Xlib10_TESTS) $(Xlib11_TESTS) $(Xlib12_TESTS)
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
@@ -516,3 +516,32 @@ Xlib11_TESTS = \
 	SelectionRequest \
 	UnmapNotify \
 	VisibilityNotify
+
+Xlib12_TESTS = \
+	XCheckIfEvent \
+	XCheckMaskEvent \
+	XCheckTypedEvent \
+	XCheckTypedWindowEvent \
+	XCheckWindowEvent \
+	XDisplayMotionBufferSize \
+	XDisplayName \
+	XEventsQueued \
+	XFlush \
+	XGetErrorDatabaseText \
+	XGetErrorText \
+	XGetMotionEvents \
+	XIfEvent \
+	XMaskEvent \
+	XNextEvent \
+	XPeekEvent \
+	XPeekIfEvent \
+	XPending \
+	XPutBackEvent \
+	XSelectInput \
+	XSendEvent \
+	XSetAfterFunction \
+	XSetErrorHandler \
+	XSetIOErrorHandler \
+	XSync \
+	XSynchronize \
+	XWindowEvent
