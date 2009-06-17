@@ -1,6 +1,7 @@
 include ../common.mk
 
-SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8 Xlib9 Xlib10
+SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8 Xlib9 Xlib10 \
+	Xlib11
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
@@ -8,7 +9,7 @@ DISTCLEANFILES = */*/*.log */*/*.log.tmp
 .PHONY: $(TESTS)
 TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS) \
 	$(Xlib5_TESTS) $(Xlib6_TESTS) $(Xlib7_TESTS) $(Xlib8_TESTS) \
-	$(Xlib9_TESTS) $(Xlib10_TESTS)
+	$(Xlib9_TESTS) $(Xlib10_TESTS) $(Xlib11_TESTS)
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
@@ -480,3 +481,38 @@ Xlib10_TESTS = \
 	XSetScreenSaver \
 	XUngrabServer \
 	XUninstallColormap
+
+Xlib11_TESTS = \
+	ButtonPress \
+	ButtonRelease \
+	ClientMessage \
+	ColormapNotify \
+	ConfigureNotify \
+	ConfigureRequest \
+	CirculateNotify \
+	CirculateRequest \
+	CreateNotify \
+	DestroyNotify \
+	EnterNotify \
+	Expose \
+	FocusIn \
+	FocusOut \
+	GraphicsExpose \
+	GravityNotify \
+	KeymapNotify \
+	KeyPress \
+	KeyRelease \
+	LeaveNotify \
+	MapNotify \
+	MappingNotify \
+	MapRequest \
+	MotionNotify \
+	NoExpose \
+	PropertyNotify \
+	ReparentNotify \
+	ResizeRequest \
+	SelectionClear \
+	SelectionNotify \
+	SelectionRequest \
+	UnmapNotify \
+	VisibilityNotify
