@@ -1,7 +1,7 @@
 include ../common.mk
 
 SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8 Xlib9 Xlib10 \
-	Xlib11 Xlib12 Xlib13 Xlib14 Xlib15
+	Xlib11 Xlib12 Xlib13 Xlib14 Xlib15 Xlib16
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
@@ -10,7 +10,7 @@ DISTCLEANFILES = */*/*.log */*/*.log.tmp
 TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS) \
 	$(Xlib5_TESTS) $(Xlib6_TESTS) $(Xlib7_TESTS) $(Xlib8_TESTS) \
 	$(Xlib9_TESTS) $(Xlib10_TESTS) $(Xlib11_TESTS) $(Xlib12_TESTS) \
-	$(Xlib13_TESTS) $(Xlib14_TESTS) $(Xlib15_TESTS)
+	$(Xlib13_TESTS) $(Xlib14_TESTS) $(Xlib15_TESTS) $(Xlib16_TESTS)
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
@@ -674,3 +674,35 @@ Xlib15_TESTS = \
 	XTextPropertyToStringList \
 	XWithdrawWindow \
 	XDefaultString
+
+Xlib16_TESTS = \
+	XrmDestroyDatabase \
+	XrmGetFileDatabase \
+	XrmGetResource \
+	XrmGetStringDatabase \
+	XrmInitialize \
+	XrmMergeDatabases \
+	XrmParseCommand \
+	XrmPutFileDatabase \
+	XrmPutLineResource \
+	XrmPutResource \
+	XrmPutStringResource \
+	XrmQGetResource \
+	XrmQGetSearchList \
+	XrmQGetSearchResource \
+	XrmQPutResource \
+	XrmQPutStringResource \
+	XrmQuarkToString \
+	XrmStringToBindingQuarkList \
+	XrmStringToQuark \
+	XrmStringToQuarkList \
+	XrmUniqueQuark \
+	XResourceManagerString \
+	XrmCombineDatabase \
+	XrmCombineFileDatabase \
+	XrmEnumerateDatabase \
+	XrmGetDatabase \
+	XrmLocaleOfDatabase \
+	XrmPermStringToQuark \
+	XrmSetDatabase \
+	XScreenResourceString
