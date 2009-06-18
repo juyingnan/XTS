@@ -117,6 +117,10 @@ purpose.  It is provided "as is" without express or implied warranty.
  *   If the string ended in 16 then make it end in 16 after truncation.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include	<stdio.h>
 #include	<string.h>
 #include	"mc.h"

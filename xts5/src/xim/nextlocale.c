@@ -131,6 +131,10 @@ THE USE OR PERFORMANCE OF THIS SOFTWARE.
  * Functions to cycle through all the locales that are supported.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <stdio.h>
 #include <string.h>
 #include <locale.h>

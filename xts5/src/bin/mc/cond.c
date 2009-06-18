@@ -121,6 +121,10 @@ purpose.  It is provided "as is" without express or implied warranty.
  * the C pre-processor...).
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include	<stdio.h>
 #include	"mc.h"
 

@@ -65,6 +65,10 @@ SOFTWARE.
  * all the widgets in Athena widget set.
  *
  */
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <X11/IntrinsicP.h>
 #include <X11/Xmu/WidgetNode.h>
 

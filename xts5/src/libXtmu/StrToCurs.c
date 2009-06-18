@@ -84,6 +84,10 @@ SOFTWARE.
 
 ******************************************************************/
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include	<X11/IntrinsicP.h>	/* 'cause CoreP.h needs it */
 #include	<X11/CoreP.h>		/* just to do XtConvert() */
 #include	<X11/StringDefs.h>

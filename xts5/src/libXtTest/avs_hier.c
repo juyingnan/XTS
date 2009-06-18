@@ -61,6 +61,10 @@ SOFTWARE.
 *
 */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <XtTest.h>
 
 extern Widget topLevel, panedw, boxw1, boxw2, rowcolw, click_quit, labelw;

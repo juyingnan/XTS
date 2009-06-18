@@ -141,6 +141,10 @@ ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 SOFTWARE.
 */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #ifndef lint
 static char rcsid[]="$Header: /cvs/xtest/xtest/xts5/src/libproto/SendXIReq.c,v 1.3 2005-11-03 08:42:02 jmichael Exp $";
 #endif

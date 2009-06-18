@@ -64,6 +64,10 @@ SOFTWARE.
 *
 */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #define AVSRECTOBJ
 #include <X11/Intrinsic.h>
 #include <X11/IntrinsicP.h>

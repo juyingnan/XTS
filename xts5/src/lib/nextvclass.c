@@ -118,6 +118,10 @@ purpose.  It is provided "as is" without express or implied warranty.
  * rely on XGetVisualInfo to work properly.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include "xtest.h"
 #include "stdlib.h"
 #include "string.h"

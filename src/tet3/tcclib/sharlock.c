@@ -17,6 +17,10 @@
  * the UK and other countries.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #ifndef lint
 static char sccsid[] = "@(#)sharlock.c	1.3 (98/02/24) TET3 release 3.3";
 #endif

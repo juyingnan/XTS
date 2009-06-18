@@ -37,6 +37,10 @@ MODIFICATIONS:
 
 /* LINTLIBRARY */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #define TET_API_ONLY /* exclude non-API definitions in llib-lapi.c */
 #include "llib-lapi.c"
 

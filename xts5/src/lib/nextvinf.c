@@ -117,6 +117,10 @@ purpose.  It is provided "as is" without express or implied warranty.
  * on the screen under test.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include	<string.h>
 #include	<stdlib.h>
 #include	<stdio.h>

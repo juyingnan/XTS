@@ -31,6 +31,10 @@ MODIFICATIONS:
 /* LINTLIBRARY */
 
 /* band-aid for non-posix systems */
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #if defined(SVR2) || defined(BSD42) || defined(BSD43)
 typedef int pid_t;
 #endif

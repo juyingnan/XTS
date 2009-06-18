@@ -109,6 +109,10 @@ makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include	"stdio.h"
 #include	"X11/Xlib.h"
 #include	"X11/Xutil.h"

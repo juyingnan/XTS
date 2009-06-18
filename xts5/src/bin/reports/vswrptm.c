@@ -69,6 +69,10 @@ $Header: /cvs/xtest/xtest/xts5/src/bin/reports/vswrptm.c,v 1.3 2005-11-03 08:42:
 *
 */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <unistd.h>
 #include <stdio.h>
 #include <dirent.h>

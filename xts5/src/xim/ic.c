@@ -119,6 +119,10 @@ OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION  WITH
 THE USE OR PERFORMANCE OF THIS SOFTWARE.
 */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include    "xtest.h"
 #include    "X11/Xlib.h"
 #include    "X11/Xutil.h"

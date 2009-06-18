@@ -161,6 +161,10 @@ SOFTWARE.
  * really for BSD type environments and may represent a portability constraint.
  * See the documentation of the build parameter XP_OPEN_DIS for more details.
  */
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <stdio.h>
 #include <string.h>
 #include <sys/time.h>

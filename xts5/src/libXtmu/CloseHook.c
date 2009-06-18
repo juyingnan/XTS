@@ -110,6 +110,10 @@ SOFTWARE.
  * 
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <stdio.h>					/* for NULL */
 #include <stdlib.h>
 #include <X11/Xos.h>

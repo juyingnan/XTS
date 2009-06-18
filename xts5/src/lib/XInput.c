@@ -64,6 +64,10 @@ SOFTWARE.
 *
 */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <stdio.h>
 #ifdef INPUTEXTENSION
 #include "X11/extensions/XIproto.h"

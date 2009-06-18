@@ -62,6 +62,10 @@ SOFTWARE.
 *
 */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <XtTest.h>
 #define MIT_TET_WARNING 101
 /*error messages formatted here*/

@@ -110,6 +110,10 @@ purpose.  It is provided "as is" without express or implied warranty.
 */
 
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include "X11/Xlib.h"
 
 #ifdef GENERATE_PIXMAPS

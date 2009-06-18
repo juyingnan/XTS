@@ -136,6 +136,10 @@ SOFTWARE.
  * SIGALRM.  They are thus not available for other purposes, such as sleep(3).
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include "XstlibInt.h"
 #include <signal.h>
 

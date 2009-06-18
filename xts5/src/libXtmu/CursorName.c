@@ -82,6 +82,10 @@ SOFTWARE.
  * CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <X11/Intrinsic.h>
 #include <X11/Xmu/CharSet.h>
 #include <X11/Xmu/CurUtil.h>

@@ -107,6 +107,10 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include	<stdlib.h>
 #include	"xtest.h"
 #include	<X11/Xlib.h>

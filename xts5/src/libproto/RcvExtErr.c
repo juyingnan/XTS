@@ -130,6 +130,10 @@ SOFTWARE.
  *	$Header: /cvs/xtest/xtest/xts5/src/libproto/RcvExtErr.c,v 1.2 2005-11-03 08:42:02 jmichael Exp $
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #ifndef lint
 static char rcsid[]="$Header: /cvs/xtest/xtest/xts5/src/libproto/RcvExtErr.c,v 1.2 2005-11-03 08:42:02 jmichael Exp $";
 #endif

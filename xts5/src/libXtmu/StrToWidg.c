@@ -90,6 +90,10 @@ SOFTWARE.
  * or popup) of the parent.  If none match, compares string to classname
  * & returns first match.  Case is significant.
  */
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <X11/IntrinsicP.h>
 #include <X11/StringDefs.h>
 #include <X11/ObjectP.h>

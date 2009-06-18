@@ -115,6 +115,10 @@ purpose.  It is provided "as is" without express or implied warranty.
  * being included in every file.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include	"xtest.h"
 #include	"X11/Xlib.h"
 #include	"X11/Xutil.h"

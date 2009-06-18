@@ -15,6 +15,10 @@
  * the UK and other countries.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #ifndef lint
 static char sccsid[] = "@(#)remwait.c	1.11 (97/07/23) TET3 release 3.3";
 #endif

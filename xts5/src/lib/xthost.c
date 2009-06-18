@@ -138,6 +138,10 @@ purpose.  It is provided "as is" without express or implied warranty.
  * if it is not possible or convenient to use string notation.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include	"xtest.h"
 #include	"X11/Xlib.h"
 

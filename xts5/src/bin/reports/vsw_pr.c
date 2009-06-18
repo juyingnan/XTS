@@ -60,6 +60,10 @@ $Header: /cvs/xtest/xtest/xts5/src/bin/reports/vsw_pr.c,v 1.1 2005-02-12 14:37:1
 *
 */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <unistd.h>
 #include <stdlib.h>
 #include <stdio.h>

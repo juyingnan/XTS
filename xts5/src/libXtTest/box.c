@@ -69,6 +69,10 @@ SOFTWARE.
  * box.c - Box composite widget
  * 
  */
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <XtTest.h>
 
 /* Toolkit definitions */

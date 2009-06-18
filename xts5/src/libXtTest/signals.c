@@ -62,6 +62,10 @@ SOFTWARE.
 */
 
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <tet_api.h>
 #include <sys/types.h>
 #include <unistd.h>

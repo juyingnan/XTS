@@ -84,6 +84,10 @@ SOFTWARE.
  * Author:  Jim Fulton, MIT X Consortium
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <stdlib.h>
 #include <string.h>
 #include <X11/Xlib.h>

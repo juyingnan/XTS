@@ -109,6 +109,10 @@ makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #ifdef GENERATE_PIXMAPS
 /* in this case we never want to do anything like real buffer stuffing or
  * I/O on our "display" as it isn't real enough for that.

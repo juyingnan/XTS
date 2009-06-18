@@ -128,6 +128,10 @@ purpose.  It is provided "as is" without express or implied warranty.
  *    Path trace line.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include	<stdio.h>
 #include	<string.h>
 #include	"xtest.h"

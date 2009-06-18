@@ -41,6 +41,10 @@
  * PERFORMANCE OF THIS SOFTWARE.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #ifndef lint
 static char sccsid[] = "@(#)ictp.c	1.22 (98/09/22) TET3 release 3.3";
 #endif

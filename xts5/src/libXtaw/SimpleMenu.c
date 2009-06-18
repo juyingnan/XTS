@@ -97,6 +97,10 @@ SOFTWARE.
  *          kit@expo.lcs.mit.edu
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <stdio.h>
 #include <X11/IntrinsicP.h>
 #include <X11/StringDefs.h>

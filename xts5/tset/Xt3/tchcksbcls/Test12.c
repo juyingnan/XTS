@@ -62,6 +62,10 @@ SOFTWARE.
 
 /*must be defined for these tests before Intrinsic.h is included
 in XtTest.h*/
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #define DEBUG
 
 #include <XtTest.h>

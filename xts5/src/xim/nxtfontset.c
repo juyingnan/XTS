@@ -128,6 +128,10 @@ THE USE OR PERFORMANCE OF THIS SOFTWARE.
  * Functions to cycle through all the fontsets specified by the user.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include	<stdlib.h>
 #include	<stdio.h>
 #include	<string.h>

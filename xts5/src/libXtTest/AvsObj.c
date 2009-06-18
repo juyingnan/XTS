@@ -95,6 +95,10 @@ ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 SOFTWARE.
 
 */
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <XtTest.h>
 
 #include <X11/IntrinsicP.h>

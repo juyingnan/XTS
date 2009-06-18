@@ -83,6 +83,10 @@ SOFTWARE.
  * Date:        May 8, 1989
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <X11/Intrinsic.h>
 #include <X11/Xmu/Initer.h>
 

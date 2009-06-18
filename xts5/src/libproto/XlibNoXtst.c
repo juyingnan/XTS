@@ -155,6 +155,10 @@ SOFTWARE.
  * internal interface to the MIT release or else you don't have source.
  * See the documentation of the build parameter XP_OPEN_DIS for more details.
  */
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <stdio.h>
 #include <string.h>
 #include <sys/time.h>

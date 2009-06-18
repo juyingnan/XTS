@@ -75,6 +75,10 @@ SOFTWARE.
  *
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #define  XK_LATIN1
 #include <X11/keysymdef.h>
 #include <X11/Xmu/CharSet.h>

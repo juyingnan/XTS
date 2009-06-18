@@ -76,6 +76,10 @@ SOFTWARE.
  * the UK and other countries.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include        <stdlib.h>
 #include        "xtest.h"
 #include        "X11/Xlib.h"

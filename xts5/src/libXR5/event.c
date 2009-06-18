@@ -105,6 +105,10 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #include <stdio.h>		/* standard i/o functions */
 #include <X11/Xlib.h>		/* standard x defs */
 #include <X11/Xatom.h>		/* standard x atom values */

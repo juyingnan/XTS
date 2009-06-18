@@ -15,6 +15,10 @@
  * the UK and other countries.
  */
 
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
+
 #ifndef lint
 static char sccsid[] = "@(#)discon.c	1.5 (97/07/21) TET3 release 3.3";
 #endif
