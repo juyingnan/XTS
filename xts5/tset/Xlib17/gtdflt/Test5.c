@@ -111,8 +111,8 @@ purpose.  It is provided "as is" without express or implied warranty.
 
 #include	<stdlib.h>
 #include	"xtest.h"
-#include	"Xlib.h"
-#include	"Xutil.h"
+#include	<X11/Xlib.h>
+#include	<X11/Xutil.h>
 #include	"tet_api.h"
 #include	"xtestlib.h"
 #include	"pixval.h"
