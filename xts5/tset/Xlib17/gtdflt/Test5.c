@@ -116,7 +116,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 #include	"tet_api.h"
 #include	"xtestlib.h"
 #include	"pixval.h"
-#include	"Xatom.h"
+#include	<X11/Xatom.h>
 
 extern	Display	*Dsp;
 

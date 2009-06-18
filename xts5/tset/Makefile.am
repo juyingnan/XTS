@@ -1,7 +1,7 @@
 include ../common.mk
 
 SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8 Xlib9 Xlib10 \
-	Xlib11 Xlib12 Xlib13 Xlib14 Xlib15 Xlib16
+	Xlib11 Xlib12 Xlib13 Xlib14 Xlib15 Xlib16 Xlib17
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
@@ -10,7 +10,8 @@ DISTCLEANFILES = */*/*.log */*/*.log.tmp
 TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS) \
 	$(Xlib5_TESTS) $(Xlib6_TESTS) $(Xlib7_TESTS) $(Xlib8_TESTS) \
 	$(Xlib9_TESTS) $(Xlib10_TESTS) $(Xlib11_TESTS) $(Xlib12_TESTS) \
-	$(Xlib13_TESTS) $(Xlib14_TESTS) $(Xlib15_TESTS) $(Xlib16_TESTS)
+	$(Xlib13_TESTS) $(Xlib14_TESTS) $(Xlib15_TESTS) $(Xlib16_TESTS) \
+	$(Xlib17_TESTS)
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
@@ -706,3 +707,60 @@ Xlib16_TESTS = \
 	XrmPermStringToQuark \
 	XrmSetDatabase \
 	XScreenResourceString
+
+Xlib17_TESTS = \
+	XAddPixel \
+	XClipBox \
+	XCreateBitmapFromData \
+	XCreateImage \
+	XCreatePixmapFromBitmapData \
+	XCreateRegion \
+	XDeleteContext \
+	XDestroyImage \
+	XDestroyRegion \
+	XEmptyRegion \
+	XEqualRegion \
+	XFindContext \
+	XFetchBuffer \
+	XFetchBytes \
+	XGetDefault \
+	XGetPixel \
+	XGetVisualInfo \
+	XIntersectRegion \
+	IsCursorKey \
+	IsFunctionKey \
+	IsKeypadKey \
+	IsModifierKey \
+	IsMiscFunctionKey \
+	IsPFKey \
+	XKeycodeToKeysym \
+	XKeysymToKeycode \
+	XKeysymToString \
+	XLookupKeysym \
+	XLookupString \
+	XMatchVisualInfo \
+	XOffsetRegion \
+	XPolygonRegion \
+	XPointInRegion \
+	Xpermalloc \
+	XParseGeometry \
+	XPutPixel \
+	XRebindKeysym \
+	XRectInRegion \
+	XReadBitmapFile \
+	XRefreshKeyboardMapping \
+	XRotateBuffers \
+	XSubImage \
+	XSubtractRegion \
+	XShrinkRegion \
+	XStoreBuffer \
+	XStoreBytes \
+	XSetRegion \
+	XStringToKeysym \
+	XSaveContext \
+	XUnionRectWithRegion \
+	XUnionRegion \
+	XUniqueContext \
+	XWMGeometry \
+	XWriteBitmapFile \
+	XXorRegion
