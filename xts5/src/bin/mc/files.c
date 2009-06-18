@@ -258,6 +258,11 @@ extern	int 	Cmdname;
 		}
 	}
 
+	/* If there was no file to write from, just return after opening
+	 * the output file. */
+	if (!fp)
+		return;
+
 	rewind(fp);
 
 	if (pflag && Cmdname == CMD_MC) {

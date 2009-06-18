@@ -119,6 +119,9 @@ purpose.  It is provided "as is" without express or implied warranty.
 #include	<sys/types.h>
 #include	<signal.h>
 #include	<ctype.h>
+#include	<limits.h>
+#include	<libgen.h>
+#include	<unistd.h>
 
 #include "mc.h"
 
@@ -195,6 +198,7 @@ char	**argv;
 int 	c;
 int 	i;
 char	*cp;
+char	cwd[PATH_MAX];
 struct	cmdinfo	*cip;
 extern	int 	optind;
 extern	char	*optarg;
@@ -272,17 +276,42 @@ newcmd:
 	State.name = "";
 	State.chap = "";
 
-	dohook((char*)0, HOOK_START);
+	/* Open the output file */
+	outfile(NULL);
+
+	if (!getcwd(cwd, PATH_MAX)) {
+		fprintf(stderr, "Could not get current directory name\n");
+		errexit();
+	}
 
 	while ((FpSource = nextfile(Sources)) != NULL) {
+		char *source, *sourcedir;
+
+		source = mcstrdup(Filename);
+		sourcedir = dirname(source);
+		if (chdir(sourcedir) < 0) {
+			fprintf(stderr, "Could not change to directory %s\n",
+				sourcedir);
+			errexit();
+		}
+
+		dohook((char*)0, HOOK_START);
+
 		dosections(FpSource, Ibuf);
 		dodefaults(Ibuf);
 		(void) fclose(FpSource);
+
+		dohook((char*)0, HOOK_END);
+		remfiles();
+
+		if (chdir(cwd) < 0) {
+			fprintf(stderr, "Could not change to directory %s\n",
+				cwd);
+			errexit();
+		}
+		free(source);
 	}
 
-	dohook((char*)0, HOOK_END);
-
-	remfiles();
 	exit(0);
 }
 
