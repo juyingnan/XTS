@@ -290,9 +290,14 @@ char	*file;
 char	*bp;
 {
 char	*name;
+char	*savline;
+char	*savfilename;
 char	*path;
+char	*strtok();
 FILE	*fp;
+int 	savlineno;
 
+	savline = mcstrdup(bp);
 	file = mcstrdup(file);
 
 	name = strtok(file, " \t\n");
@@ -310,39 +315,22 @@ FILE	*fp;
 		}
 	}
 
-	includefilep(fp, name, bp);
-	fclose(fp);
-	free(file);
-}
-
-
-void
-includefilep(FILE *fp, char *file, char *bp)
-{
-	char *savline;
-	char *savfilename;
-	int savlineno;
-
-	if (!fp) {
-		err("Missing file stream on include directive\n");
-		errexit();
-	}
-
-	savline = mcstrdup(bp);
 	savfilename = Filename;
 	savlineno = Lineno;
-	Filename = file;
+	Filename = name;
 	Lineno = 0;
 
-	dohook(file, HOOK_INCSTART);
+	dohook(name, HOOK_INCSTART);
 	dosections(fp, bp);
-	dohook(file, HOOK_INCEND);
+	(void) fclose(fp);
+	dohook(name, HOOK_INCEND);
 
 	Filename = savfilename;
 	Lineno = savlineno;
 
 	strcpy(bp, savline);
 	free(savline);
+	free(file);
 }
 
 /*
