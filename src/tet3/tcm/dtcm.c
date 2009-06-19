@@ -178,9 +178,9 @@ static char srcFile[] = __FILE__;	/* file name for error reporting */
 
 
 #ifdef TET_LITE /* -LITE-CUT-LINE- */
-#  define	VERSION		"3.3-lite"
+#  define	TET_VERSION		"3.3-lite"
 #else /* -START-LITE-CUT- */
-#  define	VERSION		"3.3"
+#  define	TET_VERSION		"3.3"
 #endif /* -END-LITE-CUT- */
 #define	KILLWAIT	10
 
@@ -323,7 +323,7 @@ char	**argv;
 	}
 
 	/* count number of IC's to be executed and output on TCM Start line */
-	tet_tcmstart(VERSION, iccount);
+	tet_tcmstart(TET_VERSION, iccount);
 
 	/* unexpected signals are fatal during startup */
 	setsigs(sigabandon);
