@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include -DTET_LITE
+AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include
 noinst_LTLIBRARIES = libtcm.la libtcmmain.la libtcmchild.la
 libtcm_la_SOURCES = child.c \
 			ckversion.c \

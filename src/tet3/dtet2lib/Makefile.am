@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include -DTET_LITE
+AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include
 noinst_LTLIBRARIES = libdtet2.la
 libdtet2_la_SOURCES = \
 		addarg.c \

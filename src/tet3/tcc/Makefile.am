@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include -DTET_LITE
+AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include
 noinst_PROGRAMS = tcc
 tcc_LDADD = ../tcclib/libtcc.la
 tcc_SOURCES = cleanup.c \

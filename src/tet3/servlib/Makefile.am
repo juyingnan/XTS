@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include -DTET_LITE
+AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include
 noinst_LIBRARIES = libapi.a
 libapi_a_SOURCES = \
 		cloop.c \

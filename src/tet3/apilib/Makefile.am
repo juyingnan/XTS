@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include -DTET_LITE
+AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include
 noinst_LTLIBRARIES = libapi.la
 # If we weren't building TeT lite, this could also add inetlib, servlib
 # and xtilib

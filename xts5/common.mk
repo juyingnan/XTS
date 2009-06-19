@@ -1,16 +1,6 @@
 # Common variables and rules for building xts
 
 ##########################
-# X RELEASE
-##########################
-
-#XT_X_RELEASE - The X11 Release, e.g. 4 for X11R4, 5 for X11R5, 6 for X11R6
-#XT_X_RELEASE=4
-#XT_X_RELEASE=5
-#XT_X_RELEASE=6
-XT_X_RELEASE=6
-
-##########################
 # Commands
 ##########################
 
@@ -100,62 +90,6 @@ XTESTINCDIR = $(XTESTSRC)/include
 ##### C compiler Directives Section
 ################################
 
-# DEFINES - C compiler defines.
-# If you wish to build the tests to make use of the XTEST extension, you
-# will need to define XTESTEXTENSION.
-# If you wish to test the Input Device Extension, you will need to define
-# INPUTEXTENSION.
-# SunOS	: DEFINES=
-# ULTRIX: DEFINES=
-# HP-UX	: DEFINES=-D_XOPEN_SOURCE -D_HPUX_SOURCE
-# DYNIX	: DEFINES=
-# A/UX  : DEFINES=
-# AIXV3	: DEFINES=-D_XOPEN_SOURCE -D_ALL_SOURCE
-# SVR4	: DEFINES=-D_XOPEN_SOURCE
-# OSF1	: DEFINES=-D_XOPEN_SOURCE_EXTENDED -DXTESTEXTENSION
-#DEFINES = -D_XOPEN_SOURCE -DXTESTEXTENSION -D_GNU_SOURCE
-DEFINES = -DXTESTEXTENSION
-
-# XP_DEFINES - C compiler defines specific to the X Protocol tests.
-# This can be set as DEFINES, but you can build support for additional 
-# connection methods beyond TCP/IP, using the following defines, 
-# if XP_OPEN_DIS is XlibNoXtst.c (R4/R5 XOpenDisplay emulation):
-#	-DDNETCONN - Connections can also use DECnet.
-#	-DUNIXCONN - Connections can also use UNIX domain sockets.
-# Refer to your documentation for building and installing Xlib on
-# your platform.
-# If XP_OPEN_DIS is one of XlibXtst.c or XlibOpaque.c then none of
-# the defines listed above will be required.
-# If you wish to test the Input Device Extension, you will need to define
-# INPUTEXTENSION.
-#
-# SunOS	: XP_DEFINES=-DUNIXCONN
-# ULTRIX: XP_DEFINES=-DUNIXCONN
-# HP-UX	: XP_DEFINES=-D_XOPEN_SOURCE -D_HPUX_SOURCE -DUNIXCONN
-# DYNIX	: XP_DEFINES=-D_POSIX_SOURCE -DUNIXCONN
-# A/UX 	: XP_DEFINES=-D_POSIX_SOURCE -DUNIXCONN
-# AIXV3	: XP_DEFINES=-D_XOPEN_SOURCE -D_ALL_SOURCE
-# SVR4	: XP_DEFINES=-D_XOPEN_SOURCE
-# OSF1	: XP_DEFINES=-D_XOPEN_SOURCE_EXTENDED -DUNIXCONN
-#XP_DEFINES = -D_XOPEN_SOURCE -D_GNU_SOURCE
-XP_DEFINES =
-
-# XT_DEFINES - C compiler defines specific to the Xt Toolkit tests.
-# If you wish to build the tests to make use of the XTEST extension, you
-# will need to define XTESTEXTENSION.
-# -DNeedFunctionPrototypes=1 is needed on many implementations to avoid
-# compiler warnings about the definition of XtPointer.
-# SunOS	: XP_DEFINES=-DNeedFunctionPrototypes=1
-# ULTRIX: XP_DEFINES=-DNeedFunctionPrototypes=1
-# HP-UX	: XP_DEFINES=-D_XOPEN_SOURCE -D_HPUX_SOURCE -DNeedFunctionPrototypes=1
-# DYNIX	: XP_DEFINES=-D_POSIX_SOURCE -DNeedFunctionPrototypes=1
-# A/UX 	: XP_DEFINES=-D_POSIX_SOURCE -DNeedFunctionPrototypes=1
-# AIXV3	: XP_DEFINES=-D_XOPEN_SOURCE -D_ALL_SOURCE -DNeedFunctionPrototypes=1
-# SVR4	: XP_DEFINES=-DNeedFunctionPrototypes=1 -D_XOPEN_SOURCE
-# OSF1	: XT_DEFINES=-D_XOPEN_SOURCE_EXTENDED -DNeedFunctionPrototypes=1 -DXTESTEXTENSION
-#XT_DEFINES = -D_XOPEN_SOURCE -DXTESTEXTENSION -D_GNU_SOURCE
-XT_DEFINES = -DXTESTEXTENSION
-
 # XP_OPEN_DIS - A choice of which code to build in the X Protocol library 
 # to make an X server connection.
 # This must be set to one of three possible values:
@@ -187,17 +121,16 @@ XP_OPEN_DIS=XlibXtst.c
 
 # CFLAGS - Flags for C compiler
 #
-COMMON_CFLAGS = -I$(top_srcdir)/include -I$(TETINCDIR) -I$(XTESTINCDIR) \
-	-DXT_X_RELEASE='$(XT_X_RELEASE)' -DTET_LITE
+COMMON_CFLAGS = -I$(top_srcdir)/include -I$(TETINCDIR) -I$(XTESTINCDIR)
 
 # XTS_LCFLAGS - Flags for C compiler for generic xts5 programs
-XTS_LCFLAGS = $(COMMON_CFLAGS) $(DEFINES)
+XTS_LCFLAGS = $(COMMON_CFLAGS)
 
 # XP_LCFLAGS - Flags for C compiler specific to the X Protocol tests.
-XP_LCFLAGS = $(COMMON_CFLAGS) $(XP_DEFINES)
+XP_LCFLAGS = $(COMMON_CFLAGS)
 
 # XT_LCFLAGS - Flags for C compiler specific to the Xt Toolkit tests.
-XT_LCFLAGS = $(COMMON_CFLAGS) $(XT_DEFINES)
+XT_LCFLAGS = $(COMMON_CFLAGS)
 
 # LIBS - List of libraries.
 #

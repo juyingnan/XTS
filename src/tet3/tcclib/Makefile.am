@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include -DTET_LITE
+AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include
 noinst_LTLIBRARIES = libtcc.la
 libtcc_la_LIBADD = ../apilib/libapi.la
 libtcc_la_SOURCES = \

@@ -54,8 +54,14 @@ AC_CHECK_LIB([X11], [_XConnectDisplay], [],
                   [Try building libX11 --without-xcb])])
 LDFLAGS=$_save_LDFLAGS
 
-# Checks for header files.
+dnl Checks for header files.
 AC_HEADER_STDC
+
+dnl Setup common macros
+AC_DEFINE([TET_LITE], [1], [Use a smaller subset of the TET API])
+AC_DEFINE([XT_X_RELEASE], [6], [The X11 Release, e.g. 6 for X11R6])
+AC_DEFINE([XTESTEXTENSION], [1], [Build tests using the XTEST extension])
+AC_DEFINE([INPUTEXTENSION], [1], [Build tests using the XI extension])
 
 dnl Needed for generating fonts
 AC_PATH_PROG([BDFTOPCF], [bdftopcf])
