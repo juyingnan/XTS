@@ -1,4 +1,5 @@
 include ../../common.mk
+AUTOMAKE_OPTIONS = subdir-objects
 
 AM_CFLAGS = $(XP_LCFLAGS) $(XP_CFLAGS)
 LDADD = $(TCM) $(XP_LLIBS) $(XP_LIBS)

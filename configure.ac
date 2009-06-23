@@ -28,7 +28,7 @@ AC_INIT([xtest],
 
 AC_CONFIG_SRCDIR([Makefile.am])
 AC_CONFIG_AUX_DIR(.)
-AM_INIT_AUTOMAKE([dist-bzip2 foreign subdir-objects])
+AM_INIT_AUTOMAKE([dist-bzip2 foreign])
 
 AM_MAINTAINER_MODE
 
