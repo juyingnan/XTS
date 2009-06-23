@@ -1,7 +1,7 @@
 include ../common.mk
 
 SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8 Xlib9 Xlib10 \
-	Xlib11 Xlib12 Xlib13 Xlib14 Xlib15 Xlib16 Xlib17 XIproto
+	Xlib11 Xlib12 Xlib13 Xlib14 Xlib15 Xlib16 Xlib17 XIproto XI
 
 CLEANFILES = */*/tet_lock
 DISTCLEANFILES = */*/*.log */*/*.log.tmp
@@ -11,7 +11,7 @@ TESTS = $(Xproto_TESTS) $(Xopen_TESTS) $(Xlib3_TESTS) $(Xlib4_TESTS) \
 	$(Xlib5_TESTS) $(Xlib6_TESTS) $(Xlib7_TESTS) $(Xlib8_TESTS) \
 	$(Xlib9_TESTS) $(Xlib10_TESTS) $(Xlib11_TESTS) $(Xlib12_TESTS) \
 	$(Xlib13_TESTS) $(Xlib14_TESTS) $(Xlib15_TESTS) $(Xlib16_TESTS) \
-	$(Xlib17_TESTS) $(XIproto_TESTS)
+	$(Xlib17_TESTS) $(XIproto_TESTS) $(XI_TESTS)
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
@@ -801,3 +801,41 @@ XIproto_TESTS = \
 	UngrabDevice \
 	UngrabDeviceButton \
 	UngrabDeviceKey
+
+XI_TESTS = \
+	XAllowDeviceEvents \
+	XChangeDeviceControl \
+	XChangeFeedbackControl \
+	XChangeKeyboardDevice \
+	XChangeDeviceDontPropagateList \
+	XChangePointerDevice \
+	XChangeDeviceKeyMapping \
+	XCloseDevice \
+	XDeviceBell \
+	XGetDeviceControl \
+	XGetFeedbackControl \
+	XGetDeviceFocus \
+	XGetDeviceDontPropagateList \
+	XGetExtensionVersion \
+	XGrabDevice \
+	XGrabDeviceButton \
+	XGrabDeviceKey \
+	XGetDeviceButtonMapping \
+	XGetDeviceKeyMapping \
+	XGetDeviceModifierMapping \
+	XGetDeviceMotionEvents \
+	XGetSelectedExtensionEvents \
+	XListInputDevices \
+	Miscellaneous \
+	XOpenDevice \
+	XQueryDeviceState \
+	XSetDeviceValuators \
+	XSetDeviceButtonMapping \
+	XSetDeviceFocus \
+	XSetDeviceModifierMapping \
+	XSetDeviceMode \
+	XSelectExtensionEvent \
+	XSendExtensionEvent \
+	XUngrabDevice \
+	XUngrabDeviceButton \
+	XUngrabDeviceKey
