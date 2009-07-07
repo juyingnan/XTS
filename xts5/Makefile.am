@@ -2,7 +2,7 @@ include common.mk
 
 SUBDIRS = src fonts tset
 
-noinst_DATA = tetexec.cfg
+check_DATA = tetexec.cfg
 
 XTS_CONFIG = TET_ROOT='$(TET_ROOT)' DISPLAY='$(XT_DISPLAY)' \
 	XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
