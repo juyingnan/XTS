@@ -51,7 +51,7 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., July 1998
 	Added support for generic scenario file preprocessing,
 	and support for the %include scenario keyword.
-	Functions previously in getline.c moved to here, and enhanced to
+	Functions previously in getline_tcc.c moved to here, and enhanced to
 	support multiple input files.
 
 
@@ -95,7 +95,7 @@ static char srcFile[] = __FILE__;	/* file name for error reporting */
 #define isattached(s)	(*(s) && !isspace(*(s)))
 
 /*
-** structure of the line cache stack used by getline() and ungetline()
+** structure of the line cache stack used by getline_tcc() and ungetline_tcc()
 ** this is a linked list
 ** the lc_next and lc_last elements must be 1st and 2nd so as to
 ** enable the stack to be manipulated by the llist functions
@@ -135,11 +135,11 @@ static struct ifstack *ifstack;
 
 /*
 ** pointer to the currently active input file stack element;
-** that is: the element in the stack where getline() and ungetline()
+** that is: the element in the stack where getline_tcc() and ungetline_tcc()
 ** fetch and store input lines
 **
 ** normally, the currently active element is at the top of the stack;
-** however, if there is more than one level in the stack and ungetline() is
+** however, if there is more than one level in the stack and ungetline_tcc() is
 ** called to push back more lines than have been read from the file at any
 ** particular level, the next level down becomes the currently active level
 ** and lines are cached and retrieved from there
@@ -149,7 +149,7 @@ static struct ifstack *ifstp;
 
 /* static function declarations */
 static int find1scen PROTOLIST((void));
-static char *getline PROTOLIST((void));
+static char *getline_tcc PROTOLIST((void));
 static void includefile PROTOLIST((char *, char *, int));
 static struct ifstack *ifsalloc PROTOLIST((void));
 static void ifsfree PROTOLIST((struct ifstack *));
@@ -168,7 +168,7 @@ static int proc1dgrp PROTOLIST((char *, char *, char *, int));
 static void proc1scelem PROTOLIST((char *, int, int, int, char *));
 static int proc1scen PROTOLIST((void));
 static int proc1scline PROTOLIST((char *, char *, int));
-static void ungetline PROTOLIST((char *));
+static void ungetline_tcc PROTOLIST((char *));
 #ifndef NOTRACE
 static char *firstpart PROTOLIST((char *));
 #endif
@@ -244,7 +244,7 @@ static int find1scen()
 	**	the scenario processor can find it
 	*/
 	for (;;) {
-		if ((line = getline()) == (char *) 0)
+		if ((line = getline_tcc()) == (char *) 0)
 			return(ferror(ifstp->if_fp) ? -1 : 0);
 		if (!isspace(*line)) {
 			/* start of new scenario */
@@ -254,7 +254,7 @@ static int find1scen()
 				scenermsg(msg, (char *) 0, ifstp->if_lcount,
 					ifstp->if_fname);
 			}
-			ungetline(line);
+			ungetline_tcc(line);
 			return(1);
 		}
 		/*
@@ -287,7 +287,7 @@ static int proc1scen()
 	register struct scentab *ep;
 
 	/* read the scenario name - starts in column 1 */
-	line = getline();
+	line = getline_tcc();
 	ASSERT(line);
 	ASSERT(!isspace(*line));
 
@@ -315,10 +315,10 @@ static int proc1scen()
 		return(-1);
 
 	/* process the rest of the current scenario */
-	while ((line = getline()) != (char *) 0) {
+	while ((line = getline_tcc()) != (char *) 0) {
 		if (!isspace(*line)) {
 			/* a new scenario */
-			ungetline(line);
+			ungetline_tcc(line);
 			return(1);
 		}
 		/* process a line in the current scenario */
@@ -1178,13 +1178,13 @@ static struct ifstack *ifspop()
 }
 
 /*
-**	getline() - get the next non-blank, non-comment line
+**	getline_tcc() - get the next non-blank, non-comment line
 **		from the currently active input file
 **
 **	return a pointer to the line, or (char *) 0 on EOF or error
 */
 
-static char *getline()
+static char *getline_tcc()
 {
 	static char buf[LBUFLEN];
 	struct lcache *lcp;
@@ -1197,7 +1197,7 @@ static char *getline()
 	if ((lcp = lcpop()) != (struct lcache *) 0) {
 		(void) strcpy(buf, lcp->lc_line);
 		lcfree(lcp);
-		TRACE2(tet_Tscen, 10, "getline(): line = <%s>", firstpart(buf));
+		TRACE2(tet_Tscen, 10, "getline_tcc(): line = <%s>", firstpart(buf));
 		return(buf);
 	}
 
@@ -1228,14 +1228,14 @@ static char *getline()
 			}
 			else
 				TRACE2(tet_Tscen, 10,
-					"getline(): encountered EOF on %s",
+					"getline_tcc(): encountered EOF on %s",
 					ifstp->if_fname);
 			if (ifstp->if_next) {
 				(void) fclose(ifstp->if_fp);
 				ifsfree(ifspop());
 				continue;
 			}
-			TRACE1(tet_Tscen, 10, "getline(): return EOF");
+			TRACE1(tet_Tscen, 10, "getline_tcc(): return EOF");
 			return((char *) 0);
 		}
 
@@ -1270,7 +1270,7 @@ static char *getline()
 
 		/* if there is anything left, return it */
 		if (p >= buf) {
-			TRACE4(tet_Tscen, 10, "getline(): fname = %s, lineno = %s, line = <%s>",
+			TRACE4(tet_Tscen, 10, "getline_tcc(): fname = %s, lineno = %s, line = <%s>",
 				ifstp->if_fname, tet_i2a(ifstp->if_lcount),
 				firstpart(buf));
 			return(buf);
@@ -1279,15 +1279,15 @@ static char *getline()
 }
 
 /*
-**	ungetline() - store a line for subsequent retrieval by getline()
+**	ungetline_tcc() - store a line for subsequent retrieval by getline_tcc()
 */
 
-static void ungetline(line)
+static void ungetline_tcc(line)
 char *line;
 {
 	struct lcache *lcp;
 
-	TRACE2(tet_Tscen, 10, "ungetline(): line = <%s>", firstpart(line));
+	TRACE2(tet_Tscen, 10, "ungetline_tcc(): line = <%s>", firstpart(line));
 
 	/* store the line and push it on to the stack */
 	lcp = lcalloc();
