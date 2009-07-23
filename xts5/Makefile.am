@@ -1,6 +1,6 @@
 include common.mk
 
-SUBDIRS = src fonts tset
+SUBDIRS = . src fonts tset
 
 check_DATA = tetexec.cfg
 
