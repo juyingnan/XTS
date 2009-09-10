@@ -95,7 +95,7 @@
 	"VSW5TESTSUITE CASE XtDestroyGC 2"
 	/tset/XtC/tdestygc/tdestygc
 	"VSW5TESTSUITE CASE XtAddActions 3"
-	/tset/XtC/tadaction/tadaction
+	/tset/XtC/XtAddActions/XtAddActions
 	"VSW5TESTSUITE CASE XtSetSelectionTimeout 1"
 	/tset/XtC/tststmout/tststmout
 	"VSW5TESTSUITE CASE XtGetSelectionTimeout 2"
