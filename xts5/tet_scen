@@ -3888,7 +3888,7 @@ ApplicationShellWidget
 
 XtCreatePopupShell
 	"VSW5TESTSUITE CASE XtCreatePopupShell 8"
-	/tset/Xt7/tcrpopshl/tcrpopshl
+	/tset/Xt7/XtCreatePopupShell/XtCreatePopupShell
 
 XtVaCreatePopupShell
 	"VSW5TESTSUITE CASE XtVaCreatePopupShell 8"
