@@ -18,7 +18,7 @@ tprogs = \
 	XDisplayName/XDisplayName \
 	XEventsQueued/XEventsQueued \
 	XFlush/XFlush \
-	gterrrdtbs/gterrrdtbs \
+	XGetErrorDatabaseText/XGetErrorDatabaseText \
 	gterrrtxt/gterrrtxt \
 	XGetMotionEvents/XGetMotionEvents \
 	ifevnt/ifevnt \

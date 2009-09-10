@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE XFlush 1"
 	/tset/Xlib12/XFlush/XFlush
 	"VSW5TESTSUITE CASE XGetErrorDatabaseText 5"
-	/tset/Xlib12/gterrrdtbs/gterrrdtbs
+	/tset/Xlib12/XGetErrorDatabaseText/XGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XGetErrorText 2"
 	/tset/Xlib12/gterrrtxt/gterrrtxt
 	"VSW5TESTSUITE CASE XGetMotionEvents 7"

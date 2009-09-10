@@ -959,7 +959,7 @@ XFlush
 
 XGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XGetErrorDatabaseText 5"
-	/tset/Xlib12/gterrrdtbs/gterrrdtbs
+	/tset/Xlib12/XGetErrorDatabaseText/XGetErrorDatabaseText
 
 XGetErrorText
 	"VSW5TESTSUITE CASE XGetErrorText 2"

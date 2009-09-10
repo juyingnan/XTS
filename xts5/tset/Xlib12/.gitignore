@@ -8,7 +8,7 @@ XDisplayName/XDisplayName
 dsplynm/Test1
 XEventsQueued/XEventsQueued
 XFlush/XFlush
-gterrrdtbs/gterrrdtbs
+XGetErrorDatabaseText/XGetErrorDatabaseText
 gterrrtxt/gterrrtxt
 XGetMotionEvents/XGetMotionEvents
 ifevnt/ifevnt
