@@ -4497,7 +4497,7 @@ XtGetGC
 
 XtReleaseGC
 	"VSW5TESTSUITE CASE XtReleaseGC 2"
-	/tset/Xt13/trelasegc/trelasegc
+	/tset/Xt13/XtReleaseGC/XtReleaseGC
 
 XtAppSetSelectionTimeout
 	"VSW5TESTSUITE CASE XtAppSetSelectionTimeout 1"

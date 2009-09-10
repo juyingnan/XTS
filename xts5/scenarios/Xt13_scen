@@ -79,7 +79,7 @@
 	"VSW5TESTSUITE CASE XtGetGC 4"
 	/tset/Xt13/XtGetGC/XtGetGC
 	"VSW5TESTSUITE CASE XtReleaseGC 2"
-	/tset/Xt13/trelasegc/trelasegc
+	/tset/Xt13/XtReleaseGC/XtReleaseGC
 	"VSW5TESTSUITE CASE XtAppSetSelectionTimeout 1"
 	/tset/Xt13/XtAppSetSelectionTimeout/XtAppSetSelectionTimeout
 	"VSW5TESTSUITE CASE XtAppGetSelectionTimeout 2"
