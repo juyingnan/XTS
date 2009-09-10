@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XExtentsOfFontSet 1"
 	/tset/Xlib14/XExtentsOfFontSet/XExtentsOfFontSet
 	"VSW5TESTSUITE CASE XFilterEvent 1"
-	/tset/Xlib14/fltrevnt/fltrevnt
+	/tset/Xlib14/XFilterEvent/XFilterEvent
 	"VSW5TESTSUITE CASE XFontsOfFontSet 1"
 	/tset/Xlib14/fntofnts/fntofnts
 	"VSW5TESTSUITE CASE XFreeFontSet 1"

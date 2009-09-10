@@ -1196,7 +1196,7 @@ XExtentsOfFontSet
 
 XFilterEvent
 	"VSW5TESTSUITE CASE XFilterEvent 1"
-	/tset/Xlib14/fltrevnt/fltrevnt
+	/tset/Xlib14/XFilterEvent/XFilterEvent
 
 XFontsOfFontSet
 	"VSW5TESTSUITE CASE XFontsOfFontSet 1"
