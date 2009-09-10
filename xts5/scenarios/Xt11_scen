@@ -143,7 +143,7 @@
 	"VSW5TESTSUITE CASE XtDisplayStringConversionWarning 2"
 	/tset/Xt11/XtDisplayStringConversionWarning/XtDisplayStringConversionWarning
 	"VSW5TESTSUITE CASE XtDisplayToApplicationContext 2"
-	/tset/Xt11/tdispltac/tdispltac
+	/tset/Xt11/XtDisplayToApplicationContext/XtDisplayToApplicationContext
 	"VSW5TESTSUITE CASE XtSetTypeConverter 15"
 	/tset/Xt11/tstyconv/tstyconv
 	"VSW5TESTSUITE CASE XtAppSetTypeConverter 15"
