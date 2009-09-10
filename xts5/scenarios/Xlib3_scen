@@ -172,7 +172,7 @@
 	"VSW5TESTSUITE CASE XWhitePixel 1"
 	/tset/Xlib3/XWhitePixel/XWhitePixel
 	"VSW5TESTSUITE CASE XWhitePixelOfScreen 1"
-	/tset/Xlib3/whtpxlofsc/whtpxlofsc
+	/tset/Xlib3/XWhitePixelOfScreen/XWhitePixelOfScreen
 	"VSW5TESTSUITE CASE BlackPixel 1"
 	/tset/Xlib3/XBlackPixel/XBlackPixel_m
 	"VSW5TESTSUITE CASE BlackPixelOfScreen 1"
@@ -272,4 +272,4 @@
 	"VSW5TESTSUITE CASE WhitePixel 1"
 	/tset/Xlib3/XWhitePixel/XWhitePixel_m
 	"VSW5TESTSUITE CASE WhitePixelOfScreen 1"
-	/tset/Xlib3/whtpxlofsc/whtpxlofsc_m
+	/tset/Xlib3/XWhitePixelOfScreen/XWhitePixelOfScreen_m

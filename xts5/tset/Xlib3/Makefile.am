@@ -67,7 +67,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XWidthMMOfScreen/XWidthMMOfScreen XWidthMMOfScreen/XWidthMMOfScreen_m \
 	XWidthOfScreen/XWidthOfScreen XWidthOfScreen/XWidthOfScreen_m \
 	XWhitePixel/XWhitePixel XWhitePixel/XWhitePixel_m \
-	whtpxlofsc/whtpxlofsc whtpxlofsc/whtpxlofsc_m
+	XWhitePixelOfScreen/XWhitePixelOfScreen XWhitePixelOfScreen/XWhitePixelOfScreen_m
 
 # Auxiliary programs run from tests
 check_PROGRAMS += \

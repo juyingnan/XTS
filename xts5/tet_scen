@@ -2107,7 +2107,7 @@ XWhitePixel
 
 XWhitePixelOfScreen
 	"VSW5TESTSUITE CASE XWhitePixelOfScreen 1"
-	/tset/Xlib3/whtpxlofsc/whtpxlofsc
+	/tset/Xlib3/XWhitePixelOfScreen/XWhitePixelOfScreen
 
 BlackPixel
 	"VSW5TESTSUITE CASE BlackPixel 1"
@@ -2307,7 +2307,7 @@ WhitePixel
 
 WhitePixelOfScreen
 	"VSW5TESTSUITE CASE WhitePixelOfScreen 1"
-	/tset/Xlib3/whtpxlofsc/whtpxlofsc_m
+	/tset/Xlib3/XWhitePixelOfScreen/XWhitePixelOfScreen_m
 
 
 # Discrete tests for Xlib Chapter 4-Window Functions
