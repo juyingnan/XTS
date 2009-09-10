@@ -90,7 +90,7 @@
 	"VSW5TESTSUITE CASE XSetFillStyle 4"
 	/tset/Xlib8/XSetFillStyle/XSetFillStyle
 	"VSW5TESTSUITE CASE XSetFunction 4"
-	/tset/Xlib8/stfnctn/stfnctn
+	/tset/Xlib8/XSetFunction/XSetFunction
 	"VSW5TESTSUITE CASE XSetFont 4"
 	/tset/Xlib8/stfnt/stfnt
 	"VSW5TESTSUITE CASE XSetForeground 3"

@@ -2833,7 +2833,7 @@ XSetFillStyle
 
 XSetFunction
 	"VSW5TESTSUITE CASE XSetFunction 4"
-	/tset/Xlib8/stfnctn/stfnctn
+	/tset/Xlib8/XSetFunction/XSetFunction
 
 XSetFont
 	"VSW5TESTSUITE CASE XSetFont 4"

@@ -30,7 +30,7 @@ tprogs = \
 	XSetDashes/XSetDashes \
 	XSetFillRule/XSetFillRule \
 	XSetFillStyle/XSetFillStyle \
-	stfnctn/stfnctn \
+	XSetFunction/XSetFunction \
 	stfnt/stfnt \
 	stfrgrnd/stfrgrnd \
 	stgrphcsex/stgrphcsex \
