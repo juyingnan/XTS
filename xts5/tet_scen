@@ -4577,7 +4577,7 @@ XtAppErrorMsg
 
 XtAppSetWarningMsgHandler
 	"VSW5TESTSUITE CASE XtAppSetWarningMsgHandler 2"
-	/tset/Xt13/tapstwmhr/tapstwmhr
+	/tset/Xt13/XtAppSetWarningMsgHandler/XtAppSetWarningMsgHandler
 
 XtAppWarningMsg
 	"VSW5TESTSUITE CASE XtAppWarningMsg 3"

@@ -119,7 +119,7 @@
 	"VSW5TESTSUITE CASE XtAppErrorMsg 3"
 	/tset/Xt13/XtAppErrorMsg/XtAppErrorMsg
 	"VSW5TESTSUITE CASE XtAppSetWarningMsgHandler 2"
-	/tset/Xt13/tapstwmhr/tapstwmhr
+	/tset/Xt13/XtAppSetWarningMsgHandler/XtAppSetWarningMsgHandler
 	"VSW5TESTSUITE CASE XtAppWarningMsg 3"
 	/tset/Xt13/tapwrnmsg/tapwrnmsg
 	"VSW5TESTSUITE CASE XtAppSetErrorHandler 2"
