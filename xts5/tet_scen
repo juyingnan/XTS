@@ -758,7 +758,7 @@ XRemoveHost
 
 XRemoveHosts
 	"VSW5TESTSUITE CASE XRemoveHosts 3"
-	/tset/Xlib10/rmvhsts/rmvhsts
+	/tset/Xlib10/XRemoveHosts/XRemoveHosts
 
 XReparentWindow
 	"VSW5TESTSUITE CASE XReparentWindow 13"

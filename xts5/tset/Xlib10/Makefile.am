@@ -25,7 +25,7 @@ tprogs = \
 	XListInstalledColormaps/XListInstalledColormaps \
 	XRemoveFromSaveSet/XRemoveFromSaveSet \
 	XRemoveHost/XRemoveHost \
-	rmvhsts/rmvhsts \
+	XRemoveHosts/XRemoveHosts \
 	XReparentWindow/XReparentWindow \
 	rstscrnsvr/rstscrnsvr \
 	SetAccessControl/SetAccessControl \
