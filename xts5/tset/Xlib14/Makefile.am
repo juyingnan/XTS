@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
 	XBaseFontNameListOfFontSet/XBaseFontNameListOfFontSet \
-	closeim/closeim \
+	XCloseIM/XCloseIM \
 	condd/condd \
 	crfset/crfset \
 	crtic/crtic \

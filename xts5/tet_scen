@@ -1168,7 +1168,7 @@ XBaseFontNameListOfFontSet
 
 XCloseIM
 	"VSW5TESTSUITE CASE XCloseIM 1"
-	/tset/Xlib14/closeim/closeim
+	/tset/Xlib14/XCloseIM/XCloseIM
 
 XContextDependentDrawing
 	"VSW5TESTSUITE CASE XContextDependentDrawing 1"
