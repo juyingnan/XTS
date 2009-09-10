@@ -3414,7 +3414,7 @@ pOpenDisplay
 
 pOpenFont
 	"VSW5TESTSUITE CASE OpenFont 5"
-	/tset/Xproto/opnfnt/opnfnt
+	/tset/Xproto/OpenFont/OpenFont
 
 pPolyArc
 	"VSW5TESTSUITE CASE PolyArc 3"

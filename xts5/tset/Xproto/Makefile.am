@@ -86,7 +86,7 @@ tprogs = \
 	MapWindow/MapWindow \
 	NoOperation/NoOperation \
 	OpenDisplay/OpenDisplay \
-	opnfnt/opnfnt \
+	OpenFont/OpenFont \
 	plyarc/plyarc \
 	plyfllarc/plyfllarc \
 	plyfllrctn/plyfllrctn \
