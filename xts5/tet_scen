@@ -3820,7 +3820,7 @@ XtManageChildren
 
 XtManageChild
 	"VSW5TESTSUITE CASE XtManageChild 6"
-	/tset/Xt5/tmngchild/tmngchild
+	/tset/Xt5/XtManageChild/XtManageChild
 
 XtCreateManagedWidget
 	"VSW5TESTSUITE CASE XtCreateManagedWidget 16"
