@@ -80,7 +80,7 @@ tprogs = \
 	ListFonts/ListFonts \
 	ListFontsWithInfo/ListFontsWithInfo \
 	ListHosts/ListHosts \
-	lstinstlld/lstinstlld \
+	ListInstalledColormaps/ListInstalledColormaps \
 	lstprprts/lstprprts \
 	mpsbws/mpsbws \
 	mpwdw/mpwdw \
