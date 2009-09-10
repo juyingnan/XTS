@@ -10,7 +10,7 @@ CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
 	XCheckIfEvent/XCheckIfEvent \
-	chckmskevn/chckmskevn \
+	XCheckMaskEvent/XCheckMaskEvent \
 	chcktypdev/chcktypdev \
 	chcktypdwd/chcktypdwd \
 	chckwdwevn/chckwdwevn \

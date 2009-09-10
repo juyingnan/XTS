@@ -927,7 +927,7 @@ XCheckIfEvent
 
 XCheckMaskEvent
 	"VSW5TESTSUITE CASE XCheckMaskEvent 6"
-	/tset/Xlib12/chckmskevn/chckmskevn
+	/tset/Xlib12/XCheckMaskEvent/XCheckMaskEvent
 
 XCheckTypedEvent
 	"VSW5TESTSUITE CASE XCheckTypedEvent 6"
