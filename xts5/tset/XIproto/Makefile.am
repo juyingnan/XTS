@@ -22,7 +22,7 @@ tprogs = \
 	XGetFeedbackControl/XGetFeedbackControl \
 	XGetExtensionVersion/XGetExtensionVersion \
 	XGrabDevice/XGrabDevice \
-	grbdvbtn/grbdvbtn \
+	XGrabDeviceButton/XGrabDeviceButton \
 	grbdvky/grbdvky \
 	gtbtnmppn/gtbtnmppn \
 	gtdvctl/gtdvctl \

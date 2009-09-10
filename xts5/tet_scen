@@ -562,7 +562,7 @@ XGrabDevice
 
 XGrabDeviceButton
 	"VSW5TESTSUITE CASE XGrabDeviceButton 21"
-	/tset/XI/grbdvbtn/grbdvbtn
+	/tset/XI/XGrabDeviceButton/XGrabDeviceButton
 
 XGrabDeviceKey
 	"VSW5TESTSUITE CASE XGrabDeviceKey 21"

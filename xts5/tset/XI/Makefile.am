@@ -24,7 +24,7 @@ tprogs = \
 	XGetDeviceDontPropagateList/XGetDeviceDontPropagateList \
 	XGetExtensionVersion/XGetExtensionVersion \
 	XGrabDevice/XGrabDevice \
-	grbdvbtn/grbdvbtn \
+	XGrabDeviceButton/XGrabDeviceButton \
 	grbdvky/grbdvky \
 	gtbtnmppn/gtbtnmppn \
 	gtdvkmap/gtdvkmap \
