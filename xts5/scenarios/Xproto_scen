@@ -292,7 +292,7 @@
 	"VSW5TESTSUITE CASE UngrabServer 3"
 	/tset/Xproto/XUngrabServer/XUngrabServer
 	"VSW5TESTSUITE CASE UnmapSubwindows 3"
-	/tset/Xproto/UnmapSubwindows/UnmapSubwindows
+	/tset/Xproto/XUnmapSubwindows/XUnmapSubwindows
 	"VSW5TESTSUITE CASE UnmapWindow 3"
 	/tset/Xproto/UnmapWindow/UnmapWindow
 	"VSW5TESTSUITE CASE UninstallColormap 3"

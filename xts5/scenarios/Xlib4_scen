@@ -108,7 +108,7 @@
 	"VSW5TESTSUITE CASE XUndefineCursor 3"
 	/tset/Xlib4/XUndefineCursor/XUndefineCursor
 	"VSW5TESTSUITE CASE XUnmapSubwindows 5"
-	/tset/Xlib4/UnmapSubwindows/UnmapSubwindows
+	/tset/Xlib4/XUnmapSubwindows/XUnmapSubwindows
 	"VSW5TESTSUITE CASE XUnmapWindow 6"
 	/tset/Xlib4/UnmapWindow/UnmapWindow
 	"VSW5TESTSUITE CASE XVisualIDFromVisual 1"

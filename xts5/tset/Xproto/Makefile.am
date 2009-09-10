@@ -127,7 +127,7 @@ tprogs = \
 	XUngrabKeyboard/XUngrabKeyboard \
 	XUngrabPointer/XUngrabPointer \
 	XUngrabServer/XUngrabServer \
-	UnmapSubwindows/UnmapSubwindows \
+	XUnmapSubwindows/XUnmapSubwindows \
 	UnmapWindow/UnmapWindow \
 	XUninstallColormap/XUninstallColormap \
 	XWarpPointer/XWarpPointer
