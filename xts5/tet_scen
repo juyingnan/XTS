@@ -774,7 +774,7 @@ XSetAccessControl
 
 XSetScreenSaver
 	"VSW5TESTSUITE CASE XSetScreenSaver 17"
-	/tset/Xlib10/SetScreenSaver/SetScreenSaver
+	/tset/Xlib10/XSetScreenSaver/XSetScreenSaver
 
 XUngrabServer
 	"VSW5TESTSUITE CASE XUngrabServer 1"
@@ -3546,7 +3546,7 @@ pStoreNamedColor
 
 pSetScreenSaver
 	"VSW5TESTSUITE CASE SetScreenSaver 3"
-	/tset/Xproto/SetScreenSaver/SetScreenSaver
+	/tset/Xproto/XSetScreenSaver/XSetScreenSaver
 
 pSetSelectionOwner
 	"VSW5TESTSUITE CASE SetSelectionOwner 3"

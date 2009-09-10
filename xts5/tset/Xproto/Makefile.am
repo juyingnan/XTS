@@ -119,7 +119,7 @@ tprogs = \
 	SetPointerMapping/SetPointerMapping \
 	StoreColors/StoreColors \
 	StoreNamedColor/StoreNamedColor \
-	SetScreenSaver/SetScreenSaver \
+	XSetScreenSaver/XSetScreenSaver \
 	SetSelectionOwner/SetSelectionOwner \
 	TranslateCoords/TranslateCoords \
 	UngrabButton/UngrabButton \

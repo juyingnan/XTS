@@ -276,7 +276,7 @@
 	"VSW5TESTSUITE CASE StoreNamedColor 4"
 	/tset/Xproto/StoreNamedColor/StoreNamedColor
 	"VSW5TESTSUITE CASE SetScreenSaver 3"
-	/tset/Xproto/SetScreenSaver/SetScreenSaver
+	/tset/Xproto/XSetScreenSaver/XSetScreenSaver
 	"VSW5TESTSUITE CASE SetSelectionOwner 3"
 	/tset/Xproto/SetSelectionOwner/SetSelectionOwner
 	"VSW5TESTSUITE CASE TranslateCoords 3"

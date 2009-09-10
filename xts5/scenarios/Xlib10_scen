@@ -96,7 +96,7 @@
 	"VSW5TESTSUITE CASE XSetAccessControl 4"
 	/tset/Xlib10/XSetAccessControl/XSetAccessControl
 	"VSW5TESTSUITE CASE XSetScreenSaver 17"
-	/tset/Xlib10/SetScreenSaver/SetScreenSaver
+	/tset/Xlib10/XSetScreenSaver/XSetScreenSaver
 	"VSW5TESTSUITE CASE XUngrabServer 1"
 	/tset/Xlib10/UngrabServer/UngrabServer
 	"VSW5TESTSUITE CASE XUninstallColormap 5"

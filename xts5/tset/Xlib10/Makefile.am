@@ -29,6 +29,6 @@ tprogs = \
 	XReparentWindow/XReparentWindow \
 	XResetScreenSaver/XResetScreenSaver \
 	XSetAccessControl/XSetAccessControl \
-	SetScreenSaver/SetScreenSaver \
+	XSetScreenSaver/XSetScreenSaver \
 	UngrabServer/UngrabServer \
 	UninstallColormap/UninstallColormap
