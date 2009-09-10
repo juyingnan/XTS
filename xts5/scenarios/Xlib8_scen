@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE XCopyGC 5"
 	/tset/Xlib8/XCopyGC/XCopyGC
 	"VSW5TESTSUITE CASE XCreateGC 26"
-	/tset/Xlib8/CreateGC/CreateGC
+	/tset/Xlib8/XCreateGC/XCreateGC
 	"VSW5TESTSUITE CASE XFreeGC 2"
 	/tset/Xlib8/FreeGC/FreeGC
 	"VSW5TESTSUITE CASE XGContextFromGC 1"

@@ -36,7 +36,7 @@ tprogs = \
 	CirculateWindow/CirculateWindow \
 	XCreateColormap/XCreateColormap \
 	CreateCursor/CreateCursor \
-	CreateGC/CreateGC \
+	XCreateGC/XCreateGC \
 	XCreateGlyphCursor/XCreateGlyphCursor \
 	XCreatePixmap/XCreatePixmap \
 	XCreateWindow/XCreateWindow \

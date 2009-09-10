@@ -110,7 +110,7 @@
 	"VSW5TESTSUITE CASE CreateCursor 5"
 	/tset/Xproto/CreateCursor/CreateCursor
 	"VSW5TESTSUITE CASE CreateGC 6"
-	/tset/Xproto/CreateGC/CreateGC
+	/tset/Xproto/XCreateGC/XCreateGC
 	"VSW5TESTSUITE CASE CreateGlyphCursor 5"
 	/tset/Xproto/XCreateGlyphCursor/XCreateGlyphCursor
 	"VSW5TESTSUITE CASE CreatePixmap 5"

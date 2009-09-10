@@ -14,7 +14,7 @@ flushgc_flushgc_LDADD = $(TCM) $(XTS_LLIBS) $(XTS_LIBS) \
 tprogs = \
 	XChangeGC/XChangeGC \
 	XCopyGC/XCopyGC \
-	CreateGC/CreateGC \
+	XCreateGC/XCreateGC \
 	flushgc/flushgc \
 	FreeGC/FreeGC \
 	gcntxtfrmg/gcntxtfrmg \

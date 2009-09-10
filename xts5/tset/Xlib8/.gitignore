@@ -1,6 +1,6 @@
 XChangeGC/XChangeGC
 XCopyGC/XCopyGC
-CreateGC/CreateGC
+XCreateGC/XCreateGC
 flushgc/flushgc
 FreeGC/FreeGC
 gcntxtfrmg/gcntxtfrmg
