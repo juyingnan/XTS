@@ -4277,7 +4277,7 @@ XtCvtIntToPixel
 
 XtCvtIntToPixmap
 	"VSW5TESTSUITE CASE XtCvtIntToPixmap 3"
-	/tset/Xt11/tcinpixm/tcinpixm
+	/tset/Xt11/XtCvtIntToPixmap/XtCvtIntToPixmap
 
 XtCvtIntToPosition
 	"VSW5TESTSUITE CASE XtCvtIntToPosition 3"
