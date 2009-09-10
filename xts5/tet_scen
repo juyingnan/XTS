@@ -3714,7 +3714,7 @@ XtSetLanguageProc
 
 XtScreenDatabase
 	"VSW5TESTSUITE CASE XtScreenDatabase 1"
-	/tset/Xt4/tscrndtbs/tscrndtbs
+	/tset/Xt4/XtScreenDatabase/XtScreenDatabase
 
 XtDatabase
 	"VSW5TESTSUITE CASE XtDatabase 2"

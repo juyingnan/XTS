@@ -78,7 +78,7 @@
 	"VSW5TESTSUITE CASE XtSetLanguageProc 8"
 	/tset/Xt4/tstlnggprc/tstlnggprc
 	"VSW5TESTSUITE CASE XtScreenDatabase 1"
-	/tset/Xt4/tscrndtbs/tscrndtbs
+	/tset/Xt4/XtScreenDatabase/XtScreenDatabase
 	"VSW5TESTSUITE CASE XtDatabase 2"
 	/tset/Xt4/XtDatabase/XtDatabase
 	"VSW5TESTSUITE CASE XtAppSetFallbackResources 2"
