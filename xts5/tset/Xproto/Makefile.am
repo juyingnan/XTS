@@ -98,7 +98,7 @@ tprogs = \
 	PolyText8/PolyText8 \
 	PutImage/PutImage \
 	QueryBestSize/QueryBestSize \
-	qryclrs/qryclrs \
+	QueryColors/QueryColors \
 	qryextnsn/qryextnsn \
 	qryfnt/qryfnt \
 	qrykymp/qrykymp \

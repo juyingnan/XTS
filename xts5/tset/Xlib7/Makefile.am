@@ -64,7 +64,7 @@ tprogs = \
 	LookupColor/LookupColor \
 	prsclr/prsclr \
 	qryclr/qryclr \
-	qryclrs/qryclrs \
+	QueryColors/QueryColors \
 	strclr/strclr \
 	strclrs/strclrs \
 	strnmdclr/strnmdclr
