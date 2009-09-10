@@ -1415,7 +1415,7 @@ XGetWMHints
 
 XGetWMIconName
 	"VSW5TESTSUITE CASE XGetWMIconName 3"
-	/tset/Xlib15/gtwmicnnm/gtwmicnnm
+	/tset/Xlib15/XGetWMIconName/XGetWMIconName
 
 XGetWMName
 	"VSW5TESTSUITE CASE XGetWMName 3"

@@ -29,7 +29,7 @@ tprogs = \
 	XGetWMClientMachine/XGetWMClientMachine \
 	XGetWMColormapWindows/XGetWMColormapWindows \
 	XGetWMHints/XGetWMHints \
-	gtwmicnnm/gtwmicnnm \
+	XGetWMIconName/XGetWMIconName \
 	gtwmnm/gtwmnm \
 	gtwmnrmlhn/gtwmnrmlhn \
 	gtwmprtcls/gtwmprtcls \
