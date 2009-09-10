@@ -16,7 +16,7 @@ tprogs = \
 	XChangeDeviceDontPropagateList/XChangeDeviceDontPropagateList \
 	ChangePointerDevice/ChangePointerDevice \
 	ChangeDeviceKeyMapping/ChangeDeviceKeyMapping \
-	XCloseDevice/XCloseDevice \
+	CloseDevice/CloseDevice \
 	XDeviceBell/XDeviceBell \
 	XGetDeviceControl/XGetDeviceControl \
 	XGetFeedbackControl/XGetFeedbackControl \

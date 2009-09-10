@@ -530,7 +530,7 @@ XChangeDeviceKeyMapping
 
 XCloseDevice
 	"VSW5TESTSUITE CASE XCloseDevice 7"
-	/tset/XI/XCloseDevice/XCloseDevice
+	/tset/XI/CloseDevice/CloseDevice
 
 XDeviceBell
 	"VSW5TESTSUITE CASE XDeviceBell 6"

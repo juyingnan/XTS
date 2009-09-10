@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE ChangeDeviceKeyMapping 3"
 	/tset/XIproto/ChangeDeviceKeyMapping/ChangeDeviceKeyMapping
 	"VSW5TESTSUITE CASE CloseDevice 3"
-	/tset/XIproto/XCloseDevice/XCloseDevice
+	/tset/XIproto/CloseDevice/CloseDevice
 	"VSW5TESTSUITE CASE DeviceBell 3"
 	/tset/XIproto/XDeviceBell/XDeviceBell
 	"VSW5TESTSUITE CASE GetDeviceModifierMapping 3"
