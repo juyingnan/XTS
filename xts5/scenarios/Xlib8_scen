@@ -104,7 +104,7 @@
 	"VSW5TESTSUITE CASE XSetSubwindowMode 4"
 	/tset/Xlib8/XSetSubwindowMode/XSetSubwindowMode
 	"VSW5TESTSUITE CASE XSetStipple 6"
-	/tset/Xlib8/ststppl/ststppl
+	/tset/Xlib8/XSetStipple/XSetStipple
 	"VSW5TESTSUITE CASE XSetState 4"
 	/tset/Xlib8/ststt/ststt
 	"VSW5TESTSUITE CASE XSetTile 6"

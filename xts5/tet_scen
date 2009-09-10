@@ -2861,7 +2861,7 @@ XSetSubwindowMode
 
 XSetStipple
 	"VSW5TESTSUITE CASE XSetStipple 6"
-	/tset/Xlib8/ststppl/ststppl
+	/tset/Xlib8/XSetStipple/XSetStipple
 
 XSetState
 	"VSW5TESTSUITE CASE XSetState 4"

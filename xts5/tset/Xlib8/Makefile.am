@@ -37,7 +37,7 @@ tprogs = \
 	XSetLineAttributes/XSetLineAttributes \
 	XSetPlaneMask/XSetPlaneMask \
 	XSetSubwindowMode/XSetSubwindowMode \
-	ststppl/ststppl \
+	XSetStipple/XSetStipple \
 	ststt/ststt \
 	sttl/sttl \
 	sttsorgn/sttsorgn
