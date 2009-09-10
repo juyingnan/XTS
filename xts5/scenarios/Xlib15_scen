@@ -120,7 +120,7 @@
 	"VSW5TESTSUITE CASE XSetTransientForHint 3"
 	/tset/Xlib15/XSetTransientForHint/XSetTransientForHint
 	"VSW5TESTSUITE CASE XSetTextProperty 5"
-	/tset/Xlib15/sttxtprprt/sttxtprprt
+	/tset/Xlib15/XSetTextProperty/XSetTextProperty
 	"VSW5TESTSUITE CASE XSetWMClientMachine 5"
 	/tset/Xlib15/stwmclntmc/stwmclntmc
 	"VSW5TESTSUITE CASE XSetWMColormapWindows 4"

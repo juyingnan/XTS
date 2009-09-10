@@ -44,7 +44,7 @@ tprogs = \
 	XStringListToTextProperty/XStringListToTextProperty \
 	XStoreName/XStoreName \
 	XSetTransientForHint/XSetTransientForHint \
-	sttxtprprt/sttxtprprt \
+	XSetTextProperty/XSetTextProperty \
 	stwmclntmc/stwmclntmc \
 	stwmclrmpw/stwmclrmpw \
 	stwmhnts/stwmhnts \

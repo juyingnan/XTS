@@ -1475,7 +1475,7 @@ XSetTransientForHint
 
 XSetTextProperty
 	"VSW5TESTSUITE CASE XSetTextProperty 5"
-	/tset/Xlib15/sttxtprprt/sttxtprprt
+	/tset/Xlib15/XSetTextProperty/XSetTextProperty
 
 XSetWMClientMachine
 	"VSW5TESTSUITE CASE XSetWMClientMachine 5"
