@@ -28,7 +28,7 @@ tprogs = \
 	KeymapNotify/KeymapNotify \
 	KeyPress/KeyPress \
 	KeyRelease/KeyRelease \
-	lvntfy/lvntfy \
+	LeaveNotify/LeaveNotify \
 	mpntfy/mpntfy \
 	mppngntfy/mppngntfy \
 	mprqst/mprqst \

@@ -94,7 +94,7 @@
 	"VSW5TESTSUITE CASE KeyRelease 9"
 	/tset/Xlib11/KeyRelease/KeyRelease
 	"VSW5TESTSUITE CASE LeaveNotify 15"
-	/tset/Xlib11/lvntfy/lvntfy
+	/tset/Xlib11/LeaveNotify/LeaveNotify
 	"VSW5TESTSUITE CASE MapNotify 4"
 	/tset/Xlib11/mpntfy/mpntfy
 	"VSW5TESTSUITE CASE MappingNotify 1"
