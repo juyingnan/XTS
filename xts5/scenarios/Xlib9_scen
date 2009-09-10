@@ -108,7 +108,7 @@
 	"VSW5TESTSUITE CASE XFreeFontInfo 2"
 	/tset/Xlib9/XFreeFontInfo/XFreeFontInfo
 	"VSW5TESTSUITE CASE XFreeFontNames 1"
-	/tset/Xlib9/frfntnms/frfntnms
+	/tset/Xlib9/XFreeFontNames/XFreeFontNames
 	"VSW5TESTSUITE CASE XFreeFontPath 1"
 	/tset/Xlib9/frfntpth/frfntpth
 	"VSW5TESTSUITE CASE XGetFontProperty 2"
