@@ -59,7 +59,7 @@
 #
 
 	"VSW5TESTSUITE CASE XtGetErrorDatabase 1"
-	/tset/XtC/tgterrdbs/tgterrdbs
+	/tset/XtC/XtGetErrorDatabase/XtGetErrorDatabase
 	"VSW5TESTSUITE CASE XtGetErrorDatabaseText 2"
 	/tset/XtC/tgterrdbt/tgterrdbt
 	"VSW5TESTSUITE CASE XtInitialize 27"

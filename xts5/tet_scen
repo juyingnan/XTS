@@ -4631,7 +4631,7 @@ XtSpecificationRelease
 
 XtGetErrorDatabase
 	"VSW5TESTSUITE CASE XtGetErrorDatabase 1"
-	/tset/XtC/tgterrdbs/tgterrdbs
+	/tset/XtC/XtGetErrorDatabase/XtGetErrorDatabase
 
 XtGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XtGetErrorDatabaseText 2"
