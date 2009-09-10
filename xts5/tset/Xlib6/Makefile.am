@@ -15,5 +15,5 @@ tprogs = \
 	XCreatePixmapCursor/XCreatePixmapCursor \
 	XFreeCursor/XFreeCursor \
 	XFreePixmap/XFreePixmap \
-	qrybstcrsr/qrybstcrsr \
+	XQueryBestCursor/XQueryBestCursor \
 	RecolorCursor/RecolorCursor

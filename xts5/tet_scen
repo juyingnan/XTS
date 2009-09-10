@@ -2520,7 +2520,7 @@ XFreePixmap
 
 XQueryBestCursor
 	"VSW5TESTSUITE CASE XQueryBestCursor 2"
-	/tset/Xlib6/qrybstcrsr/qrybstcrsr
+	/tset/Xlib6/XQueryBestCursor/XQueryBestCursor
 
 XRecolorCursor
 	"VSW5TESTSUITE CASE XRecolorCursor 3"
