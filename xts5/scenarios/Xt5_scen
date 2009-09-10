@@ -65,7 +65,7 @@
 	"VSW5TESTSUITE CASE XtCreateManagedWidget 15"
 	/tset/Xt5/XtCreateManagedWidget/XtCreateManagedWidget
 	"VSW5TESTSUITE CASE XtVaCreateManagedWidget 19"
-	/tset/Xt5/tvacrmwdt/tvacrmwdt
+	/tset/Xt5/XtVaCreateManagedWidget/XtVaCreateManagedWidget
 	"VSW5TESTSUITE CASE XtUnmanageChildren 8"
 	/tset/Xt5/XtUnmanageChildren/XtUnmanageChildren
 	"VSW5TESTSUITE CASE XtUnmanageChild 7"
