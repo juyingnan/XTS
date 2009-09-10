@@ -118,7 +118,7 @@
 	"VSW5TESTSUITE CASE XcmsFormatOfPrefix 2"
 	/tset/Xlib7/XcmsFormatOfPrefix/XcmsFormatOfPrefix
 	"VSW5TESTSUITE CASE XcmsLookupColor 1"
-	/tset/Xlib7/cmslkcl/cmslkcl
+	/tset/Xlib7/XcmsLookupColor/XcmsLookupColor
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMinL 1"
 	/tset/Xlib7/cmslqml/cmslqml
 	"VSW5TESTSUITE CASE XcmsPrefixOfFormat 1"

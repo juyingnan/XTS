@@ -30,7 +30,7 @@ tprogs = \
 	XcmsDisplayOfCCC/XcmsDisplayOfCCC \
 	XcmsFreeCCC/XcmsFreeCCC \
 	XcmsFormatOfPrefix/XcmsFormatOfPrefix \
-	cmslkcl/cmslkcl \
+	XcmsLookupColor/XcmsLookupColor \
 	cmslqml/cmslqml \
 	cmspoft/cmspoft \
 	cmsqbk/cmsqbk \

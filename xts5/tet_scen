@@ -2655,7 +2655,7 @@ XcmsFormatOfPrefix
 
 XcmsLookupColor
 	"VSW5TESTSUITE CASE XcmsLookupColor 1"
-	/tset/Xlib7/cmslkcl/cmslkcl
+	/tset/Xlib7/XcmsLookupColor/XcmsLookupColor
 
 XcmsCIELabQueryMinL
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMinL 1"
