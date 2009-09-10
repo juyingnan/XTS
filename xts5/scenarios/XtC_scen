@@ -101,7 +101,7 @@
 	"VSW5TESTSUITE CASE XtGetSelectionTimeout 2"
 	/tset/XtC/XtGetSelectionTimeout/XtGetSelectionTimeout
 	"VSW5TESTSUITE CASE XtSetErrorMsgHandler 1"
-	/tset/XtC/tsterrmhd/tsterrmhd
+	/tset/XtC/XtSetErrorMsgHandler/XtSetErrorMsgHandler
 	"VSW5TESTSUITE CASE XtErrorMsg 3"
 	/tset/XtC/XtErrorMsg/XtErrorMsg
 	"VSW5TESTSUITE CASE XtSetWarningHandler 1"
