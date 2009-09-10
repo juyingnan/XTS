@@ -57,7 +57,7 @@ tprogs = \
 	XGrabServer/XGrabServer \
 	XGetAtomName/XGetAtomName \
 	GetFontPath/GetFontPath \
-	GetGeometry/GetGeometry \
+	XGetGeometry/XGetGeometry \
 	GetImage/GetImage \
 	XGetInputFocus/XGetInputFocus \
 	XGetKeyboardControl/XGetKeyboardControl \

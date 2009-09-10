@@ -2449,7 +2449,7 @@ XGetAtomName
 
 XGetGeometry
 	"VSW5TESTSUITE CASE XGetGeometry 4"
-	/tset/Xlib5/GetGeometry/GetGeometry
+	/tset/Xlib5/XGetGeometry/XGetGeometry
 
 XGetSelectionOwner
 	"VSW5TESTSUITE CASE XGetSelectionOwner 3"
@@ -3298,7 +3298,7 @@ pGetFontPath
 
 pGetGeometry
 	"VSW5TESTSUITE CASE GetGeometry 3"
-	/tset/Xproto/GetGeometry/GetGeometry
+	/tset/Xproto/XGetGeometry/XGetGeometry
 
 pGetImage
 	"VSW5TESTSUITE CASE GetImage 3"

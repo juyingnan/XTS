@@ -13,7 +13,7 @@ tprogs = \
 	XConvertSelection/XConvertSelection \
 	XDeleteProperty/XDeleteProperty \
 	XGetAtomName/XGetAtomName \
-	GetGeometry/GetGeometry \
+	XGetGeometry/XGetGeometry \
 	GetSelectionOwner/GetSelectionOwner \
 	GetWindowAttributes/GetWindowAttributes \
 	gtwdwprprt/gtwdwprprt \

@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE XGetAtomName 2"
 	/tset/Xlib5/XGetAtomName/XGetAtomName
 	"VSW5TESTSUITE CASE XGetGeometry 4"
-	/tset/Xlib5/GetGeometry/GetGeometry
+	/tset/Xlib5/XGetGeometry/XGetGeometry
 	"VSW5TESTSUITE CASE XGetSelectionOwner 3"
 	/tset/Xlib5/GetSelectionOwner/GetSelectionOwner
 	"VSW5TESTSUITE CASE XGetWindowAttributes 3"
