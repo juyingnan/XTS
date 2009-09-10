@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
 	XAllocColor/XAllocColor \
-	AllocColorCells/AllocColorCells \
+	XAllocColorCells/XAllocColorCells \
 	AllocColorPlanes/AllocColorPlanes \
 	XAllocNamedColor/XAllocNamedColor \
 	cmsac/cmsac \
