@@ -16,7 +16,7 @@ tprogs = \
 	XChangeKeyboardDevice/XChangeKeyboardDevice \
 	XChangePointerDevice/XChangePointerDevice \
 	XChangeDeviceKeyMapping/XChangeDeviceKeyMapping \
-	closdev/closdev \
+	XCloseDevice/XCloseDevice \
 	dvbell/dvbell \
 	getdvmmap/getdvmmap \
 	getfctl/getfctl \

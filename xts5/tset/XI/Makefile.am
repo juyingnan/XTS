@@ -16,7 +16,7 @@ tprogs = \
 	XChangeDeviceDontPropagateList/XChangeDeviceDontPropagateList \
 	XChangePointerDevice/XChangePointerDevice \
 	XChangeDeviceKeyMapping/XChangeDeviceKeyMapping \
-	closdev/closdev \
+	XCloseDevice/XCloseDevice \
 	dvbell/dvbell \
 	getdctl/getdctl \
 	getfctl/getfctl \

@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE XChangeDeviceKeyMapping 7"
 	/tset/XI/XChangeDeviceKeyMapping/XChangeDeviceKeyMapping
 	"VSW5TESTSUITE CASE XCloseDevice 7"
-	/tset/XI/closdev/closdev
+	/tset/XI/XCloseDevice/XCloseDevice
 	"VSW5TESTSUITE CASE XDeviceBell 6"
 	/tset/XI/dvbell/dvbell
 	"VSW5TESTSUITE CASE XGetDeviceControl 4"
