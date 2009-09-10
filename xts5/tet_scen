@@ -4427,7 +4427,7 @@ XtTranslateKeycode
 
 XtRegisterCaseConverter
 	"VSW5TESTSUITE CASE XtRegisterCaseConverter 2"
-	/tset/Xt12/tregccon/tregccon
+	/tset/Xt12/XtRegisterCaseConverter/XtRegisterCaseConverter
 
 XtConvertCase
 	"VSW5TESTSUITE CASE XtConvertCase 2"
