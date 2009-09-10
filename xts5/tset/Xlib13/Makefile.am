@@ -24,7 +24,7 @@ tprogs = \
 	GrabKey/GrabKey \
 	GrabKeyboard/GrabKeyboard \
 	GrabPointer/GrabPointer \
-	GetInputFocus/GetInputFocus \
+	XGetInputFocus/XGetInputFocus \
 	GetKeyboardControl/GetKeyboardControl \
 	GetKeyboardMapping/GetKeyboardMapping \
 	GetModifierMapping/GetModifierMapping \

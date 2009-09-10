@@ -156,7 +156,7 @@
 	"VSW5TESTSUITE CASE GetImage 3"
 	/tset/Xproto/GetImage/GetImage
 	"VSW5TESTSUITE CASE GetInputFocus 3"
-	/tset/Xproto/GetInputFocus/GetInputFocus
+	/tset/Xproto/XGetInputFocus/XGetInputFocus
 	"VSW5TESTSUITE CASE GetKeyboardControl 3"
 	/tset/Xproto/GetKeyboardControl/GetKeyboardControl
 	"VSW5TESTSUITE CASE GetKeyboardMapping 3"

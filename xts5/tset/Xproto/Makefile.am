@@ -59,7 +59,7 @@ tprogs = \
 	GetFontPath/GetFontPath \
 	GetGeometry/GetGeometry \
 	GetImage/GetImage \
-	GetInputFocus/GetInputFocus \
+	XGetInputFocus/XGetInputFocus \
 	GetKeyboardControl/GetKeyboardControl \
 	GetKeyboardMapping/GetKeyboardMapping \
 	GetModifierMapping/GetModifierMapping \

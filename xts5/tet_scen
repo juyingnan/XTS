@@ -1094,7 +1094,7 @@ XGrabPointer
 
 XGetInputFocus
 	"VSW5TESTSUITE CASE XGetInputFocus 1"
-	/tset/Xlib13/GetInputFocus/GetInputFocus
+	/tset/Xlib13/XGetInputFocus/XGetInputFocus
 
 XGetKeyboardControl
 	"VSW5TESTSUITE CASE XGetKeyboardControl 1"
@@ -3306,7 +3306,7 @@ pGetImage
 
 pGetInputFocus
 	"VSW5TESTSUITE CASE GetInputFocus 3"
-	/tset/Xproto/GetInputFocus/GetInputFocus
+	/tset/Xproto/XGetInputFocus/XGetInputFocus
 
 pGetKeyboardControl
 	"VSW5TESTSUITE CASE GetKeyboardControl 3"
