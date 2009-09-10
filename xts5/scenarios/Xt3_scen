@@ -95,7 +95,7 @@
 	"VSW5TESTSUITE CASE XtIsTopLevelShell 2"
 	/tset/Xt3/tistplvlsh/tistplvlsh
 	"VSW5TESTSUITE CASE XtIsApplicationShell 2"
-	/tset/Xt3/tisapplctn/tisapplctn
+	/tset/Xt3/XtIsApplicationShell/XtIsApplicationShell
 	"VSW5TESTSUITE CASE XtCheckSubclass 3"
 	/tset/Xt3/XtCheckSubclass/XtCheckSubclass
 	"VSW5TESTSUITE CASE XtInitializeWidgetClass 2"

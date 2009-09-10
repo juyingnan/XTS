@@ -3668,7 +3668,7 @@ XtIsTopLevelShell
 
 XtIsApplicationShell
 	"VSW5TESTSUITE CASE XtIsApplicationShell 2"
-	/tset/Xt3/tisapplctn/tisapplctn
+	/tset/Xt3/XtIsApplicationShell/XtIsApplicationShell
 
 XtCheckSubclass
 	"VSW5TESTSUITE CASE XtCheckSubclass 3"
