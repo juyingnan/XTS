@@ -14,7 +14,7 @@ tprogs = \
 	XAllocClassHint/XAllocClassHint \
 	XAllocIconSize/XAllocIconSize \
 	XAllocStandardColormap/XAllocStandardColormap \
-	allcszhnts/allcszhnts \
+	XAllocSizeHints/XAllocSizeHints \
 	allcwmhnts/allcwmhnts \
 	defstr/defstr \
 	frstrlst/frstrlst \

@@ -62,7 +62,7 @@
 	"VSW5TESTSUITE CASE XAllocStandardColormap 2"
 	/tset/Xlib15/XAllocStandardColormap/XAllocStandardColormap
 	"VSW5TESTSUITE CASE XAllocSizeHints 2"
-	/tset/Xlib15/allcszhnts/allcszhnts
+	/tset/Xlib15/XAllocSizeHints/XAllocSizeHints
 	"VSW5TESTSUITE CASE XAllocWMHints 2"
 	/tset/Xlib15/allcwmhnts/allcwmhnts
 	"VSW5TESTSUITE CASE XFreeStringList 1"
