@@ -120,7 +120,7 @@
 	"VSW5TESTSUITE CASE XPolygonRegion 1"
 	/tset/Xlib17/XPolygonRegion/XPolygonRegion
 	"VSW5TESTSUITE CASE XPointInRegion 2"
-	/tset/Xlib17/pntinrgn/pntinrgn
+	/tset/Xlib17/XPointInRegion/XPointInRegion
 	"VSW5TESTSUITE CASE Xpermalloc 2"
 	/tset/Xlib17/prmllc/prmllc
 	"VSW5TESTSUITE CASE XParseGeometry 3"

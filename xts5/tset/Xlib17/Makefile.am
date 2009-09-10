@@ -41,7 +41,7 @@ tprogs = \
 	XMatchVisualInfo/XMatchVisualInfo \
 	XOffsetRegion/XOffsetRegion \
 	XPolygonRegion/XPolygonRegion \
-	pntinrgn/pntinrgn \
+	XPointInRegion/XPointInRegion \
 	prmllc/prmllc \
 	prsgmtry/prsgmtry \
 	ptpxl/ptpxl \
