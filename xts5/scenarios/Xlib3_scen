@@ -138,7 +138,7 @@
 	"VSW5TESTSUITE CASE XNoOp 1"
 	/tset/Xlib3/XNoOp/XNoOp
 	"VSW5TESTSUITE CASE XNextRequest 2"
-	/tset/Xlib3/nxtrqst/nxtrqst
+	/tset/Xlib3/XNextRequest/XNextRequest
 	"VSW5TESTSUITE CASE XOpenDisplay 10"
 	/tset/Xlib3/OpenDisplay/OpenDisplay
 	"VSW5TESTSUITE CASE XPlanesOfScreen 1"
@@ -244,7 +244,7 @@
 	"VSW5TESTSUITE CASE MaxCmapsOfScreen 1"
 	/tset/Xlib3/XMaxCmapsOfScreen/XMaxCmapsOfScreen_m
 	"VSW5TESTSUITE CASE NextRequest 2"
-	/tset/Xlib3/nxtrqst/nxtrqst_m
+	/tset/Xlib3/XNextRequest/XNextRequest_m
 	"VSW5TESTSUITE CASE PlanesOfScreen 1"
 	/tset/Xlib3/plnsofscrn/plnsofscrn_m
 	"VSW5TESTSUITE CASE ProtocolRevision 1"

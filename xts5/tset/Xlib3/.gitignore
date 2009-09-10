@@ -75,8 +75,8 @@ XMinCmapsOfScreen/XMinCmapsOfScreen_m
 XMaxCmapsOfScreen/XMaxCmapsOfScreen
 XMaxCmapsOfScreen/XMaxCmapsOfScreen_m
 XNoOp/XNoOp
-nxtrqst/nxtrqst
-nxtrqst/nxtrqst_m
+XNextRequest/XNextRequest
+XNextRequest/XNextRequest_m
 opndsply/Test1
 OpenDisplay/OpenDisplay
 plnsofscrn/plnsofscrn

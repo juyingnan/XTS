@@ -2039,7 +2039,7 @@ XNoOp
 
 XNextRequest
 	"VSW5TESTSUITE CASE XNextRequest 2"
-	/tset/Xlib3/nxtrqst/nxtrqst
+	/tset/Xlib3/XNextRequest/XNextRequest
 
 XOpenDisplay
 	"VSW5TESTSUITE CASE XOpenDisplay 10"
@@ -2251,7 +2251,7 @@ MaxCmapsOfScreen
 
 NextRequest
 	"VSW5TESTSUITE CASE NextRequest 2"
-	/tset/Xlib3/nxtrqst/nxtrqst_m
+	/tset/Xlib3/XNextRequest/XNextRequest_m
 
 PlanesOfScreen
 	"VSW5TESTSUITE CASE PlanesOfScreen 1"

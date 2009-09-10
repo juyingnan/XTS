@@ -50,7 +50,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XMinCmapsOfScreen/XMinCmapsOfScreen XMinCmapsOfScreen/XMinCmapsOfScreen_m \
 	XMaxCmapsOfScreen/XMaxCmapsOfScreen XMaxCmapsOfScreen/XMaxCmapsOfScreen_m \
 	XNoOp/XNoOp \
-	nxtrqst/nxtrqst nxtrqst/nxtrqst_m \
+	XNextRequest/XNextRequest XNextRequest/XNextRequest_m \
 	OpenDisplay/OpenDisplay \
 	plnsofscrn/plnsofscrn plnsofscrn/plnsofscrn_m \
 	prtclrvsn/prtclrvsn prtclrvsn/prtclrvsn_m \
