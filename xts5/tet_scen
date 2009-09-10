@@ -762,7 +762,7 @@ XRemoveHosts
 
 XReparentWindow
 	"VSW5TESTSUITE CASE XReparentWindow 13"
-	/tset/Xlib10/ReparentWindow/ReparentWindow
+	/tset/Xlib10/XReparentWindow/XReparentWindow
 
 XResetScreenSaver
 	"VSW5TESTSUITE CASE XResetScreenSaver 2"
@@ -3494,7 +3494,7 @@ pRecolorCursor
 
 pReparentWindow
 	"VSW5TESTSUITE CASE ReparentWindow 3"
-	/tset/Xproto/ReparentWindow/ReparentWindow
+	/tset/Xproto/XReparentWindow/XReparentWindow
 
 pRotateProperties
 	"VSW5TESTSUITE CASE RotateProperties 3"

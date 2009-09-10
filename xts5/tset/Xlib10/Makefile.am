@@ -26,7 +26,7 @@ tprogs = \
 	rmvfrmsvst/rmvfrmsvst \
 	rmvhst/rmvhst \
 	rmvhsts/rmvhsts \
-	ReparentWindow/ReparentWindow \
+	XReparentWindow/XReparentWindow \
 	rstscrnsvr/rstscrnsvr \
 	SetAccessControl/SetAccessControl \
 	SetScreenSaver/SetScreenSaver \

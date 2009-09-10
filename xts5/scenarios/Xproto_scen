@@ -250,7 +250,7 @@
 	"VSW5TESTSUITE CASE RecolorCursor 3"
 	/tset/Xproto/RecolorCursor/RecolorCursor
 	"VSW5TESTSUITE CASE ReparentWindow 3"
-	/tset/Xproto/ReparentWindow/ReparentWindow
+	/tset/Xproto/XReparentWindow/XReparentWindow
 	"VSW5TESTSUITE CASE RotateProperties 3"
 	/tset/Xproto/RotateProperties/RotateProperties
 	"VSW5TESTSUITE CASE SendEvent 3"

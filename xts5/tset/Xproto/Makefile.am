@@ -106,7 +106,7 @@ tprogs = \
 	QueryTree/QueryTree \
 	QueryTextExtents/QueryTextExtents \
 	RecolorCursor/RecolorCursor \
-	ReparentWindow/ReparentWindow \
+	XReparentWindow/XReparentWindow \
 	RotateProperties/RotateProperties \
 	SendEvent/SendEvent \
 	SetAccessControl/SetAccessControl \
