@@ -33,7 +33,7 @@ tprogs = \
 	insrtmdfrm/insrtmdfrm \
 	nwmdfrmp/nwmdfrmp \
 	QueryKeymap/QueryKeymap \
-	stinptfcs/stinptfcs \
+	SetInputFocus/SetInputFocus \
 	stmdfrmppn/stmdfrmppn \
 	stpntrmppn/stpntrmppn \
 	ungrbbttn/ungrbbttn \

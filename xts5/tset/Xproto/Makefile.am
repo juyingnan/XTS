@@ -114,7 +114,7 @@ tprogs = \
 	SetCloseDownMode/SetCloseDownMode \
 	SetDashes/SetDashes \
 	SetFontPath/SetFontPath \
-	stinptfcs/stinptfcs \
+	SetInputFocus/SetInputFocus \
 	stmdfrmppn/stmdfrmppn \
 	stpntrmppn/stpntrmppn \
 	strclrs/strclrs \
