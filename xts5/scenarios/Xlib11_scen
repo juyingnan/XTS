@@ -88,7 +88,7 @@
 	"VSW5TESTSUITE CASE GravityNotify 3"
 	/tset/Xlib11/GravityNotify/GravityNotify
 	"VSW5TESTSUITE CASE KeymapNotify 4"
-	/tset/Xlib11/kympntfy/kympntfy
+	/tset/Xlib11/KeymapNotify/KeymapNotify
 	"VSW5TESTSUITE CASE KeyPress 9"
 	/tset/Xlib11/kyprss/kyprss
 	"VSW5TESTSUITE CASE KeyRelease 9"

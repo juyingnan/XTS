@@ -852,7 +852,7 @@ GravityNotify
 
 KeymapNotify
 	"VSW5TESTSUITE CASE KeymapNotify 4"
-	/tset/Xlib11/kympntfy/kympntfy
+	/tset/Xlib11/KeymapNotify/KeymapNotify
 
 KeyPress
 	"VSW5TESTSUITE CASE KeyPress 9"
