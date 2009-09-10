@@ -4589,7 +4589,7 @@ XtAppSetErrorHandler
 
 XtAppError
 	"VSW5TESTSUITE CASE XtAppError 3"
-	/tset/Xt13/taperror/taperror
+	/tset/Xt13/XtAppError/XtAppError
 
 XtAppSetWarningHandler
 	"VSW5TESTSUITE CASE XtAppSetWarningHandler 2"
