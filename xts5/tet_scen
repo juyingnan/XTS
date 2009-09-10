@@ -1328,7 +1328,7 @@ XwcTextEscapement
 
 XwcTextListToTextProperty
 	"VSW5TESTSUITE CASE XwcTextListToTextProperty 1"
-	/tset/Xlib14/wctlttp/wctlttp
+	/tset/Xlib14/XwcTextListToTextProperty/XwcTextListToTextProperty
 
 XwcTextPerCharExtents
 	"VSW5TESTSUITE CASE XwcTextPerCharExtents 1"

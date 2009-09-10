@@ -138,7 +138,7 @@
 	"VSW5TESTSUITE CASE XwcTextEscapement 1"
 	/tset/Xlib14/XwcTextEscapement/XwcTextEscapement
 	"VSW5TESTSUITE CASE XwcTextListToTextProperty 1"
-	/tset/Xlib14/wctlttp/wctlttp
+	/tset/Xlib14/XwcTextListToTextProperty/XwcTextListToTextProperty
 	"VSW5TESTSUITE CASE XwcTextPerCharExtents 1"
 	/tset/Xlib14/wctpcex/wctpcex
 	"VSW5TESTSUITE CASE XwcTextPropertyToTextList 1"

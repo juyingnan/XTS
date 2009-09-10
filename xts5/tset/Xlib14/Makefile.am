@@ -51,7 +51,7 @@ tprogs = \
 	XwcLookupString/XwcLookupString \
 	XwcResetIC/XwcResetIC \
 	XwcTextEscapement/XwcTextEscapement \
-	wctlttp/wctlttp \
+	XwcTextListToTextProperty/XwcTextListToTextProperty \
 	wctpcex/wctpcex \
 	wctpttl/wctpttl \
 	wctxtex/wctxtex
