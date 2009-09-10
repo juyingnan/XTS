@@ -4028,7 +4028,7 @@ XtCallAcceptFocus
 
 XtAppPending
 	"VSW5TESTSUITE CASE XtAppPending 5"
-	/tset/Xt9/tappendng/tappendng
+	/tset/Xt9/XtAppPending/XtAppPending
 
 XtAppPeekEvent
 	"VSW5TESTSUITE CASE XtAppPeekEvent 3"
