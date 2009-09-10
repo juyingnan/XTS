@@ -558,7 +558,7 @@ XGetExtensionVersion
 
 XGrabDevice
 	"VSW5TESTSUITE CASE XGrabDevice 18"
-	/tset/XI/grbdev/grbdev
+	/tset/XI/XGrabDevice/XGrabDevice
 
 XGrabDeviceButton
 	"VSW5TESTSUITE CASE XGrabDeviceButton 21"

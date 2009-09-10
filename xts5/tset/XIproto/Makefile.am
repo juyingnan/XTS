@@ -21,7 +21,7 @@ tprogs = \
 	getdvmmap/getdvmmap \
 	XGetFeedbackControl/XGetFeedbackControl \
 	XGetExtensionVersion/XGetExtensionVersion \
-	grbdev/grbdev \
+	XGrabDevice/XGrabDevice \
 	grbdvbtn/grbdvbtn \
 	grbdvky/grbdvky \
 	gtbtnmppn/gtbtnmppn \
