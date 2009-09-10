@@ -796,7 +796,7 @@ ButtonRelease
 
 ClientMessage
 	"VSW5TESTSUITE CASE ClientMessage 1"
-	/tset/Xlib11/clntmssg/clntmssg
+	/tset/Xlib11/ClientMessage/ClientMessage
 
 ColormapNotify
 	"VSW5TESTSUITE CASE ColormapNotify 2"

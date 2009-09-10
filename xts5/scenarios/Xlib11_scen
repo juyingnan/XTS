@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE ButtonRelease 9"
 	/tset/Xlib11/ButtonRelease/ButtonRelease
 	"VSW5TESTSUITE CASE ClientMessage 1"
-	/tset/Xlib11/clntmssg/clntmssg
+	/tset/Xlib11/ClientMessage/ClientMessage
 	"VSW5TESTSUITE CASE ColormapNotify 2"
 	/tset/Xlib11/clrmpntfy/clrmpntfy
 	"VSW5TESTSUITE CASE ConfigureNotify 3"

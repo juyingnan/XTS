@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = \
 	ButtonPress/ButtonPress \
 	ButtonRelease/ButtonRelease \
-	clntmssg/clntmssg \
+	ClientMessage/ClientMessage \
 	clrmpntfy/clrmpntfy \
 	cnfgrntfy/cnfgrntfy \
 	cnfgrrqst/cnfgrrqst \
