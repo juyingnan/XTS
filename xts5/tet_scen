@@ -1288,7 +1288,7 @@ XSupportsLocale
 
 XSetLocaleModifiers
 	"VSW5TESTSUITE CASE XSetLocaleModifiers 1"
-	/tset/Xlib14/stlmod/stlmod
+	/tset/Xlib14/XSetLocaleModifiers/XSetLocaleModifiers
 
 XUnsetICFocus
 	"VSW5TESTSUITE CASE XUnsetICFocus 1"

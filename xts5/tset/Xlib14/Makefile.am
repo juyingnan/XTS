@@ -41,7 +41,7 @@ tprogs = \
 	XSetICFocus/XSetICFocus \
 	XSetICValues/XSetICValues \
 	XSupportsLocale/XSupportsLocale \
-	stlmod/stlmod \
+	XSetLocaleModifiers/XSetLocaleModifiers \
 	uicfoc/uicfoc \
 	vcnlist/vcnlist \
 	wcdistr/wcdistr \
