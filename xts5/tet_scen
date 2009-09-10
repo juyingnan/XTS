@@ -2825,7 +2825,7 @@ XSetDashes
 
 XSetFillRule
 	"VSW5TESTSUITE CASE XSetFillRule 4"
-	/tset/Xlib8/stfllrl/stfllrl
+	/tset/Xlib8/XSetFillRule/XSetFillRule
 
 XSetFillStyle
 	"VSW5TESTSUITE CASE XSetFillStyle 4"

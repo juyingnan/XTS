@@ -28,7 +28,7 @@ tprogs = \
 	XSetClipOrigin/XSetClipOrigin \
 	XSetClipRectangles/XSetClipRectangles \
 	XSetDashes/XSetDashes \
-	stfllrl/stfllrl \
+	XSetFillRule/XSetFillRule \
 	stfllstyl/stfllstyl \
 	stfnctn/stfnctn \
 	stfnt/stfnt \
