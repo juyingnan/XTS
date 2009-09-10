@@ -63,7 +63,7 @@
 	"VSW5TESTSUITE CASE XtRemoveInput 1"
 	/tset/Xt9/trminput/trminput
 	"VSW5TESTSUITE CASE XtAppAddTimeOut 3"
-	/tset/Xt9/tapatmout/tapatmout
+	/tset/Xt9/XtAppAddTimeOut/XtAppAddTimeOut
 	"VSW5TESTSUITE CASE XtRemoveTimeOut 1"
 	/tset/Xt9/trmtmout/trmtmout
 	"VSW5TESTSUITE CASE XtAddGrab 5"

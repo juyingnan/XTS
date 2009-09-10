@@ -3972,7 +3972,7 @@ XtRemoveInput
 
 XtAppAddTimeOut
 	"VSW5TESTSUITE CASE XtAppAddTimeOut 3"
-	/tset/Xt9/tapatmout/tapatmout
+	/tset/Xt9/XtAppAddTimeOut/XtAppAddTimeOut
 
 XtRemoveTimeOut
 	"VSW5TESTSUITE CASE XtRemoveTimeOut 1"
