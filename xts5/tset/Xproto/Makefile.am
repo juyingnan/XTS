@@ -58,7 +58,7 @@ tprogs = \
 	XGetAtomName/XGetAtomName \
 	XGetFontPath/XGetFontPath \
 	XGetGeometry/XGetGeometry \
-	GetImage/GetImage \
+	XGetImage/XGetImage \
 	XGetInputFocus/XGetInputFocus \
 	XGetKeyboardControl/XGetKeyboardControl \
 	XGetKeyboardMapping/XGetKeyboardMapping \

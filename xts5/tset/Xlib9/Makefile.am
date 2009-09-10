@@ -39,7 +39,7 @@ tprogs = \
 	XFreeFontPath/XFreeFontPath \
 	gtfntprprt/gtfntprprt \
 	XGetFontPath/XGetFontPath \
-	GetImage/GetImage \
+	XGetImage/XGetImage \
 	gtsbimg/gtsbimg \
 	ldfnt/ldfnt \
 	ldqryfnt/ldqryfnt \

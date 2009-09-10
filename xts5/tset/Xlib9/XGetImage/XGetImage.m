@@ -17,14 +17,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib9/GetImage/GetImage.m,v 1.2 2005-11-03 08:43:57 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib9/XGetImage/XGetImage.m,v 1.2 2005-11-03 08:43:57 jmichael Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib9/GetImage/GetImage.m
+>># File: xts5/tset/Xlib9/XGetImage/XGetImage.m
 >># 
 >># Description:
 >># 	Tests for XGetImage()

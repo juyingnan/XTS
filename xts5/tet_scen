@@ -3004,7 +3004,7 @@ XGetFontPath
 
 XGetImage
 	"VSW5TESTSUITE CASE XGetImage 17"
-	/tset/Xlib9/GetImage/GetImage
+	/tset/Xlib9/XGetImage/XGetImage
 
 XGetSubImage
 	"VSW5TESTSUITE CASE XGetSubImage 17"
@@ -3302,7 +3302,7 @@ pGetGeometry
 
 pGetImage
 	"VSW5TESTSUITE CASE GetImage 3"
-	/tset/Xproto/GetImage/GetImage
+	/tset/Xproto/XGetImage/XGetImage
 
 pGetInputFocus
 	"VSW5TESTSUITE CASE GetInputFocus 3"
