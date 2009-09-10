@@ -598,7 +598,7 @@ Miscellaneous
 
 XOpenDevice
 	"VSW5TESTSUITE CASE XOpenDevice 4"
-	/tset/XI/opendev/opendev
+	/tset/XI/XOpenDevice/XOpenDevice
 
 XQueryDeviceState
 	"VSW5TESTSUITE CASE XQueryDeviceState 8"

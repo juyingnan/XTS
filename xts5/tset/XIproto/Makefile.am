@@ -33,7 +33,7 @@ tprogs = \
 	gtslctexev/gtslctexev \
 	XListInputDevices/XListInputDevices \
 	Miscellaneous/Miscellaneous \
-	opendev/opendev \
+	XOpenDevice/XOpenDevice \
 	qrydvstat/qrydvstat \
 	setdval/setdval \
 	setdvbmap/setdvbmap \

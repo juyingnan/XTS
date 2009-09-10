@@ -33,7 +33,7 @@ tprogs = \
 	XGetSelectedExtensionEvents/XGetSelectedExtensionEvents \
 	XListInputDevices/XListInputDevices \
 	Miscellaneous/Miscellaneous \
-	opendev/opendev \
+	XOpenDevice/XOpenDevice \
 	querydvst/querydvst \
 	setdval/setdval \
 	setdvbmap/setdvbmap \
