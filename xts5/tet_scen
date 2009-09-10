@@ -4249,7 +4249,7 @@ XtCvtColorToPixel
 
 XtCvtIntToBoolean
 	"VSW5TESTSUITE CASE XtCvtIntToBoolean 3"
-	/tset/Xt11/tcinboln/tcinboln
+	/tset/Xt11/XtCvtIntToBoolean/XtCvtIntToBoolean
 
 XtCvtIntToBool
 	"VSW5TESTSUITE CASE XtCvtIntToBool 3"
