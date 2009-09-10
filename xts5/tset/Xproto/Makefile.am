@@ -55,7 +55,7 @@ tprogs = \
 	GrabKeyboard/GrabKeyboard \
 	GrabPointer/GrabPointer \
 	GrabServer/GrabServer \
-	gtatmnm/gtatmnm \
+	GetAtomName/GetAtomName \
 	gtfntpth/gtfntpth \
 	gtgmtry/gtgmtry \
 	gtimg/gtimg \

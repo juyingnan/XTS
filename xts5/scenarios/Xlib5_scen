@@ -62,7 +62,7 @@
 	"VSW5TESTSUITE CASE XDeleteProperty 4"
 	/tset/Xlib5/DeleteProperty/DeleteProperty
 	"VSW5TESTSUITE CASE XGetAtomName 2"
-	/tset/Xlib5/gtatmnm/gtatmnm
+	/tset/Xlib5/GetAtomName/GetAtomName
 	"VSW5TESTSUITE CASE XGetGeometry 4"
 	/tset/Xlib5/gtgmtry/gtgmtry
 	"VSW5TESTSUITE CASE XGetSelectionOwner 3"

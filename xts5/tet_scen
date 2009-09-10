@@ -2445,7 +2445,7 @@ XDeleteProperty
 
 XGetAtomName
 	"VSW5TESTSUITE CASE XGetAtomName 2"
-	/tset/Xlib5/gtatmnm/gtatmnm
+	/tset/Xlib5/GetAtomName/GetAtomName
 
 XGetGeometry
 	"VSW5TESTSUITE CASE XGetGeometry 4"
@@ -3290,7 +3290,7 @@ pGrabServer
 
 pGetAtomName
 	"VSW5TESTSUITE CASE GetAtomName 3"
-	/tset/Xproto/gtatmnm/gtatmnm
+	/tset/Xproto/GetAtomName/GetAtomName
 
 pGetFontPath
 	"VSW5TESTSUITE CASE GetFontPath 3"
