@@ -2751,7 +2751,7 @@ XcmsSetWhiteAdjustProc
 
 XcmsScreenWhitePointOfCCC
 	"VSW5TESTSUITE CASE XcmsScreenWhitePointOfCCC 1"
-	/tset/Xlib7/cmswpcc/cmswpcc
+	/tset/Xlib7/XcmsScreenWhitePointOfCCC/XcmsScreenWhitePointOfCCC
 
 XcmsClientWhitePointOfCCC
 	"VSW5TESTSUITE CASE XcmsClientWhitePointOfCCC 1"

@@ -54,7 +54,7 @@ tprogs = \
 	XcmsTekHVCQueryMaxVSamples/XcmsTekHVCQueryMaxVSamples \
 	XcmsVisualOfCCC/XcmsVisualOfCCC \
 	XcmsSetWhiteAdjustProc/XcmsSetWhiteAdjustProc \
-	cmswpcc/cmswpcc \
+	XcmsScreenWhitePointOfCCC/XcmsScreenWhitePointOfCCC \
 	cmswpoc/cmswpoc \
 	cmswpt/cmswpt \
 	CopyColormapAndFree/CopyColormapAndFree \
