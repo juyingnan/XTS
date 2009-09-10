@@ -62,7 +62,7 @@
 	"VSW5TESTSUITE CASE XCreateGC 26"
 	/tset/Xlib8/XCreateGC/XCreateGC
 	"VSW5TESTSUITE CASE XFreeGC 2"
-	/tset/Xlib8/FreeGC/FreeGC
+	/tset/Xlib8/XFreeGC/XFreeGC
 	"VSW5TESTSUITE CASE XGContextFromGC 1"
 	/tset/Xlib8/gcntxtfrmg/gcntxtfrmg
 	"VSW5TESTSUITE CASE XGetGCValues 3"

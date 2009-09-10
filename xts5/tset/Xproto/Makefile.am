@@ -48,7 +48,7 @@ tprogs = \
 	XFreeColors/XFreeColors \
 	XFreeCursor/XFreeCursor \
 	XForceScreenSaver/XForceScreenSaver \
-	FreeGC/FreeGC \
+	XFreeGC/XFreeGC \
 	XFreePixmap/XFreePixmap \
 	XGrabButton/XGrabButton \
 	XGrabKey/XGrabKey \

@@ -16,7 +16,7 @@ tprogs = \
 	XCopyGC/XCopyGC \
 	XCreateGC/XCreateGC \
 	XFlushGC/XFlushGC \
-	FreeGC/FreeGC \
+	XFreeGC/XFreeGC \
 	gcntxtfrmg/gcntxtfrmg \
 	gtgcvls/gtgcvls \
 	qrybststpp/qrybststpp \
