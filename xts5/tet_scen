@@ -1919,7 +1919,7 @@ XDefaultColormapOfScreen
 
 XDefaultDepth
 	"VSW5TESTSUITE CASE XDefaultDepth 1"
-	/tset/Xlib3/dfltdpth/dfltdpth
+	/tset/Xlib3/XDefaultDepth/XDefaultDepth
 
 XDefaultDepthOfScreen
 	"VSW5TESTSUITE CASE XDefaultDepthOfScreen 1"
@@ -2147,7 +2147,7 @@ DefaultColormapOfScreen
 
 DefaultDepth
 	"VSW5TESTSUITE CASE DefaultDepth 1"
-	/tset/Xlib3/dfltdpth/dfltdpth_m
+	/tset/Xlib3/XDefaultDepth/XDefaultDepth_m
 
 DefaultDepthOfScreen
 	"VSW5TESTSUITE CASE DefaultDepthOfScreen 1"
