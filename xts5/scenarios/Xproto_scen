@@ -164,7 +164,7 @@
 	"VSW5TESTSUITE CASE GetModifierMapping 3"
 	/tset/Xproto/GetModifierMapping/GetModifierMapping
 	"VSW5TESTSUITE CASE GetMotionEvents 3"
-	/tset/Xproto/gtmtnevnts/gtmtnevnts
+	/tset/Xproto/GetMotionEvents/GetMotionEvents
 	"VSW5TESTSUITE CASE GetPointerControl 3"
 	/tset/Xproto/gtpntrcntr/gtpntrcntr
 	"VSW5TESTSUITE CASE GetPointerMapping 3"

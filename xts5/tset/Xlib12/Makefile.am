@@ -20,7 +20,7 @@ tprogs = \
 	flsh/flsh \
 	gterrrdtbs/gterrrdtbs \
 	gterrrtxt/gterrrtxt \
-	gtmtnevnts/gtmtnevnts \
+	GetMotionEvents/GetMotionEvents \
 	ifevnt/ifevnt \
 	mskevnt/mskevnt \
 	nxtevnt/nxtevnt \
