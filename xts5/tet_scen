@@ -1546,7 +1546,7 @@ XrmGetStringDatabase
 
 XrmInitialize
 	"VSW5TESTSUITE CASE XrmInitialize 1"
-	/tset/Xlib16/rmintlz/rmintlz
+	/tset/Xlib16/XrmInitialize/XrmInitialize
 
 XrmMergeDatabases
 	"VSW5TESTSUITE CASE XrmMergeDatabases 6"

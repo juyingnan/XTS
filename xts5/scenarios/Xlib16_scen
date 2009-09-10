@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE XrmGetStringDatabase 2"
 	/tset/Xlib16/XrmGetStringDatabase/XrmGetStringDatabase
 	"VSW5TESTSUITE CASE XrmInitialize 1"
-	/tset/Xlib16/rmintlz/rmintlz
+	/tset/Xlib16/XrmInitialize/XrmInitialize
 	"VSW5TESTSUITE CASE XrmMergeDatabases 6"
 	/tset/Xlib16/rmmrgdtbss/rmmrgdtbss
 	"VSW5TESTSUITE CASE XrmParseCommand 12"

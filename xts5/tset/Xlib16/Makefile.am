@@ -22,7 +22,7 @@ tprogs = \
 	XrmGetFileDatabase/XrmGetFileDatabase \
 	XrmGetResource/XrmGetResource \
 	XrmGetStringDatabase/XrmGetStringDatabase \
-	rmintlz/rmintlz \
+	XrmInitialize/XrmInitialize \
 	rmloofdt/rmloofdt \
 	rmmrgdtbss/rmmrgdtbss \
 	rmprscmmnd/rmprscmmnd \
