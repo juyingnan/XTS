@@ -85,7 +85,7 @@ tprogs = \
 	MapSubwindows/MapSubwindows \
 	MapWindow/MapWindow \
 	NoOperation/NoOperation \
-	opndsply/opndsply \
+	OpenDisplay/OpenDisplay \
 	opnfnt/opnfnt \
 	plyarc/plyarc \
 	plyfllarc/plyfllarc \

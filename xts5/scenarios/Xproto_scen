@@ -208,7 +208,7 @@
 	"VSW5TESTSUITE CASE NoOperation 4"
 	/tset/Xproto/NoOperation/NoOperation
 	"VSW5TESTSUITE CASE OpenDisplay 2"
-	/tset/Xproto/opndsply/opndsply
+	/tset/Xproto/OpenDisplay/OpenDisplay
 	"VSW5TESTSUITE CASE OpenFont 5"
 	/tset/Xproto/opnfnt/opnfnt
 	"VSW5TESTSUITE CASE PolyArc 3"

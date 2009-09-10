@@ -140,7 +140,7 @@
 	"VSW5TESTSUITE CASE XNextRequest 2"
 	/tset/Xlib3/nxtrqst/nxtrqst
 	"VSW5TESTSUITE CASE XOpenDisplay 10"
-	/tset/Xlib3/opndsply/opndsply
+	/tset/Xlib3/OpenDisplay/OpenDisplay
 	"VSW5TESTSUITE CASE XPlanesOfScreen 1"
 	/tset/Xlib3/plnsofscrn/plnsofscrn
 	"VSW5TESTSUITE CASE XProtocolRevision 1"

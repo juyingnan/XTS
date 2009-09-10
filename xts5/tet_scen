@@ -2043,7 +2043,7 @@ XNextRequest
 
 XOpenDisplay
 	"VSW5TESTSUITE CASE XOpenDisplay 10"
-	/tset/Xlib3/opndsply/opndsply
+	/tset/Xlib3/OpenDisplay/OpenDisplay
 
 XPlanesOfScreen
 	"VSW5TESTSUITE CASE XPlanesOfScreen 1"
@@ -3410,7 +3410,7 @@ pNoOperation
 
 pOpenDisplay
 	"VSW5TESTSUITE CASE OpenDisplay 2"
-	/tset/Xproto/opndsply/opndsply
+	/tset/Xproto/OpenDisplay/OpenDisplay
 
 pOpenFont
 	"VSW5TESTSUITE CASE OpenFont 5"

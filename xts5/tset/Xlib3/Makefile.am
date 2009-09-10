@@ -51,7 +51,7 @@ tprogs = allplns/allplns \
 	mxcmpsofsc/mxcmpsofsc mxcmpsofsc/mxcmpsofsc_m \
 	nop/nop \
 	nxtrqst/nxtrqst nxtrqst/nxtrqst_m \
-	opndsply/opndsply \
+	OpenDisplay/OpenDisplay \
 	plnsofscrn/plnsofscrn plnsofscrn/plnsofscrn_m \
 	prtclrvsn/prtclrvsn prtclrvsn/prtclrvsn_m \
 	prtclvrsn/prtclvrsn prtclvrsn/prtclvrsn_m \
@@ -72,6 +72,6 @@ tprogs = allplns/allplns \
 # Auxiliary programs run from tests
 check_PROGRAMS += \
 	dsplystr/Test1 \
-	opndsply/Test1
+	OpenDisplay/Test1
 dsplystr_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
-opndsply_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
+OpenDisplay_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
