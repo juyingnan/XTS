@@ -16,7 +16,7 @@ tprogs = \
 	ChangeActivePointerGrab/ChangeActivePointerGrab \
 	ChangeKeyboardControl/ChangeKeyboardControl \
 	ChangeKeyboardMapping/ChangeKeyboardMapping \
-	chngpntrcn/chngpntrcn \
+	ChangePointerControl/ChangePointerControl \
 	dltmdfrmpe/dltmdfrmpe \
 	dsplykycds/dsplykycds \
 	frmdfrmp/frmdfrmp \

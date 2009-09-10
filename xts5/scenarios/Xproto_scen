@@ -80,7 +80,7 @@
 	"VSW5TESTSUITE CASE ChangeKeyboardMapping 3"
 	/tset/Xproto/ChangeKeyboardMapping/ChangeKeyboardMapping
 	"VSW5TESTSUITE CASE ChangePointerControl 3"
-	/tset/Xproto/chngpntrcn/chngpntrcn
+	/tset/Xproto/ChangePointerControl/ChangePointerControl
 	"VSW5TESTSUITE CASE ChangeProperty 3"
 	/tset/Xproto/chngprprty/chngprprty
 	"VSW5TESTSUITE CASE ChangeSaveSet 3"

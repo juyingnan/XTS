@@ -21,7 +21,7 @@ tprogs = \
 	ChangeHosts/ChangeHosts \
 	ChangeKeyboardControl/ChangeKeyboardControl \
 	ChangeKeyboardMapping/ChangeKeyboardMapping \
-	chngpntrcn/chngpntrcn \
+	ChangePointerControl/ChangePointerControl \
 	chngprprty/chngprprty \
 	chngsvst/chngsvst \
 	chngwdwatt/chngwdwatt \
