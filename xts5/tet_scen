@@ -2567,7 +2567,7 @@ XLookupColor
 
 XParseColor
 	"VSW5TESTSUITE CASE XParseColor 10"
-	/tset/Xlib7/prsclr/prsclr
+	/tset/Xlib7/XParseColor/XParseColor
 
 XQueryColor
 	"VSW5TESTSUITE CASE XQueryColor 3"
