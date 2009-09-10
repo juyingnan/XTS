@@ -41,7 +41,7 @@ XSetWMNormalHints/XSetWMNormalHints
 XSetWMProperties/XSetWMProperties
 stwmprprts/Test1
 stwmprprts/Test2
-stwmprtcls/stwmprtcls
+XSetWMProtocols/XSetWMProtocols
 stwmszhnts/stwmszhnts
 txtprprtyt/txtprprtyt
 wthdrwwdw/wthdrwwdw

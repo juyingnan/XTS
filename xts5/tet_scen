@@ -1507,7 +1507,7 @@ XSetWMProperties
 
 XSetWMProtocols
 	"VSW5TESTSUITE CASE XSetWMProtocols 4"
-	/tset/Xlib15/stwmprtcls/stwmprtcls
+	/tset/Xlib15/XSetWMProtocols/XSetWMProtocols
 
 XSetWMSizeHints
 	"VSW5TESTSUITE CASE XSetWMSizeHints 4"
