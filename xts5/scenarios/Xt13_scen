@@ -77,7 +77,7 @@
 	"VSW5TESTSUITE CASE XtAllocateGC 9"
 	/tset/Xt13/XtAllocateGC/XtAllocateGC
 	"VSW5TESTSUITE CASE XtGetGC 4"
-	/tset/Xt13/tgtgc/tgtgc
+	/tset/Xt13/XtGetGC/XtGetGC
 	"VSW5TESTSUITE CASE XtReleaseGC 2"
 	/tset/Xt13/trelasegc/trelasegc
 	"VSW5TESTSUITE CASE XtAppSetSelectionTimeout 1"

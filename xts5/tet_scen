@@ -4493,7 +4493,7 @@ XtAllocateGC
 
 XtGetGC
 	"VSW5TESTSUITE CASE XtGetGC 4"
-	/tset/Xt13/tgtgc/tgtgc
+	/tset/Xt13/XtGetGC/XtGetGC
 
 XtReleaseGC
 	"VSW5TESTSUITE CASE XtReleaseGC 2"
