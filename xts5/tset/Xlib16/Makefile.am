@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 XrmCombineDatabase_XrmCombineDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 XrmCombineFileDatabase_XrmCombineFileDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 XrmEnumerateDatabase_XrmEnumerateDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
-rmpstoq_rmpstoq_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
+XrmPermStringToQuark_XrmPermStringToQuark_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 
 tprogs = \
 	XrmCombineDatabase/XrmCombineDatabase \
@@ -26,7 +26,7 @@ tprogs = \
 	XrmLocaleOfDatabase/XrmLocaleOfDatabase \
 	XrmMergeDatabases/XrmMergeDatabases \
 	XrmParseCommand/XrmParseCommand \
-	rmpstoq/rmpstoq \
+	XrmPermStringToQuark/XrmPermStringToQuark \
 	rmptfldtbs/rmptfldtbs \
 	rmptlnrsrc/rmptlnrsrc \
 	rmptrsrc/rmptrsrc \

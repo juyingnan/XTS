@@ -10,7 +10,7 @@ XrmInitialize/XrmInitialize
 XrmLocaleOfDatabase/XrmLocaleOfDatabase
 XrmMergeDatabases/XrmMergeDatabases
 XrmParseCommand/XrmParseCommand
-rmpstoq/rmpstoq
+XrmPermStringToQuark/XrmPermStringToQuark
 rmptfldtbs/rmptfldtbs
 rmptlnrsrc/rmptlnrsrc
 rmptrsrc/rmptrsrc
