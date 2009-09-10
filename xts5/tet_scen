@@ -3758,7 +3758,7 @@ XtAppInitialize
 
 XtVaAppInitialize
 	"VSW5TESTSUITE CASE XtVaAppInitialize 29"
-	/tset/Xt4/tvapintlz/tvapintlz
+	/tset/Xt4/XtVaAppInitialize/XtVaAppInitialize
 
 XtRealizeWidget
 	"VSW5TESTSUITE CASE XtRealizeWidget 11"

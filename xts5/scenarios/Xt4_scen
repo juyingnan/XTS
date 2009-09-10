@@ -100,7 +100,7 @@
 	"VSW5TESTSUITE CASE XtAppInitialize 29"
 	/tset/Xt4/XtAppInitialize/XtAppInitialize
 	"VSW5TESTSUITE CASE XtVaAppInitialize 29"
-	/tset/Xt4/tvapintlz/tvapintlz
+	/tset/Xt4/XtVaAppInitialize/XtVaAppInitialize
 	"VSW5TESTSUITE CASE XtRealizeWidget 11"
 	/tset/Xt4/XtRealizeWidget/XtRealizeWidget
 	"VSW5TESTSUITE CASE XtIsRealized 3"
