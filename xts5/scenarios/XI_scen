@@ -96,7 +96,7 @@
 	"VSW5TESTSUITE CASE XGetDeviceModifierMapping 4"
 	/tset/XI/XGetDeviceModifierMapping/XGetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XGetDeviceMotionEvents 9"
-	/tset/XI/gtdvmtnev/gtdvmtnev
+	/tset/XI/XGetDeviceMotionEvents/XGetDeviceMotionEvents
 	"VSW5TESTSUITE CASE XGetSelectedExtensionEvents 2"
 	/tset/XI/gtslctevnt/gtslctevnt
 	"VSW5TESTSUITE CASE XListInputDevices 2"

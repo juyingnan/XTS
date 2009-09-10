@@ -582,7 +582,7 @@ XGetDeviceModifierMapping
 
 XGetDeviceMotionEvents
 	"VSW5TESTSUITE CASE XGetDeviceMotionEvents 9"
-	/tset/XI/gtdvmtnev/gtdvmtnev
+	/tset/XI/XGetDeviceMotionEvents/XGetDeviceMotionEvents
 
 XGetSelectedExtensionEvents
 	"VSW5TESTSUITE CASE XGetSelectedExtensionEvents 2"

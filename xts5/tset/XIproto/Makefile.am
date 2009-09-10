@@ -27,7 +27,7 @@ tprogs = \
 	XGetDeviceButtonMapping/XGetDeviceButtonMapping \
 	gtdvctl/gtdvctl \
 	gtdvfcs/gtdvfcs \
-	gtdvmtnev/gtdvmtnev \
+	XGetDeviceMotionEvents/XGetDeviceMotionEvents \
 	gtdvprop/gtdvprop \
 	gtkeymppn/gtkeymppn \
 	gtslctexev/gtslctexev \
