@@ -30,7 +30,7 @@ tprogs = \
 	ConfigureWindow/ConfigureWindow \
 	ConvertSelection/ConvertSelection \
 	CopyArea/CopyArea \
-	cpyclrmpan/cpyclrmpan \
+	CopyColormapAndFree/CopyColormapAndFree \
 	cpygc/cpygc \
 	cpypln/cpypln \
 	crcltwdw/crcltwdw \

@@ -57,7 +57,7 @@ tprogs = \
 	cmswpcc/cmswpcc \
 	cmswpoc/cmswpoc \
 	cmswpt/cmswpt \
-	cpyclrmpan/cpyclrmpan \
+	CopyColormapAndFree/CopyColormapAndFree \
 	crtclrmp/crtclrmp \
 	frclrmp/frclrmp \
 	frclrs/frclrs \
