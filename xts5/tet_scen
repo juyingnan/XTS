@@ -1046,7 +1046,7 @@ XAutoRepeatOn
 
 XBell
 	"VSW5TESTSUITE CASE XBell 3"
-	/tset/Xlib13/bll/bll
+	/tset/Xlib13/Bell/Bell
 
 XChangeActivePointerGrab
 	"VSW5TESTSUITE CASE XChangeActivePointerGrab 5"
@@ -3130,7 +3130,7 @@ pBadRequest
 
 pBell
 	"VSW5TESTSUITE CASE Bell 3"
-	/tset/Xproto/bll/bll
+	/tset/Xproto/Bell/Bell
 
 pChangeActivePointerGrab
 	"VSW5TESTSUITE CASE ChangeActivePointerGrab 3"

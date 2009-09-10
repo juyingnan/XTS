@@ -62,7 +62,7 @@
 	"VSW5TESTSUITE CASE XAutoRepeatOn 1"
 	/tset/Xlib13/atrpton/atrpton
 	"VSW5TESTSUITE CASE XBell 3"
-	/tset/Xlib13/bll/bll
+	/tset/Xlib13/Bell/Bell
 	"VSW5TESTSUITE CASE XChangeActivePointerGrab 5"
 	/tset/Xlib13/chngactvpn/chngactvpn
 	"VSW5TESTSUITE CASE XChangeKeyboardControl 20"

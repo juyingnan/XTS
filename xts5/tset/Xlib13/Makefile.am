@@ -12,7 +12,7 @@ tprogs = \
 	AllowEvents/AllowEvents \
 	atrptoff/atrptoff \
 	atrpton/atrpton \
-	bll/bll \
+	Bell/Bell \
 	chngactvpn/chngactvpn \
 	chngkybrdc/chngkybrdc \
 	chngkybrdm/chngkybrdm \
