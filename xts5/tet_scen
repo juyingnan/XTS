@@ -2952,7 +2952,7 @@ XDrawString16
 
 XDrawText
 	"VSW5TESTSUITE CASE XDrawText 50"
-	/tset/Xlib9/drwtxt/drwtxt
+	/tset/Xlib9/XDrawText/XDrawText
 
 XDrawText16
 	"VSW5TESTSUITE CASE XDrawText16 50"

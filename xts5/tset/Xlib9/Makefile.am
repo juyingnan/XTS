@@ -26,7 +26,7 @@ tprogs = \
 	XDrawSegments/XDrawSegments \
 	XDrawString/XDrawString \
 	XDrawString16/XDrawString16 \
-	drwtxt/drwtxt \
+	XDrawText/XDrawText \
 	drwtxt16/drwtxt16 \
 	fllarc/fllarc \
 	fllarcs/fllarcs \
