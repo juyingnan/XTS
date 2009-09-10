@@ -3083,7 +3083,7 @@ xXCreateFontCursor
 
 xkeysym
 	"VSW5TESTSUITE CASE keysym 7"
-	/tset/Xopen/kysym/kysym
+	/tset/Xopen/keysym/keysym
 
 xkeysymdef
 	"VSW5TESTSUITE CASE keysymdef 15"

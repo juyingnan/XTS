@@ -62,7 +62,7 @@
 	"VSW5TESTSUITE CASE XCreateFontCursor 31"
 	/tset/Xopen/XCreateFontCursor/XCreateFontCursor
 	"VSW5TESTSUITE CASE keysym 7"
-	/tset/Xopen/kysym/kysym
+	/tset/Xopen/keysym/keysym
 	"VSW5TESTSUITE CASE keysymdef 15"
 	/tset/Xopen/kysymdf/kysymdf
 	"VSW5TESTSUITE CASE XKeysymToKeycode 14"

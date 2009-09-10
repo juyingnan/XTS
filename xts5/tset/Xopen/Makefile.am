@@ -12,21 +12,21 @@ tprogs = \
 	XAllocNamedColor/XAllocNamedColor \
 	cursorfont/cursorfont \
 	XCreateFontCursor/XCreateFontCursor \
-	kysym/kysym \
+	keysym/keysym \
 	kysymdf/kysymdf \
 	kysymtkycd/kysymtkycd \
 	LookupColor/LookupColor \
 	strtkysym/strtkysym
 
-kysym_kysym_SOURCES = \
-	kysym/kysym.c \
-	kysym/Test0.c \
-	kysym/Test1.c \
-	kysym/Test2.c \
-	kysym/Test3.c \
-	kysym/Test4.c \
-	kysym/TestG.c \
-	kysym/TestM.c
+keysym_keysym_SOURCES = \
+	keysym/keysym.c \
+	keysym/Test0.c \
+	keysym/Test1.c \
+	keysym/Test2.c \
+	keysym/Test3.c \
+	keysym/Test4.c \
+	keysym/TestG.c \
+	keysym/TestM.c
 
 kysymdf_kysymdf_SOURCES = \
 	kysymdf/kysymdf.c \
@@ -63,7 +63,7 @@ kysymtkycd_kysymtkycd_SOURCES = \
 	kysymtkycd/TestS.c \
 	kysymtkycd/TestT.c
 
-strtkysym_strtkysym_SOURCES = \
+strtkeysym_strtkeysym_SOURCES = \
 	strtkysym/strtkysym.c \
 	strtkysym/Test1.c \
 	strtkysym/Test2.c \
