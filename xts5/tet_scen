@@ -1955,7 +1955,7 @@ XDefaultVisualOfScreen
 
 XDoesBackingStore
 	"VSW5TESTSUITE CASE XDoesBackingStore 1"
-	/tset/Xlib3/dsbckngstr/dsbckngstr
+	/tset/Xlib3/XDoesBackingStore/XDoesBackingStore
 
 XDisplayCells
 	"VSW5TESTSUITE CASE XDisplayCells 1"
@@ -2183,7 +2183,7 @@ DefaultVisualOfScreen
 
 DoesBackingStore
 	"VSW5TESTSUITE CASE DoesBackingStore 1"
-	/tset/Xlib3/dsbckngstr/dsbckngstr_m
+	/tset/Xlib3/XDoesBackingStore/XDoesBackingStore_m
 
 DisplayCells
 	"VSW5TESTSUITE CASE DisplayCells 1"

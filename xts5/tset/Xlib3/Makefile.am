@@ -29,7 +29,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XDefaultScreenOfDisplay/XDefaultScreenOfDisplay XDefaultScreenOfDisplay/XDefaultScreenOfDisplay_m \
 	XDefaultVisual/XDefaultVisual XDefaultVisual/XDefaultVisual_m \
 	XDefaultVisualOfScreen/XDefaultVisualOfScreen XDefaultVisualOfScreen/XDefaultVisualOfScreen_m \
-	dsbckngstr/dsbckngstr dsbckngstr/dsbckngstr_m \
+	XDoesBackingStore/XDoesBackingStore XDoesBackingStore/XDoesBackingStore_m \
 	dsplyclls/dsplyclls dsplyclls/dsplyclls_m \
 	dsplyhght/dsplyhght dsplyhght/dsplyhght_m \
 	dsplyhghtm/dsplyhghtm dsplyhghtm/dsplyhghtm_m \
