@@ -40,7 +40,7 @@ tprogs = \
 	CreateGlyphCursor/CreateGlyphCursor \
 	CreatePixmap/CreatePixmap \
 	XCreateWindow/XCreateWindow \
-	DeleteProperty/DeleteProperty \
+	XDeleteProperty/XDeleteProperty \
 	XDestroySubwindows/XDestroySubwindows \
 	XDestroyWindow/XDestroyWindow \
 	FillPoly/FillPoly \

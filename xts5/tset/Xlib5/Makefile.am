@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = \
 	XChangeProperty/XChangeProperty \
 	XConvertSelection/XConvertSelection \
-	DeleteProperty/DeleteProperty \
+	XDeleteProperty/XDeleteProperty \
 	GetAtomName/GetAtomName \
 	GetGeometry/GetGeometry \
 	GetSelectionOwner/GetSelectionOwner \
