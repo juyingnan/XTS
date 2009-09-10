@@ -19,7 +19,7 @@ tprogs = \
 	CloseDevice/CloseDevice \
 	DeviceBell/DeviceBell \
 	XGetDeviceControl/XGetDeviceControl \
-	XGetFeedbackControl/XGetFeedbackControl \
+	GetFeedbackControl/GetFeedbackControl \
 	XGetDeviceFocus/XGetDeviceFocus \
 	XGetDeviceDontPropagateList/XGetDeviceDontPropagateList \
 	GetExtensionVersion/GetExtensionVersion \

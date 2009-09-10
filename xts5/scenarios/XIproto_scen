@@ -76,7 +76,7 @@
 	"VSW5TESTSUITE CASE GetDeviceModifierMapping 3"
 	/tset/XIproto/GetDeviceModifierMapping/GetDeviceModifierMapping
 	"VSW5TESTSUITE CASE GetFeedbackControl 3"
-	/tset/XIproto/XGetFeedbackControl/XGetFeedbackControl
+	/tset/XIproto/GetFeedbackControl/GetFeedbackControl
 	"VSW5TESTSUITE CASE GetExtensionVersion 3"
 	/tset/XIproto/GetExtensionVersion/GetExtensionVersion
 	"VSW5TESTSUITE CASE GrabDevice 3"

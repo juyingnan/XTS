@@ -19,7 +19,7 @@ tprogs = \
 	CloseDevice/CloseDevice \
 	DeviceBell/DeviceBell \
 	GetDeviceModifierMapping/GetDeviceModifierMapping \
-	XGetFeedbackControl/XGetFeedbackControl \
+	GetFeedbackControl/GetFeedbackControl \
 	GetExtensionVersion/GetExtensionVersion \
 	XGrabDevice/XGrabDevice \
 	XGrabDeviceButton/XGrabDeviceButton \
