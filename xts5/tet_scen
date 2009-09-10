@@ -4197,7 +4197,7 @@ XtCvtStringToFile
 
 XtCvtStringToFloat
 	"VSW5TESTSUITE CASE XtCvtStringToFloat 4"
-	/tset/Xt11/tcstflt/tcstflt
+	/tset/Xt11/XtCvtStringToFloat/XtCvtStringToFloat
 
 XtCvtStringToFont
 	"VSW5TESTSUITE CASE XtCvtStringToFont 8"
