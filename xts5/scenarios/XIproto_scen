@@ -106,7 +106,7 @@
 	"VSW5TESTSUITE CASE QueryDeviceState 3"
 	/tset/XIproto/QueryDeviceState/QueryDeviceState
 	"VSW5TESTSUITE CASE SetDeviceValuators 3"
-	/tset/XIproto/XSetDeviceValuators/XSetDeviceValuators
+	/tset/XIproto/SetDeviceValuators/SetDeviceValuators
 	"VSW5TESTSUITE CASE SetDeviceButtonMapping 3"
 	/tset/XIproto/SetDeviceButtonMapping/SetDeviceButtonMapping
 	"VSW5TESTSUITE CASE SetDeviceFocus 3"

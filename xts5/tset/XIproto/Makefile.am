@@ -35,7 +35,7 @@ tprogs = \
 	Miscellaneous/Miscellaneous \
 	OpenDevice/OpenDevice \
 	QueryDeviceState/QueryDeviceState \
-	XSetDeviceValuators/XSetDeviceValuators \
+	SetDeviceValuators/SetDeviceValuators \
 	SetDeviceButtonMapping/SetDeviceButtonMapping \
 	SetDeviceFocus/SetDeviceFocus \
 	SetDeviceModifierMapping/SetDeviceModifierMapping \

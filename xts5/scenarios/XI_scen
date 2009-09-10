@@ -108,7 +108,7 @@
 	"VSW5TESTSUITE CASE XQueryDeviceState 8"
 	/tset/XI/XQueryDeviceState/XQueryDeviceState
 	"VSW5TESTSUITE CASE XSetDeviceValuators 6"
-	/tset/XI/XSetDeviceValuators/XSetDeviceValuators
+	/tset/XI/SetDeviceValuators/SetDeviceValuators
 	"VSW5TESTSUITE CASE XSetDeviceButtonMapping 8"
 	/tset/XI/SetDeviceButtonMapping/SetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XSetDeviceFocus 17"
