@@ -51,8 +51,8 @@ XDisplayPlanes/XDisplayPlanes_m
 dsplystr/Test1
 XDisplayString/XDisplayString
 XDisplayString/XDisplayString_m
-dsplywdth/dsplywdth
-dsplywdth/dsplywdth_m
+XDisplayWidth/XDisplayWidth
+XDisplayWidth/XDisplayWidth_m
 dsplywdthm/dsplywdthm
 dsplywdthm/dsplywdthm_m
 dssvundrs/dssvundrs

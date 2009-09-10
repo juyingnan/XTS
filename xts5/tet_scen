@@ -1983,7 +1983,7 @@ XDisplayString
 
 XDisplayWidth
 	"VSW5TESTSUITE CASE XDisplayWidth 1"
-	/tset/Xlib3/dsplywdth/dsplywdth
+	/tset/Xlib3/XDisplayWidth/XDisplayWidth
 
 XDisplayWidthMM
 	"VSW5TESTSUITE CASE XDisplayWidthMM 1"
@@ -2211,7 +2211,7 @@ DisplayString
 
 DisplayWidth
 	"VSW5TESTSUITE CASE DisplayWidth 1"
-	/tset/Xlib3/dsplywdth/dsplywdth_m
+	/tset/Xlib3/XDisplayWidth/XDisplayWidth_m
 
 DisplayWidthMM
 	"VSW5TESTSUITE CASE DisplayWidthMM 1"

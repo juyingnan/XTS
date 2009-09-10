@@ -110,7 +110,7 @@
 	"VSW5TESTSUITE CASE XDisplayString 2"
 	/tset/Xlib3/XDisplayString/XDisplayString
 	"VSW5TESTSUITE CASE XDisplayWidth 1"
-	/tset/Xlib3/dsplywdth/dsplywdth
+	/tset/Xlib3/XDisplayWidth/XDisplayWidth
 	"VSW5TESTSUITE CASE XDisplayWidthMM 1"
 	/tset/Xlib3/dsplywdthm/dsplywdthm
 	"VSW5TESTSUITE CASE XDoesSaveUnders 1"
@@ -224,7 +224,7 @@
 	"VSW5TESTSUITE CASE DisplayString 2"
 	/tset/Xlib3/XDisplayString/XDisplayString_m
 	"VSW5TESTSUITE CASE DisplayWidth 1"
-	/tset/Xlib3/dsplywdth/dsplywdth_m
+	/tset/Xlib3/XDisplayWidth/XDisplayWidth_m
 	"VSW5TESTSUITE CASE DisplayWidthMM 1"
 	/tset/Xlib3/dsplywdthm/dsplywdthm_m
 	"VSW5TESTSUITE CASE DoesSaveUnders 1"
