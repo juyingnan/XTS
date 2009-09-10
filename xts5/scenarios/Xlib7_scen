@@ -156,7 +156,7 @@
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMinV 1"
 	/tset/Xlib7/XcmsTekHVCQueryMinV/XcmsTekHVCQueryMinV
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxV 1"
-	/tset/Xlib7/cmstqmv/cmstqmv
+	/tset/Xlib7/XcmsTekHVCQueryMaxV/XcmsTekHVCQueryMaxV
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxVC 1"
 	/tset/Xlib7/cmstqmvc/cmstqmvc
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxVSamples 1"
