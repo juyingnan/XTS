@@ -25,7 +25,7 @@ tprogs = \
 	XMaskEvent/XMaskEvent \
 	XNextEvent/XNextEvent \
 	XPeekEvent/XPeekEvent \
-	pkifevnt/pkifevnt \
+	XPeekIfEvent/XPeekIfEvent \
 	pndng/pndng \
 	ptbckevnt/ptbckevnt \
 	slctinpt/slctinpt \

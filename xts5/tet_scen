@@ -987,7 +987,7 @@ XPeekEvent
 
 XPeekIfEvent
 	"VSW5TESTSUITE CASE XPeekIfEvent 4"
-	/tset/Xlib12/pkifevnt/pkifevnt
+	/tset/Xlib12/XPeekIfEvent/XPeekIfEvent
 
 XPending
 	"VSW5TESTSUITE CASE XPending 3"
