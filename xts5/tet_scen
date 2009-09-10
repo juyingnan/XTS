@@ -2326,7 +2326,7 @@ XCirculateSubwindows
 
 XCirculateSubwindowsDown
 	"VSW5TESTSUITE CASE XCirculateSubwindowsDown 5"
-	/tset/Xlib4/crcltsbwsd/crcltsbwsd
+	/tset/Xlib4/XCirculateSubwindowsDown/XCirculateSubwindowsDown
 
 XCirculateSubwindowsUp
 	"VSW5TESTSUITE CASE XCirculateSubwindowsUp 5"
