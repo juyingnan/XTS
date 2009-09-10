@@ -9,3 +9,6 @@ tetexec.cfg:
 # Helper target for testing subsets
 test-%:
 	@cd xts5/tset && $(MAKE) $(AM_MAKEFLAGS) $@
+
+logfile:
+	cd xts5 && $(MAKE) logfile

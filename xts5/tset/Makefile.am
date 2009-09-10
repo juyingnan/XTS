@@ -4,7 +4,8 @@ SUBDIRS = Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 Xlib7 Xlib8 Xlib9 Xlib10 \
 	Xlib11 Xlib12 Xlib13 Xlib14 Xlib15 Xlib16 Xlib17 XIproto XI
 
 CLEANFILES = */*/tet_lock
-DISTCLEANFILES = */*/*.log */*/*.log.tmp
+LOGFILES = */*/*.log
+DISTCLEANFILES = $(LOGFILES) */*/*.log.tmp
 
 .PHONY: $(TESTS)
 # Skip Xopen_TESTS for now since they mangle keymap
@@ -840,3 +841,10 @@ XI_TESTS = \
 	XUngrabDevice \
 	XUngrabDeviceButton \
 	XUngrabDeviceKey
+
+# Store results in xts5/results/YYYY-mm-dd-HH:mm.xzy
+logfile:
+	date=`date +%F-%R`.XXXXX && \
+	XTS_RESULTS_DIR=`mktemp -d --tmpdir=$(top_srcdir)/xts5/results $$date` && \
+	cat $(LOGFILES) > $$XTS_RESULTS_DIR/xts.log
+

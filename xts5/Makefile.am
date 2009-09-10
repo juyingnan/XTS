@@ -11,3 +11,7 @@ XTS_CONFIG = TET_ROOT='$(TET_ROOT)' DISPLAY='$(XT_DISPLAY)' \
 # Makefile is created or updated by config.status
 tetexec.cfg: tetexec.cfg.in $(srcdir)/bin/xts-config Makefile
 	$(XTS_CONFIG) < $< > $@ || rm -f $@
+
+logfile:
+	cd tset && $(MAKE) logfile
+
