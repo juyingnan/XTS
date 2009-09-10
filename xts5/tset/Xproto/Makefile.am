@@ -118,7 +118,7 @@ tprogs = \
 	SetModifierMapping/SetModifierMapping \
 	SetPointerMapping/SetPointerMapping \
 	StoreColors/StoreColors \
-	strnmdclr/strnmdclr \
+	StoreNamedColor/StoreNamedColor \
 	stscrnsvr/stscrnsvr \
 	stslctnown/stslctnown \
 	trnsltcrds/trnsltcrds \

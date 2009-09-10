@@ -67,4 +67,4 @@ tprogs = \
 	QueryColors/QueryColors \
 	strclr/strclr \
 	StoreColors/StoreColors \
-	strnmdclr/strnmdclr
+	StoreNamedColor/StoreNamedColor

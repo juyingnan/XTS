@@ -84,7 +84,7 @@
 	"VSW5TESTSUITE CASE XStoreColors 9"
 	/tset/Xlib7/StoreColors/StoreColors
 	"VSW5TESTSUITE CASE XStoreNamedColor 9"
-	/tset/Xlib7/strnmdclr/strnmdclr
+	/tset/Xlib7/StoreNamedColor/StoreNamedColor
 	"VSW5TESTSUITE CASE XcmsAllocColor 2"
 	/tset/Xlib7/cmsac/cmsac
 	"VSW5TESTSUITE CASE XcmsAddColorSpace 1"
