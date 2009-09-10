@@ -31,7 +31,7 @@ tprogs = \
 	XGetWMHints/XGetWMHints \
 	XGetWMIconName/XGetWMIconName \
 	XGetWMName/XGetWMName \
-	gtwmnrmlhn/gtwmnrmlhn \
+	XGetWMNormalHints/XGetWMNormalHints \
 	gtwmprtcls/gtwmprtcls \
 	gtwmszhnts/gtwmszhnts \
 	icnfywdw/icnfywdw \

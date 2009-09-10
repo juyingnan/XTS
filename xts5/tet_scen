@@ -1423,7 +1423,7 @@ XGetWMName
 
 XGetWMNormalHints
 	"VSW5TESTSUITE CASE XGetWMNormalHints 5"
-	/tset/Xlib15/gtwmnrmlhn/gtwmnrmlhn
+	/tset/Xlib15/XGetWMNormalHints/XGetWMNormalHints
 
 XGetWMProtocols
 	"VSW5TESTSUITE CASE XGetWMProtocols 4"

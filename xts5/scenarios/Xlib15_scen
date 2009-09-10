@@ -94,7 +94,7 @@
 	"VSW5TESTSUITE CASE XGetWMName 3"
 	/tset/Xlib15/XGetWMName/XGetWMName
 	"VSW5TESTSUITE CASE XGetWMNormalHints 5"
-	/tset/Xlib15/gtwmnrmlhn/gtwmnrmlhn
+	/tset/Xlib15/XGetWMNormalHints/XGetWMNormalHints
 	"VSW5TESTSUITE CASE XGetWMProtocols 4"
 	/tset/Xlib15/gtwmprtcls/gtwmprtcls
 	"VSW5TESTSUITE CASE XGetWMSizeHints 6"
