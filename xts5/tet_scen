@@ -1816,7 +1816,7 @@ XRotateBuffers
 
 XSubImage
 	"VSW5TESTSUITE CASE XSubImage 1"
-	/tset/Xlib17/sbimg/sbimg
+	/tset/Xlib17/XSubImage/XSubImage
 
 XSubtractRegion
 	"VSW5TESTSUITE CASE XSubtractRegion 1"

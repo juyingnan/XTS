@@ -50,7 +50,7 @@ tprogs = \
 	XReadBitmapFile/XReadBitmapFile \
 	XRefreshKeyboardMapping/XRefreshKeyboardMapping \
 	XRotateBuffers/XRotateBuffers \
-	sbimg/sbimg \
+	XSubImage/XSubImage \
 	sbtrctrgn/sbtrctrgn \
 	shrnkrgn/shrnkrgn \
 	strbffr/strbffr \
