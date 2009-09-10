@@ -1594,7 +1594,7 @@ XrmQPutStringResource
 
 XrmQuarkToString
 	"VSW5TESTSUITE CASE XrmQuarkToString 3"
-	/tset/Xlib16/rmqrktstr/rmqrktstr
+	/tset/Xlib16/XrmQuarkToString/XrmQuarkToString
 
 XrmStringToBindingQuarkList
 	"VSW5TESTSUITE CASE XrmStringToBindingQuarkList 6"
