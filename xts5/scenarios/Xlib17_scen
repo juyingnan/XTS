@@ -110,7 +110,7 @@
 	"VSW5TESTSUITE CASE XKeysymToString 2"
 	/tset/Xlib17/XKeysymToString/XKeysymToString
 	"VSW5TESTSUITE CASE XLookupKeysym 2"
-	/tset/Xlib17/lkpkysym/lkpkysym
+	/tset/Xlib17/XLookupKeysym/XLookupKeysym
 	"VSW5TESTSUITE CASE XLookupString 3"
 	/tset/Xlib17/lkpstr/lkpstr
 	"VSW5TESTSUITE CASE XMatchVisualInfo 2"
