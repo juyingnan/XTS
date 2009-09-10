@@ -750,7 +750,7 @@ XListInstalledColormaps
 
 XRemoveFromSaveSet
 	"VSW5TESTSUITE CASE XRemoveFromSaveSet 3"
-	/tset/Xlib10/rmvfrmsvst/rmvfrmsvst
+	/tset/Xlib10/XRemoveFromSaveSet/XRemoveFromSaveSet
 
 XRemoveHost
 	"VSW5TESTSUITE CASE XRemoveHost 3"

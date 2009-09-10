@@ -23,7 +23,7 @@ tprogs = \
 	XKillClient/XKillClient \
 	XListHosts/XListHosts \
 	XListInstalledColormaps/XListInstalledColormaps \
-	rmvfrmsvst/rmvfrmsvst \
+	XRemoveFromSaveSet/XRemoveFromSaveSet \
 	rmvhst/rmvhst \
 	rmvhsts/rmvhsts \
 	XReparentWindow/XReparentWindow \
