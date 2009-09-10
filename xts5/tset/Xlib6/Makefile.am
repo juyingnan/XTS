@@ -14,6 +14,6 @@ tprogs = \
 	CreatePixmap/CreatePixmap \
 	crtpxmpcrs/crtpxmpcrs \
 	FreeCursor/FreeCursor \
-	frpxmp/frpxmp \
+	FreePixmap/FreePixmap \
 	qrybstcrsr/qrybstcrsr \
 	rclrcrsr/rclrcrsr

@@ -136,7 +136,7 @@
 	"VSW5TESTSUITE CASE FreeGC 3"
 	/tset/Xproto/FreeGC/FreeGC
 	"VSW5TESTSUITE CASE FreePixmap 3"
-	/tset/Xproto/frpxmp/frpxmp
+	/tset/Xproto/FreePixmap/FreePixmap
 	"VSW5TESTSUITE CASE GrabButton 3"
 	/tset/Xproto/grbbttn/grbbttn
 	"VSW5TESTSUITE CASE GrabKey 3"

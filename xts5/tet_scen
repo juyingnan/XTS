@@ -2516,7 +2516,7 @@ XFreeCursor
 
 XFreePixmap
 	"VSW5TESTSUITE CASE XFreePixmap 3"
-	/tset/Xlib6/frpxmp/frpxmp
+	/tset/Xlib6/FreePixmap/FreePixmap
 
 XQueryBestCursor
 	"VSW5TESTSUITE CASE XQueryBestCursor 2"
@@ -3266,7 +3266,7 @@ pFreeGC
 
 pFreePixmap
 	"VSW5TESTSUITE CASE FreePixmap 3"
-	/tset/Xproto/frpxmp/frpxmp
+	/tset/Xproto/FreePixmap/FreePixmap
 
 pGrabButton
 	"VSW5TESTSUITE CASE GrabButton 3"
