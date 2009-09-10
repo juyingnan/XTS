@@ -94,7 +94,7 @@
 	"VSW5TESTSUITE CASE XSetFont 4"
 	/tset/Xlib8/XSetFont/XSetFont
 	"VSW5TESTSUITE CASE XSetForeground 3"
-	/tset/Xlib8/stfrgrnd/stfrgrnd
+	/tset/Xlib8/XSetForeground/XSetForeground
 	"VSW5TESTSUITE CASE XSetGraphicsExposures 4"
 	/tset/Xlib8/stgrphcsex/stgrphcsex
 	"VSW5TESTSUITE CASE XSetLineAttributes 6"
