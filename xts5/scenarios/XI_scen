@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XCloseDevice 7"
 	/tset/XI/XCloseDevice/XCloseDevice
 	"VSW5TESTSUITE CASE XDeviceBell 6"
-	/tset/XI/dvbell/dvbell
+	/tset/XI/XDeviceBell/XDeviceBell
 	"VSW5TESTSUITE CASE XGetDeviceControl 4"
 	/tset/XI/getdctl/getdctl
 	"VSW5TESTSUITE CASE XGetFeedbackControl 3"

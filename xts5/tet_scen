@@ -534,7 +534,7 @@ XCloseDevice
 
 XDeviceBell
 	"VSW5TESTSUITE CASE XDeviceBell 6"
-	/tset/XI/dvbell/dvbell
+	/tset/XI/XDeviceBell/XDeviceBell
 
 XGetDeviceControl
 	"VSW5TESTSUITE CASE XGetDeviceControl 4"

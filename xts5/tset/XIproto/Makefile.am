@@ -17,7 +17,7 @@ tprogs = \
 	XChangePointerDevice/XChangePointerDevice \
 	XChangeDeviceKeyMapping/XChangeDeviceKeyMapping \
 	XCloseDevice/XCloseDevice \
-	dvbell/dvbell \
+	XDeviceBell/XDeviceBell \
 	getdvmmap/getdvmmap \
 	getfctl/getfctl \
 	getvers/getvers \
