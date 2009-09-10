@@ -1515,7 +1515,7 @@ XSetWMSizeHints
 
 XTextPropertyToStringList
 	"VSW5TESTSUITE CASE XTextPropertyToStringList 4"
-	/tset/Xlib15/txtprprtyt/txtprprtyt
+	/tset/Xlib15/XTextPropertyToStringList/XTextPropertyToStringList
 
 XWithdrawWindow
 	"VSW5TESTSUITE CASE XWithdrawWindow 3"

@@ -140,7 +140,7 @@
 	"VSW5TESTSUITE CASE XSetWMSizeHints 4"
 	/tset/Xlib15/XSetWMSizeHints/XSetWMSizeHints
 	"VSW5TESTSUITE CASE XTextPropertyToStringList 4"
-	/tset/Xlib15/txtprprtyt/txtprprtyt
+	/tset/Xlib15/XTextPropertyToStringList/XTextPropertyToStringList
 	"VSW5TESTSUITE CASE XWithdrawWindow 3"
 	/tset/Xlib15/wthdrwwdw/wthdrwwdw
 	"VSW5TESTSUITE CASE XDefaultString 1"

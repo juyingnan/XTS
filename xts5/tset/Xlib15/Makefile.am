@@ -54,7 +54,7 @@ tprogs = \
 	XSetWMProperties/XSetWMProperties \
 	XSetWMProtocols/XSetWMProtocols \
 	XSetWMSizeHints/XSetWMSizeHints \
-	txtprprtyt/txtprprtyt \
+	XTextPropertyToStringList/XTextPropertyToStringList \
 	wthdrwwdw/wthdrwwdw
 
 # Auxiliary programs run from tests
