@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE XCreateRegion 2"
 	/tset/Xlib17/XCreateRegion/XCreateRegion
 	"VSW5TESTSUITE CASE XDeleteContext 2"
-	/tset/Xlib17/dltcntxt/dltcntxt
+	/tset/Xlib17/XDeleteContext/XDeleteContext
 	"VSW5TESTSUITE CASE XDestroyImage 1"
 	/tset/Xlib17/dstryimg/dstryimg
 	"VSW5TESTSUITE CASE XDestroyRegion 1"

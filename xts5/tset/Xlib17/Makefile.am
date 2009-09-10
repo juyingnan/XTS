@@ -15,7 +15,7 @@ tprogs = \
 	XCreateImage/XCreateImage \
 	XCreatePixmapFromBitmapData/XCreatePixmapFromBitmapData \
 	XCreateRegion/XCreateRegion \
-	dltcntxt/dltcntxt \
+	XDeleteContext/XDeleteContext \
 	dstryimg/dstryimg \
 	dstryrgn/dstryrgn \
 	emptyrgn/emptyrgn \

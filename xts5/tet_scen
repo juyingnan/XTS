@@ -1676,7 +1676,7 @@ XCreateRegion
 
 XDeleteContext
 	"VSW5TESTSUITE CASE XDeleteContext 2"
-	/tset/Xlib17/dltcntxt/dltcntxt
+	/tset/Xlib17/XDeleteContext/XDeleteContext
 
 XDestroyImage
 	"VSW5TESTSUITE CASE XDestroyImage 1"
