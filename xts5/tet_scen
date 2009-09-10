@@ -3604,7 +3604,7 @@ CoreWidget
 
 CompositeWidget
 	"VSW5TESTSUITE CASE CompositeWidget 11"
-	/tset/Xt3/wdgtcmpst/wdgtcmpst
+	/tset/Xt3/CompositeWidget/CompositeWidget
 
 ConstraintWidget
 	"VSW5TESTSUITE CASE ConstraintWidget 11"

@@ -63,7 +63,7 @@
 	"VSW5TESTSUITE CASE CoreWidget 9"
 	/tset/Xt3/wdgtcr/wdgtcr
 	"VSW5TESTSUITE CASE CompositeWidget 11"
-	/tset/Xt3/wdgtcmpst/wdgtcmpst
+	/tset/Xt3/CompositeWidget/CompositeWidget
 	"VSW5TESTSUITE CASE ConstraintWidget 11"
 	/tset/Xt3/wdgtcnstrn/wdgtcnstrn
 	"VSW5TESTSUITE CASE XtClass 1"
