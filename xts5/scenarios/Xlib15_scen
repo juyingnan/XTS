@@ -138,7 +138,7 @@
 	"VSW5TESTSUITE CASE XSetWMProtocols 4"
 	/tset/Xlib15/XSetWMProtocols/XSetWMProtocols
 	"VSW5TESTSUITE CASE XSetWMSizeHints 4"
-	/tset/Xlib15/stwmszhnts/stwmszhnts
+	/tset/Xlib15/XSetWMSizeHints/XSetWMSizeHints
 	"VSW5TESTSUITE CASE XTextPropertyToStringList 4"
 	/tset/Xlib15/txtprprtyt/txtprprtyt
 	"VSW5TESTSUITE CASE XWithdrawWindow 3"

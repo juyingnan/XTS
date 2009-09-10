@@ -1511,7 +1511,7 @@ XSetWMProtocols
 
 XSetWMSizeHints
 	"VSW5TESTSUITE CASE XSetWMSizeHints 4"
-	/tset/Xlib15/stwmszhnts/stwmszhnts
+	/tset/Xlib15/XSetWMSizeHints/XSetWMSizeHints
 
 XTextPropertyToStringList
 	"VSW5TESTSUITE CASE XTextPropertyToStringList 4"

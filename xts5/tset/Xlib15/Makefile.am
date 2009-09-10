@@ -53,7 +53,7 @@ tprogs = \
 	XSetWMNormalHints/XSetWMNormalHints \
 	XSetWMProperties/XSetWMProperties \
 	XSetWMProtocols/XSetWMProtocols \
-	stwmszhnts/stwmszhnts \
+	XSetWMSizeHints/XSetWMSizeHints \
 	txtprprtyt/txtprprtyt \
 	wthdrwwdw/wthdrwwdw
 
