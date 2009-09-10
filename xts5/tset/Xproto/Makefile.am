@@ -122,7 +122,7 @@ tprogs = \
 	XSetScreenSaver/XSetScreenSaver \
 	SetSelectionOwner/SetSelectionOwner \
 	TranslateCoords/TranslateCoords \
-	UngrabButton/UngrabButton \
+	XUngrabButton/XUngrabButton \
 	UngrabKey/UngrabKey \
 	UngrabKeyboard/UngrabKeyboard \
 	UngrabPointer/UngrabPointer \

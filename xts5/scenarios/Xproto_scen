@@ -282,7 +282,7 @@
 	"VSW5TESTSUITE CASE TranslateCoords 3"
 	/tset/Xproto/TranslateCoords/TranslateCoords
 	"VSW5TESTSUITE CASE UngrabButton 3"
-	/tset/Xproto/UngrabButton/UngrabButton
+	/tset/Xproto/XUngrabButton/XUngrabButton
 	"VSW5TESTSUITE CASE UngrabKey 3"
 	/tset/Xproto/UngrabKey/UngrabKey
 	"VSW5TESTSUITE CASE UngrabKeyboard 3"

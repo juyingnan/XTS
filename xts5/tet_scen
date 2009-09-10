@@ -1142,7 +1142,7 @@ XSetPointerMapping
 
 XUngrabButton
 	"VSW5TESTSUITE CASE XUngrabButton 6"
-	/tset/Xlib13/UngrabButton/UngrabButton
+	/tset/Xlib13/XUngrabButton/XUngrabButton
 
 XUngrabKey
 	"VSW5TESTSUITE CASE XUngrabKey 7"
@@ -3558,7 +3558,7 @@ pTranslateCoords
 
 pUngrabButton
 	"VSW5TESTSUITE CASE UngrabButton 3"
-	/tset/Xproto/UngrabButton/UngrabButton
+	/tset/Xproto/XUngrabButton/XUngrabButton
 
 pUngrabKey
 	"VSW5TESTSUITE CASE UngrabKey 3"
