@@ -13,7 +13,7 @@ tprogs = \
 	CreateGlyphCursor/CreateGlyphCursor \
 	CreatePixmap/CreatePixmap \
 	crtpxmpcrs/crtpxmpcrs \
-	frcrsr/frcrsr \
+	FreeCursor/FreeCursor \
 	frpxmp/frpxmp \
 	qrybstcrsr/qrybstcrsr \
 	rclrcrsr/rclrcrsr

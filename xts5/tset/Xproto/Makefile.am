@@ -46,7 +46,7 @@ tprogs = \
 	FillPoly/FillPoly \
 	FreeColormap/FreeColormap \
 	FreeColors/FreeColors \
-	frcrsr/frcrsr \
+	FreeCursor/FreeCursor \
 	frcscrnsvr/frcscrnsvr \
 	frgc/frgc \
 	frpxmp/frpxmp \

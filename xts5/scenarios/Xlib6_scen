@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE XCreatePixmapCursor 13"
 	/tset/Xlib6/crtpxmpcrs/crtpxmpcrs
 	"VSW5TESTSUITE CASE XFreeCursor 3"
-	/tset/Xlib6/frcrsr/frcrsr
+	/tset/Xlib6/FreeCursor/FreeCursor
 	"VSW5TESTSUITE CASE XFreePixmap 3"
 	/tset/Xlib6/frpxmp/frpxmp
 	"VSW5TESTSUITE CASE XQueryBestCursor 2"
