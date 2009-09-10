@@ -4076,7 +4076,7 @@ XtRemoveEventHandler
 
 XtInsertEventHandler
 	"VSW5TESTSUITE CASE XtInsertEventHandler 10"
-	/tset/Xt9/tinevthdr/tinevthdr
+	/tset/Xt9/XtInsertEventHandler/XtInsertEventHandler
 
 XtAddRawEventHandler
 	"VSW5TESTSUITE CASE XtAddRawEventHandler 9"

@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xt9/tinevthdr/tinevthdr.m,v 1.1 2005-02-12 14:38:24 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xt9/XtInsertEventHandler/XtInsertEventHandler.m,v 1.1 2005-02-12 14:38:24 anderson Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/tinevthdr/tinevthdr.m
+>># File: tset/Xt9/XtInsertEventHandler/XtInsertEventHandler.m
 >># 
 >># Description:
 >>#	Tests for XtInsertEventHandler()
