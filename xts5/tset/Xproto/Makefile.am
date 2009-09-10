@@ -56,7 +56,7 @@ tprogs = \
 	GrabPointer/GrabPointer \
 	GrabServer/GrabServer \
 	GetAtomName/GetAtomName \
-	gtfntpth/gtfntpth \
+	GetFontPath/GetFontPath \
 	gtgmtry/gtgmtry \
 	gtimg/gtimg \
 	gtinptfcs/gtinptfcs \
