@@ -3964,7 +3964,7 @@ XtQueryGeometry
 
 XtAppAddInput
 	"VSW5TESTSUITE CASE XtAppAddInput 5"
-	/tset/Xt9/tapaddinp/tapaddinp
+	/tset/Xt9/XtAppAddInput/XtAppAddInput
 
 XtRemoveInput
 	"VSW5TESTSUITE CASE XtRemoveInput 1"
