@@ -22,7 +22,7 @@ tprogs = \
 	XGetErrorText/XGetErrorText \
 	XGetMotionEvents/XGetMotionEvents \
 	XIfEvent/XIfEvent \
-	mskevnt/mskevnt \
+	XMaskEvent/XMaskEvent \
 	nxtevnt/nxtevnt \
 	pkevnt/pkevnt \
 	pkifevnt/pkifevnt \

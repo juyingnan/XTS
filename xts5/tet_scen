@@ -975,7 +975,7 @@ XIfEvent
 
 XMaskEvent
 	"VSW5TESTSUITE CASE XMaskEvent 3"
-	/tset/Xlib12/mskevnt/mskevnt
+	/tset/Xlib12/XMaskEvent/XMaskEvent
 
 XNextEvent
 	"VSW5TESTSUITE CASE XNextEvent 3"
