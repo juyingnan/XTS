@@ -1451,7 +1451,7 @@ XSetCommand
 
 XSetIconName
 	"VSW5TESTSUITE CASE XSetIconName 3"
-	/tset/Xlib15/sticnnm/sticnnm
+	/tset/Xlib15/XSetIconName/XSetIconName
 
 XSetIconSizes
 	"VSW5TESTSUITE CASE XSetIconSizes 3"

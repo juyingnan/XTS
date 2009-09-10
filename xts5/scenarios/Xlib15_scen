@@ -108,7 +108,7 @@
 	"VSW5TESTSUITE CASE XSetCommand 3"
 	/tset/Xlib15/XSetCommand/XSetCommand
 	"VSW5TESTSUITE CASE XSetIconName 3"
-	/tset/Xlib15/sticnnm/sticnnm
+	/tset/Xlib15/XSetIconName/XSetIconName
 	"VSW5TESTSUITE CASE XSetIconSizes 3"
 	/tset/Xlib15/sticnszs/sticnszs
 	"VSW5TESTSUITE CASE XSetRGBColormaps 4"
