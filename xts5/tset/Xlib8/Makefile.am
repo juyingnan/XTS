@@ -19,7 +19,7 @@ tprogs = \
 	XFreeGC/XFreeGC \
 	XGContextFromGC/XGContextFromGC \
 	XGetGCValues/XGetGCValues \
-	qrybststpp/qrybststpp \
+	XQueryBestStipple/XQueryBestStipple \
 	QueryBestSize/QueryBestSize \
 	qrybsttl/qrybsttl \
 	starcmd/starcmd \

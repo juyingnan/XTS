@@ -2789,7 +2789,7 @@ XGetGCValues
 
 XQueryBestStipple
 	"VSW5TESTSUITE CASE XQueryBestStipple 3"
-	/tset/Xlib8/qrybststpp/qrybststpp
+	/tset/Xlib8/XQueryBestStipple/XQueryBestStipple
 
 XQueryBestSize
 	"VSW5TESTSUITE CASE XQueryBestSize 7"

@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE XGetGCValues 3"
 	/tset/Xlib8/XGetGCValues/XGetGCValues
 	"VSW5TESTSUITE CASE XQueryBestStipple 3"
-	/tset/Xlib8/qrybststpp/qrybststpp
+	/tset/Xlib8/XQueryBestStipple/XQueryBestStipple
 	"VSW5TESTSUITE CASE XQueryBestSize 7"
 	/tset/Xlib8/QueryBestSize/QueryBestSize
 	"VSW5TESTSUITE CASE XQueryBestTile 3"
