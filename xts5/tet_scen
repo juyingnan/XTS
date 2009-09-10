@@ -1995,7 +1995,7 @@ XDoesSaveUnders
 
 XEventMaskOfScreen
 	"VSW5TESTSUITE CASE XEventMaskOfScreen 1"
-	/tset/Xlib3/evntmskofs/evntmskofs
+	/tset/Xlib3/XEventMaskOfScreen/XEventMaskOfScreen
 
 XFree
 	"VSW5TESTSUITE CASE XFree 1"
@@ -2223,7 +2223,7 @@ DoesSaveUnders
 
 EventMaskOfScreen
 	"VSW5TESTSUITE CASE EventMaskOfScreen 1"
-	/tset/Xlib3/evntmskofs/evntmskofs_m
+	/tset/Xlib3/XEventMaskOfScreen/XEventMaskOfScreen_m
 
 HeightMMOfScreen
 	"VSW5TESTSUITE CASE HeightMMOfScreen 1"
