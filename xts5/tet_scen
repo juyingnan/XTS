@@ -4679,7 +4679,7 @@ XtCreateApplicationShell
 
 XtStringConversionWarning
 	"VSW5TESTSUITE CASE XtStringConversionWarning 1"
-	/tset/XtC/tstconwg/tstconwg
+	/tset/XtC/XtStringConversionWarning/XtStringConversionWarning
 
 XtAddConverter
 	"VSW5TESTSUITE CASE XtAddConverter 10"
