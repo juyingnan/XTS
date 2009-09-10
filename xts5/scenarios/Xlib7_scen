@@ -140,7 +140,7 @@
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxL 1"
 	/tset/Xlib7/XcmsCIELuvQueryMaxL/XcmsCIELuvQueryMaxL
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxLC 1"
-	/tset/Xlib7/cmsqmlc/cmsqmlc
+	/tset/Xlib7/XcmsCIELuvQueryMaxLC/XcmsCIELuvQueryMaxLC
 	"VSW5TESTSUITE CASE XcmsQueryRed 1"
 	/tset/Xlib7/cmsqred/cmsqred
 	"VSW5TESTSUITE CASE XcmsQueryWhite 1"
