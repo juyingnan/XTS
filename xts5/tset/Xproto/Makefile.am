@@ -115,7 +115,7 @@ tprogs = \
 	SetDashes/SetDashes \
 	SetFontPath/SetFontPath \
 	XSetInputFocus/XSetInputFocus \
-	SetModifierMapping/SetModifierMapping \
+	XSetModifierMapping/XSetModifierMapping \
 	SetPointerMapping/SetPointerMapping \
 	StoreColors/StoreColors \
 	StoreNamedColor/StoreNamedColor \

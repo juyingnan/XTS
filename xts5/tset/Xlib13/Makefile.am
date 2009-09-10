@@ -34,7 +34,7 @@ tprogs = \
 	XNewModifiermap/XNewModifiermap \
 	XQueryKeymap/XQueryKeymap \
 	XSetInputFocus/XSetInputFocus \
-	SetModifierMapping/SetModifierMapping \
+	XSetModifierMapping/XSetModifierMapping \
 	SetPointerMapping/SetPointerMapping \
 	UngrabButton/UngrabButton \
 	UngrabKey/UngrabKey \

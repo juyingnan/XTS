@@ -1134,7 +1134,7 @@ XSetInputFocus
 
 XSetModifierMapping
 	"VSW5TESTSUITE CASE XSetModifierMapping 8"
-	/tset/Xlib13/SetModifierMapping/SetModifierMapping
+	/tset/Xlib13/XSetModifierMapping/XSetModifierMapping
 
 XSetPointerMapping
 	"VSW5TESTSUITE CASE XSetPointerMapping 7"
@@ -3530,7 +3530,7 @@ pSetInputFocus
 
 pSetModifierMapping
 	"VSW5TESTSUITE CASE SetModifierMapping 3"
-	/tset/Xproto/SetModifierMapping/SetModifierMapping
+	/tset/Xproto/XSetModifierMapping/XSetModifierMapping
 
 pSetPointerMapping
 	"VSW5TESTSUITE CASE SetPointerMapping 3"
