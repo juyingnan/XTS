@@ -2071,7 +2071,7 @@ XRootWindowOfScreen
 
 XScreenCount
 	"VSW5TESTSUITE CASE XScreenCount 1"
-	/tset/Xlib3/scrncnt/scrncnt
+	/tset/Xlib3/XScreenCount/XScreenCount
 
 XScreenNumberOfScreen
 	"VSW5TESTSUITE CASE XScreenNumberOfScreen 1"
@@ -2279,7 +2279,7 @@ RootWindowOfScreen
 
 ScreenCount
 	"VSW5TESTSUITE CASE ScreenCount 1"
-	/tset/Xlib3/scrncnt/scrncnt_m
+	/tset/Xlib3/XScreenCount/XScreenCount_m
 
 ScreenOfDisplay
 	"VSW5TESTSUITE CASE ScreenOfDisplay 1"

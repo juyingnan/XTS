@@ -58,7 +58,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XQLength/XQLength XQLength/XQLength_m \
 	XRootWindow/XRootWindow XRootWindow/XRootWindow_m \
 	XRootWindowOfScreen/XRootWindowOfScreen XRootWindowOfScreen/XRootWindowOfScreen_m \
-	scrncnt/scrncnt scrncnt/scrncnt_m \
+	XScreenCount/XScreenCount XScreenCount/XScreenCount_m \
 	scrnnmbrof/scrnnmbrof \
 	scrnofdspl/scrnofdspl scrnofdspl/scrnofdspl_m \
 	srvrvndr/srvrvndr srvrvndr/srvrvndr_m \
