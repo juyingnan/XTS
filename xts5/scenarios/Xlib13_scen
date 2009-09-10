@@ -92,7 +92,7 @@
 	"VSW5TESTSUITE CASE XGetKeyboardMapping 6"
 	/tset/Xlib13/XGetKeyboardMapping/XGetKeyboardMapping
 	"VSW5TESTSUITE CASE XGetModifierMapping 2"
-	/tset/Xlib13/GetModifierMapping/GetModifierMapping
+	/tset/Xlib13/XGetModifierMapping/XGetModifierMapping
 	"VSW5TESTSUITE CASE XGetPointerControl 1"
 	/tset/Xlib13/GetPointerControl/GetPointerControl
 	"VSW5TESTSUITE CASE XGetPointerMapping 3"

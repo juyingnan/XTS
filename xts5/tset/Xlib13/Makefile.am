@@ -27,7 +27,7 @@ tprogs = \
 	XGetInputFocus/XGetInputFocus \
 	XGetKeyboardControl/XGetKeyboardControl \
 	XGetKeyboardMapping/XGetKeyboardMapping \
-	GetModifierMapping/GetModifierMapping \
+	XGetModifierMapping/XGetModifierMapping \
 	GetPointerControl/GetPointerControl \
 	GetPointerMapping/GetPointerMapping \
 	insrtmdfrm/insrtmdfrm \
