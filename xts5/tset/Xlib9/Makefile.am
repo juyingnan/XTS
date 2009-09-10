@@ -13,7 +13,7 @@ tprogs = \
 	XClearWindow/XClearWindow \
 	XCopyArea/XCopyArea \
 	XCopyPlane/XCopyPlane \
-	drwarc/drwarc \
+	XDrawArc/XDrawArc \
 	drwarcs/drwarcs \
 	drwimgst16/drwimgst16 \
 	drwimgstr/drwimgstr \

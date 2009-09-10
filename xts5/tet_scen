@@ -2900,7 +2900,7 @@ XCopyPlane
 
 XDrawArc
 	"VSW5TESTSUITE CASE XDrawArc 102"
-	/tset/Xlib9/drwarc/drwarc
+	/tset/Xlib9/XDrawArc/XDrawArc
 
 XDrawArcs
 	"VSW5TESTSUITE CASE XDrawArcs 112"

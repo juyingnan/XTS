@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE XCopyPlane 43"
 	/tset/Xlib9/XCopyPlane/XCopyPlane
 	"VSW5TESTSUITE CASE XDrawArc 102"
-	/tset/Xlib9/drwarc/drwarc
+	/tset/Xlib9/XDrawArc/XDrawArc
 	"VSW5TESTSUITE CASE XDrawArcs 112"
 	/tset/Xlib9/drwarcs/drwarcs
 	"VSW5TESTSUITE CASE XDrawImageString16 24"
