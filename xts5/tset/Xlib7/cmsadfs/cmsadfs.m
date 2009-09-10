@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/cmsac/cmsac.m
+>># File: tset/Xlib7/XcmsAllocColor/XcmsAllocColor.m
 >># 
 >># Description:
 >>#	Tests for XcmsAddFunctionSet()

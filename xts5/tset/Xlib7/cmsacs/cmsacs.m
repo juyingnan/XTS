@@ -22,7 +22,7 @@ $Header: /cvs/xtest/xtest/xts5/tset/Xlib7/cmsacs/cmsacs.m,v 1.1 2005-02-12 14:37
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/cmsac/cmsac.m
+>># File: tset/Xlib7/XcmsAllocColor/XcmsAllocColor.m
 >># 
 >># Description:
 >>#	Tests for XcmsAllocColor()

@@ -14,7 +14,7 @@ tprogs = \
 	XAllocColorCells/XAllocColorCells \
 	XAllocColorPlanes/XAllocColorPlanes \
 	XAllocNamedColor/XAllocNamedColor \
-	cmsac/cmsac \
+	XcmsAllocColor/XcmsAllocColor \
 	cmsacs/cmsacs \
 	cmsadfs/cmsadfs \
 	cmsanc/cmsanc \

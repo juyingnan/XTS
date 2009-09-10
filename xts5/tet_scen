@@ -2591,7 +2591,7 @@ XStoreNamedColor
 
 XcmsAllocColor
 	"VSW5TESTSUITE CASE XcmsAllocColor 2"
-	/tset/Xlib7/cmsac/cmsac
+	/tset/Xlib7/XcmsAllocColor/XcmsAllocColor
 
 XcmsAddColorSpace
 	"VSW5TESTSUITE CASE XcmsAddColorSpace 1"

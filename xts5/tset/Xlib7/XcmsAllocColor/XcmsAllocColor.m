@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib7/cmsac/cmsac.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib7/XcmsAllocColor/XcmsAllocColor.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
 Copyright (c) 2003 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
@@ -27,7 +27,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/cmsac/cmsac.m
+>># File: tset/Xlib7/XcmsAllocColor/XcmsAllocColor.m
 >># 
 >># Description:
 >>#	Tests for XcmsAllocColor()
