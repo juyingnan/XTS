@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE XtToolkitInitialize 1"
 	/tset/Xt4/ttlktintlz/ttlktintlz
 	"VSW5TESTSUITE CASE XtCreateApplicationContext 1"
-	/tset/Xt4/tcrtapplct/tcrtapplct
+	/tset/Xt4/XtCreateApplicationContext/XtCreateApplicationContext
 	"VSW5TESTSUITE CASE XtDestoryApplicationContext 2"
 	/tset/Xt4/tdstryappl/tdstryappl
 	"VSW5TESTSUITE CASE XtWidgetToApplicationContext 1"

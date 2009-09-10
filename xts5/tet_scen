@@ -3686,7 +3686,7 @@ XtToolkitInitialize
 
 XtCreateApplicationContext
 	"VSW5TESTSUITE CASE XtCreateApplicationContext 1"
-	/tset/Xt4/tcrtapplct/tcrtapplct
+	/tset/Xt4/XtCreateApplicationContext/XtCreateApplicationContext
 
 XtDestroyApplicationContext
 	"VSW5TESTSUITE CASE XtDestoryApplicationContext 2"
