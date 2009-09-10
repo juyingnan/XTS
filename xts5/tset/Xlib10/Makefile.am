@@ -16,7 +16,7 @@ tprogs = \
 	XChangeSaveSet/XChangeSaveSet \
 	XDisableAccessControl/XDisableAccessControl \
 	XEnableAccessControl/XEnableAccessControl \
-	ForceScreenSaver/ForceScreenSaver \
+	XForceScreenSaver/XForceScreenSaver \
 	GrabServer/GrabServer \
 	GetScreenSaver/GetScreenSaver \
 	InstallColormap/InstallColormap \
