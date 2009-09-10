@@ -4407,7 +4407,7 @@ XtParseAcceleratorTable
 
 XtInstallAccelerators
 	"VSW5TESTSUITE CASE XtInstallAccelerators 2"
-	/tset/Xt12/tinaclrts/tinaclrts
+	/tset/Xt12/XtInstallAccelerators/XtInstallAccelerators
 
 XtInstallAllAccelerators
 	"VSW5TESTSUITE CASE XtInstallAllAccelerators 1"

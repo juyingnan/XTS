@@ -79,7 +79,7 @@
 	"VSW5TESTSUITE CASE XtParseAcceleratorTable 1"
 	/tset/Xt12/tprsactbl/tprsactbl
 	"VSW5TESTSUITE CASE XtInstallAccelerators 2"
-	/tset/Xt12/tinaclrts/tinaclrts
+	/tset/Xt12/XtInstallAccelerators/XtInstallAccelerators
 	"VSW5TESTSUITE CASE XtInstallAllAccelerators 1"
 	/tset/Xt12/XtInstallAllAccelerators/XtInstallAllAccelerators
 	"VSW5TESTSUITE CASE XtGetKeysymTable 4"
