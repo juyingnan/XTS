@@ -1347,7 +1347,7 @@ XwcTextExtents
 
 XAllocClassHint
 	"VSW5TESTSUITE CASE XAllocClassHint 2"
-	/tset/Xlib15/allcclsshn/allcclsshn
+	/tset/Xlib15/XAllocClassHint/XAllocClassHint
 
 XAllocIconSize
 	"VSW5TESTSUITE CASE XAllocIconSize 2"

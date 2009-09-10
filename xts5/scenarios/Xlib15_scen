@@ -56,7 +56,7 @@
 #
 
 	"VSW5TESTSUITE CASE XAllocClassHint 2"
-	/tset/Xlib15/allcclsshn/allcclsshn
+	/tset/Xlib15/XAllocClassHint/XAllocClassHint
 	"VSW5TESTSUITE CASE XAllocIconSize 2"
 	/tset/Xlib15/allcicnsz/allcicnsz
 	"VSW5TESTSUITE CASE XAllocStandardColormap 2"

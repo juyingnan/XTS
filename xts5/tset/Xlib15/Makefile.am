@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 defstr_defstr_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 
 tprogs = \
-	allcclsshn/allcclsshn \
+	XAllocClassHint/XAllocClassHint \
 	allcicnsz/allcicnsz \
 	allcstndrd/allcstndrd \
 	allcszhnts/allcszhnts \
