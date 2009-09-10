@@ -36,7 +36,7 @@ tprogs = \
 	CirculateWindow/CirculateWindow \
 	CreateColormap/CreateColormap \
 	CreateCursor/CreateCursor \
-	crtgc/crtgc \
+	CreateGC/CreateGC \
 	crtglyphcr/crtglyphcr \
 	crtpxmp/crtpxmp \
 	crtwdw/crtwdw \

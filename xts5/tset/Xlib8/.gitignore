@@ -1,6 +1,6 @@
 ChangeGC/ChangeGC
 CopyGC/CopyGC
-crtgc/crtgc
+CreateGC/CreateGC
 flushgc/flushgc
 frgc/frgc
 gcntxtfrmg/gcntxtfrmg

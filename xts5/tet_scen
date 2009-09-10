@@ -2773,7 +2773,7 @@ XCopyGC
 
 XCreateGC
 	"VSW5TESTSUITE CASE XCreateGC 26"
-	/tset/Xlib8/crtgc/crtgc
+	/tset/Xlib8/CreateGC/CreateGC
 
 XFreeGC
 	"VSW5TESTSUITE CASE XFreeGC 2"
@@ -3214,7 +3214,7 @@ pCreateCursor
 
 pCreateGC
 	"VSW5TESTSUITE CASE CreateGC 6"
-	/tset/Xproto/crtgc/crtgc
+	/tset/Xproto/CreateGC/CreateGC
 
 pCreateGlyphCursor
 	"VSW5TESTSUITE CASE CreateGlyphCursor 5"

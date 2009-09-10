@@ -17,14 +17,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib8/crtgc/crtgc.m,v 1.2 2005-11-03 08:43:46 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib8/CreateGC/CreateGC.m,v 1.2 2005-11-03 08:43:46 jmichael Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib8/crtgc/crtgc.m
+>># File: xts5/tset/Xlib8/CreateGC/CreateGC.m
 >># 
 >># Description:
 >># 	Tests for XCreateGC()
