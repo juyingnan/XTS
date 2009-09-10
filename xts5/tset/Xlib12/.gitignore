@@ -7,7 +7,7 @@ XDisplayMotionBufferSize/XDisplayMotionBufferSize
 XDisplayName/XDisplayName
 dsplynm/Test1
 XEventsQueued/XEventsQueued
-flsh/flsh
+XFlush/XFlush
 gterrrdtbs/gterrrdtbs
 gterrrtxt/gterrrtxt
 GetMotionEvents/GetMotionEvents

@@ -955,7 +955,7 @@ XEventsQueued
 
 XFlush
 	"VSW5TESTSUITE CASE XFlush 1"
-	/tset/Xlib12/flsh/flsh
+	/tset/Xlib12/XFlush/XFlush
 
 XGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XGetErrorDatabaseText 5"

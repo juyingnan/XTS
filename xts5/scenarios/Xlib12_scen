@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XEventsQueued 6"
 	/tset/Xlib12/XEventsQueued/XEventsQueued
 	"VSW5TESTSUITE CASE XFlush 1"
-	/tset/Xlib12/flsh/flsh
+	/tset/Xlib12/XFlush/XFlush
 	"VSW5TESTSUITE CASE XGetErrorDatabaseText 5"
 	/tset/Xlib12/gterrrdtbs/gterrrdtbs
 	"VSW5TESTSUITE CASE XGetErrorText 2"

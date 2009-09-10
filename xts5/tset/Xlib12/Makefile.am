@@ -17,7 +17,7 @@ tprogs = \
 	XDisplayMotionBufferSize/XDisplayMotionBufferSize \
 	XDisplayName/XDisplayName \
 	XEventsQueued/XEventsQueued \
-	flsh/flsh \
+	XFlush/XFlush \
 	gterrrdtbs/gterrrdtbs \
 	gterrrtxt/gterrrtxt \
 	GetMotionEvents/GetMotionEvents \
