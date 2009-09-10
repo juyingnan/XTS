@@ -1688,7 +1688,7 @@ XDestroyRegion
 
 XEmptyRegion
 	"VSW5TESTSUITE CASE XEmptyRegion 2"
-	/tset/Xlib17/emptyrgn/emptyrgn
+	/tset/Xlib17/XEmptyRegion/XEmptyRegion
 
 XEqualRegion
 	"VSW5TESTSUITE CASE XEqualRegion 4"

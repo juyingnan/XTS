@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE XDestroyRegion 1"
 	/tset/Xlib17/XDestroyRegion/XDestroyRegion
 	"VSW5TESTSUITE CASE XEmptyRegion 2"
-	/tset/Xlib17/emptyrgn/emptyrgn
+	/tset/Xlib17/XEmptyRegion/XEmptyRegion
 	"VSW5TESTSUITE CASE XEqualRegion 4"
 	/tset/Xlib17/eqlrgn/eqlrgn
 	"VSW5TESTSUITE CASE XFindContext 2"
