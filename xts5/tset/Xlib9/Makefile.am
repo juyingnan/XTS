@@ -14,7 +14,7 @@ tprogs = \
 	XCopyArea/XCopyArea \
 	XCopyPlane/XCopyPlane \
 	XDrawArc/XDrawArc \
-	drwarcs/drwarcs \
+	XDrawArcs/XDrawArcs \
 	drwimgst16/drwimgst16 \
 	drwimgstr/drwimgstr \
 	drwln/drwln \
