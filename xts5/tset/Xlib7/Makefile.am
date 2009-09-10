@@ -44,7 +44,7 @@ tprogs = \
 	XcmsCIELuvQueryMaxLC/XcmsCIELuvQueryMaxLC \
 	XcmsQueryRed/XcmsQueryRed \
 	XcmsQueryWhite/XcmsQueryWhite \
-	cmssnoc/cmssnoc \
+	XcmsScreenNumberOfCCC/XcmsScreenNumberOfCCC \
 	cmsstclr/cmsstclr \
 	cmsstcls/cmsstcls \
 	cmstqmc/cmstqmc \

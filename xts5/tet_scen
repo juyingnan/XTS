@@ -2711,7 +2711,7 @@ XcmsQueryWhite
 
 XcmsScreenNumberOfCCC
 	"VSW5TESTSUITE CASE XcmsScreenNumberOfCCC 1"
-	/tset/Xlib7/cmssnoc/cmssnoc
+	/tset/Xlib7/XcmsScreenNumberOfCCC/XcmsScreenNumberOfCCC
 
 XcmsStoreColor
 	"VSW5TESTSUITE CASE XcmsStoreColor 4"
