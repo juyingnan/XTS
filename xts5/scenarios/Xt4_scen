@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE XtWidgetToApplicationContext 1"
 	/tset/Xt4/twdgttappl/twdgttappl
 	"VSW5TESTSUITE CASE XtDisplayInitialize 20"
-	/tset/Xt4/tdsplyintl/tdsplyintl
+	/tset/Xt4/XtDisplayInitialize/XtDisplayInitialize
 	"VSW5TESTSUITE CASE XtOpenDisplay 28"
 	/tset/Xt4/topndsply/topndsply
 	"VSW5TESTSUITE CASE XtCloseDisplay 2"

@@ -3698,7 +3698,7 @@ XtWidgetToApplicationContext
 
 XtDisplayInitialize
 	"VSW5TESTSUITE CASE XtDisplayInitialize 20"
-	/tset/Xt4/tdsplyintl/tdsplyintl
+	/tset/Xt4/XtDisplayInitialize/XtDisplayInitialize
 
 XtOpenDisplay
 	"VSW5TESTSUITE CASE XtOpenDisplay 28"
