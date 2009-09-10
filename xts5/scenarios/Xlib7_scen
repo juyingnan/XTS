@@ -124,7 +124,7 @@
 	"VSW5TESTSUITE CASE XcmsPrefixOfFormat 1"
 	/tset/Xlib7/XcmsPrefixOfFormat/XcmsPrefixOfFormat
 	"VSW5TESTSUITE CASE XcmsQueryBlack 1"
-	/tset/Xlib7/cmsqbk/cmsqbk
+	/tset/Xlib7/XcmsQueryBlack/XcmsQueryBlack
 	"VSW5TESTSUITE CASE XcmsQueryBlue 1"
 	/tset/Xlib7/cmsqbl/cmsqbl
 	"VSW5TESTSUITE CASE XcmsQueryColor 1"

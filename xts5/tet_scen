@@ -2667,7 +2667,7 @@ XcmsPrefixOfFormat
 
 XcmsQueryBlack
 	"VSW5TESTSUITE CASE XcmsQueryBlack 1"
-	/tset/Xlib7/cmsqbk/cmsqbk
+	/tset/Xlib7/XcmsQueryBlack/XcmsQueryBlack
 
 XcmsQueryBlue
 	"VSW5TESTSUITE CASE XcmsQueryBlue 1"
