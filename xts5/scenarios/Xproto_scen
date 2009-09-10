@@ -246,7 +246,7 @@
 	"VSW5TESTSUITE CASE QueryTree 3"
 	/tset/Xproto/QueryTree/QueryTree
 	"VSW5TESTSUITE CASE QueryTextExtents 3"
-	/tset/Xproto/qrytxtextn/qrytxtextn
+	/tset/Xproto/QueryTextExtents/QueryTextExtents
 	"VSW5TESTSUITE CASE RecolorCursor 3"
 	/tset/Xproto/rclrcrsr/rclrcrsr
 	"VSW5TESTSUITE CASE ReparentWindow 3"

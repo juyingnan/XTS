@@ -48,7 +48,7 @@ tprogs = \
 	PutImage/PutImage \
 	QueryFont/QueryFont \
 	qrytxtex16/qrytxtex16 \
-	qrytxtextn/qrytxtextn \
+	QueryTextExtents/QueryTextExtents \
 	stfntpth/stfntpth \
 	txtextnt16/txtextnt16 \
 	txtextnts/txtextnts \

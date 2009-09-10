@@ -104,7 +104,7 @@ tprogs = \
 	QueryKeymap/QueryKeymap \
 	QueryPointer/QueryPointer \
 	QueryTree/QueryTree \
-	qrytxtextn/qrytxtextn \
+	QueryTextExtents/QueryTextExtents \
 	rclrcrsr/rclrcrsr \
 	rprntwdw/rprntwdw \
 	rttprprts/rttprprts \

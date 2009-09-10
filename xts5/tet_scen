@@ -3040,7 +3040,7 @@ XQueryTextExtents16
 
 XQueryTextExtents
 	"VSW5TESTSUITE CASE XQueryTextExtents 12"
-	/tset/Xlib9/qrytxtextn/qrytxtextn
+	/tset/Xlib9/QueryTextExtents/QueryTextExtents
 
 XSetFontPath
 	"VSW5TESTSUITE CASE XSetFontPath 4"
@@ -3486,7 +3486,7 @@ pQueryTree
 
 pQueryTextExtents
 	"VSW5TESTSUITE CASE QueryTextExtents 3"
-	/tset/Xproto/qrytxtextn/qrytxtextn
+	/tset/Xproto/QueryTextExtents/QueryTextExtents
 
 pRecolorCursor
 	"VSW5TESTSUITE CASE RecolorCursor 3"
