@@ -11,7 +11,7 @@ XEmptyRegion/XEmptyRegion
 XEqualRegion/XEqualRegion
 XFindContext/XFindContext
 XFetchBuffer/XFetchBuffer
-ftchbyts/ftchbyts
+XFetchBytes/XFetchBytes
 gtdflt/gtdflt
 gtdflt/Test3
 gtdflt/Test4

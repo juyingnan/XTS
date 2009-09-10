@@ -22,7 +22,7 @@ tprogs = \
 	XEqualRegion/XEqualRegion \
 	XFindContext/XFindContext \
 	XFetchBuffer/XFetchBuffer \
-	ftchbyts/ftchbyts \
+	XFetchBytes/XFetchBytes \
 	gtdflt/gtdflt \
 	gtpxl/gtpxl \
 	gtvslinf/gtvslinf \

@@ -1704,7 +1704,7 @@ XFetchBuffer
 
 XFetchBytes
 	"VSW5TESTSUITE CASE XFetchBytes 2"
-	/tset/Xlib17/ftchbyts/ftchbyts
+	/tset/Xlib17/XFetchBytes/XFetchBytes
 
 XGetDefault
 	"VSW5TESTSUITE CASE XGetDefault 5"
