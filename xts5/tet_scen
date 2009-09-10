@@ -3840,7 +3840,7 @@ XtUnmanageChild
 
 XtIsManaged
 	"VSW5TESTSUITE CASE XtIsManaged 3"
-	/tset/Xt5/tismanage/tismanage
+	/tset/Xt5/XtIsManaged/XtIsManaged
 
 XtSetMappedWhenManaged
 	"VSW5TESTSUITE CASE XtSetMappedWhenManaged 2"

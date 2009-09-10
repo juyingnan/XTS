@@ -71,7 +71,7 @@
 	"VSW5TESTSUITE CASE XtUnmanageChild 7"
 	/tset/Xt5/tunmgchld/tunmgchld
 	"VSW5TESTSUITE CASE XtIsManaged 3"
-	/tset/Xt5/tismanage/tismanage
+	/tset/Xt5/XtIsManaged/XtIsManaged
 	"VSW5TESTSUITE CASE XtSetMappedWhenManaged 2"
 	/tset/Xt5/tstmpwmng/tstmpwmng
 	"VSW5TESTSUITE CASE XtMapWidget 1"
