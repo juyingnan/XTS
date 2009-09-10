@@ -1646,7 +1646,7 @@ XrmSetDatabase
 
 XScreenResourceString
 	"VSW5TESTSUITE CASE XScreenResourceString 2"
-	/tset/Xlib16/scrrs/scrrs
+	/tset/Xlib16/XScreenResourceString/XScreenResourceString
 
 # Discrete tests for Xlib Chapter 17-Application Utility Functions
 
