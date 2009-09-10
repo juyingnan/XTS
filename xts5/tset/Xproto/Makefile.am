@@ -68,7 +68,7 @@ tprogs = \
 	XGetPointerMapping/XGetPointerMapping \
 	GetProperty/GetProperty \
 	XGetScreenSaver/XGetScreenSaver \
-	GetSelectionOwner/GetSelectionOwner \
+	XGetSelectionOwner/XGetSelectionOwner \
 	GetWindowAttributes/GetWindowAttributes \
 	ImageText16/ImageText16 \
 	ImageText8/ImageText8 \

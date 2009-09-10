@@ -174,7 +174,7 @@
 	"VSW5TESTSUITE CASE GetScreenSaver 3"
 	/tset/Xproto/XGetScreenSaver/XGetScreenSaver
 	"VSW5TESTSUITE CASE GetSelectionOwner 3"
-	/tset/Xproto/GetSelectionOwner/GetSelectionOwner
+	/tset/Xproto/XGetSelectionOwner/XGetSelectionOwner
 	"VSW5TESTSUITE CASE GetWindowAttributes 3"
 	/tset/Xproto/GetWindowAttributes/GetWindowAttributes
 	"VSW5TESTSUITE CASE ImageText16 3"

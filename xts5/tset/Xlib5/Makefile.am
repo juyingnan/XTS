@@ -14,7 +14,7 @@ tprogs = \
 	XDeleteProperty/XDeleteProperty \
 	XGetAtomName/XGetAtomName \
 	XGetGeometry/XGetGeometry \
-	GetSelectionOwner/GetSelectionOwner \
+	XGetSelectionOwner/XGetSelectionOwner \
 	GetWindowAttributes/GetWindowAttributes \
 	gtwdwprprt/gtwdwprprt \
 	InternAtom/InternAtom \
