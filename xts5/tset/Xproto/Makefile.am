@@ -112,7 +112,7 @@ tprogs = \
 	SetAccessControl/SetAccessControl \
 	SetClipRectangles/SetClipRectangles \
 	SetCloseDownMode/SetCloseDownMode \
-	stdshs/stdshs \
+	SetDashes/SetDashes \
 	stfntpth/stfntpth \
 	stinptfcs/stinptfcs \
 	stmdfrmppn/stmdfrmppn \

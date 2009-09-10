@@ -27,7 +27,7 @@ tprogs = \
 	stclpmsk/stclpmsk \
 	stclporgn/stclporgn \
 	SetClipRectangles/SetClipRectangles \
-	stdshs/stdshs \
+	SetDashes/SetDashes \
 	stfllrl/stfllrl \
 	stfllstyl/stfllstyl \
 	stfnctn/stfnctn \

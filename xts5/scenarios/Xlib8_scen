@@ -84,7 +84,7 @@
 	"VSW5TESTSUITE CASE XSetClipRectangles 9"
 	/tset/Xlib8/SetClipRectangles/SetClipRectangles
 	"VSW5TESTSUITE CASE XSetDashes 7"
-	/tset/Xlib8/stdshs/stdshs
+	/tset/Xlib8/SetDashes/SetDashes
 	"VSW5TESTSUITE CASE XSetFillRule 4"
 	/tset/Xlib8/stfllrl/stfllrl
 	"VSW5TESTSUITE CASE XSetFillStyle 4"
