@@ -3916,7 +3916,7 @@ XtCallbackNonexclusive
 
 XtCallbackExclusive
 	"VSW5TESTSUITE CASE XtCallbackExclusive 8"
-	/tset/Xt7/tcalbkexc/tcalbkexc
+	/tset/Xt7/XtCallbackExclusive/XtCallbackExclusive
 
 XtMenuPopup
 	"VSW5TESTSUITE CASE XtMenuPopup 22"
