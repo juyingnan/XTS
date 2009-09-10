@@ -4265,7 +4265,7 @@ XtCvtIntToDimension
 
 XtCvtIntToFloat
 	"VSW5TESTSUITE CASE XtCvtIntToFloat 3"
-	/tset/Xt11/tcinflt/tcinflt
+	/tset/Xt11/XtCvtIntToFloat/XtCvtIntToFloat
 
 XtCvtIntToFont
 	"VSW5TESTSUITE CASE XtCvtIntToFont 3"

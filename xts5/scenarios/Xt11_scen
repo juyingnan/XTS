@@ -125,7 +125,7 @@
 	"VSW5TESTSUITE CASE XtCvtIntToDimension 3"
 	/tset/Xt11/XtCvtIntToDimension/XtCvtIntToDimension
 	"VSW5TESTSUITE CASE XtCvtIntToFloat 3"
-	/tset/Xt11/tcinflt/tcinflt
+	/tset/Xt11/XtCvtIntToFloat/XtCvtIntToFloat
 	"VSW5TESTSUITE CASE XtCvtIntToFont 3"
 	/tset/Xt11/tcinfont/tcinfont
 	"VSW5TESTSUITE CASE XtCvtIntToPixel 3"
