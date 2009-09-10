@@ -33,7 +33,7 @@ tprogs = \
 	CopyColormapAndFree/CopyColormapAndFree \
 	CopyGC/CopyGC \
 	CopyPlane/CopyPlane \
-	crcltwdw/crcltwdw \
+	CirculateWindow/CirculateWindow \
 	crtclrmp/crtclrmp \
 	crtcrsr/crtcrsr \
 	crtgc/crtgc \

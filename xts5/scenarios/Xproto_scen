@@ -104,7 +104,7 @@
 	"VSW5TESTSUITE CASE CopyPlane 3"
 	/tset/Xproto/CopyPlane/CopyPlane
 	"VSW5TESTSUITE CASE CirculateWindow 3"
-	/tset/Xproto/crcltwdw/crcltwdw
+	/tset/Xproto/CirculateWindow/CirculateWindow
 	"VSW5TESTSUITE CASE CreateColormap 5"
 	/tset/Xproto/crtclrmp/crtclrmp
 	"VSW5TESTSUITE CASE CreateCursor 5"
