@@ -3882,7 +3882,7 @@ TopLevelShellWidgets
 
 ApplicationShellWidget
 	"VSW5TESTSUITE CASE ApplicationShellWidget 10"
-	/tset/Xt6/wdgtapplct/wdgtapplct
+	/tset/Xt6/ApplicationShellWidget/ApplicationShellWidget
 
 #Discrete tests for Xt Chapter 7
 
