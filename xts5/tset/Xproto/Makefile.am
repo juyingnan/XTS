@@ -90,7 +90,7 @@ tprogs = \
 	PolyArc/PolyArc \
 	PolyFillArc/PolyFillArc \
 	PolyFillRectangle/PolyFillRectangle \
-	plyln/plyln \
+	PolyLine/PolyLine \
 	plypnt/plypnt \
 	plyrctngl/plyrctngl \
 	plysgmnt/plysgmnt \

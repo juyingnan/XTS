@@ -3430,7 +3430,7 @@ pPolyFillRectangle
 
 pPolyLine
 	"VSW5TESTSUITE CASE PolyLine 3"
-	/tset/Xproto/plyln/plyln
+	/tset/Xproto/PolyLine/PolyLine
 
 pPolyPoint
 	"VSW5TESTSUITE CASE PolyPoint 3"
