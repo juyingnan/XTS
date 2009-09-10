@@ -13,7 +13,7 @@ tprogs = \
 	XClipBox/XClipBox \
 	XCreateBitmapFromData/XCreateBitmapFromData \
 	XCreateImage/XCreateImage \
-	crtpxmpfrm/crtpxmpfrm \
+	XCreatePixmapFromBitmapData/XCreatePixmapFromBitmapData \
 	crtrgn/crtrgn \
 	dltcntxt/dltcntxt \
 	dstryimg/dstryimg \

@@ -1668,7 +1668,7 @@ XCreateImage
 
 XCreatePixmapFromBitmapData
 	"VSW5TESTSUITE CASE XCreatePixmapFromBitmapData 5"
-	/tset/Xlib17/crtpxmpfrm/crtpxmpfrm
+	/tset/Xlib17/XCreatePixmapFromBitmapData/XCreatePixmapFromBitmapData
 
 XCreateRegion
 	"VSW5TESTSUITE CASE XCreateRegion 2"

@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE XCreateImage 3"
 	/tset/Xlib17/XCreateImage/XCreateImage
 	"VSW5TESTSUITE CASE XCreatePixmapFromBitmapData 5"
-	/tset/Xlib17/crtpxmpfrm/crtpxmpfrm
+	/tset/Xlib17/XCreatePixmapFromBitmapData/XCreatePixmapFromBitmapData
 	"VSW5TESTSUITE CASE XCreateRegion 2"
 	/tset/Xlib17/crtrgn/crtrgn
 	"VSW5TESTSUITE CASE XDeleteContext 2"
