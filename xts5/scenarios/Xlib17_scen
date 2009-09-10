@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE XClipBox 1"
 	/tset/Xlib17/XClipBox/XClipBox
 	"VSW5TESTSUITE CASE XCreateBitmapFromData 4"
-	/tset/Xlib17/crtbtmpfrm/crtbtmpfrm
+	/tset/Xlib17/XCreateBitmapFromData/XCreateBitmapFromData
 	"VSW5TESTSUITE CASE XCreateImage 3"
 	/tset/Xlib17/crtimg/crtimg
 	"VSW5TESTSUITE CASE XCreatePixmapFromBitmapData 5"

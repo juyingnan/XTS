@@ -1660,7 +1660,7 @@ XClipBox
 
 XCreateBitmapFromData
 	"VSW5TESTSUITE CASE XCreateBitmapFromData 4"
-	/tset/Xlib17/crtbtmpfrm/crtbtmpfrm
+	/tset/Xlib17/XCreateBitmapFromData/XCreateBitmapFromData
 
 XCreateImage
 	"VSW5TESTSUITE CASE XCreateImage 3"

@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = \
 	XAddPixel/XAddPixel \
 	XClipBox/XClipBox \
-	crtbtmpfrm/crtbtmpfrm \
+	XCreateBitmapFromData/XCreateBitmapFromData \
 	crtimg/crtimg \
 	crtpxmpfrm/crtpxmpfrm \
 	crtrgn/crtrgn \
