@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = \
 	ClearArea/ClearArea \
 	clrwdw/clrwdw \
-	cpyar/cpyar \
+	CopyArea/CopyArea \
 	cpypln/cpypln \
 	drwarc/drwarc \
 	drwarcs/drwarcs \

@@ -29,7 +29,7 @@ tprogs = \
 	CloseFont/CloseFont \
 	ConfigureWindow/ConfigureWindow \
 	ConvertSelection/ConvertSelection \
-	cpyar/cpyar \
+	CopyArea/CopyArea \
 	cpyclrmpan/cpyclrmpan \
 	cpygc/cpygc \
 	cpypln/cpypln \
