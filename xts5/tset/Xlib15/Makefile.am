@@ -28,7 +28,7 @@ tprogs = \
 	XGetTextProperty/XGetTextProperty \
 	XGetWMClientMachine/XGetWMClientMachine \
 	XGetWMColormapWindows/XGetWMColormapWindows \
-	gtwmhnts/gtwmhnts \
+	XGetWMHints/XGetWMHints \
 	gtwmicnnm/gtwmicnnm \
 	gtwmnm/gtwmnm \
 	gtwmnrmlhn/gtwmnrmlhn \

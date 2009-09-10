@@ -88,7 +88,7 @@
 	"VSW5TESTSUITE CASE XGetWMColormapWindows 4"
 	/tset/Xlib15/XGetWMColormapWindows/XGetWMColormapWindows
 	"VSW5TESTSUITE CASE XGetWMHints 3"
-	/tset/Xlib15/gtwmhnts/gtwmhnts
+	/tset/Xlib15/XGetWMHints/XGetWMHints
 	"VSW5TESTSUITE CASE XGetWMIconName 3"
 	/tset/Xlib15/gtwmicnnm/gtwmicnnm
 	"VSW5TESTSUITE CASE XGetWMName 3"

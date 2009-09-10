@@ -1411,7 +1411,7 @@ XGetWMColormapWindows
 
 XGetWMHints
 	"VSW5TESTSUITE CASE XGetWMHints 3"
-	/tset/Xlib15/gtwmhnts/gtwmhnts
+	/tset/Xlib15/XGetWMHints/XGetWMHints
 
 XGetWMIconName
 	"VSW5TESTSUITE CASE XGetWMIconName 3"
