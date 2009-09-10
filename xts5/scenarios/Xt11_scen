@@ -145,7 +145,7 @@
 	"VSW5TESTSUITE CASE XtDisplayToApplicationContext 2"
 	/tset/Xt11/XtDisplayToApplicationContext/XtDisplayToApplicationContext
 	"VSW5TESTSUITE CASE XtSetTypeConverter 15"
-	/tset/Xt11/tstyconv/tstyconv
+	/tset/Xt11/XtSetTypeConverter/XtSetTypeConverter
 	"VSW5TESTSUITE CASE XtAppSetTypeConverter 15"
 	/tset/Xt11/XtAppSetTypeConverter/XtAppSetTypeConverter
 	"VSW5TESTSUITE CASE XtCallConverter 15"
