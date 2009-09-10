@@ -77,7 +77,7 @@ tprogs = \
 	KillClient/KillClient \
 	LookupColor/LookupColor \
 	ListExtensions/ListExtensions \
-	lstfnts/lstfnts \
+	ListFonts/ListFonts \
 	lstfntswth/lstfntswth \
 	lsthsts/lsthsts \
 	lstinstlld/lstinstlld \

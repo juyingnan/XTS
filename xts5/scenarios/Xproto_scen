@@ -192,7 +192,7 @@
 	"VSW5TESTSUITE CASE ListExtensions 3"
 	/tset/Xproto/ListExtensions/ListExtensions
 	"VSW5TESTSUITE CASE ListFonts 3"
-	/tset/Xproto/lstfnts/lstfnts
+	/tset/Xproto/ListFonts/ListFonts
 	"VSW5TESTSUITE CASE ListFontsWithInfo 3"
 	/tset/Xproto/lstfntswth/lstfntswth
 	"VSW5TESTSUITE CASE ListHosts 3"

@@ -43,7 +43,7 @@ tprogs = \
 	gtsbimg/gtsbimg \
 	ldfnt/ldfnt \
 	ldqryfnt/ldqryfnt \
-	lstfnts/lstfnts \
+	ListFonts/ListFonts \
 	lstfntswth/lstfntswth \
 	ptimg/ptimg \
 	qryfnt/qryfnt \

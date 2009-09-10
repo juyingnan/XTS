@@ -3020,7 +3020,7 @@ XLoadQueryFont
 
 XListFonts
 	"VSW5TESTSUITE CASE XListFonts 6"
-	/tset/Xlib9/lstfnts/lstfnts
+	/tset/Xlib9/ListFonts/ListFonts
 
 XListFontsWithInfo
 	"VSW5TESTSUITE CASE XListFontsWithInfo 7"
@@ -3378,7 +3378,7 @@ pListExtensions
 
 pListFonts
 	"VSW5TESTSUITE CASE ListFonts 3"
-	/tset/Xproto/lstfnts/lstfnts
+	/tset/Xproto/ListFonts/ListFonts
 
 pListFontsWithInfo
 	"VSW5TESTSUITE CASE ListFontsWithInfo 3"

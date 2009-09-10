@@ -124,7 +124,7 @@
 	"VSW5TESTSUITE CASE XLoadQueryFont 5"
 	/tset/Xlib9/ldqryfnt/ldqryfnt
 	"VSW5TESTSUITE CASE XListFonts 6"
-	/tset/Xlib9/lstfnts/lstfnts
+	/tset/Xlib9/ListFonts/ListFonts
 	"VSW5TESTSUITE CASE XListFontsWithInfo 7"
 	/tset/Xlib9/lstfntswth/lstfntswth
 	"VSW5TESTSUITE CASE XPutImage 40"
