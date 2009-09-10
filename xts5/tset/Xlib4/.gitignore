@@ -6,7 +6,7 @@ XConfigureWindow/XConfigureWindow
 XCirculateSubwindows/XCirculateSubwindows
 XCirculateSubwindowsDown/XCirculateSubwindowsDown
 XCirculateSubwindowsUp/XCirculateSubwindowsUp
-crtsmplwdw/crtsmplwdw
+XCreateSimpleWindow/XCreateSimpleWindow
 XCreateWindow/XCreateWindow
 crtwdw/mcassert.tmc.2529
 crtwdw/mcstrategy.tmc.2529

@@ -2334,7 +2334,7 @@ XCirculateSubwindowsUp
 
 XCreateSimpleWindow
 	"VSW5TESTSUITE CASE XCreateSimpleWindow 12"
-	/tset/Xlib4/crtsmplwdw/crtsmplwdw
+	/tset/Xlib4/XCreateSimpleWindow/XCreateSimpleWindow
 
 XCreateWindow
 	"VSW5TESTSUITE CASE XCreateWindow 49"

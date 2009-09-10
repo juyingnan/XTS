@@ -14,7 +14,7 @@ tprogs = \
 	XCirculateSubwindows/XCirculateSubwindows \
 	XCirculateSubwindowsDown/XCirculateSubwindowsDown \
 	XCirculateSubwindowsUp/XCirculateSubwindowsUp \
-	crtsmplwdw/crtsmplwdw \
+	XCreateSimpleWindow/XCreateSimpleWindow \
 	XCreateWindow/XCreateWindow \
 	dfncrsr/dfncrsr \
 	DestroySubwindows/DestroySubwindows \
