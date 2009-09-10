@@ -16,7 +16,7 @@ tprogs = \
 	keysymdef/keysymdef \
 	XKeysymToKeycode/XKeysymToKeycode \
 	XLookupColor/XLookupColor \
-	strtkysym/strtkysym
+	XStringToKeysym/XStringToKeysym
 
 keysym_keysym_SOURCES = \
 	keysym/keysym.c \
@@ -63,19 +63,19 @@ XKeysymToKeycode_XKeysymToKeycode_SOURCES = \
 	XKeysymToKeycode/TestS.c \
 	XKeysymToKeycode/TestT.c
 
-strtkeysym_strtkeysym_SOURCES = \
-	strtkysym/strtkysym.c \
-	strtkysym/Test1.c \
-	strtkysym/Test2.c \
-	strtkysym/Test3.c \
-	strtkysym/Test4.c \
-	strtkysym/TestA.c \
-	strtkysym/TestC.c \
-	strtkysym/TestG.c \
-	strtkysym/TestH.c \
-	strtkysym/TestK.c \
-	strtkysym/TestL.c \
-	strtkysym/TestM.c \
-	strtkysym/TestP.c \
-	strtkysym/TestS.c \
-	strtkysym/TestT.c
+XStringToKeysym_XStringToKeysym_SOURCES = \
+	XStringToKeysym/XStringToKeysym.c \
+	XStringToKeysym/Test1.c \
+	XStringToKeysym/Test2.c \
+	XStringToKeysym/Test3.c \
+	XStringToKeysym/Test4.c \
+	XStringToKeysym/TestA.c \
+	XStringToKeysym/TestC.c \
+	XStringToKeysym/TestG.c \
+	XStringToKeysym/TestH.c \
+	XStringToKeysym/TestK.c \
+	XStringToKeysym/TestL.c \
+	XStringToKeysym/TestM.c \
+	XStringToKeysym/TestP.c \
+	XStringToKeysym/TestS.c \
+	XStringToKeysym/TestT.c

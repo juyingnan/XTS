@@ -1840,7 +1840,7 @@ XSetRegion
 
 XStringToKeysym
 	"VSW5TESTSUITE CASE XStringToKeysym 2"
-	/tset/Xlib17/strtkysym/strtkysym
+	/tset/Xlib17/XStringToKeysym/XStringToKeysym
 
 XSaveContext
 	"VSW5TESTSUITE CASE XSaveContext 3"
@@ -3099,7 +3099,7 @@ xXLookupColor
 
 xXStringToKeysym
 	"VSW5TESTSUITE CASE XStringToKeysym 14"
-	/tset/Xopen/strtkysym/strtkysym
+	/tset/Xopen/XStringToKeysym/XStringToKeysym
 
 
 # Discrete tests for X Server Protocol

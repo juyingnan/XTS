@@ -70,4 +70,4 @@
 	"VSW5TESTSUITE CASE XLookupColor 7"
 	/tset/Xopen/XLookupColor/XLookupColor
 	"VSW5TESTSUITE CASE XStringToKeysym 14"
-	/tset/Xopen/strtkysym/strtkysym
+	/tset/Xopen/XStringToKeysym/XStringToKeysym

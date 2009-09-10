@@ -56,7 +56,7 @@ tprogs = \
 	strbffr/strbffr \
 	strbyts/strbyts \
 	strgn/strgn \
-	strtkysym/strtkysym \
+	XStringToKeysym/XStringToKeysym \
 	svcntxt/svcntxt \
 	unnrctwthr/unnrctwthr \
 	unnrgn/unnrgn \

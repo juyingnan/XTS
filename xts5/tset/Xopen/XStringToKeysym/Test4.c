@@ -20,47 +20,47 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xopen/strtkysym/TestS.c,v 1.2 2005-11-03 08:44:01 jmichael Exp $
+* $Header: /cvs/xtest/xtest/xts5/tset/Xopen/XStringToKeysym/Test4.c,v 1.2 2005-11-03 08:44:01 jmichael Exp $
 * 
 * Project: VSW5
 * 
-* File: xts5/tset/Xopen/strtkysym/TestS.c
+* File: xts5/tset/Xopen/XStringToKeysym/Test4.c
 * 
 * Description:
 * 	Tests for XStringToKeysym()
 * 
 * Modifications:
-* $Log: TestS.c,v $
+* $Log: Test4.c,v $
 * Revision 1.2  2005-11-03 08:44:01  jmichael
 * clean up all vsw5 paths to use xts5 instead.
 *
 * Revision 1.1.1.2  2005/04/15 14:05:40  anderson
 * Reimport of the base with the legal name in the copyright fixed.
 *
-* Revision 8.0  1998/12/23 23:35:59  mar
+* Revision 8.0  1998/12/23 23:35:54  mar
 * Branch point for Release 5.0.2
 *
-* Revision 7.0  1998/10/30 22:58:44  mar
+* Revision 7.0  1998/10/30 22:58:37  mar
 * Branch point for Release 5.0.2b1
 *
-* Revision 6.0  1998/03/02 05:27:12  tbr
+* Revision 6.0  1998/03/02 05:27:07  tbr
 * Branch point for Release 5.0.1
 *
-* Revision 5.0  1998/01/26 03:23:45  tbr
+* Revision 5.0  1998/01/26 03:23:41  tbr
 * Branch point for Release 5.0.1b1
 *
 * Revision 4.1  1996/05/09 21:19:34  andy
 * Fixed X includes
 *
-* Revision 4.0  1995/12/15  09:14:48  tbr
+* Revision 4.0  1995/12/15  09:14:35  tbr
 * Branch point for Release 5.0.0
 *
-* Revision 3.1  1995/12/15  01:18:14  andy
+* Revision 3.1  1995/12/15  01:18:00  andy
 * Prepare for GA Release
 *
 */
 /*
- *      SCCS:  @(#)  TestS.c Rel 1.1	    (11/28/91)
+ *      SCCS:  @(#)  Test4.c Rel 1.1	    (11/28/91)
  *
  *	UniSoft Ltd., London, England
  *
@@ -118,256 +118,376 @@ char	*s;
 {
 	report("Symbol \"%s\" is not defined.", s);
 }
-#define XK_SPECIAL
+#define XK_LATIN4
 #include	<X11/keysymdef.h>
-#undef XK_SPECIAL
+#undef XK_LATIN4 
 
-strtsymS()
+strtsym4()
 { 
 int 	pass = 0, fail = 0;
 char	*symstr;
 KeySym	rsym;
 
 
-#ifdef XK_blank
-	if(test(XK_blank, "blank") == 1)
+#ifdef XK_kra
+	if(test(XK_kra, "kra") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_blank");
+	reporterr("XK_kra");
 	FAIL;
 #endif
 
-#ifdef XK_soliddiamond
-	if(test(XK_soliddiamond, "soliddiamond") == 1)
+#ifdef XK_kappa
+	if(test(XK_kappa, "kappa") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_soliddiamond");
+	reporterr("XK_kappa");
 	FAIL;
 #endif
 
-#ifdef XK_checkerboard
-	if(test(XK_checkerboard, "checkerboard") == 1)
+#ifdef XK_Rcedilla
+	if(test(XK_Rcedilla, "Rcedilla") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_checkerboard");
+	reporterr("XK_Rcedilla");
 	FAIL;
 #endif
 
-#ifdef XK_ht
-	if(test(XK_ht, "ht") == 1)
+#ifdef XK_Itilde
+	if(test(XK_Itilde, "Itilde") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_ht");
+	reporterr("XK_Itilde");
 	FAIL;
 #endif
 
-#ifdef XK_ff
-	if(test(XK_ff, "ff") == 1)
+#ifdef XK_Lcedilla
+	if(test(XK_Lcedilla, "Lcedilla") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_ff");
+	reporterr("XK_Lcedilla");
 	FAIL;
 #endif
 
-#ifdef XK_cr
-	if(test(XK_cr, "cr") == 1)
+#ifdef XK_Emacron
+	if(test(XK_Emacron, "Emacron") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_cr");
+	reporterr("XK_Emacron");
 	FAIL;
 #endif
 
-#ifdef XK_lf
-	if(test(XK_lf, "lf") == 1)
+#ifdef XK_Gcedilla
+	if(test(XK_Gcedilla, "Gcedilla") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_lf");
+	reporterr("XK_Gcedilla");
 	FAIL;
 #endif
 
-#ifdef XK_nl
-	if(test(XK_nl, "nl") == 1)
+#ifdef XK_Tslash
+	if(test(XK_Tslash, "Tslash") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_nl");
+	reporterr("XK_Tslash");
 	FAIL;
 #endif
 
-#ifdef XK_vt
-	if(test(XK_vt, "vt") == 1)
+#ifdef XK_rcedilla
+	if(test(XK_rcedilla, "rcedilla") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_vt");
+	reporterr("XK_rcedilla");
 	FAIL;
 #endif
 
-#ifdef XK_lowrightcorner
-	if(test(XK_lowrightcorner, "lowrightcorner") == 1)
+#ifdef XK_itilde
+	if(test(XK_itilde, "itilde") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_lowrightcorner");
+	reporterr("XK_itilde");
 	FAIL;
 #endif
 
-#ifdef XK_uprightcorner
-	if(test(XK_uprightcorner, "uprightcorner") == 1)
+#ifdef XK_lcedilla
+	if(test(XK_lcedilla, "lcedilla") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_uprightcorner");
+	reporterr("XK_lcedilla");
 	FAIL;
 #endif
 
-#ifdef XK_upleftcorner
-	if(test(XK_upleftcorner, "upleftcorner") == 1)
+#ifdef XK_emacron
+	if(test(XK_emacron, "emacron") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_upleftcorner");
+	reporterr("XK_emacron");
 	FAIL;
 #endif
 
-#ifdef XK_lowleftcorner
-	if(test(XK_lowleftcorner, "lowleftcorner") == 1)
+#ifdef XK_gcedilla
+	if(test(XK_gcedilla, "gcedilla") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_lowleftcorner");
+	reporterr("XK_gcedilla");
 	FAIL;
 #endif
 
-#ifdef XK_crossinglines
-	if(test(XK_crossinglines, "crossinglines") == 1)
+#ifdef XK_tslash
+	if(test(XK_tslash, "tslash") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_crossinglines");
+	reporterr("XK_tslash");
 	FAIL;
 #endif
 
-#ifdef XK_horizlinescan1
-	if(test(XK_horizlinescan1, "horizlinescan1") == 1)
+#ifdef XK_ENG
+	if(test(XK_ENG, "ENG") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_horizlinescan1");
+	reporterr("XK_ENG");
 	FAIL;
 #endif
 
-#ifdef XK_horizlinescan3
-	if(test(XK_horizlinescan3, "horizlinescan3") == 1)
+#ifdef XK_eng
+	if(test(XK_eng, "eng") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_horizlinescan3");
+	reporterr("XK_eng");
 	FAIL;
 #endif
 
-#ifdef XK_horizlinescan5
-	if(test(XK_horizlinescan5, "horizlinescan5") == 1)
+#ifdef XK_Amacron
+	if(test(XK_Amacron, "Amacron") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_horizlinescan5");
+	reporterr("XK_Amacron");
 	FAIL;
 #endif
 
-#ifdef XK_horizlinescan7
-	if(test(XK_horizlinescan7, "horizlinescan7") == 1)
+#ifdef XK_Iogonek
+	if(test(XK_Iogonek, "Iogonek") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_horizlinescan7");
+	reporterr("XK_Iogonek");
 	FAIL;
 #endif
 
-#ifdef XK_horizlinescan9
-	if(test(XK_horizlinescan9, "horizlinescan9") == 1)
+#ifdef XK_Eabovedot
+	if(test(XK_Eabovedot, "Eabovedot") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_horizlinescan9");
+	reporterr("XK_Eabovedot");
 	FAIL;
 #endif
 
-#ifdef XK_leftt
-	if(test(XK_leftt, "leftt") == 1)
+#ifdef XK_Imacron
+	if(test(XK_Imacron, "Imacron") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_leftt");
+	reporterr("XK_Imacron");
 	FAIL;
 #endif
 
-#ifdef XK_rightt
-	if(test(XK_rightt, "rightt") == 1)
+#ifdef XK_Ncedilla
+	if(test(XK_Ncedilla, "Ncedilla") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_rightt");
+	reporterr("XK_Ncedilla");
 	FAIL;
 #endif
 
-#ifdef XK_bott
-	if(test(XK_bott, "bott") == 1)
+#ifdef XK_Omacron
+	if(test(XK_Omacron, "Omacron") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_bott");
+	reporterr("XK_Omacron");
 	FAIL;
 #endif
 
-#ifdef XK_topt
-	if(test(XK_topt, "topt") == 1)
+#ifdef XK_Kcedilla
+	if(test(XK_Kcedilla, "Kcedilla") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_topt");
+	reporterr("XK_Kcedilla");
 	FAIL;
 #endif
 
-#ifdef XK_vertbar
-	if(test(XK_vertbar, "vertbar") == 1)
+#ifdef XK_Uogonek
+	if(test(XK_Uogonek, "Uogonek") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("XK_vertbar");
+	reporterr("XK_Uogonek");
 	FAIL;
 #endif
 
-	CHECKPASS(24);
+#ifdef XK_Utilde
+	if(test(XK_Utilde, "Utilde") == 1)
+		CHECK;
+	else
+		FAIL;
+#else
+	reporterr("XK_Utilde");
+	FAIL;
+#endif
+
+#ifdef XK_Umacron
+	if(test(XK_Umacron, "Umacron") == 1)
+		CHECK;
+	else
+		FAIL;
+#else
+	reporterr("XK_Umacron");
+	FAIL;
+#endif
+
+#ifdef XK_amacron
+	if(test(XK_amacron, "amacron") == 1)
+		CHECK;
+	else
+		FAIL;
+#else
+	reporterr("XK_amacron");
+	FAIL;
+#endif
+
+#ifdef XK_iogonek
+	if(test(XK_iogonek, "iogonek") == 1)
+		CHECK;
+	else
+		FAIL;
+#else
+	reporterr("XK_iogonek");
+	FAIL;
+#endif
+
+#ifdef XK_eabovedot
+	if(test(XK_eabovedot, "eabovedot") == 1)
+		CHECK;
+	else
+		FAIL;
+#else
+	reporterr("XK_eabovedot");
+	FAIL;
+#endif
+
+#ifdef XK_imacron
+	if(test(XK_imacron, "imacron") == 1)
+		CHECK;
+	else
+		FAIL;
+#else
+	reporterr("XK_imacron");
+	FAIL;
+#endif
+
+#ifdef XK_ncedilla
+	if(test(XK_ncedilla, "ncedilla") == 1)
+		CHECK;
+	else
+		FAIL;
+#else
+	reporterr("XK_ncedilla");
+	FAIL;
+#endif
+
+#ifdef XK_omacron
+	if(test(XK_omacron, "omacron") == 1)
+		CHECK;
+	else
+		FAIL;
+#else
+	reporterr("XK_omacron");
+	FAIL;
+#endif
+
+#ifdef XK_kcedilla
+	if(test(XK_kcedilla, "kcedilla") == 1)
+		CHECK;
+	else
+		FAIL;
+#else
+	reporterr("XK_kcedilla");
+	FAIL;
+#endif
+
+#ifdef XK_uogonek
+	if(test(XK_uogonek, "uogonek") == 1)
+		CHECK;
+	else
+		FAIL;
+#else
+	reporterr("XK_uogonek");
+	FAIL;
+#endif
+
+#ifdef XK_utilde
+	if(test(XK_utilde, "utilde") == 1)
+		CHECK;
+	else
+		FAIL;
+#else
+	reporterr("XK_utilde");
+	FAIL;
+#endif
+
+#ifdef XK_umacron
+	if(test(XK_umacron, "umacron") == 1)
+		CHECK;
+	else
+		FAIL;
+#else
+	reporterr("XK_umacron");
+	FAIL;
+#endif
+
+	CHECKPASS(36);
 }

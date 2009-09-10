@@ -20,11 +20,11 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xopen/strtkysym/TestM.c,v 1.2 2005-11-03 08:44:01 jmichael Exp $
+* $Header: /cvs/xtest/xtest/xts5/tset/Xopen/XStringToKeysym/TestM.c,v 1.2 2005-11-03 08:44:01 jmichael Exp $
 * 
 * Project: VSW5
 * 
-* File: xts5/tset/Xopen/strtkysym/TestM.c
+* File: xts5/tset/Xopen/XStringToKeysym/TestM.c
 * 
 * Description:
 * 	Tests for XStringToKeysym()
