@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 # Tests ending in _m test the macro version of Xlib
 tprogs = XAllPlanes/XAllPlanes \
 	XBlackPixel/XBlackPixel XBlackPixel/XBlackPixel_m \
-	blckpxlofs/blckpxlofs blckpxlofs/blckpxlofs_m \
+	XBlackPixelOfScreen/XBlackPixelOfScreen XBlackPixelOfScreen/XBlackPixelOfScreen_m \
 	btmpbtordr/btmpbtordr btmpbtordr/btmpbtordr_m \
 	btmppd/btmppd btmppd/btmppd_m \
 	btmpunt/btmpunt btmpunt/btmpunt_m \

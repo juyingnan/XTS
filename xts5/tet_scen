@@ -1883,7 +1883,7 @@ XBlackPixel
 
 XBlackPixelOfScreen
 	"VSW5TESTSUITE CASE XBlackPixelOfScreen 1"
-	/tset/Xlib3/blckpxlofs/blckpxlofs
+	/tset/Xlib3/XBlackPixelOfScreen/XBlackPixelOfScreen
 
 XBitmapBitOrder
 	"VSW5TESTSUITE CASE XBitmapBitOrder 1"
@@ -2115,7 +2115,7 @@ BlackPixel
 
 BlackPixelOfScreen
 	"VSW5TESTSUITE CASE BlackPixelOfScreen 1"
-	/tset/Xlib3/blckpxlofs/blckpxlofs_m
+	/tset/Xlib3/XBlackPixelOfScreen/XBlackPixelOfScreen_m
 
 BitmapBitOrder
 	"VSW5TESTSUITE CASE BitmapBitOrder 1"

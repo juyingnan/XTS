@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE XBlackPixel 1"
 	/tset/Xlib3/XBlackPixel/XBlackPixel
 	"VSW5TESTSUITE CASE XBlackPixelOfScreen 1"
-	/tset/Xlib3/blckpxlofs/blckpxlofs
+	/tset/Xlib3/XBlackPixelOfScreen/XBlackPixelOfScreen
 	"VSW5TESTSUITE CASE XBitmapBitOrder 1"
 	/tset/Xlib3/btmpbtordr/btmpbtordr
 	"VSW5TESTSUITE CASE XBitmapPad 1"
@@ -176,7 +176,7 @@
 	"VSW5TESTSUITE CASE BlackPixel 1"
 	/tset/Xlib3/XBlackPixel/XBlackPixel_m
 	"VSW5TESTSUITE CASE BlackPixelOfScreen 1"
-	/tset/Xlib3/blckpxlofs/blckpxlofs_m
+	/tset/Xlib3/XBlackPixelOfScreen/XBlackPixelOfScreen_m
 	"VSW5TESTSUITE CASE BitmapBitOrder 1"
 	/tset/Xlib3/btmpbtordr/btmpbtordr_m
 	"VSW5TESTSUITE CASE BitmapPad 1"
