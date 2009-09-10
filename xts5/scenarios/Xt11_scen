@@ -155,7 +155,7 @@
 	"VSW5TESTSUITE CASE XtCallbackReleaseCacheRef 1"
 	/tset/Xt11/XtCallbackReleaseCacheRef/XtCallbackReleaseCacheRef
 	"VSW5TESTSUITE CASE XtCallbackReleaseCacheRefList 1"
-	/tset/Xt11/tcalbrcrl/tcalbrcrl
+	/tset/Xt11/XtCallbackReleaseCacheRefList/XtCallbackReleaseCacheRefList
 	"VSW5TESTSUITE CASE XtConvertAndStore 18"
 	/tset/Xt11/tcnvrtast/tcnvrtast
 	"VSW5TESTSUITE CASE XtGetValues 5"

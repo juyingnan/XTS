@@ -4325,7 +4325,7 @@ XtCallbackReleaseCacheRef
 
 XtCallbackReleaseCacheRefList
 	"VSW5TESTSUITE CASE XtCallbackReleaseCacheRefList 1"
-	/tset/Xt11/tcalbrcrl/tcalbrcrl
+	/tset/Xt11/XtCallbackReleaseCacheRefList/XtCallbackReleaseCacheRefList
 
 XtConvertAndStore
 	"VSW5TESTSUITE CASE XtConvertAndStore 18"
