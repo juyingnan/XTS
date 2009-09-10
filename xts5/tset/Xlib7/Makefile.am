@@ -66,5 +66,5 @@ tprogs = \
 	qryclr/qryclr \
 	QueryColors/QueryColors \
 	strclr/strclr \
-	strclrs/strclrs \
+	StoreColors/StoreColors \
 	strnmdclr/strnmdclr

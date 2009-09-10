@@ -117,7 +117,7 @@ tprogs = \
 	SetInputFocus/SetInputFocus \
 	SetModifierMapping/SetModifierMapping \
 	SetPointerMapping/SetPointerMapping \
-	strclrs/strclrs \
+	StoreColors/StoreColors \
 	strnmdclr/strnmdclr \
 	stscrnsvr/stscrnsvr \
 	stslctnown/stslctnown \

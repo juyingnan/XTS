@@ -2583,7 +2583,7 @@ XStoreColor
 
 XStoreColors
 	"VSW5TESTSUITE CASE XStoreColors 9"
-	/tset/Xlib7/strclrs/strclrs
+	/tset/Xlib7/StoreColors/StoreColors
 
 XStoreNamedColor
 	"VSW5TESTSUITE CASE XStoreNamedColor 9"
@@ -3538,7 +3538,7 @@ pSetPointerMapping
 
 pStoreColors
 	"VSW5TESTSUITE CASE StoreColors 4"
-	/tset/Xproto/strclrs/strclrs
+	/tset/Xproto/StoreColors/StoreColors
 
 pStoreNamedColor
 	"VSW5TESTSUITE CASE StoreNamedColor 4"
