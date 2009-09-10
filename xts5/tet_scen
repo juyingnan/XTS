@@ -1606,7 +1606,7 @@ XrmStringToQuark
 
 XrmStringToQuarkList
 	"VSW5TESTSUITE CASE XrmStringToQuarkList 3"
-	/tset/Xlib16/rmstrtqrkl/rmstrtqrkl
+	/tset/Xlib16/XrmStringToQuarkList/XrmStringToQuarkList
 
 XrmUniqueQuark
 	"VSW5TESTSUITE CASE XrmUniqueQuark 1"

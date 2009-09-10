@@ -40,7 +40,7 @@ tprogs = \
 	XrmSetDatabase/XrmSetDatabase \
 	XrmStringToBindingQuarkList/XrmStringToBindingQuarkList \
 	XrmStringToQuark/XrmStringToQuark \
-	rmstrtqrkl/rmstrtqrkl \
+	XrmStringToQuarkList/XrmStringToQuarkList \
 	rmunqqrk/rmunqqrk \
 	rsrcmngrst/rsrcmngrst \
 	scrrs/scrrs

@@ -100,7 +100,7 @@
 	"VSW5TESTSUITE CASE XrmStringToQuark 3"
 	/tset/Xlib16/XrmStringToQuark/XrmStringToQuark
 	"VSW5TESTSUITE CASE XrmStringToQuarkList 3"
-	/tset/Xlib16/rmstrtqrkl/rmstrtqrkl
+	/tset/Xlib16/XrmStringToQuarkList/XrmStringToQuarkList
 	"VSW5TESTSUITE CASE XrmUniqueQuark 1"
 	/tset/Xlib16/rmunqqrk/rmunqqrk
 	"VSW5TESTSUITE CASE XResourceManagerString 2"
