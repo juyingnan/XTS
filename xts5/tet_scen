@@ -2845,7 +2845,7 @@ XSetForeground
 
 XSetGraphicsExposures
 	"VSW5TESTSUITE CASE XSetGraphicsExposures 4"
-	/tset/Xlib8/stgrphcsex/stgrphcsex
+	/tset/Xlib8/XSetGraphicsExposures/XSetGraphicsExposures
 
 XSetLineAttributes
 	"VSW5TESTSUITE CASE XSetLineAttributes 6"

@@ -96,7 +96,7 @@
 	"VSW5TESTSUITE CASE XSetForeground 3"
 	/tset/Xlib8/XSetForeground/XSetForeground
 	"VSW5TESTSUITE CASE XSetGraphicsExposures 4"
-	/tset/Xlib8/stgrphcsex/stgrphcsex
+	/tset/Xlib8/XSetGraphicsExposures/XSetGraphicsExposures
 	"VSW5TESTSUITE CASE XSetLineAttributes 6"
 	/tset/Xlib8/stlnattrbt/stlnattrbt
 	"VSW5TESTSUITE CASE XSetPlaneMask 3"
