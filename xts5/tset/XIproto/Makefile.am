@@ -31,7 +31,7 @@ tprogs = \
 	GetDeviceDontPropagateList/GetDeviceDontPropagateList \
 	GetDeviceKeyMapping/GetDeviceKeyMapping \
 	GetSelectedExtensionEvents/GetSelectedExtensionEvents \
-	XListInputDevices/XListInputDevices \
+	ListInputDevices/ListInputDevices \
 	Miscellaneous/Miscellaneous \
 	XOpenDevice/XOpenDevice \
 	QueryDeviceState/QueryDeviceState \

@@ -100,7 +100,7 @@
 	"VSW5TESTSUITE CASE XGetSelectedExtensionEvents 2"
 	/tset/XI/XGetSelectedExtensionEvents/XGetSelectedExtensionEvents
 	"VSW5TESTSUITE CASE XListInputDevices 2"
-	/tset/XI/XListInputDevices/XListInputDevices
+	/tset/XI/ListInputDevices/ListInputDevices
 	"VSW5TESTSUITE CASE Miscellaneous 6"
 	/tset/XI/Miscellaneous/Miscellaneous
 	"VSW5TESTSUITE CASE XOpenDevice 4"
