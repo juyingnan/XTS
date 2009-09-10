@@ -1062,7 +1062,7 @@ XChangeKeyboardMapping
 
 XChangePointerControl
 	"VSW5TESTSUITE CASE XChangePointerControl 11"
-	/tset/Xlib13/ChangePointerControl/ChangePointerControl
+	/tset/Xlib13/XChangePointerControl/XChangePointerControl
 
 XDeleteModifiermapEntry
 	"VSW5TESTSUITE CASE XDeleteModifiermapEntry 1"
@@ -3154,7 +3154,7 @@ pChangeKeyboardMapping
 
 pChangePointerControl
 	"VSW5TESTSUITE CASE ChangePointerControl 3"
-	/tset/Xproto/ChangePointerControl/ChangePointerControl
+	/tset/Xproto/XChangePointerControl/XChangePointerControl
 
 pChangeProperty
 	"VSW5TESTSUITE CASE ChangeProperty 3"

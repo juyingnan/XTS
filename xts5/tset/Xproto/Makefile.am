@@ -21,7 +21,7 @@ tprogs = \
 	ChangeHosts/ChangeHosts \
 	XChangeKeyboardControl/XChangeKeyboardControl \
 	XChangeKeyboardMapping/XChangeKeyboardMapping \
-	ChangePointerControl/ChangePointerControl \
+	XChangePointerControl/XChangePointerControl \
 	ChangeProperty/ChangeProperty \
 	XChangeSaveSet/XChangeSaveSet \
 	ChangeWindowAttributes/ChangeWindowAttributes \

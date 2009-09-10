@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE XChangeKeyboardMapping 7"
 	/tset/Xlib13/XChangeKeyboardMapping/XChangeKeyboardMapping
 	"VSW5TESTSUITE CASE XChangePointerControl 11"
-	/tset/Xlib13/ChangePointerControl/ChangePointerControl
+	/tset/Xlib13/XChangePointerControl/XChangePointerControl
 	"VSW5TESTSUITE CASE XDeleteModifiermapEntry 1"
 	/tset/Xlib13/dltmdfrmpe/dltmdfrmpe
 	"VSW5TESTSUITE CASE XDisplayKeycodes 3"

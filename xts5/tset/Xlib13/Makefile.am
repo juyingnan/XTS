@@ -16,7 +16,7 @@ tprogs = \
 	XChangeActivePointerGrab/XChangeActivePointerGrab \
 	XChangeKeyboardControl/XChangeKeyboardControl \
 	XChangeKeyboardMapping/XChangeKeyboardMapping \
-	ChangePointerControl/ChangePointerControl \
+	XChangePointerControl/XChangePointerControl \
 	dltmdfrmpe/dltmdfrmpe \
 	dsplykycds/dsplykycds \
 	frmdfrmp/frmdfrmp \
