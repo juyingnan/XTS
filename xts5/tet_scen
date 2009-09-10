@@ -4473,7 +4473,7 @@ XtCalloc
 
 XtRealloc
 	"VSW5TESTSUITE CASE XtRealloc 12"
-	/tset/Xt13/trealloc/trealloc
+	/tset/Xt13/XtRealloc/XtRealloc
 
 XtFree
 	"VSW5TESTSUITE CASE XtFree 4"

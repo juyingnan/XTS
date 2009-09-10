@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xt13/trealloc/trealloc.m,v 1.3 2006-11-14 14:52:55 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xt13/XtRealloc/XtRealloc.m,v 1.3 2006-11-14 14:52:55 anderson Exp $
 
 Copyright (c) 2002 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
@@ -27,7 +27,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/trealloc/trealloc.m
+>># File: tset/Xt13/XtRealloc/XtRealloc.m
 >># 
 >># Description:
 >>#	Tests for XtRealloc()
