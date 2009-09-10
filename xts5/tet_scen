@@ -967,7 +967,7 @@ XGetErrorText
 
 XGetMotionEvents
 	"VSW5TESTSUITE CASE XGetMotionEvents 7"
-	/tset/Xlib12/GetMotionEvents/GetMotionEvents
+	/tset/Xlib12/XGetMotionEvents/XGetMotionEvents
 
 XIfEvent
 	"VSW5TESTSUITE CASE XIfEvent 4"
@@ -3322,7 +3322,7 @@ pGetModifierMapping
 
 pGetMotionEvents
 	"VSW5TESTSUITE CASE GetMotionEvents 3"
-	/tset/Xproto/GetMotionEvents/GetMotionEvents
+	/tset/Xproto/XGetMotionEvents/XGetMotionEvents
 
 pGetPointerControl
 	"VSW5TESTSUITE CASE GetPointerControl 3"

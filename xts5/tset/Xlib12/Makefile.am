@@ -20,7 +20,7 @@ tprogs = \
 	XFlush/XFlush \
 	gterrrdtbs/gterrrdtbs \
 	gterrrtxt/gterrrtxt \
-	GetMotionEvents/GetMotionEvents \
+	XGetMotionEvents/XGetMotionEvents \
 	ifevnt/ifevnt \
 	mskevnt/mskevnt \
 	nxtevnt/nxtevnt \
