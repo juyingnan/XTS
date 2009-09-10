@@ -28,8 +28,8 @@ XDefaultGCOfScreen/XDefaultGCOfScreen
 XDefaultGCOfScreen/XDefaultGCOfScreen_m
 XDefaultRootWindow/XDefaultRootWindow
 XDefaultRootWindow/XDefaultRootWindow_m
-dfltscrn/dfltscrn
-dfltscrn/dfltscrn_m
+XDefaultScreen/XDefaultScreen
+XDefaultScreen/XDefaultScreen_m
 dfltscrnof/dfltscrnof
 dfltscrnof/dfltscrnof_m
 dfltvsl/dfltvsl

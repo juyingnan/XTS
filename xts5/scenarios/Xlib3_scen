@@ -88,7 +88,7 @@
 	"VSW5TESTSUITE CASE XDefaultRootWindow 1"
 	/tset/Xlib3/XDefaultRootWindow/XDefaultRootWindow
 	"VSW5TESTSUITE CASE XDefaultScreen 1"
-	/tset/Xlib3/dfltscrn/dfltscrn
+	/tset/Xlib3/XDefaultScreen/XDefaultScreen
 	"VSW5TESTSUITE CASE XDefaultScreenOfDisplay 1"
 	/tset/Xlib3/dfltscrnof/dfltscrnof
 	"VSW5TESTSUITE CASE XDefaultVisual 1"
@@ -202,7 +202,7 @@
 	"VSW5TESTSUITE CASE DefaultRootWindow 1"
 	/tset/Xlib3/XDefaultRootWindow/XDefaultRootWindow_m
 	"VSW5TESTSUITE CASE DefaultScreen 1"
-	/tset/Xlib3/dfltscrn/dfltscrn_m
+	/tset/Xlib3/XDefaultScreen/XDefaultScreen_m
 	"VSW5TESTSUITE CASE DefaultScreenOfDisplay 1"
 	/tset/Xlib3/dfltscrnof/dfltscrnof_m
 	"VSW5TESTSUITE CASE DefaultVisual 1"
