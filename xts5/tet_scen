@@ -4293,7 +4293,7 @@ XtCvtIntToUnsignedChar
 
 XtCvtPixelToColor
 	"VSW5TESTSUITE CASE XtCvtPixelToColor 3"
-	/tset/Xt11/tcpixcol/tcpixcol
+	/tset/Xt11/XtCvtPixelToColor/XtCvtPixelToColor
 
 XtDisplayStringConversionWarn
 	"VSW5TESTSUITE CASE XtDisplayStringConversionWarning 2"

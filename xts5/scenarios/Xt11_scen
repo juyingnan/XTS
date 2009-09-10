@@ -139,7 +139,7 @@
 	"VSW5TESTSUITE CASE XtCvtIntToUnsignedChar 3"
 	/tset/Xt11/XtCvtIntToUnsignedChar/XtCvtIntToUnsignedChar
 	"VSW5TESTSUITE CASE XtCvtPixelToColor 3"
-	/tset/Xt11/tcpixcol/tcpixcol
+	/tset/Xt11/XtCvtPixelToColor/XtCvtPixelToColor
 	"VSW5TESTSUITE CASE XtDisplayStringConversionWarning 2"
 	/tset/Xt11/tdisplscw/tdisplscw
 	"VSW5TESTSUITE CASE XtDisplayToApplicationContext 2"
