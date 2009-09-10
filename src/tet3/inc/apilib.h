@@ -89,7 +89,7 @@ TET_IMPORT_ARRAY(char *, tet_apilib_version, []);
    extern FILE *tet_resfp;		/* fp for tet_xres file */
 #else		/* -START-LITE-CUT- */
    TET_IMPORT_DATA(int, tet_iclast);	/* highest defined IC number */
-   TET_IMPORT_DATA(int, tet_sync_del);	/* true if TP deleted in another TCM */
+   TET_IMPORT_DATA(int, tet_XSync_del);	/* true if TP deleted in another TCM */
    TET_EXPORT_DATA(int *, tet_snames);	/* system name list */
    TET_EXPORT_DATA(int, tet_Nsname);	/* number of system names */
    TET_EXPORT_DATA(long, tet_snid);	/* sync ID for this test case */

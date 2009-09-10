@@ -1019,7 +1019,7 @@ XSetIOErrorHandler
 
 XSync
 	"VSW5TESTSUITE CASE XSync 5"
-	/tset/Xlib12/sync/sync
+	/tset/Xlib12/XSync/XSync
 
 XSynchronize
 	"VSW5TESTSUITE CASE XSynchronize 5"

@@ -165,7 +165,7 @@ static char srcFile[] = __FILE__;	/* file name for error reporting */
 #else		/* -START-LITE-CUT- */
    TET_IMPORT int tet_iclast = ~(~0 << S_ICBITS) - 2;
 					/* used in auto sync before cleanup */
-   TET_IMPORT int tet_sync_del = 0;	/* true when a TP is deleted in a
+   TET_IMPORT int tet_XSync_del = 0;	/* true when a TP is deleted in a
 					   test case part on another system */
    TET_IMPORT struct synreq *tet_synreq = (struct synreq *) 0;
 					/* used when analysing the results
@@ -430,7 +430,7 @@ int icno, tpno, testnum;
 		case SS_SYNCYES:
 			break;
 		case SS_SYNCNO:
-			tet_sync_del = 1;
+			tet_XSync_del = 1;
 			break;
 		default:
 			(void) sprintf(errmsg,

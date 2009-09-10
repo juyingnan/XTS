@@ -419,7 +419,7 @@ TET_IMPORT void (*tet_syncerr)() = tet_syncreport;
 #else /* -END-LITE-CUT- */
 
 /* avoid "empty" file */
-int tet_sync_not_supported;
+int tet_XSync_not_supported;
 
 #endif /* -LITE-CUT-LINE- */
 

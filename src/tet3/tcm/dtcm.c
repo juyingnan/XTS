@@ -228,7 +228,7 @@ static struct iclist *iclalloc PROTOLIST((void));
 static int split PROTOLIST((char *, char **, int, int));
 
 #ifndef TET_LITE /* -START-LITE-CUT- */
-static void sync_report PROTOLIST((int, char *));
+static void XSync_report PROTOLIST((int, char *));
 #endif		/* -END-LITE-CUT- */
 
 static void sigskip PROTOLIST((int));
@@ -341,7 +341,7 @@ char	**argv;
 
 	/* now, analyse the results of an unsuccessful auto sync */
 	if (tet_sderrno != ER_OK) {
-		sync_report(nsys, "startup");
+		XSync_report(nsys, "startup");
 		tet_exit(EXIT_FAILURE);
 	}
 #endif		/* -END-LITE-CUT- */
@@ -492,13 +492,13 @@ int icnum, tpnum, testnum;
 			tet_result(TET_UNINITIATED);
 		}
 #ifndef TET_LITE /* -START-LITE-CUT- */
-		else if (tet_sync_del != 0)
+		else if (tet_XSync_del != 0)
 		{
 			/* TP deleted in another TCM */
 			TRACE2(tet_Ttcm, 4, "TP %s deleted on another system",
 				tet_i2a(testnum));
 			tet_result(TET_UNINITIATED);
-			tet_sync_del = 0;
+			tet_XSync_del = 0;
 		}
 #endif /* -END-LITE-CUT- */
 		else
@@ -771,7 +771,7 @@ int status;
 
 	/* analyse the results of an unsuccessful auto sync */
 	if (tet_sderrno != ER_OK) {
-		sync_report(nsys, "cleanup");
+		XSync_report(nsys, "cleanup");
 		tet_exit(EXIT_FAILURE);
 	}
 #endif /* -END-LITE-CUT- */
@@ -803,11 +803,11 @@ int status;
 #ifndef TET_LITE /* -START-LITE-CUT- */
 
 /*
-**	sync_report() - analyse the results of the startup and cleanup
+**	XSync_report() - analyse the results of the startup and cleanup
 **		tet_tcm_async() calls
 */
 
-static void sync_report(nsys, functype)
+static void XSync_report(nsys, functype)
 register int nsys;
 char *functype;
 {
