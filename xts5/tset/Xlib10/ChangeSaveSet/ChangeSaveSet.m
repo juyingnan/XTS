@@ -105,7 +105,7 @@ Display *display = Dsp;
 Window	w;
 int 	change_mode = SetModeInsert;
 >># All things to do with what actually happens when the client
->># dies are in addtsvst/addtsvst.m.
+>># dies are in XAddToSaveSet/XAddToSaveSet.m.
 >>ASSERTION Good A
 When a call to xname is made with a
 .A change_mode

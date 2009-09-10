@@ -706,7 +706,7 @@ XAddHosts
 
 XAddToSaveSet
 	"VSW5TESTSUITE CASE XAddToSaveSet 8"
-	/tset/Xlib10/addtsvst/addtsvst
+	/tset/Xlib10/XAddToSaveSet/XAddToSaveSet
 
 XChangeSaveSet
 	"VSW5TESTSUITE CASE XChangeSaveSet 5"

@@ -12,7 +12,7 @@ tprogs = \
 	XActivateScreenSaver/XActivateScreenSaver \
 	XAddHost/XAddHost \
 	XAddHosts/XAddHosts \
-	addtsvst/addtsvst \
+	XAddToSaveSet/XAddToSaveSet \
 	ChangeSaveSet/ChangeSaveSet \
 	dsblaccssc/dsblaccssc \
 	enblaccssc/enblaccssc \
