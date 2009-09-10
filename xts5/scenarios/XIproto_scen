@@ -92,7 +92,7 @@
 	"VSW5TESTSUITE CASE GetDeviceFocus 3"
 	/tset/XIproto/GetDeviceFocus/GetDeviceFocus
 	"VSW5TESTSUITE CASE GetDeviceMotionEvents 3"
-	/tset/XIproto/XGetDeviceMotionEvents/XGetDeviceMotionEvents
+	/tset/XIproto/GetDeviceMotionEvents/GetDeviceMotionEvents
 	"VSW5TESTSUITE CASE GetDeviceDontPropagateList 3"
 	/tset/XIproto/GetDeviceDontPropagateList/GetDeviceDontPropagateList
 	"VSW5TESTSUITE CASE GetDeviceKeyMapping 3"

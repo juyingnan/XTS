@@ -29,7 +29,7 @@ tprogs = \
 	GetDeviceButtonMapping/GetDeviceButtonMapping \
 	XGetDeviceKeyMapping/XGetDeviceKeyMapping \
 	XGetDeviceModifierMapping/XGetDeviceModifierMapping \
-	XGetDeviceMotionEvents/XGetDeviceMotionEvents \
+	GetDeviceMotionEvents/GetDeviceMotionEvents \
 	XGetSelectedExtensionEvents/XGetSelectedExtensionEvents \
 	XListInputDevices/XListInputDevices \
 	Miscellaneous/Miscellaneous \

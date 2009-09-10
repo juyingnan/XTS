@@ -27,7 +27,7 @@ tprogs = \
 	GetDeviceButtonMapping/GetDeviceButtonMapping \
 	GetDeviceControl/GetDeviceControl \
 	GetDeviceFocus/GetDeviceFocus \
-	XGetDeviceMotionEvents/XGetDeviceMotionEvents \
+	GetDeviceMotionEvents/GetDeviceMotionEvents \
 	GetDeviceDontPropagateList/GetDeviceDontPropagateList \
 	GetDeviceKeyMapping/GetDeviceKeyMapping \
 	GetSelectedExtensionEvents/GetSelectedExtensionEvents \
