@@ -101,4 +101,4 @@
 	"VSW5TESTSUITE CASE XtRegisterGrabAction 11"
 	/tset/Xt12/tregraba/tregraba
 	"VSW5TESTSUITE CASE XtGetActionList 5"
-	/tset/Xt12/tgtactlst/tgtactlst
+	/tset/Xt12/XtGetActionList/XtGetActionList

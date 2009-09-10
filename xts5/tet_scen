@@ -4451,7 +4451,7 @@ XtCallActionProc
 
 XtGetActionList
 	"VSW5TESTSUITE CASE XtGetActionList 5"
-	/tset/Xt12/tgtactlst/tgtactlst
+	/tset/Xt12/XtGetActionList/XtGetActionList
 
 #Discrete tests for Xt Chapter 13
 
