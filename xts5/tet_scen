@@ -4361,7 +4361,7 @@ XtSetSubvalues
 
 XtVaSetSubvalues
 	"VSW5TESTSUITE CASE XtVaSetSubvalues 4"
-	/tset/Xt11/tvastsvls/tvastsvls
+	/tset/Xt11/XtVaSetSubvalues/XtVaSetSubvalues
 
 #Discrete tests for Xt Chapter 12
 
