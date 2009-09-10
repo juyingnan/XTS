@@ -2083,7 +2083,7 @@ XScreenOfDisplay
 
 XVendorRelease
 	"VSW5TESTSUITE CASE XVendorRelease 1"
-	/tset/Xlib3/vndrrls/vndrrls
+	/tset/Xlib3/XVendorRelease/XVendorRelease
 
 XServerVendor
 	"VSW5TESTSUITE CASE XServerVendor 1"
@@ -2287,7 +2287,7 @@ ScreenOfDisplay
 
 VendorRelease
 	"VSW5TESTSUITE CASE VendorRelease 1"
-	/tset/Xlib3/vndrrls/vndrrls_m
+	/tset/Xlib3/XVendorRelease/XVendorRelease_m
 
 ServerVendor
 	"VSW5TESTSUITE CASE ServerVendor 1"

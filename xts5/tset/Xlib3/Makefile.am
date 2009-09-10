@@ -63,7 +63,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XScreenOfDisplay/XScreenOfDisplay XScreenOfDisplay/XScreenOfDisplay_m \
 	XServerVendor/XServerVendor XServerVendor/XServerVendor_m \
 	XSetCloseDownMode/XSetCloseDownMode \
-	vndrrls/vndrrls vndrrls/vndrrls_m \
+	XVendorRelease/XVendorRelease XVendorRelease/XVendorRelease_m \
 	wdthmmofsc/wdthmmofsc wdthmmofsc/wdthmmofsc_m \
 	wdthofscrn/wdthofscrn wdthofscrn/wdthofscrn_m \
 	whtpxl/whtpxl whtpxl/whtpxl_m \
