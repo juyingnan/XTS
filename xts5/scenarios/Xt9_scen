@@ -77,7 +77,7 @@
 	"VSW5TESTSUITE CASE XtGrabKeyboard 2"
 	/tset/Xt9/XtGrabKeyboard/XtGrabKeyboard
 	"VSW5TESTSUITE CASE XtUngrabKeyboard 1"
-	/tset/Xt9/tunkybord/tunkybord
+	/tset/Xt9/XtUngrabKeyboard/XtUngrabKeyboard
 	"VSW5TESTSUITE CASE XtGrabButton 5"
 	/tset/Xt9/XtGrabButton/XtGrabButton
 	"VSW5TESTSUITE CASE XtUngrabButton 2"

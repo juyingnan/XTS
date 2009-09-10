@@ -4000,7 +4000,7 @@ XtGrabKeyboard
 
 XtUngrabKeyboard
 	"VSW5TESTSUITE CASE XtUngrabKeyboard 1"
-	/tset/Xt9/tunkybord/tunkybord
+	/tset/Xt9/XtUngrabKeyboard/XtUngrabKeyboard
 
 XtGrabButton
 	"VSW5TESTSUITE CASE XtGrabButton 5"
