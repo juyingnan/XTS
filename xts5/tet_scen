@@ -722,7 +722,7 @@ XEnableAccessControl
 
 XForceScreenSaver
 	"VSW5TESTSUITE CASE XForceScreenSaver 3"
-	/tset/Xlib10/frcscrnsvr/frcscrnsvr
+	/tset/Xlib10/ForceScreenSaver/ForceScreenSaver
 
 XGrabServer
 	"VSW5TESTSUITE CASE XGrabServer 1"
@@ -3258,7 +3258,7 @@ pFreeCursor
 
 pForceScreenSaver
 	"VSW5TESTSUITE CASE ForceScreenSaver 3"
-	/tset/Xproto/frcscrnsvr/frcscrnsvr
+	/tset/Xproto/ForceScreenSaver/ForceScreenSaver
 
 pFreeGC
 	"VSW5TESTSUITE CASE FreeGC 3"

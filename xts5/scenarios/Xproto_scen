@@ -132,7 +132,7 @@
 	"VSW5TESTSUITE CASE FreeCursor 3"
 	/tset/Xproto/FreeCursor/FreeCursor
 	"VSW5TESTSUITE CASE ForceScreenSaver 3"
-	/tset/Xproto/frcscrnsvr/frcscrnsvr
+	/tset/Xproto/ForceScreenSaver/ForceScreenSaver
 	"VSW5TESTSUITE CASE FreeGC 3"
 	/tset/Xproto/frgc/frgc
 	"VSW5TESTSUITE CASE FreePixmap 3"

@@ -16,7 +16,7 @@ tprogs = \
 	ChangeSaveSet/ChangeSaveSet \
 	dsblaccssc/dsblaccssc \
 	enblaccssc/enblaccssc \
-	frcscrnsvr/frcscrnsvr \
+	ForceScreenSaver/ForceScreenSaver \
 	grbsrvr/grbsrvr \
 	gtscrnsvr/gtscrnsvr \
 	instllclrm/instllclrm \
