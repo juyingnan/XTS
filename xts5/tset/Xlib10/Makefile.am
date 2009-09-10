@@ -29,6 +29,6 @@ tprogs = \
 	ReparentWindow/ReparentWindow \
 	rstscrnsvr/rstscrnsvr \
 	SetAccessControl/SetAccessControl \
-	stscrnsvr/stscrnsvr \
+	SetScreenSaver/SetScreenSaver \
 	ungrbsrvr/ungrbsrvr \
 	unnstllclr/unnstllclr

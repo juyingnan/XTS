@@ -119,7 +119,7 @@ tprogs = \
 	SetPointerMapping/SetPointerMapping \
 	StoreColors/StoreColors \
 	StoreNamedColor/StoreNamedColor \
-	stscrnsvr/stscrnsvr \
+	SetScreenSaver/SetScreenSaver \
 	stslctnown/stslctnown \
 	trnsltcrds/trnsltcrds \
 	ungrbbttn/ungrbbttn \
