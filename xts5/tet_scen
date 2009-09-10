@@ -3848,7 +3848,7 @@ XtSetMappedWhenManaged
 
 XtMapWidget
 	"VSW5TESTSUITE CASE XtMapWidget 2"
-	/tset/Xt5/tmpwidget/tmpwidget
+	/tset/Xt5/XtMapWidget/XtMapWidget
 
 XtUnmapWidget
 	"VSW5TESTSUITE CASE XtUnmapWidget 2"
