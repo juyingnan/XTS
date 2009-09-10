@@ -778,7 +778,7 @@ XSetScreenSaver
 
 XUngrabServer
 	"VSW5TESTSUITE CASE XUngrabServer 1"
-	/tset/Xlib10/UngrabServer/UngrabServer
+	/tset/Xlib10/XUngrabServer/XUngrabServer
 
 XUninstallColormap
 	"VSW5TESTSUITE CASE XUninstallColormap 5"
@@ -3574,7 +3574,7 @@ pUngrabPointer
 
 pUngrabServer
 	"VSW5TESTSUITE CASE UngrabServer 3"
-	/tset/Xproto/UngrabServer/UngrabServer
+	/tset/Xproto/XUngrabServer/XUngrabServer
 
 pUnmapSubwindows
 	"VSW5TESTSUITE CASE UnmapSubwindows 3"

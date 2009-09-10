@@ -126,7 +126,7 @@ tprogs = \
 	UngrabKey/UngrabKey \
 	UngrabKeyboard/UngrabKeyboard \
 	UngrabPointer/UngrabPointer \
-	UngrabServer/UngrabServer \
+	XUngrabServer/XUngrabServer \
 	UnmapSubwindows/UnmapSubwindows \
 	UnmapWindow/UnmapWindow \
 	UninstallColormap/UninstallColormap \
