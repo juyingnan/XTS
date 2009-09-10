@@ -108,7 +108,7 @@ tprogs = \
 	RecolorCursor/RecolorCursor \
 	ReparentWindow/ReparentWindow \
 	RotateProperties/RotateProperties \
-	sndevnt/sndevnt \
+	SendEvent/SendEvent \
 	staccsscnt/staccsscnt \
 	stclprctng/stclprctng \
 	stclsdwnmd/stclsdwnmd \

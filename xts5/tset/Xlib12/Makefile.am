@@ -29,7 +29,7 @@ tprogs = \
 	pndng/pndng \
 	ptbckevnt/ptbckevnt \
 	slctinpt/slctinpt \
-	sndevnt/sndevnt \
+	SendEvent/SendEvent \
 	staftrfnct/staftrfnct \
 	sterrrhndl/sterrrhndl \
 	stioerrrhn/stioerrrhn \
