@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XGetWindowProperty 10"
 	/tset/Xlib5/gtwdwprprt/gtwdwprprt
 	"VSW5TESTSUITE CASE XInternAtom 8"
-	/tset/Xlib5/intrnatm/intrnatm
+	/tset/Xlib5/InternAtom/InternAtom
 	"VSW5TESTSUITE CASE XListProperties 3"
 	/tset/Xlib5/lstprprts/lstprprts
 	"VSW5TESTSUITE CASE XQueryPointer 6"

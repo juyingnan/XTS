@@ -73,7 +73,7 @@ tprogs = \
 	ImageText16/ImageText16 \
 	ImageText8/ImageText8 \
 	InstallColormap/InstallColormap \
-	intrnatm/intrnatm \
+	InternAtom/InternAtom \
 	kllclnt/kllclnt \
 	lkpclr/lkpclr \
 	lstextnsns/lstextnsns \

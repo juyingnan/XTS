@@ -2465,7 +2465,7 @@ XGetWindowProperty
 
 XInternAtom
 	"VSW5TESTSUITE CASE XInternAtom 8"
-	/tset/Xlib5/intrnatm/intrnatm
+	/tset/Xlib5/InternAtom/InternAtom
 
 XListProperties
 	"VSW5TESTSUITE CASE XListProperties 3"
@@ -3362,7 +3362,7 @@ pInstallColormap
 
 pInternAtom
 	"VSW5TESTSUITE CASE InternAtom 3"
-	/tset/Xproto/intrnatm/intrnatm
+	/tset/Xproto/InternAtom/InternAtom
 
 pKillClient
 	"VSW5TESTSUITE CASE KillClient 3"

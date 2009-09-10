@@ -17,7 +17,7 @@ tprogs = \
 	GetSelectionOwner/GetSelectionOwner \
 	GetWindowAttributes/GetWindowAttributes \
 	gtwdwprprt/gtwdwprprt \
-	intrnatm/intrnatm \
+	InternAtom/InternAtom \
 	lstprprts/lstprprts \
 	qrypntr/qrypntr \
 	qrytr/qrytr \
