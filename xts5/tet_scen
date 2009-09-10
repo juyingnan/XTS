@@ -4189,7 +4189,7 @@ XtCvtStringToDimension
 
 XtCvtStringToDisplay
 	"VSW5TESTSUITE CASE XtCvtStringToDisplay 4"
-	/tset/Xt11/tcstdisp/tcstdisp
+	/tset/Xt11/XtCvtStringToDisplay/XtCvtStringToDisplay
 
 XtCvtStringToFile
 	"VSW5TESTSUITE CASE XtCvtStringToFile 4"
