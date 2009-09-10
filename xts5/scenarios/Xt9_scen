@@ -111,7 +111,7 @@
 	"VSW5TESTSUITE CASE XtRemoveWorkProc 2"
 	/tset/Xt9/trmwkproc/trmwkproc
 	"VSW5TESTSUITE CASE XtAddEventHandler 8"
-	/tset/Xt9/tadevnthr/tadevnthr
+	/tset/Xt9/XtAddEventHandler/XtAddEventHandler
 	"VSW5TESTSUITE CASE XtRemoveEventHandler 7"
 	/tset/Xt9/trmevthdr/trmevthdr
 	"VSW5TESTSUITE CASE XtInsertEventHandler 10"

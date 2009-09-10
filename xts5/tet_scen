@@ -4068,7 +4068,7 @@ XtRemoveWorkProc
 
 XtAddEventHandler
 	"VSW5TESTSUITE CASE XtAddEventHandler 8"
-	/tset/Xt9/tadevnthr/tadevnthr
+	/tset/Xt9/XtAddEventHandler/XtAddEventHandler
 
 XtRemoveEventHandler
 	"VSW5TESTSUITE CASE XtRemoveEventHandler 7"
