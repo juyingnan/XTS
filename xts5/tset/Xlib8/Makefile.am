@@ -21,7 +21,7 @@ tprogs = \
 	XGetGCValues/XGetGCValues \
 	XQueryBestStipple/XQueryBestStipple \
 	QueryBestSize/QueryBestSize \
-	qrybsttl/qrybsttl \
+	XQueryBestTile/XQueryBestTile \
 	starcmd/starcmd \
 	stbg/stbg \
 	stclpmsk/stclpmsk \

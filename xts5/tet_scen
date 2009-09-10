@@ -2797,7 +2797,7 @@ XQueryBestSize
 
 XQueryBestTile
 	"VSW5TESTSUITE CASE XQueryBestTile 3"
-	/tset/Xlib8/qrybsttl/qrybsttl
+	/tset/Xlib8/XQueryBestTile/XQueryBestTile
 
 XSetArcMode
 	"VSW5TESTSUITE CASE XSetArcMode 4"

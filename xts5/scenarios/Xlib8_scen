@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XQueryBestSize 7"
 	/tset/Xlib8/QueryBestSize/QueryBestSize
 	"VSW5TESTSUITE CASE XQueryBestTile 3"
-	/tset/Xlib8/qrybsttl/qrybsttl
+	/tset/Xlib8/XQueryBestTile/XQueryBestTile
 	"VSW5TESTSUITE CASE XSetArcMode 4"
 	/tset/Xlib8/starcmd/starcmd
 	"VSW5TESTSUITE CASE XSetBackground 3"
