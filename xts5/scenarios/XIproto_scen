@@ -116,7 +116,7 @@
 	"VSW5TESTSUITE CASE SetDeviceMode 3"
 	/tset/XIproto/XSetDeviceMode/XSetDeviceMode
 	"VSW5TESTSUITE CASE SelectExtensionEvent 3"
-	/tset/XIproto/slctexevnt/slctexevnt
+	/tset/XIproto/SelectExtensionEvent/SelectExtensionEvent
 	"VSW5TESTSUITE CASE SendExtensionEvent 3"
 	/tset/XIproto/XSendExtensionEvent/XSendExtensionEvent
 	"VSW5TESTSUITE CASE UngrabDevice 3"
