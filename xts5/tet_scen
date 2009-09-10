@@ -848,7 +848,7 @@ GraphicsExpose
 
 GravityNotify
 	"VSW5TESTSUITE CASE GravityNotify 3"
-	/tset/Xlib11/grvtyntfy/grvtyntfy
+	/tset/Xlib11/GravityNotify/GravityNotify
 
 KeymapNotify
 	"VSW5TESTSUITE CASE KeymapNotify 4"

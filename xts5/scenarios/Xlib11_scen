@@ -86,7 +86,7 @@
 	"VSW5TESTSUITE CASE GraphicsExpose 1"
 	/tset/Xlib11/GraphicsExpose/GraphicsExpose
 	"VSW5TESTSUITE CASE GravityNotify 3"
-	/tset/Xlib11/grvtyntfy/grvtyntfy
+	/tset/Xlib11/GravityNotify/GravityNotify
 	"VSW5TESTSUITE CASE KeymapNotify 4"
 	/tset/Xlib11/kympntfy/kympntfy
 	"VSW5TESTSUITE CASE KeyPress 9"

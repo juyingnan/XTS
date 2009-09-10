@@ -24,7 +24,7 @@ tprogs = \
 	FocusIn/FocusIn \
 	FocusOut/FocusOut \
 	GraphicsExpose/GraphicsExpose \
-	grvtyntfy/grvtyntfy \
+	GravityNotify/GravityNotify \
 	kympntfy/kympntfy \
 	kyprss/kyprss \
 	kyrls/kyrls \
