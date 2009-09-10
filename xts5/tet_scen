@@ -1756,7 +1756,7 @@ XKeysymToKeycode
 
 XKeysymToString
 	"VSW5TESTSUITE CASE XKeysymToString 2"
-	/tset/Xlib17/kysymtstr/kysymtstr
+	/tset/Xlib17/XKeysymToString/XKeysymToString
 
 XLookupKeysym
 	"VSW5TESTSUITE CASE XLookupKeysym 2"

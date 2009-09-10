@@ -35,7 +35,7 @@ tprogs = \
 	IsPFKey/IsPFKey \
 	XKeycodeToKeysym/XKeycodeToKeysym \
 	XKeysymToKeycode/XKeysymToKeycode \
-	kysymtstr/kysymtstr \
+	XKeysymToString/XKeysymToString \
 	lkpkysym/lkpkysym \
 	lkpstr/lkpstr \
 	mtchvslinf/mtchvslinf \
