@@ -20,7 +20,7 @@ tprogs = \
 	XInternAtom/XInternAtom \
 	XListProperties/XListProperties \
 	XQueryPointer/XQueryPointer \
-	QueryTree/QueryTree \
+	XQueryTree/XQueryTree \
 	rttwdwprpr/rttwdwprpr \
 	SetSelectionOwner/SetSelectionOwner \
 	trnsltcrdn/trnsltcrdn

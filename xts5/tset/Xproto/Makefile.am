@@ -103,7 +103,7 @@ tprogs = \
 	QueryFont/QueryFont \
 	XQueryKeymap/XQueryKeymap \
 	XQueryPointer/XQueryPointer \
-	QueryTree/QueryTree \
+	XQueryTree/XQueryTree \
 	QueryTextExtents/QueryTextExtents \
 	RecolorCursor/RecolorCursor \
 	XReparentWindow/XReparentWindow \

@@ -244,7 +244,7 @@
 	"VSW5TESTSUITE CASE QueryPointer 3"
 	/tset/Xproto/XQueryPointer/XQueryPointer
 	"VSW5TESTSUITE CASE QueryTree 3"
-	/tset/Xproto/QueryTree/QueryTree
+	/tset/Xproto/XQueryTree/XQueryTree
 	"VSW5TESTSUITE CASE QueryTextExtents 3"
 	/tset/Xproto/QueryTextExtents/QueryTextExtents
 	"VSW5TESTSUITE CASE RecolorCursor 3"
