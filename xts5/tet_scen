@@ -4415,7 +4415,7 @@ XtInstallAllAccelerators
 
 XtGetKeysymTable
 	"VSW5TESTSUITE CASE XtGetKeysymTable 4"
-	/tset/Xt12/tgtkytbl/tgtkytbl
+	/tset/Xt12/XtGetKeysymTable/XtGetKeysymTable
 
 XtSetKeyTranslator
 	"VSW5TESTSUITE CASE XtSetKeyTranslator 1"

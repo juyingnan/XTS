@@ -83,7 +83,7 @@
 	"VSW5TESTSUITE CASE XtInstallAllAccelerators 1"
 	/tset/Xt12/tinaaclrt/tinaaclrt
 	"VSW5TESTSUITE CASE XtGetKeysymTable 4"
-	/tset/Xt12/tgtkytbl/tgtkytbl
+	/tset/Xt12/XtGetKeysymTable/XtGetKeysymTable
 	"VSW5TESTSUITE CASE XtSetKeyTranslator 1"
 	/tset/Xt12/tstkytrlr/tstkytrlr
 	"VSW5TESTSUITE CASE XtTranslateKeycode 2"
