@@ -2817,7 +2817,7 @@ XSetClipOrigin
 
 XSetClipRectangles
 	"VSW5TESTSUITE CASE XSetClipRectangles 9"
-	/tset/Xlib8/stclprctng/stclprctng
+	/tset/Xlib8/SetClipRectangles/SetClipRectangles
 
 XSetDashes
 	"VSW5TESTSUITE CASE XSetDashes 7"
@@ -3510,7 +3510,7 @@ pSetAccessControl
 
 pSetClipRectangles
 	"VSW5TESTSUITE CASE SetClipRectangles 3"
-	/tset/Xproto/stclprctng/stclprctng
+	/tset/Xproto/SetClipRectangles/SetClipRectangles
 
 pSetCloseDownMode
 	"VSW5TESTSUITE CASE SetCloseDownMode 3"

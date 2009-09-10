@@ -258,7 +258,7 @@
 	"VSW5TESTSUITE CASE SetAccessControl 3"
 	/tset/Xproto/SetAccessControl/SetAccessControl
 	"VSW5TESTSUITE CASE SetClipRectangles 3"
-	/tset/Xproto/stclprctng/stclprctng
+	/tset/Xproto/SetClipRectangles/SetClipRectangles
 	"VSW5TESTSUITE CASE SetCloseDownMode 3"
 	/tset/Xproto/stclsdwnmd/stclsdwnmd
 	"VSW5TESTSUITE CASE SetDashes 3"

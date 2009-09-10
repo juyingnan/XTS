@@ -110,7 +110,7 @@ tprogs = \
 	RotateProperties/RotateProperties \
 	SendEvent/SendEvent \
 	SetAccessControl/SetAccessControl \
-	stclprctng/stclprctng \
+	SetClipRectangles/SetClipRectangles \
 	stclsdwnmd/stclsdwnmd \
 	stdshs/stdshs \
 	stfntpth/stfntpth \

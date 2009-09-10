@@ -26,7 +26,7 @@ tprogs = \
 	stbg/stbg \
 	stclpmsk/stclpmsk \
 	stclporgn/stclporgn \
-	stclprctng/stclprctng \
+	SetClipRectangles/SetClipRectangles \
 	stdshs/stdshs \
 	stfllrl/stfllrl \
 	stfllstyl/stfllstyl \
