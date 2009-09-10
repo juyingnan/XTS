@@ -115,7 +115,7 @@ tprogs = \
 	SetDashes/SetDashes \
 	SetFontPath/SetFontPath \
 	SetInputFocus/SetInputFocus \
-	stmdfrmppn/stmdfrmppn \
+	SetModifierMapping/SetModifierMapping \
 	stpntrmppn/stpntrmppn \
 	strclrs/strclrs \
 	strnmdclr/strnmdclr \

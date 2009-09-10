@@ -34,7 +34,7 @@ tprogs = \
 	nwmdfrmp/nwmdfrmp \
 	QueryKeymap/QueryKeymap \
 	SetInputFocus/SetInputFocus \
-	stmdfrmppn/stmdfrmppn \
+	SetModifierMapping/SetModifierMapping \
 	stpntrmppn/stpntrmppn \
 	ungrbbttn/ungrbbttn \
 	ungrbky/ungrbky \

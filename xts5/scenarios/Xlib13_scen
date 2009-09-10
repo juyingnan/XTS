@@ -106,7 +106,7 @@
 	"VSW5TESTSUITE CASE XSetInputFocus 13"
 	/tset/Xlib13/SetInputFocus/SetInputFocus
 	"VSW5TESTSUITE CASE XSetModifierMapping 8"
-	/tset/Xlib13/stmdfrmppn/stmdfrmppn
+	/tset/Xlib13/SetModifierMapping/SetModifierMapping
 	"VSW5TESTSUITE CASE XSetPointerMapping 7"
 	/tset/Xlib13/stpntrmppn/stpntrmppn
 	"VSW5TESTSUITE CASE XUngrabButton 6"

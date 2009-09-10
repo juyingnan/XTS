@@ -268,7 +268,7 @@
 	"VSW5TESTSUITE CASE SetInputFocus 3"
 	/tset/Xproto/SetInputFocus/SetInputFocus
 	"VSW5TESTSUITE CASE SetModifierMapping 3"
-	/tset/Xproto/stmdfrmppn/stmdfrmppn
+	/tset/Xproto/SetModifierMapping/SetModifierMapping
 	"VSW5TESTSUITE CASE SetPointerMapping 3"
 	/tset/Xproto/stpntrmppn/stpntrmppn
 	"VSW5TESTSUITE CASE StoreColors 4"
