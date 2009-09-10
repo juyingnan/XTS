@@ -4193,7 +4193,7 @@ XtCvtStringToDisplay
 
 XtCvtStringToFile
 	"VSW5TESTSUITE CASE XtCvtStringToFile 4"
-	/tset/Xt11/tcstfile/tcstfile
+	/tset/Xt11/XtCvtStringToFile/XtCvtStringToFile
 
 XtCvtStringToFloat
 	"VSW5TESTSUITE CASE XtCvtStringToFloat 4"

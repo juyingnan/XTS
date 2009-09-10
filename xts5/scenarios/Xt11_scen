@@ -89,7 +89,7 @@
 	"VSW5TESTSUITE CASE XtCvtStringToDisplay 4"
 	/tset/Xt11/XtCvtStringToDisplay/XtCvtStringToDisplay
 	"VSW5TESTSUITE CASE XtCvtStringToFile 4"
-	/tset/Xt11/tcstfile/tcstfile
+	/tset/Xt11/XtCvtStringToFile/XtCvtStringToFile
 	"VSW5TESTSUITE CASE XtCvtStringToFloat 4"
 	/tset/Xt11/tcstflt/tcstflt
 	"VSW5TESTSUITE CASE XtCvtStringToFont 8"
