@@ -86,7 +86,7 @@
 	"VSW5TESTSUITE CASE XGetDefault 5"
 	/tset/Xlib17/XGetDefault/XGetDefault
 	"VSW5TESTSUITE CASE XGetPixel 1"
-	/tset/Xlib17/gtpxl/gtpxl
+	/tset/Xlib17/XGetPixel/XGetPixel
 	"VSW5TESTSUITE CASE XGetVisualInfo 3"
 	/tset/Xlib17/gtvslinf/gtvslinf
 	"VSW5TESTSUITE CASE XIntersectRegion 1"

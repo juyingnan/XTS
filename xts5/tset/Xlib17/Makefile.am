@@ -24,7 +24,7 @@ tprogs = \
 	XFetchBuffer/XFetchBuffer \
 	XFetchBytes/XFetchBytes \
 	XGetDefault/XGetDefault \
-	gtpxl/gtpxl \
+	XGetPixel/XGetPixel \
 	gtvslinf/gtvslinf \
 	intrsctrgn/intrsctrgn \
 	iscrsrky/iscrsrky \

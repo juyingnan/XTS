@@ -1712,7 +1712,7 @@ XGetDefault
 
 XGetPixel
 	"VSW5TESTSUITE CASE XGetPixel 1"
-	/tset/Xlib17/gtpxl/gtpxl
+	/tset/Xlib17/XGetPixel/XGetPixel
 
 XGetVisualInfo
 	"VSW5TESTSUITE CASE XGetVisualInfo 3"
