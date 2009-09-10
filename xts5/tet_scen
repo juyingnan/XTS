@@ -4711,7 +4711,7 @@ XtSetSelectionTimeout
 
 XtGetSelectionTimeout
 	"VSW5TESTSUITE CASE XtGetSelectionTimeout 2"
-	/tset/XtC/tgtstmout/tgtstmout
+	/tset/XtC/XtGetSelectionTimeout/XtGetSelectionTimeout
 
 XtSetErrorMsgHandler
 	"VSW5TESTSUITE CASE XtSetErrorMsgHandler 1"
