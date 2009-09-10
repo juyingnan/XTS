@@ -37,4 +37,4 @@ tprogs = \
 	XUndefineCursor/XUndefineCursor \
 	XUnmapSubwindows/XUnmapSubwindows \
 	XUnmapWindow/XUnmapWindow \
-	vslidfrmvs/vslidfrmvs
+	XVisualIDFromVisual/XVisualIDFromVisual

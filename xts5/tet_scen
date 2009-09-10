@@ -2426,7 +2426,7 @@ XUnmapWindow
 
 XVisualIDFromVisual
 	"VSW5TESTSUITE CASE XVisualIDFromVisual 1"
-	/tset/Xlib4/vslidfrmvs/vslidfrmvs
+	/tset/Xlib4/XVisualIDFromVisual/XVisualIDFromVisual
 
 
 # Discrete tests for Xlib Chapter 5-Window Information Functions

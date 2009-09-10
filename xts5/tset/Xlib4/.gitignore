@@ -31,4 +31,4 @@ XSetWindowColormap/XSetWindowColormap
 XUndefineCursor/XUndefineCursor
 XUnmapSubwindows/XUnmapSubwindows
 XUnmapWindow/XUnmapWindow
-vslidfrmvs/vslidfrmvs
+XVisualIDFromVisual/XVisualIDFromVisual
