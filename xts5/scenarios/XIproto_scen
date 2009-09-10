@@ -96,7 +96,7 @@
 	"VSW5TESTSUITE CASE GetDeviceDontPropagateList 3"
 	/tset/XIproto/GetDeviceDontPropagateList/GetDeviceDontPropagateList
 	"VSW5TESTSUITE CASE GetDeviceKeyMapping 3"
-	/tset/XIproto/gtkeymppn/gtkeymppn
+	/tset/XIproto/GetDeviceKeyMapping/GetDeviceKeyMapping
 	"VSW5TESTSUITE CASE GetSelectedExtensionEvents 3"
 	/tset/XIproto/gtslctexev/gtslctexev
 	"VSW5TESTSUITE CASE ListInputDevices 3"

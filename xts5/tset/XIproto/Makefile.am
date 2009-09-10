@@ -29,7 +29,7 @@ tprogs = \
 	GetDeviceFocus/GetDeviceFocus \
 	XGetDeviceMotionEvents/XGetDeviceMotionEvents \
 	GetDeviceDontPropagateList/GetDeviceDontPropagateList \
-	gtkeymppn/gtkeymppn \
+	GetDeviceKeyMapping/GetDeviceKeyMapping \
 	gtslctexev/gtslctexev \
 	XListInputDevices/XListInputDevices \
 	Miscellaneous/Miscellaneous \
