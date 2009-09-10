@@ -30,7 +30,7 @@ tprogs = \
 	XGetWMColormapWindows/XGetWMColormapWindows \
 	XGetWMHints/XGetWMHints \
 	XGetWMIconName/XGetWMIconName \
-	gtwmnm/gtwmnm \
+	XGetWMName/XGetWMName \
 	gtwmnrmlhn/gtwmnrmlhn \
 	gtwmprtcls/gtwmprtcls \
 	gtwmszhnts/gtwmszhnts \

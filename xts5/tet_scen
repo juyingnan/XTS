@@ -1419,7 +1419,7 @@ XGetWMIconName
 
 XGetWMName
 	"VSW5TESTSUITE CASE XGetWMName 3"
-	/tset/Xlib15/gtwmnm/gtwmnm
+	/tset/Xlib15/XGetWMName/XGetWMName
 
 XGetWMNormalHints
 	"VSW5TESTSUITE CASE XGetWMNormalHints 5"
