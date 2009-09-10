@@ -40,7 +40,7 @@ tprogs = \
 	XLookupString/XLookupString \
 	XMatchVisualInfo/XMatchVisualInfo \
 	XOffsetRegion/XOffsetRegion \
-	plygnrgn/plygnrgn \
+	XPolygonRegion/XPolygonRegion \
 	pntinrgn/pntinrgn \
 	prmllc/prmllc \
 	prsgmtry/prsgmtry \

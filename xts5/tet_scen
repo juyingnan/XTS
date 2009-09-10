@@ -1776,7 +1776,7 @@ XOffsetRegion
 
 XPolygonRegion
 	"VSW5TESTSUITE CASE XPolygonRegion 1"
-	/tset/Xlib17/plygnrgn/plygnrgn
+	/tset/Xlib17/XPolygonRegion/XPolygonRegion
 
 XPointInRegion
 	"VSW5TESTSUITE CASE XPointInRegion 2"
