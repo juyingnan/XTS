@@ -10,7 +10,7 @@ CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
 	AllocColor/AllocColor \
-	allcclrcll/allcclrcll \
+	AllocColorCells/AllocColorCells \
 	allcclrpln/allcclrpln \
 	allcnmdclr/allcnmdclr \
 	allwevnts/allwevnts \

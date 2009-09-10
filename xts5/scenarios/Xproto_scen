@@ -58,7 +58,7 @@
 	"VSW5TESTSUITE CASE AllocColor 3"
 	/tset/Xproto/AllocColor/AllocColor
 	"VSW5TESTSUITE CASE AllocColorCells 3"
-	/tset/Xproto/allcclrcll/allcclrcll
+	/tset/Xproto/AllocColorCells/AllocColorCells
 	"VSW5TESTSUITE CASE AllocColorPlanes 3"
 	/tset/Xproto/allcclrpln/allcclrpln
 	"VSW5TESTSUITE CASE AllocNamedColor 3"
