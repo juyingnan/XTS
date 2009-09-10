@@ -3878,7 +3878,7 @@ TransientShellWidgets
 
 TopLevelShellWidgets
 	"VSW5TESTSUITE CASE TopLevelShellWidgets 10"
-	/tset/Xt6/wdgttplvls/wdgttplvls
+	/tset/Xt6/TopLevelShellWidget/TopLevelShellWidget
 
 ApplicationShellWidget
 	"VSW5TESTSUITE CASE ApplicationShellWidget 10"
