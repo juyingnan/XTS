@@ -4052,7 +4052,7 @@ XtAppMainLoop
 
 XtIsSensitive
 	"VSW5TESTSUITE CASE XtIsSensitive 4"
-	/tset/Xt9/tissenstv/tissenstv
+	/tset/Xt9/XtIsSensitive/XtIsSensitive
 
 XtSetSensitive
 	"VSW5TESTSUITE CASE XtSetSensitive 6"

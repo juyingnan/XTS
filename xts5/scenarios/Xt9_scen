@@ -103,7 +103,7 @@
 	"VSW5TESTSUITE CASE XtAppMainLoop 28"
 	/tset/Xt9/XtAppMainLoop/XtAppMainLoop
 	"VSW5TESTSUITE CASE XtIsSensitive 4"
-	/tset/Xt9/tissenstv/tissenstv
+	/tset/Xt9/XtIsSensitive/XtIsSensitive
 	"VSW5TESTSUITE CASE XtSetSensitive 6"
 	/tset/Xt9/tstsenstv/tstsenstv
 	"VSW5TESTSUITE CASE XtAppAddWorkProc 5"
