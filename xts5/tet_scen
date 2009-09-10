@@ -1578,7 +1578,7 @@ XrmQGetResource
 
 XrmQGetSearchList
 	"VSW5TESTSUITE CASE XrmQGetSearchList 4"
-	/tset/Xlib16/rmqgtsrchl/rmqgtsrchl
+	/tset/Xlib16/XrmQGetSearchList/XrmQGetSearchList
 
 XrmQGetSearchResource
 	"VSW5TESTSUITE CASE XrmQGetSearchResource 2"
