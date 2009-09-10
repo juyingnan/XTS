@@ -30,7 +30,7 @@ tprogs = \
 	KeyRelease/KeyRelease \
 	LeaveNotify/LeaveNotify \
 	MapNotify/MapNotify \
-	mppngntfy/mppngntfy \
+	MappingNotify/MappingNotify \
 	mprqst/mprqst \
 	mtnntfy/mtnntfy \
 	nexps/nexps \

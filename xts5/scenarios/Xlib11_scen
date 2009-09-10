@@ -98,7 +98,7 @@
 	"VSW5TESTSUITE CASE MapNotify 4"
 	/tset/Xlib11/MapNotify/MapNotify
 	"VSW5TESTSUITE CASE MappingNotify 1"
-	/tset/Xlib11/mppngntfy/mppngntfy
+	/tset/Xlib11/MappingNotify/MappingNotify
 	"VSW5TESTSUITE CASE MapRequest 2"
 	/tset/Xlib11/mprqst/mprqst
 	"VSW5TESTSUITE CASE MotionNotify 19"

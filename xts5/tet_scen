@@ -872,7 +872,7 @@ MapNotify
 
 MappingNotify
 	"VSW5TESTSUITE CASE MappingNotify 1"
-	/tset/Xlib11/mppngntfy/mppngntfy
+	/tset/Xlib11/MappingNotify/MappingNotify
 
 MapRequest
 	"VSW5TESTSUITE CASE MapRequest 2"
