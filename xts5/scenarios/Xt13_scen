@@ -129,7 +129,7 @@
 	"VSW5TESTSUITE CASE XtAppSetWarningHandler 2"
 	/tset/Xt13/XtAppSetWarningHandler/XtAppSetWarningHandler
 	"VSW5TESTSUITE CASE XtAppWarning 3"
-	/tset/Xt13/tapwrning/tapwrning
+	/tset/Xt13/XtAppWarning/XtAppWarning
 	"VSW5TESTSUITE CASE XtSetWMColormapWindows 3"
 	/tset/Xt13/tstwmcmw/tstwmcmw
 	"VSW5TESTSUITE CASE XtFindFile 7"

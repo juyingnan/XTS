@@ -4597,7 +4597,7 @@ XtAppSetWarningHandler
 
 XtAppWarning
 	"VSW5TESTSUITE CASE XtAppWarning 3"
-	/tset/Xt13/tapwrning/tapwrning
+	/tset/Xt13/XtAppWarning/XtAppWarning
 
 XtSetWMColormapWindows
 	"VSW5TESTSUITE CASE XtSetWMColormapWindows 3"
