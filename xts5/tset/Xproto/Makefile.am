@@ -54,7 +54,7 @@ tprogs = \
 	GrabKey/GrabKey \
 	GrabKeyboard/GrabKeyboard \
 	GrabPointer/GrabPointer \
-	GrabServer/GrabServer \
+	XGrabServer/XGrabServer \
 	GetAtomName/GetAtomName \
 	GetFontPath/GetFontPath \
 	GetGeometry/GetGeometry \

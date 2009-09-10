@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XForceScreenSaver 3"
 	/tset/Xlib10/XForceScreenSaver/XForceScreenSaver
 	"VSW5TESTSUITE CASE XGrabServer 1"
-	/tset/Xlib10/GrabServer/GrabServer
+	/tset/Xlib10/XGrabServer/XGrabServer
 	"VSW5TESTSUITE CASE XGetScreenSaver 1"
 	/tset/Xlib10/XGetScreenSaver/XGetScreenSaver
 	"VSW5TESTSUITE CASE XInstallColormap 6"

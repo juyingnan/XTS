@@ -726,7 +726,7 @@ XForceScreenSaver
 
 XGrabServer
 	"VSW5TESTSUITE CASE XGrabServer 1"
-	/tset/Xlib10/GrabServer/GrabServer
+	/tset/Xlib10/XGrabServer/XGrabServer
 
 XGetScreenSaver
 	"VSW5TESTSUITE CASE XGetScreenSaver 1"
@@ -3286,7 +3286,7 @@ pGrabPointer
 
 pGrabServer
 	"VSW5TESTSUITE CASE GrabServer 3"
-	/tset/Xproto/GrabServer/GrabServer
+	/tset/Xproto/XGrabServer/XGrabServer
 
 pGetAtomName
 	"VSW5TESTSUITE CASE GetAtomName 3"
