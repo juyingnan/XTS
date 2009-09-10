@@ -126,7 +126,7 @@
 	"VSW5TESTSUITE CASE XImageByteOrder 1"
 	/tset/Xlib3/XImageByteOrder/XImageByteOrder
 	"VSW5TESTSUITE CASE XListDepths 3"
-	/tset/Xlib3/lstdpths/lstdpths
+	/tset/Xlib3/XListDepths/XListDepths
 	"VSW5TESTSUITE CASE XLastKnownRequestProcessed 1"
 	/tset/Xlib3/lstknwnrqs/lstknwnrqs
 	"VSW5TESTSUITE CASE XListPixmapFormats 2"

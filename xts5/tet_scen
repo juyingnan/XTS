@@ -2015,7 +2015,7 @@ XImageByteOrder
 
 XListDepths
 	"VSW5TESTSUITE CASE XListDepths 3"
-	/tset/Xlib3/lstdpths/lstdpths
+	/tset/Xlib3/XListDepths/XListDepths
 
 XLastKnownRequestProcessed
 	"VSW5TESTSUITE CASE XLastKnownRequestProcessed 1"
