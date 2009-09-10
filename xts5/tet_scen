@@ -1248,7 +1248,7 @@ XmbResetIC
 
 XmbSetWMProperties
 	"VSW5TESTSUITE CASE XmbSetWMProperties 2"
-	/tset/Xlib14/mbswmprp/mbswmprp
+	/tset/Xlib14/XmbSetWMProperties/XmbSetWMProperties
 
 XmbTextEscapement
 	"VSW5TESTSUITE CASE XmbTextEscapement 1"

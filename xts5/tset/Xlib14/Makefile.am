@@ -31,7 +31,7 @@ tprogs = \
 	XmbDrawText/XmbDrawText \
 	XmbLookupString/XmbLookupString \
 	XmbResetIC/XmbResetIC \
-	mbswmprp/mbswmprp \
+	XmbSetWMProperties/XmbSetWMProperties \
 	mbtesc/mbtesc \
 	mbtext/mbtext \
 	mbtlttp/mbtlttp \

@@ -98,7 +98,7 @@
 	"VSW5TESTSUITE CASE XmbResetIC 1"
 	/tset/Xlib14/XmbResetIC/XmbResetIC
 	"VSW5TESTSUITE CASE XmbSetWMProperties 2"
-	/tset/Xlib14/mbswmprp/mbswmprp
+	/tset/Xlib14/XmbSetWMProperties/XmbSetWMProperties
 	"VSW5TESTSUITE CASE XmbTextEscapement 1"
 	/tset/Xlib14/mbtesc/mbtesc
 	"VSW5TESTSUITE CASE XmbTextExtents 1"
