@@ -32,7 +32,7 @@ tprogs = \
 	MapNotify/MapNotify \
 	MappingNotify/MappingNotify \
 	MapRequest/MapRequest \
-	mtnntfy/mtnntfy \
+	MotionNotify/MotionNotify \
 	nexps/nexps \
 	prprtyntfy/prprtyntfy \
 	rprntntfy/rprntntfy \

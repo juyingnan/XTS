@@ -102,7 +102,7 @@
 	"VSW5TESTSUITE CASE MapRequest 2"
 	/tset/Xlib11/MapRequest/MapRequest
 	"VSW5TESTSUITE CASE MotionNotify 19"
-	/tset/Xlib11/mtnntfy/mtnntfy
+	/tset/Xlib11/MotionNotify/MotionNotify
 	"VSW5TESTSUITE CASE NoExpose 1"
 	/tset/Xlib11/nexps/nexps
 	"VSW5TESTSUITE CASE PropertyNotify 2"

@@ -880,7 +880,7 @@ MapRequest
 
 MotionNotify
 	"VSW5TESTSUITE CASE MotionNotify 19"
-	/tset/Xlib11/mtnntfy/mtnntfy
+	/tset/Xlib11/MotionNotify/MotionNotify
 
 NoExpose
 	"VSW5TESTSUITE CASE NoExpose 1"
