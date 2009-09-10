@@ -26,7 +26,7 @@ tprogs = \
 	XcmsConversionProc/XcmsConversionProc \
 	XcmsConversionProc/XcmsConversionProc \
 	XcmsCreateCCC/XcmsCreateCCC \
-	cmsdcc/cmsdcc \
+	XcmsDefaultCCC/XcmsDefaultCCC \
 	cmsdocc/cmsdocc \
 	cmsfccc/cmsfccc \
 	cmsfopr/cmsfopr \

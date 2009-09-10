@@ -2639,7 +2639,7 @@ XcmsCreateCCC
 
 XcmsDefaultCCC
 	"VSW5TESTSUITE CASE XcmsDefaultCCC 1"
-	/tset/Xlib7/cmsdcc/cmsdcc
+	/tset/Xlib7/XcmsDefaultCCC/XcmsDefaultCCC
 
 XcmsDisplayOfCCC
 	"VSW5TESTSUITE CASE XcmsDisplayOfCCC 1"

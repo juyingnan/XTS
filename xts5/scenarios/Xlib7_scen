@@ -110,7 +110,7 @@
 	"VSW5TESTSUITE CASE XcmsCreateCCC 1"
 	/tset/Xlib7/XcmsCreateCCC/XcmsCreateCCC
 	"VSW5TESTSUITE CASE XcmsDefaultCCC 1"
-	/tset/Xlib7/cmsdcc/cmsdcc
+	/tset/Xlib7/XcmsDefaultCCC/XcmsDefaultCCC
 	"VSW5TESTSUITE CASE XcmsDisplayOfCCC 1"
 	/tset/Xlib7/cmsdocc/cmsdocc
 	"VSW5TESTSUITE CASE XcmsFreeCCC 1"
