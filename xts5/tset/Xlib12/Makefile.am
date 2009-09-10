@@ -14,7 +14,7 @@ tprogs = \
 	XCheckTypedEvent/XCheckTypedEvent \
 	XCheckTypedWindowEvent/XCheckTypedWindowEvent \
 	XCheckWindowEvent/XCheckWindowEvent \
-	dsplymtnbf/dsplymtnbf \
+	XDisplayMotionBufferSize/XDisplayMotionBufferSize \
 	dsplynm/dsplynm \
 	evntsqd/evntsqd \
 	flsh/flsh \

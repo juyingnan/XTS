@@ -943,7 +943,7 @@ XCheckWindowEvent
 
 XDisplayMotionBufferSize
 	"VSW5TESTSUITE CASE XDisplayMotionBufferSize 2"
-	/tset/Xlib12/dsplymtnbf/dsplymtnbf
+	/tset/Xlib12/XDisplayMotionBufferSize/XDisplayMotionBufferSize
 
 XDisplayName
 	"VSW5TESTSUITE CASE XDisplayName 1"

@@ -3,7 +3,7 @@ XCheckMaskEvent/XCheckMaskEvent
 XCheckTypedEvent/XCheckTypedEvent
 XCheckTypedWindowEvent/XCheckTypedWindowEvent
 XCheckWindowEvent/XCheckWindowEvent
-dsplymtnbf/dsplymtnbf
+XDisplayMotionBufferSize/XDisplayMotionBufferSize
 dsplynm/dsplynm
 dsplynm/Test1
 evntsqd/evntsqd

@@ -66,7 +66,7 @@
 	"VSW5TESTSUITE CASE XCheckWindowEvent 6"
 	/tset/Xlib12/XCheckWindowEvent/XCheckWindowEvent
 	"VSW5TESTSUITE CASE XDisplayMotionBufferSize 2"
-	/tset/Xlib12/dsplymtnbf/dsplymtnbf
+	/tset/Xlib12/XDisplayMotionBufferSize/XDisplayMotionBufferSize
 	"VSW5TESTSUITE CASE XDisplayName 1"
 	/tset/Xlib12/dsplynm/dsplynm
 	"VSW5TESTSUITE CASE XEventsQueued 6"
