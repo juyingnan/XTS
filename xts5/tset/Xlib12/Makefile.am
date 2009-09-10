@@ -21,7 +21,7 @@ tprogs = \
 	XGetErrorDatabaseText/XGetErrorDatabaseText \
 	XGetErrorText/XGetErrorText \
 	XGetMotionEvents/XGetMotionEvents \
-	ifevnt/ifevnt \
+	XIfEvent/XIfEvent \
 	mskevnt/mskevnt \
 	nxtevnt/nxtevnt \
 	pkevnt/pkevnt \

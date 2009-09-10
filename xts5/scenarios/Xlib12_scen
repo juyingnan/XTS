@@ -80,7 +80,7 @@
 	"VSW5TESTSUITE CASE XGetMotionEvents 7"
 	/tset/Xlib12/XGetMotionEvents/XGetMotionEvents
 	"VSW5TESTSUITE CASE XIfEvent 4"
-	/tset/Xlib12/ifevnt/ifevnt
+	/tset/Xlib12/XIfEvent/XIfEvent
 	"VSW5TESTSUITE CASE XMaskEvent 3"
 	/tset/Xlib12/mskevnt/mskevnt
 	"VSW5TESTSUITE CASE XNextEvent 3"

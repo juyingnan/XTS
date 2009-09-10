@@ -971,7 +971,7 @@ XGetMotionEvents
 
 XIfEvent
 	"VSW5TESTSUITE CASE XIfEvent 4"
-	/tset/Xlib12/ifevnt/ifevnt
+	/tset/Xlib12/XIfEvent/XIfEvent
 
 XMaskEvent
 	"VSW5TESTSUITE CASE XMaskEvent 3"
