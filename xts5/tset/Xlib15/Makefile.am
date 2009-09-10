@@ -12,7 +12,7 @@ defstr_defstr_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 
 tprogs = \
 	XAllocClassHint/XAllocClassHint \
-	allcicnsz/allcicnsz \
+	XAllocIconSize/XAllocIconSize \
 	allcstndrd/allcstndrd \
 	allcszhnts/allcszhnts \
 	allcwmhnts/allcwmhnts \
