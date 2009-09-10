@@ -766,7 +766,7 @@ XReparentWindow
 
 XResetScreenSaver
 	"VSW5TESTSUITE CASE XResetScreenSaver 2"
-	/tset/Xlib10/rstscrnsvr/rstscrnsvr
+	/tset/Xlib10/XResetScreenSaver/XResetScreenSaver
 
 XSetAccessControl
 	"VSW5TESTSUITE CASE XSetAccessControl 4"

@@ -27,7 +27,7 @@ tprogs = \
 	XRemoveHost/XRemoveHost \
 	XRemoveHosts/XRemoveHosts \
 	XReparentWindow/XReparentWindow \
-	rstscrnsvr/rstscrnsvr \
+	XResetScreenSaver/XResetScreenSaver \
 	SetAccessControl/SetAccessControl \
 	SetScreenSaver/SetScreenSaver \
 	UngrabServer/UngrabServer \
