@@ -21,7 +21,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XDefaultColormap/XDefaultColormap XDefaultColormap/XDefaultColormap_m \
 	XDefaultColormapOfScreen/XDefaultColormapOfScreen XDefaultColormapOfScreen/XDefaultColormapOfScreen_m \
 	XDefaultDepth/XDefaultDepth XDefaultDepth/XDefaultDepth_m \
-	dfltdpthof/dfltdpthof dfltdpthof/dfltdpthof_m \
+	XDefaultDepthOfScreen/XDefaultDepthOfScreen XDefaultDepthOfScreen/XDefaultDepthOfScreen_m \
 	dfltgc/dfltgc dfltgc/dfltgc_m \
 	dfltgcofsc/dfltgcofsc dfltgcofsc/dfltgcofsc_m \
 	dfltrtwdw/dfltrtwdw dfltrtwdw/dfltrtwdw_m \
