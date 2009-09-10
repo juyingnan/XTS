@@ -45,7 +45,7 @@ tprogs = \
 	XStoreName/XStoreName \
 	XSetTransientForHint/XSetTransientForHint \
 	XSetTextProperty/XSetTextProperty \
-	stwmclntmc/stwmclntmc \
+	XSetWMClientMachine/XSetWMClientMachine \
 	stwmclrmpw/stwmclrmpw \
 	stwmhnts/stwmhnts \
 	stwmicnnm/stwmicnnm \

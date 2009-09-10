@@ -1479,7 +1479,7 @@ XSetTextProperty
 
 XSetWMClientMachine
 	"VSW5TESTSUITE CASE XSetWMClientMachine 5"
-	/tset/Xlib15/stwmclntmc/stwmclntmc
+	/tset/Xlib15/XSetWMClientMachine/XSetWMClientMachine
 
 XSetWMColormapWindows
 	"VSW5TESTSUITE CASE XSetWMColormapWindows 4"

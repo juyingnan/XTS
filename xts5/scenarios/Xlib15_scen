@@ -122,7 +122,7 @@
 	"VSW5TESTSUITE CASE XSetTextProperty 5"
 	/tset/Xlib15/XSetTextProperty/XSetTextProperty
 	"VSW5TESTSUITE CASE XSetWMClientMachine 5"
-	/tset/Xlib15/stwmclntmc/stwmclntmc
+	/tset/Xlib15/XSetWMClientMachine/XSetWMClientMachine
 	"VSW5TESTSUITE CASE XSetWMColormapWindows 4"
 	/tset/Xlib15/stwmclrmpw/stwmclrmpw
 	"VSW5TESTSUITE CASE XSetWMHints 3"
