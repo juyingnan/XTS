@@ -1614,7 +1614,7 @@ XrmUniqueQuark
 
 XResourceManagerString
 	"VSW5TESTSUITE CASE XResourceManagerString 2"
-	/tset/Xlib16/rsrcmngrst/rsrcmngrst
+	/tset/Xlib16/XResourceManagerString/XResourceManagerString
 
 XrmCombineDatabase
 	"VSW5TESTSUITE CASE XrmCombineDatabase 6"

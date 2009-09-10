@@ -104,7 +104,7 @@
 	"VSW5TESTSUITE CASE XrmUniqueQuark 1"
 	/tset/Xlib16/XrmUniqueQuark/XrmUniqueQuark
 	"VSW5TESTSUITE CASE XResourceManagerString 2"
-	/tset/Xlib16/rsrcmngrst/rsrcmngrst
+	/tset/Xlib16/XResourceManagerString/XResourceManagerString
 	"VSW5TESTSUITE CASE XrmCombineDatabase 6"
 	/tset/Xlib16/XrmCombineDatabase/XrmCombineDatabase
 	"VSW5TESTSUITE CASE XrmCombineFileDatabase 6"

@@ -42,5 +42,5 @@ tprogs = \
 	XrmStringToQuark/XrmStringToQuark \
 	XrmStringToQuarkList/XrmStringToQuarkList \
 	XrmUniqueQuark/XrmUniqueQuark \
-	rsrcmngrst/rsrcmngrst \
+	XResourceManagerString/XResourceManagerString \
 	scrrs/scrrs
