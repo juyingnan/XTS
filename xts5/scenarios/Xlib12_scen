@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE XCheckMaskEvent 6"
 	/tset/Xlib12/XCheckMaskEvent/XCheckMaskEvent
 	"VSW5TESTSUITE CASE XCheckTypedEvent 6"
-	/tset/Xlib12/chcktypdev/chcktypdev
+	/tset/Xlib12/XCheckTypedEvent/XCheckTypedEvent
 	"VSW5TESTSUITE CASE XCheckTypedWindowEvent 6"
 	/tset/Xlib12/chcktypdwd/chcktypdwd
 	"VSW5TESTSUITE CASE XCheckWindowEvent 6"
