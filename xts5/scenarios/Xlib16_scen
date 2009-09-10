@@ -112,7 +112,7 @@
 	"VSW5TESTSUITE CASE XrmEnumerateDatabase 3"
 	/tset/Xlib16/XrmEnumerateDatabase/XrmEnumerateDatabase
 	"VSW5TESTSUITE CASE XrmGetDatabase 2"
-	/tset/Xlib16/rmgtdb/rmgtdb
+	/tset/Xlib16/XrmGetDatabase/XrmGetDatabase
 	"VSW5TESTSUITE CASE XrmLocaleOfDatabase 1"
 	/tset/Xlib16/rmloofdt/rmloofdt
 	"VSW5TESTSUITE CASE XrmPermStringToQuark 2"

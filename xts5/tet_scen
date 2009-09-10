@@ -1630,7 +1630,7 @@ XrmEnumerateDatabase
 
 XrmGetDatabase
 	"VSW5TESTSUITE CASE XrmGetDatabase 2"
-	/tset/Xlib16/rmgtdb/rmgtdb
+	/tset/Xlib16/XrmGetDatabase/XrmGetDatabase
 
 XrmLocaleOfDatabase
 	"VSW5TESTSUITE CASE XrmLocaleOfDatabase 1"
