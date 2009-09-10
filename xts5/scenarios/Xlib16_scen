@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE XrmMergeDatabases 6"
 	/tset/Xlib16/XrmMergeDatabases/XrmMergeDatabases
 	"VSW5TESTSUITE CASE XrmParseCommand 12"
-	/tset/Xlib16/rmprscmmnd/rmprscmmnd
+	/tset/Xlib16/XrmParseCommand/XrmParseCommand
 	"VSW5TESTSUITE CASE XrmPutFileDatabase 3"
 	/tset/Xlib16/rmptfldtbs/rmptfldtbs
 	"VSW5TESTSUITE CASE XrmPutLineResource 9"

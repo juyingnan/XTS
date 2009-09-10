@@ -25,7 +25,7 @@ tprogs = \
 	XrmInitialize/XrmInitialize \
 	XrmLocaleOfDatabase/XrmLocaleOfDatabase \
 	XrmMergeDatabases/XrmMergeDatabases \
-	rmprscmmnd/rmprscmmnd \
+	XrmParseCommand/XrmParseCommand \
 	rmpstoq/rmpstoq \
 	rmptfldtbs/rmptfldtbs \
 	rmptlnrsrc/rmptlnrsrc \

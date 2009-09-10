@@ -1554,7 +1554,7 @@ XrmMergeDatabases
 
 XrmParseCommand
 	"VSW5TESTSUITE CASE XrmParseCommand 12"
-	/tset/Xlib16/rmprscmmnd/rmprscmmnd
+	/tset/Xlib16/XrmParseCommand/XrmParseCommand
 
 XrmPutFileDatabase
 	"VSW5TESTSUITE CASE XrmPutFileDatabase 3"
