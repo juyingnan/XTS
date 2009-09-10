@@ -34,7 +34,7 @@ tprogs = \
 	XmbSetWMProperties/XmbSetWMProperties \
 	XmbTextEscapement/XmbTextEscapement \
 	XmbTextExtents/XmbTextExtents \
-	mbtlttp/mbtlttp \
+	XmbTextListToTextProperty/XmbTextListToTextProperty \
 	mbtpcex/mbtpcex \
 	mbtpttl/mbtpttl \
 	openim/openim \

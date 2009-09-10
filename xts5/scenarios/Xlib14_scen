@@ -104,7 +104,7 @@
 	"VSW5TESTSUITE CASE XmbTextExtents 1"
 	/tset/Xlib14/XmbTextExtents/XmbTextExtents
 	"VSW5TESTSUITE CASE XmbTextListToTextProperty 1"
-	/tset/Xlib14/mbtlttp/mbtlttp
+	/tset/Xlib14/XmbTextListToTextProperty/XmbTextListToTextProperty
 	"VSW5TESTSUITE CASE XmbTextPerCharExtents 1"
 	/tset/Xlib14/mbtpcex/mbtpcex
 	"VSW5TESTSUITE CASE XmbTextPropertyToTextList 1"
