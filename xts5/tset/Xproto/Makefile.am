@@ -100,7 +100,7 @@ tprogs = \
 	XQueryBestSize/XQueryBestSize \
 	XQueryColors/XQueryColors \
 	QueryExtension/QueryExtension \
-	QueryFont/QueryFont \
+	XQueryFont/XQueryFont \
 	XQueryKeymap/XQueryKeymap \
 	XQueryPointer/XQueryPointer \
 	XQueryTree/XQueryTree \

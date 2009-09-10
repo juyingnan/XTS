@@ -3032,7 +3032,7 @@ XPutImage
 
 XQueryFont
 	"VSW5TESTSUITE CASE XQueryFont 3"
-	/tset/Xlib9/QueryFont/QueryFont
+	/tset/Xlib9/XQueryFont/XQueryFont
 
 XQueryTextExtents16
 	"VSW5TESTSUITE CASE XQueryTextExtents16 13"
@@ -3470,7 +3470,7 @@ pQueryExtension
 
 pQueryFont
 	"VSW5TESTSUITE CASE QueryFont 3"
-	/tset/Xproto/QueryFont/QueryFont
+	/tset/Xproto/XQueryFont/XQueryFont
 
 pQueryKeymap
 	"VSW5TESTSUITE CASE QueryKeymap 3"

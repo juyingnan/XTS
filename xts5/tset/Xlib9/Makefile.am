@@ -46,7 +46,7 @@ tprogs = \
 	XListFonts/XListFonts \
 	XListFontsWithInfo/XListFontsWithInfo \
 	XPutImage/XPutImage \
-	QueryFont/QueryFont \
+	XQueryFont/XQueryFont \
 	XQueryTextExtents16/XQueryTextExtents16 \
 	QueryTextExtents/QueryTextExtents \
 	SetFontPath/SetFontPath \
