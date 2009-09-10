@@ -2873,7 +2873,7 @@ XSetTile
 
 XSetTSOrigin
 	"VSW5TESTSUITE CASE XSetTSOrigin 3"
-	/tset/Xlib8/sttsorgn/sttsorgn
+	/tset/Xlib8/XSetTSOrigin/XSetTSOrigin
 
 XFlushGC
 	"VSW5TESTSUITE CASE XFlushGC 2"

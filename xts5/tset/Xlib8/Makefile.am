@@ -40,4 +40,4 @@ tprogs = \
 	XSetStipple/XSetStipple \
 	XSetState/XSetState \
 	XSetTile/XSetTile \
-	sttsorgn/sttsorgn
+	XSetTSOrigin/XSetTSOrigin

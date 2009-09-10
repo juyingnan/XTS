@@ -110,6 +110,6 @@
 	"VSW5TESTSUITE CASE XSetTile 6"
 	/tset/Xlib8/XSetTile/XSetTile
 	"VSW5TESTSUITE CASE XSetTSOrigin 3"
-	/tset/Xlib8/sttsorgn/sttsorgn
+	/tset/Xlib8/XSetTSOrigin/XSetTSOrigin
 	"VSW5TESTSUITE CASE XFlushGC 2"
 	/tset/Xlib8/XFlushGC/XFlushGC
