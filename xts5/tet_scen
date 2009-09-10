@@ -3438,7 +3438,7 @@ pPolyPoint
 
 pPolyRectangle
 	"VSW5TESTSUITE CASE PolyRectangle 3"
-	/tset/Xproto/plyrctngl/plyrctngl
+	/tset/Xproto/PolyRectangle/PolyRectangle
 
 pPolySegment
 	"VSW5TESTSUITE CASE PolySegment 3"
