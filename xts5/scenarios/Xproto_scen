@@ -176,7 +176,7 @@
 	"VSW5TESTSUITE CASE GetSelectionOwner 3"
 	/tset/Xproto/GetSelectionOwner/GetSelectionOwner
 	"VSW5TESTSUITE CASE GetWindowAttributes 3"
-	/tset/Xproto/gtwdwattrb/gtwdwattrb
+	/tset/Xproto/GetWindowAttributes/GetWindowAttributes
 	"VSW5TESTSUITE CASE ImageText16 3"
 	/tset/Xproto/imgtxt16/imgtxt16
 	"VSW5TESTSUITE CASE ImageText8 3"

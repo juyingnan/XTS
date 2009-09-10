@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE XGetSelectionOwner 3"
 	/tset/Xlib5/GetSelectionOwner/GetSelectionOwner
 	"VSW5TESTSUITE CASE XGetWindowAttributes 3"
-	/tset/Xlib5/gtwdwattrb/gtwdwattrb
+	/tset/Xlib5/GetWindowAttributes/GetWindowAttributes
 	"VSW5TESTSUITE CASE XGetWindowProperty 10"
 	/tset/Xlib5/gtwdwprprt/gtwdwprprt
 	"VSW5TESTSUITE CASE XInternAtom 8"

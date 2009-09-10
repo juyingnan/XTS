@@ -15,7 +15,7 @@ tprogs = \
 	GetAtomName/GetAtomName \
 	GetGeometry/GetGeometry \
 	GetSelectionOwner/GetSelectionOwner \
-	gtwdwattrb/gtwdwattrb \
+	GetWindowAttributes/GetWindowAttributes \
 	gtwdwprprt/gtwdwprprt \
 	intrnatm/intrnatm \
 	lstprprts/lstprprts \

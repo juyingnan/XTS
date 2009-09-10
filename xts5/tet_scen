@@ -2457,7 +2457,7 @@ XGetSelectionOwner
 
 XGetWindowAttributes
 	"VSW5TESTSUITE CASE XGetWindowAttributes 3"
-	/tset/Xlib5/gtwdwattrb/gtwdwattrb
+	/tset/Xlib5/GetWindowAttributes/GetWindowAttributes
 
 XGetWindowProperty
 	"VSW5TESTSUITE CASE XGetWindowProperty 10"
@@ -3346,7 +3346,7 @@ pGetSelectionOwner
 
 pGetWindowAttributes
 	"VSW5TESTSUITE CASE GetWindowAttributes 3"
-	/tset/Xproto/gtwdwattrb/gtwdwattrb
+	/tset/Xproto/GetWindowAttributes/GetWindowAttributes
 
 pImageText16
 	"VSW5TESTSUITE CASE ImageText16 3"

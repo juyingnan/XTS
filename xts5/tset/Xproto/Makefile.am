@@ -69,7 +69,7 @@ tprogs = \
 	GetProperty/GetProperty \
 	GetScreenSaver/GetScreenSaver \
 	GetSelectionOwner/GetSelectionOwner \
-	gtwdwattrb/gtwdwattrb \
+	GetWindowAttributes/GetWindowAttributes \
 	imgtxt16/imgtxt16 \
 	imgtxt8/imgtxt8 \
 	instllclrm/instllclrm \
