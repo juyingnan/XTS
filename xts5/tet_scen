@@ -4371,7 +4371,7 @@ XtAppAddActions
 
 XtAppAddActionHook
 	"VSW5TESTSUITE CASE XtAppAddActionHook 6"
-	/tset/Xt12/tapadachk/tapadachk
+	/tset/Xt12/XtAppAddActionHook/XtAppAddActionHook
 
 XtRemoveActionHook
 	"VSW5TESTSUITE CASE XtRemoveActionHook 1"
