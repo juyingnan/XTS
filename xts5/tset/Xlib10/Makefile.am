@@ -21,7 +21,7 @@ tprogs = \
 	GetScreenSaver/GetScreenSaver \
 	InstallColormap/InstallColormap \
 	KillClient/KillClient \
-	lsthsts/lsthsts \
+	ListHosts/ListHosts \
 	lstinstlld/lstinstlld \
 	rmvfrmsvst/rmvfrmsvst \
 	rmvhst/rmvhst \

@@ -742,7 +742,7 @@ XKillClient
 
 XListHosts
 	"VSW5TESTSUITE CASE XListHosts 2"
-	/tset/Xlib10/lsthsts/lsthsts
+	/tset/Xlib10/ListHosts/ListHosts
 
 XListInstalledColormaps
 	"VSW5TESTSUITE CASE XListInstalledColormaps 2"
@@ -3386,7 +3386,7 @@ pListFontsWithInfo
 
 pListHosts
 	"VSW5TESTSUITE CASE ListHosts 3"
-	/tset/Xproto/lsthsts/lsthsts
+	/tset/Xproto/ListHosts/ListHosts
 
 pListInstalledColormaps
 	"VSW5TESTSUITE CASE ListInstalledColormaps 3"

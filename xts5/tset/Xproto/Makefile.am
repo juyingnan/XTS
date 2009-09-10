@@ -79,7 +79,7 @@ tprogs = \
 	ListExtensions/ListExtensions \
 	ListFonts/ListFonts \
 	ListFontsWithInfo/ListFontsWithInfo \
-	lsthsts/lsthsts \
+	ListHosts/ListHosts \
 	lstinstlld/lstinstlld \
 	lstprprts/lstprprts \
 	mpsbws/mpsbws \
