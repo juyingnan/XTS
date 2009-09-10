@@ -23,7 +23,7 @@ tprogs = \
 	XFreeFontSet/XFreeFontSet \
 	XGetICValues/XGetICValues \
 	XGetIMValues/XGetIMValues \
-	imofic/imofic \
+	XIMOfIC/XIMOfIC \
 	loffs/loffs \
 	lofim/lofim \
 	mbdistr/mbdistr \
