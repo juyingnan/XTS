@@ -4423,7 +4423,7 @@ XtSetKeyTranslator
 
 XtTranslateKeycode
 	"VSW5TESTSUITE CASE XtTranslateKeycode 2"
-	/tset/Xt12/ttranskcd/ttranskcd
+	/tset/Xt12/XtTranslateKeycode/XtTranslateKeycode
 
 XtRegisterCaseConverter
 	"VSW5TESTSUITE CASE XtRegisterCaseConverter 2"
