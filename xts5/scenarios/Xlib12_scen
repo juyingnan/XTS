@@ -84,7 +84,7 @@
 	"VSW5TESTSUITE CASE XMaskEvent 3"
 	/tset/Xlib12/XMaskEvent/XMaskEvent
 	"VSW5TESTSUITE CASE XNextEvent 3"
-	/tset/Xlib12/nxtevnt/nxtevnt
+	/tset/Xlib12/XNextEvent/XNextEvent
 	"VSW5TESTSUITE CASE XPeekEvent 3"
 	/tset/Xlib12/pkevnt/pkevnt
 	"VSW5TESTSUITE CASE XPeekIfEvent 4"

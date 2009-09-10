@@ -23,7 +23,7 @@ tprogs = \
 	XGetMotionEvents/XGetMotionEvents \
 	XIfEvent/XIfEvent \
 	XMaskEvent/XMaskEvent \
-	nxtevnt/nxtevnt \
+	XNextEvent/XNextEvent \
 	pkevnt/pkevnt \
 	pkifevnt/pkifevnt \
 	pndng/pndng \

@@ -979,7 +979,7 @@ XMaskEvent
 
 XNextEvent
 	"VSW5TESTSUITE CASE XNextEvent 3"
-	/tset/Xlib12/nxtevnt/nxtevnt
+	/tset/Xlib12/XNextEvent/XNextEvent
 
 XPeekEvent
 	"VSW5TESTSUITE CASE XPeekEvent 3"
