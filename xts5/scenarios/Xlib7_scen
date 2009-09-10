@@ -88,7 +88,7 @@
 	"VSW5TESTSUITE CASE XcmsAllocColor 2"
 	/tset/Xlib7/XcmsAllocColor/XcmsAllocColor
 	"VSW5TESTSUITE CASE XcmsAddColorSpace 1"
-	/tset/Xlib7/cmsacs/cmsacs
+	/tset/Xlib7/XcmsAddColorSpace/XcmsAddColorSpace
 	"VSW5TESTSUITE CASE XcmsAddFunctionSet 1"
 	/tset/Xlib7/cmsadfs/cmsadfs
 	"VSW5TESTSUITE CASE XcmsAllocNamedColor 2"

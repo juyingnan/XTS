@@ -2595,7 +2595,7 @@ XcmsAllocColor
 
 XcmsAddColorSpace
 	"VSW5TESTSUITE CASE XcmsAddColorSpace 1"
-	/tset/Xlib7/cmsacs/cmsacs
+	/tset/Xlib7/XcmsAddColorSpace/XcmsAddColorSpace
 
 XcmsAddFunctionSet
 	"VSW5TESTSUITE CASE XcmsAddFunctionSet 1"
