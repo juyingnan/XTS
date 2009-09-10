@@ -22,7 +22,7 @@ tprogs = \
 	lwrwdw/lwrwdw \
 	mprsd/mprsd \
 	MapSubwindows/MapSubwindows \
-	mpwdw/mpwdw \
+	MapWindow/MapWindow \
 	mvrszwdw/mvrszwdw \
 	mvwdw/mvwdw \
 	rstckwdws/rstckwdws \

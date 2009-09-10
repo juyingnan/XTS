@@ -2366,7 +2366,7 @@ XMapSubwindows
 
 XMapWindow
 	"VSW5TESTSUITE CASE XMapWindow 15"
-	/tset/Xlib4/mpwdw/mpwdw
+	/tset/Xlib4/MapWindow/MapWindow
 
 XMoveResizeWindow
 	"VSW5TESTSUITE CASE XMoveResizeWindow 15"
@@ -3402,7 +3402,7 @@ pMapSubwindows
 
 pMapWindow
 	"VSW5TESTSUITE CASE MapWindow 3"
-	/tset/Xproto/mpwdw/mpwdw
+	/tset/Xproto/MapWindow/MapWindow
 
 pNoOperation
 	"VSW5TESTSUITE CASE NoOperation 4"

@@ -82,7 +82,7 @@
 	"VSW5TESTSUITE CASE XMapSubwindows 14"
 	/tset/Xlib4/MapSubwindows/MapSubwindows
 	"VSW5TESTSUITE CASE XMapWindow 15"
-	/tset/Xlib4/mpwdw/mpwdw
+	/tset/Xlib4/MapWindow/MapWindow
 	"VSW5TESTSUITE CASE XMoveResizeWindow 15"
 	/tset/Xlib4/mvrszwdw/mvrszwdw
 	"VSW5TESTSUITE CASE XMoveWindow 8"

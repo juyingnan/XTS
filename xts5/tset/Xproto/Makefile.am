@@ -83,7 +83,7 @@ tprogs = \
 	ListInstalledColormaps/ListInstalledColormaps \
 	ListProperties/ListProperties \
 	MapSubwindows/MapSubwindows \
-	mpwdw/mpwdw \
+	MapWindow/MapWindow \
 	noprtn/noprtn \
 	opndsply/opndsply \
 	opnfnt/opnfnt \
