@@ -56,7 +56,7 @@
 #
 
 	"VSW5TESTSUITE CASE AllowDeviceEvents 3"
-	/tset/XIproto/XAllowDeviceEvents/XAllowDeviceEvents
+	/tset/XIproto/AllowDeviceEvents/AllowDeviceEvents
 	"VSW5TESTSUITE CASE ChangeDeviceControl 3"
 	/tset/XIproto/XChangeDeviceControl/XChangeDeviceControl
 	"VSW5TESTSUITE CASE ChangeDeviceDontPropagateList 3"

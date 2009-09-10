@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	XAllowDeviceEvents/XAllowDeviceEvents \
+	AllowDeviceEvents/AllowDeviceEvents \
 	XChangeDeviceControl/XChangeDeviceControl \
 	ChangeDeviceDontPropagateList/ChangeDeviceDontPropagateList \
 	XChangeFeedbackControl/XChangeFeedbackControl \

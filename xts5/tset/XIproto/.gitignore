@@ -1,4 +1,4 @@
-XAllowDeviceEvents/XAllowDeviceEvents
+AllowDeviceEvents/AllowDeviceEvents
 XChangeDeviceControl/XChangeDeviceControl
 ChangeDeviceDontPropagateList/ChangeDeviceDontPropagateList
 XChangeFeedbackControl/XChangeFeedbackControl

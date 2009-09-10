@@ -502,7 +502,7 @@ ShapeExt
 
 XAllowDeviceEvents
 	"VSW5TESTSUITE CASE XAllowDeviceEvents 22"
-	/tset/XI/XAllowDeviceEvents/XAllowDeviceEvents
+	/tset/XI/AllowDeviceEvents/AllowDeviceEvents
 
 XChangeDeviceControl
 	"VSW5TESTSUITE CASE XChangeDeviceControl 10"

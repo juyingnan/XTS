@@ -56,7 +56,7 @@
 #
 
 	"VSW5TESTSUITE CASE XAllowDeviceEvents 22"
-	/tset/XI/XAllowDeviceEvents/XAllowDeviceEvents
+	/tset/XI/AllowDeviceEvents/AllowDeviceEvents
 	"VSW5TESTSUITE CASE XChangeDeviceControl 10"
 	/tset/XI/XChangeDeviceControl/XChangeDeviceControl
 	"VSW5TESTSUITE CASE XChangeFeedbackControl 8"
