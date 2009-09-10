@@ -3012,7 +3012,7 @@ XGetSubImage
 
 XLoadFont
 	"VSW5TESTSUITE CASE XLoadFont 5"
-	/tset/Xlib9/ldfnt/ldfnt
+	/tset/Xlib9/XLoadFont/XLoadFont
 
 XLoadQueryFont
 	"VSW5TESTSUITE CASE XLoadQueryFont 5"

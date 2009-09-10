@@ -120,7 +120,7 @@
 	"VSW5TESTSUITE CASE XGetSubImage 17"
 	/tset/Xlib9/XGetSubImage/XGetSubImage
 	"VSW5TESTSUITE CASE XLoadFont 5"
-	/tset/Xlib9/ldfnt/ldfnt
+	/tset/Xlib9/XLoadFont/XLoadFont
 	"VSW5TESTSUITE CASE XLoadQueryFont 5"
 	/tset/Xlib9/ldqryfnt/ldqryfnt
 	"VSW5TESTSUITE CASE XListFonts 6"
