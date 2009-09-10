@@ -30,8 +30,8 @@ XDefaultRootWindow/XDefaultRootWindow
 XDefaultRootWindow/XDefaultRootWindow_m
 XDefaultScreen/XDefaultScreen
 XDefaultScreen/XDefaultScreen_m
-dfltscrnof/dfltscrnof
-dfltscrnof/dfltscrnof_m
+XDefaultScreenOfDisplay/XDefaultScreenOfDisplay
+XDefaultScreenOfDisplay/XDefaultScreenOfDisplay_m
 dfltvsl/dfltvsl
 dfltvsl/dfltvsl_m
 dfltvslofs/dfltvslofs
