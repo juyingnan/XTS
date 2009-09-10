@@ -3374,7 +3374,7 @@ pLookupColor
 
 pListExtensions
 	"VSW5TESTSUITE CASE ListExtensions 3"
-	/tset/Xproto/lstextnsns/lstextnsns
+	/tset/Xproto/ListExtensions/ListExtensions
 
 pListFonts
 	"VSW5TESTSUITE CASE ListFonts 3"

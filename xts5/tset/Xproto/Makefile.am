@@ -76,7 +76,7 @@ tprogs = \
 	InternAtom/InternAtom \
 	KillClient/KillClient \
 	LookupColor/LookupColor \
-	lstextnsns/lstextnsns \
+	ListExtensions/ListExtensions \
 	lstfnts/lstfnts \
 	lstfntswth/lstfntswth \
 	lsthsts/lsthsts \

@@ -190,7 +190,7 @@
 	"VSW5TESTSUITE CASE LookupColor 3"
 	/tset/Xproto/LookupColor/LookupColor
 	"VSW5TESTSUITE CASE ListExtensions 3"
-	/tset/Xproto/lstextnsns/lstextnsns
+	/tset/Xproto/ListExtensions/ListExtensions
 	"VSW5TESTSUITE CASE ListFonts 3"
 	/tset/Xproto/lstfnts/lstfnts
 	"VSW5TESTSUITE CASE ListFontsWithInfo 3"
