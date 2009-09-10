@@ -63,7 +63,7 @@
 	"VSW5TESTSUITE CASE XtAppAddActionHook 6"
 	/tset/Xt12/XtAppAddActionHook/XtAppAddActionHook
 	"VSW5TESTSUITE CASE XtRemoveActionHook 1"
-	/tset/Xt12/trmvachok/trmvachok
+	/tset/Xt12/XtRemoveActionHook/XtRemoveActionHook
 	"VSW5TESTSUITE CASE XtSetMultiClickTime 1"
 	/tset/Xt12/tstmclktm/tstmclktm
 	"VSW5TESTSUITE CASE XtGetMultiClickTime 2"
