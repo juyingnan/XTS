@@ -4,5 +4,5 @@ XCreateFontCursor/XCreateFontCursor
 keysym/keysym
 keysymdef/keysymdef
 XKeysymToKeycode/XKeysymToKeycode
-LookupColor/LookupColor
+XLookupColor/XLookupColor
 strtkysym/strtkysym

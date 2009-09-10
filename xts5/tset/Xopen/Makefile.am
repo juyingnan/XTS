@@ -15,7 +15,7 @@ tprogs = \
 	keysym/keysym \
 	keysymdef/keysymdef \
 	XKeysymToKeycode/XKeysymToKeycode \
-	LookupColor/LookupColor \
+	XLookupColor/XLookupColor \
 	strtkysym/strtkysym
 
 keysym_keysym_SOURCES = \

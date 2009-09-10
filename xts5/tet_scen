@@ -2563,7 +2563,7 @@ XFreeColors
 
 XLookupColor
 	"VSW5TESTSUITE CASE XLookupColor 4"
-	/tset/Xlib7/LookupColor/LookupColor
+	/tset/Xlib7/XLookupColor/XLookupColor
 
 XParseColor
 	"VSW5TESTSUITE CASE XParseColor 10"
@@ -3095,7 +3095,7 @@ xXKeysymToKeycode
 
 xXLookupColor
 	"VSW5TESTSUITE CASE XLookupColor 7"
-	/tset/Xopen/LookupColor/LookupColor
+	/tset/Xopen/XLookupColor/XLookupColor
 
 xXStringToKeysym
 	"VSW5TESTSUITE CASE XStringToKeysym 14"
@@ -3370,7 +3370,7 @@ pKillClient
 
 pLookupColor
 	"VSW5TESTSUITE CASE LookupColor 3"
-	/tset/Xproto/LookupColor/LookupColor
+	/tset/Xproto/XLookupColor/XLookupColor
 
 pListExtensions
 	"VSW5TESTSUITE CASE ListExtensions 3"

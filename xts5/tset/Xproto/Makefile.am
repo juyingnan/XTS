@@ -75,7 +75,7 @@ tprogs = \
 	InstallColormap/InstallColormap \
 	InternAtom/InternAtom \
 	KillClient/KillClient \
-	LookupColor/LookupColor \
+	XLookupColor/XLookupColor \
 	ListExtensions/ListExtensions \
 	ListFonts/ListFonts \
 	ListFontsWithInfo/ListFontsWithInfo \

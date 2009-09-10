@@ -188,7 +188,7 @@
 	"VSW5TESTSUITE CASE KillClient 3"
 	/tset/Xproto/KillClient/KillClient
 	"VSW5TESTSUITE CASE LookupColor 3"
-	/tset/Xproto/LookupColor/LookupColor
+	/tset/Xproto/XLookupColor/XLookupColor
 	"VSW5TESTSUITE CASE ListExtensions 3"
 	/tset/Xproto/ListExtensions/ListExtensions
 	"VSW5TESTSUITE CASE ListFonts 3"

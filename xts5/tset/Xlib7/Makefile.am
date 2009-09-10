@@ -61,7 +61,7 @@ tprogs = \
 	CreateColormap/CreateColormap \
 	FreeColormap/FreeColormap \
 	FreeColors/FreeColors \
-	LookupColor/LookupColor \
+	XLookupColor/XLookupColor \
 	prsclr/prsclr \
 	qryclr/qryclr \
 	QueryColors/QueryColors \
