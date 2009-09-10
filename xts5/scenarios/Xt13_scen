@@ -133,6 +133,6 @@
 	"VSW5TESTSUITE CASE XtSetWMColormapWindows 3"
 	/tset/Xt13/tstwmcmw/tstwmcmw
 	"VSW5TESTSUITE CASE XtFindFile 7"
-	/tset/Xt13/tfindfile/tfindfile
+	/tset/Xt13/XtFindFile/XtFindFile
 	"VSW5TESTSUITE CASE XtResolvePathname 20"
 	/tset/Xt13/trspathnm/trspathnm

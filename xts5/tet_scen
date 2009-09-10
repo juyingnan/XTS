@@ -4605,7 +4605,7 @@ XtSetWMColormapWindows
 
 XtFindFile
 	"VSW5TESTSUITE CASE XtFindFile 7"
-	/tset/Xt13/tfindfile/tfindfile
+	/tset/Xt13/XtFindFile/XtFindFile
 
 XtResolvePathname
 	"VSW5TESTSUITE CASE XtResolvePathname 20"
