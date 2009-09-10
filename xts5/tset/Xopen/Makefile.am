@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	allcnmdclr/allcnmdclr \
+	AllocNamedColor/AllocNamedColor \
 	crsrfnt/crsrfnt \
 	crtfntcrsr/crtfntcrsr \
 	kysym/kysym \

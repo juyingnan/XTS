@@ -13,7 +13,7 @@ tprogs = \
 	AllocColor/AllocColor \
 	AllocColorCells/AllocColorCells \
 	AllocColorPlanes/AllocColorPlanes \
-	allcnmdclr/allcnmdclr \
+	AllocNamedColor/AllocNamedColor \
 	cmsac/cmsac \
 	cmsacs/cmsacs \
 	cmsadfs/cmsadfs \

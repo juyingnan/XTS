@@ -12,7 +12,7 @@ tprogs = \
 	AllocColor/AllocColor \
 	AllocColorCells/AllocColorCells \
 	AllocColorPlanes/AllocColorPlanes \
-	allcnmdclr/allcnmdclr \
+	AllocNamedColor/AllocNamedColor \
 	allwevnts/allwevnts \
 	bdrqst/bdrqst \
 	bll/bll \
