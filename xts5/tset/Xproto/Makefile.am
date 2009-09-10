@@ -32,7 +32,7 @@ tprogs = \
 	XCopyArea/XCopyArea \
 	XCopyColormapAndFree/XCopyColormapAndFree \
 	XCopyGC/XCopyGC \
-	CopyPlane/CopyPlane \
+	XCopyPlane/XCopyPlane \
 	CirculateWindow/CirculateWindow \
 	XCreateColormap/XCreateColormap \
 	CreateCursor/CreateCursor \
