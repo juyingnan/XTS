@@ -22,7 +22,7 @@ tprogs = \
 	XQueryBestStipple/XQueryBestStipple \
 	XQueryBestSize/XQueryBestSize \
 	XQueryBestTile/XQueryBestTile \
-	starcmd/starcmd \
+	XSetArcMode/XSetArcMode \
 	stbg/stbg \
 	stclpmsk/stclpmsk \
 	stclporgn/stclporgn \
