@@ -680,7 +680,7 @@ XShapeQueryExtension
 
 XShapeQueryExtents
 	"VSW5TESTSUITE CASE XShapeQueryExtents 1"
-	/tset/SHAPE/tshpqyets/tshpqyets
+	/tset/SHAPE/XShapeQueryExtents/XShapeQueryExtents
 
 XShapeQueryVersion
 	"VSW5TESTSUITE CASE XShapeQueryVersion 1"

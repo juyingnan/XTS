@@ -78,7 +78,7 @@
 	"VSW5TESTSUITE CASE XShapeQueryExtension 1"
 	/tset/SHAPE/XShapeQueryExtension/XShapeQueryExtension
 	"VSW5TESTSUITE CASE XShapeQueryExtents 1"
-	/tset/SHAPE/tshpqyets/tshpqyets
+	/tset/SHAPE/XShapeQueryExtents/XShapeQueryExtents
 	"VSW5TESTSUITE CASE XShapeQueryVersion 1"
 	/tset/SHAPE/tshpqyver/tshpqyver
 	"VSW5TESTSUITE CASE XShapeSelectInput 1"
