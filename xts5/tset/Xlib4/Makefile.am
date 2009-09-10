@@ -28,7 +28,7 @@ tprogs = \
 	XRestackWindows/XRestackWindows \
 	XRaiseWindow/XRaiseWindow \
 	XResizeWindow/XResizeWindow \
-	stwdwbg/stwdwbg \
+	XSetWindowBackground/XSetWindowBackground \
 	stwdwbgpxm/stwdwbgpxm \
 	stwdwbrdr/stwdwbrdr \
 	stwdwbrdrp/stwdwbrdrp \
