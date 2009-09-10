@@ -1590,7 +1590,7 @@ XrmQPutResource
 
 XrmQPutStringResource
 	"VSW5TESTSUITE CASE XrmQPutStringResource 3"
-	/tset/Xlib16/rmqptstrrs/rmqptstrrs
+	/tset/Xlib16/XrmQPutStringResource/XrmQPutStringResource
 
 XrmQuarkToString
 	"VSW5TESTSUITE CASE XrmQuarkToString 3"
