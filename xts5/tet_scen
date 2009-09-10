@@ -3844,7 +3844,7 @@ XtIsManaged
 
 XtSetMappedWhenManaged
 	"VSW5TESTSUITE CASE XtSetMappedWhenManaged 2"
-	/tset/Xt5/tstmpwmng/tstmpwmng
+	/tset/Xt5/XtSetMappedWhenManaged/XtSetMappedWhenManaged
 
 XtMapWidget
 	"VSW5TESTSUITE CASE XtMapWidget 2"

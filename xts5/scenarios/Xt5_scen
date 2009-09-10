@@ -73,7 +73,7 @@
 	"VSW5TESTSUITE CASE XtIsManaged 3"
 	/tset/Xt5/XtIsManaged/XtIsManaged
 	"VSW5TESTSUITE CASE XtSetMappedWhenManaged 2"
-	/tset/Xt5/tstmpwmng/tstmpwmng
+	/tset/Xt5/XtSetMappedWhenManaged/XtSetMappedWhenManaged
 	"VSW5TESTSUITE CASE XtMapWidget 1"
 	/tset/Xt5/XtMapWidget/XtMapWidget
 	"VSW5TESTSUITE CASE XtUnmapWidget 1"
