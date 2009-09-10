@@ -80,7 +80,7 @@
 	"VSW5TESTSUITE CASE XFindContext 2"
 	/tset/Xlib17/XFindContext/XFindContext
 	"VSW5TESTSUITE CASE XFetchBuffer 2"
-	/tset/Xlib17/ftchbffr/ftchbffr
+	/tset/Xlib17/XFetchBuffer/XFetchBuffer
 	"VSW5TESTSUITE CASE XFetchBytes 2"
 	/tset/Xlib17/ftchbyts/ftchbyts
 	"VSW5TESTSUITE CASE XGetDefault 5"

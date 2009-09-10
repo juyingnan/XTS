@@ -1700,7 +1700,7 @@ XFindContext
 
 XFetchBuffer
 	"VSW5TESTSUITE CASE XFetchBuffer 2"
-	/tset/Xlib17/ftchbffr/ftchbffr
+	/tset/Xlib17/XFetchBuffer/XFetchBuffer
 
 XFetchBytes
 	"VSW5TESTSUITE CASE XFetchBytes 2"
