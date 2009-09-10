@@ -202,7 +202,7 @@
 	"VSW5TESTSUITE CASE ListProperties 3"
 	/tset/Xproto/ListProperties/ListProperties
 	"VSW5TESTSUITE CASE MapSubwindows 3"
-	/tset/Xproto/mpsbws/mpsbws
+	/tset/Xproto/MapSubwindows/MapSubwindows
 	"VSW5TESTSUITE CASE MapWindow 3"
 	/tset/Xproto/mpwdw/mpwdw
 	"VSW5TESTSUITE CASE NoOperation 4"

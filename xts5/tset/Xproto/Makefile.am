@@ -82,7 +82,7 @@ tprogs = \
 	ListHosts/ListHosts \
 	ListInstalledColormaps/ListInstalledColormaps \
 	ListProperties/ListProperties \
-	mpsbws/mpsbws \
+	MapSubwindows/MapSubwindows \
 	mpwdw/mpwdw \
 	noprtn/noprtn \
 	opndsply/opndsply \

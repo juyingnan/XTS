@@ -2362,7 +2362,7 @@ XMapRaised
 
 XMapSubwindows
 	"VSW5TESTSUITE CASE XMapSubwindows 14"
-	/tset/Xlib4/mpsbws/mpsbws
+	/tset/Xlib4/MapSubwindows/MapSubwindows
 
 XMapWindow
 	"VSW5TESTSUITE CASE XMapWindow 15"
@@ -3398,7 +3398,7 @@ pListProperties
 
 pMapSubwindows
 	"VSW5TESTSUITE CASE MapSubwindows 3"
-	/tset/Xproto/mpsbws/mpsbws
+	/tset/Xproto/MapSubwindows/MapSubwindows
 
 pMapWindow
 	"VSW5TESTSUITE CASE MapWindow 3"

@@ -21,7 +21,7 @@ tprogs = \
 	DestroyWindow/DestroyWindow \
 	lwrwdw/lwrwdw \
 	mprsd/mprsd \
-	mpsbws/mpsbws \
+	MapSubwindows/MapSubwindows \
 	mpwdw/mpwdw \
 	mvrszwdw/mvrszwdw \
 	mvwdw/mvwdw \
