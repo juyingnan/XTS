@@ -4379,7 +4379,7 @@ XtRemoveActionHook
 
 XtSetMultiClickTime
 	"VSW5TESTSUITE CASE XtSetMultiClickTime 1"
-	/tset/Xt12/tstmclktm/tstmclktm
+	/tset/Xt12/XtSetMultiClickTime/XtSetMultiClickTime
 
 XtGetMultiClickTime
 	"VSW5TESTSUITE CASE XtGetMultiClickTime 2"

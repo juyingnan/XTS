@@ -65,7 +65,7 @@
 	"VSW5TESTSUITE CASE XtRemoveActionHook 1"
 	/tset/Xt12/XtRemoveActionHook/XtRemoveActionHook
 	"VSW5TESTSUITE CASE XtSetMultiClickTime 1"
-	/tset/Xt12/tstmclktm/tstmclktm
+	/tset/Xt12/XtSetMultiClickTime/XtSetMultiClickTime
 	"VSW5TESTSUITE CASE XtGetMultiClickTime 2"
 	/tset/Xt12/XtGetMultiClickTime/XtGetMultiClickTime
 	"VSW5TESTSUITE CASE XtParseTranslationTable 1"
