@@ -3608,7 +3608,7 @@ CompositeWidget
 
 ConstraintWidget
 	"VSW5TESTSUITE CASE ConstraintWidget 11"
-	/tset/Xt3/wdgtcnstrn/wdgtcnstrn
+	/tset/Xt3/ConstraintWidget/ConstraintWidget
 
 XtClass
 	"VSW5TESTSUITE CASE XtClass 1"
