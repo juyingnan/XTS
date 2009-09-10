@@ -100,7 +100,7 @@
 	"VSW5TESTSUITE CASE GetSelectedExtensionEvents 3"
 	/tset/XIproto/gtslctexev/gtslctexev
 	"VSW5TESTSUITE CASE ListInputDevices 3"
-	/tset/XIproto/listdev/listdev
+	/tset/XIproto/XListInputDevices/XListInputDevices
 	"VSW5TESTSUITE CASE OpenDevice 3"
 	/tset/XIproto/opendev/opendev
 	"VSW5TESTSUITE CASE QueryDeviceState 3"

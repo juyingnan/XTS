@@ -31,7 +31,7 @@ tprogs = \
 	XGetDeviceModifierMapping/XGetDeviceModifierMapping \
 	XGetDeviceMotionEvents/XGetDeviceMotionEvents \
 	XGetSelectedExtensionEvents/XGetSelectedExtensionEvents \
-	listdev/listdev \
+	XListInputDevices/XListInputDevices \
 	misc/misc \
 	opendev/opendev \
 	querydvst/querydvst \

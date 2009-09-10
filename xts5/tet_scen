@@ -590,7 +590,7 @@ XGetSelectedExtensionEvents
 
 XListInputDevices
 	"VSW5TESTSUITE CASE XListInputDevices 2"
-	/tset/XI/listdev/listdev
+	/tset/XI/XListInputDevices/XListInputDevices
 
 Miscellaneous
 	"VSW5TESTSUITE CASE Miscellaneous 6"

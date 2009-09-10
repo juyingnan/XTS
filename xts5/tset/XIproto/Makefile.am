@@ -31,7 +31,7 @@ tprogs = \
 	gtdvprop/gtdvprop \
 	gtkeymppn/gtkeymppn \
 	gtslctexev/gtslctexev \
-	listdev/listdev \
+	XListInputDevices/XListInputDevices \
 	misc/misc \
 	opendev/opendev \
 	qrydvstat/qrydvstat \
