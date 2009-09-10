@@ -4655,7 +4655,7 @@ XtProcessEvent
 
 XtPeekEvent
 	"VSW5TESTSUITE CASE XtPeekEvent 3"
-	/tset/XtC/tpeekevnt/tpeekevnt
+	/tset/XtC/XtPeekEvent/XtPeekEvent
 
 XtPending
 	"VSW5TESTSUITE CASE XtPending 2"

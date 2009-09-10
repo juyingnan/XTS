@@ -71,7 +71,7 @@
 	"VSW5TESTSUITE CASE XtProcessEvent 12"
 	/tset/XtC/tprocevnt/tprocevnt
 	"VSW5TESTSUITE CASE XtPeekEvent 3"
-	/tset/XtC/tpeekevnt/tpeekevnt
+	/tset/XtC/XtPeekEvent/XtPeekEvent
 	"VSW5TESTSUITE CASE XtPending 2"
 	/tset/XtC/tpending/tpending
 	"VSW5TESTSUITE CASE XtAddInput 5"
