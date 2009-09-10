@@ -152,7 +152,7 @@
 	"VSW5TESTSUITE CASE XcmsStoreColors 4"
 	/tset/Xlib7/XcmsStoreColors/XcmsStoreColors
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxC 1"
-	/tset/Xlib7/cmstqmc/cmstqmc
+	/tset/Xlib7/XcmsTekHVCQueryMaxC/XcmsTekHVCQueryMaxC
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMinV 1"
 	/tset/Xlib7/cmstqmiv/cmstqmiv
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxV 1"

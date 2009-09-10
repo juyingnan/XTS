@@ -2723,7 +2723,7 @@ XcmsStoreColors
 
 XcmsTekHVCQueryMaxC
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxC 1"
-	/tset/Xlib7/cmstqmc/cmstqmc
+	/tset/Xlib7/XcmsTekHVCQueryMaxC/XcmsTekHVCQueryMaxC
 
 XcmsTekHVCQueryMinV
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMinV 1"

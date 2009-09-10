@@ -47,7 +47,7 @@ tprogs = \
 	XcmsScreenNumberOfCCC/XcmsScreenNumberOfCCC \
 	XcmsStoreColor/XcmsStoreColor \
 	XcmsStoreColors/XcmsStoreColors \
-	cmstqmc/cmstqmc \
+	XcmsTekHVCQueryMaxC/XcmsTekHVCQueryMaxC \
 	cmstqmiv/cmstqmiv \
 	cmstqmv/cmstqmv \
 	cmstqmvc/cmstqmvc \
