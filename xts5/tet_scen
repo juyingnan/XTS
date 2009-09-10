@@ -1768,7 +1768,7 @@ XLookupString
 
 XMatchVisualInfo
 	"VSW5TESTSUITE CASE XMatchVisualInfo 2"
-	/tset/Xlib17/mtchvslinf/mtchvslinf
+	/tset/Xlib17/XMatchVisualInfo/XMatchVisualInfo
 
 XOffsetRegion
 	"VSW5TESTSUITE CASE XOffsetRegion 1"

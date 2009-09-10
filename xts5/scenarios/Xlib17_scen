@@ -114,7 +114,7 @@
 	"VSW5TESTSUITE CASE XLookupString 3"
 	/tset/Xlib17/XLookupString/XLookupString
 	"VSW5TESTSUITE CASE XMatchVisualInfo 2"
-	/tset/Xlib17/mtchvslinf/mtchvslinf
+	/tset/Xlib17/XMatchVisualInfo/XMatchVisualInfo
 	"VSW5TESTSUITE CASE XOffsetRegion 1"
 	/tset/Xlib17/offstrgn/offstrgn
 	"VSW5TESTSUITE CASE XPolygonRegion 1"

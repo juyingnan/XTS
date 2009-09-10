@@ -38,7 +38,7 @@ tprogs = \
 	XKeysymToString/XKeysymToString \
 	XLookupKeysym/XLookupKeysym \
 	XLookupString/XLookupString \
-	mtchvslinf/mtchvslinf \
+	XMatchVisualInfo/XMatchVisualInfo \
 	offstrgn/offstrgn \
 	plygnrgn/plygnrgn \
 	pntinrgn/pntinrgn \
