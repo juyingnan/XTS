@@ -95,7 +95,7 @@
 	"VSW5TESTSUITE CASE XtGetActionKeysym 8"
 	/tset/Xt12/XtGetActionKeysym/XtGetActionKeysym
 	"VSW5TESTSUITE CASE XtKeysymToKeycodeList 2"
-	/tset/Xt12/tkytoklst/tkytoklst
+	/tset/Xt12/XtKeysymToKeycodeList/XtKeysymToKeycodeList
 	"VSW5TESTSUITE CASE XtCallActionProc 2"
 	/tset/Xt12/XtCallActionProc/XtCallActionProc
 	"VSW5TESTSUITE CASE XtRegisterGrabAction 11"

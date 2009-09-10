@@ -4439,7 +4439,7 @@ XtGetActionKeysym
 
 XtKeysymToKeycodeList
 	"VSW5TESTSUITE CASE XtKeysymToKeycodeList 2"
-	/tset/Xt12/tkytoklst/tkytoklst
+	/tset/Xt12/XtKeysymToKeycodeList/XtKeysymToKeycodeList
 
 XtRegisterGrabAction
 	"VSW5TESTSUITE CASE XtRegisterGrabAction 11"
