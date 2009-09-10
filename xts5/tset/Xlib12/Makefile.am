@@ -31,7 +31,7 @@ tprogs = \
 	XSelectInput/XSelectInput \
 	XSendEvent/XSendEvent \
 	XSetAfterFunction/XSetAfterFunction \
-	sterrrhndl/sterrrhndl \
+	XSetErrorHandler/XSetErrorHandler \
 	stioerrrhn/stioerrrhn \
 	sync/sync \
 	synchrnz/synchrnz \
