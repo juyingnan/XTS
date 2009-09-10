@@ -1907,7 +1907,7 @@ XCloseDisplay
 
 XConnectionNumber
 	"VSW5TESTSUITE CASE XConnectionNumber 1"
-	/tset/Xlib3/cnnctnnmbr/cnnctnnmbr
+	/tset/Xlib3/XConnectionNumber/XConnectionNumber
 
 XDefaultColormap
 	"VSW5TESTSUITE CASE XDefaultColormap 1"
@@ -2135,7 +2135,7 @@ CellsOfScreen
 
 ConnectionNumber
 	"VSW5TESTSUITE CASE ConnectionNumber 1"
-	/tset/Xlib3/cnnctnnmbr/cnnctnnmbr_m
+	/tset/Xlib3/XConnectionNumber/XConnectionNumber_m
 
 DefaultColormap
 	"VSW5TESTSUITE CASE DefaultColormap 1"

@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XCloseDisplay 28"
 	/tset/Xlib3/XCloseDisplay/XCloseDisplay
 	"VSW5TESTSUITE CASE XConnectionNumber 1"
-	/tset/Xlib3/cnnctnnmbr/cnnctnnmbr
+	/tset/Xlib3/XConnectionNumber/XConnectionNumber
 	"VSW5TESTSUITE CASE XDefaultColormap 1"
 	/tset/Xlib3/dfltclrmp/dfltclrmp
 	"VSW5TESTSUITE CASE XDefaultColormapOfScreen 1"
@@ -186,7 +186,7 @@
 	"VSW5TESTSUITE CASE CellsOfScreen 1"
 	/tset/Xlib3/XCellsOfScreen/XCellsOfScreen_m
 	"VSW5TESTSUITE CASE ConnectionNumber 1"
-	/tset/Xlib3/cnnctnnmbr/cnnctnnmbr_m
+	/tset/Xlib3/XConnectionNumber/XConnectionNumber_m
 	"VSW5TESTSUITE CASE DefaultColormap 1"
 	/tset/Xlib3/dfltclrmp/dfltclrmp_m
 	"VSW5TESTSUITE CASE DefaultColormapOfScreen 1"
