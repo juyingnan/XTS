@@ -85,7 +85,7 @@
 	"VSW5TESTSUITE CASE XtStringConversionWarning 1"
 	/tset/XtC/tstconwg/tstconwg
 	"VSW5TESTSUITE CASE XtAddConverter 10"
-	/tset/XtC/tadconvtr/tadconvtr
+	/tset/XtC/XtAddConverter/XtAddConverter
 	"VSW5TESTSUITE CASE XtAppAddConverter 10"
 	/tset/XtC/tapadconv/tapadconv
 	"VSW5TESTSUITE CASE XtConvert 1"
