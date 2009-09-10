@@ -4169,7 +4169,7 @@ XtCvtStringToAcceleratorTable
 
 XtCvtStringToAtom
 	"VSW5TESTSUITE CASE XtCvtStringToAtom 4"
-	/tset/Xt11/tcstatom/tcstatom
+	/tset/Xt11/XtCvtStringToAtom/XtCvtStringToAtom
 
 XtCvtStringToBoolean
 	"VSW5TESTSUITE CASE XtCvtStringToBoolean 4"
