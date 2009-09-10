@@ -860,7 +860,7 @@ KeyPress
 
 KeyRelease
 	"VSW5TESTSUITE CASE KeyRelease 9"
-	/tset/Xlib11/kyrls/kyrls
+	/tset/Xlib11/KeyRelease/KeyRelease
 
 LeaveNotify
 	"VSW5TESTSUITE CASE LeaveNotify 15"

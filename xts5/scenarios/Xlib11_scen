@@ -92,7 +92,7 @@
 	"VSW5TESTSUITE CASE KeyPress 9"
 	/tset/Xlib11/KeyPress/KeyPress
 	"VSW5TESTSUITE CASE KeyRelease 9"
-	/tset/Xlib11/kyrls/kyrls
+	/tset/Xlib11/KeyRelease/KeyRelease
 	"VSW5TESTSUITE CASE LeaveNotify 15"
 	/tset/Xlib11/lvntfy/lvntfy
 	"VSW5TESTSUITE CASE MapNotify 4"

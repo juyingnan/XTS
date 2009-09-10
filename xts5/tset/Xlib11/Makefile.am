@@ -27,7 +27,7 @@ tprogs = \
 	GravityNotify/GravityNotify \
 	KeymapNotify/KeymapNotify \
 	KeyPress/KeyPress \
-	kyrls/kyrls \
+	KeyRelease/KeyRelease \
 	lvntfy/lvntfy \
 	mpntfy/mpntfy \
 	mppngntfy/mppngntfy \
