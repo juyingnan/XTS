@@ -17,7 +17,7 @@ tprogs = \
 	XGetSelectionOwner/XGetSelectionOwner \
 	XGetWindowAttributes/XGetWindowAttributes \
 	XGetWindowProperty/XGetWindowProperty \
-	InternAtom/InternAtom \
+	XInternAtom/XInternAtom \
 	ListProperties/ListProperties \
 	QueryPointer/QueryPointer \
 	QueryTree/QueryTree \

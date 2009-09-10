@@ -62,7 +62,7 @@ XGetWindowAttributes/XGetWindowAttributes
 ImageText16/ImageText16
 ImageText8/ImageText8
 XInstallColormap/XInstallColormap
-InternAtom/InternAtom
+XInternAtom/XInternAtom
 XKillClient/XKillClient
 XLookupColor/XLookupColor
 ListExtensions/ListExtensions
