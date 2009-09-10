@@ -101,7 +101,7 @@ tprogs = \
 	QueryColors/QueryColors \
 	QueryExtension/QueryExtension \
 	QueryFont/QueryFont \
-	qrykymp/qrykymp \
+	QueryKeymap/QueryKeymap \
 	qrypntr/qrypntr \
 	qrytr/qrytr \
 	qrytxtextn/qrytxtextn \

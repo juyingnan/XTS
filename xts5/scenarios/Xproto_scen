@@ -240,7 +240,7 @@
 	"VSW5TESTSUITE CASE QueryFont 3"
 	/tset/Xproto/QueryFont/QueryFont
 	"VSW5TESTSUITE CASE QueryKeymap 3"
-	/tset/Xproto/qrykymp/qrykymp
+	/tset/Xproto/QueryKeymap/QueryKeymap
 	"VSW5TESTSUITE CASE QueryPointer 3"
 	/tset/Xproto/qrypntr/qrypntr
 	"VSW5TESTSUITE CASE QueryTree 3"

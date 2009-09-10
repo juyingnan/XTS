@@ -32,7 +32,7 @@ tprogs = \
 	GetPointerMapping/GetPointerMapping \
 	insrtmdfrm/insrtmdfrm \
 	nwmdfrmp/nwmdfrmp \
-	qrykymp/qrykymp \
+	QueryKeymap/QueryKeymap \
 	stinptfcs/stinptfcs \
 	stmdfrmppn/stmdfrmppn \
 	stpntrmppn/stpntrmppn \
