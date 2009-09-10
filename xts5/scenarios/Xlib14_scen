@@ -62,7 +62,7 @@
 	"VSW5TESTSUITE CASE XContextDependentDrawing 1"
 	/tset/Xlib14/XContextDependentDrawing/XContextDependentDrawing
 	"VSW5TESTSUITE CASE XCreateFontSet 1"
-	/tset/Xlib14/crfset/crfset
+	/tset/Xlib14/XCreateFontSet/XCreateFontSet
 	"VSW5TESTSUITE CASE XCreateIC 1"
 	/tset/Xlib14/crtic/crtic
 	"VSW5TESTSUITE CASE XDestroyIC 1"

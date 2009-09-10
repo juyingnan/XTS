@@ -1176,7 +1176,7 @@ XContextDependentDrawing
 
 XCreateFontSet
 	"VSW5TESTSUITE CASE XCreateFontSet 1"
-	/tset/Xlib14/crfset/crfset
+	/tset/Xlib14/XCreateFontSet/XCreateFontSet
 
 XCreateIC
 	"VSW5TESTSUITE CASE XCreateIC 1"

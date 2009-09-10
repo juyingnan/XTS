@@ -13,7 +13,7 @@ tprogs = \
 	XBaseFontNameListOfFontSet/XBaseFontNameListOfFontSet \
 	XCloseIM/XCloseIM \
 	XContextDependentDrawing/XContextDependentDrawing \
-	crfset/crfset \
+	XCreateFontSet/XCreateFontSet \
 	crtic/crtic \
 	desic/desic \
 	dispim/dispim \
