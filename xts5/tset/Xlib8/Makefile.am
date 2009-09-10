@@ -17,7 +17,7 @@ tprogs = \
 	XCreateGC/XCreateGC \
 	XFlushGC/XFlushGC \
 	XFreeGC/XFreeGC \
-	gcntxtfrmg/gcntxtfrmg \
+	XGContextFromGC/XGContextFromGC \
 	gtgcvls/gtgcvls \
 	qrybststpp/qrybststpp \
 	QueryBestSize/QueryBestSize \

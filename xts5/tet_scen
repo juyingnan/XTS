@@ -2781,7 +2781,7 @@ XFreeGC
 
 XGContextFromGC
 	"VSW5TESTSUITE CASE XGContextFromGC 1"
-	/tset/Xlib8/gcntxtfrmg/gcntxtfrmg
+	/tset/Xlib8/XGContextFromGC/XGContextFromGC
 
 XGetGCValues
 	"VSW5TESTSUITE CASE XGetGCValues 3"
