@@ -3866,7 +3866,7 @@ OverrideShellWidget
 
 WMShellWidget
 	"VSW5TESTSUITE CASE WMShellWidget 10"
-	/tset/Xt6/wdgtwmshll/wdgtwmshll
+	/tset/Xt6/WMShellWidget/WMShellWidget
 
 VendorShellWidget
 	"VSW5TESTSUITE CASE VendorShellWidget 10"
