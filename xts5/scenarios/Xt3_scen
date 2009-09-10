@@ -83,7 +83,7 @@
 	"VSW5TESTSUITE CASE XtIsConstraint 2"
 	/tset/Xt3/XtIsConstraint/XtIsConstraint
 	"VSW5TESTSUITE CASE XtIsShell 2"
-	/tset/Xt3/tisshll/tisshll
+	/tset/Xt3/XtIsShell/XtIsShell
 	"VSW5TESTSUITE CASE XtIsOverrideShell 2"
 	/tset/Xt3/XtIsOverrideShell/XtIsOverrideShell
 	"VSW5TESTSUITE CASE XtIsWMShell 2"
