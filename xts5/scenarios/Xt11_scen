@@ -103,7 +103,7 @@
 	"VSW5TESTSUITE CASE XtCvtStringToInt 4"
 	/tset/Xt11/XtCvtStringToInt/XtCvtStringToInt
 	"VSW5TESTSUITE CASE XtCvtStringToPixel 9"
-	/tset/Xt11/tcstpix/tcstpix
+	/tset/Xt11/XtCvtStringToPixel/XtCvtStringToPixel
 	"VSW5TESTSUITE CASE XtCvtStringToShort 4"
 	/tset/Xt11/tcstshrt/tcstshrt
 	"VSW5TESTSUITE CASE XtCvtStringToTranslationTable 4"
