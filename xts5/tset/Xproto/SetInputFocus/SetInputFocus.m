@@ -17,42 +17,42 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xproto/AllocColor/AllocColor.m,v 1.2 2005-11-03 08:44:01 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xproto/SetInputFocus/SetInputFocus.m,v 1.2 2005-11-03 08:44:20 jmichael Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/AllocColor/AllocColor.m
+>># File: xts5/tset/Xproto/SetInputFocus/SetInputFocus.m
 >># 
 >># Description:
->># 	Tests for AllocColor
+>># 	Tests for SetInputFocus
 >># 
 >># Modifications:
->># $Log: allcclr.m,v $
->># Revision 1.2  2005-11-03 08:44:01  jmichael
+>># $Log: stinptfcs.m,v $
+>># Revision 1.2  2005-11-03 08:44:20  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
->># Revision 1.1.1.2  2005/04/15 14:05:40  anderson
+>># Revision 1.1.1.2  2005/04/15 14:06:01  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:32:12  mar
+>># Revision 8.0  1998/12/23 23:33:07  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:52:32  mar
+>># Revision 7.0  1998/10/30 22:54:18  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:23:44  tbr
+>># Revision 6.0  1998/03/02 05:24:33  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:20:16  tbr
+>># Revision 5.0  1998/01/26 03:21:05  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:04:24  tbr
+>># Revision 4.0  1995/12/15 09:06:52  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  01:02:54  andy
+>># Revision 3.1  1995/12/15  01:06:48  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -112,27 +112,19 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
 ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 SOFTWARE.
 */
->>TITLE AllocColor Xproto
+>>TITLE SetInputFocus Xproto
 >>SET startup protostartup
 >>SET cleanup protocleanup
 >>EXTERN
-/* Touch test for AllocColor request */
+/* Touch test for SetInputFocus request */
+
 #include "Xstlib.h"
 
 #define CLIENT 0
 static TestType test_type = SETUP;
-xResourceReq *req;
-xAllocColorReply *reply;
-
-/* 
-   intent:	 send an AllocColor request to the server and check
-                 that the server sent an AllocColor reply back
-   input:	 
-   output:	 none
-   global input: 
-   side effects: creates a window resource
-   methods:	 
-*/
+xReq *gifr;
+xGetInputFocusReply *gifrep;
+xSetInputFocusReq *req;
 
 static
 void
@@ -140,32 +132,38 @@ tester()
 {
 	Create_Client(CLIENT);
 
-	(void) Create_Default_Window(CLIENT);
-	(void) Create_Default_Colormap(CLIENT);
+	gifr = (xReq *) Make_Req(CLIENT, X_GetInputFocus);
+	Send_Req(CLIENT, (xReq *) gifr);
+	Log_Trace("client %d sent default GetInputFocus\n", CLIENT);
+
+	if ((gifrep = (xGetInputFocusReply *) Expect_Reply(CLIENT, X_GetInputFocus)) == NULL) {
+		Log_Err("client %d failed to receive GetInputFocus reply\n", CLIENT);
+		Exit();
+	}  else  {
+		Log_Trace("client %d received GetInputFocus reply\n", CLIENT);
+		/* do any reply checking here */
+	}
+	(void) Expect_Nothing(CLIENT);
+
 	Set_Test_Type(CLIENT, test_type);
-	req = (xResourceReq *) Make_Req(CLIENT, X_AllocColor);
+	req = (xSetInputFocusReq *) Make_Req(CLIENT, X_SetInputFocus);
+	req->revertTo = gifrep->revertTo;
+	req->focus    = gifrep->focus;
 	Send_Req(CLIENT, (xReq *) req);
 	Set_Test_Type(CLIENT, GOOD);
 	switch(test_type) {
 	case GOOD:
-		Log_Trace("client %d sent default AllocColor request\n", CLIENT);
-		if ((reply = (xAllocColorReply *) Expect_Reply(CLIENT, X_AllocColor)) == NULL) {
-			Log_Err("client %d failed to receive AllocColor reply\n", CLIENT);
-			Exit();
-		}  else  {
-			Log_Trace("client %d received AllocColor reply\n", CLIENT);
-			/* do any reply checking here */
-		}
+		Log_Trace("client %d sent default SetInputFocus request\n", CLIENT);
 		(void) Expect_Nothing(CLIENT);
 		break;
 	case BAD_LENGTH:
-		Log_Trace("client %d sent AllocColor request with bad length (%d)\n", CLIENT, req->length);
+		Log_Trace("client %d sent SetInputFocus request with bad length (%d)\n", CLIENT, req->length);
 		(void) Expect_BadLength(CLIENT);
 		(void) Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
-		Log_Trace("client %d sent overlong AllocColor request (%d)\n", CLIENT, req->length);
+		Log_Trace("client %d sent overlong SetInputFocus request (%d)\n", CLIENT, req->length);
 		(void) Expect_BadLength(CLIENT);
 		(void) Expect_Nothing(CLIENT);
 		break;
@@ -181,18 +179,15 @@ tester()
 }
 >>ASSERTION Good A
 When a client sends a valid xname protocol request to the X server,
-then the X server sends back a reply to the client
-with the minimum required length.
+then the X server does not send back an error, event or reply to the client.
 >>STRATEGY
 Call library function testfunc() to do the following:
 Open a connection to the X server using native byte sex.
-Create colourmap with alloc set to AllocNone.
 Send a valid xname protocol request to the X server.
-Verify that the X server sends back a reply.
+Verify that the X server does not send back an error, event or reply.
 Open a connection to the X server using reversed byte sex.
-Create colourmap with alloc set to AllocNone.
 Send a valid xname protocol request to the X server.
-Verify that the X server sends back a reply.
+Verify that the X server does not send back an error, event or reply.
 >>CODE
 
 	test_type = GOOD;
@@ -208,23 +203,19 @@ then the X server sends back a BadLength error to the client.
 >>STRATEGY
 Call library function testfunc() to do the following:
 Open a connection to the X server using native byte sex.
-Create colourmap with alloc set to AllocNone.
 Send an invalid xname protocol request to the X server with length 
   one less than the minimum length required to contain the request.
 Verify that the X server sends back a BadLength error.
 Open a connection to the X server using reversed byte sex.
-Create colourmap with alloc set to AllocNone.
 Send an invalid xname protocol request to the X server with length 
   one less than the minimum length required to contain the request.
 Verify that the X server sends back a BadLength error.
 
 Open a connection to the X server using native byte sex.
-Create colourmap with alloc set to AllocNone.
 Send an invalid xname protocol request to the X server with length 
   one greater than the minimum length required to contain the request.
 Verify that the X server sends back a BadLength error.
 Open a connection to the X server using reversed byte sex.
-Create colourmap with alloc set to AllocNone.
 Send an invalid xname protocol request to the X server with length 
   one greater than the minimum length required to contain the request.
 Verify that the X server sends back a BadLength error.
@@ -248,12 +239,10 @@ then the X server sends back a BadLength error to the client.
 >>STRATEGY
 Call library function testfunc() to do the following:
 Open a connection to the X server using native byte sex.
-Create colourmap with alloc set to AllocNone.
 Send an invalid xname protocol request to the X server with length 
   one greater than the maximum length accepted by the server.
 Verify that the X server sends back a BadLength error.
 Open a connection to the X server using reversed byte sex.
-Create colourmap with alloc set to AllocNone.
 Send an invalid xname protocol request to the X server with length 
   one greater than the maximum length accepted by the server.
 Verify that the X server sends back a BadLength error.

@@ -3106,23 +3106,23 @@ xXStringToKeysym
 
 pAllocColor
 	"VSW5TESTSUITE CASE AllocColor 3"
-	/tset/Xproto/XAllocColor/XAllocColor
+	/tset/Xproto/AllocColor/AllocColor
 
 pAllocColorCells
 	"VSW5TESTSUITE CASE AllocColorCells 3"
-	/tset/Xproto/XAllocColorCells/XAllocColorCells
+	/tset/Xproto/AllocColorCells/AllocColorCells
 
 pAllocColorPlanes
 	"VSW5TESTSUITE CASE AllocColorPlanes 3"
-	/tset/Xproto/XAllocColorPlanes/XAllocColorPlanes
+	/tset/Xproto/AllocColorPlanes/AllocColorPlanes
 
 pAllocNamedColor
 	"VSW5TESTSUITE CASE AllocNamedColor 3"
-	/tset/Xproto/XAllocNamedColor/XAllocNamedColor
+	/tset/Xproto/AllocNamedColor/AllocNamedColor
 
 pAllowEvents
 	"VSW5TESTSUITE CASE AllowEvents 3"
-	/tset/Xproto/XAllowEvents/XAllowEvents
+	/tset/Xproto/AllowEvents/AllowEvents
 
 pBadRequest
 	"VSW5TESTSUITE CASE BadRequest 1"
@@ -3130,15 +3130,15 @@ pBadRequest
 
 pBell
 	"VSW5TESTSUITE CASE Bell 3"
-	/tset/Xproto/XBell/XBell
+	/tset/Xproto/Bell/Bell
 
 pChangeActivePointerGrab
 	"VSW5TESTSUITE CASE ChangeActivePointerGrab 3"
-	/tset/Xproto/XChangeActivePointerGrab/XChangeActivePointerGrab
+	/tset/Xproto/ChangeActivePointerGrab/ChangeActivePointerGrab
 
 pChangeGC
 	"VSW5TESTSUITE CASE ChangeGC 4"
-	/tset/Xproto/XChangeGC/XChangeGC
+	/tset/Xproto/ChangeGC/ChangeGC
 
 pChangeHosts
 	"VSW5TESTSUITE CASE ChangeHosts 3"
@@ -3146,31 +3146,31 @@ pChangeHosts
 
 pChangeKeyboardControl
 	"VSW5TESTSUITE CASE ChangeKeyboardControl 4"
-	/tset/Xproto/XChangeKeyboardControl/XChangeKeyboardControl
+	/tset/Xproto/ChangeKeyboardControl/ChangeKeyboardControl
 
 pChangeKeyboardMapping
 	"VSW5TESTSUITE CASE ChangeKeyboardMapping 3"
-	/tset/Xproto/XChangeKeyboardMapping/XChangeKeyboardMapping
+	/tset/Xproto/ChangeKeyboardMapping/ChangeKeyboardMapping
 
 pChangePointerControl
 	"VSW5TESTSUITE CASE ChangePointerControl 3"
-	/tset/Xproto/XChangePointerControl/XChangePointerControl
+	/tset/Xproto/ChangePointerControl/ChangePointerControl
 
 pChangeProperty
 	"VSW5TESTSUITE CASE ChangeProperty 3"
-	/tset/Xproto/XChangeProperty/XChangeProperty
+	/tset/Xproto/ChangeProperty/ChangeProperty
 
 pChangeSaveSet
 	"VSW5TESTSUITE CASE ChangeSaveSet 3"
-	/tset/Xproto/XChangeSaveSet/XChangeSaveSet
+	/tset/Xproto/ChangeSaveSet/ChangeSaveSet
 
 pChangeWindowAttributes
 	"VSW5TESTSUITE CASE ChangeWindowAttributes 4"
-	/tset/Xproto/XChangeWindowAttributes/XChangeWindowAttributes
+	/tset/Xproto/ChangeWindowAttributes/ChangeWindowAttributes
 
 pClearArea
 	"VSW5TESTSUITE CASE ClearArea 3"
-	/tset/Xproto/XClearArea/XClearArea
+	/tset/Xproto/ClearArea/ClearArea
 
 pCloseFont
 	"VSW5TESTSUITE CASE CloseFont 3"
@@ -3178,27 +3178,27 @@ pCloseFont
 
 pConfigureWindow
 	"VSW5TESTSUITE CASE ConfigureWindow 4"
-	/tset/Xproto/XConfigureWindow/XConfigureWindow
+	/tset/Xproto/ConfigureWindow/ConfigureWindow
 
 pConvertSelection
 	"VSW5TESTSUITE CASE ConvertSelection 3"
-	/tset/Xproto/XConvertSelection/XConvertSelection
+	/tset/Xproto/ConvertSelection/ConvertSelection
 
 pCopyArea
 	"VSW5TESTSUITE CASE CopyArea 3"
-	/tset/Xproto/XCopyArea/XCopyArea
+	/tset/Xproto/CopyArea/CopyArea
 
 pCopyColormapAndFree
 	"VSW5TESTSUITE CASE CopyColormapAndFree 5"
-	/tset/Xproto/XCopyColormapAndFree/XCopyColormapAndFree
+	/tset/Xproto/CopyColormapAndFree/CopyColormapAndFree
 
 pCopyGC
 	"VSW5TESTSUITE CASE CopyGC 4"
-	/tset/Xproto/XCopyGC/XCopyGC
+	/tset/Xproto/CopyGC/CopyGC
 
 pCopyPlane
 	"VSW5TESTSUITE CASE CopyPlane 3"
-	/tset/Xproto/XCopyPlane/XCopyPlane
+	/tset/Xproto/CopyPlane/CopyPlane
 
 pCirculateWindow
 	"VSW5TESTSUITE CASE CirculateWindow 3"
@@ -3206,7 +3206,7 @@ pCirculateWindow
 
 pCreateColormap
 	"VSW5TESTSUITE CASE CreateColormap 5"
-	/tset/Xproto/XCreateColormap/XCreateColormap
+	/tset/Xproto/CreateColormap/CreateColormap
 
 pCreateCursor
 	"VSW5TESTSUITE CASE CreateCursor 5"
@@ -3214,31 +3214,31 @@ pCreateCursor
 
 pCreateGC
 	"VSW5TESTSUITE CASE CreateGC 6"
-	/tset/Xproto/XCreateGC/XCreateGC
+	/tset/Xproto/CreateGC/CreateGC
 
 pCreateGlyphCursor
 	"VSW5TESTSUITE CASE CreateGlyphCursor 5"
-	/tset/Xproto/XCreateGlyphCursor/XCreateGlyphCursor
+	/tset/Xproto/CreateGlyphCursor/CreateGlyphCursor
 
 pCreatePixmap
 	"VSW5TESTSUITE CASE CreatePixmap 5"
-	/tset/Xproto/XCreatePixmap/XCreatePixmap
+	/tset/Xproto/CreatePixmap/CreatePixmap
 
 pCreateWindow
 	"VSW5TESTSUITE CASE CreateWindow 6"
-	/tset/Xproto/XCreateWindow/XCreateWindow
+	/tset/Xproto/CreateWindow/CreateWindow
 
 pDeleteProperty
 	"VSW5TESTSUITE CASE DeleteProperty 3"
-	/tset/Xproto/XDeleteProperty/XDeleteProperty
+	/tset/Xproto/DeleteProperty/DeleteProperty
 
 pDestroySubwindows
 	"VSW5TESTSUITE CASE DestroySubwindows 3"
-	/tset/Xproto/XDestroySubwindows/XDestroySubwindows
+	/tset/Xproto/DestroySubwindows/DestroySubwindows
 
 pDestroyWindow
 	"VSW5TESTSUITE CASE DestroyWindow 3"
-	/tset/Xproto/XDestroyWindow/XDestroyWindow
+	/tset/Xproto/DestroyWindow/DestroyWindow
 
 pFillPoly
 	"VSW5TESTSUITE CASE FillPoly 3"
@@ -3246,91 +3246,91 @@ pFillPoly
 
 pFreeColormap
 	"VSW5TESTSUITE CASE FreeColormap 3"
-	/tset/Xproto/XFreeColormap/XFreeColormap
+	/tset/Xproto/FreeColormap/FreeColormap
 
 pFreeColors
 	"VSW5TESTSUITE CASE FreeColors 3"
-	/tset/Xproto/XFreeColors/XFreeColors
+	/tset/Xproto/FreeColors/FreeColors
 
 pFreeCursor
 	"VSW5TESTSUITE CASE FreeCursor 3"
-	/tset/Xproto/XFreeCursor/XFreeCursor
+	/tset/Xproto/FreeCursor/FreeCursor
 
 pForceScreenSaver
 	"VSW5TESTSUITE CASE ForceScreenSaver 3"
-	/tset/Xproto/XForceScreenSaver/XForceScreenSaver
+	/tset/Xproto/ForceScreenSaver/ForceScreenSaver
 
 pFreeGC
 	"VSW5TESTSUITE CASE FreeGC 3"
-	/tset/Xproto/XFreeGC/XFreeGC
+	/tset/Xproto/FreeGC/FreeGC
 
 pFreePixmap
 	"VSW5TESTSUITE CASE FreePixmap 3"
-	/tset/Xproto/XFreePixmap/XFreePixmap
+	/tset/Xproto/FreePixmap/FreePixmap
 
 pGrabButton
 	"VSW5TESTSUITE CASE GrabButton 3"
-	/tset/Xproto/XGrabButton/XGrabButton
+	/tset/Xproto/GrabButton/GrabButton
 
 pGrabKey
 	"VSW5TESTSUITE CASE GrabKey 3"
-	/tset/Xproto/XGrabKey/XGrabKey
+	/tset/Xproto/GrabKey/GrabKey
 
 pGrabKeyboard
 	"VSW5TESTSUITE CASE GrabKeyboard 3"
-	/tset/Xproto/XGrabKeyboard/XGrabKeyboard
+	/tset/Xproto/GrabKeyboard/GrabKeyboard
 
 pGrabPointer
 	"VSW5TESTSUITE CASE GrabPointer 3"
-	/tset/Xproto/XGrabPointer/XGrabPointer
+	/tset/Xproto/GrabPointer/GrabPointer
 
 pGrabServer
 	"VSW5TESTSUITE CASE GrabServer 3"
-	/tset/Xproto/XGrabServer/XGrabServer
+	/tset/Xproto/GrabServer/GrabServer
 
 pGetAtomName
 	"VSW5TESTSUITE CASE GetAtomName 3"
-	/tset/Xproto/XGetAtomName/XGetAtomName
+	/tset/Xproto/GetAtomName/GetAtomName
 
 pGetFontPath
 	"VSW5TESTSUITE CASE GetFontPath 3"
-	/tset/Xproto/XGetFontPath/XGetFontPath
+	/tset/Xproto/GetFontPath/GetFontPath
 
 pGetGeometry
 	"VSW5TESTSUITE CASE GetGeometry 3"
-	/tset/Xproto/XGetGeometry/XGetGeometry
+	/tset/Xproto/GetGeometry/GetGeometry
 
 pGetImage
 	"VSW5TESTSUITE CASE GetImage 3"
-	/tset/Xproto/XGetImage/XGetImage
+	/tset/Xproto/GetImage/GetImage
 
 pGetInputFocus
 	"VSW5TESTSUITE CASE GetInputFocus 3"
-	/tset/Xproto/XGetInputFocus/XGetInputFocus
+	/tset/Xproto/GetInputFocus/GetInputFocus
 
 pGetKeyboardControl
 	"VSW5TESTSUITE CASE GetKeyboardControl 3"
-	/tset/Xproto/XGetKeyboardControl/XGetKeyboardControl
+	/tset/Xproto/GetKeyboardControl/GetKeyboardControl
 
 pGetKeyboardMapping
 	"VSW5TESTSUITE CASE GetKeyboardMapping 3"
-	/tset/Xproto/XGetKeyboardMapping/XGetKeyboardMapping
+	/tset/Xproto/GetKeyboardMapping/GetKeyboardMapping
 
 pGetModifierMapping
 	"VSW5TESTSUITE CASE GetModifierMapping 3"
-	/tset/Xproto/XGetModifierMapping/XGetModifierMapping
+	/tset/Xproto/GetModifierMapping/GetModifierMapping
 
 pGetMotionEvents
 	"VSW5TESTSUITE CASE GetMotionEvents 3"
-	/tset/Xproto/XGetMotionEvents/XGetMotionEvents
+	/tset/Xproto/GetMotionEvents/GetMotionEvents
 
 pGetPointerControl
 	"VSW5TESTSUITE CASE GetPointerControl 3"
-	/tset/Xproto/XGetPointerControl/XGetPointerControl
+	/tset/Xproto/GetPointerControl/GetPointerControl
 
 pGetPointerMapping
 	"VSW5TESTSUITE CASE GetPointerMapping 3"
-	/tset/Xproto/XGetPointerMapping/XGetPointerMapping
+	/tset/Xproto/GetPointerMapping/GetPointerMapping
 
 pGetProperty
 	"VSW5TESTSUITE CASE GetProperty 3"
@@ -3338,15 +3338,15 @@ pGetProperty
 
 pGetScreenSaver
 	"VSW5TESTSUITE CASE GetScreenSaver 3"
-	/tset/Xproto/XGetScreenSaver/XGetScreenSaver
+	/tset/Xproto/GetScreenSaver/GetScreenSaver
 
 pGetSelectionOwner
 	"VSW5TESTSUITE CASE GetSelectionOwner 3"
-	/tset/Xproto/XGetSelectionOwner/XGetSelectionOwner
+	/tset/Xproto/GetSelectionOwner/GetSelectionOwner
 
 pGetWindowAttributes
 	"VSW5TESTSUITE CASE GetWindowAttributes 3"
-	/tset/Xproto/XGetWindowAttributes/XGetWindowAttributes
+	/tset/Xproto/GetWindowAttributes/GetWindowAttributes
 
 pImageText16
 	"VSW5TESTSUITE CASE ImageText16 3"
@@ -3358,19 +3358,19 @@ pImageText8
 
 pInstallColormap
 	"VSW5TESTSUITE CASE InstallColormap 3"
-	/tset/Xproto/XInstallColormap/XInstallColormap
+	/tset/Xproto/InstallColormap/InstallColormap
 
 pInternAtom
 	"VSW5TESTSUITE CASE InternAtom 3"
-	/tset/Xproto/XInternAtom/XInternAtom
+	/tset/Xproto/InternAtom/InternAtom
 
 pKillClient
 	"VSW5TESTSUITE CASE KillClient 3"
-	/tset/Xproto/XKillClient/XKillClient
+	/tset/Xproto/KillClient/KillClient
 
 pLookupColor
 	"VSW5TESTSUITE CASE LookupColor 3"
-	/tset/Xproto/XLookupColor/XLookupColor
+	/tset/Xproto/LookupColor/LookupColor
 
 pListExtensions
 	"VSW5TESTSUITE CASE ListExtensions 3"
@@ -3378,31 +3378,31 @@ pListExtensions
 
 pListFonts
 	"VSW5TESTSUITE CASE ListFonts 3"
-	/tset/Xproto/XListFonts/XListFonts
+	/tset/Xproto/ListFonts/ListFonts
 
 pListFontsWithInfo
 	"VSW5TESTSUITE CASE ListFontsWithInfo 3"
-	/tset/Xproto/XListFontsWithInfo/XListFontsWithInfo
+	/tset/Xproto/ListFontsWithInfo/ListFontsWithInfo
 
 pListHosts
 	"VSW5TESTSUITE CASE ListHosts 3"
-	/tset/Xproto/XListHosts/XListHosts
+	/tset/Xproto/ListHosts/ListHosts
 
 pListInstalledColormaps
 	"VSW5TESTSUITE CASE ListInstalledColormaps 3"
-	/tset/Xproto/XListInstalledColormaps/XListInstalledColormaps
+	/tset/Xproto/ListInstalledColormaps/ListInstalledColormaps
 
 pListProperties
 	"VSW5TESTSUITE CASE ListProperties 3"
-	/tset/Xproto/XListProperties/XListProperties
+	/tset/Xproto/ListProperties/ListProperties
 
 pMapSubwindows
 	"VSW5TESTSUITE CASE MapSubwindows 3"
-	/tset/Xproto/XMapSubwindows/XMapSubwindows
+	/tset/Xproto/MapSubwindows/MapSubwindows
 
 pMapWindow
 	"VSW5TESTSUITE CASE MapWindow 3"
-	/tset/Xproto/XMapWindow/XMapWindow
+	/tset/Xproto/MapWindow/MapWindow
 
 pNoOperation
 	"VSW5TESTSUITE CASE NoOperation 4"
@@ -3410,7 +3410,7 @@ pNoOperation
 
 pOpenDisplay
 	"VSW5TESTSUITE CASE OpenDisplay 2"
-	/tset/Xproto/XOpenDisplay/XOpenDisplay
+	/tset/Xproto/OpenDisplay/OpenDisplay
 
 pOpenFont
 	"VSW5TESTSUITE CASE OpenFont 5"
@@ -3454,15 +3454,15 @@ pPolyText8
 
 pPutImage
 	"VSW5TESTSUITE CASE PutImage 3"
-	/tset/Xproto/XPutImage/XPutImage
+	/tset/Xproto/PutImage/PutImage
 
 pQueryBestSize
 	"VSW5TESTSUITE CASE QueryBestSize 3"
-	/tset/Xproto/XQueryBestSize/XQueryBestSize
+	/tset/Xproto/QueryBestSize/QueryBestSize
 
 pQueryColors
 	"VSW5TESTSUITE CASE QueryColors 3"
-	/tset/Xproto/XQueryColors/XQueryColors
+	/tset/Xproto/QueryColors/QueryColors
 
 pQueryExtension
 	"VSW5TESTSUITE CASE QueryExtension 3"
@@ -3470,31 +3470,31 @@ pQueryExtension
 
 pQueryFont
 	"VSW5TESTSUITE CASE QueryFont 3"
-	/tset/Xproto/XQueryFont/XQueryFont
+	/tset/Xproto/QueryFont/QueryFont
 
 pQueryKeymap
 	"VSW5TESTSUITE CASE QueryKeymap 3"
-	/tset/Xproto/XQueryKeymap/XQueryKeymap
+	/tset/Xproto/QueryKeymap/QueryKeymap
 
 pQueryPointer
 	"VSW5TESTSUITE CASE QueryPointer 3"
-	/tset/Xproto/XQueryPointer/XQueryPointer
+	/tset/Xproto/QueryPointer/QueryPointer
 
 pQueryTree
 	"VSW5TESTSUITE CASE QueryTree 3"
-	/tset/Xproto/XQueryTree/XQueryTree
+	/tset/Xproto/QueryTree/QueryTree
 
 pQueryTextExtents
 	"VSW5TESTSUITE CASE QueryTextExtents 3"
-	/tset/Xproto/XQueryTextExtents/XQueryTextExtents
+	/tset/Xproto/QueryTextExtents/QueryTextExtents
 
 pRecolorCursor
 	"VSW5TESTSUITE CASE RecolorCursor 3"
-	/tset/Xproto/XRecolorCursor/XRecolorCursor
+	/tset/Xproto/RecolorCursor/RecolorCursor
 
 pReparentWindow
 	"VSW5TESTSUITE CASE ReparentWindow 3"
-	/tset/Xproto/XReparentWindow/XReparentWindow
+	/tset/Xproto/ReparentWindow/ReparentWindow
 
 pRotateProperties
 	"VSW5TESTSUITE CASE RotateProperties 3"
@@ -3502,55 +3502,55 @@ pRotateProperties
 
 pSendEvent
 	"VSW5TESTSUITE CASE SendEvent 3"
-	/tset/Xproto/XSendEvent/XSendEvent
+	/tset/Xproto/SendEvent/SendEvent
 
 pSetAccessControl
 	"VSW5TESTSUITE CASE SetAccessControl 3"
-	/tset/Xproto/XSetAccessControl/XSetAccessControl
+	/tset/Xproto/SetAccessControl/SetAccessControl
 
 pSetClipRectangles
 	"VSW5TESTSUITE CASE SetClipRectangles 3"
-	/tset/Xproto/XSetClipRectangles/XSetClipRectangles
+	/tset/Xproto/SetClipRectangles/SetClipRectangles
 
 pSetCloseDownMode
 	"VSW5TESTSUITE CASE SetCloseDownMode 3"
-	/tset/Xproto/XSetCloseDownMode/XSetCloseDownMode
+	/tset/Xproto/SetCloseDownMode/SetCloseDownMode
 
 pSetDashes
 	"VSW5TESTSUITE CASE SetDashes 3"
-	/tset/Xproto/XSetDashes/XSetDashes
+	/tset/Xproto/SetDashes/SetDashes
 
 pSetFontPath
 	"VSW5TESTSUITE CASE SetFontPath 3"
-	/tset/Xproto/XSetFontPath/XSetFontPath
+	/tset/Xproto/SetFontPath/SetFontPath
 
 pSetInputFocus
 	"VSW5TESTSUITE CASE SetInputFocus 3"
-	/tset/Xproto/XSetInputFocus/XSetInputFocus
+	/tset/Xproto/SetInputFocus/SetInputFocus
 
 pSetModifierMapping
 	"VSW5TESTSUITE CASE SetModifierMapping 3"
-	/tset/Xproto/XSetModifierMapping/XSetModifierMapping
+	/tset/Xproto/SetModifierMapping/SetModifierMapping
 
 pSetPointerMapping
 	"VSW5TESTSUITE CASE SetPointerMapping 3"
-	/tset/Xproto/XSetPointerMapping/XSetPointerMapping
+	/tset/Xproto/SetPointerMapping/SetPointerMapping
 
 pStoreColors
 	"VSW5TESTSUITE CASE StoreColors 4"
-	/tset/Xproto/XStoreColors/XStoreColors
+	/tset/Xproto/StoreColors/StoreColors
 
 pStoreNamedColor
 	"VSW5TESTSUITE CASE StoreNamedColor 4"
-	/tset/Xproto/XStoreNamedColor/XStoreNamedColor
+	/tset/Xproto/StoreNamedColor/StoreNamedColor
 
 pSetScreenSaver
 	"VSW5TESTSUITE CASE SetScreenSaver 3"
-	/tset/Xproto/XSetScreenSaver/XSetScreenSaver
+	/tset/Xproto/SetScreenSaver/SetScreenSaver
 
 pSetSelectionOwner
 	"VSW5TESTSUITE CASE SetSelectionOwner 3"
-	/tset/Xproto/XSetSelectionOwner/XSetSelectionOwner
+	/tset/Xproto/SetSelectionOwner/SetSelectionOwner
 
 pTranslateCoords
 	"VSW5TESTSUITE CASE TranslateCoords 3"
@@ -3558,39 +3558,39 @@ pTranslateCoords
 
 pUngrabButton
 	"VSW5TESTSUITE CASE UngrabButton 3"
-	/tset/Xproto/XUngrabButton/XUngrabButton
+	/tset/Xproto/UngrabButton/UngrabButton
 
 pUngrabKey
 	"VSW5TESTSUITE CASE UngrabKey 3"
-	/tset/Xproto/XUngrabKey/XUngrabKey
+	/tset/Xproto/UngrabKey/UngrabKey
 
 pUngrabKeyboard
 	"VSW5TESTSUITE CASE UngrabKeyboard 3"
-	/tset/Xproto/XUngrabKeyboard/XUngrabKeyboard
+	/tset/Xproto/UngrabKeyboard/UngrabKeyboard
 
 pUngrabPointer
 	"VSW5TESTSUITE CASE UngrabPointer 3"
-	/tset/Xproto/XUngrabPointer/XUngrabPointer
+	/tset/Xproto/UngrabPointer/UngrabPointer
 
 pUngrabServer
 	"VSW5TESTSUITE CASE UngrabServer 3"
-	/tset/Xproto/XUngrabServer/XUngrabServer
+	/tset/Xproto/UngrabServer/UngrabServer
 
 pUnmapSubwindows
 	"VSW5TESTSUITE CASE UnmapSubwindows 3"
-	/tset/Xproto/XUnmapSubwindows/XUnmapSubwindows
+	/tset/Xproto/UnmapSubwindows/UnmapSubwindows
 
 pUnmapWindow
 	"VSW5TESTSUITE CASE UnmapWindow 3"
-	/tset/Xproto/XUnmapWindow/XUnmapWindow
+	/tset/Xproto/UnmapWindow/UnmapWindow
 
 pUninstallColormap
 	"VSW5TESTSUITE CASE UninstallColormap 3"
-	/tset/Xproto/XUninstallColormap/XUninstallColormap
+	/tset/Xproto/UninstallColormap/UninstallColormap
 
 pWarpPointer
 	"VSW5TESTSUITE CASE WarpPointer 3"
-	/tset/Xproto/XWarpPointer/XWarpPointer
+	/tset/Xproto/WarpPointer/WarpPointer
 
 #Discrete tests for Xt Chapter 3
 

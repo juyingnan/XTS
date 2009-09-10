@@ -10,82 +10,82 @@ CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
 	AllocColor/AllocColor \
-	AllocColorCells/XAllocColorCells \
-	AllocColorPlanes/XAllocColorPlanes \
-	AllocNamedColor/XAllocNamedColor \
-	AllowEvents/XAllowEvents \
+	AllocColorCells/AllocColorCells \
+	AllocColorPlanes/AllocColorPlanes \
+	AllocNamedColor/AllocNamedColor \
+	AllowEvents/AllowEvents \
 	BadRequest/BadRequest \
-	Bell/XBell \
-	ChangeActivePointerGrab/XChangeActivePointerGrab \
-	ChangeGC/XChangeGC \
+	Bell/Bell \
+	ChangeActivePointerGrab/ChangeActivePointerGrab \
+	ChangeGC/ChangeGC \
 	ChangeHosts/ChangeHosts \
-	ChangeKeyboardControl/XChangeKeyboardControl \
-	ChangeKeyboardMapping/XChangeKeyboardMapping \
-	ChangePointerControl/XChangePointerControl \
-	ChangeProperty/XChangeProperty \
-	ChangeSaveSet/XChangeSaveSet \
-	ChangeWindowAttributes/XChangeWindowAttributes \
-	ClearArea/XClearArea \
+	ChangeKeyboardControl/ChangeKeyboardControl \
+	ChangeKeyboardMapping/ChangeKeyboardMapping \
+	ChangePointerControl/ChangePointerControl \
+	ChangeProperty/ChangeProperty \
+	ChangeSaveSet/ChangeSaveSet \
+	ChangeWindowAttributes/ChangeWindowAttributes \
+	ClearArea/ClearArea \
 	CloseFont/CloseFont \
-	ConfigureWindow/XConfigureWindow \
-	ConvertSelection/XConvertSelection \
-	CopyArea/XCopyArea \
-	CopyColormapAndFree/XCopyColormapAndFree \
-	CopyGC/XCopyGC \
-	CopyPlane/XCopyPlane \
+	ConfigureWindow/ConfigureWindow \
+	ConvertSelection/ConvertSelection \
+	CopyArea/CopyArea \
+	CopyColormapAndFree/CopyColormapAndFree \
+	CopyGC/CopyGC \
+	CopyPlane/CopyPlane \
 	CirculateWindow/CirculateWindow \
-	CreateColormap/XCreateColormap \
+	CreateColormap/CreateColormap \
 	CreateCursor/CreateCursor \
-	CreateGC/XCreateGC \
-	CreateGlyphCursor/XCreateGlyphCursor \
-	CreatePixmap/XCreatePixmap \
-	CreateWindow/XCreateWindow \
-	DeleteProperty/XDeleteProperty \
-	DestroySubwindows/XDestroySubwindows \
-	DestroyWindow/XDestroyWindow \
+	CreateGC/CreateGC \
+	CreateGlyphCursor/CreateGlyphCursor \
+	CreatePixmap/CreatePixmap \
+	CreateWindow/CreateWindow \
+	DeleteProperty/DeleteProperty \
+	DestroySubwindows/DestroySubwindows \
+	DestroyWindow/DestroyWindow \
 	FillPoly/FillPoly \
-	FreeColormap/XFreeColormap \
-	FreeColors/XFreeColors \
-	FreeCursor/XFreeCursor \
-	ForceScreenSaver/XForceScreenSaver \
-	FreeGC/XFreeGC \
-	FreePixmap/XFreePixmap \
-	GrabButton/XGrabButton \
-	GrabKey/XGrabKey \
-	GrabKeyboard/XGrabKeyboard \
-	GrabPointer/XGrabPointer \
-	GrabServer/XGrabServer \
-	GetAtomName/XGetAtomName \
-	GetFontPath/XGetFontPath \
-	GetGeometry/XGetGeometry \
-	GetImage/XGetImage \
-	GetInputFocus/XGetInputFocus \
-	GetKeyboardControl/XGetKeyboardControl \
-	GetKeyboardMapping/XGetKeyboardMapping \
-	GetModifierMapping/XGetModifierMapping \
-	GetMotionEvents/XGetMotionEvents \
-	GetPointerControl/XGetPointerControl \
-	GetPointerMapping/XGetPointerMapping \
+	FreeColormap/FreeColormap \
+	FreeColors/FreeColors \
+	FreeCursor/FreeCursor \
+	ForceScreenSaver/ForceScreenSaver \
+	FreeGC/FreeGC \
+	FreePixmap/FreePixmap \
+	GrabButton/GrabButton \
+	GrabKey/GrabKey \
+	GrabKeyboard/GrabKeyboard \
+	GrabPointer/GrabPointer \
+	GrabServer/GrabServer \
+	GetAtomName/GetAtomName \
+	GetFontPath/GetFontPath \
+	GetGeometry/GetGeometry \
+	GetImage/GetImage \
+	GetInputFocus/GetInputFocus \
+	GetKeyboardControl/GetKeyboardControl \
+	GetKeyboardMapping/GetKeyboardMapping \
+	GetModifierMapping/GetModifierMapping \
+	GetMotionEvents/GetMotionEvents \
+	GetPointerControl/GetPointerControl \
+	GetPointerMapping/GetPointerMapping \
 	GetProperty/GetProperty \
-	GetScreenSaver/XGetScreenSaver \
-	GetSelectionOwner/XGetSelectionOwner \
-	GetWindowAttributes/XGetWindowAttributes \
+	GetScreenSaver/GetScreenSaver \
+	GetSelectionOwner/GetSelectionOwner \
+	GetWindowAttributes/GetWindowAttributes \
 	ImageText16/ImageText16 \
 	ImageText8/ImageText8 \
-	InstallColormap/XInstallColormap \
-	InternAtom/XInternAtom \
-	KillClient/XKillClient \
-	LookupColor/XLookupColor \
+	InstallColormap/InstallColormap \
+	InternAtom/InternAtom \
+	KillClient/KillClient \
+	LookupColor/LookupColor \
 	ListExtensions/ListExtensions \
-	ListFonts/XListFonts \
-	ListFontsWithInfo/XListFontsWithInfo \
-	ListHosts/XListHosts \
-	ListInstalledColormaps/XListInstalledColormaps \
-	ListProperties/XListProperties \
-	MapSubwindows/XMapSubwindows \
-	MapWindow/XMapWindow \
+	ListFonts/ListFonts \
+	ListFontsWithInfo/ListFontsWithInfo \
+	ListHosts/ListHosts \
+	ListInstalledColormaps/ListInstalledColormaps \
+	ListProperties/ListProperties \
+	MapSubwindows/MapSubwindows \
+	MapWindow/MapWindow \
 	NoOperation/NoOperation \
-	OpenDisplay/XOpenDisplay \
+	OpenDisplay/OpenDisplay \
 	OpenFont/OpenFont \
 	PolyArc/PolyArc \
 	PolyFillArc/PolyFillArc \
@@ -96,38 +96,38 @@ tprogs = \
 	PolySegment/PolySegment \
 	PolyText16/PolyText16 \
 	PolyText8/PolyText8 \
-	PutImage/XPutImage \
-	QueryBestSize/XQueryBestSize \
-	QueryColors/XQueryColors \
+	PutImage/PutImage \
+	QueryBestSize/QueryBestSize \
+	QueryColors/QueryColors \
 	QueryExtension/QueryExtension \
-	QueryFont/XQueryFont \
-	QueryKeymap/XQueryKeymap \
-	QueryPointer/XQueryPointer \
-	QueryTree/XQueryTree \
-	QueryTextExtents/XQueryTextExtents \
-	RecolorCursor/XRecolorCursor \
-	ReparentWindow/XReparentWindow \
+	QueryFont/QueryFont \
+	QueryKeymap/QueryKeymap \
+	QueryPointer/QueryPointer \
+	QueryTree/QueryTree \
+	QueryTextExtents/QueryTextExtents \
+	RecolorCursor/RecolorCursor \
+	ReparentWindow/ReparentWindow \
 	RotateProperties/RotateProperties \
-	SendEvent/XSendEvent \
-	SetAccessControl/XSetAccessControl \
-	SetClipRectangles/XSetClipRectangles \
-	SetCloseDownMode/XSetCloseDownMode \
-	SetDashes/XSetDashes \
-	SetFontPath/XSetFontPath \
-	SetInputFocus/XSetInputFocus \
-	SetModifierMapping/XSetModifierMapping \
-	SetPointerMapping/XSetPointerMapping \
-	StoreColors/XStoreColors \
-	StoreNamedColor/XStoreNamedColor \
-	SetScreenSaver/XSetScreenSaver \
-	SetSelectionOwner/XSetSelectionOwner \
+	SendEvent/SendEvent \
+	SetAccessControl/SetAccessControl \
+	SetClipRectangles/SetClipRectangles \
+	SetCloseDownMode/SetCloseDownMode \
+	SetDashes/SetDashes \
+	SetFontPath/SetFontPath \
+	SetInputFocus/SetInputFocus \
+	SetModifierMapping/SetModifierMapping \
+	SetPointerMapping/SetPointerMapping \
+	StoreColors/StoreColors \
+	StoreNamedColor/StoreNamedColor \
+	SetScreenSaver/SetScreenSaver \
+	SetSelectionOwner/SetSelectionOwner \
 	TranslateCoords/TranslateCoords \
-	UngrabButton/XUngrabButton \
-	UngrabKey/XUngrabKey \
-	UngrabKeyboard/XUngrabKeyboard \
-	UngrabPointer/XUngrabPointer \
-	UngrabServer/XUngrabServer \
-	UnmapSubwindows/XUnmapSubwindows \
-	UnmapWindow/XUnmapWindow \
-	UninstallColormap/XUninstallColormap \
-	WarpPointer/XWarpPointer
+	UngrabButton/UngrabButton \
+	UngrabKey/UngrabKey \
+	UngrabKeyboard/UngrabKeyboard \
+	UngrabPointer/UngrabPointer \
+	UngrabServer/UngrabServer \
+	UnmapSubwindows/UnmapSubwindows \
+	UnmapWindow/UnmapWindow \
+	UninstallColormap/UninstallColormap \
+	WarpPointer/WarpPointer

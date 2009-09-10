@@ -17,42 +17,46 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xproto/AllocColor/AllocColor.m,v 1.2 2005-11-03 08:44:01 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xproto/FreeColors/FreeColors.m,v 1.2 2005-11-03 08:44:07 jmichael Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/AllocColor/AllocColor.m
+>># File: xts5/tset/Xproto/FreeColors/FreeColors.m
 >># 
 >># Description:
->># 	Tests for AllocColor
+>># 	Tests for FreeColors
 >># 
 >># Modifications:
->># $Log: allcclr.m,v $
->># Revision 1.2  2005-11-03 08:44:01  jmichael
+>># $Log: frclrs.m,v $
+>># Revision 1.2  2005-11-03 08:44:07  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
->># Revision 1.1.1.2  2005/04/15 14:05:40  anderson
+>># Revision 1.1.1.2  2005/04/15 14:05:56  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:32:12  mar
+>># Revision 8.0  1998/12/23 23:32:31  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:52:32  mar
+>># Revision 7.0  1998/10/30 22:53:08  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:23:44  tbr
+>># Revision 6.1  1998/08/04 22:51:03  andy
+>># Changed type of reply_pixel from unsigned long to CARD32 to match
+>># declaration in libproto/MakeReq.c.
+>>#
+>># Revision 6.0  1998/03/02 05:24:01  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:20:16  tbr
+>># Revision 5.0  1998/01/26 03:20:33  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:04:24  tbr
+>># Revision 4.0  1995/12/15 09:05:18  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  01:02:54  andy
+>># Revision 3.1  1995/12/15  01:04:12  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -112,25 +116,28 @@ WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION,
 ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS
 SOFTWARE.
 */
->>TITLE AllocColor Xproto
+>>TITLE FreeColors Xproto
 >>SET startup protostartup
 >>SET cleanup protocleanup
 >>EXTERN
-/* Touch test for AllocColor request */
+/* Touch test for FreeColors request */
+
 #include "Xstlib.h"
 
 #define CLIENT 0
 static TestType test_type = SETUP;
 xResourceReq *req;
-xAllocColorReply *reply;
+xAllocNamedColorReply *alloc_reply;
+extern CARD32 reply_pixel;
 
 /* 
-   intent:	 send an AllocColor request to the server and check
-                 that the server sent an AllocColor reply back
+   intent:	 send a FreeColors request to the server and check
+                 that the server sent nothing back.
    input:	 
    output:	 none
    global input: 
    side effects: creates a window resource
+                 writes to global reply_pixel
    methods:	 
 */
 
@@ -142,30 +149,40 @@ tester()
 
 	(void) Create_Default_Window(CLIENT);
 	(void) Create_Default_Colormap(CLIENT);
+
+	/* allocate a color and store pixel from reply in global */
+
+	req = (xResourceReq *) Make_Req(CLIENT, X_AllocNamedColor);
+	Send_Req(CLIENT, (xReq *) req);
+	Log_Trace("client %d sent default AllocNamedColor request\n", CLIENT);
+	if ((alloc_reply = (xAllocNamedColorReply *) Expect_Reply(CLIENT, X_AllocNamedColor)) == NULL) {
+		Log_Err("client %d failed to receive AllocNamedColor reply\n", CLIENT);
+		Exit();
+	}  else  {
+		Log_Trace("client %d received AllocNamedColor reply\n", CLIENT);
+	}
+	reply_pixel = alloc_reply->pixel;
+	(void) Expect_Nothing(CLIENT);
+
+	/* free the allocated color cell */
+
 	Set_Test_Type(CLIENT, test_type);
-	req = (xResourceReq *) Make_Req(CLIENT, X_AllocColor);
+	req = (xResourceReq *) Make_Req(CLIENT, X_FreeColors);
 	Send_Req(CLIENT, (xReq *) req);
 	Set_Test_Type(CLIENT, GOOD);
 	switch(test_type) {
 	case GOOD:
-		Log_Trace("client %d sent default AllocColor request\n", CLIENT);
-		if ((reply = (xAllocColorReply *) Expect_Reply(CLIENT, X_AllocColor)) == NULL) {
-			Log_Err("client %d failed to receive AllocColor reply\n", CLIENT);
-			Exit();
-		}  else  {
-			Log_Trace("client %d received AllocColor reply\n", CLIENT);
-			/* do any reply checking here */
-		}
+		Log_Trace("client %d sent default FreeColors request\n", CLIENT);
 		(void) Expect_Nothing(CLIENT);
 		break;
 	case BAD_LENGTH:
-		Log_Trace("client %d sent AllocColor request with bad length (%d)\n", CLIENT, req->length);
+		Log_Trace("client %d sent FreeColors request with bad length (%d)\n", CLIENT, req->length);
 		(void) Expect_BadLength(CLIENT);
 		(void) Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
-		Log_Trace("client %d sent overlong AllocColor request (%d)\n", CLIENT, req->length);
+		Log_Trace("client %d sent overlong FreeColors request (%d)\n", CLIENT, req->length);
 		(void) Expect_BadLength(CLIENT);
 		(void) Expect_Nothing(CLIENT);
 		break;
@@ -179,20 +196,17 @@ tester()
 	Free_Req(req);
 	Exit_OK();
 }
->>ASSERTION Good A
+>>ASSERTION Good C
 When a client sends a valid xname protocol request to the X server,
-then the X server sends back a reply to the client
-with the minimum required length.
+then the X server does not send back an error, event or reply to the client.
 >>STRATEGY
 Call library function testfunc() to do the following:
 Open a connection to the X server using native byte sex.
-Create colourmap with alloc set to AllocNone.
 Send a valid xname protocol request to the X server.
-Verify that the X server sends back a reply.
+Verify that the X server does not send back an error, event or reply.
 Open a connection to the X server using reversed byte sex.
-Create colourmap with alloc set to AllocNone.
 Send a valid xname protocol request to the X server.
-Verify that the X server sends back a reply.
+Verify that the X server does not send back an error, event or reply.
 >>CODE
 
 	test_type = GOOD;
@@ -208,34 +222,17 @@ then the X server sends back a BadLength error to the client.
 >>STRATEGY
 Call library function testfunc() to do the following:
 Open a connection to the X server using native byte sex.
-Create colourmap with alloc set to AllocNone.
 Send an invalid xname protocol request to the X server with length 
   one less than the minimum length required to contain the request.
 Verify that the X server sends back a BadLength error.
 Open a connection to the X server using reversed byte sex.
-Create colourmap with alloc set to AllocNone.
 Send an invalid xname protocol request to the X server with length 
   one less than the minimum length required to contain the request.
 Verify that the X server sends back a BadLength error.
 
-Open a connection to the X server using native byte sex.
-Create colourmap with alloc set to AllocNone.
-Send an invalid xname protocol request to the X server with length 
-  one greater than the minimum length required to contain the request.
-Verify that the X server sends back a BadLength error.
-Open a connection to the X server using reversed byte sex.
-Create colourmap with alloc set to AllocNone.
-Send an invalid xname protocol request to the X server with length 
-  one greater than the minimum length required to contain the request.
-Verify that the X server sends back a BadLength error.
 >>CODE
 
 	test_type = BAD_LENGTH; /* < minimum */
-
-	/* Call a library function to exercise the test code */
-	testfunc(tester);
-
-	test_type = JUST_TOO_LONG; /* > minimum */
 
 	/* Call a library function to exercise the test code */
 	testfunc(tester);
@@ -248,12 +245,10 @@ then the X server sends back a BadLength error to the client.
 >>STRATEGY
 Call library function testfunc() to do the following:
 Open a connection to the X server using native byte sex.
-Create colourmap with alloc set to AllocNone.
 Send an invalid xname protocol request to the X server with length 
   one greater than the maximum length accepted by the server.
 Verify that the X server sends back a BadLength error.
 Open a connection to the X server using reversed byte sex.
-Create colourmap with alloc set to AllocNone.
 Send an invalid xname protocol request to the X server with length 
   one greater than the maximum length accepted by the server.
 Verify that the X server sends back a BadLength error.
