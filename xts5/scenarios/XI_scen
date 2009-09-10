@@ -118,7 +118,7 @@
 	"VSW5TESTSUITE CASE XSetDeviceMode 6"
 	/tset/XI/XSetDeviceMode/XSetDeviceMode
 	"VSW5TESTSUITE CASE XSelectExtensionEvent 13"
-	/tset/XI/slextevnt/slextevnt
+	/tset/XI/XSelectExtensionEvent/XSelectExtensionEvent
 	"VSW5TESTSUITE CASE XSendExtensionEvent 20"
 	/tset/XI/sndextevnt/sndextevnt
 	"VSW5TESTSUITE CASE XUngrabDevice 4"

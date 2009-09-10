@@ -626,7 +626,7 @@ XSetDeviceMode
 
 XSelectExtensionEvent
 	"VSW5TESTSUITE CASE XSelectExtensionEvent 13"
-	/tset/XI/slextevnt/slextevnt
+	/tset/XI/XSelectExtensionEvent/XSelectExtensionEvent
 
 XSendExtensionEvent
 	"VSW5TESTSUITE CASE XSendExtensionEvent 20"
