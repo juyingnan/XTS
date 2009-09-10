@@ -2809,7 +2809,7 @@ XSetBackground
 
 XSetClipMask
 	"VSW5TESTSUITE CASE XSetClipMask 7"
-	/tset/Xlib8/stclpmsk/stclpmsk
+	/tset/Xlib8/XSetClipMask/XSetClipMask
 
 XSetClipOrigin
 	"VSW5TESTSUITE CASE XSetClipOrigin 3"

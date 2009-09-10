@@ -24,7 +24,7 @@ tprogs = \
 	XQueryBestTile/XQueryBestTile \
 	XSetArcMode/XSetArcMode \
 	XSetBackground/XSetBackground \
-	stclpmsk/stclpmsk \
+	XSetClipMask/XSetClipMask \
 	stclporgn/stclporgn \
 	XSetClipRectangles/XSetClipRectangles \
 	XSetDashes/XSetDashes \
