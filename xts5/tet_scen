@@ -3958,7 +3958,7 @@ XtResizeWindow
 
 XtQueryGeometry
 	"VSW5TESTSUITE CASE XtQueryGeometry 6"
-	/tset/Xt8/tqrygomty/tqrygomty
+	/tset/Xt8/XtQueryGeometry/XtQueryGeometry
 
 #Discrete tests for Xt Chapter 9
 

@@ -1,4 +1,3 @@
-/*
 Copyright (c) 2005 X.Org Foundation LLC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -18,57 +17,51 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-*/
-/*$Header: /cvs/xtest/xtest/xts5/tset/Xt8/tqrygomty/tqrygomty.c,v 1.1 2005-02-12 14:38:23 anderson Exp $
-*
-* Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
-* Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
-* All Rights Reserved.
-* 
-* Project: VSW5
-* 
-* File: tset/Xt8/tqrygomty/tqrygomty.c
-* 
-* Description:
-* 	Tests 5 and 6 for XtQueryGeometry()
-* 
-* Modifications:
-* $Log: tqrygomty.c,v $
-* Revision 1.1  2005-02-12 14:38:23  anderson
-* Initial revision
-*
-* Revision 8.0  1998/12/23 23:36:55  mar
-* Branch point for Release 5.0.2
-*
-* Revision 7.0  1998/10/30 22:59:48  mar
-* Branch point for Release 5.0.2b1
-*
-* Revision 6.0  1998/03/02 05:28:02  tbr
-* Branch point for Release 5.0.1
-*
-* Revision 5.0  1998/01/26 03:24:36  tbr
-* Branch point for Release 5.0.1b1
-*
-* Revision 4.0  1995/12/15 09:17:57  tbr
-* Branch point for Release 5.0.0
-*
-* Revision 3.1  1995/12/15  01:22:13  andy
-* Prepare for GA Release
-*
-*/
+$Header: /cvs/xtest/xtest/xts5/tset/Xt8/XtQueryGeometry/XtQueryGeometry.m,v 1.1 2005-02-12 14:38:23 anderson Exp $
 
-#ifdef HAVE_CONFIG_H
-#include <config.h>
-#endif
+Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
+Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
+All Rights Reserved.
 
-#include <XtTest.h>
+>># 
+>># Project: VSW5
+>># 
+>># File: tset/Xt8/XtQueryGeometry/XtQueryGeometry.m
+>># 
+>># Description:
+>>#	Tests for XtQueryGeometry()
+>># 
+>># Modifications:
+>># $Log: tqrygomty.m,v $
+>># Revision 1.1  2005-02-12 14:38:23  anderson
+>># Initial revision
+>>#
+>># Revision 8.0  1998/12/23 23:36:56  mar
+>># Branch point for Release 5.0.2
+>>#
+>># Revision 7.0  1998/10/30 22:59:48  mar
+>># Branch point for Release 5.0.2b1
+>>#
+>># Revision 6.0  1998/03/02 05:28:03  tbr
+>># Branch point for Release 5.0.1
+>>#
+>># Revision 5.0  1998/01/26 03:24:37  tbr
+>># Branch point for Release 5.0.1b1
+>>#
+>># Revision 4.0  1995/12/15 09:17:55  tbr
+>># Branch point for Release 5.0.0
+>>#
+>># Revision 3.1  1995/12/15  01:22:15  andy
+>># Prepare for GA Release
+>>#
+>>EXTERN
 #include <X11/IntrinsicP.h>
 #include <X11/ConstrainP.h>
 #include <X11/CoreP.h>
 #include <xt/SquareCelP.h>
 
-/*error messages created here*/
-char	ebuf[4096];
+void test5A();
+void test6A();
 
 XtAppContext app_ctext;
 Widget topLevel, panedw, boxw1, boxw2;
@@ -197,7 +190,7 @@ static void DrawPixmaps(), DoCell(), ChangeCellSize();
 static void DrawCell(), UndrawCell(), ToggleCell();
 /* The following are public functions of SquareCell, declared extern
  * in the public include file: */
-char *SquareCellGetArray2(); 
+char *SquareCellGetArray(); 
 static char defaultTranslations[] =
 	"<Btn1Down>:	DrawCell()		\n\
 	<Btn2Down>:	UndrawCell()	 \n\
@@ -212,7 +205,7 @@ static XtActionsRec actions[] = {
 };
 /* definition in SquareCell.h */
 static SquareCellPointInfo info;
-SquareCellClassRec squareCellClassRec2 = {
+SquareCellClassRec squareCellClassRec = {
 	{
 	/* core_class fields */
 	/* superclass	*/ (WidgetClass) &coreClassRec,
@@ -244,7 +237,7 @@ SquareCellClassRec squareCellClassRec2 = {
 	/* version	 */ XtVersion,
 	/* callback_private	*/ NULL,
 	/* tm_table	*/ defaultTranslations,
-	/* query_geometry	*/ NULL,
+	/* query_geometry	*/ QueryGeometry,
 	/* display_accelerator	*/ XtInheritDisplayAccelerator,
 	/* extension	 */ NULL
 	},
@@ -255,7 +248,7 @@ SquareCellClassRec squareCellClassRec2 = {
 	/* extension	*/	0,
 	},
 };
-WidgetClass squareCellWidgetClass2 = (WidgetClass) & squareCellClassRec2;
+WidgetClass squareCellWidgetClass = (WidgetClass) & squareCellClassRec;
 static void
 GetDrawGC(w)
 Widget w;
@@ -361,11 +354,11 @@ Cardinal *num_args;
 	else
 	 new->core.height = new->squareCell.pixmap_height_in_pixels;
 	}
-	CreateBigPixmap2(new);
+	CreateBigPixmap(new);
 	GetDrawGC(new);
 	GetUndrawGC(new);
 	GetCopyGC(new);
-	DrawIntoBigPixmap2(new);
+	DrawIntoBigPixmap(new);
 }
 static void
 Redisplay(w, event)
@@ -545,7 +538,7 @@ XButtonEvent *event;
 	Redisplay(cw, &fake_event);
 	XtCallCallbacks((Widget)cw, XavsNtoggleCallback, &info);
 }
-CreateBigPixmap2(w)
+CreateBigPixmap(w)
 Widget w;
 {
 	SquareCellWidget cw = (SquareCellWidget) w;
@@ -555,7 +548,7 @@ Widget w;
 	 cw->squareCell.pixmap_width_in_pixels + 2, 
 	 cw->squareCell.pixmap_height_in_pixels + 2, 1);
 }
-DrawIntoBigPixmap2(w)
+DrawIntoBigPixmap(w)
 Widget w;
 {
 	SquareCellWidget cw = (SquareCellWidget) w;
@@ -594,7 +587,7 @@ Widget w;
 }
 /* A Public function, not static */
 char *
-SquareCellGetArray2(w, width_in_cells, height_in_cells)
+SquareCellGetArray(w, width_in_cells, height_in_cells)
 Widget w;
 int *width_in_cells, *height_in_cells;
 {
@@ -649,10 +642,10 @@ int new_cell_size;
 	
 	/* destroy old and create new pixmap of correct size */
 	XFreePixmap(XtDisplay((Widget)cw), cw->squareCell.big_picture);
-	CreateBigPixmap2((Widget)cw);
+	CreateBigPixmap((Widget)cw);
 	
 	/* draw lines into new pixmap */
-	DrawIntoBigPixmap2((Widget)cw);
+	DrawIntoBigPixmap((Widget)cw);
 	
 	/* draw current cell array into pixmap */
 	for (x = 0; x < cw->squareCell.pixmap_width_in_cells; x++) {
@@ -685,7 +678,7 @@ XtWidgetGeometry *proposed, *answer;
 	SquareCellWidget cw = (SquareCellWidget) w;
 
 	if (test_for == 2) {
-		tet_infoline("TEST: request_mode");
+		tet_infoline("TEST: request_mode passed to query_geometry procedure");
 		if (proposed->request_mode != 0) {
 			sprintf(ebuf, "ERROR: Expected request_mode = 0, is %d", proposed->request_mode);
 			tet_infoline(ebuf);
@@ -721,11 +714,102 @@ XtWidgetGeometry *proposed, *answer;
 	else
 	return XtGeometryAlmost;
 }
-
-void test5A()
-{
+>>SET tpstartup avs_alloc_sem
+>>SET tpcleanup avs_free_sem
+>>CFILES tqrygomty.c
+>>TITLE XtQueryGeometry Xt8
+XtGeometryResult
+XtQueryGeometry(w, intended, preferred_return)
+>>ASSERTION Good A
+A successful call to 
+XtGeometryResult XtQueryGeometry(w, intended, preferred_return)
+when the query_geometry field of the widget
+.A w
+is not NULL shall invoke the procedure specified by this field,
+passing
+.A w,
+.A intended,
+and
+.A preferred_return
+as arguments, and return the value this procedure returns.
+>>CODE
 XtWidgetGeometry intended, geom;
-SquareCellWidget squarew;
+Widget squarew;
+int result;
+int invoked = 0;
+pid_t pid2;
+
+	FORK(pid2);
+	test_for = 1;
+	avs_xt_hier("Tqrygomty1", "XtQueryGeometry");
+	tet_infoline("PREP: Create Square Cell widget");
+	squarew = XtVaCreateManagedWidget("squarew",
+			squareCellWidgetClass, boxw1, NULL);
+	tet_infoline("PREP: Create windows for widgets and map them");
+	XtRealizeWidget(topLevel);
+	tet_infoline("PREP: Call XtQueryGeometry");
+	intended.request_mode = CWX|CWY|CWWidth|CWHeight|CWBorderWidth;
+	result = XtQueryGeometry(squarew, &intended, &geom);
+	KROF(pid2);
+	tet_infoline("TEST: Query_geometry procedure was invoked");
+	invoked = avs_get_event(1);
+	if (!invoked) {
+		sprintf(ebuf, "ERROR: Procedure query_geometry not invoked");
+		tet_infoline(ebuf);
+		tet_result(TET_FAIL);
+	}
+	tet_result(TET_PASS);
+>>ASSERTION Good A
+A successful call to 
+XtGeometryResult XtQueryGeometry(w, intended, preferred_return)
+when the query_geometry field of the widget
+.A w
+is not NULL and 
+.A intended
+is NULL shall pass a pointer to an XtWidgetGeometry structure
+that has the request_mode set to zero as the request argument to
+the query_geometry procedure.
+>>CODE
+XtWidgetGeometry intended, geom;
+Widget squarew;
+int result;
+int invoked = 0;
+pid_t pid2;
+
+	FORK(pid2);
+	test_for = 2;
+	avs_xt_hier("Tqrygomty1", "XtQueryGeometry");
+	tet_infoline("PREP: Create Square Cell widget");
+	squarew = XtVaCreateManagedWidget("squarew",
+			squareCellWidgetClass, boxw1, NULL);
+	tet_infoline("PREP: Create windows for widgets and map them");
+	XtRealizeWidget(topLevel);
+	tet_infoline("PREP: Call XtQueryGeometry");
+	result = XtQueryGeometry(squarew, NULL, &geom);
+	KROF(pid2);
+	tet_infoline("TEST: Query_geometry procedure was invoked");
+	invoked = avs_get_event(1);
+	if (!invoked) {
+		sprintf(ebuf, "ERROR: Procedure query_geometry not invoked");
+		tet_infoline(ebuf);
+		tet_result(TET_FAIL);
+	}
+	tet_result(TET_PASS);
+>>ASSERTION Good A
+A successful call to 
+XtGeometryResult XtQueryGeometry(w, intended, preferred_return)
+when the query_geometry field of the widget
+.A w
+is not NULL shall set the fields of 
+.A preferred_return
+corresponding to bits that are not set in preferred_return->request_mode to
+the current values for the widget instance, with fields corresponding to
+bits set in
+.A preferred_return
+set to values by the widget's query_geometry procedure.
+>>CODE
+XtWidgetGeometry intended, geom;
+Widget squarew;
 int result;
 int invoked = 0;
 pid_t pid2;
@@ -734,47 +818,88 @@ pid_t pid2;
 	test_for = 3;
 	avs_xt_hier("Tqrygomty1", "XtQueryGeometry");
 	tet_infoline("PREP: Create Square Cell widget");
-	squarew = (SquareCellWidget)XtVaCreateManagedWidget("squarew",
-			squareCellWidgetClass2, boxw1, NULL);
+	squarew = XtVaCreateManagedWidget("squarew",
+			squareCellWidgetClass, boxw1, NULL);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
 	memset(&geom, -1, sizeof(geom));
-	tet_infoline("TEST: Call XtQueryGeometry");
-	result = XtQueryGeometry((Widget)squarew, &intended, &geom);
-	tet_infoline("TEST: Return value");
-	check_dec(XtGeometryYes, result, "return value");
-	tet_infoline("TEST: returned values");
+	tet_infoline("PREP: Call XtQueryGeometry");
+	intended.request_mode = CWX|CWY|CWWidth|CWHeight|CWBorderWidth;
+	result = XtQueryGeometry(squarew, &intended, &geom);
+	tet_infoline("TEST: preferred_return->request_mode");
+	check_dec(CWWidth | CWHeight, (long)geom.request_mode, "preferred_return->request_mode");
+	tet_infoline("TEST: Returned values");
+	check_dec((long)width_ret, (long)geom.width, "preferred_return.width");
+	check_dec((long)height_ret, (long)geom.height, "preferred_return.height");
 	check_not_dec(-1, (long)geom.x, "preferred_return.height");
 	check_not_dec(-1, (long)geom.y, "preferred_return.height");
 	check_not_dec(-1, (long)geom.border_width, "preferred_return.height");
-	check_not_dec(-1, (long)geom.width, "preferred_return.width");
-	check_not_dec(-1, (long)geom.height, "preferred_return.height");
 	KROF(pid2);
+	tet_infoline("TEST: Query_geometry procedure was invoked");
+	invoked = avs_get_event(1);
+	if (!invoked) {
+		sprintf(ebuf, "ERROR: Procedure query_geometry not invoked");
+		tet_infoline(ebuf);
+		tet_result(TET_FAIL);
+	}
 	tet_result(TET_PASS);
-}
-
-void test6A()
-{
+>>ASSERTION Good A
+A successful call to 
+XtGeometryResult XtQueryGeometry(w, intended, preferred_return)
+when the query_geometry field of the widget
+.A w
+is not NULL and the query_geometry procedure does not set
+CWStackMode in preferred_return->return_mode shall set
+preferred_return.stack_mode to XtSMDontChange.
+>>CODE
 XtWidgetGeometry intended, geom;
-SquareCellWidget squarew;
+Widget squarew;
 int result;
 int invoked = 0;
 pid_t pid2;
 
 	FORK(pid2);
-	test_for = 3;
+	test_for = 4;
 	avs_xt_hier("Tqrygomty1", "XtQueryGeometry");
 	tet_infoline("PREP: Create Square Cell widget");
-	squarew = (SquareCellWidget)XtVaCreateManagedWidget("squarew",
-			squareCellWidgetClass2, boxw1, NULL);
+	squarew = XtVaCreateManagedWidget("squarew",
+			squareCellWidgetClass, boxw1, NULL);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	geom.stack_mode = -1;
-	geom.request_mode = 0;
-	tet_infoline("TEST: Call XtQueryGeometry");
-	result = XtQueryGeometry((Widget)squarew, &intended, &geom);
+	tet_infoline("PREP: Call XtQueryGeometry");
+	intended.request_mode = CWX|CWY|CWWidth|CWHeight|CWBorderWidth;
+	result = XtQueryGeometry(squarew, NULL, &geom);
 	tet_infoline("TEST: preferred_return.stack_mode");
 	check_dec(XtSMDontChange, (long)geom.stack_mode, "preferred_return.stack_mode");
 	KROF(pid2);
+	tet_infoline("TEST: Query_geometry procedure was invoked");
+	invoked = avs_get_event(1);
+	if (!invoked) {
+		sprintf(ebuf, "ERROR: Procedure query_geometry not invoked");
+		tet_infoline(ebuf);
+		tet_result(TET_FAIL);
+	}
 	tet_result(TET_PASS);
-}
+>>ASSERTION Good A
+A successful call to 
+XtGeometryResult XtQueryGeometry(w, intended, preferred_return)
+when the query_geometry field of the widget
+.A w
+is NULL shall set all the fields in 
+.A preferred_return
+to the current values for the widget instance
+and return XtGeometryYes.
+>>CODE
+
+	test_for = 5;
+	test5A();
+>>ASSERTION Good A
+A successful call to 
+XtGeometryResult XtQueryGeometry(w, intended, preferred_return)
+when the query_geometry field of the widget
+.A w
+is NULL shall set preferred_return.stack_mode to XtSMDontChange.
+>>CODE
+
+	test_for = 6;
+	test6A();

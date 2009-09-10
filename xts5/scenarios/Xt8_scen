@@ -71,4 +71,4 @@
 	"VSW5TESTSUITE CASE XtResizeWindow 2"
 	/tset/Xt8/trszwindw/trszwindw
 	"VSW5TESTSUITE CASE XtQueryGeometry 6"
-	/tset/Xt8/tqrygomty/tqrygomty
+	/tset/Xt8/XtQueryGeometry/XtQueryGeometry
