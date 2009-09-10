@@ -908,7 +908,7 @@ SelectionNotify
 
 SelectionRequest
 	"VSW5TESTSUITE CASE SelectionRequest 1"
-	/tset/Xlib11/slctnrqst/slctnrqst
+	/tset/Xlib11/SelectionRequest/SelectionRequest
 
 UnmapNotify
 	"VSW5TESTSUITE CASE UnmapNotify 3"

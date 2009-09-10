@@ -39,6 +39,6 @@ tprogs = \
 	ResizeRequest/ResizeRequest \
 	SelectionClear/SelectionClear \
 	SelectionNotify/SelectionNotify \
-	slctnrqst/slctnrqst \
+	SelectionRequest/SelectionRequest \
 	unmpntfy/unmpntfy \
 	vsbltyntfy/vsbltyntfy
