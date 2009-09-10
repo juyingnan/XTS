@@ -86,7 +86,7 @@
 	"VSW5TESTSUITE CASE ChangeSaveSet 3"
 	/tset/Xproto/ChangeSaveSet/ChangeSaveSet
 	"VSW5TESTSUITE CASE ChangeWindowAttributes 4"
-	/tset/Xproto/chngwdwatt/chngwdwatt
+	/tset/Xproto/ChangeWindowAttributes/ChangeWindowAttributes
 	"VSW5TESTSUITE CASE ClearArea 3"
 	/tset/Xproto/clrar/clrar
 	"VSW5TESTSUITE CASE CloseFont 3"

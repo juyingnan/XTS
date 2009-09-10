@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	chngwdwatt/chngwdwatt \
+	ChangeWindowAttributes/ChangeWindowAttributes \
 	cnfgrwdw/cnfgrwdw \
 	crcltsbws/crcltsbws \
 	crcltsbwsd/crcltsbwsd \

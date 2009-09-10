@@ -2314,7 +2314,7 @@ WhitePixelOfScreen
 
 XChangeWindowAttributes
 	"VSW5TESTSUITE CASE XChangeWindowAttributes 46"
-	/tset/Xlib4/chngwdwatt/chngwdwatt
+	/tset/Xlib4/ChangeWindowAttributes/ChangeWindowAttributes
 
 XConfigureWindow
 	"VSW5TESTSUITE CASE XConfigureWindow 34"
@@ -3166,7 +3166,7 @@ pChangeSaveSet
 
 pChangeWindowAttributes
 	"VSW5TESTSUITE CASE ChangeWindowAttributes 4"
-	/tset/Xproto/chngwdwatt/chngwdwatt
+	/tset/Xproto/ChangeWindowAttributes/ChangeWindowAttributes
 
 pClearArea
 	"VSW5TESTSUITE CASE ClearArea 3"

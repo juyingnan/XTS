@@ -24,7 +24,7 @@ tprogs = \
 	ChangePointerControl/ChangePointerControl \
 	ChangeProperty/ChangeProperty \
 	ChangeSaveSet/ChangeSaveSet \
-	chngwdwatt/chngwdwatt \
+	ChangeWindowAttributes/ChangeWindowAttributes \
 	clrar/clrar \
 	clsfnt/clsfnt \
 	cnfgrwdw/cnfgrwdw \
