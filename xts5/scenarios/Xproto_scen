@@ -134,7 +134,7 @@
 	"VSW5TESTSUITE CASE ForceScreenSaver 3"
 	/tset/Xproto/ForceScreenSaver/ForceScreenSaver
 	"VSW5TESTSUITE CASE FreeGC 3"
-	/tset/Xproto/frgc/frgc
+	/tset/Xproto/FreeGC/FreeGC
 	"VSW5TESTSUITE CASE FreePixmap 3"
 	/tset/Xproto/frpxmp/frpxmp
 	"VSW5TESTSUITE CASE GrabButton 3"

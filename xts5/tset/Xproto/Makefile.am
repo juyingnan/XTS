@@ -48,7 +48,7 @@ tprogs = \
 	FreeColors/FreeColors \
 	FreeCursor/FreeCursor \
 	ForceScreenSaver/ForceScreenSaver \
-	frgc/frgc \
+	FreeGC/FreeGC \
 	frpxmp/frpxmp \
 	grbbttn/grbbttn \
 	grbky/grbky \

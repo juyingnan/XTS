@@ -16,7 +16,7 @@ tprogs = \
 	CopyGC/CopyGC \
 	CreateGC/CreateGC \
 	flushgc/flushgc \
-	frgc/frgc \
+	FreeGC/FreeGC \
 	gcntxtfrmg/gcntxtfrmg \
 	gtgcvls/gtgcvls \
 	qrybststpp/qrybststpp \

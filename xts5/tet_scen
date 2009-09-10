@@ -2777,7 +2777,7 @@ XCreateGC
 
 XFreeGC
 	"VSW5TESTSUITE CASE XFreeGC 2"
-	/tset/Xlib8/frgc/frgc
+	/tset/Xlib8/FreeGC/FreeGC
 
 XGContextFromGC
 	"VSW5TESTSUITE CASE XGContextFromGC 1"
@@ -3262,7 +3262,7 @@ pForceScreenSaver
 
 pFreeGC
 	"VSW5TESTSUITE CASE FreeGC 3"
-	/tset/Xproto/frgc/frgc
+	/tset/Xproto/FreeGC/FreeGC
 
 pFreePixmap
 	"VSW5TESTSUITE CASE FreePixmap 3"
