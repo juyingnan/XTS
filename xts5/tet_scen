@@ -2743,7 +2743,7 @@ XcmsTekHVCQueryMaxVSamples
 
 XcmsVisualOfCCC
 	"VSW5TESTSUITE CASE XcmsVisualOfCCC 1"
-	/tset/Xlib7/cmsvofcc/cmsvofcc
+	/tset/Xlib7/XcmsVisualOfCCC/XcmsVisualOfCCC
 
 XcmsSetWhiteAdjustProc
 	"VSW5TESTSUITE CASE XcmsSetWhiteAdjustProc 3"
