@@ -55,4 +55,4 @@ XQueryColor/XQueryColor
 XQueryColors/XQueryColors
 strclr/strclr
 XStoreColors/XStoreColors
-StoreNamedColor/StoreNamedColor
+XStoreNamedColor/XStoreNamedColor

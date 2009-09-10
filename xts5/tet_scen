@@ -2587,7 +2587,7 @@ XStoreColors
 
 XStoreNamedColor
 	"VSW5TESTSUITE CASE XStoreNamedColor 9"
-	/tset/Xlib7/StoreNamedColor/StoreNamedColor
+	/tset/Xlib7/XStoreNamedColor/XStoreNamedColor
 
 XcmsAllocColor
 	"VSW5TESTSUITE CASE XcmsAllocColor 2"
@@ -3542,7 +3542,7 @@ pStoreColors
 
 pStoreNamedColor
 	"VSW5TESTSUITE CASE StoreNamedColor 4"
-	/tset/Xproto/StoreNamedColor/StoreNamedColor
+	/tset/Xproto/XStoreNamedColor/XStoreNamedColor
 
 pSetScreenSaver
 	"VSW5TESTSUITE CASE SetScreenSaver 3"

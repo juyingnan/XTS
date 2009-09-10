@@ -118,7 +118,7 @@ tprogs = \
 	XSetModifierMapping/XSetModifierMapping \
 	XSetPointerMapping/XSetPointerMapping \
 	XStoreColors/XStoreColors \
-	StoreNamedColor/StoreNamedColor \
+	XStoreNamedColor/XStoreNamedColor \
 	XSetScreenSaver/XSetScreenSaver \
 	XSetSelectionOwner/XSetSelectionOwner \
 	TranslateCoords/TranslateCoords \

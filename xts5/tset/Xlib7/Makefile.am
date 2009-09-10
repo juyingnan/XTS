@@ -67,4 +67,4 @@ tprogs = \
 	XQueryColors/XQueryColors \
 	strclr/strclr \
 	XStoreColors/XStoreColors \
-	StoreNamedColor/StoreNamedColor
+	XStoreNamedColor/XStoreNamedColor
