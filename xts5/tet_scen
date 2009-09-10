@@ -1387,7 +1387,7 @@ XGetIconName
 
 XGetIconSizes
 	"VSW5TESTSUITE CASE XGetIconSizes 3"
-	/tset/Xlib15/gticnszs/gticnszs
+	/tset/Xlib15/XGetIconSizes/XGetIconSizes
 
 XGetRGBColormaps
 	"VSW5TESTSUITE CASE XGetRGBColormaps 6"

@@ -76,7 +76,7 @@
 	"VSW5TESTSUITE CASE XGetIconName 3"
 	/tset/Xlib15/XGetIconName/XGetIconName
 	"VSW5TESTSUITE CASE XGetIconSizes 3"
-	/tset/Xlib15/gticnszs/gticnszs
+	/tset/Xlib15/XGetIconSizes/XGetIconSizes
 	"VSW5TESTSUITE CASE XGetRGBColormaps 6"
 	/tset/Xlib15/gtrgbclrmp/gtrgbclrmp
 	"VSW5TESTSUITE CASE XGetTransientForHint 3"
