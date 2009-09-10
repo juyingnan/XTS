@@ -17,14 +17,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib13/gtpntrmppn/gtpntrmppn.m,v 1.3 2006-12-07 15:51:28 gwc Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib13/GetPointerMapping/GetPointerMapping.m,v 1.3 2006-12-07 15:51:28 gwc Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib13/gtpntrmppn/gtpntrmppn.m
+>># File: xts5/tset/Xlib13/GetPointerMapping/GetPointerMapping.m
 >># 
 >># Description:
 >># 	Tests for XGetPointerMapping()

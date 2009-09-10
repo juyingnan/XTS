@@ -29,7 +29,7 @@ tprogs = \
 	GetKeyboardMapping/GetKeyboardMapping \
 	GetModifierMapping/GetModifierMapping \
 	GetPointerControl/GetPointerControl \
-	gtpntrmppn/gtpntrmppn \
+	GetPointerMapping/GetPointerMapping \
 	insrtmdfrm/insrtmdfrm \
 	nwmdfrmp/nwmdfrmp \
 	qrykymp/qrykymp \
