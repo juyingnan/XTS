@@ -98,7 +98,7 @@
 	"VSW5TESTSUITE CASE GetDeviceKeyMapping 3"
 	/tset/XIproto/GetDeviceKeyMapping/GetDeviceKeyMapping
 	"VSW5TESTSUITE CASE GetSelectedExtensionEvents 3"
-	/tset/XIproto/gtslctexev/gtslctexev
+	/tset/XIproto/GetSelectedExtensionEvents/GetSelectedExtensionEvents
 	"VSW5TESTSUITE CASE ListInputDevices 3"
 	/tset/XIproto/XListInputDevices/XListInputDevices
 	"VSW5TESTSUITE CASE OpenDevice 3"

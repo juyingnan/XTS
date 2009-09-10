@@ -30,7 +30,7 @@ tprogs = \
 	XGetDeviceMotionEvents/XGetDeviceMotionEvents \
 	GetDeviceDontPropagateList/GetDeviceDontPropagateList \
 	GetDeviceKeyMapping/GetDeviceKeyMapping \
-	gtslctexev/gtslctexev \
+	GetSelectedExtensionEvents/GetSelectedExtensionEvents \
 	XListInputDevices/XListInputDevices \
 	Miscellaneous/Miscellaneous \
 	XOpenDevice/XOpenDevice \
