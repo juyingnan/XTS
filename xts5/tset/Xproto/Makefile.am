@@ -102,7 +102,7 @@ tprogs = \
 	QueryExtension/QueryExtension \
 	QueryFont/QueryFont \
 	XQueryKeymap/XQueryKeymap \
-	QueryPointer/QueryPointer \
+	XQueryPointer/XQueryPointer \
 	QueryTree/QueryTree \
 	QueryTextExtents/QueryTextExtents \
 	RecolorCursor/RecolorCursor \

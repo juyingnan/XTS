@@ -242,7 +242,7 @@
 	"VSW5TESTSUITE CASE QueryKeymap 3"
 	/tset/Xproto/XQueryKeymap/XQueryKeymap
 	"VSW5TESTSUITE CASE QueryPointer 3"
-	/tset/Xproto/QueryPointer/QueryPointer
+	/tset/Xproto/XQueryPointer/XQueryPointer
 	"VSW5TESTSUITE CASE QueryTree 3"
 	/tset/Xproto/QueryTree/QueryTree
 	"VSW5TESTSUITE CASE QueryTextExtents 3"
