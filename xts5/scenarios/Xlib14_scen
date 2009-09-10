@@ -110,7 +110,7 @@
 	"VSW5TESTSUITE CASE XmbTextPropertyToTextList 1"
 	/tset/Xlib14/XmbTextPropertyToTextList/XmbTextPropertyToTextList
 	"VSW5TESTSUITE CASE XOpenIM 1"
-	/tset/Xlib14/openim/openim
+	/tset/Xlib14/XOpenIM/XOpenIM
 	"VSW5TESTSUITE CASE XSetICFocus 1"
 	/tset/Xlib14/sicfoc/sicfoc
 	"VSW5TESTSUITE CASE XSetICValues 4"

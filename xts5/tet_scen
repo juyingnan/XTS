@@ -1272,7 +1272,7 @@ XmbTextPropertyToTextList
 
 XOpenIM
 	"VSW5TESTSUITE CASE XOpenIM 1"
-	/tset/Xlib14/openim/openim
+	/tset/Xlib14/XOpenIM/XOpenIM
 
 XSetICFocus
 	"VSW5TESTSUITE CASE XSetICFocus 1"

@@ -37,7 +37,7 @@ tprogs = \
 	XmbTextListToTextProperty/XmbTextListToTextProperty \
 	XmbTextPerCharExtents/XmbTextPerCharExtents \
 	XmbTextPropertyToTextList/XmbTextPropertyToTextList \
-	openim/openim \
+	XOpenIM/XOpenIM \
 	sicfoc/sicfoc \
 	sicvals/sicvals \
 	slocale/slocale \
