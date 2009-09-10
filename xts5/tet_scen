@@ -4585,7 +4585,7 @@ XtAppWarningMsg
 
 XtAppSetErrorHandler
 	"VSW5TESTSUITE CASE XtAppSetErrorHandler 2"
-	/tset/Xt13/tapsterhd/tapsterhd
+	/tset/Xt13/XtAppSetErrorHandler/XtAppSetErrorHandler
 
 XtAppError
 	"VSW5TESTSUITE CASE XtAppError 3"
