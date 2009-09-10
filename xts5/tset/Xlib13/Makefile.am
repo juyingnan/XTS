@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = \
 	XAllowEvents/XAllowEvents \
 	XAutoRepeatOff/XAutoRepeatOff \
-	atrpton/atrpton \
+	XAutoRepeatOn/XAutoRepeatOn \
 	Bell/Bell \
 	ChangeActivePointerGrab/ChangeActivePointerGrab \
 	ChangeKeyboardControl/ChangeKeyboardControl \

@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE XAutoRepeatOff 1"
 	/tset/Xlib13/XAutoRepeatOff/XAutoRepeatOff
 	"VSW5TESTSUITE CASE XAutoRepeatOn 1"
-	/tset/Xlib13/atrpton/atrpton
+	/tset/Xlib13/XAutoRepeatOn/XAutoRepeatOn
 	"VSW5TESTSUITE CASE XBell 3"
 	/tset/Xlib13/Bell/Bell
 	"VSW5TESTSUITE CASE XChangeActivePointerGrab 5"
