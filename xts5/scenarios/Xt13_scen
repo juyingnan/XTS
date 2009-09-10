@@ -87,7 +87,7 @@
 	"VSW5TESTSUITE CASE XtGetSelectionRequest 3"
 	/tset/Xt13/XtGetSelectionRequest/XtGetSelectionRequest
 	"VSW5TESTSUITE CASE XtGetSelectionValue 4"
-	/tset/Xt13/tgtsvalue/tgtsvalue
+	/tset/Xt13/XtGetSelectionValue/XtGetSelectionValue
 	"VSW5TESTSUITE CASE XtGetSelectionValues 5"
 	/tset/Xt13/XtGetSelectionValues/XtGetSelectionValues
 	"VSW5TESTSUITE CASE XtOwnSelection 8"
