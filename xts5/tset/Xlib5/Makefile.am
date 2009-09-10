@@ -15,7 +15,7 @@ tprogs = \
 	XGetAtomName/XGetAtomName \
 	XGetGeometry/XGetGeometry \
 	XGetSelectionOwner/XGetSelectionOwner \
-	GetWindowAttributes/GetWindowAttributes \
+	XGetWindowAttributes/XGetWindowAttributes \
 	gtwdwprprt/gtwdwprprt \
 	InternAtom/InternAtom \
 	ListProperties/ListProperties \

@@ -69,7 +69,7 @@ tprogs = \
 	GetProperty/GetProperty \
 	XGetScreenSaver/XGetScreenSaver \
 	XGetSelectionOwner/XGetSelectionOwner \
-	GetWindowAttributes/GetWindowAttributes \
+	XGetWindowAttributes/XGetWindowAttributes \
 	ImageText16/ImageText16 \
 	ImageText8/ImageText8 \
 	XInstallColormap/XInstallColormap \
