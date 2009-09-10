@@ -71,7 +71,7 @@
 	"VSW5TESTSUITE CASE XtVaGetSubresources 4"
 	/tset/Xt11/tvagtsres/tvagtsres
 	"VSW5TESTSUITE CASE XtGetApplicationResources 2"
-	/tset/Xt11/tgtapres/tgtapres
+	/tset/Xt11/XtGetApplicationResources/XtGetApplicationResources
 	"VSW5TESTSUITE CASE XtVaGetApplicationResources 4"
 	/tset/Xt11/tvagtares/tvagtares
 	"VSW5TESTSUITE CASE XtCvtStringToAcceleratorTable 4"

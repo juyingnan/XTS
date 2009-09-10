@@ -4157,7 +4157,7 @@ XtVaGetSubresources
 
 XtGetApplicationResources
 	"VSW5TESTSUITE CASE XtGetApplicationResources 2"
-	/tset/Xt11/tgtapres/tgtapres
+	/tset/Xt11/XtGetApplicationResources/XtGetApplicationResources
 
 XtVaGetApplicationResources
 	"VSW5TESTSUITE CASE XtVaGetApplicationResources 4"
