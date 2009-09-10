@@ -4273,7 +4273,7 @@ XtCvtIntToFont
 
 XtCvtIntToPixel
 	"VSW5TESTSUITE CASE XtCvtIntToPixel 3"
-	/tset/Xt11/tcinpix/tcinpix
+	/tset/Xt11/XtCvtIntToPixel/XtCvtIntToPixel
 
 XtCvtIntToPixmap
 	"VSW5TESTSUITE CASE XtCvtIntToPixmap 3"
