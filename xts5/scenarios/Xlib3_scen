@@ -162,7 +162,7 @@
 	"VSW5TESTSUITE CASE XVendorRelease 1"
 	/tset/Xlib3/vndrrls/vndrrls
 	"VSW5TESTSUITE CASE XServerVendor 1"
-	/tset/Xlib3/srvrvndr/srvrvndr
+	/tset/Xlib3/XServerVendor/XServerVendor
 	"VSW5TESTSUITE CASE XSetCloseDownMode 7"
 	/tset/Xlib3/XSetCloseDownMode/XSetCloseDownMode
 	"VSW5TESTSUITE CASE XWidthMMOfScreen 1"
@@ -264,7 +264,7 @@
 	"VSW5TESTSUITE CASE VendorRelease 1"
 	/tset/Xlib3/vndrrls/vndrrls_m
 	"VSW5TESTSUITE CASE ServerVendor 1"
-	/tset/Xlib3/srvrvndr/srvrvndr_m
+	/tset/Xlib3/XServerVendor/XServerVendor_m
 	"VSW5TESTSUITE CASE WidthMMOfScreen 1"
 	/tset/Xlib3/wdthmmofsc/wdthmmofsc_m
 	"VSW5TESTSUITE CASE WidthOfScreen 1"
