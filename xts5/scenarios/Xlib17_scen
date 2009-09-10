@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE XDeleteContext 2"
 	/tset/Xlib17/XDeleteContext/XDeleteContext
 	"VSW5TESTSUITE CASE XDestroyImage 1"
-	/tset/Xlib17/dstryimg/dstryimg
+	/tset/Xlib17/XDestroyImage/XDestroyImage
 	"VSW5TESTSUITE CASE XDestroyRegion 1"
 	/tset/Xlib17/dstryrgn/dstryrgn
 	"VSW5TESTSUITE CASE XEmptyRegion 2"

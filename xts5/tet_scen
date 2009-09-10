@@ -1680,7 +1680,7 @@ XDeleteContext
 
 XDestroyImage
 	"VSW5TESTSUITE CASE XDestroyImage 1"
-	/tset/Xlib17/dstryimg/dstryimg
+	/tset/Xlib17/XDestroyImage/XDestroyImage
 
 XDestroyRegion
 	"VSW5TESTSUITE CASE XDestroyRegion 1"
