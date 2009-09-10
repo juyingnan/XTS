@@ -45,7 +45,7 @@ tprogs = \
 	ldqryfnt/ldqryfnt \
 	ListFonts/ListFonts \
 	ListFontsWithInfo/ListFontsWithInfo \
-	ptimg/ptimg \
+	PutImage/PutImage \
 	qryfnt/qryfnt \
 	qrytxtex16/qrytxtex16 \
 	qrytxtextn/qrytxtextn \

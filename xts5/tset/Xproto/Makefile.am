@@ -96,7 +96,7 @@ tprogs = \
 	PolySegment/PolySegment \
 	PolyText16/PolyText16 \
 	PolyText8/PolyText8 \
-	ptimg/ptimg \
+	PutImage/PutImage \
 	qrybstsz/qrybstsz \
 	qryclrs/qryclrs \
 	qryextnsn/qryextnsn \

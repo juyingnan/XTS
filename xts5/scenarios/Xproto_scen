@@ -230,7 +230,7 @@
 	"VSW5TESTSUITE CASE PolyText8 3"
 	/tset/Xproto/PolyText8/PolyText8
 	"VSW5TESTSUITE CASE PutImage 3"
-	/tset/Xproto/ptimg/ptimg
+	/tset/Xproto/PutImage/PutImage
 	"VSW5TESTSUITE CASE QueryBestSize 3"
 	/tset/Xproto/qrybstsz/qrybstsz
 	"VSW5TESTSUITE CASE QueryColors 3"
