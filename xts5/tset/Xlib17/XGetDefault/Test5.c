@@ -20,20 +20,20 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xlib17/gtdflt/Test3.c,v 1.5 2005-11-03 08:43:04 jmichael Exp $
+* $Header: /cvs/xtest/xtest/xts5/tset/Xlib17/XGetDefault/Test5.c,v 1.5 2005-11-03 08:43:04 jmichael Exp $
 * 
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.
 * 
 * Project: VSW5
 * 
-* File: xts5/tset/Xlib17/gtdflt/Test3.c
+* File: xts5/tset/Xlib17/XGetDefault/Test5.c
 * 
 * Description:
 * 	Tests for XGetDefault()
 * 
 * Modifications:
-* $Log: Test3.c,v $
+* $Log: Test5.c,v $
 * Revision 1.5  2005-11-03 08:43:04  jmichael
 * clean up all vsw5 paths to use xts5 instead.
 *
@@ -43,22 +43,25 @@ SOFTWARE.
 * Revision 8.1  2000/02/04 15:29:49  vsx
 * SR234: remove extra tet_main() argument
 *
-* Revision 8.0  1998/12/23 23:34:37  mar
+* Revision 8.0  1998/12/23 23:34:38  mar
 * Branch point for Release 5.0.2
 *
-* Revision 7.0  1998/10/30 22:56:58  mar
+* Revision 7.0  1998/10/30 22:56:59  mar
 * Branch point for Release 5.0.2b1
 *
-* Revision 6.0  1998/03/02 05:25:55  tbr
+* Revision 6.0  1998/03/02 05:25:56  tbr
 * Branch point for Release 5.0.1
 *
 * Revision 5.0  1998/01/26 03:22:28  tbr
 * Branch point for Release 5.0.1b1
 *
-* Revision 4.0  1995/12/15 09:10:59  tbr
+* Revision 4.1  1996/01/30 04:02:59  andy
+* Modified trace statement to not print XENVIRONMENT as it is NULL.
+*
+* Revision 4.0  1995/12/15  09:11:02  tbr
 * Branch point for Release 5.0.0
 *
-* Revision 3.1  1995/12/15  01:13:34  andy
+* Revision 3.1  1995/12/15  01:13:37  andy
 * Prepare for GA Release
 *
 */
@@ -140,66 +143,59 @@ char *argv[];
 int		pass = 0, fail = 0;
 Display		*display;
 char		*prog = "XTest";
-char		*opt =  "testval32";
-char		*tres = "VAL_b";
+char		*opt;
+char		*tres;
 char		*res;
-char		*pval="XTest.testval31:pval_a\nXTest.testval32:pval_b\nXTest.testval33:pval3\n";
+char		*pval="XTest.testval51:pVAL_1\nXTest.testval52:pVAL_2\nXTest.testval53:pVAL_3\nTest.testval57:pval_7";
+int		i;
+static	char	*testval[] = { "testval51", "testval52", "testval56" , "testval57"};
+static	char	*result[]  = { "pVAL_1",    "hVAL_5",    "hVAL_6" , "hVAL_7"};
 
 	exec_startup();
 	tpstartup();
-	trace("Exec'd file ./Test3.");
+	trace("Exec'd file ./Test5 with HOME = \"%s\".", getenv("HOME"));
 
-	if(getenv("HOME") == (char *) NULL) {
-		delete("Environment variable \"HOME\" is not set.");
+	if(getenv("XENVIRONMENT") != (char *) NULL) {
+		delete("XENVIRONMENT environment variable was set.");
 		return;
 	} else
 		CHECK;
 
-	XDeleteProperty(Dsp, RootWindow(Dsp, 0), XA_RESOURCE_MANAGER);
-	XSync(Dsp, False);
-
-	display = opendisplay();
-	startcall(display);
-	res = XGetDefault(display, prog, opt);
-	endcall(display);
-
-	if( res == (char *) NULL) {
-		report("%s() returned NULL.", TestName);
-		FAIL;
-	} else {
+	if(getenv("HOME") == (char *) NULL) {
+		delete("HOME environment variable was not set.");
+		return;
+	} else
 		CHECK;
-		if(strcmp(res, tres) != 0) {
-			report("%s() with program \"%s\" and option \"%s\" returned \"%s\" instead of \"%s\".", TestName, prog, opt,  res, tres);
-			FAIL;
-		} else
-			CHECK;
-	}
 
 	XChangeProperty (Dsp, RootWindow(Dsp, 0), XA_RESOURCE_MANAGER, XA_STRING, 8, PropModeReplace, (unsigned char *)pval, 1+strlen(pval));
 	XSync(Dsp, False);
 
-	display = opendisplay();
-	tres = "pval_b";
+	display = opendisplay();  /* Should merge $HOME/.Xdefaults-<name> file with existing database. */
 
-	startcall(display);
-	res = XGetDefault(display, prog, opt);
-	endcall(display);
+	for(i=0; i< NELEM(testval); i++) {
 
-	if(res == (char *) NULL) {
-		report("%s() returned NULL.", TestName);
-		FAIL;
-	} else {
-		CHECK;
-
-		if(strcmp(res, tres) != 0) {
-			report("%s() with program \"%s\" and option \"%s\" returned \"%s\" instead of \"%s\"", TestName, prog, opt, res, tres);
+		opt  = testval[i];
+		tres = result[i];
+	
+		startcall(display);
+		res = XGetDefault(display, prog, opt);
+		endcall(display);
+	
+		if( res == (char *) NULL) {
+			report("%s() returned NULL with program = \"%s\" and option = \"%s\".", TestName, prog, opt);
 			FAIL;
-		} else
+		} else {
 			CHECK;
+			if(strcmp(res, tres) != 0) {
+				report("%s() with program = \"%s\" and option = \"%s\" returned \"%s\" instead of \"%s\".", TestName, prog, opt, res, tres);
+				FAIL;
+			} else
+				CHECK;
+		}
+
 	}
 
-
-	CHECKPASS(5);
+      	CHECKPASS(2 + 2*NELEM(testval));
 	tpcleanup();
 	exec_cleanup();
 }

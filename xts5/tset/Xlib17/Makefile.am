@@ -23,7 +23,7 @@ tprogs = \
 	XFindContext/XFindContext \
 	XFetchBuffer/XFetchBuffer \
 	XFetchBytes/XFetchBytes \
-	gtdflt/gtdflt \
+	XGetDefault/XGetDefault \
 	gtpxl/gtpxl \
 	gtvslinf/gtvslinf \
 	intrsctrgn/intrsctrgn \
@@ -67,9 +67,9 @@ tprogs = \
 
 # Auxiliary programs run from tests
 check_PROGRAMS += \
-	gtdflt/Test3 \
-	gtdflt/Test4 \
-	gtdflt/Test5
-gtdflt_Test3_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
-gtdflt_Test4_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
-gtdflt_Test5_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
+	XGetDefault/Test3 \
+	XGetDefault/Test4 \
+	XGetDefault/Test5
+XGetDefault_Test3_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
+XGetDefault_Test4_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
+XGetDefault_Test5_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)

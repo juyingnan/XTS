@@ -84,7 +84,7 @@
 	"VSW5TESTSUITE CASE XFetchBytes 2"
 	/tset/Xlib17/XFetchBytes/XFetchBytes
 	"VSW5TESTSUITE CASE XGetDefault 5"
-	/tset/Xlib17/gtdflt/gtdflt
+	/tset/Xlib17/XGetDefault/XGetDefault
 	"VSW5TESTSUITE CASE XGetPixel 1"
 	/tset/Xlib17/gtpxl/gtpxl
 	"VSW5TESTSUITE CASE XGetVisualInfo 3"

@@ -1708,7 +1708,7 @@ XFetchBytes
 
 XGetDefault
 	"VSW5TESTSUITE CASE XGetDefault 5"
-	/tset/Xlib17/gtdflt/gtdflt
+	/tset/Xlib17/XGetDefault/XGetDefault
 
 XGetPixel
 	"VSW5TESTSUITE CASE XGetPixel 1"
