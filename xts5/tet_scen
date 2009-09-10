@@ -1459,7 +1459,7 @@ XSetIconSizes
 
 XSetRGBColormaps
 	"VSW5TESTSUITE CASE XSetRGBColormaps 4"
-	/tset/Xlib15/strgbclrmp/strgbclrmp
+	/tset/Xlib15/XSetRGBColormaps/XSetRGBColormaps
 
 XStringListToTextProperty
 	"VSW5TESTSUITE CASE XStringListToTextProperty 3"

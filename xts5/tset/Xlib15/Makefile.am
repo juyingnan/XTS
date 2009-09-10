@@ -40,7 +40,7 @@ tprogs = \
 	XSetCommand/XSetCommand \
 	XSetIconName/XSetIconName \
 	XSetIconSizes/XSetIconSizes \
-	strgbclrmp/strgbclrmp \
+	XSetRGBColormaps/XSetRGBColormaps \
 	strlstttxt/strlstttxt \
 	strnm/strnm \
 	sttrnsntfr/sttrnsntfr \
