@@ -660,7 +660,7 @@ XShapeCombineRectangles
 
 XShapeCombineRegion
 	"VSW5TESTSUITE CASE XShapeCombineRegion 1"
-	/tset/SHAPE/tshpcregn/tshpcregn
+	/tset/SHAPE/XShapeCombineRegion/XShapeCombineRegion
 
 XShapeCombineShape
 	"VSW5TESTSUITE CASE XShapeCombineShape 1"
