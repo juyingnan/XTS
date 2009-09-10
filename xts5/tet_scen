@@ -3836,7 +3836,7 @@ XtUnmanageChildren
 
 XtUnmanageChild
 	"VSW5TESTSUITE CASE XtUnmanageChild 7"
-	/tset/Xt5/tunmgchld/tunmgchld
+	/tset/Xt5/XtUnmanageChild/XtUnmanageChild
 
 XtIsManaged
 	"VSW5TESTSUITE CASE XtIsManaged 3"

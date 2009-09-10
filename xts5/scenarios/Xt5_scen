@@ -69,7 +69,7 @@
 	"VSW5TESTSUITE CASE XtUnmanageChildren 8"
 	/tset/Xt5/XtUnmanageChildren/XtUnmanageChildren
 	"VSW5TESTSUITE CASE XtUnmanageChild 7"
-	/tset/Xt5/tunmgchld/tunmgchld
+	/tset/Xt5/XtUnmanageChild/XtUnmanageChild
 	"VSW5TESTSUITE CASE XtIsManaged 3"
 	/tset/Xt5/XtIsManaged/XtIsManaged
 	"VSW5TESTSUITE CASE XtSetMappedWhenManaged 2"
