@@ -60,7 +60,7 @@ tprogs = \
 	CopyColormapAndFree/CopyColormapAndFree \
 	CreateColormap/CreateColormap \
 	FreeColormap/FreeColormap \
-	frclrs/frclrs \
+	FreeColors/FreeColors \
 	lkpclr/lkpclr \
 	prsclr/prsclr \
 	qryclr/qryclr \

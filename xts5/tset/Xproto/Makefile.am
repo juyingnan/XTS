@@ -45,7 +45,7 @@ tprogs = \
 	DestroyWindow/DestroyWindow \
 	FillPoly/FillPoly \
 	FreeColormap/FreeColormap \
-	frclrs/frclrs \
+	FreeColors/FreeColors \
 	frcrsr/frcrsr \
 	frcscrnsvr/frcscrnsvr \
 	frgc/frgc \

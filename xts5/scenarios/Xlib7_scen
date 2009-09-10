@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE XFreeColormap 5"
 	/tset/Xlib7/FreeColormap/FreeColormap
 	"VSW5TESTSUITE CASE XFreeColors 9"
-	/tset/Xlib7/frclrs/frclrs
+	/tset/Xlib7/FreeColors/FreeColors
 	"VSW5TESTSUITE CASE XLookupColor 4"
 	/tset/Xlib7/lkpclr/lkpclr
 	"VSW5TESTSUITE CASE XParseColor 10"
