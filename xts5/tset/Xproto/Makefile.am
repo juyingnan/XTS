@@ -85,7 +85,7 @@ tprogs = \
 	MapSubwindows/MapSubwindows \
 	MapWindow/MapWindow \
 	NoOperation/NoOperation \
-	OpenDisplay/OpenDisplay \
+	XOpenDisplay/XOpenDisplay \
 	OpenFont/OpenFont \
 	PolyArc/PolyArc \
 	PolyFillArc/PolyFillArc \

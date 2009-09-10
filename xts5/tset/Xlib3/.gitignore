@@ -78,7 +78,7 @@ XNoOp/XNoOp
 XNextRequest/XNextRequest
 XNextRequest/XNextRequest_m
 opndsply/Test1
-OpenDisplay/OpenDisplay
+XOpenDisplay/XOpenDisplay
 plnsofscrn/plnsofscrn
 plnsofscrn/plnsofscrn_m
 prtclrvsn/prtclrvsn

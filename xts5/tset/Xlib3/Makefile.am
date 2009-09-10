@@ -51,7 +51,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XMaxCmapsOfScreen/XMaxCmapsOfScreen XMaxCmapsOfScreen/XMaxCmapsOfScreen_m \
 	XNoOp/XNoOp \
 	XNextRequest/XNextRequest XNextRequest/XNextRequest_m \
-	OpenDisplay/OpenDisplay \
+	XOpenDisplay/XOpenDisplay \
 	plnsofscrn/plnsofscrn plnsofscrn/plnsofscrn_m \
 	prtclrvsn/prtclrvsn prtclrvsn/prtclrvsn_m \
 	prtclvrsn/prtclvrsn prtclvrsn/prtclvrsn_m \
@@ -72,6 +72,6 @@ tprogs = XAllPlanes/XAllPlanes \
 # Auxiliary programs run from tests
 check_PROGRAMS += \
 	XDisplayString/Test1 \
-	OpenDisplay/Test1
+	XOpenDisplay/Test1
 XDisplayString_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
-OpenDisplay_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
+XOpenDisplay_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
