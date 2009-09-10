@@ -1172,7 +1172,7 @@ XCloseIM
 
 XContextDependentDrawing
 	"VSW5TESTSUITE CASE XContextDependentDrawing 1"
-	/tset/Xlib14/condd/condd
+	/tset/Xlib14/XContextDependentDrawing/XContextDependentDrawing
 
 XCreateFontSet
 	"VSW5TESTSUITE CASE XCreateFontSet 1"

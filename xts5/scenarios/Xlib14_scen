@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE XCloseIM 1"
 	/tset/Xlib14/XCloseIM/XCloseIM
 	"VSW5TESTSUITE CASE XContextDependentDrawing 1"
-	/tset/Xlib14/condd/condd
+	/tset/Xlib14/XContextDependentDrawing/XContextDependentDrawing
 	"VSW5TESTSUITE CASE XCreateFontSet 1"
 	/tset/Xlib14/crfset/crfset
 	"VSW5TESTSUITE CASE XCreateIC 1"

@@ -12,7 +12,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = \
 	XBaseFontNameListOfFontSet/XBaseFontNameListOfFontSet \
 	XCloseIM/XCloseIM \
-	condd/condd \
+	XContextDependentDrawing/XContextDependentDrawing \
 	crfset/crfset \
 	crtic/crtic \
 	desic/desic \
