@@ -83,7 +83,7 @@ tprogs = \
 	XListInstalledColormaps/XListInstalledColormaps \
 	ListProperties/ListProperties \
 	XMapSubwindows/XMapSubwindows \
-	MapWindow/MapWindow \
+	XMapWindow/XMapWindow \
 	NoOperation/NoOperation \
 	XOpenDisplay/XOpenDisplay \
 	OpenFont/OpenFont \

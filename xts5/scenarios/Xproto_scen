@@ -204,7 +204,7 @@
 	"VSW5TESTSUITE CASE MapSubwindows 3"
 	/tset/Xproto/XMapSubwindows/XMapSubwindows
 	"VSW5TESTSUITE CASE MapWindow 3"
-	/tset/Xproto/MapWindow/MapWindow
+	/tset/Xproto/XMapWindow/XMapWindow
 	"VSW5TESTSUITE CASE NoOperation 4"
 	/tset/Xproto/NoOperation/NoOperation
 	"VSW5TESTSUITE CASE OpenDisplay 2"

@@ -22,7 +22,7 @@ tprogs = \
 	XLowerWindow/XLowerWindow \
 	mprsd/mprsd \
 	XMapSubwindows/XMapSubwindows \
-	MapWindow/MapWindow \
+	XMapWindow/XMapWindow \
 	mvrszwdw/mvrszwdw \
 	mvwdw/mvwdw \
 	rstckwdws/rstckwdws \
