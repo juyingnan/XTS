@@ -96,7 +96,7 @@
 	"VSW5TESTSUITE CASE XcmsCCCOfColormap 1"
 	/tset/Xlib7/XcmsCCCOfColormap/XcmsCCCOfColormap
 	"VSW5TESTSUITE CASE XcmsConvertColors 1"
-	/tset/Xlib7/cmsccol/cmsccol
+	/tset/Xlib7/XcmsConvertColors/XcmsConvertColors
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxLC 1"
 	/tset/Xlib7/cmscielq/cmscielq
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxC 1"

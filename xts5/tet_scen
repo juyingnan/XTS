@@ -2611,7 +2611,7 @@ XcmsCCCOfColormap
 
 XcmsConvertColors
 	"VSW5TESTSUITE CASE XcmsConvertColors 1"
-	/tset/Xlib7/cmsccol/cmsccol
+	/tset/Xlib7/XcmsConvertColors/XcmsConvertColors
 
 XcmsCIELabQueryMaxLC
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxLC 1"
