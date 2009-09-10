@@ -1963,7 +1963,7 @@ XDisplayCells
 
 XDisplayHeight
 	"VSW5TESTSUITE CASE XDisplayHeight 1"
-	/tset/Xlib3/dsplyhght/dsplyhght
+	/tset/Xlib3/XDisplayHeight/XDisplayHeight
 
 XDisplayHeightMM
 	"VSW5TESTSUITE CASE XDisplayHeightMM 1"
@@ -2191,7 +2191,7 @@ DisplayCells
 
 DisplayHeight
 	"VSW5TESTSUITE CASE DisplayHeight 1"
-	/tset/Xlib3/dsplyhght/dsplyhght_m
+	/tset/Xlib3/XDisplayHeight/XDisplayHeight_m
 
 DisplayHeightMM
 	"VSW5TESTSUITE CASE DisplayHeightMM 1"
