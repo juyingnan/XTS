@@ -79,7 +79,7 @@
 	"VSW5TESTSUITE CASE XtIsWidget 2"
 	/tset/Xt3/tiswdgt/tiswdgt
 	"VSW5TESTSUITE CASE XtIsComposite 2"
-	/tset/Xt3/tiscmpst/tiscmpst
+	/tset/Xt3/XtIsComposite/XtIsComposite
 	"VSW5TESTSUITE CASE XtIsConstraint 2"
 	/tset/Xt3/tiscnstrnt/tiscnstrnt
 	"VSW5TESTSUITE CASE XtIsShell 2"
