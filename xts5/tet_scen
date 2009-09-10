@@ -3810,7 +3810,7 @@ XtUnrealizeWidget
 
 XtDestroyWidget
 	"VSW5TESTSUITE CASE XtDestroyWidget 3"
-	/tset/Xt4/tdestywid/tdestywid
+	/tset/Xt4/XtDestroyWidget/XtDestroyWidget
 
 #Discrete tests for Xt Chapter 5
 

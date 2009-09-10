@@ -126,4 +126,4 @@
 	"VSW5TESTSUITE CASE XtUnrealizeWidget 4"
 	/tset/Xt4/tunrlzwgt/tunrlzwgt
 	"VSW5TESTSUITE CASE XtDestroyWidget 3"
-	/tset/Xt4/tdestywid/tdestywid
+	/tset/Xt4/XtDestroyWidget/XtDestroyWidget
