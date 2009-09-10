@@ -45,7 +45,7 @@ tprogs = \
 	XcmsQueryRed/XcmsQueryRed \
 	XcmsQueryWhite/XcmsQueryWhite \
 	XcmsScreenNumberOfCCC/XcmsScreenNumberOfCCC \
-	cmsstclr/cmsstclr \
+	XcmsStoreColor/XcmsStoreColor \
 	cmsstcls/cmsstcls \
 	cmstqmc/cmstqmc \
 	cmstqmiv/cmstqmiv \

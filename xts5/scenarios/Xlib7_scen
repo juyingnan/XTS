@@ -148,7 +148,7 @@
 	"VSW5TESTSUITE CASE XcmsScreenNumberOfCCC 1"
 	/tset/Xlib7/XcmsScreenNumberOfCCC/XcmsScreenNumberOfCCC
 	"VSW5TESTSUITE CASE XcmsStoreColor 4"
-	/tset/Xlib7/cmsstclr/cmsstclr
+	/tset/Xlib7/XcmsStoreColor/XcmsStoreColor
 	"VSW5TESTSUITE CASE XcmsStoreColors 4"
 	/tset/Xlib7/cmsstcls/cmsstcls
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxC 1"
