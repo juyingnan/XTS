@@ -21,7 +21,7 @@ tprogs = \
 	XrmGetDatabase/XrmGetDatabase \
 	XrmGetFileDatabase/XrmGetFileDatabase \
 	XrmGetResource/XrmGetResource \
-	rmgtstrdtb/rmgtstrdtb \
+	XrmGetStringDatabase/XrmGetStringDatabase \
 	rmintlz/rmintlz \
 	rmloofdt/rmloofdt \
 	rmmrgdtbss/rmmrgdtbss \

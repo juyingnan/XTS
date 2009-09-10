@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE XrmGetResource 2"
 	/tset/Xlib16/XrmGetResource/XrmGetResource
 	"VSW5TESTSUITE CASE XrmGetStringDatabase 2"
-	/tset/Xlib16/rmgtstrdtb/rmgtstrdtb
+	/tset/Xlib16/XrmGetStringDatabase/XrmGetStringDatabase
 	"VSW5TESTSUITE CASE XrmInitialize 1"
 	/tset/Xlib16/rmintlz/rmintlz
 	"VSW5TESTSUITE CASE XrmMergeDatabases 6"
