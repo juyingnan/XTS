@@ -212,7 +212,7 @@
 	"VSW5TESTSUITE CASE OpenFont 5"
 	/tset/Xproto/OpenFont/OpenFont
 	"VSW5TESTSUITE CASE PolyArc 3"
-	/tset/Xproto/plyarc/plyarc
+	/tset/Xproto/PolyArc/PolyArc
 	"VSW5TESTSUITE CASE PolyFillArc 3"
 	/tset/Xproto/plyfllarc/plyfllarc
 	"VSW5TESTSUITE CASE PolyFillRectangle 3"

@@ -3418,7 +3418,7 @@ pOpenFont
 
 pPolyArc
 	"VSW5TESTSUITE CASE PolyArc 3"
-	/tset/Xproto/plyarc/plyarc
+	/tset/Xproto/PolyArc/PolyArc
 
 pPolyFillArc
 	"VSW5TESTSUITE CASE PolyFillArc 3"

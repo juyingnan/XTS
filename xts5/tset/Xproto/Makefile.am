@@ -87,7 +87,7 @@ tprogs = \
 	NoOperation/NoOperation \
 	OpenDisplay/OpenDisplay \
 	OpenFont/OpenFont \
-	plyarc/plyarc \
+	PolyArc/PolyArc \
 	plyfllarc/plyfllarc \
 	plyfllrctn/plyfllrctn \
 	plyln/plyln \
