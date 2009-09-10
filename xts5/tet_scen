@@ -2342,7 +2342,7 @@ XCreateWindow
 
 XDefineCursor
 	"VSW5TESTSUITE CASE XDefineCursor 6"
-	/tset/Xlib4/dfncrsr/dfncrsr
+	/tset/Xlib4/XDefineCursor/XDefineCursor
 
 XDestroySubwindows
 	"VSW5TESTSUITE CASE XDestroySubwindows 5"

@@ -10,7 +10,7 @@ XCreateSimpleWindow/XCreateSimpleWindow
 XCreateWindow/XCreateWindow
 crtwdw/mcassert.tmc.2529
 crtwdw/mcstrategy.tmc.2529
-dfncrsr/dfncrsr
+XDefineCursor/XDefineCursor
 XDestroySubwindows/XDestroySubwindows
 XDestroyWindow/XDestroyWindow
 lwrwdw/lwrwdw

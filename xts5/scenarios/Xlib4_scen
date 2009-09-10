@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE XCreateWindow 49"
 	/tset/Xlib4/XCreateWindow/XCreateWindow
 	"VSW5TESTSUITE CASE XDefineCursor 6"
-	/tset/Xlib4/dfncrsr/dfncrsr
+	/tset/Xlib4/XDefineCursor/XDefineCursor
 	"VSW5TESTSUITE CASE XDestroySubwindows 5"
 	/tset/Xlib4/XDestroySubwindows/XDestroySubwindows
 	"VSW5TESTSUITE CASE XDestroyWindow 6"
