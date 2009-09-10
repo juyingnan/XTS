@@ -20,7 +20,7 @@ tprogs = \
 	XDrawLine/XDrawLine \
 	XDrawLines/XDrawLines \
 	XDrawPoint/XDrawPoint \
-	drwpnts/drwpnts \
+	XDrawPoints/XDrawPoints \
 	drwrctngl/drwrctngl \
 	drwrctngls/drwrctngls \
 	drwsgmnts/drwsgmnts \
