@@ -36,7 +36,7 @@ tprogs = \
 	NoExpose/NoExpose \
 	PropertyNotify/PropertyNotify \
 	ReparentNotify/ReparentNotify \
-	rszrqst/rszrqst \
+	ResizeRequest/ResizeRequest \
 	slctnclr/slctnclr \
 	slctnntfy/slctnntfy \
 	slctnrqst/slctnrqst \

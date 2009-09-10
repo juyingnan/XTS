@@ -896,7 +896,7 @@ ReparentNotify
 
 ResizeRequest
 	"VSW5TESTSUITE CASE ResizeRequest 2"
-	/tset/Xlib11/rszrqst/rszrqst
+	/tset/Xlib11/ResizeRequest/ResizeRequest
 
 SelectionClear
 	"VSW5TESTSUITE CASE SelectionClear 1"
