@@ -33,7 +33,7 @@ tprogs = \
 	XSetWindowBorder/XSetWindowBorder \
 	XSetWindowBorderPixmap/XSetWindowBorderPixmap \
 	XSetWindowBorderWidth/XSetWindowBorderWidth \
-	stwdwclrmp/stwdwclrmp \
+	XSetWindowColormap/XSetWindowColormap \
 	undfncrsr/undfncrsr \
 	UnmapSubwindows/UnmapSubwindows \
 	UnmapWindow/UnmapWindow \
