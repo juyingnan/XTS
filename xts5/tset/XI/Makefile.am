@@ -44,4 +44,4 @@ tprogs = \
 	XSendExtensionEvent/XSendExtensionEvent \
 	XUngrabDevice/XUngrabDevice \
 	XUngrabDeviceButton/XUngrabDeviceButton \
-	ungrbdvky/ungrbdvky
+	XUngrabDeviceKey/XUngrabDeviceKey

@@ -642,7 +642,7 @@ XUngrabDeviceButton
 
 XUngrabDeviceKey
 	"VSW5TESTSUITE CASE XUngrabDeviceKey 12"
-	/tset/XI/ungrbdvky/ungrbdvky
+	/tset/XI/XUngrabDeviceKey/XUngrabDeviceKey
 
 # Discrete tests for Shape Extension Tests
 
