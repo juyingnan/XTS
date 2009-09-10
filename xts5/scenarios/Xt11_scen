@@ -121,7 +121,7 @@
 	"VSW5TESTSUITE CASE XtCvtIntToBool 3"
 	/tset/Xt11/XtCvtIntToBool/XtCvtIntToBool
 	"VSW5TESTSUITE CASE XtCvtIntToColor 4"
-	/tset/Xt11/tcincolr/tcincolr
+	/tset/Xt11/XtCvtIntToColor/XtCvtIntToColor
 	"VSW5TESTSUITE CASE XtCvtIntToDimension 3"
 	/tset/Xt11/tcindim/tcindim
 	"VSW5TESTSUITE CASE XtCvtIntToFloat 3"
