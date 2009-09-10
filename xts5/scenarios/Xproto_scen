@@ -170,7 +170,7 @@
 	"VSW5TESTSUITE CASE GetPointerMapping 3"
 	/tset/Xproto/GetPointerMapping/GetPointerMapping
 	"VSW5TESTSUITE CASE GetProperty 3"
-	/tset/Xproto/gtprprty/gtprprty
+	/tset/Xproto/GetProperty/GetProperty
 	"VSW5TESTSUITE CASE GetScreenSaver 3"
 	/tset/Xproto/gtscrnsvr/gtscrnsvr
 	"VSW5TESTSUITE CASE GetSelectionOwner 3"

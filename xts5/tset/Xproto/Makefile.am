@@ -66,7 +66,7 @@ tprogs = \
 	GetMotionEvents/GetMotionEvents \
 	GetPointerControl/GetPointerControl \
 	GetPointerMapping/GetPointerMapping \
-	gtprprty/gtprprty \
+	GetProperty/GetProperty \
 	gtscrnsvr/gtscrnsvr \
 	gtslctnown/gtslctnown \
 	gtwdwattrb/gtwdwattrb \

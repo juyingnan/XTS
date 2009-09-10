@@ -3334,7 +3334,7 @@ pGetPointerMapping
 
 pGetProperty
 	"VSW5TESTSUITE CASE GetProperty 3"
-	/tset/Xproto/gtprprty/gtprprty
+	/tset/Xproto/GetProperty/GetProperty
 
 pGetScreenSaver
 	"VSW5TESTSUITE CASE GetScreenSaver 3"
