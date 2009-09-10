@@ -2358,7 +2358,7 @@ XLowerWindow
 
 XMapRaised
 	"VSW5TESTSUITE CASE XMapRaised 15"
-	/tset/Xlib4/mprsd/mprsd
+	/tset/Xlib4/XMapRaised/XMapRaised
 
 XMapSubwindows
 	"VSW5TESTSUITE CASE XMapSubwindows 14"

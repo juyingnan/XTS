@@ -78,7 +78,7 @@
 	"VSW5TESTSUITE CASE XLowerWindow 4"
 	/tset/Xlib4/XLowerWindow/XLowerWindow
 	"VSW5TESTSUITE CASE XMapRaised 15"
-	/tset/Xlib4/mprsd/mprsd
+	/tset/Xlib4/XMapRaised/XMapRaised
 	"VSW5TESTSUITE CASE XMapSubwindows 14"
 	/tset/Xlib4/XMapSubwindows/XMapSubwindows
 	"VSW5TESTSUITE CASE XMapWindow 15"
