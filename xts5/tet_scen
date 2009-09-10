@@ -1340,7 +1340,7 @@ XwcTextPropertyToTextList
 
 XwcTextExtents
 	"VSW5TESTSUITE CASE XwcTextExtents 1"
-	/tset/Xlib14/wctxtex/wctxtex
+	/tset/Xlib14/XwcTextExtents/XwcTextExtents
 
 
 # Discrete tests for Xlib Chapter 15-Inter-Client Communication Functions

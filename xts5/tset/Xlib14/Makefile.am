@@ -54,4 +54,4 @@ tprogs = \
 	XwcTextListToTextProperty/XwcTextListToTextProperty \
 	XwcTextPerCharExtents/XwcTextPerCharExtents \
 	XwcTextPropertyToTextList/XwcTextPropertyToTextList \
-	wctxtex/wctxtex
+	XwcTextExtents/XwcTextExtents

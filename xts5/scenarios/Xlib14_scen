@@ -144,4 +144,4 @@
 	"VSW5TESTSUITE CASE XwcTextPropertyToTextList 1"
 	/tset/Xlib14/XwcTextPropertyToTextList/XwcTextPropertyToTextList
 	"VSW5TESTSUITE CASE XwcTextExtents 1"
-	/tset/Xlib14/wctxtex/wctxtex
+	/tset/Xlib14/XwcTextExtents/XwcTextExtents
