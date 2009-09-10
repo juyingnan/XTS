@@ -884,7 +884,7 @@ MotionNotify
 
 NoExpose
 	"VSW5TESTSUITE CASE NoExpose 1"
-	/tset/Xlib11/nexps/nexps
+	/tset/Xlib11/NoExpose/NoExpose
 
 PropertyNotify
 	"VSW5TESTSUITE CASE PropertyNotify 2"
