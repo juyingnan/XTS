@@ -130,7 +130,7 @@
 	"VSW5TESTSUITE CASE XwcDrawText 1"
 	/tset/Xlib14/XwcDrawText/XwcDrawText
 	"VSW5TESTSUITE CASE XwcFreeStringList 1"
-	/tset/Xlib14/wcfstli/wcfstli
+	/tset/Xlib14/XwcFreeStringList/XwcFreeStringList
 	"VSW5TESTSUITE CASE XwcLookupString 3"
 	/tset/Xlib14/wclustr/wclustr
 	"VSW5TESTSUITE CASE XwcResetIC 1"

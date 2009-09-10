@@ -47,7 +47,7 @@ tprogs = \
 	XwcDrawImageString/XwcDrawImageString \
 	XwcDrawString/XwcDrawString \
 	XwcDrawText/XwcDrawText \
-	wcfstli/wcfstli \
+	XwcFreeStringList/XwcFreeStringList \
 	wclustr/wclustr \
 	wcreic/wcreic \
 	wctesc/wctesc \
