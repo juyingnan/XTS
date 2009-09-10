@@ -100,7 +100,7 @@
 	"VSW5TESTSUITE CASE XGetWMSizeHints 6"
 	/tset/Xlib15/XGetWMSizeHints/XGetWMSizeHints
 	"VSW5TESTSUITE CASE XIconifyWindow 3"
-	/tset/Xlib15/icnfywdw/icnfywdw
+	/tset/Xlib15/XIconifyWindow/XIconifyWindow
 	"VSW5TESTSUITE CASE XReconfigureWMWindow 5"
 	/tset/Xlib15/rcnfgrwmwd/rcnfgrwmwd
 	"VSW5TESTSUITE CASE XSetClassHint 3"

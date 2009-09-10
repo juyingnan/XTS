@@ -34,7 +34,7 @@ tprogs = \
 	XGetWMNormalHints/XGetWMNormalHints \
 	XGetWMProtocols/XGetWMProtocols \
 	XGetWMSizeHints/XGetWMSizeHints \
-	icnfywdw/icnfywdw \
+	XIconifyWindow/XIconifyWindow \
 	rcnfgrwmwd/rcnfgrwmwd \
 	stclsshnt/stclsshnt \
 	stcmmnd/stcmmnd \

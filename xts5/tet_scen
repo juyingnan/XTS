@@ -1435,7 +1435,7 @@ XGetWMSizeHints
 
 XIconifyWindow
 	"VSW5TESTSUITE CASE XIconifyWindow 3"
-	/tset/Xlib15/icnfywdw/icnfywdw
+	/tset/Xlib15/XIconifyWindow/XIconifyWindow
 
 XReconfigureWMWindow
 	"VSW5TESTSUITE CASE XReconfigureWMWindow 5"
