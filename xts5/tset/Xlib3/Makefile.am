@@ -62,7 +62,7 @@ tprogs = allplns/allplns \
 	scrnnmbrof/scrnnmbrof \
 	scrnofdspl/scrnofdspl scrnofdspl/scrnofdspl_m \
 	srvrvndr/srvrvndr srvrvndr/srvrvndr_m \
-	stclsdwnmd/stclsdwnmd \
+	SetCloseDownMode/SetCloseDownMode \
 	vndrrls/vndrrls vndrrls/vndrrls_m \
 	wdthmmofsc/wdthmmofsc wdthmmofsc/wdthmmofsc_m \
 	wdthofscrn/wdthofscrn wdthofscrn/wdthofscrn_m \

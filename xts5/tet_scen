@@ -2091,7 +2091,7 @@ XServerVendor
 
 XSetCloseDownMode
 	"VSW5TESTSUITE CASE XSetCloseDownMode 7"
-	/tset/Xlib3/stclsdwnmd/stclsdwnmd
+	/tset/Xlib3/SetCloseDownMode/SetCloseDownMode
 
 XWidthMMOfScreen
 	"VSW5TESTSUITE CASE XWidthMMOfScreen 1"
@@ -3514,7 +3514,7 @@ pSetClipRectangles
 
 pSetCloseDownMode
 	"VSW5TESTSUITE CASE SetCloseDownMode 3"
-	/tset/Xproto/stclsdwnmd/stclsdwnmd
+	/tset/Xproto/SetCloseDownMode/SetCloseDownMode
 
 pSetDashes
 	"VSW5TESTSUITE CASE SetDashes 3"

@@ -260,7 +260,7 @@
 	"VSW5TESTSUITE CASE SetClipRectangles 3"
 	/tset/Xproto/SetClipRectangles/SetClipRectangles
 	"VSW5TESTSUITE CASE SetCloseDownMode 3"
-	/tset/Xproto/stclsdwnmd/stclsdwnmd
+	/tset/Xproto/SetCloseDownMode/SetCloseDownMode
 	"VSW5TESTSUITE CASE SetDashes 3"
 	/tset/Xproto/stdshs/stdshs
 	"VSW5TESTSUITE CASE SetFontPath 3"

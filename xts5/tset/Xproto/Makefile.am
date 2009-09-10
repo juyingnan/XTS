@@ -111,7 +111,7 @@ tprogs = \
 	SendEvent/SendEvent \
 	SetAccessControl/SetAccessControl \
 	SetClipRectangles/SetClipRectangles \
-	stclsdwnmd/stclsdwnmd \
+	SetCloseDownMode/SetCloseDownMode \
 	stdshs/stdshs \
 	stfntpth/stfntpth \
 	stinptfcs/stinptfcs \
