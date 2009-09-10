@@ -2414,7 +2414,7 @@ XSetWindowColormap
 
 XUndefineCursor
 	"VSW5TESTSUITE CASE XUndefineCursor 3"
-	/tset/Xlib4/undfncrsr/undfncrsr
+	/tset/Xlib4/XUndefineCursor/XUndefineCursor
 
 XUnmapSubwindows
 	"VSW5TESTSUITE CASE XUnmapSubwindows 5"
