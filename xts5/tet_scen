@@ -702,7 +702,7 @@ XAddHost
 
 XAddHosts
 	"VSW5TESTSUITE CASE XAddHosts 3"
-	/tset/Xlib10/addhsts/addhsts
+	/tset/Xlib10/XAddHosts/XAddHosts
 
 XAddToSaveSet
 	"VSW5TESTSUITE CASE XAddToSaveSet 8"

@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE XAddHost 3"
 	/tset/Xlib10/XAddHost/XAddHost
 	"VSW5TESTSUITE CASE XAddHosts 3"
-	/tset/Xlib10/addhsts/addhsts
+	/tset/Xlib10/XAddHosts/XAddHosts
 	"VSW5TESTSUITE CASE XAddToSaveSet 8"
 	/tset/Xlib10/addtsvst/addtsvst
 	"VSW5TESTSUITE CASE XChangeSaveSet 5"
