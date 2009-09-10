@@ -4016,7 +4016,7 @@ XtGrabPointer
 
 XtUngrabPointer
 	"VSW5TESTSUITE CASE XtUngrabPointer 1"
-	/tset/Xt9/tunpointr/tunpointr
+	/tset/Xt9/XtUngrabPointer/XtUngrabPointer
 
 XtSetKeyboardFocus
 	"VSW5TESTSUITE CASE XtSetKeyboardFocus 17"
