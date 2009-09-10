@@ -4521,7 +4521,7 @@ XtGetSelectionValues
 
 XtOwnSelection
 	"VSW5TESTSUITE CASE XtOwnSelection 8"
-	/tset/Xt13/townselec/townselec
+	/tset/Xt13/XtOwnSelection/XtOwnSelection
 
 XtDisownSelection
 	"VSW5TESTSUITE CASE XtDisownSelection 5"
