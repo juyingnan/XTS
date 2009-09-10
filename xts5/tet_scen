@@ -1027,7 +1027,7 @@ XSynchronize
 
 XWindowEvent
 	"VSW5TESTSUITE CASE XWindowEvent 3"
-	/tset/Xlib12/wdwevnt/wdwevnt
+	/tset/Xlib12/XWindowEvent/XWindowEvent
 
 
 # Discrete tests for Xlib Chapter 13-Input Device Functions

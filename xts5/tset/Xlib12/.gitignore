@@ -25,4 +25,4 @@ XSetErrorHandler/XSetErrorHandler
 XSetIOErrorHandler/XSetIOErrorHandler
 XSync/XSync
 XSynchronize/XSynchronize
-wdwevnt/wdwevnt
+XWindowEvent/XWindowEvent

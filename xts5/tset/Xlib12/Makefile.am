@@ -35,7 +35,7 @@ tprogs = \
 	XSetIOErrorHandler/XSetIOErrorHandler \
 	XSync/XSync \
 	XSynchronize/XSynchronize \
-	wdwevnt/wdwevnt
+	XWindowEvent/XWindowEvent
 
 # Auxiliary programs run from tests
 check_PROGRAMS += XDisplayName/Test1
