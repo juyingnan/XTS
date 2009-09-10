@@ -2805,7 +2805,7 @@ XSetArcMode
 
 XSetBackground
 	"VSW5TESTSUITE CASE XSetBackground 3"
-	/tset/Xlib8/stbg/stbg
+	/tset/Xlib8/XSetBackground/XSetBackground
 
 XSetClipMask
 	"VSW5TESTSUITE CASE XSetClipMask 7"

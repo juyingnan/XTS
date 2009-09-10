@@ -23,7 +23,7 @@ tprogs = \
 	XQueryBestSize/XQueryBestSize \
 	XQueryBestTile/XQueryBestTile \
 	XSetArcMode/XSetArcMode \
-	stbg/stbg \
+	XSetBackground/XSetBackground \
 	stclpmsk/stclpmsk \
 	stclporgn/stclporgn \
 	XSetClipRectangles/XSetClipRectangles \
