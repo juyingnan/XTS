@@ -1375,7 +1375,7 @@ XFetchName
 
 XGetClassHint
 	"VSW5TESTSUITE CASE XGetClassHint 3"
-	/tset/Xlib15/gtclsshnt/gtclsshnt
+	/tset/Xlib15/XGetClassHint/XGetClassHint
 
 XGetCommand
 	"VSW5TESTSUITE CASE XGetCommand 3"

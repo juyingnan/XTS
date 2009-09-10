@@ -19,7 +19,7 @@ tprogs = \
 	XDefaultString/XDefaultString \
 	XFreeStringList/XFreeStringList \
 	XFetchName/XFetchName \
-	gtclsshnt/gtclsshnt \
+	XGetClassHint/XGetClassHint \
 	gtcmmnd/gtcmmnd \
 	gticnnm/gticnnm \
 	gticnszs/gticnszs \
