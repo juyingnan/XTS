@@ -983,7 +983,7 @@ XNextEvent
 
 XPeekEvent
 	"VSW5TESTSUITE CASE XPeekEvent 3"
-	/tset/Xlib12/pkevnt/pkevnt
+	/tset/Xlib12/XPeekEvent/XPeekEvent
 
 XPeekIfEvent
 	"VSW5TESTSUITE CASE XPeekIfEvent 4"

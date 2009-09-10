@@ -24,7 +24,7 @@ tprogs = \
 	XIfEvent/XIfEvent \
 	XMaskEvent/XMaskEvent \
 	XNextEvent/XNextEvent \
-	pkevnt/pkevnt \
+	XPeekEvent/XPeekEvent \
 	pkifevnt/pkifevnt \
 	pndng/pndng \
 	ptbckevnt/ptbckevnt \
