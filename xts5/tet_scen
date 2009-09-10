@@ -4399,7 +4399,7 @@ XtOverrideTranslations
 
 XtUninstallTranslations
 	"VSW5TESTSUITE CASE XtUninstallTranslations 1"
-	/tset/Xt12/tuntrnsls/tuntrnsls
+	/tset/Xt12/XtUninstallTranslations/XtUninstallTranslations
 
 XtParseAcceleratorTable
 	"VSW5TESTSUITE CASE XtParseAcceleratorTable 1"
