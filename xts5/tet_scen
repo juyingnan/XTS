@@ -4553,7 +4553,7 @@ XtTranslateCoords
 
 XtWindowToWidget
 	"VSW5TESTSUITE CASE XtWindowToWidget 2"
-	/tset/Xt13/twindtowd/twindtowd
+	/tset/Xt13/XtWindowToWidget/XtWindowToWidget
 
 XtGetApplicationNameAndClass
 	"VSW5TESTSUITE CASE XtGetApplicationNameAndClass 3"
