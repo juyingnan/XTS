@@ -18,7 +18,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XCellsOfScreen/XCellsOfScreen XCellsOfScreen/XCellsOfScreen_m \
 	XCloseDisplay/XCloseDisplay \
 	XConnectionNumber/XConnectionNumber XConnectionNumber/XConnectionNumber_m \
-	dfltclrmp/dfltclrmp dfltclrmp/dfltclrmp_m \
+	XDefaultColormap/XDefaultColormap XDefaultColormap/XDefaultColormap_m \
 	dfltclrmpo/dfltclrmpo dfltclrmpo/dfltclrmpo_m \
 	dfltdpth/dfltdpth dfltdpth/dfltdpth_m \
 	dfltdpthof/dfltdpthof dfltdpthof/dfltdpthof_m \

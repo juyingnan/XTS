@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE XConnectionNumber 1"
 	/tset/Xlib3/XConnectionNumber/XConnectionNumber
 	"VSW5TESTSUITE CASE XDefaultColormap 1"
-	/tset/Xlib3/dfltclrmp/dfltclrmp
+	/tset/Xlib3/XDefaultColormap/XDefaultColormap
 	"VSW5TESTSUITE CASE XDefaultColormapOfScreen 1"
 	/tset/Xlib3/dfltclrmpo/dfltclrmpo
 	"VSW5TESTSUITE CASE XDefaultDepth 1"
@@ -188,7 +188,7 @@
 	"VSW5TESTSUITE CASE ConnectionNumber 1"
 	/tset/Xlib3/XConnectionNumber/XConnectionNumber_m
 	"VSW5TESTSUITE CASE DefaultColormap 1"
-	/tset/Xlib3/dfltclrmp/dfltclrmp_m
+	/tset/Xlib3/XDefaultColormap/XDefaultColormap_m
 	"VSW5TESTSUITE CASE DefaultColormapOfScreen 1"
 	/tset/Xlib3/dfltclrmpo/dfltclrmpo_m
 	"VSW5TESTSUITE CASE DefaultDepth 1"
