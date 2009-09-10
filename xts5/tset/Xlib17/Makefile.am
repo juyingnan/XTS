@@ -44,7 +44,7 @@ tprogs = \
 	XPointInRegion/XPointInRegion \
 	Xpermalloc/Xpermalloc \
 	XParseGeometry/XParseGeometry \
-	ptpxl/ptpxl \
+	XPutPixel/XPutPixel \
 	rbndkysym/rbndkysym \
 	rctinrgn/rctinrgn \
 	rdbtmpfl/rdbtmpfl \

@@ -1792,7 +1792,7 @@ XParseGeometry
 
 XPutPixel
 	"VSW5TESTSUITE CASE XPutPixel 1"
-	/tset/Xlib17/ptpxl/ptpxl
+	/tset/Xlib17/XPutPixel/XPutPixel
 
 XRebindKeysym
 	"VSW5TESTSUITE CASE XRebindKeysym 2"

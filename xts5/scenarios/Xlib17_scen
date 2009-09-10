@@ -126,7 +126,7 @@
 	"VSW5TESTSUITE CASE XParseGeometry 3"
 	/tset/Xlib17/XParseGeometry/XParseGeometry
 	"VSW5TESTSUITE CASE XPutPixel 1"
-	/tset/Xlib17/ptpxl/ptpxl
+	/tset/Xlib17/XPutPixel/XPutPixel
 	"VSW5TESTSUITE CASE XRebindKeysym 2"
 	/tset/Xlib17/rbndkysym/rbndkysym
 	"VSW5TESTSUITE CASE XRectInRegion 3"
