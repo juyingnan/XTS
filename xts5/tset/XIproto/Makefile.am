@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	alldvevnts/alldvevnts \
+	XAllowDeviceEvents/XAllowDeviceEvents \
 	chgdvctl/chgdvctl \
 	chgdvprop/chgdvprop \
 	chgfctl/chgfctl \
