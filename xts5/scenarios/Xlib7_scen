@@ -170,4 +170,4 @@
 	"VSW5TESTSUITE CASE XcmsClientWhitePointOfCCC 1"
 	/tset/Xlib7/XcmsClientWhitePointOfCCC/XcmsClientWhitePointOfCCC
 	"VSW5TESTSUITE CASE XcmsSetWhitePoint 1"
-	/tset/Xlib7/cmswpt/cmswpt
+	/tset/Xlib7/XcmsSetWhitePoint/XcmsSetWhitePoint

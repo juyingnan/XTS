@@ -56,7 +56,7 @@ tprogs = \
 	XcmsSetWhiteAdjustProc/XcmsSetWhiteAdjustProc \
 	XcmsScreenWhitePointOfCCC/XcmsScreenWhitePointOfCCC \
 	XcmsClientWhitePointOfCCC/XcmsClientWhitePointOfCCC \
-	cmswpt/cmswpt \
+	XcmsSetWhitePoint/XcmsSetWhitePoint \
 	CopyColormapAndFree/CopyColormapAndFree \
 	CreateColormap/CreateColormap \
 	FreeColormap/FreeColormap \

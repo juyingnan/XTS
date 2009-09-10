@@ -2759,7 +2759,7 @@ XcmsClientWhitePointOfCCC
 
 XcmsSetWhitePoint
 	"VSW5TESTSUITE CASE XcmsSetWhitePoint 1"
-	/tset/Xlib7/cmswpt/cmswpt
+	/tset/Xlib7/XcmsSetWhitePoint/XcmsSetWhitePoint
 
 # Discrete tests for Xlib Chapter 8-Graphics Context Functions
 
