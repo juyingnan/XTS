@@ -2735,7 +2735,7 @@ XcmsTekHVCQueryMaxV
 
 XcmsTekHVCQueryMaxVC
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxVC 1"
-	/tset/Xlib7/cmstqmvc/cmstqmvc
+	/tset/Xlib7/XcmsTekHVCQueryMaxVC/XcmsTekHVCQueryMaxVC
 
 XcmsTekHVCQueryMaxVSamples
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxVSamples 1"
