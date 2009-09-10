@@ -3770,7 +3770,7 @@ XtIsRealized
 
 XtCreateWindow
 	"VSW5TESTSUITE CASE XtCreateWindow 1"
-	/tset/Xt4/tcrwindow/tcrwindow
+	/tset/Xt4/XtCreateWindow/XtCreateWindow
 
 XtDisplay
 	"VSW5TESTSUITE CASE XtDisplay 1"
