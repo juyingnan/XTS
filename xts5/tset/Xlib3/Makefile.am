@@ -49,7 +49,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XListPixmapFormats/XListPixmapFormats \
 	XMinCmapsOfScreen/XMinCmapsOfScreen XMinCmapsOfScreen/XMinCmapsOfScreen_m \
 	XMaxCmapsOfScreen/XMaxCmapsOfScreen XMaxCmapsOfScreen/XMaxCmapsOfScreen_m \
-	nop/nop \
+	XNoOp/XNoOp \
 	nxtrqst/nxtrqst nxtrqst/nxtrqst_m \
 	OpenDisplay/OpenDisplay \
 	plnsofscrn/plnsofscrn plnsofscrn/plnsofscrn_m \

@@ -2035,7 +2035,7 @@ XMaxCmapsOfScreen
 
 XNoOp
 	"VSW5TESTSUITE CASE XNoOp 1"
-	/tset/Xlib3/nop/nop
+	/tset/Xlib3/XNoOp/XNoOp
 
 XNextRequest
 	"VSW5TESTSUITE CASE XNextRequest 2"

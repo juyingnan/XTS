@@ -136,7 +136,7 @@
 	"VSW5TESTSUITE CASE XMaxCmapsOfScreen 1"
 	/tset/Xlib3/XMaxCmapsOfScreen/XMaxCmapsOfScreen
 	"VSW5TESTSUITE CASE XNoOp 1"
-	/tset/Xlib3/nop/nop
+	/tset/Xlib3/XNoOp/XNoOp
 	"VSW5TESTSUITE CASE XNextRequest 2"
 	/tset/Xlib3/nxtrqst/nxtrqst
 	"VSW5TESTSUITE CASE XOpenDisplay 10"
