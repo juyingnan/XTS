@@ -4573,7 +4573,7 @@ XtAppSetErrorMsgHandler
 
 XtAppErrorMsg
 	"VSW5TESTSUITE CASE XtAppErrorMsg 3"
-	/tset/Xt13/taperrmsg/taperrmsg
+	/tset/Xt13/XtAppErrorMsg/XtAppErrorMsg
 
 XtAppSetWarningMsgHandler
 	"VSW5TESTSUITE CASE XtAppSetWarningMsgHandler 2"
