@@ -66,7 +66,7 @@
 	"VSW5TESTSUITE CASE XBitmapPad 1"
 	/tset/Xlib3/XBitmapPad/XBitmapPad
 	"VSW5TESTSUITE CASE XBitmapUnit 1"
-	/tset/Xlib3/btmpunt/btmpunt
+	/tset/Xlib3/XBitmapUnit/XBitmapUnit
 	"VSW5TESTSUITE CASE XCellsOfScreen 1"
 	/tset/Xlib3/cllsofscrn/cllsofscrn
 	"VSW5TESTSUITE CASE XCloseDisplay 28"
@@ -182,7 +182,7 @@
 	"VSW5TESTSUITE CASE BitmapPad 1"
 	/tset/Xlib3/XBitmapPad/XBitmapPad_m
 	"VSW5TESTSUITE CASE BitmapUnit 1"
-	/tset/Xlib3/btmpunt/btmpunt_m
+	/tset/Xlib3/XBitmapUnit/XBitmapUnit_m
 	"VSW5TESTSUITE CASE CellsOfScreen 1"
 	/tset/Xlib3/cllsofscrn/cllsofscrn_m
 	"VSW5TESTSUITE CASE ConnectionNumber 1"

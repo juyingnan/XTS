@@ -1895,7 +1895,7 @@ XBitmapPad
 
 XBitmapUnit
 	"VSW5TESTSUITE CASE XBitmapUnit 1"
-	/tset/Xlib3/btmpunt/btmpunt
+	/tset/Xlib3/XBitmapUnit/XBitmapUnit
 
 XCellsOfScreen
 	"VSW5TESTSUITE CASE XCellsOfScreen 1"
@@ -2127,7 +2127,7 @@ BitmapPad
 
 BitmapUnit
 	"VSW5TESTSUITE CASE BitmapUnit 1"
-	/tset/Xlib3/btmpunt/btmpunt_m
+	/tset/Xlib3/XBitmapUnit/XBitmapUnit_m
 
 CellsOfScreen
 	"VSW5TESTSUITE CASE CellsOfScreen 1"
