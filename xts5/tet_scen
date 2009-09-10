@@ -4675,7 +4675,7 @@ XtAddWorkProc
 
 XtCreateApplicationShell
 	"VSW5TESTSUITE CASE XtCreateApplicationShell 7"
-	/tset/XtC/tcrappshl/tcrappshl
+	/tset/XtC/XtCreateApplicationShell/XtCreateApplicationShell
 
 XtStringConversionWarning
 	"VSW5TESTSUITE CASE XtStringConversionWarning 1"

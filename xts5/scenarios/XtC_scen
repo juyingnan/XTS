@@ -81,7 +81,7 @@
 	"VSW5TESTSUITE CASE XtAddWorkProc 5"
 	/tset/XtC/XtAddWorkProc/XtAddWorkProc
 	"VSW5TESTSUITE CASE XtCreateApplicationShell 7"
-	/tset/XtC/tcrappshl/tcrappshl
+	/tset/XtC/XtCreateApplicationShell/XtCreateApplicationShell
 	"VSW5TESTSUITE CASE XtStringConversionWarning 1"
 	/tset/XtC/tstconwg/tstconwg
 	"VSW5TESTSUITE CASE XtAddConverter 10"
