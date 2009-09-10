@@ -892,7 +892,7 @@ PropertyNotify
 
 ReparentNotify
 	"VSW5TESTSUITE CASE ReparentNotify 4"
-	/tset/Xlib11/rprntntfy/rprntntfy
+	/tset/Xlib11/ReparentNotify/ReparentNotify
 
 ResizeRequest
 	"VSW5TESTSUITE CASE ResizeRequest 2"

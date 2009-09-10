@@ -35,7 +35,7 @@ tprogs = \
 	MotionNotify/MotionNotify \
 	NoExpose/NoExpose \
 	PropertyNotify/PropertyNotify \
-	rprntntfy/rprntntfy \
+	ReparentNotify/ReparentNotify \
 	rszrqst/rszrqst \
 	slctnclr/slctnclr \
 	slctnntfy/slctnntfy \

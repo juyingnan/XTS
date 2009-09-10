@@ -108,7 +108,7 @@
 	"VSW5TESTSUITE CASE PropertyNotify 2"
 	/tset/Xlib11/PropertyNotify/PropertyNotify
 	"VSW5TESTSUITE CASE ReparentNotify 4"
-	/tset/Xlib11/rprntntfy/rprntntfy
+	/tset/Xlib11/ReparentNotify/ReparentNotify
 	"VSW5TESTSUITE CASE ResizeRequest 2"
 	/tset/Xlib11/rszrqst/rszrqst
 	"VSW5TESTSUITE CASE SelectionClear 1"
