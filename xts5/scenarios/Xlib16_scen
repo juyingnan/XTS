@@ -62,7 +62,7 @@
 #
 
 	"VSW5TESTSUITE CASE XrmDestroyDatabase 3"
-	/tset/Xlib16/rmdstrydtb/rmdstrydtb
+	/tset/Xlib16/XrmDestroyDatabase/XrmDestroyDatabase
 	"VSW5TESTSUITE CASE XrmGetFileDatabase 3"
 	/tset/Xlib16/rmgtfldtbs/rmgtfldtbs
 	"VSW5TESTSUITE CASE XrmGetResource 2"

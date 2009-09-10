@@ -1530,7 +1530,7 @@ XDefaultString
 
 XrmDestroyDatabase
 	"VSW5TESTSUITE CASE XrmDestroyDatabase 3"
-	/tset/Xlib16/rmdstrydtb/rmdstrydtb
+	/tset/Xlib16/XrmDestroyDatabase/XrmDestroyDatabase
 
 XrmGetFileDatabase
 	"VSW5TESTSUITE CASE XrmGetFileDatabase 3"

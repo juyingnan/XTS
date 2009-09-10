@@ -16,7 +16,7 @@ rmpstoq_rmpstoq_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 tprogs = \
 	XrmCombineDatabase/XrmCombineDatabase \
 	XrmCombineFileDatabase/XrmCombineFileDatabase \
-	rmdstrydtb/rmdstrydtb \
+	XrmDestroyDatabase/XrmDestroyDatabase \
 	rmedata/rmedata \
 	rmgtdb/rmgtdb \
 	rmgtfldtbs/rmgtfldtbs \
