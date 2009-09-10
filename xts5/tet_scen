@@ -3676,7 +3676,7 @@ XtCheckSubclass
 
 XtInitializeWidgetClass
 	"VSW5TESTSUITE CASE XtInitializeWidgetClass 2"
-	/tset/Xt3/tintlzwdgt/tintlzwdgt
+	/tset/Xt3/XtInitializeWidgetClass/XtInitializeWidgetClass
 
 #Discrete tests for Xt Chapter 4
 
