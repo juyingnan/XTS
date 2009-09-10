@@ -94,7 +94,7 @@
 	"VSW5TESTSUITE CASE XtVaCreateWidget 8"
 	/tset/Xt4/tvcrtwdgt/tvcrtwdgt
 	"VSW5TESTSUITE CASE XtAppCreateShell 7"
-	/tset/Xt4/tapcrshel/tapcrshel
+	/tset/Xt4/XtAppCreateShell/XtAppCreateShell
 	"VSW5TESTSUITE CASE XtVaAppCreateShell 7"
 	/tset/Xt4/tvapcrshl/tvapcrshl
 	"VSW5TESTSUITE CASE XtAppInitialize 29"

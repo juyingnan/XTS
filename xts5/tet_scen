@@ -3746,7 +3746,7 @@ XtVaCreateWidget
 
 XtAppCreateShell
 	"VSW5TESTSUITE CASE XtAppCreateShell 7"
-	/tset/Xt4/tapcrshel/tapcrshel
+	/tset/Xt4/XtAppCreateShell/XtAppCreateShell
 
 XtVaAppCreateShell
 	"VSW5TESTSUITE CASE XtVaAppCreateShell 7"
