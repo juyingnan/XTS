@@ -49,7 +49,7 @@ tprogs = \
 	XFreeCursor/XFreeCursor \
 	XForceScreenSaver/XForceScreenSaver \
 	FreeGC/FreeGC \
-	FreePixmap/FreePixmap \
+	XFreePixmap/XFreePixmap \
 	XGrabButton/XGrabButton \
 	XGrabKey/XGrabKey \
 	XGrabKeyboard/XGrabKeyboard \
