@@ -154,7 +154,7 @@
 	"VSW5TESTSUITE CASE GetGeometry 3"
 	/tset/Xproto/GetGeometry/GetGeometry
 	"VSW5TESTSUITE CASE GetImage 3"
-	/tset/Xproto/gtimg/gtimg
+	/tset/Xproto/GetImage/GetImage
 	"VSW5TESTSUITE CASE GetInputFocus 3"
 	/tset/Xproto/gtinptfcs/gtinptfcs
 	"VSW5TESTSUITE CASE GetKeyboardControl 3"

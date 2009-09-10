@@ -116,7 +116,7 @@
 	"VSW5TESTSUITE CASE XGetFontPath 1"
 	/tset/Xlib9/GetFontPath/GetFontPath
 	"VSW5TESTSUITE CASE XGetImage 17"
-	/tset/Xlib9/gtimg/gtimg
+	/tset/Xlib9/GetImage/GetImage
 	"VSW5TESTSUITE CASE XGetSubImage 17"
 	/tset/Xlib9/gtsbimg/gtsbimg
 	"VSW5TESTSUITE CASE XLoadFont 5"

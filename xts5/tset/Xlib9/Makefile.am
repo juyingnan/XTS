@@ -39,7 +39,7 @@ tprogs = \
 	frfntpth/frfntpth \
 	gtfntprprt/gtfntprprt \
 	GetFontPath/GetFontPath \
-	gtimg/gtimg \
+	GetImage/GetImage \
 	gtsbimg/gtsbimg \
 	ldfnt/ldfnt \
 	ldqryfnt/ldqryfnt \

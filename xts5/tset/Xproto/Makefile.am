@@ -58,7 +58,7 @@ tprogs = \
 	GetAtomName/GetAtomName \
 	GetFontPath/GetFontPath \
 	GetGeometry/GetGeometry \
-	gtimg/gtimg \
+	GetImage/GetImage \
 	gtinptfcs/gtinptfcs \
 	gtkybrdcnt/gtkybrdcnt \
 	gtkybrdmpp/gtkybrdmpp \
