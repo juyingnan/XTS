@@ -2496,7 +2496,7 @@ XTranslateCoordinates
 
 XCreatePixmap
 	"VSW5TESTSUITE CASE XCreatePixmap 6"
-	/tset/Xlib6/CreatePixmap/CreatePixmap
+	/tset/Xlib6/XCreatePixmap/XCreatePixmap
 
 XCreateFontCursor
 	"VSW5TESTSUITE CASE XCreateFontCursor 3"
@@ -3222,7 +3222,7 @@ pCreateGlyphCursor
 
 pCreatePixmap
 	"VSW5TESTSUITE CASE CreatePixmap 5"
-	/tset/Xproto/CreatePixmap/CreatePixmap
+	/tset/Xproto/XCreatePixmap/XCreatePixmap
 
 pCreateWindow
 	"VSW5TESTSUITE CASE CreateWindow 6"

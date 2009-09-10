@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = \
 	XCreateFontCursor/XCreateFontCursor \
 	XCreateGlyphCursor/XCreateGlyphCursor \
-	CreatePixmap/CreatePixmap \
+	XCreatePixmap/XCreatePixmap \
 	crtpxmpcrs/crtpxmpcrs \
 	FreeCursor/FreeCursor \
 	FreePixmap/FreePixmap \

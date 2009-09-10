@@ -114,7 +114,7 @@
 	"VSW5TESTSUITE CASE CreateGlyphCursor 5"
 	/tset/Xproto/XCreateGlyphCursor/XCreateGlyphCursor
 	"VSW5TESTSUITE CASE CreatePixmap 5"
-	/tset/Xproto/CreatePixmap/CreatePixmap
+	/tset/Xproto/XCreatePixmap/XCreatePixmap
 	"VSW5TESTSUITE CASE CreateWindow 6"
 	/tset/Xproto/XCreateWindow/XCreateWindow
 	"VSW5TESTSUITE CASE DeleteProperty 3"
