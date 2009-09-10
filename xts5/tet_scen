@@ -1308,7 +1308,7 @@ XwcDrawString
 
 XwcDrawText
 	"VSW5TESTSUITE CASE XwcDrawText 1"
-	/tset/Xlib14/wcdtext/wcdtext
+	/tset/Xlib14/XwcDrawText/XwcDrawText
 
 XwcFreeStringList
 	"VSW5TESTSUITE CASE XwcFreeStringList 1"

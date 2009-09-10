@@ -46,7 +46,7 @@ tprogs = \
 	XVaCreateNestedList/XVaCreateNestedList \
 	XwcDrawImageString/XwcDrawImageString \
 	XwcDrawString/XwcDrawString \
-	wcdtext/wcdtext \
+	XwcDrawText/XwcDrawText \
 	wcfstli/wcfstli \
 	wclustr/wclustr \
 	wcreic/wcreic \
