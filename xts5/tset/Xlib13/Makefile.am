@@ -15,7 +15,7 @@ tprogs = \
 	XBell/XBell \
 	XChangeActivePointerGrab/XChangeActivePointerGrab \
 	XChangeKeyboardControl/XChangeKeyboardControl \
-	ChangeKeyboardMapping/ChangeKeyboardMapping \
+	XChangeKeyboardMapping/XChangeKeyboardMapping \
 	ChangePointerControl/ChangePointerControl \
 	dltmdfrmpe/dltmdfrmpe \
 	dsplykycds/dsplykycds \

@@ -1058,7 +1058,7 @@ XChangeKeyboardControl
 
 XChangeKeyboardMapping
 	"VSW5TESTSUITE CASE XChangeKeyboardMapping 7"
-	/tset/Xlib13/ChangeKeyboardMapping/ChangeKeyboardMapping
+	/tset/Xlib13/XChangeKeyboardMapping/XChangeKeyboardMapping
 
 XChangePointerControl
 	"VSW5TESTSUITE CASE XChangePointerControl 11"
@@ -3150,7 +3150,7 @@ pChangeKeyboardControl
 
 pChangeKeyboardMapping
 	"VSW5TESTSUITE CASE ChangeKeyboardMapping 3"
-	/tset/Xproto/ChangeKeyboardMapping/ChangeKeyboardMapping
+	/tset/Xproto/XChangeKeyboardMapping/XChangeKeyboardMapping
 
 pChangePointerControl
 	"VSW5TESTSUITE CASE ChangePointerControl 3"

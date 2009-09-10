@@ -20,7 +20,7 @@ tprogs = \
 	ChangeGC/ChangeGC \
 	ChangeHosts/ChangeHosts \
 	XChangeKeyboardControl/XChangeKeyboardControl \
-	ChangeKeyboardMapping/ChangeKeyboardMapping \
+	XChangeKeyboardMapping/XChangeKeyboardMapping \
 	ChangePointerControl/ChangePointerControl \
 	ChangeProperty/ChangeProperty \
 	XChangeSaveSet/XChangeSaveSet \
