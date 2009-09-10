@@ -1891,7 +1891,7 @@ XBitmapBitOrder
 
 XBitmapPad
 	"VSW5TESTSUITE CASE XBitmapPad 1"
-	/tset/Xlib3/btmppd/btmppd
+	/tset/Xlib3/XBitmapPad/XBitmapPad
 
 XBitmapUnit
 	"VSW5TESTSUITE CASE XBitmapUnit 1"
@@ -2123,7 +2123,7 @@ BitmapBitOrder
 
 BitmapPad
 	"VSW5TESTSUITE CASE BitmapPad 1"
-	/tset/Xlib3/btmppd/btmppd_m
+	/tset/Xlib3/XBitmapPad/XBitmapPad_m
 
 BitmapUnit
 	"VSW5TESTSUITE CASE BitmapUnit 1"

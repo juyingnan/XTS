@@ -13,7 +13,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XBlackPixel/XBlackPixel XBlackPixel/XBlackPixel_m \
 	XBlackPixelOfScreen/XBlackPixelOfScreen XBlackPixelOfScreen/XBlackPixelOfScreen_m \
 	XBitmapBitOrder/XBitmapBitOrder XBitmapBitOrder/XBitmapBitOrder_m \
-	btmppd/btmppd btmppd/btmppd_m \
+	XBitmapPad/XBitmapPad XBitmapPad/XBitmapPad_m \
 	btmpunt/btmpunt btmpunt/btmpunt_m \
 	cllsofscrn/cllsofscrn cllsofscrn/cllsofscrn_m \
 	clsdsply/clsdsply \
