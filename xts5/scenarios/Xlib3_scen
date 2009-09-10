@@ -152,7 +152,7 @@
 	"VSW5TESTSUITE CASE XRootWindow 1"
 	/tset/Xlib3/XRootWindow/XRootWindow
 	"VSW5TESTSUITE CASE XRootWindowOfScreen 1"
-	/tset/Xlib3/rtwdwofscr/rtwdwofscr
+	/tset/Xlib3/XRootWindowOfScreen/XRootWindowOfScreen
 	"VSW5TESTSUITE CASE XScreenCount 1"
 	/tset/Xlib3/scrncnt/scrncnt
 	"VSW5TESTSUITE CASE XScreenNumberOfScreen 1"
@@ -256,7 +256,7 @@
 	"VSW5TESTSUITE CASE RootWindow 1"
 	/tset/Xlib3/XRootWindow/XRootWindow_m
 	"VSW5TESTSUITE CASE RootWindowOfScreen 1"
-	/tset/Xlib3/rtwdwofscr/rtwdwofscr_m
+	/tset/Xlib3/XRootWindowOfScreen/XRootWindowOfScreen_m
 	"VSW5TESTSUITE CASE ScreenCount 1"
 	/tset/Xlib3/scrncnt/scrncnt_m
 	"VSW5TESTSUITE CASE ScreenOfDisplay 1"
