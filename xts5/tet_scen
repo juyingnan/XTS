@@ -3908,7 +3908,7 @@ XtPopupSpringLoaded
 
 XtCallbackNone
 	"VSW5TESTSUITE CASE XtCallbackNone 8"
-	/tset/Xt7/tcalbknon/tcalbknon
+	/tset/Xt7/XtCallbackNone/XtCallbackNone
 
 XtCallbackNonexclusive
 	"VSW5TESTSUITE CASE XtCallbackNonexclusive 8"
