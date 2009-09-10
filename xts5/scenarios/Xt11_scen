@@ -67,7 +67,7 @@
 	"VSW5TESTSUITE CASE XtOffset 1"
 	/tset/Xt11/toffset/toffset
 	"VSW5TESTSUITE CASE XtGetSubresources 2"
-	/tset/Xt11/tgtsubres/tgtsubres
+	/tset/Xt11/XtGetSubresources/XtGetSubresources
 	"VSW5TESTSUITE CASE XtVaGetSubresources 4"
 	/tset/Xt11/tvagtsres/tvagtsres
 	"VSW5TESTSUITE CASE XtGetApplicationResources 2"
