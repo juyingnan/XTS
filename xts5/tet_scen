@@ -4691,7 +4691,7 @@ XtAppAddConverter
 
 XtConvert
 	"VSW5TESTSUITE CASE XtConvert 1"
-	/tset/XtC/tconvert/tconvert
+	/tset/XtC/XtConvert/XtConvert
 
 XtDirectConvert
 	"VSW5TESTSUITE CASE XtDirectConvert 3"
