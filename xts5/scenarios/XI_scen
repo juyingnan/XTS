@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE XChangeKeyboardDevice 10"
 	/tset/XI/XChangeKeyboardDevice/XChangeKeyboardDevice
 	"VSW5TESTSUITE CASE XChangeDeviceDontPropagateList 7"
-	/tset/XI/chgprop/chgprop
+	/tset/XI/XChangeDeviceDontPropagateList/XChangeDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XChangePointerDevice 10"
 	/tset/XI/chgptr/chgptr
 	"VSW5TESTSUITE CASE XChangeDeviceKeyMapping 7"

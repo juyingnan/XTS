@@ -518,7 +518,7 @@ XChangeKeyboardDevice
 
 XChangeDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XChangeDeviceDontPropagateList 7"
-	/tset/XI/chgprop/chgprop
+	/tset/XI/XChangeDeviceDontPropagateList/XChangeDeviceDontPropagateList
 
 XChangePointerDevice
 	"VSW5TESTSUITE CASE XChangePointerDevice 10"
