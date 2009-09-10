@@ -1991,7 +1991,7 @@ XDisplayWidthMM
 
 XDoesSaveUnders
 	"VSW5TESTSUITE CASE XDoesSaveUnders 1"
-	/tset/Xlib3/dssvundrs/dssvundrs
+	/tset/Xlib3/XDoesSaveUnders/XDoesSaveUnders
 
 XEventMaskOfScreen
 	"VSW5TESTSUITE CASE XEventMaskOfScreen 1"
@@ -2219,7 +2219,7 @@ DisplayWidthMM
 
 DoesSaveUnders
 	"VSW5TESTSUITE CASE DoesSaveUnders 1"
-	/tset/Xlib3/dssvundrs/dssvundrs_m
+	/tset/Xlib3/XDoesSaveUnders/XDoesSaveUnders_m
 
 EventMaskOfScreen
 	"VSW5TESTSUITE CASE EventMaskOfScreen 1"
