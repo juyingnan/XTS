@@ -42,7 +42,7 @@ tprogs = \
 	XcmsCIELuvQueryMinL/XcmsCIELuvQueryMinL \
 	XcmsCIELuvQueryMaxL/XcmsCIELuvQueryMaxL \
 	XcmsCIELuvQueryMaxLC/XcmsCIELuvQueryMaxLC \
-	cmsqred/cmsqred \
+	XcmsQueryRed/XcmsQueryRed \
 	cmsqwt/cmsqwt \
 	cmssnoc/cmssnoc \
 	cmsstclr/cmsstclr \

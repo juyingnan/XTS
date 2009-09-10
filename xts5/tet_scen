@@ -2703,7 +2703,7 @@ XcmsCIELuvQueryMaxLC
 
 XcmsQueryRed
 	"VSW5TESTSUITE CASE XcmsQueryRed 1"
-	/tset/Xlib7/cmsqred/cmsqred
+	/tset/Xlib7/XcmsQueryRed/XcmsQueryRed
 
 XcmsQueryWhite
 	"VSW5TESTSUITE CASE XcmsQueryWhite 1"
