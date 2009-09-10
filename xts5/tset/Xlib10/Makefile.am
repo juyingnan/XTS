@@ -13,7 +13,7 @@ tprogs = \
 	XAddHost/XAddHost \
 	XAddHosts/XAddHosts \
 	XAddToSaveSet/XAddToSaveSet \
-	ChangeSaveSet/ChangeSaveSet \
+	XChangeSaveSet/XChangeSaveSet \
 	dsblaccssc/dsblaccssc \
 	enblaccssc/enblaccssc \
 	ForceScreenSaver/ForceScreenSaver \

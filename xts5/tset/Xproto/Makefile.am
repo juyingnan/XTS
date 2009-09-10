@@ -23,7 +23,7 @@ tprogs = \
 	ChangeKeyboardMapping/ChangeKeyboardMapping \
 	ChangePointerControl/ChangePointerControl \
 	ChangeProperty/ChangeProperty \
-	ChangeSaveSet/ChangeSaveSet \
+	XChangeSaveSet/XChangeSaveSet \
 	ChangeWindowAttributes/ChangeWindowAttributes \
 	ClearArea/ClearArea \
 	CloseFont/CloseFont \

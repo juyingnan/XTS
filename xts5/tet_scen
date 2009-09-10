@@ -710,7 +710,7 @@ XAddToSaveSet
 
 XChangeSaveSet
 	"VSW5TESTSUITE CASE XChangeSaveSet 5"
-	/tset/Xlib10/ChangeSaveSet/ChangeSaveSet
+	/tset/Xlib10/XChangeSaveSet/XChangeSaveSet
 
 XDisableAccessControl
 	"VSW5TESTSUITE CASE XDisableAccessControl 2"
@@ -3162,7 +3162,7 @@ pChangeProperty
 
 pChangeSaveSet
 	"VSW5TESTSUITE CASE ChangeSaveSet 3"
-	/tset/Xproto/ChangeSaveSet/ChangeSaveSet
+	/tset/Xproto/XChangeSaveSet/XChangeSaveSet
 
 pChangeWindowAttributes
 	"VSW5TESTSUITE CASE ChangeWindowAttributes 4"

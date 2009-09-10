@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE XAddToSaveSet 8"
 	/tset/Xlib10/XAddToSaveSet/XAddToSaveSet
 	"VSW5TESTSUITE CASE XChangeSaveSet 5"
-	/tset/Xlib10/ChangeSaveSet/ChangeSaveSet
+	/tset/Xlib10/XChangeSaveSet/XChangeSaveSet
 	"VSW5TESTSUITE CASE XDisableAccessControl 2"
 	/tset/Xlib10/dsblaccssc/dsblaccssc
 	"VSW5TESTSUITE CASE XEnableAccessControl 2"
