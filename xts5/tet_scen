@@ -2884,7 +2884,7 @@ XFlushGC
 
 XClearArea
 	"VSW5TESTSUITE CASE XClearArea 11"
-	/tset/Xlib9/ClearArea/ClearArea
+	/tset/Xlib9/XClearArea/XClearArea
 
 XClearWindow
 	"VSW5TESTSUITE CASE XClearWindow 7"
@@ -3170,7 +3170,7 @@ pChangeWindowAttributes
 
 pClearArea
 	"VSW5TESTSUITE CASE ClearArea 3"
-	/tset/Xproto/ClearArea/ClearArea
+	/tset/Xproto/XClearArea/XClearArea
 
 pCloseFont
 	"VSW5TESTSUITE CASE CloseFont 3"

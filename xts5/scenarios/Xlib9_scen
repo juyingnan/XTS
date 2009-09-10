@@ -56,7 +56,7 @@
 #
 
 	"VSW5TESTSUITE CASE XClearArea 11"
-	/tset/Xlib9/ClearArea/ClearArea
+	/tset/Xlib9/XClearArea/XClearArea
 	"VSW5TESTSUITE CASE XClearWindow 7"
 	/tset/Xlib9/clrwdw/clrwdw
 	"VSW5TESTSUITE CASE XCopyArea 36"
