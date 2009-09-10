@@ -92,7 +92,7 @@
 	"VSW5TESTSUITE CASE XcmsAddFunctionSet 1"
 	/tset/Xlib7/XcmsAddFunctionSet/XcmsAddFunctionSet
 	"VSW5TESTSUITE CASE XcmsAllocNamedColor 2"
-	/tset/Xlib7/cmsanc/cmsanc
+	/tset/Xlib7/XcmsAllocNamedColor/XcmsAllocNamedColor
 	"VSW5TESTSUITE CASE XcmsCCCOfColormap 1"
 	/tset/Xlib7/cmsccoc/cmsccoc
 	"VSW5TESTSUITE CASE XcmsConvertColors 1"

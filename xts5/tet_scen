@@ -2603,7 +2603,7 @@ XcmsAddFunctionSet
 
 XcmsAllocNamedColor
 	"VSW5TESTSUITE CASE XcmsAllocNamedColor 2"
-	/tset/Xlib7/cmsanc/cmsanc
+	/tset/Xlib7/XcmsAllocNamedColor/XcmsAllocNamedColor
 
 XcmsCCCOfColormap
 	"VSW5TESTSUITE CASE XcmsCCCOfColormap 1"
