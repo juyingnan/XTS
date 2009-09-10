@@ -161,7 +161,7 @@
 	"VSW5TESTSUITE CASE XtGetValues 5"
 	/tset/Xt11/XtGetValues/XtGetValues
 	"VSW5TESTSUITE CASE XtVaGetValues 7"
-	/tset/Xt11/tvagtvals/tvagtvals
+	/tset/Xt11/XtVaGetValues/XtVaGetValues
 	"VSW5TESTSUITE CASE XtGetSubvalues 2"
 	/tset/Xt11/XtGetSubvalues/XtGetSubvalues
 	"VSW5TESTSUITE CASE XtVaGetSubvalues 3"
