@@ -56,7 +56,7 @@
 #
 
 	"VSW5TESTSUITE CASE XCreatePixmap 6"
-	/tset/Xlib6/crtpxmp/crtpxmp
+	/tset/Xlib6/CreatePixmap/CreatePixmap
 	"VSW5TESTSUITE CASE XCreateFontCursor 3"
 	/tset/Xlib6/crtfntcrsr/crtfntcrsr
 	"VSW5TESTSUITE CASE XCreateGlyphCursor 17"

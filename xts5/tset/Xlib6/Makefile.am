@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = \
 	crtfntcrsr/crtfntcrsr \
 	CreateGlyphCursor/CreateGlyphCursor \
-	crtpxmp/crtpxmp \
+	CreatePixmap/CreatePixmap \
 	crtpxmpcrs/crtpxmpcrs \
 	frcrsr/frcrsr \
 	frpxmp/frpxmp \
