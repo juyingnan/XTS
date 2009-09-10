@@ -120,7 +120,7 @@
 	"VSW5TESTSUITE CASE SendExtensionEvent 3"
 	/tset/XIproto/XSendExtensionEvent/XSendExtensionEvent
 	"VSW5TESTSUITE CASE UngrabDevice 3"
-	/tset/XIproto/ungrbdev/ungrbdev
+	/tset/XIproto/UngrabDevice/UngrabDevice
 	"VSW5TESTSUITE CASE UngrabDeviceButton 3"
 	/tset/XIproto/XUngrabDeviceButton/XUngrabDeviceButton
 	"VSW5TESTSUITE CASE UngrabDeviceKey 3"
