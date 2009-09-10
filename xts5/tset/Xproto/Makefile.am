@@ -51,7 +51,7 @@ tprogs = \
 	FreeGC/FreeGC \
 	FreePixmap/FreePixmap \
 	GrabButton/GrabButton \
-	grbky/grbky \
+	GrabKey/GrabKey \
 	grbkybrd/grbkybrd \
 	grbpntr/grbpntr \
 	grbsrvr/grbsrvr \

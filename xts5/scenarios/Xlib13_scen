@@ -80,7 +80,7 @@
 	"VSW5TESTSUITE CASE XGrabButton 39"
 	/tset/Xlib13/GrabButton/GrabButton
 	"VSW5TESTSUITE CASE XGrabKey 16"
-	/tset/Xlib13/grbky/grbky
+	/tset/Xlib13/GrabKey/GrabKey
 	"VSW5TESTSUITE CASE XGrabKeyboard 25"
 	/tset/Xlib13/grbkybrd/grbkybrd
 	"VSW5TESTSUITE CASE XGrabPointer 34"

@@ -21,7 +21,7 @@ tprogs = \
 	dsplykycds/dsplykycds \
 	frmdfrmp/frmdfrmp \
 	GrabButton/GrabButton \
-	grbky/grbky \
+	GrabKey/GrabKey \
 	grbkybrd/grbkybrd \
 	grbpntr/grbpntr \
 	gtinptfcs/gtinptfcs \
