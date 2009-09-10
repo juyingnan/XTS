@@ -1138,7 +1138,7 @@ XSetModifierMapping
 
 XSetPointerMapping
 	"VSW5TESTSUITE CASE XSetPointerMapping 7"
-	/tset/Xlib13/SetPointerMapping/SetPointerMapping
+	/tset/Xlib13/XSetPointerMapping/XSetPointerMapping
 
 XUngrabButton
 	"VSW5TESTSUITE CASE XUngrabButton 6"
@@ -3534,7 +3534,7 @@ pSetModifierMapping
 
 pSetPointerMapping
 	"VSW5TESTSUITE CASE SetPointerMapping 3"
-	/tset/Xproto/SetPointerMapping/SetPointerMapping
+	/tset/Xproto/XSetPointerMapping/XSetPointerMapping
 
 pStoreColors
 	"VSW5TESTSUITE CASE StoreColors 4"

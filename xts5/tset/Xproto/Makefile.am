@@ -116,7 +116,7 @@ tprogs = \
 	SetFontPath/SetFontPath \
 	XSetInputFocus/XSetInputFocus \
 	XSetModifierMapping/XSetModifierMapping \
-	SetPointerMapping/SetPointerMapping \
+	XSetPointerMapping/XSetPointerMapping \
 	StoreColors/StoreColors \
 	StoreNamedColor/StoreNamedColor \
 	XSetScreenSaver/XSetScreenSaver \

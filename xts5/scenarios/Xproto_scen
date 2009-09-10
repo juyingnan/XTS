@@ -270,7 +270,7 @@
 	"VSW5TESTSUITE CASE SetModifierMapping 3"
 	/tset/Xproto/XSetModifierMapping/XSetModifierMapping
 	"VSW5TESTSUITE CASE SetPointerMapping 3"
-	/tset/Xproto/SetPointerMapping/SetPointerMapping
+	/tset/Xproto/XSetPointerMapping/XSetPointerMapping
 	"VSW5TESTSUITE CASE StoreColors 4"
 	/tset/Xproto/StoreColors/StoreColors
 	"VSW5TESTSUITE CASE StoreNamedColor 4"
