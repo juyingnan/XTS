@@ -4457,7 +4457,7 @@ XtGetActionList
 
 XtNumber
 	"VSW5TESTSUITE CASE XtNumber 1"
-	/tset/Xt13/tnumber/tnumber
+	/tset/Xt13/XtNumber/XtNumber
 
 XtNameToWidget
 	"VSW5TESTSUITE CASE XtNameToWidget 7"
