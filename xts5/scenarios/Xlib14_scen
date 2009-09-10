@@ -122,7 +122,7 @@
 	"VSW5TESTSUITE CASE XUnsetICFocus 1"
 	/tset/Xlib14/XUnsetICFocus/XUnsetICFocus
 	"VSW5TESTSUITE CASE XVaCreateNestedList 4"
-	/tset/Xlib14/vcnlist/vcnlist
+	/tset/Xlib14/XVaCreateNestedList/XVaCreateNestedList
 	"VSW5TESTSUITE CASE XwcDrawImageString 1"
 	/tset/Xlib14/wcdistr/wcdistr
 	"VSW5TESTSUITE CASE XwcDrawString 1"

@@ -43,7 +43,7 @@ tprogs = \
 	XSupportsLocale/XSupportsLocale \
 	XSetLocaleModifiers/XSetLocaleModifiers \
 	XUnsetICFocus/XUnsetICFocus \
-	vcnlist/vcnlist \
+	XVaCreateNestedList/XVaCreateNestedList \
 	wcdistr/wcdistr \
 	wcdstr/wcdstr \
 	wcdtext/wcdtext \
