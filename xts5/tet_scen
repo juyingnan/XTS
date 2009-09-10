@@ -4353,7 +4353,7 @@ XtSetValues
 
 XtVaSetValues
 	"VSW5TESTSUITE CASE XtVaSetValues 15"
-	/tset/Xt11/tvastvals/tvastvals
+	/tset/Xt11/XtVaSetValues/XtVaSetValues
 
 XtSetSubvalues
 	"VSW5TESTSUITE CASE XtSetSubvalues 2"
