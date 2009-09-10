@@ -4126,7 +4126,7 @@ XtCallCallbackList
 
 XtHasCallbacks
 	"VSW5TESTSUITE CASE XtHasCallbacks 3"
-	/tset/Xt10/thscbacks/thscbacks
+	/tset/Xt10/XtHasCallbacks/XtHasCallbacks
 
 
 #Discrete tests for Xt Chapter 11
