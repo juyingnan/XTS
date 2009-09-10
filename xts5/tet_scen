@@ -4537,7 +4537,7 @@ XtGetSelectionValuesIncremental
 
 XtOwnSelectionIncremental
 	"VSW5TESTSUITE CASE XtOwnSelectionIncremental 10"
-	/tset/Xt13/townselin/townselin
+	/tset/Xt13/XtOwnSelectionIncremental/XtOwnSelectionIncremental
 
 XtLastTimestampProcessed
 	"VSW5TESTSUITE CASE XtLastTimestampProcessed 2"

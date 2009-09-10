@@ -99,7 +99,7 @@
 	"VSW5TESTSUITE CASE XtGetSelectionValuesIncremental 7"
 	/tset/Xt13/XtGetSelectionValuesIncremental/XtGetSelectionValuesIncremental
 	"VSW5TESTSUITE CASE XtOwnSelectionIncremental 10"
-	/tset/Xt13/townselin/townselin
+	/tset/Xt13/XtOwnSelectionIncremental/XtOwnSelectionIncremental
 	"VSW5TESTSUITE CASE XtLastTimestampProcessed 2"
 	/tset/Xt13/XtLastTimestampProcessed/XtLastTimestampProcessed
 	"VSW5TESTSUITE CASE XtAddExposureToRegion 3"
