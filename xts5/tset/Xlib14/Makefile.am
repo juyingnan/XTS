@@ -29,7 +29,7 @@ tprogs = \
 	XmbDrawImageString/XmbDrawImageString \
 	XmbDrawString/XmbDrawString \
 	XmbDrawText/XmbDrawText \
-	mblstr/mblstr \
+	XmbLookupString/XmbLookupString \
 	mbresic/mbresic \
 	mbswmprp/mbswmprp \
 	mbtesc/mbtesc \

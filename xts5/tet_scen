@@ -1240,7 +1240,7 @@ XmbDrawText
 
 XmbLookupString
 	"VSW5TESTSUITE CASE XmbLookupString 3"
-	/tset/Xlib14/mblstr/mblstr
+	/tset/Xlib14/XmbLookupString/XmbLookupString
 
 XmbResetIC
 	"VSW5TESTSUITE CASE XmbResetIC 1"

@@ -94,7 +94,7 @@
 	"VSW5TESTSUITE CASE XmbDrawText 1"
 	/tset/Xlib14/XmbDrawText/XmbDrawText
 	"VSW5TESTSUITE CASE XmbLookupString 3"
-	/tset/Xlib14/mblstr/mblstr
+	/tset/Xlib14/XmbLookupString/XmbLookupString
 	"VSW5TESTSUITE CASE XmbResetIC 1"
 	/tset/Xlib14/mbresic/mbresic
 	"VSW5TESTSUITE CASE XmbSetWMProperties 2"
