@@ -3730,7 +3730,7 @@ XtSetArg
 
 XtMergeArgLists
 	"VSW5TESTSUITE CASE XtMergeArgLists 3"
-	/tset/Xt4/tmrgarglst/tmrgarglst
+	/tset/Xt4/XtMergeArgLists/XtMergeArgLists
 
 XtVaCreateArgsList
 	"VSW5TESTSUITE CASE XtVaCreateArgsList 2"
