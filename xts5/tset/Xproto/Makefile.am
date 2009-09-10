@@ -60,7 +60,7 @@ tprogs = \
 	GetGeometry/GetGeometry \
 	GetImage/GetImage \
 	XGetInputFocus/XGetInputFocus \
-	GetKeyboardControl/GetKeyboardControl \
+	XGetKeyboardControl/XGetKeyboardControl \
 	GetKeyboardMapping/GetKeyboardMapping \
 	GetModifierMapping/GetModifierMapping \
 	XGetMotionEvents/XGetMotionEvents \

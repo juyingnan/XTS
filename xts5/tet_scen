@@ -1098,7 +1098,7 @@ XGetInputFocus
 
 XGetKeyboardControl
 	"VSW5TESTSUITE CASE XGetKeyboardControl 1"
-	/tset/Xlib13/GetKeyboardControl/GetKeyboardControl
+	/tset/Xlib13/XGetKeyboardControl/XGetKeyboardControl
 
 XGetKeyboardMapping
 	"VSW5TESTSUITE CASE XGetKeyboardMapping 6"
@@ -3310,7 +3310,7 @@ pGetInputFocus
 
 pGetKeyboardControl
 	"VSW5TESTSUITE CASE GetKeyboardControl 3"
-	/tset/Xproto/GetKeyboardControl/GetKeyboardControl
+	/tset/Xproto/XGetKeyboardControl/XGetKeyboardControl
 
 pGetKeyboardMapping
 	"VSW5TESTSUITE CASE GetKeyboardMapping 3"
