@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE XDrawArcs 112"
 	/tset/Xlib9/XDrawArcs/XDrawArcs
 	"VSW5TESTSUITE CASE XDrawImageString16 24"
-	/tset/Xlib9/drwimgst16/drwimgst16
+	/tset/Xlib9/XDrawImageString16/XDrawImageString16
 	"VSW5TESTSUITE CASE XDrawImageString 24"
 	/tset/Xlib9/drwimgstr/drwimgstr
 	"VSW5TESTSUITE CASE XDrawLine 91"

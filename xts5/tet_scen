@@ -2908,7 +2908,7 @@ XDrawArcs
 
 XDrawImageString16
 	"VSW5TESTSUITE CASE XDrawImageString16 24"
-	/tset/Xlib9/drwimgst16/drwimgst16
+	/tset/Xlib9/XDrawImageString16/XDrawImageString16
 
 XDrawImageString
 	"VSW5TESTSUITE CASE XDrawImageString 24"

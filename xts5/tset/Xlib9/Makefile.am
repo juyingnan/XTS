@@ -15,7 +15,7 @@ tprogs = \
 	XCopyPlane/XCopyPlane \
 	XDrawArc/XDrawArc \
 	XDrawArcs/XDrawArcs \
-	drwimgst16/drwimgst16 \
+	XDrawImageString16/XDrawImageString16 \
 	drwimgstr/drwimgstr \
 	drwln/drwln \
 	drwlns/drwlns \
