@@ -94,7 +94,7 @@
 	"VSW5TESTSUITE CASE IsCursorKey 2"
 	/tset/Xlib17/IsCursorKey/IsCursorKey
 	"VSW5TESTSUITE CASE IsFunctionKey 2"
-	/tset/Xlib17/isfnctnky/isfnctnky
+	/tset/Xlib17/IsFunctionKey/IsFunctionKey
 	"VSW5TESTSUITE CASE IsKeypadKey 2"
 	/tset/Xlib17/iskypdky/iskypdky
 	"VSW5TESTSUITE CASE IsModifierKey 2"

@@ -1728,7 +1728,7 @@ IsCursorKey
 
 IsFunctionKey
 	"VSW5TESTSUITE CASE IsFunctionKey 2"
-	/tset/Xlib17/isfnctnky/isfnctnky
+	/tset/Xlib17/IsFunctionKey/IsFunctionKey
 
 IsKeypadKey
 	"VSW5TESTSUITE CASE IsKeypadKey 2"
