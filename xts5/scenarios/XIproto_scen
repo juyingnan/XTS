@@ -78,7 +78,7 @@
 	"VSW5TESTSUITE CASE GetFeedbackControl 3"
 	/tset/XIproto/XGetFeedbackControl/XGetFeedbackControl
 	"VSW5TESTSUITE CASE GetExtensionVersion 3"
-	/tset/XIproto/getvers/getvers
+	/tset/XIproto/XGetExtensionVersion/XGetExtensionVersion
 	"VSW5TESTSUITE CASE GrabDevice 3"
 	/tset/XIproto/grbdev/grbdev
 	"VSW5TESTSUITE CASE GrabDeviceButton 3"

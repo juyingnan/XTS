@@ -554,7 +554,7 @@ XGetDeviceDontPropagateList
 
 XGetExtensionVersion
 	"VSW5TESTSUITE CASE XGetExtensionVersion 2"
-	/tset/XI/getvers/getvers
+	/tset/XI/XGetExtensionVersion/XGetExtensionVersion
 
 XGrabDevice
 	"VSW5TESTSUITE CASE XGrabDevice 18"

@@ -22,7 +22,7 @@ tprogs = \
 	XGetFeedbackControl/XGetFeedbackControl \
 	XGetDeviceFocus/XGetDeviceFocus \
 	XGetDeviceDontPropagateList/XGetDeviceDontPropagateList \
-	getvers/getvers \
+	XGetExtensionVersion/XGetExtensionVersion \
 	grbdev/grbdev \
 	grbdvbtn/grbdvbtn \
 	grbdvky/grbdvky \

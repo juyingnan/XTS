@@ -20,7 +20,7 @@ tprogs = \
 	XDeviceBell/XDeviceBell \
 	getdvmmap/getdvmmap \
 	XGetFeedbackControl/XGetFeedbackControl \
-	getvers/getvers \
+	XGetExtensionVersion/XGetExtensionVersion \
 	grbdev/grbdev \
 	grbdvbtn/grbdvbtn \
 	grbdvky/grbdvky \
