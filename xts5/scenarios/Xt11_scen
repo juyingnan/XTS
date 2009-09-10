@@ -101,7 +101,7 @@
 	"VSW5TESTSUITE CASE XtCvtStringToInitialState 6"
 	/tset/Xt11/XtCvtStringToInitialState/XtCvtStringToInitialState
 	"VSW5TESTSUITE CASE XtCvtStringToInt 4"
-	/tset/Xt11/tcstint/tcstint
+	/tset/Xt11/XtCvtStringToInt/XtCvtStringToInt
 	"VSW5TESTSUITE CASE XtCvtStringToPixel 9"
 	/tset/Xt11/tcstpix/tcstpix
 	"VSW5TESTSUITE CASE XtCvtStringToShort 4"

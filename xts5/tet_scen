@@ -4217,7 +4217,7 @@ XtCvtStringToInitialState
 
 XtCvtStringToInt
 	"VSW5TESTSUITE CASE XtCvtStringToInt 4"
-	/tset/Xt11/tcstint/tcstint
+	/tset/Xt11/XtCvtStringToInt/XtCvtStringToInt
 
 XtCvtStringToPixel
 	"VSW5TESTSUITE CASE XtCvtStringToPixel 9"
