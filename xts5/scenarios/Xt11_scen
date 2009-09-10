@@ -113,7 +113,7 @@
 	"VSW5TESTSUITE CASE XtCvtStringToUnsignedChar 4"
 	/tset/Xt11/XtCvtStringToUnsignedChar/XtCvtStringToUnsignedChar
 	"VSW5TESTSUITE CASE XtCvtStringToVisual 5"
-	/tset/Xt11/tcstvis/tcstvis
+	/tset/Xt11/XtCvtStringToVisual/XtCvtStringToVisual
 	"VSW5TESTSUITE CASE XtCvtColorToPixel 3"
 	/tset/Xt11/XtCvtColorToPixel/XtCvtColorToPixel
 	"VSW5TESTSUITE CASE XtCvtIntToBoolean 3"

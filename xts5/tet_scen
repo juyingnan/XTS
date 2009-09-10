@@ -4241,7 +4241,7 @@ XtCvtStringToUnsignedChar
 
 XtCvtStringToVisual
 	"VSW5TESTSUITE CASE XtCvtStringToVisual 5"
-	/tset/Xt11/tcstvis/tcstvis
+	/tset/Xt11/XtCvtStringToVisual/XtCvtStringToVisual
 
 XtCvtColorToPixel
 	"VSW5TESTSUITE CASE XtCvtColorToPixel 3"
