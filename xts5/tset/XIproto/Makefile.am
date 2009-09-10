@@ -43,5 +43,5 @@ tprogs = \
 	slctexevnt/slctexevnt \
 	XSendExtensionEvent/XSendExtensionEvent \
 	ungrbdev/ungrbdev \
-	ungrbdvbtn/ungrbdvbtn \
+	XUngrabDeviceButton/XUngrabDeviceButton \
 	ungrbdvky/ungrbdvky

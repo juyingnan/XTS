@@ -122,6 +122,6 @@
 	"VSW5TESTSUITE CASE UngrabDevice 3"
 	/tset/XIproto/ungrbdev/ungrbdev
 	"VSW5TESTSUITE CASE UngrabDeviceButton 3"
-	/tset/XIproto/ungrbdvbtn/ungrbdvbtn
+	/tset/XIproto/XUngrabDeviceButton/XUngrabDeviceButton
 	"VSW5TESTSUITE CASE UngrabDeviceKey 3"
 	/tset/XIproto/ungrbdvky/ungrbdvky
