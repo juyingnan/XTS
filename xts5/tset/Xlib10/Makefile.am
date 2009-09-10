@@ -20,7 +20,7 @@ tprogs = \
 	GrabServer/GrabServer \
 	GetScreenSaver/GetScreenSaver \
 	InstallColormap/InstallColormap \
-	kllclnt/kllclnt \
+	KillClient/KillClient \
 	lsthsts/lsthsts \
 	lstinstlld/lstinstlld \
 	rmvfrmsvst/rmvfrmsvst \

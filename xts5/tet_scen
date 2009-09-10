@@ -738,7 +738,7 @@ XInstallColormap
 
 XKillClient
 	"VSW5TESTSUITE CASE XKillClient 4"
-	/tset/Xlib10/kllclnt/kllclnt
+	/tset/Xlib10/KillClient/KillClient
 
 XListHosts
 	"VSW5TESTSUITE CASE XListHosts 2"
@@ -3366,7 +3366,7 @@ pInternAtom
 
 pKillClient
 	"VSW5TESTSUITE CASE KillClient 3"
-	/tset/Xproto/kllclnt/kllclnt
+	/tset/Xproto/KillClient/KillClient
 
 pLookupColor
 	"VSW5TESTSUITE CASE LookupColor 3"

@@ -78,7 +78,7 @@
 	"VSW5TESTSUITE CASE XInstallColormap 6"
 	/tset/Xlib10/InstallColormap/InstallColormap
 	"VSW5TESTSUITE CASE XKillClient 4"
-	/tset/Xlib10/kllclnt/kllclnt
+	/tset/Xlib10/KillClient/KillClient
 	"VSW5TESTSUITE CASE XListHosts 2"
 	/tset/Xlib10/lsthsts/lsthsts
 	"VSW5TESTSUITE CASE XListInstalledColormaps 2"

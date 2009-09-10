@@ -186,7 +186,7 @@
 	"VSW5TESTSUITE CASE InternAtom 3"
 	/tset/Xproto/InternAtom/InternAtom
 	"VSW5TESTSUITE CASE KillClient 3"
-	/tset/Xproto/kllclnt/kllclnt
+	/tset/Xproto/KillClient/KillClient
 	"VSW5TESTSUITE CASE LookupColor 3"
 	/tset/Xproto/lkpclr/lkpclr
 	"VSW5TESTSUITE CASE ListExtensions 3"

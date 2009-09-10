@@ -74,7 +74,7 @@ tprogs = \
 	ImageText8/ImageText8 \
 	InstallColormap/InstallColormap \
 	InternAtom/InternAtom \
-	kllclnt/kllclnt \
+	KillClient/KillClient \
 	lkpclr/lkpclr \
 	lstextnsns/lstextnsns \
 	lstfnts/lstfnts \
