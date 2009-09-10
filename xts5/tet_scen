@@ -2896,7 +2896,7 @@ XCopyArea
 
 XCopyPlane
 	"VSW5TESTSUITE CASE XCopyPlane 43"
-	/tset/Xlib9/cpypln/cpypln
+	/tset/Xlib9/CopyPlane/CopyPlane
 
 XDrawArc
 	"VSW5TESTSUITE CASE XDrawArc 102"
@@ -3198,7 +3198,7 @@ pCopyGC
 
 pCopyPlane
 	"VSW5TESTSUITE CASE CopyPlane 3"
-	/tset/Xproto/cpypln/cpypln
+	/tset/Xproto/CopyPlane/CopyPlane
 
 pCirculateWindow
 	"VSW5TESTSUITE CASE CirculateWindow 3"

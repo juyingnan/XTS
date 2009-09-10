@@ -62,7 +62,7 @@
 	"VSW5TESTSUITE CASE XCopyArea 36"
 	/tset/Xlib9/CopyArea/CopyArea
 	"VSW5TESTSUITE CASE XCopyPlane 43"
-	/tset/Xlib9/cpypln/cpypln
+	/tset/Xlib9/CopyPlane/CopyPlane
 	"VSW5TESTSUITE CASE XDrawArc 102"
 	/tset/Xlib9/drwarc/drwarc
 	"VSW5TESTSUITE CASE XDrawArcs 112"

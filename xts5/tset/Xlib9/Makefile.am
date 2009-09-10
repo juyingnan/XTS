@@ -12,7 +12,7 @@ tprogs = \
 	ClearArea/ClearArea \
 	clrwdw/clrwdw \
 	CopyArea/CopyArea \
-	cpypln/cpypln \
+	CopyPlane/CopyPlane \
 	drwarc/drwarc \
 	drwarcs/drwarcs \
 	drwimgst16/drwimgst16 \

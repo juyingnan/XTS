@@ -32,7 +32,7 @@ tprogs = \
 	CopyArea/CopyArea \
 	CopyColormapAndFree/CopyColormapAndFree \
 	CopyGC/CopyGC \
-	cpypln/cpypln \
+	CopyPlane/CopyPlane \
 	crcltwdw/crcltwdw \
 	crtclrmp/crtclrmp \
 	crtcrsr/crtcrsr \

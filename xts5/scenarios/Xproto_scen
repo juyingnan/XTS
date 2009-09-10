@@ -102,7 +102,7 @@
 	"VSW5TESTSUITE CASE CopyGC 4"
 	/tset/Xproto/CopyGC/CopyGC
 	"VSW5TESTSUITE CASE CopyPlane 3"
-	/tset/Xproto/cpypln/cpypln
+	/tset/Xproto/CopyPlane/CopyPlane
 	"VSW5TESTSUITE CASE CirculateWindow 3"
 	/tset/Xproto/crcltwdw/crcltwdw
 	"VSW5TESTSUITE CASE CreateColormap 5"
