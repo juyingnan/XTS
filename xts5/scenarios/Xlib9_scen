@@ -118,7 +118,7 @@
 	"VSW5TESTSUITE CASE XGetImage 17"
 	/tset/Xlib9/XGetImage/XGetImage
 	"VSW5TESTSUITE CASE XGetSubImage 17"
-	/tset/Xlib9/gtsbimg/gtsbimg
+	/tset/Xlib9/XGetSubImage/XGetSubImage
 	"VSW5TESTSUITE CASE XLoadFont 5"
 	/tset/Xlib9/ldfnt/ldfnt
 	"VSW5TESTSUITE CASE XLoadQueryFont 5"

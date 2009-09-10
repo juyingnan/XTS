@@ -40,7 +40,7 @@ tprogs = \
 	XGetFontProperty/XGetFontProperty \
 	XGetFontPath/XGetFontPath \
 	XGetImage/XGetImage \
-	gtsbimg/gtsbimg \
+	XGetSubImage/XGetSubImage \
 	ldfnt/ldfnt \
 	ldqryfnt/ldqryfnt \
 	ListFonts/ListFonts \

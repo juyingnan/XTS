@@ -3008,7 +3008,7 @@ XGetImage
 
 XGetSubImage
 	"VSW5TESTSUITE CASE XGetSubImage 17"
-	/tset/Xlib9/gtsbimg/gtsbimg
+	/tset/Xlib9/XGetSubImage/XGetSubImage
 
 XLoadFont
 	"VSW5TESTSUITE CASE XLoadFont 5"
