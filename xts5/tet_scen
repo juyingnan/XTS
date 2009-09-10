@@ -3600,7 +3600,7 @@ XtDataTypes
 
 CoreWidget
 	"VSW5TESTSUITE CASE CoreWidget 9"
-	/tset/Xt3/wdgtcr/wdgtcr
+	/tset/Xt3/CoreWidget/CoreWidget
 
 CompositeWidget
 	"VSW5TESTSUITE CASE CompositeWidget 11"

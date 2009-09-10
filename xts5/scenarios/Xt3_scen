@@ -61,7 +61,7 @@
 	"VSW5TESTSUITE CASE DataTypes 9"
 	/tset/Xt3/DataTypes/DataTypes
 	"VSW5TESTSUITE CASE CoreWidget 9"
-	/tset/Xt3/wdgtcr/wdgtcr
+	/tset/Xt3/CoreWidget/CoreWidget
 	"VSW5TESTSUITE CASE CompositeWidget 11"
 	/tset/Xt3/CompositeWidget/CompositeWidget
 	"VSW5TESTSUITE CASE ConstraintWidget 11"
