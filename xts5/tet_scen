@@ -4367,7 +4367,7 @@ XtVaSetSubvalues
 
 XtAppAddActions
 	"VSW5TESTSUITE CASE XtAppAddActions 4"
-	/tset/Xt12/tapadactn/tapadactn
+	/tset/Xt12/XtAppAddActions/XtAppAddActions
 
 XtAppAddActionHook
 	"VSW5TESTSUITE CASE XtAppAddActionHook 6"
