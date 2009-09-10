@@ -14,7 +14,7 @@ tprogs = \
 	AllocColorPlanes/AllocColorPlanes \
 	AllocNamedColor/AllocNamedColor \
 	AllowEvents/AllowEvents \
-	bdrqst/bdrqst \
+	BadRequest/BadRequest \
 	bll/bll \
 	chngactvpn/chngactvpn \
 	chnggc/chnggc \

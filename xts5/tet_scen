@@ -3126,7 +3126,7 @@ pAllowEvents
 
 pBadRequest
 	"VSW5TESTSUITE CASE BadRequest 1"
-	/tset/Xproto/bdrqst/bdrqst
+	/tset/Xproto/BadRequest/BadRequest
 
 pBell
 	"VSW5TESTSUITE CASE Bell 3"
