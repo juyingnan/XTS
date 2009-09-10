@@ -28,7 +28,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XDefaultScreen/XDefaultScreen XDefaultScreen/XDefaultScreen_m \
 	XDefaultScreenOfDisplay/XDefaultScreenOfDisplay XDefaultScreenOfDisplay/XDefaultScreenOfDisplay_m \
 	XDefaultVisual/XDefaultVisual XDefaultVisual/XDefaultVisual_m \
-	dfltvslofs/dfltvslofs dfltvslofs/dfltvslofs_m \
+	XDefaultVisualOfScreen/XDefaultVisualOfScreen XDefaultVisualOfScreen/XDefaultVisualOfScreen_m \
 	dsbckngstr/dsbckngstr dsbckngstr/dsbckngstr_m \
 	dsplyclls/dsplyclls dsplyclls/dsplyclls_m \
 	dsplyhght/dsplyhght dsplyhght/dsplyhght_m \
