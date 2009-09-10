@@ -1,3 +1,4 @@
+/*
 Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -17,44 +18,50 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib12/dsplynm/dsplynm.m,v 1.2 2005-11-03 08:42:34 jmichael Exp $
-
-Copyright (c) Applied Testing and Technology, Inc. 1995
-All Rights Reserved.
-
->># Project: VSW5
->># 
->># File: xts5/tset/Xlib12/dsplynm/dsplynm.m
->># 
->># Description:
->># 	Tests for XDisplayName()
->># 
->># Modifications:
->># $Log: dsplynm.m,v $
->># Revision 1.2  2005-11-03 08:42:34  jmichael
->># clean up all vsw5 paths to use xts5 instead.
->>#
->># Revision 1.1.1.2  2005/04/15 14:05:18  anderson
->># Reimport of the base with the legal name in the copyright fixed.
->>#
->># Revision 8.0  1998/12/23 23:33:19  mar
->># Branch point for Release 5.0.2
->>#
->># Revision 7.0  1998/10/30 22:54:41  mar
->># Branch point for Release 5.0.2b1
->>#
->># Revision 6.0  1998/03/02 05:24:44  tbr
->># Branch point for Release 5.0.1
->>#
->># Revision 5.0  1998/01/26 03:21:16  tbr
->># Branch point for Release 5.0.1b1
->>#
->># Revision 4.0  1995/12/15 09:07:26  tbr
->># Branch point for Release 5.0.0
->>#
->># Revision 3.1  1995/12/15  01:07:46  andy
->># Prepare for GA Release
->>#
+*/
+/*
+* $Header: /cvs/xtest/xtest/xts5/tset/Xlib12/XDisplayName/Test1.c,v 1.5 2005-11-03 08:42:34 jmichael Exp $
+* 
+* Copyright (c) Applied Testing and Technology, Inc. 1995
+* All Rights Reserved.
+* 
+* Project: VSW5
+* 
+* File: xts5/tset/Xlib12/XDisplayName/Test1.c
+* 
+* Description:
+* 	Tests for XDisplayName()
+* 
+* Modifications:
+* $Log: Test1.c,v $
+* Revision 1.5  2005-11-03 08:42:34  jmichael
+* clean up all vsw5 paths to use xts5 instead.
+*
+* Revision 1.4  2005/04/21 09:40:42  ajosey
+* resync to VSW5.1.5
+*
+* Revision 8.1  2000/02/04 15:24:44  vsx
+* SR234: remove extra tet_main() argument
+*
+* Revision 8.0  1998/12/23 23:33:18  mar
+* Branch point for Release 5.0.2
+*
+* Revision 7.0  1998/10/30 22:54:40  mar
+* Branch point for Release 5.0.2b1
+*
+* Revision 6.0  1998/03/02 05:24:44  tbr
+* Branch point for Release 5.0.1
+*
+* Revision 5.0  1998/01/26 03:21:16  tbr
+* Branch point for Release 5.0.1b1
+*
+* Revision 4.0  1995/12/15 09:07:25  tbr
+* Branch point for Release 5.0.0
+*
+* Revision 3.1  1995/12/15  01:07:44  andy
+* Prepare for GA Release
+*
+*/
 /*
 Portions of this software are based on Xlib and X Protocol Test Suite.
 We have used this material under the terms of its copyright, which grants
@@ -98,94 +105,79 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XDisplayName Xlib12
-char *
-XDisplayName(string)
-char *string;
->>MAKE
->>#
->>#
->># Plant some rules in the Makefile to construct
->># stand-alone executable Test1 to allow the setting
->># of environment variables.
->>#
->># Cal 22/6/91
->>#
-#
-# The following lines are copied from the .m file by mc
-# under control of the >>MAKE directive
-# to create rules for the executable file Test1.
-#
-AUXFILES=Test1
-AUXCLEAN=Test1.o Test1
 
-all: Test
+#ifdef HAVE_CONFIG_H
+#include <config.h>
+#endif
 
-Test1 : Test1.o $(LIBS) $(TCMCHILD)
-	$(CC) $(LDFLAGS) -o $@ Test1.o $(TCMCHILD) $(LIBLOCAL) $(LIBS) $(SYSLIBS)
+#include	<stdlib.h>
+#include	"xtest.h"
+#include	<X11/Xlib.h>
+#include	<X11/Xutil.h>
+#include	"tet_api.h"
+#include	"xtestlib.h"
+#include	"pixval.h"
 
-#
-# End of section copied from the .m file.
-#
->>ASSERTION Good B 1
-A call to xname returns a pointer to the display name that
-.F XOpenDisplay
-would attempt to use when passed
-.A string
-as an argument.
->>STRATEGY
-Fork a child process using tet_fork.
-In child :
-  Exec the file \"./Test1\" with the environment variable DISPLAY set to 
-    the value of XT_DISPLAY config variable.
-  In Test1:
-    Call xname with string set to TestString:0.0
-    Verify that the call returned a pointer to TestString:0.0
-    Obtain the value of the DISPLAY environment variable.
-    Call xname with string set to NULL.
-    Verify that the DISPLAY variable value is identical to the string 
-      returned by xname.
->>CODE
 
-        if(config.posix_system == 0) {
-                untested("This assertion can only be tested on a POSIX system.");
-        } else
-		tet_fork(t001exec, TET_NULLFP, 0, 0xFF);
+extern	Display	*Dsp;
 
->>EXTERN
-extern char **environ;
+/* 
+ * Dummy declarations which are normally inserted by mc.
+ * Needed to prevent linkstart.c being included.
+ */
+char	*TestName = "XDisplayName";
+char	*string = "TestString:0.0";
+int     tet_thistest;
+struct tet_testlist tet_testlist[] = {
+	NULL, 0
+};
+int 	ntests = sizeof(tet_testlist)/sizeof(struct tet_testlist)-1;
 
-static void
-t001exec()
+int
+tet_main(argc, argv)
+int argc;	
+char *argv[];
 {
-char	*argv[2];
-char	*str;
-char	*dstr;
-char	*mstr = "DISPLAY=%s";
-int	pass = 0, fail = 0;
+int		pass = 0, fail = 0;
+char		*res_name;
+char		*dispstr;
+char		*rdispstr;
+Display		*display;
+char		*str;
 
-	if((dstr = tet_getvar("XT_DISPLAY")) == (char *) NULL) {
-		delete("XT_DISPLAY configuration variable is not defined.");
-		return;
-	}		
+	exec_startup();
+	tpstartup();
+	trace("Exec'd file ./Test1.");
 
-	if((str = (char *) malloc( strlen(dstr) + strlen(mstr) + 1)) == (char *) NULL) {
-		delete("malloc() failed.");
+	str = XDisplayName(string);
+
+	if(strcmp(string, str) != 0) {
+		report("%s() returned \"%s\" instead of \"%s\".", TestName, str, string);
+		FAIL;
+	} else
+		CHECK;
+
+	if((dispstr = getenv("DISPLAY")) == (char *) NULL) {
+		delete("Environment variable DISPLAY is not set.");
 		return;
+	} else
+		CHECK;
+
+	rdispstr = XDisplayName((char *) NULL);
+
+	if(rdispstr == (char *) NULL) {
+		report("%s() returned NULL.", TestName);
+		FAIL;
+	} else {
+		CHECK;
+		if(strcmp(rdispstr, dispstr) != 0) {
+			report("%s() returned \"%s\" instead of \"%s\".", TestName, rdispstr, dispstr);
+			FAIL;
+		} else
+			CHECK;
 	}
 
-	sprintf(str, mstr, dstr);
-
-	argv[0] = "./Test1";
-	argv[1] = (char *) NULL;
-
-	if (xtest_putenv( str ) ) {
-		delete("xtest_putenv failed");
-		return;
-	}
-
-	(void) tet_exec("./Test1", argv, environ);
-
-	delete("Exec of file ./Test1 failed");
-	free( (char *) str);
+	CHECKPASS(4);
+	tpcleanup();
+	exec_cleanup();
 }

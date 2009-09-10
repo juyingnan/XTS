@@ -947,7 +947,7 @@ XDisplayMotionBufferSize
 
 XDisplayName
 	"VSW5TESTSUITE CASE XDisplayName 1"
-	/tset/Xlib12/dsplynm/dsplynm
+	/tset/Xlib12/XDisplayName/XDisplayName
 
 XEventsQueued
 	"VSW5TESTSUITE CASE XEventsQueued 6"

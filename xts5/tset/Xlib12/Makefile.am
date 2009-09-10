@@ -15,7 +15,7 @@ tprogs = \
 	XCheckTypedWindowEvent/XCheckTypedWindowEvent \
 	XCheckWindowEvent/XCheckWindowEvent \
 	XDisplayMotionBufferSize/XDisplayMotionBufferSize \
-	dsplynm/dsplynm \
+	XDisplayName/XDisplayName \
 	evntsqd/evntsqd \
 	flsh/flsh \
 	gterrrdtbs/gterrrdtbs \
@@ -38,5 +38,5 @@ tprogs = \
 	wdwevnt/wdwevnt
 
 # Auxiliary programs run from tests
-check_PROGRAMS += dsplynm/Test1
-dsplynm_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
+check_PROGRAMS += XDisplayName/Test1
+XDisplayName_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
