@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE ChangeFeedbackControl 3"
 	/tset/XIproto/ChangeFeedbackControl/ChangeFeedbackControl
 	"VSW5TESTSUITE CASE ChangeKeyboardDevice 4"
-	/tset/XIproto/XChangeKeyboardDevice/XChangeKeyboardDevice
+	/tset/XIproto/ChangeKeyboardDevice/ChangeKeyboardDevice
 	"VSW5TESTSUITE CASE ChangePointerDevice 4"
 	/tset/XIproto/XChangePointerDevice/XChangePointerDevice
 	"VSW5TESTSUITE CASE ChangeDeviceKeyMapping 3"

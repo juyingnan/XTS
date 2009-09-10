@@ -514,7 +514,7 @@ XChangeFeedbackControl
 
 XChangeKeyboardDevice
 	"VSW5TESTSUITE CASE XChangeKeyboardDevice 10"
-	/tset/XI/XChangeKeyboardDevice/XChangeKeyboardDevice
+	/tset/XI/ChangeKeyboardDevice/ChangeKeyboardDevice
 
 XChangeDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XChangeDeviceDontPropagateList 7"
