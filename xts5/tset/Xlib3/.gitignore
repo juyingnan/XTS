@@ -98,7 +98,7 @@ XScreenOfDisplay/XScreenOfDisplay
 XScreenOfDisplay/XScreenOfDisplay_m
 srvrvndr/srvrvndr
 srvrvndr/srvrvndr_m
-SetCloseDownMode/SetCloseDownMode
+XSetCloseDownMode/XSetCloseDownMode
 vndrrls/vndrrls
 vndrrls/vndrrls_m
 wdthmmofsc/wdthmmofsc

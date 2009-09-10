@@ -111,7 +111,7 @@ tprogs = \
 	XSendEvent/XSendEvent \
 	XSetAccessControl/XSetAccessControl \
 	SetClipRectangles/SetClipRectangles \
-	SetCloseDownMode/SetCloseDownMode \
+	XSetCloseDownMode/XSetCloseDownMode \
 	SetDashes/SetDashes \
 	SetFontPath/SetFontPath \
 	XSetInputFocus/XSetInputFocus \
