@@ -668,7 +668,7 @@ XShapeCombineShape
 
 XShapeGetRectangles
 	"VSW5TESTSUITE CASE XShapeGetRectangles 1"
-	/tset/SHAPE/tshpgtrec/tshpgtrec
+	/tset/SHAPE/XShapeGetRectangles/XShapeGetRectangles
 
 XShapeInputSelected
 	"VSW5TESTSUITE CASE XShapeInputSelected 1"

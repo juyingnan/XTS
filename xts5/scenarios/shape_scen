@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XShapeCombineShape 1"
 	/tset/SHAPE/XShapeCombineShape/XShapeCombineShape
 	"VSW5TESTSUITE CASE XShapeGetRectangles 1"
-	/tset/SHAPE/tshpgtrec/tshpgtrec
+	/tset/SHAPE/XShapeGetRectangles/XShapeGetRectangles
 	"VSW5TESTSUITE CASE XShapeInputSelected 1"
 	/tset/SHAPE/tshpinsel/tshpinsel
 	"VSW5TESTSUITE CASE XShapeQueryExtension 1"
