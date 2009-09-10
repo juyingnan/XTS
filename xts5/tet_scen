@@ -1598,7 +1598,7 @@ XrmQuarkToString
 
 XrmStringToBindingQuarkList
 	"VSW5TESTSUITE CASE XrmStringToBindingQuarkList 6"
-	/tset/Xlib16/rmstrtbndn/rmstrtbndn
+	/tset/Xlib16/XrmStringToBindingQuarkList/XrmStringToBindingQuarkList
 
 XrmStringToQuark
 	"VSW5TESTSUITE CASE XrmStringToQuark 3"

@@ -96,7 +96,7 @@
 	"VSW5TESTSUITE CASE XrmQuarkToString 3"
 	/tset/Xlib16/XrmQuarkToString/XrmQuarkToString
 	"VSW5TESTSUITE CASE XrmStringToBindingQuarkList 6"
-	/tset/Xlib16/rmstrtbndn/rmstrtbndn
+	/tset/Xlib16/XrmStringToBindingQuarkList/XrmStringToBindingQuarkList
 	"VSW5TESTSUITE CASE XrmStringToQuark 3"
 	/tset/Xlib16/rmstrtqrk/rmstrtqrk
 	"VSW5TESTSUITE CASE XrmStringToQuarkList 3"
