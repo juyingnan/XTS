@@ -85,7 +85,7 @@
 	"VSW5TESTSUITE CASE XtCvtStringToCursor 5"
 	/tset/Xt11/XtCvtStringToCursor/XtCvtStringToCursor
 	"VSW5TESTSUITE CASE XtCvtStringToDimension 4"
-	/tset/Xt11/tcstdim/tcstdim
+	/tset/Xt11/XtCvtStringToDimension/XtCvtStringToDimension
 	"VSW5TESTSUITE CASE XtCvtStringToDisplay 4"
 	/tset/Xt11/tcstdisp/tcstdisp
 	"VSW5TESTSUITE CASE XtCvtStringToFile 4"

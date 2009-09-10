@@ -4185,7 +4185,7 @@ XtCvtStringToCursor
 
 XtCvtStringToDimension
 	"VSW5TESTSUITE CASE XtCvtStringToDimension 4"
-	/tset/Xt11/tcstdim/tcstdim
+	/tset/Xt11/XtCvtStringToDimension/XtCvtStringToDimension
 
 XtCvtStringToDisplay
 	"VSW5TESTSUITE CASE XtCvtStringToDisplay 4"
