@@ -63,7 +63,7 @@
 	"VSW5TESTSUITE CASE XtGetErrorDatabaseText 2"
 	/tset/XtC/XtGetErrorDatabaseText/XtGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XtInitialize 27"
-	/tset/XtC/tinitlize/tinitlize
+	/tset/XtC/XtInitialize/XtInitialize
 	"VSW5TESTSUITE CASE XtMainLoop 28"
 	/tset/XtC/tmainloop/tmainloop
 	"VSW5TESTSUITE CASE XtNextEvent 4"

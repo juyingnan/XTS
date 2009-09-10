@@ -4639,7 +4639,7 @@ XtGetErrorDatabaseText
 
 XtInitialize
 	"VSW5TESTSUITE CASE XtInitialize 27"
-	/tset/XtC/tinitlize/tinitlize
+	/tset/XtC/XtInitialize/XtInitialize
 
 XtMainLoop
 	"VSW5TESTSUITE CASE XtMainLoop 28"
