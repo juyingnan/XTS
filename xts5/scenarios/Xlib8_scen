@@ -112,4 +112,4 @@
 	"VSW5TESTSUITE CASE XSetTSOrigin 3"
 	/tset/Xlib8/sttsorgn/sttsorgn
 	"VSW5TESTSUITE CASE XFlushGC 2"
-	/tset/Xlib8/flushgc/flushgc
+	/tset/Xlib8/XFlushGC/XFlushGC

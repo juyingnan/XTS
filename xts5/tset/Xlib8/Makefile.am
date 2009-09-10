@@ -8,14 +8,14 @@ check_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
-flushgc_flushgc_LDADD = $(TCM) $(XTS_LLIBS) $(XTS_LIBS) \
+XFlushGC_XFlushGC_LDADD = $(TCM) $(XTS_LLIBS) $(XTS_LIBS) \
 	$(top_builddir)/xts5/src/libXR5/libXR5.a
 
 tprogs = \
 	XChangeGC/XChangeGC \
 	XCopyGC/XCopyGC \
 	XCreateGC/XCreateGC \
-	flushgc/flushgc \
+	XFlushGC/XFlushGC \
 	FreeGC/FreeGC \
 	gcntxtfrmg/gcntxtfrmg \
 	gtgcvls/gtgcvls \

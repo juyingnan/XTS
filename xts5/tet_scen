@@ -2877,7 +2877,7 @@ XSetTSOrigin
 
 XFlushGC
 	"VSW5TESTSUITE CASE XFlushGC 2"
-	/tset/Xlib8/flushgc/flushgc
+	/tset/Xlib8/XFlushGC/XFlushGC
 
 
 # Discrete tests for Xlib Chapter 9-Graphics Functions
