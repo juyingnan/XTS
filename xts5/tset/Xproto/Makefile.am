@@ -103,7 +103,7 @@ tprogs = \
 	QueryFont/QueryFont \
 	QueryKeymap/QueryKeymap \
 	QueryPointer/QueryPointer \
-	qrytr/qrytr \
+	QueryTree/QueryTree \
 	qrytxtextn/qrytxtextn \
 	rclrcrsr/rclrcrsr \
 	rprntwdw/rprntwdw \

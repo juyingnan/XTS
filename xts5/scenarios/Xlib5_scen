@@ -78,7 +78,7 @@
 	"VSW5TESTSUITE CASE XQueryPointer 6"
 	/tset/Xlib5/QueryPointer/QueryPointer
 	"VSW5TESTSUITE CASE XQueryTree 3"
-	/tset/Xlib5/qrytr/qrytr
+	/tset/Xlib5/QueryTree/QueryTree
 	"VSW5TESTSUITE CASE XRotateWindowProperties 6"
 	/tset/Xlib5/rttwdwprpr/rttwdwprpr
 	"VSW5TESTSUITE CASE XSetSelectionOwner 9"

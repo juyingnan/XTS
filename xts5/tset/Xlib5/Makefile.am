@@ -20,7 +20,7 @@ tprogs = \
 	InternAtom/InternAtom \
 	ListProperties/ListProperties \
 	QueryPointer/QueryPointer \
-	qrytr/qrytr \
+	QueryTree/QueryTree \
 	rttwdwprpr/rttwdwprpr \
 	stslctnown/stslctnown \
 	trnsltcrdn/trnsltcrdn

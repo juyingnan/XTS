@@ -2477,7 +2477,7 @@ XQueryPointer
 
 XQueryTree
 	"VSW5TESTSUITE CASE XQueryTree 3"
-	/tset/Xlib5/qrytr/qrytr
+	/tset/Xlib5/QueryTree/QueryTree
 
 XRotateWindowProperties
 	"VSW5TESTSUITE CASE XRotateWindowProperties 6"
@@ -3482,7 +3482,7 @@ pQueryPointer
 
 pQueryTree
 	"VSW5TESTSUITE CASE QueryTree 3"
-	/tset/Xproto/qrytr/qrytr
+	/tset/Xproto/QueryTree/QueryTree
 
 pQueryTextExtents
 	"VSW5TESTSUITE CASE QueryTextExtents 3"
