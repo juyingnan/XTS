@@ -120,7 +120,7 @@
 	"VSW5TESTSUITE CASE XSetLocaleModifiers 1"
 	/tset/Xlib14/XSetLocaleModifiers/XSetLocaleModifiers
 	"VSW5TESTSUITE CASE XUnsetICFocus 1"
-	/tset/Xlib14/uicfoc/uicfoc
+	/tset/Xlib14/XUnsetICFocus/XUnsetICFocus
 	"VSW5TESTSUITE CASE XVaCreateNestedList 4"
 	/tset/Xlib14/vcnlist/vcnlist
 	"VSW5TESTSUITE CASE XwcDrawImageString 1"
