@@ -3048,7 +3048,7 @@ XSetFontPath
 
 XTextExtents16
 	"VSW5TESTSUITE CASE XTextExtents16 11"
-	/tset/Xlib9/txtextnt16/txtextnt16
+	/tset/Xlib9/XTextExtents16/XTextExtents16
 
 XTextExtents
 	"VSW5TESTSUITE CASE XTextExtents 10"

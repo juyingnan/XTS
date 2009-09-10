@@ -50,7 +50,7 @@ tprogs = \
 	XQueryTextExtents16/XQueryTextExtents16 \
 	XQueryTextExtents/XQueryTextExtents \
 	XSetFontPath/XSetFontPath \
-	txtextnt16/txtextnt16 \
+	XTextExtents16/XTextExtents16 \
 	txtextnts/txtextnts \
 	txtwdth/txtwdth \
 	txtwdth16/txtwdth16 \
