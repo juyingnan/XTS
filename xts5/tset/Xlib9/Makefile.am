@@ -42,7 +42,7 @@ tprogs = \
 	XGetImage/XGetImage \
 	XGetSubImage/XGetSubImage \
 	XLoadFont/XLoadFont \
-	ldqryfnt/ldqryfnt \
+	XLoadQueryFont/XLoadQueryFont \
 	ListFonts/ListFonts \
 	ListFontsWithInfo/ListFontsWithInfo \
 	PutImage/PutImage \

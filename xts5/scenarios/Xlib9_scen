@@ -122,7 +122,7 @@
 	"VSW5TESTSUITE CASE XLoadFont 5"
 	/tset/Xlib9/XLoadFont/XLoadFont
 	"VSW5TESTSUITE CASE XLoadQueryFont 5"
-	/tset/Xlib9/ldqryfnt/ldqryfnt
+	/tset/Xlib9/XLoadQueryFont/XLoadQueryFont
 	"VSW5TESTSUITE CASE XListFonts 6"
 	/tset/Xlib9/ListFonts/ListFonts
 	"VSW5TESTSUITE CASE XListFontsWithInfo 7"

@@ -3016,7 +3016,7 @@ XLoadFont
 
 XLoadQueryFont
 	"VSW5TESTSUITE CASE XLoadQueryFont 5"
-	/tset/Xlib9/ldqryfnt/ldqryfnt
+	/tset/Xlib9/XLoadQueryFont/XLoadQueryFont
 
 XListFonts
 	"VSW5TESTSUITE CASE XListFonts 6"
