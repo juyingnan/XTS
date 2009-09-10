@@ -2813,7 +2813,7 @@ XSetClipMask
 
 XSetClipOrigin
 	"VSW5TESTSUITE CASE XSetClipOrigin 3"
-	/tset/Xlib8/stclporgn/stclporgn
+	/tset/Xlib8/XSetClipOrigin/XSetClipOrigin
 
 XSetClipRectangles
 	"VSW5TESTSUITE CASE XSetClipRectangles 9"

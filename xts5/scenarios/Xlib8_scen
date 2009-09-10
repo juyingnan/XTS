@@ -80,7 +80,7 @@
 	"VSW5TESTSUITE CASE XSetClipMask 7"
 	/tset/Xlib8/XSetClipMask/XSetClipMask
 	"VSW5TESTSUITE CASE XSetClipOrigin 3"
-	/tset/Xlib8/stclporgn/stclporgn
+	/tset/Xlib8/XSetClipOrigin/XSetClipOrigin
 	"VSW5TESTSUITE CASE XSetClipRectangles 9"
 	/tset/Xlib8/XSetClipRectangles/XSetClipRectangles
 	"VSW5TESTSUITE CASE XSetDashes 7"

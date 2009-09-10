@@ -25,7 +25,7 @@ tprogs = \
 	XSetArcMode/XSetArcMode \
 	XSetBackground/XSetBackground \
 	XSetClipMask/XSetClipMask \
-	stclporgn/stclporgn \
+	XSetClipOrigin/XSetClipOrigin \
 	XSetClipRectangles/XSetClipRectangles \
 	XSetDashes/XSetDashes \
 	stfllrl/stfllrl \
