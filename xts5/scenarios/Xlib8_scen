@@ -102,7 +102,7 @@
 	"VSW5TESTSUITE CASE XSetPlaneMask 3"
 	/tset/Xlib8/XSetPlaneMask/XSetPlaneMask
 	"VSW5TESTSUITE CASE XSetSubwindowMode 4"
-	/tset/Xlib8/stsbwmd/stsbwmd
+	/tset/Xlib8/XSetSubwindowMode/XSetSubwindowMode
 	"VSW5TESTSUITE CASE XSetStipple 6"
 	/tset/Xlib8/ststppl/ststppl
 	"VSW5TESTSUITE CASE XSetState 4"

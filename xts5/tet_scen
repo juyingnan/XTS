@@ -2857,7 +2857,7 @@ XSetPlaneMask
 
 XSetSubwindowMode
 	"VSW5TESTSUITE CASE XSetSubwindowMode 4"
-	/tset/Xlib8/stsbwmd/stsbwmd
+	/tset/Xlib8/XSetSubwindowMode/XSetSubwindowMode
 
 XSetStipple
 	"VSW5TESTSUITE CASE XSetStipple 6"
