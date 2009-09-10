@@ -688,7 +688,7 @@ XShapeQueryVersion
 
 XShapeSelectInput
 	"VSW5TESTSUITE CASE XShapeSelectInput 1"
-	/tset/SHAPE/tshpstinp/tshpstinp
+	/tset/SHAPE/XShapeSelectInput/XShapeSelectInput
 
 # Discrete tests for Xlib Chapter 10-Window and Session Manager Functions
 
