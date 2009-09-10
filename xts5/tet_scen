@@ -2099,7 +2099,7 @@ XWidthMMOfScreen
 
 XWidthOfScreen
 	"VSW5TESTSUITE CASE XWidthOfScreen 1"
-	/tset/Xlib3/wdthofscrn/wdthofscrn
+	/tset/Xlib3/XWidthOfScreen/XWidthOfScreen
 
 XWhitePixel
 	"VSW5TESTSUITE CASE XWhitePixel 1"
@@ -2299,7 +2299,7 @@ WidthMMOfScreen
 
 WidthOfScreen
 	"VSW5TESTSUITE CASE WidthOfScreen 1"
-	/tset/Xlib3/wdthofscrn/wdthofscrn_m
+	/tset/Xlib3/XWidthOfScreen/XWidthOfScreen_m
 
 WhitePixel
 	"VSW5TESTSUITE CASE WhitePixel 1"
