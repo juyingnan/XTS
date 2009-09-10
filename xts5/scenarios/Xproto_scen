@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE ChangeActivePointerGrab 3"
 	/tset/Xproto/ChangeActivePointerGrab/ChangeActivePointerGrab
 	"VSW5TESTSUITE CASE ChangeGC 4"
-	/tset/Xproto/chnggc/chnggc
+	/tset/Xproto/ChangeGC/ChangeGC
 	"VSW5TESTSUITE CASE ChangeHosts 3"
 	/tset/Xproto/chnghsts/chnghsts
 	"VSW5TESTSUITE CASE ChangeKeyboardControl 4"

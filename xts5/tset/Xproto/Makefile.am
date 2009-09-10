@@ -17,7 +17,7 @@ tprogs = \
 	BadRequest/BadRequest \
 	Bell/Bell \
 	ChangeActivePointerGrab/ChangeActivePointerGrab \
-	chnggc/chnggc \
+	ChangeGC/ChangeGC \
 	chnghsts/chnghsts \
 	chngkybrdc/chngkybrdc \
 	chngkybrdm/chngkybrdm \

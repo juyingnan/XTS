@@ -12,7 +12,7 @@ flushgc_flushgc_LDADD = $(TCM) $(XTS_LLIBS) $(XTS_LIBS) \
 	$(top_builddir)/xts5/src/libXR5/libXR5.a
 
 tprogs = \
-	chnggc/chnggc \
+	ChangeGC/ChangeGC \
 	cpygc/cpygc \
 	crtgc/crtgc \
 	flushgc/flushgc \
