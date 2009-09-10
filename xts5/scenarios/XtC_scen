@@ -87,7 +87,7 @@
 	"VSW5TESTSUITE CASE XtAddConverter 10"
 	/tset/XtC/XtAddConverter/XtAddConverter
 	"VSW5TESTSUITE CASE XtAppAddConverter 10"
-	/tset/XtC/tapadconv/tapadconv
+	/tset/XtC/XtAppAddConverter/XtAppAddConverter
 	"VSW5TESTSUITE CASE XtConvert 1"
 	/tset/XtC/tconvert/tconvert
 	"VSW5TESTSUITE CASE XtDirectConvert 3"

@@ -4687,7 +4687,7 @@ XtAddConverter
 
 XtAppAddConverter
 	"VSW5TESTSUITE CASE XtAppAddConverter 10"
-	/tset/XtC/tapadconv/tapadconv
+	/tset/XtC/XtAppAddConverter/XtAppAddConverter
 
 XtConvert
 	"VSW5TESTSUITE CASE XtConvert 1"
