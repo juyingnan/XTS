@@ -2469,7 +2469,7 @@ XInternAtom
 
 XListProperties
 	"VSW5TESTSUITE CASE XListProperties 3"
-	/tset/Xlib5/lstprprts/lstprprts
+	/tset/Xlib5/ListProperties/ListProperties
 
 XQueryPointer
 	"VSW5TESTSUITE CASE XQueryPointer 6"
@@ -3394,7 +3394,7 @@ pListInstalledColormaps
 
 pListProperties
 	"VSW5TESTSUITE CASE ListProperties 3"
-	/tset/Xproto/lstprprts/lstprprts
+	/tset/Xproto/ListProperties/ListProperties
 
 pMapSubwindows
 	"VSW5TESTSUITE CASE MapSubwindows 3"

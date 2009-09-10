@@ -81,7 +81,7 @@ tprogs = \
 	ListFontsWithInfo/ListFontsWithInfo \
 	ListHosts/ListHosts \
 	ListInstalledColormaps/ListInstalledColormaps \
-	lstprprts/lstprprts \
+	ListProperties/ListProperties \
 	mpsbws/mpsbws \
 	mpwdw/mpwdw \
 	noprtn/noprtn \

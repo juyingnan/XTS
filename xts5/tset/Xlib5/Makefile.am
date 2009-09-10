@@ -18,7 +18,7 @@ tprogs = \
 	GetWindowAttributes/GetWindowAttributes \
 	gtwdwprprt/gtwdwprprt \
 	InternAtom/InternAtom \
-	lstprprts/lstprprts \
+	ListProperties/ListProperties \
 	qrypntr/qrypntr \
 	qrytr/qrytr \
 	rttwdwprpr/rttwdwprpr \
