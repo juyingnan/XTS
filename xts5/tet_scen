@@ -812,7 +812,7 @@ ConfigureRequest
 
 CirculateNotify
 	"VSW5TESTSUITE CASE CirculateNotify 3"
-	/tset/Xlib11/crcltntfy/crcltntfy
+	/tset/Xlib11/CirculateNotify/CirculateNotify
 
 CirculateRequest
 	"VSW5TESTSUITE CASE CirculateRequest 2"

@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE ConfigureRequest 7"
 	/tset/Xlib11/ConfigureRequest/ConfigureRequest
 	"VSW5TESTSUITE CASE CirculateNotify 3"
-	/tset/Xlib11/crcltntfy/crcltntfy
+	/tset/Xlib11/CirculateNotify/CirculateNotify
 	"VSW5TESTSUITE CASE CirculateRequest 2"
 	/tset/Xlib11/crcltrqst/crcltrqst
 	"VSW5TESTSUITE CASE CreateNotify 2"

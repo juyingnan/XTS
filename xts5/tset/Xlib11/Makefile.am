@@ -15,7 +15,7 @@ tprogs = \
 	ColormapNotify/ColormapNotify \
 	ConfigureNotify/ConfigureNotify \
 	ConfigureRequest/ConfigureRequest \
-	crcltntfy/crcltntfy \
+	CirculateNotify/CirculateNotify \
 	crcltrqst/crcltrqst \
 	crtntfy/crtntfy \
 	dstryntfy/dstryntfy \
