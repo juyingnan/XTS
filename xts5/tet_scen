@@ -3596,7 +3596,7 @@ pWarpPointer
 
 XtDataTypes
 	"VSW5TESTSUITE CASE DataTypes 9"
-	/tset/Xt3/dttyps/dttyps
+	/tset/Xt3/DataTypes/DataTypes
 
 CoreWidget
 	"VSW5TESTSUITE CASE CoreWidget 9"

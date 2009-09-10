@@ -59,7 +59,7 @@
 #
 
 	"VSW5TESTSUITE CASE DataTypes 9"
-	/tset/Xt3/dttyps/dttyps
+	/tset/Xt3/DataTypes/DataTypes
 	"VSW5TESTSUITE CASE CoreWidget 9"
 	/tset/Xt3/wdgtcr/wdgtcr
 	"VSW5TESTSUITE CASE CompositeWidget 11"
