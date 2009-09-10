@@ -1228,7 +1228,7 @@ XLocaleOfIM
 
 XmbDrawImageString
 	"VSW5TESTSUITE CASE XmbDrawImageString 1"
-	/tset/Xlib14/mbdistr/mbdistr
+	/tset/Xlib14/XmbDrawImageString/XmbDrawImageString
 
 XmbDrawString
 	"VSW5TESTSUITE CASE XmbDrawString 1"

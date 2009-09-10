@@ -26,7 +26,7 @@ tprogs = \
 	XIMOfIC/XIMOfIC \
 	XLocaleOfFontSet/XLocaleOfFontSet \
 	XLocaleOfIM/XLocaleOfIM \
-	mbdistr/mbdistr \
+	XmbDrawImageString/XmbDrawImageString \
 	mbdstr/mbdstr \
 	mbdtext/mbdtext \
 	mblstr/mblstr \

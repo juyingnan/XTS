@@ -88,7 +88,7 @@
 	"VSW5TESTSUITE CASE XLocaleOfIM 1"
 	/tset/Xlib14/XLocaleOfIM/XLocaleOfIM
 	"VSW5TESTSUITE CASE XmbDrawImageString 1"
-	/tset/Xlib14/mbdistr/mbdistr
+	/tset/Xlib14/XmbDrawImageString/XmbDrawImageString
 	"VSW5TESTSUITE CASE XmbDrawString 1"
 	/tset/Xlib14/mbdstr/mbdstr
 	"VSW5TESTSUITE CASE XmbDrawText 1"
