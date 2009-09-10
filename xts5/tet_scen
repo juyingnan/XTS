@@ -4411,7 +4411,7 @@ XtInstallAccelerators
 
 XtInstallAllAccelerators
 	"VSW5TESTSUITE CASE XtInstallAllAccelerators 1"
-	/tset/Xt12/tinaaclrt/tinaaclrt
+	/tset/Xt12/XtInstallAllAccelerators/XtInstallAllAccelerators
 
 XtGetKeysymTable
 	"VSW5TESTSUITE CASE XtGetKeysymTable 4"

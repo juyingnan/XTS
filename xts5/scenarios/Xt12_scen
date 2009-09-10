@@ -81,7 +81,7 @@
 	"VSW5TESTSUITE CASE XtInstallAccelerators 2"
 	/tset/Xt12/tinaclrts/tinaclrts
 	"VSW5TESTSUITE CASE XtInstallAllAccelerators 1"
-	/tset/Xt12/tinaaclrt/tinaaclrt
+	/tset/Xt12/XtInstallAllAccelerators/XtInstallAllAccelerators
 	"VSW5TESTSUITE CASE XtGetKeysymTable 4"
 	/tset/Xt12/XtGetKeysymTable/XtGetKeysymTable
 	"VSW5TESTSUITE CASE XtSetKeyTranslator 1"
