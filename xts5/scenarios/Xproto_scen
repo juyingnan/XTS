@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE AllocNamedColor 3"
 	/tset/Xproto/XAllocNamedColor/XAllocNamedColor
 	"VSW5TESTSUITE CASE AllowEvents 3"
-	/tset/Xproto/AllowEvents/AllowEvents
+	/tset/Xproto/XAllowEvents/XAllowEvents
 	"VSW5TESTSUITE CASE BadRequest 1"
 	/tset/Xproto/BadRequest/BadRequest
 	"VSW5TESTSUITE CASE Bell 3"

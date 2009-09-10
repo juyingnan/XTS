@@ -13,7 +13,7 @@ tprogs = \
 	AllocColorCells/AllocColorCells \
 	AllocColorPlanes/AllocColorPlanes \
 	XAllocNamedColor/XAllocNamedColor \
-	AllowEvents/AllowEvents \
+	XAllowEvents/XAllowEvents \
 	BadRequest/BadRequest \
 	Bell/Bell \
 	ChangeActivePointerGrab/ChangeActivePointerGrab \
