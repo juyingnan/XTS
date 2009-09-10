@@ -89,7 +89,7 @@ tprogs = \
 	OpenFont/OpenFont \
 	PolyArc/PolyArc \
 	PolyFillArc/PolyFillArc \
-	plyfllrctn/plyfllrctn \
+	PolyFillRectangle/PolyFillRectangle \
 	plyln/plyln \
 	plypnt/plypnt \
 	plyrctngl/plyrctngl \
