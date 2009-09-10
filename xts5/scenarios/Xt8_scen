@@ -59,7 +59,7 @@
 #
 
 	"VSW5TESTSUITE CASE XtMakeGeometryRequest 11"
-	/tset/Xt8/tmkgmreqt/tmkgmreqt
+	/tset/Xt8/XtMakeGeometryRequest/XtMakeGeometryRequest
 	"VSW5TESTSUITE CASE XtMakeResizeRequest 12"
 	/tset/Xt8/tmkrsizrt/tmkrsizrt
 	"VSW5TESTSUITE CASE XtMoveWidget 3"
