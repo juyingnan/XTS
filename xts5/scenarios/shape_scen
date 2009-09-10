@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE XShapeCombineRegion 1"
 	/tset/SHAPE/XShapeCombineRegion/XShapeCombineRegion
 	"VSW5TESTSUITE CASE XShapeCombineShape 1"
-	/tset/SHAPE/tshpcshap/tshpcshap
+	/tset/SHAPE/XShapeCombineShape/XShapeCombineShape
 	"VSW5TESTSUITE CASE XShapeGetRectangles 1"
 	/tset/SHAPE/tshpgtrec/tshpgtrec
 	"VSW5TESTSUITE CASE XShapeInputSelected 1"
