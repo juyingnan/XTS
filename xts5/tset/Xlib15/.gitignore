@@ -44,4 +44,4 @@ stwmprprts/Test2
 XSetWMProtocols/XSetWMProtocols
 XSetWMSizeHints/XSetWMSizeHints
 XTextPropertyToStringList/XTextPropertyToStringList
-wthdrwwdw/wthdrwwdw
+XWithdrawWindow/XWithdrawWindow

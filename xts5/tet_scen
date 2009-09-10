@@ -1519,7 +1519,7 @@ XTextPropertyToStringList
 
 XWithdrawWindow
 	"VSW5TESTSUITE CASE XWithdrawWindow 3"
-	/tset/Xlib15/wthdrwwdw/wthdrwwdw
+	/tset/Xlib15/XWithdrawWindow/XWithdrawWindow
 
 XDefaultString
 	"VSW5TESTSUITE CASE XDefaultString 1"

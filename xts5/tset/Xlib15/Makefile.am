@@ -55,7 +55,7 @@ tprogs = \
 	XSetWMProtocols/XSetWMProtocols \
 	XSetWMSizeHints/XSetWMSizeHints \
 	XTextPropertyToStringList/XTextPropertyToStringList \
-	wthdrwwdw/wthdrwwdw
+	XWithdrawWindow/XWithdrawWindow
 
 # Auxiliary programs run from tests
 check_PROGRAMS += \
