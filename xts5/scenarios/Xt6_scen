@@ -65,7 +65,7 @@
 	"VSW5TESTSUITE CASE WMShellWidget 10"
 	/tset/Xt6/wdgtwmshll/wdgtwmshll
 	"VSW5TESTSUITE CASE VendorShellWidget 10"
-	/tset/Xt6/wdgtvndrsh/wdgtvndrsh
+	/tset/Xt6/VendorShellWidget/VendorShellWidget
 	"VSW5TESTSUITE CASE TransientShellWidget 10"
 	/tset/Xt6/TransientShellWidget/TransientShellWidget
 	"VSW5TESTSUITE CASE TopLevelShellWidget 10"

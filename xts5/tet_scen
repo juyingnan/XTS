@@ -3870,7 +3870,7 @@ WMShellWidget
 
 VendorShellWidget
 	"VSW5TESTSUITE CASE VendorShellWidget 10"
-	/tset/Xt6/wdgtvndrsh/wdgtvndrsh
+	/tset/Xt6/VendorShellWidget/VendorShellWidget
 
 TransientShellWidgets
 	"VSW5TESTSUITE CASE TransientShellWidgets 10"
