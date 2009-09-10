@@ -2402,7 +2402,7 @@ XSetWindowBorder
 
 XSetWindowBorderPixmap
 	"VSW5TESTSUITE CASE XSetWindowBorderPixmap 9"
-	/tset/Xlib4/stwdwbrdrp/stwdwbrdrp
+	/tset/Xlib4/XSetWindowBorderPixmap/XSetWindowBorderPixmap
 
 XSetWindowBorderWidth
 	"VSW5TESTSUITE CASE XSetWindowBorderWidth 7"

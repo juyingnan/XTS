@@ -100,7 +100,7 @@
 	"VSW5TESTSUITE CASE XSetWindowBorder 5"
 	/tset/Xlib4/XSetWindowBorder/XSetWindowBorder
 	"VSW5TESTSUITE CASE XSetWindowBorderPixmap 9"
-	/tset/Xlib4/stwdwbrdrp/stwdwbrdrp
+	/tset/Xlib4/XSetWindowBorderPixmap/XSetWindowBorderPixmap
 	"VSW5TESTSUITE CASE XSetWindowBorderWidth 7"
 	/tset/Xlib4/stwdwbrdrw/stwdwbrdrw
 	"VSW5TESTSUITE CASE XSetWindowColormap 4"

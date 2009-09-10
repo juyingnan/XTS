@@ -31,7 +31,7 @@ tprogs = \
 	XSetWindowBackground/XSetWindowBackground \
 	XSetWindowBackgroundPixmap/XSetWindowBackgroundPixmap \
 	XSetWindowBorder/XSetWindowBorder \
-	stwdwbrdrp/stwdwbrdrp \
+	XSetWindowBorderPixmap/XSetWindowBorderPixmap \
 	stwdwbrdrw/stwdwbrdrw \
 	stwdwclrmp/stwdwclrmp \
 	undfncrsr/undfncrsr \
