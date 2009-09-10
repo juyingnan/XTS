@@ -4181,7 +4181,7 @@ XtCvtStringToBool
 
 XtCvtStringToCursor
 	"VSW5TESTSUITE CASE XtCvtStringToCursor 5"
-	/tset/Xt11/tcstcurs/tcstcurs
+	/tset/Xt11/XtCvtStringToCursor/XtCvtStringToCursor
 
 XtCvtStringToDimension
 	"VSW5TESTSUITE CASE XtCvtStringToDimension 4"
