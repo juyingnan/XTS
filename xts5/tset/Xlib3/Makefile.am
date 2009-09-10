@@ -47,7 +47,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XListDepths/XListDepths \
 	XLastKnownRequestProcessed/XLastKnownRequestProcessed XLastKnownRequestProcessed/XLastKnownRequestProcessed_m \
 	XListPixmapFormats/XListPixmapFormats \
-	mncmpsofsc/mncmpsofsc mncmpsofsc/mncmpsofsc_m \
+	XMinCmapsOfScreen/XMinCmapsOfScreen XMinCmapsOfScreen/XMinCmapsOfScreen_m \
 	mxcmpsofsc/mxcmpsofsc mxcmpsofsc/mxcmpsofsc_m \
 	nop/nop \
 	nxtrqst/nxtrqst nxtrqst/nxtrqst_m \

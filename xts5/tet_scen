@@ -2027,7 +2027,7 @@ XListPixmapFormats
 
 XMinCmapsOfScreen
 	"VSW5TESTSUITE CASE XMinCmapsOfScreen 1"
-	/tset/Xlib3/mncmpsofsc/mncmpsofsc
+	/tset/Xlib3/XMinCmapsOfScreen/XMinCmapsOfScreen
 
 XMaxCmapsOfScreen
 	"VSW5TESTSUITE CASE XMaxCmapsOfScreen 1"
@@ -2243,7 +2243,7 @@ LastKnownRequestProcessed
 
 MinCmapsOfScreen
 	"VSW5TESTSUITE CASE MinCmapsOfScreen 1"
-	/tset/Xlib3/mncmpsofsc/mncmpsofsc_m
+	/tset/Xlib3/XMinCmapsOfScreen/XMinCmapsOfScreen_m
 
 MaxCmapsOfScreen
 	"VSW5TESTSUITE CASE MaxCmapsOfScreen 1"
