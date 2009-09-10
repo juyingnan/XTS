@@ -256,7 +256,7 @@
 	"VSW5TESTSUITE CASE SendEvent 3"
 	/tset/Xproto/SendEvent/SendEvent
 	"VSW5TESTSUITE CASE SetAccessControl 3"
-	/tset/Xproto/staccsscnt/staccsscnt
+	/tset/Xproto/SetAccessControl/SetAccessControl
 	"VSW5TESTSUITE CASE SetClipRectangles 3"
 	/tset/Xproto/stclprctng/stclprctng
 	"VSW5TESTSUITE CASE SetCloseDownMode 3"

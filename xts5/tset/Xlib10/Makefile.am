@@ -28,7 +28,7 @@ tprogs = \
 	rmvhsts/rmvhsts \
 	ReparentWindow/ReparentWindow \
 	rstscrnsvr/rstscrnsvr \
-	staccsscnt/staccsscnt \
+	SetAccessControl/SetAccessControl \
 	stscrnsvr/stscrnsvr \
 	ungrbsrvr/ungrbsrvr \
 	unnstllclr/unnstllclr

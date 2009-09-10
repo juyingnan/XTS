@@ -770,7 +770,7 @@ XResetScreenSaver
 
 XSetAccessControl
 	"VSW5TESTSUITE CASE XSetAccessControl 4"
-	/tset/Xlib10/staccsscnt/staccsscnt
+	/tset/Xlib10/SetAccessControl/SetAccessControl
 
 XSetScreenSaver
 	"VSW5TESTSUITE CASE XSetScreenSaver 17"
@@ -3506,7 +3506,7 @@ pSendEvent
 
 pSetAccessControl
 	"VSW5TESTSUITE CASE SetAccessControl 3"
-	/tset/Xproto/staccsscnt/staccsscnt
+	/tset/Xproto/SetAccessControl/SetAccessControl
 
 pSetClipRectangles
 	"VSW5TESTSUITE CASE SetClipRectangles 3"

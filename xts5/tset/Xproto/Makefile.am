@@ -109,7 +109,7 @@ tprogs = \
 	ReparentWindow/ReparentWindow \
 	RotateProperties/RotateProperties \
 	SendEvent/SendEvent \
-	staccsscnt/staccsscnt \
+	SetAccessControl/SetAccessControl \
 	stclprctng/stclprctng \
 	stclsdwnmd/stclsdwnmd \
 	stdshs/stdshs \
