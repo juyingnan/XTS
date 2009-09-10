@@ -3954,7 +3954,7 @@ XtConfigureWidget
 
 XtResizeWindow
 	"VSW5TESTSUITE CASE XtResizeWindow 2"
-	/tset/Xt8/trszwindw/trszwindw
+	/tset/Xt8/XtResizeWindow/XtResizeWindow
 
 XtQueryGeometry
 	"VSW5TESTSUITE CASE XtQueryGeometry 6"
