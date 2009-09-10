@@ -4209,7 +4209,7 @@ XtCvtStringToFontSet
 
 XtCvtStringToFontStruct
 	"VSW5TESTSUITE CASE XtCvtStringToFontStruct 8"
-	/tset/Xt11/tcstfstr/tcstfstr
+	/tset/Xt11/XtCvtStringToFontStruct/XtCvtStringToFontStruct
 
 XtCvtStringToInitialState
 	"VSW5TESTSUITE CASE XtCvtStringToInitialState 6"

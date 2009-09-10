@@ -97,7 +97,7 @@
 	"VSW5TESTSUITE CASE XtCvtStringToFontSet 11"
 	/tset/Xt11/XtCvtStringToFontSet/XtCvtStringToFontSet
 	"VSW5TESTSUITE CASE XtCvtStringToFontStruct 8"
-	/tset/Xt11/tcstfstr/tcstfstr
+	/tset/Xt11/XtCvtStringToFontStruct/XtCvtStringToFontStruct
 	"VSW5TESTSUITE CASE XtCvtStringToInitialState 6"
 	/tset/Xt11/tcstinit/tcstinit
 	"VSW5TESTSUITE CASE XtCvtStringToInt 4"
