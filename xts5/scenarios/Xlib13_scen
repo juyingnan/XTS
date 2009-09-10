@@ -110,7 +110,7 @@
 	"VSW5TESTSUITE CASE XSetPointerMapping 7"
 	/tset/Xlib13/SetPointerMapping/SetPointerMapping
 	"VSW5TESTSUITE CASE XUngrabButton 6"
-	/tset/Xlib13/ungrbbttn/ungrbbttn
+	/tset/Xlib13/UngrabButton/UngrabButton
 	"VSW5TESTSUITE CASE XUngrabKey 7"
 	/tset/Xlib13/ungrbky/ungrbky
 	"VSW5TESTSUITE CASE XUngrabKeyboard 3"

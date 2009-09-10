@@ -122,7 +122,7 @@ tprogs = \
 	SetScreenSaver/SetScreenSaver \
 	SetSelectionOwner/SetSelectionOwner \
 	TranslateCoords/TranslateCoords \
-	ungrbbttn/ungrbbttn \
+	UngrabButton/UngrabButton \
 	ungrbky/ungrbky \
 	ungrbkybrd/ungrbkybrd \
 	ungrbpntr/ungrbpntr \

@@ -36,7 +36,7 @@ tprogs = \
 	SetInputFocus/SetInputFocus \
 	SetModifierMapping/SetModifierMapping \
 	SetPointerMapping/SetPointerMapping \
-	ungrbbttn/ungrbbttn \
+	UngrabButton/UngrabButton \
 	ungrbky/ungrbky \
 	ungrbkybrd/ungrbkybrd \
 	ungrbpntr/ungrbpntr \
