@@ -84,7 +84,7 @@
 	"VSW5TESTSUITE CASE XGetExtensionVersion 2"
 	/tset/XI/GetExtensionVersion/GetExtensionVersion
 	"VSW5TESTSUITE CASE XGrabDevice 18"
-	/tset/XI/XGrabDevice/XGrabDevice
+	/tset/XI/GrabDevice/GrabDevice
 	"VSW5TESTSUITE CASE XGrabDeviceButton 21"
 	/tset/XI/XGrabDeviceButton/XGrabDeviceButton
 	"VSW5TESTSUITE CASE XGrabDeviceKey 21"

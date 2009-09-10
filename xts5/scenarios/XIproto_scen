@@ -80,7 +80,7 @@
 	"VSW5TESTSUITE CASE GetExtensionVersion 3"
 	/tset/XIproto/GetExtensionVersion/GetExtensionVersion
 	"VSW5TESTSUITE CASE GrabDevice 3"
-	/tset/XIproto/XGrabDevice/XGrabDevice
+	/tset/XIproto/GrabDevice/GrabDevice
 	"VSW5TESTSUITE CASE GrabDeviceButton 3"
 	/tset/XIproto/XGrabDeviceButton/XGrabDeviceButton
 	"VSW5TESTSUITE CASE GrabDeviceKey 3"

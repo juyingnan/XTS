@@ -23,7 +23,7 @@ tprogs = \
 	XGetDeviceFocus/XGetDeviceFocus \
 	XGetDeviceDontPropagateList/XGetDeviceDontPropagateList \
 	GetExtensionVersion/GetExtensionVersion \
-	XGrabDevice/XGrabDevice \
+	GrabDevice/GrabDevice \
 	XGrabDeviceButton/XGrabDeviceButton \
 	XGrabDeviceKey/XGrabDeviceKey \
 	GetDeviceButtonMapping/GetDeviceButtonMapping \
