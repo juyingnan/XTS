@@ -124,7 +124,7 @@
 	"VSW5TESTSUITE CASE XVaCreateNestedList 4"
 	/tset/Xlib14/XVaCreateNestedList/XVaCreateNestedList
 	"VSW5TESTSUITE CASE XwcDrawImageString 1"
-	/tset/Xlib14/wcdistr/wcdistr
+	/tset/Xlib14/XwcDrawImageString/XwcDrawImageString
 	"VSW5TESTSUITE CASE XwcDrawString 1"
 	/tset/Xlib14/wcdstr/wcdstr
 	"VSW5TESTSUITE CASE XwcDrawText 1"
