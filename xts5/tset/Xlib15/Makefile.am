@@ -46,7 +46,7 @@ tprogs = \
 	XSetTransientForHint/XSetTransientForHint \
 	XSetTextProperty/XSetTextProperty \
 	XSetWMClientMachine/XSetWMClientMachine \
-	stwmclrmpw/stwmclrmpw \
+	XSetWMColormapWindows/XSetWMColormapWindows \
 	stwmhnts/stwmhnts \
 	stwmicnnm/stwmicnnm \
 	stwmnm/stwmnm \

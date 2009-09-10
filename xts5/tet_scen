@@ -1483,7 +1483,7 @@ XSetWMClientMachine
 
 XSetWMColormapWindows
 	"VSW5TESTSUITE CASE XSetWMColormapWindows 4"
-	/tset/Xlib15/stwmclrmpw/stwmclrmpw
+	/tset/Xlib15/XSetWMColormapWindows/XSetWMColormapWindows
 
 XSetWMHints
 	"VSW5TESTSUITE CASE XSetWMHints 3"
