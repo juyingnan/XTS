@@ -14,7 +14,7 @@ tprogs = \
 	ClientMessage/ClientMessage \
 	ColormapNotify/ColormapNotify \
 	ConfigureNotify/ConfigureNotify \
-	cnfgrrqst/cnfgrrqst \
+	ConfigureRequest/ConfigureRequest \
 	crcltntfy/crcltntfy \
 	crcltrqst/crcltrqst \
 	crtntfy/crtntfy \

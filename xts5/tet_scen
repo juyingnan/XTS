@@ -808,7 +808,7 @@ ConfigureNotify
 
 ConfigureRequest
 	"VSW5TESTSUITE CASE ConfigureRequest 7"
-	/tset/Xlib11/cnfgrrqst/cnfgrrqst
+	/tset/Xlib11/ConfigureRequest/ConfigureRequest
 
 CirculateNotify
 	"VSW5TESTSUITE CASE CirculateNotify 3"
