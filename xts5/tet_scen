@@ -2322,7 +2322,7 @@ XConfigureWindow
 
 XCirculateSubwindows
 	"VSW5TESTSUITE CASE XCirculateSubwindows 7"
-	/tset/Xlib4/crcltsbws/crcltsbws
+	/tset/Xlib4/XCirculateSubwindows/XCirculateSubwindows
 
 XCirculateSubwindowsDown
 	"VSW5TESTSUITE CASE XCirculateSubwindowsDown 5"

@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE XConfigureWindow 34"
 	/tset/Xlib4/XConfigureWindow/XConfigureWindow
 	"VSW5TESTSUITE CASE XCirculateSubwindows 7"
-	/tset/Xlib4/crcltsbws/crcltsbws
+	/tset/Xlib4/XCirculateSubwindows/XCirculateSubwindows
 	"VSW5TESTSUITE CASE XCirculateSubwindowsDown 5"
 	/tset/Xlib4/crcltsbwsd/crcltsbwsd
 	"VSW5TESTSUITE CASE XCirculateSubwindowsUp 5"

@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = \
 	XChangeWindowAttributes/XChangeWindowAttributes \
 	XConfigureWindow/XConfigureWindow \
-	crcltsbws/crcltsbws \
+	XCirculateSubwindows/XCirculateSubwindows \
 	crcltsbwsd/crcltsbwsd \
 	crcltsbwsu/crcltsbwsu \
 	crtsmplwdw/crtsmplwdw \
