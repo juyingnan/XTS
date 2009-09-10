@@ -30,7 +30,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XDefaultVisual/XDefaultVisual XDefaultVisual/XDefaultVisual_m \
 	XDefaultVisualOfScreen/XDefaultVisualOfScreen XDefaultVisualOfScreen/XDefaultVisualOfScreen_m \
 	XDoesBackingStore/XDoesBackingStore XDoesBackingStore/XDoesBackingStore_m \
-	dsplyclls/dsplyclls dsplyclls/dsplyclls_m \
+	XDisplayCells/XDisplayCells XDisplayCells/XDisplayCells_m \
 	dsplyhght/dsplyhght dsplyhght/dsplyhght_m \
 	dsplyhghtm/dsplyhghtm dsplyhghtm/dsplyhghtm_m \
 	dsplyofscr/dsplyofscr dsplyofscr/dsplyofscr_m \

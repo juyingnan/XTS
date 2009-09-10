@@ -1959,7 +1959,7 @@ XDoesBackingStore
 
 XDisplayCells
 	"VSW5TESTSUITE CASE XDisplayCells 1"
-	/tset/Xlib3/dsplyclls/dsplyclls
+	/tset/Xlib3/XDisplayCells/XDisplayCells
 
 XDisplayHeight
 	"VSW5TESTSUITE CASE XDisplayHeight 1"
@@ -2187,7 +2187,7 @@ DoesBackingStore
 
 DisplayCells
 	"VSW5TESTSUITE CASE DisplayCells 1"
-	/tset/Xlib3/dsplyclls/dsplyclls_m
+	/tset/Xlib3/XDisplayCells/XDisplayCells_m
 
 DisplayHeight
 	"VSW5TESTSUITE CASE DisplayHeight 1"

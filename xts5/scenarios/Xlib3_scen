@@ -98,7 +98,7 @@
 	"VSW5TESTSUITE CASE XDoesBackingStore 1"
 	/tset/Xlib3/XDoesBackingStore/XDoesBackingStore
 	"VSW5TESTSUITE CASE XDisplayCells 1"
-	/tset/Xlib3/dsplyclls/dsplyclls
+	/tset/Xlib3/XDisplayCells/XDisplayCells
 	"VSW5TESTSUITE CASE XDisplayHeight 1"
 	/tset/Xlib3/dsplyhght/dsplyhght
 	"VSW5TESTSUITE CASE XDisplayHeightMM 1"
@@ -212,7 +212,7 @@
 	"VSW5TESTSUITE CASE DoesBackingStore 1"
 	/tset/Xlib3/XDoesBackingStore/XDoesBackingStore_m
 	"VSW5TESTSUITE CASE DisplayCells 1"
-	/tset/Xlib3/dsplyclls/dsplyclls_m
+	/tset/Xlib3/XDisplayCells/XDisplayCells_m
 	"VSW5TESTSUITE CASE DisplayHeight 1"
 	/tset/Xlib3/dsplyhght/dsplyhght_m
 	"VSW5TESTSUITE CASE DisplayHeightMM 1"
