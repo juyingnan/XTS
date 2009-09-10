@@ -4233,7 +4233,7 @@ XtCvtStringToTranslationTable
 
 XtCvtStringToPosition
 	"VSW5TESTSUITE CASE XtCvtStringToPosition 4"
-	/tset/Xt11/tcstpos/tcstpos
+	/tset/Xt11/XtCvtStringToPosition/XtCvtStringToPosition
 
 XtCvtStringToUnsignedChar
 	"VSW5TESTSUITE CASE XtCvtStringToUnsignedChar 4"
