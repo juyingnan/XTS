@@ -28,7 +28,7 @@ tprogs = \
 	GetKeyboardControl/GetKeyboardControl \
 	GetKeyboardMapping/GetKeyboardMapping \
 	GetModifierMapping/GetModifierMapping \
-	gtpntrcntr/gtpntrcntr \
+	GetPointerControl/GetPointerControl \
 	gtpntrmppn/gtpntrmppn \
 	insrtmdfrm/insrtmdfrm \
 	nwmdfrmp/nwmdfrmp \

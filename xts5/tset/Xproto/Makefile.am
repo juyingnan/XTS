@@ -64,7 +64,7 @@ tprogs = \
 	GetKeyboardMapping/GetKeyboardMapping \
 	GetModifierMapping/GetModifierMapping \
 	GetMotionEvents/GetMotionEvents \
-	gtpntrcntr/gtpntrcntr \
+	GetPointerControl/GetPointerControl \
 	gtpntrmppn/gtpntrmppn \
 	gtprprty/gtprprty \
 	gtscrnsvr/gtscrnsvr \
