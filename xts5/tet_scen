@@ -4349,7 +4349,7 @@ XtVaGetSubvalues
 
 XtSetValues
 	"VSW5TESTSUITE CASE XtSetValues 13"
-	/tset/Xt11/tstvalues/tstvalues
+	/tset/Xt11/XtSetValues/XtSetValues
 
 XtVaSetValues
 	"VSW5TESTSUITE CASE XtVaSetValues 15"

@@ -167,7 +167,7 @@
 	"VSW5TESTSUITE CASE XtVaGetSubvalues 3"
 	/tset/Xt11/tvagtsval/tvagtsval
 	"VSW5TESTSUITE CASE XtSetValues 13"
-	/tset/Xt11/tstvalues/tstvalues
+	/tset/Xt11/XtSetValues/XtSetValues
 	"VSW5TESTSUITE CASE XtVaSetValues 15"
 	/tset/Xt11/tvastvals/tvastvals
 	"VSW5TESTSUITE CASE XtSetSubvalues 2"
