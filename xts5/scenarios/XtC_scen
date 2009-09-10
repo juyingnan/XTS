@@ -65,7 +65,7 @@
 	"VSW5TESTSUITE CASE XtInitialize 27"
 	/tset/XtC/XtInitialize/XtInitialize
 	"VSW5TESTSUITE CASE XtMainLoop 28"
-	/tset/XtC/tmainloop/tmainloop
+	/tset/XtC/XtMainLoop/XtMainLoop
 	"VSW5TESTSUITE CASE XtNextEvent 4"
 	/tset/XtC/tnxtevnt/tnxtevnt
 	"VSW5TESTSUITE CASE XtProcessEvent 12"

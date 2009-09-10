@@ -4643,7 +4643,7 @@ XtInitialize
 
 XtMainLoop
 	"VSW5TESTSUITE CASE XtMainLoop 28"
-	/tset/XtC/tmainloop/tmainloop
+	/tset/XtC/XtMainLoop/XtMainLoop
 
 XtNextEvent
 	"VSW5TESTSUITE CASE XtNextEvent 4"
