@@ -43,7 +43,7 @@ tprogs = \
 	DeleteProperty/DeleteProperty \
 	DestroySubwindows/DestroySubwindows \
 	DestroyWindow/DestroyWindow \
-	fllply/fllply \
+	FillPoly/FillPoly \
 	frclrmp/frclrmp \
 	frclrs/frclrs \
 	frcrsr/frcrsr \

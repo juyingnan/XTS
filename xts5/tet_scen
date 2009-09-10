@@ -3242,7 +3242,7 @@ pDestroyWindow
 
 pFillPoly
 	"VSW5TESTSUITE CASE FillPoly 3"
-	/tset/Xproto/fllply/fllply
+	/tset/Xproto/FillPoly/FillPoly
 
 pFreeColormap
 	"VSW5TESTSUITE CASE FreeColormap 3"
