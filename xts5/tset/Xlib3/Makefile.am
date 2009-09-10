@@ -46,7 +46,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XImageByteOrder/XImageByteOrder XImageByteOrder/XImageByteOrder_m \
 	XListDepths/XListDepths \
 	XLastKnownRequestProcessed/XLastKnownRequestProcessed XLastKnownRequestProcessed/XLastKnownRequestProcessed_m \
-	lstpxmpfrm/lstpxmpfrm \
+	XListPixmapFormats/XListPixmapFormats \
 	mncmpsofsc/mncmpsofsc mncmpsofsc/mncmpsofsc_m \
 	mxcmpsofsc/mxcmpsofsc mxcmpsofsc/mxcmpsofsc_m \
 	nop/nop \

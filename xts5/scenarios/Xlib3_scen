@@ -130,7 +130,7 @@
 	"VSW5TESTSUITE CASE XLastKnownRequestProcessed 1"
 	/tset/Xlib3/XLastKnownRequestProcessed/XLastKnownRequestProcessed
 	"VSW5TESTSUITE CASE XListPixmapFormats 2"
-	/tset/Xlib3/lstpxmpfrm/lstpxmpfrm
+	/tset/Xlib3/XListPixmapFormats/XListPixmapFormats
 	"VSW5TESTSUITE CASE XMinCmapsOfScreen 1"
 	/tset/Xlib3/mncmpsofsc/mncmpsofsc
 	"VSW5TESTSUITE CASE XMaxCmapsOfScreen 1"

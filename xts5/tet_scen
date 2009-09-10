@@ -2023,7 +2023,7 @@ XLastKnownRequestProcessed
 
 XListPixmapFormats
 	"VSW5TESTSUITE CASE XListPixmapFormats 2"
-	/tset/Xlib3/lstpxmpfrm/lstpxmpfrm
+	/tset/Xlib3/XListPixmapFormats/XListPixmapFormats
 
 XMinCmapsOfScreen
 	"VSW5TESTSUITE CASE XMinCmapsOfScreen 1"
