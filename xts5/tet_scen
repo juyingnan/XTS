@@ -1740,7 +1740,7 @@ IsModifierKey
 
 IsMiscFunctionKey
 	"VSW5TESTSUITE CASE IsMiscFunctionKey 2"
-	/tset/Xlib17/ismscfnctn/ismscfnctn
+	/tset/Xlib17/IsMiscFunctionKey/IsMiscFunctionKey
 
 IsPFKey
 	"VSW5TESTSUITE CASE IsPFKey 2"

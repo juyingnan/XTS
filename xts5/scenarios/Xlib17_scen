@@ -100,7 +100,7 @@
 	"VSW5TESTSUITE CASE IsModifierKey 2"
 	/tset/Xlib17/IsModifierKey/IsModifierKey
 	"VSW5TESTSUITE CASE IsMiscFunctionKey 2"
-	/tset/Xlib17/ismscfnctn/ismscfnctn
+	/tset/Xlib17/IsMiscFunctionKey/IsMiscFunctionKey
 	"VSW5TESTSUITE CASE IsPFKey 2"
 	/tset/Xlib17/ispfky/ispfky
 	"VSW5TESTSUITE CASE XKeycodeToKeysym 2"

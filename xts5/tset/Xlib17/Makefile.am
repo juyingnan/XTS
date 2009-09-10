@@ -31,7 +31,7 @@ tprogs = \
 	IsFunctionKey/IsFunctionKey \
 	IsKeypadKey/IsKeypadKey \
 	IsModifierKey/IsModifierKey \
-	ismscfnctn/ismscfnctn \
+	IsMiscFunctionKey/IsMiscFunctionKey \
 	ispfky/ispfky \
 	kycdtkysym/kycdtkysym \
 	XKeysymToKeycode/XKeysymToKeycode \
