@@ -3620,7 +3620,7 @@ XtSuperClass
 
 XtIsSubclass
 	"VSW5TESTSUITE CASE XtIsSubclass 2"
-	/tset/Xt3/tissbclss/tissbclss
+	/tset/Xt3/XtIsSubclass/XtIsSubclass
 
 XtIsObject
 	"VSW5TESTSUITE CASE XtIsObject 2"
