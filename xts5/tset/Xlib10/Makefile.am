@@ -30,5 +30,5 @@ tprogs = \
 	rstscrnsvr/rstscrnsvr \
 	SetAccessControl/SetAccessControl \
 	SetScreenSaver/SetScreenSaver \
-	ungrbsrvr/ungrbsrvr \
+	UngrabServer/UngrabServer \
 	unnstllclr/unnstllclr

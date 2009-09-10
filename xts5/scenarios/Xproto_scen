@@ -290,7 +290,7 @@
 	"VSW5TESTSUITE CASE UngrabPointer 3"
 	/tset/Xproto/UngrabPointer/UngrabPointer
 	"VSW5TESTSUITE CASE UngrabServer 3"
-	/tset/Xproto/ungrbsrvr/ungrbsrvr
+	/tset/Xproto/UngrabServer/UngrabServer
 	"VSW5TESTSUITE CASE UnmapSubwindows 3"
 	/tset/Xproto/unmpsbws/unmpsbws
 	"VSW5TESTSUITE CASE UnmapWindow 3"

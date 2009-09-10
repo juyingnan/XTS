@@ -98,6 +98,6 @@
 	"VSW5TESTSUITE CASE XSetScreenSaver 17"
 	/tset/Xlib10/SetScreenSaver/SetScreenSaver
 	"VSW5TESTSUITE CASE XUngrabServer 1"
-	/tset/Xlib10/ungrbsrvr/ungrbsrvr
+	/tset/Xlib10/UngrabServer/UngrabServer
 	"VSW5TESTSUITE CASE XUninstallColormap 5"
 	/tset/Xlib10/unnstllclr/unnstllclr
