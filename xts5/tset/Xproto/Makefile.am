@@ -52,7 +52,7 @@ tprogs = \
 	FreePixmap/FreePixmap \
 	XGrabButton/XGrabButton \
 	XGrabKey/XGrabKey \
-	GrabKeyboard/GrabKeyboard \
+	XGrabKeyboard/XGrabKeyboard \
 	GrabPointer/GrabPointer \
 	XGrabServer/XGrabServer \
 	GetAtomName/GetAtomName \

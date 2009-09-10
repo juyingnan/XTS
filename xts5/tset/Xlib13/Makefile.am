@@ -22,7 +22,7 @@ tprogs = \
 	XFreeModifiermap/XFreeModifiermap \
 	XGrabButton/XGrabButton \
 	XGrabKey/XGrabKey \
-	GrabKeyboard/GrabKeyboard \
+	XGrabKeyboard/XGrabKeyboard \
 	GrabPointer/GrabPointer \
 	XGetInputFocus/XGetInputFocus \
 	XGetKeyboardControl/XGetKeyboardControl \
