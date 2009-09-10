@@ -4395,7 +4395,7 @@ XtAugmentTranslations
 
 XtOverrideTranslations
 	"VSW5TESTSUITE CASE XtOverrideTranslations 4"
-	/tset/Xt12/tovertrsl/tovertrsl
+	/tset/Xt12/XtOverrideTranslations/XtOverrideTranslations
 
 XtUninstallTranslations
 	"VSW5TESTSUITE CASE XtUninstallTranslations 1"
