@@ -23,7 +23,7 @@ tprogs = \
 	XMapRaised/XMapRaised \
 	XMapSubwindows/XMapSubwindows \
 	XMapWindow/XMapWindow \
-	mvrszwdw/mvrszwdw \
+	XMoveResizeWindow/XMoveResizeWindow \
 	mvwdw/mvwdw \
 	rstckwdws/rstckwdws \
 	rswdw/rswdw \

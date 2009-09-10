@@ -84,7 +84,7 @@
 	"VSW5TESTSUITE CASE XMapWindow 15"
 	/tset/Xlib4/XMapWindow/XMapWindow
 	"VSW5TESTSUITE CASE XMoveResizeWindow 15"
-	/tset/Xlib4/mvrszwdw/mvrszwdw
+	/tset/Xlib4/XMoveResizeWindow/XMoveResizeWindow
 	"VSW5TESTSUITE CASE XMoveWindow 8"
 	/tset/Xlib4/mvwdw/mvwdw
 	"VSW5TESTSUITE CASE XRestackWindows 6"

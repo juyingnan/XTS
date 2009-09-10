@@ -2370,7 +2370,7 @@ XMapWindow
 
 XMoveResizeWindow
 	"VSW5TESTSUITE CASE XMoveResizeWindow 15"
-	/tset/Xlib4/mvrszwdw/mvrszwdw
+	/tset/Xlib4/XMoveResizeWindow/XMoveResizeWindow
 
 XMoveWindow
 	"VSW5TESTSUITE CASE XMoveWindow 8"
