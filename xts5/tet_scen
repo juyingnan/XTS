@@ -1280,7 +1280,7 @@ XSetICFocus
 
 XSetICValues
 	"VSW5TESTSUITE CASE XSetICValues 4"
-	/tset/Xlib14/sicvals/sicvals
+	/tset/Xlib14/XSetICValues/XSetICValues
 
 XSupportsLocale
 	"VSW5TESTSUITE CASE XSupportsLocale 1"

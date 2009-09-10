@@ -39,7 +39,7 @@ tprogs = \
 	XmbTextPropertyToTextList/XmbTextPropertyToTextList \
 	XOpenIM/XOpenIM \
 	XSetICFocus/XSetICFocus \
-	sicvals/sicvals \
+	XSetICValues/XSetICValues \
 	slocale/slocale \
 	stlmod/stlmod \
 	uicfoc/uicfoc \
