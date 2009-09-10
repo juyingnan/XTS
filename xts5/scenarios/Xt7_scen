@@ -61,7 +61,7 @@
 	"VSW5TESTSUITE CASE XtCreatePopupShell 6"
 	/tset/Xt7/XtCreatePopupShell/XtCreatePopupShell
 	"VSW5TESTSUITE CASE XtVaCreatePopupShell 6"
-	/tset/Xt7/tvacrpshl/tvacrpshl
+	/tset/Xt7/XtVaCreatePopupShell/XtVaCreatePopupShell
 	"VSW5TESTSUITE CASE XtPopup 11"
 	/tset/Xt7/XtPopup/XtPopup
 	"VSW5TESTSUITE CASE XtPopdown 8"

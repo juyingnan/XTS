@@ -3892,7 +3892,7 @@ XtCreatePopupShell
 
 XtVaCreatePopupShell
 	"VSW5TESTSUITE CASE XtVaCreatePopupShell 8"
-	/tset/Xt7/tvacrpshl/tvacrpshl
+	/tset/Xt7/XtVaCreatePopupShell/XtVaCreatePopupShell
 
 XtPopup
 	"VSW5TESTSUITE CASE XtPopup 11"
