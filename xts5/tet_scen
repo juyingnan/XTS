@@ -1023,7 +1023,7 @@ XSync
 
 XSynchronize
 	"VSW5TESTSUITE CASE XSynchronize 5"
-	/tset/Xlib12/synchrnz/synchrnz
+	/tset/Xlib12/XSynchronize/XSynchronize
 
 XWindowEvent
 	"VSW5TESTSUITE CASE XWindowEvent 3"

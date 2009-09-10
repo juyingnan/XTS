@@ -34,7 +34,7 @@ tprogs = \
 	XSetErrorHandler/XSetErrorHandler \
 	XSetIOErrorHandler/XSetIOErrorHandler \
 	XSync/XSync \
-	synchrnz/synchrnz \
+	XSynchronize/XSynchronize \
 	wdwevnt/wdwevnt
 
 # Auxiliary programs run from tests

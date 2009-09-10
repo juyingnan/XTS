@@ -106,6 +106,6 @@
 	"VSW5TESTSUITE CASE XSync 5"
 	/tset/Xlib12/XSync/XSync
 	"VSW5TESTSUITE CASE XSynchronize 5"
-	/tset/Xlib12/synchrnz/synchrnz
+	/tset/Xlib12/XSynchronize/XSynchronize
 	"VSW5TESTSUITE CASE XWindowEvent 3"
 	/tset/Xlib12/wdwevnt/wdwevnt
