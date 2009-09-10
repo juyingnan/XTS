@@ -113,7 +113,7 @@
 	"VSW5TESTSUITE CASE XtAddEventHandler 8"
 	/tset/Xt9/XtAddEventHandler/XtAddEventHandler
 	"VSW5TESTSUITE CASE XtRemoveEventHandler 7"
-	/tset/Xt9/trmevthdr/trmevthdr
+	/tset/Xt9/XtRemoveEventHandler/XtRemoveEventHandler
 	"VSW5TESTSUITE CASE XtInsertEventHandler 10"
 	/tset/Xt9/XtInsertEventHandler/XtInsertEventHandler
 	"VSW5TESTSUITE CASE XtAddRawEventHandler 9"

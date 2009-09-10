@@ -4072,7 +4072,7 @@ XtAddEventHandler
 
 XtRemoveEventHandler
 	"VSW5TESTSUITE CASE XtRemoveEventHandler 7"
-	/tset/Xt9/trmevthdr/trmevthdr
+	/tset/Xt9/XtRemoveEventHandler/XtRemoveEventHandler
 
 XtInsertEventHandler
 	"VSW5TESTSUITE CASE XtInsertEventHandler 10"
