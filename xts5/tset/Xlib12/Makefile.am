@@ -13,7 +13,7 @@ tprogs = \
 	XCheckMaskEvent/XCheckMaskEvent \
 	XCheckTypedEvent/XCheckTypedEvent \
 	XCheckTypedWindowEvent/XCheckTypedWindowEvent \
-	chckwdwevn/chckwdwevn \
+	XCheckWindowEvent/XCheckWindowEvent \
 	dsplymtnbf/dsplymtnbf \
 	dsplynm/dsplynm \
 	evntsqd/evntsqd \

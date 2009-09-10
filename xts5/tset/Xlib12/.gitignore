@@ -2,7 +2,7 @@ XCheckIfEvent/XCheckIfEvent
 XCheckMaskEvent/XCheckMaskEvent
 XCheckTypedEvent/XCheckTypedEvent
 XCheckTypedWindowEvent/XCheckTypedWindowEvent
-chckwdwevn/chckwdwevn
+XCheckWindowEvent/XCheckWindowEvent
 dsplymtnbf/dsplymtnbf
 dsplynm/dsplynm
 dsplynm/Test1

@@ -939,7 +939,7 @@ XCheckTypedWindowEvent
 
 XCheckWindowEvent
 	"VSW5TESTSUITE CASE XCheckWindowEvent 6"
-	/tset/Xlib12/chckwdwevn/chckwdwevn
+	/tset/Xlib12/XCheckWindowEvent/XCheckWindowEvent
 
 XDisplayMotionBufferSize
 	"VSW5TESTSUITE CASE XDisplayMotionBufferSize 2"
