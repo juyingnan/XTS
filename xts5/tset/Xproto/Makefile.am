@@ -98,7 +98,7 @@ tprogs = \
 	PolyText8/PolyText8 \
 	PutImage/PutImage \
 	QueryBestSize/QueryBestSize \
-	QueryColors/QueryColors \
+	XQueryColors/XQueryColors \
 	QueryExtension/QueryExtension \
 	QueryFont/QueryFont \
 	XQueryKeymap/XQueryKeymap \

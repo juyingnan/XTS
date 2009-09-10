@@ -234,7 +234,7 @@
 	"VSW5TESTSUITE CASE QueryBestSize 3"
 	/tset/Xproto/QueryBestSize/QueryBestSize
 	"VSW5TESTSUITE CASE QueryColors 3"
-	/tset/Xproto/QueryColors/QueryColors
+	/tset/Xproto/XQueryColors/XQueryColors
 	"VSW5TESTSUITE CASE QueryExtension 3"
 	/tset/Xproto/QueryExtension/QueryExtension
 	"VSW5TESTSUITE CASE QueryFont 3"
