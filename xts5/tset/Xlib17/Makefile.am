@@ -37,7 +37,7 @@ tprogs = \
 	XKeysymToKeycode/XKeysymToKeycode \
 	XKeysymToString/XKeysymToString \
 	XLookupKeysym/XLookupKeysym \
-	lkpstr/lkpstr \
+	XLookupString/XLookupString \
 	mtchvslinf/mtchvslinf \
 	offstrgn/offstrgn \
 	plygnrgn/plygnrgn \

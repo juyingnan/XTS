@@ -1764,7 +1764,7 @@ XLookupKeysym
 
 XLookupString
 	"VSW5TESTSUITE CASE XLookupString 3"
-	/tset/Xlib17/lkpstr/lkpstr
+	/tset/Xlib17/XLookupString/XLookupString
 
 XMatchVisualInfo
 	"VSW5TESTSUITE CASE XMatchVisualInfo 2"
