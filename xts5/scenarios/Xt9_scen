@@ -123,4 +123,4 @@
 	"VSW5TESTSUITE CASE XtInsertRawEventHandler 10"
 	/tset/Xt9/tinrevthr/tinrevthr
 	"VSW5TESTSUITE CASE XtBuildEventMask 3"
-	/tset/Xt9/tbuevtmsk/tbuevtmsk
+	/tset/Xt9/XtBuildEventMask/XtBuildEventMask

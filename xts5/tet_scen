@@ -4092,7 +4092,7 @@ XtInsertRawEventHandler
 
 XtBuildEventMask
 	"VSW5TESTSUITE CASE XtBuildEventMask 3"
-	/tset/Xt9/tbuevtmsk/tbuevtmsk
+	/tset/Xt9/XtBuildEventMask/XtBuildEventMask
 
 #Discrete tests for Xt Chapter 10
 
