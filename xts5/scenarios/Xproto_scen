@@ -266,7 +266,7 @@
 	"VSW5TESTSUITE CASE SetFontPath 3"
 	/tset/Xproto/SetFontPath/SetFontPath
 	"VSW5TESTSUITE CASE SetInputFocus 3"
-	/tset/Xproto/SetInputFocus/SetInputFocus
+	/tset/Xproto/XSetInputFocus/XSetInputFocus
 	"VSW5TESTSUITE CASE SetModifierMapping 3"
 	/tset/Xproto/SetModifierMapping/SetModifierMapping
 	"VSW5TESTSUITE CASE SetPointerMapping 3"

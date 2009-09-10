@@ -104,7 +104,7 @@
 	"VSW5TESTSUITE CASE XQueryKeymap 1"
 	/tset/Xlib13/XQueryKeymap/XQueryKeymap
 	"VSW5TESTSUITE CASE XSetInputFocus 13"
-	/tset/Xlib13/SetInputFocus/SetInputFocus
+	/tset/Xlib13/XSetInputFocus/XSetInputFocus
 	"VSW5TESTSUITE CASE XSetModifierMapping 8"
 	/tset/Xlib13/SetModifierMapping/SetModifierMapping
 	"VSW5TESTSUITE CASE XSetPointerMapping 7"

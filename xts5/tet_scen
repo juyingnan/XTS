@@ -1130,7 +1130,7 @@ XQueryKeymap
 
 XSetInputFocus
 	"VSW5TESTSUITE CASE XSetInputFocus 13"
-	/tset/Xlib13/SetInputFocus/SetInputFocus
+	/tset/Xlib13/XSetInputFocus/XSetInputFocus
 
 XSetModifierMapping
 	"VSW5TESTSUITE CASE XSetModifierMapping 8"
@@ -3526,7 +3526,7 @@ pSetFontPath
 
 pSetInputFocus
 	"VSW5TESTSUITE CASE SetInputFocus 3"
-	/tset/Xproto/SetInputFocus/SetInputFocus
+	/tset/Xproto/XSetInputFocus/XSetInputFocus
 
 pSetModifierMapping
 	"VSW5TESTSUITE CASE SetModifierMapping 3"
