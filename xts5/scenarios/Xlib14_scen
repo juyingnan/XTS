@@ -136,7 +136,7 @@
 	"VSW5TESTSUITE CASE XwcResetIC 1"
 	/tset/Xlib14/XwcResetIC/XwcResetIC
 	"VSW5TESTSUITE CASE XwcTextEscapement 1"
-	/tset/Xlib14/wctesc/wctesc
+	/tset/Xlib14/XwcTextEscapement/XwcTextEscapement
 	"VSW5TESTSUITE CASE XwcTextListToTextProperty 1"
 	/tset/Xlib14/wctlttp/wctlttp
 	"VSW5TESTSUITE CASE XwcTextPerCharExtents 1"

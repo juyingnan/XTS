@@ -1324,7 +1324,7 @@ XwcResetIC
 
 XwcTextEscapement
 	"VSW5TESTSUITE CASE XwcTextEscapement 1"
-	/tset/Xlib14/wctesc/wctesc
+	/tset/Xlib14/XwcTextEscapement/XwcTextEscapement
 
 XwcTextListToTextProperty
 	"VSW5TESTSUITE CASE XwcTextListToTextProperty 1"

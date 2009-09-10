@@ -50,7 +50,7 @@ tprogs = \
 	XwcFreeStringList/XwcFreeStringList \
 	XwcLookupString/XwcLookupString \
 	XwcResetIC/XwcResetIC \
-	wctesc/wctesc \
+	XwcTextEscapement/XwcTextEscapement \
 	wctlttp/wctlttp \
 	wctpcex/wctpcex \
 	wctpttl/wctpttl \
