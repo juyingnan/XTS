@@ -1431,7 +1431,7 @@ XGetWMProtocols
 
 XGetWMSizeHints
 	"VSW5TESTSUITE CASE XGetWMSizeHints 6"
-	/tset/Xlib15/gtwmszhnts/gtwmszhnts
+	/tset/Xlib15/XGetWMSizeHints/XGetWMSizeHints
 
 XIconifyWindow
 	"VSW5TESTSUITE CASE XIconifyWindow 3"
