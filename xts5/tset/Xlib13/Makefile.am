@@ -13,7 +13,7 @@ tprogs = \
 	atrptoff/atrptoff \
 	atrpton/atrpton \
 	Bell/Bell \
-	chngactvpn/chngactvpn \
+	ChangeActivePointerGrab/ChangeActivePointerGrab \
 	chngkybrdc/chngkybrdc \
 	chngkybrdm/chngkybrdm \
 	chngpntrcn/chngpntrcn \

@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE XBell 3"
 	/tset/Xlib13/Bell/Bell
 	"VSW5TESTSUITE CASE XChangeActivePointerGrab 5"
-	/tset/Xlib13/chngactvpn/chngactvpn
+	/tset/Xlib13/ChangeActivePointerGrab/ChangeActivePointerGrab
 	"VSW5TESTSUITE CASE XChangeKeyboardControl 20"
 	/tset/Xlib13/chngkybrdc/chngkybrdc
 	"VSW5TESTSUITE CASE XChangeKeyboardMapping 7"

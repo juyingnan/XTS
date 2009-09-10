@@ -16,7 +16,7 @@ tprogs = \
 	AllowEvents/AllowEvents \
 	BadRequest/BadRequest \
 	Bell/Bell \
-	chngactvpn/chngactvpn \
+	ChangeActivePointerGrab/ChangeActivePointerGrab \
 	chnggc/chnggc \
 	chnghsts/chnghsts \
 	chngkybrdc/chngkybrdc \
