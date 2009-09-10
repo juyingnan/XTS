@@ -128,7 +128,7 @@
 	"VSW5TESTSUITE CASE XPutPixel 1"
 	/tset/Xlib17/XPutPixel/XPutPixel
 	"VSW5TESTSUITE CASE XRebindKeysym 2"
-	/tset/Xlib17/rbndkysym/rbndkysym
+	/tset/Xlib17/XRebindKeysym/XRebindKeysym
 	"VSW5TESTSUITE CASE XRectInRegion 3"
 	/tset/Xlib17/rctinrgn/rctinrgn
 	"VSW5TESTSUITE CASE XReadBitmapFile 9"

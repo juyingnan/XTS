@@ -45,7 +45,7 @@ tprogs = \
 	Xpermalloc/Xpermalloc \
 	XParseGeometry/XParseGeometry \
 	XPutPixel/XPutPixel \
-	rbndkysym/rbndkysym \
+	XRebindKeysym/XRebindKeysym \
 	rctinrgn/rctinrgn \
 	rdbtmpfl/rdbtmpfl \
 	rfrshkybrd/rfrshkybrd \

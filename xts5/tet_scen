@@ -1796,7 +1796,7 @@ XPutPixel
 
 XRebindKeysym
 	"VSW5TESTSUITE CASE XRebindKeysym 2"
-	/tset/Xlib17/rbndkysym/rbndkysym
+	/tset/Xlib17/XRebindKeysym/XRebindKeysym
 
 XRectInRegion
 	"VSW5TESTSUITE CASE XRectInRegion 3"
