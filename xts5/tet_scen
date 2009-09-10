@@ -4477,7 +4477,7 @@ XtRealloc
 
 XtFree
 	"VSW5TESTSUITE CASE XtFree 4"
-	/tset/Xt13/tfree/tfree
+	/tset/Xt13/XtFree/XtFree
 
 XtNew
 	"VSW5TESTSUITE CASE XtNew 5"

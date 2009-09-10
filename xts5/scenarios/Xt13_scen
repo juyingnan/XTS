@@ -69,7 +69,7 @@
 	"VSW5TESTSUITE CASE XtRealloc 12"
 	/tset/Xt13/trealloc/trealloc
 	"VSW5TESTSUITE CASE XtFree 4"
-	/tset/Xt13/tfree/tfree
+	/tset/Xt13/XtFree/XtFree
 	"VSW5TESTSUITE CASE XtNew 5"
 	/tset/Xt13/tnew/tnew
 	"VSW5TESTSUITE CASE XtNewString 5"
