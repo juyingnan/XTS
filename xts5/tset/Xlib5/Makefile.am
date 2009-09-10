@@ -18,7 +18,7 @@ tprogs = \
 	XGetWindowAttributes/XGetWindowAttributes \
 	XGetWindowProperty/XGetWindowProperty \
 	XInternAtom/XInternAtom \
-	ListProperties/ListProperties \
+	XListProperties/XListProperties \
 	QueryPointer/QueryPointer \
 	QueryTree/QueryTree \
 	rttwdwprpr/rttwdwprpr \

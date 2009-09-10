@@ -200,7 +200,7 @@
 	"VSW5TESTSUITE CASE ListInstalledColormaps 3"
 	/tset/Xproto/XListInstalledColormaps/XListInstalledColormaps
 	"VSW5TESTSUITE CASE ListProperties 3"
-	/tset/Xproto/ListProperties/ListProperties
+	/tset/Xproto/XListProperties/XListProperties
 	"VSW5TESTSUITE CASE MapSubwindows 3"
 	/tset/Xproto/XMapSubwindows/XMapSubwindows
 	"VSW5TESTSUITE CASE MapWindow 3"

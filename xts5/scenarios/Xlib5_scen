@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE XInternAtom 8"
 	/tset/Xlib5/XInternAtom/XInternAtom
 	"VSW5TESTSUITE CASE XListProperties 3"
-	/tset/Xlib5/ListProperties/ListProperties
+	/tset/Xlib5/XListProperties/XListProperties
 	"VSW5TESTSUITE CASE XQueryPointer 6"
 	/tset/Xlib5/QueryPointer/QueryPointer
 	"VSW5TESTSUITE CASE XQueryTree 3"

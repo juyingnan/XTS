@@ -81,7 +81,7 @@ tprogs = \
 	ListFontsWithInfo/ListFontsWithInfo \
 	XListHosts/XListHosts \
 	XListInstalledColormaps/XListInstalledColormaps \
-	ListProperties/ListProperties \
+	XListProperties/XListProperties \
 	XMapSubwindows/XMapSubwindows \
 	XMapWindow/XMapWindow \
 	NoOperation/NoOperation \
