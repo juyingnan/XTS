@@ -52,7 +52,7 @@ tprogs = \
 	XRotateBuffers/XRotateBuffers \
 	XSubImage/XSubImage \
 	XSubtractRegion/XSubtractRegion \
-	shrnkrgn/shrnkrgn \
+	XShrinkRegion/XShrinkRegion \
 	strbffr/strbffr \
 	strbyts/strbyts \
 	strgn/strgn \

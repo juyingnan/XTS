@@ -1824,7 +1824,7 @@ XSubtractRegion
 
 XShrinkRegion
 	"VSW5TESTSUITE CASE XShrinkRegion 3"
-	/tset/Xlib17/shrnkrgn/shrnkrgn
+	/tset/Xlib17/XShrinkRegion/XShrinkRegion
 
 XStoreBuffer
 	"VSW5TESTSUITE CASE XStoreBuffer 2"
