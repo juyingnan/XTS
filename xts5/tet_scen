@@ -550,7 +550,7 @@ XGetDeviceFocus
 
 XGetDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XGetDeviceDontPropagateList 2"
-	/tset/XI/getprop/getprop
+	/tset/XI/XGetDeviceDontPropagateList/XGetDeviceDontPropagateList
 
 XGetExtensionVersion
 	"VSW5TESTSUITE CASE XGetExtensionVersion 2"

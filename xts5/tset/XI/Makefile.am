@@ -21,7 +21,7 @@ tprogs = \
 	XGetDeviceControl/XGetDeviceControl \
 	XGetFeedbackControl/XGetFeedbackControl \
 	XGetDeviceFocus/XGetDeviceFocus \
-	getprop/getprop \
+	XGetDeviceDontPropagateList/XGetDeviceDontPropagateList \
 	getvers/getvers \
 	grbdev/grbdev \
 	grbdvbtn/grbdvbtn \
