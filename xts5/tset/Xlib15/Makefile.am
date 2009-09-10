@@ -23,7 +23,7 @@ tprogs = \
 	XGetCommand/XGetCommand \
 	XGetIconName/XGetIconName \
 	XGetIconSizes/XGetIconSizes \
-	gtrgbclrmp/gtrgbclrmp \
+	XGetRGBColormaps/XGetRGBColormaps \
 	gttrnsntfr/gttrnsntfr \
 	gttxtprprt/gttxtprprt \
 	gtwmclntmc/gtwmclntmc \

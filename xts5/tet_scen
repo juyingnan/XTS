@@ -1391,7 +1391,7 @@ XGetIconSizes
 
 XGetRGBColormaps
 	"VSW5TESTSUITE CASE XGetRGBColormaps 6"
-	/tset/Xlib15/gtrgbclrmp/gtrgbclrmp
+	/tset/Xlib15/XGetRGBColormaps/XGetRGBColormaps
 
 XGetTransientForHint
 	"VSW5TESTSUITE CASE XGetTransientForHint 3"
