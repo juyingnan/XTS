@@ -672,7 +672,7 @@ XShapeGetRectangles
 
 XShapeInputSelected
 	"VSW5TESTSUITE CASE XShapeInputSelected 1"
-	/tset/SHAPE/tshpinsel/tshpinsel
+	/tset/SHAPE/XShapeInputSelected/XShapeInputSelected
 
 XShapeQueryExtension
 	"VSW5TESTSUITE CASE XShapeQueryExtension 1"

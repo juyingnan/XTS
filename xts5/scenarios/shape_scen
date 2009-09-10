@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE XShapeGetRectangles 1"
 	/tset/SHAPE/XShapeGetRectangles/XShapeGetRectangles
 	"VSW5TESTSUITE CASE XShapeInputSelected 1"
-	/tset/SHAPE/tshpinsel/tshpinsel
+	/tset/SHAPE/XShapeInputSelected/XShapeInputSelected
 	"VSW5TESTSUITE CASE XShapeQueryExtension 1"
 	/tset/SHAPE/tshpqyetn/tshpqyetn
 	"VSW5TESTSUITE CASE XShapeQueryExtents 1"
