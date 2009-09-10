@@ -56,7 +56,7 @@
 #
 
 	"VSW5TESTSUITE CASE XAllocColor 5"
-	/tset/Xlib7/allcclr/allcclr
+	/tset/Xlib7/AllocColor/AllocColor
 	"VSW5TESTSUITE CASE XAllocColorCells 9"
 	/tset/Xlib7/allcclrcll/allcclrcll
 	"VSW5TESTSUITE CASE XAllocColorPlanes 7"
