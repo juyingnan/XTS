@@ -1007,7 +1007,7 @@ XSendEvent
 
 XSetAfterFunction
 	"VSW5TESTSUITE CASE XSetAfterFunction 3"
-	/tset/Xlib12/staftrfnct/staftrfnct
+	/tset/Xlib12/XSetAfterFunction/XSetAfterFunction
 
 XSetErrorHandler
 	"VSW5TESTSUITE CASE XSetErrorHandler 9"

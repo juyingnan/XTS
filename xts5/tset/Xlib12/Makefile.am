@@ -30,7 +30,7 @@ tprogs = \
 	XPutBackEvent/XPutBackEvent \
 	XSelectInput/XSelectInput \
 	XSendEvent/XSendEvent \
-	staftrfnct/staftrfnct \
+	XSetAfterFunction/XSetAfterFunction \
 	sterrrhndl/sterrrhndl \
 	stioerrrhn/stioerrrhn \
 	sync/sync \
