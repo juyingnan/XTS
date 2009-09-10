@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XrmInitialize 1"
 	/tset/Xlib16/XrmInitialize/XrmInitialize
 	"VSW5TESTSUITE CASE XrmMergeDatabases 6"
-	/tset/Xlib16/rmmrgdtbss/rmmrgdtbss
+	/tset/Xlib16/XrmMergeDatabases/XrmMergeDatabases
 	"VSW5TESTSUITE CASE XrmParseCommand 12"
 	/tset/Xlib16/rmprscmmnd/rmprscmmnd
 	"VSW5TESTSUITE CASE XrmPutFileDatabase 3"

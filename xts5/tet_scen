@@ -1550,7 +1550,7 @@ XrmInitialize
 
 XrmMergeDatabases
 	"VSW5TESTSUITE CASE XrmMergeDatabases 6"
-	/tset/Xlib16/rmmrgdtbss/rmmrgdtbss
+	/tset/Xlib16/XrmMergeDatabases/XrmMergeDatabases
 
 XrmParseCommand
 	"VSW5TESTSUITE CASE XrmParseCommand 12"
