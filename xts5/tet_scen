@@ -2659,7 +2659,7 @@ XcmsLookupColor
 
 XcmsCIELabQueryMinL
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMinL 1"
-	/tset/Xlib7/cmslqml/cmslqml
+	/tset/Xlib7/XcmsCIELabQueryMinL/XcmsCIELabQueryMinL
 
 XcmsPrefixOfFormat
 	"VSW5TESTSUITE CASE XcmsPrefixOfFormat 1"

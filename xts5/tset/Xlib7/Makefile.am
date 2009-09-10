@@ -31,7 +31,7 @@ tprogs = \
 	XcmsFreeCCC/XcmsFreeCCC \
 	XcmsFormatOfPrefix/XcmsFormatOfPrefix \
 	XcmsLookupColor/XcmsLookupColor \
-	cmslqml/cmslqml \
+	XcmsCIELabQueryMinL/XcmsCIELabQueryMinL \
 	cmspoft/cmspoft \
 	cmsqbk/cmsqbk \
 	cmsqbl/cmsqbl \

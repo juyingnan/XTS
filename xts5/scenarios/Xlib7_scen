@@ -120,7 +120,7 @@
 	"VSW5TESTSUITE CASE XcmsLookupColor 1"
 	/tset/Xlib7/XcmsLookupColor/XcmsLookupColor
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMinL 1"
-	/tset/Xlib7/cmslqml/cmslqml
+	/tset/Xlib7/XcmsCIELabQueryMinL/XcmsCIELabQueryMinL
 	"VSW5TESTSUITE CASE XcmsPrefixOfFormat 1"
 	/tset/Xlib7/cmspoft/cmspoft
 	"VSW5TESTSUITE CASE XcmsQueryBlack 1"
