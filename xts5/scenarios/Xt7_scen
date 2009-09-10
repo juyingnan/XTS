@@ -77,6 +77,6 @@
 	"VSW5TESTSUITE CASE XtMenuPopup 22"
 	/tset/Xt7/tmpopup/tmpopup
 	"VSW5TESTSUITE CASE XtCallbackPopdown 9"
-	/tset/Xt7/tcalbkpdn/tcalbkpdn
+	/tset/Xt7/XtCallbackPopdown/XtCallbackPopdown
 	"VSW5TESTSUITE CASE XtMenuPopdown 11"
 	/tset/Xt7/tmpopdown/tmpopdown

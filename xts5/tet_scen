@@ -3924,7 +3924,7 @@ XtMenuPopup
 
 XtCallbackPopdown
 	"VSW5TESTSUITE CASE XtCallbackPopdown 9"
-	/tset/Xt7/tcalbkpdn/tcalbkpdn
+	/tset/Xt7/XtCallbackPopdown/XtCallbackPopdown
 
 XtMenuPopdown
 	"VSW5TESTSUITE CASE XtMenuPopdown 11"
