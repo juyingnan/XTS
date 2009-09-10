@@ -59,7 +59,7 @@ tprogs = \
 	GetFontPath/GetFontPath \
 	GetGeometry/GetGeometry \
 	GetImage/GetImage \
-	gtinptfcs/gtinptfcs \
+	GetInputFocus/GetInputFocus \
 	gtkybrdcnt/gtkybrdcnt \
 	gtkybrdmpp/gtkybrdmpp \
 	gtmdfrmppn/gtmdfrmppn \
