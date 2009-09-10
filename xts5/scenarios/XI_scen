@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE XChangeDeviceControl 10"
 	/tset/XI/XChangeDeviceControl/XChangeDeviceControl
 	"VSW5TESTSUITE CASE XChangeFeedbackControl 8"
-	/tset/XI/chgfctl/chgfctl
+	/tset/XI/XChangeFeedbackControl/XChangeFeedbackControl
 	"VSW5TESTSUITE CASE XChangeKeyboardDevice 10"
 	/tset/XI/chgkbd/chgkbd
 	"VSW5TESTSUITE CASE XChangeDeviceDontPropagateList 7"

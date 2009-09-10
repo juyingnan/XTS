@@ -62,7 +62,7 @@
 	"VSW5TESTSUITE CASE ChangeDeviceDontPropagateList 3"
 	/tset/XIproto/chgdvprop/chgdvprop
 	"VSW5TESTSUITE CASE ChangeFeedbackControl 3"
-	/tset/XIproto/chgfctl/chgfctl
+	/tset/XIproto/XChangeFeedbackControl/XChangeFeedbackControl
 	"VSW5TESTSUITE CASE ChangeKeyboardDevice 4"
 	/tset/XIproto/chgkbd/chgkbd
 	"VSW5TESTSUITE CASE ChangePointerDevice 4"

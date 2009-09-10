@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = \
 	XAllowDeviceEvents/XAllowDeviceEvents \
 	XChangeDeviceControl/XChangeDeviceControl \
-	chgfctl/chgfctl \
+	XChangeFeedbackControl/XChangeFeedbackControl \
 	chgkbd/chgkbd \
 	chgprop/chgprop \
 	chgptr/chgptr \
