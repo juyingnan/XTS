@@ -264,7 +264,7 @@
 	"VSW5TESTSUITE CASE SetDashes 3"
 	/tset/Xproto/SetDashes/SetDashes
 	"VSW5TESTSUITE CASE SetFontPath 3"
-	/tset/Xproto/stfntpth/stfntpth
+	/tset/Xproto/SetFontPath/SetFontPath
 	"VSW5TESTSUITE CASE SetInputFocus 3"
 	/tset/Xproto/stinptfcs/stinptfcs
 	"VSW5TESTSUITE CASE SetModifierMapping 3"

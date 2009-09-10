@@ -136,7 +136,7 @@
 	"VSW5TESTSUITE CASE XQueryTextExtents 12"
 	/tset/Xlib9/QueryTextExtents/QueryTextExtents
 	"VSW5TESTSUITE CASE XSetFontPath 4"
-	/tset/Xlib9/stfntpth/stfntpth
+	/tset/Xlib9/SetFontPath/SetFontPath
 	"VSW5TESTSUITE CASE XTextExtents16 11"
 	/tset/Xlib9/txtextnt16/txtextnt16
 	"VSW5TESTSUITE CASE XTextExtents 10"

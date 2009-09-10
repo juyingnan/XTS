@@ -113,7 +113,7 @@ tprogs = \
 	SetClipRectangles/SetClipRectangles \
 	SetCloseDownMode/SetCloseDownMode \
 	SetDashes/SetDashes \
-	stfntpth/stfntpth \
+	SetFontPath/SetFontPath \
 	stinptfcs/stinptfcs \
 	stmdfrmppn/stmdfrmppn \
 	stpntrmppn/stpntrmppn \

@@ -49,7 +49,7 @@ tprogs = \
 	QueryFont/QueryFont \
 	qrytxtex16/qrytxtex16 \
 	QueryTextExtents/QueryTextExtents \
-	stfntpth/stfntpth \
+	SetFontPath/SetFontPath \
 	txtextnt16/txtextnt16 \
 	txtextnts/txtextnts \
 	txtwdth/txtwdth \
