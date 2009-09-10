@@ -1999,7 +1999,7 @@ XEventMaskOfScreen
 
 XFree
 	"VSW5TESTSUITE CASE XFree 1"
-	/tset/Xlib3/fr/fr
+	/tset/Xlib3/XFree/XFree
 
 XHeightMMOfScreen
 	"VSW5TESTSUITE CASE XHeightMMOfScreen 1"

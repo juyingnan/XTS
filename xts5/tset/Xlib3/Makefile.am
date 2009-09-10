@@ -40,7 +40,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XDisplayWidthMM/XDisplayWidthMM XDisplayWidthMM/XDisplayWidthMM_m \
 	XDoesSaveUnders/XDoesSaveUnders XDoesSaveUnders/XDoesSaveUnders_m \
 	XEventMaskOfScreen/XEventMaskOfScreen XEventMaskOfScreen/XEventMaskOfScreen_m \
-	fr/fr \
+	XFree/XFree \
 	hghtmmofsc/hghtmmofsc hghtmmofsc/hghtmmofsc_m \
 	hghtofscrn/hghtofscrn hghtofscrn/hghtofscrn_m \
 	imgbytordr/imgbytordr imgbytordr/imgbytordr_m \

@@ -118,7 +118,7 @@
 	"VSW5TESTSUITE CASE XEventMaskOfScreen 1"
 	/tset/Xlib3/XEventMaskOfScreen/XEventMaskOfScreen
 	"VSW5TESTSUITE CASE XFree 1"
-	/tset/Xlib3/fr/fr
+	/tset/Xlib3/XFree/XFree
 	"VSW5TESTSUITE CASE XHeightMMOfScreen 1"
 	/tset/Xlib3/hghtmmofsc/hghtmmofsc
 	"VSW5TESTSUITE CASE XHeightOfScreen 1"
