@@ -1836,7 +1836,7 @@ XStoreBytes
 
 XSetRegion
 	"VSW5TESTSUITE CASE XSetRegion 2"
-	/tset/Xlib17/strgn/strgn
+	/tset/Xlib17/XSetRegion/XSetRegion
 
 XStringToKeysym
 	"VSW5TESTSUITE CASE XStringToKeysym 2"
