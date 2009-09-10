@@ -19,7 +19,7 @@ tprogs = \
 	XDestroyImage/XDestroyImage \
 	XDestroyRegion/XDestroyRegion \
 	XEmptyRegion/XEmptyRegion \
-	eqlrgn/eqlrgn \
+	XEqualRegion/XEqualRegion \
 	fndcntxt/fndcntxt \
 	ftchbffr/ftchbffr \
 	ftchbyts/ftchbyts \

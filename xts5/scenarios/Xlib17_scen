@@ -76,7 +76,7 @@
 	"VSW5TESTSUITE CASE XEmptyRegion 2"
 	/tset/Xlib17/XEmptyRegion/XEmptyRegion
 	"VSW5TESTSUITE CASE XEqualRegion 4"
-	/tset/Xlib17/eqlrgn/eqlrgn
+	/tset/Xlib17/XEqualRegion/XEqualRegion
 	"VSW5TESTSUITE CASE XFindContext 2"
 	/tset/Xlib17/fndcntxt/fndcntxt
 	"VSW5TESTSUITE CASE XFetchBuffer 2"
