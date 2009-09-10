@@ -63,7 +63,7 @@
 	"VSW5TESTSUITE CASE XtGetConstraintResourceList 3"
 	/tset/Xt11/XtGetConstraintResourceList/XtGetConstraintResourceList
 	"VSW5TESTSUITE CASE XtOffsetOf 1"
-	/tset/Xt11/toffsetof/toffsetof
+	/tset/Xt11/XtOffsetOf/XtOffsetOf
 	"VSW5TESTSUITE CASE XtOffset 1"
 	/tset/Xt11/XtOffset/XtOffset
 	"VSW5TESTSUITE CASE XtGetSubresources 2"
