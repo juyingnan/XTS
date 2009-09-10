@@ -88,7 +88,7 @@
 	"VSW5TESTSUITE CASE XtMergeArgLists 3"
 	/tset/Xt4/XtMergeArgLists/XtMergeArgLists
 	"VSW5TESTSUITE CASE XtVaCreateArgsList 2"
-	/tset/Xt4/tvcrtargsl/tvcrtargsl
+	/tset/Xt4/XtCreateVarArgsList/XtCreateVarArgsList
 	"VSW5TESTSUITE CASE XtCreateWidget 4"
 	/tset/Xt4/XtCreateWidget/XtCreateWidget
 	"VSW5TESTSUITE CASE XtVaCreateWidget 8"

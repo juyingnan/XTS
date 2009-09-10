@@ -3734,7 +3734,7 @@ XtMergeArgLists
 
 XtVaCreateArgsList
 	"VSW5TESTSUITE CASE XtVaCreateArgsList 2"
-	/tset/Xt4/tvcrtargsl/tvcrtargsl
+	/tset/Xt4/XtCreateVarArgsList/XtCreateVarArgsList
 
 XtCreateWidget
 	"VSW5TESTSUITE CASE XtCreateWidget 4"
