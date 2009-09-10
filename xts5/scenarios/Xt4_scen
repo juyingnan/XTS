@@ -108,7 +108,7 @@
 	"VSW5TESTSUITE CASE XtCreateWindow 1"
 	/tset/Xt4/XtCreateWindow/XtCreateWindow
 	"VSW5TESTSUITE CASE XtDisplay 1"
-      	/tset/Xt4/tdisplay/tdisplay
+      	/tset/Xt4/XtDisplay/XtDisplay
 	"VSW5TESTSUITE CASE XtParent 1"
 	/tset/Xt4/tparent/tparent
 	"VSW5TESTSUITE CASE XtScreen 1"
