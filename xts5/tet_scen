@@ -1538,7 +1538,7 @@ XrmGetFileDatabase
 
 XrmGetResource
 	"VSW5TESTSUITE CASE XrmGetResource 2"
-	/tset/Xlib16/rmgtrsrc/rmgtrsrc
+	/tset/Xlib16/XrmGetResource/XrmGetResource
 
 XrmGetStringDatabase
 	"VSW5TESTSUITE CASE XrmGetStringDatabase 2"
