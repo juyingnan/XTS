@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	ChangeProperty/ChangeProperty \
+	XChangeProperty/XChangeProperty \
 	ConvertSelection/ConvertSelection \
 	DeleteProperty/DeleteProperty \
 	GetAtomName/GetAtomName \

@@ -22,7 +22,7 @@ tprogs = \
 	XChangeKeyboardControl/XChangeKeyboardControl \
 	XChangeKeyboardMapping/XChangeKeyboardMapping \
 	XChangePointerControl/XChangePointerControl \
-	ChangeProperty/ChangeProperty \
+	XChangeProperty/XChangeProperty \
 	XChangeSaveSet/XChangeSaveSet \
 	XChangeWindowAttributes/XChangeWindowAttributes \
 	ClearArea/ClearArea \

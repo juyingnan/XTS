@@ -82,7 +82,7 @@
 	"VSW5TESTSUITE CASE ChangePointerControl 3"
 	/tset/Xproto/XChangePointerControl/XChangePointerControl
 	"VSW5TESTSUITE CASE ChangeProperty 3"
-	/tset/Xproto/ChangeProperty/ChangeProperty
+	/tset/Xproto/XChangeProperty/XChangeProperty
 	"VSW5TESTSUITE CASE ChangeSaveSet 3"
 	/tset/Xproto/XChangeSaveSet/XChangeSaveSet
 	"VSW5TESTSUITE CASE ChangeWindowAttributes 4"

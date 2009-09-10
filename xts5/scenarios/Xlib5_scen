@@ -56,7 +56,7 @@
 #
 
 	"VSW5TESTSUITE CASE XChangeProperty 13"
-	/tset/Xlib5/ChangeProperty/ChangeProperty
+	/tset/Xlib5/XChangeProperty/XChangeProperty
 	"VSW5TESTSUITE CASE XConvertSelection 5"
 	/tset/Xlib5/ConvertSelection/ConvertSelection
 	"VSW5TESTSUITE CASE XDeleteProperty 4"

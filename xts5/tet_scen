@@ -2433,7 +2433,7 @@ XVisualIDFromVisual
 
 XChangeProperty
 	"VSW5TESTSUITE CASE XChangeProperty 13"
-	/tset/Xlib5/ChangeProperty/ChangeProperty
+	/tset/Xlib5/XChangeProperty/XChangeProperty
 
 XConvertSelection
 	"VSW5TESTSUITE CASE XConvertSelection 5"
@@ -3158,7 +3158,7 @@ pChangePointerControl
 
 pChangeProperty
 	"VSW5TESTSUITE CASE ChangeProperty 3"
-	/tset/Xproto/ChangeProperty/ChangeProperty
+	/tset/Xproto/XChangeProperty/XChangeProperty
 
 pChangeSaveSet
 	"VSW5TESTSUITE CASE ChangeSaveSet 3"
