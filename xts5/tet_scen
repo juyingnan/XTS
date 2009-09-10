@@ -2707,7 +2707,7 @@ XcmsQueryRed
 
 XcmsQueryWhite
 	"VSW5TESTSUITE CASE XcmsQueryWhite 1"
-	/tset/Xlib7/cmsqwt/cmsqwt
+	/tset/Xlib7/XcmsQueryWhite/XcmsQueryWhite
 
 XcmsScreenNumberOfCCC
 	"VSW5TESTSUITE CASE XcmsScreenNumberOfCCC 1"
