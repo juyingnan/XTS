@@ -34,7 +34,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XDisplayHeight/XDisplayHeight XDisplayHeight/XDisplayHeight_m \
 	XDisplayHeightMM/XDisplayHeightMM XDisplayHeightMM/XDisplayHeightMM_m \
 	XDisplayOfScreen/XDisplayOfScreen XDisplayOfScreen/XDisplayOfScreen_m \
-	dsplyplns/dsplyplns dsplyplns/dsplyplns_m \
+	XDisplayPlanes/XDisplayPlanes XDisplayPlanes/XDisplayPlanes_m \
 	dsplystr/dsplystr dsplystr/dsplystr_m \
 	dsplywdth/dsplywdth dsplywdth/dsplywdth_m \
 	dsplywdthm/dsplywdthm dsplywdthm/dsplywdthm_m \

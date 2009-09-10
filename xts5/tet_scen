@@ -1975,7 +1975,7 @@ XDisplayOfScreen
 
 XDisplayPlanes
 	"VSW5TESTSUITE CASE XDisplayPlanes 1"
-	/tset/Xlib3/dsplyplns/dsplyplns
+	/tset/Xlib3/XDisplayPlanes/XDisplayPlanes
 
 XDisplayString
 	"VSW5TESTSUITE CASE XDisplayString 2"
@@ -2203,7 +2203,7 @@ DisplayOfScreen
 
 DisplayPlanes
 	"VSW5TESTSUITE CASE DisplayPlanes 1"
-	/tset/Xlib3/dsplyplns/dsplyplns_m
+	/tset/Xlib3/XDisplayPlanes/XDisplayPlanes_m
 
 DisplayString
 	"VSW5TESTSUITE CASE DisplayString 2"

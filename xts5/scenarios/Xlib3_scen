@@ -106,7 +106,7 @@
 	"VSW5TESTSUITE CASE XDisplayOfScreen 1"
 	/tset/Xlib3/XDisplayOfScreen/XDisplayOfScreen
 	"VSW5TESTSUITE CASE XDisplayPlanes 1"
-	/tset/Xlib3/dsplyplns/dsplyplns
+	/tset/Xlib3/XDisplayPlanes/XDisplayPlanes
 	"VSW5TESTSUITE CASE XDisplayString 2"
 	/tset/Xlib3/dsplystr/dsplystr
 	"VSW5TESTSUITE CASE XDisplayWidth 1"
@@ -220,7 +220,7 @@
 	"VSW5TESTSUITE CASE DisplayOfScreen 1"
 	/tset/Xlib3/XDisplayOfScreen/XDisplayOfScreen_m
 	"VSW5TESTSUITE CASE DisplayPlanes 1"
-	/tset/Xlib3/dsplyplns/dsplyplns_m
+	/tset/Xlib3/XDisplayPlanes/XDisplayPlanes_m
 	"VSW5TESTSUITE CASE DisplayString 2"
 	/tset/Xlib3/dsplystr/dsplystr_m
 	"VSW5TESTSUITE CASE DisplayWidth 1"
