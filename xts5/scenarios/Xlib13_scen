@@ -88,7 +88,7 @@
 	"VSW5TESTSUITE CASE XGetInputFocus 1"
 	/tset/Xlib13/GetInputFocus/GetInputFocus
 	"VSW5TESTSUITE CASE XGetKeyboardControl 1"
-	/tset/Xlib13/gtkybrdcnt/gtkybrdcnt
+	/tset/Xlib13/GetKeyboardControl/GetKeyboardControl
 	"VSW5TESTSUITE CASE XGetKeyboardMapping 6"
 	/tset/Xlib13/gtkybrdmpp/gtkybrdmpp
 	"VSW5TESTSUITE CASE XGetModifierMapping 2"

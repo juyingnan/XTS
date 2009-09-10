@@ -158,7 +158,7 @@
 	"VSW5TESTSUITE CASE GetInputFocus 3"
 	/tset/Xproto/GetInputFocus/GetInputFocus
 	"VSW5TESTSUITE CASE GetKeyboardControl 3"
-	/tset/Xproto/gtkybrdcnt/gtkybrdcnt
+	/tset/Xproto/GetKeyboardControl/GetKeyboardControl
 	"VSW5TESTSUITE CASE GetKeyboardMapping 3"
 	/tset/Xproto/gtkybrdmpp/gtkybrdmpp
 	"VSW5TESTSUITE CASE GetModifierMapping 3"

@@ -60,7 +60,7 @@ tprogs = \
 	GetGeometry/GetGeometry \
 	GetImage/GetImage \
 	GetInputFocus/GetInputFocus \
-	gtkybrdcnt/gtkybrdcnt \
+	GetKeyboardControl/GetKeyboardControl \
 	gtkybrdmpp/gtkybrdmpp \
 	gtmdfrmppn/gtmdfrmppn \
 	gtmtnevnts/gtmtnevnts \
