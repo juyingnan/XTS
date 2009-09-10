@@ -141,7 +141,7 @@
 	"VSW5TESTSUITE CASE XtCvtPixelToColor 3"
 	/tset/Xt11/XtCvtPixelToColor/XtCvtPixelToColor
 	"VSW5TESTSUITE CASE XtDisplayStringConversionWarning 2"
-	/tset/Xt11/tdisplscw/tdisplscw
+	/tset/Xt11/XtDisplayStringConversionWarning/XtDisplayStringConversionWarning
 	"VSW5TESTSUITE CASE XtDisplayToApplicationContext 2"
 	/tset/Xt11/tdispltac/tdispltac
 	"VSW5TESTSUITE CASE XtSetTypeConverter 15"

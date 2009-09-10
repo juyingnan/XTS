@@ -4297,7 +4297,7 @@ XtCvtPixelToColor
 
 XtDisplayStringConversionWarn
 	"VSW5TESTSUITE CASE XtDisplayStringConversionWarning 2"
-	/tset/Xt11/tdisplscw/tdisplscw
+	/tset/Xt11/XtDisplayStringConversionWarning/XtDisplayStringConversionWarning
 
 XtDisplayToApplicationContext
 	"VSW5TESTSUITE CASE XtDisplayToApplicationContext 2"
