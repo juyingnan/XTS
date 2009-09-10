@@ -62,7 +62,7 @@ tprogs = \
 	XUnionRegion/XUnionRegion \
 	XUniqueContext/XUniqueContext \
 	XWMGeometry/XWMGeometry \
-	wrtbtmpfl/wrtbtmpfl \
+	XWriteBitmapFile/XWriteBitmapFile \
 	xrrgn/xrrgn
 
 # Auxiliary programs run from tests

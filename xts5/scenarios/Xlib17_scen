@@ -162,6 +162,6 @@
 	"VSW5TESTSUITE CASE XWMGeometry 9"
 	/tset/Xlib17/XWMGeometry/XWMGeometry
 	"VSW5TESTSUITE CASE XWriteBitmapFile 6"
-	/tset/Xlib17/wrtbtmpfl/wrtbtmpfl
+	/tset/Xlib17/XWriteBitmapFile/XWriteBitmapFile
 	"VSW5TESTSUITE CASE XXorRegion 1"
 	/tset/Xlib17/xrrgn/xrrgn
