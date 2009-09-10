@@ -115,7 +115,7 @@
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabaseText 4"
 	/tset/Xt13/XtAppGetErrorDatabaseText/XtAppGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XtAppSetErrorMsgHandler 2"
-	/tset/Xt13/tapstermh/tapstermh
+	/tset/Xt13/XtAppSetErrorMsgHandler/XtAppSetErrorMsgHandler
 	"VSW5TESTSUITE CASE XtAppErrorMsg 3"
 	/tset/Xt13/XtAppErrorMsg/XtAppErrorMsg
 	"VSW5TESTSUITE CASE XtAppSetWarningMsgHandler 2"

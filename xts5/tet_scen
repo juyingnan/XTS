@@ -4569,7 +4569,7 @@ XtAppGetErrorDatabaseText
 
 XtAppSetErrorMsgHandler
 	"VSW5TESTSUITE CASE XtAppSetErrorMsgHandler 2"
-	/tset/Xt13/tapstermh/tapstermh
+	/tset/Xt13/XtAppSetErrorMsgHandler/XtAppSetErrorMsgHandler
 
 XtAppErrorMsg
 	"VSW5TESTSUITE CASE XtAppErrorMsg 3"
