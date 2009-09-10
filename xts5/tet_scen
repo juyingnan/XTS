@@ -1804,7 +1804,7 @@ XRectInRegion
 
 XReadBitmapFile
 	"VSW5TESTSUITE CASE XReadBitmapFile 9"
-	/tset/Xlib17/rdbtmpfl/rdbtmpfl
+	/tset/Xlib17/XReadBitmapFile/XReadBitmapFile
 
 XRefreshKeyboardMapping
 	"VSW5TESTSUITE CASE XRefreshKeyboardMapping 3"

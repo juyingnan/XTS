@@ -47,7 +47,7 @@ tprogs = \
 	XPutPixel/XPutPixel \
 	XRebindKeysym/XRebindKeysym \
 	XRectInRegion/XRectInRegion \
-	rdbtmpfl/rdbtmpfl \
+	XReadBitmapFile/XReadBitmapFile \
 	rfrshkybrd/rfrshkybrd \
 	rttbffrs/rttbffrs \
 	sbimg/sbimg \

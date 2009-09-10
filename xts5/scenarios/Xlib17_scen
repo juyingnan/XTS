@@ -132,7 +132,7 @@
 	"VSW5TESTSUITE CASE XRectInRegion 3"
 	/tset/Xlib17/XRectInRegion/XRectInRegion
 	"VSW5TESTSUITE CASE XReadBitmapFile 9"
-	/tset/Xlib17/rdbtmpfl/rdbtmpfl
+	/tset/Xlib17/XReadBitmapFile/XReadBitmapFile
 	"VSW5TESTSUITE CASE XRefreshKeyboardMapping 3"
 	/tset/Xlib17/rfrshkybrd/rfrshkybrd
 	"VSW5TESTSUITE CASE XRotateBuffers 2"
