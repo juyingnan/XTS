@@ -73,7 +73,7 @@
 	"VSW5TESTSUITE CASE XtGetApplicationResources 2"
 	/tset/Xt11/XtGetApplicationResources/XtGetApplicationResources
 	"VSW5TESTSUITE CASE XtVaGetApplicationResources 4"
-	/tset/Xt11/tvagtares/tvagtares
+	/tset/Xt11/XtVaGetApplicationResources/XtVaGetApplicationResources
 	"VSW5TESTSUITE CASE XtCvtStringToAcceleratorTable 4"
 	/tset/Xt11/XtCvtStringToAcceleratorTable/XtCvtStringToAcceleratorTable
 	"VSW5TESTSUITE CASE XtCvtStringToAtom 4"
