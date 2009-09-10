@@ -2675,7 +2675,7 @@ XcmsQueryBlue
 
 XcmsQueryColor
 	"VSW5TESTSUITE CASE XcmsQueryColor 1"
-	/tset/Xlib7/cmsqc/cmsqc
+	/tset/Xlib7/XcmsQueryColor/XcmsQueryColor
 
 XcmsQueryColors
 	"VSW5TESTSUITE CASE XcmsQueryColors 3"

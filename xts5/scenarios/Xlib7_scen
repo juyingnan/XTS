@@ -128,7 +128,7 @@
 	"VSW5TESTSUITE CASE XcmsQueryBlue 1"
 	/tset/Xlib7/XcmsQueryBlue/XcmsQueryBlue
 	"VSW5TESTSUITE CASE XcmsQueryColor 1"
-	/tset/Xlib7/cmsqc/cmsqc
+	/tset/Xlib7/XcmsQueryColor/XcmsQueryColor
 	"VSW5TESTSUITE CASE XcmsQueryColors 3"
 	/tset/Xlib7/cmsqcl/cmsqcl
 	"VSW5TESTSUITE CASE XcmsQueryGreen 1"

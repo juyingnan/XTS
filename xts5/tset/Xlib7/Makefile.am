@@ -35,7 +35,7 @@ tprogs = \
 	XcmsPrefixOfFormat/XcmsPrefixOfFormat \
 	XcmsQueryBlack/XcmsQueryBlack \
 	XcmsQueryBlue/XcmsQueryBlue \
-	cmsqc/cmsqc \
+	XcmsQueryColor/XcmsQueryColor \
 	cmsqcl/cmsqcl \
 	cmsqgr/cmsqgr \
 	cmsqmc/cmsqmc \
