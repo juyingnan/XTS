@@ -86,7 +86,7 @@
 	"VSW5TESTSUITE CASE XRemoveFromSaveSet 3"
 	/tset/Xlib10/XRemoveFromSaveSet/XRemoveFromSaveSet
 	"VSW5TESTSUITE CASE XRemoveHost 3"
-	/tset/Xlib10/rmvhst/rmvhst
+	/tset/Xlib10/XRemoveHost/XRemoveHost
 	"VSW5TESTSUITE CASE XRemoveHosts 3"
 	/tset/Xlib10/rmvhsts/rmvhsts
 	"VSW5TESTSUITE CASE XReparentWindow 13"

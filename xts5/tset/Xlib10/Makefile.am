@@ -24,7 +24,7 @@ tprogs = \
 	XListHosts/XListHosts \
 	XListInstalledColormaps/XListInstalledColormaps \
 	XRemoveFromSaveSet/XRemoveFromSaveSet \
-	rmvhst/rmvhst \
+	XRemoveHost/XRemoveHost \
 	rmvhsts/rmvhsts \
 	XReparentWindow/XReparentWindow \
 	rstscrnsvr/rstscrnsvr \
