@@ -2007,7 +2007,7 @@ XHeightMMOfScreen
 
 XHeightOfScreen
 	"VSW5TESTSUITE CASE XHeightOfScreen 1"
-	/tset/Xlib3/hghtofscrn/hghtofscrn
+	/tset/Xlib3/XHeightOfScreen/XHeightOfScreen
 
 XImageByteOrder
 	"VSW5TESTSUITE CASE XImageByteOrder 1"
@@ -2231,7 +2231,7 @@ HeightMMOfScreen
 
 HeightOfScreen
 	"VSW5TESTSUITE CASE HeightOfScreen 1"
-	/tset/Xlib3/hghtofscrn/hghtofscrn_m
+	/tset/Xlib3/XHeightOfScreen/XHeightOfScreen_m
 
 ImageByteOrder
 	"VSW5TESTSUITE CASE ImageByteOrder 1"
