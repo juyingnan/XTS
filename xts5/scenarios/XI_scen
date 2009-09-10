@@ -88,7 +88,7 @@
 	"VSW5TESTSUITE CASE XGrabDeviceButton 21"
 	/tset/XI/XGrabDeviceButton/XGrabDeviceButton
 	"VSW5TESTSUITE CASE XGrabDeviceKey 21"
-	/tset/XI/grbdvky/grbdvky
+	/tset/XI/XGrabDeviceKey/XGrabDeviceKey
 	"VSW5TESTSUITE CASE XGetDeviceButtonMapping 5"
 	/tset/XI/gtbtnmppn/gtbtnmppn
 	"VSW5TESTSUITE CASE XGetDeviceKeyMapping 10"
