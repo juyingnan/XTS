@@ -3832,7 +3832,7 @@ XtVaCreateManagedWidget
 
 XtUnmanageChildren
 	"VSW5TESTSUITE CASE XtUnmanageChildren 8"
-	/tset/Xt5/tunmgchdn/tunmgchdn
+	/tset/Xt5/XtUnmanageChildren/XtUnmanageChildren
 
 XtUnmanageChild
 	"VSW5TESTSUITE CASE XtUnmanageChild 7"
