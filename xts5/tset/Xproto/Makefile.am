@@ -28,7 +28,7 @@ tprogs = \
 	ClearArea/ClearArea \
 	CloseFont/CloseFont \
 	ConfigureWindow/ConfigureWindow \
-	cnvrtslctn/cnvrtslctn \
+	ConvertSelection/ConvertSelection \
 	cpyar/cpyar \
 	cpyclrmpan/cpyclrmpan \
 	cpygc/cpygc \

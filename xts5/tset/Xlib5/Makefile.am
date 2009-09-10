@@ -10,7 +10,7 @@ CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
 	ChangeProperty/ChangeProperty \
-	cnvrtslctn/cnvrtslctn \
+	ConvertSelection/ConvertSelection \
 	dltprprty/dltprprty \
 	gtatmnm/gtatmnm \
 	gtgmtry/gtgmtry \

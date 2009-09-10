@@ -94,7 +94,7 @@
 	"VSW5TESTSUITE CASE ConfigureWindow 4"
 	/tset/Xproto/ConfigureWindow/ConfigureWindow
 	"VSW5TESTSUITE CASE ConvertSelection 3"
-	/tset/Xproto/cnvrtslctn/cnvrtslctn
+	/tset/Xproto/ConvertSelection/ConvertSelection
 	"VSW5TESTSUITE CASE CopyArea 3"
 	/tset/Xproto/cpyar/cpyar
 	"VSW5TESTSUITE CASE CopyColormapAndFree 5"
