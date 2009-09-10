@@ -4145,7 +4145,7 @@ XtOffsetOf
 
 XtOffset
 	"VSW5TESTSUITE CASE XtOffset 1"
-	/tset/Xt11/toffset/toffset
+	/tset/Xt11/XtOffset/XtOffset
 
 XtGetSubresources
 	"VSW5TESTSUITE CASE XtGetSubresources 2"
