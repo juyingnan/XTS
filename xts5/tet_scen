@@ -4118,7 +4118,7 @@ XtRemoveAllCallbacks
 
 XtCallCallbacks
 	"VSW5TESTSUITE CASE XtCallCallbacks 1"
-	/tset/Xt10/tcalcbcks/tcalcbcks
+	/tset/Xt10/XtCallCallbacks/XtCallCallbacks
 
 XtCallCallbackList
 	"VSW5TESTSUITE CASE XtCallCallbackList 2"
