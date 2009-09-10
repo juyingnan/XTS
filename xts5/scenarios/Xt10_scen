@@ -71,6 +71,6 @@
 	"VSW5TESTSUITE CASE XtCallCallbacks 1"
 	/tset/Xt10/tcalcbcks/tcalcbcks
 	"VSW5TESTSUITE CASE XtCallCallbackList 2"
-	/tset/Xt10/tcalcbckl/tcalcbckl
+	/tset/Xt10/XtCallCallbackList/XtCallCallbackList
 	"VSW5TESTSUITE CASE XtHasCallbacks 3"
 	/tset/Xt10/thscbacks/thscbacks
