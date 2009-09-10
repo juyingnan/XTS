@@ -84,7 +84,7 @@
 	"VSW5TESTSUITE CASE XDefaultGC 1"
 	/tset/Xlib3/XDefaultGC/XDefaultGC
 	"VSW5TESTSUITE CASE XDefaultGCOfScreen 2"
-	/tset/Xlib3/dfltgcofsc/dfltgcofsc
+	/tset/Xlib3/XDefaultGCOfScreen/XDefaultGCOfScreen
 	"VSW5TESTSUITE CASE XDefaultRootWindow 1"
 	/tset/Xlib3/dfltrtwdw/dfltrtwdw
 	"VSW5TESTSUITE CASE XDefaultScreen 1"
@@ -198,7 +198,7 @@
 	"VSW5TESTSUITE CASE DefaultGC 1"
 	/tset/Xlib3/XDefaultGC/XDefaultGC_m
 	"VSW5TESTSUITE CASE DefaultGCOfScreen 2"
-	/tset/Xlib3/dfltgcofsc/dfltgcofsc_m
+	/tset/Xlib3/XDefaultGCOfScreen/XDefaultGCOfScreen_m
 	"VSW5TESTSUITE CASE DefaultRootWindow 1"
 	/tset/Xlib3/dfltrtwdw/dfltrtwdw_m
 	"VSW5TESTSUITE CASE DefaultScreen 1"
