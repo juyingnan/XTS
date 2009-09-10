@@ -96,7 +96,7 @@ tprogs = \
 	PolySegment/PolySegment \
 	PolyText16/PolyText16 \
 	PolyText8/PolyText8 \
-	PutImage/PutImage \
+	XPutImage/XPutImage \
 	XQueryBestSize/XQueryBestSize \
 	XQueryColors/XQueryColors \
 	QueryExtension/QueryExtension \

@@ -128,7 +128,7 @@
 	"VSW5TESTSUITE CASE XListFontsWithInfo 7"
 	/tset/Xlib9/XListFontsWithInfo/XListFontsWithInfo
 	"VSW5TESTSUITE CASE XPutImage 40"
-	/tset/Xlib9/PutImage/PutImage
+	/tset/Xlib9/XPutImage/XPutImage
 	"VSW5TESTSUITE CASE XQueryFont 3"
 	/tset/Xlib9/QueryFont/QueryFont
 	"VSW5TESTSUITE CASE XQueryTextExtents16 13"

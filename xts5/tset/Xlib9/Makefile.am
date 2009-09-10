@@ -45,7 +45,7 @@ tprogs = \
 	XLoadQueryFont/XLoadQueryFont \
 	XListFonts/XListFonts \
 	XListFontsWithInfo/XListFontsWithInfo \
-	PutImage/PutImage \
+	XPutImage/XPutImage \
 	QueryFont/QueryFont \
 	qrytxtex16/qrytxtex16 \
 	QueryTextExtents/QueryTextExtents \
