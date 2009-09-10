@@ -3664,7 +3664,7 @@ XtIsTransientShell
 
 XtIsTopLevelShell
 	"VSW5TESTSUITE CASE XtIsTopLevelShell 2"
-	/tset/Xt3/tistplvlsh/tistplvlsh
+	/tset/Xt3/XtIsTopLevelShell/XtIsTopLevelShell
 
 XtIsApplicationShell
 	"VSW5TESTSUITE CASE XtIsApplicationShell 2"

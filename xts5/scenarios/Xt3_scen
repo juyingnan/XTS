@@ -93,7 +93,7 @@
 	"VSW5TESTSUITE CASE XtIsTransientShell 2"
 	/tset/Xt3/tistrnsnts/tistrnsnts
 	"VSW5TESTSUITE CASE XtIsTopLevelShell 2"
-	/tset/Xt3/tistplvlsh/tistplvlsh
+	/tset/Xt3/XtIsTopLevelShell/XtIsTopLevelShell
 	"VSW5TESTSUITE CASE XtIsApplicationShell 2"
 	/tset/Xt3/XtIsApplicationShell/XtIsApplicationShell
 	"VSW5TESTSUITE CASE XtCheckSubclass 3"
