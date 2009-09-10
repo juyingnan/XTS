@@ -1570,7 +1570,7 @@ XrmPutResource
 
 XrmPutStringResource
 	"VSW5TESTSUITE CASE XrmPutStringResource 4"
-	/tset/Xlib16/rmptstrrsr/rmptstrrsr
+	/tset/Xlib16/XrmPutStringResource/XrmPutStringResource
 
 XrmQGetResource
 	"VSW5TESTSUITE CASE XrmQGetResource 2"

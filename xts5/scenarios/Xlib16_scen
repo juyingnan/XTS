@@ -82,7 +82,7 @@
 	"VSW5TESTSUITE CASE XrmPutResource 4"
 	/tset/Xlib16/XrmPutResource/XrmPutResource
 	"VSW5TESTSUITE CASE XrmPutStringResource 4"
-	/tset/Xlib16/rmptstrrsr/rmptstrrsr
+	/tset/Xlib16/XrmPutStringResource/XrmPutStringResource
 	"VSW5TESTSUITE CASE XrmQGetResource 2"
 	/tset/Xlib16/rmqgtrsrc/rmqgtrsrc
 	"VSW5TESTSUITE CASE XrmQGetSearchList 4"

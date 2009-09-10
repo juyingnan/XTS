@@ -30,7 +30,7 @@ tprogs = \
 	XrmPutFileDatabase/XrmPutFileDatabase \
 	XrmPutLineResource/XrmPutLineResource \
 	XrmPutResource/XrmPutResource \
-	rmptstrrsr/rmptstrrsr \
+	XrmPutStringResource/XrmPutStringResource \
 	rmqgtrsrc/rmqgtrsrc \
 	rmqgtsrchl/rmqgtsrchl \
 	rmqgtsrchr/rmqgtsrchr \
