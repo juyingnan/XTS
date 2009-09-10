@@ -3064,7 +3064,7 @@ XTextWidth16
 
 XUnloadFont
 	"VSW5TESTSUITE CASE XUnloadFont 3"
-	/tset/Xlib9/unldfnt/unldfnt
+	/tset/Xlib9/XUnloadFont/XUnloadFont
 
 
 # Discrete tests for XOpen Specific Requirements
