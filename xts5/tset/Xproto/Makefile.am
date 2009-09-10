@@ -123,7 +123,7 @@ tprogs = \
 	SetSelectionOwner/SetSelectionOwner \
 	TranslateCoords/TranslateCoords \
 	UngrabButton/UngrabButton \
-	ungrbky/ungrbky \
+	UngrabKey/UngrabKey \
 	ungrbkybrd/ungrbkybrd \
 	ungrbpntr/ungrbpntr \
 	ungrbsrvr/ungrbsrvr \

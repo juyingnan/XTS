@@ -1146,7 +1146,7 @@ XUngrabButton
 
 XUngrabKey
 	"VSW5TESTSUITE CASE XUngrabKey 7"
-	/tset/Xlib13/ungrbky/ungrbky
+	/tset/Xlib13/UngrabKey/UngrabKey
 
 XUngrabKeyboard
 	"VSW5TESTSUITE CASE XUngrabKeyboard 3"
@@ -3562,7 +3562,7 @@ pUngrabButton
 
 pUngrabKey
 	"VSW5TESTSUITE CASE UngrabKey 3"
-	/tset/Xproto/ungrbky/ungrbky
+	/tset/Xproto/UngrabKey/UngrabKey
 
 pUngrabKeyboard
 	"VSW5TESTSUITE CASE UngrabKeyboard 3"

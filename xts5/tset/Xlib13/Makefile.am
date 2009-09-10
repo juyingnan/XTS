@@ -37,7 +37,7 @@ tprogs = \
 	SetModifierMapping/SetModifierMapping \
 	SetPointerMapping/SetPointerMapping \
 	UngrabButton/UngrabButton \
-	ungrbky/ungrbky \
+	UngrabKey/UngrabKey \
 	ungrbkybrd/ungrbkybrd \
 	ungrbpntr/ungrbpntr \
 	wrppntr/wrppntr
