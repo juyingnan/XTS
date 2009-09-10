@@ -85,7 +85,7 @@
 	"VSW5TESTSUITE CASE XtGetKeysymTable 4"
 	/tset/Xt12/XtGetKeysymTable/XtGetKeysymTable
 	"VSW5TESTSUITE CASE XtSetKeyTranslator 1"
-	/tset/Xt12/tstkytrlr/tstkytrlr
+	/tset/Xt12/XtSetKeyTranslator/XtSetKeyTranslator
 	"VSW5TESTSUITE CASE XtTranslateKeycode 2"
 	/tset/Xt12/ttranskcd/ttranskcd
 	"VSW5TESTSUITE CASE XtRegisterCaseConverter 2"

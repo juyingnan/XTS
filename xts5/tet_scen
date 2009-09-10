@@ -4419,7 +4419,7 @@ XtGetKeysymTable
 
 XtSetKeyTranslator
 	"VSW5TESTSUITE CASE XtSetKeyTranslator 1"
-	/tset/Xt12/tstkytrlr/tstkytrlr
+	/tset/Xt12/XtSetKeyTranslator/XtSetKeyTranslator
 
 XtTranslateKeycode
 	"VSW5TESTSUITE CASE XtTranslateKeycode 2"
