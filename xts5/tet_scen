@@ -2489,7 +2489,7 @@ XSetSelectionOwner
 
 XTranslateCoordinates
 	"VSW5TESTSUITE CASE XTranslateCoordinates 5"
-	/tset/Xlib5/trnsltcrdn/trnsltcrdn
+	/tset/Xlib5/XTranslateCoordinates/XTranslateCoordinates
 
 
 # Discrete tests for Xlib Chapter 6-Pixmap and Cursor Functions

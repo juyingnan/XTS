@@ -23,4 +23,4 @@ tprogs = \
 	XQueryTree/XQueryTree \
 	XRotateWindowProperties/XRotateWindowProperties \
 	XSetSelectionOwner/XSetSelectionOwner \
-	trnsltcrdn/trnsltcrdn
+	XTranslateCoordinates/XTranslateCoordinates

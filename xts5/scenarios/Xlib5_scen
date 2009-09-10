@@ -84,4 +84,4 @@
 	"VSW5TESTSUITE CASE XSetSelectionOwner 9"
 	/tset/Xlib5/XSetSelectionOwner/XSetSelectionOwner
 	"VSW5TESTSUITE CASE XTranslateCoordinates 5"
-	/tset/Xlib5/trnsltcrdn/trnsltcrdn
+	/tset/Xlib5/XTranslateCoordinates/XTranslateCoordinates
