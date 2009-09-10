@@ -116,7 +116,7 @@
 	"VSW5TESTSUITE CASE XMatchVisualInfo 2"
 	/tset/Xlib17/XMatchVisualInfo/XMatchVisualInfo
 	"VSW5TESTSUITE CASE XOffsetRegion 1"
-	/tset/Xlib17/offstrgn/offstrgn
+	/tset/Xlib17/XOffsetRegion/XOffsetRegion
 	"VSW5TESTSUITE CASE XPolygonRegion 1"
 	/tset/Xlib17/plygnrgn/plygnrgn
 	"VSW5TESTSUITE CASE XPointInRegion 2"

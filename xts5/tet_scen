@@ -1772,7 +1772,7 @@ XMatchVisualInfo
 
 XOffsetRegion
 	"VSW5TESTSUITE CASE XOffsetRegion 1"
-	/tset/Xlib17/offstrgn/offstrgn
+	/tset/Xlib17/XOffsetRegion/XOffsetRegion
 
 XPolygonRegion
 	"VSW5TESTSUITE CASE XPolygonRegion 1"
