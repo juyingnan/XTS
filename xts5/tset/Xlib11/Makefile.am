@@ -37,7 +37,7 @@ tprogs = \
 	PropertyNotify/PropertyNotify \
 	ReparentNotify/ReparentNotify \
 	ResizeRequest/ResizeRequest \
-	slctnclr/slctnclr \
+	SelectionClear/SelectionClear \
 	slctnntfy/slctnntfy \
 	slctnrqst/slctnrqst \
 	unmpntfy/unmpntfy \

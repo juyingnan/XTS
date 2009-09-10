@@ -900,7 +900,7 @@ ResizeRequest
 
 SelectionClear
 	"VSW5TESTSUITE CASE SelectionClear 1"
-	/tset/Xlib11/slctnclr/slctnclr
+	/tset/Xlib11/SelectionClear/SelectionClear
 
 SelectionNotify
 	"VSW5TESTSUITE CASE SelectionNotify 1"
