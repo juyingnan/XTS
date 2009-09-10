@@ -3656,7 +3656,7 @@ XtIsWMShell
 
 XtIsVendorShell
 	"VSW5TESTSUITE CASE XtIsVendorShell 2"
-	/tset/Xt3/tisvndrshl/tisvndrshl
+	/tset/Xt3/XtIsVendorShell/XtIsVendorShell
 
 XtIsTransientShell
 	"VSW5TESTSUITE CASE XtIsTransientShell 2"
