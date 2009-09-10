@@ -31,7 +31,7 @@ tprogs = \
 	XSetFillRule/XSetFillRule \
 	XSetFillStyle/XSetFillStyle \
 	XSetFunction/XSetFunction \
-	stfnt/stfnt \
+	XSetFont/XSetFont \
 	stfrgrnd/stfrgrnd \
 	stgrphcsex/stgrphcsex \
 	stlnattrbt/stlnattrbt \

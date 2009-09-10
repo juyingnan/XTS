@@ -92,7 +92,7 @@
 	"VSW5TESTSUITE CASE XSetFunction 4"
 	/tset/Xlib8/XSetFunction/XSetFunction
 	"VSW5TESTSUITE CASE XSetFont 4"
-	/tset/Xlib8/stfnt/stfnt
+	/tset/Xlib8/XSetFont/XSetFont
 	"VSW5TESTSUITE CASE XSetForeground 3"
 	/tset/Xlib8/stfrgrnd/stfrgrnd
 	"VSW5TESTSUITE CASE XSetGraphicsExposures 4"

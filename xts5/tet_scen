@@ -2837,7 +2837,7 @@ XSetFunction
 
 XSetFont
 	"VSW5TESTSUITE CASE XSetFont 4"
-	/tset/Xlib8/stfnt/stfnt
+	/tset/Xlib8/XSetFont/XSetFont
 
 XSetForeground
 	"VSW5TESTSUITE CASE XSetForeground 3"
