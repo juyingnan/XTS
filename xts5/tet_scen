@@ -2422,7 +2422,7 @@ XUnmapSubwindows
 
 XUnmapWindow
 	"VSW5TESTSUITE CASE XUnmapWindow 6"
-	/tset/Xlib4/unmpwdw/unmpwdw
+	/tset/Xlib4/UnmapWindow/UnmapWindow
 
 XVisualIDFromVisual
 	"VSW5TESTSUITE CASE XVisualIDFromVisual 1"
@@ -3582,7 +3582,7 @@ pUnmapSubwindows
 
 pUnmapWindow
 	"VSW5TESTSUITE CASE UnmapWindow 3"
-	/tset/Xproto/unmpwdw/unmpwdw
+	/tset/Xproto/UnmapWindow/UnmapWindow
 
 pUninstallColormap
 	"VSW5TESTSUITE CASE UninstallColormap 3"

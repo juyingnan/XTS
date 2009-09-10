@@ -36,5 +36,5 @@ tprogs = \
 	stwdwclrmp/stwdwclrmp \
 	undfncrsr/undfncrsr \
 	UnmapSubwindows/UnmapSubwindows \
-	unmpwdw/unmpwdw \
+	UnmapWindow/UnmapWindow \
 	vslidfrmvs/vslidfrmvs

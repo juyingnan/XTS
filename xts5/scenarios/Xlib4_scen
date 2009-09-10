@@ -110,6 +110,6 @@
 	"VSW5TESTSUITE CASE XUnmapSubwindows 5"
 	/tset/Xlib4/UnmapSubwindows/UnmapSubwindows
 	"VSW5TESTSUITE CASE XUnmapWindow 6"
-	/tset/Xlib4/unmpwdw/unmpwdw
+	/tset/Xlib4/UnmapWindow/UnmapWindow
 	"VSW5TESTSUITE CASE XVisualIDFromVisual 1"
 	/tset/Xlib4/vslidfrmvs/vslidfrmvs

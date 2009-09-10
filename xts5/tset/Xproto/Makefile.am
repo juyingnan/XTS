@@ -128,6 +128,6 @@ tprogs = \
 	UngrabPointer/UngrabPointer \
 	UngrabServer/UngrabServer \
 	UnmapSubwindows/UnmapSubwindows \
-	unmpwdw/unmpwdw \
+	UnmapWindow/UnmapWindow \
 	unnstllclr/unnstllclr \
 	wrppntr/wrppntr
