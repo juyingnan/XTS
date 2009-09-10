@@ -214,7 +214,7 @@
 	"VSW5TESTSUITE CASE PolyArc 3"
 	/tset/Xproto/PolyArc/PolyArc
 	"VSW5TESTSUITE CASE PolyFillArc 3"
-	/tset/Xproto/plyfllarc/plyfllarc
+	/tset/Xproto/PolyFillArc/PolyFillArc
 	"VSW5TESTSUITE CASE PolyFillRectangle 3"
 	/tset/Xproto/plyfllrctn/plyfllrctn
 	"VSW5TESTSUITE CASE PolyLine 3"

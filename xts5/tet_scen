@@ -3422,7 +3422,7 @@ pPolyArc
 
 pPolyFillArc
 	"VSW5TESTSUITE CASE PolyFillArc 3"
-	/tset/Xproto/plyfllarc/plyfllarc
+	/tset/Xproto/PolyFillArc/PolyFillArc
 
 pPolyFillRectangle
 	"VSW5TESTSUITE CASE PolyFillRectangle 3"
