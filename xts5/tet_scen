@@ -4080,7 +4080,7 @@ XtInsertEventHandler
 
 XtAddRawEventHandler
 	"VSW5TESTSUITE CASE XtAddRawEventHandler 9"
-	/tset/Xt9/tadrwevhr/tadrwevhr
+	/tset/Xt9/XtAddRawEventHandler/XtAddRawEventHandler
 
 XtRemoveRawEventHandler
 	"VSW5TESTSUITE CASE XtRemoveRawEventHandler 7"
