@@ -39,5 +39,5 @@ tprogs = \
 	UngrabButton/UngrabButton \
 	UngrabKey/UngrabKey \
 	UngrabKeyboard/UngrabKeyboard \
-	ungrbpntr/ungrbpntr \
+	UngrabPointer/UngrabPointer \
 	wrppntr/wrppntr

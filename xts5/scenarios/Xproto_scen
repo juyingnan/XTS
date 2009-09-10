@@ -288,7 +288,7 @@
 	"VSW5TESTSUITE CASE UngrabKeyboard 3"
 	/tset/Xproto/UngrabKeyboard/UngrabKeyboard
 	"VSW5TESTSUITE CASE UngrabPointer 3"
-	/tset/Xproto/ungrbpntr/ungrbpntr
+	/tset/Xproto/UngrabPointer/UngrabPointer
 	"VSW5TESTSUITE CASE UngrabServer 3"
 	/tset/Xproto/ungrbsrvr/ungrbsrvr
 	"VSW5TESTSUITE CASE UnmapSubwindows 3"
