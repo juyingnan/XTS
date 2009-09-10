@@ -93,7 +93,7 @@
 	"VSW5TESTSUITE CASE XtDirectConvert 3"
 	/tset/XtC/tdircnvrt/tdircnvrt
 	"VSW5TESTSUITE CASE XtDestroyGC 2"
-	/tset/XtC/tdestygc/tdestygc
+	/tset/XtC/XtDestroyGC/XtDestroyGC
 	"VSW5TESTSUITE CASE XtAddActions 3"
 	/tset/XtC/XtAddActions/XtAddActions
 	"VSW5TESTSUITE CASE XtSetSelectionTimeout 1"

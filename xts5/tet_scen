@@ -4699,7 +4699,7 @@ XtDirectConvert
 
 XtDestroyGC
 	"VSW5TESTSUITE CASE XtDestroyGC 2"
-	/tset/XtC/tdestygc/tdestygc
+	/tset/XtC/XtDestroyGC/XtDestroyGC
 
 XtAddActions
 	"VSW5TESTSUITE CASE XtAddActions 3"
