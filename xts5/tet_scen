@@ -676,7 +676,7 @@ XShapeInputSelected
 
 XShapeQueryExtension
 	"VSW5TESTSUITE CASE XShapeQueryExtension 1"
-	/tset/SHAPE/tshpqyetn/tshpqyetn
+	/tset/SHAPE/XShapeQueryExtension/XShapeQueryExtension
 
 XShapeQueryExtents
 	"VSW5TESTSUITE CASE XShapeQueryExtents 1"

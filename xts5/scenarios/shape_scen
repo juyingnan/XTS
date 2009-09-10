@@ -76,7 +76,7 @@
 	"VSW5TESTSUITE CASE XShapeInputSelected 1"
 	/tset/SHAPE/XShapeInputSelected/XShapeInputSelected
 	"VSW5TESTSUITE CASE XShapeQueryExtension 1"
-	/tset/SHAPE/tshpqyetn/tshpqyetn
+	/tset/SHAPE/XShapeQueryExtension/XShapeQueryExtension
 	"VSW5TESTSUITE CASE XShapeQueryExtents 1"
 	/tset/SHAPE/tshpqyets/tshpqyets
 	"VSW5TESTSUITE CASE XShapeQueryVersion 1"
