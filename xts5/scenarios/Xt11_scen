@@ -127,7 +127,7 @@
 	"VSW5TESTSUITE CASE XtCvtIntToFloat 3"
 	/tset/Xt11/XtCvtIntToFloat/XtCvtIntToFloat
 	"VSW5TESTSUITE CASE XtCvtIntToFont 3"
-	/tset/Xt11/tcinfont/tcinfont
+	/tset/Xt11/XtCvtIntToFont/XtCvtIntToFont
 	"VSW5TESTSUITE CASE XtCvtIntToPixel 3"
 	/tset/Xt11/tcinpix/tcinpix
 	"VSW5TESTSUITE CASE XtCvtIntToPixmap 3"

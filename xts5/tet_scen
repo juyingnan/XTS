@@ -4269,7 +4269,7 @@ XtCvtIntToFloat
 
 XtCvtIntToFont
 	"VSW5TESTSUITE CASE XtCvtIntToFont 3"
-	/tset/Xt11/tcinfont/tcinfont
+	/tset/Xt11/XtCvtIntToFont/XtCvtIntToFont
 
 XtCvtIntToPixel
 	"VSW5TESTSUITE CASE XtCvtIntToPixel 3"
