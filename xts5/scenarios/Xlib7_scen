@@ -106,7 +106,7 @@
 	"VSW5TESTSUITE CASE XcmsConversionProc 9"
 	/tset/Xlib7/XcmsConversionProc/XcmsConversionProc
 	"VSW5TESTSUITE CASE XcmsConversionProc 4"
-	/tset/Xlib7/cmscprocd/cmscprocd
+	/tset/Xlib7/XcmsConversionProc/XcmsConversionProc
 	"VSW5TESTSUITE CASE XcmsCreateCCC 1"
 	/tset/Xlib7/cmscrcc/cmscrcc
 	"VSW5TESTSUITE CASE XcmsDefaultCCC 1"

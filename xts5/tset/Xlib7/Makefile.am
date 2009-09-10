@@ -24,7 +24,7 @@ tprogs = \
 	XcmsCIELabQueryMaxC/XcmsCIELabQueryMaxC \
 	XcmsCIELabQueryMaxL/XcmsCIELabQueryMaxL \
 	XcmsConversionProc/XcmsConversionProc \
-	cmscprocd/cmscprocd \
+	XcmsConversionProc/XcmsConversionProc \
 	cmscrcc/cmscrcc \
 	cmsdcc/cmsdcc \
 	cmsdocc/cmsdocc \
