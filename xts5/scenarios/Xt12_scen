@@ -67,7 +67,7 @@
 	"VSW5TESTSUITE CASE XtSetMultiClickTime 1"
 	/tset/Xt12/tstmclktm/tstmclktm
 	"VSW5TESTSUITE CASE XtGetMultiClickTime 2"
-	/tset/Xt12/tgtmctime/tgtmctime
+	/tset/Xt12/XtGetMultiClickTime/XtGetMultiClickTime
 	"VSW5TESTSUITE CASE XtParseTranslationTable 1"
 	/tset/Xt12/tprsttbl/tprsttbl
 	"VSW5TESTSUITE CASE XtAugmentTranslations 4"

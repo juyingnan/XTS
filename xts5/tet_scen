@@ -4383,7 +4383,7 @@ XtSetMultiClickTime
 
 XtGetMultiClickTime
 	"VSW5TESTSUITE CASE XtGetMultiClickTime 2"
-	/tset/Xt12/tgtmctime/tgtmctime
+	/tset/Xt12/XtGetMultiClickTime/XtGetMultiClickTime
 
 XtParseTranslationTable
 	"VSW5TESTSUITE CASE XtParseTranslationTable 1"
