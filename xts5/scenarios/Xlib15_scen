@@ -116,7 +116,7 @@
 	"VSW5TESTSUITE CASE XStringListToTextProperty 3"
 	/tset/Xlib15/XStringListToTextProperty/XStringListToTextProperty
 	"VSW5TESTSUITE CASE XStoreName 3"
-	/tset/Xlib15/strnm/strnm
+	/tset/Xlib15/XStoreName/XStoreName
 	"VSW5TESTSUITE CASE XSetTransientForHint 3"
 	/tset/Xlib15/sttrnsntfr/sttrnsntfr
 	"VSW5TESTSUITE CASE XSetTextProperty 5"

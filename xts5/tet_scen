@@ -1467,7 +1467,7 @@ XStringListToTextProperty
 
 XStoreName
 	"VSW5TESTSUITE CASE XStoreName 3"
-	/tset/Xlib15/strnm/strnm
+	/tset/Xlib15/XStoreName/XStoreName
 
 XSetTransientForHint
 	"VSW5TESTSUITE CASE XSetTransientForHint 3"
