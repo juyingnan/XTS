@@ -1252,7 +1252,7 @@ XmbSetWMProperties
 
 XmbTextEscapement
 	"VSW5TESTSUITE CASE XmbTextEscapement 1"
-	/tset/Xlib14/mbtesc/mbtesc
+	/tset/Xlib14/XmbTextEscapement/XmbTextEscapement
 
 XmbTextExtents
 	"VSW5TESTSUITE CASE XmbTextExtents 1"

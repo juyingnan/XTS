@@ -100,7 +100,7 @@
 	"VSW5TESTSUITE CASE XmbSetWMProperties 2"
 	/tset/Xlib14/XmbSetWMProperties/XmbSetWMProperties
 	"VSW5TESTSUITE CASE XmbTextEscapement 1"
-	/tset/Xlib14/mbtesc/mbtesc
+	/tset/Xlib14/XmbTextEscapement/XmbTextEscapement
 	"VSW5TESTSUITE CASE XmbTextExtents 1"
 	/tset/Xlib14/mbtext/mbtext
 	"VSW5TESTSUITE CASE XmbTextListToTextProperty 1"
