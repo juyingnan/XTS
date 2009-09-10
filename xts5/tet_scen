@@ -2984,7 +2984,7 @@ XFreeFont
 
 XFreeFontInfo
 	"VSW5TESTSUITE CASE XFreeFontInfo 2"
-	/tset/Xlib9/frfntinf/frfntinf
+	/tset/Xlib9/XFreeFontInfo/XFreeFontInfo
 
 XFreeFontNames
 	"VSW5TESTSUITE CASE XFreeFontNames 1"

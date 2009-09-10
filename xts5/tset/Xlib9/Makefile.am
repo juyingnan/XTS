@@ -34,7 +34,7 @@ tprogs = \
 	XFillRectangle/XFillRectangle \
 	XFillRectangles/XFillRectangles \
 	XFreeFont/XFreeFont \
-	frfntinf/frfntinf \
+	XFreeFontInfo/XFreeFontInfo \
 	frfntnms/frfntnms \
 	frfntpth/frfntpth \
 	gtfntprprt/gtfntprprt \
