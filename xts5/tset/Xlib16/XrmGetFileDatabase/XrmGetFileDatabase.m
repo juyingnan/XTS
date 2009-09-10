@@ -106,7 +106,7 @@ XrmDatabase
 
 char *filename;
 >>SET startup rmstartup
->>INCLUDE ../rmptrsrc/fn.mc
+>>INCLUDE ../XrmPutResource/fn.mc
 >>EXTERN
 #include <stdio.h>
 #define XGFD_NON_EXIST "xgfd_nonfile"

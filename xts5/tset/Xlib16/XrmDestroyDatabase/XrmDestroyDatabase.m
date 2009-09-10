@@ -103,7 +103,7 @@ void
 
 XrmDatabase database;
 >>SET startup rmstartup
->>INCLUDE ../rmptrsrc/fn.mc
+>>INCLUDE ../XrmPutResource/fn.mc
 >>ASSERTION Good B 1
 A call to xname destroys the specified
 .A database .

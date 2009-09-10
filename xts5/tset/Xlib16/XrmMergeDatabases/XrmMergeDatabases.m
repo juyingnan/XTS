@@ -107,7 +107,7 @@ void
 XrmDatabase source_db;
 XrmDatabase *target_db = &target;
 >>SET startup rmstartup
->>INCLUDE ../rmptrsrc/fn.mc
+>>INCLUDE ../XrmPutResource/fn.mc
 >>EXTERN
 static XrmDatabase target;
 

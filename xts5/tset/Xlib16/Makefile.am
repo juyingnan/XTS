@@ -29,7 +29,7 @@ tprogs = \
 	XrmPermStringToQuark/XrmPermStringToQuark \
 	XrmPutFileDatabase/XrmPutFileDatabase \
 	XrmPutLineResource/XrmPutLineResource \
-	rmptrsrc/rmptrsrc \
+	XrmPutResource/XrmPutResource \
 	rmptstrrsr/rmptstrrsr \
 	rmqgtrsrc/rmqgtrsrc \
 	rmqgtsrchl/rmqgtsrchl \

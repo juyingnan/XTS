@@ -110,7 +110,7 @@ char *str_class;
 char **str_type_return = &str_type;
 XrmValue *value_return = &value;
 >>SET startup rmstartup
->>INCLUDE ../rmptrsrc/fn.mc
+>>INCLUDE ../XrmPutResource/fn.mc
 >>INCLUDE common.mc
 >>EXTERN
 char *str_type;

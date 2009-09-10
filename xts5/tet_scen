@@ -1566,7 +1566,7 @@ XrmPutLineResource
 
 XrmPutResource
 	"VSW5TESTSUITE CASE XrmPutResource 4"
-	/tset/Xlib16/rmptrsrc/rmptrsrc
+	/tset/Xlib16/XrmPutResource/XrmPutResource
 
 XrmPutStringResource
 	"VSW5TESTSUITE CASE XrmPutStringResource 4"

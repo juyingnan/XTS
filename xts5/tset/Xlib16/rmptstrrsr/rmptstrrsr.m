@@ -111,7 +111,7 @@ char *value;
 >>EXTERN
 static XrmDatabase xpsr_database;
 
->>INCLUDE ../rmptrsrc/common.mc
+>>INCLUDE ../XrmPutResource/common.mc
 >>ASSERTION Good A
 A call to xname adds a resource
 .A specifier

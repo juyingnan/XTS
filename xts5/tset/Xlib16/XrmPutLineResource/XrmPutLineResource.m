@@ -149,7 +149,7 @@ static char *t1_lines[XPLR_T1_COUNT][5] = {
 
 {"T ",	"a-z.r_9A-*a-8B","T: ","A* bZ_% !?", "a-z.r_9A-.z.a-8B"} };/* complex entry */
 
->>INCLUDE ../rmptrsrc/fn.mc
+>>INCLUDE ../XrmPutResource/fn.mc
 >>ASSERTION Good A
 When 
 .A line

@@ -80,7 +80,7 @@
 	"VSW5TESTSUITE CASE XrmPutLineResource 9"
 	/tset/Xlib16/XrmPutLineResource/XrmPutLineResource
 	"VSW5TESTSUITE CASE XrmPutResource 4"
-	/tset/Xlib16/rmptrsrc/rmptrsrc
+	/tset/Xlib16/XrmPutResource/XrmPutResource
 	"VSW5TESTSUITE CASE XrmPutStringResource 4"
 	/tset/Xlib16/rmptstrrsr/rmptstrrsr
 	"VSW5TESTSUITE CASE XrmQGetResource 2"

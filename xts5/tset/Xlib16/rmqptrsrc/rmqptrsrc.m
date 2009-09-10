@@ -113,7 +113,7 @@ static XrmBinding xqpr_bindings[10];
 static XrmQuark xqpr_quarks[10];
 static XrmValue xqpr_value;
 
->>INCLUDE ../rmptrsrc/common.mc
+>>INCLUDE ../XrmPutResource/common.mc
 >>ASSERTION Good A
 A call to xname adds a resource
 specified by

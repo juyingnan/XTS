@@ -106,7 +106,7 @@ XrmDatabase
 
 char *data;
 >>SET startup rmstartup
->>INCLUDE ../rmptrsrc/fn.mc
+>>INCLUDE ../XrmPutResource/fn.mc
 >>EXTERN
 
 #define XGSD_T1_COUNT 23

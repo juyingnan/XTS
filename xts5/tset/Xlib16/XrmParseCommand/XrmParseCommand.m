@@ -114,7 +114,7 @@ char *name = "xtest";
 int *argc_in_out = &xpc_argc;
 char **argv_in_out = xpc_argv;
 >>SET startup rmstartup
->>INCLUDE ../rmptrsrc/fn.mc
+>>INCLUDE ../XrmPutResource/fn.mc
 >>EXTERN
 #define XPC_TESTS	12
 #define XPC_MAXDBE	2

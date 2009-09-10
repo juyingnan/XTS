@@ -110,7 +110,7 @@ void
 XrmDatabase database = (XrmDatabase)NULL;
 char *stored_db = "xpfd_file";
 >>SET startup rmstartup
->>INCLUDE ../rmptrsrc/fn.mc
+>>INCLUDE ../XrmPutResource/fn.mc
 >>EXTERN
 
 #define XPFD_T1_COUNT	4

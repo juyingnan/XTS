@@ -110,7 +110,7 @@ XrmClassList quark_class = class;
 XrmRepresentation *quark_type_return = &type;
 XrmValue *value_return = &value;
 >>SET startup rmstartup
->>INCLUDE ../rmptrsrc/fn.mc
+>>INCLUDE ../XrmPutResource/fn.mc
 >>INCLUDE ../XrmGetResource/common.mc
 >>EXTERN
 XrmName	name[10];
