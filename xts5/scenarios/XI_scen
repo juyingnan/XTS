@@ -112,7 +112,7 @@
 	"VSW5TESTSUITE CASE XSetDeviceButtonMapping 8"
 	/tset/XI/XSetDeviceButtonMapping/XSetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XSetDeviceFocus 17"
-	/tset/XI/setdvfocus/setdvfocus
+	/tset/XI/XSetDeviceFocus/XSetDeviceFocus
 	"VSW5TESTSUITE CASE XSetDeviceModifierMapping 9"
 	/tset/XI/setdvmmap/setdvmmap
 	"VSW5TESTSUITE CASE XSetDeviceMode 6"

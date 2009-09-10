@@ -37,7 +37,7 @@ tprogs = \
 	XQueryDeviceState/XQueryDeviceState \
 	XSetDeviceValuators/XSetDeviceValuators \
 	XSetDeviceButtonMapping/XSetDeviceButtonMapping \
-	setdvfocus/setdvfocus \
+	XSetDeviceFocus/XSetDeviceFocus \
 	setdvmmap/setdvmmap \
 	setdvmode/setdvmode \
 	slextevnt/slextevnt \

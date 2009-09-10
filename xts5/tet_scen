@@ -614,7 +614,7 @@ XSetDeviceButtonMapping
 
 XSetDeviceFocus
 	"VSW5TESTSUITE CASE XSetDeviceFocus 17"
-	/tset/XI/setdvfocus/setdvfocus
+	/tset/XI/XSetDeviceFocus/XSetDeviceFocus
 
 XSetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XSetDeviceModifierMapping 9"
