@@ -65,7 +65,7 @@ tprogs = \
 	XGetModifierMapping/XGetModifierMapping \
 	XGetMotionEvents/XGetMotionEvents \
 	XGetPointerControl/XGetPointerControl \
-	GetPointerMapping/GetPointerMapping \
+	XGetPointerMapping/XGetPointerMapping \
 	GetProperty/GetProperty \
 	XGetScreenSaver/XGetScreenSaver \
 	GetSelectionOwner/GetSelectionOwner \

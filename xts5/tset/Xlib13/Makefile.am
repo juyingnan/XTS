@@ -29,7 +29,7 @@ tprogs = \
 	XGetKeyboardMapping/XGetKeyboardMapping \
 	XGetModifierMapping/XGetModifierMapping \
 	XGetPointerControl/XGetPointerControl \
-	GetPointerMapping/GetPointerMapping \
+	XGetPointerMapping/XGetPointerMapping \
 	insrtmdfrm/insrtmdfrm \
 	nwmdfrmp/nwmdfrmp \
 	QueryKeymap/QueryKeymap \

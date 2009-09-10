@@ -168,7 +168,7 @@
 	"VSW5TESTSUITE CASE GetPointerControl 3"
 	/tset/Xproto/XGetPointerControl/XGetPointerControl
 	"VSW5TESTSUITE CASE GetPointerMapping 3"
-	/tset/Xproto/GetPointerMapping/GetPointerMapping
+	/tset/Xproto/XGetPointerMapping/XGetPointerMapping
 	"VSW5TESTSUITE CASE GetProperty 3"
 	/tset/Xproto/GetProperty/GetProperty
 	"VSW5TESTSUITE CASE GetScreenSaver 3"

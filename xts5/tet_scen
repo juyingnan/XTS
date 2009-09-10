@@ -1114,7 +1114,7 @@ XGetPointerControl
 
 XGetPointerMapping
 	"VSW5TESTSUITE CASE XGetPointerMapping 3"
-	/tset/Xlib13/GetPointerMapping/GetPointerMapping
+	/tset/Xlib13/XGetPointerMapping/XGetPointerMapping
 
 XInsertModifiermapEntry
 	"VSW5TESTSUITE CASE XInsertModifiermapEntry 1"
@@ -3330,7 +3330,7 @@ pGetPointerControl
 
 pGetPointerMapping
 	"VSW5TESTSUITE CASE GetPointerMapping 3"
-	/tset/Xproto/GetPointerMapping/GetPointerMapping
+	/tset/Xproto/XGetPointerMapping/XGetPointerMapping
 
 pGetProperty
 	"VSW5TESTSUITE CASE GetProperty 3"
