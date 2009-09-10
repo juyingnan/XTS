@@ -37,7 +37,7 @@ tprogs = \
 	CreateColormap/CreateColormap \
 	CreateCursor/CreateCursor \
 	CreateGC/CreateGC \
-	CreateGlyphCursor/CreateGlyphCursor \
+	XCreateGlyphCursor/XCreateGlyphCursor \
 	CreatePixmap/CreatePixmap \
 	XCreateWindow/XCreateWindow \
 	XDeleteProperty/XDeleteProperty \
