@@ -4032,7 +4032,7 @@ XtAppPending
 
 XtAppPeekEvent
 	"VSW5TESTSUITE CASE XtAppPeekEvent 3"
-	/tset/Xt9/tappkevnt/tappkevnt
+	/tset/Xt9/XtAppPeekEvent/XtAppPeekEvent
 
 XtAppNextEvent
 	"VSW5TESTSUITE CASE XtAppNextEvent 4"

@@ -93,7 +93,7 @@
 	"VSW5TESTSUITE CASE XtAppPending 5"
 	/tset/Xt9/XtAppPending/XtAppPending
 	"VSW5TESTSUITE CASE XtAppPeekEvent 3"
-	/tset/Xt9/tappkevnt/tappkevnt
+	/tset/Xt9/XtAppPeekEvent/XtAppPeekEvent
 	"VSW5TESTSUITE CASE XtAppNextEvent 4"
 	/tset/Xt9/XtAppNextEvent/XtAppNextEvent
 	"VSW5TESTSUITE CASE XtAppProcessEvent 11"

@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xt9/tappkevnt/tappkevnt.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xt9/XtAppPeekEvent/XtAppPeekEvent.m,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 
 Copyright (c) 1999 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
@@ -27,7 +27,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/tappkevnt/tappkevnt.m
+>># File: tset/Xt9/XtAppPeekEvent/XtAppPeekEvent.m
 >># 
 >># Description:
 >>#	Tests for XtAppPeekEvent()
