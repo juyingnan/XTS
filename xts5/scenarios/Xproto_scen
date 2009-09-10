@@ -236,7 +236,7 @@
 	"VSW5TESTSUITE CASE QueryColors 3"
 	/tset/Xproto/QueryColors/QueryColors
 	"VSW5TESTSUITE CASE QueryExtension 3"
-	/tset/Xproto/qryextnsn/qryextnsn
+	/tset/Xproto/QueryExtension/QueryExtension
 	"VSW5TESTSUITE CASE QueryFont 3"
 	/tset/Xproto/qryfnt/qryfnt
 	"VSW5TESTSUITE CASE QueryKeymap 3"

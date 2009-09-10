@@ -99,7 +99,7 @@ tprogs = \
 	PutImage/PutImage \
 	QueryBestSize/QueryBestSize \
 	QueryColors/QueryColors \
-	qryextnsn/qryextnsn \
+	QueryExtension/QueryExtension \
 	qryfnt/qryfnt \
 	qrykymp/qrykymp \
 	qrypntr/qrypntr \

@@ -3466,7 +3466,7 @@ pQueryColors
 
 pQueryExtension
 	"VSW5TESTSUITE CASE QueryExtension 3"
-	/tset/Xproto/qryextnsn/qryextnsn
+	/tset/Xproto/QueryExtension/QueryExtension
 
 pQueryFont
 	"VSW5TESTSUITE CASE QueryFont 3"
