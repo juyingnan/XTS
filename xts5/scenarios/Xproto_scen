@@ -148,7 +148,7 @@
 	"VSW5TESTSUITE CASE GrabServer 3"
 	/tset/Xproto/XGrabServer/XGrabServer
 	"VSW5TESTSUITE CASE GetAtomName 3"
-	/tset/Xproto/GetAtomName/GetAtomName
+	/tset/Xproto/XGetAtomName/XGetAtomName
 	"VSW5TESTSUITE CASE GetFontPath 3"
 	/tset/Xproto/GetFontPath/GetFontPath
 	"VSW5TESTSUITE CASE GetGeometry 3"

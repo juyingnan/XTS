@@ -12,7 +12,7 @@ tprogs = \
 	XChangeProperty/XChangeProperty \
 	XConvertSelection/XConvertSelection \
 	XDeleteProperty/XDeleteProperty \
-	GetAtomName/GetAtomName \
+	XGetAtomName/XGetAtomName \
 	GetGeometry/GetGeometry \
 	GetSelectionOwner/GetSelectionOwner \
 	GetWindowAttributes/GetWindowAttributes \
