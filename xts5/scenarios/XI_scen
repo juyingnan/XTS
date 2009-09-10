@@ -116,7 +116,7 @@
 	"VSW5TESTSUITE CASE XSetDeviceModifierMapping 9"
 	/tset/XI/XSetDeviceModifierMapping/XSetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XSetDeviceMode 6"
-	/tset/XI/XSetDeviceMode/XSetDeviceMode
+	/tset/XI/SetDeviceMode/SetDeviceMode
 	"VSW5TESTSUITE CASE XSelectExtensionEvent 13"
 	/tset/XI/XSelectExtensionEvent/XSelectExtensionEvent
 	"VSW5TESTSUITE CASE XSendExtensionEvent 20"

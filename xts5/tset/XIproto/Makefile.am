@@ -39,7 +39,7 @@ tprogs = \
 	SetDeviceButtonMapping/SetDeviceButtonMapping \
 	SetDeviceFocus/SetDeviceFocus \
 	XSetDeviceModifierMapping/XSetDeviceModifierMapping \
-	XSetDeviceMode/XSetDeviceMode \
+	SetDeviceMode/SetDeviceMode \
 	SelectExtensionEvent/SelectExtensionEvent \
 	SendExtensionEvent/SendExtensionEvent \
 	UngrabDevice/UngrabDevice \

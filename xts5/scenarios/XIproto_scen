@@ -114,7 +114,7 @@
 	"VSW5TESTSUITE CASE SetDeviceModifierMapping 3"
 	/tset/XIproto/XSetDeviceModifierMapping/XSetDeviceModifierMapping
 	"VSW5TESTSUITE CASE SetDeviceMode 3"
-	/tset/XIproto/XSetDeviceMode/XSetDeviceMode
+	/tset/XIproto/SetDeviceMode/SetDeviceMode
 	"VSW5TESTSUITE CASE SelectExtensionEvent 3"
 	/tset/XIproto/SelectExtensionEvent/SelectExtensionEvent
 	"VSW5TESTSUITE CASE SendExtensionEvent 3"
