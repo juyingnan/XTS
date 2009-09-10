@@ -1868,7 +1868,7 @@ XWriteBitmapFile
 
 XXorRegion
 	"VSW5TESTSUITE CASE XXorRegion 1"
-	/tset/Xlib17/xrrgn/xrrgn
+	/tset/Xlib17/XXorRegion/XXorRegion
 
 
 # Discrete tests for Xlib Chapter 3-Display Functions

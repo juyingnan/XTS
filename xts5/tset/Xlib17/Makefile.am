@@ -63,7 +63,7 @@ tprogs = \
 	XUniqueContext/XUniqueContext \
 	XWMGeometry/XWMGeometry \
 	XWriteBitmapFile/XWriteBitmapFile \
-	xrrgn/xrrgn
+	XXorRegion/XXorRegion
 
 # Auxiliary programs run from tests
 check_PROGRAMS += \
