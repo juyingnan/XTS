@@ -38,7 +38,7 @@ tprogs = \
 	XSetDeviceValuators/XSetDeviceValuators \
 	SetDeviceButtonMapping/SetDeviceButtonMapping \
 	SetDeviceFocus/SetDeviceFocus \
-	XSetDeviceModifierMapping/XSetDeviceModifierMapping \
+	SetDeviceModifierMapping/SetDeviceModifierMapping \
 	SetDeviceMode/SetDeviceMode \
 	SelectExtensionEvent/SelectExtensionEvent \
 	SendExtensionEvent/SendExtensionEvent \

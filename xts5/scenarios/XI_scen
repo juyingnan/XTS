@@ -114,7 +114,7 @@
 	"VSW5TESTSUITE CASE XSetDeviceFocus 17"
 	/tset/XI/XSetDeviceFocus/XSetDeviceFocus
 	"VSW5TESTSUITE CASE XSetDeviceModifierMapping 9"
-	/tset/XI/XSetDeviceModifierMapping/XSetDeviceModifierMapping
+	/tset/XI/SetDeviceModifierMapping/SetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XSetDeviceMode 6"
 	/tset/XI/SetDeviceMode/SetDeviceMode
 	"VSW5TESTSUITE CASE XSelectExtensionEvent 13"
