@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE XDisableAccessControl 2"
 	/tset/Xlib10/XDisableAccessControl/XDisableAccessControl
 	"VSW5TESTSUITE CASE XEnableAccessControl 2"
-	/tset/Xlib10/enblaccssc/enblaccssc
+	/tset/Xlib10/XEnableAccessControl/XEnableAccessControl
 	"VSW5TESTSUITE CASE XForceScreenSaver 3"
 	/tset/Xlib10/ForceScreenSaver/ForceScreenSaver
 	"VSW5TESTSUITE CASE XGrabServer 1"

@@ -15,7 +15,7 @@ tprogs = \
 	XAddToSaveSet/XAddToSaveSet \
 	XChangeSaveSet/XChangeSaveSet \
 	XDisableAccessControl/XDisableAccessControl \
-	enblaccssc/enblaccssc \
+	XEnableAccessControl/XEnableAccessControl \
 	ForceScreenSaver/ForceScreenSaver \
 	GrabServer/GrabServer \
 	GetScreenSaver/GetScreenSaver \

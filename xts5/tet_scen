@@ -718,7 +718,7 @@ XDisableAccessControl
 
 XEnableAccessControl
 	"VSW5TESTSUITE CASE XEnableAccessControl 2"
-	/tset/Xlib10/enblaccssc/enblaccssc
+	/tset/Xlib10/XEnableAccessControl/XEnableAccessControl
 
 XForceScreenSaver
 	"VSW5TESTSUITE CASE XForceScreenSaver 3"
