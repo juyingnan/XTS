@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE XQueryBestStipple 3"
 	/tset/Xlib8/XQueryBestStipple/XQueryBestStipple
 	"VSW5TESTSUITE CASE XQueryBestSize 7"
-	/tset/Xlib8/QueryBestSize/QueryBestSize
+	/tset/Xlib8/XQueryBestSize/XQueryBestSize
 	"VSW5TESTSUITE CASE XQueryBestTile 3"
 	/tset/Xlib8/XQueryBestTile/XQueryBestTile
 	"VSW5TESTSUITE CASE XSetArcMode 4"

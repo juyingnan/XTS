@@ -232,7 +232,7 @@
 	"VSW5TESTSUITE CASE PutImage 3"
 	/tset/Xproto/PutImage/PutImage
 	"VSW5TESTSUITE CASE QueryBestSize 3"
-	/tset/Xproto/QueryBestSize/QueryBestSize
+	/tset/Xproto/XQueryBestSize/XQueryBestSize
 	"VSW5TESTSUITE CASE QueryColors 3"
 	/tset/Xproto/XQueryColors/XQueryColors
 	"VSW5TESTSUITE CASE QueryExtension 3"

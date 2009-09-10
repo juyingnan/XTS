@@ -20,7 +20,7 @@ tprogs = \
 	XGContextFromGC/XGContextFromGC \
 	XGetGCValues/XGetGCValues \
 	XQueryBestStipple/XQueryBestStipple \
-	QueryBestSize/QueryBestSize \
+	XQueryBestSize/XQueryBestSize \
 	XQueryBestTile/XQueryBestTile \
 	starcmd/starcmd \
 	stbg/stbg \

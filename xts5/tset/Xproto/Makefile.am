@@ -97,7 +97,7 @@ tprogs = \
 	PolyText16/PolyText16 \
 	PolyText8/PolyText8 \
 	PutImage/PutImage \
-	QueryBestSize/QueryBestSize \
+	XQueryBestSize/XQueryBestSize \
 	XQueryColors/XQueryColors \
 	QueryExtension/QueryExtension \
 	QueryFont/QueryFont \
