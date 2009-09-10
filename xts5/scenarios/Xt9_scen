@@ -89,7 +89,7 @@
 	"VSW5TESTSUITE CASE XtSetKeyboardFocus 17"
 	/tset/Xt9/tstkbfocs/tstkbfocs
 	"VSW5TESTSUITE CASE XtCallAcceptFocus 2"
-	/tset/Xt9/tcalafocs/tcalafocs
+	/tset/Xt9/XtCallAcceptFocus/XtCallAcceptFocus
 	"VSW5TESTSUITE CASE XtAppPending 5"
 	/tset/Xt9/XtAppPending/XtAppPending
 	"VSW5TESTSUITE CASE XtAppPeekEvent 3"
