@@ -25,7 +25,7 @@ tprogs = \
 	XGetIconSizes/XGetIconSizes \
 	XGetRGBColormaps/XGetRGBColormaps \
 	XGetTransientForHint/XGetTransientForHint \
-	gttxtprprt/gttxtprprt \
+	XGetTextProperty/XGetTextProperty \
 	gtwmclntmc/gtwmclntmc \
 	gtwmclrmpw/gtwmclrmpw \
 	gtwmhnts/gtwmhnts \

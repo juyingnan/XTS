@@ -82,7 +82,7 @@
 	"VSW5TESTSUITE CASE XGetTransientForHint 3"
 	/tset/Xlib15/XGetTransientForHint/XGetTransientForHint
 	"VSW5TESTSUITE CASE XGetTextProperty 4"
-	/tset/Xlib15/gttxtprprt/gttxtprprt
+	/tset/Xlib15/XGetTextProperty/XGetTextProperty
 	"VSW5TESTSUITE CASE XGetWMClientMachine 3"
 	/tset/Xlib15/gtwmclntmc/gtwmclntmc
 	"VSW5TESTSUITE CASE XGetWMColormapWindows 4"

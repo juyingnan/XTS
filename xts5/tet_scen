@@ -1399,7 +1399,7 @@ XGetTransientForHint
 
 XGetTextProperty
 	"VSW5TESTSUITE CASE XGetTextProperty 4"
-	/tset/Xlib15/gttxtprprt/gttxtprprt
+	/tset/Xlib15/XGetTextProperty/XGetTextProperty
 
 XGetWMClientMachine
 	"VSW5TESTSUITE CASE XGetWMClientMachine 3"
