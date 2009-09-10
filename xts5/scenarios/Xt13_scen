@@ -127,7 +127,7 @@
 	"VSW5TESTSUITE CASE XtAppError 3"
 	/tset/Xt13/XtAppError/XtAppError
 	"VSW5TESTSUITE CASE XtAppSetWarningHandler 2"
-	/tset/Xt13/tapstwhdr/tapstwhdr
+	/tset/Xt13/XtAppSetWarningHandler/XtAppSetWarningHandler
 	"VSW5TESTSUITE CASE XtAppWarning 3"
 	/tset/Xt13/tapwrning/tapwrning
 	"VSW5TESTSUITE CASE XtSetWMColormapWindows 3"

@@ -4593,7 +4593,7 @@ XtAppError
 
 XtAppSetWarningHandler
 	"VSW5TESTSUITE CASE XtAppSetWarningHandler 2"
-	/tset/Xt13/tapstwhdr/tapstwhdr
+	/tset/Xt13/XtAppSetWarningHandler/XtAppSetWarningHandler
 
 XtAppWarning
 	"VSW5TESTSUITE CASE XtAppWarning 3"
