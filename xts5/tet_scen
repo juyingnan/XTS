@@ -1860,7 +1860,7 @@ XUniqueContext
 
 XWMGeometry
 	"VSW5TESTSUITE CASE XWMGeometry 9"
-	/tset/Xlib17/wmgmtry/wmgmtry
+	/tset/Xlib17/XWMGeometry/XWMGeometry
 
 XWriteBitmapFile
 	"VSW5TESTSUITE CASE XWriteBitmapFile 6"

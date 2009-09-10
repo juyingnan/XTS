@@ -61,7 +61,7 @@ tprogs = \
 	XUnionRectWithRegion/XUnionRectWithRegion \
 	XUnionRegion/XUnionRegion \
 	XUniqueContext/XUniqueContext \
-	wmgmtry/wmgmtry \
+	XWMGeometry/XWMGeometry \
 	wrtbtmpfl/wrtbtmpfl \
 	xrrgn/xrrgn
 
