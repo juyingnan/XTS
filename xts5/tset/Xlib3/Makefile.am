@@ -12,7 +12,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = XAllPlanes/XAllPlanes \
 	XBlackPixel/XBlackPixel XBlackPixel/XBlackPixel_m \
 	XBlackPixelOfScreen/XBlackPixelOfScreen XBlackPixelOfScreen/XBlackPixelOfScreen_m \
-	btmpbtordr/btmpbtordr btmpbtordr/btmpbtordr_m \
+	XBitmapBitOrder/XBitmapBitOrder XBitmapBitOrder/XBitmapBitOrder_m \
 	btmppd/btmppd btmppd/btmppd_m \
 	btmpunt/btmpunt btmpunt/btmpunt_m \
 	cllsofscrn/cllsofscrn cllsofscrn/cllsofscrn_m \
