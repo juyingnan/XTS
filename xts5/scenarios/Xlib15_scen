@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE XFreeStringList 1"
 	/tset/Xlib15/XFreeStringList/XFreeStringList
 	"VSW5TESTSUITE CASE XFetchName 3"
-	/tset/Xlib15/ftchnm/ftchnm
+	/tset/Xlib15/XFetchName/XFetchName
 	"VSW5TESTSUITE CASE XGetClassHint 3"
 	/tset/Xlib15/gtclsshnt/gtclsshnt
 	"VSW5TESTSUITE CASE XGetCommand 3"

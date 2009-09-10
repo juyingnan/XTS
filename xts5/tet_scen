@@ -1371,7 +1371,7 @@ XFreeStringList
 
 XFetchName
 	"VSW5TESTSUITE CASE XFetchName 3"
-	/tset/Xlib15/ftchnm/ftchnm
+	/tset/Xlib15/XFetchName/XFetchName
 
 XGetClassHint
 	"VSW5TESTSUITE CASE XGetClassHint 3"
