@@ -4313,7 +4313,7 @@ XtAppSetTypeConverter
 
 XtCallConverter
 	"VSW5TESTSUITE CASE XtCallConverter 15"
-	/tset/Xt11/tcalcnvtr/tcalcnvtr
+	/tset/Xt11/XtCallConverter/XtCallConverter
 
 XtAppReleaseCacheRefs
 	"VSW5TESTSUITE CASE XtAppReleaseCacheRefs 2"
