@@ -2508,7 +2508,7 @@ XCreateGlyphCursor
 
 XCreatePixmapCursor
 	"VSW5TESTSUITE CASE XCreatePixmapCursor 13"
-	/tset/Xlib6/crtpxmpcrs/crtpxmpcrs
+	/tset/Xlib6/XCreatePixmapCursor/XCreatePixmapCursor
 
 XFreeCursor
 	"VSW5TESTSUITE CASE XFreeCursor 3"

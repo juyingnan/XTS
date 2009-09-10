@@ -12,7 +12,7 @@ tprogs = \
 	XCreateFontCursor/XCreateFontCursor \
 	XCreateGlyphCursor/XCreateGlyphCursor \
 	XCreatePixmap/XCreatePixmap \
-	crtpxmpcrs/crtpxmpcrs \
+	XCreatePixmapCursor/XCreatePixmapCursor \
 	FreeCursor/FreeCursor \
 	FreePixmap/FreePixmap \
 	qrybstcrsr/qrybstcrsr \
