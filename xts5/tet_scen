@@ -1622,7 +1622,7 @@ XrmCombineDatabase
 
 XrmCombineFileDatabase
 	"VSW5TESTSUITE CASE XrmCombineFileDatabase 6"
-	/tset/Xlib16/rmcomfdt/rmcomfdt
+	/tset/Xlib16/XrmCombineFileDatabase/XrmCombineFileDatabase
 
 XrmEnumerateDatabase
 	"VSW5TESTSUITE CASE XrmEnumerateDatabase 3"

@@ -9,13 +9,13 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 XrmCombineDatabase_XrmCombineDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
-rmcomfdt_rmcomfdt_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
+XrmCombineFileDatabase_XrmCombineFileDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 rmedata_rmedata_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 rmpstoq_rmpstoq_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 
 tprogs = \
 	XrmCombineDatabase/XrmCombineDatabase \
-	rmcomfdt/rmcomfdt \
+	XrmCombineFileDatabase/XrmCombineFileDatabase \
 	rmdstrydtb/rmdstrydtb \
 	rmedata/rmedata \
 	rmgtdb/rmgtdb \
