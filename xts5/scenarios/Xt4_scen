@@ -90,7 +90,7 @@
 	"VSW5TESTSUITE CASE XtVaCreateArgsList 2"
 	/tset/Xt4/tvcrtargsl/tvcrtargsl
 	"VSW5TESTSUITE CASE XtCreateWidget 4"
-	/tset/Xt4/tcrtwdgt/tcrtwdgt
+	/tset/Xt4/XtCreateWidget/XtCreateWidget
 	"VSW5TESTSUITE CASE XtVaCreateWidget 8"
 	/tset/Xt4/tvcrtwdgt/tvcrtwdgt
 	"VSW5TESTSUITE CASE XtAppCreateShell 7"

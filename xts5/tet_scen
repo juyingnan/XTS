@@ -3738,7 +3738,7 @@ XtVaCreateArgsList
 
 XtCreateWidget
 	"VSW5TESTSUITE CASE XtCreateWidget 4"
-	/tset/Xt4/tcrtwdgt/tcrtwdgt
+	/tset/Xt4/XtCreateWidget/XtCreateWidget
 
 XtVaCreateWidget
 	"VSW5TESTSUITE CASE XtVaCreateWidget 8"
