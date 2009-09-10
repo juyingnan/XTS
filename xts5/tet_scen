@@ -3660,7 +3660,7 @@ XtIsVendorShell
 
 XtIsTransientShell
 	"VSW5TESTSUITE CASE XtIsTransientShell 2"
-	/tset/Xt3/tistrnsnts/tistrnsnts
+	/tset/Xt3/XtIsTransientShell/XtIsTransientShell
 
 XtIsTopLevelShell
 	"VSW5TESTSUITE CASE XtIsTopLevelShell 2"
