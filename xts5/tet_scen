@@ -1244,7 +1244,7 @@ XmbLookupString
 
 XmbResetIC
 	"VSW5TESTSUITE CASE XmbResetIC 1"
-	/tset/Xlib14/mbresic/mbresic
+	/tset/Xlib14/XmbResetIC/XmbResetIC
 
 XmbSetWMProperties
 	"VSW5TESTSUITE CASE XmbSetWMProperties 2"

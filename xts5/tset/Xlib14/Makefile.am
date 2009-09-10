@@ -30,7 +30,7 @@ tprogs = \
 	XmbDrawString/XmbDrawString \
 	XmbDrawText/XmbDrawText \
 	XmbLookupString/XmbLookupString \
-	mbresic/mbresic \
+	XmbResetIC/XmbResetIC \
 	mbswmprp/mbswmprp \
 	mbtesc/mbtesc \
 	mbtext/mbtext \
