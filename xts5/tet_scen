@@ -2579,7 +2579,7 @@ XQueryColors
 
 XStoreColor
 	"VSW5TESTSUITE CASE XStoreColor 8"
-	/tset/Xlib7/strclr/strclr
+	/tset/Xlib7/XStoreColor/XStoreColor
 
 XStoreColors
 	"VSW5TESTSUITE CASE XStoreColors 9"

@@ -65,6 +65,6 @@ tprogs = \
 	XParseColor/XParseColor \
 	XQueryColor/XQueryColor \
 	XQueryColors/XQueryColors \
-	strclr/strclr \
+	XStoreColor/XStoreColor \
 	XStoreColors/XStoreColors \
 	XStoreNamedColor/XStoreNamedColor
