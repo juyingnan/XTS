@@ -262,7 +262,7 @@
 	"VSW5TESTSUITE CASE SetCloseDownMode 3"
 	/tset/Xproto/XSetCloseDownMode/XSetCloseDownMode
 	"VSW5TESTSUITE CASE SetDashes 3"
-	/tset/Xproto/SetDashes/SetDashes
+	/tset/Xproto/XSetDashes/XSetDashes
 	"VSW5TESTSUITE CASE SetFontPath 3"
 	/tset/Xproto/SetFontPath/SetFontPath
 	"VSW5TESTSUITE CASE SetInputFocus 3"

@@ -112,7 +112,7 @@ tprogs = \
 	XSetAccessControl/XSetAccessControl \
 	XSetClipRectangles/XSetClipRectangles \
 	XSetCloseDownMode/XSetCloseDownMode \
-	SetDashes/SetDashes \
+	XSetDashes/XSetDashes \
 	SetFontPath/SetFontPath \
 	XSetInputFocus/XSetInputFocus \
 	XSetModifierMapping/XSetModifierMapping \

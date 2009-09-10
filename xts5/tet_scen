@@ -2821,7 +2821,7 @@ XSetClipRectangles
 
 XSetDashes
 	"VSW5TESTSUITE CASE XSetDashes 7"
-	/tset/Xlib8/SetDashes/SetDashes
+	/tset/Xlib8/XSetDashes/XSetDashes
 
 XSetFillRule
 	"VSW5TESTSUITE CASE XSetFillRule 4"
@@ -3518,7 +3518,7 @@ pSetCloseDownMode
 
 pSetDashes
 	"VSW5TESTSUITE CASE SetDashes 3"
-	/tset/Xproto/SetDashes/SetDashes
+	/tset/Xproto/XSetDashes/XSetDashes
 
 pSetFontPath
 	"VSW5TESTSUITE CASE SetFontPath 3"
