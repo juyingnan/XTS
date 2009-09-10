@@ -10,7 +10,7 @@ CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
 	XClearArea/XClearArea \
-	clrwdw/clrwdw \
+	XClearWindow/XClearWindow \
 	CopyArea/CopyArea \
 	CopyPlane/CopyPlane \
 	drwarc/drwarc \
