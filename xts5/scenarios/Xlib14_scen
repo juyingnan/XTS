@@ -92,7 +92,7 @@
 	"VSW5TESTSUITE CASE XmbDrawString 1"
 	/tset/Xlib14/XmbDrawString/XmbDrawString
 	"VSW5TESTSUITE CASE XmbDrawText 1"
-	/tset/Xlib14/mbdtext/mbdtext
+	/tset/Xlib14/XmbDrawText/XmbDrawText
 	"VSW5TESTSUITE CASE XmbLookupString 3"
 	/tset/Xlib14/mblstr/mblstr
 	"VSW5TESTSUITE CASE XmbResetIC 1"

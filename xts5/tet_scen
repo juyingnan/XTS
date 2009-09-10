@@ -1236,7 +1236,7 @@ XmbDrawString
 
 XmbDrawText
 	"VSW5TESTSUITE CASE XmbDrawText 1"
-	/tset/Xlib14/mbdtext/mbdtext
+	/tset/Xlib14/XmbDrawText/XmbDrawText
 
 XmbLookupString
 	"VSW5TESTSUITE CASE XmbLookupString 3"

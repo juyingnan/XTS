@@ -28,7 +28,7 @@ tprogs = \
 	XLocaleOfIM/XLocaleOfIM \
 	XmbDrawImageString/XmbDrawImageString \
 	XmbDrawString/XmbDrawString \
-	mbdtext/mbdtext \
+	XmbDrawText/XmbDrawText \
 	mblstr/mblstr \
 	mbresic/mbresic \
 	mbswmprp/mbswmprp \
