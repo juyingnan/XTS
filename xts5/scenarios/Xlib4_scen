@@ -92,7 +92,7 @@
 	"VSW5TESTSUITE CASE XRaiseWindow 4"
 	/tset/Xlib4/XRaiseWindow/XRaiseWindow
 	"VSW5TESTSUITE CASE XResizeWindow 13"
-	/tset/Xlib4/rszwdw/rszwdw
+	/tset/Xlib4/XResizeWindow/XResizeWindow
 	"VSW5TESTSUITE CASE XSetWindowBackground 4"
 	/tset/Xlib4/stwdwbg/stwdwbg
 	"VSW5TESTSUITE CASE XSetWindowBackgroundPixmap 11"

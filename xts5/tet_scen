@@ -2386,7 +2386,7 @@ XRaiseWindow
 
 XResizeWindow
 	"VSW5TESTSUITE CASE XResizeWindow 13"
-	/tset/Xlib4/rszwdw/rszwdw
+	/tset/Xlib4/XResizeWindow/XResizeWindow
 
 XSetWindowBackground
 	"VSW5TESTSUITE CASE XSetWindowBackground 4"
