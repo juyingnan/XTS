@@ -618,7 +618,7 @@ XSetDeviceFocus
 
 XSetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XSetDeviceModifierMapping 9"
-	/tset/XI/setdvmmap/setdvmmap
+	/tset/XI/XSetDeviceModifierMapping/XSetDeviceModifierMapping
 
 XSetDeviceMode
 	"VSW5TESTSUITE CASE XSetDeviceMode 6"

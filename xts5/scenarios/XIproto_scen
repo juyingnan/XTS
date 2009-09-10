@@ -112,7 +112,7 @@
 	"VSW5TESTSUITE CASE SetDeviceFocus 3"
 	/tset/XIproto/setdvfcs/setdvfcs
 	"VSW5TESTSUITE CASE SetDeviceModifierMapping 3"
-	/tset/XIproto/setdvmmap/setdvmmap
+	/tset/XIproto/XSetDeviceModifierMapping/XSetDeviceModifierMapping
 	"VSW5TESTSUITE CASE SetDeviceMode 3"
 	/tset/XIproto/setdvmode/setdvmode
 	"VSW5TESTSUITE CASE SelectExtensionEvent 3"
