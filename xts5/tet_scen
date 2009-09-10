@@ -3858,7 +3858,7 @@ XtUnmapWidget
 
 ShellWidget
 	"VSW5TESTSUITE CASE ShellWidget 11"
-	/tset/Xt6/wdgtshll/wdgtshll
+	/tset/Xt6/ShellWidget/ShellWidget
 
 OverrideShellWidget
 	"VSW5TESTSUITE CASE OverrideShellWidget 10"

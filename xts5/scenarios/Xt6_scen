@@ -59,7 +59,7 @@
 #
 
 	"VSW5TESTSUITE CASE ShellWidget 11"
-	/tset/Xt6/wdgtshll/wdgtshll
+	/tset/Xt6/ShellWidget/ShellWidget
 	"VSW5TESTSUITE CASE OverrideShellWidget 10"
 	/tset/Xt6/OverrideShellWidget/OverrideShellWidget
 	"VSW5TESTSUITE CASE WMShellWidget 10"
