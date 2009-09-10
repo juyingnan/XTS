@@ -4465,7 +4465,7 @@ XtNameToWidget
 
 XtMalloc
 	"VSW5TESTSUITE CASE XtMalloc 6"
-	/tset/Xt13/tmalloc/tmalloc
+	/tset/Xt13/XtMalloc/XtMalloc
 
 XtCalloc
 	"VSW5TESTSUITE CASE XtCalloc 6"
