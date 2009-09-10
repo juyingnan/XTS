@@ -37,7 +37,7 @@ tprogs = \
 	XIconifyWindow/XIconifyWindow \
 	XReconfigureWMWindow/XReconfigureWMWindow \
 	XSetClassHint/XSetClassHint \
-	stcmmnd/stcmmnd \
+	XSetCommand/XSetCommand \
 	sticnnm/sticnnm \
 	sticnszs/sticnszs \
 	strgbclrmp/strgbclrmp \

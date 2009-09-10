@@ -1447,7 +1447,7 @@ XSetClassHint
 
 XSetCommand
 	"VSW5TESTSUITE CASE XSetCommand 3"
-	/tset/Xlib15/stcmmnd/stcmmnd
+	/tset/Xlib15/XSetCommand/XSetCommand
 
 XSetIconName
 	"VSW5TESTSUITE CASE XSetIconName 3"

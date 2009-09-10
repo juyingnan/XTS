@@ -106,7 +106,7 @@
 	"VSW5TESTSUITE CASE XSetClassHint 3"
 	/tset/Xlib15/XSetClassHint/XSetClassHint
 	"VSW5TESTSUITE CASE XSetCommand 3"
-	/tset/Xlib15/stcmmnd/stcmmnd
+	/tset/Xlib15/XSetCommand/XSetCommand
 	"VSW5TESTSUITE CASE XSetIconName 3"
 	/tset/Xlib15/sticnnm/sticnnm
 	"VSW5TESTSUITE CASE XSetIconSizes 3"
