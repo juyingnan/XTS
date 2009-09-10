@@ -2687,7 +2687,7 @@ XcmsQueryGreen
 
 XcmsCIELuvQueryMaxC
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxC 1"
-	/tset/Xlib7/cmsqmc/cmsqmc
+	/tset/Xlib7/XcmsCIELuvQueryMaxC/XcmsCIELuvQueryMaxC
 
 XcmsCIELuvQueryMinL
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMinL 1"

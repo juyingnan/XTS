@@ -134,7 +134,7 @@
 	"VSW5TESTSUITE CASE XcmsQueryGreen 1"
 	/tset/Xlib7/XcmsQueryGreen/XcmsQueryGreen
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxC 1"
-	/tset/Xlib7/cmsqmc/cmsqmc
+	/tset/Xlib7/XcmsCIELuvQueryMaxC/XcmsCIELuvQueryMaxC
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMinL 1"
 	/tset/Xlib7/cmsqmil/cmsqmil
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxL 1"

@@ -38,7 +38,7 @@ tprogs = \
 	XcmsQueryColor/XcmsQueryColor \
 	XcmsQueryColors/XcmsQueryColors \
 	XcmsQueryGreen/XcmsQueryGreen \
-	cmsqmc/cmsqmc \
+	XcmsCIELuvQueryMaxC/XcmsCIELuvQueryMaxC \
 	cmsqmil/cmsqmil \
 	cmsqml/cmsqml \
 	cmsqmlc/cmsqmlc \
