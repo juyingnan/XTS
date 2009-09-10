@@ -3742,7 +3742,7 @@ XtCreateWidget
 
 XtVaCreateWidget
 	"VSW5TESTSUITE CASE XtVaCreateWidget 8"
-	/tset/Xt4/tvcrtwdgt/tvcrtwdgt
+	/tset/Xt4/XtVaCreateWidget/XtVaCreateWidget
 
 XtAppCreateShell
 	"VSW5TESTSUITE CASE XtAppCreateShell 7"
