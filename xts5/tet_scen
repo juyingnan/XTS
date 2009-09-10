@@ -4403,7 +4403,7 @@ XtUninstallTranslations
 
 XtParseAcceleratorTable
 	"VSW5TESTSUITE CASE XtParseAcceleratorTable 1"
-	/tset/Xt12/tprsactbl/tprsactbl
+	/tset/Xt12/XtParseAcceleratorTable/XtParseAcceleratorTable
 
 XtInstallAccelerators
 	"VSW5TESTSUITE CASE XtInstallAccelerators 2"

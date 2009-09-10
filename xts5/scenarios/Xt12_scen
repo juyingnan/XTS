@@ -77,7 +77,7 @@
 	"VSW5TESTSUITE CASE XtUninstallTranslations 1"
 	/tset/Xt12/tuntrnsls/tuntrnsls
 	"VSW5TESTSUITE CASE XtParseAcceleratorTable 1"
-	/tset/Xt12/tprsactbl/tprsactbl
+	/tset/Xt12/XtParseAcceleratorTable/XtParseAcceleratorTable
 	"VSW5TESTSUITE CASE XtInstallAccelerators 2"
 	/tset/Xt12/XtInstallAccelerators/XtInstallAccelerators
 	"VSW5TESTSUITE CASE XtInstallAllAccelerators 1"
