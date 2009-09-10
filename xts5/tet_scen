@@ -4237,7 +4237,7 @@ XtCvtStringToPosition
 
 XtCvtStringToUnsignedChar
 	"VSW5TESTSUITE CASE XtCvtStringToUnsignedChar 4"
-	/tset/Xt11/tcstuchr/tcstuchr
+	/tset/Xt11/XtCvtStringToUnsignedChar/XtCvtStringToUnsignedChar
 
 XtCvtStringToVisual
 	"VSW5TESTSUITE CASE XtCvtStringToVisual 5"
