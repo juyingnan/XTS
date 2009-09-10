@@ -4341,7 +4341,7 @@ XtVaGetValues
 
 XtGetSubvalues
 	"VSW5TESTSUITE CASE XtGetSubvalues 2"
-	/tset/Xt11/tgtsubval/tgtsubval
+	/tset/Xt11/XtGetSubvalues/XtGetSubvalues
 
 XtVaGetSubvalues
 	"VSW5TESTSUITE CASE XtVaGetSubvalues 3"
