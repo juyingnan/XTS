@@ -94,7 +94,7 @@
 	"VSW5TESTSUITE CASE XResetScreenSaver 2"
 	/tset/Xlib10/XResetScreenSaver/XResetScreenSaver
 	"VSW5TESTSUITE CASE XSetAccessControl 4"
-	/tset/Xlib10/SetAccessControl/SetAccessControl
+	/tset/Xlib10/XSetAccessControl/XSetAccessControl
 	"VSW5TESTSUITE CASE XSetScreenSaver 17"
 	/tset/Xlib10/SetScreenSaver/SetScreenSaver
 	"VSW5TESTSUITE CASE XUngrabServer 1"

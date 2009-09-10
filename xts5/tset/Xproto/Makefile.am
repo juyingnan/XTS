@@ -109,7 +109,7 @@ tprogs = \
 	XReparentWindow/XReparentWindow \
 	RotateProperties/RotateProperties \
 	SendEvent/SendEvent \
-	SetAccessControl/SetAccessControl \
+	XSetAccessControl/XSetAccessControl \
 	SetClipRectangles/SetClipRectangles \
 	SetCloseDownMode/SetCloseDownMode \
 	SetDashes/SetDashes \
