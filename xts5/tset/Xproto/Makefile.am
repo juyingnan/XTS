@@ -40,7 +40,7 @@ tprogs = \
 	CreateGlyphCursor/CreateGlyphCursor \
 	CreatePixmap/CreatePixmap \
 	CreateWindow/CreateWindow \
-	dltprprty/dltprprty \
+	DeleteProperty/DeleteProperty \
 	dstrysbws/dstrysbws \
 	dstrywdw/dstrywdw \
 	fllply/fllply \

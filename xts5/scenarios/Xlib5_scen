@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE XConvertSelection 5"
 	/tset/Xlib5/ConvertSelection/ConvertSelection
 	"VSW5TESTSUITE CASE XDeleteProperty 4"
-	/tset/Xlib5/dltprprty/dltprprty
+	/tset/Xlib5/DeleteProperty/DeleteProperty
 	"VSW5TESTSUITE CASE XGetAtomName 2"
 	/tset/Xlib5/gtatmnm/gtatmnm
 	"VSW5TESTSUITE CASE XGetGeometry 4"

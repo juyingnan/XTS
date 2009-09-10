@@ -2441,7 +2441,7 @@ XConvertSelection
 
 XDeleteProperty
 	"VSW5TESTSUITE CASE XDeleteProperty 4"
-	/tset/Xlib5/dltprprty/dltprprty
+	/tset/Xlib5/DeleteProperty/DeleteProperty
 
 XGetAtomName
 	"VSW5TESTSUITE CASE XGetAtomName 2"
@@ -3230,7 +3230,7 @@ pCreateWindow
 
 pDeleteProperty
 	"VSW5TESTSUITE CASE DeleteProperty 3"
-	/tset/Xproto/dltprprty/dltprprty
+	/tset/Xproto/DeleteProperty/DeleteProperty
 
 pDestroySubwindows
 	"VSW5TESTSUITE CASE DestroySubwindows 3"

@@ -118,7 +118,7 @@
 	"VSW5TESTSUITE CASE CreateWindow 6"
 	/tset/Xproto/CreateWindow/CreateWindow
 	"VSW5TESTSUITE CASE DeleteProperty 3"
-	/tset/Xproto/dltprprty/dltprprty
+	/tset/Xproto/DeleteProperty/DeleteProperty
 	"VSW5TESTSUITE CASE DestroySubwindows 3"
 	/tset/Xproto/dstrysbws/dstrysbws
 	"VSW5TESTSUITE CASE DestroyWindow 3"
