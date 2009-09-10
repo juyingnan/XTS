@@ -80,6 +80,6 @@
 	"VSW5TESTSUITE CASE XShapeQueryExtents 1"
 	/tset/SHAPE/XShapeQueryExtents/XShapeQueryExtents
 	"VSW5TESTSUITE CASE XShapeQueryVersion 1"
-	/tset/SHAPE/tshpqyver/tshpqyver
+	/tset/SHAPE/XShapeQueryVersion/XShapeQueryVersion
 	"VSW5TESTSUITE CASE XShapeSelectInput 1"
 	/tset/SHAPE/tshpstinp/tshpstinp

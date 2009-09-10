@@ -684,7 +684,7 @@ XShapeQueryExtents
 
 XShapeQueryVersion
 	"VSW5TESTSUITE CASE XShapeQueryVersion 1"
-	/tset/SHAPE/tshpqyver/tshpqyver
+	/tset/SHAPE/XShapeQueryVersion/XShapeQueryVersion
 
 XShapeSelectInput
 	"VSW5TESTSUITE CASE XShapeSelectInput 1"
