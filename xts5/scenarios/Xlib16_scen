@@ -90,7 +90,7 @@
 	"VSW5TESTSUITE CASE XrmQGetSearchResource 2"
 	/tset/Xlib16/XrmQGetSearchResource/XrmQGetSearchResource
 	"VSW5TESTSUITE CASE XrmQPutResource 3"
-	/tset/Xlib16/rmqptrsrc/rmqptrsrc
+	/tset/Xlib16/XrmQPutResource/XrmQPutResource
 	"VSW5TESTSUITE CASE XrmQPutStringResource 3"
 	/tset/Xlib16/rmqptstrrs/rmqptstrrs
 	"VSW5TESTSUITE CASE XrmQuarkToString 3"

@@ -34,7 +34,7 @@ tprogs = \
 	XrmQGetResource/XrmQGetResource \
 	XrmQGetSearchList/XrmQGetSearchList \
 	XrmQGetSearchResource/XrmQGetSearchResource \
-	rmqptrsrc/rmqptrsrc \
+	XrmQPutResource/XrmQPutResource \
 	rmqptstrrs/rmqptstrrs \
 	rmqrktstr/rmqrktstr \
 	rmstdb/rmstdb \

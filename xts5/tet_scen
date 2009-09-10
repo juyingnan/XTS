@@ -1586,7 +1586,7 @@ XrmQGetSearchResource
 
 XrmQPutResource
 	"VSW5TESTSUITE CASE XrmQPutResource 3"
-	/tset/Xlib16/rmqptrsrc/rmqptrsrc
+	/tset/Xlib16/XrmQPutResource/XrmQPutResource
 
 XrmQPutStringResource
 	"VSW5TESTSUITE CASE XrmQPutStringResource 3"
