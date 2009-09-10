@@ -93,7 +93,7 @@
 	"VSW5TESTSUITE CASE XtCvtStringToFloat 4"
 	/tset/Xt11/XtCvtStringToFloat/XtCvtStringToFloat
 	"VSW5TESTSUITE CASE XtCvtStringToFont 8"
-	/tset/Xt11/tcstfont/tcstfont
+	/tset/Xt11/XtCvtStringToFont/XtCvtStringToFont
 	"VSW5TESTSUITE CASE XtCvtStringToFontSet 11"
 	/tset/Xt11/tcstfset/tcstfset
 	"VSW5TESTSUITE CASE XtCvtStringToFontStruct 8"
