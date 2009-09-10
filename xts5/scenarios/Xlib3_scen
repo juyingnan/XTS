@@ -124,7 +124,7 @@
 	"VSW5TESTSUITE CASE XHeightOfScreen 1"
 	/tset/Xlib3/XHeightOfScreen/XHeightOfScreen
 	"VSW5TESTSUITE CASE XImageByteOrder 1"
-	/tset/Xlib3/imgbytordr/imgbytordr
+	/tset/Xlib3/XImageByteOrder/XImageByteOrder
 	"VSW5TESTSUITE CASE XListDepths 3"
 	/tset/Xlib3/lstdpths/lstdpths
 	"VSW5TESTSUITE CASE XLastKnownRequestProcessed 1"
@@ -236,7 +236,7 @@
 	"VSW5TESTSUITE CASE HeightOfScreen 1"
 	/tset/Xlib3/XHeightOfScreen/XHeightOfScreen_m
 	"VSW5TESTSUITE CASE ImageByteOrder 1"
-	/tset/Xlib3/imgbytordr/imgbytordr_m
+	/tset/Xlib3/XImageByteOrder/XImageByteOrder_m
 	"VSW5TESTSUITE CASE LastKnownRequestProcessed 1"
 	/tset/Xlib3/lstknwnrqs/lstknwnrqs_m
 	"VSW5TESTSUITE CASE MinCmapsOfScreen 1"

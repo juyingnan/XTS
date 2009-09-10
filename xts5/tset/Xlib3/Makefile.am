@@ -43,7 +43,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XFree/XFree \
 	XHeightMMOfScreen/XHeightMMOfScreen XHeightMMOfScreen/XHeightMMOfScreen_m \
 	XHeightOfScreen/XHeightOfScreen XHeightOfScreen/XHeightOfScreen_m \
-	imgbytordr/imgbytordr imgbytordr/imgbytordr_m \
+	XImageByteOrder/XImageByteOrder XImageByteOrder/XImageByteOrder_m \
 	lstdpths/lstdpths \
 	lstknwnrqs/lstknwnrqs lstknwnrqs/lstknwnrqs_m \
 	lstpxmpfrm/lstpxmpfrm \

@@ -2011,7 +2011,7 @@ XHeightOfScreen
 
 XImageByteOrder
 	"VSW5TESTSUITE CASE XImageByteOrder 1"
-	/tset/Xlib3/imgbytordr/imgbytordr
+	/tset/Xlib3/XImageByteOrder/XImageByteOrder
 
 XListDepths
 	"VSW5TESTSUITE CASE XListDepths 3"
@@ -2235,7 +2235,7 @@ HeightOfScreen
 
 ImageByteOrder
 	"VSW5TESTSUITE CASE ImageByteOrder 1"
-	/tset/Xlib3/imgbytordr/imgbytordr_m
+	/tset/Xlib3/XImageByteOrder/XImageByteOrder_m
 
 LastKnownRequestProcessed
 	"VSW5TESTSUITE CASE LastKnownRequestProcessed 1"
