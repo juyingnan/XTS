@@ -108,7 +108,7 @@
 	"VSW5TESTSUITE CASE CreateColormap 5"
 	/tset/Xproto/CreateColormap/CreateColormap
 	"VSW5TESTSUITE CASE CreateCursor 5"
-	/tset/Xproto/crtcrsr/crtcrsr
+	/tset/Xproto/CreateCursor/CreateCursor
 	"VSW5TESTSUITE CASE CreateGC 6"
 	/tset/Xproto/crtgc/crtgc
 	"VSW5TESTSUITE CASE CreateGlyphCursor 5"

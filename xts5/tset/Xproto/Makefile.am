@@ -35,7 +35,7 @@ tprogs = \
 	CopyPlane/CopyPlane \
 	CirculateWindow/CirculateWindow \
 	CreateColormap/CreateColormap \
-	crtcrsr/crtcrsr \
+	CreateCursor/CreateCursor \
 	crtgc/crtgc \
 	crtglyphcr/crtglyphcr \
 	crtpxmp/crtpxmp \
