@@ -1395,7 +1395,7 @@ XGetRGBColormaps
 
 XGetTransientForHint
 	"VSW5TESTSUITE CASE XGetTransientForHint 3"
-	/tset/Xlib15/gttrnsntfr/gttrnsntfr
+	/tset/Xlib15/XGetTransientForHint/XGetTransientForHint
 
 XGetTextProperty
 	"VSW5TESTSUITE CASE XGetTextProperty 4"
