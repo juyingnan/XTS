@@ -113,7 +113,7 @@
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabase 1"
 	/tset/Xt13/XtAppGetErrorDatabase/XtAppGetErrorDatabase
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabaseText 4"
-	/tset/Xt13/tapgterdt/tapgterdt
+	/tset/Xt13/XtAppGetErrorDatabaseText/XtAppGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XtAppSetErrorMsgHandler 2"
 	/tset/Xt13/tapstermh/tapstermh
 	"VSW5TESTSUITE CASE XtAppErrorMsg 3"
