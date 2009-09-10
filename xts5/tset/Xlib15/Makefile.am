@@ -41,7 +41,7 @@ tprogs = \
 	XSetIconName/XSetIconName \
 	XSetIconSizes/XSetIconSizes \
 	XSetRGBColormaps/XSetRGBColormaps \
-	strlstttxt/strlstttxt \
+	XStringListToTextProperty/XStringListToTextProperty \
 	strnm/strnm \
 	sttrnsntfr/sttrnsntfr \
 	sttxtprprt/sttxtprprt \

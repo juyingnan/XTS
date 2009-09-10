@@ -1463,7 +1463,7 @@ XSetRGBColormaps
 
 XStringListToTextProperty
 	"VSW5TESTSUITE CASE XStringListToTextProperty 3"
-	/tset/Xlib15/strlstttxt/strlstttxt
+	/tset/Xlib15/XStringListToTextProperty/XStringListToTextProperty
 
 XStoreName
 	"VSW5TESTSUITE CASE XStoreName 3"

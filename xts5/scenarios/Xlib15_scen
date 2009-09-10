@@ -114,7 +114,7 @@
 	"VSW5TESTSUITE CASE XSetRGBColormaps 4"
 	/tset/Xlib15/XSetRGBColormaps/XSetRGBColormaps
 	"VSW5TESTSUITE CASE XStringListToTextProperty 3"
-	/tset/Xlib15/strlstttxt/strlstttxt
+	/tset/Xlib15/XStringListToTextProperty/XStringListToTextProperty
 	"VSW5TESTSUITE CASE XStoreName 3"
 	/tset/Xlib15/strnm/strnm
 	"VSW5TESTSUITE CASE XSetTransientForHint 3"
