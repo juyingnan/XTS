@@ -56,7 +56,7 @@
 #
 
 	"VSW5TESTSUITE CASE XBaseFontNameListOfFontSet 1"
-	/tset/Xlib14/bfnlofs/bfnlofs
+	/tset/Xlib14/XBaseFontNameListOfFontSet/XBaseFontNameListOfFontSet
 	"VSW5TESTSUITE CASE XCloseIM 1"
 	/tset/Xlib14/closeim/closeim
 	"VSW5TESTSUITE CASE XContextDependentDrawing 1"

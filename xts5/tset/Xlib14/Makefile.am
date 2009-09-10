@@ -10,7 +10,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	bfnlofs/bfnlofs \
+	XBaseFontNameListOfFontSet/XBaseFontNameListOfFontSet \
 	closeim/closeim \
 	condd/condd \
 	crfset/crfset \
