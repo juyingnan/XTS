@@ -73,7 +73,7 @@
 	"VSW5TESTSUITE CASE XtGrabKey 5"
 	/tset/Xt9/XtGrabKey/XtGrabKey
 	"VSW5TESTSUITE CASE XtUngrabKey 2"
-	/tset/Xt9/tungrabky/tungrabky
+	/tset/Xt9/XtUngrabKey/XtUngrabKey
 	"VSW5TESTSUITE CASE XtGrabKeyboard 2"
 	/tset/Xt9/XtGrabKeyboard/XtGrabKeyboard
 	"VSW5TESTSUITE CASE XtUngrabKeyboard 1"

@@ -3992,7 +3992,7 @@ XtGrabKey
 
 XtUngrabKey
 	"VSW5TESTSUITE CASE XtUngrabKey 2"
-	/tset/Xt9/tungrabky/tungrabky
+	/tset/Xt9/XtUngrabKey/XtUngrabKey
 
 XtGrabKeyboard
 	"VSW5TESTSUITE CASE XtGrabKeyboard 2"
