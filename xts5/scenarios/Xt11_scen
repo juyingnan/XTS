@@ -119,7 +119,7 @@
 	"VSW5TESTSUITE CASE XtCvtIntToBoolean 3"
 	/tset/Xt11/XtCvtIntToBoolean/XtCvtIntToBoolean
 	"VSW5TESTSUITE CASE XtCvtIntToBool 3"
-	/tset/Xt11/tcinbool/tcinbool
+	/tset/Xt11/XtCvtIntToBool/XtCvtIntToBool
 	"VSW5TESTSUITE CASE XtCvtIntToColor 4"
 	/tset/Xt11/tcincolr/tcincolr
 	"VSW5TESTSUITE CASE XtCvtIntToDimension 3"
