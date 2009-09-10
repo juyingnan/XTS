@@ -98,7 +98,7 @@
 	"VSW5TESTSUITE CASE XSetWindowBackgroundPixmap 11"
 	/tset/Xlib4/XSetWindowBackgroundPixmap/XSetWindowBackgroundPixmap
 	"VSW5TESTSUITE CASE XSetWindowBorder 5"
-	/tset/Xlib4/stwdwbrdr/stwdwbrdr
+	/tset/Xlib4/XSetWindowBorder/XSetWindowBorder
 	"VSW5TESTSUITE CASE XSetWindowBorderPixmap 9"
 	/tset/Xlib4/stwdwbrdrp/stwdwbrdrp
 	"VSW5TESTSUITE CASE XSetWindowBorderWidth 7"
