@@ -2765,7 +2765,7 @@ XcmsSetWhitePoint
 
 XChangeGC
 	"VSW5TESTSUITE CASE XChangeGC 25"
-	/tset/Xlib8/ChangeGC/ChangeGC
+	/tset/Xlib8/XChangeGC/XChangeGC
 
 XCopyGC
 	"VSW5TESTSUITE CASE XCopyGC 5"
@@ -3138,7 +3138,7 @@ pChangeActivePointerGrab
 
 pChangeGC
 	"VSW5TESTSUITE CASE ChangeGC 4"
-	/tset/Xproto/ChangeGC/ChangeGC
+	/tset/Xproto/XChangeGC/XChangeGC
 
 pChangeHosts
 	"VSW5TESTSUITE CASE ChangeHosts 3"

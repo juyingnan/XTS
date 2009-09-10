@@ -17,7 +17,7 @@ tprogs = \
 	BadRequest/BadRequest \
 	XBell/XBell \
 	XChangeActivePointerGrab/XChangeActivePointerGrab \
-	ChangeGC/ChangeGC \
+	XChangeGC/XChangeGC \
 	ChangeHosts/ChangeHosts \
 	XChangeKeyboardControl/XChangeKeyboardControl \
 	XChangeKeyboardMapping/XChangeKeyboardMapping \
