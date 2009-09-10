@@ -1320,7 +1320,7 @@ XwcLookupString
 
 XwcResetIC
 	"VSW5TESTSUITE CASE XwcResetIC 1"
-	/tset/Xlib14/wcreic/wcreic
+	/tset/Xlib14/XwcResetIC/XwcResetIC
 
 XwcTextEscapement
 	"VSW5TESTSUITE CASE XwcTextEscapement 1"

@@ -49,7 +49,7 @@ tprogs = \
 	XwcDrawText/XwcDrawText \
 	XwcFreeStringList/XwcFreeStringList \
 	XwcLookupString/XwcLookupString \
-	wcreic/wcreic \
+	XwcResetIC/XwcResetIC \
 	wctesc/wctesc \
 	wctlttp/wctlttp \
 	wctpcex/wctpcex \

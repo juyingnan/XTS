@@ -134,7 +134,7 @@
 	"VSW5TESTSUITE CASE XwcLookupString 3"
 	/tset/Xlib14/XwcLookupString/XwcLookupString
 	"VSW5TESTSUITE CASE XwcResetIC 1"
-	/tset/Xlib14/wcreic/wcreic
+	/tset/Xlib14/XwcResetIC/XwcResetIC
 	"VSW5TESTSUITE CASE XwcTextEscapement 1"
 	/tset/Xlib14/wctesc/wctesc
 	"VSW5TESTSUITE CASE XwcTextListToTextProperty 1"
