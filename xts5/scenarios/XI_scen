@@ -66,7 +66,7 @@
 	"VSW5TESTSUITE CASE XChangeDeviceDontPropagateList 7"
 	/tset/XI/XChangeDeviceDontPropagateList/XChangeDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XChangePointerDevice 10"
-	/tset/XI/chgptr/chgptr
+	/tset/XI/XChangePointerDevice/XChangePointerDevice
 	"VSW5TESTSUITE CASE XChangeDeviceKeyMapping 7"
 	/tset/XI/chngdvkmap/chngdvkmap
 	"VSW5TESTSUITE CASE XCloseDevice 7"

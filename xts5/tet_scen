@@ -522,7 +522,7 @@ XChangeDeviceDontPropagateList
 
 XChangePointerDevice
 	"VSW5TESTSUITE CASE XChangePointerDevice 10"
-	/tset/XI/chgptr/chgptr
+	/tset/XI/XChangePointerDevice/XChangePointerDevice
 
 XChangeDeviceKeyMapping
 	"VSW5TESTSUITE CASE XChangeDeviceKeyMapping 7"

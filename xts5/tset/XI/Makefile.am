@@ -14,7 +14,7 @@ tprogs = \
 	XChangeFeedbackControl/XChangeFeedbackControl \
 	XChangeKeyboardDevice/XChangeKeyboardDevice \
 	XChangeDeviceDontPropagateList/XChangeDeviceDontPropagateList \
-	chgptr/chgptr \
+	XChangePointerDevice/XChangePointerDevice \
 	chngdvkmap/chngdvkmap \
 	closdev/closdev \
 	dvbell/dvbell \
