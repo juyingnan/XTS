@@ -630,7 +630,7 @@ XSelectExtensionEvent
 
 XSendExtensionEvent
 	"VSW5TESTSUITE CASE XSendExtensionEvent 20"
-	/tset/XI/sndextevnt/sndextevnt
+	/tset/XI/XSendExtensionEvent/XSendExtensionEvent
 
 XUngrabDevice
 	"VSW5TESTSUITE CASE XUngrabDevice 4"

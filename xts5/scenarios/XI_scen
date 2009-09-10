@@ -120,7 +120,7 @@
 	"VSW5TESTSUITE CASE XSelectExtensionEvent 13"
 	/tset/XI/XSelectExtensionEvent/XSelectExtensionEvent
 	"VSW5TESTSUITE CASE XSendExtensionEvent 20"
-	/tset/XI/sndextevnt/sndextevnt
+	/tset/XI/XSendExtensionEvent/XSendExtensionEvent
 	"VSW5TESTSUITE CASE XUngrabDevice 4"
 	/tset/XI/ungrbdv/ungrbdv
 	"VSW5TESTSUITE CASE XUngrabDeviceButton 11"
