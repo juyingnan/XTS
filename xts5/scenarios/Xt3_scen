@@ -67,7 +67,7 @@
 	"VSW5TESTSUITE CASE ConstraintWidget 11"
 	/tset/Xt3/wdgtcnstrn/wdgtcnstrn
 	"VSW5TESTSUITE CASE XtClass 1"
-	/tset/Xt3/tclss/tclss
+	/tset/Xt3/XtClass/XtClass
 	"VSW5TESTSUITE CASE XtSuperClass 1"
 	/tset/Xt3/tsprclss/tsprclss
 	"VSW5TESTSUITE CASE XtIsSubclass 2"

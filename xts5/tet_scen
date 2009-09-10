@@ -3612,7 +3612,7 @@ ConstraintWidget
 
 XtClass
 	"VSW5TESTSUITE CASE XtClass 1"
-	/tset/Xt3/tclss/tclss
+	/tset/Xt3/XtClass/XtClass
 
 XtSuperClass
 	"VSW5TESTSUITE CASE XtSuperClass 1"
