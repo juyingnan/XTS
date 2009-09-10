@@ -3862,7 +3862,7 @@ ShellWidget
 
 OverrideShellWidget
 	"VSW5TESTSUITE CASE OverrideShellWidget 10"
-	/tset/Xt6/wdgtovrrds/wdgtovrrds
+	/tset/Xt6/OverrideShellWidget/OverrideShellWidget
 
 WMShellWidget
 	"VSW5TESTSUITE CASE WMShellWidget 10"
