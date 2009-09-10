@@ -4489,7 +4489,7 @@ XtNewString
 
 XtAllocateGC
 	"VSW5TESTSUITE CASE XtAllocateGC 9"
-	/tset/Xt13/tallocgc/tallocgc
+	/tset/Xt13/XtAllocateGC/XtAllocateGC
 
 XtGetGC
 	"VSW5TESTSUITE CASE XtGetGC 4"

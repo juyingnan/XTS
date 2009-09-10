@@ -75,7 +75,7 @@
 	"VSW5TESTSUITE CASE XtNewString 5"
 	/tset/Xt13/tnewstrg/tnewstrg
 	"VSW5TESTSUITE CASE XtAllocateGC 9"
-	/tset/Xt13/tallocgc/tallocgc
+	/tset/Xt13/XtAllocateGC/XtAllocateGC
 	"VSW5TESTSUITE CASE XtGetGC 4"
 	/tset/Xt13/tgtgc/tgtgc
 	"VSW5TESTSUITE CASE XtReleaseGC 2"
