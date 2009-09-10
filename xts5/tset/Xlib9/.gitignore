@@ -20,7 +20,7 @@ XDrawText16/XDrawText16
 XFillArc/XFillArc
 XFillArcs/XFillArcs
 XFillPolygon/XFillPolygon
-fllrctngl/fllrctngl
+XFillRectangle/XFillRectangle
 fllrctngls/fllrctngls
 frfnt/frfnt
 frfntinf/frfntinf

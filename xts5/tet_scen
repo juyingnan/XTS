@@ -2972,7 +2972,7 @@ XFillPolygon
 
 XFillRectangle
 	"VSW5TESTSUITE CASE XFillRectangle 43"
-	/tset/Xlib9/fllrctngl/fllrctngl
+	/tset/Xlib9/XFillRectangle/XFillRectangle
 
 XFillRectangles
 	"VSW5TESTSUITE CASE XFillRectangles 44"

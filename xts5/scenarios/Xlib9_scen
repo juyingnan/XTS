@@ -100,7 +100,7 @@
 	"VSW5TESTSUITE CASE XFillPolygon 55"
 	/tset/Xlib9/XFillPolygon/XFillPolygon
 	"VSW5TESTSUITE CASE XFillRectangle 43"
-	/tset/Xlib9/fllrctngl/fllrctngl
+	/tset/Xlib9/XFillRectangle/XFillRectangle
 	"VSW5TESTSUITE CASE XFillRectangles 44"
 	/tset/Xlib9/fllrctngls/fllrctngls
 	"VSW5TESTSUITE CASE XFreeFont 3"
