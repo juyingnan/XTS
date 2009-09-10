@@ -82,7 +82,7 @@
 	"VSW5TESTSUITE CASE XDefaultDepthOfScreen 1"
 	/tset/Xlib3/XDefaultDepthOfScreen/XDefaultDepthOfScreen
 	"VSW5TESTSUITE CASE XDefaultGC 1"
-	/tset/Xlib3/dfltgc/dfltgc
+	/tset/Xlib3/XDefaultGC/XDefaultGC
 	"VSW5TESTSUITE CASE XDefaultGCOfScreen 2"
 	/tset/Xlib3/dfltgcofsc/dfltgcofsc
 	"VSW5TESTSUITE CASE XDefaultRootWindow 1"
@@ -196,7 +196,7 @@
 	"VSW5TESTSUITE CASE DefaultDepthOfScreen 1"
 	/tset/Xlib3/XDefaultDepthOfScreen/XDefaultDepthOfScreen_m
 	"VSW5TESTSUITE CASE DefaultGC 1"
-	/tset/Xlib3/dfltgc/dfltgc_m
+	/tset/Xlib3/XDefaultGC/XDefaultGC_m
 	"VSW5TESTSUITE CASE DefaultGCOfScreen 2"
 	/tset/Xlib3/dfltgcofsc/dfltgcofsc_m
 	"VSW5TESTSUITE CASE DefaultRootWindow 1"
