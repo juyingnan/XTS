@@ -2793,7 +2793,7 @@ XQueryBestStipple
 
 XQueryBestSize
 	"VSW5TESTSUITE CASE XQueryBestSize 7"
-	/tset/Xlib8/qrybstsz/qrybstsz
+	/tset/Xlib8/QueryBestSize/QueryBestSize
 
 XQueryBestTile
 	"VSW5TESTSUITE CASE XQueryBestTile 3"
@@ -3458,7 +3458,7 @@ pPutImage
 
 pQueryBestSize
 	"VSW5TESTSUITE CASE QueryBestSize 3"
-	/tset/Xproto/qrybstsz/qrybstsz
+	/tset/Xproto/QueryBestSize/QueryBestSize
 
 pQueryColors
 	"VSW5TESTSUITE CASE QueryColors 3"

@@ -20,7 +20,7 @@ tprogs = \
 	gcntxtfrmg/gcntxtfrmg \
 	gtgcvls/gtgcvls \
 	qrybststpp/qrybststpp \
-	qrybstsz/qrybstsz \
+	QueryBestSize/QueryBestSize \
 	qrybsttl/qrybsttl \
 	starcmd/starcmd \
 	stbg/stbg \
