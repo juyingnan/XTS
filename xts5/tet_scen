@@ -1610,7 +1610,7 @@ XrmStringToQuarkList
 
 XrmUniqueQuark
 	"VSW5TESTSUITE CASE XrmUniqueQuark 1"
-	/tset/Xlib16/rmunqqrk/rmunqqrk
+	/tset/Xlib16/XrmUniqueQuark/XrmUniqueQuark
 
 XResourceManagerString
 	"VSW5TESTSUITE CASE XResourceManagerString 2"

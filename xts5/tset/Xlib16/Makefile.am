@@ -41,6 +41,6 @@ tprogs = \
 	XrmStringToBindingQuarkList/XrmStringToBindingQuarkList \
 	XrmStringToQuark/XrmStringToQuark \
 	XrmStringToQuarkList/XrmStringToQuarkList \
-	rmunqqrk/rmunqqrk \
+	XrmUniqueQuark/XrmUniqueQuark \
 	rsrcmngrst/rsrcmngrst \
 	scrrs/scrrs
