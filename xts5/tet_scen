@@ -698,7 +698,7 @@ XActivateScreenSaver
 
 XAddHost
 	"VSW5TESTSUITE CASE XAddHost 3"
-	/tset/Xlib10/addhst/addhst
+	/tset/Xlib10/XAddHost/XAddHost
 
 XAddHosts
 	"VSW5TESTSUITE CASE XAddHosts 3"

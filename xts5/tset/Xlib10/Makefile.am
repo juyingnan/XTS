@@ -10,7 +10,7 @@ CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
 	XActivateScreenSaver/XActivateScreenSaver \
-	addhst/addhst \
+	XAddHost/XAddHost \
 	addhsts/addhsts \
 	addtsvst/addtsvst \
 	ChangeSaveSet/ChangeSaveSet \
