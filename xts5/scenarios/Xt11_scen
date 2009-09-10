@@ -123,7 +123,7 @@
 	"VSW5TESTSUITE CASE XtCvtIntToColor 4"
 	/tset/Xt11/XtCvtIntToColor/XtCvtIntToColor
 	"VSW5TESTSUITE CASE XtCvtIntToDimension 3"
-	/tset/Xt11/tcindim/tcindim
+	/tset/Xt11/XtCvtIntToDimension/XtCvtIntToDimension
 	"VSW5TESTSUITE CASE XtCvtIntToFloat 3"
 	/tset/Xt11/tcinflt/tcinflt
 	"VSW5TESTSUITE CASE XtCvtIntToFont 3"

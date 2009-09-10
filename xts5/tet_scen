@@ -4261,7 +4261,7 @@ XtCvtIntToColor
 
 XtCvtIntToDimension
 	"VSW5TESTSUITE CASE XtCvtIntToDimension 3"
-	/tset/Xt11/tcindim/tcindim
+	/tset/Xt11/XtCvtIntToDimension/XtCvtIntToDimension
 
 XtCvtIntToFloat
 	"VSW5TESTSUITE CASE XtCvtIntToFloat 3"
