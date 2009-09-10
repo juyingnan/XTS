@@ -586,7 +586,7 @@ XGetDeviceMotionEvents
 
 XGetSelectedExtensionEvents
 	"VSW5TESTSUITE CASE XGetSelectedExtensionEvents 2"
-	/tset/XI/gtslctevnt/gtslctevnt
+	/tset/XI/XGetSelectedExtensionEvents/XGetSelectedExtensionEvents
 
 XListInputDevices
 	"VSW5TESTSUITE CASE XListInputDevices 2"

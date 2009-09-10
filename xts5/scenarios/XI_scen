@@ -98,7 +98,7 @@
 	"VSW5TESTSUITE CASE XGetDeviceMotionEvents 9"
 	/tset/XI/XGetDeviceMotionEvents/XGetDeviceMotionEvents
 	"VSW5TESTSUITE CASE XGetSelectedExtensionEvents 2"
-	/tset/XI/gtslctevnt/gtslctevnt
+	/tset/XI/XGetSelectedExtensionEvents/XGetSelectedExtensionEvents
 	"VSW5TESTSUITE CASE XListInputDevices 2"
 	/tset/XI/listdev/listdev
 	"VSW5TESTSUITE CASE Miscellaneous 6"
