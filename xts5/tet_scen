@@ -3750,7 +3750,7 @@ XtAppCreateShell
 
 XtVaAppCreateShell
 	"VSW5TESTSUITE CASE XtVaAppCreateShell 7"
-	/tset/Xt4/tvapcrshl/tvapcrshl
+	/tset/Xt4/XtVaAppCreateShell/XtVaAppCreateShell
 
 XtAppInitialize
 	"VSW5TESTSUITE CASE XtAppInitialize 29"
