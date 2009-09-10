@@ -29,7 +29,7 @@ tprogs = \
 	XDrawText/XDrawText \
 	XDrawText16/XDrawText16 \
 	XFillArc/XFillArc \
-	fllarcs/fllarcs \
+	XFillArcs/XFillArcs \
 	fllplygn/fllplygn \
 	fllrctngl/fllrctngl \
 	fllrctngls/fllrctngls \

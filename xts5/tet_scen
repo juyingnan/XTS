@@ -2964,7 +2964,7 @@ XFillArc
 
 XFillArcs
 	"VSW5TESTSUITE CASE XFillArcs 46"
-	/tset/Xlib9/fllarcs/fllarcs
+	/tset/Xlib9/XFillArcs/XFillArcs
 
 XFillPolygon
 	"VSW5TESTSUITE CASE XFillPolygon 55"

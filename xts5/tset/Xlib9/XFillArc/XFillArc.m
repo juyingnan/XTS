@@ -138,7 +138,7 @@ XVisualInfo	*vp;
 
 	CHECKPASS(nvinf());
 
->># Next 3 assertions used to be included by >>INCLUDE ../fllarcs/arc.inc
+>># Next 3 assertions used to be included by >>INCLUDE ../XFillArcs/arc.inc
 >># Consequently the wording was wrong - I hand included and corrected.
 >># DPJ Cater 17/3/91
 >>ASSERTION Good A
