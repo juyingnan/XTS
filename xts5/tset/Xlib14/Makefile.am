@@ -19,7 +19,7 @@ tprogs = \
 	XDisplayOfIM/XDisplayOfIM \
 	XExtentsOfFontSet/XExtentsOfFontSet \
 	XFilterEvent/XFilterEvent \
-	fntofnts/fntofnts \
+	XFontsOfFontSet/XFontsOfFontSet \
 	freefs/freefs \
 	gticvals/gticvals \
 	gtimvls/gtimvls \

@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE XFilterEvent 1"
 	/tset/Xlib14/XFilterEvent/XFilterEvent
 	"VSW5TESTSUITE CASE XFontsOfFontSet 1"
-	/tset/Xlib14/fntofnts/fntofnts
+	/tset/Xlib14/XFontsOfFontSet/XFontsOfFontSet
 	"VSW5TESTSUITE CASE XFreeFontSet 1"
 	/tset/Xlib14/freefs/freefs
 	"VSW5TESTSUITE CASE XGetICValues 3"

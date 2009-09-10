@@ -1200,7 +1200,7 @@ XFilterEvent
 
 XFontsOfFontSet
 	"VSW5TESTSUITE CASE XFontsOfFontSet 1"
-	/tset/Xlib14/fntofnts/fntofnts
+	/tset/Xlib14/XFontsOfFontSet/XFontsOfFontSet
 
 XFreeFontSet
 	"VSW5TESTSUITE CASE XFreeFontSet 1"
