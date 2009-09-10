@@ -128,6 +128,6 @@ tprogs = \
 	XUngrabPointer/XUngrabPointer \
 	XUngrabServer/XUngrabServer \
 	XUnmapSubwindows/XUnmapSubwindows \
-	UnmapWindow/UnmapWindow \
+	XUnmapWindow/XUnmapWindow \
 	XUninstallColormap/XUninstallColormap \
 	XWarpPointer/XWarpPointer

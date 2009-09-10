@@ -294,7 +294,7 @@
 	"VSW5TESTSUITE CASE UnmapSubwindows 3"
 	/tset/Xproto/XUnmapSubwindows/XUnmapSubwindows
 	"VSW5TESTSUITE CASE UnmapWindow 3"
-	/tset/Xproto/UnmapWindow/UnmapWindow
+	/tset/Xproto/XUnmapWindow/XUnmapWindow
 	"VSW5TESTSUITE CASE UninstallColormap 3"
 	/tset/Xproto/XUninstallColormap/XUninstallColormap
 	"VSW5TESTSUITE CASE WarpPointer 3"
