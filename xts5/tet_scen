@@ -1820,7 +1820,7 @@ XSubImage
 
 XSubtractRegion
 	"VSW5TESTSUITE CASE XSubtractRegion 1"
-	/tset/Xlib17/sbtrctrgn/sbtrctrgn
+	/tset/Xlib17/XSubtractRegion/XSubtractRegion
 
 XShrinkRegion
 	"VSW5TESTSUITE CASE XShrinkRegion 3"

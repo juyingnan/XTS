@@ -51,7 +51,7 @@ tprogs = \
 	XRefreshKeyboardMapping/XRefreshKeyboardMapping \
 	XRotateBuffers/XRotateBuffers \
 	XSubImage/XSubImage \
-	sbtrctrgn/sbtrctrgn \
+	XSubtractRegion/XSubtractRegion \
 	shrnkrgn/shrnkrgn \
 	strbffr/strbffr \
 	strbyts/strbyts \
