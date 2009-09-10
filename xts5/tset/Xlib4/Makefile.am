@@ -32,7 +32,7 @@ tprogs = \
 	XSetWindowBackgroundPixmap/XSetWindowBackgroundPixmap \
 	XSetWindowBorder/XSetWindowBorder \
 	XSetWindowBorderPixmap/XSetWindowBorderPixmap \
-	stwdwbrdrw/stwdwbrdrw \
+	XSetWindowBorderWidth/XSetWindowBorderWidth \
 	stwdwclrmp/stwdwclrmp \
 	undfncrsr/undfncrsr \
 	UnmapSubwindows/UnmapSubwindows \

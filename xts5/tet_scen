@@ -2406,7 +2406,7 @@ XSetWindowBorderPixmap
 
 XSetWindowBorderWidth
 	"VSW5TESTSUITE CASE XSetWindowBorderWidth 7"
-	/tset/Xlib4/stwdwbrdrw/stwdwbrdrw
+	/tset/Xlib4/XSetWindowBorderWidth/XSetWindowBorderWidth
 
 XSetWindowColormap
 	"VSW5TESTSUITE CASE XSetWindowColormap 4"
