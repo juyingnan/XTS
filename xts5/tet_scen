@@ -4173,7 +4173,7 @@ XtCvtStringToAtom
 
 XtCvtStringToBoolean
 	"VSW5TESTSUITE CASE XtCvtStringToBoolean 4"
-	/tset/Xt11/tcstboln/tcstboln
+	/tset/Xt11/XtCvtStringToBoolean/XtCvtStringToBoolean
 
 XtCvtStringToBool
 	"VSW5TESTSUITE CASE XtCvtStringToBool 4"

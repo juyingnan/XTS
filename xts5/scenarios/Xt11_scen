@@ -79,7 +79,7 @@
 	"VSW5TESTSUITE CASE XtCvtStringToAtom 4"
 	/tset/Xt11/XtCvtStringToAtom/XtCvtStringToAtom
 	"VSW5TESTSUITE CASE XtCvtStringToBoolean 4"
-	/tset/Xt11/tcstboln/tcstboln
+	/tset/Xt11/XtCvtStringToBoolean/XtCvtStringToBoolean
 	"VSW5TESTSUITE CASE XtCvtStringToBool 4"
 	/tset/Xt11/tcstbool/tcstbool
 	"VSW5TESTSUITE CASE XtCvtStringToCursor 5"
