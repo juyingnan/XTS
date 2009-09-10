@@ -4501,7 +4501,7 @@ XtReleaseGC
 
 XtAppSetSelectionTimeout
 	"VSW5TESTSUITE CASE XtAppSetSelectionTimeout 1"
-	/tset/Xt13/tapststmo/tapststmo
+	/tset/Xt13/XtAppSetSelectionTimeout/XtAppSetSelectionTimeout
 
 XtAppGetSelectionTimeout
 	"VSW5TESTSUITE CASE XtAppGetSelectionTimeout 2"
