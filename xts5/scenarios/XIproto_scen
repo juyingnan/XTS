@@ -66,7 +66,7 @@
 	"VSW5TESTSUITE CASE ChangeKeyboardDevice 4"
 	/tset/XIproto/ChangeKeyboardDevice/ChangeKeyboardDevice
 	"VSW5TESTSUITE CASE ChangePointerDevice 4"
-	/tset/XIproto/XChangePointerDevice/XChangePointerDevice
+	/tset/XIproto/ChangePointerDevice/ChangePointerDevice
 	"VSW5TESTSUITE CASE ChangeDeviceKeyMapping 3"
 	/tset/XIproto/ChangeDeviceKeyMapping/ChangeDeviceKeyMapping
 	"VSW5TESTSUITE CASE CloseDevice 3"
