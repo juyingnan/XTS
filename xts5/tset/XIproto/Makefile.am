@@ -24,7 +24,7 @@ tprogs = \
 	XGrabDevice/XGrabDevice \
 	XGrabDeviceButton/XGrabDeviceButton \
 	XGrabDeviceKey/XGrabDeviceKey \
-	gtbtnmppn/gtbtnmppn \
+	XGetDeviceButtonMapping/XGetDeviceButtonMapping \
 	gtdvctl/gtdvctl \
 	gtdvfcs/gtdvfcs \
 	gtdvmtnev/gtdvmtnev \

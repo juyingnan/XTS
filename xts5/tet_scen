@@ -570,7 +570,7 @@ XGrabDeviceKey
 
 XGetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XGetDeviceButtonMapping 5"
-	/tset/XI/gtbtnmppn/gtbtnmppn
+	/tset/XI/XGetDeviceButtonMapping/XGetDeviceButtonMapping
 
 XGetDeviceKeyMapping
 	"VSW5TESTSUITE CASE XGetDeviceKeyMapping 10"
