@@ -1562,7 +1562,7 @@ XrmPutFileDatabase
 
 XrmPutLineResource
 	"VSW5TESTSUITE CASE XrmPutLineResource 9"
-	/tset/Xlib16/rmptlnrsrc/rmptlnrsrc
+	/tset/Xlib16/XrmPutLineResource/XrmPutLineResource
 
 XrmPutResource
 	"VSW5TESTSUITE CASE XrmPutResource 4"

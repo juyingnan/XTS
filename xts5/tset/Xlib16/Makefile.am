@@ -28,7 +28,7 @@ tprogs = \
 	XrmParseCommand/XrmParseCommand \
 	XrmPermStringToQuark/XrmPermStringToQuark \
 	XrmPutFileDatabase/XrmPutFileDatabase \
-	rmptlnrsrc/rmptlnrsrc \
+	XrmPutLineResource/XrmPutLineResource \
 	rmptrsrc/rmptrsrc \
 	rmptstrrsr/rmptstrrsr \
 	rmqgtrsrc/rmqgtrsrc \

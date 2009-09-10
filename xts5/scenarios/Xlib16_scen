@@ -78,7 +78,7 @@
 	"VSW5TESTSUITE CASE XrmPutFileDatabase 3"
 	/tset/Xlib16/XrmPutFileDatabase/XrmPutFileDatabase
 	"VSW5TESTSUITE CASE XrmPutLineResource 9"
-	/tset/Xlib16/rmptlnrsrc/rmptlnrsrc
+	/tset/Xlib16/XrmPutLineResource/XrmPutLineResource
 	"VSW5TESTSUITE CASE XrmPutResource 4"
 	/tset/Xlib16/rmptrsrc/rmptrsrc
 	"VSW5TESTSUITE CASE XrmPutStringResource 4"
