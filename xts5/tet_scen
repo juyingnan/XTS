@@ -2627,7 +2627,7 @@ XcmsCIELabQueryMaxL
 
 XcmsConversionProc
 	"VSW5TESTSUITE CASE XcmsConversionProc 9"
-	/tset/Xlib7/cmscproc/cmscproc
+	/tset/Xlib7/XcmsConversionProc/XcmsConversionProc
 
 XcmsConversionProc2
 	"VSW5TESTSUITE CASE XcmsConversionProc 4"

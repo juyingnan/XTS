@@ -23,7 +23,7 @@ tprogs = \
 	XcmsCIELabQueryMaxLC/XcmsCIELabQueryMaxLC \
 	XcmsCIELabQueryMaxC/XcmsCIELabQueryMaxC \
 	XcmsCIELabQueryMaxL/XcmsCIELabQueryMaxL \
-	cmscproc/cmscproc \
+	XcmsConversionProc/XcmsConversionProc \
 	cmscprocd/cmscprocd \
 	cmscrcc/cmscrcc \
 	cmsdcc/cmsdcc \
