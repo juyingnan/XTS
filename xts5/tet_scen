@@ -1558,7 +1558,7 @@ XrmParseCommand
 
 XrmPutFileDatabase
 	"VSW5TESTSUITE CASE XrmPutFileDatabase 3"
-	/tset/Xlib16/rmptfldtbs/rmptfldtbs
+	/tset/Xlib16/XrmPutFileDatabase/XrmPutFileDatabase
 
 XrmPutLineResource
 	"VSW5TESTSUITE CASE XrmPutLineResource 9"

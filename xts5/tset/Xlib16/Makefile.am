@@ -27,7 +27,7 @@ tprogs = \
 	XrmMergeDatabases/XrmMergeDatabases \
 	XrmParseCommand/XrmParseCommand \
 	XrmPermStringToQuark/XrmPermStringToQuark \
-	rmptfldtbs/rmptfldtbs \
+	XrmPutFileDatabase/XrmPutFileDatabase \
 	rmptlnrsrc/rmptlnrsrc \
 	rmptrsrc/rmptrsrc \
 	rmptstrrsr/rmptstrrsr \
