@@ -164,7 +164,7 @@
 	"VSW5TESTSUITE CASE XcmsVisualOfCCC 1"
 	/tset/Xlib7/XcmsVisualOfCCC/XcmsVisualOfCCC
 	"VSW5TESTSUITE CASE XcmsSetWhiteAdjustProc 3"
-	/tset/Xlib7/cmswapr/cmswapr
+	/tset/Xlib7/XcmsSetWhiteAdjustProc/XcmsSetWhiteAdjustProc
 	"VSW5TESTSUITE CASE XcmsScreenWhitePointOfCCC 1"
 	/tset/Xlib7/cmswpcc/cmswpcc
 	"VSW5TESTSUITE CASE XcmsClientWhitePointOfCCC 1"

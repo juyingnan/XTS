@@ -53,7 +53,7 @@ tprogs = \
 	XcmsTekHVCQueryMaxVC/XcmsTekHVCQueryMaxVC \
 	XcmsTekHVCQueryMaxVSamples/XcmsTekHVCQueryMaxVSamples \
 	XcmsVisualOfCCC/XcmsVisualOfCCC \
-	cmswapr/cmswapr \
+	XcmsSetWhiteAdjustProc/XcmsSetWhiteAdjustProc \
 	cmswpcc/cmswpcc \
 	cmswpoc/cmswpoc \
 	cmswpt/cmswpt \
