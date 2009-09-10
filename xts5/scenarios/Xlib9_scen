@@ -142,7 +142,7 @@
 	"VSW5TESTSUITE CASE XTextExtents 10"
 	/tset/Xlib9/XTextExtents/XTextExtents
 	"VSW5TESTSUITE CASE XTextWidth 1"
-	/tset/Xlib9/txtwdth/txtwdth
+	/tset/Xlib9/XTextWidth/XTextWidth
 	"VSW5TESTSUITE CASE XTextWidth16 2"
 	/tset/Xlib9/txtwdth16/txtwdth16
 	"VSW5TESTSUITE CASE XUnloadFont 3"

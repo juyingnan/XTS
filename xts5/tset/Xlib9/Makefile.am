@@ -52,6 +52,6 @@ tprogs = \
 	XSetFontPath/XSetFontPath \
 	XTextExtents16/XTextExtents16 \
 	XTextExtents/XTextExtents \
-	txtwdth/txtwdth \
+	XTextWidth/XTextWidth \
 	txtwdth16/txtwdth16 \
 	unldfnt/unldfnt
