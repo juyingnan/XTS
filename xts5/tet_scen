@@ -4114,7 +4114,7 @@ XtRemoveCallbacks
 
 XtRemoveAllCallbacks
 	"VSW5TESTSUITE CASE XtRemoveAllCallbacks 2"
-	/tset/Xt10/trmalcbks/trmalcbks
+	/tset/Xt10/XtRemoveAllCallbacks/XtRemoveAllCallbacks
 
 XtCallCallbacks
 	"VSW5TESTSUITE CASE XtCallCallbacks 1"
