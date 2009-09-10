@@ -132,7 +132,7 @@
 	"VSW5TESTSUITE CASE XcmsQueryColors 3"
 	/tset/Xlib7/XcmsQueryColors/XcmsQueryColors
 	"VSW5TESTSUITE CASE XcmsQueryGreen 1"
-	/tset/Xlib7/cmsqgr/cmsqgr
+	/tset/Xlib7/XcmsQueryGreen/XcmsQueryGreen
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxC 1"
 	/tset/Xlib7/cmsqmc/cmsqmc
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMinL 1"

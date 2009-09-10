@@ -2683,7 +2683,7 @@ XcmsQueryColors
 
 XcmsQueryGreen
 	"VSW5TESTSUITE CASE XcmsQueryGreen 1"
-	/tset/Xlib7/cmsqgr/cmsqgr
+	/tset/Xlib7/XcmsQueryGreen/XcmsQueryGreen
 
 XcmsCIELuvQueryMaxC
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxC 1"
