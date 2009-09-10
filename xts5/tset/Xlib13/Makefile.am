@@ -40,4 +40,4 @@ tprogs = \
 	XUngrabKey/XUngrabKey \
 	XUngrabKeyboard/XUngrabKeyboard \
 	XUngrabPointer/XUngrabPointer \
-	WarpPointer/WarpPointer
+	XWarpPointer/XWarpPointer

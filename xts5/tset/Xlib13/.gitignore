@@ -29,4 +29,4 @@ XUngrabButton/XUngrabButton
 XUngrabKey/XUngrabKey
 XUngrabKeyboard/XUngrabKeyboard
 XUngrabPointer/XUngrabPointer
-WarpPointer/WarpPointer
+XWarpPointer/XWarpPointer

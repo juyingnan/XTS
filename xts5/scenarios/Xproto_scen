@@ -298,4 +298,4 @@
 	"VSW5TESTSUITE CASE UninstallColormap 3"
 	/tset/Xproto/XUninstallColormap/XUninstallColormap
 	"VSW5TESTSUITE CASE WarpPointer 3"
-	/tset/Xproto/WarpPointer/WarpPointer
+	/tset/Xproto/XWarpPointer/XWarpPointer

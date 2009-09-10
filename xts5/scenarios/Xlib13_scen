@@ -118,4 +118,4 @@
 	"VSW5TESTSUITE CASE XUngrabPointer 3"
 	/tset/Xlib13/XUngrabPointer/XUngrabPointer
 	"VSW5TESTSUITE CASE XWarpPointer 9"
-	/tset/Xlib13/WarpPointer/WarpPointer
+	/tset/Xlib13/XWarpPointer/XWarpPointer

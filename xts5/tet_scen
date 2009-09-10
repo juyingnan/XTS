@@ -1158,7 +1158,7 @@ XUngrabPointer
 
 XWarpPointer
 	"VSW5TESTSUITE CASE XWarpPointer 9"
-	/tset/Xlib13/WarpPointer/WarpPointer
+	/tset/Xlib13/XWarpPointer/XWarpPointer
 
 # Discrete tests for Xlib Chapter 14-Locales and Internationalized Text Functions
 
@@ -3590,7 +3590,7 @@ pUninstallColormap
 
 pWarpPointer
 	"VSW5TESTSUITE CASE WarpPointer 3"
-	/tset/Xproto/WarpPointer/WarpPointer
+	/tset/Xproto/XWarpPointer/XWarpPointer
 
 #Discrete tests for Xt Chapter 3
 
