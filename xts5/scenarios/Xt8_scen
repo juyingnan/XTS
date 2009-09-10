@@ -67,7 +67,7 @@
 	"VSW5TESTSUITE CASE XtResizeWidget 4"
 	/tset/Xt8/trszewdgt/trszewdgt
 	"VSW5TESTSUITE CASE XtConfigureWidget 5"
-	/tset/Xt8/tconwidgt/tconwidgt
+	/tset/Xt8/XtConfigureWidget/XtConfigureWidget
 	"VSW5TESTSUITE CASE XtResizeWindow 2"
 	/tset/Xt8/trszwindw/trszwindw
 	"VSW5TESTSUITE CASE XtQueryGeometry 6"

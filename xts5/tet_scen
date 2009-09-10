@@ -3950,7 +3950,7 @@ XtResizeWidget
 
 XtConfigureWidget
 	"VSW5TESTSUITE CASE XtConfigureWidget 5"
-	/tset/Xt8/tconwidgt/tconwidgt
+	/tset/Xt8/XtConfigureWidget/XtConfigureWidget
 
 XtResizeWindow
 	"VSW5TESTSUITE CASE XtResizeWindow 2"
