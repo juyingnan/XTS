@@ -102,7 +102,7 @@
 	"VSW5TESTSUITE CASE XtVaAppInitialize 29"
 	/tset/Xt4/tvapintlz/tvapintlz
 	"VSW5TESTSUITE CASE XtRealizeWidget 11"
-	/tset/Xt4/trealwdgt/trealwdgt
+	/tset/Xt4/XtRealizeWidget/XtRealizeWidget
 	"VSW5TESTSUITE CASE XtIsRealized 3"
 	/tset/Xt4/XtIsRealized/XtIsRealized
 	"VSW5TESTSUITE CASE XtCreateWindow 1"

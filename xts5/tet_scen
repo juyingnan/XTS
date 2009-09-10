@@ -3762,7 +3762,7 @@ XtVaAppInitialize
 
 XtRealizeWidget
 	"VSW5TESTSUITE CASE XtRealizeWidget 11"
-	/tset/Xt4/trealwdgt/trealwdgt
+	/tset/Xt4/XtRealizeWidget/XtRealizeWidget
 
 XtIsRealized
 	"VSW5TESTSUITE CASE XtIsRealized 3"
