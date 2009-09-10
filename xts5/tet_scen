@@ -4541,7 +4541,7 @@ XtOwnSelectionIncremental
 
 XtLastTimestampProcessed
 	"VSW5TESTSUITE CASE XtLastTimestampProcessed 2"
-	/tset/Xt13/tltmsproc/tltmsproc
+	/tset/Xt13/XtLastTimestampProcessed/XtLastTimestampProcessed
 
 XtAddExposureToRegion
 	"VSW5TESTSUITE CASE XtAddExposureToRegion 3"

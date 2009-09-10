@@ -101,7 +101,7 @@
 	"VSW5TESTSUITE CASE XtOwnSelectionIncremental 10"
 	/tset/Xt13/townselin/townselin
 	"VSW5TESTSUITE CASE XtLastTimestampProcessed 2"
-	/tset/Xt13/tltmsproc/tltmsproc
+	/tset/Xt13/XtLastTimestampProcessed/XtLastTimestampProcessed
 	"VSW5TESTSUITE CASE XtAddExposureToRegion 3"
 	/tset/Xt13/XtAddExposureToRegion/XtAddExposureToRegion
 	"VSW5TESTSUITE CASE XtTranslateCoords 1"
