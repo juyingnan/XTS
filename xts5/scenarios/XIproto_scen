@@ -90,7 +90,7 @@
 	"VSW5TESTSUITE CASE GetDeviceControl 3"
 	/tset/XIproto/GetDeviceControl/GetDeviceControl
 	"VSW5TESTSUITE CASE GetDeviceFocus 3"
-	/tset/XIproto/gtdvfcs/gtdvfcs
+	/tset/XIproto/GetDeviceFocus/GetDeviceFocus
 	"VSW5TESTSUITE CASE GetDeviceMotionEvents 3"
 	/tset/XIproto/XGetDeviceMotionEvents/XGetDeviceMotionEvents
 	"VSW5TESTSUITE CASE GetDeviceDontPropagateList 3"
