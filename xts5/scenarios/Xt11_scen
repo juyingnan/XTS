@@ -107,7 +107,7 @@
 	"VSW5TESTSUITE CASE XtCvtStringToShort 4"
 	/tset/Xt11/XtCvtStringToShort/XtCvtStringToShort
 	"VSW5TESTSUITE CASE XtCvtStringToTranslationTable 4"
-	/tset/Xt11/tcstttbl/tcstttbl
+	/tset/Xt11/XtCvtStringToTranslationTable/XtCvtStringToTranslationTable
 	"VSW5TESTSUITE CASE XtCvtStringToPosition 4"
 	/tset/Xt11/XtCvtStringToPosition/XtCvtStringToPosition
 	"VSW5TESTSUITE CASE XtCvtStringToUnsignedChar 4"

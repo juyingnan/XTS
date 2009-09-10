@@ -4229,7 +4229,7 @@ XtCvtStringToShort
 
 XtCvtStringToTranslationTable
 	"VSW5TESTSUITE CASE XtCvtStringToTranslationTable 4"
-	/tset/Xt11/tcstttbl/tcstttbl
+	/tset/Xt11/XtCvtStringToTranslationTable/XtCvtStringToTranslationTable
 
 XtCvtStringToPosition
 	"VSW5TESTSUITE CASE XtCvtStringToPosition 4"
