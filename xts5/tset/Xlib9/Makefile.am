@@ -18,7 +18,7 @@ tprogs = \
 	XDrawImageString16/XDrawImageString16 \
 	XDrawImageString/XDrawImageString \
 	XDrawLine/XDrawLine \
-	drwlns/drwlns \
+	XDrawLines/XDrawLines \
 	drwpnt/drwpnt \
 	drwpnts/drwpnts \
 	drwrctngl/drwrctngl \

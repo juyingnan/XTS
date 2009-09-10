@@ -2920,7 +2920,7 @@ XDrawLine
 
 XDrawLines
 	"VSW5TESTSUITE CASE XDrawLines 104"
-	/tset/Xlib9/drwlns/drwlns
+	/tset/Xlib9/XDrawLines/XDrawLines
 
 XDrawPoint
 	"VSW5TESTSUITE CASE XDrawPoint 34"
