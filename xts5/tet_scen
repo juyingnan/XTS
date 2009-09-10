@@ -4012,7 +4012,7 @@ XtUngrabButton
 
 XtGrabPointer
 	"VSW5TESTSUITE CASE XtGrabPointer 2"
-	/tset/Xt9/tgrbpoint/tgrbpoint
+	/tset/Xt9/XtGrabPointer/XtGrabPointer
 
 XtUngrabPointer
 	"VSW5TESTSUITE CASE XtUngrabPointer 1"

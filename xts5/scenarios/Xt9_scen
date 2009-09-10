@@ -83,7 +83,7 @@
 	"VSW5TESTSUITE CASE XtUngrabButton 2"
 	/tset/Xt9/tunbutton/tunbutton
 	"VSW5TESTSUITE CASE XtGrabPointer 2"
-	/tset/Xt9/tgrbpoint/tgrbpoint
+	/tset/Xt9/XtGrabPointer/XtGrabPointer
 	"VSW5TESTSUITE CASE XtUngrabPointer 1"
 	/tset/Xt9/tunpointr/tunpointr
 	"VSW5TESTSUITE CASE XtSetKeyboardFocus 17"
