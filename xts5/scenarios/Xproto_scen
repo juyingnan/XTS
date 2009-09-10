@@ -180,7 +180,7 @@
 	"VSW5TESTSUITE CASE ImageText16 3"
 	/tset/Xproto/ImageText16/ImageText16
 	"VSW5TESTSUITE CASE ImageText8 3"
-	/tset/Xproto/imgtxt8/imgtxt8
+	/tset/Xproto/ImageText8/ImageText8
 	"VSW5TESTSUITE CASE InstallColormap 3"
 	/tset/Xproto/instllclrm/instllclrm
 	"VSW5TESTSUITE CASE InternAtom 3"

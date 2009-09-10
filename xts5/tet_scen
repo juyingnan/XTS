@@ -3354,7 +3354,7 @@ pImageText16
 
 pImageText8
 	"VSW5TESTSUITE CASE ImageText8 3"
-	/tset/Xproto/imgtxt8/imgtxt8
+	/tset/Xproto/ImageText8/ImageText8
 
 pInstallColormap
 	"VSW5TESTSUITE CASE InstallColormap 3"

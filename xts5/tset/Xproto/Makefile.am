@@ -71,7 +71,7 @@ tprogs = \
 	GetSelectionOwner/GetSelectionOwner \
 	GetWindowAttributes/GetWindowAttributes \
 	ImageText16/ImageText16 \
-	imgtxt8/imgtxt8 \
+	ImageText8/ImageText8 \
 	instllclrm/instllclrm \
 	intrnatm/intrnatm \
 	kllclnt/kllclnt \
