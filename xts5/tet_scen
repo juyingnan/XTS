@@ -3946,7 +3946,7 @@ XtMoveWidget
 
 XtResizeWidget
 	"VSW5TESTSUITE CASE XtResizeWidget 4"
-	/tset/Xt8/trszewdgt/trszewdgt
+	/tset/Xt8/XtResizeWidget/XtResizeWidget
 
 XtConfigureWidget
 	"VSW5TESTSUITE CASE XtConfigureWidget 5"
