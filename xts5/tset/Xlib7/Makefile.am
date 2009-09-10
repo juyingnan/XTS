@@ -16,7 +16,7 @@ tprogs = \
 	XAllocNamedColor/XAllocNamedColor \
 	XcmsAllocColor/XcmsAllocColor \
 	XcmsAddColorSpace/XcmsAddColorSpace \
-	cmsadfs/cmsadfs \
+	XcmsAddFunctionSet/XcmsAddFunctionSet \
 	cmsanc/cmsanc \
 	cmsccoc/cmsccoc \
 	cmsccol/cmsccol \

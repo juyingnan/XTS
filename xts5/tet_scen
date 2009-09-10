@@ -2599,7 +2599,7 @@ XcmsAddColorSpace
 
 XcmsAddFunctionSet
 	"VSW5TESTSUITE CASE XcmsAddFunctionSet 1"
-	/tset/Xlib7/cmsadfs/cmsadfs
+	/tset/Xlib7/XcmsAddFunctionSet/XcmsAddFunctionSet
 
 XcmsAllocNamedColor
 	"VSW5TESTSUITE CASE XcmsAllocNamedColor 2"
