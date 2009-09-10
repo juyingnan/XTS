@@ -26,7 +26,7 @@ tprogs = \
 	GrabPointer/GrabPointer \
 	GetInputFocus/GetInputFocus \
 	GetKeyboardControl/GetKeyboardControl \
-	gtkybrdmpp/gtkybrdmpp \
+	GetKeyboardMapping/GetKeyboardMapping \
 	gtmdfrmppn/gtmdfrmppn \
 	gtpntrcntr/gtpntrcntr \
 	gtpntrmppn/gtpntrmppn \

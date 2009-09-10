@@ -1102,7 +1102,7 @@ XGetKeyboardControl
 
 XGetKeyboardMapping
 	"VSW5TESTSUITE CASE XGetKeyboardMapping 6"
-	/tset/Xlib13/gtkybrdmpp/gtkybrdmpp
+	/tset/Xlib13/GetKeyboardMapping/GetKeyboardMapping
 
 XGetModifierMapping
 	"VSW5TESTSUITE CASE XGetModifierMapping 2"
@@ -3314,7 +3314,7 @@ pGetKeyboardControl
 
 pGetKeyboardMapping
 	"VSW5TESTSUITE CASE GetKeyboardMapping 3"
-	/tset/Xproto/gtkybrdmpp/gtkybrdmpp
+	/tset/Xproto/GetKeyboardMapping/GetKeyboardMapping
 
 pGetModifierMapping
 	"VSW5TESTSUITE CASE GetModifierMapping 3"

@@ -160,7 +160,7 @@
 	"VSW5TESTSUITE CASE GetKeyboardControl 3"
 	/tset/Xproto/GetKeyboardControl/GetKeyboardControl
 	"VSW5TESTSUITE CASE GetKeyboardMapping 3"
-	/tset/Xproto/gtkybrdmpp/gtkybrdmpp
+	/tset/Xproto/GetKeyboardMapping/GetKeyboardMapping
 	"VSW5TESTSUITE CASE GetModifierMapping 3"
 	/tset/Xproto/gtmdfrmppn/gtmdfrmppn
 	"VSW5TESTSUITE CASE GetMotionEvents 3"

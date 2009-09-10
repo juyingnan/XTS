@@ -61,7 +61,7 @@ tprogs = \
 	GetImage/GetImage \
 	GetInputFocus/GetInputFocus \
 	GetKeyboardControl/GetKeyboardControl \
-	gtkybrdmpp/gtkybrdmpp \
+	GetKeyboardMapping/GetKeyboardMapping \
 	gtmdfrmppn/gtmdfrmppn \
 	gtmtnevnts/gtmtnevnts \
 	gtpntrcntr/gtpntrcntr \
