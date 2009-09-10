@@ -13,7 +13,7 @@ tprogs = \
 	XConfigureWindow/XConfigureWindow \
 	XCirculateSubwindows/XCirculateSubwindows \
 	XCirculateSubwindowsDown/XCirculateSubwindowsDown \
-	crcltsbwsu/crcltsbwsu \
+	XCirculateSubwindowsUp/XCirculateSubwindowsUp \
 	crtsmplwdw/crtsmplwdw \
 	CreateWindow/CreateWindow \
 	dfncrsr/dfncrsr \

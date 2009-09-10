@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE XCirculateSubwindowsDown 5"
 	/tset/Xlib4/XCirculateSubwindowsDown/XCirculateSubwindowsDown
 	"VSW5TESTSUITE CASE XCirculateSubwindowsUp 5"
-	/tset/Xlib4/crcltsbwsu/crcltsbwsu
+	/tset/Xlib4/XCirculateSubwindowsUp/XCirculateSubwindowsUp
 	"VSW5TESTSUITE CASE XCreateSimpleWindow 12"
 	/tset/Xlib4/crtsmplwdw/crtsmplwdw
 	"VSW5TESTSUITE CASE XCreateWindow 49"
