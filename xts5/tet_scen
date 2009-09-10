@@ -4723,7 +4723,7 @@ XtErrorMsg
 
 XtSetWarningHandler
 	"VSW5TESTSUITE CASE XtSetWarningHandler 1"
-	/tset/XtC/tstwhndlr/tstwhndlr
+	/tset/XtC/XtSetWarningHandler/XtSetWarningHandler
 
 XtSetWarningMsgHandler
 	"VSW5TESTSUITE CASE XtSetWarningMsgHandler 1"
