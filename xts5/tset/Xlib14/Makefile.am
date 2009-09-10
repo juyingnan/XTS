@@ -53,5 +53,5 @@ tprogs = \
 	XwcTextEscapement/XwcTextEscapement \
 	XwcTextListToTextProperty/XwcTextListToTextProperty \
 	XwcTextPerCharExtents/XwcTextPerCharExtents \
-	wctpttl/wctpttl \
+	XwcTextPropertyToTextList/XwcTextPropertyToTextList \
 	wctxtex/wctxtex
