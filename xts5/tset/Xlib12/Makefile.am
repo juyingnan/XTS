@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	chckifevnt/chckifevnt \
+	XCheckIfEvent/XCheckIfEvent \
 	chckmskevn/chckmskevn \
 	chcktypdev/chcktypdev \
 	chcktypdwd/chcktypdwd \

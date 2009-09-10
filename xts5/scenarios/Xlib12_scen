@@ -56,7 +56,7 @@
 #
 
 	"VSW5TESTSUITE CASE XCheckIfEvent 6"
-	/tset/Xlib12/chckifevnt/chckifevnt
+	/tset/Xlib12/XCheckIfEvent/XCheckIfEvent
 	"VSW5TESTSUITE CASE XCheckMaskEvent 6"
 	/tset/Xlib12/chckmskevn/chckmskevn
 	"VSW5TESTSUITE CASE XCheckTypedEvent 6"

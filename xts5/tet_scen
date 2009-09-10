@@ -923,7 +923,7 @@ VisibilityNotify
 
 XCheckIfEvent
 	"VSW5TESTSUITE CASE XCheckIfEvent 6"
-	/tset/Xlib12/chckifevnt/chckifevnt
+	/tset/Xlib12/XCheckIfEvent/XCheckIfEvent
 
 XCheckMaskEvent
 	"VSW5TESTSUITE CASE XCheckMaskEvent 6"
