@@ -2643,7 +2643,7 @@ XcmsDefaultCCC
 
 XcmsDisplayOfCCC
 	"VSW5TESTSUITE CASE XcmsDisplayOfCCC 1"
-	/tset/Xlib7/cmsdocc/cmsdocc
+	/tset/Xlib7/XcmsDisplayOfCCC/XcmsDisplayOfCCC
 
 XcmsFreeCCC
 	"VSW5TESTSUITE CASE XcmsFreeCCC 1"
