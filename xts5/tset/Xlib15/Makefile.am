@@ -13,7 +13,7 @@ defstr_defstr_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 tprogs = \
 	XAllocClassHint/XAllocClassHint \
 	XAllocIconSize/XAllocIconSize \
-	allcstndrd/allcstndrd \
+	XAllocStandardColormap/XAllocStandardColormap \
 	allcszhnts/allcszhnts \
 	allcwmhnts/allcwmhnts \
 	defstr/defstr \

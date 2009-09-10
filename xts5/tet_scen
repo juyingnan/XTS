@@ -1355,7 +1355,7 @@ XAllocIconSize
 
 XAllocStandardColormap
 	"VSW5TESTSUITE CASE XAllocStandardColormap 2"
-	/tset/Xlib15/allcstndrd/allcstndrd
+	/tset/Xlib15/XAllocStandardColormap/XAllocStandardColormap
 
 XAllocSizeHints
 	"VSW5TESTSUITE CASE XAllocSizeHints 2"
