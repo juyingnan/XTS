@@ -526,7 +526,7 @@ XChangePointerDevice
 
 XChangeDeviceKeyMapping
 	"VSW5TESTSUITE CASE XChangeDeviceKeyMapping 7"
-	/tset/XI/XChangeDeviceKeyMapping/XChangeDeviceKeyMapping
+	/tset/XI/ChangeDeviceKeyMapping/ChangeDeviceKeyMapping
 
 XCloseDevice
 	"VSW5TESTSUITE CASE XCloseDevice 7"

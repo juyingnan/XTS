@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE XChangePointerDevice 10"
 	/tset/XI/XChangePointerDevice/XChangePointerDevice
 	"VSW5TESTSUITE CASE XChangeDeviceKeyMapping 7"
-	/tset/XI/XChangeDeviceKeyMapping/XChangeDeviceKeyMapping
+	/tset/XI/ChangeDeviceKeyMapping/ChangeDeviceKeyMapping
 	"VSW5TESTSUITE CASE XCloseDevice 7"
 	/tset/XI/XCloseDevice/XCloseDevice
 	"VSW5TESTSUITE CASE XDeviceBell 6"

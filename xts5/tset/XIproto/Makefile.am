@@ -15,7 +15,7 @@ tprogs = \
 	XChangeFeedbackControl/XChangeFeedbackControl \
 	XChangeKeyboardDevice/XChangeKeyboardDevice \
 	XChangePointerDevice/XChangePointerDevice \
-	XChangeDeviceKeyMapping/XChangeDeviceKeyMapping \
+	ChangeDeviceKeyMapping/ChangeDeviceKeyMapping \
 	XCloseDevice/XCloseDevice \
 	XDeviceBell/XDeviceBell \
 	GetDeviceModifierMapping/GetDeviceModifierMapping \
