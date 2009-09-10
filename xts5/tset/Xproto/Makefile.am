@@ -52,7 +52,7 @@ tprogs = \
 	FreePixmap/FreePixmap \
 	GrabButton/GrabButton \
 	GrabKey/GrabKey \
-	grbkybrd/grbkybrd \
+	GrabKeyboard/GrabKeyboard \
 	grbpntr/grbpntr \
 	grbsrvr/grbsrvr \
 	gtatmnm/gtatmnm \

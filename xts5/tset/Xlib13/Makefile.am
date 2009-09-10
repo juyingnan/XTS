@@ -22,7 +22,7 @@ tprogs = \
 	frmdfrmp/frmdfrmp \
 	GrabButton/GrabButton \
 	GrabKey/GrabKey \
-	grbkybrd/grbkybrd \
+	GrabKeyboard/GrabKeyboard \
 	grbpntr/grbpntr \
 	gtinptfcs/gtinptfcs \
 	gtkybrdcnt/gtkybrdcnt \
