@@ -63,7 +63,7 @@ tprogs = \
 	XFreeColors/XFreeColors \
 	XLookupColor/XLookupColor \
 	XParseColor/XParseColor \
-	qryclr/qryclr \
+	XQueryColor/XQueryColor \
 	QueryColors/QueryColors \
 	strclr/strclr \
 	StoreColors/StoreColors \

@@ -2571,7 +2571,7 @@ XParseColor
 
 XQueryColor
 	"VSW5TESTSUITE CASE XQueryColor 3"
-	/tset/Xlib7/qryclr/qryclr
+	/tset/Xlib7/XQueryColor/XQueryColor
 
 XQueryColors
 	"VSW5TESTSUITE CASE XQueryColors 3"

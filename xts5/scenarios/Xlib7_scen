@@ -76,7 +76,7 @@
 	"VSW5TESTSUITE CASE XParseColor 10"
 	/tset/Xlib7/XParseColor/XParseColor
 	"VSW5TESTSUITE CASE XQueryColor 3"
-	/tset/Xlib7/qryclr/qryclr
+	/tset/Xlib7/XQueryColor/XQueryColor
 	"VSW5TESTSUITE CASE XQueryColors 3"
 	/tset/Xlib7/QueryColors/QueryColors
 	"VSW5TESTSUITE CASE XStoreColor 8"
