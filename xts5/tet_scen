@@ -714,7 +714,7 @@ XChangeSaveSet
 
 XDisableAccessControl
 	"VSW5TESTSUITE CASE XDisableAccessControl 2"
-	/tset/Xlib10/dsblaccssc/dsblaccssc
+	/tset/Xlib10/XDisableAccessControl/XDisableAccessControl
 
 XEnableAccessControl
 	"VSW5TESTSUITE CASE XEnableAccessControl 2"

@@ -66,7 +66,7 @@
 	"VSW5TESTSUITE CASE XChangeSaveSet 5"
 	/tset/Xlib10/XChangeSaveSet/XChangeSaveSet
 	"VSW5TESTSUITE CASE XDisableAccessControl 2"
-	/tset/Xlib10/dsblaccssc/dsblaccssc
+	/tset/Xlib10/XDisableAccessControl/XDisableAccessControl
 	"VSW5TESTSUITE CASE XEnableAccessControl 2"
 	/tset/Xlib10/enblaccssc/enblaccssc
 	"VSW5TESTSUITE CASE XForceScreenSaver 3"

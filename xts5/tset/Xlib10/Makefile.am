@@ -14,7 +14,7 @@ tprogs = \
 	XAddHosts/XAddHosts \
 	XAddToSaveSet/XAddToSaveSet \
 	XChangeSaveSet/XChangeSaveSet \
-	dsblaccssc/dsblaccssc \
+	XDisableAccessControl/XDisableAccessControl \
 	enblaccssc/enblaccssc \
 	ForceScreenSaver/ForceScreenSaver \
 	GrabServer/GrabServer \
