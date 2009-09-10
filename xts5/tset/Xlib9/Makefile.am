@@ -33,7 +33,7 @@ tprogs = \
 	XFillPolygon/XFillPolygon \
 	XFillRectangle/XFillRectangle \
 	XFillRectangles/XFillRectangles \
-	frfnt/frfnt \
+	XFreeFont/XFreeFont \
 	frfntinf/frfntinf \
 	frfntnms/frfntnms \
 	frfntpth/frfntpth \

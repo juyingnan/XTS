@@ -104,7 +104,7 @@
 	"VSW5TESTSUITE CASE XFillRectangles 44"
 	/tset/Xlib9/XFillRectangles/XFillRectangles
 	"VSW5TESTSUITE CASE XFreeFont 3"
-	/tset/Xlib9/frfnt/frfnt
+	/tset/Xlib9/XFreeFont/XFreeFont
 	"VSW5TESTSUITE CASE XFreeFontInfo 2"
 	/tset/Xlib9/frfntinf/frfntinf
 	"VSW5TESTSUITE CASE XFreeFontNames 1"

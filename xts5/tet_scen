@@ -2980,7 +2980,7 @@ XFillRectangles
 
 XFreeFont
 	"VSW5TESTSUITE CASE XFreeFont 3"
-	/tset/Xlib9/frfnt/frfnt
+	/tset/Xlib9/XFreeFont/XFreeFont
 
 XFreeFontInfo
 	"VSW5TESTSUITE CASE XFreeFontInfo 2"
