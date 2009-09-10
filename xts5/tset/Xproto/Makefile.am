@@ -42,7 +42,7 @@ tprogs = \
 	XCreateWindow/XCreateWindow \
 	DeleteProperty/DeleteProperty \
 	XDestroySubwindows/XDestroySubwindows \
-	DestroyWindow/DestroyWindow \
+	XDestroyWindow/XDestroyWindow \
 	FillPoly/FillPoly \
 	FreeColormap/FreeColormap \
 	FreeColors/FreeColors \

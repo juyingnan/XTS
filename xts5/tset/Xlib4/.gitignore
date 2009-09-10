@@ -12,7 +12,7 @@ crtwdw/mcassert.tmc.2529
 crtwdw/mcstrategy.tmc.2529
 dfncrsr/dfncrsr
 XDestroySubwindows/XDestroySubwindows
-DestroyWindow/DestroyWindow
+XDestroyWindow/XDestroyWindow
 lwrwdw/lwrwdw
 mprsd/mprsd
 MapSubwindows/MapSubwindows

@@ -2350,7 +2350,7 @@ XDestroySubwindows
 
 XDestroyWindow
 	"VSW5TESTSUITE CASE XDestroyWindow 6"
-	/tset/Xlib4/DestroyWindow/DestroyWindow
+	/tset/Xlib4/XDestroyWindow/XDestroyWindow
 
 XLowerWindow
 	"VSW5TESTSUITE CASE XLowerWindow 4"
@@ -3238,7 +3238,7 @@ pDestroySubwindows
 
 pDestroyWindow
 	"VSW5TESTSUITE CASE DestroyWindow 3"
-	/tset/Xproto/DestroyWindow/DestroyWindow
+	/tset/Xproto/XDestroyWindow/XDestroyWindow
 
 pFillPoly
 	"VSW5TESTSUITE CASE FillPoly 3"

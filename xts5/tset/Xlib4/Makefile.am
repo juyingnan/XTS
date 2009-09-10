@@ -18,7 +18,7 @@ tprogs = \
 	XCreateWindow/XCreateWindow \
 	dfncrsr/dfncrsr \
 	XDestroySubwindows/XDestroySubwindows \
-	DestroyWindow/DestroyWindow \
+	XDestroyWindow/XDestroyWindow \
 	lwrwdw/lwrwdw \
 	mprsd/mprsd \
 	MapSubwindows/MapSubwindows \

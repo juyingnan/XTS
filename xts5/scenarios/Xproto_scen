@@ -122,7 +122,7 @@
 	"VSW5TESTSUITE CASE DestroySubwindows 3"
 	/tset/Xproto/XDestroySubwindows/XDestroySubwindows
 	"VSW5TESTSUITE CASE DestroyWindow 3"
-	/tset/Xproto/DestroyWindow/DestroyWindow
+	/tset/Xproto/XDestroyWindow/XDestroyWindow
 	"VSW5TESTSUITE CASE FillPoly 3"
 	/tset/Xproto/FillPoly/FillPoly
 	"VSW5TESTSUITE CASE FreeColormap 3"
