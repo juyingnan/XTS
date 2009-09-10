@@ -4695,7 +4695,7 @@ XtConvert
 
 XtDirectConvert
 	"VSW5TESTSUITE CASE XtDirectConvert 3"
-	/tset/XtC/tdircnvrt/tdircnvrt
+	/tset/XtC/XtDirectConvert/XtDirectConvert
 
 XtDestroyGC
 	"VSW5TESTSUITE CASE XtDestroyGC 2"

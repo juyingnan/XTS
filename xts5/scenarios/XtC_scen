@@ -91,7 +91,7 @@
 	"VSW5TESTSUITE CASE XtConvert 1"
 	/tset/XtC/XtConvert/XtConvert
 	"VSW5TESTSUITE CASE XtDirectConvert 3"
-	/tset/XtC/tdircnvrt/tdircnvrt
+	/tset/XtC/XtDirectConvert/XtDirectConvert
 	"VSW5TESTSUITE CASE XtDestroyGC 2"
 	/tset/XtC/XtDestroyGC/XtDestroyGC
 	"VSW5TESTSUITE CASE XtAddActions 3"
