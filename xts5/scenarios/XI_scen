@@ -82,7 +82,7 @@
 	"VSW5TESTSUITE CASE XGetDeviceDontPropagateList 2"
 	/tset/XI/XGetDeviceDontPropagateList/XGetDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XGetExtensionVersion 2"
-	/tset/XI/XGetExtensionVersion/XGetExtensionVersion
+	/tset/XI/GetExtensionVersion/GetExtensionVersion
 	"VSW5TESTSUITE CASE XGrabDevice 18"
 	/tset/XI/XGrabDevice/XGrabDevice
 	"VSW5TESTSUITE CASE XGrabDeviceButton 21"

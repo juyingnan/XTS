@@ -22,7 +22,7 @@ tprogs = \
 	XGetFeedbackControl/XGetFeedbackControl \
 	XGetDeviceFocus/XGetDeviceFocus \
 	XGetDeviceDontPropagateList/XGetDeviceDontPropagateList \
-	XGetExtensionVersion/XGetExtensionVersion \
+	GetExtensionVersion/GetExtensionVersion \
 	XGrabDevice/XGrabDevice \
 	XGrabDeviceButton/XGrabDeviceButton \
 	XGrabDeviceKey/XGrabDeviceKey \
