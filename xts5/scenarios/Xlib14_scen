@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE XCreateFontSet 1"
 	/tset/Xlib14/XCreateFontSet/XCreateFontSet
 	"VSW5TESTSUITE CASE XCreateIC 1"
-	/tset/Xlib14/crtic/crtic
+	/tset/Xlib14/XCreateIC/XCreateIC
 	"VSW5TESTSUITE CASE XDestroyIC 1"
 	/tset/Xlib14/desic/desic
 	"VSW5TESTSUITE CASE XDisplayOfIM 1"

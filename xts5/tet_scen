@@ -1180,7 +1180,7 @@ XCreateFontSet
 
 XCreateIC
 	"VSW5TESTSUITE CASE XCreateIC 1"
-	/tset/Xlib14/crtic/crtic
+	/tset/Xlib14/XCreateIC/XCreateIC
 
 XDestroyIC
 	"VSW5TESTSUITE CASE XDestroyIC 1"

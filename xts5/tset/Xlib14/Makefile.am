@@ -14,7 +14,7 @@ tprogs = \
 	XCloseIM/XCloseIM \
 	XContextDependentDrawing/XContextDependentDrawing \
 	XCreateFontSet/XCreateFontSet \
-	crtic/crtic \
+	XCreateIC/XCreateIC \
 	desic/desic \
 	dispim/dispim \
 	exofset/exofset \
