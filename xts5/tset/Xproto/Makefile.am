@@ -70,7 +70,7 @@ tprogs = \
 	GetScreenSaver/GetScreenSaver \
 	GetSelectionOwner/GetSelectionOwner \
 	GetWindowAttributes/GetWindowAttributes \
-	imgtxt16/imgtxt16 \
+	ImageText16/ImageText16 \
 	imgtxt8/imgtxt8 \
 	instllclrm/instllclrm \
 	intrnatm/intrnatm \

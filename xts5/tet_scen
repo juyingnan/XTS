@@ -3350,7 +3350,7 @@ pGetWindowAttributes
 
 pImageText16
 	"VSW5TESTSUITE CASE ImageText16 3"
-	/tset/Xproto/imgtxt16/imgtxt16
+	/tset/Xproto/ImageText16/ImageText16
 
 pImageText8
 	"VSW5TESTSUITE CASE ImageText8 3"

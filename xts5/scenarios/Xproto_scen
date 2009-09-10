@@ -178,7 +178,7 @@
 	"VSW5TESTSUITE CASE GetWindowAttributes 3"
 	/tset/Xproto/GetWindowAttributes/GetWindowAttributes
 	"VSW5TESTSUITE CASE ImageText16 3"
-	/tset/Xproto/imgtxt16/imgtxt16
+	/tset/Xproto/ImageText16/ImageText16
 	"VSW5TESTSUITE CASE ImageText8 3"
 	/tset/Xproto/imgtxt8/imgtxt8
 	"VSW5TESTSUITE CASE InstallColormap 3"
