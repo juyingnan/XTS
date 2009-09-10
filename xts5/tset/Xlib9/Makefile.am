@@ -48,7 +48,7 @@ tprogs = \
 	XPutImage/XPutImage \
 	XQueryFont/XQueryFont \
 	XQueryTextExtents16/XQueryTextExtents16 \
-	QueryTextExtents/QueryTextExtents \
+	XQueryTextExtents/XQueryTextExtents \
 	SetFontPath/SetFontPath \
 	txtextnt16/txtextnt16 \
 	txtextnts/txtextnts \

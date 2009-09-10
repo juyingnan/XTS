@@ -104,7 +104,7 @@ tprogs = \
 	XQueryKeymap/XQueryKeymap \
 	XQueryPointer/XQueryPointer \
 	XQueryTree/XQueryTree \
-	QueryTextExtents/QueryTextExtents \
+	XQueryTextExtents/XQueryTextExtents \
 	XRecolorCursor/XRecolorCursor \
 	XReparentWindow/XReparentWindow \
 	RotateProperties/RotateProperties \
