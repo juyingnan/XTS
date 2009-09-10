@@ -1574,7 +1574,7 @@ XrmPutStringResource
 
 XrmQGetResource
 	"VSW5TESTSUITE CASE XrmQGetResource 2"
-	/tset/Xlib16/rmqgtrsrc/rmqgtrsrc
+	/tset/Xlib16/XrmQGetResource/XrmQGetResource
 
 XrmQGetSearchList
 	"VSW5TESTSUITE CASE XrmQGetSearchList 4"

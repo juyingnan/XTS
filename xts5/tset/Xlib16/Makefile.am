@@ -31,7 +31,7 @@ tprogs = \
 	XrmPutLineResource/XrmPutLineResource \
 	XrmPutResource/XrmPutResource \
 	XrmPutStringResource/XrmPutStringResource \
-	rmqgtrsrc/rmqgtrsrc \
+	XrmQGetResource/XrmQGetResource \
 	rmqgtsrchl/rmqgtsrchl \
 	rmqgtsrchr/rmqgtsrchr \
 	rmqptrsrc/rmqptrsrc \
