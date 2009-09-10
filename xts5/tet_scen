@@ -610,7 +610,7 @@ XSetDeviceValuators
 
 XSetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XSetDeviceButtonMapping 8"
-	/tset/XI/XSetDeviceButtonMapping/XSetDeviceButtonMapping
+	/tset/XI/SetDeviceButtonMapping/SetDeviceButtonMapping
 
 XSetDeviceFocus
 	"VSW5TESTSUITE CASE XSetDeviceFocus 17"
