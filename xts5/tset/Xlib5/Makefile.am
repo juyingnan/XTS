@@ -14,7 +14,7 @@ tprogs = \
 	DeleteProperty/DeleteProperty \
 	GetAtomName/GetAtomName \
 	GetGeometry/GetGeometry \
-	gtslctnown/gtslctnown \
+	GetSelectionOwner/GetSelectionOwner \
 	gtwdwattrb/gtwdwattrb \
 	gtwdwprprt/gtwdwprprt \
 	intrnatm/intrnatm \

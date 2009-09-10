@@ -2453,7 +2453,7 @@ XGetGeometry
 
 XGetSelectionOwner
 	"VSW5TESTSUITE CASE XGetSelectionOwner 3"
-	/tset/Xlib5/gtslctnown/gtslctnown
+	/tset/Xlib5/GetSelectionOwner/GetSelectionOwner
 
 XGetWindowAttributes
 	"VSW5TESTSUITE CASE XGetWindowAttributes 3"
@@ -3342,7 +3342,7 @@ pGetScreenSaver
 
 pGetSelectionOwner
 	"VSW5TESTSUITE CASE GetSelectionOwner 3"
-	/tset/Xproto/gtslctnown/gtslctnown
+	/tset/Xproto/GetSelectionOwner/GetSelectionOwner
 
 pGetWindowAttributes
 	"VSW5TESTSUITE CASE GetWindowAttributes 3"
