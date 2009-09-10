@@ -2924,7 +2924,7 @@ XDrawLines
 
 XDrawPoint
 	"VSW5TESTSUITE CASE XDrawPoint 34"
-	/tset/Xlib9/drwpnt/drwpnt
+	/tset/Xlib9/XDrawPoint/XDrawPoint
 
 XDrawPoints
 	"VSW5TESTSUITE CASE XDrawPoints 38"

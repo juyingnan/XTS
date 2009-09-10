@@ -76,7 +76,7 @@
 	"VSW5TESTSUITE CASE XDrawLines 104"
 	/tset/Xlib9/XDrawLines/XDrawLines
 	"VSW5TESTSUITE CASE XDrawPoint 34"
-	/tset/Xlib9/drwpnt/drwpnt
+	/tset/Xlib9/XDrawPoint/XDrawPoint
 	"VSW5TESTSUITE CASE XDrawPoints 38"
 	/tset/Xlib9/drwpnts/drwpnts
 	"VSW5TESTSUITE CASE XDrawRectangle 83"
