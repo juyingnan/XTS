@@ -57,7 +57,7 @@ tprogs = \
 	XStoreBytes/XStoreBytes \
 	XSetRegion/XSetRegion \
 	XStringToKeysym/XStringToKeysym \
-	svcntxt/svcntxt \
+	XSaveContext/XSaveContext \
 	unnrctwthr/unnrctwthr \
 	unnrgn/unnrgn \
 	unqcntxt/unqcntxt \

@@ -1844,7 +1844,7 @@ XStringToKeysym
 
 XSaveContext
 	"VSW5TESTSUITE CASE XSaveContext 3"
-	/tset/Xlib17/svcntxt/svcntxt
+	/tset/Xlib17/XSaveContext/XSaveContext
 
 XUnionRectWithRegion
 	"VSW5TESTSUITE CASE XUnionRectWithRegion 1"

@@ -152,7 +152,7 @@
 	"VSW5TESTSUITE CASE XStringToKeysym 2"
 	/tset/Xlib17/XStringToKeysym/XStringToKeysym
 	"VSW5TESTSUITE CASE XSaveContext 3"
-	/tset/Xlib17/svcntxt/svcntxt
+	/tset/Xlib17/XSaveContext/XSaveContext
 	"VSW5TESTSUITE CASE XUnionRectWithRegion 1"
 	/tset/Xlib17/unnrctwthr/unnrctwthr
 	"VSW5TESTSUITE CASE XUnionRegion 1"
