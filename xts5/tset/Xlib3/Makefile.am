@@ -16,7 +16,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XBitmapPad/XBitmapPad XBitmapPad/XBitmapPad_m \
 	XBitmapUnit/XBitmapUnit XBitmapUnit/XBitmapUnit_m \
 	XCellsOfScreen/XCellsOfScreen XCellsOfScreen/XCellsOfScreen_m \
-	clsdsply/clsdsply \
+	XCloseDisplay/XCloseDisplay \
 	cnnctnnmbr/cnnctnnmbr cnnctnnmbr/cnnctnnmbr_m \
 	dfltclrmp/dfltclrmp dfltclrmp/dfltclrmp_m \
 	dfltclrmpo/dfltclrmpo dfltclrmpo/dfltclrmpo_m \

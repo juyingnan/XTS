@@ -1903,7 +1903,7 @@ XCellsOfScreen
 
 XCloseDisplay
 	"VSW5TESTSUITE CASE XCloseDisplay 28"
-	/tset/Xlib3/clsdsply/clsdsply
+	/tset/Xlib3/XCloseDisplay/XCloseDisplay
 
 XConnectionNumber
 	"VSW5TESTSUITE CASE XConnectionNumber 1"

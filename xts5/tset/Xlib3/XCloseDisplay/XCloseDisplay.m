@@ -17,14 +17,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib3/clsdsply/clsdsply.m,v 1.3 2006-05-12 10:41:58 gwc Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib3/XCloseDisplay/XCloseDisplay.m,v 1.3 2006-05-12 10:41:58 gwc Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/clsdsply/clsdsply.m
+>># File: xts5/tset/Xlib3/XCloseDisplay/XCloseDisplay.m
 >># 
 >># Description:
 >># 	Tests for XCloseDisplay()
