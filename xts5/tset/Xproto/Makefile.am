@@ -72,7 +72,7 @@ tprogs = \
 	GetWindowAttributes/GetWindowAttributes \
 	ImageText16/ImageText16 \
 	ImageText8/ImageText8 \
-	instllclrm/instllclrm \
+	InstallColormap/InstallColormap \
 	intrnatm/intrnatm \
 	kllclnt/kllclnt \
 	lkpclr/lkpclr \

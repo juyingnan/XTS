@@ -19,7 +19,7 @@ tprogs = \
 	ForceScreenSaver/ForceScreenSaver \
 	GrabServer/GrabServer \
 	GetScreenSaver/GetScreenSaver \
-	instllclrm/instllclrm \
+	InstallColormap/InstallColormap \
 	kllclnt/kllclnt \
 	lsthsts/lsthsts \
 	lstinstlld/lstinstlld \

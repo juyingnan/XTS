@@ -182,7 +182,7 @@
 	"VSW5TESTSUITE CASE ImageText8 3"
 	/tset/Xproto/ImageText8/ImageText8
 	"VSW5TESTSUITE CASE InstallColormap 3"
-	/tset/Xproto/instllclrm/instllclrm
+	/tset/Xproto/InstallColormap/InstallColormap
 	"VSW5TESTSUITE CASE InternAtom 3"
 	/tset/Xproto/intrnatm/intrnatm
 	"VSW5TESTSUITE CASE KillClient 3"
