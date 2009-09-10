@@ -82,7 +82,7 @@
 	"VSW5TESTSUITE CASE GrabDevice 3"
 	/tset/XIproto/GrabDevice/GrabDevice
 	"VSW5TESTSUITE CASE GrabDeviceButton 3"
-	/tset/XIproto/XGrabDeviceButton/XGrabDeviceButton
+	/tset/XIproto/GrabDeviceButton/GrabDeviceButton
 	"VSW5TESTSUITE CASE GrabDeviceKey 3"
 	/tset/XIproto/XGrabDeviceKey/XGrabDeviceKey
 	"VSW5TESTSUITE CASE GetDeviceButtonMapping 3"
