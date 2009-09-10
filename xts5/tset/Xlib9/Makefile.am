@@ -53,5 +53,5 @@ tprogs = \
 	XTextExtents16/XTextExtents16 \
 	XTextExtents/XTextExtents \
 	XTextWidth/XTextWidth \
-	txtwdth16/txtwdth16 \
+	XTextWidth16/XTextWidth16 \
 	unldfnt/unldfnt
