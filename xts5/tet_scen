@@ -3718,7 +3718,7 @@ XtScreenDatabase
 
 XtDatabase
 	"VSW5TESTSUITE CASE XtDatabase 2"
-	/tset/Xt4/tdtbs/tdtbs
+	/tset/Xt4/XtDatabase/XtDatabase
 
 XtAppSetFallbackResources
 	"VSW5TESTSUITE CASE XtAppSetFallbackResources 2"

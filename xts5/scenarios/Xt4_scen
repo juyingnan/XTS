@@ -80,7 +80,7 @@
 	"VSW5TESTSUITE CASE XtScreenDatabase 1"
 	/tset/Xt4/tscrndtbs/tscrndtbs
 	"VSW5TESTSUITE CASE XtDatabase 2"
-	/tset/Xt4/tdtbs/tdtbs
+	/tset/Xt4/XtDatabase/XtDatabase
 	"VSW5TESTSUITE CASE XtAppSetFallbackResources 2"
 	/tset/Xt4/XtAppSetFallbackResources/XtAppSetFallbackResources
 	"VSW5TESTSUITE CASE XtSetArg 2"
