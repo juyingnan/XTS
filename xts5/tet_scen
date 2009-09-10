@@ -4008,7 +4008,7 @@ XtGrabButton
 
 XtUngrabButton
 	"VSW5TESTSUITE CASE XtUngrabButton 2"
-	/tset/Xt9/tunbutton/tunbutton
+	/tset/Xt9/XtGrabButton/XtGrabButton
 
 XtGrabPointer
 	"VSW5TESTSUITE CASE XtGrabPointer 2"
