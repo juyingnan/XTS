@@ -19,7 +19,7 @@ tprogs = \
 	XCloseDevice/XCloseDevice \
 	XDeviceBell/XDeviceBell \
 	XGetDeviceControl/XGetDeviceControl \
-	getfctl/getfctl \
+	XGetFeedbackControl/XGetFeedbackControl \
 	getfocus/getfocus \
 	getprop/getprop \
 	getvers/getvers \

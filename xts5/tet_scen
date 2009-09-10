@@ -542,7 +542,7 @@ XGetDeviceControl
 
 XGetFeedbackControl
 	"VSW5TESTSUITE CASE XGetFeedbackControl 3"
-	/tset/XI/getfctl/getfctl
+	/tset/XI/XGetFeedbackControl/XGetFeedbackControl
 
 XGetDeviceFocus
 	"VSW5TESTSUITE CASE XGetDeviceFocus 2"

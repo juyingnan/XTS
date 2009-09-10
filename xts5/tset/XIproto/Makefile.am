@@ -19,7 +19,7 @@ tprogs = \
 	XCloseDevice/XCloseDevice \
 	XDeviceBell/XDeviceBell \
 	getdvmmap/getdvmmap \
-	getfctl/getfctl \
+	XGetFeedbackControl/XGetFeedbackControl \
 	getvers/getvers \
 	grbdev/grbdev \
 	grbdvbtn/grbdvbtn \
