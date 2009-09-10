@@ -26,7 +26,7 @@ tprogs = \
 	rmvfrmsvst/rmvfrmsvst \
 	rmvhst/rmvhst \
 	rmvhsts/rmvhsts \
-	rprntwdw/rprntwdw \
+	ReparentWindow/ReparentWindow \
 	rstscrnsvr/rstscrnsvr \
 	staccsscnt/staccsscnt \
 	stscrnsvr/stscrnsvr \

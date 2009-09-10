@@ -90,7 +90,7 @@
 	"VSW5TESTSUITE CASE XRemoveHosts 3"
 	/tset/Xlib10/rmvhsts/rmvhsts
 	"VSW5TESTSUITE CASE XReparentWindow 13"
-	/tset/Xlib10/rprntwdw/rprntwdw
+	/tset/Xlib10/ReparentWindow/ReparentWindow
 	"VSW5TESTSUITE CASE XResetScreenSaver 2"
 	/tset/Xlib10/rstscrnsvr/rstscrnsvr
 	"VSW5TESTSUITE CASE XSetAccessControl 4"

@@ -106,7 +106,7 @@ tprogs = \
 	QueryTree/QueryTree \
 	QueryTextExtents/QueryTextExtents \
 	RecolorCursor/RecolorCursor \
-	rprntwdw/rprntwdw \
+	ReparentWindow/ReparentWindow \
 	rttprprts/rttprprts \
 	sndevnt/sndevnt \
 	staccsscnt/staccsscnt \
