@@ -17,14 +17,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/dispim/dispim.m,v 1.2 2005-11-03 08:42:43 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/XDisplayOfIM/XDisplayOfIM.m,v 1.2 2005-11-03 08:42:43 jmichael Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib14/dispim/dispim.m
+>># File: xts5/tset/Xlib14/XDisplayOfIM/XDisplayOfIM.m
 >># 
 >># Description:
 >># 	Tests for XDisplayOfIM()

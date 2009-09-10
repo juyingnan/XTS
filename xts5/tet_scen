@@ -1188,7 +1188,7 @@ XDestroyIC
 
 XDisplayOfIM
 	"VSW5TESTSUITE CASE XDisplayOfIM 1"
-	/tset/Xlib14/dispim/dispim
+	/tset/Xlib14/XDisplayOfIM/XDisplayOfIM
 
 XExtentsOfFontSet
 	"VSW5TESTSUITE CASE XExtentsOfFontSet 1"

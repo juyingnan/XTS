@@ -16,7 +16,7 @@ tprogs = \
 	XCreateFontSet/XCreateFontSet \
 	XCreateIC/XCreateIC \
 	XDestroyIC/XDestroyIC \
-	dispim/dispim \
+	XDisplayOfIM/XDisplayOfIM \
 	exofset/exofset \
 	fltrevnt/fltrevnt \
 	fntofnts/fntofnts \

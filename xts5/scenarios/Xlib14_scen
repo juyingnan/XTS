@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE XDestroyIC 1"
 	/tset/Xlib14/XDestroyIC/XDestroyIC
 	"VSW5TESTSUITE CASE XDisplayOfIM 1"
-	/tset/Xlib14/dispim/dispim
+	/tset/Xlib14/XDisplayOfIM/XDisplayOfIM
 	"VSW5TESTSUITE CASE XExtentsOfFontSet 1"
 	/tset/Xlib14/exofset/exofset
 	"VSW5TESTSUITE CASE XFilterEvent 1"
