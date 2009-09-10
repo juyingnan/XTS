@@ -66,7 +66,7 @@
 	"VSW5TESTSUITE CASE XAllocWMHints 2"
 	/tset/Xlib15/XAllocWMHints/XAllocWMHints
 	"VSW5TESTSUITE CASE XFreeStringList 1"
-	/tset/Xlib15/frstrlst/frstrlst
+	/tset/Xlib15/XFreeStringList/XFreeStringList
 	"VSW5TESTSUITE CASE XFetchName 3"
 	/tset/Xlib15/ftchnm/ftchnm
 	"VSW5TESTSUITE CASE XGetClassHint 3"

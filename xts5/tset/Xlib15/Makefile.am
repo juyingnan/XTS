@@ -17,7 +17,7 @@ tprogs = \
 	XAllocSizeHints/XAllocSizeHints \
 	XAllocWMHints/XAllocWMHints \
 	XDefaultString/XDefaultString \
-	frstrlst/frstrlst \
+	XFreeStringList/XFreeStringList \
 	ftchnm/ftchnm \
 	gtclsshnt/gtclsshnt \
 	gtcmmnd/gtcmmnd \

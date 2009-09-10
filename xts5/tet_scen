@@ -1367,7 +1367,7 @@ XAllocWMHints
 
 XFreeStringList
 	"VSW5TESTSUITE CASE XFreeStringList 1"
-	/tset/Xlib15/frstrlst/frstrlst
+	/tset/Xlib15/XFreeStringList/XFreeStringList
 
 XFetchName
 	"VSW5TESTSUITE CASE XFetchName 3"
