@@ -77,7 +77,7 @@ tprogs = \
 	XKillClient/XKillClient \
 	XLookupColor/XLookupColor \
 	ListExtensions/ListExtensions \
-	ListFonts/ListFonts \
+	XListFonts/XListFonts \
 	ListFontsWithInfo/ListFontsWithInfo \
 	XListHosts/XListHosts \
 	XListInstalledColormaps/XListInstalledColormaps \

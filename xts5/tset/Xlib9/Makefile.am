@@ -43,7 +43,7 @@ tprogs = \
 	XGetSubImage/XGetSubImage \
 	XLoadFont/XLoadFont \
 	XLoadQueryFont/XLoadQueryFont \
-	ListFonts/ListFonts \
+	XListFonts/XListFonts \
 	ListFontsWithInfo/ListFontsWithInfo \
 	PutImage/PutImage \
 	QueryFont/QueryFont \
