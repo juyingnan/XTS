@@ -2031,7 +2031,7 @@ XMinCmapsOfScreen
 
 XMaxCmapsOfScreen
 	"VSW5TESTSUITE CASE XMaxCmapsOfScreen 1"
-	/tset/Xlib3/mxcmpsofsc/mxcmpsofsc
+	/tset/Xlib3/XMaxCmapsOfScreen/XMaxCmapsOfScreen
 
 XNoOp
 	"VSW5TESTSUITE CASE XNoOp 1"
@@ -2247,7 +2247,7 @@ MinCmapsOfScreen
 
 MaxCmapsOfScreen
 	"VSW5TESTSUITE CASE MaxCmapsOfScreen 1"
-	/tset/Xlib3/mxcmpsofsc/mxcmpsofsc_m
+	/tset/Xlib3/XMaxCmapsOfScreen/XMaxCmapsOfScreen_m
 
 NextRequest
 	"VSW5TESTSUITE CASE NextRequest 2"

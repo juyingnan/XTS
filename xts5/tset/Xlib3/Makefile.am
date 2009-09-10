@@ -48,7 +48,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XLastKnownRequestProcessed/XLastKnownRequestProcessed XLastKnownRequestProcessed/XLastKnownRequestProcessed_m \
 	XListPixmapFormats/XListPixmapFormats \
 	XMinCmapsOfScreen/XMinCmapsOfScreen XMinCmapsOfScreen/XMinCmapsOfScreen_m \
-	mxcmpsofsc/mxcmpsofsc mxcmpsofsc/mxcmpsofsc_m \
+	XMaxCmapsOfScreen/XMaxCmapsOfScreen XMaxCmapsOfScreen/XMaxCmapsOfScreen_m \
 	nop/nop \
 	nxtrqst/nxtrqst nxtrqst/nxtrqst_m \
 	OpenDisplay/OpenDisplay \

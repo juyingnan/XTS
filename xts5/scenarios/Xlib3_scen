@@ -134,7 +134,7 @@
 	"VSW5TESTSUITE CASE XMinCmapsOfScreen 1"
 	/tset/Xlib3/XMinCmapsOfScreen/XMinCmapsOfScreen
 	"VSW5TESTSUITE CASE XMaxCmapsOfScreen 1"
-	/tset/Xlib3/mxcmpsofsc/mxcmpsofsc
+	/tset/Xlib3/XMaxCmapsOfScreen/XMaxCmapsOfScreen
 	"VSW5TESTSUITE CASE XNoOp 1"
 	/tset/Xlib3/nop/nop
 	"VSW5TESTSUITE CASE XNextRequest 2"
@@ -242,7 +242,7 @@
 	"VSW5TESTSUITE CASE MinCmapsOfScreen 1"
 	/tset/Xlib3/XMinCmapsOfScreen/XMinCmapsOfScreen_m
 	"VSW5TESTSUITE CASE MaxCmapsOfScreen 1"
-	/tset/Xlib3/mxcmpsofsc/mxcmpsofsc_m
+	/tset/Xlib3/XMaxCmapsOfScreen/XMaxCmapsOfScreen_m
 	"VSW5TESTSUITE CASE NextRequest 2"
 	/tset/Xlib3/nxtrqst/nxtrqst_m
 	"VSW5TESTSUITE CASE PlanesOfScreen 1"
