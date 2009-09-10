@@ -220,7 +220,7 @@
 	"VSW5TESTSUITE CASE PolyLine 3"
 	/tset/Xproto/PolyLine/PolyLine
 	"VSW5TESTSUITE CASE PolyPoint 3"
-	/tset/Xproto/plypnt/plypnt
+	/tset/Xproto/PolyPoint/PolyPoint
 	"VSW5TESTSUITE CASE PolyRectangle 3"
 	/tset/Xproto/plyrctngl/plyrctngl
 	"VSW5TESTSUITE CASE PolySegment 3"
