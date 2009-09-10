@@ -4447,7 +4447,7 @@ XtRegisterGrabAction
 
 XtCallActionProc
 	"VSW5TESTSUITE CASE XtCallActionProc 2"
-	/tset/Xt12/tcalacprc/tcalacprc
+	/tset/Xt12/XtCallActionProc/XtCallActionProc
 
 XtGetActionList
 	"VSW5TESTSUITE CASE XtGetActionList 5"
