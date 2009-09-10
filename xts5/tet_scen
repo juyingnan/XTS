@@ -3874,7 +3874,7 @@ VendorShellWidget
 
 TransientShellWidgets
 	"VSW5TESTSUITE CASE TransientShellWidgets 10"
-	/tset/Xt6/wdgttrnsnt/wdgttrnsnt
+	/tset/Xt6/TransientShellWidget/TransientShellWidget
 
 TopLevelShellWidgets
 	"VSW5TESTSUITE CASE TopLevelShellWidgets 10"
