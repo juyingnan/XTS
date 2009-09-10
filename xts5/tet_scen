@@ -4461,7 +4461,7 @@ XtNumber
 
 XtNameToWidget
 	"VSW5TESTSUITE CASE XtNameToWidget 7"
-	/tset/Xt13/tnmtowidg/tnmtowidg
+	/tset/Xt13/XtNameToWidget/XtNameToWidget
 
 XtMalloc
 	"VSW5TESTSUITE CASE XtMalloc 6"

@@ -61,7 +61,7 @@
 	"VSW5TESTSUITE CASE XtNumber 1"
 	/tset/Xt13/tnumber/tnumber
 	"VSW5TESTSUITE CASE XtNameToWidget 7"
-	/tset/Xt13/tnmtowidg/tnmtowidg
+	/tset/Xt13/XtNameToWidget/XtNameToWidget
 	"VSW5TESTSUITE CASE XtMalloc 6"
 	/tset/Xt13/XtMalloc/XtMalloc
 	"VSW5TESTSUITE CASE XtCalloc 6"
