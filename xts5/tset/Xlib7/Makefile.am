@@ -51,7 +51,7 @@ tprogs = \
 	XcmsTekHVCQueryMinV/XcmsTekHVCQueryMinV \
 	XcmsTekHVCQueryMaxV/XcmsTekHVCQueryMaxV \
 	XcmsTekHVCQueryMaxVC/XcmsTekHVCQueryMaxVC \
-	cmstqmvs/cmstqmvs \
+	XcmsTekHVCQueryMaxVSamples/XcmsTekHVCQueryMaxVSamples \
 	cmsvofcc/cmsvofcc \
 	cmswapr/cmswapr \
 	cmswpcc/cmswpcc \

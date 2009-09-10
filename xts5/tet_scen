@@ -2739,7 +2739,7 @@ XcmsTekHVCQueryMaxVC
 
 XcmsTekHVCQueryMaxVSamples
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxVSamples 1"
-	/tset/Xlib7/cmstqmvs/cmstqmvs
+	/tset/Xlib7/XcmsTekHVCQueryMaxVSamples/XcmsTekHVCQueryMaxVSamples
 
 XcmsVisualOfCCC
 	"VSW5TESTSUITE CASE XcmsVisualOfCCC 1"
