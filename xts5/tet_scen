@@ -4329,7 +4329,7 @@ XtCallbackReleaseCacheRefList
 
 XtConvertAndStore
 	"VSW5TESTSUITE CASE XtConvertAndStore 18"
-	/tset/Xt11/tcnvrtast/tcnvrtast
+	/tset/Xt11/XtConvertAndStore/XtConvertAndStore
 
 XtGetValues
 	"VSW5TESTSUITE CASE XtGetValues 5"
