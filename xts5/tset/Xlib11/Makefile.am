@@ -23,7 +23,7 @@ tprogs = \
 	Expose/Expose \
 	FocusIn/FocusIn \
 	FocusOut/FocusOut \
-	grphcsexps/grphcsexps \
+	GraphicsExpose/GraphicsExpose \
 	grvtyntfy/grvtyntfy \
 	kympntfy/kympntfy \
 	kyprss/kyprss \

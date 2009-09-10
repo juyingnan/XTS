@@ -84,7 +84,7 @@
 	"VSW5TESTSUITE CASE FocusOut 19"
 	/tset/Xlib11/FocusOut/FocusOut
 	"VSW5TESTSUITE CASE GraphicsExpose 1"
-	/tset/Xlib11/grphcsexps/grphcsexps
+	/tset/Xlib11/GraphicsExpose/GraphicsExpose
 	"VSW5TESTSUITE CASE GravityNotify 3"
 	/tset/Xlib11/grvtyntfy/grvtyntfy
 	"VSW5TESTSUITE CASE KeymapNotify 4"

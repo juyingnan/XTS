@@ -844,7 +844,7 @@ FocusOut
 
 GraphicsExpose
 	"VSW5TESTSUITE CASE GraphicsExpose 1"
-	/tset/Xlib11/grphcsexps/grphcsexps
+	/tset/Xlib11/GraphicsExpose/GraphicsExpose
 
 GravityNotify
 	"VSW5TESTSUITE CASE GravityNotify 3"
