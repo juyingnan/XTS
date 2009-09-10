@@ -594,7 +594,7 @@ XListInputDevices
 
 Miscellaneous
 	"VSW5TESTSUITE CASE Miscellaneous 6"
-	/tset/XI/misc/misc
+	/tset/XI/Miscellaneous/Miscellaneous
 
 XOpenDevice
 	"VSW5TESTSUITE CASE XOpenDevice 4"

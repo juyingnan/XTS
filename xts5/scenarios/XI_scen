@@ -102,7 +102,7 @@
 	"VSW5TESTSUITE CASE XListInputDevices 2"
 	/tset/XI/XListInputDevices/XListInputDevices
 	"VSW5TESTSUITE CASE Miscellaneous 6"
-	/tset/XI/misc/misc
+	/tset/XI/Miscellaneous/Miscellaneous
 	"VSW5TESTSUITE CASE XOpenDevice 4"
 	/tset/XI/opendev/opendev
 	"VSW5TESTSUITE CASE XQueryDeviceState 8"

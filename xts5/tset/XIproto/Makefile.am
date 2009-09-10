@@ -32,7 +32,7 @@ tprogs = \
 	gtkeymppn/gtkeymppn \
 	gtslctexev/gtslctexev \
 	XListInputDevices/XListInputDevices \
-	misc/misc \
+	Miscellaneous/Miscellaneous \
 	opendev/opendev \
 	qrydvstat/qrydvstat \
 	setdval/setdval \

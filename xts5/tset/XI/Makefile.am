@@ -32,7 +32,7 @@ tprogs = \
 	XGetDeviceMotionEvents/XGetDeviceMotionEvents \
 	XGetSelectedExtensionEvents/XGetSelectedExtensionEvents \
 	XListInputDevices/XListInputDevices \
-	misc/misc \
+	Miscellaneous/Miscellaneous \
 	opendev/opendev \
 	querydvst/querydvst \
 	setdval/setdval \
