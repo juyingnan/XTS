@@ -2912,7 +2912,7 @@ XDrawImageString16
 
 XDrawImageString
 	"VSW5TESTSUITE CASE XDrawImageString 24"
-	/tset/Xlib9/drwimgstr/drwimgstr
+	/tset/Xlib9/XDrawImageString/XDrawImageString
 
 XDrawLine
 	"VSW5TESTSUITE CASE XDrawLine 91"
