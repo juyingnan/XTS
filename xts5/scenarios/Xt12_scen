@@ -71,7 +71,7 @@
 	"VSW5TESTSUITE CASE XtParseTranslationTable 1"
 	/tset/Xt12/tprsttbl/tprsttbl
 	"VSW5TESTSUITE CASE XtAugmentTranslations 4"
-	/tset/Xt12/taugtrtns/taugtrtns
+	/tset/Xt12/XtAugmentTranslations/XtAugmentTranslations
 	"VSW5TESTSUITE CASE XtOverrideTranslations 4"
 	/tset/Xt12/tovertrsl/tovertrsl
 	"VSW5TESTSUITE CASE XtUninstallTranslations 1"
