@@ -37,7 +37,7 @@ tprogs = \
 	XrmQPutResource/XrmQPutResource \
 	XrmQPutStringResource/XrmQPutStringResource \
 	XrmQuarkToString/XrmQuarkToString \
-	rmstdb/rmstdb \
+	XrmSetDatabase/XrmSetDatabase \
 	rmstrtbndn/rmstrtbndn \
 	rmstrtqrk/rmstrtqrk \
 	rmstrtqrkl/rmstrtqrkl \

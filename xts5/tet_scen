@@ -1642,7 +1642,7 @@ XrmPermStringToQuark
 
 XrmSetDatabase
 	"VSW5TESTSUITE CASE XrmSetDatabase 2"
-	/tset/Xlib16/rmstdb/rmstdb
+	/tset/Xlib16/XrmSetDatabase/XrmSetDatabase
 
 XScreenResourceString
 	"VSW5TESTSUITE CASE XScreenResourceString 2"

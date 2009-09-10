@@ -118,6 +118,6 @@
 	"VSW5TESTSUITE CASE XrmPermStringToQuark 2"
 	/tset/Xlib16/XrmPermStringToQuark/XrmPermStringToQuark
 	"VSW5TESTSUITE CASE XrmSetDatabase 2"
-	/tset/Xlib16/rmstdb/rmstdb
+	/tset/Xlib16/XrmSetDatabase/XrmSetDatabase
 	"VSW5TESTSUITE CASE XScreenResourceString 2"
 	/tset/Xlib16/scrrs/scrrs
