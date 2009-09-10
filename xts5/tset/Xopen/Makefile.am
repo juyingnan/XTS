@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = \
 	XAllocNamedColor/XAllocNamedColor \
 	cursorfont/cursorfont \
-	crtfntcrsr/crtfntcrsr \
+	XCreateFontCursor/XCreateFontCursor \
 	kysym/kysym \
 	kysymdf/kysymdf \
 	kysymtkycd/kysymtkycd \

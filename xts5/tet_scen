@@ -2500,7 +2500,7 @@ XCreatePixmap
 
 XCreateFontCursor
 	"VSW5TESTSUITE CASE XCreateFontCursor 3"
-	/tset/Xlib6/crtfntcrsr/crtfntcrsr
+	/tset/Xlib6/XCreateFontCursor/XCreateFontCursor
 
 XCreateGlyphCursor
 	"VSW5TESTSUITE CASE XCreateGlyphCursor 17"
@@ -3079,7 +3079,7 @@ xcursorfont
 
 xXCreateFontCursor
 	"VSW5TESTSUITE CASE XCreateFontCursor 31"
-	/tset/Xopen/crtfntcrsr/crtfntcrsr
+	/tset/Xopen/XCreateFontCursor/XCreateFontCursor
 
 xkeysym
 	"VSW5TESTSUITE CASE keysym 7"
