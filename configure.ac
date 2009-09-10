@@ -91,6 +91,8 @@ AC_MSG_CHECKING([display to test])
 AC_MSG_RESULT([$XT_DISPLAY])
 AC_SUBST([XT_DISPLAY])
 
+m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+
 AC_CONFIG_FILES([
 Makefile
 src/Makefile
