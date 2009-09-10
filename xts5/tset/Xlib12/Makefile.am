@@ -32,7 +32,7 @@ tprogs = \
 	XSendEvent/XSendEvent \
 	XSetAfterFunction/XSetAfterFunction \
 	XSetErrorHandler/XSetErrorHandler \
-	stioerrrhn/stioerrrhn \
+	XSetIOErrorHandler/XSetIOErrorHandler \
 	sync/sync \
 	synchrnz/synchrnz \
 	wdwevnt/wdwevnt
