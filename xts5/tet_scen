@@ -3754,7 +3754,7 @@ XtVaAppCreateShell
 
 XtAppInitialize
 	"VSW5TESTSUITE CASE XtAppInitialize 29"
-	/tset/Xt4/tapintlze/tapintlze
+	/tset/Xt4/XtAppInitialize/XtAppInitialize
 
 XtVaAppInitialize
 	"VSW5TESTSUITE CASE XtVaAppInitialize 29"

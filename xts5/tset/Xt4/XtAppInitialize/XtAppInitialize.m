@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xt4/tapintlze/tapintlze.m,v 1.1 2005-02-12 14:38:00 anderson Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xt4/XtAppInitialize/XtAppInitialize.m,v 1.1 2005-02-12 14:38:00 anderson Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/tapintlze/tapintlze.m
+>># File: tset/Xt4/XtAppInitialize/XtAppInitialize.m
 >># 
 >># Description:
 >>#	Tests for XtAppInitialize()

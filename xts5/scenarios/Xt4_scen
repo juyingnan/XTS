@@ -98,7 +98,7 @@
 	"VSW5TESTSUITE CASE XtVaAppCreateShell 7"
 	/tset/Xt4/tvapcrshl/tvapcrshl
 	"VSW5TESTSUITE CASE XtAppInitialize 29"
-	/tset/Xt4/tapintlze/tapintlze
+	/tset/Xt4/XtAppInitialize/XtAppInitialize
 	"VSW5TESTSUITE CASE XtVaAppInitialize 29"
 	/tset/Xt4/tvapintlz/tvapintlz
 	"VSW5TESTSUITE CASE XtRealizeWidget 11"
