@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE XGetWindowAttributes 3"
 	/tset/Xlib5/XGetWindowAttributes/XGetWindowAttributes
 	"VSW5TESTSUITE CASE XGetWindowProperty 10"
-	/tset/Xlib5/gtwdwprprt/gtwdwprprt
+	/tset/Xlib5/XGetWindowProperty/XGetWindowProperty
 	"VSW5TESTSUITE CASE XInternAtom 8"
 	/tset/Xlib5/InternAtom/InternAtom
 	"VSW5TESTSUITE CASE XListProperties 3"

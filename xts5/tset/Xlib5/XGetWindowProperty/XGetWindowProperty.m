@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib5/gtwdwprprt/gtwdwprprt.m,v 1.3 2005-11-03 08:43:39 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib5/XGetWindowProperty/XGetWindowProperty.m,v 1.3 2005-11-03 08:43:39 jmichael Exp $
 
 Copyright (c) 2001 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1995
@@ -25,7 +25,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib5/gtwdwprprt/gtwdwprprt.m
+>># File: xts5/tset/Xlib5/XGetWindowProperty/XGetWindowProperty.m
 >># 
 >># Description:
 >># 	Tests for XGetWindowProperty()
