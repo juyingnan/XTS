@@ -91,7 +91,7 @@
 	"VSW5TESTSUITE CASE XtRegisterCaseConverter 2"
 	/tset/Xt12/tregccon/tregccon
 	"VSW5TESTSUITE CASE XtConvertCase 2"
-	/tset/Xt12/tcnvrtcas/tcnvrtcas
+	/tset/Xt12/XtConvertCase/XtConvertCase
 	"VSW5TESTSUITE CASE XtGetActionKeysym 8"
 	/tset/Xt12/tgtacksym/tgtacksym
 	"VSW5TESTSUITE CASE XtKeysymToKeycodeList 2"

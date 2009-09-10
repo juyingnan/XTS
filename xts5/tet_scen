@@ -4431,7 +4431,7 @@ XtRegisterCaseConverter
 
 XtConvertCase
 	"VSW5TESTSUITE CASE XtConvertCase 2"
-	/tset/Xt12/tcnvrtcas/tcnvrtcas
+	/tset/Xt12/XtConvertCase/XtConvertCase
 
 XtGetActionKeysym
 	"VSW5TESTSUITE CASE XtGetActionKeysym 8"
