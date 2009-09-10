@@ -45,7 +45,7 @@ tprogs = \
 	XDestroyWindow/XDestroyWindow \
 	FillPoly/FillPoly \
 	XFreeColormap/XFreeColormap \
-	FreeColors/FreeColors \
+	XFreeColors/XFreeColors \
 	XFreeCursor/XFreeCursor \
 	XForceScreenSaver/XForceScreenSaver \
 	FreeGC/FreeGC \

@@ -60,7 +60,7 @@ tprogs = \
 	XCopyColormapAndFree/XCopyColormapAndFree \
 	XCreateColormap/XCreateColormap \
 	XFreeColormap/XFreeColormap \
-	FreeColors/FreeColors \
+	XFreeColors/XFreeColors \
 	XLookupColor/XLookupColor \
 	prsclr/prsclr \
 	qryclr/qryclr \

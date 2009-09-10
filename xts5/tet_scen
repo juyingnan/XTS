@@ -2559,7 +2559,7 @@ XFreeColormap
 
 XFreeColors
 	"VSW5TESTSUITE CASE XFreeColors 9"
-	/tset/Xlib7/FreeColors/FreeColors
+	/tset/Xlib7/XFreeColors/XFreeColors
 
 XLookupColor
 	"VSW5TESTSUITE CASE XLookupColor 4"
@@ -3250,7 +3250,7 @@ pFreeColormap
 
 pFreeColors
 	"VSW5TESTSUITE CASE FreeColors 3"
-	/tset/Xproto/FreeColors/FreeColors
+	/tset/Xproto/XFreeColors/XFreeColors
 
 pFreeCursor
 	"VSW5TESTSUITE CASE FreeCursor 3"

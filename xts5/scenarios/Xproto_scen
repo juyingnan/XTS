@@ -128,7 +128,7 @@
 	"VSW5TESTSUITE CASE FreeColormap 3"
 	/tset/Xproto/XFreeColormap/XFreeColormap
 	"VSW5TESTSUITE CASE FreeColors 3"
-	/tset/Xproto/FreeColors/FreeColors
+	/tset/Xproto/XFreeColors/XFreeColors
 	"VSW5TESTSUITE CASE FreeCursor 3"
 	/tset/Xproto/XFreeCursor/XFreeCursor
 	"VSW5TESTSUITE CASE ForceScreenSaver 3"
