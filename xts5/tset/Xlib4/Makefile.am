@@ -26,7 +26,7 @@ tprogs = \
 	XMoveResizeWindow/XMoveResizeWindow \
 	XMoveWindow/XMoveWindow \
 	XRestackWindows/XRestackWindows \
-	rswdw/rswdw \
+	XRaiseWindow/XRaiseWindow \
 	rszwdw/rszwdw \
 	stwdwbg/stwdwbg \
 	stwdwbgpxm/stwdwbgpxm \

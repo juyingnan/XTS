@@ -2382,7 +2382,7 @@ XRestackWindows
 
 XRaiseWindow
 	"VSW5TESTSUITE CASE XRaiseWindow 4"
-	/tset/Xlib4/rswdw/rswdw
+	/tset/Xlib4/XRaiseWindow/XRaiseWindow
 
 XResizeWindow
 	"VSW5TESTSUITE CASE XResizeWindow 13"

@@ -90,7 +90,7 @@
 	"VSW5TESTSUITE CASE XRestackWindows 6"
 	/tset/Xlib4/XRestackWindows/XRestackWindows
 	"VSW5TESTSUITE CASE XRaiseWindow 4"
-	/tset/Xlib4/rswdw/rswdw
+	/tset/Xlib4/XRaiseWindow/XRaiseWindow
 	"VSW5TESTSUITE CASE XResizeWindow 13"
 	/tset/Xlib4/rszwdw/rszwdw
 	"VSW5TESTSUITE CASE XSetWindowBackground 4"
