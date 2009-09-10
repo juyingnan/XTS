@@ -3702,7 +3702,7 @@ XtDisplayInitialize
 
 XtOpenDisplay
 	"VSW5TESTSUITE CASE XtOpenDisplay 28"
-	/tset/Xt4/topndsply/topndsply
+	/tset/Xt4/XtOpenDisplay/XtOpenDisplay
 
 XtCloseDisplay
 	"VSW5TESTSUITE CASE XtCloseDisplay 2"
