@@ -114,7 +114,7 @@
 	"VSW5TESTSUITE CASE XcmsDisplayOfCCC 1"
 	/tset/Xlib7/XcmsDisplayOfCCC/XcmsDisplayOfCCC
 	"VSW5TESTSUITE CASE XcmsFreeCCC 1"
-	/tset/Xlib7/cmsfccc/cmsfccc
+	/tset/Xlib7/XcmsFreeCCC/XcmsFreeCCC
 	"VSW5TESTSUITE CASE XcmsFormatOfPrefix 2"
 	/tset/Xlib7/cmsfopr/cmsfopr
 	"VSW5TESTSUITE CASE XcmsLookupColor 1"

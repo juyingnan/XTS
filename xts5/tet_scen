@@ -2647,7 +2647,7 @@ XcmsDisplayOfCCC
 
 XcmsFreeCCC
 	"VSW5TESTSUITE CASE XcmsFreeCCC 1"
-	/tset/Xlib7/cmsfccc/cmsfccc
+	/tset/Xlib7/XcmsFreeCCC/XcmsFreeCCC
 
 XcmsFormatOfPrefix
 	"VSW5TESTSUITE CASE XcmsFormatOfPrefix 2"

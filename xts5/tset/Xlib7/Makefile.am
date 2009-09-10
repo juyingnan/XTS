@@ -28,7 +28,7 @@ tprogs = \
 	XcmsCreateCCC/XcmsCreateCCC \
 	XcmsDefaultCCC/XcmsDefaultCCC \
 	XcmsDisplayOfCCC/XcmsDisplayOfCCC \
-	cmsfccc/cmsfccc \
+	XcmsFreeCCC/XcmsFreeCCC \
 	cmsfopr/cmsfopr \
 	cmslkcl/cmslkcl \
 	cmslqml/cmslqml \
