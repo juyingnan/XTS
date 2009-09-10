@@ -48,7 +48,7 @@ tprogs = \
 	XSetWMClientMachine/XSetWMClientMachine \
 	XSetWMColormapWindows/XSetWMColormapWindows \
 	XSetWMHints/XSetWMHints \
-	stwmicnnm/stwmicnnm \
+	XSetWMIconName/XSetWMIconName \
 	stwmnm/stwmnm \
 	stwmnrmlhn/stwmnrmlhn \
 	stwmprprts/stwmprprts \
