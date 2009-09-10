@@ -51,7 +51,7 @@ tprogs = \
 	XQueryTextExtents/XQueryTextExtents \
 	XSetFontPath/XSetFontPath \
 	XTextExtents16/XTextExtents16 \
-	txtextnts/txtextnts \
+	XTextExtents/XTextExtents \
 	txtwdth/txtwdth \
 	txtwdth16/txtwdth16 \
 	unldfnt/unldfnt

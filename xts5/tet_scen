@@ -3052,7 +3052,7 @@ XTextExtents16
 
 XTextExtents
 	"VSW5TESTSUITE CASE XTextExtents 10"
-	/tset/Xlib9/txtextnts/txtextnts
+	/tset/Xlib9/XTextExtents/XTextExtents
 
 XTextWidth
 	"VSW5TESTSUITE CASE XTextWidth 1"
