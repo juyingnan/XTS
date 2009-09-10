@@ -4056,7 +4056,7 @@ XtIsSensitive
 
 XtSetSensitive
 	"VSW5TESTSUITE CASE XtSetSensitive 6"
-	/tset/Xt9/tstsenstv/tstsenstv
+	/tset/Xt9/XtSetSensitive/XtSetSensitive
 
 XtAppAddWorkProc
 	"VSW5TESTSUITE CASE XtAppAddWorkProc 5"
