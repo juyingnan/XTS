@@ -2512,7 +2512,7 @@ XCreatePixmapCursor
 
 XFreeCursor
 	"VSW5TESTSUITE CASE XFreeCursor 3"
-	/tset/Xlib6/FreeCursor/FreeCursor
+	/tset/Xlib6/XFreeCursor/XFreeCursor
 
 XFreePixmap
 	"VSW5TESTSUITE CASE XFreePixmap 3"
@@ -3254,7 +3254,7 @@ pFreeColors
 
 pFreeCursor
 	"VSW5TESTSUITE CASE FreeCursor 3"
-	/tset/Xproto/FreeCursor/FreeCursor
+	/tset/Xproto/XFreeCursor/XFreeCursor
 
 pForceScreenSaver
 	"VSW5TESTSUITE CASE ForceScreenSaver 3"

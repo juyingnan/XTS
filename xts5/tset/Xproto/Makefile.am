@@ -46,7 +46,7 @@ tprogs = \
 	FillPoly/FillPoly \
 	FreeColormap/FreeColormap \
 	FreeColors/FreeColors \
-	FreeCursor/FreeCursor \
+	XFreeCursor/XFreeCursor \
 	XForceScreenSaver/XForceScreenSaver \
 	FreeGC/FreeGC \
 	FreePixmap/FreePixmap \

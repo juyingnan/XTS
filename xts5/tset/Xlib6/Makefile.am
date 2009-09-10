@@ -13,7 +13,7 @@ tprogs = \
 	XCreateGlyphCursor/XCreateGlyphCursor \
 	XCreatePixmap/XCreatePixmap \
 	XCreatePixmapCursor/XCreatePixmapCursor \
-	FreeCursor/FreeCursor \
+	XFreeCursor/XFreeCursor \
 	FreePixmap/FreePixmap \
 	qrybstcrsr/qrybstcrsr \
 	RecolorCursor/RecolorCursor
