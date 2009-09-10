@@ -17,7 +17,7 @@ tprogs = \
 	dsblaccssc/dsblaccssc \
 	enblaccssc/enblaccssc \
 	ForceScreenSaver/ForceScreenSaver \
-	grbsrvr/grbsrvr \
+	GrabServer/GrabServer \
 	gtscrnsvr/gtscrnsvr \
 	instllclrm/instllclrm \
 	kllclnt/kllclnt \
