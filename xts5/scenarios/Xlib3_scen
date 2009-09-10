@@ -158,7 +158,7 @@
 	"VSW5TESTSUITE CASE XScreenNumberOfScreen 1"
 	/tset/Xlib3/XScreenNumberOfScreen/XScreenNumberOfScreen
 	"VSW5TESTSUITE CASE XScreenOfDisplay 1"
-	/tset/Xlib3/scrnofdspl/scrnofdspl
+	/tset/Xlib3/XScreenOfDisplay/XScreenOfDisplay
 	"VSW5TESTSUITE CASE XVendorRelease 1"
 	/tset/Xlib3/vndrrls/vndrrls
 	"VSW5TESTSUITE CASE XServerVendor 1"
@@ -260,7 +260,7 @@
 	"VSW5TESTSUITE CASE ScreenCount 1"
 	/tset/Xlib3/XScreenCount/XScreenCount_m
 	"VSW5TESTSUITE CASE ScreenOfDisplay 1"
-	/tset/Xlib3/scrnofdspl/scrnofdspl_m
+	/tset/Xlib3/XScreenOfDisplay/XScreenOfDisplay_m
 	"VSW5TESTSUITE CASE VendorRelease 1"
 	/tset/Xlib3/vndrrls/vndrrls_m
 	"VSW5TESTSUITE CASE ServerVendor 1"

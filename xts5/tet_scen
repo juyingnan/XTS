@@ -2079,7 +2079,7 @@ XScreenNumberOfScreen
 
 XScreenOfDisplay
 	"VSW5TESTSUITE CASE XScreenOfDisplay 1"
-	/tset/Xlib3/scrnofdspl/scrnofdspl
+	/tset/Xlib3/XScreenOfDisplay/XScreenOfDisplay
 
 XVendorRelease
 	"VSW5TESTSUITE CASE XVendorRelease 1"
@@ -2283,7 +2283,7 @@ ScreenCount
 
 ScreenOfDisplay
 	"VSW5TESTSUITE CASE ScreenOfDisplay 1"
-	/tset/Xlib3/scrnofdspl/scrnofdspl_m
+	/tset/Xlib3/XScreenOfDisplay/XScreenOfDisplay_m
 
 VendorRelease
 	"VSW5TESTSUITE CASE VendorRelease 1"
