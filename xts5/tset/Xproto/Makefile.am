@@ -129,5 +129,5 @@ tprogs = \
 	UngrabServer/UngrabServer \
 	UnmapSubwindows/UnmapSubwindows \
 	UnmapWindow/UnmapWindow \
-	unnstllclr/unnstllclr \
+	UninstallColormap/UninstallColormap \
 	wrppntr/wrppntr

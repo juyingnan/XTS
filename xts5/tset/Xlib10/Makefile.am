@@ -31,4 +31,4 @@ tprogs = \
 	SetAccessControl/SetAccessControl \
 	SetScreenSaver/SetScreenSaver \
 	UngrabServer/UngrabServer \
-	unnstllclr/unnstllclr
+	UninstallColormap/UninstallColormap

@@ -782,7 +782,7 @@ XUngrabServer
 
 XUninstallColormap
 	"VSW5TESTSUITE CASE XUninstallColormap 5"
-	/tset/Xlib10/unnstllclr/unnstllclr
+	/tset/Xlib10/UninstallColormap/UninstallColormap
 
 # Discrete tests for Xlib Chapter 11-Events
 
@@ -3586,7 +3586,7 @@ pUnmapWindow
 
 pUninstallColormap
 	"VSW5TESTSUITE CASE UninstallColormap 3"
-	/tset/Xproto/unnstllclr/unnstllclr
+	/tset/Xproto/UninstallColormap/UninstallColormap
 
 pWarpPointer
 	"VSW5TESTSUITE CASE WarpPointer 3"
