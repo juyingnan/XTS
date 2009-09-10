@@ -4671,7 +4671,7 @@ XtAddTimeOut
 
 XtAddWorkProc
 	"VSW5TESTSUITE CASE XtAddWorkProc 5"
-	/tset/XtC/tadwkproc/tadwkproc
+	/tset/XtC/XtAddWorkProc/XtAddWorkProc
 
 XtCreateApplicationShell
 	"VSW5TESTSUITE CASE XtCreateApplicationShell 7"

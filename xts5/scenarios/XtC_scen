@@ -79,7 +79,7 @@
 	"VSW5TESTSUITE CASE XtAddTimeOut 2"
 	/tset/XtC/XtAddTimeOut/XtAddTimeOut
 	"VSW5TESTSUITE CASE XtAddWorkProc 5"
-	/tset/XtC/tadwkproc/tadwkproc
+	/tset/XtC/XtAddWorkProc/XtAddWorkProc
 	"VSW5TESTSUITE CASE XtCreateApplicationShell 7"
 	/tset/XtC/tcrappshl/tcrappshl
 	"VSW5TESTSUITE CASE XtStringConversionWarning 1"
