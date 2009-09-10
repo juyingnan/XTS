@@ -58,7 +58,7 @@
 	"VSW5TESTSUITE CASE XAllowDeviceEvents 22"
 	/tset/XI/XAllowDeviceEvents/XAllowDeviceEvents
 	"VSW5TESTSUITE CASE XChangeDeviceControl 10"
-	/tset/XI/chgdvctl/chgdvctl
+	/tset/XI/XChangeDeviceControl/XChangeDeviceControl
 	"VSW5TESTSUITE CASE XChangeFeedbackControl 8"
 	/tset/XI/chgfctl/chgfctl
 	"VSW5TESTSUITE CASE XChangeKeyboardDevice 10"
