@@ -2095,7 +2095,7 @@ XSetCloseDownMode
 
 XWidthMMOfScreen
 	"VSW5TESTSUITE CASE XWidthMMOfScreen 1"
-	/tset/Xlib3/wdthmmofsc/wdthmmofsc
+	/tset/Xlib3/XWidthMMOfScreen/XWidthMMOfScreen
 
 XWidthOfScreen
 	"VSW5TESTSUITE CASE XWidthOfScreen 1"
@@ -2295,7 +2295,7 @@ ServerVendor
 
 WidthMMOfScreen
 	"VSW5TESTSUITE CASE WidthMMOfScreen 1"
-	/tset/Xlib3/wdthmmofsc/wdthmmofsc_m
+	/tset/Xlib3/XWidthMMOfScreen/XWidthMMOfScreen_m
 
 WidthOfScreen
 	"VSW5TESTSUITE CASE WidthOfScreen 1"

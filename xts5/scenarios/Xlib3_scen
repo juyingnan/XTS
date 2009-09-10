@@ -166,7 +166,7 @@
 	"VSW5TESTSUITE CASE XSetCloseDownMode 7"
 	/tset/Xlib3/XSetCloseDownMode/XSetCloseDownMode
 	"VSW5TESTSUITE CASE XWidthMMOfScreen 1"
-	/tset/Xlib3/wdthmmofsc/wdthmmofsc
+	/tset/Xlib3/XWidthMMOfScreen/XWidthMMOfScreen
 	"VSW5TESTSUITE CASE XWidthOfScreen 1"
 	/tset/Xlib3/wdthofscrn/wdthofscrn
 	"VSW5TESTSUITE CASE XWhitePixel 1"
@@ -266,7 +266,7 @@
 	"VSW5TESTSUITE CASE ServerVendor 1"
 	/tset/Xlib3/XServerVendor/XServerVendor_m
 	"VSW5TESTSUITE CASE WidthMMOfScreen 1"
-	/tset/Xlib3/wdthmmofsc/wdthmmofsc_m
+	/tset/Xlib3/XWidthMMOfScreen/XWidthMMOfScreen_m
 	"VSW5TESTSUITE CASE WidthOfScreen 1"
 	/tset/Xlib3/wdthofscrn/wdthofscrn_m
 	"VSW5TESTSUITE CASE WhitePixel 1"
