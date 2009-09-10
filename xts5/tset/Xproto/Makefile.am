@@ -110,7 +110,7 @@ tprogs = \
 	RotateProperties/RotateProperties \
 	XSendEvent/XSendEvent \
 	XSetAccessControl/XSetAccessControl \
-	SetClipRectangles/SetClipRectangles \
+	XSetClipRectangles/XSetClipRectangles \
 	XSetCloseDownMode/XSetCloseDownMode \
 	SetDashes/SetDashes \
 	SetFontPath/SetFontPath \

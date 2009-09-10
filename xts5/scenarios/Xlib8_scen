@@ -82,7 +82,7 @@
 	"VSW5TESTSUITE CASE XSetClipOrigin 3"
 	/tset/Xlib8/stclporgn/stclporgn
 	"VSW5TESTSUITE CASE XSetClipRectangles 9"
-	/tset/Xlib8/SetClipRectangles/SetClipRectangles
+	/tset/Xlib8/XSetClipRectangles/XSetClipRectangles
 	"VSW5TESTSUITE CASE XSetDashes 7"
 	/tset/Xlib8/SetDashes/SetDashes
 	"VSW5TESTSUITE CASE XSetFillRule 4"

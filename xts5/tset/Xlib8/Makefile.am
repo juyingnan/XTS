@@ -26,7 +26,7 @@ tprogs = \
 	stbg/stbg \
 	stclpmsk/stclpmsk \
 	stclporgn/stclporgn \
-	SetClipRectangles/SetClipRectangles \
+	XSetClipRectangles/XSetClipRectangles \
 	SetDashes/SetDashes \
 	stfllrl/stfllrl \
 	stfllstyl/stfllstyl \
