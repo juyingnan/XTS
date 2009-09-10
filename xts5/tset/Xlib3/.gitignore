@@ -32,8 +32,8 @@ XDefaultScreen/XDefaultScreen
 XDefaultScreen/XDefaultScreen_m
 XDefaultScreenOfDisplay/XDefaultScreenOfDisplay
 XDefaultScreenOfDisplay/XDefaultScreenOfDisplay_m
-dfltvsl/dfltvsl
-dfltvsl/dfltvsl_m
+XDefaultVisual/XDefaultVisual
+XDefaultVisual/XDefaultVisual_m
 dfltvslofs/dfltvslofs
 dfltvslofs/dfltvslofs_m
 dsbckngstr/dsbckngstr

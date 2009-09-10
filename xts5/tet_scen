@@ -1947,7 +1947,7 @@ XDefaultScreenOfDisplay
 
 XDefaultVisual
 	"VSW5TESTSUITE CASE XDefaultVisual 1"
-	/tset/Xlib3/dfltvsl/dfltvsl
+	/tset/Xlib3/XDefaultVisual/XDefaultVisual
 
 XDefaultVisualOfScreen
 	"VSW5TESTSUITE CASE XDefaultVisualOfScreen 1"
@@ -2175,7 +2175,7 @@ DefaultScreenOfDisplay
 
 DefaultVisual
 	"VSW5TESTSUITE CASE DefaultVisual 1"
-	/tset/Xlib3/dfltvsl/dfltvsl_m
+	/tset/Xlib3/XDefaultVisual/XDefaultVisual_m
 
 DefaultVisualOfScreen
 	"VSW5TESTSUITE CASE DefaultVisualOfScreen 1"

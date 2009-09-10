@@ -92,7 +92,7 @@
 	"VSW5TESTSUITE CASE XDefaultScreenOfDisplay 1"
 	/tset/Xlib3/XDefaultScreenOfDisplay/XDefaultScreenOfDisplay
 	"VSW5TESTSUITE CASE XDefaultVisual 1"
-	/tset/Xlib3/dfltvsl/dfltvsl
+	/tset/Xlib3/XDefaultVisual/XDefaultVisual
 	"VSW5TESTSUITE CASE XDefaultVisualOfScreen 1"
 	/tset/Xlib3/dfltvslofs/dfltvslofs
 	"VSW5TESTSUITE CASE XDoesBackingStore 1"
@@ -206,7 +206,7 @@
 	"VSW5TESTSUITE CASE DefaultScreenOfDisplay 1"
 	/tset/Xlib3/XDefaultScreenOfDisplay/XDefaultScreenOfDisplay_m
 	"VSW5TESTSUITE CASE DefaultVisual 1"
-	/tset/Xlib3/dfltvsl/dfltvsl_m
+	/tset/Xlib3/XDefaultVisual/XDefaultVisual_m
 	"VSW5TESTSUITE CASE DefaultVisualOfScreen 1"
 	/tset/Xlib3/dfltvslofs/dfltvslofs_m
 	"VSW5TESTSUITE CASE DoesBackingStore 1"

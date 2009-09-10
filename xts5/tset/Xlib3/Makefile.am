@@ -27,7 +27,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XDefaultRootWindow/XDefaultRootWindow XDefaultRootWindow/XDefaultRootWindow_m \
 	XDefaultScreen/XDefaultScreen XDefaultScreen/XDefaultScreen_m \
 	XDefaultScreenOfDisplay/XDefaultScreenOfDisplay XDefaultScreenOfDisplay/XDefaultScreenOfDisplay_m \
-	dfltvsl/dfltvsl dfltvsl/dfltvsl_m \
+	XDefaultVisual/XDefaultVisual XDefaultVisual/XDefaultVisual_m \
 	dfltvslofs/dfltvslofs dfltvslofs/dfltvslofs_m \
 	dsbckngstr/dsbckngstr dsbckngstr/dsbckngstr_m \
 	dsplyclls/dsplyclls dsplyclls/dsplyclls_m \
