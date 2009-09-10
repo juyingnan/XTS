@@ -13,7 +13,7 @@ tprogs = \
 	addhst/addhst \
 	addhsts/addhsts \
 	addtsvst/addtsvst \
-	chngsvst/chngsvst \
+	ChangeSaveSet/ChangeSaveSet \
 	dsblaccssc/dsblaccssc \
 	enblaccssc/enblaccssc \
 	frcscrnsvr/frcscrnsvr \

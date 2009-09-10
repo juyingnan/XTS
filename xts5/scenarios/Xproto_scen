@@ -84,7 +84,7 @@
 	"VSW5TESTSUITE CASE ChangeProperty 3"
 	/tset/Xproto/ChangeProperty/ChangeProperty
 	"VSW5TESTSUITE CASE ChangeSaveSet 3"
-	/tset/Xproto/chngsvst/chngsvst
+	/tset/Xproto/ChangeSaveSet/ChangeSaveSet
 	"VSW5TESTSUITE CASE ChangeWindowAttributes 4"
 	/tset/Xproto/chngwdwatt/chngwdwatt
 	"VSW5TESTSUITE CASE ClearArea 3"
