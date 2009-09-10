@@ -80,7 +80,7 @@ tprogs = \
 	ListFonts/ListFonts \
 	ListFontsWithInfo/ListFontsWithInfo \
 	XListHosts/XListHosts \
-	ListInstalledColormaps/ListInstalledColormaps \
+	XListInstalledColormaps/XListInstalledColormaps \
 	ListProperties/ListProperties \
 	MapSubwindows/MapSubwindows \
 	MapWindow/MapWindow \

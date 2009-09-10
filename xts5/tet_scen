@@ -746,7 +746,7 @@ XListHosts
 
 XListInstalledColormaps
 	"VSW5TESTSUITE CASE XListInstalledColormaps 2"
-	/tset/Xlib10/ListInstalledColormaps/ListInstalledColormaps
+	/tset/Xlib10/XListInstalledColormaps/XListInstalledColormaps
 
 XRemoveFromSaveSet
 	"VSW5TESTSUITE CASE XRemoveFromSaveSet 3"
@@ -3390,7 +3390,7 @@ pListHosts
 
 pListInstalledColormaps
 	"VSW5TESTSUITE CASE ListInstalledColormaps 3"
-	/tset/Xproto/ListInstalledColormaps/ListInstalledColormaps
+	/tset/Xproto/XListInstalledColormaps/XListInstalledColormaps
 
 pListProperties
 	"VSW5TESTSUITE CASE ListProperties 3"

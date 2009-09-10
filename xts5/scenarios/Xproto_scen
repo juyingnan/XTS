@@ -198,7 +198,7 @@
 	"VSW5TESTSUITE CASE ListHosts 3"
 	/tset/Xproto/XListHosts/XListHosts
 	"VSW5TESTSUITE CASE ListInstalledColormaps 3"
-	/tset/Xproto/ListInstalledColormaps/ListInstalledColormaps
+	/tset/Xproto/XListInstalledColormaps/XListInstalledColormaps
 	"VSW5TESTSUITE CASE ListProperties 3"
 	/tset/Xproto/ListProperties/ListProperties
 	"VSW5TESTSUITE CASE MapSubwindows 3"

@@ -82,7 +82,7 @@
 	"VSW5TESTSUITE CASE XListHosts 2"
 	/tset/Xlib10/XListHosts/XListHosts
 	"VSW5TESTSUITE CASE XListInstalledColormaps 2"
-	/tset/Xlib10/ListInstalledColormaps/ListInstalledColormaps
+	/tset/Xlib10/XListInstalledColormaps/XListInstalledColormaps
 	"VSW5TESTSUITE CASE XRemoveFromSaveSet 3"
 	/tset/Xlib10/rmvfrmsvst/rmvfrmsvst
 	"VSW5TESTSUITE CASE XRemoveHost 3"

@@ -22,7 +22,7 @@ tprogs = \
 	XInstallColormap/XInstallColormap \
 	XKillClient/XKillClient \
 	XListHosts/XListHosts \
-	ListInstalledColormaps/ListInstalledColormaps \
+	XListInstalledColormaps/XListInstalledColormaps \
 	rmvfrmsvst/rmvfrmsvst \
 	rmvhst/rmvhst \
 	rmvhsts/rmvhsts \
