@@ -4651,7 +4651,7 @@ XtNextEvent
 
 XtProcessEvent
 	"VSW5TESTSUITE CASE XtProcessEvent 12"
-	/tset/XtC/tprocevnt/tprocevnt
+	/tset/XtC/XtProcessEvent/XtProcessEvent
 
 XtPeekEvent
 	"VSW5TESTSUITE CASE XtPeekEvent 3"
