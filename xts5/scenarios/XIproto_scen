@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE DeviceBell 3"
 	/tset/XIproto/XDeviceBell/XDeviceBell
 	"VSW5TESTSUITE CASE GetDeviceModifierMapping 3"
-	/tset/XIproto/getdvmmap/getdvmmap
+	/tset/XIproto/GetDeviceModifierMapping/GetDeviceModifierMapping
 	"VSW5TESTSUITE CASE GetFeedbackControl 3"
 	/tset/XIproto/XGetFeedbackControl/XGetFeedbackControl
 	"VSW5TESTSUITE CASE GetExtensionVersion 3"

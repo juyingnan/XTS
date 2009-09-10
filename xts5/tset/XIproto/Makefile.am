@@ -18,7 +18,7 @@ tprogs = \
 	XChangeDeviceKeyMapping/XChangeDeviceKeyMapping \
 	XCloseDevice/XCloseDevice \
 	XDeviceBell/XDeviceBell \
-	getdvmmap/getdvmmap \
+	GetDeviceModifierMapping/GetDeviceModifierMapping \
 	XGetFeedbackControl/XGetFeedbackControl \
 	XGetExtensionVersion/XGetExtensionVersion \
 	XGrabDevice/XGrabDevice \
