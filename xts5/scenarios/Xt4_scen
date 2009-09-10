@@ -120,7 +120,7 @@
 	"VSW5TESTSUITE CASE XtScreenOfObject 2"
 	/tset/Xt4/XtScreenOfObject/XtScreenOfObject
 	"VSW5TESTSUITE CASE XtWindowOfObject 2"
-	/tset/Xt4/twindwofo/twindwofo
+	/tset/Xt4/XtWindowOfObject/XtWindowOfObject
 	"VSW5TESTSUITE CASE XtName 1"
 	/tset/Xt4/XtName/XtName
 	"VSW5TESTSUITE CASE XtUnrealizeWidget 4"

@@ -3798,7 +3798,7 @@ XtScreenOfObject
 
 XtWindowOfObject
 	"VSW5TESTSUITE CASE XtWindowOfObject 2"
-	/tset/Xt4/twindwofo/twindwofo
+	/tset/Xt4/XtWindowOfObject/XtWindowOfObject
 
 XtName
 	"VSW5TESTSUITE CASE XtName 1"
