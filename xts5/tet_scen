@@ -622,7 +622,7 @@ XSetDeviceModifierMapping
 
 XSetDeviceMode
 	"VSW5TESTSUITE CASE XSetDeviceMode 6"
-	/tset/XI/setdvmode/setdvmode
+	/tset/XI/XSetDeviceMode/XSetDeviceMode
 
 XSelectExtensionEvent
 	"VSW5TESTSUITE CASE XSelectExtensionEvent 13"

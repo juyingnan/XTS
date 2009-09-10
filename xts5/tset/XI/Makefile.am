@@ -39,7 +39,7 @@ tprogs = \
 	XSetDeviceButtonMapping/XSetDeviceButtonMapping \
 	XSetDeviceFocus/XSetDeviceFocus \
 	XSetDeviceModifierMapping/XSetDeviceModifierMapping \
-	setdvmode/setdvmode \
+	XSetDeviceMode/XSetDeviceMode \
 	slextevnt/slextevnt \
 	sndextevnt/sndextevnt \
 	ungrbdv/ungrbdv \
