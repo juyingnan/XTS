@@ -4133,7 +4133,7 @@ XtHasCallbacks
 
 XtGetResourceList
 	"VSW5TESTSUITE CASE XtGetResourceList 2"
-	/tset/Xt11/tgtreslst/tgtreslst
+	/tset/Xt11/XtGetResourceList/XtGetResourceList
 
 XtGetConstraintResourceList
 	"VSW5TESTSUITE CASE XtGetConstraintResourceList 3"
