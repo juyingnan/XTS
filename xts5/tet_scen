@@ -4213,7 +4213,7 @@ XtCvtStringToFontStruct
 
 XtCvtStringToInitialState
 	"VSW5TESTSUITE CASE XtCvtStringToInitialState 6"
-	/tset/Xt11/tcstinit/tcstinit
+	/tset/Xt11/XtCvtStringToInitialState/XtCvtStringToInitialState
 
 XtCvtStringToInt
 	"VSW5TESTSUITE CASE XtCvtStringToInt 4"
