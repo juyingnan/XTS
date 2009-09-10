@@ -17,7 +17,7 @@ tprogs = \
 	XCreateRegion/XCreateRegion \
 	XDeleteContext/XDeleteContext \
 	XDestroyImage/XDestroyImage \
-	dstryrgn/dstryrgn \
+	XDestroyRegion/XDestroyRegion \
 	emptyrgn/emptyrgn \
 	eqlrgn/eqlrgn \
 	fndcntxt/fndcntxt \
