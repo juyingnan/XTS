@@ -694,7 +694,7 @@ XShapeSelectInput
 
 XActivateScreenSaver
 	"VSW5TESTSUITE CASE XActivateScreenSaver 2"
-	/tset/Xlib10/actvtscrns/actvtscrns
+	/tset/Xlib10/XActivateScreenSaver/XActivateScreenSaver
 
 XAddHost
 	"VSW5TESTSUITE CASE XAddHost 3"

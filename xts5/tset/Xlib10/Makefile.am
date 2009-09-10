@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	actvtscrns/actvtscrns \
+	XActivateScreenSaver/XActivateScreenSaver \
 	addhst/addhst \
 	addhsts/addhsts \
 	addtsvst/addtsvst \
