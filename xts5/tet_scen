@@ -3968,7 +3968,7 @@ XtAppAddInput
 
 XtRemoveInput
 	"VSW5TESTSUITE CASE XtRemoveInput 1"
-	/tset/Xt9/trminput/trminput
+	/tset/Xt9/XtRemoveInput/XtRemoveInput
 
 XtAppAddTimeOut
 	"VSW5TESTSUITE CASE XtAppAddTimeOut 3"

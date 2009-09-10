@@ -61,7 +61,7 @@
 	"VSW5TESTSUITE CASE XtAppAddInput 5"
 	/tset/Xt9/XtAppAddInput/XtAppAddInput
 	"VSW5TESTSUITE CASE XtRemoveInput 1"
-	/tset/Xt9/trminput/trminput
+	/tset/Xt9/XtRemoveInput/XtRemoveInput
 	"VSW5TESTSUITE CASE XtAppAddTimeOut 3"
 	/tset/Xt9/XtAppAddTimeOut/XtAppAddTimeOut
 	"VSW5TESTSUITE CASE XtRemoveTimeOut 1"
