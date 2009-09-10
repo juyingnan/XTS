@@ -105,7 +105,7 @@
 	"VSW5TESTSUITE CASE XtAddExposureToRegion 3"
 	/tset/Xt13/XtAddExposureToRegion/XtAddExposureToRegion
 	"VSW5TESTSUITE CASE XtTranslateCoords 1"
-	/tset/Xt13/ttranslcd/ttranslcd
+	/tset/Xt13/XtTranslateCoords/XtTranslateCoords
 	"VSW5TESTSUITE CASE XtWindowToWidget 2"
 	/tset/Xt13/twindtowd/twindtowd
 	"VSW5TESTSUITE CASE XtGetApplicationNameAndClass 3"

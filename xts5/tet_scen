@@ -4549,7 +4549,7 @@ XtAddExposureToRegion
 
 XtTranslateCoords
 	"VSW5TESTSUITE CASE XtTranslateCoords 1"
-	/tset/Xt13/ttranslcd/ttranslcd
+	/tset/Xt13/XtTranslateCoords/XtTranslateCoords
 
 XtWindowToWidget
 	"VSW5TESTSUITE CASE XtWindowToWidget 2"
