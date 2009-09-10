@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	clrar/clrar \
+	ClearArea/ClearArea \
 	clrwdw/clrwdw \
 	cpyar/cpyar \
 	cpypln/cpypln \

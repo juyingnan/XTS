@@ -88,7 +88,7 @@
 	"VSW5TESTSUITE CASE ChangeWindowAttributes 4"
 	/tset/Xproto/ChangeWindowAttributes/ChangeWindowAttributes
 	"VSW5TESTSUITE CASE ClearArea 3"
-	/tset/Xproto/clrar/clrar
+	/tset/Xproto/ClearArea/ClearArea
 	"VSW5TESTSUITE CASE CloseFont 3"
 	/tset/Xproto/clsfnt/clsfnt
 	"VSW5TESTSUITE CASE ConfigureWindow 4"

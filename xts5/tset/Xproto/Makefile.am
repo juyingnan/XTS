@@ -25,7 +25,7 @@ tprogs = \
 	ChangeProperty/ChangeProperty \
 	ChangeSaveSet/ChangeSaveSet \
 	ChangeWindowAttributes/ChangeWindowAttributes \
-	clrar/clrar \
+	ClearArea/ClearArea \
 	clsfnt/clsfnt \
 	cnfgrwdw/cnfgrwdw \
 	cnvrtslctn/cnvrtslctn \
