@@ -3,7 +3,7 @@ XAllocIconSize/XAllocIconSize
 XAllocStandardColormap/XAllocStandardColormap
 XAllocSizeHints/XAllocSizeHints
 XAllocWMHints/XAllocWMHints
-defstr/defstr
+XDefaultString/XDefaultString
 frstrlst/frstrlst
 ftchnm/ftchnm
 gtclsshnt/gtclsshnt

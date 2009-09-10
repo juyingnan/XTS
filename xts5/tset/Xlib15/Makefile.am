@@ -8,7 +8,7 @@ check_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
-defstr_defstr_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
+XDefaultString_XDefaultString_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 
 tprogs = \
 	XAllocClassHint/XAllocClassHint \
@@ -16,7 +16,7 @@ tprogs = \
 	XAllocStandardColormap/XAllocStandardColormap \
 	XAllocSizeHints/XAllocSizeHints \
 	XAllocWMHints/XAllocWMHints \
-	defstr/defstr \
+	XDefaultString/XDefaultString \
 	frstrlst/frstrlst \
 	ftchnm/ftchnm \
 	gtclsshnt/gtclsshnt \

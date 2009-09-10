@@ -144,4 +144,4 @@
 	"VSW5TESTSUITE CASE XWithdrawWindow 3"
 	/tset/Xlib15/wthdrwwdw/wthdrwwdw
 	"VSW5TESTSUITE CASE XDefaultString 1"
-	/tset/Xlib15/defstr/defstr
+	/tset/Xlib15/XDefaultString/XDefaultString

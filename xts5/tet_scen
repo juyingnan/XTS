@@ -1523,7 +1523,7 @@ XWithdrawWindow
 
 XDefaultString
 	"VSW5TESTSUITE CASE XDefaultString 1"
-	/tset/Xlib15/defstr/defstr
+	/tset/Xlib15/XDefaultString/XDefaultString
 
 
 # Discrete tests for Xlib Chapter 16 - Resource Manager Functions
