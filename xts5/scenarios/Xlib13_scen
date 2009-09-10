@@ -84,7 +84,7 @@
 	"VSW5TESTSUITE CASE XGrabKeyboard 25"
 	/tset/Xlib13/GrabKeyboard/GrabKeyboard
 	"VSW5TESTSUITE CASE XGrabPointer 34"
-	/tset/Xlib13/grbpntr/grbpntr
+	/tset/Xlib13/GrabPointer/GrabPointer
 	"VSW5TESTSUITE CASE XGetInputFocus 1"
 	/tset/Xlib13/gtinptfcs/gtinptfcs
 	"VSW5TESTSUITE CASE XGetKeyboardControl 1"

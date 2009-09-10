@@ -23,7 +23,7 @@ tprogs = \
 	GrabButton/GrabButton \
 	GrabKey/GrabKey \
 	GrabKeyboard/GrabKeyboard \
-	grbpntr/grbpntr \
+	GrabPointer/GrabPointer \
 	gtinptfcs/gtinptfcs \
 	gtkybrdcnt/gtkybrdcnt \
 	gtkybrdmpp/gtkybrdmpp \

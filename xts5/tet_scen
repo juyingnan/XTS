@@ -1090,7 +1090,7 @@ XGrabKeyboard
 
 XGrabPointer
 	"VSW5TESTSUITE CASE XGrabPointer 34"
-	/tset/Xlib13/grbpntr/grbpntr
+	/tset/Xlib13/GrabPointer/GrabPointer
 
 XGetInputFocus
 	"VSW5TESTSUITE CASE XGetInputFocus 1"
@@ -3282,7 +3282,7 @@ pGrabKeyboard
 
 pGrabPointer
 	"VSW5TESTSUITE CASE GrabPointer 3"
-	/tset/Xproto/grbpntr/grbpntr
+	/tset/Xproto/GrabPointer/GrabPointer
 
 pGrabServer
 	"VSW5TESTSUITE CASE GrabServer 3"

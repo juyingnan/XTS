@@ -144,7 +144,7 @@
 	"VSW5TESTSUITE CASE GrabKeyboard 3"
 	/tset/Xproto/GrabKeyboard/GrabKeyboard
 	"VSW5TESTSUITE CASE GrabPointer 3"
-	/tset/Xproto/grbpntr/grbpntr
+	/tset/Xproto/GrabPointer/GrabPointer
 	"VSW5TESTSUITE CASE GrabServer 3"
 	/tset/Xproto/grbsrvr/grbsrvr
 	"VSW5TESTSUITE CASE GetAtomName 3"
