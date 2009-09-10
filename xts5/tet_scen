@@ -3690,7 +3690,7 @@ XtCreateApplicationContext
 
 XtDestroyApplicationContext
 	"VSW5TESTSUITE CASE XtDestoryApplicationContext 2"
-	/tset/Xt4/tdstryappl/tdstryappl
+	/tset/Xt4/XtDestroyApplicationContext/XtDestroyApplicationContext
 
 XtWidgetToApplicationContext
 	"VSW5TESTSUITE CASE XtWidgetToApplicationContext 1"
