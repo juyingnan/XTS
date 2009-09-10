@@ -92,7 +92,7 @@
 	"VSW5TESTSUITE CASE XDrawText 50"
 	/tset/Xlib9/XDrawText/XDrawText
 	"VSW5TESTSUITE CASE XDrawText16 50"
-	/tset/Xlib9/drwtxt16/drwtxt16
+	/tset/Xlib9/XDrawText16/XDrawText16
 	"VSW5TESTSUITE CASE XFillArc 44"
 	/tset/Xlib9/fllarc/fllarc
 	"VSW5TESTSUITE CASE XFillArcs 46"
