@@ -3446,7 +3446,7 @@ pPolySegment
 
 pPolyText16
 	"VSW5TESTSUITE CASE PolyText16 3"
-	/tset/Xproto/plytxt16/plytxt16
+	/tset/Xproto/PolyText16/PolyText16
 
 pPolyText8
 	"VSW5TESTSUITE CASE PolyText8 3"

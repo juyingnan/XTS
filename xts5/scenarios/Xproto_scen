@@ -226,7 +226,7 @@
 	"VSW5TESTSUITE CASE PolySegment 3"
 	/tset/Xproto/PolySegment/PolySegment
 	"VSW5TESTSUITE CASE PolyText16 3"
-	/tset/Xproto/plytxt16/plytxt16
+	/tset/Xproto/PolyText16/PolyText16
 	"VSW5TESTSUITE CASE PolyText8 3"
 	/tset/Xproto/plytxt8/plytxt8
 	"VSW5TESTSUITE CASE PutImage 3"
