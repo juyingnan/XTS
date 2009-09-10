@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE XGetCommand 3"
 	/tset/Xlib15/XGetCommand/XGetCommand
 	"VSW5TESTSUITE CASE XGetIconName 3"
-	/tset/Xlib15/gticnnm/gticnnm
+	/tset/Xlib15/XGetIconName/XGetIconName
 	"VSW5TESTSUITE CASE XGetIconSizes 3"
 	/tset/Xlib15/gticnszs/gticnszs
 	"VSW5TESTSUITE CASE XGetRGBColormaps 6"

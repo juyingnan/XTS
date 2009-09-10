@@ -1383,7 +1383,7 @@ XGetCommand
 
 XGetIconName
 	"VSW5TESTSUITE CASE XGetIconName 3"
-	/tset/Xlib15/gticnnm/gticnnm
+	/tset/Xlib15/XGetIconName/XGetIconName
 
 XGetIconSizes
 	"VSW5TESTSUITE CASE XGetIconSizes 3"

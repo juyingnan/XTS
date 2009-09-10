@@ -21,7 +21,7 @@ tprogs = \
 	XFetchName/XFetchName \
 	XGetClassHint/XGetClassHint \
 	XGetCommand/XGetCommand \
-	gticnnm/gticnnm \
+	XGetIconName/XGetIconName \
 	gticnszs/gticnszs \
 	gtrgbclrmp/gtrgbclrmp \
 	gttrnsntfr/gttrnsntfr \
