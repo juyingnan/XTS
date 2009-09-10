@@ -1832,7 +1832,7 @@ XStoreBuffer
 
 XStoreBytes
 	"VSW5TESTSUITE CASE XStoreBytes 2"
-	/tset/Xlib17/strbyts/strbyts
+	/tset/Xlib17/XStoreBytes/XStoreBytes
 
 XSetRegion
 	"VSW5TESTSUITE CASE XSetRegion 2"

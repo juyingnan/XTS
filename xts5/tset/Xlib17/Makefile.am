@@ -54,7 +54,7 @@ tprogs = \
 	XSubtractRegion/XSubtractRegion \
 	XShrinkRegion/XShrinkRegion \
 	XStoreBuffer/XStoreBuffer \
-	strbyts/strbyts \
+	XStoreBytes/XStoreBytes \
 	strgn/strgn \
 	XStringToKeysym/XStringToKeysym \
 	svcntxt/svcntxt \

@@ -146,7 +146,7 @@
 	"VSW5TESTSUITE CASE XStoreBuffer 2"
 	/tset/Xlib17/XStoreBuffer/XStoreBuffer
 	"VSW5TESTSUITE CASE XStoreBytes 2"
-	/tset/Xlib17/strbyts/strbyts
+	/tset/Xlib17/XStoreBytes/XStoreBytes
 	"VSW5TESTSUITE CASE XSetRegion 2"
 	/tset/Xlib17/strgn/strgn
 	"VSW5TESTSUITE CASE XStringToKeysym 2"
