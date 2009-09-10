@@ -22,5 +22,5 @@ tprogs = \
 	QueryPointer/QueryPointer \
 	QueryTree/QueryTree \
 	rttwdwprpr/rttwdwprpr \
-	stslctnown/stslctnown \
+	SetSelectionOwner/SetSelectionOwner \
 	trnsltcrdn/trnsltcrdn

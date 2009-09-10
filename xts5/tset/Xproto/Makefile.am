@@ -120,7 +120,7 @@ tprogs = \
 	StoreColors/StoreColors \
 	StoreNamedColor/StoreNamedColor \
 	SetScreenSaver/SetScreenSaver \
-	stslctnown/stslctnown \
+	SetSelectionOwner/SetSelectionOwner \
 	trnsltcrds/trnsltcrds \
 	ungrbbttn/ungrbbttn \
 	ungrbky/ungrbky \

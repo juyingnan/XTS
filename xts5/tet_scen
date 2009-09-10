@@ -2485,7 +2485,7 @@ XRotateWindowProperties
 
 XSetSelectionOwner
 	"VSW5TESTSUITE CASE XSetSelectionOwner 9"
-	/tset/Xlib5/stslctnown/stslctnown
+	/tset/Xlib5/SetSelectionOwner/SetSelectionOwner
 
 XTranslateCoordinates
 	"VSW5TESTSUITE CASE XTranslateCoordinates 5"
@@ -3550,7 +3550,7 @@ pSetScreenSaver
 
 pSetSelectionOwner
 	"VSW5TESTSUITE CASE SetSelectionOwner 3"
-	/tset/Xproto/stslctnown/stslctnown
+	/tset/Xproto/SetSelectionOwner/SetSelectionOwner
 
 pTranslateCoords
 	"VSW5TESTSUITE CASE TranslateCoords 3"

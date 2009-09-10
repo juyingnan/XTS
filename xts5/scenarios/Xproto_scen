@@ -278,7 +278,7 @@
 	"VSW5TESTSUITE CASE SetScreenSaver 3"
 	/tset/Xproto/SetScreenSaver/SetScreenSaver
 	"VSW5TESTSUITE CASE SetSelectionOwner 3"
-	/tset/Xproto/stslctnown/stslctnown
+	/tset/Xproto/SetSelectionOwner/SetSelectionOwner
 	"VSW5TESTSUITE CASE TranslateCoords 3"
 	/tset/Xproto/trnsltcrds/trnsltcrds
 	"VSW5TESTSUITE CASE UngrabButton 3"
