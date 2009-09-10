@@ -135,4 +135,4 @@
 	"VSW5TESTSUITE CASE XtFindFile 7"
 	/tset/Xt13/XtFindFile/XtFindFile
 	"VSW5TESTSUITE CASE XtResolvePathname 20"
-	/tset/Xt13/trspathnm/trspathnm
+	/tset/Xt13/XtResolvePathname/XtResolvePathname

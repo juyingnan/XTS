@@ -4609,7 +4609,7 @@ XtFindFile
 
 XtResolvePathname
 	"VSW5TESTSUITE CASE XtResolvePathname 20"
-	/tset/Xt13/trspathnm/trspathnm
+	/tset/Xt13/XtResolvePathname/XtResolvePathname
 
 #Discrete tests for Xt Chapter 14
 
