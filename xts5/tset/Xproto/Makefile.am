@@ -37,7 +37,7 @@ tprogs = \
 	CreateColormap/CreateColormap \
 	CreateCursor/CreateCursor \
 	CreateGC/CreateGC \
-	crtglyphcr/crtglyphcr \
+	CreateGlyphCursor/CreateGlyphCursor \
 	crtpxmp/crtpxmp \
 	crtwdw/crtwdw \
 	dltprprty/dltprprty \

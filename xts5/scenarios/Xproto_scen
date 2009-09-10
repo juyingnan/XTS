@@ -112,7 +112,7 @@
 	"VSW5TESTSUITE CASE CreateGC 6"
 	/tset/Xproto/CreateGC/CreateGC
 	"VSW5TESTSUITE CASE CreateGlyphCursor 5"
-	/tset/Xproto/crtglyphcr/crtglyphcr
+	/tset/Xproto/CreateGlyphCursor/CreateGlyphCursor
 	"VSW5TESTSUITE CASE CreatePixmap 5"
 	/tset/Xproto/crtpxmp/crtpxmp
 	"VSW5TESTSUITE CASE CreateWindow 6"

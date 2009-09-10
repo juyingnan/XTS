@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE XCreateFontCursor 3"
 	/tset/Xlib6/crtfntcrsr/crtfntcrsr
 	"VSW5TESTSUITE CASE XCreateGlyphCursor 17"
-	/tset/Xlib6/crtglyphcr/crtglyphcr
+	/tset/Xlib6/CreateGlyphCursor/CreateGlyphCursor
 	"VSW5TESTSUITE CASE XCreatePixmapCursor 13"
 	/tset/Xlib6/crtpxmpcrs/crtpxmpcrs
 	"VSW5TESTSUITE CASE XFreeCursor 3"

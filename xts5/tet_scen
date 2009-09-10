@@ -2504,7 +2504,7 @@ XCreateFontCursor
 
 XCreateGlyphCursor
 	"VSW5TESTSUITE CASE XCreateGlyphCursor 17"
-	/tset/Xlib6/crtglyphcr/crtglyphcr
+	/tset/Xlib6/CreateGlyphCursor/CreateGlyphCursor
 
 XCreatePixmapCursor
 	"VSW5TESTSUITE CASE XCreatePixmapCursor 13"
@@ -3218,7 +3218,7 @@ pCreateGC
 
 pCreateGlyphCursor
 	"VSW5TESTSUITE CASE CreateGlyphCursor 5"
-	/tset/Xproto/crtglyphcr/crtglyphcr
+	/tset/Xproto/CreateGlyphCursor/CreateGlyphCursor
 
 pCreatePixmap
 	"VSW5TESTSUITE CASE CreatePixmap 5"

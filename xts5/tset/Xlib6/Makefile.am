@@ -10,7 +10,7 @@ CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
 	crtfntcrsr/crtfntcrsr \
-	crtglyphcr/crtglyphcr \
+	CreateGlyphCursor/CreateGlyphCursor \
 	crtpxmp/crtpxmp \
 	crtpxmpcrs/crtpxmpcrs \
 	frcrsr/frcrsr \
