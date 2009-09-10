@@ -41,7 +41,7 @@ tprogs = \
 	CreatePixmap/CreatePixmap \
 	XCreateWindow/XCreateWindow \
 	DeleteProperty/DeleteProperty \
-	DestroySubwindows/DestroySubwindows \
+	XDestroySubwindows/XDestroySubwindows \
 	DestroyWindow/DestroyWindow \
 	FillPoly/FillPoly \
 	FreeColormap/FreeColormap \

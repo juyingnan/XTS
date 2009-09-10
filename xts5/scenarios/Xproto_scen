@@ -120,7 +120,7 @@
 	"VSW5TESTSUITE CASE DeleteProperty 3"
 	/tset/Xproto/DeleteProperty/DeleteProperty
 	"VSW5TESTSUITE CASE DestroySubwindows 3"
-	/tset/Xproto/DestroySubwindows/DestroySubwindows
+	/tset/Xproto/XDestroySubwindows/XDestroySubwindows
 	"VSW5TESTSUITE CASE DestroyWindow 3"
 	/tset/Xproto/DestroyWindow/DestroyWindow
 	"VSW5TESTSUITE CASE FillPoly 3"

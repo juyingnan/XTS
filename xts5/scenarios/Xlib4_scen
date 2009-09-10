@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XDefineCursor 6"
 	/tset/Xlib4/dfncrsr/dfncrsr
 	"VSW5TESTSUITE CASE XDestroySubwindows 5"
-	/tset/Xlib4/DestroySubwindows/DestroySubwindows
+	/tset/Xlib4/XDestroySubwindows/XDestroySubwindows
 	"VSW5TESTSUITE CASE XDestroyWindow 6"
 	/tset/Xlib4/DestroyWindow/DestroyWindow
 	"VSW5TESTSUITE CASE XLowerWindow 4"
