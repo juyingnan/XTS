@@ -30,7 +30,7 @@ tprogs = \
 	IsCursorKey/IsCursorKey \
 	IsFunctionKey/IsFunctionKey \
 	IsKeypadKey/IsKeypadKey \
-	ismdfrky/ismdfrky \
+	IsModifierKey/IsModifierKey \
 	ismscfnctn/ismscfnctn \
 	ispfky/ispfky \
 	kycdtkysym/kycdtkysym \
