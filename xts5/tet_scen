@@ -4177,7 +4177,7 @@ XtCvtStringToBoolean
 
 XtCvtStringToBool
 	"VSW5TESTSUITE CASE XtCvtStringToBool 4"
-	/tset/Xt11/tcstbool/tcstbool
+	/tset/Xt11/XtCvtStringToBool/XtCvtStringToBool
 
 XtCvtStringToCursor
 	"VSW5TESTSUITE CASE XtCvtStringToCursor 5"
