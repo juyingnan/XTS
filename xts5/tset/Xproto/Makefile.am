@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = \
 	XAllocColor/XAllocColor \
 	XAllocColorCells/XAllocColorCells \
-	AllocColorPlanes/AllocColorPlanes \
+	XAllocColorPlanes/XAllocColorPlanes \
 	XAllocNamedColor/XAllocNamedColor \
 	XAllowEvents/XAllowEvents \
 	BadRequest/BadRequest \

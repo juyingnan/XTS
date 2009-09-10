@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE XAllocColorCells 9"
 	/tset/Xlib7/XAllocColorCells/XAllocColorCells
 	"VSW5TESTSUITE CASE XAllocColorPlanes 7"
-	/tset/Xlib7/AllocColorPlanes/AllocColorPlanes
+	/tset/Xlib7/XAllocColorPlanes/XAllocColorPlanes
 	"VSW5TESTSUITE CASE XAllocNamedColor 6"
 	/tset/Xlib7/XAllocNamedColor/XAllocNamedColor
 	"VSW5TESTSUITE CASE XCopyColormapAndFree 5"
