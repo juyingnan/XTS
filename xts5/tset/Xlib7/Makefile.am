@@ -10,7 +10,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	AllocColor/AllocColor \
+	XAllocColor/XAllocColor \
 	AllocColorCells/AllocColorCells \
 	AllocColorPlanes/AllocColorPlanes \
 	XAllocNamedColor/XAllocNamedColor \

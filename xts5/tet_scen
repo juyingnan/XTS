@@ -2531,7 +2531,7 @@ XRecolorCursor
 
 XAllocColor
 	"VSW5TESTSUITE CASE XAllocColor 5"
-	/tset/Xlib7/AllocColor/AllocColor
+	/tset/Xlib7/XAllocColor/XAllocColor
 
 XAllocColorCells
 	"VSW5TESTSUITE CASE XAllocColorCells 9"
@@ -3106,7 +3106,7 @@ xXStringToKeysym
 
 pAllocColor
 	"VSW5TESTSUITE CASE AllocColor 3"
-	/tset/Xproto/AllocColor/AllocColor
+	/tset/Xproto/XAllocColor/XAllocColor
 
 pAllocColorCells
 	"VSW5TESTSUITE CASE AllocColorCells 3"
