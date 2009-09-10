@@ -7,7 +7,7 @@ XCirculateSubwindows/XCirculateSubwindows
 XCirculateSubwindowsDown/XCirculateSubwindowsDown
 XCirculateSubwindowsUp/XCirculateSubwindowsUp
 crtsmplwdw/crtsmplwdw
-CreateWindow/CreateWindow
+XCreateWindow/XCreateWindow
 crtwdw/mcassert.tmc.2529
 crtwdw/mcstrategy.tmc.2529
 dfncrsr/dfncrsr

@@ -1069,7 +1069,7 @@ unsigned long dont_all;
 		CHECK;
 
 	CHECKPASS(10);
->>INCLUDE ../CreateWindow/commattr.mc
+>>INCLUDE ../XCreateWindow/commattr.mc
 >>ASSERTION Bad A
 When another client has selected with an event mask
 .S SubstructureRedirectMask ,

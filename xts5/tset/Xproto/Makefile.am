@@ -39,7 +39,7 @@ tprogs = \
 	CreateGC/CreateGC \
 	CreateGlyphCursor/CreateGlyphCursor \
 	CreatePixmap/CreatePixmap \
-	CreateWindow/CreateWindow \
+	XCreateWindow/XCreateWindow \
 	DeleteProperty/DeleteProperty \
 	DestroySubwindows/DestroySubwindows \
 	DestroyWindow/DestroyWindow \
