@@ -58,7 +58,7 @@ tprogs = \
 	XcmsClientWhitePointOfCCC/XcmsClientWhitePointOfCCC \
 	XcmsSetWhitePoint/XcmsSetWhitePoint \
 	XCopyColormapAndFree/XCopyColormapAndFree \
-	CreateColormap/CreateColormap \
+	XCreateColormap/XCreateColormap \
 	FreeColormap/FreeColormap \
 	FreeColors/FreeColors \
 	XLookupColor/XLookupColor \

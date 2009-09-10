@@ -34,7 +34,7 @@ tprogs = \
 	CopyGC/CopyGC \
 	CopyPlane/CopyPlane \
 	CirculateWindow/CirculateWindow \
-	CreateColormap/CreateColormap \
+	XCreateColormap/XCreateColormap \
 	CreateCursor/CreateCursor \
 	CreateGC/CreateGC \
 	XCreateGlyphCursor/XCreateGlyphCursor \

@@ -2551,7 +2551,7 @@ XCopyColormapAndFree
 
 XCreateColormap
 	"VSW5TESTSUITE CASE XCreateColormap 13"
-	/tset/Xlib7/CreateColormap/CreateColormap
+	/tset/Xlib7/XCreateColormap/XCreateColormap
 
 XFreeColormap
 	"VSW5TESTSUITE CASE XFreeColormap 5"
@@ -3206,7 +3206,7 @@ pCirculateWindow
 
 pCreateColormap
 	"VSW5TESTSUITE CASE CreateColormap 5"
-	/tset/Xproto/CreateColormap/CreateColormap
+	/tset/Xproto/XCreateColormap/XCreateColormap
 
 pCreateCursor
 	"VSW5TESTSUITE CASE CreateCursor 5"
