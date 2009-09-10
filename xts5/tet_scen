@@ -4707,7 +4707,7 @@ XtAddActions
 
 XtSetSelectionTimeout
 	"VSW5TESTSUITE CASE XtSetSelectionTimeout 1"
-	/tset/XtC/tststmout/tststmout
+	/tset/XtC/XtSetSelectionTimeout/XtSetSelectionTimeout
 
 XtGetSelectionTimeout
 	"VSW5TESTSUITE CASE XtGetSelectionTimeout 2"
