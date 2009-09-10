@@ -1192,7 +1192,7 @@ XDisplayOfIM
 
 XExtentsOfFontSet
 	"VSW5TESTSUITE CASE XExtentsOfFontSet 1"
-	/tset/Xlib14/exofset/exofset
+	/tset/Xlib14/XExtentsOfFontSet/XExtentsOfFontSet
 
 XFilterEvent
 	"VSW5TESTSUITE CASE XFilterEvent 1"

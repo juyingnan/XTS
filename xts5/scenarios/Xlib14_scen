@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE XDisplayOfIM 1"
 	/tset/Xlib14/XDisplayOfIM/XDisplayOfIM
 	"VSW5TESTSUITE CASE XExtentsOfFontSet 1"
-	/tset/Xlib14/exofset/exofset
+	/tset/Xlib14/XExtentsOfFontSet/XExtentsOfFontSet
 	"VSW5TESTSUITE CASE XFilterEvent 1"
 	/tset/Xlib14/fltrevnt/fltrevnt
 	"VSW5TESTSUITE CASE XFontsOfFontSet 1"
