@@ -638,7 +638,7 @@ XUngrabDevice
 
 XUngrabDeviceButton
 	"VSW5TESTSUITE CASE XUngrabDeviceButton 11"
-	/tset/XI/XUngrabDeviceButton/XUngrabDeviceButton
+	/tset/XI/UngrabDeviceButton/UngrabDeviceButton
 
 XUngrabDeviceKey
 	"VSW5TESTSUITE CASE XUngrabDeviceKey 12"
