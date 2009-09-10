@@ -3786,7 +3786,7 @@ XtScreen
 
 XtWindow
 	"VSW5TESTSUITE CASE XtWindow 1"
-	/tset/Xt4/twindow/twindow
+	/tset/Xt4/XtWindow/XtWindow
 
 XtDisplayOfObject
 	"VSW5TESTSUITE CASE XtDisplayOfObject 2"

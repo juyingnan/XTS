@@ -114,7 +114,7 @@
 	"VSW5TESTSUITE CASE XtScreen 1"
 	/tset/Xt4/XtScreen/XtScreen
 	"VSW5TESTSUITE CASE XtWindow 1"
-	/tset/Xt4/twindow/twindow
+	/tset/Xt4/XtWindow/XtWindow
 	"VSW5TESTSUITE CASE XtDisplayOfObject 2"
 	/tset/Xt4/XtDisplayOfObject/XtDisplayOfObject
 	"VSW5TESTSUITE CASE XtScreenOfObject 2"
