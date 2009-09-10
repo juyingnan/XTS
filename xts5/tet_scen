@@ -3174,7 +3174,7 @@ pClearArea
 
 pCloseFont
 	"VSW5TESTSUITE CASE CloseFont 3"
-	/tset/Xproto/clsfnt/clsfnt
+	/tset/Xproto/CloseFont/CloseFont
 
 pConfigureWindow
 	"VSW5TESTSUITE CASE ConfigureWindow 4"

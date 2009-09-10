@@ -90,7 +90,7 @@
 	"VSW5TESTSUITE CASE ClearArea 3"
 	/tset/Xproto/ClearArea/ClearArea
 	"VSW5TESTSUITE CASE CloseFont 3"
-	/tset/Xproto/clsfnt/clsfnt
+	/tset/Xproto/CloseFont/CloseFont
 	"VSW5TESTSUITE CASE ConfigureWindow 4"
 	/tset/Xproto/cnfgrwdw/cnfgrwdw
 	"VSW5TESTSUITE CASE ConvertSelection 3"

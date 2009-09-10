@@ -26,7 +26,7 @@ tprogs = \
 	ChangeSaveSet/ChangeSaveSet \
 	ChangeWindowAttributes/ChangeWindowAttributes \
 	ClearArea/ClearArea \
-	clsfnt/clsfnt \
+	CloseFont/CloseFont \
 	cnfgrwdw/cnfgrwdw \
 	cnvrtslctn/cnvrtslctn \
 	cpyar/cpyar \
