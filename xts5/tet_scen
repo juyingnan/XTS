@@ -1276,7 +1276,7 @@ XOpenIM
 
 XSetICFocus
 	"VSW5TESTSUITE CASE XSetICFocus 1"
-	/tset/Xlib14/sicfoc/sicfoc
+	/tset/Xlib14/XSetICFocus/XSetICFocus
 
 XSetICValues
 	"VSW5TESTSUITE CASE XSetICValues 4"

@@ -112,7 +112,7 @@
 	"VSW5TESTSUITE CASE XOpenIM 1"
 	/tset/Xlib14/XOpenIM/XOpenIM
 	"VSW5TESTSUITE CASE XSetICFocus 1"
-	/tset/Xlib14/sicfoc/sicfoc
+	/tset/Xlib14/XSetICFocus/XSetICFocus
 	"VSW5TESTSUITE CASE XSetICValues 4"
 	/tset/Xlib14/sicvals/sicvals
 	"VSW5TESTSUITE CASE XSupportsLocale 1"
