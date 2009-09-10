@@ -101,7 +101,7 @@
 	"VSW5TESTSUITE CASE XtDispatchEvent 11"
 	/tset/Xt9/tdispatet/tdispatet
 	"VSW5TESTSUITE CASE XtAppMainLoop 28"
-	/tset/Xt9/tapmnloop/tapmnloop
+	/tset/Xt9/XtAppMainLoop/XtAppMainLoop
 	"VSW5TESTSUITE CASE XtIsSensitive 4"
 	/tset/Xt9/tissenstv/tissenstv
 	"VSW5TESTSUITE CASE XtSetSensitive 6"
