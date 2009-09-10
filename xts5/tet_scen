@@ -3782,7 +3782,7 @@ XtParent
 
 XtScreen
 	"VSW5TESTSUITE CASE XtScreen 1"
-	/tset/Xt4/tscreen/tscreen
+	/tset/Xt4/XtScreen/XtScreen
 
 XtWindow
 	"VSW5TESTSUITE CASE XtWindow 1"
