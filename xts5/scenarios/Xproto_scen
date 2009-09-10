@@ -238,7 +238,7 @@
 	"VSW5TESTSUITE CASE QueryExtension 3"
 	/tset/Xproto/QueryExtension/QueryExtension
 	"VSW5TESTSUITE CASE QueryFont 3"
-	/tset/Xproto/qryfnt/qryfnt
+	/tset/Xproto/QueryFont/QueryFont
 	"VSW5TESTSUITE CASE QueryKeymap 3"
 	/tset/Xproto/qrykymp/qrykymp
 	"VSW5TESTSUITE CASE QueryPointer 3"

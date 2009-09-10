@@ -100,7 +100,7 @@ tprogs = \
 	QueryBestSize/QueryBestSize \
 	QueryColors/QueryColors \
 	QueryExtension/QueryExtension \
-	qryfnt/qryfnt \
+	QueryFont/QueryFont \
 	qrykymp/qrykymp \
 	qrypntr/qrypntr \
 	qrytr/qrytr \

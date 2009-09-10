@@ -130,7 +130,7 @@
 	"VSW5TESTSUITE CASE XPutImage 40"
 	/tset/Xlib9/PutImage/PutImage
 	"VSW5TESTSUITE CASE XQueryFont 3"
-	/tset/Xlib9/qryfnt/qryfnt
+	/tset/Xlib9/QueryFont/QueryFont
 	"VSW5TESTSUITE CASE XQueryTextExtents16 13"
 	/tset/Xlib9/qrytxtex16/qrytxtex16
 	"VSW5TESTSUITE CASE XQueryTextExtents 12"
