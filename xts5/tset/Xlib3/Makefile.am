@@ -37,7 +37,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XDisplayPlanes/XDisplayPlanes XDisplayPlanes/XDisplayPlanes_m \
 	XDisplayString/XDisplayString XDisplayString/XDisplayString_m \
 	XDisplayWidth/XDisplayWidth XDisplayWidth/XDisplayWidth_m \
-	dsplywdthm/dsplywdthm dsplywdthm/dsplywdthm_m \
+	XDisplayWidthMM/XDisplayWidthMM XDisplayWidthMM/XDisplayWidthMM_m \
 	dssvundrs/dssvundrs dssvundrs/dssvundrs_m \
 	evntmskofs/evntmskofs evntmskofs/evntmskofs_m \
 	fr/fr \

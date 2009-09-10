@@ -112,7 +112,7 @@
 	"VSW5TESTSUITE CASE XDisplayWidth 1"
 	/tset/Xlib3/XDisplayWidth/XDisplayWidth
 	"VSW5TESTSUITE CASE XDisplayWidthMM 1"
-	/tset/Xlib3/dsplywdthm/dsplywdthm
+	/tset/Xlib3/XDisplayWidthMM/XDisplayWidthMM
 	"VSW5TESTSUITE CASE XDoesSaveUnders 1"
 	/tset/Xlib3/dssvundrs/dssvundrs
 	"VSW5TESTSUITE CASE XEventMaskOfScreen 1"
@@ -226,7 +226,7 @@
 	"VSW5TESTSUITE CASE DisplayWidth 1"
 	/tset/Xlib3/XDisplayWidth/XDisplayWidth_m
 	"VSW5TESTSUITE CASE DisplayWidthMM 1"
-	/tset/Xlib3/dsplywdthm/dsplywdthm_m
+	/tset/Xlib3/XDisplayWidthMM/XDisplayWidthMM_m
 	"VSW5TESTSUITE CASE DoesSaveUnders 1"
 	/tset/Xlib3/dssvundrs/dssvundrs_m
 	"VSW5TESTSUITE CASE EventMaskOfScreen 1"

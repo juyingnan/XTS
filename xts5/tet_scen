@@ -1987,7 +1987,7 @@ XDisplayWidth
 
 XDisplayWidthMM
 	"VSW5TESTSUITE CASE XDisplayWidthMM 1"
-	/tset/Xlib3/dsplywdthm/dsplywdthm
+	/tset/Xlib3/XDisplayWidthMM/XDisplayWidthMM
 
 XDoesSaveUnders
 	"VSW5TESTSUITE CASE XDoesSaveUnders 1"
@@ -2215,7 +2215,7 @@ DisplayWidth
 
 DisplayWidthMM
 	"VSW5TESTSUITE CASE DisplayWidthMM 1"
-	/tset/Xlib3/dsplywdthm/dsplywdthm_m
+	/tset/Xlib3/XDisplayWidthMM/XDisplayWidthMM_m
 
 DoesSaveUnders
 	"VSW5TESTSUITE CASE DoesSaveUnders 1"
