@@ -4659,7 +4659,7 @@ XtPeekEvent
 
 XtPending
 	"VSW5TESTSUITE CASE XtPending 2"
-	/tset/XtC/tpending/tpending
+	/tset/XtC/XtPending/XtPending
 
 XtAddInput
 	"VSW5TESTSUITE CASE XtAddInput 5"

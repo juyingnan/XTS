@@ -73,7 +73,7 @@
 	"VSW5TESTSUITE CASE XtPeekEvent 3"
 	/tset/XtC/XtPeekEvent/XtPeekEvent
 	"VSW5TESTSUITE CASE XtPending 2"
-	/tset/XtC/tpending/tpending
+	/tset/XtC/XtPending/XtPending
 	"VSW5TESTSUITE CASE XtAddInput 5"
 	/tset/XtC/XtAddInput/XtAddInput
 	"VSW5TESTSUITE CASE XtAddTimeOut 2"
