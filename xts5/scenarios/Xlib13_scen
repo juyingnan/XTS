@@ -100,7 +100,7 @@
 	"VSW5TESTSUITE CASE XInsertModifiermapEntry 1"
 	/tset/Xlib13/XInsertModifiermapEntry/XInsertModifiermapEntry
 	"VSW5TESTSUITE CASE XNewModifiermap 1"
-	/tset/Xlib13/nwmdfrmp/nwmdfrmp
+	/tset/Xlib13/XNewModifiermap/XNewModifiermap
 	"VSW5TESTSUITE CASE XQueryKeymap 1"
 	/tset/Xlib13/QueryKeymap/QueryKeymap
 	"VSW5TESTSUITE CASE XSetInputFocus 13"

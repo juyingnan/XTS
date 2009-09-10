@@ -1122,7 +1122,7 @@ XInsertModifiermapEntry
 
 XNewModifiermap
 	"VSW5TESTSUITE CASE XNewModifiermap 1"
-	/tset/Xlib13/nwmdfrmp/nwmdfrmp
+	/tset/Xlib13/XNewModifiermap/XNewModifiermap
 
 XQueryKeymap
 	"VSW5TESTSUITE CASE XQueryKeymap 1"

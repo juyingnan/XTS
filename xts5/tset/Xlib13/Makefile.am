@@ -31,7 +31,7 @@ tprogs = \
 	XGetPointerControl/XGetPointerControl \
 	XGetPointerMapping/XGetPointerMapping \
 	XInsertModifiermapEntry/XInsertModifiermapEntry \
-	nwmdfrmp/nwmdfrmp \
+	XNewModifiermap/XNewModifiermap \
 	QueryKeymap/QueryKeymap \
 	SetInputFocus/SetInputFocus \
 	SetModifierMapping/SetModifierMapping \
