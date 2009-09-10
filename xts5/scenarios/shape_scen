@@ -62,7 +62,7 @@
 #
 
 	"VSW5TESTSUITE CASE XShapeOffsetShape 1"
-	/tset/SHAPE/tshoffshp/tshoffshp
+	/tset/SHAPE/XShapeOffsetShape/XShapeOffsetShape
 	"VSW5TESTSUITE CASE XShapeCombineMask 1"
 	/tset/SHAPE/tshpcmask/tshpcmask
 	"VSW5TESTSUITE CASE XShapeCombineRectangles 1"

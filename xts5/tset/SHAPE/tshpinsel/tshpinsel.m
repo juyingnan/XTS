@@ -26,7 +26,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/SHAPE/tshoffshp/tshpinsel.m
+>># File: tset/SHAPE/XShapeOffsetShape/tshpinsel.m
 >>#
 >># Description:
 >>#     Tests for XShapeInputSelected()

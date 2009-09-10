@@ -648,7 +648,7 @@ XUngrabDeviceKey
 
 XShapeOffsetShape
 	"VSW5TESTSUITE CASE XShapeOffsetShape 1"
-	/tset/SHAPE/tshoffshp/tshoffshp
+	/tset/SHAPE/XShapeOffsetShape/XShapeOffsetShape
 
 XShapeCombineMask
 	"VSW5TESTSUITE CASE XShapeCombineMask 1"
