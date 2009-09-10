@@ -79,7 +79,7 @@ tprogs = \
 	ListExtensions/ListExtensions \
 	ListFonts/ListFonts \
 	ListFontsWithInfo/ListFontsWithInfo \
-	ListHosts/ListHosts \
+	XListHosts/XListHosts \
 	ListInstalledColormaps/ListInstalledColormaps \
 	ListProperties/ListProperties \
 	MapSubwindows/MapSubwindows \

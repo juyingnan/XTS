@@ -196,7 +196,7 @@
 	"VSW5TESTSUITE CASE ListFontsWithInfo 3"
 	/tset/Xproto/ListFontsWithInfo/ListFontsWithInfo
 	"VSW5TESTSUITE CASE ListHosts 3"
-	/tset/Xproto/ListHosts/ListHosts
+	/tset/Xproto/XListHosts/XListHosts
 	"VSW5TESTSUITE CASE ListInstalledColormaps 3"
 	/tset/Xproto/ListInstalledColormaps/ListInstalledColormaps
 	"VSW5TESTSUITE CASE ListProperties 3"

@@ -21,7 +21,7 @@ tprogs = \
 	XGetScreenSaver/XGetScreenSaver \
 	XInstallColormap/XInstallColormap \
 	XKillClient/XKillClient \
-	ListHosts/ListHosts \
+	XListHosts/XListHosts \
 	ListInstalledColormaps/ListInstalledColormaps \
 	rmvfrmsvst/rmvfrmsvst \
 	rmvhst/rmvhst \
