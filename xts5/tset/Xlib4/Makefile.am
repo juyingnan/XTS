@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	ChangeWindowAttributes/ChangeWindowAttributes \
+	XChangeWindowAttributes/XChangeWindowAttributes \
 	ConfigureWindow/ConfigureWindow \
 	crcltsbws/crcltsbws \
 	crcltsbwsd/crcltsbwsd \

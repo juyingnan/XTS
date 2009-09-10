@@ -24,7 +24,7 @@ tprogs = \
 	XChangePointerControl/XChangePointerControl \
 	ChangeProperty/ChangeProperty \
 	XChangeSaveSet/XChangeSaveSet \
-	ChangeWindowAttributes/ChangeWindowAttributes \
+	XChangeWindowAttributes/XChangeWindowAttributes \
 	ClearArea/ClearArea \
 	CloseFont/CloseFont \
 	ConfigureWindow/ConfigureWindow \
