@@ -78,7 +78,7 @@ tprogs = \
 	LookupColor/LookupColor \
 	ListExtensions/ListExtensions \
 	ListFonts/ListFonts \
-	lstfntswth/lstfntswth \
+	ListFontsWithInfo/ListFontsWithInfo \
 	lsthsts/lsthsts \
 	lstinstlld/lstinstlld \
 	lstprprts/lstprprts \
