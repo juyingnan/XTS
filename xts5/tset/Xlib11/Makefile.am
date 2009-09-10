@@ -22,7 +22,7 @@ tprogs = \
 	EnterNotify/EnterNotify \
 	Expose/Expose \
 	FocusIn/FocusIn \
-	fcsot/fcsot \
+	FocusOut/FocusOut \
 	grphcsexps/grphcsexps \
 	grvtyntfy/grvtyntfy \
 	kympntfy/kympntfy \

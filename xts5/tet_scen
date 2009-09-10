@@ -840,7 +840,7 @@ FocusIn
 
 FocusOut
 	"VSW5TESTSUITE CASE FocusOut 19"
-	/tset/Xlib11/fcsot/fcsot
+	/tset/Xlib11/FocusOut/FocusOut
 
 GraphicsExpose
 	"VSW5TESTSUITE CASE GraphicsExpose 1"

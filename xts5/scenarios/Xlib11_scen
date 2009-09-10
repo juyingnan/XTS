@@ -82,7 +82,7 @@
 	"VSW5TESTSUITE CASE FocusIn 21"
 	/tset/Xlib11/FocusIn/FocusIn
 	"VSW5TESTSUITE CASE FocusOut 19"
-	/tset/Xlib11/fcsot/fcsot
+	/tset/Xlib11/FocusOut/FocusOut
 	"VSW5TESTSUITE CASE GraphicsExpose 1"
 	/tset/Xlib11/grphcsexps/grphcsexps
 	"VSW5TESTSUITE CASE GravityNotify 3"
