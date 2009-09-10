@@ -67,7 +67,7 @@
 	"VSW5TESTSUITE CASE XtPopdown 8"
 	/tset/Xt7/XtPopdown/XtPopdown
 	"VSW5TESTSUITE CASE XtPopupSpringLoaded 9"
-	/tset/Xt7/tpopupsld/tpopupsld
+	/tset/Xt7/XtPopupSpringLoaded/XtPopupSpringLoaded
 	"VSW5TESTSUITE CASE XtCallbackNone 8"
 	/tset/Xt7/XtCallbackNone/XtCallbackNone
 	"VSW5TESTSUITE CASE XtCallbackNonexclusive 8"
