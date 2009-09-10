@@ -94,7 +94,7 @@
 	"VSW5TESTSUITE CASE XPutBackEvent 2"
 	/tset/Xlib12/XPutBackEvent/XPutBackEvent
 	"VSW5TESTSUITE CASE XSelectInput 8"
-	/tset/Xlib12/slctinpt/slctinpt
+	/tset/Xlib12/XSelectInput/XSelectInput
 	"VSW5TESTSUITE CASE XSendEvent 22"
 	/tset/Xlib12/XSendEvent/XSendEvent
 	"VSW5TESTSUITE CASE XSetAfterFunction 3"

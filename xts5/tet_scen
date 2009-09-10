@@ -999,7 +999,7 @@ XPutBackEvent
 
 XSelectInput
 	"VSW5TESTSUITE CASE XSelectInput 8"
-	/tset/Xlib12/slctinpt/slctinpt
+	/tset/Xlib12/XSelectInput/XSelectInput
 
 XSendEvent
 	"VSW5TESTSUITE CASE XSendEvent 22"
