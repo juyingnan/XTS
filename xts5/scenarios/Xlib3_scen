@@ -58,7 +58,7 @@
 	"VSW5TESTSUITE CASE XAllPlanes 2"
 	/tset/Xlib3/XAllPlanes/XAllPlanes
 	"VSW5TESTSUITE CASE XBlackPixel 1"
-	/tset/Xlib3/blckpxl/blckpxl
+	/tset/Xlib3/XBlackPixel/XBlackPixel
 	"VSW5TESTSUITE CASE XBlackPixelOfScreen 1"
 	/tset/Xlib3/blckpxlofs/blckpxlofs
 	"VSW5TESTSUITE CASE XBitmapBitOrder 1"
@@ -174,7 +174,7 @@
 	"VSW5TESTSUITE CASE XWhitePixelOfScreen 1"
 	/tset/Xlib3/whtpxlofsc/whtpxlofsc
 	"VSW5TESTSUITE CASE BlackPixel 1"
-	/tset/Xlib3/blckpxl/blckpxl_m
+	/tset/Xlib3/XBlackPixel/XBlackPixel_m
 	"VSW5TESTSUITE CASE BlackPixelOfScreen 1"
 	/tset/Xlib3/blckpxlofs/blckpxlofs_m
 	"VSW5TESTSUITE CASE BitmapBitOrder 1"

@@ -1879,7 +1879,7 @@ XAllPlanes
 
 XBlackPixel
 	"VSW5TESTSUITE CASE XBlackPixel 1"
-	/tset/Xlib3/blckpxl/blckpxl
+	/tset/Xlib3/XBlackPixel/XBlackPixel
 
 XBlackPixelOfScreen
 	"VSW5TESTSUITE CASE XBlackPixelOfScreen 1"
@@ -2111,7 +2111,7 @@ XWhitePixelOfScreen
 
 BlackPixel
 	"VSW5TESTSUITE CASE BlackPixel 1"
-	/tset/Xlib3/blckpxl/blckpxl_m
+	/tset/Xlib3/XBlackPixel/XBlackPixel_m
 
 BlackPixelOfScreen
 	"VSW5TESTSUITE CASE BlackPixelOfScreen 1"
