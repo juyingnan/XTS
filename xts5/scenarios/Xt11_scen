@@ -133,7 +133,7 @@
 	"VSW5TESTSUITE CASE XtCvtIntToPixmap 3"
 	/tset/Xt11/XtCvtIntToPixmap/XtCvtIntToPixmap
 	"VSW5TESTSUITE CASE XtCvtIntToPosition 3"
-	/tset/Xt11/tcinpos/tcinpos
+	/tset/Xt11/XtCvtIntToPosition/XtCvtIntToPosition
 	"VSW5TESTSUITE CASE XtCvtIntToShort 3"
 	/tset/Xt11/tcinshrt/tcinshrt
 	"VSW5TESTSUITE CASE XtCvtIntToUnsignedChar 3"
