@@ -4727,7 +4727,7 @@ XtSetWarningHandler
 
 XtSetWarningMsgHandler
 	"VSW5TESTSUITE CASE XtSetWarningMsgHandler 1"
-	/tset/XtC/tstwmsghr/tstwmsghr
+	/tset/XtC/XtSetWarningMsgHandler/XtSetWarningMsgHandler
 
 XtWarning
 	"VSW5TESTSUITE CASE XtWarning 3"
