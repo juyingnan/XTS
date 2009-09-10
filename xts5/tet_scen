@@ -3806,7 +3806,7 @@ XtName
 
 XtUnrealizeWidget
 	"VSW5TESTSUITE CASE XtUnrealizeWidget 4"
-	/tset/Xt4/tunrlzwgt/tunrlzwgt
+	/tset/Xt4/XtUnrealizeWidget/XtUnrealizeWidget
 
 XtDestroyWidget
 	"VSW5TESTSUITE CASE XtDestroyWidget 3"
