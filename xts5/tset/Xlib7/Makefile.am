@@ -32,7 +32,7 @@ tprogs = \
 	XcmsFormatOfPrefix/XcmsFormatOfPrefix \
 	XcmsLookupColor/XcmsLookupColor \
 	XcmsCIELabQueryMinL/XcmsCIELabQueryMinL \
-	cmspoft/cmspoft \
+	XcmsPrefixOfFormat/XcmsPrefixOfFormat \
 	cmsqbk/cmsqbk \
 	cmsqbl/cmsqbl \
 	cmsqc/cmsqc \

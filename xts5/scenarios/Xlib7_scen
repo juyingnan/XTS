@@ -122,7 +122,7 @@
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMinL 1"
 	/tset/Xlib7/XcmsCIELabQueryMinL/XcmsCIELabQueryMinL
 	"VSW5TESTSUITE CASE XcmsPrefixOfFormat 1"
-	/tset/Xlib7/cmspoft/cmspoft
+	/tset/Xlib7/XcmsPrefixOfFormat/XcmsPrefixOfFormat
 	"VSW5TESTSUITE CASE XcmsQueryBlack 1"
 	/tset/Xlib7/cmsqbk/cmsqbk
 	"VSW5TESTSUITE CASE XcmsQueryBlue 1"

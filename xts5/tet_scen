@@ -2663,7 +2663,7 @@ XcmsCIELabQueryMinL
 
 XcmsPrefixOfFormat
 	"VSW5TESTSUITE CASE XcmsPrefixOfFormat 1"
-	/tset/Xlib7/cmspoft/cmspoft
+	/tset/Xlib7/XcmsPrefixOfFormat/XcmsPrefixOfFormat
 
 XcmsQueryBlack
 	"VSW5TESTSUITE CASE XcmsQueryBlack 1"
