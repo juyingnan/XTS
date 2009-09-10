@@ -2968,7 +2968,7 @@ XFillArcs
 
 XFillPolygon
 	"VSW5TESTSUITE CASE XFillPolygon 55"
-	/tset/Xlib9/fllplygn/fllplygn
+	/tset/Xlib9/XFillPolygon/XFillPolygon
 
 XFillRectangle
 	"VSW5TESTSUITE CASE XFillRectangle 43"

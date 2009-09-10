@@ -30,7 +30,7 @@ tprogs = \
 	XDrawText16/XDrawText16 \
 	XFillArc/XFillArc \
 	XFillArcs/XFillArcs \
-	fllplygn/fllplygn \
+	XFillPolygon/XFillPolygon \
 	fllrctngl/fllrctngl \
 	fllrctngls/fllrctngls \
 	frfnt/frfnt \

@@ -98,7 +98,7 @@
 	"VSW5TESTSUITE CASE XFillArcs 46"
 	/tset/Xlib9/XFillArcs/XFillArcs
 	"VSW5TESTSUITE CASE XFillPolygon 55"
-	/tset/Xlib9/fllplygn/fllplygn
+	/tset/Xlib9/XFillPolygon/XFillPolygon
 	"VSW5TESTSUITE CASE XFillRectangle 43"
 	/tset/Xlib9/fllrctngl/fllrctngl
 	"VSW5TESTSUITE CASE XFillRectangles 44"
