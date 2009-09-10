@@ -83,7 +83,7 @@
 	"VSW5TESTSUITE CASE XtAppSetSelectionTimeout 1"
 	/tset/Xt13/tapststmo/tapststmo
 	"VSW5TESTSUITE CASE XtAppGetSelectionTimeout 2"
-	/tset/Xt13/tapgtstot/tapgtstot
+	/tset/Xt13/XtAppGetSelectionTimeout/XtAppGetSelectionTimeout
 	"VSW5TESTSUITE CASE XtGetSelectionRequest 3"
 	/tset/Xt13/tgtsreque/tgtsreque
 	"VSW5TESTSUITE CASE XtGetSelectionValue 4"

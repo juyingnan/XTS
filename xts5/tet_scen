@@ -4505,7 +4505,7 @@ XtAppSetSelectionTimeout
 
 XtAppGetSelectionTimeout
 	"VSW5TESTSUITE CASE XtAppGetSelectionTimeout 2"
-	/tset/Xt13/tapgtstot/tapgtstot
+	/tset/Xt13/XtAppGetSelectionTimeout/XtAppGetSelectionTimeout
 
 XtGetSelectionRequest
 	"VSW5TESTSUITE CASE XtGetSelectionRequest 3"
