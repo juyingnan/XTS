@@ -1,5 +1,5 @@
 XChangeGC/XChangeGC
-CopyGC/CopyGC
+XCopyGC/XCopyGC
 CreateGC/CreateGC
 flushgc/flushgc
 FreeGC/FreeGC

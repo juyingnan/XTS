@@ -100,7 +100,7 @@
 	"VSW5TESTSUITE CASE CopyColormapAndFree 5"
 	/tset/Xproto/XCopyColormapAndFree/XCopyColormapAndFree
 	"VSW5TESTSUITE CASE CopyGC 4"
-	/tset/Xproto/CopyGC/CopyGC
+	/tset/Xproto/XCopyGC/XCopyGC
 	"VSW5TESTSUITE CASE CopyPlane 3"
 	/tset/Xproto/CopyPlane/CopyPlane
 	"VSW5TESTSUITE CASE CirculateWindow 3"
