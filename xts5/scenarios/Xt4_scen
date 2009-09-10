@@ -104,7 +104,7 @@
 	"VSW5TESTSUITE CASE XtRealizeWidget 11"
 	/tset/Xt4/trealwdgt/trealwdgt
 	"VSW5TESTSUITE CASE XtIsRealized 3"
-	/tset/Xt4/tisrealiz/tisrealiz
+	/tset/Xt4/XtIsRealized/XtIsRealized
 	"VSW5TESTSUITE CASE XtCreateWindow 1"
 	/tset/Xt4/XtCreateWindow/XtCreateWindow
 	"VSW5TESTSUITE CASE XtDisplay 1"

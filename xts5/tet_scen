@@ -3766,7 +3766,7 @@ XtRealizeWidget
 
 XtIsRealized
 	"VSW5TESTSUITE CASE XtIsRealized 3"
-	/tset/Xt4/tisrealiz/tisrealiz
+	/tset/Xt4/XtIsRealized/XtIsRealized
 
 XtCreateWindow
 	"VSW5TESTSUITE CASE XtCreateWindow 1"
