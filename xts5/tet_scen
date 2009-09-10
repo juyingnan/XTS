@@ -935,7 +935,7 @@ XCheckTypedEvent
 
 XCheckTypedWindowEvent
 	"VSW5TESTSUITE CASE XCheckTypedWindowEvent 6"
-	/tset/Xlib12/chcktypdwd/chcktypdwd
+	/tset/Xlib12/XCheckTypedWindowEvent/XCheckTypedWindowEvent
 
 XCheckWindowEvent
 	"VSW5TESTSUITE CASE XCheckWindowEvent 6"
