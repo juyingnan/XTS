@@ -95,7 +95,7 @@
 	"VSW5TESTSUITE CASE XtAppPeekEvent 3"
 	/tset/Xt9/tappkevnt/tappkevnt
 	"VSW5TESTSUITE CASE XtAppNextEvent 4"
-	/tset/Xt9/tapnxevnt/tapnxevnt
+	/tset/Xt9/XtAppNextEvent/XtAppNextEvent
 	"VSW5TESTSUITE CASE XtAppProcessEvent 11"
 	/tset/Xt9/tapprcevt/tapprcevt
 	"VSW5TESTSUITE CASE XtDispatchEvent 11"
