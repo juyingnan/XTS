@@ -11,7 +11,7 @@ CLEANFILES = $(BUILT_SOURCES)
 tprogs = \
 	AllowDeviceEvents/AllowDeviceEvents \
 	ChangeDeviceControl/ChangeDeviceControl \
-	XChangeFeedbackControl/XChangeFeedbackControl \
+	ChangeFeedbackControl/ChangeFeedbackControl \
 	XChangeKeyboardDevice/XChangeKeyboardDevice \
 	XChangeDeviceDontPropagateList/XChangeDeviceDontPropagateList \
 	XChangePointerDevice/XChangePointerDevice \

@@ -510,7 +510,7 @@ XChangeDeviceControl
 
 XChangeFeedbackControl
 	"VSW5TESTSUITE CASE XChangeFeedbackControl 8"
-	/tset/XI/XChangeFeedbackControl/XChangeFeedbackControl
+	/tset/XI/ChangeFeedbackControl/ChangeFeedbackControl
 
 XChangeKeyboardDevice
 	"VSW5TESTSUITE CASE XChangeKeyboardDevice 10"
