@@ -1264,7 +1264,7 @@ XmbTextListToTextProperty
 
 XmbTextPerCharExtents
 	"VSW5TESTSUITE CASE XmbTextPerCharExtents 1"
-	/tset/Xlib14/mbtpcex/mbtpcex
+	/tset/Xlib14/XmbTextPerCharExtents/XmbTextPerCharExtents
 
 XmbTextPropertyToTextList
 	"VSW5TESTSUITE CASE XmbTextPropertyToTextList 1"

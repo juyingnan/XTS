@@ -35,7 +35,7 @@ tprogs = \
 	XmbTextEscapement/XmbTextEscapement \
 	XmbTextExtents/XmbTextExtents \
 	XmbTextListToTextProperty/XmbTextListToTextProperty \
-	mbtpcex/mbtpcex \
+	XmbTextPerCharExtents/XmbTextPerCharExtents \
 	mbtpttl/mbtpttl \
 	openim/openim \
 	sicfoc/sicfoc \
