@@ -68,6 +68,6 @@
 	"VSW5TESTSUITE CASE XKeysymToKeycode 14"
 	/tset/Xopen/kysymtkycd/kysymtkycd
 	"VSW5TESTSUITE CASE XLookupColor 7"
-	/tset/Xopen/lkpclr/lkpclr
+	/tset/Xopen/LookupColor/LookupColor
 	"VSW5TESTSUITE CASE XStringToKeysym 14"
 	/tset/Xopen/strtkysym/strtkysym

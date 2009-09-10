@@ -15,7 +15,7 @@ tprogs = \
 	kysym/kysym \
 	kysymdf/kysymdf \
 	kysymtkycd/kysymtkycd \
-	lkpclr/lkpclr \
+	LookupColor/LookupColor \
 	strtkysym/strtkysym
 
 kysym_kysym_SOURCES = \

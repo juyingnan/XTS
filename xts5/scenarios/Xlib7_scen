@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XFreeColors 9"
 	/tset/Xlib7/FreeColors/FreeColors
 	"VSW5TESTSUITE CASE XLookupColor 4"
-	/tset/Xlib7/lkpclr/lkpclr
+	/tset/Xlib7/LookupColor/LookupColor
 	"VSW5TESTSUITE CASE XParseColor 10"
 	/tset/Xlib7/prsclr/prsclr
 	"VSW5TESTSUITE CASE XQueryColor 3"

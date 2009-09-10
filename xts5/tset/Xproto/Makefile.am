@@ -75,7 +75,7 @@ tprogs = \
 	InstallColormap/InstallColormap \
 	InternAtom/InternAtom \
 	KillClient/KillClient \
-	lkpclr/lkpclr \
+	LookupColor/LookupColor \
 	lstextnsns/lstextnsns \
 	lstfnts/lstfnts \
 	lstfntswth/lstfntswth \
