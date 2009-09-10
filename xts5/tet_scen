@@ -3498,7 +3498,7 @@ pReparentWindow
 
 pRotateProperties
 	"VSW5TESTSUITE CASE RotateProperties 3"
-	/tset/Xproto/rttprprts/rttprprts
+	/tset/Xproto/RotateProperties/RotateProperties
 
 pSendEvent
 	"VSW5TESTSUITE CASE SendEvent 3"

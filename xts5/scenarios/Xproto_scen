@@ -252,7 +252,7 @@
 	"VSW5TESTSUITE CASE ReparentWindow 3"
 	/tset/Xproto/ReparentWindow/ReparentWindow
 	"VSW5TESTSUITE CASE RotateProperties 3"
-	/tset/Xproto/rttprprts/rttprprts
+	/tset/Xproto/RotateProperties/RotateProperties
 	"VSW5TESTSUITE CASE SendEvent 3"
 	/tset/Xproto/sndevnt/sndevnt
 	"VSW5TESTSUITE CASE SetAccessControl 3"

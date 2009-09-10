@@ -107,7 +107,7 @@ tprogs = \
 	QueryTextExtents/QueryTextExtents \
 	RecolorCursor/RecolorCursor \
 	ReparentWindow/ReparentWindow \
-	rttprprts/rttprprts \
+	RotateProperties/RotateProperties \
 	sndevnt/sndevnt \
 	staccsscnt/staccsscnt \
 	stclprctng/stclprctng \
