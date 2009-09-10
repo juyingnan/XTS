@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE XBitmapUnit 1"
 	/tset/Xlib3/XBitmapUnit/XBitmapUnit
 	"VSW5TESTSUITE CASE XCellsOfScreen 1"
-	/tset/Xlib3/cllsofscrn/cllsofscrn
+	/tset/Xlib3/XCellsOfScreen/XCellsOfScreen
 	"VSW5TESTSUITE CASE XCloseDisplay 28"
 	/tset/Xlib3/clsdsply/clsdsply
 	"VSW5TESTSUITE CASE XConnectionNumber 1"
@@ -184,7 +184,7 @@
 	"VSW5TESTSUITE CASE BitmapUnit 1"
 	/tset/Xlib3/XBitmapUnit/XBitmapUnit_m
 	"VSW5TESTSUITE CASE CellsOfScreen 1"
-	/tset/Xlib3/cllsofscrn/cllsofscrn_m
+	/tset/Xlib3/XCellsOfScreen/XCellsOfScreen_m
 	"VSW5TESTSUITE CASE ConnectionNumber 1"
 	/tset/Xlib3/cnnctnnmbr/cnnctnnmbr_m
 	"VSW5TESTSUITE CASE DefaultColormap 1"

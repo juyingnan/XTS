@@ -1899,7 +1899,7 @@ XBitmapUnit
 
 XCellsOfScreen
 	"VSW5TESTSUITE CASE XCellsOfScreen 1"
-	/tset/Xlib3/cllsofscrn/cllsofscrn
+	/tset/Xlib3/XCellsOfScreen/XCellsOfScreen
 
 XCloseDisplay
 	"VSW5TESTSUITE CASE XCloseDisplay 28"
@@ -2131,7 +2131,7 @@ BitmapUnit
 
 CellsOfScreen
 	"VSW5TESTSUITE CASE CellsOfScreen 1"
-	/tset/Xlib3/cllsofscrn/cllsofscrn_m
+	/tset/Xlib3/XCellsOfScreen/XCellsOfScreen_m
 
 ConnectionNumber
 	"VSW5TESTSUITE CASE ConnectionNumber 1"
