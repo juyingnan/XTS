@@ -4317,7 +4317,7 @@ XtCallConverter
 
 XtAppReleaseCacheRefs
 	"VSW5TESTSUITE CASE XtAppReleaseCacheRefs 2"
-	/tset/Xt11/taprelcre/taprelcre
+	/tset/Xt11/XtAppReleaseCacheRefs/XtAppReleaseCacheRefs
 
 XtCallbackReleaseCacheRef
 	"VSW5TESTSUITE CASE XtCallbackReleaseCacheRef 1"
