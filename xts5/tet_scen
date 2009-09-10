@@ -3648,7 +3648,7 @@ XtIsShell
 
 XtIsOverrideShell
 	"VSW5TESTSUITE CASE XtIsOverrideShell 2"
-	/tset/Xt3/tisovrrdsh/tisovrrdsh
+	/tset/Xt3/XtIsOverrideShell/XtIsOverrideShell
 
 XtIsWMShell
 	"VSW5TESTSUITE CASE XtIsWMShell 2"
