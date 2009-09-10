@@ -29,7 +29,7 @@ tprogs = \
 	XcmsDefaultCCC/XcmsDefaultCCC \
 	XcmsDisplayOfCCC/XcmsDisplayOfCCC \
 	XcmsFreeCCC/XcmsFreeCCC \
-	cmsfopr/cmsfopr \
+	XcmsFormatOfPrefix/XcmsFormatOfPrefix \
 	cmslkcl/cmslkcl \
 	cmslqml/cmslqml \
 	cmspoft/cmspoft \

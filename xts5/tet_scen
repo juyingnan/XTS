@@ -2651,7 +2651,7 @@ XcmsFreeCCC
 
 XcmsFormatOfPrefix
 	"VSW5TESTSUITE CASE XcmsFormatOfPrefix 2"
-	/tset/Xlib7/cmsfopr/cmsfopr
+	/tset/Xlib7/XcmsFormatOfPrefix/XcmsFormatOfPrefix
 
 XcmsLookupColor
 	"VSW5TESTSUITE CASE XcmsLookupColor 1"
