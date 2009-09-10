@@ -124,7 +124,7 @@ tprogs = \
 	TranslateCoords/TranslateCoords \
 	UngrabButton/UngrabButton \
 	UngrabKey/UngrabKey \
-	ungrbkybrd/ungrbkybrd \
+	UngrabKeyboard/UngrabKeyboard \
 	ungrbpntr/ungrbpntr \
 	ungrbsrvr/ungrbsrvr \
 	unmpsbws/unmpsbws \

@@ -38,6 +38,6 @@ tprogs = \
 	SetPointerMapping/SetPointerMapping \
 	UngrabButton/UngrabButton \
 	UngrabKey/UngrabKey \
-	ungrbkybrd/ungrbkybrd \
+	UngrabKeyboard/UngrabKeyboard \
 	ungrbpntr/ungrbpntr \
 	wrppntr/wrppntr
