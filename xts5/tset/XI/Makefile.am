@@ -18,7 +18,7 @@ tprogs = \
 	XChangeDeviceKeyMapping/XChangeDeviceKeyMapping \
 	XCloseDevice/XCloseDevice \
 	XDeviceBell/XDeviceBell \
-	getdctl/getdctl \
+	XGetDeviceControl/XGetDeviceControl \
 	getfctl/getfctl \
 	getfocus/getfocus \
 	getprop/getprop \

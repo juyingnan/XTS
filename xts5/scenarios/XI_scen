@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE XDeviceBell 6"
 	/tset/XI/XDeviceBell/XDeviceBell
 	"VSW5TESTSUITE CASE XGetDeviceControl 4"
-	/tset/XI/getdctl/getdctl
+	/tset/XI/XGetDeviceControl/XGetDeviceControl
 	"VSW5TESTSUITE CASE XGetFeedbackControl 3"
 	/tset/XI/getfctl/getfctl
 	"VSW5TESTSUITE CASE XGetDeviceFocus 2"
