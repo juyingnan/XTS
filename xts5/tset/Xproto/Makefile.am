@@ -19,7 +19,7 @@ tprogs = \
 	ChangeActivePointerGrab/ChangeActivePointerGrab \
 	ChangeGC/ChangeGC \
 	ChangeHosts/ChangeHosts \
-	chngkybrdc/chngkybrdc \
+	ChangeKeyboardControl/ChangeKeyboardControl \
 	chngkybrdm/chngkybrdm \
 	chngpntrcn/chngpntrcn \
 	chngprprty/chngprprty \

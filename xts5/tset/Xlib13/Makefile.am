@@ -14,7 +14,7 @@ tprogs = \
 	atrpton/atrpton \
 	Bell/Bell \
 	ChangeActivePointerGrab/ChangeActivePointerGrab \
-	chngkybrdc/chngkybrdc \
+	ChangeKeyboardControl/ChangeKeyboardControl \
 	chngkybrdm/chngkybrdm \
 	chngpntrcn/chngpntrcn \
 	dltmdfrmpe/dltmdfrmpe \

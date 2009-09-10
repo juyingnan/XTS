@@ -76,7 +76,7 @@
 	"VSW5TESTSUITE CASE ChangeHosts 3"
 	/tset/Xproto/ChangeHosts/ChangeHosts
 	"VSW5TESTSUITE CASE ChangeKeyboardControl 4"
-	/tset/Xproto/chngkybrdc/chngkybrdc
+	/tset/Xproto/ChangeKeyboardControl/ChangeKeyboardControl
 	"VSW5TESTSUITE CASE ChangeKeyboardMapping 3"
 	/tset/Xproto/chngkybrdm/chngkybrdm
 	"VSW5TESTSUITE CASE ChangePointerControl 3"
