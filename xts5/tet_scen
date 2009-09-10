@@ -546,7 +546,7 @@ XGetFeedbackControl
 
 XGetDeviceFocus
 	"VSW5TESTSUITE CASE XGetDeviceFocus 2"
-	/tset/XI/getfocus/getfocus
+	/tset/XI/XGetDeviceFocus/XGetDeviceFocus
 
 XGetDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XGetDeviceDontPropagateList 2"

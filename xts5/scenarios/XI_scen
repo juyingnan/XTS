@@ -78,7 +78,7 @@
 	"VSW5TESTSUITE CASE XGetFeedbackControl 3"
 	/tset/XI/XGetFeedbackControl/XGetFeedbackControl
 	"VSW5TESTSUITE CASE XGetDeviceFocus 2"
-	/tset/XI/getfocus/getfocus
+	/tset/XI/XGetDeviceFocus/XGetDeviceFocus
 	"VSW5TESTSUITE CASE XGetDeviceDontPropagateList 2"
 	/tset/XI/getprop/getprop
 	"VSW5TESTSUITE CASE XGetExtensionVersion 2"

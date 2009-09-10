@@ -20,7 +20,7 @@ tprogs = \
 	XDeviceBell/XDeviceBell \
 	XGetDeviceControl/XGetDeviceControl \
 	XGetFeedbackControl/XGetFeedbackControl \
-	getfocus/getfocus \
+	XGetDeviceFocus/XGetDeviceFocus \
 	getprop/getprop \
 	getvers/getvers \
 	grbdev/grbdev \
