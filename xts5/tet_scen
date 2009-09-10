@@ -1220,7 +1220,7 @@ XIMOfIC
 
 XLocaleOfFontSet
 	"VSW5TESTSUITE CASE XLocaleOfFontSet 1"
-	/tset/Xlib14/loffs/loffs
+	/tset/Xlib14/XLocaleOfFontSet/XLocaleOfFontSet
 
 XLocaleOfIM
 	"VSW5TESTSUITE CASE XLocaleOfIM 1"

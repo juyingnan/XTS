@@ -24,7 +24,7 @@ tprogs = \
 	XGetICValues/XGetICValues \
 	XGetIMValues/XGetIMValues \
 	XIMOfIC/XIMOfIC \
-	loffs/loffs \
+	XLocaleOfFontSet/XLocaleOfFontSet \
 	lofim/lofim \
 	mbdistr/mbdistr \
 	mbdstr/mbdstr \
