@@ -4387,7 +4387,7 @@ XtGetMultiClickTime
 
 XtParseTranslationTable
 	"VSW5TESTSUITE CASE XtParseTranslationTable 1"
-	/tset/Xt12/tprsttbl/tprsttbl
+	/tset/Xt12/XtParseTranslationTable/XtParseTranslationTable
 
 XtAugmentTranslations
 	"VSW5TESTSUITE CASE XtAugmentTranslations 4"
