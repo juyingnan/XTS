@@ -162,7 +162,7 @@
 	"VSW5TESTSUITE CASE GetKeyboardMapping 3"
 	/tset/Xproto/GetKeyboardMapping/GetKeyboardMapping
 	"VSW5TESTSUITE CASE GetModifierMapping 3"
-	/tset/Xproto/gtmdfrmppn/gtmdfrmppn
+	/tset/Xproto/GetModifierMapping/GetModifierMapping
 	"VSW5TESTSUITE CASE GetMotionEvents 3"
 	/tset/Xproto/gtmtnevnts/gtmtnevnts
 	"VSW5TESTSUITE CASE GetPointerControl 3"

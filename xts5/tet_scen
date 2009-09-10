@@ -1106,7 +1106,7 @@ XGetKeyboardMapping
 
 XGetModifierMapping
 	"VSW5TESTSUITE CASE XGetModifierMapping 2"
-	/tset/Xlib13/gtmdfrmppn/gtmdfrmppn
+	/tset/Xlib13/GetModifierMapping/GetModifierMapping
 
 XGetPointerControl
 	"VSW5TESTSUITE CASE XGetPointerControl 1"
@@ -3318,7 +3318,7 @@ pGetKeyboardMapping
 
 pGetModifierMapping
 	"VSW5TESTSUITE CASE GetModifierMapping 3"
-	/tset/Xproto/gtmdfrmppn/gtmdfrmppn
+	/tset/Xproto/GetModifierMapping/GetModifierMapping
 
 pGetMotionEvents
 	"VSW5TESTSUITE CASE GetMotionEvents 3"

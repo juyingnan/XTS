@@ -27,7 +27,7 @@ tprogs = \
 	GetInputFocus/GetInputFocus \
 	GetKeyboardControl/GetKeyboardControl \
 	GetKeyboardMapping/GetKeyboardMapping \
-	gtmdfrmppn/gtmdfrmppn \
+	GetModifierMapping/GetModifierMapping \
 	gtpntrcntr/gtpntrcntr \
 	gtpntrmppn/gtpntrmppn \
 	insrtmdfrm/insrtmdfrm \
