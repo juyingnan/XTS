@@ -1363,7 +1363,7 @@ XAllocSizeHints
 
 XAllocWMHints
 	"VSW5TESTSUITE CASE XAllocWMHints 2"
-	/tset/Xlib15/allcwmhnts/allcwmhnts
+	/tset/Xlib15/XAllocWMHints/XAllocWMHints
 
 XFreeStringList
 	"VSW5TESTSUITE CASE XFreeStringList 1"
