@@ -3802,7 +3802,7 @@ XtWindowOfObject
 
 XtName
 	"VSW5TESTSUITE CASE XtName 1"
-	/tset/Xt4/tname/tname
+	/tset/Xt4/XtName/XtName
 
 XtUnrealizeWidget
 	"VSW5TESTSUITE CASE XtUnrealizeWidget 4"

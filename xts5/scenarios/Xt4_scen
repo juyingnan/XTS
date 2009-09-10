@@ -122,7 +122,7 @@
 	"VSW5TESTSUITE CASE XtWindowOfObject 2"
 	/tset/Xt4/twindwofo/twindwofo
 	"VSW5TESTSUITE CASE XtName 1"
-	/tset/Xt4/tname/tname
+	/tset/Xt4/XtName/XtName
 	"VSW5TESTSUITE CASE XtUnrealizeWidget 4"
 	/tset/Xt4/tunrlzwgt/tunrlzwgt
 	"VSW5TESTSUITE CASE XtDestroyWidget 3"
