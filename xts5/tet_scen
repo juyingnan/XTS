@@ -2003,7 +2003,7 @@ XFree
 
 XHeightMMOfScreen
 	"VSW5TESTSUITE CASE XHeightMMOfScreen 1"
-	/tset/Xlib3/hghtmmofsc/hghtmmofsc
+	/tset/Xlib3/XHeightMMOfScreen/XHeightMMOfScreen
 
 XHeightOfScreen
 	"VSW5TESTSUITE CASE XHeightOfScreen 1"
@@ -2227,7 +2227,7 @@ EventMaskOfScreen
 
 HeightMMOfScreen
 	"VSW5TESTSUITE CASE HeightMMOfScreen 1"
-	/tset/Xlib3/hghtmmofsc/hghtmmofsc_m
+	/tset/Xlib3/XHeightMMOfScreen/XHeightMMOfScreen_m
 
 HeightOfScreen
 	"VSW5TESTSUITE CASE HeightOfScreen 1"

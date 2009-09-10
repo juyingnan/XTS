@@ -120,7 +120,7 @@
 	"VSW5TESTSUITE CASE XFree 1"
 	/tset/Xlib3/XFree/XFree
 	"VSW5TESTSUITE CASE XHeightMMOfScreen 1"
-	/tset/Xlib3/hghtmmofsc/hghtmmofsc
+	/tset/Xlib3/XHeightMMOfScreen/XHeightMMOfScreen
 	"VSW5TESTSUITE CASE XHeightOfScreen 1"
 	/tset/Xlib3/hghtofscrn/hghtofscrn
 	"VSW5TESTSUITE CASE XImageByteOrder 1"
@@ -232,7 +232,7 @@
 	"VSW5TESTSUITE CASE EventMaskOfScreen 1"
 	/tset/Xlib3/XEventMaskOfScreen/XEventMaskOfScreen_m
 	"VSW5TESTSUITE CASE HeightMMOfScreen 1"
-	/tset/Xlib3/hghtmmofsc/hghtmmofsc_m
+	/tset/Xlib3/XHeightMMOfScreen/XHeightMMOfScreen_m
 	"VSW5TESTSUITE CASE HeightOfScreen 1"
 	/tset/Xlib3/hghtofscrn/hghtofscrn_m
 	"VSW5TESTSUITE CASE ImageByteOrder 1"
