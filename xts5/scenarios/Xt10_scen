@@ -59,7 +59,7 @@
 #
 
 	"VSW5TESTSUITE CASE XtAddCallback 3"
-	/tset/Xt10/tadclback/tadclback
+	/tset/Xt10/XtAddCallback/XtAddCallback
 	"VSW5TESTSUITE CASE XtAddCallbacks 3"
 	/tset/Xt10/tadclbcks/tadclbcks
 	"VSW5TESTSUITE CASE XtRemoveCallback 2"

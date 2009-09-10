@@ -4098,7 +4098,7 @@ XtBuildEventMask
 
 XtAddCallback
 	"VSW5TESTSUITE CASE XtAddCallback 3"
-	/tset/Xt10/tadclback/tadclback
+	/tset/Xt10/XtAddCallback/XtAddCallback
 
 XtAddCallbacks
 	"VSW5TESTSUITE CASE XtAddCallbacks 3"
