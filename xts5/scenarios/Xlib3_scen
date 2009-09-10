@@ -170,7 +170,7 @@
 	"VSW5TESTSUITE CASE XWidthOfScreen 1"
 	/tset/Xlib3/XWidthOfScreen/XWidthOfScreen
 	"VSW5TESTSUITE CASE XWhitePixel 1"
-	/tset/Xlib3/whtpxl/whtpxl
+	/tset/Xlib3/XWhitePixel/XWhitePixel
 	"VSW5TESTSUITE CASE XWhitePixelOfScreen 1"
 	/tset/Xlib3/whtpxlofsc/whtpxlofsc
 	"VSW5TESTSUITE CASE BlackPixel 1"
@@ -270,6 +270,6 @@
 	"VSW5TESTSUITE CASE WidthOfScreen 1"
 	/tset/Xlib3/XWidthOfScreen/XWidthOfScreen_m
 	"VSW5TESTSUITE CASE WhitePixel 1"
-	/tset/Xlib3/whtpxl/whtpxl_m
+	/tset/Xlib3/XWhitePixel/XWhitePixel_m
 	"VSW5TESTSUITE CASE WhitePixelOfScreen 1"
 	/tset/Xlib3/whtpxlofsc/whtpxlofsc_m
