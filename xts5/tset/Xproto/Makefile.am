@@ -19,7 +19,7 @@ tprogs = \
 	XChangeActivePointerGrab/XChangeActivePointerGrab \
 	ChangeGC/ChangeGC \
 	ChangeHosts/ChangeHosts \
-	ChangeKeyboardControl/ChangeKeyboardControl \
+	XChangeKeyboardControl/XChangeKeyboardControl \
 	ChangeKeyboardMapping/ChangeKeyboardMapping \
 	ChangePointerControl/ChangePointerControl \
 	ChangeProperty/ChangeProperty \

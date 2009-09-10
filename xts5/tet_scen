@@ -1054,7 +1054,7 @@ XChangeActivePointerGrab
 
 XChangeKeyboardControl
 	"VSW5TESTSUITE CASE XChangeKeyboardControl 20"
-	/tset/Xlib13/ChangeKeyboardControl/ChangeKeyboardControl
+	/tset/Xlib13/XChangeKeyboardControl/XChangeKeyboardControl
 
 XChangeKeyboardMapping
 	"VSW5TESTSUITE CASE XChangeKeyboardMapping 7"
@@ -3146,7 +3146,7 @@ pChangeHosts
 
 pChangeKeyboardControl
 	"VSW5TESTSUITE CASE ChangeKeyboardControl 4"
-	/tset/Xproto/ChangeKeyboardControl/ChangeKeyboardControl
+	/tset/Xproto/XChangeKeyboardControl/XChangeKeyboardControl
 
 pChangeKeyboardMapping
 	"VSW5TESTSUITE CASE ChangeKeyboardMapping 3"

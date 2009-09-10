@@ -14,7 +14,7 @@ tprogs = \
 	XAutoRepeatOn/XAutoRepeatOn \
 	XBell/XBell \
 	XChangeActivePointerGrab/XChangeActivePointerGrab \
-	ChangeKeyboardControl/ChangeKeyboardControl \
+	XChangeKeyboardControl/XChangeKeyboardControl \
 	ChangeKeyboardMapping/ChangeKeyboardMapping \
 	ChangePointerControl/ChangePointerControl \
 	dltmdfrmpe/dltmdfrmpe \
