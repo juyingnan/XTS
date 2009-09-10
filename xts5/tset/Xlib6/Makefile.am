@@ -16,4 +16,4 @@ tprogs = \
 	FreeCursor/FreeCursor \
 	FreePixmap/FreePixmap \
 	qrybstcrsr/qrybstcrsr \
-	rclrcrsr/rclrcrsr
+	RecolorCursor/RecolorCursor

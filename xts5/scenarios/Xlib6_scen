@@ -70,4 +70,4 @@
 	"VSW5TESTSUITE CASE XQueryBestCursor 2"
 	/tset/Xlib6/qrybstcrsr/qrybstcrsr
 	"VSW5TESTSUITE CASE XRecolorCursor 3"
-	/tset/Xlib6/rclrcrsr/rclrcrsr
+	/tset/Xlib6/RecolorCursor/RecolorCursor

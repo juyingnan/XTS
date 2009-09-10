@@ -2524,7 +2524,7 @@ XQueryBestCursor
 
 XRecolorCursor
 	"VSW5TESTSUITE CASE XRecolorCursor 3"
-	/tset/Xlib6/rclrcrsr/rclrcrsr
+	/tset/Xlib6/RecolorCursor/RecolorCursor
 
 
 # Discrete tests for Xlib Chapter 7-Color Management Functions
@@ -3490,7 +3490,7 @@ pQueryTextExtents
 
 pRecolorCursor
 	"VSW5TESTSUITE CASE RecolorCursor 3"
-	/tset/Xproto/rclrcrsr/rclrcrsr
+	/tset/Xproto/RecolorCursor/RecolorCursor
 
 pReparentWindow
 	"VSW5TESTSUITE CASE ReparentWindow 3"

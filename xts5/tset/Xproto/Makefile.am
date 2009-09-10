@@ -105,7 +105,7 @@ tprogs = \
 	QueryPointer/QueryPointer \
 	QueryTree/QueryTree \
 	QueryTextExtents/QueryTextExtents \
-	rclrcrsr/rclrcrsr \
+	RecolorCursor/RecolorCursor \
 	rprntwdw/rprntwdw \
 	rttprprts/rttprprts \
 	sndevnt/sndevnt \
