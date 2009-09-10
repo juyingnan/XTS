@@ -10,7 +10,7 @@ CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
 	ChangeWindowAttributes/ChangeWindowAttributes \
-	cnfgrwdw/cnfgrwdw \
+	ConfigureWindow/ConfigureWindow \
 	crcltsbws/crcltsbws \
 	crcltsbwsd/crcltsbwsd \
 	crcltsbwsu/crcltsbwsu \

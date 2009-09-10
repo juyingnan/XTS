@@ -27,7 +27,7 @@ tprogs = \
 	ChangeWindowAttributes/ChangeWindowAttributes \
 	ClearArea/ClearArea \
 	CloseFont/CloseFont \
-	cnfgrwdw/cnfgrwdw \
+	ConfigureWindow/ConfigureWindow \
 	cnvrtslctn/cnvrtslctn \
 	cpyar/cpyar \
 	cpyclrmpan/cpyclrmpan \

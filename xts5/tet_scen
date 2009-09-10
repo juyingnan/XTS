@@ -2318,7 +2318,7 @@ XChangeWindowAttributes
 
 XConfigureWindow
 	"VSW5TESTSUITE CASE XConfigureWindow 34"
-	/tset/Xlib4/cnfgrwdw/cnfgrwdw
+	/tset/Xlib4/ConfigureWindow/ConfigureWindow
 
 XCirculateSubwindows
 	"VSW5TESTSUITE CASE XCirculateSubwindows 7"
@@ -3178,7 +3178,7 @@ pCloseFont
 
 pConfigureWindow
 	"VSW5TESTSUITE CASE ConfigureWindow 4"
-	/tset/Xproto/cnfgrwdw/cnfgrwdw
+	/tset/Xproto/ConfigureWindow/ConfigureWindow
 
 pConvertSelection
 	"VSW5TESTSUITE CASE ConvertSelection 3"
