@@ -104,7 +104,7 @@
 	"VSW5TESTSUITE CASE Miscellaneous 6"
 	/tset/XI/Miscellaneous/Miscellaneous
 	"VSW5TESTSUITE CASE XOpenDevice 4"
-	/tset/XI/XOpenDevice/XOpenDevice
+	/tset/XI/OpenDevice/OpenDevice
 	"VSW5TESTSUITE CASE XQueryDeviceState 8"
 	/tset/XI/XQueryDeviceState/XQueryDeviceState
 	"VSW5TESTSUITE CASE XSetDeviceValuators 6"

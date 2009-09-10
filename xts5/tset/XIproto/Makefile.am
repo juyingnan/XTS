@@ -33,7 +33,7 @@ tprogs = \
 	GetSelectedExtensionEvents/GetSelectedExtensionEvents \
 	ListInputDevices/ListInputDevices \
 	Miscellaneous/Miscellaneous \
-	XOpenDevice/XOpenDevice \
+	OpenDevice/OpenDevice \
 	QueryDeviceState/QueryDeviceState \
 	XSetDeviceValuators/XSetDeviceValuators \
 	XSetDeviceButtonMapping/XSetDeviceButtonMapping \

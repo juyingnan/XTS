@@ -102,7 +102,7 @@
 	"VSW5TESTSUITE CASE ListInputDevices 3"
 	/tset/XIproto/ListInputDevices/ListInputDevices
 	"VSW5TESTSUITE CASE OpenDevice 3"
-	/tset/XIproto/XOpenDevice/XOpenDevice
+	/tset/XIproto/OpenDevice/OpenDevice
 	"VSW5TESTSUITE CASE QueryDeviceState 3"
 	/tset/XIproto/QueryDeviceState/QueryDeviceState
 	"VSW5TESTSUITE CASE SetDeviceValuators 3"
