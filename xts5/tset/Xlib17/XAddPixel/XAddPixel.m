@@ -17,7 +17,7 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib17/addpxl/addpxl.m,v 1.3 2005-11-03 08:43:03 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib17/XAddPixel/XAddPixel.m,v 1.3 2005-11-03 08:43:03 jmichael Exp $
 
 Copyright (c) 2004 The Open Group
 Copyright (c) Applied Testing and Technology, Inc. 1995
@@ -25,7 +25,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib17/addpxl/addpxl.m
+>># File: xts5/tset/Xlib17/XAddPixel/XAddPixel.m
 >># 
 >># Description:
 >># 	Tests for XAddPixel()

@@ -1652,7 +1652,7 @@ XScreenResourceString
 
 XAddPixel
 	"VSW5TESTSUITE CASE XAddPixel 1"
-	/tset/Xlib17/addpxl/addpxl
+	/tset/Xlib17/XAddPixel/XAddPixel
 
 XClipBox
 	"VSW5TESTSUITE CASE XClipBox 1"

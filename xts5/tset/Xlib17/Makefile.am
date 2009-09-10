@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	addpxl/addpxl \
+	XAddPixel/XAddPixel \
 	clpbx/clpbx \
 	crtbtmpfrm/crtbtmpfrm \
 	crtimg/crtimg \
