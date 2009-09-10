@@ -106,7 +106,7 @@
 	"VSW5TESTSUITE CASE XKeycodeToKeysym 2"
 	/tset/Xlib17/kycdtkysym/kycdtkysym
 	"VSW5TESTSUITE CASE XKeysymToKeycode 2"
-	/tset/Xlib17/kysymtkycd/kysymtkycd
+	/tset/Xlib17/XKeysymToKeycode/XKeysymToKeycode
 	"VSW5TESTSUITE CASE XKeysymToString 2"
 	/tset/Xlib17/kysymtstr/kysymtstr
 	"VSW5TESTSUITE CASE XLookupKeysym 2"

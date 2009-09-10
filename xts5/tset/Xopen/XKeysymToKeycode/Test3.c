@@ -20,47 +20,47 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xopen/kysymtkycd/TestS.c,v 1.2 2005-11-03 08:44:00 jmichael Exp $
+* $Header: /cvs/xtest/xtest/xts5/tset/Xopen/XKeysymToKeycode/Test3.c,v 1.2 2005-11-03 08:44:00 jmichael Exp $
 * 
 * Project: VSW5
 * 
-* File: xts5/tset/Xopen/kysymtkycd/TestS.c
+* File: xts5/tset/Xopen/XKeysymToKeycode/Test3.c
 * 
 * Description:
 * 	Tests for XKeysymToKeycode()
 * 
 * Modifications:
-* $Log: TestS.c,v $
+* $Log: Test3.c,v $
 * Revision 1.2  2005-11-03 08:44:00  jmichael
 * clean up all vsw5 paths to use xts5 instead.
 *
 * Revision 1.1.1.2  2005/04/15 14:05:40  anderson
 * Reimport of the base with the legal name in the copyright fixed.
 *
-* Revision 8.0  1998/12/23 23:35:49  mar
+* Revision 8.0  1998/12/23 23:35:44  mar
 * Branch point for Release 5.0.2
 *
-* Revision 7.0  1998/10/30 22:58:30  mar
+* Revision 7.0  1998/10/30 22:58:23  mar
 * Branch point for Release 5.0.2b1
 *
-* Revision 6.0  1998/03/02 05:27:03  tbr
+* Revision 6.0  1998/03/02 05:26:58  tbr
 * Branch point for Release 5.0.1
 *
-* Revision 5.0  1998/01/26 03:23:36  tbr
+* Revision 5.0  1998/01/26 03:23:32  tbr
 * Branch point for Release 5.0.1b1
 *
 * Revision 4.1  1996/05/09 21:17:34  andy
 * Fixed X includes
 *
-* Revision 4.0  1995/12/15  09:14:20  tbr
+* Revision 4.0  1995/12/15  09:14:06  tbr
 * Branch point for Release 5.0.0
 *
-* Revision 3.1  1995/12/15  01:17:43  andy
+* Revision 3.1  1995/12/15  01:17:27  andy
 * Prepare for GA Release
 *
 */
 /*
- *      SCCS:  @(#)  TestS.c Rel 1.1	    (11/28/91)
+ *      SCCS:  @(#)  Test3.c Rel 1.1	    (11/28/91)
  *
  *	UniSoft Ltd., London, England
  *
@@ -134,256 +134,236 @@ char	*s;
 {
 	report("Symbol XK_\"%s\" is not defined.", s);
 }
-#define XK_SPECIAL
+#define XK_LATIN3
 #include	<X11/keysymdef.h>
-#undef XK_SPECIAL
+#undef XK_LATIN3 
 
-kysymtcdS()
+kysymtcd3()
 { 
 int 	pass = 0, fail = 0;
 
 	XDisplayKeycodes(Dsp, &minkc, &maxkc);
 	XGetKeyboardMapping(Dsp, (KeyCode)minkc, 1, &keysyms_per_keycode);
 
-#ifdef XK_blank
-	if(test(XK_blank, "blank") == 1)
+#ifdef XK_Hstroke
+	if(test(XK_Hstroke, "Hstroke") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("blank");
+	reporterr("Hstroke");
 	FAIL;
 #endif
 
-#ifdef XK_soliddiamond
-	if(test(XK_soliddiamond, "soliddiamond") == 1)
+#ifdef XK_Hcircumflex
+	if(test(XK_Hcircumflex, "Hcircumflex") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("soliddiamond");
+	reporterr("Hcircumflex");
 	FAIL;
 #endif
 
-#ifdef XK_checkerboard
-	if(test(XK_checkerboard, "checkerboard") == 1)
+#ifdef XK_Iabovedot
+	if(test(XK_Iabovedot, "Iabovedot") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("checkerboard");
+	reporterr("Iabovedot");
 	FAIL;
 #endif
 
-#ifdef XK_ht
-	if(test(XK_ht, "ht") == 1)
+#ifdef XK_Gbreve
+	if(test(XK_Gbreve, "Gbreve") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("ht");
+	reporterr("Gbreve");
 	FAIL;
 #endif
 
-#ifdef XK_ff
-	if(test(XK_ff, "ff") == 1)
+#ifdef XK_Jcircumflex
+	if(test(XK_Jcircumflex, "Jcircumflex") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("ff");
+	reporterr("Jcircumflex");
 	FAIL;
 #endif
 
-#ifdef XK_cr
-	if(test(XK_cr, "cr") == 1)
+#ifdef XK_hstroke
+	if(test(XK_hstroke, "hstroke") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("cr");
+	reporterr("hstroke");
 	FAIL;
 #endif
 
-#ifdef XK_lf
-	if(test(XK_lf, "lf") == 1)
+#ifdef XK_hcircumflex
+	if(test(XK_hcircumflex, "hcircumflex") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("lf");
+	reporterr("hcircumflex");
 	FAIL;
 #endif
 
-#ifdef XK_nl
-	if(test(XK_nl, "nl") == 1)
+#ifdef XK_idotless
+	if(test(XK_idotless, "idotless") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("nl");
+	reporterr("idotless");
 	FAIL;
 #endif
 
-#ifdef XK_vt
-	if(test(XK_vt, "vt") == 1)
+#ifdef XK_gbreve
+	if(test(XK_gbreve, "gbreve") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("vt");
+	reporterr("gbreve");
 	FAIL;
 #endif
 
-#ifdef XK_lowrightcorner
-	if(test(XK_lowrightcorner, "lowrightcorner") == 1)
+#ifdef XK_jcircumflex
+	if(test(XK_jcircumflex, "jcircumflex") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("lowrightcorner");
+	reporterr("jcircumflex");
 	FAIL;
 #endif
 
-#ifdef XK_uprightcorner
-	if(test(XK_uprightcorner, "uprightcorner") == 1)
+#ifdef XK_Cabovedot
+	if(test(XK_Cabovedot, "Cabovedot") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("uprightcorner");
+	reporterr("Cabovedot");
 	FAIL;
 #endif
 
-#ifdef XK_upleftcorner
-	if(test(XK_upleftcorner, "upleftcorner") == 1)
+#ifdef XK_Ccircumflex
+	if(test(XK_Ccircumflex, "Ccircumflex") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("upleftcorner");
+	reporterr("Ccircumflex");
 	FAIL;
 #endif
 
-#ifdef XK_lowleftcorner
-	if(test(XK_lowleftcorner, "lowleftcorner") == 1)
+#ifdef XK_Gabovedot
+	if(test(XK_Gabovedot, "Gabovedot") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("lowleftcorner");
+	reporterr("Gabovedot");
 	FAIL;
 #endif
 
-#ifdef XK_crossinglines
-	if(test(XK_crossinglines, "crossinglines") == 1)
+#ifdef XK_Gcircumflex
+	if(test(XK_Gcircumflex, "Gcircumflex") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("crossinglines");
+	reporterr("Gcircumflex");
 	FAIL;
 #endif
 
-#ifdef XK_horizlinescan1
-	if(test(XK_horizlinescan1, "horizlinescan1") == 1)
+#ifdef XK_Ubreve
+	if(test(XK_Ubreve, "Ubreve") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("horizlinescan1");
+	reporterr("Ubreve");
 	FAIL;
 #endif
 
-#ifdef XK_horizlinescan3
-	if(test(XK_horizlinescan3, "horizlinescan3") == 1)
+#ifdef XK_Scircumflex
+	if(test(XK_Scircumflex, "Scircumflex") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("horizlinescan3");
+	reporterr("Scircumflex");
 	FAIL;
 #endif
 
-#ifdef XK_horizlinescan5
-	if(test(XK_horizlinescan5, "horizlinescan5") == 1)
+#ifdef XK_cabovedot
+	if(test(XK_cabovedot, "cabovedot") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("horizlinescan5");
+	reporterr("cabovedot");
 	FAIL;
 #endif
 
-#ifdef XK_horizlinescan7
-	if(test(XK_horizlinescan7, "horizlinescan7") == 1)
+#ifdef XK_ccircumflex
+	if(test(XK_ccircumflex, "ccircumflex") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("horizlinescan7");
+	reporterr("ccircumflex");
 	FAIL;
 #endif
 
-#ifdef XK_horizlinescan9
-	if(test(XK_horizlinescan9, "horizlinescan9") == 1)
+#ifdef XK_gabovedot
+	if(test(XK_gabovedot, "gabovedot") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("horizlinescan9");
+	reporterr("gabovedot");
 	FAIL;
 #endif
 
-#ifdef XK_leftt
-	if(test(XK_leftt, "leftt") == 1)
+#ifdef XK_gcircumflex
+	if(test(XK_gcircumflex, "gcircumflex") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("leftt");
+	reporterr("gcircumflex");
 	FAIL;
 #endif
 
-#ifdef XK_rightt
-	if(test(XK_rightt, "rightt") == 1)
+#ifdef XK_ubreve
+	if(test(XK_ubreve, "ubreve") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("rightt");
+	reporterr("ubreve");
 	FAIL;
 #endif
 
-#ifdef XK_bott
-	if(test(XK_bott, "bott") == 1)
+#ifdef XK_scircumflex
+	if(test(XK_scircumflex, "scircumflex") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("bott");
+	reporterr("scircumflex");
 	FAIL;
 #endif
 
-#ifdef XK_topt
-	if(test(XK_topt, "topt") == 1)
-		CHECK;
-	else
-		FAIL;
-#else
-	reporterr("topt");
-	FAIL;
-#endif
-
-#ifdef XK_vertbar
-	if(test(XK_vertbar, "vertbar") == 1)
-		CHECK;
-	else
-		FAIL;
-#else
-	reporterr("vertbar");
-	FAIL;
-#endif
-
-	CHECKPASS(24);
+	CHECKPASS(22);
 }

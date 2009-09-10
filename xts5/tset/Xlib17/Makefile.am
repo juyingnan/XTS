@@ -34,7 +34,7 @@ tprogs = \
 	ismscfnctn/ismscfnctn \
 	ispfky/ispfky \
 	kycdtkysym/kycdtkysym \
-	kysymtkycd/kysymtkycd \
+	XKeysymToKeycode/XKeysymToKeycode \
 	kysymtstr/kysymtstr \
 	lkpkysym/lkpkysym \
 	lkpstr/lkpstr \

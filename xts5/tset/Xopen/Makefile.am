@@ -14,7 +14,7 @@ tprogs = \
 	XCreateFontCursor/XCreateFontCursor \
 	keysym/keysym \
 	keysymdef/keysymdef \
-	kysymtkycd/kysymtkycd \
+	XKeysymToKeycode/XKeysymToKeycode \
 	LookupColor/LookupColor \
 	strtkysym/strtkysym
 
@@ -46,22 +46,22 @@ keysymdef_keysymdef_SOURCES = \
 	keysymdef/TestS.c \
 	keysymdef/TestT.c
 
-kysymtkycd_kysymtkycd_SOURCES = \
-	kysymtkycd/kysymtkycd.c \
-	kysymtkycd/Test1.c \
-	kysymtkycd/Test2.c \
-	kysymtkycd/Test3.c \
-	kysymtkycd/Test4.c \
-	kysymtkycd/TestA.c \
-	kysymtkycd/TestC.c \
-	kysymtkycd/TestG.c \
-	kysymtkycd/TestH.c \
-	kysymtkycd/TestK.c \
-	kysymtkycd/TestL.c \
-	kysymtkycd/TestM.c \
-	kysymtkycd/TestP.c \
-	kysymtkycd/TestS.c \
-	kysymtkycd/TestT.c
+XKeysymToKeycode_XKeysymToKeycode_SOURCES = \
+	XKeysymToKeycode/XKeysymToKeycode.c \
+	XKeysymToKeycode/Test1.c \
+	XKeysymToKeycode/Test2.c \
+	XKeysymToKeycode/Test3.c \
+	XKeysymToKeycode/Test4.c \
+	XKeysymToKeycode/TestA.c \
+	XKeysymToKeycode/TestC.c \
+	XKeysymToKeycode/TestG.c \
+	XKeysymToKeycode/TestH.c \
+	XKeysymToKeycode/TestK.c \
+	XKeysymToKeycode/TestL.c \
+	XKeysymToKeycode/TestM.c \
+	XKeysymToKeycode/TestP.c \
+	XKeysymToKeycode/TestS.c \
+	XKeysymToKeycode/TestT.c
 
 strtkeysym_strtkeysym_SOURCES = \
 	strtkysym/strtkysym.c \

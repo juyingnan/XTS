@@ -20,47 +20,47 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xopen/kysymtkycd/Test2.c,v 1.2 2005-11-03 08:44:00 jmichael Exp $
+* $Header: /cvs/xtest/xtest/xts5/tset/Xopen/XKeysymToKeycode/TestT.c,v 1.2 2005-11-03 08:44:00 jmichael Exp $
 * 
 * Project: VSW5
 * 
-* File: xts5/tset/Xopen/kysymtkycd/Test2.c
+* File: xts5/tset/Xopen/XKeysymToKeycode/TestT.c
 * 
 * Description:
 * 	Tests for XKeysymToKeycode()
 * 
 * Modifications:
-* $Log: Test2.c,v $
+* $Log: TestT.c,v $
 * Revision 1.2  2005-11-03 08:44:00  jmichael
 * clean up all vsw5 paths to use xts5 instead.
 *
 * Revision 1.1.1.2  2005/04/15 14:05:40  anderson
 * Reimport of the base with the legal name in the copyright fixed.
 *
-* Revision 8.0  1998/12/23 23:35:44  mar
+* Revision 8.0  1998/12/23 23:35:50  mar
 * Branch point for Release 5.0.2
 *
-* Revision 7.0  1998/10/30 22:58:22  mar
+* Revision 7.0  1998/10/30 22:58:31  mar
 * Branch point for Release 5.0.2b1
 *
-* Revision 6.0  1998/03/02 05:26:58  tbr
+* Revision 6.0  1998/03/02 05:27:03  tbr
 * Branch point for Release 5.0.1
 *
-* Revision 5.0  1998/01/26 03:23:31  tbr
+* Revision 5.0  1998/01/26 03:23:37  tbr
 * Branch point for Release 5.0.1b1
 *
 * Revision 4.1  1996/05/09 21:17:34  andy
 * Fixed X includes
 *
-* Revision 4.0  1995/12/15  09:14:05  tbr
+* Revision 4.0  1995/12/15  09:14:22  tbr
 * Branch point for Release 5.0.0
 *
-* Revision 3.1  1995/12/15  01:17:25  andy
+* Revision 3.1  1995/12/15  01:17:44  andy
 * Prepare for GA Release
 *
 */
 /*
- *      SCCS:  @(#)  Test2.c Rel 1.1	    (11/28/91)
+ *      SCCS:  @(#)  TestT.c Rel 1.1	    (11/28/91)
  *
  *	UniSoft Ltd., London, England
  *
@@ -134,586 +134,506 @@ char	*s;
 {
 	report("Symbol XK_\"%s\" is not defined.", s);
 }
-#define XK_LATIN2
+#define XK_TECHNICAL
 #include	<X11/keysymdef.h>
-#undef XK_LATIN2 
+#undef XK_TECHNICAL
 
-kysymtcd2()
+kysymtcdT()
 { 
 int 	pass = 0, fail = 0;
 
 	XDisplayKeycodes(Dsp, &minkc, &maxkc);
 	XGetKeyboardMapping(Dsp, (KeyCode)minkc, 1, &keysyms_per_keycode);
 
-#ifdef XK_Aogonek
-	if(test(XK_Aogonek, "Aogonek") == 1)
+#ifdef XK_leftradical
+	if(test(XK_leftradical, "leftradical") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Aogonek");
+	reporterr("leftradical");
 	FAIL;
 #endif
 
-#ifdef XK_breve
-	if(test(XK_breve, "breve") == 1)
+#ifdef XK_topleftradical
+	if(test(XK_topleftradical, "topleftradical") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("breve");
+	reporterr("topleftradical");
 	FAIL;
 #endif
 
-#ifdef XK_Lstroke
-	if(test(XK_Lstroke, "Lstroke") == 1)
+#ifdef XK_horizconnector
+	if(test(XK_horizconnector, "horizconnector") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Lstroke");
+	reporterr("horizconnector");
 	FAIL;
 #endif
 
-#ifdef XK_Lcaron
-	if(test(XK_Lcaron, "Lcaron") == 1)
+#ifdef XK_topintegral
+	if(test(XK_topintegral, "topintegral") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Lcaron");
+	reporterr("topintegral");
 	FAIL;
 #endif
 
-#ifdef XK_Sacute
-	if(test(XK_Sacute, "Sacute") == 1)
+#ifdef XK_botintegral
+	if(test(XK_botintegral, "botintegral") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Sacute");
+	reporterr("botintegral");
 	FAIL;
 #endif
 
-#ifdef XK_Scaron
-	if(test(XK_Scaron, "Scaron") == 1)
+#ifdef XK_vertconnector
+	if(test(XK_vertconnector, "vertconnector") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Scaron");
+	reporterr("vertconnector");
 	FAIL;
 #endif
 
-#ifdef XK_Scedilla
-	if(test(XK_Scedilla, "Scedilla") == 1)
+#ifdef XK_topleftsqbracket
+	if(test(XK_topleftsqbracket, "topleftsqbracket") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Scedilla");
+	reporterr("topleftsqbracket");
 	FAIL;
 #endif
 
-#ifdef XK_Tcaron
-	if(test(XK_Tcaron, "Tcaron") == 1)
+#ifdef XK_botleftsqbracket
+	if(test(XK_botleftsqbracket, "botleftsqbracket") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Tcaron");
+	reporterr("botleftsqbracket");
 	FAIL;
 #endif
 
-#ifdef XK_Zacute
-	if(test(XK_Zacute, "Zacute") == 1)
+#ifdef XK_toprightsqbracket
+	if(test(XK_toprightsqbracket, "toprightsqbracket") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Zacute");
+	reporterr("toprightsqbracket");
 	FAIL;
 #endif
 
-#ifdef XK_Zcaron
-	if(test(XK_Zcaron, "Zcaron") == 1)
+#ifdef XK_botrightsqbracket
+	if(test(XK_botrightsqbracket, "botrightsqbracket") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Zcaron");
+	reporterr("botrightsqbracket");
 	FAIL;
 #endif
 
-#ifdef XK_Zabovedot
-	if(test(XK_Zabovedot, "Zabovedot") == 1)
+#ifdef XK_topleftparens
+	if(test(XK_topleftparens, "topleftparens") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Zabovedot");
+	reporterr("topleftparens");
 	FAIL;
 #endif
 
-#ifdef XK_aogonek
-	if(test(XK_aogonek, "aogonek") == 1)
+#ifdef XK_botleftparens
+	if(test(XK_botleftparens, "botleftparens") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("aogonek");
+	reporterr("botleftparens");
 	FAIL;
 #endif
 
-#ifdef XK_ogonek
-	if(test(XK_ogonek, "ogonek") == 1)
+#ifdef XK_toprightparens
+	if(test(XK_toprightparens, "toprightparens") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("ogonek");
+	reporterr("toprightparens");
 	FAIL;
 #endif
 
-#ifdef XK_lstroke
-	if(test(XK_lstroke, "lstroke") == 1)
+#ifdef XK_botrightparens
+	if(test(XK_botrightparens, "botrightparens") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("lstroke");
+	reporterr("botrightparens");
 	FAIL;
 #endif
 
-#ifdef XK_lcaron
-	if(test(XK_lcaron, "lcaron") == 1)
+#ifdef XK_leftmiddlecurlybrace
+	if(test(XK_leftmiddlecurlybrace, "leftmiddlecurlybrace") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("lcaron");
+	reporterr("leftmiddlecurlybrace");
 	FAIL;
 #endif
 
-#ifdef XK_sacute
-	if(test(XK_sacute, "sacute") == 1)
+#ifdef XK_rightmiddlecurlybrace
+	if(test(XK_rightmiddlecurlybrace, "rightmiddlecurlybrace") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("sacute");
+	reporterr("rightmiddlecurlybrace");
 	FAIL;
 #endif
 
-#ifdef XK_caron
-	if(test(XK_caron, "caron") == 1)
+#ifdef XK_topleftsummation
+	if(test(XK_topleftsummation, "topleftsummation") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("caron");
+	reporterr("topleftsummation");
 	FAIL;
 #endif
 
-#ifdef XK_scaron
-	if(test(XK_scaron, "scaron") == 1)
+#ifdef XK_botleftsummation
+	if(test(XK_botleftsummation, "botleftsummation") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("scaron");
+	reporterr("botleftsummation");
 	FAIL;
 #endif
 
-#ifdef XK_scedilla
-	if(test(XK_scedilla, "scedilla") == 1)
+#ifdef XK_topvertsummationconnector
+	if(test(XK_topvertsummationconnector, "topvertsummationconnector") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("scedilla");
+	reporterr("topvertsummationconnector");
 	FAIL;
 #endif
 
-#ifdef XK_tcaron
-	if(test(XK_tcaron, "tcaron") == 1)
+#ifdef XK_botvertsummationconnector
+	if(test(XK_botvertsummationconnector, "botvertsummationconnector") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("tcaron");
+	reporterr("botvertsummationconnector");
 	FAIL;
 #endif
 
-#ifdef XK_zacute
-	if(test(XK_zacute, "zacute") == 1)
+#ifdef XK_toprightsummation
+	if(test(XK_toprightsummation, "toprightsummation") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("zacute");
+	reporterr("toprightsummation");
 	FAIL;
 #endif
 
-#ifdef XK_doubleacute
-	if(test(XK_doubleacute, "doubleacute") == 1)
+#ifdef XK_botrightsummation
+	if(test(XK_botrightsummation, "botrightsummation") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("doubleacute");
+	reporterr("botrightsummation");
 	FAIL;
 #endif
 
-#ifdef XK_zcaron
-	if(test(XK_zcaron, "zcaron") == 1)
+#ifdef XK_rightmiddlesummation
+	if(test(XK_rightmiddlesummation, "rightmiddlesummation") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("zcaron");
+	reporterr("rightmiddlesummation");
 	FAIL;
 #endif
 
-#ifdef XK_zabovedot
-	if(test(XK_zabovedot, "zabovedot") == 1)
+#ifdef XK_lessthanequal
+	if(test(XK_lessthanequal, "lessthanequal") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("zabovedot");
+	reporterr("lessthanequal");
 	FAIL;
 #endif
 
-#ifdef XK_Racute
-	if(test(XK_Racute, "Racute") == 1)
+#ifdef XK_notequal
+	if(test(XK_notequal, "notequal") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Racute");
+	reporterr("notequal");
 	FAIL;
 #endif
 
-#ifdef XK_Abreve
-	if(test(XK_Abreve, "Abreve") == 1)
+#ifdef XK_greaterthanequal
+	if(test(XK_greaterthanequal, "greaterthanequal") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Abreve");
+	reporterr("greaterthanequal");
 	FAIL;
 #endif
 
-#ifdef XK_Lacute
-	if(test(XK_Lacute, "Lacute") == 1)
+#ifdef XK_integral
+	if(test(XK_integral, "integral") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Lacute");
+	reporterr("integral");
 	FAIL;
 #endif
 
-#ifdef XK_Cacute
-	if(test(XK_Cacute, "Cacute") == 1)
+#ifdef XK_therefore
+	if(test(XK_therefore, "therefore") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Cacute");
+	reporterr("therefore");
 	FAIL;
 #endif
 
-#ifdef XK_Ccaron
-	if(test(XK_Ccaron, "Ccaron") == 1)
+#ifdef XK_variation
+	if(test(XK_variation, "variation") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Ccaron");
+	reporterr("variation");
 	FAIL;
 #endif
 
-#ifdef XK_Eogonek
-	if(test(XK_Eogonek, "Eogonek") == 1)
+#ifdef XK_infinity
+	if(test(XK_infinity, "infinity") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Eogonek");
+	reporterr("infinity");
 	FAIL;
 #endif
 
-#ifdef XK_Ecaron
-	if(test(XK_Ecaron, "Ecaron") == 1)
+#ifdef XK_nabla
+	if(test(XK_nabla, "nabla") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Ecaron");
+	reporterr("nabla");
 	FAIL;
 #endif
 
-#ifdef XK_Dcaron
-	if(test(XK_Dcaron, "Dcaron") == 1)
+#ifdef XK_approximate
+	if(test(XK_approximate, "approximate") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Dcaron");
+	reporterr("approximate");
 	FAIL;
 #endif
 
-#ifdef XK_Dstroke
-	if(test(XK_Dstroke, "Dstroke") == 1)
+#ifdef XK_similarequal
+	if(test(XK_similarequal, "similarequal") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Dstroke");
+	reporterr("similarequal");
 	FAIL;
 #endif
 
-#ifdef XK_Nacute
-	if(test(XK_Nacute, "Nacute") == 1)
+#ifdef XK_ifonlyif
+	if(test(XK_ifonlyif, "ifonlyif") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Nacute");
+	reporterr("ifonlyif");
 	FAIL;
 #endif
 
-#ifdef XK_Ncaron
-	if(test(XK_Ncaron, "Ncaron") == 1)
+#ifdef XK_implies
+	if(test(XK_implies, "implies") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Ncaron");
+	reporterr("implies");
 	FAIL;
 #endif
 
-#ifdef XK_Odoubleacute
-	if(test(XK_Odoubleacute, "Odoubleacute") == 1)
+#ifdef XK_identical
+	if(test(XK_identical, "identical") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Odoubleacute");
+	reporterr("identical");
 	FAIL;
 #endif
 
-#ifdef XK_Rcaron
-	if(test(XK_Rcaron, "Rcaron") == 1)
+#ifdef XK_radical
+	if(test(XK_radical, "radical") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Rcaron");
+	reporterr("radical");
 	FAIL;
 #endif
 
-#ifdef XK_Uring
-	if(test(XK_Uring, "Uring") == 1)
+#ifdef XK_includedin
+	if(test(XK_includedin, "includedin") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Uring");
+	reporterr("includedin");
 	FAIL;
 #endif
 
-#ifdef XK_Udoubleacute
-	if(test(XK_Udoubleacute, "Udoubleacute") == 1)
+#ifdef XK_includes
+	if(test(XK_includes, "includes") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Udoubleacute");
+	reporterr("includes");
 	FAIL;
 #endif
 
-#ifdef XK_Tcedilla
-	if(test(XK_Tcedilla, "Tcedilla") == 1)
+#ifdef XK_intersection
+	if(test(XK_intersection, "intersection") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("Tcedilla");
+	reporterr("intersection");
 	FAIL;
 #endif
 
-#ifdef XK_racute
-	if(test(XK_racute, "racute") == 1)
+#ifdef XK_union
+	if(test(XK_union, "union") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("racute");
+	reporterr("union");
 	FAIL;
 #endif
 
-#ifdef XK_abreve
-	if(test(XK_abreve, "abreve") == 1)
+#ifdef XK_logicaland
+	if(test(XK_logicaland, "logicaland") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("abreve");
+	reporterr("logicaland");
 	FAIL;
 #endif
 
-#ifdef XK_lacute
-	if(test(XK_lacute, "lacute") == 1)
+#ifdef XK_logicalor
+	if(test(XK_logicalor, "logicalor") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("lacute");
+	reporterr("logicalor");
 	FAIL;
 #endif
 
-#ifdef XK_cacute
-	if(test(XK_cacute, "cacute") == 1)
+#ifdef XK_partialderivative
+	if(test(XK_partialderivative, "partialderivative") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("cacute");
+	reporterr("partialderivative");
 	FAIL;
 #endif
 
-#ifdef XK_ccaron
-	if(test(XK_ccaron, "ccaron") == 1)
+#ifdef XK_function
+	if(test(XK_function, "function") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("ccaron");
+	reporterr("function");
 	FAIL;
 #endif
 
-#ifdef XK_eogonek
-	if(test(XK_eogonek, "eogonek") == 1)
+#ifdef XK_leftarrow
+	if(test(XK_leftarrow, "leftarrow") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("eogonek");
+	reporterr("leftarrow");
 	FAIL;
 #endif
 
-#ifdef XK_ecaron
-	if(test(XK_ecaron, "ecaron") == 1)
+#ifdef XK_uparrow
+	if(test(XK_uparrow, "uparrow") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("ecaron");
+	reporterr("uparrow");
 	FAIL;
 #endif
 
-#ifdef XK_dcaron
-	if(test(XK_dcaron, "dcaron") == 1)
+#ifdef XK_rightarrow
+	if(test(XK_rightarrow, "rightarrow") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("dcaron");
+	reporterr("rightarrow");
 	FAIL;
 #endif
 
-#ifdef XK_dstroke
-	if(test(XK_dstroke, "dstroke") == 1)
+#ifdef XK_downarrow
+	if(test(XK_downarrow, "downarrow") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("dstroke");
+	reporterr("downarrow");
 	FAIL;
 #endif
 
-#ifdef XK_nacute
-	if(test(XK_nacute, "nacute") == 1)
-		CHECK;
-	else
-		FAIL;
-#else
-	reporterr("nacute");
-	FAIL;
-#endif
-
-#ifdef XK_ncaron
-	if(test(XK_ncaron, "ncaron") == 1)
-		CHECK;
-	else
-		FAIL;
-#else
-	reporterr("ncaron");
-	FAIL;
-#endif
-
-#ifdef XK_odoubleacute
-	if(test(XK_odoubleacute, "odoubleacute") == 1)
-		CHECK;
-	else
-		FAIL;
-#else
-	reporterr("odoubleacute");
-	FAIL;
-#endif
-
-#ifdef XK_rcaron
-	if(test(XK_rcaron, "rcaron") == 1)
-		CHECK;
-	else
-		FAIL;
-#else
-	reporterr("rcaron");
-	FAIL;
-#endif
-
-#ifdef XK_uring
-	if(test(XK_uring, "uring") == 1)
-		CHECK;
-	else
-		FAIL;
-#else
-	reporterr("uring");
-	FAIL;
-#endif
-
-#ifdef XK_udoubleacute
-	if(test(XK_udoubleacute, "udoubleacute") == 1)
-		CHECK;
-	else
-		FAIL;
-#else
-	reporterr("udoubleacute");
-	FAIL;
-#endif
-
-#ifdef XK_tcedilla
-	if(test(XK_tcedilla, "tcedilla") == 1)
-		CHECK;
-	else
-		FAIL;
-#else
-	reporterr("tcedilla");
-	FAIL;
-#endif
-
-#ifdef XK_abovedot
-	if(test(XK_abovedot, "abovedot") == 1)
-		CHECK;
-	else
-		FAIL;
-#else
-	reporterr("abovedot");
-	FAIL;
-#endif
-
-	CHECKPASS(57);
+	CHECKPASS(49);
 }

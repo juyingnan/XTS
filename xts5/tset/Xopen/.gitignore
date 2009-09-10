@@ -3,6 +3,6 @@ cursorfont/cursorfont
 XCreateFontCursor/XCreateFontCursor
 keysym/keysym
 keysymdef/keysymdef
-kysymtkycd/kysymtkycd
+XKeysymToKeycode/XKeysymToKeycode
 LookupColor/LookupColor
 strtkysym/strtkysym

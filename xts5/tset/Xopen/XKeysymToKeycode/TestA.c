@@ -20,47 +20,47 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xopen/kysymtkycd/TestT.c,v 1.2 2005-11-03 08:44:00 jmichael Exp $
+* $Header: /cvs/xtest/xtest/xts5/tset/Xopen/XKeysymToKeycode/TestA.c,v 1.2 2005-11-03 08:44:00 jmichael Exp $
 * 
 * Project: VSW5
 * 
-* File: xts5/tset/Xopen/kysymtkycd/TestT.c
+* File: xts5/tset/Xopen/XKeysymToKeycode/TestA.c
 * 
 * Description:
 * 	Tests for XKeysymToKeycode()
 * 
 * Modifications:
-* $Log: TestT.c,v $
+* $Log: TestA.c,v $
 * Revision 1.2  2005-11-03 08:44:00  jmichael
 * clean up all vsw5 paths to use xts5 instead.
 *
 * Revision 1.1.1.2  2005/04/15 14:05:40  anderson
 * Reimport of the base with the legal name in the copyright fixed.
 *
-* Revision 8.0  1998/12/23 23:35:50  mar
+* Revision 8.0  1998/12/23 23:35:45  mar
 * Branch point for Release 5.0.2
 *
-* Revision 7.0  1998/10/30 22:58:31  mar
+* Revision 7.0  1998/10/30 22:58:25  mar
 * Branch point for Release 5.0.2b1
 *
-* Revision 6.0  1998/03/02 05:27:03  tbr
+* Revision 6.0  1998/03/02 05:26:59  tbr
 * Branch point for Release 5.0.1
 *
-* Revision 5.0  1998/01/26 03:23:37  tbr
+* Revision 5.0  1998/01/26 03:23:33  tbr
 * Branch point for Release 5.0.1b1
 *
 * Revision 4.1  1996/05/09 21:17:34  andy
 * Fixed X includes
 *
-* Revision 4.0  1995/12/15  09:14:22  tbr
+* Revision 4.0  1995/12/15  09:14:09  tbr
 * Branch point for Release 5.0.0
 *
-* Revision 3.1  1995/12/15  01:17:44  andy
+* Revision 3.1  1995/12/15  01:17:30  andy
 * Prepare for GA Release
 *
 */
 /*
- *      SCCS:  @(#)  TestT.c Rel 1.1	    (11/28/91)
+ *      SCCS:  @(#)  TestA.c Rel 1.1	    (11/28/91)
  *
  *	UniSoft Ltd., London, England
  *
@@ -134,506 +134,516 @@ char	*s;
 {
 	report("Symbol XK_\"%s\" is not defined.", s);
 }
-#define XK_TECHNICAL
+#define XK_ARABIC
 #include	<X11/keysymdef.h>
-#undef XK_TECHNICAL
+#undef XK_ARABIC 
 
-kysymtcdT()
+kysymtcdA()
 { 
 int 	pass = 0, fail = 0;
 
 	XDisplayKeycodes(Dsp, &minkc, &maxkc);
 	XGetKeyboardMapping(Dsp, (KeyCode)minkc, 1, &keysyms_per_keycode);
 
-#ifdef XK_leftradical
-	if(test(XK_leftradical, "leftradical") == 1)
+#ifdef XK_Arabic_comma
+	if(test(XK_Arabic_comma, "Arabic_comma") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("leftradical");
+	reporterr("Arabic_comma");
 	FAIL;
 #endif
 
-#ifdef XK_topleftradical
-	if(test(XK_topleftradical, "topleftradical") == 1)
+#ifdef XK_Arabic_semicolon
+	if(test(XK_Arabic_semicolon, "Arabic_semicolon") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("topleftradical");
+	reporterr("Arabic_semicolon");
 	FAIL;
 #endif
 
-#ifdef XK_horizconnector
-	if(test(XK_horizconnector, "horizconnector") == 1)
+#ifdef XK_Arabic_question_mark
+	if(test(XK_Arabic_question_mark, "Arabic_question_mark") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("horizconnector");
+	reporterr("Arabic_question_mark");
 	FAIL;
 #endif
 
-#ifdef XK_topintegral
-	if(test(XK_topintegral, "topintegral") == 1)
+#ifdef XK_Arabic_hamza
+	if(test(XK_Arabic_hamza, "Arabic_hamza") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("topintegral");
+	reporterr("Arabic_hamza");
 	FAIL;
 #endif
 
-#ifdef XK_botintegral
-	if(test(XK_botintegral, "botintegral") == 1)
+#ifdef XK_Arabic_maddaonalef
+	if(test(XK_Arabic_maddaonalef, "Arabic_maddaonalef") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("botintegral");
+	reporterr("Arabic_maddaonalef");
 	FAIL;
 #endif
 
-#ifdef XK_vertconnector
-	if(test(XK_vertconnector, "vertconnector") == 1)
+#ifdef XK_Arabic_hamzaonalef
+	if(test(XK_Arabic_hamzaonalef, "Arabic_hamzaonalef") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("vertconnector");
+	reporterr("Arabic_hamzaonalef");
 	FAIL;
 #endif
 
-#ifdef XK_topleftsqbracket
-	if(test(XK_topleftsqbracket, "topleftsqbracket") == 1)
+#ifdef XK_Arabic_hamzaonwaw
+	if(test(XK_Arabic_hamzaonwaw, "Arabic_hamzaonwaw") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("topleftsqbracket");
+	reporterr("Arabic_hamzaonwaw");
 	FAIL;
 #endif
 
-#ifdef XK_botleftsqbracket
-	if(test(XK_botleftsqbracket, "botleftsqbracket") == 1)
+#ifdef XK_Arabic_hamzaunderalef
+	if(test(XK_Arabic_hamzaunderalef, "Arabic_hamzaunderalef") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("botleftsqbracket");
+	reporterr("Arabic_hamzaunderalef");
 	FAIL;
 #endif
 
-#ifdef XK_toprightsqbracket
-	if(test(XK_toprightsqbracket, "toprightsqbracket") == 1)
+#ifdef XK_Arabic_hamzaonyeh
+	if(test(XK_Arabic_hamzaonyeh, "Arabic_hamzaonyeh") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("toprightsqbracket");
+	reporterr("Arabic_hamzaonyeh");
 	FAIL;
 #endif
 
-#ifdef XK_botrightsqbracket
-	if(test(XK_botrightsqbracket, "botrightsqbracket") == 1)
+#ifdef XK_Arabic_alef
+	if(test(XK_Arabic_alef, "Arabic_alef") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("botrightsqbracket");
+	reporterr("Arabic_alef");
 	FAIL;
 #endif
 
-#ifdef XK_topleftparens
-	if(test(XK_topleftparens, "topleftparens") == 1)
+#ifdef XK_Arabic_beh
+	if(test(XK_Arabic_beh, "Arabic_beh") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("topleftparens");
+	reporterr("Arabic_beh");
 	FAIL;
 #endif
 
-#ifdef XK_botleftparens
-	if(test(XK_botleftparens, "botleftparens") == 1)
+#ifdef XK_Arabic_tehmarbuta
+	if(test(XK_Arabic_tehmarbuta, "Arabic_tehmarbuta") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("botleftparens");
+	reporterr("Arabic_tehmarbuta");
 	FAIL;
 #endif
 
-#ifdef XK_toprightparens
-	if(test(XK_toprightparens, "toprightparens") == 1)
+#ifdef XK_Arabic_teh
+	if(test(XK_Arabic_teh, "Arabic_teh") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("toprightparens");
+	reporterr("Arabic_teh");
 	FAIL;
 #endif
 
-#ifdef XK_botrightparens
-	if(test(XK_botrightparens, "botrightparens") == 1)
+#ifdef XK_Arabic_theh
+	if(test(XK_Arabic_theh, "Arabic_theh") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("botrightparens");
+	reporterr("Arabic_theh");
 	FAIL;
 #endif
 
-#ifdef XK_leftmiddlecurlybrace
-	if(test(XK_leftmiddlecurlybrace, "leftmiddlecurlybrace") == 1)
+#ifdef XK_Arabic_jeem
+	if(test(XK_Arabic_jeem, "Arabic_jeem") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("leftmiddlecurlybrace");
+	reporterr("Arabic_jeem");
 	FAIL;
 #endif
 
-#ifdef XK_rightmiddlecurlybrace
-	if(test(XK_rightmiddlecurlybrace, "rightmiddlecurlybrace") == 1)
+#ifdef XK_Arabic_hah
+	if(test(XK_Arabic_hah, "Arabic_hah") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("rightmiddlecurlybrace");
+	reporterr("Arabic_hah");
 	FAIL;
 #endif
 
-#ifdef XK_topleftsummation
-	if(test(XK_topleftsummation, "topleftsummation") == 1)
+#ifdef XK_Arabic_khah
+	if(test(XK_Arabic_khah, "Arabic_khah") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("topleftsummation");
+	reporterr("Arabic_khah");
 	FAIL;
 #endif
 
-#ifdef XK_botleftsummation
-	if(test(XK_botleftsummation, "botleftsummation") == 1)
+#ifdef XK_Arabic_dal
+	if(test(XK_Arabic_dal, "Arabic_dal") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("botleftsummation");
+	reporterr("Arabic_dal");
 	FAIL;
 #endif
 
-#ifdef XK_topvertsummationconnector
-	if(test(XK_topvertsummationconnector, "topvertsummationconnector") == 1)
+#ifdef XK_Arabic_thal
+	if(test(XK_Arabic_thal, "Arabic_thal") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("topvertsummationconnector");
+	reporterr("Arabic_thal");
 	FAIL;
 #endif
 
-#ifdef XK_botvertsummationconnector
-	if(test(XK_botvertsummationconnector, "botvertsummationconnector") == 1)
+#ifdef XK_Arabic_ra
+	if(test(XK_Arabic_ra, "Arabic_ra") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("botvertsummationconnector");
+	reporterr("Arabic_ra");
 	FAIL;
 #endif
 
-#ifdef XK_toprightsummation
-	if(test(XK_toprightsummation, "toprightsummation") == 1)
+#ifdef XK_Arabic_zain
+	if(test(XK_Arabic_zain, "Arabic_zain") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("toprightsummation");
+	reporterr("Arabic_zain");
 	FAIL;
 #endif
 
-#ifdef XK_botrightsummation
-	if(test(XK_botrightsummation, "botrightsummation") == 1)
+#ifdef XK_Arabic_seen
+	if(test(XK_Arabic_seen, "Arabic_seen") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("botrightsummation");
+	reporterr("Arabic_seen");
 	FAIL;
 #endif
 
-#ifdef XK_rightmiddlesummation
-	if(test(XK_rightmiddlesummation, "rightmiddlesummation") == 1)
+#ifdef XK_Arabic_sheen
+	if(test(XK_Arabic_sheen, "Arabic_sheen") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("rightmiddlesummation");
+	reporterr("Arabic_sheen");
 	FAIL;
 #endif
 
-#ifdef XK_lessthanequal
-	if(test(XK_lessthanequal, "lessthanequal") == 1)
+#ifdef XK_Arabic_sad
+	if(test(XK_Arabic_sad, "Arabic_sad") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("lessthanequal");
+	reporterr("Arabic_sad");
 	FAIL;
 #endif
 
-#ifdef XK_notequal
-	if(test(XK_notequal, "notequal") == 1)
+#ifdef XK_Arabic_dad
+	if(test(XK_Arabic_dad, "Arabic_dad") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("notequal");
+	reporterr("Arabic_dad");
 	FAIL;
 #endif
 
-#ifdef XK_greaterthanequal
-	if(test(XK_greaterthanequal, "greaterthanequal") == 1)
+#ifdef XK_Arabic_tah
+	if(test(XK_Arabic_tah, "Arabic_tah") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("greaterthanequal");
+	reporterr("Arabic_tah");
 	FAIL;
 #endif
 
-#ifdef XK_integral
-	if(test(XK_integral, "integral") == 1)
+#ifdef XK_Arabic_zah
+	if(test(XK_Arabic_zah, "Arabic_zah") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("integral");
+	reporterr("Arabic_zah");
 	FAIL;
 #endif
 
-#ifdef XK_therefore
-	if(test(XK_therefore, "therefore") == 1)
+#ifdef XK_Arabic_ain
+	if(test(XK_Arabic_ain, "Arabic_ain") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("therefore");
+	reporterr("Arabic_ain");
 	FAIL;
 #endif
 
-#ifdef XK_variation
-	if(test(XK_variation, "variation") == 1)
+#ifdef XK_Arabic_ghain
+	if(test(XK_Arabic_ghain, "Arabic_ghain") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("variation");
+	reporterr("Arabic_ghain");
 	FAIL;
 #endif
 
-#ifdef XK_infinity
-	if(test(XK_infinity, "infinity") == 1)
+#ifdef XK_Arabic_tatweel
+	if(test(XK_Arabic_tatweel, "Arabic_tatweel") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("infinity");
+	reporterr("Arabic_tatweel");
 	FAIL;
 #endif
 
-#ifdef XK_nabla
-	if(test(XK_nabla, "nabla") == 1)
+#ifdef XK_Arabic_feh
+	if(test(XK_Arabic_feh, "Arabic_feh") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("nabla");
+	reporterr("Arabic_feh");
 	FAIL;
 #endif
 
-#ifdef XK_approximate
-	if(test(XK_approximate, "approximate") == 1)
+#ifdef XK_Arabic_qaf
+	if(test(XK_Arabic_qaf, "Arabic_qaf") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("approximate");
+	reporterr("Arabic_qaf");
 	FAIL;
 #endif
 
-#ifdef XK_similarequal
-	if(test(XK_similarequal, "similarequal") == 1)
+#ifdef XK_Arabic_kaf
+	if(test(XK_Arabic_kaf, "Arabic_kaf") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("similarequal");
+	reporterr("Arabic_kaf");
 	FAIL;
 #endif
 
-#ifdef XK_ifonlyif
-	if(test(XK_ifonlyif, "ifonlyif") == 1)
+#ifdef XK_Arabic_lam
+	if(test(XK_Arabic_lam, "Arabic_lam") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("ifonlyif");
+	reporterr("Arabic_lam");
 	FAIL;
 #endif
 
-#ifdef XK_implies
-	if(test(XK_implies, "implies") == 1)
+#ifdef XK_Arabic_meem
+	if(test(XK_Arabic_meem, "Arabic_meem") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("implies");
+	reporterr("Arabic_meem");
 	FAIL;
 #endif
 
-#ifdef XK_identical
-	if(test(XK_identical, "identical") == 1)
+#ifdef XK_Arabic_noon
+	if(test(XK_Arabic_noon, "Arabic_noon") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("identical");
+	reporterr("Arabic_noon");
 	FAIL;
 #endif
 
-#ifdef XK_radical
-	if(test(XK_radical, "radical") == 1)
+#ifdef XK_Arabic_ha
+	if(test(XK_Arabic_ha, "Arabic_ha") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("radical");
+	reporterr("Arabic_ha");
 	FAIL;
 #endif
 
-#ifdef XK_includedin
-	if(test(XK_includedin, "includedin") == 1)
+#ifdef XK_Arabic_heh
+	if(test(XK_Arabic_heh, "Arabic_heh") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("includedin");
+	reporterr("Arabic_heh");
 	FAIL;
 #endif
 
-#ifdef XK_includes
-	if(test(XK_includes, "includes") == 1)
+#ifdef XK_Arabic_waw
+	if(test(XK_Arabic_waw, "Arabic_waw") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("includes");
+	reporterr("Arabic_waw");
 	FAIL;
 #endif
 
-#ifdef XK_intersection
-	if(test(XK_intersection, "intersection") == 1)
+#ifdef XK_Arabic_alefmaksura
+	if(test(XK_Arabic_alefmaksura, "Arabic_alefmaksura") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("intersection");
+	reporterr("Arabic_alefmaksura");
 	FAIL;
 #endif
 
-#ifdef XK_union
-	if(test(XK_union, "union") == 1)
+#ifdef XK_Arabic_yeh
+	if(test(XK_Arabic_yeh, "Arabic_yeh") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("union");
+	reporterr("Arabic_yeh");
 	FAIL;
 #endif
 
-#ifdef XK_logicaland
-	if(test(XK_logicaland, "logicaland") == 1)
+#ifdef XK_Arabic_fathatan
+	if(test(XK_Arabic_fathatan, "Arabic_fathatan") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("logicaland");
+	reporterr("Arabic_fathatan");
 	FAIL;
 #endif
 
-#ifdef XK_logicalor
-	if(test(XK_logicalor, "logicalor") == 1)
+#ifdef XK_Arabic_dammatan
+	if(test(XK_Arabic_dammatan, "Arabic_dammatan") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("logicalor");
+	reporterr("Arabic_dammatan");
 	FAIL;
 #endif
 
-#ifdef XK_partialderivative
-	if(test(XK_partialderivative, "partialderivative") == 1)
+#ifdef XK_Arabic_kasratan
+	if(test(XK_Arabic_kasratan, "Arabic_kasratan") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("partialderivative");
+	reporterr("Arabic_kasratan");
 	FAIL;
 #endif
 
-#ifdef XK_function
-	if(test(XK_function, "function") == 1)
+#ifdef XK_Arabic_fatha
+	if(test(XK_Arabic_fatha, "Arabic_fatha") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("function");
+	reporterr("Arabic_fatha");
 	FAIL;
 #endif
 
-#ifdef XK_leftarrow
-	if(test(XK_leftarrow, "leftarrow") == 1)
+#ifdef XK_Arabic_damma
+	if(test(XK_Arabic_damma, "Arabic_damma") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("leftarrow");
+	reporterr("Arabic_damma");
 	FAIL;
 #endif
 
-#ifdef XK_uparrow
-	if(test(XK_uparrow, "uparrow") == 1)
+#ifdef XK_Arabic_kasra
+	if(test(XK_Arabic_kasra, "Arabic_kasra") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("uparrow");
+	reporterr("Arabic_kasra");
 	FAIL;
 #endif
 
-#ifdef XK_rightarrow
-	if(test(XK_rightarrow, "rightarrow") == 1)
+#ifdef XK_Arabic_shadda
+	if(test(XK_Arabic_shadda, "Arabic_shadda") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("rightarrow");
+	reporterr("Arabic_shadda");
 	FAIL;
 #endif
 
-#ifdef XK_downarrow
-	if(test(XK_downarrow, "downarrow") == 1)
+#ifdef XK_Arabic_sukun
+	if(test(XK_Arabic_sukun, "Arabic_sukun") == 1)
 		CHECK;
 	else
 		FAIL;
 #else
-	reporterr("downarrow");
+	reporterr("Arabic_sukun");
 	FAIL;
 #endif
 
-	CHECKPASS(49);
+#ifdef XK_Arabic_switch
+	if(test(XK_Arabic_switch, "Arabic_switch") == 1)
+		CHECK;
+	else
+		FAIL;
+#else
+	reporterr("Arabic_switch");
+	FAIL;
+#endif
+
+	CHECKPASS(50);
 }
