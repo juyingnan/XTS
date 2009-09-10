@@ -1003,7 +1003,7 @@ XSelectInput
 
 XSendEvent
 	"VSW5TESTSUITE CASE XSendEvent 22"
-	/tset/Xlib12/SendEvent/SendEvent
+	/tset/Xlib12/XSendEvent/XSendEvent
 
 XSetAfterFunction
 	"VSW5TESTSUITE CASE XSetAfterFunction 3"
@@ -3502,7 +3502,7 @@ pRotateProperties
 
 pSendEvent
 	"VSW5TESTSUITE CASE SendEvent 3"
-	/tset/Xproto/SendEvent/SendEvent
+	/tset/Xproto/XSendEvent/XSendEvent
 
 pSetAccessControl
 	"VSW5TESTSUITE CASE SetAccessControl 3"

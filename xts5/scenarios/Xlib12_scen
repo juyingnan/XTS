@@ -96,7 +96,7 @@
 	"VSW5TESTSUITE CASE XSelectInput 8"
 	/tset/Xlib12/slctinpt/slctinpt
 	"VSW5TESTSUITE CASE XSendEvent 22"
-	/tset/Xlib12/SendEvent/SendEvent
+	/tset/Xlib12/XSendEvent/XSendEvent
 	"VSW5TESTSUITE CASE XSetAfterFunction 3"
 	/tset/Xlib12/staftrfnct/staftrfnct
 	"VSW5TESTSUITE CASE XSetErrorHandler 9"

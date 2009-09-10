@@ -29,7 +29,7 @@ tprogs = \
 	XPending/XPending \
 	XPutBackEvent/XPutBackEvent \
 	slctinpt/slctinpt \
-	SendEvent/SendEvent \
+	XSendEvent/XSendEvent \
 	staftrfnct/staftrfnct \
 	sterrrhndl/sterrrhndl \
 	stioerrrhn/stioerrrhn \

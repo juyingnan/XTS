@@ -254,7 +254,7 @@
 	"VSW5TESTSUITE CASE RotateProperties 3"
 	/tset/Xproto/RotateProperties/RotateProperties
 	"VSW5TESTSUITE CASE SendEvent 3"
-	/tset/Xproto/SendEvent/SendEvent
+	/tset/Xproto/XSendEvent/XSendEvent
 	"VSW5TESTSUITE CASE SetAccessControl 3"
 	/tset/Xproto/XSetAccessControl/XSetAccessControl
 	"VSW5TESTSUITE CASE SetClipRectangles 3"

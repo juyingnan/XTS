@@ -108,7 +108,7 @@ tprogs = \
 	RecolorCursor/RecolorCursor \
 	XReparentWindow/XReparentWindow \
 	RotateProperties/RotateProperties \
-	SendEvent/SendEvent \
+	XSendEvent/XSendEvent \
 	XSetAccessControl/XSetAccessControl \
 	SetClipRectangles/SetClipRectangles \
 	SetCloseDownMode/SetCloseDownMode \
