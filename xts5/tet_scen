@@ -3942,7 +3942,7 @@ XtMakeResizeRequest
 
 XtMoveWidget
 	"VSW5TESTSUITE CASE XtMoveWidget 3"
-	/tset/Xt8/tmvwidget/tmvwidget
+	/tset/Xt8/XtMoveWidget/XtMoveWidget
 
 XtResizeWidget
 	"VSW5TESTSUITE CASE XtResizeWidget 4"

@@ -63,7 +63,7 @@
 	"VSW5TESTSUITE CASE XtMakeResizeRequest 12"
 	/tset/Xt8/XtMakeResizeRequest/XtMakeResizeRequest
 	"VSW5TESTSUITE CASE XtMoveWidget 3"
-	/tset/Xt8/tmvwidget/tmvwidget
+	/tset/Xt8/XtMoveWidget/XtMoveWidget
 	"VSW5TESTSUITE CASE XtResizeWidget 4"
 	/tset/Xt8/trszewdgt/trszewdgt
 	"VSW5TESTSUITE CASE XtConfigureWidget 5"
