@@ -93,7 +93,7 @@ tprogs = \
 	PolyLine/PolyLine \
 	PolyPoint/PolyPoint \
 	PolyRectangle/PolyRectangle \
-	plysgmnt/plysgmnt \
+	PolySegment/PolySegment \
 	plytxt16/plytxt16 \
 	plytxt8/plytxt8 \
 	ptimg/ptimg \
