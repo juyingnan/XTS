@@ -49,7 +49,7 @@ tprogs = \
 	XQueryFont/XQueryFont \
 	XQueryTextExtents16/XQueryTextExtents16 \
 	XQueryTextExtents/XQueryTextExtents \
-	SetFontPath/SetFontPath \
+	XSetFontPath/XSetFontPath \
 	txtextnt16/txtextnt16 \
 	txtextnts/txtextnts \
 	txtwdth/txtwdth \

@@ -3044,7 +3044,7 @@ XQueryTextExtents
 
 XSetFontPath
 	"VSW5TESTSUITE CASE XSetFontPath 4"
-	/tset/Xlib9/SetFontPath/SetFontPath
+	/tset/Xlib9/XSetFontPath/XSetFontPath
 
 XTextExtents16
 	"VSW5TESTSUITE CASE XTextExtents16 11"
@@ -3522,7 +3522,7 @@ pSetDashes
 
 pSetFontPath
 	"VSW5TESTSUITE CASE SetFontPath 3"
-	/tset/Xproto/SetFontPath/SetFontPath
+	/tset/Xproto/XSetFontPath/XSetFontPath
 
 pSetInputFocus
 	"VSW5TESTSUITE CASE SetInputFocus 3"
