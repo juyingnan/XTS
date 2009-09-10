@@ -80,7 +80,7 @@
 	"VSW5TESTSUITE CASE XGetICValues 3"
 	/tset/Xlib14/XGetICValues/XGetICValues
 	"VSW5TESTSUITE CASE XGetIMValues 1"
-	/tset/Xlib14/gtimvls/gtimvls
+	/tset/Xlib14/XGetIMValues/XGetIMValues
 	"VSW5TESTSUITE CASE XIMOfIC 1"
 	/tset/Xlib14/imofic/imofic
 	"VSW5TESTSUITE CASE XLocaleOfFontSet 1"

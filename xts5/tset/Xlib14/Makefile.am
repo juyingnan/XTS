@@ -22,7 +22,7 @@ tprogs = \
 	XFontsOfFontSet/XFontsOfFontSet \
 	XFreeFontSet/XFreeFontSet \
 	XGetICValues/XGetICValues \
-	gtimvls/gtimvls \
+	XGetIMValues/XGetIMValues \
 	imofic/imofic \
 	loffs/loffs \
 	lofim/lofim \
