@@ -122,7 +122,7 @@
 	"VSW5TESTSUITE CASE XPointInRegion 2"
 	/tset/Xlib17/XPointInRegion/XPointInRegion
 	"VSW5TESTSUITE CASE Xpermalloc 2"
-	/tset/Xlib17/prmllc/prmllc
+	/tset/Xlib17/Xpermalloc/Xpermalloc
 	"VSW5TESTSUITE CASE XParseGeometry 3"
 	/tset/Xlib17/prsgmtry/prsgmtry
 	"VSW5TESTSUITE CASE XPutPixel 1"

@@ -1784,7 +1784,7 @@ XPointInRegion
 
 Xpermalloc
 	"VSW5TESTSUITE CASE Xpermalloc 2"
-	/tset/Xlib17/prmllc/prmllc
+	/tset/Xlib17/Xpermalloc/Xpermalloc
 
 XParseGeometry
 	"VSW5TESTSUITE CASE XParseGeometry 3"
