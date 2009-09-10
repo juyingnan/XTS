@@ -3694,7 +3694,7 @@ XtDestroyApplicationContext
 
 XtWidgetToApplicationContext
 	"VSW5TESTSUITE CASE XtWidgetToApplicationContext 1"
-	/tset/Xt4/twdgttappl/twdgttappl
+	/tset/Xt4/XtWidgetToApplicationContext/XtWidgetToApplicationContext
 
 XtDisplayInitialize
 	"VSW5TESTSUITE CASE XtDisplayInitialize 20"

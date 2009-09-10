@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE XtDestoryApplicationContext 2"
 	/tset/Xt4/XtDestroyApplicationContext/XtDestroyApplicationContext
 	"VSW5TESTSUITE CASE XtWidgetToApplicationContext 1"
-	/tset/Xt4/twdgttappl/twdgttappl
+	/tset/Xt4/XtWidgetToApplicationContext/XtWidgetToApplicationContext
 	"VSW5TESTSUITE CASE XtDisplayInitialize 20"
 	/tset/Xt4/XtDisplayInitialize/XtDisplayInitialize
 	"VSW5TESTSUITE CASE XtOpenDisplay 28"
