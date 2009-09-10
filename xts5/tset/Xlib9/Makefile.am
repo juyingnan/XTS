@@ -32,7 +32,7 @@ tprogs = \
 	XFillArcs/XFillArcs \
 	XFillPolygon/XFillPolygon \
 	XFillRectangle/XFillRectangle \
-	fllrctngls/fllrctngls \
+	XFillRectangles/XFillRectangles \
 	frfnt/frfnt \
 	frfntinf/frfntinf \
 	frfntnms/frfntnms \

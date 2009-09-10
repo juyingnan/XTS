@@ -2976,7 +2976,7 @@ XFillRectangle
 
 XFillRectangles
 	"VSW5TESTSUITE CASE XFillRectangles 44"
-	/tset/Xlib9/fllrctngls/fllrctngls
+	/tset/Xlib9/XFillRectangles/XFillRectangles
 
 XFreeFont
 	"VSW5TESTSUITE CASE XFreeFont 3"

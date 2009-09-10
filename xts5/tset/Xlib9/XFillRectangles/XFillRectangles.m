@@ -17,14 +17,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib9/fllrctngls/fllrctngls.m,v 1.2 2005-11-03 08:43:56 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib9/XFillRectangles/XFillRectangles.m,v 1.2 2005-11-03 08:43:56 jmichael Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib9/fllrctngls/fllrctngls.m
+>># File: xts5/tset/Xlib9/XFillRectangles/XFillRectangles.m
 >># 
 >># Description:
 >># 	Tests for XFillRectangles()
