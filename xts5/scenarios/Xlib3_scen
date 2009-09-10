@@ -102,7 +102,7 @@
 	"VSW5TESTSUITE CASE XDisplayHeight 1"
 	/tset/Xlib3/XDisplayHeight/XDisplayHeight
 	"VSW5TESTSUITE CASE XDisplayHeightMM 1"
-	/tset/Xlib3/dsplyhghtm/dsplyhghtm
+	/tset/Xlib3/XDisplayHeightMM/XDisplayHeightMM
 	"VSW5TESTSUITE CASE XDisplayOfScreen 1"
 	/tset/Xlib3/dsplyofscr/dsplyofscr
 	"VSW5TESTSUITE CASE XDisplayPlanes 1"
@@ -216,7 +216,7 @@
 	"VSW5TESTSUITE CASE DisplayHeight 1"
 	/tset/Xlib3/XDisplayHeight/XDisplayHeight_m
 	"VSW5TESTSUITE CASE DisplayHeightMM 1"
-	/tset/Xlib3/dsplyhghtm/dsplyhghtm_m
+	/tset/Xlib3/XDisplayHeightMM/XDisplayHeightMM_m
 	"VSW5TESTSUITE CASE DisplayOfScreen 1"
 	/tset/Xlib3/dsplyofscr/dsplyofscr_m
 	"VSW5TESTSUITE CASE DisplayPlanes 1"

@@ -32,7 +32,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XDoesBackingStore/XDoesBackingStore XDoesBackingStore/XDoesBackingStore_m \
 	XDisplayCells/XDisplayCells XDisplayCells/XDisplayCells_m \
 	XDisplayHeight/XDisplayHeight XDisplayHeight/XDisplayHeight_m \
-	dsplyhghtm/dsplyhghtm dsplyhghtm/dsplyhghtm_m \
+	XDisplayHeightMM/XDisplayHeightMM XDisplayHeightMM/XDisplayHeightMM_m \
 	dsplyofscr/dsplyofscr dsplyofscr/dsplyofscr_m \
 	dsplyplns/dsplyplns dsplyplns/dsplyplns_m \
 	dsplystr/dsplystr dsplystr/dsplystr_m \
