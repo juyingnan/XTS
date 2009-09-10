@@ -634,7 +634,7 @@ XSendExtensionEvent
 
 XUngrabDevice
 	"VSW5TESTSUITE CASE XUngrabDevice 4"
-	/tset/XI/ungrbdv/ungrbdv
+	/tset/XI/XUngrabDevice/XUngrabDevice
 
 XUngrabDeviceButton
 	"VSW5TESTSUITE CASE XUngrabDeviceButton 11"

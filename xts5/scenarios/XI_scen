@@ -122,7 +122,7 @@
 	"VSW5TESTSUITE CASE XSendExtensionEvent 20"
 	/tset/XI/XSendExtensionEvent/XSendExtensionEvent
 	"VSW5TESTSUITE CASE XUngrabDevice 4"
-	/tset/XI/ungrbdv/ungrbdv
+	/tset/XI/XUngrabDevice/XUngrabDevice
 	"VSW5TESTSUITE CASE XUngrabDeviceButton 11"
 	/tset/XI/ungrbdvbtn/ungrbdvbtn
 	"VSW5TESTSUITE CASE XUngrabDeviceKey 12"
