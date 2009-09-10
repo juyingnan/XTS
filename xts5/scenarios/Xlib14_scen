@@ -126,7 +126,7 @@
 	"VSW5TESTSUITE CASE XwcDrawImageString 1"
 	/tset/Xlib14/XwcDrawImageString/XwcDrawImageString
 	"VSW5TESTSUITE CASE XwcDrawString 1"
-	/tset/Xlib14/wcdstr/wcdstr
+	/tset/Xlib14/XwcDrawString/XwcDrawString
 	"VSW5TESTSUITE CASE XwcDrawText 1"
 	/tset/Xlib14/wcdtext/wcdtext
 	"VSW5TESTSUITE CASE XwcFreeStringList 1"

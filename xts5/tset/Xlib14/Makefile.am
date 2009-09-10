@@ -45,7 +45,7 @@ tprogs = \
 	XUnsetICFocus/XUnsetICFocus \
 	XVaCreateNestedList/XVaCreateNestedList \
 	XwcDrawImageString/XwcDrawImageString \
-	wcdstr/wcdstr \
+	XwcDrawString/XwcDrawString \
 	wcdtext/wcdtext \
 	wcfstli/wcfstli \
 	wclustr/wclustr \

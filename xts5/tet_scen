@@ -1304,7 +1304,7 @@ XwcDrawImageString
 
 XwcDrawString
 	"VSW5TESTSUITE CASE XwcDrawString 1"
-	/tset/Xlib14/wcdstr/wcdstr
+	/tset/Xlib14/XwcDrawString/XwcDrawString
 
 XwcDrawText
 	"VSW5TESTSUITE CASE XwcDrawText 1"
