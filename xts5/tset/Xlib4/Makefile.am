@@ -29,7 +29,7 @@ tprogs = \
 	XRaiseWindow/XRaiseWindow \
 	XResizeWindow/XResizeWindow \
 	XSetWindowBackground/XSetWindowBackground \
-	stwdwbgpxm/stwdwbgpxm \
+	XSetWindowBackgroundPixmap/XSetWindowBackgroundPixmap \
 	stwdwbrdr/stwdwbrdr \
 	stwdwbrdrp/stwdwbrdrp \
 	stwdwbrdrw/stwdwbrdrw \
