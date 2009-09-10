@@ -2992,7 +2992,7 @@ XFreeFontNames
 
 XFreeFontPath
 	"VSW5TESTSUITE CASE XFreeFontPath 1"
-	/tset/Xlib9/frfntpth/frfntpth
+	/tset/Xlib9/XFreeFontPath/XFreeFontPath
 
 XGetFontProperty
 	"VSW5TESTSUITE CASE XGetFontProperty 2"

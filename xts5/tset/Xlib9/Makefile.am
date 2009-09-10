@@ -36,7 +36,7 @@ tprogs = \
 	XFreeFont/XFreeFont \
 	XFreeFontInfo/XFreeFontInfo \
 	XFreeFontNames/XFreeFontNames \
-	frfntpth/frfntpth \
+	XFreeFontPath/XFreeFontPath \
 	gtfntprprt/gtfntprprt \
 	GetFontPath/GetFontPath \
 	GetImage/GetImage \
