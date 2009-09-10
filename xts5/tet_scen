@@ -1316,7 +1316,7 @@ XwcFreeStringList
 
 XwcLookupString
 	"VSW5TESTSUITE CASE XwcLookupString 3"
-	/tset/Xlib14/wclustr/wclustr
+	/tset/Xlib14/XwcLookupString/XwcLookupString
 
 XwcResetIC
 	"VSW5TESTSUITE CASE XwcResetIC 1"

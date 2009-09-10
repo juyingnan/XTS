@@ -132,7 +132,7 @@
 	"VSW5TESTSUITE CASE XwcFreeStringList 1"
 	/tset/Xlib14/XwcFreeStringList/XwcFreeStringList
 	"VSW5TESTSUITE CASE XwcLookupString 3"
-	/tset/Xlib14/wclustr/wclustr
+	/tset/Xlib14/XwcLookupString/XwcLookupString
 	"VSW5TESTSUITE CASE XwcResetIC 1"
 	/tset/Xlib14/wcreic/wcreic
 	"VSW5TESTSUITE CASE XwcTextEscapement 1"
