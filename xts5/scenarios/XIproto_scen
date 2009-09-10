@@ -88,7 +88,7 @@
 	"VSW5TESTSUITE CASE GetDeviceButtonMapping 3"
 	/tset/XIproto/XGetDeviceButtonMapping/XGetDeviceButtonMapping
 	"VSW5TESTSUITE CASE GetDeviceControl 3"
-	/tset/XIproto/gtdvctl/gtdvctl
+	/tset/XIproto/GetDeviceControl/GetDeviceControl
 	"VSW5TESTSUITE CASE GetDeviceFocus 3"
 	/tset/XIproto/gtdvfcs/gtdvfcs
 	"VSW5TESTSUITE CASE GetDeviceMotionEvents 3"

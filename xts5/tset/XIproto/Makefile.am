@@ -25,7 +25,7 @@ tprogs = \
 	XGrabDeviceButton/XGrabDeviceButton \
 	XGrabDeviceKey/XGrabDeviceKey \
 	XGetDeviceButtonMapping/XGetDeviceButtonMapping \
-	gtdvctl/gtdvctl \
+	GetDeviceControl/GetDeviceControl \
 	gtdvfcs/gtdvfcs \
 	XGetDeviceMotionEvents/XGetDeviceMotionEvents \
 	gtdvprop/gtdvprop \
