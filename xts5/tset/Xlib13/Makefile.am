@@ -15,7 +15,7 @@ tprogs = \
 	Bell/Bell \
 	ChangeActivePointerGrab/ChangeActivePointerGrab \
 	ChangeKeyboardControl/ChangeKeyboardControl \
-	chngkybrdm/chngkybrdm \
+	ChangeKeyboardMapping/ChangeKeyboardMapping \
 	chngpntrcn/chngpntrcn \
 	dltmdfrmpe/dltmdfrmpe \
 	dsplykycds/dsplykycds \

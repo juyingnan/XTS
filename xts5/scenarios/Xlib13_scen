@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE XChangeKeyboardControl 20"
 	/tset/Xlib13/ChangeKeyboardControl/ChangeKeyboardControl
 	"VSW5TESTSUITE CASE XChangeKeyboardMapping 7"
-	/tset/Xlib13/chngkybrdm/chngkybrdm
+	/tset/Xlib13/ChangeKeyboardMapping/ChangeKeyboardMapping
 	"VSW5TESTSUITE CASE XChangePointerControl 11"
 	/tset/Xlib13/chngpntrcn/chngpntrcn
 	"VSW5TESTSUITE CASE XDeleteModifiermapEntry 1"

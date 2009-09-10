@@ -20,7 +20,7 @@ tprogs = \
 	ChangeGC/ChangeGC \
 	ChangeHosts/ChangeHosts \
 	ChangeKeyboardControl/ChangeKeyboardControl \
-	chngkybrdm/chngkybrdm \
+	ChangeKeyboardMapping/ChangeKeyboardMapping \
 	chngpntrcn/chngpntrcn \
 	chngprprty/chngprprty \
 	chngsvst/chngsvst \
