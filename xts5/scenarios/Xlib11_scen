@@ -96,7 +96,7 @@
 	"VSW5TESTSUITE CASE LeaveNotify 15"
 	/tset/Xlib11/LeaveNotify/LeaveNotify
 	"VSW5TESTSUITE CASE MapNotify 4"
-	/tset/Xlib11/mpntfy/mpntfy
+	/tset/Xlib11/MapNotify/MapNotify
 	"VSW5TESTSUITE CASE MappingNotify 1"
 	/tset/Xlib11/mppngntfy/mppngntfy
 	"VSW5TESTSUITE CASE MapRequest 2"

@@ -868,7 +868,7 @@ LeaveNotify
 
 MapNotify
 	"VSW5TESTSUITE CASE MapNotify 4"
-	/tset/Xlib11/mpntfy/mpntfy
+	/tset/Xlib11/MapNotify/MapNotify
 
 MappingNotify
 	"VSW5TESTSUITE CASE MappingNotify 1"

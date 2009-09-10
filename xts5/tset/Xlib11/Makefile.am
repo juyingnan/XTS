@@ -29,7 +29,7 @@ tprogs = \
 	KeyPress/KeyPress \
 	KeyRelease/KeyRelease \
 	LeaveNotify/LeaveNotify \
-	mpntfy/mpntfy \
+	MapNotify/MapNotify \
 	mppngntfy/mppngntfy \
 	mprqst/mprqst \
 	mtnntfy/mtnntfy \
