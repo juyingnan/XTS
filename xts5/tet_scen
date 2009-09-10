@@ -3628,7 +3628,7 @@ XtIsObject
 
 XtIsRectObj
 	"VSW5TESTSUITE CASE XtIsRectObj 2"
-	/tset/Xt3/tisrctobj/tisrctobj
+	/tset/Xt3/XtIsRectObject/XtIsRectObject
 
 XtIsWidget
 	"VSW5TESTSUITE CASE XtIsWidget 2"
