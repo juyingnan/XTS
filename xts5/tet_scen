@@ -3920,7 +3920,7 @@ XtCallbackExclusive
 
 XtMenuPopup
 	"VSW5TESTSUITE CASE XtMenuPopup 22"
-	/tset/Xt7/tmpopup/tmpopup
+	/tset/Xt7/XtMenuPopup/XtMenuPopup
 
 XtCallbackPopdown
 	"VSW5TESTSUITE CASE XtCallbackPopdown 9"
