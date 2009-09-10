@@ -78,7 +78,7 @@
 	"VSW5TESTSUITE CASE XFreeFontSet 1"
 	/tset/Xlib14/XFreeFontSet/XFreeFontSet
 	"VSW5TESTSUITE CASE XGetICValues 3"
-	/tset/Xlib14/gticvals/gticvals
+	/tset/Xlib14/XGetICValues/XGetICValues
 	"VSW5TESTSUITE CASE XGetIMValues 1"
 	/tset/Xlib14/gtimvls/gtimvls
 	"VSW5TESTSUITE CASE XIMOfIC 1"

@@ -21,7 +21,7 @@ tprogs = \
 	XFilterEvent/XFilterEvent \
 	XFontsOfFontSet/XFontsOfFontSet \
 	XFreeFontSet/XFreeFontSet \
-	gticvals/gticvals \
+	XGetICValues/XGetICValues \
 	gtimvls/gtimvls \
 	imofic/imofic \
 	loffs/loffs \

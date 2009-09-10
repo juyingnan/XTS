@@ -1208,7 +1208,7 @@ XFreeFontSet
 
 XGetICValues
 	"VSW5TESTSUITE CASE XGetICValues 3"
-	/tset/Xlib14/gticvals/gticvals
+	/tset/Xlib14/XGetICValues/XGetICValues
 
 XGetIMValues
 	"VSW5TESTSUITE CASE XGetIMValues 1"
