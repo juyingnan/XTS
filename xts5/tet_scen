@@ -2615,7 +2615,7 @@ XcmsConvertColors
 
 XcmsCIELabQueryMaxLC
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxLC 1"
-	/tset/Xlib7/cmscielq/cmscielq
+	/tset/Xlib7/XcmsCIELabQueryMaxLC/XcmsCIELabQueryMaxLC
 
 XcmsCIELabQueryMaxC
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxC 1"

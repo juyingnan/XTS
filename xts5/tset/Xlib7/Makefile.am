@@ -20,7 +20,7 @@ tprogs = \
 	XcmsAllocNamedColor/XcmsAllocNamedColor \
 	XcmsCCCOfColormap/XcmsCCCOfColormap \
 	XcmsConvertColors/XcmsConvertColors \
-	cmscielq/cmscielq \
+	XcmsCIELabQueryMaxLC/XcmsCIELabQueryMaxLC \
 	cmscieqc/cmscieqc \
 	cmscieql/cmscieql \
 	cmscproc/cmscproc \
