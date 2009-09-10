@@ -20,7 +20,7 @@ tprogs = \
 	CreateNotify/CreateNotify \
 	DestroyNotify/DestroyNotify \
 	EnterNotify/EnterNotify \
-	exps/exps \
+	Expose/Expose \
 	fcsin/fcsin \
 	fcsot/fcsot \
 	grphcsexps/grphcsexps \

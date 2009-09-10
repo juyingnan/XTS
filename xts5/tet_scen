@@ -832,7 +832,7 @@ EnterNotify
 
 Expose
 	"VSW5TESTSUITE CASE Expose 7"
-	/tset/Xlib11/exps/exps
+	/tset/Xlib11/Expose/Expose
 
 FocusIn
 	"VSW5TESTSUITE CASE FocusIn 21"

@@ -78,7 +78,7 @@
 	"VSW5TESTSUITE CASE EnterNotify 13"
 	/tset/Xlib11/EnterNotify/EnterNotify
 	"VSW5TESTSUITE CASE Expose 7"
-	/tset/Xlib11/exps/exps
+	/tset/Xlib11/Expose/Expose
 	"VSW5TESTSUITE CASE FocusIn 21"
 	/tset/Xlib11/fcsin/fcsin
 	"VSW5TESTSUITE CASE FocusOut 19"
