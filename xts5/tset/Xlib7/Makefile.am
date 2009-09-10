@@ -34,7 +34,7 @@ tprogs = \
 	XcmsCIELabQueryMinL/XcmsCIELabQueryMinL \
 	XcmsPrefixOfFormat/XcmsPrefixOfFormat \
 	XcmsQueryBlack/XcmsQueryBlack \
-	cmsqbl/cmsqbl \
+	XcmsQueryBlue/XcmsQueryBlue \
 	cmsqc/cmsqc \
 	cmsqcl/cmsqcl \
 	cmsqgr/cmsqgr \
