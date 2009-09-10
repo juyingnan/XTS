@@ -4289,7 +4289,7 @@ XtCvtIntToShort
 
 XtCvtIntToUnsignedChar
 	"VSW5TESTSUITE CASE XtCvtIntToUnsignedChar 3"
-	/tset/Xt11/tcinuchr/tcinuchr
+	/tset/Xt11/XtCvtIntToUnsignedChar/XtCvtIntToUnsignedChar
 
 XtCvtPixelToColor
 	"VSW5TESTSUITE CASE XtCvtPixelToColor 3"
