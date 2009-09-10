@@ -60,7 +60,7 @@
 	"VSW5TESTSUITE CASE XClearWindow 7"
 	/tset/Xlib9/XClearWindow/XClearWindow
 	"VSW5TESTSUITE CASE XCopyArea 36"
-	/tset/Xlib9/CopyArea/CopyArea
+	/tset/Xlib9/XCopyArea/XCopyArea
 	"VSW5TESTSUITE CASE XCopyPlane 43"
 	/tset/Xlib9/CopyPlane/CopyPlane
 	"VSW5TESTSUITE CASE XDrawArc 102"

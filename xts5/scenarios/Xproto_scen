@@ -96,7 +96,7 @@
 	"VSW5TESTSUITE CASE ConvertSelection 3"
 	/tset/Xproto/XConvertSelection/XConvertSelection
 	"VSW5TESTSUITE CASE CopyArea 3"
-	/tset/Xproto/CopyArea/CopyArea
+	/tset/Xproto/XCopyArea/XCopyArea
 	"VSW5TESTSUITE CASE CopyColormapAndFree 5"
 	/tset/Xproto/XCopyColormapAndFree/XCopyColormapAndFree
 	"VSW5TESTSUITE CASE CopyGC 4"

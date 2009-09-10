@@ -2892,7 +2892,7 @@ XClearWindow
 
 XCopyArea
 	"VSW5TESTSUITE CASE XCopyArea 36"
-	/tset/Xlib9/CopyArea/CopyArea
+	/tset/Xlib9/XCopyArea/XCopyArea
 
 XCopyPlane
 	"VSW5TESTSUITE CASE XCopyPlane 43"
@@ -3186,7 +3186,7 @@ pConvertSelection
 
 pCopyArea
 	"VSW5TESTSUITE CASE CopyArea 3"
-	/tset/Xproto/CopyArea/CopyArea
+	/tset/Xproto/XCopyArea/XCopyArea
 
 pCopyColormapAndFree
 	"VSW5TESTSUITE CASE CopyColormapAndFree 5"

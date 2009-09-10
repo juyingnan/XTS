@@ -29,7 +29,7 @@ tprogs = \
 	CloseFont/CloseFont \
 	XConfigureWindow/XConfigureWindow \
 	XConvertSelection/XConvertSelection \
-	CopyArea/CopyArea \
+	XCopyArea/XCopyArea \
 	XCopyColormapAndFree/XCopyColormapAndFree \
 	XCopyGC/XCopyGC \
 	CopyPlane/CopyPlane \
