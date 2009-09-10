@@ -4435,7 +4435,7 @@ XtConvertCase
 
 XtGetActionKeysym
 	"VSW5TESTSUITE CASE XtGetActionKeysym 8"
-	/tset/Xt12/tgtacksym/tgtacksym
+	/tset/Xt12/XtGetActionKeysym/XtGetActionKeysym
 
 XtKeysymToKeycodeList
 	"VSW5TESTSUITE CASE XtKeysymToKeycodeList 2"
