@@ -140,7 +140,7 @@
 	"VSW5TESTSUITE CASE GrabButton 3"
 	/tset/Xproto/XGrabButton/XGrabButton
 	"VSW5TESTSUITE CASE GrabKey 3"
-	/tset/Xproto/GrabKey/GrabKey
+	/tset/Xproto/XGrabKey/XGrabKey
 	"VSW5TESTSUITE CASE GrabKeyboard 3"
 	/tset/Xproto/GrabKeyboard/GrabKeyboard
 	"VSW5TESTSUITE CASE GrabPointer 3"

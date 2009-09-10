@@ -51,7 +51,7 @@ tprogs = \
 	FreeGC/FreeGC \
 	FreePixmap/FreePixmap \
 	XGrabButton/XGrabButton \
-	GrabKey/GrabKey \
+	XGrabKey/XGrabKey \
 	GrabKeyboard/GrabKeyboard \
 	GrabPointer/GrabPointer \
 	XGrabServer/XGrabServer \

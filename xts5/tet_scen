@@ -1082,7 +1082,7 @@ XGrabButton
 
 XGrabKey
 	"VSW5TESTSUITE CASE XGrabKey 16"
-	/tset/Xlib13/GrabKey/GrabKey
+	/tset/Xlib13/XGrabKey/XGrabKey
 
 XGrabKeyboard
 	"VSW5TESTSUITE CASE XGrabKeyboard 25"
@@ -3274,7 +3274,7 @@ pGrabButton
 
 pGrabKey
 	"VSW5TESTSUITE CASE GrabKey 3"
-	/tset/Xproto/GrabKey/GrabKey
+	/tset/Xproto/XGrabKey/XGrabKey
 
 pGrabKeyboard
 	"VSW5TESTSUITE CASE GrabKeyboard 3"
