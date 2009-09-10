@@ -3816,7 +3816,7 @@ XtDestroyWidget
 
 XtManageChildren
 	"VSW5TESTSUITE CASE XtManageChildren 7"
-	/tset/Xt5/tmngchdrn/tmngchdrn
+	/tset/Xt5/XtManageChildren/XtManageChildren
 
 XtManageChild
 	"VSW5TESTSUITE CASE XtManageChild 6"
