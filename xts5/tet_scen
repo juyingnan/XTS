@@ -1716,7 +1716,7 @@ XGetPixel
 
 XGetVisualInfo
 	"VSW5TESTSUITE CASE XGetVisualInfo 3"
-	/tset/Xlib17/gtvslinf/gtvslinf
+	/tset/Xlib17/XGetVisualInfo/XGetVisualInfo
 
 XIntersectRegion
 	"VSW5TESTSUITE CASE XIntersectRegion 1"
