@@ -17,11 +17,11 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xopen/AllocNamedColor/AllocNamedColor.m,v 1.2 2005-11-03 08:44:00 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xopen/XAllocNamedColor/XAllocNamedColor.m,v 1.2 2005-11-03 08:44:00 jmichael Exp $
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xopen/AllocNamedColor/AllocNamedColor.m
+>># File: xts5/tset/Xopen/XAllocNamedColor/XAllocNamedColor.m
 >># 
 >># Description:
 >># 	Tests for XAllocNamedColor()

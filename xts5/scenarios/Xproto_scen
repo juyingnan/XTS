@@ -62,7 +62,7 @@
 	"VSW5TESTSUITE CASE AllocColorPlanes 3"
 	/tset/Xproto/AllocColorPlanes/AllocColorPlanes
 	"VSW5TESTSUITE CASE AllocNamedColor 3"
-	/tset/Xproto/AllocNamedColor/AllocNamedColor
+	/tset/Xproto/XAllocNamedColor/XAllocNamedColor
 	"VSW5TESTSUITE CASE AllowEvents 3"
 	/tset/Xproto/AllowEvents/AllowEvents
 	"VSW5TESTSUITE CASE BadRequest 1"

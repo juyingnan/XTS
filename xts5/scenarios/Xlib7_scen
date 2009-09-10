@@ -62,7 +62,7 @@
 	"VSW5TESTSUITE CASE XAllocColorPlanes 7"
 	/tset/Xlib7/AllocColorPlanes/AllocColorPlanes
 	"VSW5TESTSUITE CASE XAllocNamedColor 6"
-	/tset/Xlib7/AllocNamedColor/AllocNamedColor
+	/tset/Xlib7/XAllocNamedColor/XAllocNamedColor
 	"VSW5TESTSUITE CASE XCopyColormapAndFree 5"
 	/tset/Xlib7/CopyColormapAndFree/CopyColormapAndFree
 	"VSW5TESTSUITE CASE XCreateColormap 13"

@@ -2543,7 +2543,7 @@ XAllocColorPlanes
 
 XAllocNamedColor
 	"VSW5TESTSUITE CASE XAllocNamedColor 6"
-	/tset/Xlib7/AllocNamedColor/AllocNamedColor
+	/tset/Xlib7/XAllocNamedColor/XAllocNamedColor
 
 XCopyColormapAndFree
 	"VSW5TESTSUITE CASE XCopyColormapAndFree 5"
@@ -3071,7 +3071,7 @@ XUnloadFont
 
 xXAllocNamedColor
 	"VSW5TESTSUITE CASE XAllocNamedColor 7"
-	/tset/Xopen/AllocNamedColor/AllocNamedColor
+	/tset/Xopen/XAllocNamedColor/XAllocNamedColor
 
 xcursorfont
 	"VSW5TESTSUITE CASE cursorfont 32"
@@ -3118,7 +3118,7 @@ pAllocColorPlanes
 
 pAllocNamedColor
 	"VSW5TESTSUITE CASE AllocNamedColor 3"
-	/tset/Xproto/AllocNamedColor/AllocNamedColor
+	/tset/Xproto/XAllocNamedColor/XAllocNamedColor
 
 pAllowEvents
 	"VSW5TESTSUITE CASE AllowEvents 3"

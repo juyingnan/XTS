@@ -12,7 +12,7 @@ tprogs = \
 	AllocColor/AllocColor \
 	AllocColorCells/AllocColorCells \
 	AllocColorPlanes/AllocColorPlanes \
-	AllocNamedColor/AllocNamedColor \
+	XAllocNamedColor/XAllocNamedColor \
 	AllowEvents/AllowEvents \
 	BadRequest/BadRequest \
 	Bell/Bell \
