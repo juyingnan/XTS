@@ -2418,7 +2418,7 @@ XUndefineCursor
 
 XUnmapSubwindows
 	"VSW5TESTSUITE CASE XUnmapSubwindows 5"
-	/tset/Xlib4/unmpsbws/unmpsbws
+	/tset/Xlib4/UnmapSubwindows/UnmapSubwindows
 
 XUnmapWindow
 	"VSW5TESTSUITE CASE XUnmapWindow 6"
@@ -3578,7 +3578,7 @@ pUngrabServer
 
 pUnmapSubwindows
 	"VSW5TESTSUITE CASE UnmapSubwindows 3"
-	/tset/Xproto/unmpsbws/unmpsbws
+	/tset/Xproto/UnmapSubwindows/UnmapSubwindows
 
 pUnmapWindow
 	"VSW5TESTSUITE CASE UnmapWindow 3"

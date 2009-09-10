@@ -127,7 +127,7 @@ tprogs = \
 	UngrabKeyboard/UngrabKeyboard \
 	UngrabPointer/UngrabPointer \
 	UngrabServer/UngrabServer \
-	unmpsbws/unmpsbws \
+	UnmapSubwindows/UnmapSubwindows \
 	unmpwdw/unmpwdw \
 	unnstllclr/unnstllclr \
 	wrppntr/wrppntr
