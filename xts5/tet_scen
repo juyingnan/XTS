@@ -4225,7 +4225,7 @@ XtCvtStringToPixel
 
 XtCvtStringToShort
 	"VSW5TESTSUITE CASE XtCvtStringToShort 4"
-	/tset/Xt11/tcstshrt/tcstshrt
+	/tset/Xt11/XtCvtStringToShort/XtCvtStringToShort
 
 XtCvtStringToTranslationTable
 	"VSW5TESTSUITE CASE XtCvtStringToTranslationTable 4"

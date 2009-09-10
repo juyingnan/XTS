@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/tcstshrt/tcstshrt.m
+>># File: tset/Xt11/XtCvtStringToShort/XtCvtStringToShort.m
 >># 
 >># Description:
 >>#	Tests for XtCvtStringToPosition()
