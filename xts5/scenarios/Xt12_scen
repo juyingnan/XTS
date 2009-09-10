@@ -99,6 +99,6 @@
 	"VSW5TESTSUITE CASE XtCallActionProc 2"
 	/tset/Xt12/XtCallActionProc/XtCallActionProc
 	"VSW5TESTSUITE CASE XtRegisterGrabAction 11"
-	/tset/Xt12/tregraba/tregraba
+	/tset/Xt12/XtRegisterGrabAction/XtRegisterGrabAction
 	"VSW5TESTSUITE CASE XtGetActionList 5"
 	/tset/Xt12/XtGetActionList/XtGetActionList

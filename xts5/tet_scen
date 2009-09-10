@@ -4443,7 +4443,7 @@ XtKeysymToKeycodeList
 
 XtRegisterGrabAction
 	"VSW5TESTSUITE CASE XtRegisterGrabAction 11"
-	/tset/Xt12/tregraba/tregraba
+	/tset/Xt12/XtRegisterGrabAction/XtRegisterGrabAction
 
 XtCallActionProc
 	"VSW5TESTSUITE CASE XtCallActionProc 2"
