@@ -19,7 +19,7 @@ tprogs = \
 	XEventsQueued/XEventsQueued \
 	XFlush/XFlush \
 	XGetErrorDatabaseText/XGetErrorDatabaseText \
-	gterrrtxt/gterrrtxt \
+	XGetErrorText/XGetErrorText \
 	XGetMotionEvents/XGetMotionEvents \
 	ifevnt/ifevnt \
 	mskevnt/mskevnt \

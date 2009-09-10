@@ -963,7 +963,7 @@ XGetErrorDatabaseText
 
 XGetErrorText
 	"VSW5TESTSUITE CASE XGetErrorText 2"
-	/tset/Xlib12/gterrrtxt/gterrrtxt
+	/tset/Xlib12/XGetErrorText/XGetErrorText
 
 XGetMotionEvents
 	"VSW5TESTSUITE CASE XGetMotionEvents 7"

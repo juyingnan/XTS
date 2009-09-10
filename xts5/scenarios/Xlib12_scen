@@ -76,7 +76,7 @@
 	"VSW5TESTSUITE CASE XGetErrorDatabaseText 5"
 	/tset/Xlib12/XGetErrorDatabaseText/XGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XGetErrorText 2"
-	/tset/Xlib12/gterrrtxt/gterrrtxt
+	/tset/Xlib12/XGetErrorText/XGetErrorText
 	"VSW5TESTSUITE CASE XGetMotionEvents 7"
 	/tset/Xlib12/XGetMotionEvents/XGetMotionEvents
 	"VSW5TESTSUITE CASE XIfEvent 4"
