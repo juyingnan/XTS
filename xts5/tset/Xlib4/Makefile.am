@@ -21,7 +21,7 @@ tprogs = \
 	XDestroyWindow/XDestroyWindow \
 	XLowerWindow/XLowerWindow \
 	mprsd/mprsd \
-	MapSubwindows/MapSubwindows \
+	XMapSubwindows/XMapSubwindows \
 	MapWindow/MapWindow \
 	mvrszwdw/mvrszwdw \
 	mvwdw/mvwdw \

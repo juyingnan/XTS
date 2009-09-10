@@ -82,7 +82,7 @@ tprogs = \
 	XListHosts/XListHosts \
 	XListInstalledColormaps/XListInstalledColormaps \
 	ListProperties/ListProperties \
-	MapSubwindows/MapSubwindows \
+	XMapSubwindows/XMapSubwindows \
 	MapWindow/MapWindow \
 	NoOperation/NoOperation \
 	XOpenDisplay/XOpenDisplay \
