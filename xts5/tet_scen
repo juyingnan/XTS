@@ -3996,7 +3996,7 @@ XtUngrabKey
 
 XtGrabKeyboard
 	"VSW5TESTSUITE CASE XtGrabKeyboard 2"
-	/tset/Xt9/tgrabkybd/tgrabkybd
+	/tset/Xt9/XtGrabKeyboard/XtGrabKeyboard
 
 XtUngrabKeyboard
 	"VSW5TESTSUITE CASE XtUngrabKeyboard 1"
