@@ -4635,7 +4635,7 @@ XtGetErrorDatabase
 
 XtGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XtGetErrorDatabaseText 2"
-	/tset/XtC/tgterrdbt/tgterrdbt
+	/tset/XtC/XtGetErrorDatabaseText/XtGetErrorDatabaseText
 
 XtInitialize
 	"VSW5TESTSUITE CASE XtInitialize 27"

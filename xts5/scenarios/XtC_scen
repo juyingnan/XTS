@@ -61,7 +61,7 @@
 	"VSW5TESTSUITE CASE XtGetErrorDatabase 1"
 	/tset/XtC/XtGetErrorDatabase/XtGetErrorDatabase
 	"VSW5TESTSUITE CASE XtGetErrorDatabaseText 2"
-	/tset/XtC/tgterrdbt/tgterrdbt
+	/tset/XtC/XtGetErrorDatabaseText/XtGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XtInitialize 27"
 	/tset/XtC/tinitlize/tinitlize
 	"VSW5TESTSUITE CASE XtMainLoop 28"
