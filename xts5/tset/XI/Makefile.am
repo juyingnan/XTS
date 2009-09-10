@@ -12,7 +12,7 @@ tprogs = \
 	XAllowDeviceEvents/XAllowDeviceEvents \
 	XChangeDeviceControl/XChangeDeviceControl \
 	XChangeFeedbackControl/XChangeFeedbackControl \
-	chgkbd/chgkbd \
+	XChangeKeyboardDevice/XChangeKeyboardDevice \
 	chgprop/chgprop \
 	chgptr/chgptr \
 	chngdvkmap/chngdvkmap \

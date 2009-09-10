@@ -13,7 +13,7 @@ tprogs = \
 	XChangeDeviceControl/XChangeDeviceControl \
 	chgdvprop/chgdvprop \
 	XChangeFeedbackControl/XChangeFeedbackControl \
-	chgkbd/chgkbd \
+	XChangeKeyboardDevice/XChangeKeyboardDevice \
 	chgptr/chgptr \
 	chngdvkmap/chngdvkmap \
 	closdev/closdev \
