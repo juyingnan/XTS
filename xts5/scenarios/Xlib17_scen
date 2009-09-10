@@ -90,7 +90,7 @@
 	"VSW5TESTSUITE CASE XGetVisualInfo 3"
 	/tset/Xlib17/XGetVisualInfo/XGetVisualInfo
 	"VSW5TESTSUITE CASE XIntersectRegion 1"
-	/tset/Xlib17/intrsctrgn/intrsctrgn
+	/tset/Xlib17/XIntersectRegion/XIntersectRegion
 	"VSW5TESTSUITE CASE IsCursorKey 2"
 	/tset/Xlib17/iscrsrky/iscrsrky
 	"VSW5TESTSUITE CASE IsFunctionKey 2"

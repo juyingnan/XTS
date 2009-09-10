@@ -26,7 +26,7 @@ tprogs = \
 	XGetDefault/XGetDefault \
 	XGetPixel/XGetPixel \
 	XGetVisualInfo/XGetVisualInfo \
-	intrsctrgn/intrsctrgn \
+	XIntersectRegion/XIntersectRegion \
 	iscrsrky/iscrsrky \
 	isfnctnky/isfnctnky \
 	iskypdky/iskypdky \

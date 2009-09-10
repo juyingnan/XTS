@@ -18,7 +18,7 @@ gtdflt/Test4
 gtdflt/Test5
 XGetPixel/XGetPixel
 XGetVisualInfo/XGetVisualInfo
-intrsctrgn/intrsctrgn
+XIntersectRegion/XIntersectRegion
 iscrsrky/iscrsrky
 isfnctnky/isfnctnky
 iskypdky/iskypdky
