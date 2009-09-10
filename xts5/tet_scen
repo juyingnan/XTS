@@ -1664,7 +1664,7 @@ XCreateBitmapFromData
 
 XCreateImage
 	"VSW5TESTSUITE CASE XCreateImage 3"
-	/tset/Xlib17/crtimg/crtimg
+	/tset/Xlib17/XCreateImage/XCreateImage
 
 XCreatePixmapFromBitmapData
 	"VSW5TESTSUITE CASE XCreatePixmapFromBitmapData 5"

@@ -17,14 +17,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib17/crtimg/crtimg.m,v 1.3 2007-05-14 15:29:46 gwc Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib17/XCreateImage/XCreateImage.m,v 1.3 2007-05-14 15:29:46 gwc Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib17/crtimg/crtimg.m
+>># File: xts5/tset/Xlib17/XCreateImage/XCreateImage.m
 >># 
 >># Description:
 >># 	Tests for XCreateImage()
