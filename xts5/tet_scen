@@ -3824,7 +3824,7 @@ XtManageChild
 
 XtCreateManagedWidget
 	"VSW5TESTSUITE CASE XtCreateManagedWidget 16"
-	/tset/Xt5/tcramnwid/tcramnwid
+	/tset/Xt5/XtCreateManagedWidget/XtCreateManagedWidget
 
 XtVaCreateManagedWidget
 	"VSW5TESTSUITE CASE XtVaCreateManagedWidget 20"
