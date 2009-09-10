@@ -1427,7 +1427,7 @@ XGetWMNormalHints
 
 XGetWMProtocols
 	"VSW5TESTSUITE CASE XGetWMProtocols 4"
-	/tset/Xlib15/gtwmprtcls/gtwmprtcls
+	/tset/Xlib15/XGetWMProtocols/XGetWMProtocols
 
 XGetWMSizeHints
 	"VSW5TESTSUITE CASE XGetWMSizeHints 6"
