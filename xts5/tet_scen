@@ -4165,7 +4165,7 @@ XtVaGetApplicationResources
 
 XtCvtStringToAcceleratorTable
 	"VSW5TESTSUITE CASE XtCvtStringToAcceleratorTable 4"
-	/tset/Xt11/tcstatbl/tcstatbl
+	/tset/Xt11/XtCvtStringToAcceleratorTable/XtCvtStringToAcceleratorTable
 
 XtCvtStringToAtom
 	"VSW5TESTSUITE CASE XtCvtStringToAtom 4"

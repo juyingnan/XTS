@@ -75,7 +75,7 @@
 	"VSW5TESTSUITE CASE XtVaGetApplicationResources 4"
 	/tset/Xt11/tvagtares/tvagtares
 	"VSW5TESTSUITE CASE XtCvtStringToAcceleratorTable 4"
-	/tset/Xt11/tcstatbl/tcstatbl
+	/tset/Xt11/XtCvtStringToAcceleratorTable/XtCvtStringToAcceleratorTable
 	"VSW5TESTSUITE CASE XtCvtStringToAtom 4"
 	/tset/Xt11/tcstatom/tcstatom
 	"VSW5TESTSUITE CASE XtCvtStringToBoolean 4"
