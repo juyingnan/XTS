@@ -20,7 +20,7 @@ tprogs = \
 	XDeleteModifiermapEntry/XDeleteModifiermapEntry \
 	XDisplayKeycodes/XDisplayKeycodes \
 	XFreeModifiermap/XFreeModifiermap \
-	GrabButton/GrabButton \
+	XGrabButton/XGrabButton \
 	GrabKey/GrabKey \
 	GrabKeyboard/GrabKeyboard \
 	GrabPointer/GrabPointer \

@@ -50,7 +50,7 @@ tprogs = \
 	XForceScreenSaver/XForceScreenSaver \
 	FreeGC/FreeGC \
 	FreePixmap/FreePixmap \
-	GrabButton/GrabButton \
+	XGrabButton/XGrabButton \
 	GrabKey/GrabKey \
 	GrabKeyboard/GrabKeyboard \
 	GrabPointer/GrabPointer \
