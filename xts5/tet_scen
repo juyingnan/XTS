@@ -3616,7 +3616,7 @@ XtClass
 
 XtSuperClass
 	"VSW5TESTSUITE CASE XtSuperClass 1"
-	/tset/Xt3/tsprclss/tsprclss
+	/tset/Xt3/XtSuperClass/XtSuperClass
 
 XtIsSubclass
 	"VSW5TESTSUITE CASE XtIsSubclass 2"

@@ -69,7 +69,7 @@
 	"VSW5TESTSUITE CASE XtClass 1"
 	/tset/Xt3/XtClass/XtClass
 	"VSW5TESTSUITE CASE XtSuperClass 1"
-	/tset/Xt3/tsprclss/tsprclss
+	/tset/Xt3/XtSuperClass/XtSuperClass
 	"VSW5TESTSUITE CASE XtIsSubclass 2"
 	/tset/Xt3/XtIsSubclass/XtIsSubclass
 	"VSW5TESTSUITE CASE XtIsObject 2"
