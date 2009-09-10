@@ -80,7 +80,7 @@
 	"VSW5TESTSUITE CASE Expose 7"
 	/tset/Xlib11/Expose/Expose
 	"VSW5TESTSUITE CASE FocusIn 21"
-	/tset/Xlib11/fcsin/fcsin
+	/tset/Xlib11/FocusIn/FocusIn
 	"VSW5TESTSUITE CASE FocusOut 19"
 	/tset/Xlib11/fcsot/fcsot
 	"VSW5TESTSUITE CASE GraphicsExpose 1"

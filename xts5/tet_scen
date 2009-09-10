@@ -836,7 +836,7 @@ Expose
 
 FocusIn
 	"VSW5TESTSUITE CASE FocusIn 21"
-	/tset/Xlib11/fcsin/fcsin
+	/tset/Xlib11/FocusIn/FocusIn
 
 FocusOut
 	"VSW5TESTSUITE CASE FocusOut 19"

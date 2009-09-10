@@ -21,7 +21,7 @@ tprogs = \
 	DestroyNotify/DestroyNotify \
 	EnterNotify/EnterNotify \
 	Expose/Expose \
-	fcsin/fcsin \
+	FocusIn/FocusIn \
 	fcsot/fcsot \
 	grphcsexps/grphcsexps \
 	grvtyntfy/grvtyntfy \
