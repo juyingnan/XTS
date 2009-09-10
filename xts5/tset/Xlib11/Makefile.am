@@ -26,7 +26,7 @@ tprogs = \
 	GraphicsExpose/GraphicsExpose \
 	GravityNotify/GravityNotify \
 	KeymapNotify/KeymapNotify \
-	kyprss/kyprss \
+	KeyPress/KeyPress \
 	kyrls/kyrls \
 	lvntfy/lvntfy \
 	mpntfy/mpntfy \

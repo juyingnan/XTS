@@ -856,7 +856,7 @@ KeymapNotify
 
 KeyPress
 	"VSW5TESTSUITE CASE KeyPress 9"
-	/tset/Xlib11/kyprss/kyprss
+	/tset/Xlib11/KeyPress/KeyPress
 
 KeyRelease
 	"VSW5TESTSUITE CASE KeyRelease 9"
