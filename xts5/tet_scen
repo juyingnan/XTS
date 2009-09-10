@@ -2607,7 +2607,7 @@ XcmsAllocNamedColor
 
 XcmsCCCOfColormap
 	"VSW5TESTSUITE CASE XcmsCCCOfColormap 1"
-	/tset/Xlib7/cmsccoc/cmsccoc
+	/tset/Xlib7/XcmsCCCOfColormap/XcmsCCCOfColormap
 
 XcmsConvertColors
 	"VSW5TESTSUITE CASE XcmsConvertColors 1"
