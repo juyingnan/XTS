@@ -34,7 +34,7 @@ tprogs = \
 	XSetFont/XSetFont \
 	XSetForeground/XSetForeground \
 	XSetGraphicsExposures/XSetGraphicsExposures \
-	stlnattrbt/stlnattrbt \
+	XSetLineAttributes/XSetLineAttributes \
 	stplnmsk/stplnmsk \
 	stsbwmd/stsbwmd \
 	ststppl/ststppl \

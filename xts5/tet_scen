@@ -2849,7 +2849,7 @@ XSetGraphicsExposures
 
 XSetLineAttributes
 	"VSW5TESTSUITE CASE XSetLineAttributes 6"
-	/tset/Xlib8/stlnattrbt/stlnattrbt
+	/tset/Xlib8/XSetLineAttributes/XSetLineAttributes
 
 XSetPlaneMask
 	"VSW5TESTSUITE CASE XSetPlaneMask 3"
