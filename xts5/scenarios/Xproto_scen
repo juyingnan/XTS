@@ -228,7 +228,7 @@
 	"VSW5TESTSUITE CASE PolyText16 3"
 	/tset/Xproto/PolyText16/PolyText16
 	"VSW5TESTSUITE CASE PolyText8 3"
-	/tset/Xproto/plytxt8/plytxt8
+	/tset/Xproto/PolyText8/PolyText8
 	"VSW5TESTSUITE CASE PutImage 3"
 	/tset/Xproto/ptimg/ptimg
 	"VSW5TESTSUITE CASE QueryBestSize 3"

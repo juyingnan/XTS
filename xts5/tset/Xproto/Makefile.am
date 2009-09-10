@@ -95,7 +95,7 @@ tprogs = \
 	PolyRectangle/PolyRectangle \
 	PolySegment/PolySegment \
 	PolyText16/PolyText16 \
-	plytxt8/plytxt8 \
+	PolyText8/PolyText8 \
 	ptimg/ptimg \
 	qrybstsz/qrybstsz \
 	qryclrs/qryclrs \

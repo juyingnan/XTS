@@ -3450,7 +3450,7 @@ pPolyText16
 
 pPolyText8
 	"VSW5TESTSUITE CASE PolyText8 3"
-	/tset/Xproto/plytxt8/plytxt8
+	/tset/Xproto/PolyText8/PolyText8
 
 pPutImage
 	"VSW5TESTSUITE CASE PutImage 3"
