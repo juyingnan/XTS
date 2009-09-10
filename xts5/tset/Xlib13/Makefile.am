@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	allwevnts/allwevnts \
+	AllowEvents/AllowEvents \
 	atrptoff/atrptoff \
 	atrpton/atrpton \
 	bll/bll \

@@ -13,7 +13,7 @@ tprogs = \
 	AllocColorCells/AllocColorCells \
 	AllocColorPlanes/AllocColorPlanes \
 	AllocNamedColor/AllocNamedColor \
-	allwevnts/allwevnts \
+	AllowEvents/AllowEvents \
 	bdrqst/bdrqst \
 	bll/bll \
 	chngactvpn/chngactvpn \

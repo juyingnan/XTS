@@ -1034,7 +1034,7 @@ XWindowEvent
 
 XAllowEvents
 	"VSW5TESTSUITE CASE XAllowEvents 29"
-	/tset/Xlib13/allwevnts/allwevnts
+	/tset/Xlib13/AllowEvents/AllowEvents
 
 XAutoRepeatOff
 	"VSW5TESTSUITE CASE XAutoRepeatOff 1"
@@ -3122,7 +3122,7 @@ pAllocNamedColor
 
 pAllowEvents
 	"VSW5TESTSUITE CASE AllowEvents 3"
-	/tset/Xproto/allwevnts/allwevnts
+	/tset/Xproto/AllowEvents/AllowEvents
 
 pBadRequest
 	"VSW5TESTSUITE CASE BadRequest 1"
