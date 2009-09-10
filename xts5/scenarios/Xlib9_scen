@@ -112,7 +112,7 @@
 	"VSW5TESTSUITE CASE XFreeFontPath 1"
 	/tset/Xlib9/XFreeFontPath/XFreeFontPath
 	"VSW5TESTSUITE CASE XGetFontProperty 2"
-	/tset/Xlib9/gtfntprprt/gtfntprprt
+	/tset/Xlib9/XGetFontProperty/XGetFontProperty
 	"VSW5TESTSUITE CASE XGetFontPath 1"
 	/tset/Xlib9/XGetFontPath/XGetFontPath
 	"VSW5TESTSUITE CASE XGetImage 17"

@@ -2996,7 +2996,7 @@ XFreeFontPath
 
 XGetFontProperty
 	"VSW5TESTSUITE CASE XGetFontProperty 2"
-	/tset/Xlib9/gtfntprprt/gtfntprprt
+	/tset/Xlib9/XGetFontProperty/XGetFontProperty
 
 XGetFontPath
 	"VSW5TESTSUITE CASE XGetFontPath 1"
