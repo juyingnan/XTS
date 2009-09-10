@@ -1078,7 +1078,7 @@ XFreeModifiermap
 
 XGrabButton
 	"VSW5TESTSUITE CASE XGrabButton 39"
-	/tset/Xlib13/grbbttn/grbbttn
+	/tset/Xlib13/GrabButton/GrabButton
 
 XGrabKey
 	"VSW5TESTSUITE CASE XGrabKey 16"
@@ -3270,7 +3270,7 @@ pFreePixmap
 
 pGrabButton
 	"VSW5TESTSUITE CASE GrabButton 3"
-	/tset/Xproto/grbbttn/grbbttn
+	/tset/Xproto/GrabButton/GrabButton
 
 pGrabKey
 	"VSW5TESTSUITE CASE GrabKey 3"

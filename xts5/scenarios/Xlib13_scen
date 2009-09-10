@@ -78,7 +78,7 @@
 	"VSW5TESTSUITE CASE XFreeModifiermap 1"
 	/tset/Xlib13/frmdfrmp/frmdfrmp
 	"VSW5TESTSUITE CASE XGrabButton 39"
-	/tset/Xlib13/grbbttn/grbbttn
+	/tset/Xlib13/GrabButton/GrabButton
 	"VSW5TESTSUITE CASE XGrabKey 16"
 	/tset/Xlib13/grbky/grbky
 	"VSW5TESTSUITE CASE XGrabKeyboard 25"

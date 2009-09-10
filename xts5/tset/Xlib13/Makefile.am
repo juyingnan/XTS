@@ -20,7 +20,7 @@ tprogs = \
 	dltmdfrmpe/dltmdfrmpe \
 	dsplykycds/dsplykycds \
 	frmdfrmp/frmdfrmp \
-	grbbttn/grbbttn \
+	GrabButton/GrabButton \
 	grbky/grbky \
 	grbkybrd/grbkybrd \
 	grbpntr/grbpntr \

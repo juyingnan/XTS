@@ -138,7 +138,7 @@
 	"VSW5TESTSUITE CASE FreePixmap 3"
 	/tset/Xproto/FreePixmap/FreePixmap
 	"VSW5TESTSUITE CASE GrabButton 3"
-	/tset/Xproto/grbbttn/grbbttn
+	/tset/Xproto/GrabButton/GrabButton
 	"VSW5TESTSUITE CASE GrabKey 3"
 	/tset/Xproto/grbky/grbky
 	"VSW5TESTSUITE CASE GrabKeyboard 3"

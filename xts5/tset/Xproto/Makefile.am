@@ -50,7 +50,7 @@ tprogs = \
 	ForceScreenSaver/ForceScreenSaver \
 	FreeGC/FreeGC \
 	FreePixmap/FreePixmap \
-	grbbttn/grbbttn \
+	GrabButton/GrabButton \
 	grbky/grbky \
 	grbkybrd/grbkybrd \
 	grbpntr/grbpntr \
