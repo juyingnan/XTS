@@ -991,7 +991,7 @@ XPeekIfEvent
 
 XPending
 	"VSW5TESTSUITE CASE XPending 3"
-	/tset/Xlib12/pndng/pndng
+	/tset/Xlib12/XPending/XPending
 
 XPutBackEvent
 	"VSW5TESTSUITE CASE XPutBackEvent 2"

@@ -90,7 +90,7 @@
 	"VSW5TESTSUITE CASE XPeekIfEvent 4"
 	/tset/Xlib12/XPeekIfEvent/XPeekIfEvent
 	"VSW5TESTSUITE CASE XPending 3"
-	/tset/Xlib12/pndng/pndng
+	/tset/Xlib12/XPending/XPending
 	"VSW5TESTSUITE CASE XPutBackEvent 2"
 	/tset/Xlib12/ptbckevnt/ptbckevnt
 	"VSW5TESTSUITE CASE XSelectInput 8"
