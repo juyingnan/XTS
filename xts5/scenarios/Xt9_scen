@@ -71,7 +71,7 @@
 	"VSW5TESTSUITE CASE XtRemoveGrab 2"
 	/tset/Xt9/trmgrab/trmgrab
 	"VSW5TESTSUITE CASE XtGrabKey 5"
-	/tset/Xt9/tgrabkey/tgrabkey
+	/tset/Xt9/XtGrabKey/XtGrabKey
 	"VSW5TESTSUITE CASE XtUngrabKey 2"
 	/tset/Xt9/tungrabky/tungrabky
 	"VSW5TESTSUITE CASE XtGrabKeyboard 2"
