@@ -1582,7 +1582,7 @@ XrmQGetSearchList
 
 XrmQGetSearchResource
 	"VSW5TESTSUITE CASE XrmQGetSearchResource 2"
-	/tset/Xlib16/rmqgtsrchr/rmqgtsrchr
+	/tset/Xlib16/XrmQGetSearchResource/XrmQGetSearchResource
 
 XrmQPutResource
 	"VSW5TESTSUITE CASE XrmQPutResource 3"
