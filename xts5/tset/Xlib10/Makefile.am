@@ -18,7 +18,7 @@ tprogs = \
 	XEnableAccessControl/XEnableAccessControl \
 	XForceScreenSaver/XForceScreenSaver \
 	GrabServer/GrabServer \
-	GetScreenSaver/GetScreenSaver \
+	XGetScreenSaver/XGetScreenSaver \
 	InstallColormap/InstallColormap \
 	KillClient/KillClient \
 	ListHosts/ListHosts \

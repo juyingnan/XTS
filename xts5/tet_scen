@@ -730,7 +730,7 @@ XGrabServer
 
 XGetScreenSaver
 	"VSW5TESTSUITE CASE XGetScreenSaver 1"
-	/tset/Xlib10/GetScreenSaver/GetScreenSaver
+	/tset/Xlib10/XGetScreenSaver/XGetScreenSaver
 
 XInstallColormap
 	"VSW5TESTSUITE CASE XInstallColormap 6"
@@ -3338,7 +3338,7 @@ pGetProperty
 
 pGetScreenSaver
 	"VSW5TESTSUITE CASE GetScreenSaver 3"
-	/tset/Xproto/GetScreenSaver/GetScreenSaver
+	/tset/Xproto/XGetScreenSaver/XGetScreenSaver
 
 pGetSelectionOwner
 	"VSW5TESTSUITE CASE GetSelectionOwner 3"

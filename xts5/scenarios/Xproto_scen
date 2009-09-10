@@ -172,7 +172,7 @@
 	"VSW5TESTSUITE CASE GetProperty 3"
 	/tset/Xproto/GetProperty/GetProperty
 	"VSW5TESTSUITE CASE GetScreenSaver 3"
-	/tset/Xproto/GetScreenSaver/GetScreenSaver
+	/tset/Xproto/XGetScreenSaver/XGetScreenSaver
 	"VSW5TESTSUITE CASE GetSelectionOwner 3"
 	/tset/Xproto/GetSelectionOwner/GetSelectionOwner
 	"VSW5TESTSUITE CASE GetWindowAttributes 3"
