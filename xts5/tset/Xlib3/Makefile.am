@@ -54,7 +54,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XOpenDisplay/XOpenDisplay \
 	XPlanesOfScreen/XPlanesOfScreen XPlanesOfScreen/XPlanesOfScreen_m \
 	XProtocolRevision/XProtocolRevision XProtocolRevision/XProtocolRevision_m \
-	prtclvrsn/prtclvrsn prtclvrsn/prtclvrsn_m \
+	XProtocolVersion/XProtocolVersion XProtocolVersion/XProtocolVersion_m \
 	qlngth/qlngth qlngth/qlngth_m \
 	rtwdw/rtwdw rtwdw/rtwdw_m \
 	rtwdwofscr/rtwdwofscr rtwdwofscr/rtwdwofscr_m \

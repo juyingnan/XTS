@@ -2055,7 +2055,7 @@ XProtocolRevision
 
 XProtocolVersion
 	"VSW5TESTSUITE CASE XProtocolVersion 1"
-	/tset/Xlib3/prtclvrsn/prtclvrsn
+	/tset/Xlib3/XProtocolVersion/XProtocolVersion
 
 XQLength
 	"VSW5TESTSUITE CASE XQLength 1"
@@ -2263,7 +2263,7 @@ ProtocolRevision
 
 ProtocolVersion
 	"VSW5TESTSUITE CASE ProtocolVersion 1"
-	/tset/Xlib3/prtclvrsn/prtclvrsn_m
+	/tset/Xlib3/XProtocolVersion/XProtocolVersion_m
 
 QLength
 	"VSW5TESTSUITE CASE QLength 1"
