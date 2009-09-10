@@ -1224,7 +1224,7 @@ XLocaleOfFontSet
 
 XLocaleOfIM
 	"VSW5TESTSUITE CASE XLocaleOfIM 1"
-	/tset/Xlib14/lofim/lofim
+	/tset/Xlib14/XLocaleOfIM/XLocaleOfIM
 
 XmbDrawImageString
 	"VSW5TESTSUITE CASE XmbDrawImageString 1"

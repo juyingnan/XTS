@@ -25,7 +25,7 @@ tprogs = \
 	XGetIMValues/XGetIMValues \
 	XIMOfIC/XIMOfIC \
 	XLocaleOfFontSet/XLocaleOfFontSet \
-	lofim/lofim \
+	XLocaleOfIM/XLocaleOfIM \
 	mbdistr/mbdistr \
 	mbdstr/mbdstr \
 	mbdtext/mbdtext \
