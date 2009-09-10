@@ -1,7 +1,7 @@
 XrmCombineDatabase/XrmCombineDatabase
 XrmCombineFileDatabase/XrmCombineFileDatabase
 XrmDestroyDatabase/XrmDestroyDatabase
-rmedata/rmedata
+XrmEnumerateDatabase/XrmEnumerateDatabase
 rmgtdb/rmgtdb
 rmgtfldtbs/rmgtfldtbs
 rmgtrsrc/rmgtrsrc

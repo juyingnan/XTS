@@ -10,14 +10,14 @@ CLEANFILES = $(BUILT_SOURCES)
 
 XrmCombineDatabase_XrmCombineDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 XrmCombineFileDatabase_XrmCombineFileDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
-rmedata_rmedata_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
+XrmEnumerateDatabase_XrmEnumerateDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 rmpstoq_rmpstoq_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 
 tprogs = \
 	XrmCombineDatabase/XrmCombineDatabase \
 	XrmCombineFileDatabase/XrmCombineFileDatabase \
 	XrmDestroyDatabase/XrmDestroyDatabase \
-	rmedata/rmedata \
+	XrmEnumerateDatabase/XrmEnumerateDatabase \
 	rmgtdb/rmgtdb \
 	rmgtfldtbs/rmgtfldtbs \
 	rmgtrsrc/rmgtrsrc \
