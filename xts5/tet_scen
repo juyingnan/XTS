@@ -2378,7 +2378,7 @@ XMoveWindow
 
 XRestackWindows
 	"VSW5TESTSUITE CASE XRestackWindows 6"
-	/tset/Xlib4/rstckwdws/rstckwdws
+	/tset/Xlib4/XRestackWindows/XRestackWindows
 
 XRaiseWindow
 	"VSW5TESTSUITE CASE XRaiseWindow 4"
