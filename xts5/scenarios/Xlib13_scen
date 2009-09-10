@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE XDeleteModifiermapEntry 1"
 	/tset/Xlib13/XDeleteModifiermapEntry/XDeleteModifiermapEntry
 	"VSW5TESTSUITE CASE XDisplayKeycodes 3"
-	/tset/Xlib13/dsplykycds/dsplykycds
+	/tset/Xlib13/XDisplayKeycodes/XDisplayKeycodes
 	"VSW5TESTSUITE CASE XFreeModifiermap 1"
 	/tset/Xlib13/frmdfrmp/frmdfrmp
 	"VSW5TESTSUITE CASE XGrabButton 39"

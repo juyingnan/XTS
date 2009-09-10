@@ -18,7 +18,7 @@ tprogs = \
 	XChangeKeyboardMapping/XChangeKeyboardMapping \
 	XChangePointerControl/XChangePointerControl \
 	XDeleteModifiermapEntry/XDeleteModifiermapEntry \
-	dsplykycds/dsplykycds \
+	XDisplayKeycodes/XDisplayKeycodes \
 	frmdfrmp/frmdfrmp \
 	GrabButton/GrabButton \
 	GrabKey/GrabKey \

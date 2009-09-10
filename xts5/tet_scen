@@ -1070,7 +1070,7 @@ XDeleteModifiermapEntry
 
 XDisplayKeycodes
 	"VSW5TESTSUITE CASE XDisplayKeycodes 3"
-	/tset/Xlib13/dsplykycds/dsplykycds
+	/tset/Xlib13/XDisplayKeycodes/XDisplayKeycodes
 
 XFreeModifiermap
 	"VSW5TESTSUITE CASE XFreeModifiermap 1"
