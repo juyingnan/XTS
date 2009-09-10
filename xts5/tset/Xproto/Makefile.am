@@ -84,7 +84,7 @@ tprogs = \
 	ListProperties/ListProperties \
 	MapSubwindows/MapSubwindows \
 	MapWindow/MapWindow \
-	noprtn/noprtn \
+	NoOperation/NoOperation \
 	opndsply/opndsply \
 	opnfnt/opnfnt \
 	plyarc/plyarc \

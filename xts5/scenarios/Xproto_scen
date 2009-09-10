@@ -206,7 +206,7 @@
 	"VSW5TESTSUITE CASE MapWindow 3"
 	/tset/Xproto/MapWindow/MapWindow
 	"VSW5TESTSUITE CASE NoOperation 4"
-	/tset/Xproto/noprtn/noprtn
+	/tset/Xproto/NoOperation/NoOperation
 	"VSW5TESTSUITE CASE OpenDisplay 2"
 	/tset/Xproto/opndsply/opndsply
 	"VSW5TESTSUITE CASE OpenFont 5"

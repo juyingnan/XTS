@@ -3406,7 +3406,7 @@ pMapWindow
 
 pNoOperation
 	"VSW5TESTSUITE CASE NoOperation 4"
-	/tset/Xproto/noprtn/noprtn
+	/tset/Xproto/NoOperation/NoOperation
 
 pOpenDisplay
 	"VSW5TESTSUITE CASE OpenDisplay 2"
