@@ -124,7 +124,7 @@
 	"VSW5TESTSUITE CASE Xpermalloc 2"
 	/tset/Xlib17/Xpermalloc/Xpermalloc
 	"VSW5TESTSUITE CASE XParseGeometry 3"
-	/tset/Xlib17/prsgmtry/prsgmtry
+	/tset/Xlib17/XParseGeometry/XParseGeometry
 	"VSW5TESTSUITE CASE XPutPixel 1"
 	/tset/Xlib17/ptpxl/ptpxl
 	"VSW5TESTSUITE CASE XRebindKeysym 2"

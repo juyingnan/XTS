@@ -43,7 +43,7 @@ tprogs = \
 	XPolygonRegion/XPolygonRegion \
 	XPointInRegion/XPointInRegion \
 	Xpermalloc/Xpermalloc \
-	prsgmtry/prsgmtry \
+	XParseGeometry/XParseGeometry \
 	ptpxl/ptpxl \
 	rbndkysym/rbndkysym \
 	rctinrgn/rctinrgn \

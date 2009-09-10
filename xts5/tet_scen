@@ -1788,7 +1788,7 @@ Xpermalloc
 
 XParseGeometry
 	"VSW5TESTSUITE CASE XParseGeometry 3"
-	/tset/Xlib17/prsgmtry/prsgmtry
+	/tset/Xlib17/XParseGeometry/XParseGeometry
 
 XPutPixel
 	"VSW5TESTSUITE CASE XPutPixel 1"
