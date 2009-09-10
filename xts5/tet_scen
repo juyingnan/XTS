@@ -1150,7 +1150,7 @@ XUngrabKey
 
 XUngrabKeyboard
 	"VSW5TESTSUITE CASE XUngrabKeyboard 3"
-	/tset/Xlib13/UngrabKeyboard/UngrabKeyboard
+	/tset/Xlib13/XUngrabKeyboard/XUngrabKeyboard
 
 XUngrabPointer
 	"VSW5TESTSUITE CASE XUngrabPointer 3"
@@ -3566,7 +3566,7 @@ pUngrabKey
 
 pUngrabKeyboard
 	"VSW5TESTSUITE CASE UngrabKeyboard 3"
-	/tset/Xproto/UngrabKeyboard/UngrabKeyboard
+	/tset/Xproto/XUngrabKeyboard/XUngrabKeyboard
 
 pUngrabPointer
 	"VSW5TESTSUITE CASE UngrabPointer 3"

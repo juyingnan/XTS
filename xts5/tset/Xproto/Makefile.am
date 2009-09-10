@@ -124,7 +124,7 @@ tprogs = \
 	TranslateCoords/TranslateCoords \
 	XUngrabButton/XUngrabButton \
 	XUngrabKey/XUngrabKey \
-	UngrabKeyboard/UngrabKeyboard \
+	XUngrabKeyboard/XUngrabKeyboard \
 	UngrabPointer/UngrabPointer \
 	XUngrabServer/XUngrabServer \
 	UnmapSubwindows/UnmapSubwindows \

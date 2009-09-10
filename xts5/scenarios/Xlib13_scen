@@ -114,7 +114,7 @@
 	"VSW5TESTSUITE CASE XUngrabKey 7"
 	/tset/Xlib13/XUngrabKey/XUngrabKey
 	"VSW5TESTSUITE CASE XUngrabKeyboard 3"
-	/tset/Xlib13/UngrabKeyboard/UngrabKeyboard
+	/tset/Xlib13/XUngrabKeyboard/XUngrabKeyboard
 	"VSW5TESTSUITE CASE XUngrabPointer 3"
 	/tset/Xlib13/UngrabPointer/UngrabPointer
 	"VSW5TESTSUITE CASE XWarpPointer 9"
