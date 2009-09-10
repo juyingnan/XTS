@@ -578,7 +578,7 @@ XGetDeviceKeyMapping
 
 XGetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XGetDeviceModifierMapping 4"
-	/tset/XI/gtdvmmap/gtdvmmap
+	/tset/XI/XGetDeviceModifierMapping/XGetDeviceModifierMapping
 
 XGetDeviceMotionEvents
 	"VSW5TESTSUITE CASE XGetDeviceMotionEvents 9"

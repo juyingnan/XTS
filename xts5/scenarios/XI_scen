@@ -94,7 +94,7 @@
 	"VSW5TESTSUITE CASE XGetDeviceKeyMapping 10"
 	/tset/XI/XGetDeviceKeyMapping/XGetDeviceKeyMapping
 	"VSW5TESTSUITE CASE XGetDeviceModifierMapping 4"
-	/tset/XI/gtdvmmap/gtdvmmap
+	/tset/XI/XGetDeviceModifierMapping/XGetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XGetDeviceMotionEvents 9"
 	/tset/XI/gtdvmtnev/gtdvmtnev
 	"VSW5TESTSUITE CASE XGetSelectedExtensionEvents 2"
