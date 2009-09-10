@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE CloseDevice 3"
 	/tset/XIproto/CloseDevice/CloseDevice
 	"VSW5TESTSUITE CASE DeviceBell 3"
-	/tset/XIproto/XDeviceBell/XDeviceBell
+	/tset/XIproto/DeviceBell/DeviceBell
 	"VSW5TESTSUITE CASE GetDeviceModifierMapping 3"
 	/tset/XIproto/GetDeviceModifierMapping/GetDeviceModifierMapping
 	"VSW5TESTSUITE CASE GetFeedbackControl 3"

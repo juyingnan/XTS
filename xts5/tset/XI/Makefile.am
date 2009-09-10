@@ -17,7 +17,7 @@ tprogs = \
 	ChangePointerDevice/ChangePointerDevice \
 	ChangeDeviceKeyMapping/ChangeDeviceKeyMapping \
 	CloseDevice/CloseDevice \
-	XDeviceBell/XDeviceBell \
+	DeviceBell/DeviceBell \
 	XGetDeviceControl/XGetDeviceControl \
 	XGetFeedbackControl/XGetFeedbackControl \
 	XGetDeviceFocus/XGetDeviceFocus \
