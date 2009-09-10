@@ -103,7 +103,7 @@
 	"VSW5TESTSUITE CASE XtLastTimestampProcessed 2"
 	/tset/Xt13/tltmsproc/tltmsproc
 	"VSW5TESTSUITE CASE XtAddExposureToRegion 3"
-	/tset/Xt13/tadexptor/tadexptor
+	/tset/Xt13/XtAddExposureToRegion/XtAddExposureToRegion
 	"VSW5TESTSUITE CASE XtTranslateCoords 1"
 	/tset/Xt13/ttranslcd/ttranslcd
 	"VSW5TESTSUITE CASE XtWindowToWidget 2"

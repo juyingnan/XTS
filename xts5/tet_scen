@@ -4545,7 +4545,7 @@ XtLastTimestampProcessed
 
 XtAddExposureToRegion
 	"VSW5TESTSUITE CASE XtAddExposureToRegion 3"
-	/tset/Xt13/tadexptor/tadexptor
+	/tset/Xt13/XtAddExposureToRegion/XtAddExposureToRegion
 
 XtTranslateCoords
 	"VSW5TESTSUITE CASE XtTranslateCoords 1"
