@@ -792,7 +792,7 @@ ButtonPress
 
 ButtonRelease
 	"VSW5TESTSUITE CASE ButtonRelease 9"
-	/tset/Xlib11/bttnrls/bttnrls
+	/tset/Xlib11/ButtonRelease/ButtonRelease
 
 ClientMessage
 	"VSW5TESTSUITE CASE ClientMessage 1"

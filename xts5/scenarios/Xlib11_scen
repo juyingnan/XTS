@@ -58,7 +58,7 @@
 	"VSW5TESTSUITE CASE ButtonPress 12"
 	/tset/Xlib11/ButtonPress/ButtonPress
 	"VSW5TESTSUITE CASE ButtonRelease 9"
-	/tset/Xlib11/bttnrls/bttnrls
+	/tset/Xlib11/ButtonRelease/ButtonRelease
 	"VSW5TESTSUITE CASE ClientMessage 1"
 	/tset/Xlib11/clntmssg/clntmssg
 	"VSW5TESTSUITE CASE ColormapNotify 2"
