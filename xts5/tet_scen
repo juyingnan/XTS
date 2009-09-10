@@ -1848,7 +1848,7 @@ XSaveContext
 
 XUnionRectWithRegion
 	"VSW5TESTSUITE CASE XUnionRectWithRegion 1"
-	/tset/Xlib17/unnrctwthr/unnrctwthr
+	/tset/Xlib17/XUnionRectWithRegion/XUnionRectWithRegion
 
 XUnionRegion
 	"VSW5TESTSUITE CASE XUnionRegion 1"

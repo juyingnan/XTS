@@ -58,7 +58,7 @@ tprogs = \
 	XSetRegion/XSetRegion \
 	XStringToKeysym/XStringToKeysym \
 	XSaveContext/XSaveContext \
-	unnrctwthr/unnrctwthr \
+	XUnionRectWithRegion/XUnionRectWithRegion \
 	unnrgn/unnrgn \
 	unqcntxt/unqcntxt \
 	wmgmtry/wmgmtry \

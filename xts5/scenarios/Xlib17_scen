@@ -154,7 +154,7 @@
 	"VSW5TESTSUITE CASE XSaveContext 3"
 	/tset/Xlib17/XSaveContext/XSaveContext
 	"VSW5TESTSUITE CASE XUnionRectWithRegion 1"
-	/tset/Xlib17/unnrctwthr/unnrctwthr
+	/tset/Xlib17/XUnionRectWithRegion/XUnionRectWithRegion
 	"VSW5TESTSUITE CASE XUnionRegion 1"
 	/tset/Xlib17/unnrgn/unnrgn
 	"VSW5TESTSUITE CASE XUniqueContext 1"
