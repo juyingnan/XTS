@@ -19,7 +19,7 @@ tprogs = \
 	CirculateRequest/CirculateRequest \
 	CreateNotify/CreateNotify \
 	DestroyNotify/DestroyNotify \
-	entrntfy/entrntfy \
+	EnterNotify/EnterNotify \
 	exps/exps \
 	fcsin/fcsin \
 	fcsot/fcsot \

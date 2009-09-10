@@ -828,7 +828,7 @@ DestroyNotify
 
 EnterNotify
 	"VSW5TESTSUITE CASE EnterNotify 13"
-	/tset/Xlib11/entrntfy/entrntfy
+	/tset/Xlib11/EnterNotify/EnterNotify
 
 Expose
 	"VSW5TESTSUITE CASE Expose 7"
