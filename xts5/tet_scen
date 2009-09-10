@@ -1332,7 +1332,7 @@ XwcTextListToTextProperty
 
 XwcTextPerCharExtents
 	"VSW5TESTSUITE CASE XwcTextPerCharExtents 1"
-	/tset/Xlib14/wctpcex/wctpcex
+	/tset/Xlib14/XwcTextPerCharExtents/XwcTextPerCharExtents
 
 XwcTextPropertyToTextList
 	"VSW5TESTSUITE CASE XwcTextPropertyToTextList 1"
