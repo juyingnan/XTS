@@ -1066,7 +1066,7 @@ XChangePointerControl
 
 XDeleteModifiermapEntry
 	"VSW5TESTSUITE CASE XDeleteModifiermapEntry 1"
-	/tset/Xlib13/dltmdfrmpe/dltmdfrmpe
+	/tset/Xlib13/XDeleteModifiermapEntry/XDeleteModifiermapEntry
 
 XDisplayKeycodes
 	"VSW5TESTSUITE CASE XDisplayKeycodes 3"

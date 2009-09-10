@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XChangePointerControl 11"
 	/tset/Xlib13/XChangePointerControl/XChangePointerControl
 	"VSW5TESTSUITE CASE XDeleteModifiermapEntry 1"
-	/tset/Xlib13/dltmdfrmpe/dltmdfrmpe
+	/tset/Xlib13/XDeleteModifiermapEntry/XDeleteModifiermapEntry
 	"VSW5TESTSUITE CASE XDisplayKeycodes 3"
 	/tset/Xlib13/dsplykycds/dsplykycds
 	"VSW5TESTSUITE CASE XFreeModifiermap 1"
