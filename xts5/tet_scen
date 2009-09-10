@@ -4064,7 +4064,7 @@ XtAppAddWorkProc
 
 XtRemoveWorkProc
 	"VSW5TESTSUITE CASE XtRemoveWorkProc 2"
-	/tset/Xt9/trmwkproc/trmwkproc
+	/tset/Xt9/XtRemoveWorkProc/XtRemoveWorkProc
 
 XtAddEventHandler
 	"VSW5TESTSUITE CASE XtAddEventHandler 8"
