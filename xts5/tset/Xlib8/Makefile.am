@@ -39,5 +39,5 @@ tprogs = \
 	XSetSubwindowMode/XSetSubwindowMode \
 	XSetStipple/XSetStipple \
 	XSetState/XSetState \
-	sttl/sttl \
+	XSetTile/XSetTile \
 	sttsorgn/sttsorgn

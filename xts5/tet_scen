@@ -2869,7 +2869,7 @@ XSetState
 
 XSetTile
 	"VSW5TESTSUITE CASE XSetTile 6"
-	/tset/Xlib8/sttl/sttl
+	/tset/Xlib8/XSetTile/XSetTile
 
 XSetTSOrigin
 	"VSW5TESTSUITE CASE XSetTSOrigin 3"

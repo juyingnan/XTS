@@ -108,7 +108,7 @@
 	"VSW5TESTSUITE CASE XSetState 4"
 	/tset/Xlib8/XSetState/XSetState
 	"VSW5TESTSUITE CASE XSetTile 6"
-	/tset/Xlib8/sttl/sttl
+	/tset/Xlib8/XSetTile/XSetTile
 	"VSW5TESTSUITE CASE XSetTSOrigin 3"
 	/tset/Xlib8/sttsorgn/sttsorgn
 	"VSW5TESTSUITE CASE XFlushGC 2"
