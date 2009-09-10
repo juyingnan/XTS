@@ -77,7 +77,7 @@
 	"VSW5TESTSUITE CASE XtIsRectObj 2"
 	/tset/Xt3/XtIsRectObject/XtIsRectObject
 	"VSW5TESTSUITE CASE XtIsWidget 2"
-	/tset/Xt3/tiswdgt/tiswdgt
+	/tset/Xt3/XtIsWidget/XtIsWidget
 	"VSW5TESTSUITE CASE XtIsComposite 2"
 	/tset/Xt3/XtIsComposite/XtIsComposite
 	"VSW5TESTSUITE CASE XtIsConstraint 2"
