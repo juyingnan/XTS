@@ -4245,7 +4245,7 @@ XtCvtStringToVisual
 
 XtCvtColorToPixel
 	"VSW5TESTSUITE CASE XtCvtColorToPixel 3"
-	/tset/Xt11/tccolpix/tccolpix
+	/tset/Xt11/XtCvtColorToPixel/XtCvtColorToPixel
 
 XtCvtIntToBoolean
 	"VSW5TESTSUITE CASE XtCvtIntToBoolean 3"

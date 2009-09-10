@@ -115,7 +115,7 @@
 	"VSW5TESTSUITE CASE XtCvtStringToVisual 5"
 	/tset/Xt11/tcstvis/tcstvis
 	"VSW5TESTSUITE CASE XtCvtColorToPixel 3"
-	/tset/Xt11/tccolpix/tccolpix
+	/tset/Xt11/XtCvtColorToPixel/XtCvtColorToPixel
 	"VSW5TESTSUITE CASE XtCvtIntToBoolean 3"
 	/tset/Xt11/tcinboln/tcinboln
 	"VSW5TESTSUITE CASE XtCvtIntToBool 3"
