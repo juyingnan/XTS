@@ -23,7 +23,7 @@ tprogs = \
 	XGrabButton/XGrabButton \
 	XGrabKey/XGrabKey \
 	XGrabKeyboard/XGrabKeyboard \
-	GrabPointer/GrabPointer \
+	XGrabPointer/XGrabPointer \
 	XGetInputFocus/XGetInputFocus \
 	XGetKeyboardControl/XGetKeyboardControl \
 	XGetKeyboardMapping/XGetKeyboardMapping \
