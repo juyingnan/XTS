@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE keysym 7"
 	/tset/Xopen/keysym/keysym
 	"VSW5TESTSUITE CASE keysymdef 15"
-	/tset/Xopen/kysymdf/kysymdf
+	/tset/Xopen/keysymdef/keysymdef
 	"VSW5TESTSUITE CASE XKeysymToKeycode 14"
 	/tset/Xopen/kysymtkycd/kysymtkycd
 	"VSW5TESTSUITE CASE XLookupColor 7"

@@ -2,7 +2,7 @@ XAllocNamedColor/XAllocNamedColor
 cursorfont/cursorfont
 XCreateFontCursor/XCreateFontCursor
 keysym/keysym
-kysymdf/kysymdf
+keysymdef/keysymdef
 kysymtkycd/kysymtkycd
 LookupColor/LookupColor
 strtkysym/strtkysym

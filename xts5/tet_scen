@@ -3087,7 +3087,7 @@ xkeysym
 
 xkeysymdef
 	"VSW5TESTSUITE CASE keysymdef 15"
-	/tset/Xopen/kysymdf/kysymdf
+	/tset/Xopen/keysymdef/keysymdef
 
 xXKeysymToKeycode
 	"VSW5TESTSUITE CASE XKeysymToKeycode 14"

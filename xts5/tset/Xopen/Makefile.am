@@ -13,7 +13,7 @@ tprogs = \
 	cursorfont/cursorfont \
 	XCreateFontCursor/XCreateFontCursor \
 	keysym/keysym \
-	kysymdf/kysymdf \
+	keysymdef/keysymdef \
 	kysymtkycd/kysymtkycd \
 	LookupColor/LookupColor \
 	strtkysym/strtkysym
@@ -28,23 +28,23 @@ keysym_keysym_SOURCES = \
 	keysym/TestG.c \
 	keysym/TestM.c
 
-kysymdf_kysymdf_SOURCES = \
-	kysymdf/kysymdf.c \
-	kysymdf/Test0.c \
-	kysymdf/Test1.c \
-	kysymdf/Test2.c \
-	kysymdf/Test3.c \
-	kysymdf/Test4.c \
-	kysymdf/TestA.c \
-	kysymdf/TestC.c \
-	kysymdf/TestG.c \
-	kysymdf/TestH.c \
-	kysymdf/TestK.c \
-	kysymdf/TestL.c \
-	kysymdf/TestM.c \
-	kysymdf/TestP.c \
-	kysymdf/TestS.c \
-	kysymdf/TestT.c
+keysymdef_keysymdef_SOURCES = \
+	keysymdef/keysymdef.c \
+	keysymdef/Test0.c \
+	keysymdef/Test1.c \
+	keysymdef/Test2.c \
+	keysymdef/Test3.c \
+	keysymdef/Test4.c \
+	keysymdef/TestA.c \
+	keysymdef/TestC.c \
+	keysymdef/TestG.c \
+	keysymdef/TestH.c \
+	keysymdef/TestK.c \
+	keysymdef/TestL.c \
+	keysymdef/TestM.c \
+	keysymdef/TestP.c \
+	keysymdef/TestS.c \
+	keysymdef/TestT.c
 
 kysymtkycd_kysymtkycd_SOURCES = \
 	kysymtkycd/kysymtkycd.c \
