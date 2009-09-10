@@ -13,7 +13,7 @@ flushgc_flushgc_LDADD = $(TCM) $(XTS_LLIBS) $(XTS_LIBS) \
 
 tprogs = \
 	ChangeGC/ChangeGC \
-	cpygc/cpygc \
+	CopyGC/CopyGC \
 	crtgc/crtgc \
 	flushgc/flushgc \
 	frgc/frgc \

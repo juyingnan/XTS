@@ -31,7 +31,7 @@ tprogs = \
 	ConvertSelection/ConvertSelection \
 	CopyArea/CopyArea \
 	CopyColormapAndFree/CopyColormapAndFree \
-	cpygc/cpygc \
+	CopyGC/CopyGC \
 	cpypln/cpypln \
 	crcltwdw/crcltwdw \
 	crtclrmp/crtclrmp \
