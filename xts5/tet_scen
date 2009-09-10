@@ -3980,7 +3980,7 @@ XtRemoveTimeOut
 
 XtAddGrab
 	"VSW5TESTSUITE CASE XtAddGrab 5"
-	/tset/Xt9/taddgrab/taddgrab
+	/tset/Xt9/XtAddGrab/XtAddGrab
 
 XtRemoveGrab
 	"VSW5TESTSUITE CASE XtRemoveGrab 2"
