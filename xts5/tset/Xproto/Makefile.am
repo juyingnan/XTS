@@ -15,7 +15,7 @@ tprogs = \
 	XAllocNamedColor/XAllocNamedColor \
 	XAllowEvents/XAllowEvents \
 	BadRequest/BadRequest \
-	Bell/Bell \
+	XBell/XBell \
 	ChangeActivePointerGrab/ChangeActivePointerGrab \
 	ChangeGC/ChangeGC \
 	ChangeHosts/ChangeHosts \

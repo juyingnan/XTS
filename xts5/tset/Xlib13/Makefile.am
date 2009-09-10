@@ -12,7 +12,7 @@ tprogs = \
 	XAllowEvents/XAllowEvents \
 	XAutoRepeatOff/XAutoRepeatOff \
 	XAutoRepeatOn/XAutoRepeatOn \
-	Bell/Bell \
+	XBell/XBell \
 	ChangeActivePointerGrab/ChangeActivePointerGrab \
 	ChangeKeyboardControl/ChangeKeyboardControl \
 	ChangeKeyboardMapping/ChangeKeyboardMapping \
