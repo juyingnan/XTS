@@ -4517,7 +4517,7 @@ XtGetSelectionValue
 
 XtGetSelectionValues
 	"VSW5TESTSUITE CASE XtGetSelectionValues 5"
-	/tset/Xt13/tgtslvals/tgtslvals
+	/tset/Xt13/XtGetSelectionValues/XtGetSelectionValues
 
 XtOwnSelection
 	"VSW5TESTSUITE CASE XtOwnSelection 8"
