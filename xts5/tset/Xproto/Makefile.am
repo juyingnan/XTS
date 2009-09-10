@@ -39,7 +39,7 @@ tprogs = \
 	CreateGC/CreateGC \
 	CreateGlyphCursor/CreateGlyphCursor \
 	CreatePixmap/CreatePixmap \
-	crtwdw/crtwdw \
+	CreateWindow/CreateWindow \
 	dltprprty/dltprprty \
 	dstrysbws/dstrysbws \
 	dstrywdw/dstrywdw \

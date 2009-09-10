@@ -116,7 +116,7 @@
 	"VSW5TESTSUITE CASE CreatePixmap 5"
 	/tset/Xproto/CreatePixmap/CreatePixmap
 	"VSW5TESTSUITE CASE CreateWindow 6"
-	/tset/Xproto/crtwdw/crtwdw
+	/tset/Xproto/CreateWindow/CreateWindow
 	"VSW5TESTSUITE CASE DeleteProperty 3"
 	/tset/Xproto/dltprprty/dltprprty
 	"VSW5TESTSUITE CASE DestroySubwindows 3"

@@ -15,7 +15,7 @@ tprogs = \
 	crcltsbwsd/crcltsbwsd \
 	crcltsbwsu/crcltsbwsu \
 	crtsmplwdw/crtsmplwdw \
-	crtwdw/crtwdw \
+	CreateWindow/CreateWindow \
 	dfncrsr/dfncrsr \
 	dstrysbws/dstrysbws \
 	dstrywdw/dstrywdw \

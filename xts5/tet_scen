@@ -2338,7 +2338,7 @@ XCreateSimpleWindow
 
 XCreateWindow
 	"VSW5TESTSUITE CASE XCreateWindow 49"
-	/tset/Xlib4/crtwdw/crtwdw
+	/tset/Xlib4/CreateWindow/CreateWindow
 
 XDefineCursor
 	"VSW5TESTSUITE CASE XDefineCursor 6"
@@ -3226,7 +3226,7 @@ pCreatePixmap
 
 pCreateWindow
 	"VSW5TESTSUITE CASE CreateWindow 6"
-	/tset/Xproto/crtwdw/crtwdw
+	/tset/Xproto/CreateWindow/CreateWindow
 
 pDeleteProperty
 	"VSW5TESTSUITE CASE DeleteProperty 3"
