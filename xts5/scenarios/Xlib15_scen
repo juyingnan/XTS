@@ -134,7 +134,7 @@
 	"VSW5TESTSUITE CASE XSetWMNormalHints 3"
 	/tset/Xlib15/XSetWMNormalHints/XSetWMNormalHints
 	"VSW5TESTSUITE CASE XSetWMProperties 10"
-	/tset/Xlib15/stwmprprts/stwmprprts
+	/tset/Xlib15/XSetWMProperties/XSetWMProperties
 	"VSW5TESTSUITE CASE XSetWMProtocols 4"
 	/tset/Xlib15/stwmprtcls/stwmprtcls
 	"VSW5TESTSUITE CASE XSetWMSizeHints 4"

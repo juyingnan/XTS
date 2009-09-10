@@ -51,7 +51,7 @@ tprogs = \
 	XSetWMIconName/XSetWMIconName \
 	XSetWMName/XSetWMName \
 	XSetWMNormalHints/XSetWMNormalHints \
-	stwmprprts/stwmprprts \
+	XSetWMProperties/XSetWMProperties \
 	stwmprtcls/stwmprtcls \
 	stwmszhnts/stwmszhnts \
 	txtprprtyt/txtprprtyt \
@@ -59,7 +59,7 @@ tprogs = \
 
 # Auxiliary programs run from tests
 check_PROGRAMS += \
-	stwmprprts/Test1 \
-	stwmprprts/Test2
-stwmprprts_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
-stwmprprts_Test2_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
+	XSetWMProperties/Test1 \
+	XSetWMProperties/Test2
+XSetWMProperties_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
+XSetWMProperties_Test2_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)

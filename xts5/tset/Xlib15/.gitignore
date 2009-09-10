@@ -38,7 +38,7 @@ XSetWMHints/XSetWMHints
 XSetWMIconName/XSetWMIconName
 XSetWMName/XSetWMName
 XSetWMNormalHints/XSetWMNormalHints
-stwmprprts/stwmprprts
+XSetWMProperties/XSetWMProperties
 stwmprprts/Test1
 stwmprprts/Test2
 stwmprtcls/stwmprtcls

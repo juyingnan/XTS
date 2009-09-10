@@ -1503,7 +1503,7 @@ XSetWMNormalHints
 
 XSetWMProperties
 	"VSW5TESTSUITE CASE XSetWMProperties 10"
-	/tset/Xlib15/stwmprprts/stwmprprts
+	/tset/Xlib15/XSetWMProperties/XSetWMProperties
 
 XSetWMProtocols
 	"VSW5TESTSUITE CASE XSetWMProtocols 4"
