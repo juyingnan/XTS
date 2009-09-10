@@ -58,7 +58,7 @@
 	"VSW5TESTSUITE CASE XAllocNamedColor 7"
 	/tset/Xopen/XAllocNamedColor/XAllocNamedColor
 	"VSW5TESTSUITE CASE cursorfont 32"
-	/tset/Xopen/crsrfnt/crsrfnt
+	/tset/Xopen/cursorfont/cursorfont
 	"VSW5TESTSUITE CASE XCreateFontCursor 31"
 	/tset/Xopen/crtfntcrsr/crtfntcrsr
 	"VSW5TESTSUITE CASE keysym 7"

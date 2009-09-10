@@ -10,7 +10,7 @@ CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
 	XAllocNamedColor/XAllocNamedColor \
-	crsrfnt/crsrfnt \
+	cursorfont/cursorfont \
 	crtfntcrsr/crtfntcrsr \
 	kysym/kysym \
 	kysymdf/kysymdf \

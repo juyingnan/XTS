@@ -3075,7 +3075,7 @@ xXAllocNamedColor
 
 xcursorfont
 	"VSW5TESTSUITE CASE cursorfont 32"
-	/tset/Xopen/crsrfnt/crsrfnt
+	/tset/Xopen/cursorfont/cursorfont
 
 xXCreateFontCursor
 	"VSW5TESTSUITE CASE XCreateFontCursor 31"
