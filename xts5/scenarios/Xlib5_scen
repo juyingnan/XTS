@@ -76,7 +76,7 @@
 	"VSW5TESTSUITE CASE XListProperties 3"
 	/tset/Xlib5/ListProperties/ListProperties
 	"VSW5TESTSUITE CASE XQueryPointer 6"
-	/tset/Xlib5/qrypntr/qrypntr
+	/tset/Xlib5/QueryPointer/QueryPointer
 	"VSW5TESTSUITE CASE XQueryTree 3"
 	/tset/Xlib5/qrytr/qrytr
 	"VSW5TESTSUITE CASE XRotateWindowProperties 6"

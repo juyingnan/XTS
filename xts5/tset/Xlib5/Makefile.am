@@ -19,7 +19,7 @@ tprogs = \
 	gtwdwprprt/gtwdwprprt \
 	InternAtom/InternAtom \
 	ListProperties/ListProperties \
-	qrypntr/qrypntr \
+	QueryPointer/QueryPointer \
 	qrytr/qrytr \
 	rttwdwprpr/rttwdwprpr \
 	stslctnown/stslctnown \

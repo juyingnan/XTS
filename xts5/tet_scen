@@ -2473,7 +2473,7 @@ XListProperties
 
 XQueryPointer
 	"VSW5TESTSUITE CASE XQueryPointer 6"
-	/tset/Xlib5/qrypntr/qrypntr
+	/tset/Xlib5/QueryPointer/QueryPointer
 
 XQueryTree
 	"VSW5TESTSUITE CASE XQueryTree 3"
@@ -3478,7 +3478,7 @@ pQueryKeymap
 
 pQueryPointer
 	"VSW5TESTSUITE CASE QueryPointer 3"
-	/tset/Xproto/qrypntr/qrypntr
+	/tset/Xproto/QueryPointer/QueryPointer
 
 pQueryTree
 	"VSW5TESTSUITE CASE QueryTree 3"
