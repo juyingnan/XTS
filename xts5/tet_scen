@@ -2555,7 +2555,7 @@ XCreateColormap
 
 XFreeColormap
 	"VSW5TESTSUITE CASE XFreeColormap 5"
-	/tset/Xlib7/frclrmp/frclrmp
+	/tset/Xlib7/FreeColormap/FreeColormap
 
 XFreeColors
 	"VSW5TESTSUITE CASE XFreeColors 9"
@@ -3246,7 +3246,7 @@ pFillPoly
 
 pFreeColormap
 	"VSW5TESTSUITE CASE FreeColormap 3"
-	/tset/Xproto/frclrmp/frclrmp
+	/tset/Xproto/FreeColormap/FreeColormap
 
 pFreeColors
 	"VSW5TESTSUITE CASE FreeColors 3"

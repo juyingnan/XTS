@@ -59,7 +59,7 @@ tprogs = \
 	cmswpt/cmswpt \
 	CopyColormapAndFree/CopyColormapAndFree \
 	CreateColormap/CreateColormap \
-	frclrmp/frclrmp \
+	FreeColormap/FreeColormap \
 	frclrs/frclrs \
 	lkpclr/lkpclr \
 	prsclr/prsclr \
