@@ -58,7 +58,7 @@
 	"VSW5TESTSUITE CASE XAllowEvents 29"
 	/tset/Xlib13/XAllowEvents/XAllowEvents
 	"VSW5TESTSUITE CASE XAutoRepeatOff 1"
-	/tset/Xlib13/atrptoff/atrptoff
+	/tset/Xlib13/XAutoRepeatOff/XAutoRepeatOff
 	"VSW5TESTSUITE CASE XAutoRepeatOn 1"
 	/tset/Xlib13/atrpton/atrpton
 	"VSW5TESTSUITE CASE XBell 3"

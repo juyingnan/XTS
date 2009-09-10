@@ -10,7 +10,7 @@ CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
 	XAllowEvents/XAllowEvents \
-	atrptoff/atrptoff \
+	XAutoRepeatOff/XAutoRepeatOff \
 	atrpton/atrpton \
 	Bell/Bell \
 	ChangeActivePointerGrab/ChangeActivePointerGrab \

@@ -1038,7 +1038,7 @@ XAllowEvents
 
 XAutoRepeatOff
 	"VSW5TESTSUITE CASE XAutoRepeatOff 1"
-	/tset/Xlib13/atrptoff/atrptoff
+	/tset/Xlib13/XAutoRepeatOff/XAutoRepeatOff
 
 XAutoRepeatOn
 	"VSW5TESTSUITE CASE XAutoRepeatOn 1"
