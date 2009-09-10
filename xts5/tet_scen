@@ -2865,7 +2865,7 @@ XSetStipple
 
 XSetState
 	"VSW5TESTSUITE CASE XSetState 4"
-	/tset/Xlib8/ststt/ststt
+	/tset/Xlib8/XSetState/XSetState
 
 XSetTile
 	"VSW5TESTSUITE CASE XSetTile 6"

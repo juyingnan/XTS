@@ -106,7 +106,7 @@
 	"VSW5TESTSUITE CASE XSetStipple 6"
 	/tset/Xlib8/XSetStipple/XSetStipple
 	"VSW5TESTSUITE CASE XSetState 4"
-	/tset/Xlib8/ststt/ststt
+	/tset/Xlib8/XSetState/XSetState
 	"VSW5TESTSUITE CASE XSetTile 6"
 	/tset/Xlib8/sttl/sttl
 	"VSW5TESTSUITE CASE XSetTSOrigin 3"
