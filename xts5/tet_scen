@@ -4667,7 +4667,7 @@ XtAddInput
 
 XtAddTimeOut
 	"VSW5TESTSUITE CASE XtAddTimeOut 2"
-	/tset/XtC/taddtmout/taddtmout
+	/tset/XtC/XtAddTimeOut/XtAddTimeOut
 
 XtAddWorkProc
 	"VSW5TESTSUITE CASE XtAddWorkProc 5"

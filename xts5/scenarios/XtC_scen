@@ -77,7 +77,7 @@
 	"VSW5TESTSUITE CASE XtAddInput 5"
 	/tset/XtC/XtAddInput/XtAddInput
 	"VSW5TESTSUITE CASE XtAddTimeOut 2"
-	/tset/XtC/taddtmout/taddtmout
+	/tset/XtC/XtAddTimeOut/XtAddTimeOut
 	"VSW5TESTSUITE CASE XtAddWorkProc 5"
 	/tset/XtC/tadwkproc/tadwkproc
 	"VSW5TESTSUITE CASE XtCreateApplicationShell 7"
