@@ -106,7 +106,7 @@
 	"VSW5TESTSUITE CASE NoExpose 1"
 	/tset/Xlib11/NoExpose/NoExpose
 	"VSW5TESTSUITE CASE PropertyNotify 2"
-	/tset/Xlib11/prprtyntfy/prprtyntfy
+	/tset/Xlib11/PropertyNotify/PropertyNotify
 	"VSW5TESTSUITE CASE ReparentNotify 4"
 	/tset/Xlib11/rprntntfy/rprntntfy
 	"VSW5TESTSUITE CASE ResizeRequest 2"

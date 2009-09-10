@@ -34,7 +34,7 @@ tprogs = \
 	MapRequest/MapRequest \
 	MotionNotify/MotionNotify \
 	NoExpose/NoExpose \
-	prprtyntfy/prprtyntfy \
+	PropertyNotify/PropertyNotify \
 	rprntntfy/rprntntfy \
 	rszrqst/rszrqst \
 	slctnclr/slctnclr \

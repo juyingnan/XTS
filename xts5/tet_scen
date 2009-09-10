@@ -888,7 +888,7 @@ NoExpose
 
 PropertyNotify
 	"VSW5TESTSUITE CASE PropertyNotify 2"
-	/tset/Xlib11/prprtyntfy/prprtyntfy
+	/tset/Xlib11/PropertyNotify/PropertyNotify
 
 ReparentNotify
 	"VSW5TESTSUITE CASE ReparentNotify 4"
