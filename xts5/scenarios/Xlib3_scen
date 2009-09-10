@@ -76,7 +76,7 @@
 	"VSW5TESTSUITE CASE XDefaultColormap 1"
 	/tset/Xlib3/XDefaultColormap/XDefaultColormap
 	"VSW5TESTSUITE CASE XDefaultColormapOfScreen 1"
-	/tset/Xlib3/dfltclrmpo/dfltclrmpo
+	/tset/Xlib3/XDefaultColormapOfScreen/XDefaultColormapOfScreen
 	"VSW5TESTSUITE CASE XDefaultDepth 1"
 	/tset/Xlib3/dfltdpth/dfltdpth
 	"VSW5TESTSUITE CASE XDefaultDepthOfScreen 1"
@@ -190,7 +190,7 @@
 	"VSW5TESTSUITE CASE DefaultColormap 1"
 	/tset/Xlib3/XDefaultColormap/XDefaultColormap_m
 	"VSW5TESTSUITE CASE DefaultColormapOfScreen 1"
-	/tset/Xlib3/dfltclrmpo/dfltclrmpo_m
+	/tset/Xlib3/XDefaultColormapOfScreen/XDefaultColormapOfScreen_m
 	"VSW5TESTSUITE CASE DefaultDepth 1"
 	/tset/Xlib3/dfltdpth/dfltdpth_m
 	"VSW5TESTSUITE CASE DefaultDepthOfScreen 1"

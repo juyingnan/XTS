@@ -19,7 +19,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XCloseDisplay/XCloseDisplay \
 	XConnectionNumber/XConnectionNumber XConnectionNumber/XConnectionNumber_m \
 	XDefaultColormap/XDefaultColormap XDefaultColormap/XDefaultColormap_m \
-	dfltclrmpo/dfltclrmpo dfltclrmpo/dfltclrmpo_m \
+	XDefaultColormapOfScreen/XDefaultColormapOfScreen XDefaultColormapOfScreen/XDefaultColormapOfScreen_m \
 	dfltdpth/dfltdpth dfltdpth/dfltdpth_m \
 	dfltdpthof/dfltdpthof dfltdpthof/dfltdpthof_m \
 	dfltgc/dfltgc dfltgc/dfltgc_m \
