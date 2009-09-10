@@ -2063,7 +2063,7 @@ XQLength
 
 XRootWindow
 	"VSW5TESTSUITE CASE XRootWindow 1"
-	/tset/Xlib3/rtwdw/rtwdw
+	/tset/Xlib3/XRootWindow/XRootWindow
 
 XRootWindowOfScreen
 	"VSW5TESTSUITE CASE XRootWindowOfScreen 1"
@@ -2271,7 +2271,7 @@ QLength
 
 RootWindow
 	"VSW5TESTSUITE CASE RootWindow 1"
-	/tset/Xlib3/rtwdw/rtwdw_m
+	/tset/Xlib3/XRootWindow/XRootWindow_m
 
 RootWindowOfScreen
 	"VSW5TESTSUITE CASE RootWindowOfScreen 1"

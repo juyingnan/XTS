@@ -150,7 +150,7 @@
 	"VSW5TESTSUITE CASE XQLength 1"
 	/tset/Xlib3/XQLength/XQLength
 	"VSW5TESTSUITE CASE XRootWindow 1"
-	/tset/Xlib3/rtwdw/rtwdw
+	/tset/Xlib3/XRootWindow/XRootWindow
 	"VSW5TESTSUITE CASE XRootWindowOfScreen 1"
 	/tset/Xlib3/rtwdwofscr/rtwdwofscr
 	"VSW5TESTSUITE CASE XScreenCount 1"
@@ -254,7 +254,7 @@
 	"VSW5TESTSUITE CASE QLength 1"
 	/tset/Xlib3/XQLength/XQLength_m
 	"VSW5TESTSUITE CASE RootWindow 1"
-	/tset/Xlib3/rtwdw/rtwdw_m
+	/tset/Xlib3/XRootWindow/XRootWindow_m
 	"VSW5TESTSUITE CASE RootWindowOfScreen 1"
 	/tset/Xlib3/rtwdwofscr/rtwdwofscr_m
 	"VSW5TESTSUITE CASE ScreenCount 1"
