@@ -2346,7 +2346,7 @@ XDefineCursor
 
 XDestroySubwindows
 	"VSW5TESTSUITE CASE XDestroySubwindows 5"
-	/tset/Xlib4/dstrysbws/dstrysbws
+	/tset/Xlib4/DestroySubwindows/DestroySubwindows
 
 XDestroyWindow
 	"VSW5TESTSUITE CASE XDestroyWindow 6"
@@ -3234,7 +3234,7 @@ pDeleteProperty
 
 pDestroySubwindows
 	"VSW5TESTSUITE CASE DestroySubwindows 3"
-	/tset/Xproto/dstrysbws/dstrysbws
+	/tset/Xproto/DestroySubwindows/DestroySubwindows
 
 pDestroyWindow
 	"VSW5TESTSUITE CASE DestroyWindow 3"

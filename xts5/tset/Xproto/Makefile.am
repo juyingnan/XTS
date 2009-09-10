@@ -41,7 +41,7 @@ tprogs = \
 	CreatePixmap/CreatePixmap \
 	CreateWindow/CreateWindow \
 	DeleteProperty/DeleteProperty \
-	dstrysbws/dstrysbws \
+	DestroySubwindows/DestroySubwindows \
 	dstrywdw/dstrywdw \
 	fllply/fllply \
 	frclrmp/frclrmp \
