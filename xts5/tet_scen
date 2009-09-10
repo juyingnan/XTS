@@ -2623,7 +2623,7 @@ XcmsCIELabQueryMaxC
 
 XcmsCIELabQueryMaxL
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxL 1"
-	/tset/Xlib7/cmscieql/cmscieql
+	/tset/Xlib7/XcmsCIELabQueryMaxL/XcmsCIELabQueryMaxL
 
 XcmsConversionProc
 	"VSW5TESTSUITE CASE XcmsConversionProc 9"
