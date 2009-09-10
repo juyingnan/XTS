@@ -80,7 +80,7 @@
 	"VSW5TESTSUITE CASE XQueryTree 3"
 	/tset/Xlib5/XQueryTree/XQueryTree
 	"VSW5TESTSUITE CASE XRotateWindowProperties 6"
-	/tset/Xlib5/rttwdwprpr/rttwdwprpr
+	/tset/Xlib5/XRotateWindowProperties/XRotateWindowProperties
 	"VSW5TESTSUITE CASE XSetSelectionOwner 9"
 	/tset/Xlib5/SetSelectionOwner/SetSelectionOwner
 	"VSW5TESTSUITE CASE XTranslateCoordinates 5"

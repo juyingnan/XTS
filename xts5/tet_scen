@@ -2481,7 +2481,7 @@ XQueryTree
 
 XRotateWindowProperties
 	"VSW5TESTSUITE CASE XRotateWindowProperties 6"
-	/tset/Xlib5/rttwdwprpr/rttwdwprpr
+	/tset/Xlib5/XRotateWindowProperties/XRotateWindowProperties
 
 XSetSelectionOwner
 	"VSW5TESTSUITE CASE XSetSelectionOwner 9"

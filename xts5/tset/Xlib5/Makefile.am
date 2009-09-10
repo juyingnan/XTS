@@ -21,6 +21,6 @@ tprogs = \
 	XListProperties/XListProperties \
 	XQueryPointer/XQueryPointer \
 	XQueryTree/XQueryTree \
-	rttwdwprpr/rttwdwprpr \
+	XRotateWindowProperties/XRotateWindowProperties \
 	SetSelectionOwner/SetSelectionOwner \
 	trnsltcrdn/trnsltcrdn
