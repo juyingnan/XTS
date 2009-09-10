@@ -96,7 +96,7 @@
 	"VSW5TESTSUITE CASE IsFunctionKey 2"
 	/tset/Xlib17/IsFunctionKey/IsFunctionKey
 	"VSW5TESTSUITE CASE IsKeypadKey 2"
-	/tset/Xlib17/iskypdky/iskypdky
+	/tset/Xlib17/IsKeypadKey/IsKeypadKey
 	"VSW5TESTSUITE CASE IsModifierKey 2"
 	/tset/Xlib17/ismdfrky/ismdfrky
 	"VSW5TESTSUITE CASE IsMiscFunctionKey 2"

@@ -29,7 +29,7 @@ tprogs = \
 	XIntersectRegion/XIntersectRegion \
 	IsCursorKey/IsCursorKey \
 	IsFunctionKey/IsFunctionKey \
-	iskypdky/iskypdky \
+	IsKeypadKey/IsKeypadKey \
 	ismdfrky/ismdfrky \
 	ismscfnctn/ismscfnctn \
 	ispfky/ispfky \

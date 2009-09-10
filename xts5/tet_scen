@@ -1732,7 +1732,7 @@ IsFunctionKey
 
 IsKeypadKey
 	"VSW5TESTSUITE CASE IsKeypadKey 2"
-	/tset/Xlib17/iskypdky/iskypdky
+	/tset/Xlib17/IsKeypadKey/IsKeypadKey
 
 IsModifierKey
 	"VSW5TESTSUITE CASE IsModifierKey 2"
