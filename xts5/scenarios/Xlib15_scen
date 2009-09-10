@@ -118,7 +118,7 @@
 	"VSW5TESTSUITE CASE XStoreName 3"
 	/tset/Xlib15/XStoreName/XStoreName
 	"VSW5TESTSUITE CASE XSetTransientForHint 3"
-	/tset/Xlib15/sttrnsntfr/sttrnsntfr
+	/tset/Xlib15/XSetTransientForHint/XSetTransientForHint
 	"VSW5TESTSUITE CASE XSetTextProperty 5"
 	/tset/Xlib15/sttxtprprt/sttxtprprt
 	"VSW5TESTSUITE CASE XSetWMClientMachine 5"

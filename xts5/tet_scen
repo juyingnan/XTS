@@ -1471,7 +1471,7 @@ XStoreName
 
 XSetTransientForHint
 	"VSW5TESTSUITE CASE XSetTransientForHint 3"
-	/tset/Xlib15/sttrnsntfr/sttrnsntfr
+	/tset/Xlib15/XSetTransientForHint/XSetTransientForHint
 
 XSetTextProperty
 	"VSW5TESTSUITE CASE XSetTextProperty 5"

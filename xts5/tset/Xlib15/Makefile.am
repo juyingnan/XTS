@@ -43,7 +43,7 @@ tprogs = \
 	XSetRGBColormaps/XSetRGBColormaps \
 	XStringListToTextProperty/XStringListToTextProperty \
 	XStoreName/XStoreName \
-	sttrnsntfr/sttrnsntfr \
+	XSetTransientForHint/XSetTransientForHint \
 	sttxtprprt/sttxtprprt \
 	stwmclntmc/stwmclntmc \
 	stwmclrmpw/stwmclrmpw \
