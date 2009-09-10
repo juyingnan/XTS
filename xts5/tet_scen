@@ -3938,7 +3938,7 @@ XtMakeGeometryRequest
 
 XtMakeResizeRequest
 	"VSW5TESTSUITE CASE XtMakeResizeRequest 12"
-	/tset/Xt8/tmkrsizrt/tmkrsizrt
+	/tset/Xt8/XtMakeResizeRequest/XtMakeResizeRequest
 
 XtMoveWidget
 	"VSW5TESTSUITE CASE XtMoveWidget 3"
