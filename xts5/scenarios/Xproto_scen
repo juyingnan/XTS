@@ -106,7 +106,7 @@
 	"VSW5TESTSUITE CASE CirculateWindow 3"
 	/tset/Xproto/CirculateWindow/CirculateWindow
 	"VSW5TESTSUITE CASE CreateColormap 5"
-	/tset/Xproto/crtclrmp/crtclrmp
+	/tset/Xproto/CreateColormap/CreateColormap
 	"VSW5TESTSUITE CASE CreateCursor 5"
 	/tset/Xproto/crtcrsr/crtcrsr
 	"VSW5TESTSUITE CASE CreateGC 6"

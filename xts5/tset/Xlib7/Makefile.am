@@ -58,7 +58,7 @@ tprogs = \
 	cmswpoc/cmswpoc \
 	cmswpt/cmswpt \
 	CopyColormapAndFree/CopyColormapAndFree \
-	crtclrmp/crtclrmp \
+	CreateColormap/CreateColormap \
 	frclrmp/frclrmp \
 	frclrs/frclrs \
 	lkpclr/lkpclr \
