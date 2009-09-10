@@ -13,7 +13,7 @@ tprogs = \
 	XAutoRepeatOff/XAutoRepeatOff \
 	XAutoRepeatOn/XAutoRepeatOn \
 	XBell/XBell \
-	ChangeActivePointerGrab/ChangeActivePointerGrab \
+	XChangeActivePointerGrab/XChangeActivePointerGrab \
 	ChangeKeyboardControl/ChangeKeyboardControl \
 	ChangeKeyboardMapping/ChangeKeyboardMapping \
 	ChangePointerControl/ChangePointerControl \

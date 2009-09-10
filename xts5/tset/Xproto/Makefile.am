@@ -16,7 +16,7 @@ tprogs = \
 	XAllowEvents/XAllowEvents \
 	BadRequest/BadRequest \
 	XBell/XBell \
-	ChangeActivePointerGrab/ChangeActivePointerGrab \
+	XChangeActivePointerGrab/XChangeActivePointerGrab \
 	ChangeGC/ChangeGC \
 	ChangeHosts/ChangeHosts \
 	ChangeKeyboardControl/ChangeKeyboardControl \

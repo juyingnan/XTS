@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE Bell 3"
 	/tset/Xproto/XBell/XBell
 	"VSW5TESTSUITE CASE ChangeActivePointerGrab 3"
-	/tset/Xproto/ChangeActivePointerGrab/ChangeActivePointerGrab
+	/tset/Xproto/XChangeActivePointerGrab/XChangeActivePointerGrab
 	"VSW5TESTSUITE CASE ChangeGC 4"
 	/tset/Xproto/ChangeGC/ChangeGC
 	"VSW5TESTSUITE CASE ChangeHosts 3"

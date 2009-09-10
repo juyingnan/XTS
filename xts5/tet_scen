@@ -1050,7 +1050,7 @@ XBell
 
 XChangeActivePointerGrab
 	"VSW5TESTSUITE CASE XChangeActivePointerGrab 5"
-	/tset/Xlib13/ChangeActivePointerGrab/ChangeActivePointerGrab
+	/tset/Xlib13/XChangeActivePointerGrab/XChangeActivePointerGrab
 
 XChangeKeyboardControl
 	"VSW5TESTSUITE CASE XChangeKeyboardControl 20"
@@ -3134,7 +3134,7 @@ pBell
 
 pChangeActivePointerGrab
 	"VSW5TESTSUITE CASE ChangeActivePointerGrab 3"
-	/tset/Xproto/ChangeActivePointerGrab/ChangeActivePointerGrab
+	/tset/Xproto/XChangeActivePointerGrab/XChangeActivePointerGrab
 
 pChangeGC
 	"VSW5TESTSUITE CASE ChangeGC 4"
