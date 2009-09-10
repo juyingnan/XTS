@@ -4481,7 +4481,7 @@ XtFree
 
 XtNew
 	"VSW5TESTSUITE CASE XtNew 5"
-	/tset/Xt13/tnew/tnew
+	/tset/Xt13/XtNew/XtNew
 
 XtNewString
 	"VSW5TESTSUITE CASE XtNewString 5"

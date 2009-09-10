@@ -71,7 +71,7 @@
 	"VSW5TESTSUITE CASE XtFree 4"
 	/tset/Xt13/XtFree/XtFree
 	"VSW5TESTSUITE CASE XtNew 5"
-	/tset/Xt13/tnew/tnew
+	/tset/Xt13/XtNew/XtNew
 	"VSW5TESTSUITE CASE XtNewString 5"
 	/tset/Xt13/tnewstrg/tnewstrg
 	"VSW5TESTSUITE CASE XtAllocateGC 9"
