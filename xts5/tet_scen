@@ -4601,7 +4601,7 @@ XtAppWarning
 
 XtSetWMColormapWindows
 	"VSW5TESTSUITE CASE XtSetWMColormapWindows 3"
-	/tset/Xt13/tstwmcmw/tstwmcmw
+	/tset/Xt13/XtSetWMColormapWindows/XtSetWMColormapWindows
 
 XtFindFile
 	"VSW5TESTSUITE CASE XtFindFile 7"

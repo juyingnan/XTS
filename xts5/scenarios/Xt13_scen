@@ -131,7 +131,7 @@
 	"VSW5TESTSUITE CASE XtAppWarning 3"
 	/tset/Xt13/XtAppWarning/XtAppWarning
 	"VSW5TESTSUITE CASE XtSetWMColormapWindows 3"
-	/tset/Xt13/tstwmcmw/tstwmcmw
+	/tset/Xt13/XtSetWMColormapWindows/XtSetWMColormapWindows
 	"VSW5TESTSUITE CASE XtFindFile 7"
 	/tset/Xt13/XtFindFile/XtFindFile
 	"VSW5TESTSUITE CASE XtResolvePathname 20"
