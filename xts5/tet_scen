@@ -1534,7 +1534,7 @@ XrmDestroyDatabase
 
 XrmGetFileDatabase
 	"VSW5TESTSUITE CASE XrmGetFileDatabase 3"
-	/tset/Xlib16/rmgtfldtbs/rmgtfldtbs
+	/tset/Xlib16/XrmGetFileDatabase/XrmGetFileDatabase
 
 XrmGetResource
 	"VSW5TESTSUITE CASE XrmGetResource 2"

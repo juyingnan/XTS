@@ -19,7 +19,7 @@ tprogs = \
 	XrmDestroyDatabase/XrmDestroyDatabase \
 	XrmEnumerateDatabase/XrmEnumerateDatabase \
 	XrmGetDatabase/XrmGetDatabase \
-	rmgtfldtbs/rmgtfldtbs \
+	XrmGetFileDatabase/XrmGetFileDatabase \
 	rmgtrsrc/rmgtrsrc \
 	rmgtstrdtb/rmgtstrdtb \
 	rmintlz/rmintlz \
