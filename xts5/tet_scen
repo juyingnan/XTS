@@ -1443,7 +1443,7 @@ XReconfigureWMWindow
 
 XSetClassHint
 	"VSW5TESTSUITE CASE XSetClassHint 3"
-	/tset/Xlib15/stclsshnt/stclsshnt
+	/tset/Xlib15/XSetClassHint/XSetClassHint
 
 XSetCommand
 	"VSW5TESTSUITE CASE XSetCommand 3"

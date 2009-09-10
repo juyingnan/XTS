@@ -36,7 +36,7 @@ tprogs = \
 	XGetWMSizeHints/XGetWMSizeHints \
 	XIconifyWindow/XIconifyWindow \
 	XReconfigureWMWindow/XReconfigureWMWindow \
-	stclsshnt/stclsshnt \
+	XSetClassHint/XSetClassHint \
 	stcmmnd/stcmmnd \
 	sticnnm/sticnnm \
 	sticnszs/sticnszs \
