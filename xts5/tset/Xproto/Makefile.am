@@ -22,7 +22,7 @@ tprogs = \
 	ChangeKeyboardControl/ChangeKeyboardControl \
 	ChangeKeyboardMapping/ChangeKeyboardMapping \
 	ChangePointerControl/ChangePointerControl \
-	chngprprty/chngprprty \
+	ChangeProperty/ChangeProperty \
 	chngsvst/chngsvst \
 	chngwdwatt/chngwdwatt \
 	clrar/clrar \

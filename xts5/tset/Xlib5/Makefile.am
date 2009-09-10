@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	chngprprty/chngprprty \
+	ChangeProperty/ChangeProperty \
 	cnvrtslctn/cnvrtslctn \
 	dltprprty/dltprprty \
 	gtatmnm/gtatmnm \
