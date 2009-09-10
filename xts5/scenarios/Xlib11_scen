@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE CreateNotify 2"
 	/tset/Xlib11/CreateNotify/CreateNotify
 	"VSW5TESTSUITE CASE DestroyNotify 3"
-	/tset/Xlib11/dstryntfy/dstryntfy
+	/tset/Xlib11/DestroyNotify/DestroyNotify
 	"VSW5TESTSUITE CASE EnterNotify 13"
 	/tset/Xlib11/entrntfy/entrntfy
 	"VSW5TESTSUITE CASE Expose 7"
