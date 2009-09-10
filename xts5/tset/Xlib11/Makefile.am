@@ -31,7 +31,7 @@ tprogs = \
 	LeaveNotify/LeaveNotify \
 	MapNotify/MapNotify \
 	MappingNotify/MappingNotify \
-	mprqst/mprqst \
+	MapRequest/MapRequest \
 	mtnntfy/mtnntfy \
 	nexps/nexps \
 	prprtyntfy/prprtyntfy \

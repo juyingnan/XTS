@@ -876,7 +876,7 @@ MappingNotify
 
 MapRequest
 	"VSW5TESTSUITE CASE MapRequest 2"
-	/tset/Xlib11/mprqst/mprqst
+	/tset/Xlib11/MapRequest/MapRequest
 
 MotionNotify
 	"VSW5TESTSUITE CASE MotionNotify 19"
