@@ -284,7 +284,7 @@
 	"VSW5TESTSUITE CASE UngrabButton 3"
 	/tset/Xproto/XUngrabButton/XUngrabButton
 	"VSW5TESTSUITE CASE UngrabKey 3"
-	/tset/Xproto/UngrabKey/UngrabKey
+	/tset/Xproto/XUngrabKey/XUngrabKey
 	"VSW5TESTSUITE CASE UngrabKeyboard 3"
 	/tset/Xproto/UngrabKeyboard/UngrabKeyboard
 	"VSW5TESTSUITE CASE UngrabPointer 3"

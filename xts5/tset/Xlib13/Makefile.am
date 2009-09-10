@@ -37,7 +37,7 @@ tprogs = \
 	XSetModifierMapping/XSetModifierMapping \
 	XSetPointerMapping/XSetPointerMapping \
 	XUngrabButton/XUngrabButton \
-	UngrabKey/UngrabKey \
+	XUngrabKey/XUngrabKey \
 	UngrabKeyboard/UngrabKeyboard \
 	UngrabPointer/UngrabPointer \
 	WarpPointer/WarpPointer

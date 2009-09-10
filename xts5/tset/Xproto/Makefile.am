@@ -123,7 +123,7 @@ tprogs = \
 	SetSelectionOwner/SetSelectionOwner \
 	TranslateCoords/TranslateCoords \
 	XUngrabButton/XUngrabButton \
-	UngrabKey/UngrabKey \
+	XUngrabKey/XUngrabKey \
 	UngrabKeyboard/UngrabKeyboard \
 	UngrabPointer/UngrabPointer \
 	XUngrabServer/XUngrabServer \
