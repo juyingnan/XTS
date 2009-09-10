@@ -156,7 +156,7 @@
 	"VSW5TESTSUITE CASE XScreenCount 1"
 	/tset/Xlib3/XScreenCount/XScreenCount
 	"VSW5TESTSUITE CASE XScreenNumberOfScreen 1"
-	/tset/Xlib3/scrnnmbrof/scrnnmbrof
+	/tset/Xlib3/XScreenNumberOfScreen/XScreenNumberOfScreen
 	"VSW5TESTSUITE CASE XScreenOfDisplay 1"
 	/tset/Xlib3/scrnofdspl/scrnofdspl
 	"VSW5TESTSUITE CASE XVendorRelease 1"

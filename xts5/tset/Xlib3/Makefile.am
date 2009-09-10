@@ -59,7 +59,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XRootWindow/XRootWindow XRootWindow/XRootWindow_m \
 	XRootWindowOfScreen/XRootWindowOfScreen XRootWindowOfScreen/XRootWindowOfScreen_m \
 	XScreenCount/XScreenCount XScreenCount/XScreenCount_m \
-	scrnnmbrof/scrnnmbrof \
+	XScreenNumberOfScreen/XScreenNumberOfScreen \
 	scrnofdspl/scrnofdspl scrnofdspl/scrnofdspl_m \
 	srvrvndr/srvrvndr srvrvndr/srvrvndr_m \
 	SetCloseDownMode/SetCloseDownMode \

@@ -2075,7 +2075,7 @@ XScreenCount
 
 XScreenNumberOfScreen
 	"VSW5TESTSUITE CASE XScreenNumberOfScreen 1"
-	/tset/Xlib3/scrnnmbrof/scrnnmbrof
+	/tset/Xlib3/XScreenNumberOfScreen/XScreenNumberOfScreen
 
 XScreenOfDisplay
 	"VSW5TESTSUITE CASE XScreenOfDisplay 1"
