@@ -116,7 +116,7 @@ tprogs = \
 	SetFontPath/SetFontPath \
 	SetInputFocus/SetInputFocus \
 	SetModifierMapping/SetModifierMapping \
-	stpntrmppn/stpntrmppn \
+	SetPointerMapping/SetPointerMapping \
 	strclrs/strclrs \
 	strnmdclr/strnmdclr \
 	stscrnsvr/stscrnsvr \

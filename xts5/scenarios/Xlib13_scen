@@ -108,7 +108,7 @@
 	"VSW5TESTSUITE CASE XSetModifierMapping 8"
 	/tset/Xlib13/SetModifierMapping/SetModifierMapping
 	"VSW5TESTSUITE CASE XSetPointerMapping 7"
-	/tset/Xlib13/stpntrmppn/stpntrmppn
+	/tset/Xlib13/SetPointerMapping/SetPointerMapping
 	"VSW5TESTSUITE CASE XUngrabButton 6"
 	/tset/Xlib13/ungrbbttn/ungrbbttn
 	"VSW5TESTSUITE CASE XUngrabKey 7"
