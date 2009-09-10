@@ -1875,7 +1875,7 @@ XXorRegion
 
 XAllPlanes
 	"VSW5TESTSUITE CASE XAllPlanes 2"
-	/tset/Xlib3/allplns/allplns
+	/tset/Xlib3/XAllPlanes/XAllPlanes
 
 XBlackPixel
 	"VSW5TESTSUITE CASE XBlackPixel 1"

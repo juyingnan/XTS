@@ -56,7 +56,7 @@
 #
 
 	"VSW5TESTSUITE CASE XAllPlanes 2"
-	/tset/Xlib3/allplns/allplns
+	/tset/Xlib3/XAllPlanes/XAllPlanes
 	"VSW5TESTSUITE CASE XBlackPixel 1"
 	/tset/Xlib3/blckpxl/blckpxl
 	"VSW5TESTSUITE CASE XBlackPixelOfScreen 1"

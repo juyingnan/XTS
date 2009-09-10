@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 # Tests ending in _m test the macro version of Xlib
-tprogs = allplns/allplns \
+tprogs = XAllPlanes/XAllPlanes \
 	blckpxl/blckpxl blckpxl/blckpxl_m \
 	blckpxlofs/blckpxlofs blckpxlofs/blckpxlofs_m \
 	btmpbtordr/btmpbtordr btmpbtordr/btmpbtordr_m \
