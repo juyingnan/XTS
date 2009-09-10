@@ -4663,7 +4663,7 @@ XtPending
 
 XtAddInput
 	"VSW5TESTSUITE CASE XtAddInput 5"
-	/tset/XtC/taddinput/taddinput
+	/tset/XtC/XtAddInput/XtAddInput
 
 XtAddTimeOut
 	"VSW5TESTSUITE CASE XtAddTimeOut 2"
