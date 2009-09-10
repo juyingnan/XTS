@@ -800,7 +800,7 @@ ClientMessage
 
 ColormapNotify
 	"VSW5TESTSUITE CASE ColormapNotify 2"
-	/tset/Xlib11/clrmpntfy/clrmpntfy
+	/tset/Xlib11/ColormapNotify/ColormapNotify
 
 ConfigureNotify
 	"VSW5TESTSUITE CASE ConfigureNotify 3"

@@ -62,7 +62,7 @@
 	"VSW5TESTSUITE CASE ClientMessage 1"
 	/tset/Xlib11/ClientMessage/ClientMessage
 	"VSW5TESTSUITE CASE ColormapNotify 2"
-	/tset/Xlib11/clrmpntfy/clrmpntfy
+	/tset/Xlib11/ColormapNotify/ColormapNotify
 	"VSW5TESTSUITE CASE ConfigureNotify 3"
 	/tset/Xlib11/cnfgrntfy/cnfgrntfy
 	"VSW5TESTSUITE CASE ConfigureRequest 7"
