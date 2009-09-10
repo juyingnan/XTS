@@ -4004,7 +4004,7 @@ XtUngrabKeyboard
 
 XtGrabButton
 	"VSW5TESTSUITE CASE XtGrabButton 5"
-	/tset/Xt9/tgrabbutn/tgrabbutn
+	/tset/Xt9/XtGrabButton/XtGrabButton
 
 XtUngrabButton
 	"VSW5TESTSUITE CASE XtUngrabButton 2"

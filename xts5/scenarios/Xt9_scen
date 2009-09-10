@@ -79,7 +79,7 @@
 	"VSW5TESTSUITE CASE XtUngrabKeyboard 1"
 	/tset/Xt9/tunkybord/tunkybord
 	"VSW5TESTSUITE CASE XtGrabButton 5"
-	/tset/Xt9/tgrabbutn/tgrabbutn
+	/tset/Xt9/XtGrabButton/XtGrabButton
 	"VSW5TESTSUITE CASE XtUngrabButton 2"
 	/tset/Xt9/tunbutton/tunbutton
 	"VSW5TESTSUITE CASE XtGrabPointer 2"
