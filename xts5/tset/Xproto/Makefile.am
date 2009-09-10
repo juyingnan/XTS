@@ -101,7 +101,7 @@ tprogs = \
 	QueryColors/QueryColors \
 	QueryExtension/QueryExtension \
 	QueryFont/QueryFont \
-	QueryKeymap/QueryKeymap \
+	XQueryKeymap/XQueryKeymap \
 	QueryPointer/QueryPointer \
 	QueryTree/QueryTree \
 	QueryTextExtents/QueryTextExtents \

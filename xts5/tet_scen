@@ -1126,7 +1126,7 @@ XNewModifiermap
 
 XQueryKeymap
 	"VSW5TESTSUITE CASE XQueryKeymap 1"
-	/tset/Xlib13/QueryKeymap/QueryKeymap
+	/tset/Xlib13/XQueryKeymap/XQueryKeymap
 
 XSetInputFocus
 	"VSW5TESTSUITE CASE XSetInputFocus 13"
@@ -3474,7 +3474,7 @@ pQueryFont
 
 pQueryKeymap
 	"VSW5TESTSUITE CASE QueryKeymap 3"
-	/tset/Xproto/QueryKeymap/QueryKeymap
+	/tset/Xproto/XQueryKeymap/XQueryKeymap
 
 pQueryPointer
 	"VSW5TESTSUITE CASE QueryPointer 3"
