@@ -92,7 +92,7 @@
 	"VSW5TESTSUITE CASE XIntersectRegion 1"
 	/tset/Xlib17/XIntersectRegion/XIntersectRegion
 	"VSW5TESTSUITE CASE IsCursorKey 2"
-	/tset/Xlib17/iscrsrky/iscrsrky
+	/tset/Xlib17/IsCursorKey/IsCursorKey
 	"VSW5TESTSUITE CASE IsFunctionKey 2"
 	/tset/Xlib17/isfnctnky/isfnctnky
 	"VSW5TESTSUITE CASE IsKeypadKey 2"

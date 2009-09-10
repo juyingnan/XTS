@@ -1724,7 +1724,7 @@ XIntersectRegion
 
 IsCursorKey
 	"VSW5TESTSUITE CASE IsCursorKey 2"
-	/tset/Xlib17/iscrsrky/iscrsrky
+	/tset/Xlib17/IsCursorKey/IsCursorKey
 
 IsFunctionKey
 	"VSW5TESTSUITE CASE IsFunctionKey 2"
