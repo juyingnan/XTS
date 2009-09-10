@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE CirculateRequest 2"
 	/tset/Xlib11/CirculateRequest/CirculateRequest
 	"VSW5TESTSUITE CASE CreateNotify 2"
-	/tset/Xlib11/crtntfy/crtntfy
+	/tset/Xlib11/CreateNotify/CreateNotify
 	"VSW5TESTSUITE CASE DestroyNotify 3"
 	/tset/Xlib11/dstryntfy/dstryntfy
 	"VSW5TESTSUITE CASE EnterNotify 13"
