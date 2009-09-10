@@ -1495,7 +1495,7 @@ XSetWMIconName
 
 XSetWMName
 	"VSW5TESTSUITE CASE XSetWMName 5"
-	/tset/Xlib15/stwmnm/stwmnm
+	/tset/Xlib15/XSetWMName/XSetWMName
 
 XSetWMNormalHints
 	"VSW5TESTSUITE CASE XSetWMNormalHints 3"

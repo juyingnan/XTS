@@ -49,7 +49,7 @@ tprogs = \
 	XSetWMColormapWindows/XSetWMColormapWindows \
 	XSetWMHints/XSetWMHints \
 	XSetWMIconName/XSetWMIconName \
-	stwmnm/stwmnm \
+	XSetWMName/XSetWMName \
 	stwmnrmlhn/stwmnrmlhn \
 	stwmprprts/stwmprprts \
 	stwmprtcls/stwmprtcls \
