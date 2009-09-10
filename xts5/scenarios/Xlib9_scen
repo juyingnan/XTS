@@ -132,7 +132,7 @@
 	"VSW5TESTSUITE CASE XQueryFont 3"
 	/tset/Xlib9/QueryFont/QueryFont
 	"VSW5TESTSUITE CASE XQueryTextExtents16 13"
-	/tset/Xlib9/qrytxtex16/qrytxtex16
+	/tset/Xlib9/XQueryTextExtents16/XQueryTextExtents16
 	"VSW5TESTSUITE CASE XQueryTextExtents 12"
 	/tset/Xlib9/QueryTextExtents/QueryTextExtents
 	"VSW5TESTSUITE CASE XSetFontPath 4"
