@@ -248,7 +248,7 @@
 	"VSW5TESTSUITE CASE QueryTextExtents 3"
 	/tset/Xproto/QueryTextExtents/QueryTextExtents
 	"VSW5TESTSUITE CASE RecolorCursor 3"
-	/tset/Xproto/RecolorCursor/RecolorCursor
+	/tset/Xproto/XRecolorCursor/XRecolorCursor
 	"VSW5TESTSUITE CASE ReparentWindow 3"
 	/tset/Xproto/XReparentWindow/XReparentWindow
 	"VSW5TESTSUITE CASE RotateProperties 3"

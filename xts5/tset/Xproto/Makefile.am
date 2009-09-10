@@ -105,7 +105,7 @@ tprogs = \
 	XQueryPointer/XQueryPointer \
 	XQueryTree/XQueryTree \
 	QueryTextExtents/QueryTextExtents \
-	RecolorCursor/RecolorCursor \
+	XRecolorCursor/XRecolorCursor \
 	XReparentWindow/XReparentWindow \
 	RotateProperties/RotateProperties \
 	XSendEvent/XSendEvent \
