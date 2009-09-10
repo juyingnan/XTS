@@ -147,7 +147,7 @@
 	"VSW5TESTSUITE CASE XtSetTypeConverter 15"
 	/tset/Xt11/tstyconv/tstyconv
 	"VSW5TESTSUITE CASE XtAppSetTypeConverter 15"
-	/tset/Xt11/tapsttpec/tapsttpec
+	/tset/Xt11/XtAppSetTypeConverter/XtAppSetTypeConverter
 	"VSW5TESTSUITE CASE XtCallConverter 15"
 	/tset/Xt11/tcalcnvtr/tcalcnvtr
 	"VSW5TESTSUITE CASE XtAppReleaseCacheRefs 2"

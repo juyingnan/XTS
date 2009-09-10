@@ -4309,7 +4309,7 @@ XtSetTypeConverter
 
 XtAppSetTypeConverter
 	"VSW5TESTSUITE CASE XtAppSetTypeConverter 15"
-	/tset/Xt11/tapsttpec/tapsttpec
+	/tset/Xt11/XtAppSetTypeConverter/XtAppSetTypeConverter
 
 XtCallConverter
 	"VSW5TESTSUITE CASE XtCallConverter 15"
