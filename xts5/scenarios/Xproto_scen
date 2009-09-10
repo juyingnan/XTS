@@ -92,7 +92,7 @@
 	"VSW5TESTSUITE CASE CloseFont 3"
 	/tset/Xproto/CloseFont/CloseFont
 	"VSW5TESTSUITE CASE ConfigureWindow 4"
-	/tset/Xproto/ConfigureWindow/ConfigureWindow
+	/tset/Xproto/XConfigureWindow/XConfigureWindow
 	"VSW5TESTSUITE CASE ConvertSelection 3"
 	/tset/Xproto/ConvertSelection/ConvertSelection
 	"VSW5TESTSUITE CASE CopyArea 3"

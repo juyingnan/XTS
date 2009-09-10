@@ -58,7 +58,7 @@
 	"VSW5TESTSUITE CASE XChangeWindowAttributes 46"
 	/tset/Xlib4/XChangeWindowAttributes/XChangeWindowAttributes
 	"VSW5TESTSUITE CASE XConfigureWindow 34"
-	/tset/Xlib4/ConfigureWindow/ConfigureWindow
+	/tset/Xlib4/XConfigureWindow/XConfigureWindow
 	"VSW5TESTSUITE CASE XCirculateSubwindows 7"
 	/tset/Xlib4/crcltsbws/crcltsbws
 	"VSW5TESTSUITE CASE XCirculateSubwindowsDown 5"
