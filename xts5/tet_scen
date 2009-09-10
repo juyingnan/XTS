@@ -1812,7 +1812,7 @@ XRefreshKeyboardMapping
 
 XRotateBuffers
 	"VSW5TESTSUITE CASE XRotateBuffers 2"
-	/tset/Xlib17/rttbffrs/rttbffrs
+	/tset/Xlib17/XRotateBuffers/XRotateBuffers
 
 XSubImage
 	"VSW5TESTSUITE CASE XSubImage 1"

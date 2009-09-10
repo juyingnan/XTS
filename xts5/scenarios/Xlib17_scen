@@ -136,7 +136,7 @@
 	"VSW5TESTSUITE CASE XRefreshKeyboardMapping 3"
 	/tset/Xlib17/XRefreshKeyboardMapping/XRefreshKeyboardMapping
 	"VSW5TESTSUITE CASE XRotateBuffers 2"
-	/tset/Xlib17/rttbffrs/rttbffrs
+	/tset/Xlib17/XRotateBuffers/XRotateBuffers
 	"VSW5TESTSUITE CASE XSubImage 1"
 	/tset/Xlib17/sbimg/sbimg
 	"VSW5TESTSUITE CASE XSubtractRegion 1"

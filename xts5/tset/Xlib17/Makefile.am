@@ -49,7 +49,7 @@ tprogs = \
 	XRectInRegion/XRectInRegion \
 	XReadBitmapFile/XReadBitmapFile \
 	XRefreshKeyboardMapping/XRefreshKeyboardMapping \
-	rttbffrs/rttbffrs \
+	XRotateBuffers/XRotateBuffers \
 	sbimg/sbimg \
 	sbtrctrgn/sbtrctrgn \
 	shrnkrgn/shrnkrgn \
