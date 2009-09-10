@@ -88,7 +88,7 @@
 	"VSW5TESTSUITE CASE XDrawString 44"
 	/tset/Xlib9/XDrawString/XDrawString
 	"VSW5TESTSUITE CASE XDrawString16 44"
-	/tset/Xlib9/drwstr16/drwstr16
+	/tset/Xlib9/XDrawString16/XDrawString16
 	"VSW5TESTSUITE CASE XDrawText 50"
 	/tset/Xlib9/drwtxt/drwtxt
 	"VSW5TESTSUITE CASE XDrawText16 50"
