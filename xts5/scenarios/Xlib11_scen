@@ -64,7 +64,7 @@
 	"VSW5TESTSUITE CASE ColormapNotify 2"
 	/tset/Xlib11/ColormapNotify/ColormapNotify
 	"VSW5TESTSUITE CASE ConfigureNotify 3"
-	/tset/Xlib11/cnfgrntfy/cnfgrntfy
+	/tset/Xlib11/ConfigureNotify/ConfigureNotify
 	"VSW5TESTSUITE CASE ConfigureRequest 7"
 	/tset/Xlib11/cnfgrrqst/cnfgrrqst
 	"VSW5TESTSUITE CASE CirculateNotify 3"

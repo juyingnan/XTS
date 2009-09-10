@@ -13,7 +13,7 @@ tprogs = \
 	ButtonRelease/ButtonRelease \
 	ClientMessage/ClientMessage \
 	ColormapNotify/ColormapNotify \
-	cnfgrntfy/cnfgrntfy \
+	ConfigureNotify/ConfigureNotify \
 	cnfgrrqst/cnfgrrqst \
 	crcltntfy/crcltntfy \
 	crcltrqst/crcltrqst \

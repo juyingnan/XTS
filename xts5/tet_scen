@@ -804,7 +804,7 @@ ColormapNotify
 
 ConfigureNotify
 	"VSW5TESTSUITE CASE ConfigureNotify 3"
-	/tset/Xlib11/cnfgrntfy/cnfgrntfy
+	/tset/Xlib11/ConfigureNotify/ConfigureNotify
 
 ConfigureRequest
 	"VSW5TESTSUITE CASE ConfigureRequest 7"
