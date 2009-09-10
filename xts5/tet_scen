@@ -4285,7 +4285,7 @@ XtCvtIntToPosition
 
 XtCvtIntToShort
 	"VSW5TESTSUITE CASE XtCvtIntToShort 3"
-	/tset/Xt11/tcinshrt/tcinshrt
+	/tset/Xt11/XtCvtIntToShort/XtCvtIntToShort
 
 XtCvtIntToUnsignedChar
 	"VSW5TESTSUITE CASE XtCvtIntToUnsignedChar 3"
