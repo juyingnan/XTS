@@ -4333,7 +4333,7 @@ XtConvertAndStore
 
 XtGetValues
 	"VSW5TESTSUITE CASE XtGetValues 5"
-	/tset/Xt11/tgtvalues/tgtvalues
+	/tset/Xt11/XtGetValues/XtGetValues
 
 XtVaGetValues
 	"VSW5TESTSUITE CASE XtVaGetValues 7"

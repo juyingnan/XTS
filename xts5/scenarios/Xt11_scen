@@ -159,7 +159,7 @@
 	"VSW5TESTSUITE CASE XtConvertAndStore 18"
 	/tset/Xt11/XtConvertAndStore/XtConvertAndStore
 	"VSW5TESTSUITE CASE XtGetValues 5"
-	/tset/Xt11/tgtvalues/tgtvalues
+	/tset/Xt11/XtGetValues/XtGetValues
 	"VSW5TESTSUITE CASE XtVaGetValues 7"
 	/tset/Xt11/tvagtvals/tvagtvals
 	"VSW5TESTSUITE CASE XtGetSubvalues 2"
