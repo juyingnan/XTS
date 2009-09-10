@@ -2785,7 +2785,7 @@ XGContextFromGC
 
 XGetGCValues
 	"VSW5TESTSUITE CASE XGetGCValues 3"
-	/tset/Xlib8/gtgcvls/gtgcvls
+	/tset/Xlib8/XGetGCValues/XGetGCValues
 
 XQueryBestStipple
 	"VSW5TESTSUITE CASE XQueryBestStipple 3"
