@@ -87,7 +87,7 @@
 	"VSW5TESTSUITE CASE XtIsOverrideShell 2"
 	/tset/Xt3/XtIsOverrideShell/XtIsOverrideShell
 	"VSW5TESTSUITE CASE XtIsWMShell 2"
-	/tset/Xt3/tiswmshll/tiswmshll
+	/tset/Xt3/XtIsWMShell/XtIsWMShell
 	"VSW5TESTSUITE CASE XtIsVendorShell 2"
 	/tset/Xt3/XtIsVendorShell/XtIsVendorShell
 	"VSW5TESTSUITE CASE XtIsTransientShell 2"
