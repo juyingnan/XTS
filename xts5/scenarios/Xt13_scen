@@ -95,7 +95,7 @@
 	"VSW5TESTSUITE CASE XtDisownSelection 5"
 	/tset/Xt13/XtDisownSelection/XtDisownSelection
 	"VSW5TESTSUITE CASE XtGetSelectionValueIncremental 6"
-	/tset/Xt13/tgtsvainc/tgtsvainc
+	/tset/Xt13/XtGetSelectionValueIncremental/XtGetSelectionValueIncremental
 	"VSW5TESTSUITE CASE XtGetSelectionValuesIncremental 7"
 	/tset/Xt13/XtGetSelectionValuesIncremental/XtGetSelectionValuesIncremental
 	"VSW5TESTSUITE CASE XtOwnSelectionIncremental 10"

@@ -4529,7 +4529,7 @@ XtDisownSelection
 
 XtGetSelectionValueIncremental
 	"VSW5TESTSUITE CASE XtGetSelectionValueIncremental 6"
-	/tset/Xt13/tgtsvainc/tgtsvainc
+	/tset/Xt13/XtGetSelectionValueIncremental/XtGetSelectionValueIncremental
 
 XtGetSelectionValuesIncremental
 	"VSW5TESTSUITE CASE XtGetSelectionValuesIncremental 7"
