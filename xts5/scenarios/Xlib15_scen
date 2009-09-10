@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XGetClassHint 3"
 	/tset/Xlib15/XGetClassHint/XGetClassHint
 	"VSW5TESTSUITE CASE XGetCommand 3"
-	/tset/Xlib15/gtcmmnd/gtcmmnd
+	/tset/Xlib15/XGetCommand/XGetCommand
 	"VSW5TESTSUITE CASE XGetIconName 3"
 	/tset/Xlib15/gticnnm/gticnnm
 	"VSW5TESTSUITE CASE XGetIconSizes 3"

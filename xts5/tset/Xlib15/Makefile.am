@@ -20,7 +20,7 @@ tprogs = \
 	XFreeStringList/XFreeStringList \
 	XFetchName/XFetchName \
 	XGetClassHint/XGetClassHint \
-	gtcmmnd/gtcmmnd \
+	XGetCommand/XGetCommand \
 	gticnnm/gticnnm \
 	gticnszs/gticnszs \
 	gtrgbclrmp/gtrgbclrmp \

@@ -1379,7 +1379,7 @@ XGetClassHint
 
 XGetCommand
 	"VSW5TESTSUITE CASE XGetCommand 3"
-	/tset/Xlib15/gtcmmnd/gtcmmnd
+	/tset/Xlib15/XGetCommand/XGetCommand
 
 XGetIconName
 	"VSW5TESTSUITE CASE XGetIconName 3"
