@@ -1856,7 +1856,7 @@ XUnionRegion
 
 XUniqueContext
 	"VSW5TESTSUITE CASE XUniqueContext 1"
-	/tset/Xlib17/unqcntxt/unqcntxt
+	/tset/Xlib17/XUniqueContext/XUniqueContext
 
 XWMGeometry
 	"VSW5TESTSUITE CASE XWMGeometry 9"

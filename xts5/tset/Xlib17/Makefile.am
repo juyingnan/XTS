@@ -60,7 +60,7 @@ tprogs = \
 	XSaveContext/XSaveContext \
 	XUnionRectWithRegion/XUnionRectWithRegion \
 	XUnionRegion/XUnionRegion \
-	unqcntxt/unqcntxt \
+	XUniqueContext/XUniqueContext \
 	wmgmtry/wmgmtry \
 	wrtbtmpfl/wrtbtmpfl \
 	xrrgn/xrrgn

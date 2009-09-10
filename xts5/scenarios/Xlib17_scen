@@ -158,7 +158,7 @@
 	"VSW5TESTSUITE CASE XUnionRegion 1"
 	/tset/Xlib17/XUnionRegion/XUnionRegion
 	"VSW5TESTSUITE CASE XUniqueContext 1"
-	/tset/Xlib17/unqcntxt/unqcntxt
+	/tset/Xlib17/XUniqueContext/XUniqueContext
 	"VSW5TESTSUITE CASE XWMGeometry 9"
 	/tset/Xlib17/wmgmtry/wmgmtry
 	"VSW5TESTSUITE CASE XWriteBitmapFile 6"
