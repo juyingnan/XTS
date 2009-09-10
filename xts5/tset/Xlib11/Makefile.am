@@ -40,5 +40,5 @@ tprogs = \
 	SelectionClear/SelectionClear \
 	SelectionNotify/SelectionNotify \
 	SelectionRequest/SelectionRequest \
-	unmpntfy/unmpntfy \
+	UnmapNotify/UnmapNotify \
 	vsbltyntfy/vsbltyntfy

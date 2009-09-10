@@ -912,7 +912,7 @@ SelectionRequest
 
 UnmapNotify
 	"VSW5TESTSUITE CASE UnmapNotify 3"
-	/tset/Xlib11/unmpntfy/unmpntfy
+	/tset/Xlib11/UnmapNotify/UnmapNotify
 
 VisibilityNotify
 	"VSW5TESTSUITE CASE VisibilityNotify 9"

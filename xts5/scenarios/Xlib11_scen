@@ -118,6 +118,6 @@
 	"VSW5TESTSUITE CASE SelectionRequest 1"
 	/tset/Xlib11/SelectionRequest/SelectionRequest
 	"VSW5TESTSUITE CASE UnmapNotify 3"
-	/tset/Xlib11/unmpntfy/unmpntfy
+	/tset/Xlib11/UnmapNotify/UnmapNotify
 	"VSW5TESTSUITE CASE VisibilityNotify 9"
 	/tset/Xlib11/vsbltyntfy/vsbltyntfy
