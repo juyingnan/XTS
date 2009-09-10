@@ -17,14 +17,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib12/evntsqd/evntsqd.m,v 1.3 2005-12-18 11:25:59 jamey Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xlib12/XEventsQueued/XEventsQueued.m,v 1.3 2005-12-18 11:25:59 jamey Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib12/evntsqd/evntsqd.m
+>># File: xts5/tset/Xlib12/XEventsQueued/XEventsQueued.m
 >># 
 >># Description:
 >># 	Tests for XEventsQueued()

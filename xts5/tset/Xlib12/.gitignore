@@ -6,7 +6,7 @@ XCheckWindowEvent/XCheckWindowEvent
 XDisplayMotionBufferSize/XDisplayMotionBufferSize
 XDisplayName/XDisplayName
 dsplynm/Test1
-evntsqd/evntsqd
+XEventsQueued/XEventsQueued
 flsh/flsh
 gterrrdtbs/gterrrdtbs
 gterrrtxt/gterrrtxt

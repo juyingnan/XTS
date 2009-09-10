@@ -70,7 +70,7 @@
 	"VSW5TESTSUITE CASE XDisplayName 1"
 	/tset/Xlib12/XDisplayName/XDisplayName
 	"VSW5TESTSUITE CASE XEventsQueued 6"
-	/tset/Xlib12/evntsqd/evntsqd
+	/tset/Xlib12/XEventsQueued/XEventsQueued
 	"VSW5TESTSUITE CASE XFlush 1"
 	/tset/Xlib12/flsh/flsh
 	"VSW5TESTSUITE CASE XGetErrorDatabaseText 5"

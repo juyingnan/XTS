@@ -16,7 +16,7 @@ tprogs = \
 	XCheckWindowEvent/XCheckWindowEvent \
 	XDisplayMotionBufferSize/XDisplayMotionBufferSize \
 	XDisplayName/XDisplayName \
-	evntsqd/evntsqd \
+	XEventsQueued/XEventsQueued \
 	flsh/flsh \
 	gterrrdtbs/gterrrdtbs \
 	gterrrtxt/gterrrtxt \
