@@ -4647,7 +4647,7 @@ XtMainLoop
 
 XtNextEvent
 	"VSW5TESTSUITE CASE XtNextEvent 4"
-	/tset/XtC/tnxtevnt/tnxtevnt
+	/tset/XtC/XtNextEvent/XtNextEvent
 
 XtProcessEvent
 	"VSW5TESTSUITE CASE XtProcessEvent 12"

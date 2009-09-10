@@ -67,7 +67,7 @@
 	"VSW5TESTSUITE CASE XtMainLoop 28"
 	/tset/XtC/XtMainLoop/XtMainLoop
 	"VSW5TESTSUITE CASE XtNextEvent 4"
-	/tset/XtC/tnxtevnt/tnxtevnt
+	/tset/XtC/XtNextEvent/XtNextEvent
 	"VSW5TESTSUITE CASE XtProcessEvent 12"
 	/tset/XtC/tprocevnt/tprocevnt
 	"VSW5TESTSUITE CASE XtPeekEvent 3"
