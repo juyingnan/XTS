@@ -3726,7 +3726,7 @@ XtAppSetFallbackResources
 
 XtSetArg
 	"VSW5TESTSUITE CASE XtSetArg 2"
-	/tset/Xt4/tstarg/tstarg
+	/tset/Xt4/XtSetArg/XtSetArg
 
 XtMergeArgLists
 	"VSW5TESTSUITE CASE XtMergeArgLists 3"

@@ -84,7 +84,7 @@
 	"VSW5TESTSUITE CASE XtAppSetFallbackResources 2"
 	/tset/Xt4/XtAppSetFallbackResources/XtAppSetFallbackResources
 	"VSW5TESTSUITE CASE XtSetArg 2"
-	/tset/Xt4/tstarg/tstarg
+	/tset/Xt4/XtSetArg/XtSetArg
 	"VSW5TESTSUITE CASE XtMergeArgLists 3"
 	/tset/Xt4/XtMergeArgLists/XtMergeArgLists
 	"VSW5TESTSUITE CASE XtVaCreateArgsList 2"
