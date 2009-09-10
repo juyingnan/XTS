@@ -104,7 +104,7 @@
 	"VSW5TESTSUITE CASE OpenDevice 3"
 	/tset/XIproto/XOpenDevice/XOpenDevice
 	"VSW5TESTSUITE CASE QueryDeviceState 3"
-	/tset/XIproto/qrydvstat/qrydvstat
+	/tset/XIproto/QueryDeviceState/QueryDeviceState
 	"VSW5TESTSUITE CASE SetDeviceValuators 3"
 	/tset/XIproto/XSetDeviceValuators/XSetDeviceValuators
 	"VSW5TESTSUITE CASE SetDeviceButtonMapping 3"

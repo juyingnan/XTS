@@ -34,7 +34,7 @@ tprogs = \
 	XListInputDevices/XListInputDevices \
 	Miscellaneous/Miscellaneous \
 	XOpenDevice/XOpenDevice \
-	qrydvstat/qrydvstat \
+	QueryDeviceState/QueryDeviceState \
 	XSetDeviceValuators/XSetDeviceValuators \
 	XSetDeviceButtonMapping/XSetDeviceButtonMapping \
 	setdvfcs/setdvfcs \
