@@ -92,7 +92,7 @@
 	"VSW5TESTSUITE CASE XGetDeviceButtonMapping 5"
 	/tset/XI/XGetDeviceButtonMapping/XGetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XGetDeviceKeyMapping 10"
-	/tset/XI/gtdvkmap/gtdvkmap
+	/tset/XI/XGetDeviceKeyMapping/XGetDeviceKeyMapping
 	"VSW5TESTSUITE CASE XGetDeviceModifierMapping 4"
 	/tset/XI/gtdvmmap/gtdvmmap
 	"VSW5TESTSUITE CASE XGetDeviceMotionEvents 9"

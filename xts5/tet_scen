@@ -574,7 +574,7 @@ XGetDeviceButtonMapping
 
 XGetDeviceKeyMapping
 	"VSW5TESTSUITE CASE XGetDeviceKeyMapping 10"
-	/tset/XI/gtdvkmap/gtdvkmap
+	/tset/XI/XGetDeviceKeyMapping/XGetDeviceKeyMapping
 
 XGetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XGetDeviceModifierMapping 4"
