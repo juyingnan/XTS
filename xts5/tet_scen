@@ -2539,7 +2539,7 @@ XAllocColorCells
 
 XAllocColorPlanes
 	"VSW5TESTSUITE CASE XAllocColorPlanes 7"
-	/tset/Xlib7/allcclrpln/allcclrpln
+	/tset/Xlib7/AllocColorPlanes/AllocColorPlanes
 
 XAllocNamedColor
 	"VSW5TESTSUITE CASE XAllocNamedColor 6"
@@ -3114,7 +3114,7 @@ pAllocColorCells
 
 pAllocColorPlanes
 	"VSW5TESTSUITE CASE AllocColorPlanes 3"
-	/tset/Xproto/allcclrpln/allcclrpln
+	/tset/Xproto/AllocColorPlanes/AllocColorPlanes
 
 pAllocNamedColor
 	"VSW5TESTSUITE CASE AllocNamedColor 3"
