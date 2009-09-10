@@ -27,7 +27,7 @@ tprogs = \
 	XLocaleOfFontSet/XLocaleOfFontSet \
 	XLocaleOfIM/XLocaleOfIM \
 	XmbDrawImageString/XmbDrawImageString \
-	mbdstr/mbdstr \
+	XmbDrawString/XmbDrawString \
 	mbdtext/mbdtext \
 	mblstr/mblstr \
 	mbresic/mbresic \

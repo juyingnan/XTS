@@ -1232,7 +1232,7 @@ XmbDrawImageString
 
 XmbDrawString
 	"VSW5TESTSUITE CASE XmbDrawString 1"
-	/tset/Xlib14/mbdstr/mbdstr
+	/tset/Xlib14/XmbDrawString/XmbDrawString
 
 XmbDrawText
 	"VSW5TESTSUITE CASE XmbDrawText 1"
