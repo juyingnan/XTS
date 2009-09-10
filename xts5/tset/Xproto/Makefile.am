@@ -18,7 +18,7 @@ tprogs = \
 	Bell/Bell \
 	ChangeActivePointerGrab/ChangeActivePointerGrab \
 	ChangeGC/ChangeGC \
-	chnghsts/chnghsts \
+	ChangeHosts/ChangeHosts \
 	chngkybrdc/chngkybrdc \
 	chngkybrdm/chngkybrdm \
 	chngpntrcn/chngpntrcn \

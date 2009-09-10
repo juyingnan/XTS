@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE ChangeGC 4"
 	/tset/Xproto/ChangeGC/ChangeGC
 	"VSW5TESTSUITE CASE ChangeHosts 3"
-	/tset/Xproto/chnghsts/chnghsts
+	/tset/Xproto/ChangeHosts/ChangeHosts
 	"VSW5TESTSUITE CASE ChangeKeyboardControl 4"
 	/tset/Xproto/chngkybrdc/chngkybrdc
 	"VSW5TESTSUITE CASE ChangeKeyboardMapping 3"

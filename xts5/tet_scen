@@ -3142,7 +3142,7 @@ pChangeGC
 
 pChangeHosts
 	"VSW5TESTSUITE CASE ChangeHosts 3"
-	/tset/Xproto/chnghsts/chnghsts
+	/tset/Xproto/ChangeHosts/ChangeHosts
 
 pChangeKeyboardControl
 	"VSW5TESTSUITE CASE ChangeKeyboardControl 4"
