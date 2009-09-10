@@ -82,6 +82,6 @@
 	"VSW5TESTSUITE CASE XRotateWindowProperties 6"
 	/tset/Xlib5/XRotateWindowProperties/XRotateWindowProperties
 	"VSW5TESTSUITE CASE XSetSelectionOwner 9"
-	/tset/Xlib5/SetSelectionOwner/SetSelectionOwner
+	/tset/Xlib5/XSetSelectionOwner/XSetSelectionOwner
 	"VSW5TESTSUITE CASE XTranslateCoordinates 5"
 	/tset/Xlib5/trnsltcrdn/trnsltcrdn

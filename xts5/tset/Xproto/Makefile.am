@@ -120,7 +120,7 @@ tprogs = \
 	StoreColors/StoreColors \
 	StoreNamedColor/StoreNamedColor \
 	XSetScreenSaver/XSetScreenSaver \
-	SetSelectionOwner/SetSelectionOwner \
+	XSetSelectionOwner/XSetSelectionOwner \
 	TranslateCoords/TranslateCoords \
 	XUngrabButton/XUngrabButton \
 	XUngrabKey/XUngrabKey \
