@@ -39,5 +39,5 @@ tprogs = \
 	XUngrabButton/XUngrabButton \
 	XUngrabKey/XUngrabKey \
 	XUngrabKeyboard/XUngrabKeyboard \
-	UngrabPointer/UngrabPointer \
+	XUngrabPointer/XUngrabPointer \
 	WarpPointer/WarpPointer

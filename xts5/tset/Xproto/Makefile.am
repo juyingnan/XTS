@@ -125,7 +125,7 @@ tprogs = \
 	XUngrabButton/XUngrabButton \
 	XUngrabKey/XUngrabKey \
 	XUngrabKeyboard/XUngrabKeyboard \
-	UngrabPointer/UngrabPointer \
+	XUngrabPointer/XUngrabPointer \
 	XUngrabServer/XUngrabServer \
 	UnmapSubwindows/UnmapSubwindows \
 	UnmapWindow/UnmapWindow \

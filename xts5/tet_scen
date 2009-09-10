@@ -1154,7 +1154,7 @@ XUngrabKeyboard
 
 XUngrabPointer
 	"VSW5TESTSUITE CASE XUngrabPointer 3"
-	/tset/Xlib13/UngrabPointer/UngrabPointer
+	/tset/Xlib13/XUngrabPointer/XUngrabPointer
 
 XWarpPointer
 	"VSW5TESTSUITE CASE XWarpPointer 9"
@@ -3570,7 +3570,7 @@ pUngrabKeyboard
 
 pUngrabPointer
 	"VSW5TESTSUITE CASE UngrabPointer 3"
-	/tset/Xproto/UngrabPointer/UngrabPointer
+	/tset/Xproto/XUngrabPointer/XUngrabPointer
 
 pUngrabServer
 	"VSW5TESTSUITE CASE UngrabServer 3"
