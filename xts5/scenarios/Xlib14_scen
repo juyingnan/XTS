@@ -102,7 +102,7 @@
 	"VSW5TESTSUITE CASE XmbTextEscapement 1"
 	/tset/Xlib14/XmbTextEscapement/XmbTextEscapement
 	"VSW5TESTSUITE CASE XmbTextExtents 1"
-	/tset/Xlib14/mbtext/mbtext
+	/tset/Xlib14/XmbTextExtents/XmbTextExtents
 	"VSW5TESTSUITE CASE XmbTextListToTextProperty 1"
 	/tset/Xlib14/mbtlttp/mbtlttp
 	"VSW5TESTSUITE CASE XmbTextPerCharExtents 1"

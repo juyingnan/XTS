@@ -1256,7 +1256,7 @@ XmbTextEscapement
 
 XmbTextExtents
 	"VSW5TESTSUITE CASE XmbTextExtents 1"
-	/tset/Xlib14/mbtext/mbtext
+	/tset/Xlib14/XmbTextExtents/XmbTextExtents
 
 XmbTextListToTextProperty
 	"VSW5TESTSUITE CASE XmbTextListToTextProperty 1"

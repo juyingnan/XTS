@@ -33,7 +33,7 @@ tprogs = \
 	XmbResetIC/XmbResetIC \
 	XmbSetWMProperties/XmbSetWMProperties \
 	XmbTextEscapement/XmbTextEscapement \
-	mbtext/mbtext \
+	XmbTextExtents/XmbTextExtents \
 	mbtlttp/mbtlttp \
 	mbtpcex/mbtpcex \
 	mbtpttl/mbtpttl \
