@@ -4485,7 +4485,7 @@ XtNew
 
 XtNewString
 	"VSW5TESTSUITE CASE XtNewString 5"
-	/tset/Xt13/tnewstrg/tnewstrg
+	/tset/Xt13/XtNewString/XtNewString
 
 XtAllocateGC
 	"VSW5TESTSUITE CASE XtAllocateGC 9"
