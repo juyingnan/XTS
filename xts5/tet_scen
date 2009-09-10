@@ -1118,7 +1118,7 @@ XGetPointerMapping
 
 XInsertModifiermapEntry
 	"VSW5TESTSUITE CASE XInsertModifiermapEntry 1"
-	/tset/Xlib13/insrtmdfrm/insrtmdfrm
+	/tset/Xlib13/XInsertModifiermapEntry/XInsertModifiermapEntry
 
 XNewModifiermap
 	"VSW5TESTSUITE CASE XNewModifiermap 1"

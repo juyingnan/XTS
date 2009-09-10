@@ -98,7 +98,7 @@
 	"VSW5TESTSUITE CASE XGetPointerMapping 3"
 	/tset/Xlib13/XGetPointerMapping/XGetPointerMapping
 	"VSW5TESTSUITE CASE XInsertModifiermapEntry 1"
-	/tset/Xlib13/insrtmdfrm/insrtmdfrm
+	/tset/Xlib13/XInsertModifiermapEntry/XInsertModifiermapEntry
 	"VSW5TESTSUITE CASE XNewModifiermap 1"
 	/tset/Xlib13/nwmdfrmp/nwmdfrmp
 	"VSW5TESTSUITE CASE XQueryKeymap 1"
