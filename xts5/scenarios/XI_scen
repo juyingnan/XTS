@@ -106,7 +106,7 @@
 	"VSW5TESTSUITE CASE XOpenDevice 4"
 	/tset/XI/XOpenDevice/XOpenDevice
 	"VSW5TESTSUITE CASE XQueryDeviceState 8"
-	/tset/XI/querydvst/querydvst
+	/tset/XI/XQueryDeviceState/XQueryDeviceState
 	"VSW5TESTSUITE CASE XSetDeviceValuators 6"
 	/tset/XI/setdval/setdval
 	"VSW5TESTSUITE CASE XSetDeviceButtonMapping 8"

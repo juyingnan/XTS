@@ -34,7 +34,7 @@ tprogs = \
 	XListInputDevices/XListInputDevices \
 	Miscellaneous/Miscellaneous \
 	XOpenDevice/XOpenDevice \
-	querydvst/querydvst \
+	XQueryDeviceState/XQueryDeviceState \
 	setdval/setdval \
 	setdvbmap/setdvbmap \
 	setdvfocus/setdvfocus \

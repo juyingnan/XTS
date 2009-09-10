@@ -602,7 +602,7 @@ XOpenDevice
 
 XQueryDeviceState
 	"VSW5TESTSUITE CASE XQueryDeviceState 8"
-	/tset/XI/querydvst/querydvst
+	/tset/XI/XQueryDeviceState/XQueryDeviceState
 
 XSetDeviceValuators
 	"VSW5TESTSUITE CASE XSetDeviceValuators 6"
