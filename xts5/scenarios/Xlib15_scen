@@ -132,7 +132,7 @@
 	"VSW5TESTSUITE CASE XSetWMName 5"
 	/tset/Xlib15/XSetWMName/XSetWMName
 	"VSW5TESTSUITE CASE XSetWMNormalHints 3"
-	/tset/Xlib15/stwmnrmlhn/stwmnrmlhn
+	/tset/Xlib15/XSetWMNormalHints/XSetWMNormalHints
 	"VSW5TESTSUITE CASE XSetWMProperties 10"
 	/tset/Xlib15/stwmprprts/stwmprprts
 	"VSW5TESTSUITE CASE XSetWMProtocols 4"

@@ -1499,7 +1499,7 @@ XSetWMName
 
 XSetWMNormalHints
 	"VSW5TESTSUITE CASE XSetWMNormalHints 3"
-	/tset/Xlib15/stwmnrmlhn/stwmnrmlhn
+	/tset/Xlib15/XSetWMNormalHints/XSetWMNormalHints
 
 XSetWMProperties
 	"VSW5TESTSUITE CASE XSetWMProperties 10"

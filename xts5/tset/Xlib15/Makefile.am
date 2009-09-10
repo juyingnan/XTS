@@ -50,7 +50,7 @@ tprogs = \
 	XSetWMHints/XSetWMHints \
 	XSetWMIconName/XSetWMIconName \
 	XSetWMName/XSetWMName \
-	stwmnrmlhn/stwmnrmlhn \
+	XSetWMNormalHints/XSetWMNormalHints \
 	stwmprprts/stwmprprts \
 	stwmprtcls/stwmprtcls \
 	stwmszhnts/stwmszhnts \

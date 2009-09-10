@@ -37,7 +37,7 @@ XSetWMColormapWindows/XSetWMColormapWindows
 XSetWMHints/XSetWMHints
 XSetWMIconName/XSetWMIconName
 XSetWMName/XSetWMName
-stwmnrmlhn/stwmnrmlhn
+XSetWMNormalHints/XSetWMNormalHints
 stwmprprts/stwmprprts
 stwmprprts/Test1
 stwmprprts/Test2
