@@ -28,7 +28,7 @@ tprogs = \
 	GetDeviceControl/GetDeviceControl \
 	GetDeviceFocus/GetDeviceFocus \
 	XGetDeviceMotionEvents/XGetDeviceMotionEvents \
-	gtdvprop/gtdvprop \
+	GetDeviceDontPropagateList/GetDeviceDontPropagateList \
 	gtkeymppn/gtkeymppn \
 	gtslctexev/gtslctexev \
 	XListInputDevices/XListInputDevices \

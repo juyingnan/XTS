@@ -94,7 +94,7 @@
 	"VSW5TESTSUITE CASE GetDeviceMotionEvents 3"
 	/tset/XIproto/XGetDeviceMotionEvents/XGetDeviceMotionEvents
 	"VSW5TESTSUITE CASE GetDeviceDontPropagateList 3"
-	/tset/XIproto/gtdvprop/gtdvprop
+	/tset/XIproto/GetDeviceDontPropagateList/GetDeviceDontPropagateList
 	"VSW5TESTSUITE CASE GetDeviceKeyMapping 3"
 	/tset/XIproto/gtkeymppn/gtkeymppn
 	"VSW5TESTSUITE CASE GetSelectedExtensionEvents 3"
