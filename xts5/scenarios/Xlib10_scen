@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE XGrabServer 1"
 	/tset/Xlib10/GrabServer/GrabServer
 	"VSW5TESTSUITE CASE XGetScreenSaver 1"
-	/tset/Xlib10/gtscrnsvr/gtscrnsvr
+	/tset/Xlib10/GetScreenSaver/GetScreenSaver
 	"VSW5TESTSUITE CASE XInstallColormap 6"
 	/tset/Xlib10/instllclrm/instllclrm
 	"VSW5TESTSUITE CASE XKillClient 4"

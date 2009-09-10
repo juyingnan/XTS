@@ -67,7 +67,7 @@ tprogs = \
 	GetPointerControl/GetPointerControl \
 	GetPointerMapping/GetPointerMapping \
 	GetProperty/GetProperty \
-	gtscrnsvr/gtscrnsvr \
+	GetScreenSaver/GetScreenSaver \
 	gtslctnown/gtslctnown \
 	gtwdwattrb/gtwdwattrb \
 	imgtxt16/imgtxt16 \
