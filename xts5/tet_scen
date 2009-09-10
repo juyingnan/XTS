@@ -3710,7 +3710,7 @@ XtCloseDisplay
 
 XtSetLanguageProc
 	"VSW5TESTSUITE CASE XtSetLanguageProc 8"
-	/tset/Xt4/tstlnggprc/tstlnggprc
+	/tset/Xt4/XtSetLanguageProc/XtSetLanguageProc
 
 XtScreenDatabase
 	"VSW5TESTSUITE CASE XtScreenDatabase 1"

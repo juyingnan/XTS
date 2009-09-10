@@ -76,7 +76,7 @@
 	"VSW5TESTSUITE CASE XtCloseDisplay 2"
 	/tset/Xt4/XtCloseDisplay/XtCloseDisplay
 	"VSW5TESTSUITE CASE XtSetLanguageProc 8"
-	/tset/Xt4/tstlnggprc/tstlnggprc
+	/tset/Xt4/XtSetLanguageProc/XtSetLanguageProc
 	"VSW5TESTSUITE CASE XtScreenDatabase 1"
 	/tset/Xt4/XtScreenDatabase/XtScreenDatabase
 	"VSW5TESTSUITE CASE XtDatabase 2"
