@@ -100,7 +100,7 @@
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxLC 1"
 	/tset/Xlib7/XcmsCIELabQueryMaxLC/XcmsCIELabQueryMaxLC
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxC 1"
-	/tset/Xlib7/cmscieqc/cmscieqc
+	/tset/Xlib7/XcmsCIELabQueryMaxC/XcmsCIELabQueryMaxC
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxL 1"
 	/tset/Xlib7/cmscieql/cmscieql
 	"VSW5TESTSUITE CASE XcmsConversionProc 9"

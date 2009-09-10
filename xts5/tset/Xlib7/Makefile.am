@@ -21,7 +21,7 @@ tprogs = \
 	XcmsCCCOfColormap/XcmsCCCOfColormap \
 	XcmsConvertColors/XcmsConvertColors \
 	XcmsCIELabQueryMaxLC/XcmsCIELabQueryMaxLC \
-	cmscieqc/cmscieqc \
+	XcmsCIELabQueryMaxC/XcmsCIELabQueryMaxC \
 	cmscieql/cmscieql \
 	cmscproc/cmscproc \
 	cmscprocd/cmscprocd \
