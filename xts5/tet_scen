@@ -1828,7 +1828,7 @@ XShrinkRegion
 
 XStoreBuffer
 	"VSW5TESTSUITE CASE XStoreBuffer 2"
-	/tset/Xlib17/strbffr/strbffr
+	/tset/Xlib17/XStoreBuffer/XStoreBuffer
 
 XStoreBytes
 	"VSW5TESTSUITE CASE XStoreBytes 2"

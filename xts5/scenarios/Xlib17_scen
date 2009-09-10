@@ -144,7 +144,7 @@
 	"VSW5TESTSUITE CASE XShrinkRegion 3"
 	/tset/Xlib17/XShrinkRegion/XShrinkRegion
 	"VSW5TESTSUITE CASE XStoreBuffer 2"
-	/tset/Xlib17/strbffr/strbffr
+	/tset/Xlib17/XStoreBuffer/XStoreBuffer
 	"VSW5TESTSUITE CASE XStoreBytes 2"
 	/tset/Xlib17/strbyts/strbyts
 	"VSW5TESTSUITE CASE XSetRegion 2"

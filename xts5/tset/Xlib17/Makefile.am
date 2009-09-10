@@ -53,7 +53,7 @@ tprogs = \
 	XSubImage/XSubImage \
 	XSubtractRegion/XSubtractRegion \
 	XShrinkRegion/XShrinkRegion \
-	strbffr/strbffr \
+	XStoreBuffer/XStoreBuffer \
 	strbyts/strbyts \
 	strgn/strgn \
 	XStringToKeysym/XStringToKeysym \
