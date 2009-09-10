@@ -74,7 +74,7 @@ tprogs = \
 	ImageText8/ImageText8 \
 	XInstallColormap/XInstallColormap \
 	InternAtom/InternAtom \
-	KillClient/KillClient \
+	XKillClient/XKillClient \
 	XLookupColor/XLookupColor \
 	ListExtensions/ListExtensions \
 	ListFonts/ListFonts \

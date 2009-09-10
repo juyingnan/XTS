@@ -20,7 +20,7 @@ tprogs = \
 	XGrabServer/XGrabServer \
 	XGetScreenSaver/XGetScreenSaver \
 	XInstallColormap/XInstallColormap \
-	KillClient/KillClient \
+	XKillClient/XKillClient \
 	ListHosts/ListHosts \
 	ListInstalledColormaps/ListInstalledColormaps \
 	rmvfrmsvst/rmvfrmsvst \
