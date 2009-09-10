@@ -100,4 +100,4 @@
 	"VSW5TESTSUITE CASE XUngrabServer 1"
 	/tset/Xlib10/XUngrabServer/XUngrabServer
 	"VSW5TESTSUITE CASE XUninstallColormap 5"
-	/tset/Xlib10/UninstallColormap/UninstallColormap
+	/tset/Xlib10/XUninstallColormap/XUninstallColormap

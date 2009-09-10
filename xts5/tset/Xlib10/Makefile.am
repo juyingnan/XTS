@@ -31,4 +31,4 @@ tprogs = \
 	XSetAccessControl/XSetAccessControl \
 	XSetScreenSaver/XSetScreenSaver \
 	XUngrabServer/XUngrabServer \
-	UninstallColormap/UninstallColormap
+	XUninstallColormap/XUninstallColormap

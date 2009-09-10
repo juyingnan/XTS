@@ -129,5 +129,5 @@ tprogs = \
 	XUngrabServer/XUngrabServer \
 	UnmapSubwindows/UnmapSubwindows \
 	UnmapWindow/UnmapWindow \
-	UninstallColormap/UninstallColormap \
+	XUninstallColormap/XUninstallColormap \
 	WarpPointer/WarpPointer
