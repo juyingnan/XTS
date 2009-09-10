@@ -3976,7 +3976,7 @@ XtAppAddTimeOut
 
 XtRemoveTimeOut
 	"VSW5TESTSUITE CASE XtRemoveTimeOut 1"
-	/tset/Xt9/trmtmout/trmtmout
+	/tset/Xt9/XtRemoveTimeOut/XtRemoveTimeOut
 
 XtAddGrab
 	"VSW5TESTSUITE CASE XtAddGrab 5"

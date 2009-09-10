@@ -65,7 +65,7 @@
 	"VSW5TESTSUITE CASE XtAppAddTimeOut 3"
 	/tset/Xt9/XtAppAddTimeOut/XtAppAddTimeOut
 	"VSW5TESTSUITE CASE XtRemoveTimeOut 1"
-	/tset/Xt9/trmtmout/trmtmout
+	/tset/Xt9/XtRemoveTimeOut/XtRemoveTimeOut
 	"VSW5TESTSUITE CASE XtAddGrab 5"
 	/tset/Xt9/XtAddGrab/XtAddGrab
 	"VSW5TESTSUITE CASE XtRemoveGrab 2"
