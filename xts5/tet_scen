@@ -3722,7 +3722,7 @@ XtDatabase
 
 XtAppSetFallbackResources
 	"VSW5TESTSUITE CASE XtAppSetFallbackResources 2"
-	/tset/Xt4/tappstfllb/tappstfllb
+	/tset/Xt4/XtAppSetFallbackResources/XtAppSetFallbackResources
 
 XtSetArg
 	"VSW5TESTSUITE CASE XtSetArg 2"

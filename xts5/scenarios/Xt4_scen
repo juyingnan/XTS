@@ -82,7 +82,7 @@
 	"VSW5TESTSUITE CASE XtDatabase 2"
 	/tset/Xt4/tdtbs/tdtbs
 	"VSW5TESTSUITE CASE XtAppSetFallbackResources 2"
-	/tset/Xt4/tappstfllb/tappstfllb
+	/tset/Xt4/XtAppSetFallbackResources/XtAppSetFallbackResources
 	"VSW5TESTSUITE CASE XtSetArg 2"
 	/tset/Xt4/tstarg/tstarg
 	"VSW5TESTSUITE CASE XtMergeArgLists 3"
