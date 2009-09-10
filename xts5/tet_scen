@@ -1074,7 +1074,7 @@ XDisplayKeycodes
 
 XFreeModifiermap
 	"VSW5TESTSUITE CASE XFreeModifiermap 1"
-	/tset/Xlib13/frmdfrmp/frmdfrmp
+	/tset/Xlib13/XFreeModifiermap/XFreeModifiermap
 
 XGrabButton
 	"VSW5TESTSUITE CASE XGrabButton 39"

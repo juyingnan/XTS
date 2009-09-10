@@ -76,7 +76,7 @@
 	"VSW5TESTSUITE CASE XDisplayKeycodes 3"
 	/tset/Xlib13/XDisplayKeycodes/XDisplayKeycodes
 	"VSW5TESTSUITE CASE XFreeModifiermap 1"
-	/tset/Xlib13/frmdfrmp/frmdfrmp
+	/tset/Xlib13/XFreeModifiermap/XFreeModifiermap
 	"VSW5TESTSUITE CASE XGrabButton 39"
 	/tset/Xlib13/GrabButton/GrabButton
 	"VSW5TESTSUITE CASE XGrabKey 16"
