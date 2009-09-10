@@ -20,7 +20,7 @@ tprogs = \
 	XDestroyRegion/XDestroyRegion \
 	XEmptyRegion/XEmptyRegion \
 	XEqualRegion/XEqualRegion \
-	fndcntxt/fndcntxt \
+	XFindContext/XFindContext \
 	ftchbffr/ftchbffr \
 	ftchbyts/ftchbyts \
 	gtdflt/gtdflt \

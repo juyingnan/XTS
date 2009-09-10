@@ -1696,7 +1696,7 @@ XEqualRegion
 
 XFindContext
 	"VSW5TESTSUITE CASE XFindContext 2"
-	/tset/Xlib17/fndcntxt/fndcntxt
+	/tset/Xlib17/XFindContext/XFindContext
 
 XFetchBuffer
 	"VSW5TESTSUITE CASE XFetchBuffer 2"
