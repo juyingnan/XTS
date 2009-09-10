@@ -2019,7 +2019,7 @@ XListDepths
 
 XLastKnownRequestProcessed
 	"VSW5TESTSUITE CASE XLastKnownRequestProcessed 1"
-	/tset/Xlib3/lstknwnrqs/lstknwnrqs
+	/tset/Xlib3/XLastKnownRequestProcessed/XLastKnownRequestProcessed
 
 XListPixmapFormats
 	"VSW5TESTSUITE CASE XListPixmapFormats 2"
@@ -2239,7 +2239,7 @@ ImageByteOrder
 
 LastKnownRequestProcessed
 	"VSW5TESTSUITE CASE LastKnownRequestProcessed 1"
-	/tset/Xlib3/lstknwnrqs/lstknwnrqs_m
+	/tset/Xlib3/XLastKnownRequestProcessed/XLastKnownRequestProcessed_m
 
 MinCmapsOfScreen
 	"VSW5TESTSUITE CASE MinCmapsOfScreen 1"

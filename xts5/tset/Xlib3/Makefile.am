@@ -45,7 +45,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XHeightOfScreen/XHeightOfScreen XHeightOfScreen/XHeightOfScreen_m \
 	XImageByteOrder/XImageByteOrder XImageByteOrder/XImageByteOrder_m \
 	XListDepths/XListDepths \
-	lstknwnrqs/lstknwnrqs lstknwnrqs/lstknwnrqs_m \
+	XLastKnownRequestProcessed/XLastKnownRequestProcessed XLastKnownRequestProcessed/XLastKnownRequestProcessed_m \
 	lstpxmpfrm/lstpxmpfrm \
 	mncmpsofsc/mncmpsofsc mncmpsofsc/mncmpsofsc_m \
 	mxcmpsofsc/mxcmpsofsc mxcmpsofsc/mxcmpsofsc_m \

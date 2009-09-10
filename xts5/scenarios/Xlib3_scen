@@ -128,7 +128,7 @@
 	"VSW5TESTSUITE CASE XListDepths 3"
 	/tset/Xlib3/XListDepths/XListDepths
 	"VSW5TESTSUITE CASE XLastKnownRequestProcessed 1"
-	/tset/Xlib3/lstknwnrqs/lstknwnrqs
+	/tset/Xlib3/XLastKnownRequestProcessed/XLastKnownRequestProcessed
 	"VSW5TESTSUITE CASE XListPixmapFormats 2"
 	/tset/Xlib3/lstpxmpfrm/lstpxmpfrm
 	"VSW5TESTSUITE CASE XMinCmapsOfScreen 1"
@@ -238,7 +238,7 @@
 	"VSW5TESTSUITE CASE ImageByteOrder 1"
 	/tset/Xlib3/XImageByteOrder/XImageByteOrder_m
 	"VSW5TESTSUITE CASE LastKnownRequestProcessed 1"
-	/tset/Xlib3/lstknwnrqs/lstknwnrqs_m
+	/tset/Xlib3/XLastKnownRequestProcessed/XLastKnownRequestProcessed_m
 	"VSW5TESTSUITE CASE MinCmapsOfScreen 1"
 	/tset/Xlib3/mncmpsofsc/mncmpsofsc_m
 	"VSW5TESTSUITE CASE MaxCmapsOfScreen 1"
