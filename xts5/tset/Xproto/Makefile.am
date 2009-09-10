@@ -117,7 +117,7 @@ tprogs = \
 	XSetInputFocus/XSetInputFocus \
 	XSetModifierMapping/XSetModifierMapping \
 	XSetPointerMapping/XSetPointerMapping \
-	StoreColors/StoreColors \
+	XStoreColors/XStoreColors \
 	StoreNamedColor/StoreNamedColor \
 	XSetScreenSaver/XSetScreenSaver \
 	XSetSelectionOwner/XSetSelectionOwner \

@@ -272,7 +272,7 @@
 	"VSW5TESTSUITE CASE SetPointerMapping 3"
 	/tset/Xproto/XSetPointerMapping/XSetPointerMapping
 	"VSW5TESTSUITE CASE StoreColors 4"
-	/tset/Xproto/StoreColors/StoreColors
+	/tset/Xproto/XStoreColors/XStoreColors
 	"VSW5TESTSUITE CASE StoreNamedColor 4"
 	/tset/Xproto/StoreNamedColor/StoreNamedColor
 	"VSW5TESTSUITE CASE SetScreenSaver 3"

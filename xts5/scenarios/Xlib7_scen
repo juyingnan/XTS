@@ -82,7 +82,7 @@
 	"VSW5TESTSUITE CASE XStoreColor 8"
 	/tset/Xlib7/strclr/strclr
 	"VSW5TESTSUITE CASE XStoreColors 9"
-	/tset/Xlib7/StoreColors/StoreColors
+	/tset/Xlib7/XStoreColors/XStoreColors
 	"VSW5TESTSUITE CASE XStoreNamedColor 9"
 	/tset/Xlib7/StoreNamedColor/StoreNamedColor
 	"VSW5TESTSUITE CASE XcmsAllocColor 2"
