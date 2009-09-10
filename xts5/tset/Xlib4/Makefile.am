@@ -18,7 +18,7 @@ tprogs = \
 	CreateWindow/CreateWindow \
 	dfncrsr/dfncrsr \
 	DestroySubwindows/DestroySubwindows \
-	dstrywdw/dstrywdw \
+	DestroyWindow/DestroyWindow \
 	lwrwdw/lwrwdw \
 	mprsd/mprsd \
 	mpsbws/mpsbws \
