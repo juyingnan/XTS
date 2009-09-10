@@ -1204,7 +1204,7 @@ XFontsOfFontSet
 
 XFreeFontSet
 	"VSW5TESTSUITE CASE XFreeFontSet 1"
-	/tset/Xlib14/freefs/freefs
+	/tset/Xlib14/XFreeFontSet/XFreeFontSet
 
 XGetICValues
 	"VSW5TESTSUITE CASE XGetICValues 3"
