@@ -68,7 +68,7 @@
 	"VSW5TESTSUITE CASE XCreateColormap 13"
 	/tset/Xlib7/XCreateColormap/XCreateColormap
 	"VSW5TESTSUITE CASE XFreeColormap 5"
-	/tset/Xlib7/FreeColormap/FreeColormap
+	/tset/Xlib7/XFreeColormap/XFreeColormap
 	"VSW5TESTSUITE CASE XFreeColors 9"
 	/tset/Xlib7/FreeColors/FreeColors
 	"VSW5TESTSUITE CASE XLookupColor 4"

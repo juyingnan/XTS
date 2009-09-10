@@ -59,7 +59,7 @@ tprogs = \
 	XcmsSetWhitePoint/XcmsSetWhitePoint \
 	XCopyColormapAndFree/XCopyColormapAndFree \
 	XCreateColormap/XCreateColormap \
-	FreeColormap/FreeColormap \
+	XFreeColormap/XFreeColormap \
 	FreeColors/FreeColors \
 	XLookupColor/XLookupColor \
 	prsclr/prsclr \

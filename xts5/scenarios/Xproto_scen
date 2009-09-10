@@ -126,7 +126,7 @@
 	"VSW5TESTSUITE CASE FillPoly 3"
 	/tset/Xproto/FillPoly/FillPoly
 	"VSW5TESTSUITE CASE FreeColormap 3"
-	/tset/Xproto/FreeColormap/FreeColormap
+	/tset/Xproto/XFreeColormap/XFreeColormap
 	"VSW5TESTSUITE CASE FreeColors 3"
 	/tset/Xproto/FreeColors/FreeColors
 	"VSW5TESTSUITE CASE FreeCursor 3"
