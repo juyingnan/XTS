@@ -109,7 +109,7 @@
 	"VSW5TESTSUITE CASE XtSetWarningMsgHandler 1"
 	/tset/XtC/XtSetWarningMsgHandler/XtSetWarningMsgHandler
 	"VSW5TESTSUITE CASE XtWarning 3"
-	/tset/XtC/twarning/twarning
+	/tset/XtC/XtWarning/XtWarning
 	"VSW5TESTSUITE CASE XtWarningMsg 3"
 	/tset/XtC/XtWarningMsg/XtWarningMsg
 	"VSW5TESTSUITE CASE XtSetErrorHandler 1"
