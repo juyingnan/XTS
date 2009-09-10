@@ -35,7 +35,7 @@ tprogs = \
 	Miscellaneous/Miscellaneous \
 	XOpenDevice/XOpenDevice \
 	XQueryDeviceState/XQueryDeviceState \
-	setdval/setdval \
+	XSetDeviceValuators/XSetDeviceValuators \
 	setdvbmap/setdvbmap \
 	setdvfocus/setdvfocus \
 	setdvmmap/setdvmmap \

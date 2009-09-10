@@ -606,7 +606,7 @@ XQueryDeviceState
 
 XSetDeviceValuators
 	"VSW5TESTSUITE CASE XSetDeviceValuators 6"
-	/tset/XI/setdval/setdval
+	/tset/XI/XSetDeviceValuators/XSetDeviceValuators
 
 XSetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XSetDeviceButtonMapping 8"
