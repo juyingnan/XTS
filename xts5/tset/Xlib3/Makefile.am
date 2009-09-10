@@ -35,7 +35,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XDisplayHeightMM/XDisplayHeightMM XDisplayHeightMM/XDisplayHeightMM_m \
 	XDisplayOfScreen/XDisplayOfScreen XDisplayOfScreen/XDisplayOfScreen_m \
 	XDisplayPlanes/XDisplayPlanes XDisplayPlanes/XDisplayPlanes_m \
-	dsplystr/dsplystr dsplystr/dsplystr_m \
+	XDisplayString/XDisplayString XDisplayString/XDisplayString_m \
 	dsplywdth/dsplywdth dsplywdth/dsplywdth_m \
 	dsplywdthm/dsplywdthm dsplywdthm/dsplywdthm_m \
 	dssvundrs/dssvundrs dssvundrs/dssvundrs_m \
@@ -71,7 +71,7 @@ tprogs = XAllPlanes/XAllPlanes \
 
 # Auxiliary programs run from tests
 check_PROGRAMS += \
-	dsplystr/Test1 \
+	XDisplayString/Test1 \
 	OpenDisplay/Test1
-dsplystr_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
+XDisplayString_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
 OpenDisplay_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)

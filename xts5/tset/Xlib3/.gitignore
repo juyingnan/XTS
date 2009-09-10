@@ -49,8 +49,8 @@ XDisplayOfScreen/XDisplayOfScreen_m
 XDisplayPlanes/XDisplayPlanes
 XDisplayPlanes/XDisplayPlanes_m
 dsplystr/Test1
-dsplystr/dsplystr
-dsplystr/dsplystr_m
+XDisplayString/XDisplayString
+XDisplayString/XDisplayString_m
 dsplywdth/dsplywdth
 dsplywdth/dsplywdth_m
 dsplywdthm/dsplywdthm

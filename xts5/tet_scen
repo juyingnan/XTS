@@ -1979,7 +1979,7 @@ XDisplayPlanes
 
 XDisplayString
 	"VSW5TESTSUITE CASE XDisplayString 2"
-	/tset/Xlib3/dsplystr/dsplystr
+	/tset/Xlib3/XDisplayString/XDisplayString
 
 XDisplayWidth
 	"VSW5TESTSUITE CASE XDisplayWidth 1"
@@ -2207,7 +2207,7 @@ DisplayPlanes
 
 DisplayString
 	"VSW5TESTSUITE CASE DisplayString 2"
-	/tset/Xlib3/dsplystr/dsplystr_m
+	/tset/Xlib3/XDisplayString/XDisplayString_m
 
 DisplayWidth
 	"VSW5TESTSUITE CASE DisplayWidth 1"
