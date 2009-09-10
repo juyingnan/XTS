@@ -1487,7 +1487,7 @@ XSetWMColormapWindows
 
 XSetWMHints
 	"VSW5TESTSUITE CASE XSetWMHints 3"
-	/tset/Xlib15/stwmhnts/stwmhnts
+	/tset/Xlib15/XSetWMHints/XSetWMHints
 
 XSetWMIconName
 	"VSW5TESTSUITE CASE XSetWMIconName 5"

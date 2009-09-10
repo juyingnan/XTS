@@ -126,7 +126,7 @@
 	"VSW5TESTSUITE CASE XSetWMColormapWindows 4"
 	/tset/Xlib15/XSetWMColormapWindows/XSetWMColormapWindows
 	"VSW5TESTSUITE CASE XSetWMHints 3"
-	/tset/Xlib15/stwmhnts/stwmhnts
+	/tset/Xlib15/XSetWMHints/XSetWMHints
 	"VSW5TESTSUITE CASE XSetWMIconName 5"
 	/tset/Xlib15/stwmicnnm/stwmicnnm
 	"VSW5TESTSUITE CASE XSetWMName 5"
