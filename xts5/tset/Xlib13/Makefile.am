@@ -40,4 +40,4 @@ tprogs = \
 	UngrabKey/UngrabKey \
 	UngrabKeyboard/UngrabKeyboard \
 	UngrabPointer/UngrabPointer \
-	wrppntr/wrppntr
+	WarpPointer/WarpPointer

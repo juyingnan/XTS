@@ -130,4 +130,4 @@ tprogs = \
 	UnmapSubwindows/UnmapSubwindows \
 	UnmapWindow/UnmapWindow \
 	UninstallColormap/UninstallColormap \
-	wrppntr/wrppntr
+	WarpPointer/WarpPointer
