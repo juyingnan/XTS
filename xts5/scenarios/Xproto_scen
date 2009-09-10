@@ -98,7 +98,7 @@
 	"VSW5TESTSUITE CASE CopyArea 3"
 	/tset/Xproto/CopyArea/CopyArea
 	"VSW5TESTSUITE CASE CopyColormapAndFree 5"
-	/tset/Xproto/CopyColormapAndFree/CopyColormapAndFree
+	/tset/Xproto/XCopyColormapAndFree/XCopyColormapAndFree
 	"VSW5TESTSUITE CASE CopyGC 4"
 	/tset/Xproto/CopyGC/CopyGC
 	"VSW5TESTSUITE CASE CopyPlane 3"

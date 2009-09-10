@@ -2547,7 +2547,7 @@ XAllocNamedColor
 
 XCopyColormapAndFree
 	"VSW5TESTSUITE CASE XCopyColormapAndFree 5"
-	/tset/Xlib7/CopyColormapAndFree/CopyColormapAndFree
+	/tset/Xlib7/XCopyColormapAndFree/XCopyColormapAndFree
 
 XCreateColormap
 	"VSW5TESTSUITE CASE XCreateColormap 13"
@@ -3190,7 +3190,7 @@ pCopyArea
 
 pCopyColormapAndFree
 	"VSW5TESTSUITE CASE CopyColormapAndFree 5"
-	/tset/Xproto/CopyColormapAndFree/CopyColormapAndFree
+	/tset/Xproto/XCopyColormapAndFree/XCopyColormapAndFree
 
 pCopyGC
 	"VSW5TESTSUITE CASE CopyGC 4"

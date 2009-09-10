@@ -30,7 +30,7 @@ tprogs = \
 	XConfigureWindow/XConfigureWindow \
 	XConvertSelection/XConvertSelection \
 	CopyArea/CopyArea \
-	CopyColormapAndFree/CopyColormapAndFree \
+	XCopyColormapAndFree/XCopyColormapAndFree \
 	CopyGC/CopyGC \
 	CopyPlane/CopyPlane \
 	CirculateWindow/CirculateWindow \
