@@ -1800,7 +1800,7 @@ XRebindKeysym
 
 XRectInRegion
 	"VSW5TESTSUITE CASE XRectInRegion 3"
-	/tset/Xlib17/rctinrgn/rctinrgn
+	/tset/Xlib17/XRectInRegion/XRectInRegion
 
 XReadBitmapFile
 	"VSW5TESTSUITE CASE XReadBitmapFile 9"

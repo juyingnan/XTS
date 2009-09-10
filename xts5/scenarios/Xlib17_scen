@@ -130,7 +130,7 @@
 	"VSW5TESTSUITE CASE XRebindKeysym 2"
 	/tset/Xlib17/XRebindKeysym/XRebindKeysym
 	"VSW5TESTSUITE CASE XRectInRegion 3"
-	/tset/Xlib17/rctinrgn/rctinrgn
+	/tset/Xlib17/XRectInRegion/XRectInRegion
 	"VSW5TESTSUITE CASE XReadBitmapFile 9"
 	/tset/Xlib17/rdbtmpfl/rdbtmpfl
 	"VSW5TESTSUITE CASE XRefreshKeyboardMapping 3"

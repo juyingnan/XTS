@@ -46,7 +46,7 @@ tprogs = \
 	XParseGeometry/XParseGeometry \
 	XPutPixel/XPutPixel \
 	XRebindKeysym/XRebindKeysym \
-	rctinrgn/rctinrgn \
+	XRectInRegion/XRectInRegion \
 	rdbtmpfl/rdbtmpfl \
 	rfrshkybrd/rfrshkybrd \
 	rttbffrs/rttbffrs \
