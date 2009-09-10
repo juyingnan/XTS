@@ -19,7 +19,7 @@ tprogs = \
 	XDefineCursor/XDefineCursor \
 	XDestroySubwindows/XDestroySubwindows \
 	XDestroyWindow/XDestroyWindow \
-	lwrwdw/lwrwdw \
+	XLowerWindow/XLowerWindow \
 	mprsd/mprsd \
 	MapSubwindows/MapSubwindows \
 	MapWindow/MapWindow \

@@ -2354,7 +2354,7 @@ XDestroyWindow
 
 XLowerWindow
 	"VSW5TESTSUITE CASE XLowerWindow 4"
-	/tset/Xlib4/lwrwdw/lwrwdw
+	/tset/Xlib4/XLowerWindow/XLowerWindow
 
 XMapRaised
 	"VSW5TESTSUITE CASE XMapRaised 15"
