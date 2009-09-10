@@ -26,7 +26,7 @@ tprogs = \
 	XGetRGBColormaps/XGetRGBColormaps \
 	XGetTransientForHint/XGetTransientForHint \
 	XGetTextProperty/XGetTextProperty \
-	gtwmclntmc/gtwmclntmc \
+	XGetWMClientMachine/XGetWMClientMachine \
 	gtwmclrmpw/gtwmclrmpw \
 	gtwmhnts/gtwmhnts \
 	gtwmicnnm/gtwmicnnm \

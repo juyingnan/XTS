@@ -1403,7 +1403,7 @@ XGetTextProperty
 
 XGetWMClientMachine
 	"VSW5TESTSUITE CASE XGetWMClientMachine 3"
-	/tset/Xlib15/gtwmclntmc/gtwmclntmc
+	/tset/Xlib15/XGetWMClientMachine/XGetWMClientMachine
 
 XGetWMColormapWindows
 	"VSW5TESTSUITE CASE XGetWMColormapWindows 4"
