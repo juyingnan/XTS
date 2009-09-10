@@ -1439,7 +1439,7 @@ XIconifyWindow
 
 XReconfigureWMWindow
 	"VSW5TESTSUITE CASE XReconfigureWMWindow 5"
-	/tset/Xlib15/rcnfgrwmwd/rcnfgrwmwd
+	/tset/Xlib15/XReconfigureWMWindow/XReconfigureWMWindow
 
 XSetClassHint
 	"VSW5TESTSUITE CASE XSetClassHint 3"

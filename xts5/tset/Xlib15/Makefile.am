@@ -35,7 +35,7 @@ tprogs = \
 	XGetWMProtocols/XGetWMProtocols \
 	XGetWMSizeHints/XGetWMSizeHints \
 	XIconifyWindow/XIconifyWindow \
-	rcnfgrwmwd/rcnfgrwmwd \
+	XReconfigureWMWindow/XReconfigureWMWindow \
 	stclsshnt/stclsshnt \
 	stcmmnd/stcmmnd \
 	sticnnm/sticnnm \

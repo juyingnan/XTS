@@ -102,7 +102,7 @@
 	"VSW5TESTSUITE CASE XIconifyWindow 3"
 	/tset/Xlib15/XIconifyWindow/XIconifyWindow
 	"VSW5TESTSUITE CASE XReconfigureWMWindow 5"
-	/tset/Xlib15/rcnfgrwmwd/rcnfgrwmwd
+	/tset/Xlib15/XReconfigureWMWindow/XReconfigureWMWindow
 	"VSW5TESTSUITE CASE XSetClassHint 3"
 	/tset/Xlib15/stclsshnt/stclsshnt
 	"VSW5TESTSUITE CASE XSetCommand 3"
