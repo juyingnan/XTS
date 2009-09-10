@@ -995,7 +995,7 @@ XPending
 
 XPutBackEvent
 	"VSW5TESTSUITE CASE XPutBackEvent 2"
-	/tset/Xlib12/ptbckevnt/ptbckevnt
+	/tset/Xlib12/XPutBackEvent/XPutBackEvent
 
 XSelectInput
 	"VSW5TESTSUITE CASE XSelectInput 8"

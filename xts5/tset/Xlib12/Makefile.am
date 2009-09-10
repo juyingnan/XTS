@@ -27,7 +27,7 @@ tprogs = \
 	XPeekEvent/XPeekEvent \
 	XPeekIfEvent/XPeekIfEvent \
 	XPending/XPending \
-	ptbckevnt/ptbckevnt \
+	XPutBackEvent/XPutBackEvent \
 	slctinpt/slctinpt \
 	SendEvent/SendEvent \
 	staftrfnct/staftrfnct \
