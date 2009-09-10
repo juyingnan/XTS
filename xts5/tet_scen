@@ -4625,7 +4625,7 @@ RectangleObject
 
 XtSpecificationRelease
 	"VSW5TESTSUITE CASE XtSpecificationRelease 2"
-	/tset/Xt15/spcfctnr/spcfctnr
+	/tset/Xt15/XtSpecificationRelease/XtSpecificationRelease
 
 #Discrete tests for Xt Appendix C
 
