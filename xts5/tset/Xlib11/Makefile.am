@@ -9,7 +9,7 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	bttnprss/bttnprss \
+	ButtonPress/ButtonPress \
 	bttnrls/bttnrls \
 	clntmssg/clntmssg \
 	clrmpntfy/clrmpntfy \
