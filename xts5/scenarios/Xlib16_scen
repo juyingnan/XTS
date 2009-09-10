@@ -106,7 +106,7 @@
 	"VSW5TESTSUITE CASE XResourceManagerString 2"
 	/tset/Xlib16/rsrcmngrst/rsrcmngrst
 	"VSW5TESTSUITE CASE XrmCombineDatabase 6"
-	/tset/Xlib16/rmcomdt/rmcomdt
+	/tset/Xlib16/XrmCombineDatabase/XrmCombineDatabase
 	"VSW5TESTSUITE CASE XrmCombineFileDatabase 6"
 	/tset/Xlib16/rmcomfdt/rmcomfdt
 	"VSW5TESTSUITE CASE XrmEnumerateDatabase 3"

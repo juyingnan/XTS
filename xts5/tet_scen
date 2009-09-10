@@ -1618,7 +1618,7 @@ XResourceManagerString
 
 XrmCombineDatabase
 	"VSW5TESTSUITE CASE XrmCombineDatabase 6"
-	/tset/Xlib16/rmcomdt/rmcomdt
+	/tset/Xlib16/XrmCombineDatabase/XrmCombineDatabase
 
 XrmCombineFileDatabase
 	"VSW5TESTSUITE CASE XrmCombineFileDatabase 6"

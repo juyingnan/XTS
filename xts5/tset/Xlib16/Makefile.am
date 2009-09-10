@@ -8,13 +8,13 @@ check_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
-rmcomdt_rmcomdt_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
+XrmCombineDatabase_XrmCombineDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 rmcomfdt_rmcomfdt_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 rmedata_rmedata_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 rmpstoq_rmpstoq_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 
 tprogs = \
-	rmcomdt/rmcomdt \
+	XrmCombineDatabase/XrmCombineDatabase \
 	rmcomfdt/rmcomfdt \
 	rmdstrydtb/rmdstrydtb \
 	rmedata/rmedata \
