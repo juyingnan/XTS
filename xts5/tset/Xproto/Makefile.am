@@ -28,7 +28,7 @@ tprogs = \
 	ClearArea/ClearArea \
 	CloseFont/CloseFont \
 	XConfigureWindow/XConfigureWindow \
-	ConvertSelection/ConvertSelection \
+	XConvertSelection/XConvertSelection \
 	CopyArea/CopyArea \
 	CopyColormapAndFree/CopyColormapAndFree \
 	CopyGC/CopyGC \

@@ -2437,7 +2437,7 @@ XChangeProperty
 
 XConvertSelection
 	"VSW5TESTSUITE CASE XConvertSelection 5"
-	/tset/Xlib5/ConvertSelection/ConvertSelection
+	/tset/Xlib5/XConvertSelection/XConvertSelection
 
 XDeleteProperty
 	"VSW5TESTSUITE CASE XDeleteProperty 4"
@@ -3182,7 +3182,7 @@ pConfigureWindow
 
 pConvertSelection
 	"VSW5TESTSUITE CASE ConvertSelection 3"
-	/tset/Xproto/ConvertSelection/ConvertSelection
+	/tset/Xproto/XConvertSelection/XConvertSelection
 
 pCopyArea
 	"VSW5TESTSUITE CASE CopyArea 3"

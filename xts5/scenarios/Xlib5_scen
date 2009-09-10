@@ -58,7 +58,7 @@
 	"VSW5TESTSUITE CASE XChangeProperty 13"
 	/tset/Xlib5/XChangeProperty/XChangeProperty
 	"VSW5TESTSUITE CASE XConvertSelection 5"
-	/tset/Xlib5/ConvertSelection/ConvertSelection
+	/tset/Xlib5/XConvertSelection/XConvertSelection
 	"VSW5TESTSUITE CASE XDeleteProperty 4"
 	/tset/Xlib5/DeleteProperty/DeleteProperty
 	"VSW5TESTSUITE CASE XGetAtomName 2"
