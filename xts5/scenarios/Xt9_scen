@@ -87,7 +87,7 @@
 	"VSW5TESTSUITE CASE XtUngrabPointer 1"
 	/tset/Xt9/tunpointr/tunpointr
 	"VSW5TESTSUITE CASE XtSetKeyboardFocus 17"
-	/tset/Xt9/tstkbfocs/tstkbfocs
+	/tset/Xt9/XtSetKeyboardFocus/XtSetKeyboardFocus
 	"VSW5TESTSUITE CASE XtCallAcceptFocus 2"
 	/tset/Xt9/XtCallAcceptFocus/XtCallAcceptFocus
 	"VSW5TESTSUITE CASE XtAppPending 5"

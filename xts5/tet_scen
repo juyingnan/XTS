@@ -4020,7 +4020,7 @@ XtUngrabPointer
 
 XtSetKeyboardFocus
 	"VSW5TESTSUITE CASE XtSetKeyboardFocus 17"
-	/tset/Xt9/tstkbfocs/tstkbfocs
+	/tset/Xt9/XtSetKeyboardFocus/XtSetKeyboardFocus
 
 XtCallAcceptFocus
 	"VSW5TESTSUITE CASE XtCallAcceptFocus 2"
