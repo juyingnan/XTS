@@ -4205,7 +4205,7 @@ XtCvtStringToFont
 
 XtCvtStringToFontSet
 	"VSW5TESTSUITE CASE XtCvtStringToFontSet 11"
-	/tset/Xt11/tcstfset/tcstfset
+	/tset/Xt11/XtCvtStringToFontSet/XtCvtStringToFontSet
 
 XtCvtStringToFontStruct
 	"VSW5TESTSUITE CASE XtCvtStringToFontStruct 8"
