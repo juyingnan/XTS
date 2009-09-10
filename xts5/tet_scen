@@ -904,7 +904,7 @@ SelectionClear
 
 SelectionNotify
 	"VSW5TESTSUITE CASE SelectionNotify 1"
-	/tset/Xlib11/slctnntfy/slctnntfy
+	/tset/Xlib11/SelectionNotify/SelectionNotify
 
 SelectionRequest
 	"VSW5TESTSUITE CASE SelectionRequest 1"

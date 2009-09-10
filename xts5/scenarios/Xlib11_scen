@@ -114,7 +114,7 @@
 	"VSW5TESTSUITE CASE SelectionClear 1"
 	/tset/Xlib11/SelectionClear/SelectionClear
 	"VSW5TESTSUITE CASE SelectionNotify 1"
-	/tset/Xlib11/slctnntfy/slctnntfy
+	/tset/Xlib11/SelectionNotify/SelectionNotify
 	"VSW5TESTSUITE CASE SelectionRequest 1"
 	/tset/Xlib11/slctnrqst/slctnrqst
 	"VSW5TESTSUITE CASE UnmapNotify 3"
