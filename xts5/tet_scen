@@ -2051,7 +2051,7 @@ XPlanesOfScreen
 
 XProtocolRevision
 	"VSW5TESTSUITE CASE XProtocolRevision 1"
-	/tset/Xlib3/prtclrvsn/prtclrvsn
+	/tset/Xlib3/XProtocolRevision/XProtocolRevision
 
 XProtocolVersion
 	"VSW5TESTSUITE CASE XProtocolVersion 1"
@@ -2259,7 +2259,7 @@ PlanesOfScreen
 
 ProtocolRevision
 	"VSW5TESTSUITE CASE ProtocolRevision 1"
-	/tset/Xlib3/prtclrvsn/prtclrvsn_m
+	/tset/Xlib3/XProtocolRevision/XProtocolRevision_m
 
 ProtocolVersion
 	"VSW5TESTSUITE CASE ProtocolVersion 1"

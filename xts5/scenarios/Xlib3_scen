@@ -144,7 +144,7 @@
 	"VSW5TESTSUITE CASE XPlanesOfScreen 1"
 	/tset/Xlib3/XPlanesOfScreen/XPlanesOfScreen
 	"VSW5TESTSUITE CASE XProtocolRevision 1"
-	/tset/Xlib3/prtclrvsn/prtclrvsn
+	/tset/Xlib3/XProtocolRevision/XProtocolRevision
 	"VSW5TESTSUITE CASE XProtocolVersion 1"
 	/tset/Xlib3/prtclvrsn/prtclvrsn
 	"VSW5TESTSUITE CASE XQLength 1"
@@ -248,7 +248,7 @@
 	"VSW5TESTSUITE CASE PlanesOfScreen 1"
 	/tset/Xlib3/XPlanesOfScreen/XPlanesOfScreen_m
 	"VSW5TESTSUITE CASE ProtocolRevision 1"
-	/tset/Xlib3/prtclrvsn/prtclrvsn_m
+	/tset/Xlib3/XProtocolRevision/XProtocolRevision_m
 	"VSW5TESTSUITE CASE ProtocolVersion 1"
 	/tset/Xlib3/prtclvrsn/prtclvrsn_m
 	"VSW5TESTSUITE CASE QLength 1"
