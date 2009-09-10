@@ -152,7 +152,7 @@
 	"VSW5TESTSUITE CASE GetFontPath 3"
 	/tset/Xproto/GetFontPath/GetFontPath
 	"VSW5TESTSUITE CASE GetGeometry 3"
-	/tset/Xproto/gtgmtry/gtgmtry
+	/tset/Xproto/GetGeometry/GetGeometry
 	"VSW5TESTSUITE CASE GetImage 3"
 	/tset/Xproto/gtimg/gtimg
 	"VSW5TESTSUITE CASE GetInputFocus 3"

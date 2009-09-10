@@ -57,7 +57,7 @@ tprogs = \
 	GrabServer/GrabServer \
 	GetAtomName/GetAtomName \
 	GetFontPath/GetFontPath \
-	gtgmtry/gtgmtry \
+	GetGeometry/GetGeometry \
 	gtimg/gtimg \
 	gtinptfcs/gtinptfcs \
 	gtkybrdcnt/gtkybrdcnt \

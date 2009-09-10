@@ -13,7 +13,7 @@ tprogs = \
 	ConvertSelection/ConvertSelection \
 	DeleteProperty/DeleteProperty \
 	GetAtomName/GetAtomName \
-	gtgmtry/gtgmtry \
+	GetGeometry/GetGeometry \
 	gtslctnown/gtslctnown \
 	gtwdwattrb/gtwdwattrb \
 	gtwdwprprt/gtwdwprprt \
