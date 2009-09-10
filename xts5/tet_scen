@@ -3554,7 +3554,7 @@ pSetSelectionOwner
 
 pTranslateCoords
 	"VSW5TESTSUITE CASE TranslateCoords 3"
-	/tset/Xproto/trnsltcrds/trnsltcrds
+	/tset/Xproto/TranslateCoords/TranslateCoords
 
 pUngrabButton
 	"VSW5TESTSUITE CASE UngrabButton 3"

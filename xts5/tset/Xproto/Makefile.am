@@ -121,7 +121,7 @@ tprogs = \
 	StoreNamedColor/StoreNamedColor \
 	SetScreenSaver/SetScreenSaver \
 	SetSelectionOwner/SetSelectionOwner \
-	trnsltcrds/trnsltcrds \
+	TranslateCoords/TranslateCoords \
 	ungrbbttn/ungrbbttn \
 	ungrbky/ungrbky \
 	ungrbkybrd/ungrbkybrd \

@@ -280,7 +280,7 @@
 	"VSW5TESTSUITE CASE SetSelectionOwner 3"
 	/tset/Xproto/SetSelectionOwner/SetSelectionOwner
 	"VSW5TESTSUITE CASE TranslateCoords 3"
-	/tset/Xproto/trnsltcrds/trnsltcrds
+	/tset/Xproto/TranslateCoords/TranslateCoords
 	"VSW5TESTSUITE CASE UngrabButton 3"
 	/tset/Xproto/ungrbbttn/ungrbbttn
 	"VSW5TESTSUITE CASE UngrabKey 3"
