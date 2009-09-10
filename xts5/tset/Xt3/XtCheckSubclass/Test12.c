@@ -20,7 +20,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xt3/tchcksbcls/Test12.c,v 1.1 2005-02-12 14:37:59 anderson Exp $
+* $Header: /cvs/xtest/xtest/xts5/tset/Xt3/XtCheckSubclass/Test12.c,v 1.1 2005-02-12 14:37:59 anderson Exp $
 * 
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995
 * Copyright (c) 88open Consortium, Ltd. 1990, 1991, 1992, 1993
@@ -28,7 +28,7 @@ SOFTWARE.
 * 
 * Project: VSW5
 * 
-* File: tset/Xt3/tchcksbcls/Test12.c
+* File: tset/Xt3/XtCheckSubclass/Test12.c
 * 
 * Description:
 *	Tests for assertions 1 and 2.  Since DEBUG must be defined for 

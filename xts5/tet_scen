@@ -3672,7 +3672,7 @@ XtIsApplicationShell
 
 XtCheckSubclass
 	"VSW5TESTSUITE CASE XtCheckSubclass 3"
-	/tset/Xt3/tchcksbcls/tchcksbcls
+	/tset/Xt3/XtCheckSubclass/XtCheckSubclass
 
 XtInitializeWidgetClass
 	"VSW5TESTSUITE CASE XtInitializeWidgetClass 2"
