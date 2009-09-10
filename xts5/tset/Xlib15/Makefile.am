@@ -39,7 +39,7 @@ tprogs = \
 	XSetClassHint/XSetClassHint \
 	XSetCommand/XSetCommand \
 	XSetIconName/XSetIconName \
-	sticnszs/sticnszs \
+	XSetIconSizes/XSetIconSizes \
 	strgbclrmp/strgbclrmp \
 	strlstttxt/strlstttxt \
 	strnm/strnm \

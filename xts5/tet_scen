@@ -1455,7 +1455,7 @@ XSetIconName
 
 XSetIconSizes
 	"VSW5TESTSUITE CASE XSetIconSizes 3"
-	/tset/Xlib15/sticnszs/sticnszs
+	/tset/Xlib15/XSetIconSizes/XSetIconSizes
 
 XSetRGBColormaps
 	"VSW5TESTSUITE CASE XSetRGBColormaps 4"

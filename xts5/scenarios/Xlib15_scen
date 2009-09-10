@@ -110,7 +110,7 @@
 	"VSW5TESTSUITE CASE XSetIconName 3"
 	/tset/Xlib15/XSetIconName/XSetIconName
 	"VSW5TESTSUITE CASE XSetIconSizes 3"
-	/tset/Xlib15/sticnszs/sticnszs
+	/tset/Xlib15/XSetIconSizes/XSetIconSizes
 	"VSW5TESTSUITE CASE XSetRGBColormaps 4"
 	/tset/Xlib15/strgbclrmp/strgbclrmp
 	"VSW5TESTSUITE CASE XStringListToTextProperty 3"
