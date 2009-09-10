@@ -3984,7 +3984,7 @@ XtAddGrab
 
 XtRemoveGrab
 	"VSW5TESTSUITE CASE XtRemoveGrab 2"
-	/tset/Xt9/trmgrab/trmgrab
+	/tset/Xt9/XtRemoveGrab/XtRemoveGrab
 
 XtGrabKey
 	"VSW5TESTSUITE CASE XtGrabKey 5"

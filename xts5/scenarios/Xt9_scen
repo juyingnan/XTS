@@ -69,7 +69,7 @@
 	"VSW5TESTSUITE CASE XtAddGrab 5"
 	/tset/Xt9/XtAddGrab/XtAddGrab
 	"VSW5TESTSUITE CASE XtRemoveGrab 2"
-	/tset/Xt9/trmgrab/trmgrab
+	/tset/Xt9/XtRemoveGrab/XtRemoveGrab
 	"VSW5TESTSUITE CASE XtGrabKey 5"
 	/tset/Xt9/XtGrabKey/XtGrabKey
 	"VSW5TESTSUITE CASE XtUngrabKey 2"
