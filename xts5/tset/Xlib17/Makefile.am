@@ -33,7 +33,7 @@ tprogs = \
 	IsModifierKey/IsModifierKey \
 	IsMiscFunctionKey/IsMiscFunctionKey \
 	IsPFKey/IsPFKey \
-	kycdtkysym/kycdtkysym \
+	XKeycodeToKeysym/XKeycodeToKeysym \
 	XKeysymToKeycode/XKeysymToKeycode \
 	kysymtstr/kysymtstr \
 	lkpkysym/lkpkysym \

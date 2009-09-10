@@ -104,7 +104,7 @@
 	"VSW5TESTSUITE CASE IsPFKey 2"
 	/tset/Xlib17/IsPFKey/IsPFKey
 	"VSW5TESTSUITE CASE XKeycodeToKeysym 2"
-	/tset/Xlib17/kycdtkysym/kycdtkysym
+	/tset/Xlib17/XKeycodeToKeysym/XKeycodeToKeysym
 	"VSW5TESTSUITE CASE XKeysymToKeycode 2"
 	/tset/Xlib17/XKeysymToKeycode/XKeysymToKeycode
 	"VSW5TESTSUITE CASE XKeysymToString 2"

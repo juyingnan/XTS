@@ -1748,7 +1748,7 @@ IsPFKey
 
 XKeycodeToKeysym
 	"VSW5TESTSUITE CASE XKeycodeToKeysym 2"
-	/tset/Xlib17/kycdtkysym/kycdtkysym
+	/tset/Xlib17/XKeycodeToKeysym/XKeycodeToKeysym
 
 XKeysymToKeycode
 	"VSW5TESTSUITE CASE XKeysymToKeycode 2"
