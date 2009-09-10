@@ -64,7 +64,7 @@ tprogs = \
 	XGetKeyboardMapping/XGetKeyboardMapping \
 	XGetModifierMapping/XGetModifierMapping \
 	XGetMotionEvents/XGetMotionEvents \
-	GetPointerControl/GetPointerControl \
+	XGetPointerControl/XGetPointerControl \
 	GetPointerMapping/GetPointerMapping \
 	GetProperty/GetProperty \
 	XGetScreenSaver/XGetScreenSaver \

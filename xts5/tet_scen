@@ -1110,7 +1110,7 @@ XGetModifierMapping
 
 XGetPointerControl
 	"VSW5TESTSUITE CASE XGetPointerControl 1"
-	/tset/Xlib13/GetPointerControl/GetPointerControl
+	/tset/Xlib13/XGetPointerControl/XGetPointerControl
 
 XGetPointerMapping
 	"VSW5TESTSUITE CASE XGetPointerMapping 3"
@@ -3326,7 +3326,7 @@ pGetMotionEvents
 
 pGetPointerControl
 	"VSW5TESTSUITE CASE GetPointerControl 3"
-	/tset/Xproto/GetPointerControl/GetPointerControl
+	/tset/Xproto/XGetPointerControl/XGetPointerControl
 
 pGetPointerMapping
 	"VSW5TESTSUITE CASE GetPointerMapping 3"
