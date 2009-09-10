@@ -150,7 +150,7 @@
 	"VSW5TESTSUITE CASE GetAtomName 3"
 	/tset/Xproto/XGetAtomName/XGetAtomName
 	"VSW5TESTSUITE CASE GetFontPath 3"
-	/tset/Xproto/GetFontPath/GetFontPath
+	/tset/Xproto/XGetFontPath/XGetFontPath
 	"VSW5TESTSUITE CASE GetGeometry 3"
 	/tset/Xproto/XGetGeometry/XGetGeometry
 	"VSW5TESTSUITE CASE GetImage 3"

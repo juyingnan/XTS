@@ -3000,7 +3000,7 @@ XGetFontProperty
 
 XGetFontPath
 	"VSW5TESTSUITE CASE XGetFontPath 1"
-	/tset/Xlib9/GetFontPath/GetFontPath
+	/tset/Xlib9/XGetFontPath/XGetFontPath
 
 XGetImage
 	"VSW5TESTSUITE CASE XGetImage 17"
@@ -3294,7 +3294,7 @@ pGetAtomName
 
 pGetFontPath
 	"VSW5TESTSUITE CASE GetFontPath 3"
-	/tset/Xproto/GetFontPath/GetFontPath
+	/tset/Xproto/XGetFontPath/XGetFontPath
 
 pGetGeometry
 	"VSW5TESTSUITE CASE GetGeometry 3"
