@@ -111,7 +111,7 @@
 	"VSW5TESTSUITE CASE XtGetApplicationNameAndClass 3"
 	/tset/Xt13/tgtapnacl/tgtapnacl
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabase 1"
-	/tset/Xt13/tapgterdb/tapgterdb
+	/tset/Xt13/XtAppGetErrorDatabase/XtAppGetErrorDatabase
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabaseText 4"
 	/tset/Xt13/tapgterdt/tapgterdt
 	"VSW5TESTSUITE CASE XtAppSetErrorMsgHandler 2"

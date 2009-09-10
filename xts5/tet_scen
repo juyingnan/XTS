@@ -4561,7 +4561,7 @@ XtGetApplicationNameAndClass
 
 XtAppGetErrorDatabase
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabase 1"
-	/tset/Xt13/tapgterdb/tapgterdb
+	/tset/Xt13/XtAppGetErrorDatabase/XtAppGetErrorDatabase
 
 XtAppGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabaseText 4"
