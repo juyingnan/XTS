@@ -48,7 +48,7 @@ tprogs = \
 	XRebindKeysym/XRebindKeysym \
 	XRectInRegion/XRectInRegion \
 	XReadBitmapFile/XReadBitmapFile \
-	rfrshkybrd/rfrshkybrd \
+	XRefreshKeyboardMapping/XRefreshKeyboardMapping \
 	rttbffrs/rttbffrs \
 	sbimg/sbimg \
 	sbtrctrgn/sbtrctrgn \

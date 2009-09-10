@@ -134,7 +134,7 @@
 	"VSW5TESTSUITE CASE XReadBitmapFile 9"
 	/tset/Xlib17/XReadBitmapFile/XReadBitmapFile
 	"VSW5TESTSUITE CASE XRefreshKeyboardMapping 3"
-	/tset/Xlib17/rfrshkybrd/rfrshkybrd
+	/tset/Xlib17/XRefreshKeyboardMapping/XRefreshKeyboardMapping
 	"VSW5TESTSUITE CASE XRotateBuffers 2"
 	/tset/Xlib17/rttbffrs/rttbffrs
 	"VSW5TESTSUITE CASE XSubImage 1"

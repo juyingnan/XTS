@@ -1808,7 +1808,7 @@ XReadBitmapFile
 
 XRefreshKeyboardMapping
 	"VSW5TESTSUITE CASE XRefreshKeyboardMapping 3"
-	/tset/Xlib17/rfrshkybrd/rfrshkybrd
+	/tset/Xlib17/XRefreshKeyboardMapping/XRefreshKeyboardMapping
 
 XRotateBuffers
 	"VSW5TESTSUITE CASE XRotateBuffers 2"
