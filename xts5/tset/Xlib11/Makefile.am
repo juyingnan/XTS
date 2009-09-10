@@ -16,7 +16,7 @@ tprogs = \
 	ConfigureNotify/ConfigureNotify \
 	ConfigureRequest/ConfigureRequest \
 	CirculateNotify/CirculateNotify \
-	crcltrqst/crcltrqst \
+	CirculateRequest/CirculateRequest \
 	crtntfy/crtntfy \
 	dstryntfy/dstryntfy \
 	entrntfy/entrntfy \

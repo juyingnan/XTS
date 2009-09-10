@@ -816,7 +816,7 @@ CirculateNotify
 
 CirculateRequest
 	"VSW5TESTSUITE CASE CirculateRequest 2"
-	/tset/Xlib11/crcltrqst/crcltrqst
+	/tset/Xlib11/CirculateRequest/CirculateRequest
 
 CreateNotify
 	"VSW5TESTSUITE CASE CreateNotify 2"
