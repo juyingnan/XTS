@@ -4509,7 +4509,7 @@ XtAppGetSelectionTimeout
 
 XtGetSelectionRequest
 	"VSW5TESTSUITE CASE XtGetSelectionRequest 3"
-	/tset/Xt13/tgtsreque/tgtsreque
+	/tset/Xt13/XtGetSelectionRequest/XtGetSelectionRequest
 
 XtGetSelectionValue
 	"VSW5TESTSUITE CASE XtGetSelectionValue 4"

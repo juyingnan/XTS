@@ -85,7 +85,7 @@
 	"VSW5TESTSUITE CASE XtAppGetSelectionTimeout 2"
 	/tset/Xt13/XtAppGetSelectionTimeout/XtAppGetSelectionTimeout
 	"VSW5TESTSUITE CASE XtGetSelectionRequest 3"
-	/tset/Xt13/tgtsreque/tgtsreque
+	/tset/Xt13/XtGetSelectionRequest/XtGetSelectionRequest
 	"VSW5TESTSUITE CASE XtGetSelectionValue 4"
 	/tset/Xt13/tgtsvalue/tgtsvalue
 	"VSW5TESTSUITE CASE XtGetSelectionValues 5"
