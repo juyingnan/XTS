@@ -94,7 +94,7 @@
 	"VSW5TESTSUITE CASE XDrawText16 50"
 	/tset/Xlib9/XDrawText16/XDrawText16
 	"VSW5TESTSUITE CASE XFillArc 44"
-	/tset/Xlib9/fllarc/fllarc
+	/tset/Xlib9/XFillArc/XFillArc
 	"VSW5TESTSUITE CASE XFillArcs 46"
 	/tset/Xlib9/fllarcs/fllarcs
 	"VSW5TESTSUITE CASE XFillPolygon 55"

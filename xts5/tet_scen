@@ -2960,7 +2960,7 @@ XDrawText16
 
 XFillArc
 	"VSW5TESTSUITE CASE XFillArc 44"
-	/tset/Xlib9/fllarc/fllarc
+	/tset/Xlib9/XFillArc/XFillArc
 
 XFillArcs
 	"VSW5TESTSUITE CASE XFillArcs 46"
