@@ -22,7 +22,7 @@ tprogs = \
 	XDrawPoint/XDrawPoint \
 	XDrawPoints/XDrawPoints \
 	XDrawRectangle/XDrawRectangle \
-	drwrctngls/drwrctngls \
+	XDrawRectangles/XDrawRectangles \
 	drwsgmnts/drwsgmnts \
 	drwstr/drwstr \
 	drwstr16/drwstr16 \

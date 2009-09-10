@@ -2936,7 +2936,7 @@ XDrawRectangle
 
 XDrawRectangles
 	"VSW5TESTSUITE CASE XDrawRectangles 85"
-	/tset/Xlib9/drwrctngls/drwrctngls
+	/tset/Xlib9/XDrawRectangles/XDrawRectangles
 
 XDrawSegments
 	"VSW5TESTSUITE CASE XDrawSegments 92"
