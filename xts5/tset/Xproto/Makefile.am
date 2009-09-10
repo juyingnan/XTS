@@ -78,7 +78,7 @@ tprogs = \
 	XLookupColor/XLookupColor \
 	ListExtensions/ListExtensions \
 	XListFonts/XListFonts \
-	ListFontsWithInfo/ListFontsWithInfo \
+	XListFontsWithInfo/XListFontsWithInfo \
 	XListHosts/XListHosts \
 	XListInstalledColormaps/XListInstalledColormaps \
 	XListProperties/XListProperties \

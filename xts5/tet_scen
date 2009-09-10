@@ -3024,7 +3024,7 @@ XListFonts
 
 XListFontsWithInfo
 	"VSW5TESTSUITE CASE XListFontsWithInfo 7"
-	/tset/Xlib9/ListFontsWithInfo/ListFontsWithInfo
+	/tset/Xlib9/XListFontsWithInfo/XListFontsWithInfo
 
 XPutImage
 	"VSW5TESTSUITE CASE XPutImage 40"
@@ -3382,7 +3382,7 @@ pListFonts
 
 pListFontsWithInfo
 	"VSW5TESTSUITE CASE ListFontsWithInfo 3"
-	/tset/Xproto/ListFontsWithInfo/ListFontsWithInfo
+	/tset/Xproto/XListFontsWithInfo/XListFontsWithInfo
 
 pListHosts
 	"VSW5TESTSUITE CASE ListHosts 3"
