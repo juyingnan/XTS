@@ -2829,7 +2829,7 @@ XSetFillRule
 
 XSetFillStyle
 	"VSW5TESTSUITE CASE XSetFillStyle 4"
-	/tset/Xlib8/stfllstyl/stfllstyl
+	/tset/Xlib8/XSetFillStyle/XSetFillStyle
 
 XSetFunction
 	"VSW5TESTSUITE CASE XSetFunction 4"

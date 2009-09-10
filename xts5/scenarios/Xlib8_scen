@@ -88,7 +88,7 @@
 	"VSW5TESTSUITE CASE XSetFillRule 4"
 	/tset/Xlib8/XSetFillRule/XSetFillRule
 	"VSW5TESTSUITE CASE XSetFillStyle 4"
-	/tset/Xlib8/stfllstyl/stfllstyl
+	/tset/Xlib8/XSetFillStyle/XSetFillStyle
 	"VSW5TESTSUITE CASE XSetFunction 4"
 	/tset/Xlib8/stfnctn/stfnctn
 	"VSW5TESTSUITE CASE XSetFont 4"

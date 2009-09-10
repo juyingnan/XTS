@@ -29,7 +29,7 @@ tprogs = \
 	XSetClipRectangles/XSetClipRectangles \
 	XSetDashes/XSetDashes \
 	XSetFillRule/XSetFillRule \
-	stfllstyl/stfllstyl \
+	XSetFillStyle/XSetFillStyle \
 	stfnctn/stfnctn \
 	stfnt/stfnt \
 	stfrgrnd/stfrgrnd \
