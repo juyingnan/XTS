@@ -916,7 +916,7 @@ UnmapNotify
 
 VisibilityNotify
 	"VSW5TESTSUITE CASE VisibilityNotify 9"
-	/tset/Xlib11/vsbltyntfy/vsbltyntfy
+	/tset/Xlib11/VisibilityNotify/VisibilityNotify
 
 
 # Discrete tests for Xlib Chapter 12-Event Handling Functions

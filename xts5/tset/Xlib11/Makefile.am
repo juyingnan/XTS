@@ -41,4 +41,4 @@ tprogs = \
 	SelectionNotify/SelectionNotify \
 	SelectionRequest/SelectionRequest \
 	UnmapNotify/UnmapNotify \
-	vsbltyntfy/vsbltyntfy
+	VisibilityNotify/VisibilityNotify

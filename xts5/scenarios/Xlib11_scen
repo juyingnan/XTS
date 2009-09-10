@@ -120,4 +120,4 @@
 	"VSW5TESTSUITE CASE UnmapNotify 3"
 	/tset/Xlib11/UnmapNotify/UnmapNotify
 	"VSW5TESTSUITE CASE VisibilityNotify 9"
-	/tset/Xlib11/vsbltyntfy/vsbltyntfy
+	/tset/Xlib11/VisibilityNotify/VisibilityNotify
