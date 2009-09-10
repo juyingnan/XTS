@@ -4084,7 +4084,7 @@ XtAddRawEventHandler
 
 XtRemoveRawEventHandler
 	"VSW5TESTSUITE CASE XtRemoveRawEventHandler 7"
-	/tset/Xt9/trmrevthr/trmrevthr
+	/tset/Xt9/XtRemoveRawEventHandler/XtRemoveRawEventHandler
 
 XtInsertRawEventHandler
 	"VSW5TESTSUITE CASE XtInsertRawEventHandler 10"
