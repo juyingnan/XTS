@@ -1284,7 +1284,7 @@ XSetICValues
 
 XSupportsLocale
 	"VSW5TESTSUITE CASE XSupportsLocale 1"
-	/tset/Xlib14/slocale/slocale
+	/tset/Xlib14/XSupportsLocale/XSupportsLocale
 
 XSetLocaleModifiers
 	"VSW5TESTSUITE CASE XSetLocaleModifiers 1"

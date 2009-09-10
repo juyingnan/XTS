@@ -116,7 +116,7 @@
 	"VSW5TESTSUITE CASE XSetICValues 4"
 	/tset/Xlib14/XSetICValues/XSetICValues
 	"VSW5TESTSUITE CASE XSupportsLocale 1"
-	/tset/Xlib14/slocale/slocale
+	/tset/Xlib14/XSupportsLocale/XSupportsLocale
 	"VSW5TESTSUITE CASE XSetLocaleModifiers 1"
 	/tset/Xlib14/stlmod/stlmod
 	"VSW5TESTSUITE CASE XUnsetICFocus 1"

@@ -40,7 +40,7 @@ tprogs = \
 	XOpenIM/XOpenIM \
 	XSetICFocus/XSetICFocus \
 	XSetICValues/XSetICValues \
-	slocale/slocale \
+	XSupportsLocale/XSupportsLocale \
 	stlmod/stlmod \
 	uicfoc/uicfoc \
 	vcnlist/vcnlist \
