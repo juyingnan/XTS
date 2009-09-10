@@ -2916,7 +2916,7 @@ XDrawImageString
 
 XDrawLine
 	"VSW5TESTSUITE CASE XDrawLine 91"
-	/tset/Xlib9/drwln/drwln
+	/tset/Xlib9/XDrawLine/XDrawLine
 
 XDrawLines
 	"VSW5TESTSUITE CASE XDrawLines 104"

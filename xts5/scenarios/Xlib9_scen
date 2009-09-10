@@ -72,7 +72,7 @@
 	"VSW5TESTSUITE CASE XDrawImageString 24"
 	/tset/Xlib9/XDrawImageString/XDrawImageString
 	"VSW5TESTSUITE CASE XDrawLine 91"
-	/tset/Xlib9/drwln/drwln
+	/tset/Xlib9/XDrawLine/XDrawLine
 	"VSW5TESTSUITE CASE XDrawLines 104"
 	/tset/Xlib9/drwlns/drwlns
 	"VSW5TESTSUITE CASE XDrawPoint 34"
