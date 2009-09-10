@@ -1744,7 +1744,7 @@ IsMiscFunctionKey
 
 IsPFKey
 	"VSW5TESTSUITE CASE IsPFKey 2"
-	/tset/Xlib17/ispfky/ispfky
+	/tset/Xlib17/IsPFKey/IsPFKey
 
 XKeycodeToKeysym
 	"VSW5TESTSUITE CASE XKeycodeToKeysym 2"
