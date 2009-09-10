@@ -19,7 +19,7 @@ tprogs = \
 	XForceScreenSaver/XForceScreenSaver \
 	XGrabServer/XGrabServer \
 	XGetScreenSaver/XGetScreenSaver \
-	InstallColormap/InstallColormap \
+	XInstallColormap/XInstallColormap \
 	KillClient/KillClient \
 	ListHosts/ListHosts \
 	ListInstalledColormaps/ListInstalledColormaps \

@@ -734,7 +734,7 @@ XGetScreenSaver
 
 XInstallColormap
 	"VSW5TESTSUITE CASE XInstallColormap 6"
-	/tset/Xlib10/InstallColormap/InstallColormap
+	/tset/Xlib10/XInstallColormap/XInstallColormap
 
 XKillClient
 	"VSW5TESTSUITE CASE XKillClient 4"
@@ -3358,7 +3358,7 @@ pImageText8
 
 pInstallColormap
 	"VSW5TESTSUITE CASE InstallColormap 3"
-	/tset/Xproto/InstallColormap/InstallColormap
+	/tset/Xproto/XInstallColormap/XInstallColormap
 
 pInternAtom
 	"VSW5TESTSUITE CASE InternAtom 3"

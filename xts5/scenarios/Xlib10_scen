@@ -76,7 +76,7 @@
 	"VSW5TESTSUITE CASE XGetScreenSaver 1"
 	/tset/Xlib10/XGetScreenSaver/XGetScreenSaver
 	"VSW5TESTSUITE CASE XInstallColormap 6"
-	/tset/Xlib10/InstallColormap/InstallColormap
+	/tset/Xlib10/XInstallColormap/XInstallColormap
 	"VSW5TESTSUITE CASE XKillClient 4"
 	/tset/Xlib10/KillClient/KillClient
 	"VSW5TESTSUITE CASE XListHosts 2"

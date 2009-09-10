@@ -72,7 +72,7 @@ tprogs = \
 	GetWindowAttributes/GetWindowAttributes \
 	ImageText16/ImageText16 \
 	ImageText8/ImageText8 \
-	InstallColormap/InstallColormap \
+	XInstallColormap/XInstallColormap \
 	InternAtom/InternAtom \
 	KillClient/KillClient \
 	XLookupColor/XLookupColor \
