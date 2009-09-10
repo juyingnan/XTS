@@ -4060,7 +4060,7 @@ XtSetSensitive
 
 XtAppAddWorkProc
 	"VSW5TESTSUITE CASE XtAppAddWorkProc 5"
-	/tset/Xt9/tapawkprc/tapawkprc
+	/tset/Xt9/XtAppAddWorkProc/XtAppAddWorkProc
 
 XtRemoveWorkProc
 	"VSW5TESTSUITE CASE XtRemoveWorkProc 2"

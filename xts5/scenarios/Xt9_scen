@@ -107,7 +107,7 @@
 	"VSW5TESTSUITE CASE XtSetSensitive 6"
 	/tset/Xt9/tstsenstv/tstsenstv
 	"VSW5TESTSUITE CASE XtAppAddWorkProc 5"
-	/tset/Xt9/tapawkprc/tapawkprc
+	/tset/Xt9/XtAppAddWorkProc/XtAppAddWorkProc
 	"VSW5TESTSUITE CASE XtRemoveWorkProc 2"
 	/tset/Xt9/trmwkproc/trmwkproc
 	"VSW5TESTSUITE CASE XtAddEventHandler 8"
