@@ -1634,7 +1634,7 @@ XrmGetDatabase
 
 XrmLocaleOfDatabase
 	"VSW5TESTSUITE CASE XrmLocaleOfDatabase 1"
-	/tset/Xlib16/rmloofdt/rmloofdt
+	/tset/Xlib16/XrmLocaleOfDatabase/XrmLocaleOfDatabase
 
 XrmPermStringToQuark
 	"VSW5TESTSUITE CASE XrmPermStringToQuark 2"

@@ -114,7 +114,7 @@
 	"VSW5TESTSUITE CASE XrmGetDatabase 2"
 	/tset/Xlib16/XrmGetDatabase/XrmGetDatabase
 	"VSW5TESTSUITE CASE XrmLocaleOfDatabase 1"
-	/tset/Xlib16/rmloofdt/rmloofdt
+	/tset/Xlib16/XrmLocaleOfDatabase/XrmLocaleOfDatabase
 	"VSW5TESTSUITE CASE XrmPermStringToQuark 2"
 	/tset/Xlib16/rmpstoq/rmpstoq
 	"VSW5TESTSUITE CASE XrmSetDatabase 2"

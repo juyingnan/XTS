@@ -23,7 +23,7 @@ tprogs = \
 	XrmGetResource/XrmGetResource \
 	XrmGetStringDatabase/XrmGetStringDatabase \
 	XrmInitialize/XrmInitialize \
-	rmloofdt/rmloofdt \
+	XrmLocaleOfDatabase/XrmLocaleOfDatabase \
 	rmmrgdtbss/rmmrgdtbss \
 	rmprscmmnd/rmprscmmnd \
 	rmpstoq/rmpstoq \
