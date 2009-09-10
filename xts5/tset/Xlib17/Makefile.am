@@ -59,7 +59,7 @@ tprogs = \
 	XStringToKeysym/XStringToKeysym \
 	XSaveContext/XSaveContext \
 	XUnionRectWithRegion/XUnionRectWithRegion \
-	unnrgn/unnrgn \
+	XUnionRegion/XUnionRegion \
 	unqcntxt/unqcntxt \
 	wmgmtry/wmgmtry \
 	wrtbtmpfl/wrtbtmpfl \

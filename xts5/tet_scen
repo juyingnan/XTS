@@ -1852,7 +1852,7 @@ XUnionRectWithRegion
 
 XUnionRegion
 	"VSW5TESTSUITE CASE XUnionRegion 1"
-	/tset/Xlib17/unnrgn/unnrgn
+	/tset/Xlib17/XUnionRegion/XUnionRegion
 
 XUniqueContext
 	"VSW5TESTSUITE CASE XUniqueContext 1"
