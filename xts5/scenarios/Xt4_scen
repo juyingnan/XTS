@@ -74,7 +74,7 @@
 	"VSW5TESTSUITE CASE XtOpenDisplay 28"
 	/tset/Xt4/topndsply/topndsply
 	"VSW5TESTSUITE CASE XtCloseDisplay 2"
-	/tset/Xt4/tclsdsply/tclsdsply
+	/tset/Xt4/XtCloseDisplay/XtCloseDisplay
 	"VSW5TESTSUITE CASE XtSetLanguageProc 8"
 	/tset/Xt4/tstlnggprc/tstlnggprc
 	"VSW5TESTSUITE CASE XtScreenDatabase 1"

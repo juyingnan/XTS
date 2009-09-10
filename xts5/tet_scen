@@ -3706,7 +3706,7 @@ XtOpenDisplay
 
 XtCloseDisplay
 	"VSW5TESTSUITE CASE XtCloseDisplay 2"
-	/tset/Xt4/tclsdsply/tclsdsply
+	/tset/Xt4/XtCloseDisplay/XtCloseDisplay
 
 XtSetLanguageProc
 	"VSW5TESTSUITE CASE XtSetLanguageProc 8"
