@@ -71,7 +71,7 @@
 	"VSW5TESTSUITE CASE XtCallbackNone 8"
 	/tset/Xt7/tcalbknon/tcalbknon
 	"VSW5TESTSUITE CASE XtCallbackNonexclusive 8"
-	/tset/Xt7/tcalbknex/tcalbknex
+	/tset/Xt7/XtCallbackNonexclusive/XtCallbackNonexclusive
 	"VSW5TESTSUITE CASE XtCallbackExclusive 8"
 	/tset/Xt7/XtCallbackExclusive/XtCallbackExclusive
 	"VSW5TESTSUITE CASE XtMenuPopup 22"

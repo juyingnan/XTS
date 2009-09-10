@@ -3912,7 +3912,7 @@ XtCallbackNone
 
 XtCallbackNonexclusive
 	"VSW5TESTSUITE CASE XtCallbackNonexclusive 8"
-	/tset/Xt7/tcalbknex/tcalbknex
+	/tset/Xt7/XtCallbackNonexclusive/XtCallbackNonexclusive
 
 XtCallbackExclusive
 	"VSW5TESTSUITE CASE XtCallbackExclusive 8"
