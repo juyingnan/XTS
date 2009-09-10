@@ -65,7 +65,7 @@
 	"VSW5TESTSUITE CASE XtMalloc 6"
 	/tset/Xt13/tmalloc/tmalloc
 	"VSW5TESTSUITE CASE XtCalloc 6"
-	/tset/Xt13/tcalloc/tcalloc
+	/tset/Xt13/XtCalloc/XtCalloc
 	"VSW5TESTSUITE CASE XtRealloc 12"
 	/tset/Xt13/trealloc/trealloc
 	"VSW5TESTSUITE CASE XtFree 4"
