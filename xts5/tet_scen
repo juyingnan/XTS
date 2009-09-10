@@ -2635,7 +2635,7 @@ XcmsConversionProc2
 
 XcmsCreateCCC
 	"VSW5TESTSUITE CASE XcmsCreateCCC 1"
-	/tset/Xlib7/cmscrcc/cmscrcc
+	/tset/Xlib7/XcmsCreateCCC/XcmsCreateCCC
 
 XcmsDefaultCCC
 	"VSW5TESTSUITE CASE XcmsDefaultCCC 1"
