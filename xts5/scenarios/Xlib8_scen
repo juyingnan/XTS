@@ -100,7 +100,7 @@
 	"VSW5TESTSUITE CASE XSetLineAttributes 6"
 	/tset/Xlib8/XSetLineAttributes/XSetLineAttributes
 	"VSW5TESTSUITE CASE XSetPlaneMask 3"
-	/tset/Xlib8/stplnmsk/stplnmsk
+	/tset/Xlib8/XSetPlaneMask/XSetPlaneMask
 	"VSW5TESTSUITE CASE XSetSubwindowMode 4"
 	/tset/Xlib8/stsbwmd/stsbwmd
 	"VSW5TESTSUITE CASE XSetStipple 6"

@@ -2853,7 +2853,7 @@ XSetLineAttributes
 
 XSetPlaneMask
 	"VSW5TESTSUITE CASE XSetPlaneMask 3"
-	/tset/Xlib8/stplnmsk/stplnmsk
+	/tset/Xlib8/XSetPlaneMask/XSetPlaneMask
 
 XSetSubwindowMode
 	"VSW5TESTSUITE CASE XSetSubwindowMode 4"

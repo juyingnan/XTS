@@ -35,7 +35,7 @@ tprogs = \
 	XSetForeground/XSetForeground \
 	XSetGraphicsExposures/XSetGraphicsExposures \
 	XSetLineAttributes/XSetLineAttributes \
-	stplnmsk/stplnmsk \
+	XSetPlaneMask/XSetPlaneMask \
 	stsbwmd/stsbwmd \
 	ststppl/ststppl \
 	ststt/ststt \
