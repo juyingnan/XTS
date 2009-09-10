@@ -109,7 +109,7 @@
 	"VSW5TESTSUITE CASE XtWindowToWidget 2"
 	/tset/Xt13/twindtowd/twindtowd
 	"VSW5TESTSUITE CASE XtGetApplicationNameAndClass 3"
-	/tset/Xt13/tgtapnacl/tgtapnacl
+	/tset/Xt13/XtGetApplicationNameAndClass/XtGetApplicationNameAndClass
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabase 1"
 	/tset/Xt13/XtAppGetErrorDatabase/XtAppGetErrorDatabase
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabaseText 4"

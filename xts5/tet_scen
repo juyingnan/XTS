@@ -4557,7 +4557,7 @@ XtWindowToWidget
 
 XtGetApplicationNameAndClass
 	"VSW5TESTSUITE CASE XtGetApplicationNameAndClass 3"
-	/tset/Xt13/tgtapnacl/tgtapnacl
+	/tset/Xt13/XtGetApplicationNameAndClass/XtGetApplicationNameAndClass
 
 XtAppGetErrorDatabase
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabase 1"
