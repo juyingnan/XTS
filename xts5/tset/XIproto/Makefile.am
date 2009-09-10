@@ -36,7 +36,7 @@ tprogs = \
 	XOpenDevice/XOpenDevice \
 	qrydvstat/qrydvstat \
 	XSetDeviceValuators/XSetDeviceValuators \
-	setdvbmap/setdvbmap \
+	XSetDeviceButtonMapping/XSetDeviceButtonMapping \
 	setdvfcs/setdvfcs \
 	setdvmmap/setdvmmap \
 	setdvmode/setdvmode \

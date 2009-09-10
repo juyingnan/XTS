@@ -108,7 +108,7 @@
 	"VSW5TESTSUITE CASE SetDeviceValuators 3"
 	/tset/XIproto/XSetDeviceValuators/XSetDeviceValuators
 	"VSW5TESTSUITE CASE SetDeviceButtonMapping 3"
-	/tset/XIproto/setdvbmap/setdvbmap
+	/tset/XIproto/XSetDeviceButtonMapping/XSetDeviceButtonMapping
 	"VSW5TESTSUITE CASE SetDeviceFocus 3"
 	/tset/XIproto/setdvfcs/setdvfcs
 	"VSW5TESTSUITE CASE SetDeviceModifierMapping 3"

@@ -110,7 +110,7 @@
 	"VSW5TESTSUITE CASE XSetDeviceValuators 6"
 	/tset/XI/XSetDeviceValuators/XSetDeviceValuators
 	"VSW5TESTSUITE CASE XSetDeviceButtonMapping 8"
-	/tset/XI/setdvbmap/setdvbmap
+	/tset/XI/XSetDeviceButtonMapping/XSetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XSetDeviceFocus 17"
 	/tset/XI/setdvfocus/setdvfocus
 	"VSW5TESTSUITE CASE XSetDeviceModifierMapping 9"
