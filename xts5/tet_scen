@@ -2047,7 +2047,7 @@ XOpenDisplay
 
 XPlanesOfScreen
 	"VSW5TESTSUITE CASE XPlanesOfScreen 1"
-	/tset/Xlib3/plnsofscrn/plnsofscrn
+	/tset/Xlib3/XPlanesOfScreen/XPlanesOfScreen
 
 XProtocolRevision
 	"VSW5TESTSUITE CASE XProtocolRevision 1"
@@ -2255,7 +2255,7 @@ NextRequest
 
 PlanesOfScreen
 	"VSW5TESTSUITE CASE PlanesOfScreen 1"
-	/tset/Xlib3/plnsofscrn/plnsofscrn_m
+	/tset/Xlib3/XPlanesOfScreen/XPlanesOfScreen_m
 
 ProtocolRevision
 	"VSW5TESTSUITE CASE ProtocolRevision 1"

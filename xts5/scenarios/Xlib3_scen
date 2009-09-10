@@ -142,7 +142,7 @@
 	"VSW5TESTSUITE CASE XOpenDisplay 10"
 	/tset/Xlib3/XOpenDisplay/XOpenDisplay
 	"VSW5TESTSUITE CASE XPlanesOfScreen 1"
-	/tset/Xlib3/plnsofscrn/plnsofscrn
+	/tset/Xlib3/XPlanesOfScreen/XPlanesOfScreen
 	"VSW5TESTSUITE CASE XProtocolRevision 1"
 	/tset/Xlib3/prtclrvsn/prtclrvsn
 	"VSW5TESTSUITE CASE XProtocolVersion 1"
@@ -246,7 +246,7 @@
 	"VSW5TESTSUITE CASE NextRequest 2"
 	/tset/Xlib3/XNextRequest/XNextRequest_m
 	"VSW5TESTSUITE CASE PlanesOfScreen 1"
-	/tset/Xlib3/plnsofscrn/plnsofscrn_m
+	/tset/Xlib3/XPlanesOfScreen/XPlanesOfScreen_m
 	"VSW5TESTSUITE CASE ProtocolRevision 1"
 	/tset/Xlib3/prtclrvsn/prtclrvsn_m
 	"VSW5TESTSUITE CASE ProtocolVersion 1"

@@ -79,8 +79,8 @@ XNextRequest/XNextRequest
 XNextRequest/XNextRequest_m
 opndsply/Test1
 XOpenDisplay/XOpenDisplay
-plnsofscrn/plnsofscrn
-plnsofscrn/plnsofscrn_m
+XPlanesOfScreen/XPlanesOfScreen
+XPlanesOfScreen/XPlanesOfScreen_m
 prtclrvsn/prtclrvsn
 prtclrvsn/prtclrvsn_m
 prtclvrsn/prtclvrsn

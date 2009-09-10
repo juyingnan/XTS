@@ -52,7 +52,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XNoOp/XNoOp \
 	XNextRequest/XNextRequest XNextRequest/XNextRequest_m \
 	XOpenDisplay/XOpenDisplay \
-	plnsofscrn/plnsofscrn plnsofscrn/plnsofscrn_m \
+	XPlanesOfScreen/XPlanesOfScreen XPlanesOfScreen/XPlanesOfScreen_m \
 	prtclrvsn/prtclrvsn prtclrvsn/prtclrvsn_m \
 	prtclvrsn/prtclvrsn prtclvrsn/prtclvrsn_m \
 	qlngth/qlngth qlngth/qlngth_m \
