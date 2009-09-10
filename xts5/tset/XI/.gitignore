@@ -1,5 +1,5 @@
 AllowDeviceEvents/AllowDeviceEvents
-XChangeDeviceControl/XChangeDeviceControl
+ChangeDeviceControl/ChangeDeviceControl
 XChangeFeedbackControl/XChangeFeedbackControl
 XChangeKeyboardDevice/XChangeKeyboardDevice
 XChangeDeviceDontPropagateList/XChangeDeviceDontPropagateList

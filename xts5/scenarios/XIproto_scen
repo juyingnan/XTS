@@ -58,7 +58,7 @@
 	"VSW5TESTSUITE CASE AllowDeviceEvents 3"
 	/tset/XIproto/AllowDeviceEvents/AllowDeviceEvents
 	"VSW5TESTSUITE CASE ChangeDeviceControl 3"
-	/tset/XIproto/XChangeDeviceControl/XChangeDeviceControl
+	/tset/XIproto/ChangeDeviceControl/ChangeDeviceControl
 	"VSW5TESTSUITE CASE ChangeDeviceDontPropagateList 3"
 	/tset/XIproto/ChangeDeviceDontPropagateList/ChangeDeviceDontPropagateList
 	"VSW5TESTSUITE CASE ChangeFeedbackControl 3"
