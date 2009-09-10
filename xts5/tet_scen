@@ -4743,7 +4743,7 @@ XtSetErrorHandler
 
 XtError
 	"VSW5TESTSUITE CASE XtError 3"
-	/tset/XtC/terror/terror
+	/tset/XtC/XtError/XtError
 
 #Discrete tests for Xt Appendix E
 

@@ -115,4 +115,4 @@
 	"VSW5TESTSUITE CASE XtSetErrorHandler 1"
 	/tset/XtC/tsterrhnd/tsterrhnd
 	"VSW5TESTSUITE CASE XtError 3"
-	/tset/XtC/terror/terror
+	/tset/XtC/XtError/XtError
