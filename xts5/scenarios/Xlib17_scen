@@ -58,7 +58,7 @@
 	"VSW5TESTSUITE CASE XAddPixel 1"
 	/tset/Xlib17/XAddPixel/XAddPixel
 	"VSW5TESTSUITE CASE XClipBox 1"
-	/tset/Xlib17/clpbx/clpbx
+	/tset/Xlib17/XClipBox/XClipBox
 	"VSW5TESTSUITE CASE XCreateBitmapFromData 4"
 	/tset/Xlib17/crtbtmpfrm/crtbtmpfrm
 	"VSW5TESTSUITE CASE XCreateImage 3"

@@ -1656,7 +1656,7 @@ XAddPixel
 
 XClipBox
 	"VSW5TESTSUITE CASE XClipBox 1"
-	/tset/Xlib17/clpbx/clpbx
+	/tset/Xlib17/XClipBox/XClipBox
 
 XCreateBitmapFromData
 	"VSW5TESTSUITE CASE XCreateBitmapFromData 4"

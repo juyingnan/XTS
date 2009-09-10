@@ -10,7 +10,7 @@ CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
 	XAddPixel/XAddPixel \
-	clpbx/clpbx \
+	XClipBox/XClipBox \
 	crtbtmpfrm/crtbtmpfrm \
 	crtimg/crtimg \
 	crtpxmpfrm/crtpxmpfrm \
