@@ -4,7 +4,7 @@ AUTOMAKE_OPTIONS = subdir-objects
 AM_CFLAGS = $(XTS_LCFLAGS) $(XTS_CFLAGS)
 LDADD = $(TCM) $(XTS_LLIBS) $(XTS_LIBS)
 
-check_PROGRAMS = $(tprogs)
+libexec_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
@@ -70,7 +70,7 @@ tprogs = XAllPlanes/XAllPlanes \
 	XWhitePixelOfScreen/XWhitePixelOfScreen XWhitePixelOfScreen/XWhitePixelOfScreen_m
 
 # Auxiliary programs run from tests
-check_PROGRAMS += \
+libexec_PROGRAMS += \
 	XDisplayString/Test1 \
 	XOpenDisplay/Test1
 XDisplayString_Test1_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
