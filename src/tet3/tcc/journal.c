@@ -164,9 +164,9 @@ char *jopt, *cwd;
 	** open the journal file,
 	** making sure that an existing file is not overwritten
 	*/
-	if ((fd = OPEN(fname, O_WRONLY | O_CREAT | O_EXCL, MODEANY)) < 0)
+	if ((fd = OPEN(fname, O_WRONLY | O_CREAT, MODEANY)) < 0)
 		fatal(errno, "can't open", fname);
-	if ((jfp = FDOPEN(fd, "w")) == (FILE *) 0)
+	if ((jfp = FDOPEN(fd, "a")) == (FILE *) 0)
 		fatal(errno, "fdopen() failed on", fname);
 	if (tet_fioclex(FILENO(jfp)) < 0)
 		tcc_exit(1);
