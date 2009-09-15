@@ -37,7 +37,7 @@ do
 		shift
 		;;
 	-d)
-		echo "XT_DISPLAY=$2" >> CONFIG
+		echo "DISPLAY=$2" >> CONFIG
 		shift
 		;;
 	-i)
@@ -69,13 +69,6 @@ do
 	esac
 	shift
 done
-
-# If the display variable is not set on the command line then
-# this will cause the display in DISPLAY to be used.
-
-if [ "$DISPLAY" != "" ]; then
-	echo "XT_DISPLAY=$DISPLAY" >> CONFIG
-fi
 
 # config=${TET_CONFIG:-$TET_ROOT/xts5/tetexec.cfg}
 # Since :- is not universal, and I really want that functionality.

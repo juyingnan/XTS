@@ -164,7 +164,7 @@ with default screen
 .A screen_number .
 >>STRATEGY
 If the system is POSIX compliant and supports DECnet transport:
-  Obtain the display and screen numbers by parsing the XT_DISPLAY config variable.
+  Obtain the display and screen numbers by parsing the DISPLAY config variable.
   Open a connection using xname.
   Verify that the call did not return NULL.
   Issue a NoOperation request using XNoOp.
@@ -193,12 +193,12 @@ char	ssno[9], sdno[9];
 		;
 
 	if(*cptr == '\0') {
-		delete("XT_DISPLAY does not specify a display.");
+		delete("DISPLAY does not specify a display.");
 		return;
 	} else {
 		CHECK;
 		if(*++cptr != ':') {
-			delete("XT_DISPLAY does not contain a valid display name.");
+			delete("DISPLAY does not contain a valid display name.");
 			return;
 		} else
 			CHECK;
@@ -206,7 +206,7 @@ char	ssno[9], sdno[9];
 		for(sptr = ++cptr; *sptr && isascii(*sptr) && isdigit(*sptr); sptr++)
 			;
 		if( (sptr == cptr) || (*sptr != '\0' && *sptr != '.') ) {
-			delete("Bad display number in XT_DISPLAY.");
+			delete("Bad display number in DISPLAY.");
 			return;
 		} else
 			CHECK;
@@ -223,7 +223,7 @@ char	ssno[9], sdno[9];
 			for(cptr = ++sptr; *sptr && isascii(*sptr) && isdigit(*sptr); sptr++)
 				;
 			if(*sptr) {
-				delete("Bad screen number in XT_DISPLAY.");
+				delete("Bad screen number in DISPLAY.");
 				return;
 			} else
 				CHECK;
@@ -239,7 +239,7 @@ char	ssno[9], sdno[9];
 
 		} else {
 			CHECK; CHECK;
-			sno = 0; /* No screen number in XT_DISPLAY, assume zero. */
+			sno = 0; /* No screen number in DISPLAY, assume zero. */
 		}
 	}
 
@@ -285,7 +285,7 @@ with default screen
 .A 0 .
 >>STRATEGY
 If the system is POSIX compliant and supports DECnet transport:
-  Obtain the display numbers by parsing the XT_DISPLAY config variable.
+  Obtain the display numbers by parsing the DISPLAY config variable.
   Open a connection of the form host::number using xname.
   Verify that the call did not return NULL.
   Obtain the screen number using XDefaultScreen.
@@ -314,12 +314,12 @@ char	sdno[9];
 		;
 
 	if(*cptr == '\0') {
-		delete("XT_DISPLAY does not specify a display.");
+		delete("DISPLAY does not specify a display.");
 		return;
 	} else {
 		CHECK;
 		if(*++cptr != ':') {
-			delete("XT_DISPLAY does not contain a valid display name.");
+			delete("DISPLAY does not contain a valid display name.");
 			return;
 		} else
 			CHECK;
@@ -327,7 +327,7 @@ char	sdno[9];
 		for(sptr = ++cptr; *sptr && isascii(*sptr) && isdigit(*sptr); sptr++)
 			;
 		if( (sptr == cptr) || (*sptr != '\0' && *sptr != '.') ) {
-			delete("Bad display number in XT_DISPLAY.");
+			delete("Bad display number in DISPLAY.");
 			return;
 		} else
 			CHECK;
@@ -345,7 +345,7 @@ char	sdno[9];
 			for(cptr = ++sptr; *sptr && isascii(*sptr) && isdigit(*sptr); sptr++)
 				;
 			if(*sptr) {
-				delete("Bad screen number in XT_DISPLAY.");
+				delete("Bad screen number in DISPLAY.");
 				return;
 			} else
 				CHECK;
@@ -410,7 +410,7 @@ with default screen
 .A screen_number .
 >>STRATEGY
 If the system is POSIX compliant and supports TCP transport:
-  Obtain the display and screen numbers by parsing the XT_DISPLAY config variable.
+  Obtain the display and screen numbers by parsing the DISPLAY config variable.
   Open a connection using xname.
   Verify that the call did not return NULL.
   Issue a NoOperation request using XNoOp.
@@ -439,14 +439,14 @@ char	ssno[9], sdno[9];
 		;
 
 	if(*cptr == '\0') {
-		delete("XT_DISPLAY does not specify a display.");
+		delete("DISPLAY does not specify a display.");
 		return;
 	} else {
 		CHECK;
 		for(sptr = ++cptr; *sptr && isascii(*sptr) && isdigit(*sptr); sptr++)
 			;
 		if( (sptr == cptr) || (*sptr != '\0' && *sptr != '.') ) {
-			delete("Bad display number in XT_DISPLAY.");
+			delete("Bad display number in DISPLAY.");
 			return;
 		} else
 			CHECK;
@@ -464,7 +464,7 @@ char	ssno[9], sdno[9];
 			for(cptr = ++sptr; *sptr && isascii(*sptr) && isdigit(*sptr); sptr++)
 				;
 			if(*sptr) {
-				delete("Bad screen number in XT_DISPLAY.");
+				delete("Bad screen number in DISPLAY.");
 				return;
 			} else
 				CHECK;
@@ -480,7 +480,7 @@ char	ssno[9], sdno[9];
 
 		} else {
 			CHECK; CHECK;
-			sno = 0; /* No screen number in XT_DISPLAY, assume zero. */
+			sno = 0; /* No screen number in DISPLAY, assume zero. */
 		}
 	}
 
@@ -526,7 +526,7 @@ with default screen
 .A 0 .
 >>STRATEGY
 If the system is POSIX compliant and supports TCP transport:
-  Obtain the display numbers by parsing the XT_DISPLAY config variable.
+  Obtain the display numbers by parsing the DISPLAY config variable.
   Open a connection of the form host:number using xname.
   Verify that the call did not return NULL.
   Obtain the screen number using XDefaultScreen.
@@ -555,7 +555,7 @@ char	sdno[9];
 		;
 
 	if(*cptr == '\0') {
-		delete("XT_DISPLAY does not specify a display.");
+		delete("DISPLAY does not specify a display.");
 		return;
 	} else {
 		CHECK;
@@ -563,7 +563,7 @@ char	sdno[9];
 		for(sptr = ++cptr; *sptr && isascii(*sptr) && isdigit(*sptr); sptr++)
 			;
 		if( (sptr == cptr) || (*sptr != '\0' && *sptr != '.') ) {
-			delete("Bad display number in XT_DISPLAY.");
+			delete("Bad display number in DISPLAY.");
 			return;
 		} else
 			CHECK;
@@ -581,7 +581,7 @@ char	sdno[9];
 			for(cptr = ++sptr; *sptr && isascii(*sptr) && isdigit(*sptr); sptr++)
 				;
 			if(*sptr) {
-				delete("Bad screen number in XT_DISPLAY.");
+				delete("Bad screen number in DISPLAY.");
 				return;
 			} else
 				CHECK;
@@ -638,7 +638,7 @@ the value of the DISPLAY environment variable.
 >>STRATEGY
 Fork a child process using tet_fork.
 In child:
-  Exec the file \"./Test1\" with the environment variable DISPLAY set to the value of XT_DISPLAY config variable.
+  Exec the file \"./Test1\" with the environment variable DISPLAY set to the value of DISPLAY config variable.
   Open the display NULL using xname.
   Obtain the actual display string used using XDisplayString.
   Obtain the value of the DISPLAY environment variable using getvar.
@@ -693,7 +693,7 @@ then a call to xname opens the most efficient transport connection
 available to the specified display server and default screen on the client machine.
 >>STRATEGY
 If the system is POSIX compliant and supports DECnet and a local display server:
-  Obtain the display and screen numbers from XT_DISPLAY.
+  Obtain the display and screen numbers from DISPLAY.
   Open a connection of the form ::number.display.
   Verify that the call did not return NULL.
   Issue a NoOperation request using XNoOp.
@@ -733,12 +733,12 @@ char	ssno[9], sdno[9];
 		;
 
 	if(*cptr == '\0') {
-		delete("XT_DISPLAY does not specify a display.");
+		delete("DISPLAY does not specify a display.");
 		return;
 	} else {
 		CHECK;
 		if(*++cptr != ':') {
-			delete("XT_DISPLAY does not contain a valid display name.");
+			delete("_DISPLAY does not contain a valid display name.");
 			return;
 		} else
 			CHECK;
@@ -746,7 +746,7 @@ char	ssno[9], sdno[9];
 		for(sptr = ++cptr; *sptr && isascii(*sptr) && isdigit(*sptr); sptr++)
 			;
 		if( (sptr == cptr) || (*sptr != '\0' && *sptr != '.') ) {
-			delete("Bad display number in XT_DISPLAY.");
+			delete("Bad display number in DISPLAY.");
 			return;
 		} else
 			CHECK;
@@ -764,7 +764,7 @@ char	ssno[9], sdno[9];
 			for(cptr = ++sptr; *sptr && isascii(*sptr) && isdigit(*sptr); sptr++)
 				;
 			if(*sptr) {
-				delete("Bad screen number in XT_DISPLAY.");
+				delete("Bad screen number in DISPLAY.");
 				return;
 			} else
 				CHECK;
@@ -780,7 +780,7 @@ char	ssno[9], sdno[9];
 
 		} else {
 			CHECK; CHECK;
-			sno = 0; /* No screen number in XT_DISPLAY, assume zero. */
+			sno = 0; /* No screen number in DISPLAY, assume zero. */
 		}
 	}
 
@@ -845,7 +845,7 @@ then a call to xname opens the most efficient transport connection
 available to the specified display server and default screen on the client machine.
 >>STRATEGY
 If the system is POSIX compliant and supports TCP and a local display server:
-  Obtain the display and screen numbers from XT_DISPLAY.
+  Obtain the display and screen numbers from DISPLAY.
   Open a connection of the form :number.display.
   Verify that the call did not return NULL.
   Issue a NoOperation request using XNoOp.
@@ -885,7 +885,7 @@ char	ssno[9], sdno[9];
 		;
 
 	if(*cptr == '\0') {
-		delete("XT_DISPLAY does not specify a display.");
+		delete("DISPLAY does not specify a display.");
 		return;
 	} else {
 		CHECK;
@@ -893,7 +893,7 @@ char	ssno[9], sdno[9];
 		for(sptr = ++cptr; *sptr && isascii(*sptr) && isdigit(*sptr); sptr++)
 			;
 		if( (sptr == cptr) || (*sptr != '\0' && *sptr != '.') ) {
-			delete("Bad display number in XT_DISPLAY.");
+			delete("Bad display number in DISPLAY.");
 			return;
 		} else
 			CHECK;
@@ -911,7 +911,7 @@ char	ssno[9], sdno[9];
 			for(cptr = ++sptr; *sptr && isascii(*sptr) && isdigit(*sptr); sptr++)
 				;
 			if(*sptr) {
-				delete("Bad screen number in XT_DISPLAY.");
+				delete("Bad screen number in DISPLAY.");
 				return;
 			} else
 				CHECK;
@@ -927,7 +927,7 @@ char	ssno[9], sdno[9];
 
 		} else {
 			CHECK; CHECK;
-			sno = 0; /* No screen number in XT_DISPLAY, assume zero. */
+			sno = 0; /* No screen number in DISPLAY, assume zero. */
 		}
 	}
 

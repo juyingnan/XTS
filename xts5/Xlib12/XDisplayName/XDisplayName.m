@@ -135,8 +135,7 @@ as an argument.
 >>STRATEGY
 Fork a child process using tet_fork.
 In child :
-  Exec the file \"./Test1\" with the environment variable DISPLAY set to 
-    the value of XT_DISPLAY config variable.
+  Exec the file \"./Test1\" with the environment variable DISPLAY.
   In Test1:
     Call xname with string set to TestString:0.0
     Verify that the call returned a pointer to TestString:0.0
@@ -163,8 +162,8 @@ char	*dstr;
 char	*mstr = "DISPLAY=%s";
 int	pass = 0, fail = 0;
 
-	if((dstr = tet_getvar("XT_DISPLAY")) == (char *) NULL) {
-		delete("XT_DISPLAY configuration variable is not defined.");
+	if((dstr = getenv("DISPLAY")) == (char *) NULL) {
+		delete("DISPLAY configuration variable is not defined.");
 		return;
 	}		
 

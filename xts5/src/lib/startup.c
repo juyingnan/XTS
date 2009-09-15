@@ -224,11 +224,11 @@ extern	int 	io_err();
 	/*
 	 * Get the display to use and open it.
 	 */
-	disp = tet_getvar("XT_DISPLAY");
+	disp = getenv("DISPLAY");
 
 	if (disp == (char*)0) {
 /*
-		report("XT_DISPLAY was not set.  Can not continue.");
+		report("DISPLAY was not set.  Can not continue.");
 */
 		for (i = 0; i < ntests; i++)
 			tet_testlist[i].testfunc = aborttest;

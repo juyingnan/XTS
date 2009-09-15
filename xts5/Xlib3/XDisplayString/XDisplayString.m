@@ -172,7 +172,7 @@ was called.
 >>STRATEGY
 Fork a child process using tet_fork.
 In child :
-  Exec the file \"./Test1\" with the environment variable DISPLAY set to the value of XT_DISPLAY config variable.
+  Exec the file \"./Test1\" with the environment variable DISPLAY set.
   Open the display "" using XOpenDisplay.
   Obtain the value of the display string using xname.
   Obtain the value of the DISPLAY environment variable.
@@ -196,8 +196,8 @@ char	*dstr;
 char	*mstr = "DISPLAY=%s";
 int	pass = 0, fail = 0;
 
-	if((dstr = tet_getvar("XT_DISPLAY")) == (char *) NULL) {
-		delete("XT_DISPLAY configuration variable is not defined.");
+	if((dstr = getenv("DISPLAY")) == (char *) NULL) {
+		delete("DISPLAY configuration variable is not defined.");
 		return;
 	}		
 

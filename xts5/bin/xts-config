@@ -24,7 +24,7 @@ BEGIN
 
 	open(INFO, "$xdpyinfo |") or die "$xdpyinfo failed, giving up.\n";
 	my @xdpyinfopats = (
-		[qr/^name of display:\s*(.*)/, qw(XT_DISPLAY)],
+		[qr/^name of display:\s*(.*)/, qw(DISPLAY)],
 		[qr/^version number:\s*(\d+)\.(\d+)/, qw(XT_PROTOCOL_VERSION XT_PROTOCOL_REVISION)],
 		[qr/^vendor string:\s*(.*)/, qw(XT_SERVER_VENDOR)],
 		[qr/^vendor release number:\s*(\d+)/, qw(XT_VENDOR_RELEASE)],
@@ -71,7 +71,7 @@ BEGIN
 
 	$::vars{"XT_VISUAL_CLASSES"} = join ' ', keys %visuals;
 
-	if($::vars{"XT_DISPLAY"} =~ /^:(\d+)\.(\d+)$/)
+	if($::vars{"DISPLAY"} =~ /^:(\d+)\.(\d+)$/)
 	{
 		$::vars{"XT_LOCAL"} = "Yes";
 		my $hostname = hostname();

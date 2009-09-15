@@ -166,10 +166,10 @@ Setup_Extension_DeviceInfo(dmask)
     /*
      * Get the display to use and open it.
      */
-    disp = tet_getvar("XT_DISPLAY");
+    disp = getenv("DISPLAY");
 
     if (disp == (char*)0) {
-	report("XT_DISPLAY is not set in tetexec.cfg.  Cannot continue");
+        report("DISPLAY is not set.  Cannot continue");
 	return(False);
     }
 

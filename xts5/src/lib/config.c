@@ -209,7 +209,6 @@ struct	getparam parm[] = {
 	/* General configuration parameters */
 
 	{"XT_COVERAGE", T_INT, (char*)&config.coverage, 0},
-	{"XT_DISPLAY", T_STRING, (char*)&config.display, 0},
 	{"XT_ALT_SCREEN", T_INT, (char*)&config.alt_screen, 0},
 	{"XT_FONTPATH", T_STRING, (char*)&config.fontpath, 0},
 	{"XT_SPEEDFACTOR", T_INT, (char*)&config.speedfactor, 0},

@@ -106,7 +106,7 @@ Display	*display = Dsp;
 >>#
 >># COMMENT:	Could maybe assume numbering scheme for screen to be 0,1,2...
 >>#		then try to open each one using XOpenDisplay with a modified
->>#		XT_DISPLAY value.
+>>#		DISPLAY value.
 >>#
 >># Cal 24/7/91
 >># REPLY:	This is now done in the appropriate test for XOpenDisplay.

@@ -431,7 +431,7 @@ char	*server;
 	}
 
 	if ((server = config.display) == (char *) NULL) {
-		delete("XT_DISPLAY not set");
+		delete("DISPLAY not set");
 		return;
 	}
 	else

@@ -205,10 +205,10 @@ extern	int	io_err(),	unexp_err();
 	/*
 	 * Get the display to use and open it.
 	 */
-	disp = tet_getvar("XT_DISPLAY");
+	disp = getenv("DISPLAY");
 
 	if (disp == (char*)0) {
-		cancelrest("XT_DISPLAY not set");
+		cancelrest("DISPLAY not set");
 		return;
 	}
 

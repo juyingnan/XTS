@@ -167,10 +167,6 @@ TET_SAVE_FILES=Err*.err,*.sav
 # Please see Section 4.1.2 of the User's Guide for additional information.
 XT_COVERAGE=1
 
-# XT_DISPLAY - A string that identifies the display and screen to
-# run the tests for.
-XT_DISPLAY=
-
 # XT_ALT_SCREEN - If the display supports more than one screen then
 # this parameter should be set to one that is not under test.
 # Set to the string UNSUPPORTED if only one screen is available.
@@ -220,7 +216,7 @@ XT_EXTENSIONS=No
 ###########################################################
 
 # XT_VISUAL_CLASSES - A space separated list of the visual classes that
-# are supported for the screen given by XT_DISPLAY.  Each visual class
+# are supported for the screen given by DISPLAY.  Each visual class
 # is followed by a list of depths at which the class is supported
 # (enclosed by brackets and separated by commas with no spaces).
 # Visual classes and depths that are supported only by other screens
@@ -349,7 +345,7 @@ XT_TCP=Yes
 
 # XT_DISPLAYHOST - Set this to the hostname of the machine on which 
 # the display is physically attached. This will be used instead of
-# XT_DISPLAY (on a POSIX system) in the tests for XOpenDisplay which
+# DISPLAY (on a POSIX system) in the tests for XOpenDisplay which
 # specifically test the hostname component of the display name.
 # Note that this may not be the same as the machine on which the 
 # test suite clients execute (XTESTHOST).

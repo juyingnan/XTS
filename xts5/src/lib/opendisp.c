@@ -121,7 +121,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 #include	"tet_api.h"
 
 /*
- * Open the display in XT_DISPLAY.
+ * Open the display in DISPLAY.
  */
 
 Display *

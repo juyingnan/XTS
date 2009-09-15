@@ -355,14 +355,14 @@ char *contents = "ApTest.customization:CUSTOM";
 	/*
 	** open display
 	*/
-	cfgdisplay = tet_getvar("XT_DISPLAY");
+	cfgdisplay = getenv("DISPLAY");
 	if (cfgdisplay == 0) {
-		tet_infoline("ERROR: XT_DISPLAY not set in tet_exec.cfg");
+		tet_infoline("ERROR: DISPLAY not set");
 		tet_result(TET_UNRESOLVED);
 		exit(0);
 	}
 	if (strlen(cfgdisplay) == 0) {
-		tet_infoline("ERROR: XT_DISPLAY has empty value in tet_exec.cfg");
+		tet_infoline("ERROR: DISPLAY has empty value");
 		tet_result(TET_UNRESOLVED);
 		exit(0);
 	}

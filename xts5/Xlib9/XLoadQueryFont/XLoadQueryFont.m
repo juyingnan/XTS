@@ -150,7 +150,7 @@ For each visual supported for the default screen:
   Draw string with single character.
   Pixmap verify.
 Note: this tests the GC's for the default screen. 
-To test for other screens, re-run the test suite with XT_DISPLAY set 
+To test for other screens, re-run the test suite with DISPLAY set 
 to number of required screen.
 >>CODE
 XVisualInfo	*vp;

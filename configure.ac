@@ -100,19 +100,6 @@ if test "x$PERL" = x || test "x$XSET" = x || test "x$XDPYINFO" = x; then
     AC_MSG_ERROR([perl, xset and xdpyinfo are required to run xts-config])
 fi
 
-dnl See what display the user wants to use for testing
-AC_ARG_WITH([display],
-    [AS_HELP_STRING([--with-display=DPY],
-        [X display to connect to @<:@default=DISPLAY variable@:>@])],
-    [XT_DISPLAY=$withval],
-    [XT_DISPLAY=$DISPLAY])
-if test "x$XT_DISPLAY" = x; then
-    AC_MSG_ERROR([no display specified; set DISPLAY variable or use --with-display])
-fi
-AC_MSG_CHECKING([display to test])
-AC_MSG_RESULT([$XT_DISPLAY])
-AC_SUBST([XT_DISPLAY])
-
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
 
 AC_CONFIG_FILES([

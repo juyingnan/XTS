@@ -103,14 +103,14 @@ Window avs_xext_init()
 	(void)XSetIOErrorHandler(x_handler);    /*X Handler for severe errors */
 	(void)XSetErrorHandler(x_unexperr);     /* Unexpected XError handler */
 
-	cfgdisplay = tet_getvar("XT_DISPLAY");
+	cfgdisplay = getenv("DISPLAY");
 	if (cfgdisplay == 0) {
-		tet_infoline("ERROR: avs_xt_init: XT_DISPLAY not set in tet_exec.cfg");
+		tet_infoline("ERROR: avs_xt_init: DISPLAY not set");
 		tet_result(TET_UNRESOLVED);
 		exit(0);
 	}
 	if (strlen(cfgdisplay) == 0) {
-		tet_infoline("ERROR: avs_xt_init: XT_DISPLAY has empty value in tet_exec.cfg");
+		tet_infoline("ERROR: avs_xt_init: DISPLAY has empty value");
 		tet_result(TET_UNRESOLVED);
 		exit(1);
 	}

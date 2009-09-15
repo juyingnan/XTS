@@ -349,7 +349,7 @@ int	cl; /* client number */
     if (display == NULL || *display == '\0') {
 	if ((display_name = getenv ("DISPLAY")) == NULL) {
 	/* Oops! No DISPLAY environment variable - error. */
-	    Log_Msg ("No XT_DISPLAY and no DISPLAY environment variable\n");
+	    Log_Msg ("No DISPLAY environment variable\n");
 	    Delete ();
 	}
     }
