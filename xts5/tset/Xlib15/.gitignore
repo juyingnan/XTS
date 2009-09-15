@@ -39,8 +39,8 @@ XSetWMIconName/XSetWMIconName
 XSetWMName/XSetWMName
 XSetWMNormalHints/XSetWMNormalHints
 XSetWMProperties/XSetWMProperties
-stwmprprts/Test1
-stwmprprts/Test2
+XSetWMProperties/Test1
+XSetWMProperties/Test2
 XSetWMProtocols/XSetWMProtocols
 XSetWMSizeHints/XSetWMSizeHints
 XTextPropertyToStringList/XTextPropertyToStringList

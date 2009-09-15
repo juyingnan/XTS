@@ -13,9 +13,9 @@ XFindContext/XFindContext
 XFetchBuffer/XFetchBuffer
 XFetchBytes/XFetchBytes
 XGetDefault/XGetDefault
-gtdflt/Test3
-gtdflt/Test4
-gtdflt/Test5
+XGetDefault/Test3
+XGetDefault/Test4
+XGetDefault/Test5
 XGetPixel/XGetPixel
 XGetVisualInfo/XGetVisualInfo
 XIntersectRegion/XIntersectRegion

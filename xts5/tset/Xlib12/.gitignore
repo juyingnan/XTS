@@ -5,7 +5,7 @@ XCheckTypedWindowEvent/XCheckTypedWindowEvent
 XCheckWindowEvent/XCheckWindowEvent
 XDisplayMotionBufferSize/XDisplayMotionBufferSize
 XDisplayName/XDisplayName
-dsplynm/Test1
+XDisplayName/Test1
 XEventsQueued/XEventsQueued
 XFlush/XFlush
 XGetErrorDatabaseText/XGetErrorDatabaseText

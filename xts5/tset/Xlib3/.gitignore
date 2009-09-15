@@ -48,7 +48,7 @@ XDisplayOfScreen/XDisplayOfScreen
 XDisplayOfScreen/XDisplayOfScreen_m
 XDisplayPlanes/XDisplayPlanes
 XDisplayPlanes/XDisplayPlanes_m
-dsplystr/Test1
+XDisplayString/Test1
 XDisplayString/XDisplayString
 XDisplayString/XDisplayString_m
 XDisplayWidth/XDisplayWidth
@@ -77,7 +77,7 @@ XMaxCmapsOfScreen/XMaxCmapsOfScreen_m
 XNoOp/XNoOp
 XNextRequest/XNextRequest
 XNextRequest/XNextRequest_m
-opndsply/Test1
+XOpenDisplay/Test1
 XOpenDisplay/XOpenDisplay
 XPlanesOfScreen/XPlanesOfScreen
 XPlanesOfScreen/XPlanesOfScreen_m
