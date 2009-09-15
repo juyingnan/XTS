@@ -91,8 +91,9 @@ char *iopt, *cwd;
 	*/
 	if (iopt && *iopt) {
 		fullpath(cwd, iopt, resdir, sizeof resdir, 0);
-		if (tet_eaccess(resdir, 02) < 0)
-			fatal(errno, "can't access", resdir);
+		errno = 0;
+		if (tet_mkalldirs(resdir) != 0 && errno != EEXIST)
+			tcc_exit(1);
 	}
 	else {
 		fullpath(tet_tsroot, results_dir, resroot, sizeof resroot, 0);
