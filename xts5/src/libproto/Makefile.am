@@ -29,6 +29,8 @@ libXst_a_SOURCES =\
 	ResMng.c\
 	Log.c\
 	ClientMng.c\
+	ConnDis.c \
+	x11_trans.c \
 	Expect.c\
 	$(XP_OPEN_DIS)\
 	ValListMng.c\

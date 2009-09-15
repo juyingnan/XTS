@@ -45,15 +45,6 @@ PKG_CHECK_MODULES([XP], [x11 xext xi xtst])
 PKG_CHECK_MODULES([XT], [x11 xext xt xtst])
 dnl PKG_CHECK_MODULES([XAW], [x11 xext xt xtst xaw7])
 
-dnl Sadly, we need an Xlib with _XConnectDisplay, and this means a
-dnl non-xcb Xlib.
-_save_LDFLAGS=$LDFLAGS
-LDFLAGS="$LDFLAGS `$PKG_CONFIG --libs-only-L x11 2>/dev/null`"
-AC_CHECK_LIB([X11], [_XConnectDisplay], [],
-    [AC_MSG_ERROR([XTest requires an Xlib with _XConnectDisplay]
-                  [Try building libX11 --without-xcb])])
-LDFLAGS=$_save_LDFLAGS
-
 dnl Checks for header files.
 AC_HEADER_STDC
 
@@ -62,6 +53,37 @@ AC_DEFINE([TET_LITE], [1], [Use a smaller subset of the TET API])
 AC_DEFINE([XT_X_RELEASE], [6], [The X11 Release, e.g. 6 for X11R6])
 AC_DEFINE([XTESTEXTENSION], [1], [Build tests using the XTEST extension])
 AC_DEFINE([INPUTEXTENSION], [1], [Build tests using the XI extension])
+
+m4_pattern_forbid(XTRANS_CONNECTION_FLAGS)
+
+# Transport selection macro from xtrans.m4
+XTRANS_CONNECTION_FLAGS
+
+# Preferred order to try transports for local connections
+AC_MSG_CHECKING([what order to try transports in for local connections])
+case $host_os in
+	solaris*)
+		# On Solaris 2.6 through 9, named pipes (LOCAL_TRANS) were
+		# faster than Unix domain sockets, but on Solaris 10 & later,
+		# Unix domain sockets are faster now.
+		DEFAULT_LOCAL_TRANS="UNIX_TRANS,LOCAL_TRANS,TCP_TRANS"
+		;;
+	*)
+		if test "$LOCALCONN" = "yes"; then
+			DEFAULT_LOCAL_TRANS="LOCAL_TRANS,UNIX_TRANS,TCP_TRANS"
+		else
+			DEFAULT_LOCAL_TRANS="UNIX_TRANS,TCP_TRANS"
+		fi
+		;;
+esac
+
+AC_ARG_WITH(local-transport-order,
+	AC_HELP_STRING([--with-local-transport-order=LIST], [preference sorted list of transport types to try for local connections]),
+	[LOCAL_TRANSPORT_LIST=$withval],
+	[LOCAL_TRANSPORT_LIST=$DEFAULT_LOCAL_TRANS])
+AC_DEFINE_UNQUOTED([LOCAL_TRANSPORT_LIST], [$LOCAL_TRANSPORT_LIST],
+   [preference sorted list of transport types to try for local connections])
+AC_MSG_RESULT([$LOCAL_TRANSPORT_LIST])
 
 dnl Needed for generating fonts
 AC_PATH_PROG([BDFTOPCF], [bdftopcf])
