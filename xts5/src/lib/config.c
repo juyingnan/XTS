@@ -245,7 +245,6 @@ struct	getparam parm[] = {
 	/* Configuration parameters for connection tests */
 
 	{"XT_POSIX_SYSTEM", T_YESNO, (char*)&config.posix_system, 0},
-	{"XT_DECNET", T_YESNO, (char *)&config.decnet, 0},
 	{"XT_TCP", T_YESNO, (char *)&config.tcp, 0},
 	{"XT_DISPLAYHOST", T_STRING, (char *)&config.displayhost, 0},
 	{"XT_LOCAL", T_YESNO, (char *)&config.local, 0},

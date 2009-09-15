@@ -333,11 +333,6 @@ XT_DOES_BACKING_STORE=
 # dependent functionality will be tested assuming POSIX concepts.
 XT_POSIX_SYSTEM=Yes
 
-# XT_DECNET - Set this to yes if clients can connect to the X server under 
-# test using DECnet. This will be used (on a POSIX system)
-# in the tests for XOpenDisplay.
-XT_DECNET=No
-
 # XT_TCP - Set this to yes if clients can connect to the X server under 
 # test using TCP streams. This will be used (on a POSIX system)
 # in the tests for XOpenDisplay.
