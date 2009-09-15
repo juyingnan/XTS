@@ -7,10 +7,13 @@
 # The code generator for turning .m files to .c files.
 SUFFIXES = .m _m.c .c
 MC = $(top_builddir)/xts5/src/bin/mc/mc
+AM_V_mc = $(AM_V_mc_$(V))
+AM_V_mc_ = $(AM_V_mc_$(AM_DEFAULT_VERBOSITY))
+AM_V_mc_0 = @echo MC $@;
 .m.c:
-	TET_ROOT='$(TET_ROOT)' $(MC) -o $@ $<
+	$(AM_V_mc)TET_ROOT='$(TET_ROOT)' $(MC) -o $@ $<
 .m_m.c:
-	TET_ROOT='$(TET_ROOT)' $(MC) -m -o $@ $<
+	$(AM_V_mc)TET_ROOT='$(TET_ROOT)' $(MC) -m -o $@ $<
 
 # Test scenario executor - The tests are run by tcc where the argument
 # is the scenario name in the tet_scen file.
