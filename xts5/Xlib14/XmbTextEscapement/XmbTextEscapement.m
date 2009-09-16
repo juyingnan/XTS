@@ -18,7 +18,6 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
  */
-$Header: /cvs/xtest/xtest/xts5/tset/Xlib14/XmbTextEscapement/XmbTextEscapement.m,v 1.2 2005-11-03 08:42:45 jmichael Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.

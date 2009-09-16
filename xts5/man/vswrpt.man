@@ -19,7 +19,6 @@
 .\"OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 .\"SOFTWARE.
 .\"
-.\"$Header: /cvs/xtest/xtest/xts5/man/vswrpt.man,v 1.3 2005-11-03 08:42:01 jmichael Exp $
 .\"Copyright (c) 1994, 1995 Applied Testing and Technology, Inc.
 .\"All rights reserved
 .TH vswrpt "1" "November 1999" "The Open Group" "VSW5"

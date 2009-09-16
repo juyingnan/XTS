@@ -20,7 +20,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/bin/mc/code.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.

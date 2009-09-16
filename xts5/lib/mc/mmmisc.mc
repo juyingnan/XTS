@@ -1,4 +1,3 @@
-# $Header: /cvs/xtest/xtest/xts5/lib/mc/mmmisc.mc,v 1.1 2005-02-12 14:37:14 anderson Exp $ 
 #
 # Miscellaneous housekeeping functions.
 #

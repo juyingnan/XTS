@@ -20,7 +20,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-$Header: /cvs/xtest/xtest/xts5/src/bin/reports/vsw_pr.c,v 1.1 2005-02-12 14:37:14 anderson Exp $
 *
 * Copyright Applied Testing and Technology Inc. 1994, 1995
 * All rights reserved

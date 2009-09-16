@@ -20,7 +20,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/XlibXtst.c,v 1.3 2005-11-03 08:42:02 jmichael Exp $
 *
 * Copyright (c) 2001 The Open Group
 * Copyright Applied Testing and Technology Inc. 1995

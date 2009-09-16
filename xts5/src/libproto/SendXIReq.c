@@ -20,7 +20,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/SendXIReq.c,v 1.3 2005-11-03 08:42:02 jmichael Exp $
 *
 * Copyright (c) 1999 The Open Group
 * Copyright Applied Testing and Technology Inc. 1995
@@ -143,10 +142,6 @@ SOFTWARE.
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
-#endif
-
-#ifndef lint
-static char rcsid[]="$Header: /cvs/xtest/xtest/xts5/src/libproto/SendXIReq.c,v 1.3 2005-11-03 08:42:02 jmichael Exp $";
 #endif
 
 #include "XstlibInt.h"

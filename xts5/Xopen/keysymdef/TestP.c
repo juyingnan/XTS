@@ -20,7 +20,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xopen/keysymdef/TestP.c,v 1.2 2005-11-03 08:44:00 jmichael Exp $
 * 
 * Project: VSW5
 * 

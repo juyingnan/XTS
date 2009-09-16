@@ -20,7 +20,6 @@
 # SOFTWARE.
 #
 #!/bin/sh
-# $Header: /cvs/xtest/xtest/xts5/bin/run_assert,v 1.2 2005-11-03 08:42:00 jmichael Exp $
 #
 #		 Copyright (c) Applied Testing and Technology, Inc. 1993, 1994
 #		 All Rights Reserved.

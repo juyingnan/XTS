@@ -20,7 +20,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/include/XItest.h,v 1.2 2005-11-03 08:42:00 jmichael Exp $
 *
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * Copyright 1992 by Hewlett-Packard.

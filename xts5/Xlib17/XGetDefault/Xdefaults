@@ -1,4 +1,3 @@
-! $Header: /cvs/xtest/xtest/xts5/tset/Xlib17/XGetDefault/Xdefaults,v 1.1 2005-02-12 14:37:30 anderson Exp $
 XTest.testval31:VAL_a
 XTest.testval32:VAL_b
 XTest.testval33:VAL_c

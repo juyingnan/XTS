@@ -20,7 +20,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/libproto/RcvExtErr.c,v 1.2 2005-11-03 08:42:02 jmichael Exp $
 *
 * Copyright Applied Testing and Technology Inc. 1995
 * All rights reserved
@@ -127,15 +126,10 @@ SOFTWARE.
 */
 
 /*
- *	$Header: /cvs/xtest/xtest/xts5/src/libproto/RcvExtErr.c,v 1.2 2005-11-03 08:42:02 jmichael Exp $
  */
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
-#endif
-
-#ifndef lint
-static char rcsid[]="$Header: /cvs/xtest/xtest/xts5/src/libproto/RcvExtErr.c,v 1.2 2005-11-03 08:42:02 jmichael Exp $";
 #endif
 
 #define ERROR_HEADER	4	/* size of constant header */

@@ -20,7 +20,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/include/XtTestProto.h,v 1.4 2007-10-15 20:44:37 anholt Exp $
 *
 * Copyright (c) 2004 The Open Group
 * Copyright (c) Applied Testing and Technology, Inc. 1993, 1994, 1995

@@ -20,7 +20,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/tset/Xlib3/XOpenDisplay/Test1.c,v 1.5 2005-11-03 08:43:26 jmichael Exp $
 * 
 * Copyright (c) Applied Testing and Technology, Inc. 1995
 * All Rights Reserved.

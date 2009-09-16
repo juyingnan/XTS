@@ -19,7 +19,6 @@
 .\"OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 .\"SOFTWARE.
 .\"
-.\"$Header: /cvs/xtest/xtest/xts5/man/run_assert.man,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 .\"Copyright (c) 1994, 1995 Applied Testing and Technology, Inc.
 .\"All rights reserved
 .TH run_assert "1" "November 1999" "The Open Group" "VSW5"

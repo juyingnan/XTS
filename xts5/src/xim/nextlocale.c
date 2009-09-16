@@ -20,7 +20,6 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 */
 /*
-* $Header: /cvs/xtest/xtest/xts5/src/xim/nextlocale.c,v 1.2 2005-04-21 09:40:42 ajosey Exp $
 *
 * Copyright (c) 1999 The Open Group
 * Copyright (c) Applied Testing and Technology, Inc. 1995

@@ -1,8 +1,6 @@
 #
 # Generalized C/C++ interface for Microsoft C/C++
 #
-# rcsid = $Header: /cvs/xtest/xtest/src/tet3/compiler.ccg,v 1.1 2005-10-31 23:09:07 jamey Exp $
-#
 
 # SCCS: @(#)compiler.ccg	1.3 (98/09/01) TETware release 3.3
 #

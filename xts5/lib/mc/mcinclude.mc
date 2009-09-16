@@ -1,4 +1,3 @@
-/* $Header: /cvs/xtest/xtest/xts5/lib/mc/mcinclude.mc,v 1.2 2005-02-12 17:50:23 anderson Exp $ */
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>

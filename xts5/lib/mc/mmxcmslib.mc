@@ -1,4 +1,3 @@
-# $Header: /cvs/xtest/xtest/xts5/lib/mc/mmxcmslib.mc,v 1.1 2005-02-12 14:37:14 anderson Exp $ 
 # 
 # This part of the makefile checks for the existance of the libraries
 # and creates them if necessary.

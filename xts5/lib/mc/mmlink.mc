@@ -1,4 +1,3 @@
-# $Header: /cvs/xtest/xtest/xts5/lib/mc/mmlink.mc,v 1.1 2005-02-12 14:37:14 anderson Exp $ 
 #
 # A version of the test that can be combined together with
 # all the other tests to make one executable.  This will save a
