@@ -17,14 +17,14 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-$Header: /cvs/xtest/xtest/xts5/tset/Xproto/XFreeColors/XFreeColors.m,v 1.2 2005-11-03 08:44:07 jmichael Exp $
+$Header: /cvs/xtest/xtest/xts5/tset/Xproto/pFreeColors/pFreeColors.m,v 1.2 2005-11-03 08:44:07 jmichael Exp $
 
 Copyright (c) Applied Testing and Technology, Inc. 1995
 All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/XFreeColors/XFreeColors.m
+>># File: xts5/tset/Xproto/pFreeColors/pFreeColors.m
 >># 
 >># Description:
 >># 	Tests for FreeColors
@@ -45,7 +45,7 @@ All Rights Reserved.
 >>#
 >># Revision 6.1  1998/08/04 22:51:03  andy
 >># Changed type of reply_pixel from unsigned long to CARD32 to match
->># declaration in libproto/MakeReq.c.
+>># declaration in libproto/pMakeReq.c.
 >>#
 >># Revision 6.0  1998/03/02 05:24:01  tbr
 >># Branch point for Release 5.0.1
