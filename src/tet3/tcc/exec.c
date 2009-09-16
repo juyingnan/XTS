@@ -75,6 +75,8 @@ char *path, **argv, *tcdir, *outfile;
 	static
 #endif /* TET_LITE */	/* -LITE-CUT-LINE- */
 		char buf[sizeof fmt + LNUMSZ];
+	char *resdir;
+	char resbuf[MAXPATH + sizeof("TET_RESDIR=")];
 	struct systab *sp;
 	long remid;
 #ifdef TET_LITE	/* -LITE-CUT-LINE- */
@@ -102,6 +104,19 @@ char *path, **argv, *tcdir, *outfile;
 			return(-1L);
 		}
 		sp->sy_activity = prp->pr_activity;
+	}
+
+	/* put the results directory into the environment */
+	resdir = resdirname();
+	if (resdir) {
+		sprintf(resbuf, "TET_RESDIR=%s", resdir);
+		TRACE3(tet_Ttcc, 6, "putenv \"%s\" on system %s",
+			resbuf, tet_i2a(*prp->pr_sys));
+		if (tcc_putenv(*prp->pr_sys, resbuf) < 0) {
+			prperror(prp, *prp->pr_sys, tet_tcerrno,
+				"tcc_putenv(TET_RESDIR) failed", NULL);
+			return(-1L);
+		}
 	}
 
 	/* change to the test case directory */

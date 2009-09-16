@@ -799,7 +799,8 @@ static int ismaster()
 TET_IMPORT void tet_openres(progname)
 char *progname;
 {
-	char cwdbuf[MAXPATH];
+	char *resdir, *p;
+	char buf[MAXPATH];
 	static char resvar[] = "TET_RESFILE";
 	char *resname;
 	static char tmpvar[] = "TET_TMPRESFILE";
@@ -834,28 +835,43 @@ char *progname;
 
 	/* set full path name of execution results file and temp results
 	   file, in a form convenient for placing in the environment */
+	if (!(resdir = getenv("TET_RESDIR"))) {
+		if (GETCWD(buf, sizeof(buf)) == NULL)
+			fatal(errno, "getcwd() failed", NULL);
+		resdir = buf;
+	}
 
-	if (GETCWD(cwdbuf, (size_t)MAXPATH) == NULL)
-		fatal(errno, "getcwd() failed", (char *) 0);
-
-	resenv = malloc(strlen(cwdbuf)+sizeof(resvar)+strlen(resname)+5);
+	resenv = malloc(strlen(resdir)+sizeof(resvar)+strlen(resname)+5);
 	if (resenv == NULL)
 		fatal(errno, "can't allocate resenv in tet_openres()",
 			(char *) 0);
 	TRACE2(tet_Tbuf, 6, "allocate resenv = %s", tet_i2x(resenv));
 
-	tmpresenv = malloc(strlen(cwdbuf)+sizeof(tmpvar)+strlen(tmpname)+5);
+	tmpresenv = malloc(strlen(resdir)+sizeof(tmpvar)+strlen(tmpname)+5);
 	if (tmpresenv == NULL)
 		fatal(errno, "can't allocate tmpresenv in tet_openres()",
 			(char *) 0);
 	TRACE2(tet_Tbuf, 6, "allocate tmpresenv = %s",
 		tet_i2x(tmpresenv));
 
-	(void) sprintf(resenv, "%s=%s/%s", resvar, cwdbuf, resname);
+	(void) sprintf(resenv, "%s=%s/%s", resvar, resdir, resname);
 	resfile = resenv + sizeof(resvar);
 
-	(void) sprintf(tmpresenv, "%s=%s/%s", tmpvar, cwdbuf, tmpname);
+	(void) sprintf(tmpresenv, "%s=%s/%s", tmpvar, resdir, tmpname);
 	tet_tmpresfile = tmpresenv + sizeof(tmpvar);
+
+	/* create the leading directories for the results file */
+	strncpy(buf, resfile, sizeof(buf) - 1);
+	for (p = buf + strlen(buf) - 1; p > buf; p--)
+		if (isdirsep(*p))
+			break;
+	if (p > buf) {
+		*p = '\0';
+		if (tet_mkalldirs(buf) != 0 && errno != EEXIST)
+			fatal(errno,
+				"cannot create results file directory:",
+				buf);
+	}
 
 	/* create the execution results file and open in append mode */
 
