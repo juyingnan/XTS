@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtGetApplicationNameAndClass/XtGetApplicationNameAndClass.m
+>># File: xts/Xt13/XtGetApplicationNameAndClass/XtGetApplicationNameAndClass.m
 >># 
 >># Description:
 >>#	Tests for XtGetApplicationNameAndClass()

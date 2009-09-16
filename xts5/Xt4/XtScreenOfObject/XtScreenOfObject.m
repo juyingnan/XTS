@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtScreenOfObject/XtScreenOfObject.m
+>># File: xts/Xt4/XtScreenOfObject/XtScreenOfObject.m
 >># 
 >># Description:
 >>#	Tests for XtScreenOfObject()

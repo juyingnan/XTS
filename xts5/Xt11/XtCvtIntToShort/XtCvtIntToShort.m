@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtIntToShort/XtCvtIntToShort.m
+>># File: xts/Xt11/XtCvtIntToShort/XtCvtIntToShort.m
 >># 
 >># Description:
 >>#	Tests for XtCvtIntToShort()

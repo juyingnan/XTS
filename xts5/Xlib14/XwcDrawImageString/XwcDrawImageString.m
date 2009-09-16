@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib14/XwcDrawImageString/XwcDrawImageString.m
+>># File: xts5/Xlib14/XwcDrawImageString/XwcDrawImageString.m
 >># 
 >># Description:
 >># 	Tests for XwcDrawImageString()

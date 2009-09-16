@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtSetSelectionTimeout/XtSetSelectionTimeout.m
+>># File: xts/XtC/XtSetSelectionTimeout/XtSetSelectionTimeout.m
 >># 
 >># Description:
 >>#	Tests for XtSetSelectionTimeout()

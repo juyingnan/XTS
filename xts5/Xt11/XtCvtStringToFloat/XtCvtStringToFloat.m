@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtStringToFloat/XtCvtStringToFloat.m
+>># File: xts/Xt11/XtCvtStringToFloat/XtCvtStringToFloat.m
 >># 
 >># Description:
 >>#	Tests for XtCvtStringToFloat()

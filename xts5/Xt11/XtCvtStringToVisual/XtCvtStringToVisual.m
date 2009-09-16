@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtStringToVisual/XtCvtStringToVisual.m
+>># File: xts/Xt11/XtCvtStringToVisual/XtCvtStringToVisual.m
 >># 
 >># Description:
 >>#	Tests for XtCvtStringToVisual()

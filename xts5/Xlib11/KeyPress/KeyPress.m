@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib11/KeyPress/KeyPress.m
+>># File: xts5/Xlib11/KeyPress/KeyPress.m
 >># 
 >># Description:
 >># 	Tests for KeyPress()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/gtdvckympp/gtdvckympp.m
+>># File: xts5/XIproto/gtdvckympp/gtdvckympp.m
 >># 
 >># Description:
 >># 	Tests for GetDeviceKeyMapping

@@ -26,7 +26,7 @@ SOFTWARE.
 * 
 * Project: VSW5
 * 
-* File: tset/Xt8/XtQueryGeometry/XtQueryGeometry.c
+* File: xts/Xt8/XtQueryGeometry/XtQueryGeometry.c
 * 
 * Description:
 * 	Tests 5 and 6 for XtQueryGeometry()

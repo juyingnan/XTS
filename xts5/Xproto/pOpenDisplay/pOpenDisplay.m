@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pOpenDisplay/pOpenDisplay.m
+>># File: xts5/Xproto/pOpenDisplay/pOpenDisplay.m
 >># 
 >># Description:
 >># 	Tests for OpenDisplay

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XQLength/XQLength.m
+>># File: xts5/Xlib3/XQLength/XQLength.m
 >># 
 >># Description:
 >># 	Tests for XQLength()

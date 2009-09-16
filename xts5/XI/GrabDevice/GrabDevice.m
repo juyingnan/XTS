@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/grbdvc/grbdvc.m
+>># File: xts5/XI/grbdvc/grbdvc.m
 >># 
 >># Description:
 >># 	Tests for XGrabDevice()

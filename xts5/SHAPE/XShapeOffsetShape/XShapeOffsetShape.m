@@ -25,7 +25,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/SHAPE/XShapeOffsetShape/XShapeOffsetShape.m
+>># File: xts/SHAPE/XShapeOffsetShape/XShapeOffsetShape.m
 >>#
 >># Description:
 >>#     Tests for XShapeOffsetShape()

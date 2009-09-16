@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/lstinptdvc/lstinptdvc.m
+>># File: xts5/XI/lstinptdvc/lstinptdvc.m
 >># 
 >># Description:
 >># 	Tests for XListInputDevices()

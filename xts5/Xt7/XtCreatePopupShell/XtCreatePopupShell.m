@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt7/XtCreatePopupShell/XtCreatePopupShell.m
+>># File: xts/Xt7/XtCreatePopupShell/XtCreatePopupShell.m
 >># 
 >># Description:
 >>#	Tests for XtCreatePopupShell()

@@ -23,7 +23,7 @@ SOFTWARE.
 * 
 * Project: VSW5
 * 
-* File: xts5/tset/Xopen/XStringToKeysym/TestL.c
+* File: xts5/Xopen/XStringToKeysym/TestL.c
 * 
 * Description:
 * 	Tests for XStringToKeysym()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pQueryPointer/pQueryPointer.m
+>># File: xts5/Xproto/pQueryPointer/pQueryPointer.m
 >># 
 >># Description:
 >># 	Tests for QueryPointer

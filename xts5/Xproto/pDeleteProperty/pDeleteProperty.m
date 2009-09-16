@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pDeleteProperty/pDeleteProperty.m
+>># File: xts5/Xproto/pDeleteProperty/pDeleteProperty.m
 >># 
 >># Description:
 >># 	Tests for DeleteProperty

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtIsRealized/XtIsRealized.m
+>># File: xts/Xt4/XtIsRealized/XtIsRealized.m
 >># 
 >># Description:
 >>#	Tests for XtIsRealized()

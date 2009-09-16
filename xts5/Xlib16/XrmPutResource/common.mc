@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib16/XrmPutResource/common.mc
+>># File: xts5/Xlib16/XrmPutResource/common.mc
 >># 
 >># Description:
 >># 	Tests for XrmPutResource()

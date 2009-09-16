@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt7/XtCallbackExclusive/XtCallbackExclusive.m
+>># File: xts/Xt7/XtCallbackExclusive/XtCallbackExclusive.m
 >># 
 >># Description:
 >>#	Tests for XtCallbackExclusive()

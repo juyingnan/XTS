@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib17/XCreatePixmapFromBitmapData/XCreatePixmapFromBitmapData.m
+>># File: xts5/Xlib17/XCreatePixmapFromBitmapData/XCreatePixmapFromBitmapData.m
 >># 
 >># Description:
 >># 	Tests for XCreatePixmapFromBitmapData()

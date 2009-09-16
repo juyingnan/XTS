@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtSetSensitive/XtSetSensitive.m
+>># File: xts/Xt9/XtSetSensitive/XtSetSensitive.m
 >># 
 >># Description:
 >>#	Tests for XtSetSensitive()

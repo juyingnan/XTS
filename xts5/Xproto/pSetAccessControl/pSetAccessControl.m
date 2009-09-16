@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pSetAccessControl/pSetAccessControl.m
+>># File: xts5/Xproto/pSetAccessControl/pSetAccessControl.m
 >># 
 >># Description:
 >># 	Tests for SetAccessControl

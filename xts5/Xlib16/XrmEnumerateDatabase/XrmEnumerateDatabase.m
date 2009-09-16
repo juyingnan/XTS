@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib16/XrmEnumerateDatabase/XrmEnumerateDatabase.m
+>># File: xts/Xlib16/XrmEnumerateDatabase/XrmEnumerateDatabase.m
 >># 
 >># Description:
 >>#	Tests for XrmEnumerateDatabase()

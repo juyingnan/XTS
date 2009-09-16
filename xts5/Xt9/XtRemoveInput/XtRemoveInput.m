@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtRemoveInput/XtRemoveInput.m
+>># File: xts/Xt9/XtRemoveInput/XtRemoveInput.m
 >># 
 >># Description:
 >>#	Tests for XtRemoveInput()

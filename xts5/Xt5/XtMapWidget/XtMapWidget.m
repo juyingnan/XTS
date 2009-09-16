@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt5/XtMapWidget/XtMapWidget.m
+>># File: xts/Xt5/XtMapWidget/XtMapWidget.m
 >># 
 >># Description:
 >>#	Tests for XtMapWidget()

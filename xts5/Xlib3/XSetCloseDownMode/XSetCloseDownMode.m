@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XSetCloseDownMode/XSetCloseDownMode.m
+>># File: xts5/Xlib3/XSetCloseDownMode/XSetCloseDownMode.m
 >># 
 >># Description:
 >># 	Tests for XSetCloseDownMode()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pSetDashes/pSetDashes.m
+>># File: xts5/Xproto/pSetDashes/pSetDashes.m
 >># 
 >># Description:
 >># 	Tests for SetDashes

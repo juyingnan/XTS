@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib9/XGetFontPath/XGetFontPath.m
+>># File: xts5/Xlib9/XGetFontPath/XGetFontPath.m
 >># 
 >># Description:
 >># 	Tests for XGetFontPath()

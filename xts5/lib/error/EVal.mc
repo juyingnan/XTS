@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/error/EVal.mc
+>># File: xts/lib/error/EVal.mc
 >>#
 >># Description:
 >>#     BadValue error test

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib10/XListHosts/XListHosts.m
+>># File: xts5/Xlib10/XListHosts/XListHosts.m
 >># 
 >># Description:
 >># 	Tests for XListHosts()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pQueryExtension/pQueryExtension.m
+>># File: xts5/Xproto/pQueryExtension/pQueryExtension.m
 >># 
 >># Description:
 >># 	Tests for QueryExtension

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/chngkybrdd/chngkybrdd.m
+>># File: xts5/XIproto/chngkybrdd/chngkybrdd.m
 >># 
 >># Description:
 >># 	Tests for ChangeKeyboardDevice

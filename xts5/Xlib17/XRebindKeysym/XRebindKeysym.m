@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib17/XRebindKeysym/XRebindKeysym.m
+>># File: xts5/Xlib17/XRebindKeysym/XRebindKeysym.m
 >># 
 >># Description:
 >># 	Tests for XRebindKeysym()

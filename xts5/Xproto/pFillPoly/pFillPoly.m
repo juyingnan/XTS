@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pFillPoly/pFillPoly.m
+>># File: xts5/Xproto/pFillPoly/pFillPoly.m
 >># 
 >># Description:
 >># 	Tests for FillPoly

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pFreePixmap/pFreePixmap.m
+>># File: xts5/Xproto/pFreePixmap/pFreePixmap.m
 >># 
 >># Description:
 >># 	Tests for FreePixmap

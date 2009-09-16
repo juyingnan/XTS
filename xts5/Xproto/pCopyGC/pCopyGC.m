@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pCopyGC/pCopyGC.m
+>># File: xts5/Xproto/pCopyGC/pCopyGC.m
 >># 
 >># Description:
 >># 	Tests for CopyGC

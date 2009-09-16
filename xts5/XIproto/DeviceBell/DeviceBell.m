@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/dvcbll/dvcbll.m
+>># File: xts5/XIproto/dvcbll/dvcbll.m
 >># 
 >># Description:
 >># 	Tests for DeviceBell

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib5/XInternAtom/XInternAtom.m
+>># File: xts5/Xlib5/XInternAtom/XInternAtom.m
 >># 
 >># Description:
 >># 	Tests for XInternAtom()

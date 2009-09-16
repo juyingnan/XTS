@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtCreateVarArgsList/XtCreateVarArgsList.m
+>># File: xts/Xt4/XtCreateVarArgsList/XtCreateVarArgsList.m
 >># 
 >># Description:
 >>#	Tests for XtVaCreateArgsList()

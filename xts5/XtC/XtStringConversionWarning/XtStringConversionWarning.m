@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtStringConversionWarning/XtStringConversionWarning.m
+>># File: xts/XtC/XtStringConversionWarning/XtStringConversionWarning.m
 >># 
 >># Description:
 >>#	Tests for XtStringConversionWarning()

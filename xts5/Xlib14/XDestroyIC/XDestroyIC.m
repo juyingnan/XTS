@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib14/XDestroyIC/XDestroyIC.m
+>># File: xts5/Xlib14/XDestroyIC/XDestroyIC.m
 >># 
 >># Description:
 >># 	Tests for XDestroyIC()

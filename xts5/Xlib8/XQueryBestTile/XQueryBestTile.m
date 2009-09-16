@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib8/XQueryBestTile/XQueryBestTile.m
+>># File: xts5/Xlib8/XQueryBestTile/XQueryBestTile.m
 >># 
 >># Description:
 >># 	Tests for XQueryBestTile()

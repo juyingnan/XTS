@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib16/XrmPutStringResource/XrmPutStringResource.m
+>># File: xts5/Xlib16/XrmPutStringResource/XrmPutStringResource.m
 >># 
 >># Description:
 >># 	Tests for XrmPutStringResource()

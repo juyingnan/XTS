@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib14/XmbTextPropertyToTextList/XmbTextPropertyToTextList.m
+>># File: xts/Xlib14/XmbTextPropertyToTextList/XmbTextPropertyToTextList.m
 >># 
 >># Description:
 >>#	Tests for XmbTextPropertyToTextList()

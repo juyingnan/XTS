@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib11/GravityNotify/GravityNotify.m
+>># File: xts5/Xlib11/GravityNotify/GravityNotify.m
 >># 
 >># Description:
 >># 	Tests for GravityNotify()

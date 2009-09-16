@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtDatabase/XtDatabase.m
+>># File: xts/Xt4/XtDatabase/XtDatabase.m
 >># 
 >># Description:
 >>#	Tests for XtDatabase()

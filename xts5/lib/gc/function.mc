@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/function.mc
+>># File: xts/lib/gc/function.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

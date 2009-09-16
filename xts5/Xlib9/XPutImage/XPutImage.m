@@ -24,7 +24,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib9/XPutImage/XPutImage.m
+>># File: xts5/Xlib9/XPutImage/XPutImage.m
 >># 
 >># Description:
 >># 	Tests for XPutImage()

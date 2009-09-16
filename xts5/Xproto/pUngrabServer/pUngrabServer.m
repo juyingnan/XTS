@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pUngrabServer/pUngrabServer.m
+>># File: xts5/Xproto/pUngrabServer/pUngrabServer.m
 >># 
 >># Description:
 >># 	Tests for UngrabServer

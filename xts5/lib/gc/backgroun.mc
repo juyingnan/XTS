@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/backgroun.mc
+>># File: xts/lib/gc/backgroun.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

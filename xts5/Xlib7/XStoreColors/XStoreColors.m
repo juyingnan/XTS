@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib7/XStoreColors/XStoreColors.m
+>># File: xts5/Xlib7/XStoreColors/XStoreColors.m
 >># 
 >># Description:
 >># 	Tests for XStoreColors()

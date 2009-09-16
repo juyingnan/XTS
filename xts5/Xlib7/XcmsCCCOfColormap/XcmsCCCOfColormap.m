@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsCCCOfColormap/XcmsCCCOfColormap.m
+>># File: xts/Xlib7/XcmsCCCOfColormap/XcmsCCCOfColormap.m
 >># 
 >># Description:
 >>#	Tests for XcmsCCCOfColormap()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt5/XtUnmapWidget/XtUnmapWidget.m
+>># File: xts/Xt5/XtUnmapWidget/XtUnmapWidget.m
 >># 
 >># Description:
 >>#	Tests for XtUnmapWidget()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib4/XUndefineCursor/XUndefineCursor.m
+>># File: xts5/Xlib4/XUndefineCursor/XUndefineCursor.m
 >># 
 >># Description:
 >># 	Tests for XUndefineCursor()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib15/XAllocWMHints/XAllocWMHints.m
+>># File: xts5/Xlib15/XAllocWMHints/XAllocWMHints.m
 >># 
 >># Description:
 >># 	Tests for XAllocWMHints()

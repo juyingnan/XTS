@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtProcessEvent/XtProcessEvent.m
+>># File: xts/XtC/XtProcessEvent/XtProcessEvent.m
 >># 
 >># Description:
 >>#	Tests for XtProcessEvent()

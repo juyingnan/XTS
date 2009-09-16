@@ -26,7 +26,7 @@ SOFTWARE.
 * 
 * Project: VSW5
 * 
-* File: xts5/tset/Xlib17/XGetDefault/Test4.c
+* File: xts5/Xlib17/XGetDefault/Test4.c
 * 
 * Description:
 * 	Tests for XGetDefault()

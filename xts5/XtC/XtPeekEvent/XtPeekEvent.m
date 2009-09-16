@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtPeekEvent/XtPeekEvent.m
+>># File: xts/XtC/XtPeekEvent/XtPeekEvent.m
 >># 
 >># Description:
 >>#	Tests for XtPeekEvent()

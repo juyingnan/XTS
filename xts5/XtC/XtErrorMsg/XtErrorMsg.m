@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtErrorMsg/XtErrorMsg.m
+>># File: xts/XtC/XtErrorMsg/XtErrorMsg.m
 >># 
 >># Description:
 >>#	Tests for XtErrorMsg()

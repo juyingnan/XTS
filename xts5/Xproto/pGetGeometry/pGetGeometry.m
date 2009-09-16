@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetGeometry/pGetGeometry.m
+>># File: xts5/Xproto/pGetGeometry/pGetGeometry.m
 >># 
 >># Description:
 >># 	Tests for GetGeometry

@@ -25,7 +25,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/SHAPE/XShapeCombineMask/XShapeCombineMask.m
+>># File: xts/SHAPE/XShapeCombineMask/XShapeCombineMask.m
 >>#
 >># Description:
 >>#     Tests for XShapeCombineMask()

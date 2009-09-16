@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib15/XGetIconSizes/XGetIconSizes.m
+>># File: xts5/Xlib15/XGetIconSizes/XGetIconSizes.m
 >># 
 >># Description:
 >># 	Tests for XGetIconSizes()

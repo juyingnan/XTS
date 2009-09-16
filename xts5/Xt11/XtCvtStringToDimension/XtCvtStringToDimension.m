@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtStringToDimension/XtCvtStringToDimension.m
+>># File: xts/Xt11/XtCvtStringToDimension/XtCvtStringToDimension.m
 >># 
 >># Description:
 >>#	Tests for XtCvtStringToDimension()

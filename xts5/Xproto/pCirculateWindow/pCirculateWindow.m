@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pCirculateWindow/pCirculateWindow.m
+>># File: xts5/Xproto/pCirculateWindow/pCirculateWindow.m
 >># 
 >># Description:
 >># 	Tests for CirculateWindow

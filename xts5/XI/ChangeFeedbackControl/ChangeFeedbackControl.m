@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/chngfdbckc/chngfdbckc.m
+>># File: xts5/XI/chngfdbckc/chngfdbckc.m
 >># 
 >># Description:
 >># 	Tests for XChangeFeedbackControl()

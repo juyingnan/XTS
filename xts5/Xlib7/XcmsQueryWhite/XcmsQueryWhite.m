@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsQueryWhite/XcmsQueryWhite.m
+>># File: xts/Xlib7/XcmsQueryWhite/XcmsQueryWhite.m
 >># 
 >># Description:
 >>#	Tests for XcmsQueryWhite()

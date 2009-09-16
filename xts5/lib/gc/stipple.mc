@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/stipple.mc
+>># File: xts/lib/gc/stipple.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

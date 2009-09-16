@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XConnectionNumber/XConnectionNumber.m
+>># File: xts5/Xlib3/XConnectionNumber/XConnectionNumber.m
 >># 
 >># Description:
 >># 	Tests for XConnectionNumber()

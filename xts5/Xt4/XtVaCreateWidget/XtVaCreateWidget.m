@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtVaCreateWidget/XtVaCreateWidget.m
+>># File: xts/Xt4/XtVaCreateWidget/XtVaCreateWidget.m
 >># 
 >># Description:
 >>#	Tests for XtVaCreateWidget()

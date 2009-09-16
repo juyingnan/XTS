@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pBadRequest/pBadRequest.m
+>># File: xts5/Xproto/pBadRequest/pBadRequest.m
 >># 
 >># Description:
 >># 	Tests for BadRequest

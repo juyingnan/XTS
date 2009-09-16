@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtStringToInt/XtCvtStringToInt.m
+>># File: xts/Xt11/XtCvtStringToInt/XtCvtStringToInt.m
 >># 
 >># Description:
 >>#	Tests for XtCvtStringToInt()

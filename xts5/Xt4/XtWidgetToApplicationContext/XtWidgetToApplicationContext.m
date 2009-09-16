@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtWidgetToApplicationContext/XtWidgetToApplicationContext.m
+>># File: xts/Xt4/XtWidgetToApplicationContext/XtWidgetToApplicationContext.m
 >># 
 >># Description:
 >>#	Tests for XtWidgetToApplicationContext()

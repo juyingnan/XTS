@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtIntToPosition/XtCvtIntToPosition.m
+>># File: xts/Xt11/XtCvtIntToPosition/XtCvtIntToPosition.m
 >># 
 >># Description:
 >>#	Tests for XtCvtIntToPosition()

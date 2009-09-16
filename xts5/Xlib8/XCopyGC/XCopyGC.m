@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib8/XCopyGC/XCopyGC.m
+>># File: xts5/Xlib8/XCopyGC/XCopyGC.m
 >># 
 >># Description:
 >># 	Tests for XCopyGC()

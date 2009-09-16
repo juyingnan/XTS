@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/plane-mas.mc
+>># File: xts/lib/gc/plane-mas.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

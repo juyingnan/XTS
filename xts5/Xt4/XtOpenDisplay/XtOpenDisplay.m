@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtOpenDisplay/XtOpenDisplay.m
+>># File: xts/Xt4/XtOpenDisplay/XtOpenDisplay.m
 >># 
 >># Description:
 >>#	Tests for XtOpenDisplay()

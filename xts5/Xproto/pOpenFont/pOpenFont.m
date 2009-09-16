@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pOpenFont/pOpenFont.m
+>># File: xts5/Xproto/pOpenFont/pOpenFont.m
 >># 
 >># Description:
 >># 	Tests for OpenFont

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib17/IsKeypadKey/IsKeypadKey.m
+>># File: xts5/Xlib17/IsKeypadKey/IsKeypadKey.m
 >># 
 >># Description:
 >># 	Tests for IsKeypadKey()

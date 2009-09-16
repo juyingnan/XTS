@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pConfigureWindow/pConfigureWindow.m
+>># File: xts5/Xproto/pConfigureWindow/pConfigureWindow.m
 >># 
 >># Description:
 >># 	Tests for ConfigureWindow

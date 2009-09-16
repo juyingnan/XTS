@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pFreeColormap/pFreeColormap.m
+>># File: xts5/Xproto/pFreeColormap/pFreeColormap.m
 >># 
 >># Description:
 >># 	Tests for FreeColormap

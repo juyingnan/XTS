@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib6/XQueryBestCursor/XQueryBestCursor.m
+>># File: xts5/Xlib6/XQueryBestCursor/XQueryBestCursor.m
 >># 
 >># Description:
 >># 	Tests for XQueryBestCursor()

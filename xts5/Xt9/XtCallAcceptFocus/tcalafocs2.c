@@ -27,7 +27,7 @@ SOFTWARE.
 * 
 * Project: VSW5
 *  
-* File: tset/Xt9/XtCallAcceptFocus/XtCallAcceptFocus2.c
+* File: xts/Xt9/XtCallAcceptFocus/XtCallAcceptFocus2.c
 *  
 * Description:
 * 	Test 2 for XtCallAcceptFocus()

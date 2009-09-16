@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtInsertRawEventHandler/XtInsertRawEventHandler.m
+>># File: xts/Xt9/XtInsertRawEventHandler/XtInsertRawEventHandler.m
 >># 
 >># Description:
 >>#	Tests for XtInsertRawEventHandler()

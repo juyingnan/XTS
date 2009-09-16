@@ -23,7 +23,7 @@ SOFTWARE.
 * 
 * Project: VSW5
 * 
-* File: xts5/tset/Xopen/keysymdef/TestL.c
+* File: xts5/Xopen/keysymdef/TestL.c
 * 
 * Description:
 * 	Tests for keysymdef()

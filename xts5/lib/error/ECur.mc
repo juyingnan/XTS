@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/error/ECur.mc
+>># File: xts/lib/error/ECur.mc
 >>#
 >># Description:
 >>#     BadCursor error test

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/stdvcbttnm/stdvcbttnm.m
+>># File: xts5/XI/stdvcbttnm/stdvcbttnm.m
 >># 
 >># Description:
 >># 	Tests for XSetDeviceButtonMapping()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt12/XtAppAddActionHook/XtAppAddActionHook.m
+>># File: xts/Xt12/XtAppAddActionHook/XtAppAddActionHook.m
 >># 
 >># Description:
 >>#	Tests for XtAppAddActionHook()

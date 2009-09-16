@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pQueryFont/pQueryFont.m
+>># File: xts5/Xproto/pQueryFont/pQueryFont.m
 >># 
 >># Description:
 >># 	Tests for QueryFont

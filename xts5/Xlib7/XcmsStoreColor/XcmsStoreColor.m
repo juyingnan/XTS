@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsStoreColor/XcmsStoreColor.m
+>># File: xts/Xlib7/XcmsStoreColor/XcmsStoreColor.m
 >># 
 >># Description:
 >>#	Tests for XcmsStoreColor()

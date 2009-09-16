@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pPolyFillArc/pPolyFillArc.m
+>># File: xts5/Xproto/pPolyFillArc/pPolyFillArc.m
 >># 
 >># Description:
 >># 	Tests for PolyFillArc

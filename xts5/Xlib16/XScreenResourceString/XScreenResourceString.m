@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib16/XScreenResourceString/XScreenResourceString.m
+>># File: xts5/Xlib16/XScreenResourceString/XScreenResourceString.m
 >># 
 >># Description:
 >># 	Tests for XScreenResourceString()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/SHAPE/XShapeCombineRectangles/XShapeCombineRectangles.m
+>># File: xts/SHAPE/XShapeCombineRectangles/XShapeCombineRectangles.m
 >>#
 >># Description:
 >>#     Tests for XShapeCombineRectangles()

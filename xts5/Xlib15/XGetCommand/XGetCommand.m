@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib15/XGetCommand/XGetCommand.m
+>># File: xts5/Xlib15/XGetCommand/XGetCommand.m
 >># 
 >># Description:
 >># 	Tests for XGetCommand()

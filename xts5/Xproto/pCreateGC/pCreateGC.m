@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pCreateGC/pCreateGC.m
+>># File: xts5/Xproto/pCreateGC/pCreateGC.m
 >># 
 >># Description:
 >># 	Tests for CreateGC

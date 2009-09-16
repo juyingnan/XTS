@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/slctextnsn/slctextnsn.m
+>># File: xts5/XI/slctextnsn/slctextnsn.m
 >># 
 >># Description:
 >># 	Tests for XSelectExtensionEvent()

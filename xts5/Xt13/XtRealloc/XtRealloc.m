@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtRealloc/XtRealloc.m
+>># File: xts/Xt13/XtRealloc/XtRealloc.m
 >># 
 >># Description:
 >>#	Tests for XtRealloc()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib14/XmbDrawString/XmbDrawString.m
+>># File: xts5/Xlib14/XmbDrawString/XmbDrawString.m
 >># 
 >># Description:
 >># 	Tests for XmbDrawString()

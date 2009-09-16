@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsConversionProc/XcmsConversionProc.m
+>># File: xts/Xlib7/XcmsConversionProc/XcmsConversionProc.m
 >># 
 >># Description:
 >>#	Tests for XcmsConversionProc()

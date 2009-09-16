@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pPolyText8/pPolyText8.m
+>># File: xts5/Xproto/pPolyText8/pPolyText8.m
 >># 
 >># Description:
 >># 	Tests for PolyText8

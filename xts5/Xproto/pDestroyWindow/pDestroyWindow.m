@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pDestroyWindow/pDestroyWindow.m
+>># File: xts5/Xproto/pDestroyWindow/pDestroyWindow.m
 >># 
 >># Description:
 >># 	Tests for DestroyWindow

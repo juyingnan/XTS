@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib10/XChangeSaveSet/XChangeSaveSet.m
+>># File: xts5/Xlib10/XChangeSaveSet/XChangeSaveSet.m
 >># 
 >># Description:
 >># 	Tests for XChangeSaveSet()

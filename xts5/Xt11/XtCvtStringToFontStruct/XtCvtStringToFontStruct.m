@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtStringToFontStruct/XtCvtStringToFontStruct.m
+>># File: xts/Xt11/XtCvtStringToFontStruct/XtCvtStringToFontStruct.m
 >># 
 >># Description:
 >>#	Tests for XtCvtStringToFontStruct()

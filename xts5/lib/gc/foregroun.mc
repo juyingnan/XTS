@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/foregroun.mc
+>># File: xts/lib/gc/foregroun.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

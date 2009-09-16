@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pChangeKeyboardControl/pChangeKeyboardControl.m
+>># File: xts5/Xproto/pChangeKeyboardControl/pChangeKeyboardControl.m
 >># 
 >># Description:
 >># 	Tests for ChangeKeyboardControl

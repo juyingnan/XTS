@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib8/XSetTile/XSetTile.m
+>># File: xts5/Xlib8/XSetTile/XSetTile.m
 >># 
 >># Description:
 >># 	Tests for XSetTile()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib4/XSetWindowBorderWidth/XSetWindowBorderWidth.m
+>># File: xts5/Xlib4/XSetWindowBorderWidth/XSetWindowBorderWidth.m
 >># 
 >># Description:
 >># 	Tests for XSetWindowBorderWidth()

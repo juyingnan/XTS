@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetMotionEvents/pGetMotionEvents.m
+>># File: xts5/Xproto/pGetMotionEvents/pGetMotionEvents.m
 >># 
 >># Description:
 >># 	Tests for GetMotionEvents

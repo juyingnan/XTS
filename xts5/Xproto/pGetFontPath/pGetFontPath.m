@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetFontPath/pGetFontPath.m
+>># File: xts5/Xproto/pGetFontPath/pGetFontPath.m
 >># 
 >># Description:
 >># 	Tests for GetFontPath

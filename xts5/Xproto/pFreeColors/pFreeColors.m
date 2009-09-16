@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pFreeColors/pFreeColors.m
+>># File: xts5/Xproto/pFreeColors/pFreeColors.m
 >># 
 >># Description:
 >># 	Tests for FreeColors

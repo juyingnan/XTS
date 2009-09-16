@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt12/XtRemoveActionHook/XtRemoveActionHook.m
+>># File: xts/Xt12/XtRemoveActionHook/XtRemoveActionHook.m
 >># 
 >># Description:
 >>#	Tests for XtRemoveActionHook()

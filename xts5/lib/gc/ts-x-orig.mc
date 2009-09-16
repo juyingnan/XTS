@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/ts-x-orig.mc
+>># File: xts/lib/gc/ts-x-orig.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

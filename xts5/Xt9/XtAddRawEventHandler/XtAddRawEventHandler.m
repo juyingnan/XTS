@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtAddRawEventHandler/XtAddRawEventHandler.m
+>># File: xts/Xt9/XtAddRawEventHandler/XtAddRawEventHandler.m
 >># 
 >># Description:
 >>#	Tests for XtAddRawEventHandler()

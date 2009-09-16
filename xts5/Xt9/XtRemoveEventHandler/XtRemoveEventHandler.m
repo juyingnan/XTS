@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtRemoveEventHandler/XtRemoveEventHandler.m
+>># File: xts/Xt9/XtRemoveEventHandler/XtRemoveEventHandler.m
 >># 
 >># Description:
 >>#	Tests for XtRemoveEventHandler()

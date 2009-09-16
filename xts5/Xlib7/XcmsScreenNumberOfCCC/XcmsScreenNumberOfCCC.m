@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsScreenNumberOfCCC/XcmsScreenNumberOfCCC.m
+>># File: xts/Xlib7/XcmsScreenNumberOfCCC/XcmsScreenNumberOfCCC.m
 >># 
 >># Description:
 >>#	Tests for XcmsScreenNumberOfCCC()

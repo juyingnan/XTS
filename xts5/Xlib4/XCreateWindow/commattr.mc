@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib4/XCreateWindow/commattr.mc
+>># File: xts5/Xlib4/XCreateWindow/commattr.mc
 >># 
 >># Description:
 >># 	Tests for XCreateWindow()

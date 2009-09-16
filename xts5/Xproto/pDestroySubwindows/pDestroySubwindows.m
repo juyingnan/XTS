@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pDestroySubwindows/pDestroySubwindows.m
+>># File: xts5/Xproto/pDestroySubwindows/pDestroySubwindows.m
 >># 
 >># Description:
 >># 	Tests for DestroySubwindows

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib17/IsFunctionKey/IsFunctionKey.m
+>># File: xts5/Xlib17/IsFunctionKey/IsFunctionKey.m
 >># 
 >># Description:
 >># 	Tests for IsFunctionKey()

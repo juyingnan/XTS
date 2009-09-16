@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib16/XrmPutLineResource/XrmPutLineResource.m
+>># File: xts5/Xlib16/XrmPutLineResource/XrmPutLineResource.m
 >># 
 >># Description:
 >># 	Tests for XrmPutLineResource()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/stdvcmdfrm/stdvcmdfrm.m
+>># File: xts5/XI/stdvcmdfrm/stdvcmdfrm.m
 >># 
 >># Description:
 >># 	Tests for XSetDeviceModifierMapping()

@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtAppAddInput/XtAppAddInput.m
+>># File: xts/Xt9/XtAppAddInput/XtAppAddInput.m
 >># 
 >># Description:
 >>#	Tests for XtAppAddInput()

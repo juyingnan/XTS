@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib16/XrmStringToBindingQuarkList/XrmStringToBindingQuarkList.m
+>># File: xts5/Xlib16/XrmStringToBindingQuarkList/XrmStringToBindingQuarkList.m
 >># 
 >># Description:
 >># 	Tests for XrmStringToBindingQuarkList()

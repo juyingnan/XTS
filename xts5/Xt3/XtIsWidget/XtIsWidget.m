@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt3/XtIsWidget/XtIsWidget.m
+>># File: xts/Xt3/XtIsWidget/XtIsWidget.m
 >># 
 >># Description:
 >>#	Tests for XtIsWidget

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pChangeActivePointerGrab/pChangeActivePointerGrab.m
+>># File: xts5/Xproto/pChangeActivePointerGrab/pChangeActivePointerGrab.m
 >># 
 >># Description:
 >># 	Tests for ChangeActivePointerGrab

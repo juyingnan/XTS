@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pCopyColormapAndFree/pCopyColormapAndFree.m
+>># File: xts5/Xproto/pCopyColormapAndFree/pCopyColormapAndFree.m
 >># 
 >># Description:
 >># 	Tests for CopyColormapAndFree

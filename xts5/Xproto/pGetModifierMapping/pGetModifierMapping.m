@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetModifierMapping/pGetModifierMapping.m
+>># File: xts5/Xproto/pGetModifierMapping/pGetModifierMapping.m
 >># 
 >># Description:
 >># 	Tests for GetModifierMapping

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/stdvcmd/stdvcmd.m
+>># File: xts5/XIproto/stdvcmd/stdvcmd.m
 >># 
 >># Description:
 >># 	Tests for SetDeviceMode

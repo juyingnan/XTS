@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtNew/XtNew.m
+>># File: xts/Xt13/XtNew/XtNew.m
 >># 
 >># Description:
 >>#	Tests for XtNew()

@@ -24,7 +24,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pQueryColors/pQueryColors.m
+>># File: xts5/Xproto/pQueryColors/pQueryColors.m
 >># 
 >># Description:
 >># 	Tests for QueryColors

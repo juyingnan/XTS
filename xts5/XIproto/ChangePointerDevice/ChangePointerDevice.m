@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/chngpntrdv/chngpntrdv.m
+>># File: xts5/XIproto/chngpntrdv/chngpntrdv.m
 >># 
 >># Description:
 >># 	Tests for ChangePointerDevice

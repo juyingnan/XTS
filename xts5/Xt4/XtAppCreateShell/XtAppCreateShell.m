@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtAppCreateShell/XtAppCreateShell.m
+>># File: xts/Xt4/XtAppCreateShell/XtAppCreateShell.m
 >># 
 >># Description:
 >>#	Tests for XtAppCreateShell()

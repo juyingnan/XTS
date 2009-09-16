@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtDestroyWidget/XtDestroyWidget.m
+>># File: xts/Xt4/XtDestroyWidget/XtDestroyWidget.m
 >># 
 >># Description:
 >>#	Tests for XtDestroyWidget()

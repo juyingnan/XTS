@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib6/XCreatePixmapCursor/XCreatePixmapCursor.m
+>># File: xts5/Xlib6/XCreatePixmapCursor/XCreatePixmapCursor.m
 >># 
 >># Description:
 >># 	Tests for XCreatePixmapCursor()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib9/XDrawPoints/XDrawPoints.m
+>># File: xts5/Xlib9/XDrawPoints/XDrawPoints.m
 >># 
 >># Description:
 >># 	Tests for XDrawPoints()

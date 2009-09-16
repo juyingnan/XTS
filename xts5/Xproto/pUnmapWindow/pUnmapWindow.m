@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pUnmapWindow/pUnmapWindow.m
+>># File: xts5/Xproto/pUnmapWindow/pUnmapWindow.m
 >># 
 >># Description:
 >># 	Tests for UnmapWindow

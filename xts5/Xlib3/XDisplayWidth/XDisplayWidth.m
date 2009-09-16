@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XDisplayWidth/XDisplayWidth.m
+>># File: xts5/Xlib3/XDisplayWidth/XDisplayWidth.m
 >># 
 >># Description:
 >># 	Tests for XDisplayWidth()

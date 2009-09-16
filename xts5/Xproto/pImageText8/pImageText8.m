@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pImageText8/pImageText8.m
+>># File: xts5/Xproto/pImageText8/pImageText8.m
 >># 
 >># Description:
 >># 	Tests for ImageText8

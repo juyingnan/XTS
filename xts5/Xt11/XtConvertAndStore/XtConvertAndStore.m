@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtConvertAndStore/XtConvertAndStore.m
+>># File: xts/Xt11/XtConvertAndStore/XtConvertAndStore.m
 >># 
 >># Description:
 >>#	Tests for XtConvertAndStore()

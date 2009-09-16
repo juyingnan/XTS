@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt3/XtIsVendorShell/XtIsVendorShell.m
+>># File: xts/Xt3/XtIsVendorShell/XtIsVendorShell.m
 >># 
 >># Description:
 >>#	Tests for XtIsVendorShell()

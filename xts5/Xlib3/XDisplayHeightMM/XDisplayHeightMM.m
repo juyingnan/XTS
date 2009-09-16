@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XDisplayHeightMM/XDisplayHeightMM.m
+>># File: xts5/Xlib3/XDisplayHeightMM/XDisplayHeightMM.m
 >># 
 >># Description:
 >># 	Tests for XDisplayHeightMM()

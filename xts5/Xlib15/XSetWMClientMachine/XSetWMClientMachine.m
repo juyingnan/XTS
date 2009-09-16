@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib15/XSetWMClientMachine/XSetWMClientMachine.m
+>># File: xts5/Xlib15/XSetWMClientMachine/XSetWMClientMachine.m
 >># 
 >># Description:
 >># 	Tests for XSetWMClientMachine()

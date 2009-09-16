@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib13/XChangeKeyboardControl/XChangeKeyboardControl.m
+>># File: xts5/Xlib13/XChangeKeyboardControl/XChangeKeyboardControl.m
 >># 
 >># Description:
 >># 	Tests for XChangeKeyboardControl()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib5/XGetAtomName/XGetAtomName.m
+>># File: xts5/Xlib5/XGetAtomName/XGetAtomName.m
 >># 
 >># Description:
 >># 	Tests for XGetAtomName()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/qrydvcstt/qrydvcstt.m
+>># File: xts5/XIproto/qrydvcstt/qrydvcstt.m
 >># 
 >># Description:
 >># 	Tests for QueryDeviceState

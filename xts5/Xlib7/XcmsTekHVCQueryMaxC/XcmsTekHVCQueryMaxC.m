@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsTekHVCQueryMaxC/XcmsTekHVCQueryMaxC.m
+>># File: xts/Xlib7/XcmsTekHVCQueryMaxC/XcmsTekHVCQueryMaxC.m
 >># 
 >># Description:
 >>#	Tests for XcmsTekHVCQueryMaxC()

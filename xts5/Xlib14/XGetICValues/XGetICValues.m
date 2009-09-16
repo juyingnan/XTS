@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib14/XGetICValues/XGetICValues.m
+>># File: xts5/Xlib14/XGetICValues/XGetICValues.m
 >># 
 >># Description:
 >># 	Tests for XGetICValues()

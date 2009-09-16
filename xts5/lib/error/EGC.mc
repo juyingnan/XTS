@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/error/EGc.mc
+>># File: xts/lib/error/EGc.mc
 >>#
 >># Description:
 >>#     BadGC error test

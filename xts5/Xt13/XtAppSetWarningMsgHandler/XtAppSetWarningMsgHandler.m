@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtAppSetWarningMsgHandler/XtAppSetWarningMsgHandler.m
+>># File: xts/Xt13/XtAppSetWarningMsgHandler/XtAppSetWarningMsgHandler.m
 >># 
 >># Description:
 >>#	Tests for XtAppSetWarningMsgHandler()

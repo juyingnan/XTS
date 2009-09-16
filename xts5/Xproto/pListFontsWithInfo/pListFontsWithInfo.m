@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pListFontsWithInfo/pListFontsWithInfo.m
+>># File: xts5/Xproto/pListFontsWithInfo/pListFontsWithInfo.m
 >># 
 >># Description:
 >># 	Tests for ListFontsWithInfo

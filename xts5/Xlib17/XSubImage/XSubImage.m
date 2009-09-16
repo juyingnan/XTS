@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib17/XSubImage/XSubImage.m
+>># File: xts5/Xlib17/XSubImage/XSubImage.m
 >># 
 >># Description:
 >># 	Tests for XSubImage()

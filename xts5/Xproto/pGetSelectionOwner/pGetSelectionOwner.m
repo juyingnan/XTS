@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetSelectionOwner/pGetSelectionOwner.m
+>># File: xts5/Xproto/pGetSelectionOwner/pGetSelectionOwner.m
 >># 
 >># Description:
 >># 	Tests for GetSelectionOwner

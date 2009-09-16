@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib14/XmbSetWMProperties/XmbSetWMProperties.m
+>># File: xts/Xlib14/XmbSetWMProperties/XmbSetWMProperties.m
 >># 
 >># Description:
 >>#	Tests for XmbSetWMProperties()

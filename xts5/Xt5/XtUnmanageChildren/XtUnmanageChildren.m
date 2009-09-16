@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt5/XtUnmanageChildren/XtUnmanageChildren.m
+>># File: xts/Xt5/XtUnmanageChildren/XtUnmanageChildren.m
 >># 
 >># Description:
 >>#	Tests for XtUnmanageChildren()

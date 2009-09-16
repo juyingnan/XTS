@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtAppAddTimeOut/XtAppAddTimeOut.m
+>># File: xts/Xt9/XtAppAddTimeOut/XtAppAddTimeOut.m
 >># 
 >># Description:
 >>#	Tests for XtAppAddTimeOut()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib8/XSetTSOrigin/XSetTSOrigin.m
+>># File: xts5/Xlib8/XSetTSOrigin/XSetTSOrigin.m
 >># 
 >># Description:
 >># 	Tests for XSetTSOrigin()

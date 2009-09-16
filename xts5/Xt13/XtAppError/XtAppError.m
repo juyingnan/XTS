@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtAppError/XtAppError.m
+>># File: xts/Xt13/XtAppError/XtAppError.m
 >># 
 >># Description:
 >>#	Tests for XtAppError()

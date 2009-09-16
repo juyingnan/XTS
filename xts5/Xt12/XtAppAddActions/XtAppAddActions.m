@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt12/XtAppAddActions/XtAppAddActions.m
+>># File: xts/Xt12/XtAppAddActions/XtAppAddActions.m
 >># 
 >># Description:
 >>#	Tests for XtAppAddActions()

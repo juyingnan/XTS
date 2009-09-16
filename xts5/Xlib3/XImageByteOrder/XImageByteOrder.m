@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XImageByteOrder/XImageByteOrder.m
+>># File: xts5/Xlib3/XImageByteOrder/XImageByteOrder.m
 >># 
 >># Description:
 >># 	Tests for XImageByteOrder()

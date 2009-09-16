@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pCreateColormap/pCreateColormap.m
+>># File: xts5/Xproto/pCreateColormap/pCreateColormap.m
 >># 
 >># Description:
 >># 	Tests for CreateColormap

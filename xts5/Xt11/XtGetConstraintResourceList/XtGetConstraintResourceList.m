@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtGetConstraintResourceList/XtGetConstraintResourceList.m
+>># File: xts/Xt11/XtGetConstraintResourceList/XtGetConstraintResourceList.m
 >># 
 >># Description:
 >>#	Tests for XtGetConstraintResourceList()

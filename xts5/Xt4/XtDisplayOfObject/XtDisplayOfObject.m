@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtDisplayOfObject/XtDisplayOfObject.m
+>># File: xts/Xt4/XtDisplayOfObject/XtDisplayOfObject.m
 >># 
 >># Description:
 >>#	Tests for XtDisplayOfObject()

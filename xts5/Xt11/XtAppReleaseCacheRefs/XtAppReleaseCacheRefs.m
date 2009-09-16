@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtAppReleaseCacheRefs/XtAppReleaseCacheRefs.m
+>># File: xts/Xt11/XtAppReleaseCacheRefs/XtAppReleaseCacheRefs.m
 >># 
 >># Description:
 >>#	Tests for XtAppReleaseCacheRefs()

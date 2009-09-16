@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/chngdvccnt/chngdvccnt.m
+>># File: xts5/XIproto/chngdvccnt/chngdvccnt.m
 >># 
 >># Description:
 >># 	Tests for ChangeDeviceControl

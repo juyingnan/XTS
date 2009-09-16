@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib15/XSetCommand/XSetCommand.m
+>># File: xts5/Xlib15/XSetCommand/XSetCommand.m
 >># 
 >># Description:
 >># 	Tests for XSetCommand()

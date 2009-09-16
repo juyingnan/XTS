@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib4/XConfigureWindow/XConfigureWindow.m
+>># File: xts5/Xlib4/XConfigureWindow/XConfigureWindow.m
 >># 
 >># Description:
 >># 	Tests for XConfigureWindow()

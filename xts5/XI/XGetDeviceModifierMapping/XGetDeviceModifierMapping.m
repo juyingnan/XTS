@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/gtdvcmdfrm/gtdvcmdfrm.m
+>># File: xts5/XI/gtdvcmdfrm/gtdvcmdfrm.m
 >># 
 >># Description:
 >># 	Tests for XGetDeviceModifierMapping()

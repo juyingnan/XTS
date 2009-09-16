@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pListProperties/pListProperties.m
+>># File: xts5/Xproto/pListProperties/pListProperties.m
 >># 
 >># Description:
 >># 	Tests for ListProperties

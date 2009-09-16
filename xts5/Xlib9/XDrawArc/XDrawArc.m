@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib9/XDrawArc/XDrawArc.m
+>># File: xts5/Xlib9/XDrawArc/XDrawArc.m
 >># 
 >># Description:
 >># 	Tests for XDrawArc()

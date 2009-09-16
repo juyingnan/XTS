@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt15/XtSpecificationRelease/XtSpecificationRelease.m
+>># File: xts/Xt15/XtSpecificationRelease/XtSpecificationRelease.m
 >># 
 >># Description:
 >>#	Tests for XtSpecificationRelease

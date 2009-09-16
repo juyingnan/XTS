@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/ungrbdvcbt/ungrbdvcbt.m
+>># File: xts5/XI/ungrbdvcbt/ungrbdvcbt.m
 >># 
 >># Description:
 >># 	Tests for XUngrabDeviceButton()

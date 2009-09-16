@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pCopyPlane/pCopyPlane.m
+>># File: xts5/Xproto/pCopyPlane/pCopyPlane.m
 >># 
 >># Description:
 >># 	Tests for CopyPlane

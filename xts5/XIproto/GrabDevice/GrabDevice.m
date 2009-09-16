@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/grbdvc/grbdvc.m
+>># File: xts5/XIproto/grbdvc/grbdvc.m
 >># 
 >># Description:
 >># 	Tests for GrabDevice

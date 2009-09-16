@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetAtomName/pGetAtomName.m
+>># File: xts5/Xproto/pGetAtomName/pGetAtomName.m
 >># 
 >># Description:
 >># 	Tests for GetAtomName

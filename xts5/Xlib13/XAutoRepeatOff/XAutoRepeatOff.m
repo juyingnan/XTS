@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib13/XAutoRepeatOff/XAutoRepeatOff.m
+>># File: xts5/Xlib13/XAutoRepeatOff/XAutoRepeatOff.m
 >># 
 >># Description:
 >># 	Tests for XAutoRepeatOff()

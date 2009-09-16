@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib15/XGetWMColormapWindows/XGetWMColormapWindows.m
+>># File: xts5/Xlib15/XGetWMColormapWindows/XGetWMColormapWindows.m
 >># 
 >># Description:
 >># 	Tests for XGetWMColormapWindows()

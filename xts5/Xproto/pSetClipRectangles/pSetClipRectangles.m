@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pSetClipRectangles/pSetClipRectangles.m
+>># File: xts5/Xproto/pSetClipRectangles/pSetClipRectangles.m
 >># 
 >># Description:
 >># 	Tests for SetClipRectangles

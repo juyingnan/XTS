@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pAllocColor/pAllocColor.m
+>># File: xts5/Xproto/pAllocColor/pAllocColor.m
 >># 
 >># Description:
 >># 	Tests for AllocColor

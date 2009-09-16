@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XCellsOfScreen/XCellsOfScreen.m
+>># File: xts5/Xlib3/XCellsOfScreen/XCellsOfScreen.m
 >># 
 >># Description:
 >># 	Tests for XCellsOfScreen()

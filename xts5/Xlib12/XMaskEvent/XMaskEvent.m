@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib12/XMaskEvent/XMaskEvent.m
+>># File: xts5/Xlib12/XMaskEvent/XMaskEvent.m
 >># 
 >># Description:
 >># 	Tests for XMaskEvent()

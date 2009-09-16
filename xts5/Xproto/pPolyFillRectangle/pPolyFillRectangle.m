@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pPolyFillRectangle/pPolyFillRectangle.m
+>># File: xts5/Xproto/pPolyFillRectangle/pPolyFillRectangle.m
 >># 
 >># Description:
 >># 	Tests for PolyFillRectangle

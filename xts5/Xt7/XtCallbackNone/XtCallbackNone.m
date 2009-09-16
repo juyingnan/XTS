@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt7/XtCallbackNone/XtCallbackNone.m
+>># File: xts/Xt7/XtCallbackNone/XtCallbackNone.m
 >># 
 >># Description:
 >>#	Tests for XtCallbackNone()

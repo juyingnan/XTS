@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pCloseFont/pCloseFont.m
+>># File: xts5/Xproto/pCloseFont/pCloseFont.m
 >># 
 >># Description:
 >># 	Tests for CloseFont

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pSetFontPath/pSetFontPath.m
+>># File: xts5/Xproto/pSetFontPath/pSetFontPath.m
 >># 
 >># Description:
 >># 	Tests for SetFontPath

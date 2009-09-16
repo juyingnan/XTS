@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt10/XtRemoveCallback/XtRemoveCallback.m
+>># File: xts/Xt10/XtRemoveCallback/XtRemoveCallback.m
 >># 
 >># Description:
 >>#	Tests for XtRemoveCallback()

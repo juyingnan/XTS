@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib15/XDefaultString/XDefaultString.m
+>># File: xts/Xlib15/XDefaultString/XDefaultString.m
 >># 
 >># Description:
 >>#	Tests for XDefaultString()

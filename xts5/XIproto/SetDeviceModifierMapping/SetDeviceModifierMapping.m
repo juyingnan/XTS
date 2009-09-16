@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/stdvcmdfrm/stdvcmdfrm.m
+>># File: xts5/XIproto/stdvcmdfrm/stdvcmdfrm.m
 >># 
 >># Description:
 >># 	Tests for SetDeviceModifierMapping

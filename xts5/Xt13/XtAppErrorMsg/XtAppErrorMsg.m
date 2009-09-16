@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtAppErrorMsg/XtAppErrorMsg.m
+>># File: xts/Xt13/XtAppErrorMsg/XtAppErrorMsg.m
 >># 
 >># Description:
 >>#	Tests for XtAppErrorMsg()

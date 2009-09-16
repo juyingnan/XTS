@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtAddConverter/XtAddConverter.m
+>># File: xts/XtC/XtAddConverter/XtAddConverter.m
 >># 
 >># Description:
 >>#	Tests for XtAddConverter()

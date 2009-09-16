@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt6/TopLevelShellWidget/TopLevelShellWidget.m
+>># File: xts/Xt6/TopLevelShellWidget/TopLevelShellWidget.m
 >># 
 >># Description:
 >>#	Tests for TopLevelShell Widgets()

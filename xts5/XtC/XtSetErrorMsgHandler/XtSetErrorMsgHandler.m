@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtSetErrorMsgHandler/XtSetErrorMsgHandler.m
+>># File: xts/XtC/XtSetErrorMsgHandler/XtSetErrorMsgHandler.m
 >># 
 >># Description:
 >>#	Tests for XtSetErrorMsgHandler()

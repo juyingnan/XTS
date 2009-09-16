@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt8/XtConfigureWidget/XtConfigureWidget.m
+>># File: xts/Xt8/XtConfigureWidget/XtConfigureWidget.m
 >># 
 >># Description:
 >>#	Tests for XtConfigureWidget()

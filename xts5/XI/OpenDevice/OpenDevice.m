@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/opndvc/opndvc.m
+>># File: xts5/XI/opndvc/opndvc.m
 >># 
 >># Description:
 >># 	Tests for XOpenDevice()

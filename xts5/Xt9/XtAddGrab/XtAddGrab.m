@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtAddGrab/XtAddGrab.m
+>># File: xts/Xt9/XtAddGrab/XtAddGrab.m
 >># 
 >># Description:
 >>#	Tests for XtAddGrab()

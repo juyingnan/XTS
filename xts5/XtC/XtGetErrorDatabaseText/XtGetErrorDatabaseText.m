@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtGetErrorDatabaseText/XtGetErrorDatabaseText.m
+>># File: xts/XtC/XtGetErrorDatabaseText/XtGetErrorDatabaseText.m
 >># 
 >># Description:
 >>#	Tests for XtGetErrorDatabaseText()

@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/error/EWin.mc
+>># File: xts/lib/error/EWin.mc
 >>#
 >># Description:
 >>#     BadWindow error test

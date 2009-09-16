@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib5/XConvertSelection/XConvertSelection.m
+>># File: xts5/Xlib5/XConvertSelection/XConvertSelection.m
 >># 
 >># Description:
 >># 	Tests for XConvertSelection()

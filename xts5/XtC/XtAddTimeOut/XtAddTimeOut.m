@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtAddTimeOut/XtAddTimeOut.m
+>># File: xts/XtC/XtAddTimeOut/XtAddTimeOut.m
 >># 
 >># Description:
 >>#	Tests for XtAddTimeOut()

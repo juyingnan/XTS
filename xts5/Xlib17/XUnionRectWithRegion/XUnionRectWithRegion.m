@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib17/XUnionRectWithRegion/XUnionRectWithRegion.m
+>># File: xts5/Xlib17/XUnionRectWithRegion/XUnionRectWithRegion.m
 >># 
 >># Description:
 >># 	Tests for XUnionRectWithRegion()

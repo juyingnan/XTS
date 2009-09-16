@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtVaGetApplicationResources/XtVaGetApplicationResources.m
+>># File: xts/Xt11/XtVaGetApplicationResources/XtVaGetApplicationResources.m
 >># 
 >># Description:
 >>#	Tests for XtVaGetApplicationResources()

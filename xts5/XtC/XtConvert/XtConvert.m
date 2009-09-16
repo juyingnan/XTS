@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtConvert/XtConvert.m
+>># File: xts/XtC/XtConvert/XtConvert.m
 >># 
 >># Description:
 >>#	Tests for XtConvert()

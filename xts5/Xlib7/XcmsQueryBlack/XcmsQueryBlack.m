@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsQueryBlack/XcmsQueryBlack.m
+>># File: xts/Xlib7/XcmsQueryBlack/XcmsQueryBlack.m
 >># 
 >># Description:
 >>#	Tests for XcmsQueryBlack()

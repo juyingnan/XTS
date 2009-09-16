@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt3/XtIsTransientShell/XtIsTransientShell.m
+>># File: xts/Xt3/XtIsTransientShell/XtIsTransientShell.m
 >># 
 >># Description:
 >>#	Tests for XtIsTransientShell()

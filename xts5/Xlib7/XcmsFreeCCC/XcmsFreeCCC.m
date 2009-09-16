@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsFreeCCC/XcmsFreeCCC.m
+>># File: xts/Xlib7/XcmsFreeCCC/XcmsFreeCCC.m
 >># 
 >># Description:
 >>#	Tests for XcmsFreeCCC()

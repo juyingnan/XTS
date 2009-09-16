@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtBuildEventMask/XtBuildEventMask.m
+>># File: xts/Xt9/XtBuildEventMask/XtBuildEventMask.m
 >># 
 >># Description:
 >>#	Tests for XtBuildEventMask()

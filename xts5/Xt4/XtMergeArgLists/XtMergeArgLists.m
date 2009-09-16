@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtMergeArgLists/XtMergeArgLists.m
+>># File: xts/Xt4/XtMergeArgLists/XtMergeArgLists.m
 >># 
 >># Description:
 >>#	Tests for XtMergeArgLists()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib9/XTextWidth16/XTextWidth16.m
+>># File: xts5/Xlib9/XTextWidth16/XTextWidth16.m
 >># 
 >># Description:
 >># 	Tests for XTextWidth16()

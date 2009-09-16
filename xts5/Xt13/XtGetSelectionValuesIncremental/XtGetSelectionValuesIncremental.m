@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtGetSelectionValuesIncremental/XtGetSelectionValuesIncremental.m
+>># File: xts/Xt13/XtGetSelectionValuesIncremental/XtGetSelectionValuesIncremental.m
 >># 
 >># Description:
 >>#	Tests for XtGetSelectionValuesIncremental()

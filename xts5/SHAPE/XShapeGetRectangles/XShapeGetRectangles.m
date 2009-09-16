@@ -25,7 +25,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/SHAPE/XShapeGetRectangles/XShapeGetRectangles.m
+>># File: xts/SHAPE/XShapeGetRectangles/XShapeGetRectangles.m
 >>#
 >># Description:
 >>#     Tests for XShapeGetRectangles()

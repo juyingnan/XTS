@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsTekHVCQueryMinV/XcmsTekHVCQueryMinV.m
+>># File: xts/Xlib7/XcmsTekHVCQueryMinV/XcmsTekHVCQueryMinV.m
 >># 
 >># Description:
 >>#	Tests for XcmsTekHVCQueryMinV()

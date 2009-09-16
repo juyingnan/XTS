@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/gtdvccntrl/gtdvccntrl.m
+>># File: xts5/XI/gtdvccntrl/gtdvccntrl.m
 >># 
 >># Description:
 >># 	Tests for XGetDeviceControl()

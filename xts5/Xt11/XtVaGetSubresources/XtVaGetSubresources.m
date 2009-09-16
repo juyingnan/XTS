@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtVaGetSubresources/XtVaGetSubresources.m
+>># File: xts/Xt11/XtVaGetSubresources/XtVaGetSubresources.m
 >># 
 >># Description:
 >>#	Tests for XtVaGetSubresources()

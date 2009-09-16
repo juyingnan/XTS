@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib10/XKillClient/XKillClient.m
+>># File: xts5/Xlib10/XKillClient/XKillClient.m
 >># 
 >># Description:
 >># 	Tests for XKillClient()

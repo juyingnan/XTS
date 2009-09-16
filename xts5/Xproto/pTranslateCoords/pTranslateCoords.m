@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pTranslateCoords/pTranslateCoords.m
+>># File: xts5/Xproto/pTranslateCoords/pTranslateCoords.m
 >># 
 >># Description:
 >># 	Tests for TranslateCoords

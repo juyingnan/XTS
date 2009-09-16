@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt7/XtCallbackPopdown/XtCallbackPopdown.m
+>># File: xts/Xt7/XtCallbackPopdown/XtCallbackPopdown.m
 >># 
 >># Description:
 >>#	Tests for XtCallbackPopdown()

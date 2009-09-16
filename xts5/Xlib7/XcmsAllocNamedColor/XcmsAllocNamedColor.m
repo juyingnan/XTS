@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsAllocNamedColor/XcmsAllocNamedColor.m
+>># File: xts/Xlib7/XcmsAllocNamedColor/XcmsAllocNamedColor.m
 >># 
 >># Description:
 >>#	Tests for XcmsAllocNamedColor()

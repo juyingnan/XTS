@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/gtextnsnvr/gtextnsnvr.m
+>># File: xts5/XIproto/gtextnsnvr/gtextnsnvr.m
 >># 
 >># Description:
 >># 	Tests for GetExtensionVersion

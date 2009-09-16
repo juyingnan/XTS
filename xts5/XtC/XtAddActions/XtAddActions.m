@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtAddActions/XtAddActions.m
+>># File: xts/XtC/XtAddActions/XtAddActions.m
 >># 
 >># Description:
 >>#	Tests for XtAddActions()

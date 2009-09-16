@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt3/XtIsTopLevelShell/XtIsTopLevelShell.m
+>># File: xts/Xt3/XtIsTopLevelShell/XtIsTopLevelShell.m
 >># 
 >># Description:
 >>#	Tests for XtIsTopLevelShell(w)

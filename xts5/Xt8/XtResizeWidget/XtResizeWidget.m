@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt8/XtResizeWidget/XtResizeWidget.m
+>># File: xts/Xt8/XtResizeWidget/XtResizeWidget.m
 >># 
 >># Description:
 >>#	Tests for XtResizeWidget()

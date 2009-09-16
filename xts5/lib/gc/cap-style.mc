@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/cap-style.mc
+>># File: xts/lib/gc/cap-style.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

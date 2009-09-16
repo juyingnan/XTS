@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetInputFocus/pGetInputFocus.m
+>># File: xts5/Xproto/pGetInputFocus/pGetInputFocus.m
 >># 
 >># Description:
 >># 	Tests for GetInputFocus

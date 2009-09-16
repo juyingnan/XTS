@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtInsertEventHandler/XtInsertEventHandler.m
+>># File: xts/Xt9/XtInsertEventHandler/XtInsertEventHandler.m
 >># 
 >># Description:
 >>#	Tests for XtInsertEventHandler()

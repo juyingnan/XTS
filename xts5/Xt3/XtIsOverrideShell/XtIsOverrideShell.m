@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt3/XtIsOverrideShell/XtIsOverrideShell.m
+>># File: xts/Xt3/XtIsOverrideShell/XtIsOverrideShell.m
 >># 
 >># Description:
 >>#	Tests for XtIsOverrideShell()

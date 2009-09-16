@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pClearArea/pClearArea.m
+>># File: xts5/Xproto/pClearArea/pClearArea.m
 >># 
 >># Description:
 >># 	Tests for ClearArea

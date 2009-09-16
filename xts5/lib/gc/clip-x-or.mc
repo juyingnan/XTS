@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/clip-x-or.mc
+>># File: xts/lib/gc/clip-x-or.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

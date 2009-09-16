@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/error/EMat2.mc
+>># File: xts/lib/error/EMat2.mc
 >>#
 >># Description:
 >>#     BadMatch error test

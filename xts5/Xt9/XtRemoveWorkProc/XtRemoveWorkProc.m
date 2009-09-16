@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtRemoveWorkProc/XtRemoveWorkProc.m
+>># File: xts/Xt9/XtRemoveWorkProc/XtRemoveWorkProc.m
 >># 
 >># Description:
 >>#	Tests for XtRemoveWorkProc()

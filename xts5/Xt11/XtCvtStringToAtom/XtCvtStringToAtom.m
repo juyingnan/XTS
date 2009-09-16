@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtStringToAtom/XtCvtStringToAtom.m
+>># File: xts/Xt11/XtCvtStringToAtom/XtCvtStringToAtom.m
 >># 
 >># Description:
 >>#	Tests for XtCvtStringToAtom()

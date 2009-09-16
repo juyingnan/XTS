@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/allwdvcevn/allwdvcevn.m
+>># File: xts5/XIproto/allwdvcevn/allwdvcevn.m
 >># 
 >># Description:
 >># 	Tests for AllowDeviceEvents

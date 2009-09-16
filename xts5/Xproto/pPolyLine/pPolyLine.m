@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pPolyLine/pPolyLine.m
+>># File: xts5/Xproto/pPolyLine/pPolyLine.m
 >># 
 >># Description:
 >># 	Tests for PolyLine

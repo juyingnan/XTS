@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pPolyText16/pPolyText16.m
+>># File: xts5/Xproto/pPolyText16/pPolyText16.m
 >># 
 >># Description:
 >># 	Tests for PolyText16

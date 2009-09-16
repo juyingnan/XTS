@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pQueryTree/pQueryTree.m
+>># File: xts5/Xproto/pQueryTree/pQueryTree.m
 >># 
 >># Description:
 >># 	Tests for QueryTree

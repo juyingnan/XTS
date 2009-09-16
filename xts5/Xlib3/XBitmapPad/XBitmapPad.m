@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XBitmapPad/XBitmapPad.m
+>># File: xts5/Xlib3/XBitmapPad/XBitmapPad.m
 >># 
 >># Description:
 >># 	Tests for XBitmapPad()

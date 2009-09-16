@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/error/EAto.mc
+>># File: xts/lib/error/EAto.mc
 >>#
 >># Description:
 >>#     BadAtom error test

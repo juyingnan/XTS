@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib16/XrmCombineFileDatabase/XrmCombineFileDatabase.m
+>># File: xts/Xlib16/XrmCombineFileDatabase/XrmCombineFileDatabase.m
 >># 
 >># Description:
 >>#	Tests for XrmCombineFileDatabase()

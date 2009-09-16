@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib8/XSetArcMode/XSetArcMode.m
+>># File: xts5/Xlib8/XSetArcMode/XSetArcMode.m
 >># 
 >># Description:
 >># 	Tests for XSetArcMode()

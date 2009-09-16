@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsQueryGreen/XcmsQueryGreen.m
+>># File: xts/Xlib7/XcmsQueryGreen/XcmsQueryGreen.m
 >># 
 >># Description:
 >>#	Tests for XcmsQueryGreen()

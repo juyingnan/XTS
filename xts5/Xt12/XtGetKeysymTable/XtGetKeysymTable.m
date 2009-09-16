@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt12/XtGetKeysymTable/XtGetKeysymTable.m
+>># File: xts/Xt12/XtGetKeysymTable/XtGetKeysymTable.m
 >># 
 >># Description:
 >>#	Tests for XtGetKeysymTable()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtDisplayToApplicationContext/XtDisplayToApplicationContext.m
+>># File: xts/Xt11/XtDisplayToApplicationContext/XtDisplayToApplicationContext.m
 >># 
 >># Description:
 >>#	Tests for XtDisplayToApplicationContext()

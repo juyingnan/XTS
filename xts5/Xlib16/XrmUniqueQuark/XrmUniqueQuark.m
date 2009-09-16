@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib16/XrmUniqueQuark/XrmUniqueQuark.m
+>># File: xts5/Xlib16/XrmUniqueQuark/XrmUniqueQuark.m
 >># 
 >># Description:
 >># 	Tests for XrmUniqueQuark()

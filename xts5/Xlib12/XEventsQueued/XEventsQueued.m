@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib12/XEventsQueued/XEventsQueued.m
+>># File: xts5/Xlib12/XEventsQueued/XEventsQueued.m
 >># 
 >># Description:
 >># 	Tests for XEventsQueued()

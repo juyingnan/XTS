@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtCreateApplicationShell/XtCreateApplicationShell.m
+>># File: xts/XtC/XtCreateApplicationShell/XtCreateApplicationShell.m
 >># 
 >># Description:
 >>#	Tests for XtCreateApplicationShell()

@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib14/XSetICFocus/XSetICFocus.m
+>># File: xts/Xlib14/XSetICFocus/XSetICFocus.m
 >># 
 >># Description:
 >>#	Tests for XSetICFocus()

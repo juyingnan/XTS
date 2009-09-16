@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/stdvcvltrs/stdvcvltrs.m
+>># File: xts5/XI/stdvcvltrs/stdvcvltrs.m
 >># 
 >># Description:
 >># 	Tests for XSetDeviceValuators()

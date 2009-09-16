@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetWindowAttributes/pGetWindowAttributes.m
+>># File: xts5/Xproto/pGetWindowAttributes/pGetWindowAttributes.m
 >># 
 >># Description:
 >># 	Tests for GetWindowAttributes

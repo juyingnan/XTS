@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt3/XtIsComposite/XtIsComposite.m
+>># File: xts/Xt3/XtIsComposite/XtIsComposite.m
 >># 
 >># Description:
 >>#	Tests for XtIsComposite()

@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/fill-rule.mc
+>># File: xts/lib/gc/fill-rule.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

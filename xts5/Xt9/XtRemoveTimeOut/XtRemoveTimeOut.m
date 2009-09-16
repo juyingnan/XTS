@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtRemoveTimeOut/XtRemoveTimeOut.m
+>># File: xts/Xt9/XtRemoveTimeOut/XtRemoveTimeOut.m
 >># 
 >># Description:
 >>#	Tests for XtRemoveTimeOut()

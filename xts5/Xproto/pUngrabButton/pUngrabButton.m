@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pUngrabButton/pUngrabButton.m
+>># File: xts5/Xproto/pUngrabButton/pUngrabButton.m
 >># 
 >># Description:
 >># 	Tests for UngrabButton

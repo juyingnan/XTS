@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pForceScreenSaver/pForceScreenSaver.m
+>># File: xts5/Xproto/pForceScreenSaver/pForceScreenSaver.m
 >># 
 >># Description:
 >># 	Tests for ForceScreenSaver

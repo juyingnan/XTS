@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtError/XtError.m
+>># File: xts/XtC/XtError/XtError.m
 >># 
 >># Description:
 >>#	Tests for XtError()

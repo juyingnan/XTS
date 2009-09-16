@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pConvertSelection/pConvertSelection.m
+>># File: xts5/Xproto/pConvertSelection/pConvertSelection.m
 >># 
 >># Description:
 >># 	Tests for ConvertSelection

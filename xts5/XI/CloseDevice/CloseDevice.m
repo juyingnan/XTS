@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/clsdvc/clsdvc.m
+>># File: xts5/XI/clsdvc/clsdvc.m
 >># 
 >># Description:
 >># 	Tests for XCloseDevice()

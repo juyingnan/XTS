@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib6/XCreateFontCursor/XCreateFontCursor.m
+>># File: xts5/Xlib6/XCreateFontCursor/XCreateFontCursor.m
 >># 
 >># Description:
 >># 	Tests for XCreateFontCursor()

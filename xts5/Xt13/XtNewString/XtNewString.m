@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtNewString/XtNewString.m
+>># File: xts/Xt13/XtNewString/XtNewString.m
 >># 
 >># Description:
 >>#	Tests for XtNewString()

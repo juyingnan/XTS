@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsDefaultCCC/XcmsDefaultCCC.m
+>># File: xts/Xlib7/XcmsDefaultCCC/XcmsDefaultCCC.m
 >># 
 >># Description:
 >>#	Tests for XcmsDefaultCCC()

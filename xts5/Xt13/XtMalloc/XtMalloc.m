@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtMalloc/XtMalloc.m
+>># File: xts/Xt13/XtMalloc/XtMalloc.m
 >># 
 >># Description:
 >>#	Tests for XtMalloc()

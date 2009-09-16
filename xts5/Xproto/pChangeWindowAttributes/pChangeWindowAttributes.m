@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pChangeWindowAttributes/pChangeWindowAttributes.m
+>># File: xts5/Xproto/pChangeWindowAttributes/pChangeWindowAttributes.m
 >># 
 >># Description:
 >># 	Tests for ChangeWindowAttributes

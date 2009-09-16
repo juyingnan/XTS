@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/gtdvccntrl/gtdvccntrl.m
+>># File: xts5/XIproto/gtdvccntrl/gtdvccntrl.m
 >># 
 >># Description:
 >># 	Tests for GetDeviceControl

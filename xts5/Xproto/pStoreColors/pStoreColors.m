@@ -24,7 +24,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pStoreColors/pStoreColors.m
+>># File: xts5/Xproto/pStoreColors/pStoreColors.m
 >># 
 >># Description:
 >># 	Tests for StoreColors

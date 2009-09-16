@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtStringToFile/XtCvtStringToFile.m
+>># File: xts/Xt11/XtCvtStringToFile/XtCvtStringToFile.m
 >># 
 >># Description:
 >>#	Tests for XtCvtStringToFile()

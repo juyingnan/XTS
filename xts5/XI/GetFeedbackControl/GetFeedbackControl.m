@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/gtfdbckcnt/gtfdbckcnt.m
+>># File: xts5/XI/gtfdbckcnt/gtfdbckcnt.m
 >># 
 >># Description:
 >># 	Tests for XGetFeedbackControl()

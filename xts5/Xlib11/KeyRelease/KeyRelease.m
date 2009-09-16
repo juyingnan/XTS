@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib11/KeyRelease/KeyRelease.m
+>># File: xts5/Xlib11/KeyRelease/KeyRelease.m
 >># 
 >># Description:
 >># 	Tests for KeyRelease()

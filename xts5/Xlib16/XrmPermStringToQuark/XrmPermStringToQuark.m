@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib16/XrmPermStringToQuark/XrmPermStringToQuark.m
+>># File: xts/Xlib16/XrmPermStringToQuark/XrmPermStringToQuark.m
 >># 
 >># Description:
 >>#	Tests for XrmPermStringToQuark()

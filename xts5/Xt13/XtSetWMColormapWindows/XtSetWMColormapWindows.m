@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtSetWMColormapWindows/XtSetWMColormapWindows.m
+>># File: xts/Xt13/XtSetWMColormapWindows/XtSetWMColormapWindows.m
 >># 
 >># Description:
 >>#	Tests for XtSetWMColormapWindows()

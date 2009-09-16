@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib8/XSetFunction/XSetFunction.m
+>># File: xts5/Xlib8/XSetFunction/XSetFunction.m
 >># 
 >># Description:
 >># 	Tests for XSetFunction()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtToolkitInitialize/XtToolkitInitialize.m
+>># File: xts/Xt4/XtToolkitInitialize/XtToolkitInitialize.m
 >># 
 >># Description:
 >>#	Tests for XtToolkitInitialize()

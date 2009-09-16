@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib12/XCheckIfEvent/XCheckIfEvent.m
+>># File: xts5/Xlib12/XCheckIfEvent/XCheckIfEvent.m
 >># 
 >># Description:
 >># 	Tests for XCheckIfEvent()

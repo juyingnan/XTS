@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsScreenWhitePointOfCCC/XcmsScreenWhitePointOfCCC.m
+>># File: xts/Xlib7/XcmsScreenWhitePointOfCCC/XcmsScreenWhitePointOfCCC.m
 >># 
 >># Description:
 >>#	Tests for XcmsScreenWhitePointOfCCC()

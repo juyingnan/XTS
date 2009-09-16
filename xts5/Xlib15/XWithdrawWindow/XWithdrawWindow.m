@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib15/XWithdrawWindow/XWithdrawWindow.m
+>># File: xts5/Xlib15/XWithdrawWindow/XWithdrawWindow.m
 >># 
 >># Description:
 >># 	Tests for XWithdrawWindow()

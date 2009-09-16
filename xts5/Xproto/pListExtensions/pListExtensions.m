@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pListExtensions/pListExtensions.m
+>># File: xts5/Xproto/pListExtensions/pListExtensions.m
 >># 
 >># Description:
 >># 	Tests for ListExtensions

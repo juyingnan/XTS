@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib14/XUnsetICFocus/XUnsetICFocus.m
+>># File: xts/Xlib14/XUnsetICFocus/XUnsetICFocus.m
 >># 
 >># Description:
 >>#	Tests for XUnsetICFocus()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtStringToAcceleratorTable/XtCvtStringToAcceleratorTable.m
+>># File: xts/Xt11/XtCvtStringToAcceleratorTable/XtCvtStringToAcceleratorTable.m
 >># 
 >># Description:
 >>#	Tests for XtCvtStringToAcceleratorTable()

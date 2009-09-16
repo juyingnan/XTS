@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib4/XSetWindowBorderPixmap/XSetWindowBorderPixmap.m
+>># File: xts5/Xlib4/XSetWindowBorderPixmap/XSetWindowBorderPixmap.m
 >># 
 >># Description:
 >># 	Tests for XSetWindowBorderPixmap()

@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtMainLoop/XtMainLoop.m
+>># File: xts/XtC/XtMainLoop/XtMainLoop.m
 >># 
 >># Description:
 >>#	Tests for XtMainLoop()

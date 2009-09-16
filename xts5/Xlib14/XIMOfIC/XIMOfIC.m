@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib14/XIMOfIC/XIMOfIC.m
+>># File: xts5/Xlib14/XIMOfIC/XIMOfIC.m
 >># 
 >># Description:
 >># 	Tests for XIMOfIC()

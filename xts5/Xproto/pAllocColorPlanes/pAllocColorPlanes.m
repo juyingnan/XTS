@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pAllocColorPlanes/pAllocColorPlanes.m
+>># File: xts5/Xproto/pAllocColorPlanes/pAllocColorPlanes.m
 >># 
 >># Description:
 >># 	Tests for AllocColorPlanes

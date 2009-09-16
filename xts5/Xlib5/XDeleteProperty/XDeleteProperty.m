@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib5/XDeleteProperty/XDeleteProperty.m
+>># File: xts5/Xlib5/XDeleteProperty/XDeleteProperty.m
 >># 
 >># Description:
 >># 	Tests for XDeleteProperty()

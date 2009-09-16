@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pNoOperation/pNoOperation.m
+>># File: xts5/Xproto/pNoOperation/pNoOperation.m
 >># 
 >># Description:
 >># 	Tests for NoOperation

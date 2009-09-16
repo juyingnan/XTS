@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib9/XDrawImageString16/XDrawImageString16.m
+>># File: xts5/Xlib9/XDrawImageString16/XDrawImageString16.m
 >># 
 >># Description:
 >># 	Tests for XDrawImageString16()

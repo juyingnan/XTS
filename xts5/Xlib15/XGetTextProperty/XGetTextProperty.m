@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib15/XGetTextProperty/XGetTextProperty.m
+>># File: xts5/Xlib15/XGetTextProperty/XGetTextProperty.m
 >># 
 >># Description:
 >># 	Tests for XGetTextProperty()

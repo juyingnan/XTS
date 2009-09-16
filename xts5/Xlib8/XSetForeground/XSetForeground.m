@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib8/XSetForeground/XSetForeground.m
+>># File: xts5/Xlib8/XSetForeground/XSetForeground.m
 >># 
 >># Description:
 >># 	Tests for XSetForeground()

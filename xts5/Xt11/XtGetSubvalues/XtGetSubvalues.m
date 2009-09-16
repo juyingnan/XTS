@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtGetSubvalues/XtGetSubvalues.m
+>># File: xts/Xt11/XtGetSubvalues/XtGetSubvalues.m
 >># 
 >># Description:
 >>#	Tests for XtGetSubvalues()

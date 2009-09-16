@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtStringToUnsignedChar/XtCvtStringToUnsignedChar.m
+>># File: xts/Xt11/XtCvtStringToUnsignedChar/XtCvtStringToUnsignedChar.m
 >># 
 >># Description:
 >>#	Tests for XtCvtStringToUnsignedChar()

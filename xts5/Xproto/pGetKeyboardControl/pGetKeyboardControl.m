@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetKeyboardControl/pGetKeyboardControl.m
+>># File: xts5/Xproto/pGetKeyboardControl/pGetKeyboardControl.m
 >># 
 >># Description:
 >># 	Tests for GetKeyboardControl

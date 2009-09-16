@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pChangeSaveSet/pChangeSaveSet.m
+>># File: xts5/Xproto/pChangeSaveSet/pChangeSaveSet.m
 >># 
 >># Description:
 >># 	Tests for ChangeSaveSet

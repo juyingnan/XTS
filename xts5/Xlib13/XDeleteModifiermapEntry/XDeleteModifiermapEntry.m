@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib13/XDeleteModifiermapEntry/XDeleteModifiermapEntry.m
+>># File: xts5/Xlib13/XDeleteModifiermapEntry/XDeleteModifiermapEntry.m
 >># 
 >># Description:
 >># 	Tests for XDeleteModifiermapEntry()

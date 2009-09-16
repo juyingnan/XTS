@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib10/XReparentWindow/XReparentWindow.m
+>># File: xts5/Xlib10/XReparentWindow/XReparentWindow.m
 >># 
 >># Description:
 >># 	Tests for XReparentWindow()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XNextRequest/XNextRequest.m
+>># File: xts5/Xlib3/XNextRequest/XNextRequest.m
 >># 
 >># Description:
 >># 	Tests for XNextRequest()

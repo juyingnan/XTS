@@ -20,7 +20,7 @@ SOFTWARE.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xopen/XLookupColor/XLookupColor.m
+>># File: xts5/Xopen/XLookupColor/XLookupColor.m
 >># 
 >># Description:
 >># 	Tests for XLookupColor()

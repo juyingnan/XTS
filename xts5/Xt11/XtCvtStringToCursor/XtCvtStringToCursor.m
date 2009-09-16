@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtStringToCursor/XtCvtStringToCursor.m
+>># File: xts/Xt11/XtCvtStringToCursor/XtCvtStringToCursor.m
 >># 
 >># Description:
 >>#	Tests for XtCvtStringToCursor()

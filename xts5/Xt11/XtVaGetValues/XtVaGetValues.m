@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtVaGetValues/XtVaGetValues.m
+>># File: xts/Xt11/XtVaGetValues/XtVaGetValues.m
 >># 
 >># Description:
 >>#	Tests for XtVaGetValues()

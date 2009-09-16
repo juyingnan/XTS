@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/gtdvcdntpr/gtdvcdntpr.m
+>># File: xts5/XIproto/gtdvcdntpr/gtdvcdntpr.m
 >># 
 >># Description:
 >># 	Tests for GetDeviceDontPropagateList

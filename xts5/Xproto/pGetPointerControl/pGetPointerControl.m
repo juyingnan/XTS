@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetPointerControl/pGetPointerControl.m
+>># File: xts5/Xproto/pGetPointerControl/pGetPointerControl.m
 >># 
 >># Description:
 >># 	Tests for GetPointerControl

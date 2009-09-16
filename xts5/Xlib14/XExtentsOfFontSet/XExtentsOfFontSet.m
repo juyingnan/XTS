@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib14/XExtentsOfFontSet/XExtentsOfFontSet.m
+>># File: xts5/Xlib14/XExtentsOfFontSet/XExtentsOfFontSet.m
 >># 
 >># Description:
 >># 	Tests for XExtentsOfFontSet()

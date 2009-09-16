@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtOwnSelection/XtOwnSelection.m
+>># File: xts/Xt13/XtOwnSelection/XtOwnSelection.m
 >># 
 >># Description:
 >>#	Tests for XtOwnSelection()

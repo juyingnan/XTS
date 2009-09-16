@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt5/XtManageChild/XtManageChild.m
+>># File: xts/Xt5/XtManageChild/XtManageChild.m
 >># 
 >># Description:
 >>#	Tests for XtManageChild()

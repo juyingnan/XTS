@@ -20,7 +20,7 @@ SOFTWARE.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xopen/XAllocNamedColor/XAllocNamedColor.m
+>># File: xts5/Xopen/XAllocNamedColor/XAllocNamedColor.m
 >># 
 >># Description:
 >># 	Tests for XAllocNamedColor()

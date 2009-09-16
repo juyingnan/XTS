@@ -24,7 +24,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib14/XSetICValues/XSetICValues.m
+>># File: xts5/Xlib14/XSetICValues/XSetICValues.m
 >># 
 >># Description:
 >># 	Tests for XSetICValues()

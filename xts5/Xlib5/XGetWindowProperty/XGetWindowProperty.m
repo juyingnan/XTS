@@ -24,7 +24,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib5/XGetWindowProperty/XGetWindowProperty.m
+>># File: xts5/Xlib5/XGetWindowProperty/XGetWindowProperty.m
 >># 
 >># Description:
 >># 	Tests for XGetWindowProperty()

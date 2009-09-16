@@ -25,7 +25,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/SHAPE/XShapeQueryExtents/XShapeQueryExtents.m
+>># File: xts/SHAPE/XShapeQueryExtents/XShapeQueryExtents.m
 >>#
 >># Description:
 >>#     Tests for XShapeQueryExtents()

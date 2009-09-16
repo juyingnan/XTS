@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtDestroyGC/XtDestroyGC.m
+>># File: xts/XtC/XtDestroyGC/XtDestroyGC.m
 >># 
 >># Description:
 >>#	Tests for XtDestroyGC()

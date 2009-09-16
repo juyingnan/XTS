@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib9/XDrawLines/XDrawLines.m
+>># File: xts5/Xlib9/XDrawLines/XDrawLines.m
 >># 
 >># Description:
 >># 	Tests for XDrawLines()

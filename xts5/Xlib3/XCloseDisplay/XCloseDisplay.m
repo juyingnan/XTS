@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XCloseDisplay/XCloseDisplay.m
+>># File: xts5/Xlib3/XCloseDisplay/XCloseDisplay.m
 >># 
 >># Description:
 >># 	Tests for XCloseDisplay()

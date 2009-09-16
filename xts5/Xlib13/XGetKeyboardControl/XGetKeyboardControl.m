@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib13/XGetKeyboardControl/XGetKeyboardControl.m
+>># File: xts5/Xlib13/XGetKeyboardControl/XGetKeyboardControl.m
 >># 
 >># Description:
 >># 	Tests for XGetKeyboardControl()

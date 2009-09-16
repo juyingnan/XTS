@@ -24,7 +24,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib13/XSetInputFocus/XSetInputFocus.m
+>># File: xts5/Xlib13/XSetInputFocus/XSetInputFocus.m
 >># 
 >># Description:
 >># 	Tests for XSetInputFocus()

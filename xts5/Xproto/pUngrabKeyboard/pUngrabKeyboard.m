@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pUngrabKeyboard/pUngrabKeyboard.m
+>># File: xts5/Xproto/pUngrabKeyboard/pUngrabKeyboard.m
 >># 
 >># Description:
 >># 	Tests for UngrabKeyboard

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtGrabKey/XtGrabKey.m
+>># File: xts/Xt9/XtGrabKey/XtGrabKey.m
 >># 
 >># Description:
 >>#	Tests for XtGrabKey()

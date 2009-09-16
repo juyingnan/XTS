@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtFindFile/XtFindFile.m
+>># File: xts/Xt13/XtFindFile/XtFindFile.m
 >># 
 >># Description:
 >>#	Tests for XtFindFile()

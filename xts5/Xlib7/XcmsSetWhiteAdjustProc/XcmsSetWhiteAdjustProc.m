@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsSetWhiteAdjustProc/XcmsSetWhiteAdjustProc.m
+>># File: xts/Xlib7/XcmsSetWhiteAdjustProc/XcmsSetWhiteAdjustProc.m
 >># 
 >># Description:
 >>#	Tests for XcmsSetWhiteAdjustProc()

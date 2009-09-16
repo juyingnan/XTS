@@ -24,7 +24,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib17/XAddPixel/XAddPixel.m
+>># File: xts5/Xlib17/XAddPixel/XAddPixel.m
 >># 
 >># Description:
 >># 	Tests for XAddPixel()

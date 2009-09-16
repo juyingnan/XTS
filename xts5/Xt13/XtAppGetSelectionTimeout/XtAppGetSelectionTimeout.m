@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtAppGetSelectionTimeout/XtAppGetSelectionTimeout.m
+>># File: xts/Xt13/XtAppGetSelectionTimeout/XtAppGetSelectionTimeout.m
 >># 
 >># Description:
 >>#	Tests for XtAppGetSelectionTimeout()

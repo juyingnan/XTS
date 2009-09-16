@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib12/XCheckWindowEvent/XCheckWindowEvent.m
+>># File: xts5/Xlib12/XCheckWindowEvent/XCheckWindowEvent.m
 >># 
 >># Description:
 >># 	Tests for XCheckWindowEvent()

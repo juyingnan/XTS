@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtAppGetErrorDatabaseText/XtAppGetErrorDatabaseText.m
+>># File: xts/Xt13/XtAppGetErrorDatabaseText/XtAppGetErrorDatabaseText.m
 >># 
 >># Description:
 >>#	Tests for XtAppGetErrorDatabaseText()

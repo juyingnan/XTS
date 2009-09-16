@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib6/XFreeCursor/XFreeCursor.m
+>># File: xts5/Xlib6/XFreeCursor/XFreeCursor.m
 >># 
 >># Description:
 >># 	Tests for XFreeCursor()

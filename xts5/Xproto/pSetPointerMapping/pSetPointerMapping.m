@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pSetPointerMapping/pSetPointerMapping.m
+>># File: xts5/Xproto/pSetPointerMapping/pSetPointerMapping.m
 >># 
 >># Description:
 >># 	Tests for SetPointerMapping

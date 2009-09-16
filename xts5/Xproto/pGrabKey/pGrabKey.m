@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGrabKey/pGrabKey.m
+>># File: xts5/Xproto/pGrabKey/pGrabKey.m
 >># 
 >># Description:
 >># 	Tests for GrabKey

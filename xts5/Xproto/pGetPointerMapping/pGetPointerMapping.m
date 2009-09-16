@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetPointerMapping/pGetPointerMapping.m
+>># File: xts5/Xproto/pGetPointerMapping/pGetPointerMapping.m
 >># 
 >># Description:
 >># 	Tests for GetPointerMapping

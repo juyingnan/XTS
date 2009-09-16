@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib8/XSetPlaneMask/XSetPlaneMask.m
+>># File: xts5/Xlib8/XSetPlaneMask/XSetPlaneMask.m
 >># 
 >># Description:
 >># 	Tests for XSetPlaneMask()

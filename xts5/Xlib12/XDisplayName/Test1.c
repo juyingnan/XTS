@@ -26,7 +26,7 @@ SOFTWARE.
 * 
 * Project: VSW5
 * 
-* File: xts5/tset/Xlib12/XDisplayName/Test1.c
+* File: xts5/Xlib12/XDisplayName/Test1.c
 * 
 * Description:
 * 	Tests for XDisplayName()

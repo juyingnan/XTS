@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtSetLanguageProc/XtSetLanguageProc.m
+>># File: xts/Xt4/XtSetLanguageProc/XtSetLanguageProc.m
 >># 
 >># Description:
 >>#	Tests for XtSetLanguageProc()

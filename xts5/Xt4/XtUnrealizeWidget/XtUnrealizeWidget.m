@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtUnrealizeWidget/XtUnrealizeWidget.m
+>># File: xts/Xt4/XtUnrealizeWidget/XtUnrealizeWidget.m
 >># 
 >># Description:
 >>#	Tests for XtUnrealizeWidget()

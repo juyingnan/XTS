@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsCIELabQueryMinL/XcmsCIELabQueryMinL.m
+>># File: xts/Xlib7/XcmsCIELabQueryMinL/XcmsCIELabQueryMinL.m
 >># 
 >># Description:
 >>#	Tests for XcmsCIELabQueryMinL()

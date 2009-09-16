@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtDirectConvert/XtDirectConvert.m
+>># File: xts/XtC/XtDirectConvert/XtDirectConvert.m
 >># 
 >># Description:
 >>#	Tests for XtDirectConvert()

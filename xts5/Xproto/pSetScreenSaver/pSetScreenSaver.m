@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pSetScreenSaver/pSetScreenSaver.m
+>># File: xts5/Xproto/pSetScreenSaver/pSetScreenSaver.m
 >># 
 >># Description:
 >># 	Tests for SetScreenSaver

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib5/XSetSelectionOwner/XSetSelectionOwner.m
+>># File: xts5/Xlib5/XSetSelectionOwner/XSetSelectionOwner.m
 >># 
 >># Description:
 >># 	Tests for XSetSelectionOwner()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt6/TransientShellWidget/TransientShellWidget.m
+>># File: xts/Xt6/TransientShellWidget/TransientShellWidget.m
 >># 
 >># Description:
 >>#	Tests for TransientShell Widgets

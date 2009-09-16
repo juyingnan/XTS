@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib5/XListProperties/XListProperties.m
+>># File: xts5/Xlib5/XListProperties/XListProperties.m
 >># 
 >># Description:
 >># 	Tests for XListProperties()

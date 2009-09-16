@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt14/ObjectObject/ObjectObject.m
+>># File: xts/Xt14/ObjectObject/ObjectObject.m
 >># 
 >># Description:
 >>#	Tests for Object Objects

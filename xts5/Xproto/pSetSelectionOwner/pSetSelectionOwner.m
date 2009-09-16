@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pSetSelectionOwner/pSetSelectionOwner.m
+>># File: xts5/Xproto/pSetSelectionOwner/pSetSelectionOwner.m
 >># 
 >># Description:
 >># 	Tests for SetSelectionOwner

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/gtdvcfcs/gtdvcfcs.m
+>># File: xts5/XIproto/gtdvcfcs/gtdvcfcs.m
 >># 
 >># Description:
 >># 	Tests for GetDeviceFocus

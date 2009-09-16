@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/error/EAcc3.mc
+>># File: xts/lib/error/EAcc3.mc
 >>#
 >># Description:
 >>#     BadAccess error test

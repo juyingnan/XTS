@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pListHosts/pListHosts.m
+>># File: xts5/Xproto/pListHosts/pListHosts.m
 >># 
 >># Description:
 >># 	Tests for ListHosts

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtInitialize/XtInitialize.m
+>># File: xts/XtC/XtInitialize/XtInitialize.m
 >># 
 >># Description:
 >>#	Tests for XtInitialize()

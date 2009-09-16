@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/error/ECol.mc
+>># File: xts/lib/error/ECol.mc
 >>#
 >># Description:
 >>#     BadColor error test

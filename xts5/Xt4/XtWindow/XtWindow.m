@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtWindow/XtWindow.m
+>># File: xts/Xt4/XtWindow/XtWindow.m
 >># 
 >># Description:
 >>#	Tests for XtWindow()

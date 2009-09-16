@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pInstallColormap/pInstallColormap.m
+>># File: xts5/Xproto/pInstallColormap/pInstallColormap.m
 >># 
 >># Description:
 >># 	Tests for InstallColormap

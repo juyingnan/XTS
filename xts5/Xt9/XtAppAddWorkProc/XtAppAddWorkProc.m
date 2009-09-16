@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtAppAddWorkProc/XtAppAddWorkProc.m
+>># File: xts/Xt9/XtAppAddWorkProc/XtAppAddWorkProc.m
 >># 
 >># Description:
 >>#	Tests for XtAppAddWorkProc()

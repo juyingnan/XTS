@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtFree/XtFree.m
+>># File: xts/Xt13/XtFree/XtFree.m
 >># 
 >># Description:
 >>#	Tests for XtFree()

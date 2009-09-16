@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pUngrabPointer/pUngrabPointer.m
+>># File: xts5/Xproto/pUngrabPointer/pUngrabPointer.m
 >># 
 >># Description:
 >># 	Tests for UngrabPointer

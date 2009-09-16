@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pChangeGC/pChangeGC.m
+>># File: xts5/Xproto/pChangeGC/pChangeGC.m
 >># 
 >># Description:
 >># 	Tests for ChangeGC()

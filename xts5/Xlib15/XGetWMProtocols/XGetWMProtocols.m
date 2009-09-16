@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib15/XGetWMProtocols/XGetWMProtocols.m
+>># File: xts5/Xlib15/XGetWMProtocols/XGetWMProtocols.m
 >># 
 >># Description:
 >># 	Tests for XGetWMProtocols()

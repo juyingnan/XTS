@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pAllocColorCells/pAllocColorCells.m
+>># File: xts5/Xproto/pAllocColorCells/pAllocColorCells.m
 >># 
 >># Description:
 >># 	Tests for AllocColorCells

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib9/XFillArcs/XFillArcs.m
+>># File: xts5/Xlib9/XFillArcs/XFillArcs.m
 >># 
 >># Description:
 >># 	Tests for XFillArcs()

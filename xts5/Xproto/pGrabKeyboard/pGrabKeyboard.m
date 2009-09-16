@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGrabKeyboard/pGrabKeyboard.m
+>># File: xts5/Xproto/pGrabKeyboard/pGrabKeyboard.m
 >># 
 >># Description:
 >># 	Tests for GrabKeyboard

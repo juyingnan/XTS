@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/qrydvcstt/qrydvcstt.m
+>># File: xts5/XI/qrydvcstt/qrydvcstt.m
 >># 
 >># Description:
 >># 	Tests for XQueryDeviceState()

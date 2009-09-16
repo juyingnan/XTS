@@ -25,7 +25,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/SHAPE/XShapeCombineShape/XShapeCombineShape.m
+>># File: xts/SHAPE/XShapeCombineShape/XShapeCombineShape.m
 >>#
 >># Description:
 >>#     Tests for XShapeCombineShape()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt3/XtClass/XtClass.m
+>># File: xts/Xt3/XtClass/XtClass.m
 >># 
 >># Description:
 >>#	Tests for XtClass

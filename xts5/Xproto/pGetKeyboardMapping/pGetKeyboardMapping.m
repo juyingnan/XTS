@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetKeyboardMapping/pGetKeyboardMapping.m
+>># File: xts5/Xproto/pGetKeyboardMapping/pGetKeyboardMapping.m
 >># 
 >># Description:
 >># 	Tests for GetKeyboardMapping

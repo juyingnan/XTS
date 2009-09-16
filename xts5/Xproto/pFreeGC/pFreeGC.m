@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pFreeGC/pFreeGC.m
+>># File: xts5/Xproto/pFreeGC/pFreeGC.m
 >># 
 >># Description:
 >># 	Tests for FreeGC

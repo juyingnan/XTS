@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtOffset/XtOffset.m
+>># File: xts/Xt11/XtOffset/XtOffset.m
 >># 
 >># Description:
 >>#	Tests for XtOffset()

@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/dash-offs.mc
+>># File: xts/lib/gc/dash-offs.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

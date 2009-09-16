@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib11/MappingNotify/MappingNotify.m
+>># File: xts5/Xlib11/MappingNotify/MappingNotify.m
 >># 
 >># Description:
 >># 	Tests for MappingNotify()

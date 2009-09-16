@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pCreateCursor/pCreateCursor.m
+>># File: xts5/Xproto/pCreateCursor/pCreateCursor.m
 >># 
 >># Description:
 >># 	Tests for CreateCursor

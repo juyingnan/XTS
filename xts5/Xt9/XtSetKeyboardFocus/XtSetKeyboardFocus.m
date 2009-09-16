@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtSetKeyboardFocus/XtSetKeyboardFocus.m
+>># File: xts/Xt9/XtSetKeyboardFocus/XtSetKeyboardFocus.m
 >># 
 >># Description:
 >>#	Tests for XtSetKeyboardFocus()

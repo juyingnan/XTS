@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pImageText16/pImageText16.m
+>># File: xts5/Xproto/pImageText16/pImageText16.m
 >># 
 >># Description:
 >># 	Tests for ImageText16

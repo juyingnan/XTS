@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pWarpPointer/pWarpPointer.m
+>># File: xts5/Xproto/pWarpPointer/pWarpPointer.m
 >># 
 >># Description:
 >># 	Tests for WarpPointer

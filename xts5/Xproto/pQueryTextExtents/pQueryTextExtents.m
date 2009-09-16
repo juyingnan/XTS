@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pQueryTextExtents/pQueryTextExtents.m
+>># File: xts5/Xproto/pQueryTextExtents/pQueryTextExtents.m
 >># 
 >># Description:
 >># 	Tests for QueryTextExtents

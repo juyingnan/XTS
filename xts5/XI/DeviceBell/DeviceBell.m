@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/dvcbll/dvcbll.m
+>># File: xts5/XI/dvcbll/dvcbll.m
 >># 
 >># Description:
 >># 	Tests for XDeviceBell()

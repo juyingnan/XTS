@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib8/XFlushGC/XFlushGC.m
+>># File: xts/Xlib8/XFlushGC/XFlushGC.m
 >># 
 >># Description:
 >>#	Tests for XFlushGC()

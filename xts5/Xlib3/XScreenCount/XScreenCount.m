@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XScreenCount/XScreenCount.m
+>># File: xts5/Xlib3/XScreenCount/XScreenCount.m
 >># 
 >># Description:
 >># 	Tests for XScreenCount()

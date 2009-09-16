@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsSetWhitePoint/XcmsSetWhitePoint.m
+>># File: xts/Xlib7/XcmsSetWhitePoint/XcmsSetWhitePoint.m
 >># 
 >># Description:
 >>#	Tests for XcmsSetWhitePoint()

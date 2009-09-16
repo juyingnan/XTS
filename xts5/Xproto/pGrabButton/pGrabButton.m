@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGrabButton/pGrabButton.m
+>># File: xts5/Xproto/pGrabButton/pGrabButton.m
 >># 
 >># Description:
 >># 	Tests for GrabButton

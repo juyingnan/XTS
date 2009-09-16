@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt12/XtGetMultiClickTime/XtGetMultiClickTime.m
+>># File: xts/Xt12/XtGetMultiClickTime/XtGetMultiClickTime.m
 >># 
 >># Description:
 >>#	Tests for XtGetMultiClickTime()

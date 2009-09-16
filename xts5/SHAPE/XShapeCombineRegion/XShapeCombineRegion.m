@@ -25,7 +25,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/SHAPE/XShapeCombineRegion/XShapeCombineRegion.m
+>># File: xts/SHAPE/XShapeCombineRegion/XShapeCombineRegion.m
 >>#
 >># Description:
 >>#     Tests for XShapeCombineRegion()

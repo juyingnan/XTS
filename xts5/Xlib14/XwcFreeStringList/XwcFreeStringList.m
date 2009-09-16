@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib14/XwcFreeStringList/XwcFreeStringList.m
+>># File: xts/Xlib14/XwcFreeStringList/XwcFreeStringList.m
 >># 
 >># Description:
 >>#	Tests for XwcFreeStringList()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetImage/pGetImage.m
+>># File: xts5/Xproto/pGetImage/pGetImage.m
 >># 
 >># Description:
 >># 	Tests for GetImage

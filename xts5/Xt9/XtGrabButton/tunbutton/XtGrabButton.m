@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtGrabButton/XtGrabButton.m
+>># File: xts/Xt9/XtGrabButton/XtGrabButton.m
 >># 
 >># Description:
 >>#	Tests for XtUngrabButton()

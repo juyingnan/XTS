@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/clsdvc/clsdvc.m
+>># File: xts5/XIproto/clsdvc/clsdvc.m
 >># 
 >># Description:
 >># 	Tests for CloseDevice

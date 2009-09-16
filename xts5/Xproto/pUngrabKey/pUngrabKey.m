@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pUngrabKey/pUngrabKey.m
+>># File: xts5/Xproto/pUngrabKey/pUngrabKey.m
 >># 
 >># Description:
 >># 	Tests for UngrabKey

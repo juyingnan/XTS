@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtWindowToWidget/XtWindowToWidget.m
+>># File: xts/Xt13/XtWindowToWidget/XtWindowToWidget.m
 >># 
 >># Description:
 >>#	Tests for XtWindowToWidget()

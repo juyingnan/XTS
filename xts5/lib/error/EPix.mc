@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/error/EPix.mc
+>># File: xts/lib/error/EPix.mc
 >>#
 >># Description:
 >>#     BadPixmap error test

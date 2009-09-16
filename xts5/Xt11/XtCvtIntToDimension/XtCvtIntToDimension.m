@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtIntToDimension/XtCvtIntToDimension.m
+>># File: xts/Xt11/XtCvtIntToDimension/XtCvtIntToDimension.m
 >># 
 >># Description:
 >>#	Tests for XtCvtIntToDimension()

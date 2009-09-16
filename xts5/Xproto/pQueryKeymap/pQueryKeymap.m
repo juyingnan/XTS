@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pQueryKeymap/pQueryKeymap.m
+>># File: xts5/Xproto/pQueryKeymap/pQueryKeymap.m
 >># 
 >># Description:
 >># 	Tests for QueryKeymap

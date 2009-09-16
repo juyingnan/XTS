@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pPolySegment/pPolySegment.m
+>># File: xts5/Xproto/pPolySegment/pPolySegment.m
 >># 
 >># Description:
 >># 	Tests for PolySegment

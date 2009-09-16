@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt3/XtIsShell/XtIsShell.m
+>># File: xts/Xt3/XtIsShell/XtIsShell.m
 >># 
 >># Description:
 >>#	Tests for XtIsShell()

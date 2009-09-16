@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtDisownSelection/XtDisownSelection.m
+>># File: xts/Xt13/XtDisownSelection/XtDisownSelection.m
 >># 
 >># Description:
 >>#	Tests for XtDisownSelection()

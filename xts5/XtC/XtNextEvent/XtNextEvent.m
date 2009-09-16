@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtNextEvent/XtNextEvent.m
+>># File: xts/XtC/XtNextEvent/XtNextEvent.m
 >># 
 >># Description:
 >>#	Tests for XtNextEvent()

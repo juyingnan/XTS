@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pSetCloseDownMode/pSetCloseDownMode.m
+>># File: xts5/Xproto/pSetCloseDownMode/pSetCloseDownMode.m
 >># 
 >># Description:
 >># 	Tests for SetCloseDownMode

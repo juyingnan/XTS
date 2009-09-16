@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pFreeCursor/pFreeCursor.m
+>># File: xts5/Xproto/pFreeCursor/pFreeCursor.m
 >># 
 >># Description:
 >># 	Tests for FreeCursor

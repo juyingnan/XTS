@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsQueryRed/XcmsQueryRed.m
+>># File: xts/Xlib7/XcmsQueryRed/XcmsQueryRed.m
 >># 
 >># Description:
 >>#	Tests for XcmsQueryRed()

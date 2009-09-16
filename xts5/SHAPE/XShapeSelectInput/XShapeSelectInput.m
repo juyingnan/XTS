@@ -25,7 +25,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/SHAPE/XShapeSelectInput/XShapeSelectInput.m
+>># File: xts/SHAPE/XShapeSelectInput/XShapeSelectInput.m
 >>#
 >># Description:
 >>#     Tests for XShapeSelectInput()

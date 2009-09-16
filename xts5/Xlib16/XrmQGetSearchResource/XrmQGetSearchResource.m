@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib16/XrmQGetSearchResource/XrmQGetSearchResource.m
+>># File: xts5/Xlib16/XrmQGetSearchResource/XrmQGetSearchResource.m
 >># 
 >># Description:
 >># 	Tests for XrmQGetSearchResource()

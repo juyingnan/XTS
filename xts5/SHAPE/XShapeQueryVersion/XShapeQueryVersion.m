@@ -25,7 +25,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/SHAPE/XShapeQueryVersion/XShapeQueryVersion.m
+>># File: xts/SHAPE/XShapeQueryVersion/XShapeQueryVersion.m
 >>#
 >># Description:
 >>#     Tests for XShapeQueryVersion()

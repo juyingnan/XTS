@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/grbdvcky/grbdvcky.m
+>># File: xts5/XI/grbdvcky/grbdvcky.m
 >># 
 >># Description:
 >># 	Tests for XGrabDeviceKey()

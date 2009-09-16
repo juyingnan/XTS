@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib13/XGetPointerMapping/XGetPointerMapping.m
+>># File: xts5/Xlib13/XGetPointerMapping/XGetPointerMapping.m
 >># 
 >># Description:
 >># 	Tests for XGetPointerMapping()

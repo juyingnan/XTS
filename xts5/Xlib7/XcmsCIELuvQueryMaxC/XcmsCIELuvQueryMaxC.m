@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsCIELuvQueryMaxC/XcmsCIELuvQueryMaxC.m
+>># File: xts/Xlib7/XcmsCIELuvQueryMaxC/XcmsCIELuvQueryMaxC.m
 >># 
 >># Description:
 >>#	Tests for XcmsCIELuvQueryMaxC()

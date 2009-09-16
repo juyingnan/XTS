@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/title.mc
+>># File: xts/lib/gc/title.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

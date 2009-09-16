@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib8/XSetFillRule/XSetFillRule.m
+>># File: xts5/Xlib8/XSetFillRule/XSetFillRule.m
 >># 
 >># Description:
 >># 	Tests for XSetFillRule()

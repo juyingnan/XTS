@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtPending/XtPending.m
+>># File: xts/XtC/XtPending/XtPending.m
 >># 
 >># Description:
 >>#	Tests for XtPending()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib17/XEmptyRegion/XEmptyRegion.m
+>># File: xts5/Xlib17/XEmptyRegion/XEmptyRegion.m
 >># 
 >># Description:
 >># 	Tests for XEmptyRegion()

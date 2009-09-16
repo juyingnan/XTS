@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt3/CoreWidget/CoreWidget.m
+>># File: xts/Xt3/CoreWidget/CoreWidget.m
 >># 
 >># Description:
 >>#	Tests for Core widget data structures

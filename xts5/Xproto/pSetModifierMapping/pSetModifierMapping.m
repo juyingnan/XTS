@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pSetModifierMapping/pSetModifierMapping.m
+>># File: xts5/Xproto/pSetModifierMapping/pSetModifierMapping.m
 >># 
 >># Description:
 >># 	Tests for SetModifierMapping

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt12/XtInstallAccelerators/XtInstallAccelerators.m
+>># File: xts/Xt12/XtInstallAccelerators/XtInstallAccelerators.m
 >># 
 >># Description:
 >>#	Tests for XtInstallAccelerators()

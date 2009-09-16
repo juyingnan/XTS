@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib14/XmbResetIC/XmbResetIC.m
+>># File: xts/Xlib14/XmbResetIC/XmbResetIC.m
 >># 
 >># Description:
 >>#	Tests for XmbResetIC()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt12/XtRegisterGrabAction/XtRegisterGrabAction.m
+>># File: xts/Xt12/XtRegisterGrabAction/XtRegisterGrabAction.m
 >># 
 >># Description:
 >>#	Tests for XtRegisterGrabAction()

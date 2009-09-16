@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGrabPointer/pGrabPointer.m
+>># File: xts5/Xproto/pGrabPointer/pGrabPointer.m
 >># 
 >># Description:
 >># 	Tests for GrabPointer

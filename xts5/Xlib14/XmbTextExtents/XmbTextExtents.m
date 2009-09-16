@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib14/XmbTextExtents/XmbTextExtents.m
+>># File: xts5/Xlib14/XmbTextExtents/XmbTextExtents.m
 >># 
 >># Description:
 >># 	Tests for XmbTextExtents()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsFormatOfPrefix/XcmsFormatOfPrefix.m
+>># File: xts/Xlib7/XcmsFormatOfPrefix/XcmsFormatOfPrefix.m
 >># 
 >># Description:
 >>#	Tests for XcmsFormatOfPrefix()

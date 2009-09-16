@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/line-styl.mc
+>># File: xts/lib/gc/line-styl.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

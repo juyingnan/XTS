@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCallbackReleaseCacheRefList/XtCallbackReleaseCacheRefList.m
+>># File: xts/Xt11/XtCallbackReleaseCacheRefList/XtCallbackReleaseCacheRefList.m
 >># 
 >># Description:
 >>#	Tests for XtCallbackReleaseCacheRefList()

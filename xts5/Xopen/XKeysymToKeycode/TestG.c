@@ -23,7 +23,7 @@ SOFTWARE.
 * 
 * Project: VSW5
 * 
-* File: xts5/tset/Xopen/XKeysymToKeycode/TestG.c
+* File: xts5/Xopen/XKeysymToKeycode/TestG.c
 * 
 * Description:
 * 	Tests for XKeysymToKeycode()

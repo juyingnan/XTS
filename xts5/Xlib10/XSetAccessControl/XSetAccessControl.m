@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib10/XSetAccessControl/XSetAccessControl.m
+>># File: xts5/Xlib10/XSetAccessControl/XSetAccessControl.m
 >># 
 >># Description:
 >># 	Tests for XSetAccessControl()

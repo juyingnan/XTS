@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib4/XMoveResizeWindow/XMoveResizeWindow.m
+>># File: xts5/Xlib4/XMoveResizeWindow/XMoveResizeWindow.m
 >># 
 >># Description:
 >># 	Tests for XMoveResizeWindow()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pCreateWindow/pCreateWindow.m
+>># File: xts5/Xproto/pCreateWindow/pCreateWindow.m
 >># 
 >># Description:
 >># 	Tests for CreateWindow

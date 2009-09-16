@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib8/XSetClipOrigin/XSetClipOrigin.m
+>># File: xts5/Xlib8/XSetClipOrigin/XSetClipOrigin.m
 >># 
 >># Description:
 >># 	Tests for XSetClipOrigin()

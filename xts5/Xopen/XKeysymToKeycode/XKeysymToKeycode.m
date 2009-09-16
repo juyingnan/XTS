@@ -20,7 +20,7 @@ SOFTWARE.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xopen/XKeysymToKeycode/XKeysymToKeycode.m
+>># File: xts5/Xopen/XKeysymToKeycode/XKeysymToKeycode.m
 >># 
 >># Description:
 >># 	Tests for XKeysymToKeycode()

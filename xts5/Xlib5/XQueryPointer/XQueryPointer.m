@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib5/XQueryPointer/XQueryPointer.m
+>># File: xts5/Xlib5/XQueryPointer/XQueryPointer.m
 >># 
 >># Description:
 >># 	Tests for XQueryPointer()

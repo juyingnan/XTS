@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pReparentWindow/pReparentWindow.m
+>># File: xts5/Xproto/pReparentWindow/pReparentWindow.m
 >># 
 >># Description:
 >># 	Tests for ReparentWindow

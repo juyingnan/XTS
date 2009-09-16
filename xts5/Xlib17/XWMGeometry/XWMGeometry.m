@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib17/XWMGeometry/XWMGeometry.m
+>># File: xts5/Xlib17/XWMGeometry/XWMGeometry.m
 >># 
 >># Description:
 >># 	Tests for XWMGeometry()

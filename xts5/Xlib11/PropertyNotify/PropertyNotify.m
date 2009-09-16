@@ -24,7 +24,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib11/PropertyNotify/PropertyNotify.m
+>># File: xts5/Xlib11/PropertyNotify/PropertyNotify.m
 >># 
 >># Description:
 >># 	Tests for PropertyNotify()

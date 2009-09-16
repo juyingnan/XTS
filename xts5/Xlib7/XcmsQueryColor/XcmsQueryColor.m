@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsQueryColor/XcmsQueryColor.m
+>># File: xts/Xlib7/XcmsQueryColor/XcmsQueryColor.m
 >># 
 >># Description:
 >>#	Tests for XcmsQueryColor()

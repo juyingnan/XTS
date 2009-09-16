@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pListInstalledColormaps/pListInstalledColormaps.m
+>># File: xts5/Xproto/pListInstalledColormaps/pListInstalledColormaps.m
 >># 
 >># Description:
 >># 	Tests for ListInstalledColormaps

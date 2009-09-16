@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtDestroyApplicationContext/XtDestroyApplicationContext.m
+>># File: xts/Xt4/XtDestroyApplicationContext/XtDestroyApplicationContext.m
 >># 
 >># Description:
 >>#	Tests for XtDestroyApplicationContext()

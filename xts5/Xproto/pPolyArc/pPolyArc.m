@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pPolyArc/pPolyArc.m
+>># File: xts5/Xproto/pPolyArc/pPolyArc.m
 >># 
 >># Description:
 >># 	Tests for PolyArc

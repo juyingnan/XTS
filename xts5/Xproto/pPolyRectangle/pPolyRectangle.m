@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pPolyRectangle/pPolyRectangle.m
+>># File: xts5/Xproto/pPolyRectangle/pPolyRectangle.m
 >># 
 >># Description:
 >># 	Tests for PolyRectangle

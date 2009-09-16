@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGrabServer/pGrabServer.m
+>># File: xts5/Xproto/pGrabServer/pGrabServer.m
 >># 
 >># Description:
 >># 	Tests for GrabServer

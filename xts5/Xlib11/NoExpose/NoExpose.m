@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib11/NoExpose/NoExpose.m
+>># File: xts5/Xlib11/NoExpose/NoExpose.m
 >># 
 >># Description:
 >># 	Tests for NoExpose()

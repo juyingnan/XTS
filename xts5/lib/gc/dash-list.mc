@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/dash-list.mc
+>># File: xts/lib/gc/dash-list.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

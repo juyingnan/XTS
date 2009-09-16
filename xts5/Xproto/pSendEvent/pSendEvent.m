@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pSendEvent/pSendEvent.m
+>># File: xts5/Xproto/pSendEvent/pSendEvent.m
 >># 
 >># Description:
 >># 	Tests for SendEvent

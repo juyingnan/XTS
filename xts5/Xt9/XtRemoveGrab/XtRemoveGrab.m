@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtRemoveGrab/XtRemoveGrab.m
+>># File: xts/Xt9/XtRemoveGrab/XtRemoveGrab.m
 >># 
 >># Description:
 >>#	Tests for XtRemoveGrab()

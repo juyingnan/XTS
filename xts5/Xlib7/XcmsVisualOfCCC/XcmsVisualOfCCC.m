@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsVisualOfCCC/XcmsVisualOfCCC.m
+>># File: xts/Xlib7/XcmsVisualOfCCC/XcmsVisualOfCCC.m
 >># 
 >># Description:
 >>#	Tests for XcmsVisualOfCCC()

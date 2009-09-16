@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/grbdvcky/grbdvcky.m
+>># File: xts5/XIproto/grbdvcky/grbdvcky.m
 >># 
 >># Description:
 >># 	Tests for GrabDeviceKey

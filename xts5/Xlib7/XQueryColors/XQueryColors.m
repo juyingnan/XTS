@@ -24,7 +24,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib7/XQueryColors/XQueryColors.m
+>># File: xts5/Xlib7/XQueryColors/XQueryColors.m
 >># 
 >># Description:
 >># 	Tests for XQueryColors()

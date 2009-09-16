@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtGetResourceList/XtGetResourceList.m
+>># File: xts/Xt11/XtGetResourceList/XtGetResourceList.m
 >># 
 >># Description:
 >>#	Tests for XtGetResourceList()

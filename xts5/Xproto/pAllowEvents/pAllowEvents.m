@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pAllowEvents/pAllowEvents.m
+>># File: xts5/Xproto/pAllowEvents/pAllowEvents.m
 >># 
 >># Description:
 >># 	Tests for AllowEvents

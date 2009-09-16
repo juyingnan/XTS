@@ -24,7 +24,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib9/XCopyPlane/XCopyPlane.m
+>># File: xts5/Xlib9/XCopyPlane/XCopyPlane.m
 >># 
 >># Description:
 >># 	Tests for XCopyPlane()

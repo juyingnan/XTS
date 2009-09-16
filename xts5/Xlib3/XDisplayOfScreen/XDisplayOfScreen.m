@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XDisplayOfScreen/XDisplayOfScreen.m
+>># File: xts5/Xlib3/XDisplayOfScreen/XDisplayOfScreen.m
 >># 
 >># Description:
 >># 	Tests for XDisplayOfScreen()

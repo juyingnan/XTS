@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/ungrbdvc/ungrbdvc.m
+>># File: xts5/XIproto/ungrbdvc/ungrbdvc.m
 >># 
 >># Description:
 >># 	Tests for UngrabDevice

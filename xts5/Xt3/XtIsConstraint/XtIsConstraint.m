@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt3/XtIsConstraint/XtIsConstraint.m
+>># File: xts/Xt3/XtIsConstraint/XtIsConstraint.m
 >># 
 >># Description:
 >>#	Tests for XtIsConstraint()

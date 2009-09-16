@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/error/ENam1.mc
+>># File: xts/lib/error/ENam1.mc
 >>#
 >># Description:
 >>#     BadName error test

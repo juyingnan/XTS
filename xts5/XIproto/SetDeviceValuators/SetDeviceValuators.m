@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/stdvcvltrs/stdvcvltrs.m
+>># File: xts5/XIproto/stdvcvltrs/stdvcvltrs.m
 >># 
 >># Description:
 >># 	Tests for SetDeviceValuators

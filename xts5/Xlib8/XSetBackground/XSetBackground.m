@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib8/XSetBackground/XSetBackground.m
+>># File: xts5/Xlib8/XSetBackground/XSetBackground.m
 >># 
 >># Description:
 >># 	Tests for XSetBackground()

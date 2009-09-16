@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtIntToFloat/XtCvtIntToFloat.m
+>># File: xts/Xt11/XtCvtIntToFloat/XtCvtIntToFloat.m
 >># 
 >># Description:
 >>#	Tests for XtCvtIntToFloat()

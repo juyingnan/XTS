@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt12/XtAugmentTranslations/XtAugmentTranslations.m
+>># File: xts/Xt12/XtAugmentTranslations/XtAugmentTranslations.m
 >># 
 >># Description:
 >>#	Tests for XtAugmentTranslations()

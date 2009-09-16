@@ -20,7 +20,7 @@ SOFTWARE.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xopen/XStringToKeysym/XStringToKeysym.m
+>># File: xts5/Xopen/XStringToKeysym/XStringToKeysym.m
 >># 
 >># Description:
 >># 	Tests for XStringToKeysym()

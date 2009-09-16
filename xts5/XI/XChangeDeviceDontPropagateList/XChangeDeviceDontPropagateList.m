@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/chngdvcdnt/chngdvcdnt.m
+>># File: xts5/XI/chngdvcdnt/chngdvcdnt.m
 >># 
 >># Description:
 >># 	Tests for XChangeDeviceDontPropagateList()

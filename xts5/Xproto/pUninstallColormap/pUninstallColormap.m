@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pUninstallColormap/pUninstallColormap.m
+>># File: xts5/Xproto/pUninstallColormap/pUninstallColormap.m
 >># 
 >># Description:
 >># 	Tests for UninstallColormap

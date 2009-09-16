@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtUngrabKey/XtUngrabKey.m
+>># File: xts/Xt9/XtUngrabKey/XtUngrabKey.m
 >># 
 >># Description:
 >>#	Tests for XtUngrabKey()

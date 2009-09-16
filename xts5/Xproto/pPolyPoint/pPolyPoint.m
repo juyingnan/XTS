@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pPolyPoint/pPolyPoint.m
+>># File: xts5/Xproto/pPolyPoint/pPolyPoint.m
 >># 
 >># Description:
 >># 	Tests for PolyPoint

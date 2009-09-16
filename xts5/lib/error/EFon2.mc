@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/error/EFon2.mc
+>># File: xts/lib/error/EFon2.mc
 >>#
 >># Description:
 >>#     BadFont error test

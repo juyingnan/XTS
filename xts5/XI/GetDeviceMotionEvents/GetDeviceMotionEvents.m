@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/gtdvcmtnev/gtdvcmtnev.m
+>># File: xts5/XI/gtdvcmtnev/gtdvcmtnev.m
 >># 
 >># Description:
 >># 	Tests for XGetDeviceMotionEvents()

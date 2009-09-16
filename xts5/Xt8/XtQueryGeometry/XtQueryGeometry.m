@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt8/XtQueryGeometry/XtQueryGeometry.m
+>># File: xts/Xt8/XtQueryGeometry/XtQueryGeometry.m
 >># 
 >># Description:
 >>#	Tests for XtQueryGeometry()

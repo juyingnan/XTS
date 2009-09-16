@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtAppNextEvent/XtAppNextEvent.m
+>># File: xts/Xt9/XtAppNextEvent/XtAppNextEvent.m
 >># 
 >># Description:
 >>#	Tests for XtAppNextEvent()

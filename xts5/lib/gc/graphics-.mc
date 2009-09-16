@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/graphics-.mc
+>># File: xts/lib/gc/graphics-.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

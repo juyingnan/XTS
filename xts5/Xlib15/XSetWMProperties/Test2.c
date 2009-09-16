@@ -26,7 +26,7 @@ SOFTWARE.
 * 
 * Project: VSW5
 * 
-* File: xts5/tset/Xlib15/XSetWMProperties/Test2.c
+* File: xts5/Xlib15/XSetWMProperties/Test2.c
 * 
 * Description:
 * 	Tests for XSetWMProperties()

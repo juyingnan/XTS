@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtGetSelectionRequest/XtGetSelectionRequest.m
+>># File: xts/Xt13/XtGetSelectionRequest/XtGetSelectionRequest.m
 >># 
 >># Description:
 >>#	Tests for XtGetSelectionRequest()

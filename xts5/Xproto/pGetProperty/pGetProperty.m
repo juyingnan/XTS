@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetProperty/pGetProperty.m
+>># File: xts5/Xproto/pGetProperty/pGetProperty.m
 >># 
 >># Description:
 >># 	Tests for GetProperty

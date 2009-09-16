@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtCreateApplicationContext/XtCreateApplicationContext.m
+>># File: xts/Xt4/XtCreateApplicationContext/XtCreateApplicationContext.m
 >># 
 >># Description:
 >>#	Tests for XtCreateApplicationContext()

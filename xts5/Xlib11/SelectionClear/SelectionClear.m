@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib11/SelectionClear/SelectionClear.m
+>># File: xts5/Xlib11/SelectionClear/SelectionClear.m
 >># 
 >># Description:
 >># 	Tests for SelectionClear()

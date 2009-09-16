@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pCreateGlyphCursor/pCreateGlyphCursor.m
+>># File: xts5/Xproto/pCreateGlyphCursor/pCreateGlyphCursor.m
 >># 
 >># Description:
 >># 	Tests for CreateGlyphCursor

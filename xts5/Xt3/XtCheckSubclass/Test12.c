@@ -27,7 +27,7 @@ SOFTWARE.
 * 
 * Project: VSW5
 * 
-* File: tset/Xt3/XtCheckSubclass/Test12.c
+* File: xts/Xt3/XtCheckSubclass/Test12.c
 * 
 * Description:
 *	Tests for assertions 1 and 2.  Since DEBUG must be defined for 

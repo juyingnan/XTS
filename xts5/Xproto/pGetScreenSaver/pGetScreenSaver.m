@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pGetScreenSaver/pGetScreenSaver.m
+>># File: xts5/Xproto/pGetScreenSaver/pGetScreenSaver.m
 >># 
 >># Description:
 >># 	Tests for GetScreenSaver

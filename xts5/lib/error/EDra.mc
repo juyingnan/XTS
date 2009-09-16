@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/error/EDra.mc
+>># File: xts/lib/error/EDra.mc
 >>#
 >># Description:
 >>#     BadDrawable error test

@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtAddInput/XtAddInput.m
+>># File: xts/XtC/XtAddInput/XtAddInput.m
 >># 
 >># Description:
 >>#	Tests for XtAddInput()

@@ -24,7 +24,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: tset/lib/gc/clip-mask.mc
+>># File: xts/lib/gc/clip-mask.mc
 >>#
 >># Description:
 >>#     Predefined Xlib test

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtIntToBoolean/XtCvtIntToBoolean.m
+>># File: xts/Xt11/XtCvtIntToBoolean/XtCvtIntToBoolean.m
 >># 
 >># Description:
 >>#	Tests for XtCvtIntToBoolean()

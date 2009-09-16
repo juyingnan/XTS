@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib7/XAllocNamedColor/XAllocNamedColor.m
+>># File: xts5/Xlib7/XAllocNamedColor/XAllocNamedColor.m
 >># 
 >># Description:
 >># 	Tests for XAllocNamedColor()

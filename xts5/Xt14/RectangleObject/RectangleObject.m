@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt14/hrectobj/hrectobj.m
+>># File: xts/Xt14/hrectobj/hrectobj.m
 >># 
 >># Description:
 >>#	Tests for Rectangle Objects

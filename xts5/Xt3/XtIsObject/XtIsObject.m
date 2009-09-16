@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt3/XtIsObject/XtIsObject.m
+>># File: xts/Xt3/XtIsObject/XtIsObject.m
 >># 
 >># Description:
 >>#	Tests for XtIsObject

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtIntToPixel/XtCvtIntToPixel.m
+>># File: xts/Xt11/XtCvtIntToPixel/XtCvtIntToPixel.m
 >># 
 >># Description:
 >>#	Tests for XtCvtIntToPixel()

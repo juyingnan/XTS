@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt12/XtParseTranslationTable/XtParseTranslationTable.m
+>># File: xts/Xt12/XtParseTranslationTable/XtParseTranslationTable.m
 >># 
 >># Description:
 >>#	Tests for XtParseTranslationTable()

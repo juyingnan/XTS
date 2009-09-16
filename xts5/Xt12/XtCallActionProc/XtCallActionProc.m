@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt12/XtCallActionProc/XtCallActionProc.m
+>># File: xts/Xt12/XtCallActionProc/XtCallActionProc.m
 >># 
 >># Description:
 >>#	Tests for XtCallActionProc()

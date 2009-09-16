@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtVaAppInitialize/XtVaAppInitialize.m
+>># File: xts/Xt4/XtVaAppInitialize/XtVaAppInitialize.m
 >># 
 >># Description:
 >>#	Tests for XtVaAppInitialize()

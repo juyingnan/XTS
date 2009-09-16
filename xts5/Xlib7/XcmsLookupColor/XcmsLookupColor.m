@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsLookupColor/XcmsLookupColor.m
+>># File: xts/Xlib7/XcmsLookupColor/XcmsLookupColor.m
 >># 
 >># Description:
 >>#	Tests for XcmsLookupColor()

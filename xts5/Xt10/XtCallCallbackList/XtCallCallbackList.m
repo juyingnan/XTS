@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt10/XtCallCallbackList/XtCallCallbackList.m
+>># File: xts/Xt10/XtCallCallbackList/XtCallCallbackList.m
 >># 
 >># Description:
 >>#	Tests for XtCallCallbackList()

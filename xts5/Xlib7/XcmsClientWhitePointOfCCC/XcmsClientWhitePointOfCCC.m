@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsClientWhitePointOfCCC/XcmsClientWhitePointOfCCC.m
+>># File: xts/Xlib7/XcmsClientWhitePointOfCCC/XcmsClientWhitePointOfCCC.m
 >># 
 >># Description:
 >>#	Tests for XcmsClientWhitePointOfCCC()

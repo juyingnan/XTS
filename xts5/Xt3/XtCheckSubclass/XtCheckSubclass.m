@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt3/XtCheckSubclass/XtCheckSubclass.m
+>># File: xts/Xt3/XtCheckSubclass/XtCheckSubclass.m
 >># 
 >># Description:
 >>#	Tests for XtIsSubclass()

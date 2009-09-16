@@ -23,7 +23,7 @@ SOFTWARE.
 * 
 * Project: VSW5
 * 
-* File: xts5/tset/Xopen/keysym/TestM.c
+* File: xts5/Xopen/keysym/TestM.c
 * 
 * Description:
 * 	Tests for keysym()

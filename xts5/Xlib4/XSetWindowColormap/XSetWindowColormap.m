@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib4/XSetWindowColormap/XSetWindowColormap.m
+>># File: xts5/Xlib4/XSetWindowColormap/XSetWindowColormap.m
 >># 
 >># Description:
 >># 	Tests for XSetWindowColormap()

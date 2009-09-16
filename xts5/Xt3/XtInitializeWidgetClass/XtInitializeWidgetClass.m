@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt3/XtInitializeWidgetClass/XtInitializeWidgetClass.m
+>># File: xts/Xt3/XtInitializeWidgetClass/XtInitializeWidgetClass.m
 >># 
 >># Description:
 >>#	Tests for XtInitializeWidgetClass()

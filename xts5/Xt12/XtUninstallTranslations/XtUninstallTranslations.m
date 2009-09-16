@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt12/XtUninstallTranslations/XtUninstallTranslations.m
+>># File: xts/Xt12/XtUninstallTranslations/XtUninstallTranslations.m
 >># 
 >># Description:
 >>#	Tests for XtUninstallTranslations()

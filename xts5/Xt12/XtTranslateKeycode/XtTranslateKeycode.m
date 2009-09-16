@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt12/XtTranslateKeycode/XtTranslateKeycode.m
+>># File: xts/Xt12/XtTranslateKeycode/XtTranslateKeycode.m
 >># 
 >># Description:
 >>#	Tests for XtTranslateKeycode()

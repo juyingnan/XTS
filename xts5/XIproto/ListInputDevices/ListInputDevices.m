@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/lstinptdvc/lstinptdvc.m
+>># File: xts5/XIproto/lstinptdvc/lstinptdvc.m
 >># 
 >># Description:
 >># 	Tests for ListInputDevices

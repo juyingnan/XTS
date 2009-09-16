@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pKillClient/pKillClient.m
+>># File: xts5/Xproto/pKillClient/pKillClient.m
 >># 
 >># Description:
 >># 	Tests for KillClient()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XI/grbdvcbttn/grbdvcbttn.m
+>># File: xts5/XI/grbdvcbttn/grbdvcbttn.m
 >># 
 >># Description:
 >># 	Tests for XGrabDeviceButton()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib6/XCreatePixmap/XCreatePixmap.m
+>># File: xts5/Xlib6/XCreatePixmap/XCreatePixmap.m
 >># 
 >># Description:
 >># 	Tests for XCreatePixmap()

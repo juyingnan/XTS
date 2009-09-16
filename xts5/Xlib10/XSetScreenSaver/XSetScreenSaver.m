@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib10/XSetScreenSaver/XSetScreenSaver.m
+>># File: xts5/Xlib10/XSetScreenSaver/XSetScreenSaver.m
 >># 
 >># Description:
 >># 	Tests for XSetScreenSaver()

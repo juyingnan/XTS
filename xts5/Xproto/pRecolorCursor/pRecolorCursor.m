@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pRecolorCursor/pRecolorCursor.m
+>># File: xts5/Xproto/pRecolorCursor/pRecolorCursor.m
 >># 
 >># Description:
 >># 	Tests for RecolorCursor

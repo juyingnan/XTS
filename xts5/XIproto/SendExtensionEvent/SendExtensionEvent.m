@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/sndextnsne/sndextnsne.m
+>># File: xts5/XIproto/sndextnsne/sndextnsne.m
 >># 
 >># Description:
 >># 	Tests for SendExtensionEvent

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XDefaultScreen/XDefaultScreen.m
+>># File: xts5/Xlib3/XDefaultScreen/XDefaultScreen.m
 >># 
 >># Description:
 >># 	Tests for XDefaultScreen()

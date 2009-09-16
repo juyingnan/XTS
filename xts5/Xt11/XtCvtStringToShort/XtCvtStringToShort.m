@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtStringToShort/XtCvtStringToShort.m
+>># File: xts/Xt11/XtCvtStringToShort/XtCvtStringToShort.m
 >># 
 >># Description:
 >>#	Tests for XtCvtStringToShort()

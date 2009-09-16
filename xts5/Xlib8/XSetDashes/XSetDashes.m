@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib8/XSetDashes/XSetDashes.m
+>># File: xts5/Xlib8/XSetDashes/XSetDashes.m
 >># 
 >># Description:
 >># 	Tests for XSetDashes()

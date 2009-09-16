@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XFree/XFree.m
+>># File: xts5/Xlib3/XFree/XFree.m
 >># 
 >># Description:
 >># 	Tests for XFree()

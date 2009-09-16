@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/XtC/XtWarningMsg/XtWarningMsg.m
+>># File: xts/XtC/XtWarningMsg/XtWarningMsg.m
 >># 
 >># Description:
 >>#	Tests for XtWarningMsg()

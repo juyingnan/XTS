@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib13/XGrabPointer/XGrabPointer.m
+>># File: xts5/Xlib13/XGrabPointer/XGrabPointer.m
 >># 
 >># Description:
 >># 	Tests for XGrabPointer()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsDisplayOfCCC/XcmsDisplayOfCCC.m
+>># File: xts/Xlib7/XcmsDisplayOfCCC/XcmsDisplayOfCCC.m
 >># 
 >># Description:
 >>#	Tests for XcmsDisplayOfCCC()

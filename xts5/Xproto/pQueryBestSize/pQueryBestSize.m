@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pQueryBestSize/pQueryBestSize.m
+>># File: xts5/Xproto/pQueryBestSize/pQueryBestSize.m
 >># 
 >># Description:
 >># 	Tests for QueryBestSize

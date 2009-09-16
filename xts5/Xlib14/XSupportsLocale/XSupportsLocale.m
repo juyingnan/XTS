@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib14/XSupportsLocale/XSupportsLocale.m
+>># File: xts5/Xlib14/XSupportsLocale/XSupportsLocale.m
 >># 
 >># Description:
 >># 	Tests for XSupportsLocale()

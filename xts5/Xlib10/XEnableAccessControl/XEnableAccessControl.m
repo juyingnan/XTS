@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib10/XEnableAccessControl/XEnableAccessControl.m
+>># File: xts5/Xlib10/XEnableAccessControl/XEnableAccessControl.m
 >># 
 >># Description:
 >># 	Tests for XEnableAccessControl()

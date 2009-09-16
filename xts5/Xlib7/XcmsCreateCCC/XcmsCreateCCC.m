@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib7/XcmsCreateCCC/XcmsCreateCCC.m
+>># File: xts/Xlib7/XcmsCreateCCC/XcmsCreateCCC.m
 >># 
 >># Description:
 >>#	Tests for XcmsCreateCCC()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtParent/XtParent.m
+>># File: xts/Xt4/XtParent/XtParent.m
 >># 
 >># Description:
 >>#	Tests for XtParent()

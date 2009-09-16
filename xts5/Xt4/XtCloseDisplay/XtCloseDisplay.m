@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt4/XtCloseDisplay/XtCloseDisplay.m
+>># File: xts/Xt4/XtCloseDisplay/XtCloseDisplay.m
 >># 
 >># Description:
 >>#	Tests for XtCloseDisplay()

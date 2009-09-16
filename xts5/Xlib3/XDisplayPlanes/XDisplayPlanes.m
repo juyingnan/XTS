@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib3/XDisplayPlanes/XDisplayPlanes.m
+>># File: xts5/Xlib3/XDisplayPlanes/XDisplayPlanes.m
 >># 
 >># Description:
 >># 	Tests for XDisplayPlanes()

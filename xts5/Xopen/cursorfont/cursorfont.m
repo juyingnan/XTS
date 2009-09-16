@@ -20,7 +20,7 @@ SOFTWARE.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XOPEN/cursorfont/cursorfont.m
+>># File: xts5/XOPEN/cursorfont/cursorfont.m
 >># 
 >># Description:
 >># 	Tests for cursorfont()

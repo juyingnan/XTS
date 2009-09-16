@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt8/XtMoveWidget/XtMoveWidget.m
+>># File: xts/Xt8/XtMoveWidget/XtMoveWidget.m
 >># 
 >># Description:
 >>#	Tests for XtMoveWidget()

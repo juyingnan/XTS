@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt5/XtSetMappedWhenManaged/XtSetMappedWhenManaged.m
+>># File: xts/Xt5/XtSetMappedWhenManaged/XtSetMappedWhenManaged.m
 >># 
 >># Description:
 >>#	Tests for XtSetMappedWhenManaged()

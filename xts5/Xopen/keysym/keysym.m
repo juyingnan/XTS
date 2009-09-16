@@ -20,7 +20,7 @@ SOFTWARE.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xopen/keysym/keysym.m
+>># File: xts5/Xopen/keysym/keysym.m
 >># 
 >># Description:
 >># 	Tests for keysym()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xlib14/XwcTextListToTextProperty/XwcTextListToTextProperty.m
+>># File: xts/Xlib14/XwcTextListToTextProperty/XwcTextListToTextProperty.m
 >># 
 >># Description:
 >>#	Tests for XwcTextListToTextProperty()

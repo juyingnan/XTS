@@ -20,7 +20,7 @@ SOFTWARE.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XOPEN/XCreateFontCursor/XCreateFontCursor.m
+>># File: xts5/XOPEN/XCreateFontCursor/XCreateFontCursor.m
 >># 
 >># Description:
 >># 	Tests for XCreateFontCursor()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XIproto/chngdvckym/chngdvckym.m
+>># File: xts5/XIproto/chngdvckym/chngdvckym.m
 >># 
 >># Description:
 >># 	Tests for ChangeDeviceKeyMapping

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt9/XtUngrabPointer/XtUngrabPointer.m
+>># File: xts/Xt9/XtUngrabPointer/XtUngrabPointer.m
 >># 
 >># Description:
 >>#	Tests for XtUngrabPointer()

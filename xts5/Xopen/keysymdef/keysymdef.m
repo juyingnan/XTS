@@ -20,7 +20,7 @@ SOFTWARE.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/XOPEN/keysymdef/keysymdef.m
+>># File: xts5/XOPEN/keysymdef/keysymdef.m
 >># 
 >># Description:
 >># 	Tests for keysymdef()

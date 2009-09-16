@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xproto/pCreatePixmap/pCreatePixmap.m
+>># File: xts5/Xproto/pCreatePixmap/pCreatePixmap.m
 >># 
 >># Description:
 >># 	Tests for CreatePixmap

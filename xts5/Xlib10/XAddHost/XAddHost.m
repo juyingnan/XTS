@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/tset/Xlib10/XAddHost/XAddHost.m
+>># File: xts5/Xlib10/XAddHost/XAddHost.m
 >># 
 >># Description:
 >># 	Tests for XAddHost()

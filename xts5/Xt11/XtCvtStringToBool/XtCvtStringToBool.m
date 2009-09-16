@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt11/XtCvtStringToBool/XtCvtStringToBool.m
+>># File: xts/Xt11/XtCvtStringToBool/XtCvtStringToBool.m
 >># 
 >># Description:
 >>#	Tests for XtCvtStringToBool()

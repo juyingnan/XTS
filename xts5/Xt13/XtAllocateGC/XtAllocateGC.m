@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: tset/Xt13/XtAllocateGC/XtAllocateGC.m
+>># File: xts/Xt13/XtAllocateGC/XtAllocateGC.m
 >># 
 >># Description:
 >>#	Tests for XtAllocateGC()
