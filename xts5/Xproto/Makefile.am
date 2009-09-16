@@ -1,4 +1,4 @@
-include ../../common.mk
+include ../common.mk
 AUTOMAKE_OPTIONS = subdir-objects
 
 AM_CFLAGS = $(XP_LCFLAGS) $(XP_CFLAGS)
