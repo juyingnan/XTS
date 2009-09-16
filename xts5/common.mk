@@ -9,7 +9,7 @@ SUFFIXES = .m _m.c .c
 MC = $(top_builddir)/xts5/src/bin/mc/mc
 AM_V_mc = $(AM_V_mc_$(V))
 AM_V_mc_ = $(AM_V_mc_$(AM_DEFAULT_VERBOSITY))
-AM_V_mc_0 = @echo MC $@;
+AM_V_mc_0 = @echo "  MC    " $@;
 .m.c:
 	$(AM_V_mc)TET_ROOT='$(TET_ROOT)' $(MC) -o $@ $<
 .m_m.c:
