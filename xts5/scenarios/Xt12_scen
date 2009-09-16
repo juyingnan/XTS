@@ -59,46 +59,46 @@
 #
 
 	"VSW5TESTSUITE CASE XtAppAddActions 4"
-	/tset/Xt12/XtAppAddActions/XtAppAddActions
+	/Xt12/XtAppAddActions/XtAppAddActions
 	"VSW5TESTSUITE CASE XtAppAddActionHook 6"
-	/tset/Xt12/XtAppAddActionHook/XtAppAddActionHook
+	/Xt12/XtAppAddActionHook/XtAppAddActionHook
 	"VSW5TESTSUITE CASE XtRemoveActionHook 1"
-	/tset/Xt12/XtRemoveActionHook/XtRemoveActionHook
+	/Xt12/XtRemoveActionHook/XtRemoveActionHook
 	"VSW5TESTSUITE CASE XtSetMultiClickTime 1"
-	/tset/Xt12/XtSetMultiClickTime/XtSetMultiClickTime
+	/Xt12/XtSetMultiClickTime/XtSetMultiClickTime
 	"VSW5TESTSUITE CASE XtGetMultiClickTime 2"
-	/tset/Xt12/XtGetMultiClickTime/XtGetMultiClickTime
+	/Xt12/XtGetMultiClickTime/XtGetMultiClickTime
 	"VSW5TESTSUITE CASE XtParseTranslationTable 1"
-	/tset/Xt12/XtParseTranslationTable/XtParseTranslationTable
+	/Xt12/XtParseTranslationTable/XtParseTranslationTable
 	"VSW5TESTSUITE CASE XtAugmentTranslations 4"
-	/tset/Xt12/XtAugmentTranslations/XtAugmentTranslations
+	/Xt12/XtAugmentTranslations/XtAugmentTranslations
 	"VSW5TESTSUITE CASE XtOverrideTranslations 4"
-	/tset/Xt12/XtOverrideTranslations/XtOverrideTranslations
+	/Xt12/XtOverrideTranslations/XtOverrideTranslations
 	"VSW5TESTSUITE CASE XtUninstallTranslations 1"
-	/tset/Xt12/XtUninstallTranslations/XtUninstallTranslations
+	/Xt12/XtUninstallTranslations/XtUninstallTranslations
 	"VSW5TESTSUITE CASE XtParseAcceleratorTable 1"
-	/tset/Xt12/XtParseAcceleratorTable/XtParseAcceleratorTable
+	/Xt12/XtParseAcceleratorTable/XtParseAcceleratorTable
 	"VSW5TESTSUITE CASE XtInstallAccelerators 2"
-	/tset/Xt12/XtInstallAccelerators/XtInstallAccelerators
+	/Xt12/XtInstallAccelerators/XtInstallAccelerators
 	"VSW5TESTSUITE CASE XtInstallAllAccelerators 1"
-	/tset/Xt12/XtInstallAllAccelerators/XtInstallAllAccelerators
+	/Xt12/XtInstallAllAccelerators/XtInstallAllAccelerators
 	"VSW5TESTSUITE CASE XtGetKeysymTable 4"
-	/tset/Xt12/XtGetKeysymTable/XtGetKeysymTable
+	/Xt12/XtGetKeysymTable/XtGetKeysymTable
 	"VSW5TESTSUITE CASE XtSetKeyTranslator 1"
-	/tset/Xt12/XtSetKeyTranslator/XtSetKeyTranslator
+	/Xt12/XtSetKeyTranslator/XtSetKeyTranslator
 	"VSW5TESTSUITE CASE XtTranslateKeycode 2"
-	/tset/Xt12/XtTranslateKeycode/XtTranslateKeycode
+	/Xt12/XtTranslateKeycode/XtTranslateKeycode
 	"VSW5TESTSUITE CASE XtRegisterCaseConverter 2"
-	/tset/Xt12/XtRegisterCaseConverter/XtRegisterCaseConverter
+	/Xt12/XtRegisterCaseConverter/XtRegisterCaseConverter
 	"VSW5TESTSUITE CASE XtConvertCase 2"
-	/tset/Xt12/XtConvertCase/XtConvertCase
+	/Xt12/XtConvertCase/XtConvertCase
 	"VSW5TESTSUITE CASE XtGetActionKeysym 8"
-	/tset/Xt12/XtGetActionKeysym/XtGetActionKeysym
+	/Xt12/XtGetActionKeysym/XtGetActionKeysym
 	"VSW5TESTSUITE CASE XtKeysymToKeycodeList 2"
-	/tset/Xt12/XtKeysymToKeycodeList/XtKeysymToKeycodeList
+	/Xt12/XtKeysymToKeycodeList/XtKeysymToKeycodeList
 	"VSW5TESTSUITE CASE XtCallActionProc 2"
-	/tset/Xt12/XtCallActionProc/XtCallActionProc
+	/Xt12/XtCallActionProc/XtCallActionProc
 	"VSW5TESTSUITE CASE XtRegisterGrabAction 11"
-	/tset/Xt12/XtRegisterGrabAction/XtRegisterGrabAction
+	/Xt12/XtRegisterGrabAction/XtRegisterGrabAction
 	"VSW5TESTSUITE CASE XtGetActionList 5"
-	/tset/Xt12/XtGetActionList/XtGetActionList
+	/Xt12/XtGetActionList/XtGetActionList

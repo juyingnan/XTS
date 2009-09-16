@@ -472,7 +472,7 @@ echo "	\"VSW5TESTSUITE CASE $TestCase 0\"" >>$ScenarioPath
 
 for Assertion in $Assertions
 do
-	echo "	/tset/$TestSection/$TestDirectory/Test{$Assertion}" >>$ScenarioPath
+	echo "	/$TestSection/$TestDirectory/Test{$Assertion}" >>$ScenarioPath
 done
  
 tcc -c -s $ScenarioPath xts5 "$TestCase"

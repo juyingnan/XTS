@@ -56,66 +56,66 @@
 #
 
 	"VSW5TESTSUITE CASE XAllowEvents 29"
-	/tset/Xlib13/XAllowEvents/XAllowEvents
+	/Xlib13/XAllowEvents/XAllowEvents
 	"VSW5TESTSUITE CASE XAutoRepeatOff 1"
-	/tset/Xlib13/XAutoRepeatOff/XAutoRepeatOff
+	/Xlib13/XAutoRepeatOff/XAutoRepeatOff
 	"VSW5TESTSUITE CASE XAutoRepeatOn 1"
-	/tset/Xlib13/XAutoRepeatOn/XAutoRepeatOn
+	/Xlib13/XAutoRepeatOn/XAutoRepeatOn
 	"VSW5TESTSUITE CASE XBell 3"
-	/tset/Xlib13/XBell/XBell
+	/Xlib13/XBell/XBell
 	"VSW5TESTSUITE CASE XChangeActivePointerGrab 5"
-	/tset/Xlib13/XChangeActivePointerGrab/XChangeActivePointerGrab
+	/Xlib13/XChangeActivePointerGrab/XChangeActivePointerGrab
 	"VSW5TESTSUITE CASE XChangeKeyboardControl 20"
-	/tset/Xlib13/XChangeKeyboardControl/XChangeKeyboardControl
+	/Xlib13/XChangeKeyboardControl/XChangeKeyboardControl
 	"VSW5TESTSUITE CASE XChangeKeyboardMapping 7"
-	/tset/Xlib13/XChangeKeyboardMapping/XChangeKeyboardMapping
+	/Xlib13/XChangeKeyboardMapping/XChangeKeyboardMapping
 	"VSW5TESTSUITE CASE XChangePointerControl 11"
-	/tset/Xlib13/XChangePointerControl/XChangePointerControl
+	/Xlib13/XChangePointerControl/XChangePointerControl
 	"VSW5TESTSUITE CASE XDeleteModifiermapEntry 1"
-	/tset/Xlib13/XDeleteModifiermapEntry/XDeleteModifiermapEntry
+	/Xlib13/XDeleteModifiermapEntry/XDeleteModifiermapEntry
 	"VSW5TESTSUITE CASE XDisplayKeycodes 3"
-	/tset/Xlib13/XDisplayKeycodes/XDisplayKeycodes
+	/Xlib13/XDisplayKeycodes/XDisplayKeycodes
 	"VSW5TESTSUITE CASE XFreeModifiermap 1"
-	/tset/Xlib13/XFreeModifiermap/XFreeModifiermap
+	/Xlib13/XFreeModifiermap/XFreeModifiermap
 	"VSW5TESTSUITE CASE XGrabButton 39"
-	/tset/Xlib13/XGrabButton/XGrabButton
+	/Xlib13/XGrabButton/XGrabButton
 	"VSW5TESTSUITE CASE XGrabKey 16"
-	/tset/Xlib13/XGrabKey/XGrabKey
+	/Xlib13/XGrabKey/XGrabKey
 	"VSW5TESTSUITE CASE XGrabKeyboard 25"
-	/tset/Xlib13/XGrabKeyboard/XGrabKeyboard
+	/Xlib13/XGrabKeyboard/XGrabKeyboard
 	"VSW5TESTSUITE CASE XGrabPointer 34"
-	/tset/Xlib13/XGrabPointer/XGrabPointer
+	/Xlib13/XGrabPointer/XGrabPointer
 	"VSW5TESTSUITE CASE XGetInputFocus 1"
-	/tset/Xlib13/XGetInputFocus/XGetInputFocus
+	/Xlib13/XGetInputFocus/XGetInputFocus
 	"VSW5TESTSUITE CASE XGetKeyboardControl 1"
-	/tset/Xlib13/XGetKeyboardControl/XGetKeyboardControl
+	/Xlib13/XGetKeyboardControl/XGetKeyboardControl
 	"VSW5TESTSUITE CASE XGetKeyboardMapping 6"
-	/tset/Xlib13/XGetKeyboardMapping/XGetKeyboardMapping
+	/Xlib13/XGetKeyboardMapping/XGetKeyboardMapping
 	"VSW5TESTSUITE CASE XGetModifierMapping 2"
-	/tset/Xlib13/XGetModifierMapping/XGetModifierMapping
+	/Xlib13/XGetModifierMapping/XGetModifierMapping
 	"VSW5TESTSUITE CASE XGetPointerControl 1"
-	/tset/Xlib13/XGetPointerControl/XGetPointerControl
+	/Xlib13/XGetPointerControl/XGetPointerControl
 	"VSW5TESTSUITE CASE XGetPointerMapping 3"
-	/tset/Xlib13/XGetPointerMapping/XGetPointerMapping
+	/Xlib13/XGetPointerMapping/XGetPointerMapping
 	"VSW5TESTSUITE CASE XInsertModifiermapEntry 1"
-	/tset/Xlib13/XInsertModifiermapEntry/XInsertModifiermapEntry
+	/Xlib13/XInsertModifiermapEntry/XInsertModifiermapEntry
 	"VSW5TESTSUITE CASE XNewModifiermap 1"
-	/tset/Xlib13/XNewModifiermap/XNewModifiermap
+	/Xlib13/XNewModifiermap/XNewModifiermap
 	"VSW5TESTSUITE CASE XQueryKeymap 1"
-	/tset/Xlib13/XQueryKeymap/XQueryKeymap
+	/Xlib13/XQueryKeymap/XQueryKeymap
 	"VSW5TESTSUITE CASE XSetInputFocus 13"
-	/tset/Xlib13/XSetInputFocus/XSetInputFocus
+	/Xlib13/XSetInputFocus/XSetInputFocus
 	"VSW5TESTSUITE CASE XSetModifierMapping 8"
-	/tset/Xlib13/XSetModifierMapping/XSetModifierMapping
+	/Xlib13/XSetModifierMapping/XSetModifierMapping
 	"VSW5TESTSUITE CASE XSetPointerMapping 7"
-	/tset/Xlib13/XSetPointerMapping/XSetPointerMapping
+	/Xlib13/XSetPointerMapping/XSetPointerMapping
 	"VSW5TESTSUITE CASE XUngrabButton 6"
-	/tset/Xlib13/XUngrabButton/XUngrabButton
+	/Xlib13/XUngrabButton/XUngrabButton
 	"VSW5TESTSUITE CASE XUngrabKey 7"
-	/tset/Xlib13/XUngrabKey/XUngrabKey
+	/Xlib13/XUngrabKey/XUngrabKey
 	"VSW5TESTSUITE CASE XUngrabKeyboard 3"
-	/tset/Xlib13/XUngrabKeyboard/XUngrabKeyboard
+	/Xlib13/XUngrabKeyboard/XUngrabKeyboard
 	"VSW5TESTSUITE CASE XUngrabPointer 3"
-	/tset/Xlib13/XUngrabPointer/XUngrabPointer
+	/Xlib13/XUngrabPointer/XUngrabPointer
 	"VSW5TESTSUITE CASE XWarpPointer 9"
-	/tset/Xlib13/XWarpPointer/XWarpPointer
+	/Xlib13/XWarpPointer/XWarpPointer

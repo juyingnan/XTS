@@ -56,32 +56,32 @@
 #
 
 	"VSW5TESTSUITE CASE XChangeProperty 13"
-	/tset/Xlib5/XChangeProperty/XChangeProperty
+	/Xlib5/XChangeProperty/XChangeProperty
 	"VSW5TESTSUITE CASE XConvertSelection 5"
-	/tset/Xlib5/XConvertSelection/XConvertSelection
+	/Xlib5/XConvertSelection/XConvertSelection
 	"VSW5TESTSUITE CASE XDeleteProperty 4"
-	/tset/Xlib5/XDeleteProperty/XDeleteProperty
+	/Xlib5/XDeleteProperty/XDeleteProperty
 	"VSW5TESTSUITE CASE XGetAtomName 2"
-	/tset/Xlib5/XGetAtomName/XGetAtomName
+	/Xlib5/XGetAtomName/XGetAtomName
 	"VSW5TESTSUITE CASE XGetGeometry 4"
-	/tset/Xlib5/XGetGeometry/XGetGeometry
+	/Xlib5/XGetGeometry/XGetGeometry
 	"VSW5TESTSUITE CASE XGetSelectionOwner 3"
-	/tset/Xlib5/XGetSelectionOwner/XGetSelectionOwner
+	/Xlib5/XGetSelectionOwner/XGetSelectionOwner
 	"VSW5TESTSUITE CASE XGetWindowAttributes 3"
-	/tset/Xlib5/XGetWindowAttributes/XGetWindowAttributes
+	/Xlib5/XGetWindowAttributes/XGetWindowAttributes
 	"VSW5TESTSUITE CASE XGetWindowProperty 10"
-	/tset/Xlib5/XGetWindowProperty/XGetWindowProperty
+	/Xlib5/XGetWindowProperty/XGetWindowProperty
 	"VSW5TESTSUITE CASE XInternAtom 8"
-	/tset/Xlib5/XInternAtom/XInternAtom
+	/Xlib5/XInternAtom/XInternAtom
 	"VSW5TESTSUITE CASE XListProperties 3"
-	/tset/Xlib5/XListProperties/XListProperties
+	/Xlib5/XListProperties/XListProperties
 	"VSW5TESTSUITE CASE XQueryPointer 6"
-	/tset/Xlib5/XQueryPointer/XQueryPointer
+	/Xlib5/XQueryPointer/XQueryPointer
 	"VSW5TESTSUITE CASE XQueryTree 3"
-	/tset/Xlib5/XQueryTree/XQueryTree
+	/Xlib5/XQueryTree/XQueryTree
 	"VSW5TESTSUITE CASE XRotateWindowProperties 6"
-	/tset/Xlib5/XRotateWindowProperties/XRotateWindowProperties
+	/Xlib5/XRotateWindowProperties/XRotateWindowProperties
 	"VSW5TESTSUITE CASE XSetSelectionOwner 9"
-	/tset/Xlib5/XSetSelectionOwner/XSetSelectionOwner
+	/Xlib5/XSetSelectionOwner/XSetSelectionOwner
 	"VSW5TESTSUITE CASE XTranslateCoordinates 5"
-	/tset/Xlib5/XTranslateCoordinates/XTranslateCoordinates
+	/Xlib5/XTranslateCoordinates/XTranslateCoordinates

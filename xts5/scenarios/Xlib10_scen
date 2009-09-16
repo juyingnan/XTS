@@ -56,48 +56,48 @@
 #
 
 	"VSW5TESTSUITE CASE XActivateScreenSaver 2"
-	/tset/Xlib10/XActivateScreenSaver/XActivateScreenSaver
+	/Xlib10/XActivateScreenSaver/XActivateScreenSaver
 	"VSW5TESTSUITE CASE XAddHost 3"
-	/tset/Xlib10/XAddHost/XAddHost
+	/Xlib10/XAddHost/XAddHost
 	"VSW5TESTSUITE CASE XAddHosts 3"
-	/tset/Xlib10/XAddHosts/XAddHosts
+	/Xlib10/XAddHosts/XAddHosts
 	"VSW5TESTSUITE CASE XAddToSaveSet 8"
-	/tset/Xlib10/XAddToSaveSet/XAddToSaveSet
+	/Xlib10/XAddToSaveSet/XAddToSaveSet
 	"VSW5TESTSUITE CASE XChangeSaveSet 5"
-	/tset/Xlib10/XChangeSaveSet/XChangeSaveSet
+	/Xlib10/XChangeSaveSet/XChangeSaveSet
 	"VSW5TESTSUITE CASE XDisableAccessControl 2"
-	/tset/Xlib10/XDisableAccessControl/XDisableAccessControl
+	/Xlib10/XDisableAccessControl/XDisableAccessControl
 	"VSW5TESTSUITE CASE XEnableAccessControl 2"
-	/tset/Xlib10/XEnableAccessControl/XEnableAccessControl
+	/Xlib10/XEnableAccessControl/XEnableAccessControl
 	"VSW5TESTSUITE CASE XForceScreenSaver 3"
-	/tset/Xlib10/XForceScreenSaver/XForceScreenSaver
+	/Xlib10/XForceScreenSaver/XForceScreenSaver
 	"VSW5TESTSUITE CASE XGrabServer 1"
-	/tset/Xlib10/XGrabServer/XGrabServer
+	/Xlib10/XGrabServer/XGrabServer
 	"VSW5TESTSUITE CASE XGetScreenSaver 1"
-	/tset/Xlib10/XGetScreenSaver/XGetScreenSaver
+	/Xlib10/XGetScreenSaver/XGetScreenSaver
 	"VSW5TESTSUITE CASE XInstallColormap 6"
-	/tset/Xlib10/XInstallColormap/XInstallColormap
+	/Xlib10/XInstallColormap/XInstallColormap
 	"VSW5TESTSUITE CASE XKillClient 4"
-	/tset/Xlib10/XKillClient/XKillClient
+	/Xlib10/XKillClient/XKillClient
 	"VSW5TESTSUITE CASE XListHosts 2"
-	/tset/Xlib10/XListHosts/XListHosts
+	/Xlib10/XListHosts/XListHosts
 	"VSW5TESTSUITE CASE XListInstalledColormaps 2"
-	/tset/Xlib10/XListInstalledColormaps/XListInstalledColormaps
+	/Xlib10/XListInstalledColormaps/XListInstalledColormaps
 	"VSW5TESTSUITE CASE XRemoveFromSaveSet 3"
-	/tset/Xlib10/XRemoveFromSaveSet/XRemoveFromSaveSet
+	/Xlib10/XRemoveFromSaveSet/XRemoveFromSaveSet
 	"VSW5TESTSUITE CASE XRemoveHost 3"
-	/tset/Xlib10/XRemoveHost/XRemoveHost
+	/Xlib10/XRemoveHost/XRemoveHost
 	"VSW5TESTSUITE CASE XRemoveHosts 3"
-	/tset/Xlib10/XRemoveHosts/XRemoveHosts
+	/Xlib10/XRemoveHosts/XRemoveHosts
 	"VSW5TESTSUITE CASE XReparentWindow 13"
-	/tset/Xlib10/XReparentWindow/XReparentWindow
+	/Xlib10/XReparentWindow/XReparentWindow
 	"VSW5TESTSUITE CASE XResetScreenSaver 2"
-	/tset/Xlib10/XResetScreenSaver/XResetScreenSaver
+	/Xlib10/XResetScreenSaver/XResetScreenSaver
 	"VSW5TESTSUITE CASE XSetAccessControl 4"
-	/tset/Xlib10/XSetAccessControl/XSetAccessControl
+	/Xlib10/XSetAccessControl/XSetAccessControl
 	"VSW5TESTSUITE CASE XSetScreenSaver 17"
-	/tset/Xlib10/XSetScreenSaver/XSetScreenSaver
+	/Xlib10/XSetScreenSaver/XSetScreenSaver
 	"VSW5TESTSUITE CASE XUngrabServer 1"
-	/tset/Xlib10/XUngrabServer/XUngrabServer
+	/Xlib10/XUngrabServer/XUngrabServer
 	"VSW5TESTSUITE CASE XUninstallColormap 5"
-	/tset/Xlib10/XUninstallColormap/XUninstallColormap
+	/Xlib10/XUninstallColormap/XUninstallColormap

@@ -59,68 +59,68 @@
 #
 
 	"VSW5TESTSUITE CASE XtAppAddInput 5"
-	/tset/Xt9/XtAppAddInput/XtAppAddInput
+	/Xt9/XtAppAddInput/XtAppAddInput
 	"VSW5TESTSUITE CASE XtRemoveInput 1"
-	/tset/Xt9/XtRemoveInput/XtRemoveInput
+	/Xt9/XtRemoveInput/XtRemoveInput
 	"VSW5TESTSUITE CASE XtAppAddTimeOut 3"
-	/tset/Xt9/XtAppAddTimeOut/XtAppAddTimeOut
+	/Xt9/XtAppAddTimeOut/XtAppAddTimeOut
 	"VSW5TESTSUITE CASE XtRemoveTimeOut 1"
-	/tset/Xt9/XtRemoveTimeOut/XtRemoveTimeOut
+	/Xt9/XtRemoveTimeOut/XtRemoveTimeOut
 	"VSW5TESTSUITE CASE XtAddGrab 5"
-	/tset/Xt9/XtAddGrab/XtAddGrab
+	/Xt9/XtAddGrab/XtAddGrab
 	"VSW5TESTSUITE CASE XtRemoveGrab 2"
-	/tset/Xt9/XtRemoveGrab/XtRemoveGrab
+	/Xt9/XtRemoveGrab/XtRemoveGrab
 	"VSW5TESTSUITE CASE XtGrabKey 5"
-	/tset/Xt9/XtGrabKey/XtGrabKey
+	/Xt9/XtGrabKey/XtGrabKey
 	"VSW5TESTSUITE CASE XtUngrabKey 2"
-	/tset/Xt9/XtUngrabKey/XtUngrabKey
+	/Xt9/XtUngrabKey/XtUngrabKey
 	"VSW5TESTSUITE CASE XtGrabKeyboard 2"
-	/tset/Xt9/XtGrabKeyboard/XtGrabKeyboard
+	/Xt9/XtGrabKeyboard/XtGrabKeyboard
 	"VSW5TESTSUITE CASE XtUngrabKeyboard 1"
-	/tset/Xt9/XtUngrabKeyboard/XtUngrabKeyboard
+	/Xt9/XtUngrabKeyboard/XtUngrabKeyboard
 	"VSW5TESTSUITE CASE XtGrabButton 5"
-	/tset/Xt9/XtGrabButton/XtGrabButton
+	/Xt9/XtGrabButton/XtGrabButton
 	"VSW5TESTSUITE CASE XtUngrabButton 2"
-	/tset/Xt9/XtGrabButton/XtGrabButton
+	/Xt9/XtGrabButton/XtGrabButton
 	"VSW5TESTSUITE CASE XtGrabPointer 2"
-	/tset/Xt9/XtGrabPointer/XtGrabPointer
+	/Xt9/XtGrabPointer/XtGrabPointer
 	"VSW5TESTSUITE CASE XtUngrabPointer 1"
-	/tset/Xt9/XtUngrabPointer/XtUngrabPointer
+	/Xt9/XtUngrabPointer/XtUngrabPointer
 	"VSW5TESTSUITE CASE XtSetKeyboardFocus 17"
-	/tset/Xt9/XtSetKeyboardFocus/XtSetKeyboardFocus
+	/Xt9/XtSetKeyboardFocus/XtSetKeyboardFocus
 	"VSW5TESTSUITE CASE XtCallAcceptFocus 2"
-	/tset/Xt9/XtCallAcceptFocus/XtCallAcceptFocus
+	/Xt9/XtCallAcceptFocus/XtCallAcceptFocus
 	"VSW5TESTSUITE CASE XtAppPending 5"
-	/tset/Xt9/XtAppPending/XtAppPending
+	/Xt9/XtAppPending/XtAppPending
 	"VSW5TESTSUITE CASE XtAppPeekEvent 3"
-	/tset/Xt9/XtAppPeekEvent/XtAppPeekEvent
+	/Xt9/XtAppPeekEvent/XtAppPeekEvent
 	"VSW5TESTSUITE CASE XtAppNextEvent 4"
-	/tset/Xt9/XtAppNextEvent/XtAppNextEvent
+	/Xt9/XtAppNextEvent/XtAppNextEvent
 	"VSW5TESTSUITE CASE XtAppProcessEvent 11"
-	/tset/Xt9/XtAppProcessEvent/XtAppProcessEvent
+	/Xt9/XtAppProcessEvent/XtAppProcessEvent
 	"VSW5TESTSUITE CASE XtDispatchEvent 11"
-	/tset/Xt9/XtDispatchEvent/XtDispatchEvent
+	/Xt9/XtDispatchEvent/XtDispatchEvent
 	"VSW5TESTSUITE CASE XtAppMainLoop 28"
-	/tset/Xt9/XtAppMainLoop/XtAppMainLoop
+	/Xt9/XtAppMainLoop/XtAppMainLoop
 	"VSW5TESTSUITE CASE XtIsSensitive 4"
-	/tset/Xt9/XtIsSensitive/XtIsSensitive
+	/Xt9/XtIsSensitive/XtIsSensitive
 	"VSW5TESTSUITE CASE XtSetSensitive 6"
-	/tset/Xt9/XtSetSensitive/XtSetSensitive
+	/Xt9/XtSetSensitive/XtSetSensitive
 	"VSW5TESTSUITE CASE XtAppAddWorkProc 5"
-	/tset/Xt9/XtAppAddWorkProc/XtAppAddWorkProc
+	/Xt9/XtAppAddWorkProc/XtAppAddWorkProc
 	"VSW5TESTSUITE CASE XtRemoveWorkProc 2"
-	/tset/Xt9/XtRemoveWorkProc/XtRemoveWorkProc
+	/Xt9/XtRemoveWorkProc/XtRemoveWorkProc
 	"VSW5TESTSUITE CASE XtAddEventHandler 8"
-	/tset/Xt9/XtAddEventHandler/XtAddEventHandler
+	/Xt9/XtAddEventHandler/XtAddEventHandler
 	"VSW5TESTSUITE CASE XtRemoveEventHandler 7"
-	/tset/Xt9/XtRemoveEventHandler/XtRemoveEventHandler
+	/Xt9/XtRemoveEventHandler/XtRemoveEventHandler
 	"VSW5TESTSUITE CASE XtInsertEventHandler 10"
-	/tset/Xt9/XtInsertEventHandler/XtInsertEventHandler
+	/Xt9/XtInsertEventHandler/XtInsertEventHandler
 	"VSW5TESTSUITE CASE XtAddRawEventHandler 9"
-	/tset/Xt9/XtAddRawEventHandler/XtAddRawEventHandler
+	/Xt9/XtAddRawEventHandler/XtAddRawEventHandler
 	"VSW5TESTSUITE CASE XtRemoveRawEventHandler 7"
-	/tset/Xt9/XtRemoveRawEventHandler/XtRemoveRawEventHandler
+	/Xt9/XtRemoveRawEventHandler/XtRemoveRawEventHandler
 	"VSW5TESTSUITE CASE XtInsertRawEventHandler 10"
-	/tset/Xt9/XtInsertRawEventHandler/XtInsertRawEventHandler
+	/Xt9/XtInsertRawEventHandler/XtInsertRawEventHandler
 	"VSW5TESTSUITE CASE XtBuildEventMask 3"
-	/tset/Xt9/XtBuildEventMask/XtBuildEventMask
+	/Xt9/XtBuildEventMask/XtBuildEventMask

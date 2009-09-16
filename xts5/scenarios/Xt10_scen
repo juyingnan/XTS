@@ -59,18 +59,18 @@
 #
 
 	"VSW5TESTSUITE CASE XtAddCallback 3"
-	/tset/Xt10/XtAddCallback/XtAddCallback
+	/Xt10/XtAddCallback/XtAddCallback
 	"VSW5TESTSUITE CASE XtAddCallbacks 3"
-	/tset/Xt10/XtAddCallbacks/XtAddCallbacks
+	/Xt10/XtAddCallbacks/XtAddCallbacks
 	"VSW5TESTSUITE CASE XtRemoveCallback 2"
-	/tset/Xt10/XtRemoveCallback/XtRemoveCallback
+	/Xt10/XtRemoveCallback/XtRemoveCallback
 	"VSW5TESTSUITE CASE XtRemoveCallbacks 1"
-	/tset/Xt10/XtRemoveCallbacks/XtRemoveCallbacks
+	/Xt10/XtRemoveCallbacks/XtRemoveCallbacks
 	"VSW5TESTSUITE CASE XtRemoveAllCallbacks 2"
-	/tset/Xt10/XtRemoveAllCallbacks/XtRemoveAllCallbacks
+	/Xt10/XtRemoveAllCallbacks/XtRemoveAllCallbacks
 	"VSW5TESTSUITE CASE XtCallCallbacks 1"
-	/tset/Xt10/XtCallCallbacks/XtCallCallbacks
+	/Xt10/XtCallCallbacks/XtCallCallbacks
 	"VSW5TESTSUITE CASE XtCallCallbackList 2"
-	/tset/Xt10/XtCallCallbackList/XtCallCallbackList
+	/Xt10/XtCallCallbackList/XtCallCallbackList
 	"VSW5TESTSUITE CASE XtHasCallbacks 3"
-	/tset/Xt10/XtHasCallbacks/XtHasCallbacks
+	/Xt10/XtHasCallbacks/XtHasCallbacks

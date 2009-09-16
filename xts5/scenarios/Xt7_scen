@@ -59,24 +59,24 @@
 #
 
 	"VSW5TESTSUITE CASE XtCreatePopupShell 6"
-	/tset/Xt7/XtCreatePopupShell/XtCreatePopupShell
+	/Xt7/XtCreatePopupShell/XtCreatePopupShell
 	"VSW5TESTSUITE CASE XtVaCreatePopupShell 6"
-	/tset/Xt7/XtVaCreatePopupShell/XtVaCreatePopupShell
+	/Xt7/XtVaCreatePopupShell/XtVaCreatePopupShell
 	"VSW5TESTSUITE CASE XtPopup 11"
-	/tset/Xt7/XtPopup/XtPopup
+	/Xt7/XtPopup/XtPopup
 	"VSW5TESTSUITE CASE XtPopdown 8"
-	/tset/Xt7/XtPopdown/XtPopdown
+	/Xt7/XtPopdown/XtPopdown
 	"VSW5TESTSUITE CASE XtPopupSpringLoaded 9"
-	/tset/Xt7/XtPopupSpringLoaded/XtPopupSpringLoaded
+	/Xt7/XtPopupSpringLoaded/XtPopupSpringLoaded
 	"VSW5TESTSUITE CASE XtCallbackNone 8"
-	/tset/Xt7/XtCallbackNone/XtCallbackNone
+	/Xt7/XtCallbackNone/XtCallbackNone
 	"VSW5TESTSUITE CASE XtCallbackNonexclusive 8"
-	/tset/Xt7/XtCallbackNonexclusive/XtCallbackNonexclusive
+	/Xt7/XtCallbackNonexclusive/XtCallbackNonexclusive
 	"VSW5TESTSUITE CASE XtCallbackExclusive 8"
-	/tset/Xt7/XtCallbackExclusive/XtCallbackExclusive
+	/Xt7/XtCallbackExclusive/XtCallbackExclusive
 	"VSW5TESTSUITE CASE XtMenuPopup 22"
-	/tset/Xt7/XtMenuPopup/XtMenuPopup
+	/Xt7/XtMenuPopup/XtMenuPopup
 	"VSW5TESTSUITE CASE XtCallbackPopdown 9"
-	/tset/Xt7/XtCallbackPopdown/XtCallbackPopdown
+	/Xt7/XtCallbackPopdown/XtCallbackPopdown
 	"VSW5TESTSUITE CASE XtMenuPopdown 11"
-	/tset/Xt7/XtMenuPopdown/XtMenuPopdown
+	/Xt7/XtMenuPopdown/XtMenuPopdown

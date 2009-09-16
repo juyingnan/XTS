@@ -1,7 +1,0 @@
-*.c
-*.err
-*.log
-*.log.tmp
-.dirstamp
-tet_lock
-tet_xres

@@ -62,62 +62,62 @@
 #
 
 	"VSW5TESTSUITE CASE XrmDestroyDatabase 3"
-	/tset/Xlib16/XrmDestroyDatabase/XrmDestroyDatabase
+	/Xlib16/XrmDestroyDatabase/XrmDestroyDatabase
 	"VSW5TESTSUITE CASE XrmGetFileDatabase 3"
-	/tset/Xlib16/XrmGetFileDatabase/XrmGetFileDatabase
+	/Xlib16/XrmGetFileDatabase/XrmGetFileDatabase
 	"VSW5TESTSUITE CASE XrmGetResource 2"
-	/tset/Xlib16/XrmGetResource/XrmGetResource
+	/Xlib16/XrmGetResource/XrmGetResource
 	"VSW5TESTSUITE CASE XrmGetStringDatabase 2"
-	/tset/Xlib16/XrmGetStringDatabase/XrmGetStringDatabase
+	/Xlib16/XrmGetStringDatabase/XrmGetStringDatabase
 	"VSW5TESTSUITE CASE XrmInitialize 1"
-	/tset/Xlib16/XrmInitialize/XrmInitialize
+	/Xlib16/XrmInitialize/XrmInitialize
 	"VSW5TESTSUITE CASE XrmMergeDatabases 6"
-	/tset/Xlib16/XrmMergeDatabases/XrmMergeDatabases
+	/Xlib16/XrmMergeDatabases/XrmMergeDatabases
 	"VSW5TESTSUITE CASE XrmParseCommand 12"
-	/tset/Xlib16/XrmParseCommand/XrmParseCommand
+	/Xlib16/XrmParseCommand/XrmParseCommand
 	"VSW5TESTSUITE CASE XrmPutFileDatabase 3"
-	/tset/Xlib16/XrmPutFileDatabase/XrmPutFileDatabase
+	/Xlib16/XrmPutFileDatabase/XrmPutFileDatabase
 	"VSW5TESTSUITE CASE XrmPutLineResource 9"
-	/tset/Xlib16/XrmPutLineResource/XrmPutLineResource
+	/Xlib16/XrmPutLineResource/XrmPutLineResource
 	"VSW5TESTSUITE CASE XrmPutResource 4"
-	/tset/Xlib16/XrmPutResource/XrmPutResource
+	/Xlib16/XrmPutResource/XrmPutResource
 	"VSW5TESTSUITE CASE XrmPutStringResource 4"
-	/tset/Xlib16/XrmPutStringResource/XrmPutStringResource
+	/Xlib16/XrmPutStringResource/XrmPutStringResource
 	"VSW5TESTSUITE CASE XrmQGetResource 2"
-	/tset/Xlib16/XrmQGetResource/XrmQGetResource
+	/Xlib16/XrmQGetResource/XrmQGetResource
 	"VSW5TESTSUITE CASE XrmQGetSearchList 4"
-	/tset/Xlib16/XrmQGetSearchList/XrmQGetSearchList
+	/Xlib16/XrmQGetSearchList/XrmQGetSearchList
 	"VSW5TESTSUITE CASE XrmQGetSearchResource 2"
-	/tset/Xlib16/XrmQGetSearchResource/XrmQGetSearchResource
+	/Xlib16/XrmQGetSearchResource/XrmQGetSearchResource
 	"VSW5TESTSUITE CASE XrmQPutResource 3"
-	/tset/Xlib16/XrmQPutResource/XrmQPutResource
+	/Xlib16/XrmQPutResource/XrmQPutResource
 	"VSW5TESTSUITE CASE XrmQPutStringResource 3"
-	/tset/Xlib16/XrmQPutStringResource/XrmQPutStringResource
+	/Xlib16/XrmQPutStringResource/XrmQPutStringResource
 	"VSW5TESTSUITE CASE XrmQuarkToString 3"
-	/tset/Xlib16/XrmQuarkToString/XrmQuarkToString
+	/Xlib16/XrmQuarkToString/XrmQuarkToString
 	"VSW5TESTSUITE CASE XrmStringToBindingQuarkList 6"
-	/tset/Xlib16/XrmStringToBindingQuarkList/XrmStringToBindingQuarkList
+	/Xlib16/XrmStringToBindingQuarkList/XrmStringToBindingQuarkList
 	"VSW5TESTSUITE CASE XrmStringToQuark 3"
-	/tset/Xlib16/XrmStringToQuark/XrmStringToQuark
+	/Xlib16/XrmStringToQuark/XrmStringToQuark
 	"VSW5TESTSUITE CASE XrmStringToQuarkList 3"
-	/tset/Xlib16/XrmStringToQuarkList/XrmStringToQuarkList
+	/Xlib16/XrmStringToQuarkList/XrmStringToQuarkList
 	"VSW5TESTSUITE CASE XrmUniqueQuark 1"
-	/tset/Xlib16/XrmUniqueQuark/XrmUniqueQuark
+	/Xlib16/XrmUniqueQuark/XrmUniqueQuark
 	"VSW5TESTSUITE CASE XResourceManagerString 2"
-	/tset/Xlib16/XResourceManagerString/XResourceManagerString
+	/Xlib16/XResourceManagerString/XResourceManagerString
 	"VSW5TESTSUITE CASE XrmCombineDatabase 6"
-	/tset/Xlib16/XrmCombineDatabase/XrmCombineDatabase
+	/Xlib16/XrmCombineDatabase/XrmCombineDatabase
 	"VSW5TESTSUITE CASE XrmCombineFileDatabase 6"
-	/tset/Xlib16/XrmCombineFileDatabase/XrmCombineFileDatabase
+	/Xlib16/XrmCombineFileDatabase/XrmCombineFileDatabase
 	"VSW5TESTSUITE CASE XrmEnumerateDatabase 3"
-	/tset/Xlib16/XrmEnumerateDatabase/XrmEnumerateDatabase
+	/Xlib16/XrmEnumerateDatabase/XrmEnumerateDatabase
 	"VSW5TESTSUITE CASE XrmGetDatabase 2"
-	/tset/Xlib16/XrmGetDatabase/XrmGetDatabase
+	/Xlib16/XrmGetDatabase/XrmGetDatabase
 	"VSW5TESTSUITE CASE XrmLocaleOfDatabase 1"
-	/tset/Xlib16/XrmLocaleOfDatabase/XrmLocaleOfDatabase
+	/Xlib16/XrmLocaleOfDatabase/XrmLocaleOfDatabase
 	"VSW5TESTSUITE CASE XrmPermStringToQuark 2"
-	/tset/Xlib16/XrmPermStringToQuark/XrmPermStringToQuark
+	/Xlib16/XrmPermStringToQuark/XrmPermStringToQuark
 	"VSW5TESTSUITE CASE XrmSetDatabase 2"
-	/tset/Xlib16/XrmSetDatabase/XrmSetDatabase
+	/Xlib16/XrmSetDatabase/XrmSetDatabase
 	"VSW5TESTSUITE CASE XScreenResourceString 2"
-	/tset/Xlib16/XScreenResourceString/XScreenResourceString
+	/Xlib16/XScreenResourceString/XScreenResourceString

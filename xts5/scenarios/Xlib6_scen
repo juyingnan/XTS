@@ -56,18 +56,18 @@
 #
 
 	"VSW5TESTSUITE CASE XCreatePixmap 6"
-	/tset/Xlib6/XCreatePixmap/XCreatePixmap
+	/Xlib6/XCreatePixmap/XCreatePixmap
 	"VSW5TESTSUITE CASE XCreateFontCursor 3"
-	/tset/Xlib6/XCreateFontCursor/XCreateFontCursor
+	/Xlib6/XCreateFontCursor/XCreateFontCursor
 	"VSW5TESTSUITE CASE XCreateGlyphCursor 17"
-	/tset/Xlib6/XCreateGlyphCursor/XCreateGlyphCursor
+	/Xlib6/XCreateGlyphCursor/XCreateGlyphCursor
 	"VSW5TESTSUITE CASE XCreatePixmapCursor 13"
-	/tset/Xlib6/XCreatePixmapCursor/XCreatePixmapCursor
+	/Xlib6/XCreatePixmapCursor/XCreatePixmapCursor
 	"VSW5TESTSUITE CASE XFreeCursor 3"
-	/tset/Xlib6/XFreeCursor/XFreeCursor
+	/Xlib6/XFreeCursor/XFreeCursor
 	"VSW5TESTSUITE CASE XFreePixmap 3"
-	/tset/Xlib6/XFreePixmap/XFreePixmap
+	/Xlib6/XFreePixmap/XFreePixmap
 	"VSW5TESTSUITE CASE XQueryBestCursor 2"
-	/tset/Xlib6/XQueryBestCursor/XQueryBestCursor
+	/Xlib6/XQueryBestCursor/XQueryBestCursor
 	"VSW5TESTSUITE CASE XRecolorCursor 3"
-	/tset/Xlib6/XRecolorCursor/XRecolorCursor
+	/Xlib6/XRecolorCursor/XRecolorCursor

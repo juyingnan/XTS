@@ -62,24 +62,24 @@
 #
 
 	"VSW5TESTSUITE CASE XShapeOffsetShape 1"
-	/tset/SHAPE/XShapeOffsetShape/XShapeOffsetShape
+	/SHAPE/XShapeOffsetShape/XShapeOffsetShape
 	"VSW5TESTSUITE CASE XShapeCombineMask 1"
-	/tset/SHAPE/XShapeCombineMask/XShapeCombineMask
+	/SHAPE/XShapeCombineMask/XShapeCombineMask
 	"VSW5TESTSUITE CASE XShapeCombineRectangles 1"
-	/tset/SHAPE/XShapeCombineRectangles/XShapeCombineRectangles
+	/SHAPE/XShapeCombineRectangles/XShapeCombineRectangles
 	"VSW5TESTSUITE CASE XShapeCombineRegion 1"
-	/tset/SHAPE/XShapeCombineRegion/XShapeCombineRegion
+	/SHAPE/XShapeCombineRegion/XShapeCombineRegion
 	"VSW5TESTSUITE CASE XShapeCombineShape 1"
-	/tset/SHAPE/XShapeCombineShape/XShapeCombineShape
+	/SHAPE/XShapeCombineShape/XShapeCombineShape
 	"VSW5TESTSUITE CASE XShapeGetRectangles 1"
-	/tset/SHAPE/XShapeGetRectangles/XShapeGetRectangles
+	/SHAPE/XShapeGetRectangles/XShapeGetRectangles
 	"VSW5TESTSUITE CASE XShapeInputSelected 1"
-	/tset/SHAPE/XShapeInputSelected/XShapeInputSelected
+	/SHAPE/XShapeInputSelected/XShapeInputSelected
 	"VSW5TESTSUITE CASE XShapeQueryExtension 1"
-	/tset/SHAPE/XShapeQueryExtension/XShapeQueryExtension
+	/SHAPE/XShapeQueryExtension/XShapeQueryExtension
 	"VSW5TESTSUITE CASE XShapeQueryExtents 1"
-	/tset/SHAPE/XShapeQueryExtents/XShapeQueryExtents
+	/SHAPE/XShapeQueryExtents/XShapeQueryExtents
 	"VSW5TESTSUITE CASE XShapeQueryVersion 1"
-	/tset/SHAPE/XShapeQueryVersion/XShapeQueryVersion
+	/SHAPE/XShapeQueryVersion/XShapeQueryVersion
 	"VSW5TESTSUITE CASE XShapeSelectInput 1"
-	/tset/SHAPE/XShapeSelectInput/XShapeSelectInput
+	/SHAPE/XShapeSelectInput/XShapeSelectInput

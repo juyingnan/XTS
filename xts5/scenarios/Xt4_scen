@@ -62,68 +62,68 @@
 #
 
 	"VSW5TESTSUITE CASE XtToolkitInitialize 1"
-	/tset/Xt4/XtToolkitInitialize/XtToolkitInitialize
+	/Xt4/XtToolkitInitialize/XtToolkitInitialize
 	"VSW5TESTSUITE CASE XtCreateApplicationContext 1"
-	/tset/Xt4/XtCreateApplicationContext/XtCreateApplicationContext
+	/Xt4/XtCreateApplicationContext/XtCreateApplicationContext
 	"VSW5TESTSUITE CASE XtDestoryApplicationContext 2"
-	/tset/Xt4/XtDestroyApplicationContext/XtDestroyApplicationContext
+	/Xt4/XtDestroyApplicationContext/XtDestroyApplicationContext
 	"VSW5TESTSUITE CASE XtWidgetToApplicationContext 1"
-	/tset/Xt4/XtWidgetToApplicationContext/XtWidgetToApplicationContext
+	/Xt4/XtWidgetToApplicationContext/XtWidgetToApplicationContext
 	"VSW5TESTSUITE CASE XtDisplayInitialize 20"
-	/tset/Xt4/XtDisplayInitialize/XtDisplayInitialize
+	/Xt4/XtDisplayInitialize/XtDisplayInitialize
 	"VSW5TESTSUITE CASE XtOpenDisplay 28"
-	/tset/Xt4/XtOpenDisplay/XtOpenDisplay
+	/Xt4/XtOpenDisplay/XtOpenDisplay
 	"VSW5TESTSUITE CASE XtCloseDisplay 2"
-	/tset/Xt4/XtCloseDisplay/XtCloseDisplay
+	/Xt4/XtCloseDisplay/XtCloseDisplay
 	"VSW5TESTSUITE CASE XtSetLanguageProc 8"
-	/tset/Xt4/XtSetLanguageProc/XtSetLanguageProc
+	/Xt4/XtSetLanguageProc/XtSetLanguageProc
 	"VSW5TESTSUITE CASE XtScreenDatabase 1"
-	/tset/Xt4/XtScreenDatabase/XtScreenDatabase
+	/Xt4/XtScreenDatabase/XtScreenDatabase
 	"VSW5TESTSUITE CASE XtDatabase 2"
-	/tset/Xt4/XtDatabase/XtDatabase
+	/Xt4/XtDatabase/XtDatabase
 	"VSW5TESTSUITE CASE XtAppSetFallbackResources 2"
-	/tset/Xt4/XtAppSetFallbackResources/XtAppSetFallbackResources
+	/Xt4/XtAppSetFallbackResources/XtAppSetFallbackResources
 	"VSW5TESTSUITE CASE XtSetArg 2"
-	/tset/Xt4/XtSetArg/XtSetArg
+	/Xt4/XtSetArg/XtSetArg
 	"VSW5TESTSUITE CASE XtMergeArgLists 3"
-	/tset/Xt4/XtMergeArgLists/XtMergeArgLists
+	/Xt4/XtMergeArgLists/XtMergeArgLists
 	"VSW5TESTSUITE CASE XtVaCreateArgsList 2"
-	/tset/Xt4/XtCreateVarArgsList/XtCreateVarArgsList
+	/Xt4/XtCreateVarArgsList/XtCreateVarArgsList
 	"VSW5TESTSUITE CASE XtCreateWidget 4"
-	/tset/Xt4/XtCreateWidget/XtCreateWidget
+	/Xt4/XtCreateWidget/XtCreateWidget
 	"VSW5TESTSUITE CASE XtVaCreateWidget 8"
-	/tset/Xt4/XtVaCreateWidget/XtVaCreateWidget
+	/Xt4/XtVaCreateWidget/XtVaCreateWidget
 	"VSW5TESTSUITE CASE XtAppCreateShell 7"
-	/tset/Xt4/XtAppCreateShell/XtAppCreateShell
+	/Xt4/XtAppCreateShell/XtAppCreateShell
 	"VSW5TESTSUITE CASE XtVaAppCreateShell 7"
-	/tset/Xt4/XtVaAppCreateShell/XtVaAppCreateShell
+	/Xt4/XtVaAppCreateShell/XtVaAppCreateShell
 	"VSW5TESTSUITE CASE XtAppInitialize 29"
-	/tset/Xt4/XtAppInitialize/XtAppInitialize
+	/Xt4/XtAppInitialize/XtAppInitialize
 	"VSW5TESTSUITE CASE XtVaAppInitialize 29"
-	/tset/Xt4/XtVaAppInitialize/XtVaAppInitialize
+	/Xt4/XtVaAppInitialize/XtVaAppInitialize
 	"VSW5TESTSUITE CASE XtRealizeWidget 11"
-	/tset/Xt4/XtRealizeWidget/XtRealizeWidget
+	/Xt4/XtRealizeWidget/XtRealizeWidget
 	"VSW5TESTSUITE CASE XtIsRealized 3"
-	/tset/Xt4/XtIsRealized/XtIsRealized
+	/Xt4/XtIsRealized/XtIsRealized
 	"VSW5TESTSUITE CASE XtCreateWindow 1"
-	/tset/Xt4/XtCreateWindow/XtCreateWindow
+	/Xt4/XtCreateWindow/XtCreateWindow
 	"VSW5TESTSUITE CASE XtDisplay 1"
-      	/tset/Xt4/XtDisplay/XtDisplay
+      	/Xt4/XtDisplay/XtDisplay
 	"VSW5TESTSUITE CASE XtParent 1"
-	/tset/Xt4/XtParent/XtParent
+	/Xt4/XtParent/XtParent
 	"VSW5TESTSUITE CASE XtScreen 1"
-	/tset/Xt4/XtScreen/XtScreen
+	/Xt4/XtScreen/XtScreen
 	"VSW5TESTSUITE CASE XtWindow 1"
-	/tset/Xt4/XtWindow/XtWindow
+	/Xt4/XtWindow/XtWindow
 	"VSW5TESTSUITE CASE XtDisplayOfObject 2"
-	/tset/Xt4/XtDisplayOfObject/XtDisplayOfObject
+	/Xt4/XtDisplayOfObject/XtDisplayOfObject
 	"VSW5TESTSUITE CASE XtScreenOfObject 2"
-	/tset/Xt4/XtScreenOfObject/XtScreenOfObject
+	/Xt4/XtScreenOfObject/XtScreenOfObject
 	"VSW5TESTSUITE CASE XtWindowOfObject 2"
-	/tset/Xt4/XtWindowOfObject/XtWindowOfObject
+	/Xt4/XtWindowOfObject/XtWindowOfObject
 	"VSW5TESTSUITE CASE XtName 1"
-	/tset/Xt4/XtName/XtName
+	/Xt4/XtName/XtName
 	"VSW5TESTSUITE CASE XtUnrealizeWidget 4"
-	/tset/Xt4/XtUnrealizeWidget/XtUnrealizeWidget
+	/Xt4/XtUnrealizeWidget/XtUnrealizeWidget
 	"VSW5TESTSUITE CASE XtDestroyWidget 3"
-	/tset/Xt4/XtDestroyWidget/XtDestroyWidget
+	/Xt4/XtDestroyWidget/XtDestroyWidget

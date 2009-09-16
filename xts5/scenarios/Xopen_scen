@@ -56,18 +56,18 @@
 #
 
 	"VSW5TESTSUITE CASE XAllocNamedColor 7"
-	/tset/Xopen/XAllocNamedColor/XAllocNamedColor
+	/Xopen/XAllocNamedColor/XAllocNamedColor
 	"VSW5TESTSUITE CASE cursorfont 32"
-	/tset/Xopen/cursorfont/cursorfont
+	/Xopen/cursorfont/cursorfont
 	"VSW5TESTSUITE CASE XCreateFontCursor 31"
-	/tset/Xopen/XCreateFontCursor/XCreateFontCursor
+	/Xopen/XCreateFontCursor/XCreateFontCursor
 	"VSW5TESTSUITE CASE keysym 7"
-	/tset/Xopen/keysym/keysym
+	/Xopen/keysym/keysym
 	"VSW5TESTSUITE CASE keysymdef 15"
-	/tset/Xopen/keysymdef/keysymdef
+	/Xopen/keysymdef/keysymdef
 	"VSW5TESTSUITE CASE XKeysymToKeycode 14"
-	/tset/Xopen/XKeysymToKeycode/XKeysymToKeycode
+	/Xopen/XKeysymToKeycode/XKeysymToKeycode
 	"VSW5TESTSUITE CASE XLookupColor 7"
-	/tset/Xopen/XLookupColor/XLookupColor
+	/Xopen/XLookupColor/XLookupColor
 	"VSW5TESTSUITE CASE XStringToKeysym 14"
-	/tset/Xopen/XStringToKeysym/XStringToKeysym
+	/Xopen/XStringToKeysym/XStringToKeysym

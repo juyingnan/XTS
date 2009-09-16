@@ -56,72 +56,72 @@
 #
 
 	"VSW5TESTSUITE CASE AllowDeviceEvents 3"
-	/tset/XIproto/AllowDeviceEvents/AllowDeviceEvents
+	/XIproto/AllowDeviceEvents/AllowDeviceEvents
 	"VSW5TESTSUITE CASE ChangeDeviceControl 3"
-	/tset/XIproto/ChangeDeviceControl/ChangeDeviceControl
+	/XIproto/ChangeDeviceControl/ChangeDeviceControl
 	"VSW5TESTSUITE CASE ChangeDeviceDontPropagateList 3"
-	/tset/XIproto/ChangeDeviceDontPropagateList/ChangeDeviceDontPropagateList
+	/XIproto/ChangeDeviceDontPropagateList/ChangeDeviceDontPropagateList
 	"VSW5TESTSUITE CASE ChangeFeedbackControl 3"
-	/tset/XIproto/ChangeFeedbackControl/ChangeFeedbackControl
+	/XIproto/ChangeFeedbackControl/ChangeFeedbackControl
 	"VSW5TESTSUITE CASE ChangeKeyboardDevice 4"
-	/tset/XIproto/ChangeKeyboardDevice/ChangeKeyboardDevice
+	/XIproto/ChangeKeyboardDevice/ChangeKeyboardDevice
 	"VSW5TESTSUITE CASE ChangePointerDevice 4"
-	/tset/XIproto/ChangePointerDevice/ChangePointerDevice
+	/XIproto/ChangePointerDevice/ChangePointerDevice
 	"VSW5TESTSUITE CASE ChangeDeviceKeyMapping 3"
-	/tset/XIproto/ChangeDeviceKeyMapping/ChangeDeviceKeyMapping
+	/XIproto/ChangeDeviceKeyMapping/ChangeDeviceKeyMapping
 	"VSW5TESTSUITE CASE CloseDevice 3"
-	/tset/XIproto/CloseDevice/CloseDevice
+	/XIproto/CloseDevice/CloseDevice
 	"VSW5TESTSUITE CASE DeviceBell 3"
-	/tset/XIproto/DeviceBell/DeviceBell
+	/XIproto/DeviceBell/DeviceBell
 	"VSW5TESTSUITE CASE GetDeviceModifierMapping 3"
-	/tset/XIproto/GetDeviceModifierMapping/GetDeviceModifierMapping
+	/XIproto/GetDeviceModifierMapping/GetDeviceModifierMapping
 	"VSW5TESTSUITE CASE GetFeedbackControl 3"
-	/tset/XIproto/GetFeedbackControl/GetFeedbackControl
+	/XIproto/GetFeedbackControl/GetFeedbackControl
 	"VSW5TESTSUITE CASE GetExtensionVersion 3"
-	/tset/XIproto/GetExtensionVersion/GetExtensionVersion
+	/XIproto/GetExtensionVersion/GetExtensionVersion
 	"VSW5TESTSUITE CASE GrabDevice 3"
-	/tset/XIproto/GrabDevice/GrabDevice
+	/XIproto/GrabDevice/GrabDevice
 	"VSW5TESTSUITE CASE GrabDeviceButton 3"
-	/tset/XIproto/GrabDeviceButton/GrabDeviceButton
+	/XIproto/GrabDeviceButton/GrabDeviceButton
 	"VSW5TESTSUITE CASE GrabDeviceKey 3"
-	/tset/XIproto/GrabDeviceKey/GrabDeviceKey
+	/XIproto/GrabDeviceKey/GrabDeviceKey
 	"VSW5TESTSUITE CASE GetDeviceButtonMapping 3"
-	/tset/XIproto/GetDeviceButtonMapping/GetDeviceButtonMapping
+	/XIproto/GetDeviceButtonMapping/GetDeviceButtonMapping
 	"VSW5TESTSUITE CASE GetDeviceControl 3"
-	/tset/XIproto/GetDeviceControl/GetDeviceControl
+	/XIproto/GetDeviceControl/GetDeviceControl
 	"VSW5TESTSUITE CASE GetDeviceFocus 3"
-	/tset/XIproto/GetDeviceFocus/GetDeviceFocus
+	/XIproto/GetDeviceFocus/GetDeviceFocus
 	"VSW5TESTSUITE CASE GetDeviceMotionEvents 3"
-	/tset/XIproto/GetDeviceMotionEvents/GetDeviceMotionEvents
+	/XIproto/GetDeviceMotionEvents/GetDeviceMotionEvents
 	"VSW5TESTSUITE CASE GetDeviceDontPropagateList 3"
-	/tset/XIproto/GetDeviceDontPropagateList/GetDeviceDontPropagateList
+	/XIproto/GetDeviceDontPropagateList/GetDeviceDontPropagateList
 	"VSW5TESTSUITE CASE GetDeviceKeyMapping 3"
-	/tset/XIproto/GetDeviceKeyMapping/GetDeviceKeyMapping
+	/XIproto/GetDeviceKeyMapping/GetDeviceKeyMapping
 	"VSW5TESTSUITE CASE GetSelectedExtensionEvents 3"
-	/tset/XIproto/GetSelectedExtensionEvents/GetSelectedExtensionEvents
+	/XIproto/GetSelectedExtensionEvents/GetSelectedExtensionEvents
 	"VSW5TESTSUITE CASE ListInputDevices 3"
-	/tset/XIproto/ListInputDevices/ListInputDevices
+	/XIproto/ListInputDevices/ListInputDevices
 	"VSW5TESTSUITE CASE OpenDevice 3"
-	/tset/XIproto/OpenDevice/OpenDevice
+	/XIproto/OpenDevice/OpenDevice
 	"VSW5TESTSUITE CASE QueryDeviceState 3"
-	/tset/XIproto/QueryDeviceState/QueryDeviceState
+	/XIproto/QueryDeviceState/QueryDeviceState
 	"VSW5TESTSUITE CASE SetDeviceValuators 3"
-	/tset/XIproto/SetDeviceValuators/SetDeviceValuators
+	/XIproto/SetDeviceValuators/SetDeviceValuators
 	"VSW5TESTSUITE CASE SetDeviceButtonMapping 3"
-	/tset/XIproto/SetDeviceButtonMapping/SetDeviceButtonMapping
+	/XIproto/SetDeviceButtonMapping/SetDeviceButtonMapping
 	"VSW5TESTSUITE CASE SetDeviceFocus 3"
-	/tset/XIproto/SetDeviceFocus/SetDeviceFocus
+	/XIproto/SetDeviceFocus/SetDeviceFocus
 	"VSW5TESTSUITE CASE SetDeviceModifierMapping 3"
-	/tset/XIproto/SetDeviceModifierMapping/SetDeviceModifierMapping
+	/XIproto/SetDeviceModifierMapping/SetDeviceModifierMapping
 	"VSW5TESTSUITE CASE SetDeviceMode 3"
-	/tset/XIproto/SetDeviceMode/SetDeviceMode
+	/XIproto/SetDeviceMode/SetDeviceMode
 	"VSW5TESTSUITE CASE SelectExtensionEvent 3"
-	/tset/XIproto/SelectExtensionEvent/SelectExtensionEvent
+	/XIproto/SelectExtensionEvent/SelectExtensionEvent
 	"VSW5TESTSUITE CASE SendExtensionEvent 3"
-	/tset/XIproto/SendExtensionEvent/SendExtensionEvent
+	/XIproto/SendExtensionEvent/SendExtensionEvent
 	"VSW5TESTSUITE CASE UngrabDevice 3"
-	/tset/XIproto/UngrabDevice/UngrabDevice
+	/XIproto/UngrabDevice/UngrabDevice
 	"VSW5TESTSUITE CASE UngrabDeviceButton 3"
-	/tset/XIproto/UngrabDeviceButton/UngrabDeviceButton
+	/XIproto/UngrabDeviceButton/UngrabDeviceButton
 	"VSW5TESTSUITE CASE UngrabDeviceKey 3"
-	/tset/XIproto/UngrabDeviceKey/UngrabDeviceKey
+	/XIproto/UngrabDeviceKey/UngrabDeviceKey

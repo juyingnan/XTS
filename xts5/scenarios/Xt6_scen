@@ -59,16 +59,16 @@
 #
 
 	"VSW5TESTSUITE CASE ShellWidget 11"
-	/tset/Xt6/ShellWidget/ShellWidget
+	/Xt6/ShellWidget/ShellWidget
 	"VSW5TESTSUITE CASE OverrideShellWidget 10"
-	/tset/Xt6/OverrideShellWidget/OverrideShellWidget
+	/Xt6/OverrideShellWidget/OverrideShellWidget
 	"VSW5TESTSUITE CASE WMShellWidget 10"
-	/tset/Xt6/WMShellWidget/WMShellWidget
+	/Xt6/WMShellWidget/WMShellWidget
 	"VSW5TESTSUITE CASE VendorShellWidget 10"
-	/tset/Xt6/VendorShellWidget/VendorShellWidget
+	/Xt6/VendorShellWidget/VendorShellWidget
 	"VSW5TESTSUITE CASE TransientShellWidget 10"
-	/tset/Xt6/TransientShellWidget/TransientShellWidget
+	/Xt6/TransientShellWidget/TransientShellWidget
 	"VSW5TESTSUITE CASE TopLevelShellWidget 10"
-	/tset/Xt6/TopLevelShellWidget/TopLevelShellWidget
+	/Xt6/TopLevelShellWidget/TopLevelShellWidget
 	"VSW5TESTSUITE CASE ApplicationShellWidget 10"
-	/tset/Xt6/ApplicationShellWidget/ApplicationShellWidget
+	/Xt6/ApplicationShellWidget/ApplicationShellWidget

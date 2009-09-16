@@ -59,80 +59,80 @@
 #
 
 	"VSW5TESTSUITE CASE XtNumber 1"
-	/tset/Xt13/XtNumber/XtNumber
+	/Xt13/XtNumber/XtNumber
 	"VSW5TESTSUITE CASE XtNameToWidget 7"
-	/tset/Xt13/XtNameToWidget/XtNameToWidget
+	/Xt13/XtNameToWidget/XtNameToWidget
 	"VSW5TESTSUITE CASE XtMalloc 6"
-	/tset/Xt13/XtMalloc/XtMalloc
+	/Xt13/XtMalloc/XtMalloc
 	"VSW5TESTSUITE CASE XtCalloc 6"
-	/tset/Xt13/XtCalloc/XtCalloc
+	/Xt13/XtCalloc/XtCalloc
 	"VSW5TESTSUITE CASE XtRealloc 12"
-	/tset/Xt13/XtRealloc/XtRealloc
+	/Xt13/XtRealloc/XtRealloc
 	"VSW5TESTSUITE CASE XtFree 4"
-	/tset/Xt13/XtFree/XtFree
+	/Xt13/XtFree/XtFree
 	"VSW5TESTSUITE CASE XtNew 5"
-	/tset/Xt13/XtNew/XtNew
+	/Xt13/XtNew/XtNew
 	"VSW5TESTSUITE CASE XtNewString 5"
-	/tset/Xt13/XtNewString/XtNewString
+	/Xt13/XtNewString/XtNewString
 	"VSW5TESTSUITE CASE XtAllocateGC 9"
-	/tset/Xt13/XtAllocateGC/XtAllocateGC
+	/Xt13/XtAllocateGC/XtAllocateGC
 	"VSW5TESTSUITE CASE XtGetGC 4"
-	/tset/Xt13/XtGetGC/XtGetGC
+	/Xt13/XtGetGC/XtGetGC
 	"VSW5TESTSUITE CASE XtReleaseGC 2"
-	/tset/Xt13/XtReleaseGC/XtReleaseGC
+	/Xt13/XtReleaseGC/XtReleaseGC
 	"VSW5TESTSUITE CASE XtAppSetSelectionTimeout 1"
-	/tset/Xt13/XtAppSetSelectionTimeout/XtAppSetSelectionTimeout
+	/Xt13/XtAppSetSelectionTimeout/XtAppSetSelectionTimeout
 	"VSW5TESTSUITE CASE XtAppGetSelectionTimeout 2"
-	/tset/Xt13/XtAppGetSelectionTimeout/XtAppGetSelectionTimeout
+	/Xt13/XtAppGetSelectionTimeout/XtAppGetSelectionTimeout
 	"VSW5TESTSUITE CASE XtGetSelectionRequest 3"
-	/tset/Xt13/XtGetSelectionRequest/XtGetSelectionRequest
+	/Xt13/XtGetSelectionRequest/XtGetSelectionRequest
 	"VSW5TESTSUITE CASE XtGetSelectionValue 4"
-	/tset/Xt13/XtGetSelectionValue/XtGetSelectionValue
+	/Xt13/XtGetSelectionValue/XtGetSelectionValue
 	"VSW5TESTSUITE CASE XtGetSelectionValues 5"
-	/tset/Xt13/XtGetSelectionValues/XtGetSelectionValues
+	/Xt13/XtGetSelectionValues/XtGetSelectionValues
 	"VSW5TESTSUITE CASE XtOwnSelection 8"
-	/tset/Xt13/XtOwnSelection/XtOwnSelection
+	/Xt13/XtOwnSelection/XtOwnSelection
 	"VSW5TESTSUITE CASE XtDisownSelection 5"
-	/tset/Xt13/XtDisownSelection/XtDisownSelection
+	/Xt13/XtDisownSelection/XtDisownSelection
 	"VSW5TESTSUITE CASE XtGetSelectionValueIncremental 6"
-	/tset/Xt13/XtGetSelectionValueIncremental/XtGetSelectionValueIncremental
+	/Xt13/XtGetSelectionValueIncremental/XtGetSelectionValueIncremental
 	"VSW5TESTSUITE CASE XtGetSelectionValuesIncremental 7"
-	/tset/Xt13/XtGetSelectionValuesIncremental/XtGetSelectionValuesIncremental
+	/Xt13/XtGetSelectionValuesIncremental/XtGetSelectionValuesIncremental
 	"VSW5TESTSUITE CASE XtOwnSelectionIncremental 10"
-	/tset/Xt13/XtOwnSelectionIncremental/XtOwnSelectionIncremental
+	/Xt13/XtOwnSelectionIncremental/XtOwnSelectionIncremental
 	"VSW5TESTSUITE CASE XtLastTimestampProcessed 2"
-	/tset/Xt13/XtLastTimestampProcessed/XtLastTimestampProcessed
+	/Xt13/XtLastTimestampProcessed/XtLastTimestampProcessed
 	"VSW5TESTSUITE CASE XtAddExposureToRegion 3"
-	/tset/Xt13/XtAddExposureToRegion/XtAddExposureToRegion
+	/Xt13/XtAddExposureToRegion/XtAddExposureToRegion
 	"VSW5TESTSUITE CASE XtTranslateCoords 1"
-	/tset/Xt13/XtTranslateCoords/XtTranslateCoords
+	/Xt13/XtTranslateCoords/XtTranslateCoords
 	"VSW5TESTSUITE CASE XtWindowToWidget 2"
-	/tset/Xt13/XtWindowToWidget/XtWindowToWidget
+	/Xt13/XtWindowToWidget/XtWindowToWidget
 	"VSW5TESTSUITE CASE XtGetApplicationNameAndClass 3"
-	/tset/Xt13/XtGetApplicationNameAndClass/XtGetApplicationNameAndClass
+	/Xt13/XtGetApplicationNameAndClass/XtGetApplicationNameAndClass
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabase 1"
-	/tset/Xt13/XtAppGetErrorDatabase/XtAppGetErrorDatabase
+	/Xt13/XtAppGetErrorDatabase/XtAppGetErrorDatabase
 	"VSW5TESTSUITE CASE XtAppGetErrorDatabaseText 4"
-	/tset/Xt13/XtAppGetErrorDatabaseText/XtAppGetErrorDatabaseText
+	/Xt13/XtAppGetErrorDatabaseText/XtAppGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XtAppSetErrorMsgHandler 2"
-	/tset/Xt13/XtAppSetErrorMsgHandler/XtAppSetErrorMsgHandler
+	/Xt13/XtAppSetErrorMsgHandler/XtAppSetErrorMsgHandler
 	"VSW5TESTSUITE CASE XtAppErrorMsg 3"
-	/tset/Xt13/XtAppErrorMsg/XtAppErrorMsg
+	/Xt13/XtAppErrorMsg/XtAppErrorMsg
 	"VSW5TESTSUITE CASE XtAppSetWarningMsgHandler 2"
-	/tset/Xt13/XtAppSetWarningMsgHandler/XtAppSetWarningMsgHandler
+	/Xt13/XtAppSetWarningMsgHandler/XtAppSetWarningMsgHandler
 	"VSW5TESTSUITE CASE XtAppWarningMsg 3"
-	/tset/Xt13/XtAppWarningMsg/XtAppWarningMsg
+	/Xt13/XtAppWarningMsg/XtAppWarningMsg
 	"VSW5TESTSUITE CASE XtAppSetErrorHandler 2"
-	/tset/Xt13/XtAppSetErrorHandler/XtAppSetErrorHandler
+	/Xt13/XtAppSetErrorHandler/XtAppSetErrorHandler
 	"VSW5TESTSUITE CASE XtAppError 3"
-	/tset/Xt13/XtAppError/XtAppError
+	/Xt13/XtAppError/XtAppError
 	"VSW5TESTSUITE CASE XtAppSetWarningHandler 2"
-	/tset/Xt13/XtAppSetWarningHandler/XtAppSetWarningHandler
+	/Xt13/XtAppSetWarningHandler/XtAppSetWarningHandler
 	"VSW5TESTSUITE CASE XtAppWarning 3"
-	/tset/Xt13/XtAppWarning/XtAppWarning
+	/Xt13/XtAppWarning/XtAppWarning
 	"VSW5TESTSUITE CASE XtSetWMColormapWindows 3"
-	/tset/Xt13/XtSetWMColormapWindows/XtSetWMColormapWindows
+	/Xt13/XtSetWMColormapWindows/XtSetWMColormapWindows
 	"VSW5TESTSUITE CASE XtFindFile 7"
-	/tset/Xt13/XtFindFile/XtFindFile
+	/Xt13/XtFindFile/XtFindFile
 	"VSW5TESTSUITE CASE XtResolvePathname 20"
-	/tset/Xt13/XtResolvePathname/XtResolvePathname
+	/Xt13/XtResolvePathname/XtResolvePathname

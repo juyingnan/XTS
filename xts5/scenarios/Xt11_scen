@@ -59,118 +59,118 @@
 #
 
 	"VSW5TESTSUITE CASE XtGetResourceList 2"
-	/tset/Xt11/XtGetResourceList/XtGetResourceList
+	/Xt11/XtGetResourceList/XtGetResourceList
 	"VSW5TESTSUITE CASE XtGetConstraintResourceList 3"
-	/tset/Xt11/XtGetConstraintResourceList/XtGetConstraintResourceList
+	/Xt11/XtGetConstraintResourceList/XtGetConstraintResourceList
 	"VSW5TESTSUITE CASE XtOffsetOf 1"
-	/tset/Xt11/XtOffsetOf/XtOffsetOf
+	/Xt11/XtOffsetOf/XtOffsetOf
 	"VSW5TESTSUITE CASE XtOffset 1"
-	/tset/Xt11/XtOffset/XtOffset
+	/Xt11/XtOffset/XtOffset
 	"VSW5TESTSUITE CASE XtGetSubresources 2"
-	/tset/Xt11/XtGetSubresources/XtGetSubresources
+	/Xt11/XtGetSubresources/XtGetSubresources
 	"VSW5TESTSUITE CASE XtVaGetSubresources 4"
-	/tset/Xt11/XtVaGetSubresources/XtVaGetSubresources
+	/Xt11/XtVaGetSubresources/XtVaGetSubresources
 	"VSW5TESTSUITE CASE XtGetApplicationResources 2"
-	/tset/Xt11/XtGetApplicationResources/XtGetApplicationResources
+	/Xt11/XtGetApplicationResources/XtGetApplicationResources
 	"VSW5TESTSUITE CASE XtVaGetApplicationResources 4"
-	/tset/Xt11/XtVaGetApplicationResources/XtVaGetApplicationResources
+	/Xt11/XtVaGetApplicationResources/XtVaGetApplicationResources
 	"VSW5TESTSUITE CASE XtCvtStringToAcceleratorTable 4"
-	/tset/Xt11/XtCvtStringToAcceleratorTable/XtCvtStringToAcceleratorTable
+	/Xt11/XtCvtStringToAcceleratorTable/XtCvtStringToAcceleratorTable
 	"VSW5TESTSUITE CASE XtCvtStringToAtom 4"
-	/tset/Xt11/XtCvtStringToAtom/XtCvtStringToAtom
+	/Xt11/XtCvtStringToAtom/XtCvtStringToAtom
 	"VSW5TESTSUITE CASE XtCvtStringToBoolean 4"
-	/tset/Xt11/XtCvtStringToBoolean/XtCvtStringToBoolean
+	/Xt11/XtCvtStringToBoolean/XtCvtStringToBoolean
 	"VSW5TESTSUITE CASE XtCvtStringToBool 4"
-	/tset/Xt11/XtCvtStringToBool/XtCvtStringToBool
+	/Xt11/XtCvtStringToBool/XtCvtStringToBool
 	"VSW5TESTSUITE CASE XtCvtStringToCursor 5"
-	/tset/Xt11/XtCvtStringToCursor/XtCvtStringToCursor
+	/Xt11/XtCvtStringToCursor/XtCvtStringToCursor
 	"VSW5TESTSUITE CASE XtCvtStringToDimension 4"
-	/tset/Xt11/XtCvtStringToDimension/XtCvtStringToDimension
+	/Xt11/XtCvtStringToDimension/XtCvtStringToDimension
 	"VSW5TESTSUITE CASE XtCvtStringToDisplay 4"
-	/tset/Xt11/XtCvtStringToDisplay/XtCvtStringToDisplay
+	/Xt11/XtCvtStringToDisplay/XtCvtStringToDisplay
 	"VSW5TESTSUITE CASE XtCvtStringToFile 4"
-	/tset/Xt11/XtCvtStringToFile/XtCvtStringToFile
+	/Xt11/XtCvtStringToFile/XtCvtStringToFile
 	"VSW5TESTSUITE CASE XtCvtStringToFloat 4"
-	/tset/Xt11/XtCvtStringToFloat/XtCvtStringToFloat
+	/Xt11/XtCvtStringToFloat/XtCvtStringToFloat
 	"VSW5TESTSUITE CASE XtCvtStringToFont 8"
-	/tset/Xt11/XtCvtStringToFont/XtCvtStringToFont
+	/Xt11/XtCvtStringToFont/XtCvtStringToFont
 	"VSW5TESTSUITE CASE XtCvtStringToFontSet 11"
-	/tset/Xt11/XtCvtStringToFontSet/XtCvtStringToFontSet
+	/Xt11/XtCvtStringToFontSet/XtCvtStringToFontSet
 	"VSW5TESTSUITE CASE XtCvtStringToFontStruct 8"
-	/tset/Xt11/XtCvtStringToFontStruct/XtCvtStringToFontStruct
+	/Xt11/XtCvtStringToFontStruct/XtCvtStringToFontStruct
 	"VSW5TESTSUITE CASE XtCvtStringToInitialState 6"
-	/tset/Xt11/XtCvtStringToInitialState/XtCvtStringToInitialState
+	/Xt11/XtCvtStringToInitialState/XtCvtStringToInitialState
 	"VSW5TESTSUITE CASE XtCvtStringToInt 4"
-	/tset/Xt11/XtCvtStringToInt/XtCvtStringToInt
+	/Xt11/XtCvtStringToInt/XtCvtStringToInt
 	"VSW5TESTSUITE CASE XtCvtStringToPixel 9"
-	/tset/Xt11/XtCvtStringToPixel/XtCvtStringToPixel
+	/Xt11/XtCvtStringToPixel/XtCvtStringToPixel
 	"VSW5TESTSUITE CASE XtCvtStringToShort 4"
-	/tset/Xt11/XtCvtStringToShort/XtCvtStringToShort
+	/Xt11/XtCvtStringToShort/XtCvtStringToShort
 	"VSW5TESTSUITE CASE XtCvtStringToTranslationTable 4"
-	/tset/Xt11/XtCvtStringToTranslationTable/XtCvtStringToTranslationTable
+	/Xt11/XtCvtStringToTranslationTable/XtCvtStringToTranslationTable
 	"VSW5TESTSUITE CASE XtCvtStringToPosition 4"
-	/tset/Xt11/XtCvtStringToPosition/XtCvtStringToPosition
+	/Xt11/XtCvtStringToPosition/XtCvtStringToPosition
 	"VSW5TESTSUITE CASE XtCvtStringToUnsignedChar 4"
-	/tset/Xt11/XtCvtStringToUnsignedChar/XtCvtStringToUnsignedChar
+	/Xt11/XtCvtStringToUnsignedChar/XtCvtStringToUnsignedChar
 	"VSW5TESTSUITE CASE XtCvtStringToVisual 5"
-	/tset/Xt11/XtCvtStringToVisual/XtCvtStringToVisual
+	/Xt11/XtCvtStringToVisual/XtCvtStringToVisual
 	"VSW5TESTSUITE CASE XtCvtColorToPixel 3"
-	/tset/Xt11/XtCvtColorToPixel/XtCvtColorToPixel
+	/Xt11/XtCvtColorToPixel/XtCvtColorToPixel
 	"VSW5TESTSUITE CASE XtCvtIntToBoolean 3"
-	/tset/Xt11/XtCvtIntToBoolean/XtCvtIntToBoolean
+	/Xt11/XtCvtIntToBoolean/XtCvtIntToBoolean
 	"VSW5TESTSUITE CASE XtCvtIntToBool 3"
-	/tset/Xt11/XtCvtIntToBool/XtCvtIntToBool
+	/Xt11/XtCvtIntToBool/XtCvtIntToBool
 	"VSW5TESTSUITE CASE XtCvtIntToColor 4"
-	/tset/Xt11/XtCvtIntToColor/XtCvtIntToColor
+	/Xt11/XtCvtIntToColor/XtCvtIntToColor
 	"VSW5TESTSUITE CASE XtCvtIntToDimension 3"
-	/tset/Xt11/XtCvtIntToDimension/XtCvtIntToDimension
+	/Xt11/XtCvtIntToDimension/XtCvtIntToDimension
 	"VSW5TESTSUITE CASE XtCvtIntToFloat 3"
-	/tset/Xt11/XtCvtIntToFloat/XtCvtIntToFloat
+	/Xt11/XtCvtIntToFloat/XtCvtIntToFloat
 	"VSW5TESTSUITE CASE XtCvtIntToFont 3"
-	/tset/Xt11/XtCvtIntToFont/XtCvtIntToFont
+	/Xt11/XtCvtIntToFont/XtCvtIntToFont
 	"VSW5TESTSUITE CASE XtCvtIntToPixel 3"
-	/tset/Xt11/XtCvtIntToPixel/XtCvtIntToPixel
+	/Xt11/XtCvtIntToPixel/XtCvtIntToPixel
 	"VSW5TESTSUITE CASE XtCvtIntToPixmap 3"
-	/tset/Xt11/XtCvtIntToPixmap/XtCvtIntToPixmap
+	/Xt11/XtCvtIntToPixmap/XtCvtIntToPixmap
 	"VSW5TESTSUITE CASE XtCvtIntToPosition 3"
-	/tset/Xt11/XtCvtIntToPosition/XtCvtIntToPosition
+	/Xt11/XtCvtIntToPosition/XtCvtIntToPosition
 	"VSW5TESTSUITE CASE XtCvtIntToShort 3"
-	/tset/Xt11/XtCvtIntToShort/XtCvtIntToShort
+	/Xt11/XtCvtIntToShort/XtCvtIntToShort
 	"VSW5TESTSUITE CASE XtCvtIntToUnsignedChar 3"
-	/tset/Xt11/XtCvtIntToUnsignedChar/XtCvtIntToUnsignedChar
+	/Xt11/XtCvtIntToUnsignedChar/XtCvtIntToUnsignedChar
 	"VSW5TESTSUITE CASE XtCvtPixelToColor 3"
-	/tset/Xt11/XtCvtPixelToColor/XtCvtPixelToColor
+	/Xt11/XtCvtPixelToColor/XtCvtPixelToColor
 	"VSW5TESTSUITE CASE XtDisplayStringConversionWarning 2"
-	/tset/Xt11/XtDisplayStringConversionWarning/XtDisplayStringConversionWarning
+	/Xt11/XtDisplayStringConversionWarning/XtDisplayStringConversionWarning
 	"VSW5TESTSUITE CASE XtDisplayToApplicationContext 2"
-	/tset/Xt11/XtDisplayToApplicationContext/XtDisplayToApplicationContext
+	/Xt11/XtDisplayToApplicationContext/XtDisplayToApplicationContext
 	"VSW5TESTSUITE CASE XtSetTypeConverter 15"
-	/tset/Xt11/XtSetTypeConverter/XtSetTypeConverter
+	/Xt11/XtSetTypeConverter/XtSetTypeConverter
 	"VSW5TESTSUITE CASE XtAppSetTypeConverter 15"
-	/tset/Xt11/XtAppSetTypeConverter/XtAppSetTypeConverter
+	/Xt11/XtAppSetTypeConverter/XtAppSetTypeConverter
 	"VSW5TESTSUITE CASE XtCallConverter 15"
-	/tset/Xt11/XtCallConverter/XtCallConverter
+	/Xt11/XtCallConverter/XtCallConverter
 	"VSW5TESTSUITE CASE XtAppReleaseCacheRefs 2"
-	/tset/Xt11/XtAppReleaseCacheRefs/XtAppReleaseCacheRefs
+	/Xt11/XtAppReleaseCacheRefs/XtAppReleaseCacheRefs
 	"VSW5TESTSUITE CASE XtCallbackReleaseCacheRef 1"
-	/tset/Xt11/XtCallbackReleaseCacheRef/XtCallbackReleaseCacheRef
+	/Xt11/XtCallbackReleaseCacheRef/XtCallbackReleaseCacheRef
 	"VSW5TESTSUITE CASE XtCallbackReleaseCacheRefList 1"
-	/tset/Xt11/XtCallbackReleaseCacheRefList/XtCallbackReleaseCacheRefList
+	/Xt11/XtCallbackReleaseCacheRefList/XtCallbackReleaseCacheRefList
 	"VSW5TESTSUITE CASE XtConvertAndStore 18"
-	/tset/Xt11/XtConvertAndStore/XtConvertAndStore
+	/Xt11/XtConvertAndStore/XtConvertAndStore
 	"VSW5TESTSUITE CASE XtGetValues 5"
-	/tset/Xt11/XtGetValues/XtGetValues
+	/Xt11/XtGetValues/XtGetValues
 	"VSW5TESTSUITE CASE XtVaGetValues 7"
-	/tset/Xt11/XtVaGetValues/XtVaGetValues
+	/Xt11/XtVaGetValues/XtVaGetValues
 	"VSW5TESTSUITE CASE XtGetSubvalues 2"
-	/tset/Xt11/XtGetSubvalues/XtGetSubvalues
+	/Xt11/XtGetSubvalues/XtGetSubvalues
 	"VSW5TESTSUITE CASE XtVaGetSubvalues 3"
-	/tset/Xt11/XtVaGetSubvalues/XtVaGetSubvalues
+	/Xt11/XtVaGetSubvalues/XtVaGetSubvalues
 	"VSW5TESTSUITE CASE XtSetValues 13"
-	/tset/Xt11/XtSetValues/XtSetValues
+	/Xt11/XtSetValues/XtSetValues
 	"VSW5TESTSUITE CASE XtVaSetValues 15"
-	/tset/Xt11/XtVaSetValues/XtVaSetValues
+	/Xt11/XtVaSetValues/XtVaSetValues
 	"VSW5TESTSUITE CASE XtSetSubvalues 2"
-	/tset/Xt11/XtSetSubvalues/XtSetSubvalues
+	/Xt11/XtSetSubvalues/XtSetSubvalues
 	"VSW5TESTSUITE CASE XtVaSetSubvalues 4"
-	/tset/Xt11/XtVaSetSubvalues/XtVaSetSubvalues
+	/Xt11/XtVaSetSubvalues/XtVaSetSubvalues

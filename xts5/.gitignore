@@ -1,2 +1,9 @@
-tetexec.cfg
+*.c
+*.err
+*.log
+*.log.tmp
+.dirstamp
 results
+tet_lock
+tet_xres
+tetexec.cfg

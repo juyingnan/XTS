@@ -56,74 +56,74 @@
 #
 
 	"VSW5TESTSUITE CASE XAllowDeviceEvents 22"
-	/tset/XI/AllowDeviceEvents/AllowDeviceEvents
+	/XI/AllowDeviceEvents/AllowDeviceEvents
 	"VSW5TESTSUITE CASE XChangeDeviceControl 10"
-	/tset/XI/ChangeDeviceControl/ChangeDeviceControl
+	/XI/ChangeDeviceControl/ChangeDeviceControl
 	"VSW5TESTSUITE CASE XChangeFeedbackControl 8"
-	/tset/XI/ChangeFeedbackControl/ChangeFeedbackControl
+	/XI/ChangeFeedbackControl/ChangeFeedbackControl
 	"VSW5TESTSUITE CASE XChangeKeyboardDevice 10"
-	/tset/XI/ChangeKeyboardDevice/ChangeKeyboardDevice
+	/XI/ChangeKeyboardDevice/ChangeKeyboardDevice
 	"VSW5TESTSUITE CASE XChangeDeviceDontPropagateList 7"
-	/tset/XI/XChangeDeviceDontPropagateList/XChangeDeviceDontPropagateList
+	/XI/XChangeDeviceDontPropagateList/XChangeDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XChangePointerDevice 10"
-	/tset/XI/ChangePointerDevice/ChangePointerDevice
+	/XI/ChangePointerDevice/ChangePointerDevice
 	"VSW5TESTSUITE CASE XChangeDeviceKeyMapping 7"
-	/tset/XI/ChangeDeviceKeyMapping/ChangeDeviceKeyMapping
+	/XI/ChangeDeviceKeyMapping/ChangeDeviceKeyMapping
 	"VSW5TESTSUITE CASE XCloseDevice 7"
-	/tset/XI/CloseDevice/CloseDevice
+	/XI/CloseDevice/CloseDevice
 	"VSW5TESTSUITE CASE XDeviceBell 6"
-	/tset/XI/DeviceBell/DeviceBell
+	/XI/DeviceBell/DeviceBell
 	"VSW5TESTSUITE CASE XGetDeviceControl 4"
-	/tset/XI/XGetDeviceControl/XGetDeviceControl
+	/XI/XGetDeviceControl/XGetDeviceControl
 	"VSW5TESTSUITE CASE XGetFeedbackControl 3"
-	/tset/XI/GetFeedbackControl/GetFeedbackControl
+	/XI/GetFeedbackControl/GetFeedbackControl
 	"VSW5TESTSUITE CASE XGetDeviceFocus 2"
-	/tset/XI/XGetDeviceFocus/XGetDeviceFocus
+	/XI/XGetDeviceFocus/XGetDeviceFocus
 	"VSW5TESTSUITE CASE XGetDeviceDontPropagateList 2"
-	/tset/XI/XGetDeviceDontPropagateList/XGetDeviceDontPropagateList
+	/XI/XGetDeviceDontPropagateList/XGetDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XGetExtensionVersion 2"
-	/tset/XI/GetExtensionVersion/GetExtensionVersion
+	/XI/GetExtensionVersion/GetExtensionVersion
 	"VSW5TESTSUITE CASE XGrabDevice 18"
-	/tset/XI/GrabDevice/GrabDevice
+	/XI/GrabDevice/GrabDevice
 	"VSW5TESTSUITE CASE XGrabDeviceButton 21"
-	/tset/XI/GrabDeviceButton/GrabDeviceButton
+	/XI/GrabDeviceButton/GrabDeviceButton
 	"VSW5TESTSUITE CASE XGrabDeviceKey 21"
-	/tset/XI/GrabDeviceKey/GrabDeviceKey
+	/XI/GrabDeviceKey/GrabDeviceKey
 	"VSW5TESTSUITE CASE XGetDeviceButtonMapping 5"
-	/tset/XI/GetDeviceButtonMapping/GetDeviceButtonMapping
+	/XI/GetDeviceButtonMapping/GetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XGetDeviceKeyMapping 10"
-	/tset/XI/XGetDeviceKeyMapping/XGetDeviceKeyMapping
+	/XI/XGetDeviceKeyMapping/XGetDeviceKeyMapping
 	"VSW5TESTSUITE CASE XGetDeviceModifierMapping 4"
-	/tset/XI/XGetDeviceModifierMapping/XGetDeviceModifierMapping
+	/XI/XGetDeviceModifierMapping/XGetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XGetDeviceMotionEvents 9"
-	/tset/XI/GetDeviceMotionEvents/GetDeviceMotionEvents
+	/XI/GetDeviceMotionEvents/GetDeviceMotionEvents
 	"VSW5TESTSUITE CASE XGetSelectedExtensionEvents 2"
-	/tset/XI/XGetSelectedExtensionEvents/XGetSelectedExtensionEvents
+	/XI/XGetSelectedExtensionEvents/XGetSelectedExtensionEvents
 	"VSW5TESTSUITE CASE XListInputDevices 2"
-	/tset/XI/ListInputDevices/ListInputDevices
+	/XI/ListInputDevices/ListInputDevices
 	"VSW5TESTSUITE CASE Miscellaneous 6"
-	/tset/XI/Miscellaneous/Miscellaneous
+	/XI/Miscellaneous/Miscellaneous
 	"VSW5TESTSUITE CASE XOpenDevice 4"
-	/tset/XI/OpenDevice/OpenDevice
+	/XI/OpenDevice/OpenDevice
 	"VSW5TESTSUITE CASE XQueryDeviceState 8"
-	/tset/XI/XQueryDeviceState/XQueryDeviceState
+	/XI/XQueryDeviceState/XQueryDeviceState
 	"VSW5TESTSUITE CASE XSetDeviceValuators 6"
-	/tset/XI/SetDeviceValuators/SetDeviceValuators
+	/XI/SetDeviceValuators/SetDeviceValuators
 	"VSW5TESTSUITE CASE XSetDeviceButtonMapping 8"
-	/tset/XI/SetDeviceButtonMapping/SetDeviceButtonMapping
+	/XI/SetDeviceButtonMapping/SetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XSetDeviceFocus 17"
-	/tset/XI/XSetDeviceFocus/XSetDeviceFocus
+	/XI/XSetDeviceFocus/XSetDeviceFocus
 	"VSW5TESTSUITE CASE XSetDeviceModifierMapping 9"
-	/tset/XI/SetDeviceModifierMapping/SetDeviceModifierMapping
+	/XI/SetDeviceModifierMapping/SetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XSetDeviceMode 6"
-	/tset/XI/SetDeviceMode/SetDeviceMode
+	/XI/SetDeviceMode/SetDeviceMode
 	"VSW5TESTSUITE CASE XSelectExtensionEvent 13"
-	/tset/XI/XSelectExtensionEvent/XSelectExtensionEvent
+	/XI/XSelectExtensionEvent/XSelectExtensionEvent
 	"VSW5TESTSUITE CASE XSendExtensionEvent 20"
-	/tset/XI/SendExtensionEvent/SendExtensionEvent
+	/XI/SendExtensionEvent/SendExtensionEvent
 	"VSW5TESTSUITE CASE XUngrabDevice 4"
-	/tset/XI/XUngrabDevice/XUngrabDevice
+	/XI/XUngrabDevice/XUngrabDevice
 	"VSW5TESTSUITE CASE XUngrabDeviceButton 11"
-	/tset/XI/UngrabDeviceButton/UngrabDeviceButton
+	/XI/UngrabDeviceButton/UngrabDeviceButton
 	"VSW5TESTSUITE CASE XUngrabDeviceKey 12"
-	/tset/XI/UngrabDeviceKey/UngrabDeviceKey
+	/XI/UngrabDeviceKey/UngrabDeviceKey
