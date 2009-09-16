@@ -584,6 +584,10 @@ register struct proctab *prp;
 	char *altexecdir;
 	int shared;
 
+	/* see if we should create locks at all */
+	if (!getmcflag("TET_EXEC_LOCK", prp->pr_currmode))
+		return 0;
+
 	/* see if we should create shared or exclusive locks */
 	switch (prp->pr_currmode) {
 	case TCC_EXEC:

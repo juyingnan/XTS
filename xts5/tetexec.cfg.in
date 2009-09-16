@@ -134,6 +134,12 @@
 # multiple servers.  
 TET_EXEC_IN_PLACE=True
 
+# TET_EXEC_LOCK - Indicate whether file locking should be used. Setting
+# this variable to True means that a "tet_lock" file will be created in
+# the execution directory of the test program. When this file exists,
+# tcc will skip that test.
+TET_EXEC_LOCK=False
+
 # TET_SAVE_FILES - This indicates which files generated during execution of
 # tests are to be saved for later examination. 
 # This line should not be altered.

@@ -1172,6 +1172,7 @@ int mode;
 		int bv_len;
 	} bvar[] = {
 		{ "TET_EXEC_IN_PLACE" },
+		{ "TET_EXEC_LOCK" },
 		{ "TET_OUTPUT_CAPTURE" },
 		{ "TET_API_COMPLIANT" },
 		{ "TET_PASS_TC_NAME" },
