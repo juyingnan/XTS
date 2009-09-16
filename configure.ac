@@ -105,6 +105,7 @@ src/tet3/tcm/Makefile
 src/tet3/tcc/Makefile
 src/tet3/tcclib/Makefile
 xts5/Makefile
+xts5/scenarios/Makefile
 xts5/src/Makefile
 xts5/src/lib/Makefile
 xts5/src/libproto/Makefile
