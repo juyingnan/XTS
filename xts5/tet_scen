@@ -2629,7 +2629,7 @@ XcmsConversionProc
 
 XcmsConversionProc2
 	"VSW5TESTSUITE CASE XcmsConversionProc 4"
-	/Xlib7/XcmsConversionProc/XcmsConversionProc
+	/Xlib7/XcmsConversionProc2/XcmsConversionProc2
 
 XcmsCreateCCC
 	"VSW5TESTSUITE CASE XcmsCreateCCC 1"
