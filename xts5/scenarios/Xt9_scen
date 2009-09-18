@@ -80,7 +80,7 @@
 	"VSW5TESTSUITE CASE XtGrabButton 5"
 	/Xt9/XtGrabButton/XtGrabButton
 	"VSW5TESTSUITE CASE XtUngrabButton 2"
-	/Xt9/XtGrabButton/XtGrabButton
+	/Xt9/XtUngrabButton/XtUngrabButton
 	"VSW5TESTSUITE CASE XtGrabPointer 2"
 	/Xt9/XtGrabPointer/XtGrabPointer
 	"VSW5TESTSUITE CASE XtUngrabPointer 1"
