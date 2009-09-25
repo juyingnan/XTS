@@ -54,6 +54,7 @@ MODIFICATIONS:
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <time.h>
 #include <ctype.h>
 #include <errno.h>
@@ -360,7 +361,7 @@ char *tcname, **argv, *ocfname;
 	case TCS_BUILD:
 	case TCS_EXEC:
 	case TCS_CLEAN:
-		xresfilename(tcname, buf, sizeof buf);
+		xresfilename(argv[0], buf, sizeof buf);
 		(void) tcc_unlink(*prp->pr_sys, buf);
 		prp->pr_tetxres = rstrstore(buf);
 		break;
@@ -661,7 +662,11 @@ static void xresfilename(tcpath, xrfname, xrfnamelen)
 char *tcpath, *xrfname;
 int xrfnamelen;
 {
-	tcdirfname(tcpath, "tet_xres", xrfname, xrfnamelen);
+	char *tcname = tet_basename(tcpath);
+	char logname[64];
+
+	sprintf(logname, "%.*s.log", sizeof(logname) - 5, tcname);
+	fullpath(resdirname(), logname, xrfname, xrfnamelen, 1);
 }
 
 /*
