@@ -62,6 +62,7 @@ MODIFICATIONS:
 #include "scentab.h"
 #include "proctab.h"
 #include "tcc.h"
+#include "tet_api.h"
 #include "tet_jrnl.h"
 
 #ifndef NOTRACE
@@ -305,8 +306,18 @@ register struct proctab *prp;
 		if (rc < 0)
 			prp->pr_scen->sc_flags |= SCF_SKIP_EXEC;
 		break;
-	case TCS_BUILD:
 	case TCS_EXEC:
+		prp->pr_ntests++;
+		switch (prp->pr_exitcode) {
+		case TET_EXIT_FAILURE:
+			prp->pr_nfail++;
+			break;
+		case TET_EXIT_SKIP:
+			prp->pr_nskip++;
+			break;
+		}
+		/* fall through */
+	case TCS_BUILD:
 	case TCS_CLEAN:
 		rc = 0;
 		break;

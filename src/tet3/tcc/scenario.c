@@ -51,6 +51,7 @@ MODIFICATIONS:
 
 #include <stdio.h>
 #include <stdlib.h>
+#include <string.h>
 #include <limits.h>
 #include <sys/types.h>
 #include <time.h>
@@ -80,6 +81,7 @@ static int ncmdscen;
 /* scenario file name */
 static char *scenario_file = "tet_scen";
 
+static void print_summary PROTOLIST((struct proctab *));
 
 /*
 **	proclopt() - store a -l command-line option for later processing
@@ -247,6 +249,7 @@ int execscen()
 				next = q->pr_nextattn;
 		delay = (int) (next - now);
 	}
+	print_summary(prp);
 
 	/* all finished so free the proctab and return */
 	prfree(prp);
@@ -303,3 +306,42 @@ register struct proctab *prp;
 	return(1);
 }
 
+/*
+**	print_summary() - print a summary of the testing to stdout
+*/
+
+static void print_summary(struct proctab *prp)
+{
+	char dashes[80], report[80], skipped[80];
+	int rlen, slen = 0, dlen;;
+
+	/* build the report line */
+	if (prp->pr_nfail > 0)
+		rlen = snprintf(report, sizeof(report),
+				"%d of %d %s failed",
+				prp->pr_ntests, prp->pr_nfail,
+				(prp->pr_ntests > 0) ? "tests" : "test");
+	else
+		rlen = snprintf(report, sizeof(report),
+				"%s%d %s passed",
+				(prp->pr_ntests > 0) ? "All " : "",
+				prp->pr_ntests,
+				(prp->pr_ntests > 0) ? "tests" : "test");
+
+	/* build the skipped line */
+	if (prp->pr_nskip > 0)
+		slen = snprintf(skipped, sizeof(skipped), "(%d %s not run)",
+				prp->pr_nskip,
+				(prp->pr_ntests > 0) ? "tests were" : "test was");
+
+	/* build the dashes */
+	dlen = TET_MAX(rlen, slen);
+	memset(dashes, '=', dlen);
+	dashes[dlen] = '\0';
+
+	puts(dashes);
+	puts(report);
+	if (slen > 0)
+		puts(skipped);
+	puts(dashes);
+}

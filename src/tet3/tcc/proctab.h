@@ -75,6 +75,9 @@ struct proctab {
 	time_t pr_nextattn;		/* time for next attention */
 	int pr_waitinterval;		/* interval between waits */
 	int pr_waitcount;		/* no of waits to do after a kill */
+	int pr_ntests;			/* number of tests run */
+	int pr_nfail;			/* number of tests failed */
+	int pr_nskip;			/* number of tests skip */
 	struct {
 		int prc_modes;		/* modes of operation */
 		int prc_loopcount;	/* loop counter (for REPEAT,
