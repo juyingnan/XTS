@@ -361,7 +361,7 @@ char *tcname, **argv, *ocfname;
 	case TCS_BUILD:
 	case TCS_EXEC:
 	case TCS_CLEAN:
-		xresfilename(argv[0], buf, sizeof buf);
+		xresfilename(prp->pr_scen->sc_tcname, buf, sizeof buf);
 		(void) tcc_unlink(*prp->pr_sys, buf);
 		prp->pr_tetxres = rstrstore(buf);
 		break;
@@ -666,7 +666,7 @@ int xrfnamelen;
 	char logname[64];
 
 	sprintf(logname, "%.*s.log", sizeof(logname) - 5, tcname);
-	fullpath(resdirname(), logname, xrfname, xrfnamelen, 1);
+	tcdirfname(tcpath, logname, xrfname, xrfnamelen);
 }
 
 /*
@@ -679,8 +679,11 @@ char *tcpath, *fname, *path;
 int pathlen;
 {
 	char tcdir[MAXPATH];
+	size_t reslen;
 
-	tcc_dirname(tcpath, tcdir, sizeof tcdir);
+	strncpy(tcdir, resdirname(), sizeof(tcdir) - 1);
+	reslen = strlen(tcdir);
+	tcc_dirname(tcpath, tcdir + reslen, sizeof(tcdir) - reslen);
 	fullpath(tcdir, fname, path, pathlen, 1);
 }
 
