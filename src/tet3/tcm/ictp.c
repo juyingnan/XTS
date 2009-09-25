@@ -161,7 +161,7 @@ static char srcFile[] = __FILE__;	/* file name for error reporting */
 #ifdef TET_LITE	/* -LITE-CUT-LINE- */
    char *tet_tmpresfile;
    static char *tmpresenv;
-   static char *resenv, *resfile;
+   static char *resfile;
 #else		/* -START-LITE-CUT- */
    TET_IMPORT int tet_iclast = ~(~0 << S_ICBITS) - 2;
 					/* used in auto sync before cleanup */
@@ -799,65 +799,24 @@ static int ismaster()
 TET_IMPORT void tet_openres(progname)
 char *progname;
 {
-	char *resdir, *p;
-	char buf[MAXPATH];
-	static char resvar[] = "TET_RESFILE";
-	char *resname;
 	static char tmpvar[] = "TET_TMPRESFILE";
-	char *tmpname;
+	char buf[MAXPATH];
+	char *p;
 
-	/* set results filename from the program name */
-	if (progname) {
-		/* results file is prog.log */
-		resname = malloc(strlen(tet_basename(progname)) + 5);
-		if (!resname)
-			fatal(errno, "can't allocate resname in tet_openres()",
-				NULL);
-		sprintf(resname, "%s.log", tet_basename(progname));
+	/* get results filename from the environment */
+	resfile = getenv("TET_RESFILE");
+	if (!resfile)
+		fatal(0, "TET_RESFILE not set in the environment", NULL);
 
-		/* temporary results file is prog.log.tmp */
-		tmpname = malloc(strlen(resname) + 5);
-		if (!tmpname)
-			fatal(errno, "can't allocate tmpname in tet_openres()",
-				NULL);
-		sprintf(tmpname, "%s.tmp", resname);
-	}
-	else {
-		resname = strdup("tet_xres");
-		if (!resname)
-			fatal(errno, "can't allocate resname in tet_openres()",
-				NULL);
-		tmpname = strdup("tet_res.tmp");
-		if (!tmpname)
-			fatal(errno, "can't allocate tmpname in tet_openres()",
-				NULL);
-	}
-
-	/* set full path name of execution results file and temp results
-	   file, in a form convenient for placing in the environment */
-	if (!(resdir = getenv("TET_RESDIR"))) {
-		if (GETCWD(buf, sizeof(buf)) == NULL)
-			fatal(errno, "getcwd() failed", NULL);
-		resdir = buf;
-	}
-
-	resenv = malloc(strlen(resdir)+sizeof(resvar)+strlen(resname)+5);
-	if (resenv == NULL)
-		fatal(errno, "can't allocate resenv in tet_openres()",
-			(char *) 0);
-	TRACE2(tet_Tbuf, 6, "allocate resenv = %s", tet_i2x(resenv));
-
-	tmpresenv = malloc(strlen(resdir)+sizeof(tmpvar)+strlen(tmpname)+5);
+	tmpresenv = malloc(strlen(tmpvar) + strlen(resfile) +
+				strlen("=.tmp") + 1);
 	if (tmpresenv == NULL)
 		fatal(errno, "can't allocate tmpresenv in tet_openres()",
 			(char *) 0);
 	TRACE2(tet_Tbuf, 6, "allocate tmpresenv = %s",
 		tet_i2x(tmpresenv));
 
-	(void) sprintf(resenv, "%s=%s/%s", resvar, resdir, resname);
-	resfile = resenv + sizeof(resvar);
-
-	(void) sprintf(tmpresenv, "%s=%s/%s", tmpvar, resdir, tmpname);
+	sprintf(tmpresenv, "%s=%s.tmp", tmpvar, resfile);
 	tet_tmpresfile = tmpresenv + sizeof(tmpvar);
 
 	/* create the leading directories for the results file */
@@ -882,10 +841,6 @@ char *progname;
 
 	/* override umask (must be writable by set-uid children) */
 	(void) CHMOD(resfile, MODE666);
-
-	/* put pathname in environment to be picked up in exec'ed programs */
-	if (tet_putenv(resenv) != 0)
-		tet_error(0, "tet_putenv() failed when setting TET_RESFILE");
 
 	tet_combined_ok = 1;
 }
