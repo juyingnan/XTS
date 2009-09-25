@@ -373,10 +373,14 @@ char	**argv;
 				if (rc < 0)
 					tet_docleanup(EXIT_FAILURE);
 				ret = call_tps(icnum, &tpcount);
+				printf("%s (%d/%d): %s\n", tet_pname,
+					icnum, icp->ic_end,
+					tet_get_code(ret, NULL));
 				status = tet_addstatus(status,
 						tet_resulttostatus(ret));
 				tet_icend(icnum, tpcount);
 			}
+	printf("%s: %s\n", tet_pname, tet_getstatusname(status));
 
 	/* unexpected signals are fatal during cleanup */
 	setsigs(sigabandon);
