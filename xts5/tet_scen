@@ -2529,235 +2529,235 @@ XRecolorCursor
 
 XAllocColor
 	"VSW5TESTSUITE CASE XAllocColor 5"
-	/Xlib7/XAllocColor/XAllocColor
+	/Xlib7/XAllocColor
 
 XAllocColorCells
 	"VSW5TESTSUITE CASE XAllocColorCells 9"
-	/Xlib7/XAllocColorCells/XAllocColorCells
+	/Xlib7/XAllocColorCells
 
 XAllocColorPlanes
 	"VSW5TESTSUITE CASE XAllocColorPlanes 7"
-	/Xlib7/XAllocColorPlanes/XAllocColorPlanes
+	/Xlib7/XAllocColorPlanes
 
 XAllocNamedColor
 	"VSW5TESTSUITE CASE XAllocNamedColor 6"
-	/Xlib7/XAllocNamedColor/XAllocNamedColor
+	/Xlib7/XAllocNamedColor
 
 XCopyColormapAndFree
 	"VSW5TESTSUITE CASE XCopyColormapAndFree 5"
-	/Xlib7/XCopyColormapAndFree/XCopyColormapAndFree
+	/Xlib7/XCopyColormapAndFree
 
 XCreateColormap
 	"VSW5TESTSUITE CASE XCreateColormap 13"
-	/Xlib7/XCreateColormap/XCreateColormap
+	/Xlib7/XCreateColormap
 
 XFreeColormap
 	"VSW5TESTSUITE CASE XFreeColormap 5"
-	/Xlib7/XFreeColormap/XFreeColormap
+	/Xlib7/XFreeColormap
 
 XFreeColors
 	"VSW5TESTSUITE CASE XFreeColors 9"
-	/Xlib7/XFreeColors/XFreeColors
+	/Xlib7/XFreeColors
 
 XLookupColor
 	"VSW5TESTSUITE CASE XLookupColor 4"
-	/Xlib7/XLookupColor/XLookupColor
+	/Xlib7/XLookupColor
 
 XParseColor
 	"VSW5TESTSUITE CASE XParseColor 10"
-	/Xlib7/XParseColor/XParseColor
+	/Xlib7/XParseColor
 
 XQueryColor
 	"VSW5TESTSUITE CASE XQueryColor 3"
-	/Xlib7/XQueryColor/XQueryColor
+	/Xlib7/XQueryColor
 
 XQueryColors
 	"VSW5TESTSUITE CASE XQueryColors 3"
-	/Xlib7/XQueryColors/XQueryColors
+	/Xlib7/XQueryColors
 
 XStoreColor
 	"VSW5TESTSUITE CASE XStoreColor 8"
-	/Xlib7/XStoreColor/XStoreColor
+	/Xlib7/XStoreColor
 
 XStoreColors
 	"VSW5TESTSUITE CASE XStoreColors 9"
-	/Xlib7/XStoreColors/XStoreColors
+	/Xlib7/XStoreColors
 
 XStoreNamedColor
 	"VSW5TESTSUITE CASE XStoreNamedColor 9"
-	/Xlib7/XStoreNamedColor/XStoreNamedColor
+	/Xlib7/XStoreNamedColor
 
 XcmsAllocColor
 	"VSW5TESTSUITE CASE XcmsAllocColor 2"
-	/Xlib7/XcmsAllocColor/XcmsAllocColor
+	/Xlib7/XcmsAllocColor
 
 XcmsAddColorSpace
 	"VSW5TESTSUITE CASE XcmsAddColorSpace 1"
-	/Xlib7/XcmsAddColorSpace/XcmsAddColorSpace
+	/Xlib7/XcmsAddColorSpace
 
 XcmsAddFunctionSet
 	"VSW5TESTSUITE CASE XcmsAddFunctionSet 1"
-	/Xlib7/XcmsAddFunctionSet/XcmsAddFunctionSet
+	/Xlib7/XcmsAddFunctionSet
 
 XcmsAllocNamedColor
 	"VSW5TESTSUITE CASE XcmsAllocNamedColor 2"
-	/Xlib7/XcmsAllocNamedColor/XcmsAllocNamedColor
+	/Xlib7/XcmsAllocNamedColor
 
 XcmsCCCOfColormap
 	"VSW5TESTSUITE CASE XcmsCCCOfColormap 1"
-	/Xlib7/XcmsCCCOfColormap/XcmsCCCOfColormap
+	/Xlib7/XcmsCCCOfColormap
 
 XcmsConvertColors
 	"VSW5TESTSUITE CASE XcmsConvertColors 1"
-	/Xlib7/XcmsConvertColors/XcmsConvertColors
+	/Xlib7/XcmsConvertColors
 
 XcmsCIELabQueryMaxLC
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxLC 1"
-	/Xlib7/XcmsCIELabQueryMaxLC/XcmsCIELabQueryMaxLC
+	/Xlib7/XcmsCIELabQueryMaxLC
 
 XcmsCIELabQueryMaxC
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxC 1"
-	/Xlib7/XcmsCIELabQueryMaxC/XcmsCIELabQueryMaxC
+	/Xlib7/XcmsCIELabQueryMaxC
 
 XcmsCIELabQueryMaxL
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMaxL 1"
-	/Xlib7/XcmsCIELabQueryMaxL/XcmsCIELabQueryMaxL
+	/Xlib7/XcmsCIELabQueryMaxL
 
 XcmsConversionProc
 	"VSW5TESTSUITE CASE XcmsConversionProc 9"
-	/Xlib7/XcmsConversionProc/XcmsConversionProc
+	/Xlib7/XcmsConversionProc
 
 XcmsConversionProc2
 	"VSW5TESTSUITE CASE XcmsConversionProc 4"
-	/Xlib7/XcmsConversionProc2/XcmsConversionProc2
+	/Xlib7/XcmsConversionProc2
 
 XcmsCreateCCC
 	"VSW5TESTSUITE CASE XcmsCreateCCC 1"
-	/Xlib7/XcmsCreateCCC/XcmsCreateCCC
+	/Xlib7/XcmsCreateCCC
 
 XcmsDefaultCCC
 	"VSW5TESTSUITE CASE XcmsDefaultCCC 1"
-	/Xlib7/XcmsDefaultCCC/XcmsDefaultCCC
+	/Xlib7/XcmsDefaultCCC
 
 XcmsDisplayOfCCC
 	"VSW5TESTSUITE CASE XcmsDisplayOfCCC 1"
-	/Xlib7/XcmsDisplayOfCCC/XcmsDisplayOfCCC
+	/Xlib7/XcmsDisplayOfCCC
 
 XcmsFreeCCC
 	"VSW5TESTSUITE CASE XcmsFreeCCC 1"
-	/Xlib7/XcmsFreeCCC/XcmsFreeCCC
+	/Xlib7/XcmsFreeCCC
 
 XcmsFormatOfPrefix
 	"VSW5TESTSUITE CASE XcmsFormatOfPrefix 2"
-	/Xlib7/XcmsFormatOfPrefix/XcmsFormatOfPrefix
+	/Xlib7/XcmsFormatOfPrefix
 
 XcmsLookupColor
 	"VSW5TESTSUITE CASE XcmsLookupColor 1"
-	/Xlib7/XcmsLookupColor/XcmsLookupColor
+	/Xlib7/XcmsLookupColor
 
 XcmsCIELabQueryMinL
 	"VSW5TESTSUITE CASE XcmsCIELabQueryMinL 1"
-	/Xlib7/XcmsCIELabQueryMinL/XcmsCIELabQueryMinL
+	/Xlib7/XcmsCIELabQueryMinL
 
 XcmsPrefixOfFormat
 	"VSW5TESTSUITE CASE XcmsPrefixOfFormat 1"
-	/Xlib7/XcmsPrefixOfFormat/XcmsPrefixOfFormat
+	/Xlib7/XcmsPrefixOfFormat
 
 XcmsQueryBlack
 	"VSW5TESTSUITE CASE XcmsQueryBlack 1"
-	/Xlib7/XcmsQueryBlack/XcmsQueryBlack
+	/Xlib7/XcmsQueryBlack
 
 XcmsQueryBlue
 	"VSW5TESTSUITE CASE XcmsQueryBlue 1"
-	/Xlib7/XcmsQueryBlue/XcmsQueryBlue
+	/Xlib7/XcmsQueryBlue
 
 XcmsQueryColor
 	"VSW5TESTSUITE CASE XcmsQueryColor 1"
-	/Xlib7/XcmsQueryColor/XcmsQueryColor
+	/Xlib7/XcmsQueryColor
 
 XcmsQueryColors
 	"VSW5TESTSUITE CASE XcmsQueryColors 3"
-	/Xlib7/XcmsQueryColors/XcmsQueryColors
+	/Xlib7/XcmsQueryColors
 
 XcmsQueryGreen
 	"VSW5TESTSUITE CASE XcmsQueryGreen 1"
-	/Xlib7/XcmsQueryGreen/XcmsQueryGreen
+	/Xlib7/XcmsQueryGreen
 
 XcmsCIELuvQueryMaxC
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxC 1"
-	/Xlib7/XcmsCIELuvQueryMaxC/XcmsCIELuvQueryMaxC
+	/Xlib7/XcmsCIELuvQueryMaxC
 
 XcmsCIELuvQueryMinL
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMinL 1"
-	/Xlib7/XcmsCIELuvQueryMinL/XcmsCIELuvQueryMinL
+	/Xlib7/XcmsCIELuvQueryMinL
 
 XcmsCIELuvQueryMaxL
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxL 1"
-	/Xlib7/XcmsCIELuvQueryMaxL/XcmsCIELuvQueryMaxL
+	/Xlib7/XcmsCIELuvQueryMaxL
 
 XcmsCIELuvQueryMaxLC
 	"VSW5TESTSUITE CASE XcmsCIELuvQueryMaxLC 1"
-	/Xlib7/XcmsCIELuvQueryMaxLC/XcmsCIELuvQueryMaxLC
+	/Xlib7/XcmsCIELuvQueryMaxLC
 
 XcmsQueryRed
 	"VSW5TESTSUITE CASE XcmsQueryRed 1"
-	/Xlib7/XcmsQueryRed/XcmsQueryRed
+	/Xlib7/XcmsQueryRed
 
 XcmsQueryWhite
 	"VSW5TESTSUITE CASE XcmsQueryWhite 1"
-	/Xlib7/XcmsQueryWhite/XcmsQueryWhite
+	/Xlib7/XcmsQueryWhite
 
 XcmsScreenNumberOfCCC
 	"VSW5TESTSUITE CASE XcmsScreenNumberOfCCC 1"
-	/Xlib7/XcmsScreenNumberOfCCC/XcmsScreenNumberOfCCC
+	/Xlib7/XcmsScreenNumberOfCCC
 
 XcmsStoreColor
 	"VSW5TESTSUITE CASE XcmsStoreColor 4"
-	/Xlib7/XcmsStoreColor/XcmsStoreColor
+	/Xlib7/XcmsStoreColor
 
 XcmsStoreColors
 	"VSW5TESTSUITE CASE XcmsStoreColors 4"
-	/Xlib7/XcmsStoreColors/XcmsStoreColors
+	/Xlib7/XcmsStoreColors
 
 XcmsTekHVCQueryMaxC
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxC 1"
-	/Xlib7/XcmsTekHVCQueryMaxC/XcmsTekHVCQueryMaxC
+	/Xlib7/XcmsTekHVCQueryMaxC
 
 XcmsTekHVCQueryMinV
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMinV 1"
-	/Xlib7/XcmsTekHVCQueryMinV/XcmsTekHVCQueryMinV
+	/Xlib7/XcmsTekHVCQueryMinV
 
 XcmsTekHVCQueryMaxV
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxV 1"
-	/Xlib7/XcmsTekHVCQueryMaxV/XcmsTekHVCQueryMaxV
+	/Xlib7/XcmsTekHVCQueryMaxV
 
 XcmsTekHVCQueryMaxVC
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxVC 1"
-	/Xlib7/XcmsTekHVCQueryMaxVC/XcmsTekHVCQueryMaxVC
+	/Xlib7/XcmsTekHVCQueryMaxVC
 
 XcmsTekHVCQueryMaxVSamples
 	"VSW5TESTSUITE CASE XcmsTekHVCQueryMaxVSamples 1"
-	/Xlib7/XcmsTekHVCQueryMaxVSamples/XcmsTekHVCQueryMaxVSamples
+	/Xlib7/XcmsTekHVCQueryMaxVSamples
 
 XcmsVisualOfCCC
 	"VSW5TESTSUITE CASE XcmsVisualOfCCC 1"
-	/Xlib7/XcmsVisualOfCCC/XcmsVisualOfCCC
+	/Xlib7/XcmsVisualOfCCC
 
 XcmsSetWhiteAdjustProc
 	"VSW5TESTSUITE CASE XcmsSetWhiteAdjustProc 3"
-	/Xlib7/XcmsSetWhiteAdjustProc/XcmsSetWhiteAdjustProc
+	/Xlib7/XcmsSetWhiteAdjustProc
 
 XcmsScreenWhitePointOfCCC
 	"VSW5TESTSUITE CASE XcmsScreenWhitePointOfCCC 1"
-	/Xlib7/XcmsScreenWhitePointOfCCC/XcmsScreenWhitePointOfCCC
+	/Xlib7/XcmsScreenWhitePointOfCCC
 
 XcmsClientWhitePointOfCCC
 	"VSW5TESTSUITE CASE XcmsClientWhitePointOfCCC 1"
-	/Xlib7/XcmsClientWhitePointOfCCC/XcmsClientWhitePointOfCCC
+	/Xlib7/XcmsClientWhitePointOfCCC
 
 XcmsSetWhitePoint
 	"VSW5TESTSUITE CASE XcmsSetWhitePoint 1"
-	/Xlib7/XcmsSetWhitePoint/XcmsSetWhitePoint
+	/Xlib7/XcmsSetWhitePoint
 
 # Discrete tests for Xlib Chapter 8-Graphics Context Functions
 
