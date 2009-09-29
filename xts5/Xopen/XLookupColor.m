@@ -20,40 +20,39 @@ SOFTWARE.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xopen/XAllocNamedColor/XAllocNamedColor.m
+>># File: xts5/Xopen/XLookupColor.m
 >># 
 >># Description:
->># 	Tests for XAllocNamedColor()
+>># 	Tests for XLookupColor()
 >># 
 >># Modifications:
->># $Log: allcnmdclr.m,v $
+>># $Log: lkpclr.m,v $
 >># Revision 1.2  2005-11-03 08:44:00  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
->># Revision 1.1.1.2  2005/04/15 14:05:39  anderson
+>># Revision 1.1.1.2  2005/04/15 14:05:40  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:36:01  mar
+>># Revision 8.0  1998/12/23 23:35:52  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:58:47  mar
+>># Revision 7.0  1998/10/30 22:58:34  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:27:14  tbr
+>># Revision 6.0  1998/03/02 05:27:05  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:23:47  tbr
+>># Revision 5.0  1998/01/26 03:23:39  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:14:55  tbr
+>># Revision 4.0  1995/12/15 09:14:27  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  01:18:22  andy
+>># Revision 3.1  1995/12/15  01:17:52  andy
 >># Prepare for GA Release
 >>#
-
 /*
- *      SCCS:  @(#)  allcnmdclr.m Rel 1.10	    (12/10/91)
+ *      SCCS:  @(#)  lkpclr.m Rel 1.10	    (12/10/91)
  *
  *	UniSoft Ltd., London, England
  *
@@ -68,14 +67,14 @@ SOFTWARE.
  * X/Open and the 'X' symbol are trademarks of X/Open Company Limited in
  * the UK and other countries.
  */
->>TITLE XAllocNamedColor Xopen
+>>TITLE XLookupColor Xopen
 Status
-XAllocNamedColor(display, colormap, color_name, screen_def_return, exact_def_return)
+LookupColor(display, colormap, color_name, exact_def_return, screen_def_return)
 Display *display = Dsp;
 Colormap colormap = DefaultColormap(display, DefaultScreen(display));
 char *color_name = "";
-XColor *screen_def_return = &dummycol;
 XColor *exact_def_return = &dummycol;
+XColor *screen_def_return = &dummycol;
 >>EXTERN
 
 XColor dummycol;
@@ -147,7 +146,6 @@ For each supported visual type:
     Obtain the rgb values for the colour.
     Verify that the exact rgb values are identical.
     Verify that the supported rbg values are identical.
-    Free the allocated colourmap cell using XFreeColors.
 >>CODE
 int		i;
 int		firstunsupported;
@@ -183,26 +181,23 @@ static char	*p[5][2] =
 			color_name= p[i][0];
 		
 			status = XCALL;
-
 	
 			if( status == (Status) 0) {
 				trace("Colour \"%s\" is not supported.", color_name);
 				firstunsupported = 1;
-			} else
-				XFreeColors(display, colormap, &exactcol.pixel, 1, (unsigned long)0);
+			}
 
 			exact_def_return = &exactcol2;
 			screen_def_return = &screencol2;
 			color_name= p[i][1];
 
 			status = XCALL;
-
+	
 			if( status == (Status) 0) {
 				trace("Colour \"%s\" is not supported.", color_name);
 				secondunsupported = 1;
-			} else
-				XFreeColors(display, colormap, &(exactcol2.pixel), 1, (unsigned long)0);
-	
+			}
+
 			if(firstunsupported && secondunsupported) {
 				CHECK;
 				CHECK;				
@@ -321,7 +316,6 @@ For each supported visual:
   For each pair of colour names in the table:
     Obtain the rgb values corresponding to the name using xname.
     Verify that the rgb triples are different.
-    Free the allocated colourmap cell using XFreeColors.
 >>EXTERN
 static int
 compare(col1, col2, name1, name2, eflag)
@@ -425,7 +419,6 @@ static char	*list2[5] = {
 				trace("Colour \"%s\" is not supported.", color_name);
 				ecols[i].flags = 0;
 			} else {
-				XFreeColors(display, colormap, &ecols[i].pixel, 1, (unsigned long)0);
 				ecols[i].flags = 1;
 			}
 	
@@ -463,7 +456,6 @@ static char	*list2[5] = {
 				trace("Colour \"%s\" is not supported.", color_name);
 				ecols2[i].flags = 0;
 			} else {
-				XFreeColors(display, colormap, &ecols[i].pixel, 1, (unsigned long)0);
 				ecols2[i].flags = 1;
 			}
 	
@@ -561,7 +553,6 @@ For each supported visual type:
     Obtain the rgb values for the colour.
     Verify that the exact rgb values are identical.
     Verify that the supported rbg values are identical.
-    Free the allocated colourmap cell using XFreeColors.
 >>CODE
 int		i;
 XVisualInfo	*vp;
@@ -639,8 +630,7 @@ static char		*list[] = {
 				trace("Colour name \"%s\" is not supported.", color_name);
 				CHECK; CHECK;CHECK;
 			} else {
-				XFreeColors(display, colormap, &exactcol.pixel, 1, (unsigned long)0);
-				
+
 				color_name = convertname(list[i]);
 				exact_def_return = &exactcol2;
 				screen_def_return = &screencol2;
@@ -651,7 +641,6 @@ static char		*list[] = {
 					FAIL;
 				} else {
 
-					XFreeColors(display, colormap, &exactcol.pixel, 1, (unsigned long)0);
 					CHECK;
 
 					if((exactcol2.red != exactcol.red) ||
@@ -678,13 +667,12 @@ static char		*list[] = {
 					} else
 						CHECK;
 
-
 				}
 
 				if(!isdeleted())
 					free(color_name);
-
 			}
+
 		}
 
 	}
@@ -703,12 +691,10 @@ For each supported visual type:
   For the colournames in the table:
     Obtain the rgb values for the colour using xname.
     Verify that the call did not return 0.
-    Free the allocated colourmap cell using XFreeColors.
 >>CODE
 int		i;
 Status		status;
 XVisualInfo	*vp;
-XColor		exactcol;
 unsigned long	vmask;
 static char	*list[] = { "black", "white" };
 
@@ -718,7 +704,6 @@ static char	*list[] = { "black", "white" };
 	} else
 		CHECK;
 
-	exact_def_return = &exactcol;
 	for(resetsupvis(vmask); nextsupvis(&vp); ) {
 
 		colormap = makecolmap(display, vp->visual, AllocNone);
@@ -731,10 +716,8 @@ static char	*list[] = { "black", "white" };
 			if(status == 0) {
 				report("Colour name \"%s\" is not supported.", list[i]);
 				FAIL;
-			} else {
-				XFreeColors(display, colormap, &exactcol.pixel, 1, (unsigned long)0);
+			} else
 				CHECK;
-			}
 		}
 	}
 
@@ -767,12 +750,10 @@ If the server supports GrayScale or StaticGray with colourmap size greater than 
     For each colour name in the table:
       Obtain the rgb values for the for the colour using xname.
       Verify that the call did not return 0.
-      Free the allocated colourmap cell using XFreeColors.
 >>CODE
 int		i;
 Status		status;
 XVisualInfo	*vp;
-XColor		exactcol;
 unsigned long 	vmask;
 static char	*list[] = { "gray", "grey", "dark gray", "dark grey" };
 
@@ -800,7 +781,6 @@ static char	*list[] = { "gray", "grey", "dark gray", "dark grey" };
 	} else
 		CHECK;
 
-	exact_def_return = &exactcol;
 	for(resetsupvis(vmask); nextsupvis(&vp); ) {
 
 		colormap = makecolmap(display, vp->visual, AllocNone);
@@ -812,10 +792,8 @@ static char	*list[] = { "gray", "grey", "dark gray", "dark grey" };
 			if(status == 0L) {
 				report("Colour name \"%s\" is not supported.", color_name);
 				FAIL;
-			} else {
-				XFreeColors(display, colormap, &exactcol.pixel, 1, (unsigned long)0);
+			} else
 				CHECK;
-			}
 		}
 	}
 
@@ -852,13 +830,11 @@ For each supported visual type from PseudoColor, StaticColor, TrueColor and Dire
   For the colournames in the table:
     Obtain the rgb values for the colour using xname.
     Verify that the call did not return 0.
-    Free the allocated colourmap cell using XFreeColors.
 >>CODE
 int		i;
 unsigned long	vmask = (1L<<PseudoColor|1L<<StaticColor|1L<<TrueColor|1L<<DirectColor);
 Status		status;
 XVisualInfo	*vp;
-XColor		exactcol;
 static char	*list[] = { "blue", "cyan", "green", "magenta", "red", "yellow" };
 
 
@@ -870,7 +846,6 @@ static char	*list[] = { "blue", "cyan", "green", "magenta", "red", "yellow" };
 		CHECK;
 
 
-	exact_def_return = &exactcol;
 	for(resetsupvis(vmask); nextsupvis(&vp); ) {
 
 		colormap = makecolmap(display, vp->visual, AllocNone);
@@ -882,10 +857,8 @@ static char	*list[] = { "blue", "cyan", "green", "magenta", "red", "yellow" };
 			if(status == 0L) {
 				report("Colour name \"%s\" is not supported.", color_name);
 				FAIL;
-			} else {
-				XFreeColors(display, colormap, &exactcol.pixel, 1, (unsigned long)0);
+			} else
 				CHECK;
-			}
 		}
 	}
 
@@ -942,7 +915,6 @@ are also recognised on another call to xname.
 If a colourname in sets M, V or X causes xname to return non-zero:
   For each supported visual:
     Verify that all the colour names in C, M and V also cause xname to return non-zero:
-    Free the allocated colourmap cell using XFreeColors.
 >>CODE
 XVisualInfo	*vp;
 unsigned long	vmask;
@@ -951,10 +923,9 @@ int		j;
 int		supported = 0;
 int		unsupported = 0;
 Status		status;
-XColor		exactcol;
 static char *MVX[] = {	"gray", "grey", "dark gray","dark grey","dark blue","brown","dark cyan","dark green","dark magenta",
 			"dark red","medium blue","midnight blue","navy blue","sky blue","coral","gold","dark slate gray",
-			"dark slate grey","dim gray","dim grey","light gray","light grey", "light green", "forest green",
+			"dark slate grey","dim gray","dim grey","light gray","light grey","light green","forest green",
 			"lime green","pale green","spring green","maroon","orange","pink","indian red","orange red",
 			"violet red","salmon","sienna","tan","turquoise","violet","blue violet","wheat" };
 static char *CMV[] = {	"blue","cyan","green","magenta","red","yellow","gray","grey","dark gray","dark grey",
@@ -966,7 +937,6 @@ static char *CMV[] = {	"blue","cyan","green","magenta","red","yellow","gray","gr
 	} else
 		CHECK;
 
-	exact_def_return = &exactcol;
 	for(resetsupvis(vmask); nextsupvis(&vp); ) {
 
 		colormap = makecolmap(display, vp->visual, AllocNone);
@@ -977,7 +947,6 @@ static char *CMV[] = {	"blue","cyan","green","magenta","red","yellow","gray","gr
 
 		if(status != 0) {
 			supported++;
-			XFreeColors(display, colormap, &exactcol.pixel, 1, (unsigned long)0);
 			break;
 		} else
 			unsupported++;
@@ -996,10 +965,8 @@ static char *CMV[] = {	"blue","cyan","green","magenta","red","yellow","gray","gr
 			if(status == (Status) 0) {
 				report("Colour name \"%s\" is not supported.", color_name);
 				FAIL;
-			} else {
-				XFreeColors(display, colormap, &exactcol.pixel, 1, (unsigned long)0);
+			} else
 				CHECK;
-			}
 		}
 	}
 

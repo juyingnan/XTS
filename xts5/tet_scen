@@ -3069,15 +3069,15 @@ XUnloadFont
 
 xXAllocNamedColor
 	"VSW5TESTSUITE CASE XAllocNamedColor 7"
-	/Xopen/XAllocNamedColor/XAllocNamedColor
+	/Xopen/XAllocNamedColor
 
 xcursorfont
 	"VSW5TESTSUITE CASE cursorfont 32"
-	/Xopen/cursorfont/cursorfont
+	/Xopen/cursorfont
 
 xXCreateFontCursor
 	"VSW5TESTSUITE CASE XCreateFontCursor 31"
-	/Xopen/XCreateFontCursor/XCreateFontCursor
+	/Xopen/XCreateFontCursor
 
 xkeysym
 	"VSW5TESTSUITE CASE keysym 7"
@@ -3093,7 +3093,7 @@ xXKeysymToKeycode
 
 xXLookupColor
 	"VSW5TESTSUITE CASE XLookupColor 7"
-	/Xopen/XLookupColor/XLookupColor
+	/Xopen/XLookupColor
 
 xXStringToKeysym
 	"VSW5TESTSUITE CASE XStringToKeysym 14"

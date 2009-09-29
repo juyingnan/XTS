@@ -1,8 +1,8 @@
-XAllocNamedColor/XAllocNamedColor
-cursorfont/cursorfont
-XCreateFontCursor/XCreateFontCursor
+XAllocNamedColor
+cursorfont
+XCreateFontCursor
 keysym/keysym
 keysymdef/keysymdef
 XKeysymToKeycode/XKeysymToKeycode
-XLookupColor/XLookupColor
+XLookupColor
 XStringToKeysym/XStringToKeysym

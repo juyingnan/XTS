@@ -9,13 +9,13 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	XAllocNamedColor/XAllocNamedColor \
-	cursorfont/cursorfont \
-	XCreateFontCursor/XCreateFontCursor \
+	XAllocNamedColor \
+	cursorfont \
+	XCreateFontCursor \
 	keysym/keysym \
 	keysymdef/keysymdef \
 	XKeysymToKeycode/XKeysymToKeycode \
-	XLookupColor/XLookupColor \
+	XLookupColor \
 	XStringToKeysym/XStringToKeysym
 
 keysym_keysym_SOURCES = \
