@@ -55,60 +55,60 @@
 #
 
 	"VSW5TESTSUITE CASE XChangeGC 25"
-	/Xlib8/XChangeGC/XChangeGC
+	/Xlib8/XChangeGC
 	"VSW5TESTSUITE CASE XCopyGC 5"
-	/Xlib8/XCopyGC/XCopyGC
+	/Xlib8/XCopyGC
 	"VSW5TESTSUITE CASE XCreateGC 26"
-	/Xlib8/XCreateGC/XCreateGC
+	/Xlib8/XCreateGC
 	"VSW5TESTSUITE CASE XFreeGC 2"
-	/Xlib8/XFreeGC/XFreeGC
+	/Xlib8/XFreeGC
 	"VSW5TESTSUITE CASE XGContextFromGC 1"
-	/Xlib8/XGContextFromGC/XGContextFromGC
+	/Xlib8/XGContextFromGC
 	"VSW5TESTSUITE CASE XGetGCValues 3"
-	/Xlib8/XGetGCValues/XGetGCValues
+	/Xlib8/XGetGCValues
 	"VSW5TESTSUITE CASE XQueryBestStipple 3"
-	/Xlib8/XQueryBestStipple/XQueryBestStipple
+	/Xlib8/XQueryBestStipple
 	"VSW5TESTSUITE CASE XQueryBestSize 7"
-	/Xlib8/XQueryBestSize/XQueryBestSize
+	/Xlib8/XQueryBestSize
 	"VSW5TESTSUITE CASE XQueryBestTile 3"
-	/Xlib8/XQueryBestTile/XQueryBestTile
+	/Xlib8/XQueryBestTile
 	"VSW5TESTSUITE CASE XSetArcMode 4"
-	/Xlib8/XSetArcMode/XSetArcMode
+	/Xlib8/XSetArcMode
 	"VSW5TESTSUITE CASE XSetBackground 3"
-	/Xlib8/XSetBackground/XSetBackground
+	/Xlib8/XSetBackground
 	"VSW5TESTSUITE CASE XSetClipMask 7"
-	/Xlib8/XSetClipMask/XSetClipMask
+	/Xlib8/XSetClipMask
 	"VSW5TESTSUITE CASE XSetClipOrigin 3"
-	/Xlib8/XSetClipOrigin/XSetClipOrigin
+	/Xlib8/XSetClipOrigin
 	"VSW5TESTSUITE CASE XSetClipRectangles 9"
-	/Xlib8/XSetClipRectangles/XSetClipRectangles
+	/Xlib8/XSetClipRectangles
 	"VSW5TESTSUITE CASE XSetDashes 7"
-	/Xlib8/XSetDashes/XSetDashes
+	/Xlib8/XSetDashes
 	"VSW5TESTSUITE CASE XSetFillRule 4"
-	/Xlib8/XSetFillRule/XSetFillRule
+	/Xlib8/XSetFillRule
 	"VSW5TESTSUITE CASE XSetFillStyle 4"
-	/Xlib8/XSetFillStyle/XSetFillStyle
+	/Xlib8/XSetFillStyle
 	"VSW5TESTSUITE CASE XSetFunction 4"
-	/Xlib8/XSetFunction/XSetFunction
+	/Xlib8/XSetFunction
 	"VSW5TESTSUITE CASE XSetFont 4"
-	/Xlib8/XSetFont/XSetFont
+	/Xlib8/XSetFont
 	"VSW5TESTSUITE CASE XSetForeground 3"
-	/Xlib8/XSetForeground/XSetForeground
+	/Xlib8/XSetForeground
 	"VSW5TESTSUITE CASE XSetGraphicsExposures 4"
-	/Xlib8/XSetGraphicsExposures/XSetGraphicsExposures
+	/Xlib8/XSetGraphicsExposures
 	"VSW5TESTSUITE CASE XSetLineAttributes 6"
-	/Xlib8/XSetLineAttributes/XSetLineAttributes
+	/Xlib8/XSetLineAttributes
 	"VSW5TESTSUITE CASE XSetPlaneMask 3"
-	/Xlib8/XSetPlaneMask/XSetPlaneMask
+	/Xlib8/XSetPlaneMask
 	"VSW5TESTSUITE CASE XSetSubwindowMode 4"
-	/Xlib8/XSetSubwindowMode/XSetSubwindowMode
+	/Xlib8/XSetSubwindowMode
 	"VSW5TESTSUITE CASE XSetStipple 6"
-	/Xlib8/XSetStipple/XSetStipple
+	/Xlib8/XSetStipple
 	"VSW5TESTSUITE CASE XSetState 4"
-	/Xlib8/XSetState/XSetState
+	/Xlib8/XSetState
 	"VSW5TESTSUITE CASE XSetTile 6"
-	/Xlib8/XSetTile/XSetTile
+	/Xlib8/XSetTile
 	"VSW5TESTSUITE CASE XSetTSOrigin 3"
-	/Xlib8/XSetTSOrigin/XSetTSOrigin
+	/Xlib8/XSetTSOrigin
 	"VSW5TESTSUITE CASE XFlushGC 2"
-	/Xlib8/XFlushGC/XFlushGC
+	/Xlib8/XFlushGC
