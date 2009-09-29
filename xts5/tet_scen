@@ -1345,159 +1345,159 @@ XwcTextExtents
 
 XAllocClassHint
 	"VSW5TESTSUITE CASE XAllocClassHint 2"
-	/Xlib15/XAllocClassHint/XAllocClassHint
+	/Xlib15/XAllocClassHint
 
 XAllocIconSize
 	"VSW5TESTSUITE CASE XAllocIconSize 2"
-	/Xlib15/XAllocIconSize/XAllocIconSize
+	/Xlib15/XAllocIconSize
 
 XAllocStandardColormap
 	"VSW5TESTSUITE CASE XAllocStandardColormap 2"
-	/Xlib15/XAllocStandardColormap/XAllocStandardColormap
+	/Xlib15/XAllocStandardColormap
 
 XAllocSizeHints
 	"VSW5TESTSUITE CASE XAllocSizeHints 2"
-	/Xlib15/XAllocSizeHints/XAllocSizeHints
+	/Xlib15/XAllocSizeHints
 
 XAllocWMHints
 	"VSW5TESTSUITE CASE XAllocWMHints 2"
-	/Xlib15/XAllocWMHints/XAllocWMHints
+	/Xlib15/XAllocWMHints
 
 XFreeStringList
 	"VSW5TESTSUITE CASE XFreeStringList 1"
-	/Xlib15/XFreeStringList/XFreeStringList
+	/Xlib15/XFreeStringList
 
 XFetchName
 	"VSW5TESTSUITE CASE XFetchName 3"
-	/Xlib15/XFetchName/XFetchName
+	/Xlib15/XFetchName
 
 XGetClassHint
 	"VSW5TESTSUITE CASE XGetClassHint 3"
-	/Xlib15/XGetClassHint/XGetClassHint
+	/Xlib15/XGetClassHint
 
 XGetCommand
 	"VSW5TESTSUITE CASE XGetCommand 3"
-	/Xlib15/XGetCommand/XGetCommand
+	/Xlib15/XGetCommand
 
 XGetIconName
 	"VSW5TESTSUITE CASE XGetIconName 3"
-	/Xlib15/XGetIconName/XGetIconName
+	/Xlib15/XGetIconName
 
 XGetIconSizes
 	"VSW5TESTSUITE CASE XGetIconSizes 3"
-	/Xlib15/XGetIconSizes/XGetIconSizes
+	/Xlib15/XGetIconSizes
 
 XGetRGBColormaps
 	"VSW5TESTSUITE CASE XGetRGBColormaps 6"
-	/Xlib15/XGetRGBColormaps/XGetRGBColormaps
+	/Xlib15/XGetRGBColormaps
 
 XGetTransientForHint
 	"VSW5TESTSUITE CASE XGetTransientForHint 3"
-	/Xlib15/XGetTransientForHint/XGetTransientForHint
+	/Xlib15/XGetTransientForHint
 
 XGetTextProperty
 	"VSW5TESTSUITE CASE XGetTextProperty 4"
-	/Xlib15/XGetTextProperty/XGetTextProperty
+	/Xlib15/XGetTextProperty
 
 XGetWMClientMachine
 	"VSW5TESTSUITE CASE XGetWMClientMachine 3"
-	/Xlib15/XGetWMClientMachine/XGetWMClientMachine
+	/Xlib15/XGetWMClientMachine
 
 XGetWMColormapWindows
 	"VSW5TESTSUITE CASE XGetWMColormapWindows 4"
-	/Xlib15/XGetWMColormapWindows/XGetWMColormapWindows
+	/Xlib15/XGetWMColormapWindows
 
 XGetWMHints
 	"VSW5TESTSUITE CASE XGetWMHints 3"
-	/Xlib15/XGetWMHints/XGetWMHints
+	/Xlib15/XGetWMHints
 
 XGetWMIconName
 	"VSW5TESTSUITE CASE XGetWMIconName 3"
-	/Xlib15/XGetWMIconName/XGetWMIconName
+	/Xlib15/XGetWMIconName
 
 XGetWMName
 	"VSW5TESTSUITE CASE XGetWMName 3"
-	/Xlib15/XGetWMName/XGetWMName
+	/Xlib15/XGetWMName
 
 XGetWMNormalHints
 	"VSW5TESTSUITE CASE XGetWMNormalHints 5"
-	/Xlib15/XGetWMNormalHints/XGetWMNormalHints
+	/Xlib15/XGetWMNormalHints
 
 XGetWMProtocols
 	"VSW5TESTSUITE CASE XGetWMProtocols 4"
-	/Xlib15/XGetWMProtocols/XGetWMProtocols
+	/Xlib15/XGetWMProtocols
 
 XGetWMSizeHints
 	"VSW5TESTSUITE CASE XGetWMSizeHints 6"
-	/Xlib15/XGetWMSizeHints/XGetWMSizeHints
+	/Xlib15/XGetWMSizeHints
 
 XIconifyWindow
 	"VSW5TESTSUITE CASE XIconifyWindow 3"
-	/Xlib15/XIconifyWindow/XIconifyWindow
+	/Xlib15/XIconifyWindow
 
 XReconfigureWMWindow
 	"VSW5TESTSUITE CASE XReconfigureWMWindow 5"
-	/Xlib15/XReconfigureWMWindow/XReconfigureWMWindow
+	/Xlib15/XReconfigureWMWindow
 
 XSetClassHint
 	"VSW5TESTSUITE CASE XSetClassHint 3"
-	/Xlib15/XSetClassHint/XSetClassHint
+	/Xlib15/XSetClassHint
 
 XSetCommand
 	"VSW5TESTSUITE CASE XSetCommand 3"
-	/Xlib15/XSetCommand/XSetCommand
+	/Xlib15/XSetCommand
 
 XSetIconName
 	"VSW5TESTSUITE CASE XSetIconName 3"
-	/Xlib15/XSetIconName/XSetIconName
+	/Xlib15/XSetIconName
 
 XSetIconSizes
 	"VSW5TESTSUITE CASE XSetIconSizes 3"
-	/Xlib15/XSetIconSizes/XSetIconSizes
+	/Xlib15/XSetIconSizes
 
 XSetRGBColormaps
 	"VSW5TESTSUITE CASE XSetRGBColormaps 4"
-	/Xlib15/XSetRGBColormaps/XSetRGBColormaps
+	/Xlib15/XSetRGBColormaps
 
 XStringListToTextProperty
 	"VSW5TESTSUITE CASE XStringListToTextProperty 3"
-	/Xlib15/XStringListToTextProperty/XStringListToTextProperty
+	/Xlib15/XStringListToTextProperty
 
 XStoreName
 	"VSW5TESTSUITE CASE XStoreName 3"
-	/Xlib15/XStoreName/XStoreName
+	/Xlib15/XStoreName
 
 XSetTransientForHint
 	"VSW5TESTSUITE CASE XSetTransientForHint 3"
-	/Xlib15/XSetTransientForHint/XSetTransientForHint
+	/Xlib15/XSetTransientForHint
 
 XSetTextProperty
 	"VSW5TESTSUITE CASE XSetTextProperty 5"
-	/Xlib15/XSetTextProperty/XSetTextProperty
+	/Xlib15/XSetTextProperty
 
 XSetWMClientMachine
 	"VSW5TESTSUITE CASE XSetWMClientMachine 5"
-	/Xlib15/XSetWMClientMachine/XSetWMClientMachine
+	/Xlib15/XSetWMClientMachine
 
 XSetWMColormapWindows
 	"VSW5TESTSUITE CASE XSetWMColormapWindows 4"
-	/Xlib15/XSetWMColormapWindows/XSetWMColormapWindows
+	/Xlib15/XSetWMColormapWindows
 
 XSetWMHints
 	"VSW5TESTSUITE CASE XSetWMHints 3"
-	/Xlib15/XSetWMHints/XSetWMHints
+	/Xlib15/XSetWMHints
 
 XSetWMIconName
 	"VSW5TESTSUITE CASE XSetWMIconName 5"
-	/Xlib15/XSetWMIconName/XSetWMIconName
+	/Xlib15/XSetWMIconName
 
 XSetWMName
 	"VSW5TESTSUITE CASE XSetWMName 5"
-	/Xlib15/XSetWMName/XSetWMName
+	/Xlib15/XSetWMName
 
 XSetWMNormalHints
 	"VSW5TESTSUITE CASE XSetWMNormalHints 3"
-	/Xlib15/XSetWMNormalHints/XSetWMNormalHints
+	/Xlib15/XSetWMNormalHints
 
 XSetWMProperties
 	"VSW5TESTSUITE CASE XSetWMProperties 10"
@@ -1505,23 +1505,23 @@ XSetWMProperties
 
 XSetWMProtocols
 	"VSW5TESTSUITE CASE XSetWMProtocols 4"
-	/Xlib15/XSetWMProtocols/XSetWMProtocols
+	/Xlib15/XSetWMProtocols
 
 XSetWMSizeHints
 	"VSW5TESTSUITE CASE XSetWMSizeHints 4"
-	/Xlib15/XSetWMSizeHints/XSetWMSizeHints
+	/Xlib15/XSetWMSizeHints
 
 XTextPropertyToStringList
 	"VSW5TESTSUITE CASE XTextPropertyToStringList 4"
-	/Xlib15/XTextPropertyToStringList/XTextPropertyToStringList
+	/Xlib15/XTextPropertyToStringList
 
 XWithdrawWindow
 	"VSW5TESTSUITE CASE XWithdrawWindow 3"
-	/Xlib15/XWithdrawWindow/XWithdrawWindow
+	/Xlib15/XWithdrawWindow
 
 XDefaultString
 	"VSW5TESTSUITE CASE XDefaultString 1"
-	/Xlib15/XDefaultString/XDefaultString
+	/Xlib15/XDefaultString
 
 
 # Discrete tests for Xlib Chapter 16 - Resource Manager Functions

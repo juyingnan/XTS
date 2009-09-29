@@ -8,54 +8,54 @@ libexec_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
-XDefaultString_XDefaultString_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
+XDefaultString_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 
 tprogs = \
-	XAllocClassHint/XAllocClassHint \
-	XAllocIconSize/XAllocIconSize \
-	XAllocStandardColormap/XAllocStandardColormap \
-	XAllocSizeHints/XAllocSizeHints \
-	XAllocWMHints/XAllocWMHints \
-	XDefaultString/XDefaultString \
-	XFreeStringList/XFreeStringList \
-	XFetchName/XFetchName \
-	XGetClassHint/XGetClassHint \
-	XGetCommand/XGetCommand \
-	XGetIconName/XGetIconName \
-	XGetIconSizes/XGetIconSizes \
-	XGetRGBColormaps/XGetRGBColormaps \
-	XGetTransientForHint/XGetTransientForHint \
-	XGetTextProperty/XGetTextProperty \
-	XGetWMClientMachine/XGetWMClientMachine \
-	XGetWMColormapWindows/XGetWMColormapWindows \
-	XGetWMHints/XGetWMHints \
-	XGetWMIconName/XGetWMIconName \
-	XGetWMName/XGetWMName \
-	XGetWMNormalHints/XGetWMNormalHints \
-	XGetWMProtocols/XGetWMProtocols \
-	XGetWMSizeHints/XGetWMSizeHints \
-	XIconifyWindow/XIconifyWindow \
-	XReconfigureWMWindow/XReconfigureWMWindow \
-	XSetClassHint/XSetClassHint \
-	XSetCommand/XSetCommand \
-	XSetIconName/XSetIconName \
-	XSetIconSizes/XSetIconSizes \
-	XSetRGBColormaps/XSetRGBColormaps \
-	XStringListToTextProperty/XStringListToTextProperty \
-	XStoreName/XStoreName \
-	XSetTransientForHint/XSetTransientForHint \
-	XSetTextProperty/XSetTextProperty \
-	XSetWMClientMachine/XSetWMClientMachine \
-	XSetWMColormapWindows/XSetWMColormapWindows \
-	XSetWMHints/XSetWMHints \
-	XSetWMIconName/XSetWMIconName \
-	XSetWMName/XSetWMName \
-	XSetWMNormalHints/XSetWMNormalHints \
+	XAllocClassHint \
+	XAllocIconSize \
+	XAllocStandardColormap \
+	XAllocSizeHints \
+	XAllocWMHints \
+	XDefaultString \
+	XFreeStringList \
+	XFetchName \
+	XGetClassHint \
+	XGetCommand \
+	XGetIconName \
+	XGetIconSizes \
+	XGetRGBColormaps \
+	XGetTransientForHint \
+	XGetTextProperty \
+	XGetWMClientMachine \
+	XGetWMColormapWindows \
+	XGetWMHints \
+	XGetWMIconName \
+	XGetWMName \
+	XGetWMNormalHints \
+	XGetWMProtocols \
+	XGetWMSizeHints \
+	XIconifyWindow \
+	XReconfigureWMWindow \
+	XSetClassHint \
+	XSetCommand \
+	XSetIconName \
+	XSetIconSizes \
+	XSetRGBColormaps \
+	XStringListToTextProperty \
+	XStoreName \
+	XSetTransientForHint \
+	XSetTextProperty \
+	XSetWMClientMachine \
+	XSetWMColormapWindows \
+	XSetWMHints \
+	XSetWMIconName \
+	XSetWMName \
+	XSetWMNormalHints \
 	XSetWMProperties/XSetWMProperties \
-	XSetWMProtocols/XSetWMProtocols \
-	XSetWMSizeHints/XSetWMSizeHints \
-	XTextPropertyToStringList/XTextPropertyToStringList \
-	XWithdrawWindow/XWithdrawWindow
+	XSetWMProtocols \
+	XSetWMSizeHints \
+	XTextPropertyToStringList \
+	XWithdrawWindow
 
 # Auxiliary programs run from tests
 libexec_PROGRAMS += \
