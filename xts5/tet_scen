@@ -4629,119 +4629,119 @@ XtSpecificationRelease
 
 XtGetErrorDatabase
 	"VSW5TESTSUITE CASE XtGetErrorDatabase 1"
-	/XtC/XtGetErrorDatabase/XtGetErrorDatabase
+	/XtC/XtGetErrorDatabase
 
 XtGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XtGetErrorDatabaseText 2"
-	/XtC/XtGetErrorDatabaseText/XtGetErrorDatabaseText
+	/XtC/XtGetErrorDatabaseText
 
 XtInitialize
 	"VSW5TESTSUITE CASE XtInitialize 27"
-	/XtC/XtInitialize/XtInitialize
+	/XtC/XtInitialize
 
 XtMainLoop
 	"VSW5TESTSUITE CASE XtMainLoop 28"
-	/XtC/XtMainLoop/XtMainLoop
+	/XtC/XtMainLoop
 
 XtNextEvent
 	"VSW5TESTSUITE CASE XtNextEvent 4"
-	/XtC/XtNextEvent/XtNextEvent
+	/XtC/XtNextEvent
 
 XtProcessEvent
 	"VSW5TESTSUITE CASE XtProcessEvent 12"
-	/XtC/XtProcessEvent/XtProcessEvent
+	/XtC/XtProcessEvent
 
 XtPeekEvent
 	"VSW5TESTSUITE CASE XtPeekEvent 3"
-	/XtC/XtPeekEvent/XtPeekEvent
+	/XtC/XtPeekEvent
 
 XtPending
 	"VSW5TESTSUITE CASE XtPending 2"
-	/XtC/XtPending/XtPending
+	/XtC/XtPending
 
 XtAddInput
 	"VSW5TESTSUITE CASE XtAddInput 5"
-	/XtC/XtAddInput/XtAddInput
+	/XtC/XtAddInput
 
 XtAddTimeOut
 	"VSW5TESTSUITE CASE XtAddTimeOut 2"
-	/XtC/XtAddTimeOut/XtAddTimeOut
+	/XtC/XtAddTimeOut
 
 XtAddWorkProc
 	"VSW5TESTSUITE CASE XtAddWorkProc 5"
-	/XtC/XtAddWorkProc/XtAddWorkProc
+	/XtC/XtAddWorkProc
 
 XtCreateApplicationShell
 	"VSW5TESTSUITE CASE XtCreateApplicationShell 7"
-	/XtC/XtCreateApplicationShell/XtCreateApplicationShell
+	/XtC/XtCreateApplicationShell
 
 XtStringConversionWarning
 	"VSW5TESTSUITE CASE XtStringConversionWarning 1"
-	/XtC/XtStringConversionWarning/XtStringConversionWarning
+	/XtC/XtStringConversionWarning
 
 XtAddConverter
 	"VSW5TESTSUITE CASE XtAddConverter 10"
-	/XtC/XtAddConverter/XtAddConverter
+	/XtC/XtAddConverter
 
 XtAppAddConverter
 	"VSW5TESTSUITE CASE XtAppAddConverter 10"
-	/XtC/XtAppAddConverter/XtAppAddConverter
+	/XtC/XtAppAddConverter
 
 XtConvert
 	"VSW5TESTSUITE CASE XtConvert 1"
-	/XtC/XtConvert/XtConvert
+	/XtC/XtConvert
 
 XtDirectConvert
 	"VSW5TESTSUITE CASE XtDirectConvert 3"
-	/XtC/XtDirectConvert/XtDirectConvert
+	/XtC/XtDirectConvert
 
 XtDestroyGC
 	"VSW5TESTSUITE CASE XtDestroyGC 2"
-	/XtC/XtDestroyGC/XtDestroyGC
+	/XtC/XtDestroyGC
 
 XtAddActions
 	"VSW5TESTSUITE CASE XtAddActions 3"
-	/XtC/XtAddActions/XtAddActions
+	/XtC/XtAddActions
 
 XtSetSelectionTimeout
 	"VSW5TESTSUITE CASE XtSetSelectionTimeout 1"
-	/XtC/XtSetSelectionTimeout/XtSetSelectionTimeout
+	/XtC/XtSetSelectionTimeout
 
 XtGetSelectionTimeout
 	"VSW5TESTSUITE CASE XtGetSelectionTimeout 2"
-	/XtC/XtGetSelectionTimeout/XtGetSelectionTimeout
+	/XtC/XtGetSelectionTimeout
 
 XtSetErrorMsgHandler
 	"VSW5TESTSUITE CASE XtSetErrorMsgHandler 1"
-	/XtC/XtSetErrorMsgHandler/XtSetErrorMsgHandler
+	/XtC/XtSetErrorMsgHandler
 
 XtErrorMsg
 	"VSW5TESTSUITE CASE XtErrorMsg 3"
-	/XtC/XtErrorMsg/XtErrorMsg
+	/XtC/XtErrorMsg
 
 XtSetWarningHandler
 	"VSW5TESTSUITE CASE XtSetWarningHandler 1"
-	/XtC/XtSetWarningHandler/XtSetWarningHandler
+	/XtC/XtSetWarningHandler
 
 XtSetWarningMsgHandler
 	"VSW5TESTSUITE CASE XtSetWarningMsgHandler 1"
-	/XtC/XtSetWarningMsgHandler/XtSetWarningMsgHandler
+	/XtC/XtSetWarningMsgHandler
 
 XtWarning
 	"VSW5TESTSUITE CASE XtWarning 3"
-	/XtC/XtWarning/XtWarning
+	/XtC/XtWarning
 
 XtWarningMsg
 	"VSW5TESTSUITE CASE XtWarningMsg 3"
-	/XtC/XtWarningMsg/XtWarningMsg
+	/XtC/XtWarningMsg
 
 XtSetErrorHandler
 	"VSW5TESTSUITE CASE XtSetErrorHandler 1"
-	/XtC/XtSetErrorHandler/XtSetErrorHandler
+	/XtC/XtSetErrorHandler
 
 XtError
 	"VSW5TESTSUITE CASE XtError 3"
-	/XtC/XtError/XtError
+	/XtC/XtError
 
 #Discrete tests for Xt Appendix E
 
