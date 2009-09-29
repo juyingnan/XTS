@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt3/XtIsApplicationShell/XtIsApplicationShell.m
+>># File: xts/Xt3/XtIsApplicationShell.m
 >># 
 >># Description:
 >>#	Tests for XtIsApplicationShell()

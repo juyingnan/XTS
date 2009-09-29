@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt3/ConstraintWidget/ConstraintWidget.m
+>># File: xts/Xt3/ConstraintWidget.m
 >># 
 >># Description:
 >>#	Tests for Constraint widget data structures

@@ -25,7 +25,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: xts/Xt3/CompositeWidget/CompositeWidget.m
+>># File: xts/Xt3/CompositeWidget.m
 >>#
 >># Description:
 >>#	 Tests for Composite widget data structures

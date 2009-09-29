@@ -25,71 +25,67 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt3/XtIsWidget/XtIsWidget.m
+>># File: xts/Xt3/XtIsTopLevelShell.m
 >># 
 >># Description:
->>#	Tests for XtIsWidget
+>>#	Tests for XtIsTopLevelShell(w)
 >># 
 >># Modifications:
->># $Log: tiswdgt.m,v $
+>># $Log: tistplvlsh.m,v $
 >># Revision 1.1  2005-02-12 14:38:00  anderson
 >># Initial revision
 >>#
->># Revision 8.0  1998/12/23 23:36:07  mar
+>># Revision 8.0  1998/12/23 23:36:10  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:58:55  mar
+>># Revision 7.0  1998/10/30 22:58:59  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:27:19  tbr
+>># Revision 6.0  1998/03/02 05:27:22  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:23:53  tbr
+>># Revision 5.0  1998/01/26 03:23:56  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:15:17  tbr
+>># Revision 4.0  1995/12/15 09:15:24  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  01:18:50  andy
+>># Revision 3.1  1995/12/15  01:19:00  andy
 >># Prepare for GA Release
 >>#
 >>EXTERN
-#include <AvsObj.h>
 
 XtAppContext app_ctext;
 Widget topLevel, panedw, boxw1, boxw2;
 Widget labelw, rowcolw, click_quit;
->>TITLE XtIsWidget Xt3
+>>TITLE XtIsTopLevelShell Xt3
 Boolean
-XtIsWidget(w)
+XtIsTopLevelShell(w)
 >>ASSERTION Good A
-A call to Boolean XtIsWidget(w) when the class of the widget w is equal 
-to or is a subclass of the Widget widget class shall return True.
+A call to Boolean XtIsTopLevelShell(w) when the class of the widget w is 
+equal to or is a subclass of the TopLevelShell widget class shall return
+True.
 >>CODE
 Boolean status;
 
-	avs_xt_hier("Tiswidgt1", "XtIsWidget");
+	avs_xt_hier("Tistplshl1", "XtIsTopLevelShell");
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	tet_infoline("TEST: Returns True for subclass of Widget");
-	status = XtIsWidget(rowcolw) ;
+	tet_infoline("TEST: Returns True for subclass of TopLevelShell");
+	status = XtIsTopLevelShell(topLevel);
 	check_dec(True, status, "Return value");
 	tet_result(TET_PASS);
 >>ASSERTION Good A
-A call to Boolean XtIsWidget(w) when the class of the widget w is neither
-equal to nor is a subclass of the Widget widget class shall return a value
-other than True.
+A call to Boolean XtIsTopLevelShell(w) when the class of the widget w is 
+neither equal to nor is a subclass of the TopLevelShell widget class shall
+return a value other than True.
 >>CODE
-Widget ObjectNotWidget;
 Boolean status;
 
-	avs_xt_hier("Tiswidgt2", "XtIsWidget");
-	tet_infoline("PREP: Create an AvsObject");
-	ObjectNotWidget = XtCreateWidget("ObjectNotWidget", avsObjClass,
-			 topLevel, (ArgList) 0, 0);
+	avs_xt_hier("Tistplshl2", "XtIsTopLevelShell");
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	tet_infoline("TEST: Returns non-True if not equal to or subclass of Widget");
-	status = XtIsWidget(ObjectNotWidget) ;
+	tet_infoline("TEST: Returns non-True for not equal to or subclass of TopLevelShell");
+	status = XtIsTopLevelShell(labelw) ;
 	check_not_dec(True, status, "Return value");
 	tet_result(TET_PASS);

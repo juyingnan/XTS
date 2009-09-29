@@ -25,89 +25,68 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt3/XtIsSubclass/XtIsSubclass.m
+>># File: xts/Xt3/XtIsRectObject.m
 >># 
 >># Description:
->>#	Tests for XtIsSubclass()
+>>#	Tests for XtIsRectObj
 >># 
 >># Modifications:
->># $Log: tissbclss.m,v $
+>># $Log: tisrctobj.m,v $
 >># Revision 1.1  2005-02-12 14:38:00  anderson
 >># Initial revision
 >>#
->># Revision 8.0  1998/12/23 23:36:06  mar
+>># Revision 8.0  1998/12/23 23:36:07  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:58:53  mar
+>># Revision 7.0  1998/10/30 22:58:54  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:27:18  tbr
+>># Revision 6.0  1998/03/02 05:27:19  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:23:51  tbr
+>># Revision 5.0  1998/01/26 03:23:52  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:15:14  tbr
+>># Revision 4.0  1995/12/15 09:15:16  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  01:18:45  andy
+>># Revision 3.1  1995/12/15  01:18:48  andy
 >># Prepare for GA Release
 >>#
 >>EXTERN
-#include <X11/IntrinsicP.h>
-#include <X11/ConstrainP.h>
-#include <X11/CoreP.h>
-#include <X11/Xaw/Label.h>
-#include <X11/Xaw/Command.h>
 
 XtAppContext app_ctext;
 Widget topLevel, panedw, boxw1, boxw2;
 Widget labelw, rowcolw, click_quit;
->>TITLE XtIsSubclass Xt3
+>>TITLE XtIsRectObject Xt3
 Boolean
-XtIsSubclass(w, widget_class)
+XtIsRectObj(w)
 >>ASSERTION Good A
-A call to Boolean XtIsSubclass(w, widget_class) when the class of the 
-widget w is equal to or is a subclass of the class widget_class shall
-return True.
+A call to Boolean XtIsRectObj(w) when the class of the widget w is equal 
+to or is a subclass of the RectObj class shall return True.
 >>CODE
 Boolean status;
-Widget labelw_msg;
-char *msg = "Test widget";
 
-	avs_xt_hier("Tissbclass1", "XtIsSubclass");
-	tet_infoline("PREP: Create test label widget in box widget");
-	labelw_msg = (Widget) CreateLabelWidget(msg, boxw1); 
+	avs_xt_hier("Tisrectob1", "XtIsRectObj");
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	tet_infoline("TEST: Check boxw2 widget is subclass of Composite widget");
-	status = XtIsSubclass(boxw2, compositeWidgetClass);
+	tet_infoline("TEST: Returns True for a subclass of RectObj");
+	status = XtIsRectObj(labelw) ;
 	check_dec(True, status, "Return value");
-   
-	tet_infoline("TEST: Check labelw_msg widget is subclass of Core widget");
-	status = XtIsSubclass(labelw_msg, coreWidgetClass);
-	check_dec(True, status, "Return value");
-
-	tet_infoline("TEST: Check labelw_msg widget is subclass of Label widget");
-	status = XtIsSubclass(labelw_msg, labelWidgetClass);
-	check_dec(True, status, "Return value");
-   
 	tet_result(TET_PASS);
 >>ASSERTION Good A
-A call to Boolean XtIsSubclass(w, widget_class) when the class of the 
-widget w is neither equal to nor is a subclass of the class widget_class 
-shall return a value other than True.
+A call to Boolean XtIsRectObj(w) when the class of the widget w is neither 
+equal to nor is a subclass of the RectObj class shall return a value other
+than True.
 >>CODE
+Display *display;
 Boolean status;
-Widget labelw_msg;
-char *msg = "Test widget";
 
-	avs_xt_hier("Tissbclass2", "XtIsSubclass");
-	tet_infoline("PREP: Create test label widget");
-	labelw_msg = (Widget) CreateLabelWidget(msg, boxw1); 
+	avs_xt_hier("Tisrectob2", "XtIsRectObj");
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	tet_infoline("TEST: Labelw_msg widget is NOT a subclass of commandWidgetClass");
-	status = XtIsSubclass(labelw_msg, commandWidgetClass);
+	tet_infoline("TEST: Returns non-True if not RectObj or subclass");
+        display = XtDisplay(rowcolw);
+	status = XtIsRectObj((Widget)display) ;
 	check_not_dec(True, status, "Return value");
 	tet_result(TET_PASS);

@@ -25,32 +25,32 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt3/XtSuperClass/XtSuperClass.m
+>># File: xts/Xt3/XtClass.m
 >># 
 >># Description:
->>#	Tests for XtSuperClass
+>>#	Tests for XtClass
 >># 
 >># Modifications:
->># $Log: tsprclss.m,v $
->># Revision 1.1  2005-02-12 14:38:00  anderson
+>># $Log: tclss.m,v $
+>># Revision 1.1  2005-02-12 14:37:59  anderson
 >># Initial revision
 >>#
 >># Revision 8.0  1998/12/23 23:36:05  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:58:53  mar
+>># Revision 7.0  1998/10/30 22:58:52  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:27:18  tbr
+>># Revision 6.0  1998/03/02 05:27:17  tbr
 >># Branch point for Release 5.0.1
 >>#
 >># Revision 5.0  1998/01/26 03:23:51  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:15:13  tbr
+>># Revision 4.0  1995/12/15 09:15:12  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  01:18:44  andy
+>># Revision 3.1  1995/12/15  01:18:43  andy
 >># Prepare for GA Release
 >>#
 >>EXTERN
@@ -59,25 +59,22 @@ All Rights Reserved.
 XtAppContext app_ctext ;
 Widget topLevel, panedw, boxw1, boxw2 ;
 Widget labelw, rowcolw, click_quit ;
-
-char label[80] ;
->>TITLE XtSuperClass Xt3
+>>TITLE XtClass Xt3
 WidgetClass
-XtSuperClass(w)
+XtClass(w)
 >>ASSERTION Good A
-A call to WidgetClass XtSuperClass(w) shall return a pointer
-to the superclass class structure of the widget w.
+A call to WidgetClass XtClass(w)  shall  return  a  pointer  to  the
+class structure of the widget w.
 >>CODE
-XtWidgetGeometry intended, geom ;
-WidgetClass ret_class ;
+WidgetClass class_good ;
 
-	avs_xt_hier("Tsupercl1", "XtSuperClass");
+	avs_xt_hier("Tclass1", "XtClass");
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	tet_infoline("TEST: XtSuperclass returns the superclass of widget");
-	ret_class = XtSuperclass(labelw);
-	if (ret_class != simpleWidgetClass) {
-		sprintf(ebuf, "ERROR: Did not obtain expected widget superclass 'simpleWidgetClass'");
+	tet_infoline("TEST: Label widget is labelWidgetClass");
+	class_good = XtClass(labelw);
+	if (class_good != labelWidgetClass) {
+	   	sprintf(ebuf, "ERROR: Expected widget class labelWidgetClass");
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 	}

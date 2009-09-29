@@ -25,57 +25,71 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt3/XtClass/XtClass.m
+>># File: xts/Xt3/XtIsWidget.m
 >># 
 >># Description:
->>#	Tests for XtClass
+>>#	Tests for XtIsWidget
 >># 
 >># Modifications:
->># $Log: tclss.m,v $
->># Revision 1.1  2005-02-12 14:37:59  anderson
+>># $Log: tiswdgt.m,v $
+>># Revision 1.1  2005-02-12 14:38:00  anderson
 >># Initial revision
 >>#
->># Revision 8.0  1998/12/23 23:36:05  mar
+>># Revision 8.0  1998/12/23 23:36:07  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:58:52  mar
+>># Revision 7.0  1998/10/30 22:58:55  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:27:17  tbr
+>># Revision 6.0  1998/03/02 05:27:19  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:23:51  tbr
+>># Revision 5.0  1998/01/26 03:23:53  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:15:12  tbr
+>># Revision 4.0  1995/12/15 09:15:17  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  01:18:43  andy
+>># Revision 3.1  1995/12/15  01:18:50  andy
 >># Prepare for GA Release
 >>#
 >>EXTERN
-#include <X11/Xaw/Label.h>
+#include <AvsObj.h>
 
-XtAppContext app_ctext ;
-Widget topLevel, panedw, boxw1, boxw2 ;
-Widget labelw, rowcolw, click_quit ;
->>TITLE XtClass Xt3
-WidgetClass
-XtClass(w)
+XtAppContext app_ctext;
+Widget topLevel, panedw, boxw1, boxw2;
+Widget labelw, rowcolw, click_quit;
+>>TITLE XtIsWidget Xt3
+Boolean
+XtIsWidget(w)
 >>ASSERTION Good A
-A call to WidgetClass XtClass(w)  shall  return  a  pointer  to  the
-class structure of the widget w.
+A call to Boolean XtIsWidget(w) when the class of the widget w is equal 
+to or is a subclass of the Widget widget class shall return True.
 >>CODE
-WidgetClass class_good ;
+Boolean status;
 
-	avs_xt_hier("Tclass1", "XtClass");
+	avs_xt_hier("Tiswidgt1", "XtIsWidget");
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	tet_infoline("TEST: Label widget is labelWidgetClass");
-	class_good = XtClass(labelw);
-	if (class_good != labelWidgetClass) {
-	   	sprintf(ebuf, "ERROR: Expected widget class labelWidgetClass");
-		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
-	}
+	tet_infoline("TEST: Returns True for subclass of Widget");
+	status = XtIsWidget(rowcolw) ;
+	check_dec(True, status, "Return value");
+	tet_result(TET_PASS);
+>>ASSERTION Good A
+A call to Boolean XtIsWidget(w) when the class of the widget w is neither
+equal to nor is a subclass of the Widget widget class shall return a value
+other than True.
+>>CODE
+Widget ObjectNotWidget;
+Boolean status;
+
+	avs_xt_hier("Tiswidgt2", "XtIsWidget");
+	tet_infoline("PREP: Create an AvsObject");
+	ObjectNotWidget = XtCreateWidget("ObjectNotWidget", avsObjClass,
+			 topLevel, (ArgList) 0, 0);
+	tet_infoline("PREP: Create windows for widgets and map them");
+	XtRealizeWidget(topLevel);
+	tet_infoline("TEST: Returns non-True if not equal to or subclass of Widget");
+	status = XtIsWidget(ObjectNotWidget) ;
+	check_not_dec(True, status, "Return value");
 	tet_result(TET_PASS);

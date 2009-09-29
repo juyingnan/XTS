@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt3/DataTypes/DataTypes.m
+>># File: xts/Xt3/DataTypes.m
 >># 
 >># Description:
 >>#	Tests for Intrinsics datatypes

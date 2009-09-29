@@ -3594,79 +3594,79 @@ pWarpPointer
 
 XtDataTypes
 	"VSW5TESTSUITE CASE DataTypes 9"
-	/Xt3/DataTypes/DataTypes
+	/Xt3/DataTypes
 
 CoreWidget
 	"VSW5TESTSUITE CASE CoreWidget 9"
-	/Xt3/CoreWidget/CoreWidget
+	/Xt3/CoreWidget
 
 CompositeWidget
 	"VSW5TESTSUITE CASE CompositeWidget 11"
-	/Xt3/CompositeWidget/CompositeWidget
+	/Xt3/CompositeWidget
 
 ConstraintWidget
 	"VSW5TESTSUITE CASE ConstraintWidget 11"
-	/Xt3/ConstraintWidget/ConstraintWidget
+	/Xt3/ConstraintWidget
 
 XtClass
 	"VSW5TESTSUITE CASE XtClass 1"
-	/Xt3/XtClass/XtClass
+	/Xt3/XtClass
 
 XtSuperClass
 	"VSW5TESTSUITE CASE XtSuperClass 1"
-	/Xt3/XtSuperClass/XtSuperClass
+	/Xt3/XtSuperClass
 
 XtIsSubclass
 	"VSW5TESTSUITE CASE XtIsSubclass 2"
-	/Xt3/XtIsSubclass/XtIsSubclass
+	/Xt3/XtIsSubclass
 
 XtIsObject
 	"VSW5TESTSUITE CASE XtIsObject 2"
-	/Xt3/XtIsObject/XtIsObject
+	/Xt3/XtIsObject
 
 XtIsRectObj
 	"VSW5TESTSUITE CASE XtIsRectObj 2"
-	/Xt3/XtIsRectObject/XtIsRectObject
+	/Xt3/XtIsRectObject
 
 XtIsWidget
 	"VSW5TESTSUITE CASE XtIsWidget 2"
-	/Xt3/XtIsWidget/XtIsWidget
+	/Xt3/XtIsWidget
 
 XtIsComposite
 	"VSW5TESTSUITE CASE XtIsComposite 2"
-	/Xt3/XtIsComposite/XtIsComposite
+	/Xt3/XtIsComposite
 
 XtIsConstraint
 	"VSW5TESTSUITE CASE XtIsConstraint 2"
-	/Xt3/XtIsConstraint/XtIsConstraint
+	/Xt3/XtIsConstraint
 
 XtIsShell
 	"VSW5TESTSUITE CASE XtIsShell 2"
-	/Xt3/XtIsShell/XtIsShell
+	/Xt3/XtIsShell
 
 XtIsOverrideShell
 	"VSW5TESTSUITE CASE XtIsOverrideShell 2"
-	/Xt3/XtIsOverrideShell/XtIsOverrideShell
+	/Xt3/XtIsOverrideShell
 
 XtIsWMShell
 	"VSW5TESTSUITE CASE XtIsWMShell 2"
-	/Xt3/XtIsWMShell/XtIsWMShell
+	/Xt3/XtIsWMShell
 
 XtIsVendorShell
 	"VSW5TESTSUITE CASE XtIsVendorShell 2"
-	/Xt3/XtIsVendorShell/XtIsVendorShell
+	/Xt3/XtIsVendorShell
 
 XtIsTransientShell
 	"VSW5TESTSUITE CASE XtIsTransientShell 2"
-	/Xt3/XtIsTransientShell/XtIsTransientShell
+	/Xt3/XtIsTransientShell
 
 XtIsTopLevelShell
 	"VSW5TESTSUITE CASE XtIsTopLevelShell 2"
-	/Xt3/XtIsTopLevelShell/XtIsTopLevelShell
+	/Xt3/XtIsTopLevelShell
 
 XtIsApplicationShell
 	"VSW5TESTSUITE CASE XtIsApplicationShell 2"
-	/Xt3/XtIsApplicationShell/XtIsApplicationShell
+	/Xt3/XtIsApplicationShell
 
 XtCheckSubclass
 	"VSW5TESTSUITE CASE XtCheckSubclass 3"
@@ -3674,7 +3674,7 @@ XtCheckSubclass
 
 XtInitializeWidgetClass
 	"VSW5TESTSUITE CASE XtInitializeWidgetClass 2"
-	/Xt3/XtInitializeWidgetClass/XtInitializeWidgetClass
+	/Xt3/XtInitializeWidgetClass
 
 #Discrete tests for Xt Chapter 4
 
