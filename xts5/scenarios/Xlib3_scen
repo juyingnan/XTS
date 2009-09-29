@@ -55,220 +55,220 @@
 #
 
 	"VSW5TESTSUITE CASE XAllPlanes 2"
-	/Xlib3/XAllPlanes/XAllPlanes
+	/Xlib3/XAllPlanes
 	"VSW5TESTSUITE CASE XBlackPixel 1"
-	/Xlib3/XBlackPixel/XBlackPixel
+	/Xlib3/XBlackPixel
 	"VSW5TESTSUITE CASE XBlackPixelOfScreen 1"
-	/Xlib3/XBlackPixelOfScreen/XBlackPixelOfScreen
+	/Xlib3/XBlackPixelOfScreen
 	"VSW5TESTSUITE CASE XBitmapBitOrder 1"
-	/Xlib3/XBitmapBitOrder/XBitmapBitOrder
+	/Xlib3/XBitmapBitOrder
 	"VSW5TESTSUITE CASE XBitmapPad 1"
-	/Xlib3/XBitmapPad/XBitmapPad
+	/Xlib3/XBitmapPad
 	"VSW5TESTSUITE CASE XBitmapUnit 1"
-	/Xlib3/XBitmapUnit/XBitmapUnit
+	/Xlib3/XBitmapUnit
 	"VSW5TESTSUITE CASE XCellsOfScreen 1"
-	/Xlib3/XCellsOfScreen/XCellsOfScreen
+	/Xlib3/XCellsOfScreen
 	"VSW5TESTSUITE CASE XCloseDisplay 28"
-	/Xlib3/XCloseDisplay/XCloseDisplay
+	/Xlib3/XCloseDisplay
 	"VSW5TESTSUITE CASE XConnectionNumber 1"
-	/Xlib3/XConnectionNumber/XConnectionNumber
+	/Xlib3/XConnectionNumber
 	"VSW5TESTSUITE CASE XDefaultColormap 1"
-	/Xlib3/XDefaultColormap/XDefaultColormap
+	/Xlib3/XDefaultColormap
 	"VSW5TESTSUITE CASE XDefaultColormapOfScreen 1"
-	/Xlib3/XDefaultColormapOfScreen/XDefaultColormapOfScreen
+	/Xlib3/XDefaultColormapOfScreen
 	"VSW5TESTSUITE CASE XDefaultDepth 1"
-	/Xlib3/XDefaultDepth/XDefaultDepth
+	/Xlib3/XDefaultDepth
 	"VSW5TESTSUITE CASE XDefaultDepthOfScreen 1"
-	/Xlib3/XDefaultDepthOfScreen/XDefaultDepthOfScreen
+	/Xlib3/XDefaultDepthOfScreen
 	"VSW5TESTSUITE CASE XDefaultGC 1"
-	/Xlib3/XDefaultGC/XDefaultGC
+	/Xlib3/XDefaultGC
 	"VSW5TESTSUITE CASE XDefaultGCOfScreen 2"
-	/Xlib3/XDefaultGCOfScreen/XDefaultGCOfScreen
+	/Xlib3/XDefaultGCOfScreen
 	"VSW5TESTSUITE CASE XDefaultRootWindow 1"
-	/Xlib3/XDefaultRootWindow/XDefaultRootWindow
+	/Xlib3/XDefaultRootWindow
 	"VSW5TESTSUITE CASE XDefaultScreen 1"
-	/Xlib3/XDefaultScreen/XDefaultScreen
+	/Xlib3/XDefaultScreen
 	"VSW5TESTSUITE CASE XDefaultScreenOfDisplay 1"
-	/Xlib3/XDefaultScreenOfDisplay/XDefaultScreenOfDisplay
+	/Xlib3/XDefaultScreenOfDisplay
 	"VSW5TESTSUITE CASE XDefaultVisual 1"
-	/Xlib3/XDefaultVisual/XDefaultVisual
+	/Xlib3/XDefaultVisual
 	"VSW5TESTSUITE CASE XDefaultVisualOfScreen 1"
-	/Xlib3/XDefaultVisualOfScreen/XDefaultVisualOfScreen
+	/Xlib3/XDefaultVisualOfScreen
 	"VSW5TESTSUITE CASE XDoesBackingStore 1"
-	/Xlib3/XDoesBackingStore/XDoesBackingStore
+	/Xlib3/XDoesBackingStore
 	"VSW5TESTSUITE CASE XDisplayCells 1"
-	/Xlib3/XDisplayCells/XDisplayCells
+	/Xlib3/XDisplayCells
 	"VSW5TESTSUITE CASE XDisplayHeight 1"
-	/Xlib3/XDisplayHeight/XDisplayHeight
+	/Xlib3/XDisplayHeight
 	"VSW5TESTSUITE CASE XDisplayHeightMM 1"
-	/Xlib3/XDisplayHeightMM/XDisplayHeightMM
+	/Xlib3/XDisplayHeightMM
 	"VSW5TESTSUITE CASE XDisplayOfScreen 1"
-	/Xlib3/XDisplayOfScreen/XDisplayOfScreen
+	/Xlib3/XDisplayOfScreen
 	"VSW5TESTSUITE CASE XDisplayPlanes 1"
-	/Xlib3/XDisplayPlanes/XDisplayPlanes
+	/Xlib3/XDisplayPlanes
 	"VSW5TESTSUITE CASE XDisplayString 2"
 	/Xlib3/XDisplayString/XDisplayString
 	"VSW5TESTSUITE CASE XDisplayWidth 1"
-	/Xlib3/XDisplayWidth/XDisplayWidth
+	/Xlib3/XDisplayWidth
 	"VSW5TESTSUITE CASE XDisplayWidthMM 1"
-	/Xlib3/XDisplayWidthMM/XDisplayWidthMM
+	/Xlib3/XDisplayWidthMM
 	"VSW5TESTSUITE CASE XDoesSaveUnders 1"
-	/Xlib3/XDoesSaveUnders/XDoesSaveUnders
+	/Xlib3/XDoesSaveUnders
 	"VSW5TESTSUITE CASE XEventMaskOfScreen 1"
-	/Xlib3/XEventMaskOfScreen/XEventMaskOfScreen
+	/Xlib3/XEventMaskOfScreen
 	"VSW5TESTSUITE CASE XFree 1"
-	/Xlib3/XFree/XFree
+	/Xlib3/XFree
 	"VSW5TESTSUITE CASE XHeightMMOfScreen 1"
-	/Xlib3/XHeightMMOfScreen/XHeightMMOfScreen
+	/Xlib3/XHeightMMOfScreen
 	"VSW5TESTSUITE CASE XHeightOfScreen 1"
-	/Xlib3/XHeightOfScreen/XHeightOfScreen
+	/Xlib3/XHeightOfScreen
 	"VSW5TESTSUITE CASE XImageByteOrder 1"
-	/Xlib3/XImageByteOrder/XImageByteOrder
+	/Xlib3/XImageByteOrder
 	"VSW5TESTSUITE CASE XListDepths 3"
-	/Xlib3/XListDepths/XListDepths
+	/Xlib3/XListDepths
 	"VSW5TESTSUITE CASE XLastKnownRequestProcessed 1"
-	/Xlib3/XLastKnownRequestProcessed/XLastKnownRequestProcessed
+	/Xlib3/XLastKnownRequestProcessed
 	"VSW5TESTSUITE CASE XListPixmapFormats 2"
-	/Xlib3/XListPixmapFormats/XListPixmapFormats
+	/Xlib3/XListPixmapFormats
 	"VSW5TESTSUITE CASE XMinCmapsOfScreen 1"
-	/Xlib3/XMinCmapsOfScreen/XMinCmapsOfScreen
+	/Xlib3/XMinCmapsOfScreen
 	"VSW5TESTSUITE CASE XMaxCmapsOfScreen 1"
-	/Xlib3/XMaxCmapsOfScreen/XMaxCmapsOfScreen
+	/Xlib3/XMaxCmapsOfScreen
 	"VSW5TESTSUITE CASE XNoOp 1"
-	/Xlib3/XNoOp/XNoOp
+	/Xlib3/XNoOp
 	"VSW5TESTSUITE CASE XNextRequest 2"
-	/Xlib3/XNextRequest/XNextRequest
+	/Xlib3/XNextRequest
 	"VSW5TESTSUITE CASE XOpenDisplay 10"
 	/Xlib3/XOpenDisplay/XOpenDisplay
 	"VSW5TESTSUITE CASE XPlanesOfScreen 1"
-	/Xlib3/XPlanesOfScreen/XPlanesOfScreen
+	/Xlib3/XPlanesOfScreen
 	"VSW5TESTSUITE CASE XProtocolRevision 1"
-	/Xlib3/XProtocolRevision/XProtocolRevision
+	/Xlib3/XProtocolRevision
 	"VSW5TESTSUITE CASE XProtocolVersion 1"
-	/Xlib3/XProtocolVersion/XProtocolVersion
+	/Xlib3/XProtocolVersion
 	"VSW5TESTSUITE CASE XQLength 1"
-	/Xlib3/XQLength/XQLength
+	/Xlib3/XQLength
 	"VSW5TESTSUITE CASE XRootWindow 1"
-	/Xlib3/XRootWindow/XRootWindow
+	/Xlib3/XRootWindow
 	"VSW5TESTSUITE CASE XRootWindowOfScreen 1"
-	/Xlib3/XRootWindowOfScreen/XRootWindowOfScreen
+	/Xlib3/XRootWindowOfScreen
 	"VSW5TESTSUITE CASE XScreenCount 1"
-	/Xlib3/XScreenCount/XScreenCount
+	/Xlib3/XScreenCount
 	"VSW5TESTSUITE CASE XScreenNumberOfScreen 1"
-	/Xlib3/XScreenNumberOfScreen/XScreenNumberOfScreen
+	/Xlib3/XScreenNumberOfScreen
 	"VSW5TESTSUITE CASE XScreenOfDisplay 1"
-	/Xlib3/XScreenOfDisplay/XScreenOfDisplay
+	/Xlib3/XScreenOfDisplay
 	"VSW5TESTSUITE CASE XVendorRelease 1"
-	/Xlib3/XVendorRelease/XVendorRelease
+	/Xlib3/XVendorRelease
 	"VSW5TESTSUITE CASE XServerVendor 1"
-	/Xlib3/XServerVendor/XServerVendor
+	/Xlib3/XServerVendor
 	"VSW5TESTSUITE CASE XSetCloseDownMode 7"
-	/Xlib3/XSetCloseDownMode/XSetCloseDownMode
+	/Xlib3/XSetCloseDownMode
 	"VSW5TESTSUITE CASE XWidthMMOfScreen 1"
-	/Xlib3/XWidthMMOfScreen/XWidthMMOfScreen
+	/Xlib3/XWidthMMOfScreen
 	"VSW5TESTSUITE CASE XWidthOfScreen 1"
-	/Xlib3/XWidthOfScreen/XWidthOfScreen
+	/Xlib3/XWidthOfScreen
 	"VSW5TESTSUITE CASE XWhitePixel 1"
-	/Xlib3/XWhitePixel/XWhitePixel
+	/Xlib3/XWhitePixel
 	"VSW5TESTSUITE CASE XWhitePixelOfScreen 1"
-	/Xlib3/XWhitePixelOfScreen/XWhitePixelOfScreen
+	/Xlib3/XWhitePixelOfScreen
 	"VSW5TESTSUITE CASE BlackPixel 1"
-	/Xlib3/XBlackPixel/XBlackPixel_m
+	/Xlib3/XBlackPixel_m
 	"VSW5TESTSUITE CASE BlackPixelOfScreen 1"
-	/Xlib3/XBlackPixelOfScreen/XBlackPixelOfScreen_m
+	/Xlib3/XBlackPixelOfScreen_m
 	"VSW5TESTSUITE CASE BitmapBitOrder 1"
-	/Xlib3/XBitmapBitOrder/XBitmapBitOrder_m
+	/Xlib3/XBitmapBitOrder_m
 	"VSW5TESTSUITE CASE BitmapPad 1"
-	/Xlib3/XBitmapPad/XBitmapPad_m
+	/Xlib3/XBitmapPad_m
 	"VSW5TESTSUITE CASE BitmapUnit 1"
-	/Xlib3/XBitmapUnit/XBitmapUnit_m
+	/Xlib3/XBitmapUnit_m
 	"VSW5TESTSUITE CASE CellsOfScreen 1"
-	/Xlib3/XCellsOfScreen/XCellsOfScreen_m
+	/Xlib3/XCellsOfScreen_m
 	"VSW5TESTSUITE CASE ConnectionNumber 1"
-	/Xlib3/XConnectionNumber/XConnectionNumber_m
+	/Xlib3/XConnectionNumber_m
 	"VSW5TESTSUITE CASE DefaultColormap 1"
-	/Xlib3/XDefaultColormap/XDefaultColormap_m
+	/Xlib3/XDefaultColormap_m
 	"VSW5TESTSUITE CASE DefaultColormapOfScreen 1"
-	/Xlib3/XDefaultColormapOfScreen/XDefaultColormapOfScreen_m
+	/Xlib3/XDefaultColormapOfScreen_m
 	"VSW5TESTSUITE CASE DefaultDepth 1"
-	/Xlib3/XDefaultDepth/XDefaultDepth_m
+	/Xlib3/XDefaultDepth_m
 	"VSW5TESTSUITE CASE DefaultDepthOfScreen 1"
-	/Xlib3/XDefaultDepthOfScreen/XDefaultDepthOfScreen_m
+	/Xlib3/XDefaultDepthOfScreen_m
 	"VSW5TESTSUITE CASE DefaultGC 1"
-	/Xlib3/XDefaultGC/XDefaultGC_m
+	/Xlib3/XDefaultGC_m
 	"VSW5TESTSUITE CASE DefaultGCOfScreen 2"
-	/Xlib3/XDefaultGCOfScreen/XDefaultGCOfScreen_m
+	/Xlib3/XDefaultGCOfScreen_m
 	"VSW5TESTSUITE CASE DefaultRootWindow 1"
-	/Xlib3/XDefaultRootWindow/XDefaultRootWindow_m
+	/Xlib3/XDefaultRootWindow_m
 	"VSW5TESTSUITE CASE DefaultScreen 1"
-	/Xlib3/XDefaultScreen/XDefaultScreen_m
+	/Xlib3/XDefaultScreen_m
 	"VSW5TESTSUITE CASE DefaultScreenOfDisplay 1"
-	/Xlib3/XDefaultScreenOfDisplay/XDefaultScreenOfDisplay_m
+	/Xlib3/XDefaultScreenOfDisplay_m
 	"VSW5TESTSUITE CASE DefaultVisual 1"
-	/Xlib3/XDefaultVisual/XDefaultVisual_m
+	/Xlib3/XDefaultVisual_m
 	"VSW5TESTSUITE CASE DefaultVisualOfScreen 1"
-	/Xlib3/XDefaultVisualOfScreen/XDefaultVisualOfScreen_m
+	/Xlib3/XDefaultVisualOfScreen_m
 	"VSW5TESTSUITE CASE DoesBackingStore 1"
-	/Xlib3/XDoesBackingStore/XDoesBackingStore_m
+	/Xlib3/XDoesBackingStore_m
 	"VSW5TESTSUITE CASE DisplayCells 1"
-	/Xlib3/XDisplayCells/XDisplayCells_m
+	/Xlib3/XDisplayCells_m
 	"VSW5TESTSUITE CASE DisplayHeight 1"
-	/Xlib3/XDisplayHeight/XDisplayHeight_m
+	/Xlib3/XDisplayHeight_m
 	"VSW5TESTSUITE CASE DisplayHeightMM 1"
-	/Xlib3/XDisplayHeightMM/XDisplayHeightMM_m
+	/Xlib3/XDisplayHeightMM_m
 	"VSW5TESTSUITE CASE DisplayOfScreen 1"
-	/Xlib3/XDisplayOfScreen/XDisplayOfScreen_m
+	/Xlib3/XDisplayOfScreen_m
 	"VSW5TESTSUITE CASE DisplayPlanes 1"
-	/Xlib3/XDisplayPlanes/XDisplayPlanes_m
+	/Xlib3/XDisplayPlanes_m
 	"VSW5TESTSUITE CASE DisplayString 2"
 	/Xlib3/XDisplayString/XDisplayString_m
 	"VSW5TESTSUITE CASE DisplayWidth 1"
-	/Xlib3/XDisplayWidth/XDisplayWidth_m
+	/Xlib3/XDisplayWidth_m
 	"VSW5TESTSUITE CASE DisplayWidthMM 1"
-	/Xlib3/XDisplayWidthMM/XDisplayWidthMM_m
+	/Xlib3/XDisplayWidthMM_m
 	"VSW5TESTSUITE CASE DoesSaveUnders 1"
-	/Xlib3/XDoesSaveUnders/XDoesSaveUnders_m
+	/Xlib3/XDoesSaveUnders_m
 	"VSW5TESTSUITE CASE EventMaskOfScreen 1"
-	/Xlib3/XEventMaskOfScreen/XEventMaskOfScreen_m
+	/Xlib3/XEventMaskOfScreen_m
 	"VSW5TESTSUITE CASE HeightMMOfScreen 1"
-	/Xlib3/XHeightMMOfScreen/XHeightMMOfScreen_m
+	/Xlib3/XHeightMMOfScreen_m
 	"VSW5TESTSUITE CASE HeightOfScreen 1"
-	/Xlib3/XHeightOfScreen/XHeightOfScreen_m
+	/Xlib3/XHeightOfScreen_m
 	"VSW5TESTSUITE CASE ImageByteOrder 1"
-	/Xlib3/XImageByteOrder/XImageByteOrder_m
+	/Xlib3/XImageByteOrder_m
 	"VSW5TESTSUITE CASE LastKnownRequestProcessed 1"
-	/Xlib3/XLastKnownRequestProcessed/XLastKnownRequestProcessed_m
+	/Xlib3/XLastKnownRequestProcessed_m
 	"VSW5TESTSUITE CASE MinCmapsOfScreen 1"
-	/Xlib3/XMinCmapsOfScreen/XMinCmapsOfScreen_m
+	/Xlib3/XMinCmapsOfScreen_m
 	"VSW5TESTSUITE CASE MaxCmapsOfScreen 1"
-	/Xlib3/XMaxCmapsOfScreen/XMaxCmapsOfScreen_m
+	/Xlib3/XMaxCmapsOfScreen_m
 	"VSW5TESTSUITE CASE NextRequest 2"
-	/Xlib3/XNextRequest/XNextRequest_m
+	/Xlib3/XNextRequest_m
 	"VSW5TESTSUITE CASE PlanesOfScreen 1"
-	/Xlib3/XPlanesOfScreen/XPlanesOfScreen_m
+	/Xlib3/XPlanesOfScreen_m
 	"VSW5TESTSUITE CASE ProtocolRevision 1"
-	/Xlib3/XProtocolRevision/XProtocolRevision_m
+	/Xlib3/XProtocolRevision_m
 	"VSW5TESTSUITE CASE ProtocolVersion 1"
-	/Xlib3/XProtocolVersion/XProtocolVersion_m
+	/Xlib3/XProtocolVersion_m
 	"VSW5TESTSUITE CASE QLength 1"
-	/Xlib3/XQLength/XQLength_m
+	/Xlib3/XQLength_m
 	"VSW5TESTSUITE CASE RootWindow 1"
-	/Xlib3/XRootWindow/XRootWindow_m
+	/Xlib3/XRootWindow_m
 	"VSW5TESTSUITE CASE RootWindowOfScreen 1"
-	/Xlib3/XRootWindowOfScreen/XRootWindowOfScreen_m
+	/Xlib3/XRootWindowOfScreen_m
 	"VSW5TESTSUITE CASE ScreenCount 1"
-	/Xlib3/XScreenCount/XScreenCount_m
+	/Xlib3/XScreenCount_m
 	"VSW5TESTSUITE CASE ScreenOfDisplay 1"
-	/Xlib3/XScreenOfDisplay/XScreenOfDisplay_m
+	/Xlib3/XScreenOfDisplay_m
 	"VSW5TESTSUITE CASE VendorRelease 1"
-	/Xlib3/XVendorRelease/XVendorRelease_m
+	/Xlib3/XVendorRelease_m
 	"VSW5TESTSUITE CASE ServerVendor 1"
-	/Xlib3/XServerVendor/XServerVendor_m
+	/Xlib3/XServerVendor_m
 	"VSW5TESTSUITE CASE WidthMMOfScreen 1"
-	/Xlib3/XWidthMMOfScreen/XWidthMMOfScreen_m
+	/Xlib3/XWidthMMOfScreen_m
 	"VSW5TESTSUITE CASE WidthOfScreen 1"
-	/Xlib3/XWidthOfScreen/XWidthOfScreen_m
+	/Xlib3/XWidthOfScreen_m
 	"VSW5TESTSUITE CASE WhitePixel 1"
-	/Xlib3/XWhitePixel/XWhitePixel_m
+	/Xlib3/XWhitePixel_m
 	"VSW5TESTSUITE CASE WhitePixelOfScreen 1"
-	/Xlib3/XWhitePixelOfScreen/XWhitePixelOfScreen_m
+	/Xlib3/XWhitePixelOfScreen_m
