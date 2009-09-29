@@ -26,7 +26,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt7/XtPopup/XtPopup.m
+>># File: xts/Xt7/XtPopup.m
 >># 
 >># Description:
 >>#	Tests for XtPopup()

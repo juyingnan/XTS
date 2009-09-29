@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt7/XtPopdown/XtPopdown.m
+>># File: xts/Xt7/XtPopdown.m
 >># 
 >># Description:
 >>#	Tests for XtPopdown()

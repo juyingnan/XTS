@@ -25,32 +25,32 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt7/XtCallbackNone/XtCallbackNone.m
+>># File: xts/Xt7/XtCallbackExclusive.m
 >># 
 >># Description:
->>#	Tests for XtCallbackNone()
+>>#	Tests for XtCallbackExclusive()
 >># 
 >># Modifications:
->># $Log: tcalbknon.m,v $
+>># $Log: tcalbkexc.m,v $
 >># Revision 1.1  2005-02-12 14:38:14  anderson
 >># Initial revision
 >>#
->># Revision 8.0  1998/12/23 23:36:48  mar
+>># Revision 8.0  1998/12/23 23:36:49  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:59:41  mar
+>># Revision 7.0  1998/10/30 22:59:42  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:27:55  tbr
+>># Revision 6.0  1998/03/02 05:27:57  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:24:30  tbr
+>># Revision 5.0  1998/01/26 03:24:31  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:17:26  tbr
+>># Revision 4.0  1995/12/15 09:17:29  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  01:21:36  andy
+>># Revision 3.1  1995/12/15  01:21:40  andy
 >># Prepare for GA Release
 >>#
 >>EXTERN
@@ -69,9 +69,9 @@ Widget w;
 {
 	avs_set_event(2,1);
 }
-
+	
 /*timeout callback*/
-void XtTI1_Proc(client_data, id)
+void XtTI_Proc(client_data, id)
 XtPointer client_data;
 XtIntervalId *id;
 {
@@ -85,9 +85,9 @@ XtIntervalId *id;
 		tet_infoline("ERROR: spring_loaded is not False");
 		tet_result(TET_FAIL);
 	}
-	tet_infoline("TEST: Grab is none");
-	if (menuw->shell.grab_kind != XtGrabNone) {
-		sprintf(ebuf, "ERROR: Expected XtGrabNone(%d), grab type = %d", XtGrabNone, menuw->shell.grab_kind);
+	tet_infoline("TEST: Grab is exclusive");
+	if (menuw->shell.grab_kind != XtGrabExclusive) {
+		sprintf(ebuf, "ERROR: Expected XtGrabExclusive(%d), grab type = %d", XtGrabExclusive, menuw->shell.grab_kind);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 	}
@@ -98,22 +98,23 @@ Widget w;
 XtPointer client_data;
 XtPointer call_data;
 {
-	tet_infoline("TEST: Call_data points to XtGrabNone");
-	if (*(int *)call_data != XtGrabNone) {
-		sprintf(ebuf, "ERROR: expected call_data to point to value of %d, points to %d", XtGrabNone, *(int *)call_data);
+	tet_infoline("TEST: Call_data points to XtGrabExclusive");
+	if (*(int *)call_data != XtGrabExclusive) {
+		sprintf(ebuf, "ERROR: expected call_data to point to value of %d, points to %d", XtGrabExclusive, *(int *)call_data);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 	}
 	avs_set_event(1,1);
 }
+
 >>SET tpstartup avs_alloc_sem
 >>SET tpcleanup avs_free_sem
->>TITLE XtCallbackNone Xt7
-void XtCallbackNone(w, client_data, call_data)
+>>TITLE XtCallbackExclusive Xt7
+void XtCallbackExclusive(w, client_data, call_data)
 >>ASSERTION Good A
 A successful invocation of
-void XtCallbackNone(w, client_data, call_data)
-shall map the window of the pop-up shell widget client_data.
+void XtCallbackExclusive(w, client_data, call_data) 
+shall map the window of the pop-up widget client_data.
 >>CODE
 pid_t pid2;
 int status;
@@ -121,7 +122,7 @@ Widget labelw_good;
 Widget pushb_good, rowcolw_good;
 
 	FORK(pid2);
-	avs_xt_hier("Tcalbknon1", "XtCallbackNone");
+	avs_xt_hier("Tcalbkexc1", "XtCallbackExclusive");
 	tet_infoline("PREP: Create labelw_good widget");
 	labelw_good = (Widget) CreateLabelWidget("Hello", boxw1);
 	tet_infoline("PREP: Create a popup shell");
@@ -130,11 +131,11 @@ Widget pushb_good, rowcolw_good;
 	rowcolw_good = (Widget) CreateRowColWidget((Widget)menuw);
 	tet_infoline("PREP: Create pushb_good button in rowcolw_good widget");
 	pushb_good = (Widget) CreatePushButtonGadget( "ApTest", rowcolw_good);
-	tet_infoline("PREP: Register callback function XtCallbackNone");
-	XtAddCallback(labelw_good, XtNdestroyCallback, XtCallbackNone, menuw);
+	tet_infoline("PREP: Register callback function XtCallbackExclusive");
+	XtAddCallback(labelw_good, XtNdestroyCallback, XtCallbackExclusive, menuw);
 	tet_infoline("PREP: Register timeout");
-	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTI1_Proc, topLevel);
-	tet_infoline("PREP: Invoke callback function XtCallbackNone().");
+	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTI_Proc, topLevel);
+	tet_infoline("PREP: Invoke callback function XtCallbackExclusive()");
 	XtCallCallbacks(labelw_good, XtNdestroyCallback, (XtPointer)NULL);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
@@ -143,7 +144,7 @@ Widget pushb_good, rowcolw_good;
 	tet_result(TET_PASS);
 >>ASSERTION Good A
 A successful invocation of
-void XtCallbackNone(w, client_data, call_data) 
+void XtCallbackExclusive(w, client_data, call_data) 
 shall make the widget w insensitive.
 >>CODE
 Widget labelw_good;
@@ -151,9 +152,10 @@ Widget pushb_good, rowcolw_good;
 XtCallbackStatus status;
 pid_t pid2;
 
-	avs_xt_hier("Tcalbknon2", "XtCallbackNone");
+	FORK(pid2);
+	avs_xt_hier("Tcalbkexc2", "XtCallbackExclusive");
 	tet_infoline("PREP: Create labelw_good widget");
-	labelw_good = (Widget) CreateLabelWidget("ApTest", boxw1);
+	labelw_good = (Widget) CreateLabelWidget("ApTest Me", boxw1);
 	tet_infoline("PREP: Create a popup shell");
 	menuw = (ShellWidget)XtCreatePopupShell("menuw",
 			 overrideShellWidgetClass,
@@ -164,30 +166,31 @@ pid_t pid2;
 	pushb_good = (Widget) CreatePushButtonGadget(
 				"Hello",
 				rowcolw_good);
-	tet_infoline("PREP: Register XtCallbackNone");
+	tet_infoline("PREP: Add callback funtion XtCallbackExclusive to pushb_good widget");
 	XtAddCallback(labelw_good,
 			XtNdestroyCallback,
-			XtCallbackNone,
+			XtCallbackExclusive,
 			menuw
 			);
-	tet_infoline("PREP: Invoke XtCallbackNone().");
-	XtCallCallbacks(labelw_good, XtNdestroyCallback, (XtPointer) NULL );
-	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	tet_infoline("TEST: Labelw_good widget is insensitive.");
+	tet_infoline("PREP: Invoke callback function XtCallbackExclusive()");
+	XtCallCallbacks(labelw_good, XtNdestroyCallback, (XtPointer)NULL);
+	tet_infoline("TEST: Labelw_good widget is insensitive");
 	status = XtIsSensitive(labelw_good);
 	check_dec(False, status, "XtIsSensitive return value");
+	KROF(pid2);
 	tet_result(TET_PASS);
 >>ASSERTION def
 A successful invocation of
-void XtCallbackNone(w, client_data, call_data) 
-shall make the widget client_data a modeless 
-pop-up.
+void XtCallbackExclusive(w, client_data, call_data) 
+shall make the widget client_data modal and add it to the modal cascade if 
+one exists or create a modal cascade starting at client_data when no prior 
+modal cascade exists.
 >>ASSERTION Good A
 A successful invocation of
-void XtCallbackNone(w, client_data, call_data) 
+void XtCallbackExclusive(w, client_data, call_data) 
 shall call the callback procedures on the popup_callback list of the widget
-client_data passing to them a pointer to grab_kind as the call_data argument.
+client_data passing to them a pointer to XtGrabExclusive as the call_data argument.
 >>CODE
 pid_t pid2;
 int status;
@@ -195,7 +198,7 @@ Widget labelw_good;
 Widget pushb_good, rowcolw_good;
 
 	FORK(pid2);
-	avs_xt_hier("Tcalbknon1", "XtCallbackNone");
+	avs_xt_hier("Tcalbkexc1", "XtCallbackExclusive");
 	tet_infoline("PREP: Create labelw_good widget");
 	labelw_good = (Widget) CreateLabelWidget("Hello", boxw1);
 	tet_infoline("PREP: Create a popup shell");
@@ -204,13 +207,13 @@ Widget pushb_good, rowcolw_good;
 	rowcolw_good = (Widget) CreateRowColWidget((Widget)menuw);
 	tet_infoline("PREP: Create pushb_good button in rowcolw_good widget");
 	pushb_good = (Widget) CreatePushButtonGadget( "ApTest", rowcolw_good);
-	tet_infoline("PREP: Register callback function XtCallbackNone");
-	XtAddCallback(labelw_good, XtNdestroyCallback, XtCallbackNone, menuw);
+	tet_infoline("PREP: Register callback function XtCallbackExclusive");
+	XtAddCallback(labelw_good, XtNdestroyCallback, XtCallbackExclusive, menuw);
+	tet_infoline("PREP: Register timeout");
 	tet_infoline("PREP: Add callback to shell for popup");
 	XtAddCallback((Widget)menuw, XtNpopupCallback, XtCB1_Proc, NULL);
-	tet_infoline("PREP: Register timeout");
-	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTI1_Proc, topLevel);
-	tet_infoline("PREP: Invoke callback function XtCallbackNone().");
+	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTI_Proc, topLevel);
+	tet_infoline("PREP: Invoke callback function XtCallbackExclusive()");
 	XtCallCallbacks(labelw_good, XtNdestroyCallback, (XtPointer)NULL);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
@@ -222,8 +225,8 @@ Widget pushb_good, rowcolw_good;
 	tet_result(TET_PASS);
 >>ASSERTION Good A
 A successful invocation of
-void XtCallbackNone(w, client_data, call_data) 
-shall set the popped_up field in the widget instance structure of client_data
+void XtCallbackExclusive(w, client_data, call_data) 
+shall set the popped_up field in the widget instance structure of client_data 
 to True.
 >>CODE
 pid_t pid2;
@@ -232,7 +235,7 @@ Widget labelw_good;
 Widget pushb_good, rowcolw_good;
 
 	FORK(pid2);
-	avs_xt_hier("Tcalbknon1", "XtCallbackNone");
+	avs_xt_hier("Tcalbkexc1", "XtCallbackExclusive");
 	tet_infoline("PREP: Create labelw_good widget");
 	labelw_good = (Widget) CreateLabelWidget("Hello", boxw1);
 	tet_infoline("PREP: Create a popup shell");
@@ -241,11 +244,11 @@ Widget pushb_good, rowcolw_good;
 	rowcolw_good = (Widget) CreateRowColWidget((Widget)menuw);
 	tet_infoline("PREP: Create pushb_good button in rowcolw_good widget");
 	pushb_good = (Widget) CreatePushButtonGadget( "ApTest", rowcolw_good);
-	tet_infoline("PREP: Register callback function XtCallbackNone");
-	XtAddCallback(labelw_good, XtNdestroyCallback, XtCallbackNone, menuw);
+	tet_infoline("PREP: Register callback function XtCallbackExclusive");
+	XtAddCallback(labelw_good, XtNdestroyCallback, XtCallbackExclusive, menuw);
 	tet_infoline("PREP: Register timeout");
-	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTI1_Proc, topLevel);
-	tet_infoline("PREP: Invoke callback function XtCallbackNone().");
+	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTI_Proc, topLevel);
+	tet_infoline("PREP: Invoke callback function XtCallbackExclusive()");
 	XtCallCallbacks(labelw_good, XtNdestroyCallback, (XtPointer)NULL);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
@@ -254,8 +257,8 @@ Widget pushb_good, rowcolw_good;
 	tet_result(TET_PASS);
 >>ASSERTION Good A
 A successful invocation of
-void XtCallbackNone(w, client_data, call_data) 
-shall set the spring_loaded field in the widget instance structure of
+void XtCallbackExclusive(w, client_data, call_data) 
+shall set the spring_loaded field in the widget instance structure of 
 client_data to False.
 >>CODE
 pid_t pid2;
@@ -264,7 +267,7 @@ Widget labelw_good;
 Widget pushb_good, rowcolw_good;
 
 	FORK(pid2);
-	avs_xt_hier("Tcalbknon1", "XtCallbackNone");
+	avs_xt_hier("Tcalbkexc1", "XtCallbackExclusive");
 	tet_infoline("PREP: Create labelw_good widget");
 	labelw_good = (Widget) CreateLabelWidget("Hello", boxw1);
 	tet_infoline("PREP: Create a popup shell");
@@ -273,11 +276,11 @@ Widget pushb_good, rowcolw_good;
 	rowcolw_good = (Widget) CreateRowColWidget((Widget)menuw);
 	tet_infoline("PREP: Create pushb_good button in rowcolw_good widget");
 	pushb_good = (Widget) CreatePushButtonGadget( "ApTest", rowcolw_good);
-	tet_infoline("PREP: Register callback function XtCallbackNone");
-	XtAddCallback(labelw_good, XtNdestroyCallback, XtCallbackNone, menuw);
+	tet_infoline("PREP: Register callback function XtCallbackExclusive");
+	XtAddCallback(labelw_good, XtNdestroyCallback, XtCallbackExclusive, menuw);
 	tet_infoline("PREP: Register timeout");
-	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTI1_Proc, topLevel);
-	tet_infoline("PREP: Invoke callback function XtCallbackNone().");
+	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTI_Proc, topLevel);
+	tet_infoline("PREP: Invoke callback function XtCallbackExclusive()");
 	XtCallCallbacks(labelw_good, XtNdestroyCallback, (XtPointer)NULL);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
@@ -286,9 +289,9 @@ Widget pushb_good, rowcolw_good;
 	tet_result(TET_PASS);
 >>ASSERTION Good A
 A successful invocation of
-void XtCallbackNone(w, client_data, call_data) 
+void XtCallbackExclusive(w, client_data, call_data) 
 shall set the grab_kind field in the widget instance structure of client_data
-to XtGrabNone.
+to XtGrabExclusive.
 >>CODE
 pid_t pid2;
 int status;
@@ -296,7 +299,7 @@ Widget labelw_good;
 Widget pushb_good, rowcolw_good;
 
 	FORK(pid2);
-	avs_xt_hier("Tcalbknon1", "XtCallbackNone");
+	avs_xt_hier("Tcalbkexc1", "XtCallbackExclusive");
 	tet_infoline("PREP: Create labelw_good widget");
 	labelw_good = (Widget) CreateLabelWidget("Hello", boxw1);
 	tet_infoline("PREP: Create a popup shell");
@@ -305,11 +308,11 @@ Widget pushb_good, rowcolw_good;
 	rowcolw_good = (Widget) CreateRowColWidget((Widget)menuw);
 	tet_infoline("PREP: Create pushb_good button in rowcolw_good widget");
 	pushb_good = (Widget) CreatePushButtonGadget( "ApTest", rowcolw_good);
-	tet_infoline("PREP: Register callback function XtCallbackNone");
-	XtAddCallback(labelw_good, XtNdestroyCallback, XtCallbackNone, menuw);
+	tet_infoline("PREP: Register callback function XtCallbackExclusive");
+	XtAddCallback(labelw_good, XtNdestroyCallback, XtCallbackExclusive, menuw);
 	tet_infoline("PREP: Register timeout");
-	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTI1_Proc, topLevel);
-	tet_infoline("PREP: Invoke callback function XtCallbackNone().");
+	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTI_Proc, topLevel);
+	tet_infoline("PREP: Invoke callback function XtCallbackExclusive()");
 	XtCallCallbacks(labelw_good, XtNdestroyCallback, (XtPointer)NULL);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
@@ -318,9 +321,9 @@ Widget pushb_good, rowcolw_good;
 	tet_result(TET_PASS);
 >>ASSERTION Good A
 A successful invocation of
-void XtCallbackNone(w, client_data, call_data) 
-when the create_popup_child_proc field in the widget instance structure 
-of client_data is non-NULL shall call the procedure specified by that field.
+void XtCallbackExclusive(w, client_data, call_data) 
+when the create_popup_child_proc field in the widget instance structure of 
+client_data is non-NULL shall call the procedure specified by that field.
 >>CODE
 pid_t pid2;
 int status;
@@ -328,7 +331,7 @@ Widget labelw_good;
 Widget pushb_good, rowcolw_good;
 
 	FORK(pid2);
-	avs_xt_hier("Tcalbknon1", "XtCallbackNone");
+	avs_xt_hier("Tcalbkexc1", "XtCallbackExclusive");
 	tet_infoline("PREP: Create labelw_good widget");
 	labelw_good = (Widget) CreateLabelWidget("Hello", boxw1);
 	tet_infoline("PREP: Create a popup shell");
@@ -337,13 +340,13 @@ Widget pushb_good, rowcolw_good;
 	rowcolw_good = (Widget) CreateRowColWidget((Widget)menuw);
 	tet_infoline("PREP: Create pushb_good button in rowcolw_good widget");
 	pushb_good = (Widget) CreatePushButtonGadget( "ApTest", rowcolw_good);
-	tet_infoline("PREP: Register callback function XtCallbackNone");
-	XtAddCallback(labelw_good, XtNdestroyCallback, XtCallbackNone, menuw);
+	tet_infoline("PREP: Register callback function XtCallbackExclusive");
+	XtAddCallback(labelw_good, XtNdestroyCallback, XtCallbackExclusive, menuw);
 	tet_infoline("PREP: Register timeout");
-	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTI1_Proc, topLevel);
+	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTI_Proc, topLevel);
 	tet_infoline("PREP: Set create_popup_child_proc procedure");
 	menuw->shell.create_popup_child_proc = cpcp;
-	tet_infoline("PREP: Invoke callback function XtCallbackNone().");
+	tet_infoline("PREP: Invoke callback function XtCallbackExclusive()");
 	XtCallCallbacks(labelw_good, XtNdestroyCallback, (XtPointer)NULL);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt7/XtPopupSpringLoaded/XtPopupSpringLoaded.m
+>># File: xts/Xt7/XtPopupSpringLoaded.m
 >># 
 >># Description:
 >>#	Tests for XtPopupSpringLoaded()
