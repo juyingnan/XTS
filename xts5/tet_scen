@@ -3814,43 +3814,43 @@ XtDestroyWidget
 
 XtManageChildren
 	"VSW5TESTSUITE CASE XtManageChildren 7"
-	/Xt5/XtManageChildren/XtManageChildren
+	/Xt5/XtManageChildren
 
 XtManageChild
 	"VSW5TESTSUITE CASE XtManageChild 6"
-	/Xt5/XtManageChild/XtManageChild
+	/Xt5/XtManageChild
 
 XtCreateManagedWidget
 	"VSW5TESTSUITE CASE XtCreateManagedWidget 16"
-	/Xt5/XtCreateManagedWidget/XtCreateManagedWidget
+	/Xt5/XtCreateManagedWidget
 
 XtVaCreateManagedWidget
 	"VSW5TESTSUITE CASE XtVaCreateManagedWidget 20"
-	/Xt5/XtVaCreateManagedWidget/XtVaCreateManagedWidget
+	/Xt5/XtVaCreateManagedWidget
 
 XtUnmanageChildren
 	"VSW5TESTSUITE CASE XtUnmanageChildren 8"
-	/Xt5/XtUnmanageChildren/XtUnmanageChildren
+	/Xt5/XtUnmanageChildren
 
 XtUnmanageChild
 	"VSW5TESTSUITE CASE XtUnmanageChild 7"
-	/Xt5/XtUnmanageChild/XtUnmanageChild
+	/Xt5/XtUnmanageChild
 
 XtIsManaged
 	"VSW5TESTSUITE CASE XtIsManaged 3"
-	/Xt5/XtIsManaged/XtIsManaged
+	/Xt5/XtIsManaged
 
 XtSetMappedWhenManaged
 	"VSW5TESTSUITE CASE XtSetMappedWhenManaged 2"
-	/Xt5/XtSetMappedWhenManaged/XtSetMappedWhenManaged
+	/Xt5/XtSetMappedWhenManaged
 
 XtMapWidget
 	"VSW5TESTSUITE CASE XtMapWidget 2"
-	/Xt5/XtMapWidget/XtMapWidget
+	/Xt5/XtMapWidget
 
 XtUnmapWidget
 	"VSW5TESTSUITE CASE XtUnmapWidget 2"
-	/Xt5/XtUnmapWidget/XtUnmapWidget
+	/Xt5/XtUnmapWidget
 
 #Discrete tests for Xt Chapter 6
 

@@ -25,17 +25,17 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt5/XtUnmapWidget/XtUnmapWidget.m
+>># File: xts/Xt5/XtMapWidget.m
 >># 
 >># Description:
->>#	Tests for XtUnmapWidget()
+>>#	Tests for XtMapWidget()
 >># 
 >># Modifications:
->># $Log: tunmpwdgt.m,v $
+>># $Log: tmpwidget.m,v $
 >># Revision 1.1  2005-02-12 14:38:14  anderson
 >># Initial revision
 >>#
->># Revision 8.0  1998/12/23 23:36:39  mar
+>># Revision 8.0  1998/12/23 23:36:38  mar
 >># Branch point for Release 5.0.2
 >>#
 >># Revision 7.0  1998/10/30 22:59:30  mar
@@ -47,10 +47,10 @@ All Rights Reserved.
 >># Revision 5.0  1998/01/26 03:24:21  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:16:44  tbr
+>># Revision 4.0  1995/12/15 09:16:43  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  01:20:45  andy
+>># Revision 3.1  1995/12/15  01:20:44  andy
 >># Prepare for GA Release
 >>#
 >>EXTERN
@@ -69,6 +69,7 @@ Widget quit;
 	XtAppContext app_context;
 	Display *display;
 	XEvent loop_event;
+	XEvent return_event;
 	Widget widget;
 	widget = XtParent(quit);
 	app_context = XtWidgetToApplicationContext(widget);
@@ -76,45 +77,48 @@ Widget quit;
 	for (;;) {
 	 XtAppNextEvent(app_context, &loop_event);
 	 XSync(display, False);
-	 if (loop_event.type == UnmapNotify) {
-	 	if (loop_event.xany.window == window) {
+	 if (loop_event.type == MapNotify) {
+		if (loop_event.xany.window == window) {
 			avs_set_event(1,1);
 			exit(0);
 		}
-	}
+	 }
 	 XtDispatchEvent(&loop_event);
 	} /* end for */
 }
 >>SET tpstartup avs_alloc_sem
 >>SET tpcleanup avs_free_sem
->>TITLE XtUnmapWidget Xt5
+>>TITLE XtMapWidget Xt5
 void
-XtUnmapWidget(w)
+XtMapWidget(w)
 >>ASSERTION Good A
 A successful call to 
-void XtUnmapWidget(w) 
-when the window of the widget w is mapped shall unmap the widget window.
+void XtMapWidget(w)
+when the widget w is realized shall map the widget window.
 >>CODE
 Widget labelw_good;
 Display *display;
 int status = 0;
 pid_t pid2;
 
-	avs_xt_hier("Tunmpwdgt1", "XtUnmapWidget");
+	FORK(pid2);
+	avs_xt_hier("Tmpwidget1", "XtMapWidget");
 	tet_infoline("PREP: Create labelw_good widget Hello");
 	labelw_good = (Widget) CreateLabelWidget("Hello", boxw1);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	tet_infoline("PREP: Catch UnmapNotify event");
+	tet_infoline("PREP: Catch MapNotify event");
 	display = XtDisplay(labelw_good);
 	window = XtWindow(labelw_good);
 	XSelectInput(display, window, (unsigned long)StructureNotifyMask);
 	tet_infoline("PREP: Unmap labelw_good widget");
 	XtUnmapWidget(labelw_good);
-	FORK(pid2);
-	tet_infoline("TEST: UnmapNotify event generated for widget");
+	tet_infoline("PREP: Map labelw_good widget");
+	XtMapWidget(labelw_good);
+	tet_infoline("TEST: MapNotify event was generated");
 	analyse_events(click_quit);
-	KROF(pid);
+	KROF(pid2);
+	kill(pid2, SIGKILL);
 	status = avs_get_event(1);
-	check_dec(1, status, "UnmapNotify event count");
+	check_dec(1, status, "MapNotify event count");
 	tet_result(TET_PASS);

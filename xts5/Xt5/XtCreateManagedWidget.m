@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt5/XtCreateManagedWidget/XtCreateManagedWidget.m
+>># File: xts/Xt5/XtCreateManagedWidget.m
 >># 
 >># Description:
 >>#	Tests for XtCreateManagedWidget()

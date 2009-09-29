@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt5/XtIsManaged/XtIsManaged.m
+>># File: xts/Xt5/XtIsManaged.m
 >># 
 >># Description:
 >>#	Tests for XtIsManaged()
