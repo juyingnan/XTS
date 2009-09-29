@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt10/XtAddCallbacks/XtAddCallbacks.m
+>># File: xts/Xt10/XtAddCallbacks.m
 >># 
 >># Description:
 >>#	Tests for XtAddCallbacks()

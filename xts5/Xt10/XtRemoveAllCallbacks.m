@@ -25,32 +25,32 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt10/XtRemoveCallbacks/XtRemoveCallbacks.m
+>># File: xts/Xt10/XtRemoveAllCallbacks.m
 >># 
 >># Description:
->>#	Tests for XtRemoveCallbacks()
+>>#	Tests for XtRemoveAllCallbacks()
 >># 
 >># Modifications:
->># $Log: trmcalbks.m,v $
+>># $Log: trmalcbks.m,v $
 >># Revision 1.1  2005-02-12 14:37:50  anderson
 >># Initial revision
 >>#
 >># Revision 8.0  1998/12/23 23:37:19  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 23:00:14  mar
+>># Revision 7.0  1998/10/30 23:00:15  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:28:24  tbr
+>># Revision 6.0  1998/03/02 05:28:25  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:24:58  tbr
+>># Revision 5.0  1998/01/26 03:24:59  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:19:08  tbr
+>># Revision 4.0  1995/12/15 09:19:09  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  02:13:29  andy
+>># Revision 3.1  1995/12/15  02:13:30  andy
 >># Prepare for GA Release
 >>#
 >>EXTERN
@@ -63,91 +63,66 @@ Widget topLevel, panedw, boxw1, boxw2;
 Widget labelw, rowcolw, click_quit;
 
 /*
-** Callback to be invoked
+** XtCBP_ProcOne()
 */
-void XtCBP_ProcOne(w, client_data, call_data)
+XtCallbackProc XtCBP_ProcOne(w, client_data, call_data)
 Widget w;
 XtPointer client_data, call_data;
 {
-	avs_set_event(1, 1);
-}
-/*
-** Callback not to be invoked
-*/
-void XtCBP_ProcTwo(w, client_data, call_data)
-Widget w;
-XtPointer client_data, call_data;
-{
-	sprintf(ebuf, "ERROR: Deleted callback XtCBP_ProcTwo invoked");
+	sprintf(ebuf, "ERROR: Deleted Callback XtCBP_ProcOne invoked");
 	tet_infoline(ebuf);
 	tet_result(TET_FAIL);
 }
 /*
-** Callback not to be invoked
+** XtCBP_ProcTwo()
 */
-void XtCBP_ProcThree(w, client_data, call_data)
+XtCallbackProc XtCBP_ProcTwo(w, client_data, call_data)
 Widget w;
 XtPointer client_data, call_data;
 {
-	sprintf(ebuf, "ERROR: Deleted Callback XtCBP_ProcThree invoked");
+	sprintf(ebuf, "ERROR: Deleted Callback XtCBP_ProcTwo invoked");
 	tet_infoline(ebuf);
 	tet_result(TET_FAIL);
 }
->>SET tpstartup avs_alloc_sem
->>SET tpcleanup avs_free_sem
->>TITLE XtRemoveCallbacks Xt10
+>>TITLE XtRemoveAllCallbacks Xt10
 void
-XtRemoveCallbacks(object, callback_name, callbacks)
+XtRemoveAllCallbacks(object, callback_name)
 >>ASSERTION Good A
-A successful call to
-void XtRemoveCallbacks(w, callback_name, callbacks)
-shall delete each entry from the widget
+A successful call to 
+void XtRemoveAllCallbacks(w, callback_name)
+shall delete all callback procedures from the widget
 .A w's
 callback list specified by
-.A callback_name
-whose callback procedure and client data
-matches a callback/client data pair in the list specified by
-.A callbacks.
+.A callback_name.
 >>CODE
 Widget labelw_good;
-int first = 0;
 XtCallbackRec callbacks[] = {
 	{ (XtCallbackProc)XtCBP_ProcOne, (XtPointer) NULL },
 	{ (XtCallbackProc)XtCBP_ProcTwo, (XtPointer) NULL },
-	{ (XtCallbackProc)XtCBP_ProcThree , (XtPointer) NULL },
-	{ (XtCallbackProc) NULL, (XtPointer) NULL }
-};
-XtCallbackRec remove_list[] = {
-	{ (XtCallbackProc)XtCBP_ProcTwo, (XtPointer) NULL },
-	{ (XtCallbackProc)XtCBP_ProcThree, (XtPointer) NULL } ,
 	{ (XtCallbackProc) NULL, (XtPointer) NULL }
 };
 pid_t pid2;
 
 	FORK(pid2);
-	avs_xt_hier("Trmcalbks1", "XtRemoveCallbacks");
+	avs_xt_hier("Trmalcbks1", "XtRemoveAllCallbacks");
 	tet_infoline("PREP: Create labelw_good widget Hello in boxw1 widget");
 	labelw_good = (Widget) CreateLabelWidget("Hello", boxw1);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	tet_infoline("PREP: Add a list of callback procedures to labelw_good widget");
+	tet_infoline("PREP: Add a list of destroy callback procedures to labelw_good widget");
 	XtAddCallbacks(labelw_good,
 			XtNdestroyCallback,
 			&callbacks[0]
 			);
-	tet_infoline("PREP: Remove some of the callbacks form the list");
-	XtRemoveCallbacks(labelw_good,
-		 XtNdestroyCallback,
-		 &remove_list[0]
-		 );
-	tet_infoline("PREP: labelw_good destroyed should not invoke the removed functions");
+	tet_infoline("PREP: Remove the callbacks from the list");
+	XtRemoveAllCallbacks(labelw_good, XtNdestroyCallback);
+	tet_infoline("TEST: Destroying the widget does not invoke functions");
 	XtDestroyWidget(labelw_good);
-	tet_infoline("TEST: Only the callback not removed is invoked");
-	first = avs_get_event(1);
-	if (!first) {
-		sprintf(ebuf, "ERROR: Function XtCBP_ProcOne was not invoked");
-		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
-	}
 	LKROF(pid2, AVSXTTIMEOUT-2);
 	tet_result(TET_PASS);
+>>ASSERTION Good B 3
+A successful call to 
+void XtRemoveAllCallbacks(w, callback_name)
+shall free all storage associated with the callback list
+specified by
+.A callback_name.

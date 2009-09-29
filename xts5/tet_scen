@@ -4096,35 +4096,35 @@ XtBuildEventMask
 
 XtAddCallback
 	"VSW5TESTSUITE CASE XtAddCallback 3"
-	/Xt10/XtAddCallback/XtAddCallback
+	/Xt10/XtAddCallback
 
 XtAddCallbacks
 	"VSW5TESTSUITE CASE XtAddCallbacks 3"
-	/Xt10/XtAddCallbacks/XtAddCallbacks
+	/Xt10/XtAddCallbacks
 
 XtRemoveCallback
 	"VSW5TESTSUITE CASE XtRemoveCallback 2"
-	/Xt10/XtRemoveCallback/XtRemoveCallback
+	/Xt10/XtRemoveCallback
 
 XtRemoveCallbacks
 	"VSW5TESTSUITE CASE XtRemoveCallbacks 1"
-	/Xt10/XtRemoveCallbacks/XtRemoveCallbacks
+	/Xt10/XtRemoveCallbacks
 
 XtRemoveAllCallbacks
 	"VSW5TESTSUITE CASE XtRemoveAllCallbacks 2"
-	/Xt10/XtRemoveAllCallbacks/XtRemoveAllCallbacks
+	/Xt10/XtRemoveAllCallbacks
 
 XtCallCallbacks
 	"VSW5TESTSUITE CASE XtCallCallbacks 1"
-	/Xt10/XtCallCallbacks/XtCallCallbacks
+	/Xt10/XtCallCallbacks
 
 XtCallCallbackList
 	"VSW5TESTSUITE CASE XtCallCallbackList 2"
-	/Xt10/XtCallCallbackList/XtCallCallbackList
+	/Xt10/XtCallCallbackList
 
 XtHasCallbacks
 	"VSW5TESTSUITE CASE XtHasCallbacks 3"
-	/Xt10/XtHasCallbacks/XtHasCallbacks
+	/Xt10/XtHasCallbacks
 
 
 #Discrete tests for Xt Chapter 11

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt10/XtHasCallbacks/XtHasCallbacks.m
+>># File: xts/Xt10/XtHasCallbacks.m
 >># 
 >># Description:
 >>#	Tests for XtHasCallbacks()
