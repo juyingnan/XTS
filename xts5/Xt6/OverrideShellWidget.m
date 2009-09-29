@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt6/OverrideShellWidget/OverrideShellWidget.m
+>># File: xts/Xt6/OverrideShellWidget.m
 >># 
 >># Description:
 >>#	Tests for OverrideShell Widget

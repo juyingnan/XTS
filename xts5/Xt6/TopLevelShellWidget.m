@@ -25,35 +25,35 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt6/TransientShellWidget/TransientShellWidget.m
+>># File: xts/Xt6/TopLevelShellWidget.m
 >># 
 >># Description:
->>#	Tests for TransientShell Widgets
+>>#	Tests for TopLevelShell Widgets()
 >># 
 >># Modifications:
->># $Log: wdgttrnsnt.m,v $
+>># $Log: wdgttplvls.m,v $
 >># Revision 1.1  2005-02-12 14:38:14  anderson
 >># Initial revision
 >>#
->># Revision 8.0  1998/12/23 23:36:43  mar
+>># Revision 8.0  1998/12/23 23:36:44  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:59:35  mar
+>># Revision 7.0  1998/10/30 22:59:36  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:27:51  tbr
+>># Revision 6.0  1998/03/02 05:27:52  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:24:25  tbr
+>># Revision 5.0  1998/01/26 03:24:26  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.1  1997/01/22 22:38:29  andy
+>># Revision 4.1  1997/01/22 22:38:25  andy
 >># Removed use of Athena widgets
 >>#
->># Revision 4.0  1995/12/15  09:17:03  tbr
+>># Revision 4.0  1995/12/15  09:17:07  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  01:21:08  andy
+>># Revision 3.1  1995/12/15  01:21:13  andy
 >># Prepare for GA Release
 >>#
 >>EXTERN
@@ -67,6 +67,7 @@ All Rights Reserved.
 XtAppContext app_ctext;
 Widget topLevel, panedw, boxw1, boxw2;
 Widget labelw, rowcolw, click_quit;
+
 /*used for assignments to solicit compiler failures due to type mismatches*/
 WidgetClass             myWidgetClass, *pmyWidgetClass;
 String                  myString, *pmyString;
@@ -117,708 +118,742 @@ XtOrderProc		myXtOrderProc, *pmyXtOrderProc;
 XtCreatePopupChildProc	myXtCreatePopupChildProc, *pmyXtCreatePopupChildProc;
 Visual			*pmyVisual;
 extern void xt_whandler();
->>TITLE TransientShellWidget Xt6
+>>TITLE TopLevelShellWidget Xt6
 >>ASSERTION Good A
 The class structure for shell widgets
-TransientShellClassPart shall be defined and contain
+TopLevelShellClassPart shall be defined and contain
 the fields listed in section 6.1 of the Specification.
 >>CODE
-TransientShellClassPart testStruct;
+TopLevelShellClassPart testStruct;
 
-	check_size("TransientShellClassPart.extension", "XtPointer", sizeof(testStruct.extension), sizeof(XtPointer));
+	check_size("TopLevelShellClassPart.extension", "XtPointer", sizeof(testStruct.extension), sizeof(XtPointer));
 	myXtPointer = testStruct.extension;
 	pmyXtPointer = &testStruct.extension;
 
 	tet_result(TET_PASS);
 >>ASSERTION Good A
 The class record structure for shell widgets
-TransientShellClassRec shall be defined and contain
-the fields listed in section 6.1 of the Specification.
+TopLevelShellClassRec shall be defined and contain the
+fields listed in section 6.1 of the Specification.
 >>CODE
-TransientShellClassRec testStruct;
+TopLevelShellClassRec testStruct;
 
-	check_size("TransientShellClassRec.core_class.superclass", "WidgetClass", sizeof(testStruct.core_class.superclass), sizeof(WidgetClass));
+	check_size("TopLevelShellClassRec.core_class.superclass", "WidgetClass", sizeof(testStruct.core_class.superclass), sizeof(WidgetClass));
 	myWidgetClass = testStruct.core_class.superclass;
 	pmyWidgetClass = &testStruct.core_class.superclass;
 
-	check_size("TransientShellClassRec.core_class.class_name", "String", sizeof(testStruct.core_class.class_name), sizeof(String));
+	check_size("TopLevelShellClassRec.core_class.class_name", "String", sizeof(testStruct.core_class.class_name), sizeof(String));
 	myString = testStruct.core_class.class_name;
 	pmyString = &testStruct.core_class.class_name;
 
-	check_size("TransientShellClassRec.core_class.widget_size", "Cardinal", sizeof(testStruct.core_class.widget_size), sizeof(Cardinal));
+	check_size("TopLevelShellClassRec.core_class.widget_size", "Cardinal", sizeof(testStruct.core_class.widget_size), sizeof(Cardinal));
 	myCardinal = testStruct.core_class.widget_size;
 	pmyCardinal = &testStruct.core_class.widget_size;
 
-	check_size("TransientShellClassRec.core_class.class_initialize", "XtProc", sizeof(testStruct.core_class.class_initialize), sizeof(XtProc));
+	check_size("TopLevelShellClassRec.core_class.class_initialize", "XtProc", sizeof(testStruct.core_class.class_initialize), sizeof(XtProc));
 	myXtProc = testStruct.core_class.class_initialize;
 	pmyXtProc = &testStruct.core_class.class_initialize;
 
-	check_size("TransientShellClassRec.core_class.class_part_initialize", "XtWidgetClassProc", sizeof(testStruct.core_class.class_part_initialize), sizeof(XtWidgetClassProc));
+	check_size("TopLevelShellClassRec.core_class.class_part_initialize", "XtWidgetClassProc", sizeof(testStruct.core_class.class_part_initialize), sizeof(XtWidgetClassProc));
 	myXtWidgetClassProc = testStruct.core_class.class_part_initialize;
 	pmyXtWidgetClassProc = &testStruct.core_class.class_part_initialize;
 
-	check_size("TransientShellClassRec.core_class.class_inited", "XtEnum", sizeof(testStruct.core_class.class_inited), sizeof(XtEnum));
+	check_size("TopLevelShellClassRec.core_class.class_inited", "XtEnum", sizeof(testStruct.core_class.class_inited), sizeof(XtEnum));
 	myXtEnum = testStruct.core_class.class_inited;
 	pmyXtEnum = &testStruct.core_class.class_inited;
 
-	check_size("TransientShellClassRec.core_class.initialize", "XtInitProc", sizeof(testStruct.core_class.initialize), sizeof(XtInitProc));
+	check_size("TopLevelShellClassRec.core_class.initialize", "XtInitProc", sizeof(testStruct.core_class.initialize), sizeof(XtInitProc));
 	myXtInitProc = testStruct.core_class.initialize;
 	pmyXtInitProc = &testStruct.core_class.initialize;
 
-	check_size("TransientShellClassRec.core_class.initialize_hook", "XtArgsProc", sizeof(testStruct.core_class.initialize_hook), sizeof(XtArgsProc));
+	check_size("TopLevelShellClassRec.core_class.initialize_hook", "XtArgsProc", sizeof(testStruct.core_class.initialize_hook), sizeof(XtArgsProc));
 	myXtArgsProc = testStruct.core_class.initialize_hook;
 	pmyXtArgsProc = &testStruct.core_class.initialize_hook;
 
-	check_size("TransientShellClassRec.core_class.realize", "XtRealizeProc", sizeof(testStruct.core_class.realize), sizeof(XtRealizeProc));
+	check_size("TopLevelShellClassRec.core_class.realize", "XtRealizeProc", sizeof(testStruct.core_class.realize), sizeof(XtRealizeProc));
 	myXtRealizeProc = testStruct.core_class.realize;
 	pmyXtRealizeProc = &testStruct.core_class.realize;
 
-	check_size("TransientShellClassRec.core_class.actions", "XtActionList", sizeof(testStruct.core_class.actions), sizeof(XtActionList));
+	check_size("TopLevelShellClassRec.core_class.actions", "XtActionList", sizeof(testStruct.core_class.actions), sizeof(XtActionList));
 	myXtActionList = testStruct.core_class.actions;
 	pmyXtActionList = &testStruct.core_class.actions;
 
-	check_size("TransientShellClassRec.core_class.num_actions", "Cardinal", sizeof(testStruct.core_class.num_actions), sizeof(Cardinal));
+	check_size("TopLevelShellClassRec.core_class.num_actions", "Cardinal", sizeof(testStruct.core_class.num_actions), sizeof(Cardinal));
 	myCardinal = testStruct.core_class.num_actions;
 	pmyCardinal = &testStruct.core_class.num_actions;
 
-	check_size("TransientShellClassRec.core_class.resources", "XtResourceList", sizeof(testStruct.core_class.resources), sizeof(XtResourceList));
+	check_size("TopLevelShellClassRec.core_class.resources", "XtResourceList", sizeof(testStruct.core_class.resources), sizeof(XtResourceList));
 	myXtResourceList = testStruct.core_class.resources;
 	pmyXtResourceList = &testStruct.core_class.resources;
 
-	check_size("TransientShellClassRec.core_class.num_resources", "Cardinal", sizeof(testStruct.core_class.num_resources), sizeof(Cardinal));
+	check_size("TopLevelShellClassRec.core_class.num_resources", "Cardinal", sizeof(testStruct.core_class.num_resources), sizeof(Cardinal));
 	myCardinal = testStruct.core_class.num_resources;
 	pmyCardinal = &testStruct.core_class.num_resources;
 
-	check_size("TransientShellClassRec.core_class.xrm_class", "XrmClass", sizeof(testStruct.core_class.xrm_class), sizeof(XrmClass));
+	check_size("TopLevelShellClassRec.core_class.xrm_class", "XrmClass", sizeof(testStruct.core_class.xrm_class), sizeof(XrmClass));
 	myXrmClass = testStruct.core_class.xrm_class;
 	pmyXrmClass = &testStruct.core_class.xrm_class;
 
-	check_size("TransientShellClassRec.core_class.compress_motion", "Boolean", sizeof(testStruct.core_class.compress_motion), sizeof(Boolean));
+	check_size("TopLevelShellClassRec.core_class.compress_motion", "Boolean", sizeof(testStruct.core_class.compress_motion), sizeof(Boolean));
 	myBoolean = testStruct.core_class.compress_motion;
 	pmyBoolean = &testStruct.core_class.compress_motion;
 
-	check_size("TransientShellClassRec.core_class.compress_exposure", "XtEnum", sizeof(testStruct.core_class.compress_exposure), sizeof(XtEnum));
+	check_size("TopLevelShellClassRec.core_class.compress_exposure", "XtEnum", sizeof(testStruct.core_class.compress_exposure), sizeof(XtEnum));
 	myXtEnum = testStruct.core_class.compress_exposure;
 	pmyXtEnum = &testStruct.core_class.compress_exposure;
 
-	check_size("TransientShellClassRec.core_class.compress_enterleave", "Boolean", sizeof(testStruct.core_class.compress_enterleave), sizeof(Boolean));
+	check_size("TopLevelShellClassRec.core_class.compress_enterleave", "Boolean", sizeof(testStruct.core_class.compress_enterleave), sizeof(Boolean));
 	myBoolean = testStruct.core_class.compress_enterleave;
 	pmyBoolean = &testStruct.core_class.compress_enterleave;
 
-	check_size("TransientShellClassRec.core_class.visible_interest", "Boolean", sizeof(testStruct.core_class.visible_interest), sizeof(Boolean));
+	check_size("TopLevelShellClassRec.core_class.visible_interest", "Boolean", sizeof(testStruct.core_class.visible_interest), sizeof(Boolean));
 	myBoolean = testStruct.core_class.visible_interest;
 	pmyBoolean = &testStruct.core_class.visible_interest;
 
-	check_size("TransientShellClassRec.core_class.destroy", "XtWidgetProc", sizeof(testStruct.core_class.destroy), sizeof(XtWidgetProc));
+	check_size("TopLevelShellClassRec.core_class.destroy", "XtWidgetProc", sizeof(testStruct.core_class.destroy), sizeof(XtWidgetProc));
 	myXtWidgetProc = testStruct.core_class.destroy;
 	pmyXtWidgetProc = &testStruct.core_class.destroy;
 
-	check_size("TransientShellClassRec.core_class.resize", "XtWidgetProc", sizeof(testStruct.core_class.resize), sizeof(XtWidgetProc));
+	check_size("TopLevelShellClassRec.core_class.resize", "XtWidgetProc", sizeof(testStruct.core_class.resize), sizeof(XtWidgetProc));
 	myXtWidgetProc = testStruct.core_class.resize;
 	pmyXtWidgetProc = &testStruct.core_class.resize;
 
-	check_size("TransientShellClassRec.core_class.expose", "XtExposeProc", sizeof(testStruct.core_class.expose), sizeof(XtExposeProc));
+	check_size("TopLevelShellClassRec.core_class.expose", "XtExposeProc", sizeof(testStruct.core_class.expose), sizeof(XtExposeProc));
 	myXtExposeProc = testStruct.core_class.expose;
 	pmyXtExposeProc = &testStruct.core_class.expose;
 
-	check_size("TransientShellClassRec.core_class.set_values", "XtSetValuesFunc", sizeof(testStruct.core_class.set_values), sizeof(XtSetValuesFunc));
+	check_size("TopLevelShellClassRec.core_class.set_values", "XtSetValuesFunc", sizeof(testStruct.core_class.set_values), sizeof(XtSetValuesFunc));
 	myXtSetValuesFunc = testStruct.core_class.set_values;
 	pmyXtSetValuesFunc = &testStruct.core_class.set_values;
 
-	check_size("TransientShellClassRec.core_class.set_values_hook", "XtArgsFunc", sizeof(testStruct.core_class.set_values_hook), sizeof(XtArgsFunc));
+	check_size("TopLevelShellClassRec.core_class.set_values_hook", "XtArgsFunc", sizeof(testStruct.core_class.set_values_hook), sizeof(XtArgsFunc));
 	myXtArgsFunc = testStruct.core_class.set_values_hook;
 	pmyXtArgsFunc = &testStruct.core_class.set_values_hook;
 
-	check_size("TransientShellClassRec.core_class.set_values_almost", "XtAlmostProc", sizeof(testStruct.core_class.set_values_almost), sizeof(XtAlmostProc));
+	check_size("TopLevelShellClassRec.core_class.set_values_almost", "XtAlmostProc", sizeof(testStruct.core_class.set_values_almost), sizeof(XtAlmostProc));
 	myXtAlmostProc = testStruct.core_class.set_values_almost;
 	pmyXtAlmostProc = &testStruct.core_class.set_values_almost;
 
-	check_size("TransientShellClassRec.core_class.get_values_hook", "XtArgsProc", sizeof(testStruct.core_class.get_values_hook), sizeof(XtArgsProc));
+	check_size("TopLevelShellClassRec.core_class.get_values_hook", "XtArgsProc", sizeof(testStruct.core_class.get_values_hook), sizeof(XtArgsProc));
 	myXtArgsProc = testStruct.core_class.get_values_hook;
 	pmyXtArgsProc = &testStruct.core_class.get_values_hook;
 
-	check_size("TransientShellClassRec.core_class.accept_focus", "XtAcceptFocusProc", sizeof(testStruct.core_class.accept_focus), sizeof(XtAcceptFocusProc));
+	check_size("TopLevelShellClassRec.core_class.accept_focus", "XtAcceptFocusProc", sizeof(testStruct.core_class.accept_focus), sizeof(XtAcceptFocusProc));
 	myXtAcceptFocusProc = testStruct.core_class.accept_focus;
 	pmyXtAcceptFocusProc = &testStruct.core_class.accept_focus;
 
-	check_size("TransientShellClassRec.core_class.version", "XtVersionType", sizeof(testStruct.core_class.version), sizeof(XtVersionType));
+	check_size("TopLevelShellClassRec.core_class.version", "XtVersionType", sizeof(testStruct.core_class.version), sizeof(XtVersionType));
 	myXtVersionType = testStruct.core_class.version;
 	pmyXtVersionType = &testStruct.core_class.version;
 
-	check_size("TransientShellClassRec.core_class.callback_private", "XtPointer", sizeof(testStruct.core_class.callback_private), sizeof(XtPointer));
+	check_size("TopLevelShellClassRec.core_class.callback_private", "XtPointer", sizeof(testStruct.core_class.callback_private), sizeof(XtPointer));
 	myXtPointer = testStruct.core_class.callback_private;
 	pmyXtPointer = &testStruct.core_class.callback_private;
 
-	check_size("TransientShellClassRec.core_class.tm_table", "String", sizeof(testStruct.core_class.tm_table), sizeof(String));
+	check_size("TopLevelShellClassRec.core_class.tm_table", "String", sizeof(testStruct.core_class.tm_table), sizeof(String));
 	myString = testStruct.core_class.tm_table;
 	pmyString = &testStruct.core_class.tm_table;
 
-	check_size("TransientShellClassRec.core_class.query_geometry", "XtGeometryHandler", sizeof(testStruct.core_class.query_geometry), sizeof(XtGeometryHandler));
+	check_size("TopLevelShellClassRec.core_class.query_geometry", "XtGeometryHandler", sizeof(testStruct.core_class.query_geometry), sizeof(XtGeometryHandler));
 	myXtGeometryHandler = testStruct.core_class.query_geometry;
 	pmyXtGeometryHandler = &testStruct.core_class.query_geometry;
 
-	check_size("TransientShellClassRec.core_class.display_accelerator", "XtStringProc", sizeof(testStruct.core_class.display_accelerator), sizeof(XtStringProc));
+	check_size("TopLevelShellClassRec.core_class.display_accelerator", "XtStringProc", sizeof(testStruct.core_class.display_accelerator), sizeof(XtStringProc));
 	myXtStringProc = testStruct.core_class.display_accelerator;
 	pmyXtStringProc = &testStruct.core_class.display_accelerator;
 
-	check_size("TransientShellClassRec.core_class.extension", "XtPointer", sizeof(testStruct.core_class.extension), sizeof(XtPointer));
+	check_size("TopLevelShellClassRec.core_class.extension", "XtPointer", sizeof(testStruct.core_class.extension), sizeof(XtPointer));
 	myXtPointer = testStruct.core_class.extension;
 	pmyXtPointer = &testStruct.core_class.extension;
 
-	check_size("TransientShellClassRec.composite_class.geometry_manager", "XtGeometryHandler", sizeof(testStruct.composite_class.geometry_manager), sizeof(XtGeometryHandler));
+	check_size("TopLevelShellClassRec.composite_class.geometry_manager", "XtGeometryHandler", sizeof(testStruct.composite_class.geometry_manager), sizeof(XtGeometryHandler));
 	myXtGeometryHandler = testStruct.composite_class.geometry_manager;
 	pmyXtGeometryHandler = &testStruct.composite_class.geometry_manager;
 
-	check_size("TransientShellClassRec.composite_class.change_managed", "XtWidgetProc", sizeof(testStruct.composite_class.change_managed), sizeof(XtWidgetProc));
+	check_size("TopLevelShellClassRec.composite_class.change_managed", "XtWidgetProc", sizeof(testStruct.composite_class.change_managed), sizeof(XtWidgetProc));
 	myXtWidgetProc = testStruct.composite_class.change_managed;
 	pmyXtWidgetProc = &testStruct.composite_class.change_managed;
 
-	check_size("TransientShellClassRec.composite_class.insert_child", "XtWidgetProc", sizeof(testStruct.composite_class.insert_child), sizeof(XtWidgetProc));
+	check_size("TopLevelShellClassRec.composite_class.insert_child", "XtWidgetProc", sizeof(testStruct.composite_class.insert_child), sizeof(XtWidgetProc));
 	myXtWidgetProc = testStruct.composite_class.insert_child;
 	pmyXtWidgetProc = &testStruct.composite_class.insert_child;
 
-	check_size("TransientShellClassRec.composite_class.delete_child", "XtWidgetProc", sizeof(testStruct.composite_class.delete_child), sizeof(XtWidgetProc));
+	check_size("TopLevelShellClassRec.composite_class.delete_child", "XtWidgetProc", sizeof(testStruct.composite_class.delete_child), sizeof(XtWidgetProc));
 	myXtWidgetProc = testStruct.composite_class.delete_child;
 	pmyXtWidgetProc = &testStruct.composite_class.delete_child;
 
-	check_size("TransientShellClassRec.composite_class.extension", "XtPointer", sizeof(testStruct.composite_class.extension), sizeof(XtPointer));
+	check_size("TopLevelShellClassRec.composite_class.extension", "XtPointer", sizeof(testStruct.composite_class.extension), sizeof(XtPointer));
 	myXtPointer = testStruct.composite_class.extension;
 	pmyXtPointer = &testStruct.composite_class.extension;
 
-	check_size("TransientShellClassRec.shell_class.extension", "XtPointer", sizeof(testStruct.shell_class.extension), sizeof(XtPointer));
+	check_size("TopLevelShellClassRec.shell_class.extension", "XtPointer", sizeof(testStruct.shell_class.extension), sizeof(XtPointer));
 	myXtPointer = testStruct.shell_class.extension;
 	pmyXtPointer = &testStruct.shell_class.extension;
 
-	check_size("TransientShellClassRec.wm_shell_class.extension", "XtPointer", sizeof(testStruct.wm_shell_class.extension), sizeof(XtPointer));
+	check_size("TopLevelShellClassRec.wm_shell_class.extension", "XtPointer", sizeof(testStruct.wm_shell_class.extension), sizeof(XtPointer));
 	myXtPointer = testStruct.wm_shell_class.extension;
 	pmyXtPointer = &testStruct.wm_shell_class.extension;
 
-	check_size("TransientShellClassRec.vendor_shell_class.extension", "XtPointer", sizeof(testStruct.vendor_shell_class.extension), sizeof(XtPointer));
+	check_size("TopLevelShellClassRec.vendor_shell_class.extension", "XtPointer", sizeof(testStruct.vendor_shell_class.extension), sizeof(XtPointer));
 	myXtPointer = testStruct.vendor_shell_class.extension;
 	pmyXtPointer = &testStruct.vendor_shell_class.extension;
 
-	check_size("TransientShellClassRec.transient_shell_class.extension", "XtPointer", sizeof(testStruct.transient_shell_class.extension), sizeof(XtPointer));
-	myXtPointer = testStruct.transient_shell_class.extension;
-	pmyXtPointer = &testStruct.transient_shell_class.extension;
+	check_size("TopLevelShellClassRec.top_level_shell_class.extension", "XtPointer", sizeof(testStruct.top_level_shell_class.extension), sizeof(XtPointer));
+	myXtPointer = testStruct.top_level_shell_class.extension;
+	pmyXtPointer = &testStruct.top_level_shell_class.extension;
 
 	tet_result(TET_PASS);
 >>ASSERTION Good A
-The class record for shell widgets
-transientShellClassRec shall exist and be an instance
-of the TransientShellClassRec structure.
+The class record for shell widgets topLevelShellClassRec shall
+exist and be an instance of the TopLevelShellClassRec structure.
 >>CODE
+TopLevelShellClassRec testStruct;
 
-	check_size("transientShellClassRec.core_class.superclass", "WidgetClass", sizeof(transientShellClassRec.core_class.superclass), sizeof(WidgetClass));
-	myWidgetClass = transientShellClassRec.core_class.superclass;
-	pmyWidgetClass = &transientShellClassRec.core_class.superclass;
+	check_size("topLevelShellClassRec.core_class.superclass", "WidgetClass", sizeof(topLevelShellClassRec.core_class.superclass), sizeof(WidgetClass));
+	myWidgetClass = topLevelShellClassRec.core_class.superclass;
+	pmyWidgetClass = &topLevelShellClassRec.core_class.superclass;
 
-	check_size("transientShellClassRec.core_class.class_name", "String", sizeof(transientShellClassRec.core_class.class_name), sizeof(String));
-	myString = transientShellClassRec.core_class.class_name;
-	pmyString = &transientShellClassRec.core_class.class_name;
+	check_size("topLevelShellClassRec.core_class.class_name", "String", sizeof(topLevelShellClassRec.core_class.class_name), sizeof(String));
+	myString = topLevelShellClassRec.core_class.class_name;
+	pmyString = &topLevelShellClassRec.core_class.class_name;
 
-	check_size("transientShellClassRec.core_class.widget_size", "Cardinal", sizeof(transientShellClassRec.core_class.widget_size), sizeof(Cardinal));
-	myCardinal = transientShellClassRec.core_class.widget_size;
-	pmyCardinal = &transientShellClassRec.core_class.widget_size;
+	check_size("topLevelShellClassRec.core_class.widget_size", "Cardinal", sizeof(topLevelShellClassRec.core_class.widget_size), sizeof(Cardinal));
+	myCardinal = topLevelShellClassRec.core_class.widget_size;
+	pmyCardinal = &topLevelShellClassRec.core_class.widget_size;
 
-	check_size("transientShellClassRec.core_class.class_initialize", "XtProc", sizeof(transientShellClassRec.core_class.class_initialize), sizeof(XtProc));
-	myXtProc = transientShellClassRec.core_class.class_initialize;
-	pmyXtProc = &transientShellClassRec.core_class.class_initialize;
+	check_size("topLevelShellClassRec.core_class.class_initialize", "XtProc", sizeof(topLevelShellClassRec.core_class.class_initialize), sizeof(XtProc));
+	myXtProc = topLevelShellClassRec.core_class.class_initialize;
+	pmyXtProc = &topLevelShellClassRec.core_class.class_initialize;
 
-	check_size("transientShellClassRec.core_class.class_part_initialize", "XtWidgetClassProc", sizeof(transientShellClassRec.core_class.class_part_initialize), sizeof(XtWidgetClassProc));
-	myXtWidgetClassProc = transientShellClassRec.core_class.class_part_initialize;
-	pmyXtWidgetClassProc = &transientShellClassRec.core_class.class_part_initialize;
+	check_size("topLevelShellClassRec.core_class.class_part_initialize", "XtWidgetClassProc", sizeof(topLevelShellClassRec.core_class.class_part_initialize), sizeof(XtWidgetClassProc));
+	myXtWidgetClassProc = topLevelShellClassRec.core_class.class_part_initialize;
+	pmyXtWidgetClassProc = &topLevelShellClassRec.core_class.class_part_initialize;
 
-	check_size("transientShellClassRec.core_class.class_inited", "XtEnum", sizeof(transientShellClassRec.core_class.class_inited), sizeof(XtEnum));
-	myXtEnum = transientShellClassRec.core_class.class_inited;
-	pmyXtEnum = &transientShellClassRec.core_class.class_inited;
+	check_size("topLevelShellClassRec.core_class.class_inited", "XtEnum", sizeof(topLevelShellClassRec.core_class.class_inited), sizeof(XtEnum));
+	myXtEnum = topLevelShellClassRec.core_class.class_inited;
+	pmyXtEnum = &topLevelShellClassRec.core_class.class_inited;
 
-	check_size("transientShellClassRec.core_class.initialize", "XtInitProc", sizeof(transientShellClassRec.core_class.initialize), sizeof(XtInitProc));
-	myXtInitProc = transientShellClassRec.core_class.initialize;
-	pmyXtInitProc = &transientShellClassRec.core_class.initialize;
+	check_size("topLevelShellClassRec.core_class.initialize", "XtInitProc", sizeof(topLevelShellClassRec.core_class.initialize), sizeof(XtInitProc));
+	myXtInitProc = topLevelShellClassRec.core_class.initialize;
+	pmyXtInitProc = &topLevelShellClassRec.core_class.initialize;
 
-	check_size("transientShellClassRec.core_class.initialize_hook", "XtArgsProc", sizeof(transientShellClassRec.core_class.initialize_hook), sizeof(XtArgsProc));
-	myXtArgsProc = transientShellClassRec.core_class.initialize_hook;
-	pmyXtArgsProc = &transientShellClassRec.core_class.initialize_hook;
+	check_size("topLevelShellClassRec.core_class.initialize_hook", "XtArgsProc", sizeof(topLevelShellClassRec.core_class.initialize_hook), sizeof(XtArgsProc));
+	myXtArgsProc = topLevelShellClassRec.core_class.initialize_hook;
+	pmyXtArgsProc = &topLevelShellClassRec.core_class.initialize_hook;
 
-	check_size("transientShellClassRec.core_class.realize", "XtRealizeProc", sizeof(transientShellClassRec.core_class.realize), sizeof(XtRealizeProc));
-	myXtRealizeProc = transientShellClassRec.core_class.realize;
-	pmyXtRealizeProc = &transientShellClassRec.core_class.realize;
+	check_size("topLevelShellClassRec.core_class.realize", "XtRealizeProc", sizeof(topLevelShellClassRec.core_class.realize), sizeof(XtRealizeProc));
+	myXtRealizeProc = topLevelShellClassRec.core_class.realize;
+	pmyXtRealizeProc = &topLevelShellClassRec.core_class.realize;
 
-	check_size("transientShellClassRec.core_class.actions", "XtActionList", sizeof(transientShellClassRec.core_class.actions), sizeof(XtActionList));
-	myXtActionList = transientShellClassRec.core_class.actions;
-	pmyXtActionList = &transientShellClassRec.core_class.actions;
+	check_size("topLevelShellClassRec.core_class.actions", "XtActionList", sizeof(topLevelShellClassRec.core_class.actions), sizeof(XtActionList));
+	myXtActionList = topLevelShellClassRec.core_class.actions;
+	pmyXtActionList = &topLevelShellClassRec.core_class.actions;
 
-	check_size("transientShellClassRec.core_class.num_actions", "Cardinal", sizeof(transientShellClassRec.core_class.num_actions), sizeof(Cardinal));
-	myCardinal = transientShellClassRec.core_class.num_actions;
-	pmyCardinal = &transientShellClassRec.core_class.num_actions;
+	check_size("topLevelShellClassRec.core_class.num_actions", "Cardinal", sizeof(topLevelShellClassRec.core_class.num_actions), sizeof(Cardinal));
+	myCardinal = topLevelShellClassRec.core_class.num_actions;
+	pmyCardinal = &topLevelShellClassRec.core_class.num_actions;
 
-	check_size("transientShellClassRec.core_class.resources", "XtResourceList", sizeof(transientShellClassRec.core_class.resources), sizeof(XtResourceList));
-	myXtResourceList = transientShellClassRec.core_class.resources;
-	pmyXtResourceList = &transientShellClassRec.core_class.resources;
+	check_size("topLevelShellClassRec.core_class.resources", "XtResourceList", sizeof(topLevelShellClassRec.core_class.resources), sizeof(XtResourceList));
+	myXtResourceList = topLevelShellClassRec.core_class.resources;
+	pmyXtResourceList = &topLevelShellClassRec.core_class.resources;
 
-	check_size("transientShellClassRec.core_class.num_resources", "Cardinal", sizeof(transientShellClassRec.core_class.num_resources), sizeof(Cardinal));
-	myCardinal = transientShellClassRec.core_class.num_resources;
-	pmyCardinal = &transientShellClassRec.core_class.num_resources;
+	check_size("topLevelShellClassRec.core_class.num_resources", "Cardinal", sizeof(topLevelShellClassRec.core_class.num_resources), sizeof(Cardinal));
+	myCardinal = topLevelShellClassRec.core_class.num_resources;
+	pmyCardinal = &topLevelShellClassRec.core_class.num_resources;
 
-	check_size("transientShellClassRec.core_class.xrm_class", "XrmClass", sizeof(transientShellClassRec.core_class.xrm_class), sizeof(XrmClass));
-	myXrmClass = transientShellClassRec.core_class.xrm_class;
-	pmyXrmClass = &transientShellClassRec.core_class.xrm_class;
+	check_size("topLevelShellClassRec.core_class.xrm_class", "XrmClass", sizeof(topLevelShellClassRec.core_class.xrm_class), sizeof(XrmClass));
+	myXrmClass = topLevelShellClassRec.core_class.xrm_class;
+	pmyXrmClass = &topLevelShellClassRec.core_class.xrm_class;
 
-	check_size("transientShellClassRec.core_class.compress_motion", "Boolean", sizeof(transientShellClassRec.core_class.compress_motion), sizeof(Boolean));
-	myBoolean = transientShellClassRec.core_class.compress_motion;
-	pmyBoolean = &transientShellClassRec.core_class.compress_motion;
+	check_size("topLevelShellClassRec.core_class.compress_motion", "Boolean", sizeof(topLevelShellClassRec.core_class.compress_motion), sizeof(Boolean));
+	myBoolean = topLevelShellClassRec.core_class.compress_motion;
+	pmyBoolean = &topLevelShellClassRec.core_class.compress_motion;
 
-	check_size("transientShellClassRec.core_class.compress_exposure", "XtEnum", sizeof(transientShellClassRec.core_class.compress_exposure), sizeof(XtEnum));
-	myXtEnum = transientShellClassRec.core_class.compress_exposure;
-	pmyXtEnum = &transientShellClassRec.core_class.compress_exposure;
+	check_size("topLevelShellClassRec.core_class.compress_exposure", "XtEnum", sizeof(topLevelShellClassRec.core_class.compress_exposure), sizeof(XtEnum));
+	myXtEnum = topLevelShellClassRec.core_class.compress_exposure;
+	pmyXtEnum = &topLevelShellClassRec.core_class.compress_exposure;
 
-	check_size("transientShellClassRec.core_class.compress_enterleave", "Boolean", sizeof(transientShellClassRec.core_class.compress_enterleave), sizeof(Boolean));
-	myBoolean = transientShellClassRec.core_class.compress_enterleave;
-	pmyBoolean = &transientShellClassRec.core_class.compress_enterleave;
+	check_size("topLevelShellClassRec.core_class.compress_enterleave", "Boolean", sizeof(topLevelShellClassRec.core_class.compress_enterleave), sizeof(Boolean));
+	myBoolean = topLevelShellClassRec.core_class.compress_enterleave;
+	pmyBoolean = &topLevelShellClassRec.core_class.compress_enterleave;
 
-	check_size("transientShellClassRec.core_class.visible_interest", "Boolean", sizeof(transientShellClassRec.core_class.visible_interest), sizeof(Boolean));
-	myBoolean = transientShellClassRec.core_class.visible_interest;
-	pmyBoolean = &transientShellClassRec.core_class.visible_interest;
+	check_size("topLevelShellClassRec.core_class.visible_interest", "Boolean", sizeof(topLevelShellClassRec.core_class.visible_interest), sizeof(Boolean));
+	myBoolean = topLevelShellClassRec.core_class.visible_interest;
+	pmyBoolean = &topLevelShellClassRec.core_class.visible_interest;
 
-	check_size("transientShellClassRec.core_class.destroy", "XtWidgetProc", sizeof(transientShellClassRec.core_class.destroy), sizeof(XtWidgetProc));
-	myXtWidgetProc = transientShellClassRec.core_class.destroy;
-	pmyXtWidgetProc = &transientShellClassRec.core_class.destroy;
+	check_size("topLevelShellClassRec.core_class.destroy", "XtWidgetProc", sizeof(topLevelShellClassRec.core_class.destroy), sizeof(XtWidgetProc));
+	myXtWidgetProc = topLevelShellClassRec.core_class.destroy;
+	pmyXtWidgetProc = &topLevelShellClassRec.core_class.destroy;
 
-	check_size("transientShellClassRec.core_class.resize", "XtWidgetProc", sizeof(transientShellClassRec.core_class.resize), sizeof(XtWidgetProc));
-	myXtWidgetProc = transientShellClassRec.core_class.resize;
-	pmyXtWidgetProc = &transientShellClassRec.core_class.resize;
+	check_size("topLevelShellClassRec.core_class.resize", "XtWidgetProc", sizeof(topLevelShellClassRec.core_class.resize), sizeof(XtWidgetProc));
+	myXtWidgetProc = topLevelShellClassRec.core_class.resize;
+	pmyXtWidgetProc = &topLevelShellClassRec.core_class.resize;
 
-	check_size("transientShellClassRec.core_class.expose", "XtExposeProc", sizeof(transientShellClassRec.core_class.expose), sizeof(XtExposeProc));
-	myXtExposeProc = transientShellClassRec.core_class.expose;
-	pmyXtExposeProc = &transientShellClassRec.core_class.expose;
+	check_size("topLevelShellClassRec.core_class.expose", "XtExposeProc", sizeof(topLevelShellClassRec.core_class.expose), sizeof(XtExposeProc));
+	myXtExposeProc = topLevelShellClassRec.core_class.expose;
+	pmyXtExposeProc = &topLevelShellClassRec.core_class.expose;
 
-	check_size("transientShellClassRec.core_class.set_values", "XtSetValuesFunc", sizeof(transientShellClassRec.core_class.set_values), sizeof(XtSetValuesFunc));
-	myXtSetValuesFunc = transientShellClassRec.core_class.set_values;
-	pmyXtSetValuesFunc = &transientShellClassRec.core_class.set_values;
+	check_size("topLevelShellClassRec.core_class.set_values", "XtSetValuesFunc", sizeof(topLevelShellClassRec.core_class.set_values), sizeof(XtSetValuesFunc));
+	myXtSetValuesFunc = topLevelShellClassRec.core_class.set_values;
+	pmyXtSetValuesFunc = &topLevelShellClassRec.core_class.set_values;
 
-	check_size("transientShellClassRec.core_class.set_values_hook", "XtArgsFunc", sizeof(transientShellClassRec.core_class.set_values_hook), sizeof(XtArgsFunc));
-	myXtArgsFunc = transientShellClassRec.core_class.set_values_hook;
-	pmyXtArgsFunc = &transientShellClassRec.core_class.set_values_hook;
+	check_size("topLevelShellClassRec.core_class.set_values_hook", "XtArgsFunc", sizeof(topLevelShellClassRec.core_class.set_values_hook), sizeof(XtArgsFunc));
+	myXtArgsFunc = topLevelShellClassRec.core_class.set_values_hook;
+	pmyXtArgsFunc = &topLevelShellClassRec.core_class.set_values_hook;
 
-	check_size("transientShellClassRec.core_class.set_values_almost", "XtAlmostProc", sizeof(transientShellClassRec.core_class.set_values_almost), sizeof(XtAlmostProc));
-	myXtAlmostProc = transientShellClassRec.core_class.set_values_almost;
-	pmyXtAlmostProc = &transientShellClassRec.core_class.set_values_almost;
+	check_size("topLevelShellClassRec.core_class.set_values_almost", "XtAlmostProc", sizeof(topLevelShellClassRec.core_class.set_values_almost), sizeof(XtAlmostProc));
+	myXtAlmostProc = topLevelShellClassRec.core_class.set_values_almost;
+	pmyXtAlmostProc = &topLevelShellClassRec.core_class.set_values_almost;
 
-	check_size("transientShellClassRec.core_class.get_values_hook", "XtArgsProc", sizeof(transientShellClassRec.core_class.get_values_hook), sizeof(XtArgsProc));
-	myXtArgsProc = transientShellClassRec.core_class.get_values_hook;
-	pmyXtArgsProc = &transientShellClassRec.core_class.get_values_hook;
+	check_size("topLevelShellClassRec.core_class.get_values_hook", "XtArgsProc", sizeof(topLevelShellClassRec.core_class.get_values_hook), sizeof(XtArgsProc));
+	myXtArgsProc = topLevelShellClassRec.core_class.get_values_hook;
+	pmyXtArgsProc = &topLevelShellClassRec.core_class.get_values_hook;
 
-	check_size("transientShellClassRec.core_class.accept_focus", "XtAcceptFocusProc", sizeof(transientShellClassRec.core_class.accept_focus), sizeof(XtAcceptFocusProc));
-	myXtAcceptFocusProc = transientShellClassRec.core_class.accept_focus;
-	pmyXtAcceptFocusProc = &transientShellClassRec.core_class.accept_focus;
+	check_size("topLevelShellClassRec.core_class.accept_focus", "XtAcceptFocusProc", sizeof(topLevelShellClassRec.core_class.accept_focus), sizeof(XtAcceptFocusProc));
+	myXtAcceptFocusProc = topLevelShellClassRec.core_class.accept_focus;
+	pmyXtAcceptFocusProc = &topLevelShellClassRec.core_class.accept_focus;
 
-	check_size("transientShellClassRec.core_class.version", "XtVersionType", sizeof(transientShellClassRec.core_class.version), sizeof(XtVersionType));
-	myXtVersionType = transientShellClassRec.core_class.version;
-	pmyXtVersionType = &transientShellClassRec.core_class.version;
+	check_size("topLevelShellClassRec.core_class.version", "XtVersionType", sizeof(topLevelShellClassRec.core_class.version), sizeof(XtVersionType));
+	myXtVersionType = topLevelShellClassRec.core_class.version;
+	pmyXtVersionType = &topLevelShellClassRec.core_class.version;
 
-	check_size("transientShellClassRec.core_class.callback_private", "XtPointer", sizeof(transientShellClassRec.core_class.callback_private), sizeof(XtPointer));
-	myXtPointer = transientShellClassRec.core_class.callback_private;
-	pmyXtPointer = &transientShellClassRec.core_class.callback_private;
+	check_size("topLevelShellClassRec.core_class.callback_private", "XtPointer", sizeof(topLevelShellClassRec.core_class.callback_private), sizeof(XtPointer));
+	myXtPointer = topLevelShellClassRec.core_class.callback_private;
+	pmyXtPointer = &topLevelShellClassRec.core_class.callback_private;
 
-	check_size("transientShellClassRec.core_class.tm_table", "String", sizeof(transientShellClassRec.core_class.tm_table), sizeof(String));
-	myString = transientShellClassRec.core_class.tm_table;
-	pmyString = &transientShellClassRec.core_class.tm_table;
+	check_size("topLevelShellClassRec.core_class.tm_table", "String", sizeof(topLevelShellClassRec.core_class.tm_table), sizeof(String));
+	myString = topLevelShellClassRec.core_class.tm_table;
+	pmyString = &topLevelShellClassRec.core_class.tm_table;
 
-	check_size("transientShellClassRec.core_class.query_geometry", "XtGeometryHandler", sizeof(transientShellClassRec.core_class.query_geometry), sizeof(XtGeometryHandler));
-	myXtGeometryHandler = transientShellClassRec.core_class.query_geometry;
-	pmyXtGeometryHandler = &transientShellClassRec.core_class.query_geometry;
+	check_size("topLevelShellClassRec.core_class.query_geometry", "XtGeometryHandler", sizeof(topLevelShellClassRec.core_class.query_geometry), sizeof(XtGeometryHandler));
+	myXtGeometryHandler = topLevelShellClassRec.core_class.query_geometry;
+	pmyXtGeometryHandler = &topLevelShellClassRec.core_class.query_geometry;
 
-	check_size("transientShellClassRec.core_class.display_accelerator", "XtStringProc", sizeof(transientShellClassRec.core_class.display_accelerator), sizeof(XtStringProc));
-	myXtStringProc = transientShellClassRec.core_class.display_accelerator;
-	pmyXtStringProc = &transientShellClassRec.core_class.display_accelerator;
+	check_size("topLevelShellClassRec.core_class.display_accelerator", "XtStringProc", sizeof(topLevelShellClassRec.core_class.display_accelerator), sizeof(XtStringProc));
+	myXtStringProc = topLevelShellClassRec.core_class.display_accelerator;
+	pmyXtStringProc = &topLevelShellClassRec.core_class.display_accelerator;
 
-	check_size("transientShellClassRec.core_class.extension", "XtPointer", sizeof(transientShellClassRec.core_class.extension), sizeof(XtPointer));
-	myXtPointer = transientShellClassRec.core_class.extension;
-	pmyXtPointer = &transientShellClassRec.core_class.extension;
+	check_size("topLevelShellClassRec.core_class.extension", "XtPointer", sizeof(topLevelShellClassRec.core_class.extension), sizeof(XtPointer));
+	myXtPointer = topLevelShellClassRec.core_class.extension;
+	pmyXtPointer = &topLevelShellClassRec.core_class.extension;
 
-	check_size("transientShellClassRec.composite_class.geometry_manager", "XtGeometryHandler", sizeof(transientShellClassRec.composite_class.geometry_manager), sizeof(XtGeometryHandler));
-	myXtGeometryHandler = transientShellClassRec.composite_class.geometry_manager;
-	pmyXtGeometryHandler = &transientShellClassRec.composite_class.geometry_manager;
+	check_size("topLevelShellClassRec.composite_class.geometry_manager", "XtGeometryHandler", sizeof(topLevelShellClassRec.composite_class.geometry_manager), sizeof(XtGeometryHandler));
+	myXtGeometryHandler = topLevelShellClassRec.composite_class.geometry_manager;
+	pmyXtGeometryHandler = &topLevelShellClassRec.composite_class.geometry_manager;
 
-	check_size("transientShellClassRec.composite_class.change_managed", "XtWidgetProc", sizeof(transientShellClassRec.composite_class.change_managed), sizeof(XtWidgetProc));
-	myXtWidgetProc = transientShellClassRec.composite_class.change_managed;
-	pmyXtWidgetProc = &transientShellClassRec.composite_class.change_managed;
+	check_size("topLevelShellClassRec.composite_class.change_managed", "XtWidgetProc", sizeof(topLevelShellClassRec.composite_class.change_managed), sizeof(XtWidgetProc));
+	myXtWidgetProc = topLevelShellClassRec.composite_class.change_managed;
+	pmyXtWidgetProc = &topLevelShellClassRec.composite_class.change_managed;
 
-	check_size("transientShellClassRec.composite_class.insert_child", "XtWidgetProc", sizeof(transientShellClassRec.composite_class.insert_child), sizeof(XtWidgetProc));
-	myXtWidgetProc = transientShellClassRec.composite_class.insert_child;
-	pmyXtWidgetProc = &transientShellClassRec.composite_class.insert_child;
+	check_size("topLevelShellClassRec.composite_class.insert_child", "XtWidgetProc", sizeof(topLevelShellClassRec.composite_class.insert_child), sizeof(XtWidgetProc));
+	myXtWidgetProc = topLevelShellClassRec.composite_class.insert_child;
+	pmyXtWidgetProc = &topLevelShellClassRec.composite_class.insert_child;
 
-	check_size("transientShellClassRec.composite_class.delete_child", "XtWidgetProc", sizeof(transientShellClassRec.composite_class.delete_child), sizeof(XtWidgetProc));
-	myXtWidgetProc = transientShellClassRec.composite_class.delete_child;
-	pmyXtWidgetProc = &transientShellClassRec.composite_class.delete_child;
+	check_size("topLevelShellClassRec.composite_class.delete_child", "XtWidgetProc", sizeof(topLevelShellClassRec.composite_class.delete_child), sizeof(XtWidgetProc));
+	myXtWidgetProc = topLevelShellClassRec.composite_class.delete_child;
+	pmyXtWidgetProc = &topLevelShellClassRec.composite_class.delete_child;
 
-	check_size("transientShellClassRec.composite_class.extension", "XtPointer", sizeof(transientShellClassRec.composite_class.extension), sizeof(XtPointer));
-	myXtPointer = transientShellClassRec.composite_class.extension;
-	pmyXtPointer = &transientShellClassRec.composite_class.extension;
+	check_size("topLevelShellClassRec.composite_class.extension", "XtPointer", sizeof(topLevelShellClassRec.composite_class.extension), sizeof(XtPointer));
+	myXtPointer = topLevelShellClassRec.composite_class.extension;
+	pmyXtPointer = &topLevelShellClassRec.composite_class.extension;
 
-	check_size("transientShellClassRec.shell_class.extension", "XtPointer", sizeof(transientShellClassRec.shell_class.extension), sizeof(XtPointer));
-	myXtPointer = transientShellClassRec.shell_class.extension;
-	pmyXtPointer = &transientShellClassRec.shell_class.extension;
+	check_size("topLevelShellClassRec.shell_class.extension", "XtPointer", sizeof(topLevelShellClassRec.shell_class.extension), sizeof(XtPointer));
+	myXtPointer = topLevelShellClassRec.shell_class.extension;
+	pmyXtPointer = &topLevelShellClassRec.shell_class.extension;
 
-	check_size("transientShellClassRec.wm_shell_class.extension", "XtPointer", sizeof(wmShellClassRec.wm_shell_class.extension), sizeof(XtPointer));
-	myXtPointer = transientShellClassRec.wm_shell_class.extension;
-	pmyXtPointer = &transientShellClassRec.wm_shell_class.extension;
+	check_size("topLevelShellClassRec.wm_shell_class.extension", "XtPointer", sizeof(wmShellClassRec.wm_shell_class.extension), sizeof(XtPointer));
+	myXtPointer = topLevelShellClassRec.wm_shell_class.extension;
+	pmyXtPointer = &topLevelShellClassRec.wm_shell_class.extension;
 
-	check_size("transientShellClassRec.vendor_shell_class.extension", "XtPointer", sizeof(transientShellClassRec.vendor_shell_class.extension), sizeof(XtPointer));
-	myXtPointer = transientShellClassRec.vendor_shell_class.extension;
-	pmyXtPointer = &transientShellClassRec.vendor_shell_class.extension;
+	check_size("topLevelShellClassRec.vendor_shell_class.extension", "XtPointer", sizeof(topLevelShellClassRec.vendor_shell_class.extension), sizeof(XtPointer));
+	myXtPointer = topLevelShellClassRec.vendor_shell_class.extension;
+	pmyXtPointer = &topLevelShellClassRec.vendor_shell_class.extension;
 
-	check_size("transientShellClassRec.vendor_shell_class.extension", "XtPointer", sizeof(transientShellClassRec.vendor_shell_class.extension), sizeof(XtPointer));
-	myXtPointer = transientShellClassRec.transient_shell_class.extension;
-	pmyXtPointer = &transientShellClassRec.transient_shell_class.extension;
-
+	check_size("topLevelShellClassRec.top_level_shell_class.extension", "XtPointer", sizeof(topLevelShellClassRec.top_level_shell_class.extension), sizeof(XtPointer));
+	myXtPointer = topLevelShellClassRec.top_level_shell_class.extension;
+	pmyXtPointer = &topLevelShellClassRec.top_level_shell_class.extension;
 
 	tet_result(TET_PASS);
 >>ASSERTION Good A
-The class pointer for transient shell widgets
-transientShellWidgetClass shall exist and point to the
-transient shell class record.
+The class pointer for topLevel shell widgets
+topLevelShellWidgetClass shall exist and point to the
+topLevel shell class record.
 >>CODE
 
-	tet_infoline("TEST: transientShellClass");
-	if (transientShellWidgetClass != (WidgetClass)&transientShellClassRec) {
-		sprintf(ebuf, "ERROR: transientShellWidgetClass does not point to transientShellClassRec");
+	tet_infoline("TEST: topLevelShellClass");
+	if (topLevelShellWidgetClass != (WidgetClass)&topLevelShellClassRec) {
+		sprintf(ebuf, "ERROR: topLevelShellWidgetClass does not point to topLevelShellClassRec");
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 	}
 	tet_result(TET_PASS);
 >>ASSERTION Good A
-The type TransientShellWidgetClass shall be defined as
-a pointer to a transient shell widget class structure.
+The type TopLevelShellWidgetClass shall be defined as
+a pointer to a topLevel shell widget class structure.
 >>CODE
-TransientShellWidgetClass testvar;
+TopLevelShellWidgetClass testvar;
 XtPointer testvar2;
 
 	/* this will not build if the define is not correct*/
-	tet_infoline("TEST: TransientShellWidgetClass");
-	testvar = (TransientShellWidgetClass)&transientShellClassRec;
+	tet_infoline("TEST: TopLevelShellWidgetClass");
+	testvar = &topLevelShellClassRec;
 	testvar2 = testvar->core_class.superclass;
 	tet_result(TET_PASS);
 >>ASSERTION Good A
 The instance structure for shell widgets
-TransientShellPart shall be defined and contain the
+TopLevelShellPart shall be defined and contain the
 fields listed in section 6.1.2 of the Specification.
 >>CODE
-TransientShellPart testStruct;
+TopLevelShellPart testStruct;
 
-	check_size("TransientShellPart.transient_for", "Widget", sizeof(testStruct.transient_for), sizeof(Widget));
-	myWidget = testStruct.transient_for;
-	pmyWidget = &testStruct.transient_for;
+	check_size("TopLevelShellClassPart.icon_name", "String", sizeof(testStruct.icon_name), sizeof(String));
+	myString = testStruct.icon_name;
+	pmyString = &testStruct.icon_name;
+
+	check_size("TopLevelShellClassPart.iconic", "Boolean", sizeof(testStruct.iconic), sizeof(Boolean));
+	myBoolean = testStruct.iconic;
+	pmyBoolean = &testStruct.iconic;
+
+	check_size("TopLevelShellClassPart.icon_name_encoding", "Atom", sizeof(testStruct.icon_name_encoding), sizeof(Atom));
+	myAtom = testStruct.icon_name_encoding;
+	pmyAtom = &testStruct.icon_name_encoding;
 
 	tet_result(TET_PASS);
 >>ASSERTION Good A
 The instance record structure for shell widgets
-TransientShellRec shall be defined and contain the
+TopLevelShellRec shall be defined and contain the
 fields listed in section 6.1.2 of the Specification.
 >>CODE
-TransientShellRec testStruct;
+TopLevelShellRec testStruct;
 
-	check_size("TransientShellRec.core.self", "Widget", sizeof(testStruct.core.self), sizeof(Widget));
+	check_size("TopLevelShellRec.core.self", "Widget", sizeof(testStruct.core.self), sizeof(Widget));
 	myWidget = testStruct.core.self;
 	pmyWidget = &testStruct.core.self;
 
-	check_size("TransientShellRec.core.widget_class", "WidgetClass", sizeof(testStruct.core.widget_class), sizeof(WidgetClass));
+	check_size("TopLevelShellRec.core.widget_class", "WidgetClass", sizeof(testStruct.core.widget_class), sizeof(WidgetClass));
 	myWidgetClass = testStruct.core.widget_class;
 	pmyWidgetClass = &testStruct.core.widget_class;
 
-	check_size("TransientShellRec.core.parent", "Widget", sizeof(testStruct.core.parent), sizeof(Widget));
+	check_size("TopLevelShellRec.core.parent", "Widget", sizeof(testStruct.core.parent), sizeof(Widget));
 	myWidget = testStruct.core.parent;
 	pmyWidget = &testStruct.core.parent;
 
-	check_size("TransientShellRec.core.xrm_name", "XrmName", sizeof(testStruct.core.xrm_name), sizeof(XrmName));
+	check_size("TopLevelShellRec.core.xrm_name", "XrmName", sizeof(testStruct.core.xrm_name), sizeof(XrmName));
 	myXrmName = testStruct.core.xrm_name;
 	pmyXrmName = &testStruct.core.xrm_name;
 
-	check_size("TransientShellRec.core.being_destroyed", "Boolean", sizeof(testStruct.core.being_destroyed), sizeof(Boolean));
+	check_size("TopLevelShellRec.core.being_destroyed", "Boolean", sizeof(testStruct.core.being_destroyed), sizeof(Boolean));
 	myBoolean = testStruct.core.being_destroyed;
 	pmyBoolean = &testStruct.core.being_destroyed;
 
-	check_size("TransientShellRec.core.destroy_callbacks", "XtCallbackList", sizeof(testStruct.core.destroy_callbacks), sizeof(XtCallbackList));
+	check_size("TopLevelShellRec.core.destroy_callbacks", "XtCallbackList", sizeof(testStruct.core.destroy_callbacks), sizeof(XtCallbackList));
 	myXtCallbackList = testStruct.core.destroy_callbacks;
 	pmyXtCallbackList = &testStruct.core.destroy_callbacks;
 
-	check_size("TransientShellRec.core.constraints", "XtPointer", sizeof(testStruct.core.constraints), sizeof(XtPointer));
+	check_size("TopLevelShellRec.core.constraints", "XtPointer", sizeof(testStruct.core.constraints), sizeof(XtPointer));
 	myXtPointer = testStruct.core.constraints;
 	pmyXtPointer = &testStruct.core.constraints;
 
-	check_size("TransientShellRec.core.border_width", "Dimension", sizeof(testStruct.core.border_width), sizeof(Dimension));
+	check_size("TopLevelShellRec.core.border_width", "Dimension", sizeof(testStruct.core.border_width), sizeof(Dimension));
 	myDimension = testStruct.core.border_width;
 	pmyDimension = &testStruct.core.border_width;
 
-	check_size("TransientShellRec.core.managed", "Boolean", sizeof(testStruct.core.managed), sizeof(Boolean));
+	check_size("TopLevelShellRec.core.managed", "Boolean", sizeof(testStruct.core.managed), sizeof(Boolean));
 	myBoolean = testStruct.core.managed;
 	pmyBoolean = &testStruct.core.managed;
 
-	check_size("TransientShellRec.core.sensitive", "Boolean", sizeof(testStruct.core.sensitive), sizeof(Boolean));
+	check_size("TopLevelShellRec.core.sensitive", "Boolean", sizeof(testStruct.core.sensitive), sizeof(Boolean));
 	myBoolean = testStruct.core.sensitive;
 	pmyBoolean = &testStruct.core.sensitive;
 
-	check_size("TransientShellRec.core.ancestor_sensitive", "Boolean", sizeof(testStruct.core.ancestor_sensitive), sizeof(Boolean));
+	check_size("TopLevelShellRec.core.ancestor_sensitive", "Boolean", sizeof(testStruct.core.ancestor_sensitive), sizeof(Boolean));
 	myBoolean = testStruct.core.ancestor_sensitive;
 	pmyBoolean = &testStruct.core.ancestor_sensitive;
 
-	check_size("TransientShellRec.core.event_table", "XtEventTable", sizeof(testStruct.core.event_table), sizeof(XtEventTable));
+	check_size("TopLevelShellRec.core.event_table", "XtEventTable", sizeof(testStruct.core.event_table), sizeof(XtEventTable));
 	myXtEventTable = testStruct.core.event_table;
 	pmyXtEventTable = &testStruct.core.event_table;
 
-	check_size("TransientShellRec.core.tm", "XtTMRec", sizeof(testStruct.core.tm), sizeof(XtTMRec));
+	check_size("TopLevelShellRec.core.tm", "XtTMRec", sizeof(testStruct.core.tm), sizeof(XtTMRec));
 	myXtTMRec = testStruct.core.tm;
 	pmyXtTMRec = &testStruct.core.tm;
 
-	check_size("TransientShellRec.core.accelerators", "XtTranslations", sizeof(testStruct.core.accelerators), sizeof(XtTranslations));
+	check_size("TopLevelShellRec.core.accelerators", "XtTranslations", sizeof(testStruct.core.accelerators), sizeof(XtTranslations));
 	myXtTranslations = testStruct.core.accelerators;
 	pmyXtTranslations = &testStruct.core.accelerators;
 
-	check_size("TransientShellRec.core.border_pixel", "Pixel", sizeof(testStruct.core.border_pixel), sizeof(Pixel));
+	check_size("TopLevelShellRec.core.border_pixel", "Pixel", sizeof(testStruct.core.border_pixel), sizeof(Pixel));
 	myPixel = testStruct.core.border_pixel;
 	pmyPixel = &testStruct.core.border_pixel;
 
-	check_size("TransientShellRec.core.border_pixmap", "Pixmap", sizeof(testStruct.core.border_pixmap), sizeof(Pixmap));
+	check_size("TopLevelShellRec.core.border_pixmap", "Pixmap", sizeof(testStruct.core.border_pixmap), sizeof(Pixmap));
 	myPixmap = testStruct.core.border_pixmap;
 	pmyPixmap = &testStruct.core.border_pixmap;
 
-	check_size("TransientShellRec.core.popup_list", "WidgetList", sizeof(testStruct.core.popup_list), sizeof(WidgetList));
+	check_size("TopLevelShellRec.core.popup_list", "WidgetList", sizeof(testStruct.core.popup_list), sizeof(WidgetList));
 	myWidgetList = testStruct.core.popup_list;
 	pmyWidgetList = &testStruct.core.popup_list;
 
-	check_size("TransientShellRec.core.num_popups", "Cardinal", sizeof(testStruct.core.num_popups), sizeof(Cardinal));
+	check_size("TopLevelShellRec.core.num_popups", "Cardinal", sizeof(testStruct.core.num_popups), sizeof(Cardinal));
 	myCardinal = testStruct.core.num_popups;
 	pmyCardinal = &testStruct.core.num_popups;
 
-	check_size("TransientShellRec.core.name", "String", sizeof(testStruct.core.name), sizeof(String));
+	check_size("TopLevelShellRec.core.name", "String", sizeof(testStruct.core.name), sizeof(String));
 	myString = testStruct.core.name;
 	pmyString = &testStruct.core.name;
 
-	check_size("TransientShellRec.core.screen", "Screen *", sizeof(testStruct.core.screen), sizeof(Screen *));
+	check_size("TopLevelShellRec.core.screen", "Screen *", sizeof(testStruct.core.screen), sizeof(Screen *));
 	pmyScreen = testStruct.core.screen;
 
-	check_size("TransientShellRec.core.colormap", "Colormap", sizeof(testStruct.core.colormap), sizeof(Colormap));
+	check_size("TopLevelShellRec.core.colormap", "Colormap", sizeof(testStruct.core.colormap), sizeof(Colormap));
 	myColormap = testStruct.core.colormap;
 	pmyColormap = &testStruct.core.colormap;
 
-	check_size("TransientShellRec.core.window", "Window", sizeof(testStruct.core.window), sizeof(Window));
+	check_size("TopLevelShellRec.core.window", "Window", sizeof(testStruct.core.window), sizeof(Window));
 	myWindow = testStruct.core.window;
 	pmyWindow = &testStruct.core.window;
 
-	check_size("TransientShellRec.core.depth", "Cardinal", sizeof(testStruct.core.depth), sizeof(Cardinal));
+	check_size("TopLevelShellRec.core.depth", "Cardinal", sizeof(testStruct.core.depth), sizeof(Cardinal));
 	myCardinal = testStruct.core.depth;
 	pmyCardinal = &testStruct.core.depth;
 
-	check_size("TransientShellRec.core.background_pixel", "Pixel", sizeof(testStruct.core.background_pixel), sizeof(Pixel));
+	check_size("TopLevelShellRec.core.background_pixel", "Pixel", sizeof(testStruct.core.background_pixel), sizeof(Pixel));
 	myPixel = testStruct.core.background_pixel;
 	pmyPixel = &testStruct.core.background_pixel;
 
-	check_size("TransientShellRec.core.background_pixmap", "Pixmap", sizeof(testStruct.core.background_pixmap), sizeof(Pixmap));
+	check_size("TopLevelShellRec.core.background_pixmap", "Pixmap", sizeof(testStruct.core.background_pixmap), sizeof(Pixmap));
 	myPixmap = testStruct.core.background_pixmap;
 	pmyPixmap = &testStruct.core.background_pixmap;
 
-	check_size("TransientShellRec.core.visible", "Boolean", sizeof(testStruct.core.visible), sizeof(Boolean));
+	check_size("TopLevelShellRec.core.visible", "Boolean", sizeof(testStruct.core.visible), sizeof(Boolean));
 	myBoolean = testStruct.core.visible;
 	pmyBoolean = &testStruct.core.visible;
 
-	check_size("TransientShellRec.core.mapped_when_managed", "Boolean", sizeof(testStruct.core.mapped_when_managed), sizeof(Boolean));
+	check_size("TopLevelShellRec.core.mapped_when_managed", "Boolean", sizeof(testStruct.core.mapped_when_managed), sizeof(Boolean));
 	myBoolean = testStruct.core.mapped_when_managed;
 	pmyBoolean = &testStruct.core.mapped_when_managed;
 
-	check_size("TransientShellRec.composite.children", "WidgetList", sizeof(testStruct.composite.children), sizeof(WidgetList));
+	check_size("TopLevelShellRec.composite.children", "WidgetList", sizeof(testStruct.composite.children), sizeof(WidgetList));
 	myWidgetList = testStruct.composite.children;
 	pmyWidgetList = &testStruct.composite.children;
 
-	check_size("TransientShellRec.composite.num_children", "Cardinal", sizeof(testStruct.composite.num_children), sizeof(Cardinal));
+	check_size("TopLevelShellRec.composite.num_children", "Cardinal", sizeof(testStruct.composite.num_children), sizeof(Cardinal));
 	myCardinal = testStruct.composite.num_children;
 	pmyCardinal = &testStruct.composite.num_children;
 
-	check_size("TransientShellRec.composite.num_slots", "Cardinal", sizeof(testStruct.composite.num_slots), sizeof(Cardinal));
+	check_size("TopLevelShellRec.composite.num_slots", "Cardinal", sizeof(testStruct.composite.num_slots), sizeof(Cardinal));
 	myCardinal = testStruct.composite.num_slots;
 	pmyCardinal = &testStruct.composite.num_slots;
 
-	check_size("TransientShellRec.composite.insert_position", "XtOrderProc", sizeof(testStruct.composite.insert_position), sizeof(XtOrderProc));
+	check_size("TopLevelShellRec.composite.insert_position", "XtOrderProc", sizeof(testStruct.composite.insert_position), sizeof(XtOrderProc));
 	myXtOrderProc = testStruct.composite.insert_position;
 	pmyXtOrderProc = &testStruct.composite.insert_position;
 
-	check_size("TransientShellRec.shell.geometry", "String", sizeof(testStruct.shell.geometry), sizeof(String));
+	check_size("TopLevelShellRec.shell.geometry", "String", sizeof(testStruct.shell.geometry), sizeof(String));
 	myString = testStruct.shell.geometry;
 	pmyString = &testStruct.shell.geometry;
 
-	check_size("TransientShellRec.shell.create_popup_child_proc", "XtCreatePopupChildProc", sizeof(testStruct.shell.create_popup_child_proc), sizeof(XtCreatePopupChildProc));
+	check_size("TopLevelShellRec.shell.create_popup_child_proc", "XtCreatePopupChildProc", sizeof(testStruct.shell.create_popup_child_proc), sizeof(XtCreatePopupChildProc));
 	myXtCreatePopupChildProc = testStruct.shell.create_popup_child_proc;
 	pmyXtCreatePopupChildProc = &testStruct.shell.create_popup_child_proc;
 
-	check_size("TransientShellRec.shell.grab_kind", "XtGrabKind", sizeof(testStruct.shell.grab_kind), sizeof(XtGrabKind));
+	check_size("TopLevelShellRec.shell.grab_kind", "XtGrabKind", sizeof(testStruct.shell.grab_kind), sizeof(XtGrabKind));
 	myXtGrabKind = testStruct.shell.grab_kind;
 	pmyXtGrabKind = &testStruct.shell.grab_kind;
 
-	check_size("TransientShellRec.shell.spring_loaded", "Boolean", sizeof(testStruct.shell.spring_loaded), sizeof(Boolean));
+	check_size("TopLevelShellRec.shell.spring_loaded", "Boolean", sizeof(testStruct.shell.spring_loaded), sizeof(Boolean));
 	myBoolean = testStruct.shell.spring_loaded;
 	pmyBoolean = &testStruct.shell.spring_loaded;
 
-	check_size("TransientShellRec.shell.popped_up", "Boolean", sizeof(testStruct.shell.popped_up), sizeof(Boolean));
+	check_size("TopLevelShellRec.shell.popped_up", "Boolean", sizeof(testStruct.shell.popped_up), sizeof(Boolean));
 	myBoolean = testStruct.shell.popped_up;
 	pmyBoolean = &testStruct.shell.popped_up;
 
-	check_size("TransientShellRec.shell.allow_shell_resize", "Boolean", sizeof(testStruct.shell.allow_shell_resize), sizeof(Boolean));
+	check_size("TopLevelShellRec.shell.allow_shell_resize", "Boolean", sizeof(testStruct.shell.allow_shell_resize), sizeof(Boolean));
 	myBoolean = testStruct.shell.allow_shell_resize;
 	pmyBoolean = &testStruct.shell.allow_shell_resize;
 
-	check_size("TransientShellRec.shell.client_specified", "Boolean", sizeof(testStruct.shell.client_specified), sizeof(Boolean));
+	check_size("TopLevelShellRec.shell.client_specified", "Boolean", sizeof(testStruct.shell.client_specified), sizeof(Boolean));
 	myBoolean = testStruct.shell.client_specified;
 	pmyBoolean = &testStruct.shell.client_specified;
 
-	check_size("TransientShellRec.shell.save_under", "Boolean", sizeof(testStruct.shell.save_under), sizeof(Boolean));
+	check_size("TopLevelShellRec.shell.save_under", "Boolean", sizeof(testStruct.shell.save_under), sizeof(Boolean));
 	myBoolean = testStruct.shell.save_under;
 	pmyBoolean = &testStruct.shell.save_under;
 
-	check_size("TransientShellRec.shell.override_redirect", "Boolean", sizeof(testStruct.shell.override_redirect), sizeof(Boolean));
+	check_size("TopLevelShellRec.shell.override_redirect", "Boolean", sizeof(testStruct.shell.override_redirect), sizeof(Boolean));
 	myBoolean = testStruct.shell.override_redirect;
 	pmyBoolean = &testStruct.shell.override_redirect;
 
-	check_size("TransientShellRec.shell.popup_callback", "XtCallbackList", sizeof(testStruct.shell.popup_callback), sizeof(XtCallbackList));
+	check_size("TopLevelShellRec.shell.popup_callback", "XtCallbackList", sizeof(testStruct.shell.popup_callback), sizeof(XtCallbackList));
 	myXtCallbackList = testStruct.shell.popup_callback;
 	pmyXtCallbackList = &testStruct.shell.popup_callback;
 
-	check_size("TransientShellRec.shell.popdown_callback", "XtCallbackList", sizeof(testStruct.shell.popdown_callback), sizeof(XtCallbackList));
+	check_size("TopLevelShellRec.shell.popdown_callback", "XtCallbackList", sizeof(testStruct.shell.popdown_callback), sizeof(XtCallbackList));
 	myXtCallbackList = testStruct.shell.popdown_callback;
 	pmyXtCallbackList = &testStruct.shell.popdown_callback;
 
-	check_size("TransientShellRec.shell.visual", "Visual *", sizeof(testStruct.shell.visual), sizeof(Visual *));
+	check_size("TopLevelShellRec.shell.visual", "Visual *", sizeof(testStruct.shell.visual), sizeof(Visual *));
 	pmyVisual = testStruct.shell.visual;
 
-	check_size("TransientShellRec.wm.title", "String", sizeof(testStruct.wm.title), sizeof(String));
+	check_size("TopLevelShellRec.wm.title", "String", sizeof(testStruct.wm.title), sizeof(String));
 	myString = testStruct.wm.title;
 	pmyString = &testStruct.wm.title;
 
-	check_size("TransientShellRec.wm.wm_timeout", "int", sizeof(testStruct.wm.wm_timeout), sizeof(int));
+	check_size("TopLevelShellRec.wm.wm_timeout", "int", sizeof(testStruct.wm.wm_timeout), sizeof(int));
 	myint = testStruct.wm.wm_timeout;
 	pmyint = &testStruct.wm.wm_timeout;
 
-	check_size("TransientShellRec.wm.wait_for_wm", "Boolean", sizeof(testStruct.wm.wait_for_wm), sizeof(Boolean));
+	check_size("TopLevelShellRec.wm.wait_for_wm", "Boolean", sizeof(testStruct.wm.wait_for_wm), sizeof(Boolean));
 	myBoolean = testStruct.wm.wait_for_wm;
 	pmyBoolean = &testStruct.wm.wait_for_wm;
 
-	check_size("TransientShellRec.wm.transient", "Boolean", sizeof(testStruct.wm.transient), sizeof(Boolean));
+	check_size("TopLevelShellRec.wm.transient", "Boolean", sizeof(testStruct.wm.transient), sizeof(Boolean));
 	myBoolean = testStruct.wm.transient;
 	pmyBoolean = &testStruct.wm.transient;
 
 #if XT_X_RELEASE == 4
-	check_size("TransientShellRec.wm.wm_configure_denied", "Atom", sizeof(testStruct.wm.wm_configure_denied), sizeof(Atom));
+	check_size("TopLevelShellRec.wm.wm_configure_denied", "Atom", sizeof(testStruct.wm.wm_configure_denied), sizeof(Atom));
 	myAtom = testStruct.wm.wm_configure_denied;
 	pmyAtom = &testStruct.wm.wm_configure_denied;
 
-	check_size("TransientShellRec.wm.wm_moved", "Atom", sizeof(testStruct.wm.wm_moved), sizeof(Atom));
+	check_size("TopLevelShellRec.wm.wm_moved", "Atom", sizeof(testStruct.wm.wm_moved), sizeof(Atom));
 	myAtom = testStruct.wm.wm_moved;
 	pmyAtom = &testStruct.wm.wm_moved;
 #endif
 
-	check_size("TransientShellRec.wm.size_hints.flags", "long", sizeof(testStruct.wm.size_hints.flags), sizeof(long));
+	check_size("TopLevelShellRec.wm.size_hints.flags", "long", sizeof(testStruct.wm.size_hints.flags), sizeof(long));
 	mylong = testStruct.wm.size_hints.flags;
 	pmylong = &testStruct.wm.size_hints.flags;
 
-	check_size("TransientShellRec.wm.size_hints.x", "int", sizeof(testStruct.wm.size_hints.x), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.x", "int", sizeof(testStruct.wm.size_hints.x), sizeof(int));
 	myint = testStruct.wm.size_hints.x;
 	pmyint = &testStruct.wm.size_hints.x;
 
-	check_size("TransientShellRec.wm.size_hints.y", "int", sizeof(testStruct.wm.size_hints.y), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.y", "int", sizeof(testStruct.wm.size_hints.y), sizeof(int));
 	myint = testStruct.wm.size_hints.y;
 	pmyint = &testStruct.wm.size_hints.y;
 
-	check_size("TransientShellRec.wm.size_hints.width", "int", sizeof(testStruct.wm.size_hints.width), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.width", "int", sizeof(testStruct.wm.size_hints.width), sizeof(int));
 	myint = testStruct.wm.size_hints.width;
 	pmyint = &testStruct.wm.size_hints.width;
 
-	check_size("TransientShellRec.wm.size_hints.height", "int", sizeof(testStruct.wm.size_hints.height), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.height", "int", sizeof(testStruct.wm.size_hints.height), sizeof(int));
 	myint = testStruct.wm.size_hints.height;
 	pmyint = &testStruct.wm.size_hints.height;
 
-	check_size("TransientShellRec.wm.size_hints.min_width", "int", sizeof(testStruct.wm.size_hints.min_width), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.min_width", "int", sizeof(testStruct.wm.size_hints.min_width), sizeof(int));
 	myint = testStruct.wm.size_hints.min_width;
 	pmyint = &testStruct.wm.size_hints.min_width;
 
-	check_size("TransientShellRec.wm.size_hints.min_height", "int", sizeof(testStruct.wm.size_hints.min_height), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.min_height", "int", sizeof(testStruct.wm.size_hints.min_height), sizeof(int));
 	myint = testStruct.wm.size_hints.min_height;
 	pmyint = &testStruct.wm.size_hints.min_height;
 
-	check_size("TransientShellRec.wm.size_hints.max_width", "int", sizeof(testStruct.wm.size_hints.max_width), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.max_width", "int", sizeof(testStruct.wm.size_hints.max_width), sizeof(int));
 	myint = testStruct.wm.size_hints.max_width;
 	pmyint = &testStruct.wm.size_hints.max_width;
 
-	check_size("TransientShellRec.wm.size_hints.max_height", "int", sizeof(testStruct.wm.size_hints.max_height), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.max_height", "int", sizeof(testStruct.wm.size_hints.max_height), sizeof(int));
 	myint = testStruct.wm.size_hints.max_height;
 	pmyint = &testStruct.wm.size_hints.max_height;
 
-	check_size("TransientShellRec.wm.size_hints.width_inc", "int", sizeof(testStruct.wm.size_hints.width_inc), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.width_inc", "int", sizeof(testStruct.wm.size_hints.width_inc), sizeof(int));
 	myint = testStruct.wm.size_hints.width_inc;
 	pmyint = &testStruct.wm.size_hints.width_inc;
 
-	check_size("TransientShellRec.wm.size_hints.height_inc", "int", sizeof(testStruct.wm.size_hints.height_inc), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.height_inc", "int", sizeof(testStruct.wm.size_hints.height_inc), sizeof(int));
 	myint = testStruct.wm.size_hints.height_inc;
 	pmyint = &testStruct.wm.size_hints.height_inc;
 
-	check_size("TransientShellRec.wm.size_hints.min_aspect.x", "int", sizeof(testStruct.wm.size_hints.min_aspect.x), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.min_aspect.x", "int", sizeof(testStruct.wm.size_hints.min_aspect.x), sizeof(int));
 	myint = testStruct.wm.size_hints.min_aspect.x;
 	pmyint = &testStruct.wm.size_hints.min_aspect.x;
 
-	check_size("TransientShellRec.wm.size_hints.min_aspect.y", "int", sizeof(testStruct.wm.size_hints.min_aspect.y), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.min_aspect.y", "int", sizeof(testStruct.wm.size_hints.min_aspect.y), sizeof(int));
 	myint = testStruct.wm.size_hints.min_aspect.y;
 	pmyint = &testStruct.wm.size_hints.min_aspect.y;
 
-	check_size("TransientShellRec.wm.size_hints.max_aspect.x", "int", sizeof(testStruct.wm.size_hints.max_aspect.x), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.max_aspect.x", "int", sizeof(testStruct.wm.size_hints.max_aspect.x), sizeof(int));
 	myint = testStruct.wm.size_hints.max_aspect.x;
 	pmyint = &testStruct.wm.size_hints.max_aspect.x;
 
-	check_size("TransientShellRec.wm.size_hints.max_aspect.y", "int", sizeof(testStruct.wm.size_hints.max_aspect.y), sizeof(int));
+	check_size("TopLevelShellRec.wm.size_hints.max_aspect.y", "int", sizeof(testStruct.wm.size_hints.max_aspect.y), sizeof(int));
 	myint = testStruct.wm.size_hints.max_aspect.y;
 	pmyint = &testStruct.wm.size_hints.max_aspect.y;
 
-	check_size("TransientShellRec.vendor.vendor_specific", "int", sizeof(testStruct.vendor.vendor_specific), sizeof(int));
+	check_size("TopLevelShellRec.wm.wm_hints", "XWMHints", sizeof(testStruct.wm.wm_hints), sizeof(XWMHints));
+	myXWMHints = testStruct.wm.wm_hints;
+	pmyXWMHints = &testStruct.wm.wm_hints;
+
+	check_size("TopLevelShellRec.wm.base_width", "int", sizeof(testStruct.wm.base_width), sizeof(int));
+	myint = testStruct.wm.base_width;
+	pmyint = &testStruct.wm.base_width;
+
+	check_size("TopLevelShellRec.wm.base_height", "int", sizeof(testStruct.wm.base_height), sizeof(int));
+	myint = testStruct.wm.base_height;
+	pmyint = &testStruct.wm.base_height;
+
+	check_size("TopLevelShellRec.wm.win_gravity", "int", sizeof(testStruct.wm.win_gravity), sizeof(int));
+	myint = testStruct.wm.win_gravity;
+	pmyint = &testStruct.wm.win_gravity;
+
+	check_size("TopLevelShellRec.wm.title_encoding", "Atom", sizeof(testStruct.wm.title_encoding), sizeof(Atom));
+	myAtom = testStruct.wm.title_encoding;
+	pmyAtom = &testStruct.wm.title_encoding;
+
+	check_size("TopLevelShellRec.vendor.vendor_specific", "int", sizeof(testStruct.vendor.vendor_specific), sizeof(int));
 	myint = testStruct.vendor.vendor_specific;
 	pmyint = &testStruct.vendor.vendor_specific;
 
-	check_size("TransientShellRec.transient.transient_for", "Widget", sizeof(testStruct.transient.transient_for), sizeof(Widget));
-	myWidget = testStruct.transient.transient_for;
-	pmyWidget = &testStruct.transient.transient_for;
+	check_size("TopLevelShellRec.topLevel.icon_name", "String", sizeof(testStruct.topLevel.icon_name), sizeof(String));
+	myString = testStruct.topLevel.icon_name;
+	pmyString = &testStruct.topLevel.icon_name;
+
+	check_size("TopLevelShellRec.topLevel.iconic", "Boolean", sizeof(testStruct.topLevel.iconic), sizeof(Boolean));
+	myBoolean = testStruct.topLevel.iconic;
+	pmyBoolean = &testStruct.topLevel.iconic;
+
+	check_size("TopLevelShellRec.topLevel.icon_name_encoding", "Atom", sizeof(testStruct.topLevel.icon_name_encoding), sizeof(Atom));
+	myAtom = testStruct.topLevel.icon_name_encoding;
+	pmyAtom = &testStruct.topLevel.icon_name_encoding;
 
 	tet_result(TET_PASS);
 >>ASSERTION Good A
-The type TransientShellWidget shall be defined as a
+The type TopLevelShellWidget shall be defined as a
 pointer to a shell widget instance.
 >>CODE
-TransientShellRec testwid;
-TransientShellWidget testvar;
+TopLevelShellRec testwid;
+TopLevelShellWidget testvar;
 XtPointer testvar2;
 
 	/* this will not build if the define is not correct*/
-	tet_infoline("TEST: TransientShellWidget");
+	tet_infoline("TEST: TopLevelShellWidget");
 	/*doesn't matter where we point, just testing syntax*/
 	testvar = &testwid;
 	testvar2 = testvar->shell.visual;
 	tet_result(TET_PASS);
 >>ASSERTION Good A
-Transient shell widgets shall be a subclass of vendor
-shell widgets
+TopLevel shell widgets shall be a subclass of Vendor shell widgets
 >>CODE
 Widget testwidget;
 
 	tet_infoline("PREP: Initialize toolkit, Open display and Create topLevel root widget");
-        topLevel = (Widget) avs_xt_init("Htrshell9", NULL, 0);
+        topLevel = (Widget) avs_xt_init("Hwmshell9", NULL, 0);
         trace("Set up the XtToolkitError handler");
         app_ctext = XtWidgetToApplicationContext(topLevel) ;
         XtAppSetErrorMsgHandler(app_ctext, xt_handler);
         XtAppSetWarningMsgHandler(app_ctext, xt_whandler);
 	tet_infoline("PREP: Create fresh widget");
-	testwidget = XtCreateWidget("ApTest", transientShellWidgetClass, topLevel, NULL, 0);
-	tet_infoline("TEST: Transientshell superclass is vendor shell");
-	if (transientShellClassRec.core_class.superclass != vendorShellWidgetClass) {
-		tet_infoline("ERROR: superclass is not vendor shell");
+	testwidget = XtCreateWidget("ApTest", topLevelShellWidgetClass, topLevel, NULL, 0);
+	tet_infoline("TEST: TopLevelshell superclass is Vendor shell");
+	if (topLevelShellClassRec.core_class.superclass != vendorShellWidgetClass) {
+		tet_infoline("ERROR: superclass is not Vendor shell");
 		tet_result(TET_FAIL);
 	}
 	tet_result(TET_PASS);
 >>ASSERTION Good A
-TransientShellRec shall be initialized to the default
+TopLevelShellRec shall be initialized to the default
 values specified in sections 3.4.1, 3.4.2 and 6.1.4 of
 the Specification on creation of a new shell widget
 instance.
@@ -838,24 +873,25 @@ Colormap colormap;
 char *pixstr = "XtDefaultForeground";
 char *pixstr2 = "XtDefaultBackground";
 Pixel res;
-TransientShellWidget testwidget;
+TopLevelShellWidget testwidget;
 
 	tet_infoline("PREP: Initialize toolkit, Open display and Create topLevel root widget");
-        topLevel = (Widget) avs_xt_init("Htrshell10", NULL, 0);
+        topLevel = (Widget) avs_xt_init("Hwmshell10", NULL, 0);
         trace("Set up the XtToolkitError handler");
         app_ctext = XtWidgetToApplicationContext(topLevel) ;
         XtAppSetErrorMsgHandler(app_ctext, xt_handler);
         XtAppSetWarningMsgHandler(app_ctext, xt_whandler);
+
 	tet_infoline("PREP: Create fresh widget");
-	testwidget = (TransientShellWidget)XtCreateWidget("ApTest", transientShellWidgetClass, topLevel, NULL, 0);
+	testwidget = (TopLevelShellWidget)XtCreateWidget("ApTest", topLevelShellWidgetClass, topLevel, NULL, 0);
 	tet_infoline("TEST: core.self");
 	if (testwidget->core.self != (Widget)testwidget) {
 		tet_infoline("ERROR: self member is not address of widget structure");
 		tet_result(TET_FAIL);
 	}
 	tet_infoline("TEST: core.widget_class");
-	if (testwidget->core.widget_class != transientShellWidgetClass) {
-		tet_infoline("ERROR: widget_class member is not transientShellWidgetClass");
+	if (testwidget->core.widget_class != topLevelShellWidgetClass) {
+		tet_infoline("ERROR: widget_class member is not topLevelShellWidgetClass");
 		tet_result(TET_FAIL);
 	}
 	tet_infoline("TEST: core.parent");
@@ -1055,8 +1091,8 @@ TransientShellWidget testwidget;
 		tet_result(TET_FAIL);
 	}
 	tet_infoline("TEST: shell.save_under");
-	if (testwidget->shell.save_under != True) {
-		sprintf(ebuf, "ERROR: save_under member is %d, expected True", testwidget->shell.save_under);
+	if (testwidget->shell.save_under != False) {
+		sprintf(ebuf, "ERROR: save_under member is %d, expected False", testwidget->shell.save_under);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 	}
@@ -1095,8 +1131,8 @@ TransientShellWidget testwidget;
 		tet_result(TET_FAIL);
 	}
 	tet_infoline("TEST: wm.transient");
-	if (testwidget->wm.transient != True) {
-		sprintf(ebuf, "ERROR: transient member is %d, expected True", testwidget->wm.transient);
+	if (testwidget->wm.transient != False) {
+		sprintf(ebuf, "ERROR: transient member is %d, expected False", testwidget->wm.transient);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 	}

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt6/ShellWidget/ShellWidget.m
+>># File: xts/Xt6/ShellWidget.m
 >># 
 >># Description:
 >>#	Tests for ShellWidget

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt6/ApplicationShellWidget/ApplicationShellWidget.m
+>># File: xts/Xt6/ApplicationShellWidget.m
 >># 
 >># Description:
 >>#	Tests for ApplicationShell Widgets

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt6/VendorShellWidget/VendorShellWidget.m
+>># File: xts/Xt6/VendorShellWidget.m
 >># 
 >># Description:
 >>#	Tests for VendorShell Widgets

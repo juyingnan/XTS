@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt6/WMShellWidget/WMShellWidget.m
+>># File: xts/Xt6/WMShellWidget.m
 >># 
 >># Description:
 >>#	Tests for WMShell Widgets

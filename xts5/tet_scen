@@ -3856,31 +3856,31 @@ XtUnmapWidget
 
 ShellWidget
 	"VSW5TESTSUITE CASE ShellWidget 11"
-	/Xt6/ShellWidget/ShellWidget
+	/Xt6/ShellWidget
 
 OverrideShellWidget
 	"VSW5TESTSUITE CASE OverrideShellWidget 10"
-	/Xt6/OverrideShellWidget/OverrideShellWidget
+	/Xt6/OverrideShellWidget
 
 WMShellWidget
 	"VSW5TESTSUITE CASE WMShellWidget 10"
-	/Xt6/WMShellWidget/WMShellWidget
+	/Xt6/WMShellWidget
 
 VendorShellWidget
 	"VSW5TESTSUITE CASE VendorShellWidget 10"
-	/Xt6/VendorShellWidget/VendorShellWidget
+	/Xt6/VendorShellWidget
 
 TransientShellWidgets
 	"VSW5TESTSUITE CASE TransientShellWidgets 10"
-	/Xt6/TransientShellWidget/TransientShellWidget
+	/Xt6/TransientShellWidget
 
 TopLevelShellWidgets
 	"VSW5TESTSUITE CASE TopLevelShellWidgets 10"
-	/Xt6/TopLevelShellWidget/TopLevelShellWidget
+	/Xt6/TopLevelShellWidget
 
 ApplicationShellWidget
 	"VSW5TESTSUITE CASE ApplicationShellWidget 10"
-	/Xt6/ApplicationShellWidget/ApplicationShellWidget
+	/Xt6/ApplicationShellWidget
 
 #Discrete tests for Xt Chapter 7
 
