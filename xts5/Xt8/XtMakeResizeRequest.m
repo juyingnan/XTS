@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt8/XtMakeResizeRequest/XtMakeResizeRequest.m
+>># File: xts/Xt8/XtMakeResizeRequest.m
 >># 
 >># Description:
 >>#	Tests for XtMakeResizeRequest()

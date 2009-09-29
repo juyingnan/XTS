@@ -25,32 +25,32 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt8/XtResizeWidget/XtResizeWidget.m
+>># File: xts/Xt8/XtMoveWidget.m
 >># 
 >># Description:
->>#	Tests for XtResizeWidget()
+>>#	Tests for XtMoveWidget()
 >># 
 >># Modifications:
->># $Log: trszewdgt.m,v $
+>># $Log: tmvwidget.m,v $
 >># Revision 1.1  2005-02-12 14:38:23  anderson
 >># Initial revision
 >>#
->># Revision 8.0  1998/12/23 23:36:54  mar
+>># Revision 8.0  1998/12/23 23:36:53  mar
 >># Branch point for Release 5.0.2
 >>#
 >># Revision 7.0  1998/10/30 22:59:46  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:28:01  tbr
+>># Revision 6.0  1998/03/02 05:28:00  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:24:35  tbr
+>># Revision 5.0  1998/01/26 03:24:34  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:17:47  tbr
+>># Revision 4.0  1995/12/15 09:17:44  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  01:22:03  andy
+>># Revision 3.1  1995/12/15  01:22:00  andy
 >># Prepare for GA Release
 >>#
 >>EXTERN
@@ -62,7 +62,6 @@ All Rights Reserved.
 XtAppContext app_ctext;
 Widget topLevel, panedw, boxw1, boxw2;
 Widget labelw, rowcolw, click_quit;
-
 
 /*
  * SquareCell.c - Square Widget 
@@ -304,16 +303,16 @@ Cardinal *num_args;
 	*/
 	if ((new->squareCell.pixmap_width_in_cells < 1) ||
 	 (new->squareCell.pixmap_height_in_cells < 1)) {
-	XtWarning("SquareCell: pixmapWidth and/or pixmapHeight is too small (using 10 x 10)."); 
+	XtWarning("SquareCell: pixmapWidth and/or pixmapHeight is too small (using 10 x 10)"); 
 	new->squareCell.pixmap_width_in_cells = 10;
 	new->squareCell.pixmap_height_in_cells = 10;
 	}
 	if (new->squareCell.cell_size_in_pixels < 5) {
-	XtWarning("SquareCell: cellSize is too small (using 5)."); 
+	XtWarning("SquareCell: cellSize is too small (using 5)"); 
 	new->squareCell.cell_size_in_pixels = 5;
 	}
 	if ((new->squareCell.cur_x < 0) || (new->squareCell.cur_y < 0)) {
-	XtWarning("SquareCell: cur_x and cur_y must be non-negative (using 0, 0)."); 
+	XtWarning("SquareCell: cur_x and cur_y must be non-negative (using 0, 0)"); 
 	new->squareCell.cur_x = 0;
 	new->squareCell.cur_y = 0;
 	}
@@ -407,7 +406,7 @@ Cardinal *num_args;
 	do_redisplay = True;
 	if (curcw->squareCell.cell_size_in_pixels != 
 	 newcw->squareCell.cell_size_in_pixels) {
-	ChangeCellSize(curcw, newcw->squareCell.cell_size_in_pixels);
+	ChangeCellSize((Widget)curcw, newcw->squareCell.cell_size_in_pixels);
 	do_redisplay = True;
 	}
 	if (curcw->squareCell.pixmap_width_in_cells != 
@@ -430,13 +429,13 @@ Widget w;
 {
 	SquareCellWidget cw = (SquareCellWidget) w;
 	if (cw->squareCell.big_picture)
-	XFreePixmap(XtDisplay(cw), cw->squareCell.big_picture);
+	XFreePixmap(XtDisplay((Widget)cw), cw->squareCell.big_picture);
 	if (cw->squareCell.draw_gc)
-	XFreeGC(XtDisplay(cw), cw->squareCell.draw_gc);
+	XFreeGC(XtDisplay((Widget)cw), cw->squareCell.draw_gc);
 	if (cw->squareCell.undraw_gc)
-	XFreeGC(XtDisplay(cw), cw->squareCell.undraw_gc);
+	XFreeGC(XtDisplay((Widget)cw), cw->squareCell.undraw_gc);
 	if (cw->squareCell.copy_gc)
-	XFreeGC(XtDisplay(cw), cw->squareCell.copy_gc);
+	XFreeGC(XtDisplay((Widget)cw), cw->squareCell.copy_gc);
 	/* Free memory allocated with Calloc. This was done
 	* only if application didn't supply cell array.
 	*/
@@ -514,7 +513,7 @@ XButtonEvent *event;
 	if (cw->squareCell.cell[newx + newy * cw->squareCell.pixmap_width_in_cells] == mode)
 	return;
 	/* otherwise, draw or undraw */
-	XFillRectangle(XtDisplay((Widget)cw), cw->squareCell.big_picture, gc,
+	XFillRectangle(XtDisplay(cw), cw->squareCell.big_picture, gc,
 	 cw->squareCell.cell_size_in_pixels*newx + 2, 
 	cw->squareCell.cell_size_in_pixels*newy + 2, 
 	(unsigned int)cw->squareCell.cell_size_in_pixels - 3, 
@@ -536,7 +535,7 @@ Widget w;
 	SquareCellWidget cw = (SquareCellWidget) w;
 	/* always a 1 bit deep pixmap, regardless of screen depth */
 	cw->squareCell.big_picture = XCreatePixmap(XtDisplay((Widget)cw),
-	 RootWindow(XtDisplay((Widget)cw), DefaultScreen(XtDisplay((Widget)cw))),
+	 RootWindow(XtDisplay(cw), DefaultScreen(XtDisplay((Widget)cw))),
 	 cw->squareCell.pixmap_width_in_pixels + 2, 
 	 cw->squareCell.pixmap_height_in_pixels + 2, 1);
 }
@@ -593,7 +592,6 @@ Resize(w)
 Widget w;
 {
 	SquareCellWidget cw = (SquareCellWidget) w;
-	avs_set_event(1,1);
 	/* resize does nothing unless new size is bigger than entire pixmap */
 	if ((cw->core.width > cw->squareCell.pixmap_width_in_pixels) &&
 	 (cw->core.height > cw->squareCell.pixmap_height_in_pixels)) {
@@ -634,7 +632,7 @@ int new_cell_size;
 		cw->squareCell.cell_size_in_pixels;
 	
 	/* destroy old and create new pixmap of correct size */
-	XFreePixmap(XtDisplay((Widget)cw), cw->squareCell.big_picture);
+	XFreePixmap(XtDisplay(cw), cw->squareCell.big_picture);
 	CreateBigPixmap(cw);
 	
 	/* draw lines into new pixmap */
@@ -695,19 +693,16 @@ XtWidgetGeometry *proposed, *answer;
 	else
 	return XtGeometryAlmost;
 }
->>SET tpstartup avs_alloc_sem
->>SET tpcleanup avs_free_sem
->>TITLE XtResizeWidget Xt8
+>>TITLE XtMoveWidget Xt8
 void
-XtResizeWidget(w, width, height, border_width)
+XtMoveWidget(w, x, y)
 >>ASSERTION Good A
 A successful call to 
-void XtResizeWidget(w, width, height, border_width)
+void XtMoveWidget(w, x, y)
 when at least one of
-.A width,
-.A height,
+.A x
 or 
-.A border_width
+.A y
 is different from its corresponding value in the
 object
 .A w 
@@ -715,147 +710,88 @@ shall write the specified values into the object.
 >>CODE
 XtWidgetGeometry intended, geom, geometry_good;
 Widget squarew;
-int width, height, border_width;
-pid_t pid2;
+int x, y;
 
-	FORK(pid2);
-	avs_xt_hier("Trszewdgt1", "XtResizeWidget");
+	avs_xt_hier("Tmvwidget1", "XtMoveWidget");
 	tet_infoline("PREP: Create Square Cell widget");
 	squarew = XtVaCreateManagedWidget("squarew",
 			squareCellWidgetClass, boxw1, NULL);
-	tet_infoline("PREP: Change height width and border_width of squarew widget.");
-	intended.request_mode = CWWidth|CWHeight|CWBorderWidth;
+	tet_infoline("PREP: Change x, y geometry fields of squarew widget");
+	intended.request_mode = CWX|CWY;
 	XtQueryGeometry(squarew, &intended, &geom);
-	width = geom.width + 10;
-	height = geom.height + 10;
-	border_width = geom.border_width + 1;
-	XtResizeWidget(squarew, width, height, border_width);
-	tet_infoline("TEST: Squarew widget has been resized.");
+	x = geom.x + 10;
+	y = geom.y + 10;
+	XtMoveWidget(squarew, x, y );
+	tet_infoline("TEST: Values have been changed");
 	XtQueryGeometry(squarew, &intended, &geometry_good);
-	check_dec(width, geometry_good.width, "width");
-	check_dec(height, geometry_good.height, "height");
-	check_dec(border_width, geometry_good.border_width, "border_width");
-	KROF(pid2);
-	tet_result(TET_PASS);
->>ASSERTION Good A
-When
-.A w
-is a widget that is realized and at least one of
-.A width,
-.A height,
-or 
-.A border_width
-is different from its corresponding value in the
-widget a call to 
-void XtResizeWidget(w, width, height, border_width)
-shall resize the widget to the specified values.
->>CODE
-XtWidgetGeometry intended, geom, geometry_good;
-Widget squarew;
-int width, height, border_width;
-pid_t pid2;
-
-	/*should be tested with image capture*/
-	FORK(pid2);
-	avs_xt_hier("Trszewdgt1", "XtResizeWidget");
-	tet_infoline("PREP: Create Square Cell widget");
-	squarew = XtVaCreateManagedWidget("squarew",
-			squareCellWidgetClass, boxw1, NULL);
-	tet_infoline("PREP: Change height width and border_width of squarew widget.");
-	intended.request_mode = CWWidth|CWHeight|CWBorderWidth;
-	XtQueryGeometry(squarew, &intended, &geom);
-	width = geom.width + 10;
-	height = geom.height + 10;
-	border_width = geom.border_width + 1;
-	XtResizeWidget(squarew, width, height, border_width);
-	tet_infoline("TEST: Squarew widget has been resized.");
-	XtQueryGeometry(squarew, &intended, &geometry_good);
-	check_dec(width, geometry_good.width, "width");
-	check_dec(height, geometry_good.height, "height");
-	check_dec(border_width, geometry_good.border_width, "border_width");
-	KROF(pid2);
-	tet_result(TET_PASS);
->>ASSERTION Good A
-A successful call to 
-void XtResizeWidget(w, width, height, border_width)
-when at least one of
-.A width,
-.A height,
-or 
-.A border_width
-is different from its corresponding value in the
-object
-.A w 
-shall invoke the resize procedure of the specified object.
->>CODE
-XtWidgetGeometry intended, geom, geometry_good;
-Widget squarew;
-int x, y, width, height, border_width;
-int invoked = 0;
-pid_t pid2;
-
-	FORK(pid2);
-	avs_xt_hier("Trszewdgt2", "XtResizeWidget");
-	tet_infoline("PREP: Create Square Cell widget");
-	squarew = XtVaCreateManagedWidget("squarew",
-			squareCellWidgetClass, boxw1, NULL);
-	tet_infoline("PREP: Change height and width of squarew widget.");
-	intended.request_mode = CWWidth|CWHeight|CWBorderWidth;
-	XtQueryGeometry(squarew, &intended, &geom);
-	width = geom.width + 10;
-	height = geom.height + 10;
-	border_width = geom.border_width;
-	XtResizeWidget(squarew, width, height, border_width);
-	tet_infoline("TEST: Square widget has been resized.");
-	XtQueryGeometry(squarew, &intended, &geometry_good);
-	check_dec(width, geometry_good.width, "width");
-	check_dec(height, geometry_good.height, "height");
-	tet_infoline("PREP: Create windows for widgets and map them");
-	XtRealizeWidget(topLevel);
-	tet_infoline("TEST: Check Procedure Resize was invoked.");
-	invoked = avs_get_event(1);
-	if (!invoked) {
-		sprintf(ebuf, "ERROR: Procedure Resize was not invoked.");
-		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
-	}
-	KROF(pid2);
+	check_dec(x, geometry_good.x, "x");
+	check_dec(y, geometry_good.y, "y");
 	tet_result(TET_PASS);
 >>ASSERTION Good A
 A call to 
-void XtResizeWidget(w, width, height, border_width)
+void XtMoveWidget(w, x, y)
 when 
-.A width,
-.A height,
-and 
-.A border_width
-are all same as their corresponding values in the
+.A x
+and
+.A y
+are both equal to their corresponding values in the
 object
 .A w 
 shall return immediately.
 >>CODE
 XtWidgetGeometry intended, geom, geometry_good;
 Widget squarew;
-int x, y, width, height, border_width;
-pid_t pid2;
+int x, y;
 
-	FORK(pid2);
-	avs_xt_hier("Trszewdgt3", "XtResizeWidget");
+	avs_xt_hier("Tmvwidget2", "XtMoveWidget");
 	tet_infoline("PREP: Create Square Cell widget");
 	squarew = XtVaCreateManagedWidget("squarew",
 			squareCellWidgetClass, boxw1, NULL);
-	tet_infoline("PREP: Put same geometry fields to squarew widget.");
-	intended.request_mode = CWWidth|CWHeight|CWBorderWidth;
+	tet_infoline("PREP: Put same x, y fields to squarew widget");
+	intended.request_mode = CWX|CWY;
 	XtQueryGeometry(squarew, &intended, &geom);
-	width = geom.width;
-	height = geom.height;
-	border_width = geom.border_width;
-	XtResizeWidget(squarew, width, height, border_width);
-	tet_infoline("TEST: XtResizeWidget returned immediately with same");
-	tet_infoline("TEST: geometry fields.");
+	x = geom.x;
+	y = geom.y;
+	XtMoveWidget(squarew, x, y);
+	tet_infoline("TEST: XtMoveWidget returned immediately with same");
+	tet_infoline("TEST: geometry fields");
 	XtQueryGeometry(squarew, &intended, &geometry_good);
-	check_dec(width, geometry_good.width, "width");
-	check_dec(height, geometry_good.height, "height");
-	check_dec(border_width, geometry_good.border_width, "border_width");
-	KROF(pid2);
+	check_dec(x, geometry_good.x, "x");
+	check_dec(y, geometry_good.y, "y");
+	tet_result(TET_PASS);
+>>ASSERTION Good A
+When
+.A w
+is a widget that is realized and at least one of
+.A x
+or 
+.A y
+is different from its corresponding value in the
+widget a call to 
+void XtMoveWidget(w, x, y)
+shall move the widget window to the position specified
+by 
+.A x
+and
+.A y.
+>>CODE
+XtWidgetGeometry intended, geom, geometry_good;
+Widget squarew;
+int x, y;
+
+	/*should be verified with image capture*/
+	avs_xt_hier("Tmvwidget1", "XtMoveWidget");
+	tet_infoline("PREP: Create Square Cell widget");
+	squarew = XtVaCreateManagedWidget("squarew",
+			squareCellWidgetClass, boxw1, NULL);
+	tet_infoline("PREP: Change x, y geometry fields of squarew widget");
+	intended.request_mode = CWX|CWY;
+	XtQueryGeometry(squarew, &intended, &geom);
+	x = geom.x + 10;
+	y = geom.y + 10;
+	XtMoveWidget(squarew, x, y );
+	tet_infoline("TEST: Widget moved");
+	XtQueryGeometry(squarew, &intended, &geometry_good);
+	check_dec(x, geometry_good.x, "x");
+	check_dec(y, geometry_good.y, "y");
 	tet_result(TET_PASS);

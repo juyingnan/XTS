@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt8/XtMakeGeometryRequest/XtMakeGeometryRequest.m
+>># File: xts/Xt8/XtMakeGeometryRequest.m
 >># 
 >># Description:
 >>#	Tests for XtMakeGeometryRequest()

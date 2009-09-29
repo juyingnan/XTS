@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt8/XtResizeWindow/XtResizeWindow.m
+>># File: xts/Xt8/XtResizeWindow.m
 >># 
 >># Description:
 >>#	Tests for XtResizeWindow()
