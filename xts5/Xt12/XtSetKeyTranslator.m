@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt12/XtSetKeyTranslator/XtSetKeyTranslator.m
+>># File: xts/Xt12/XtSetKeyTranslator.m
 >># 
 >># Description:
 >>#	Tests for XtSetKeyTranslator()

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt12/XtGetActionKeysym/XtGetActionKeysym.m
+>># File: xts/Xt12/XtGetActionKeysym.m
 >># 
 >># Description:
 >>#	Tests for XtGetActionKeysym()

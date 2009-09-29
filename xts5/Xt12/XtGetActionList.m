@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt12/XtGetActionList/XtGetActionList.m
+>># File: xts/Xt12/XtGetActionList.m
 >># 
 >># Description:
 >>#	Tests for XtGetActionList()

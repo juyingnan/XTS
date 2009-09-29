@@ -25,32 +25,32 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt12/XtOverrideTranslations/XtOverrideTranslations.m
+>># File: xts/Xt12/XtAugmentTranslations.m
 >># 
 >># Description:
->>#	Tests for XtOverrideTranslations()
+>>#	Tests for XtAugmentTranslations()
 >># 
 >># Modifications:
->># $Log: tovertrsl.m,v $
->># Revision 1.1  2005-02-12 14:37:56  anderson
+>># $Log: taugtrtns.m,v $
+>># Revision 1.1  2005-02-12 14:37:55  anderson
 >># Initial revision
 >>#
 >># Revision 8.0  1998/12/23 23:37:57  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 23:00:56  mar
+>># Revision 7.0  1998/10/30 23:00:55  mar
 >># Branch point for Release 5.0.2b1
 >>#
 >># Revision 6.0  1998/03/02 05:29:00  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:25:34  tbr
+>># Revision 5.0  1998/01/26 03:25:33  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:21:01  tbr
+>># Revision 4.0  1995/12/15 09:21:00  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  02:16:39  andy
+>># Revision 3.1  1995/12/15  02:16:37  andy
 >># Prepare for GA Release
 >>#
 >>EXTERN
@@ -63,20 +63,27 @@ Widget topLevel, panedw, boxw1, boxw2;
 Widget labelw, rowcolw, click_quit;
 
 extern char *event_names[];
-
 XtActionProc XtACT1_Proc(w, event, params, num_params)
 Widget w;
 XEvent *event;
 String *params;
 Cardinal *num_params;
 {
-	if ( event->type == ButtonPress )
-		avs_set_event(1,1);
+	if ( event->type == ButtonPress ) {
+	avs_set_event(1,1);
+	exit(0);
+	}
 	else {
-		sprintf(ebuf, "ERROR: Expected ButtonPress event Received %s", event_names[event->type]);
+	sprintf(ebuf, "ERROR: Expected ButtonPress event Received %s", event_names[event->type]);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 	}
+}
+/*timeout callback*/
+void XtTI1_Proc(client_data, id)
+XtPointer client_data;
+XtIntervalId *id;
+{
 	exit(0);
 }
 /*
@@ -88,13 +95,21 @@ XEvent *event;
 String *params;
 Cardinal *num_params;
 {
-	if ( event->type == ButtonPress )
+	if ( event->type == ButtonPress ) {
 	avs_set_event(1,1);
+	exit(0);
+	}
 	else {
 	sprintf(ebuf, "ERROR: Expected ButtonPress event Received %s", event_names[event->type]);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 	}
+}
+/*timeout callback*/
+void XtTI2_Proc(client_data, id)
+XtPointer client_data;
+XtIntervalId *id;
+{
 	exit(0);
 }
 /*
@@ -106,44 +121,63 @@ XEvent *event;
 String *params;
 Cardinal *num_params;
 {
-	if ( event->type == ButtonPress )
+	if ( event->type == ButtonPress ) {
 	avs_set_event(1,1);
+	exit(0);
+	}
 	else {
 	sprintf(ebuf, "ERROR: Expected ButtonPress event Received %s", event_names[event->type]);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 	}
+}
+/*timeout callback*/
+void XtTI3_Proc(client_data, id)
+XtPointer client_data;
+XtIntervalId *id;
+{
 	exit(0);
 }
+/*
+** Procedure XtACT4_Proc
+*/
 XtActionProc XtACT4_Proc(w, event, params, num_params)
 Widget w;
 XEvent *event;
 String *params;
 Cardinal *num_params;
 {
-	if ( event->type == ButtonPress )
 	avs_set_event(1,1);
-	else {
-	sprintf(ebuf, "ERROR: Expected ButtonPress event Received %s", event_names[event->type]);
-		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
-	}
+}
+/*
+** Procedure XtACT4a_Proc
+*/
+XtActionProc XtACT4a_Proc(w, event, params, num_params)
+Widget w;
+XEvent *event;
+String *params;
+Cardinal *num_params;
+{
+	avs_set_event(2,1);
+}
+/*timeout callback*/
+void XtTI4_Proc(client_data, id)
+XtPointer client_data;
+XtIntervalId *id;
+{
 	exit(0);
 }
 >>SET tpstartup avs_alloc_sem
 >>SET tpcleanup avs_free_sem
->>TITLE XtOverrideTranslations Xt12
+>>TITLE XtAugmentTranslations Xt12
 void
-XtOverrideTranslations(w, translations)
+XtAugmentTranslations(w, translations)
 >>ASSERTION Good A
-A successful call to 
-void XtOverrideTranslations(w, translations)
-shall merge the compiled translation table specified by
-.A translations
-into the existing translations for the widget
-.A w,
-ignoring any #replace directives
-that were specified in the translation string.
+A call to 
+void XtAugmentTranslations(w, translations)
+shall nondestructively merge new translations into the widget w's existing
+translations ignoring any #replace directive that may
+have been specified in the translation string.
 >>CODE
 pid_t pid2;
 int status;
@@ -155,7 +189,7 @@ static XtActionsRec actions1[] = {
 };
 
 	FORK(pid2);
-	avs_xt_hier("Tovertrsl1", "XtOverrideTranslations");
+	avs_xt_hier("Taugtrtns1", "XtAugmentTranslations");
 	tet_infoline("PREP: Add action table");
 	XtAppAddActions(app_ctext, actions1, 1);
 	tet_infoline("PREP: Parse translation table");
@@ -163,24 +197,22 @@ static XtActionsRec actions1[] = {
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
 	tet_infoline("PREP: Add new translations into boxw1 widget");
-	XtOverrideTranslations(boxw1, translations);
-	tet_infoline("PREP: Send ButtonPress event over wire");
+	XtAugmentTranslations(boxw1, translations);
+	tet_infoline("PREP: Send ButtonPress event over wire to boxw1");
 	send_event(boxw1, ButtonPress, ButtonPressMask, TRUE);
-	tet_infoline("TEST: Check procedure XtACT1_Proc was invoked");
+	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, &XtTI1_Proc, NULL);
 	XtAppMainLoop(app_ctext);
 	LKROF(pid2, AVSXTTIMEOUT-2);
+	tet_infoline("TEST: Translation occurs");
 	status = avs_get_event(1);
-	check_dec(1, status, "XtACT1_Proc invoked status");
+	check_dec(1, status, "XtACT1_Proc invocation count");
 	tet_result(TET_PASS);
 >>ASSERTION Good A
-A successful call to 
-void XtOverrideTranslations(w, translations)
-shall merge the compiled translation table specified by
-.A translations
-into the existing translations for the widget
-.A w,
-ignoring any #augment directives
-that were specified in the translation string.
+A call to 
+void XtAugmentTranslations(w, translations)
+shall nondestructively merge new translations into the widget w's existing
+translations ignoring any #augment directive that may
+have been specified in the translation string.
 >>CODE
 pid_t pid2;
 int status;
@@ -192,32 +224,29 @@ static XtActionsRec actions2[] = {
 };
 
 	FORK(pid2);
-	avs_xt_hier("Tovertrsl2", "XtOverrideTranslations");
+	avs_xt_hier("Taugtrtns2", "XtAugmentTranslations");
 	tet_infoline("PREP: Add action table");
 	XtAppAddActions(app_ctext, actions2, 1);
 	tet_infoline("PREP: Parse translation table");
 	translations = XtParseTranslationTable(trans_good2);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	tet_infoline("PREP: Add new translations into boxw1 widget");
-	XtOverrideTranslations(boxw1, translations);
-	tet_infoline("PREP: Send ButtonPress event over wire");
+	tet_infoline("TEST: Add new translations into boxw1 widget");
+	XtAugmentTranslations(boxw1, translations);
+	tet_infoline("TEST: Send ButtonPress event over wire to boxw1");
 	send_event(boxw1, ButtonPress, ButtonPressMask, TRUE);
-	tet_infoline("TEST: Procedure XtACT2_Proc was invoked");
+	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, &XtTI2_Proc, NULL);
+	tet_infoline("TEST: Translation occurs");
 	XtAppMainLoop(app_ctext);
 	LKROF(pid2, AVSXTTIMEOUT-2);
 	status = avs_get_event(1);
-	check_dec(1, status, "XtACT2_Proc invoked status");
+	check_dec(1, status, "XtACT2_Proc invocations count");
 	tet_result(TET_PASS);
 >>ASSERTION Good A
-A successful call to 
-void XtOverrideTranslations(w, translations)
-shall merge the compiled translation table specified by
-.A translations
-into the existing translations for the widget
-.A w,
-ignoring any #override directives
-that were specified in the translation string.
+A call to void XtAugmentTranslations(w, translations)
+shall nondestructively merge new translations into the widget w's existing
+translations ignoring any #override directive that may
+have been specified in the translation string.
 >>CODE
 pid_t pid2;
 int status;
@@ -229,7 +258,7 @@ static XtActionsRec actions3[] = {
 };
 
 	FORK(pid2);
-	avs_xt_hier("Tovertrsl3", "XtOverrideTranslations");
+	avs_xt_hier("Taugtrtns3", "XtAugmentTranslations");
 	tet_infoline("PREP: Add action table");
 	XtAppAddActions(app_ctext, actions3, 1);
 	tet_infoline("PREP: Parse translation table");
@@ -237,47 +266,56 @@ static XtActionsRec actions3[] = {
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
 	tet_infoline("PREP: Add new translations into boxw1 widget");
-	XtOverrideTranslations(boxw1, translations);
-	tet_infoline("PREP: Send ButtonPress event over wire");
+	XtAugmentTranslations(boxw1, translations);
+	tet_infoline("PREP: Send ButtonPress event over wire to boxw1");
 	send_event(boxw1, ButtonPress, ButtonPressMask, TRUE);
-	tet_infoline("TEST: Procedure XtACT3_Proc was invoked");
+	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, &XtTI3_Proc, NULL);
+	tet_infoline("TEST: Translation occurs");
 	XtAppMainLoop(app_ctext);
 	LKROF(pid2, AVSXTTIMEOUT-2);
 	status = avs_get_event(1);
 	check_dec(1, status, "XtACT3_Proc invoked status");
 	tet_result(TET_PASS);
 >>ASSERTION Good A
-On a successful call to 
-void XtOverrideTranslations(w, translations)
+A successful call to 
+void XtAugmentTranslations(w, translations)
 when 
 .A translations
 specifies an event or an event sequence that already exists in the
-specified widget's translations the new translation shall override
-the widget's translation.
+specified widget's translations shall ignore the new translation.
 >>CODE
-pid_t pid2;
-int status;
 XtTranslations translations;
 static char trans_good4[] = "<BtnDown>:	XtACT4_Proc()";
 static XtActionsRec actions4[] = {
 	 {"XtACT4_Proc", (XtActionProc)XtACT4_Proc},
+	 {"XtACT4a_Proc", (XtActionProc)XtACT4a_Proc},
 };
+static char trans_good4a[] = "<BtnDown>:	XtACT4a_Proc()";
+pid_t pid2;
+int status;
 
 	FORK(pid2);
-	avs_xt_hier("Tovertrsl4", "XtOverrideTranslations");
+	avs_xt_hier("Taugtrtns4", "XtAugmentTranslations");
 	tet_infoline("PREP: Add action table");
-	XtAppAddActions(app_ctext, actions4, 1);
+	XtAppAddActions(app_ctext, actions4, 2);
 	tet_infoline("PREP: Parse translation table");
 	translations = XtParseTranslationTable(trans_good4);
+	tet_infoline("PREP: Add new translations to widget");
+	XtAugmentTranslations(boxw1, translations);
+	tet_infoline("PREP: Parse translation table with refinition");
+	translations = XtParseTranslationTable(trans_good4a);
+	tet_infoline("PREP: Add new translations to widget");
+	XtAugmentTranslations(boxw1, translations);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	tet_infoline("PREP: Add new translations to rowcolw widget");
-	XtOverrideTranslations(rowcolw, translations);
-	tet_infoline("PREP: Send ButtonPress event over wire");
-	send_event(rowcolw, ButtonPress, ButtonPressMask, TRUE);
-	tet_infoline("TEST: Check procedure XtACT4_Proc was invoked");
+	tet_infoline("PREP: Send ButtonPress event over wire to test_widget");
+	send_event(boxw1, ButtonPress, ButtonPressMask, TRUE);
+	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, &XtTI4_Proc, NULL);
+	tet_infoline("TEST: Only original translation occurs");
 	XtAppMainLoop(app_ctext);
 	LKROF(pid2, AVSXTTIMEOUT-2);
 	status = avs_get_event(1);
-	check_dec(1, status, "XtACT4_Proc invoked status");
+	check_dec(1, status, "original translation count");
+	status = avs_get_event(2);
+	check_dec(0, status, "redefinition of translation count");
 	tet_result(TET_PASS);

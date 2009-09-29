@@ -25,20 +25,20 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt12/XtSetMultiClickTime/XtSetMultiClickTime.m
+>># File: xts/Xt12/XtRemoveActionHook.m
 >># 
 >># Description:
->>#	Tests for XtSetMultiClickTime()
+>>#	Tests for XtRemoveActionHook()
 >># 
 >># Modifications:
->># $Log: tstmclktm.m,v $
+>># $Log: trmvachok.m,v $
 >># Revision 1.1  2005-02-12 14:37:56  anderson
 >># Initial revision
 >>#
 >># Revision 8.0  1998/12/23 23:37:55  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 23:00:54  mar
+>># Revision 7.0  1998/10/30 23:00:53  mar
 >># Branch point for Release 5.0.2b1
 >>#
 >># Revision 6.0  1998/03/02 05:28:58  tbr
@@ -47,10 +47,10 @@ All Rights Reserved.
 >># Revision 5.0  1998/01/26 03:25:32  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:20:56  tbr
+>># Revision 4.0  1995/12/15 09:20:55  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  02:16:32  andy
+>># Revision 3.1  1995/12/15  02:16:31  andy
 >># Prepare for GA Release
 >>#
 >>EXTERN
@@ -61,37 +61,75 @@ All Rights Reserved.
 XtAppContext app_ctext;
 Widget topLevel, panedw, boxw1, boxw2;
 Widget labelw, rowcolw, click_quit;
->>TITLE XtSetMultiClickTime Xt12
+
+void AvsWidAction(w, event, params, num_params)
+Widget w;
+XEvent *event;
+String *params;
+Cardinal *num_params;
+{
+	avs_set_event(2,1);
+}
+#define AVS_WID_ACTION "AvsWidAction"
+XtActionsRec actions[] = {
+	{AVS_WID_ACTION, AvsWidAction},
+};
+void XtAHP_Proc(widget, client_data,
+	action_name, event, params, num_params)
+Widget widget;
+XtPointer client_data;
+String action_name;
+XEvent *event;
+String *params;
+Cardinal *num_params;
+{
+	avs_set_event(1, 1); 
+}
+>>SET tpstartup avs_alloc_sem
+>>SET tpcleanup avs_free_sem
+>>TITLE XtRemoveActionHook Xt12
 void
-XtSetMultiClickTime(display_good, time)
+XtRemoveActionHook(id)
 >>ASSERTION Good A
 A successful call to 
-void XtSetMultiClickTime(display, time) 
-shall set 
-.A time
-as the time interval in milliseconds that will be the
-maximum permissible time between two consecutive sets of one or
-more identical events to be interpreted as repeated events in 
-order for the translation actions to be taken for the display
-.A display.
+void XtRemoveActionHook(id) 
+shall remove the action hook procedure specified by 
+.A id
+from the list of action hook procedures for the application 
+context in which it was registered by a prior call to
+XtAppAddActionHook.
 >>CODE
-int click_time;
-Display *display_good;
+XEvent event;
+XtActionHookId id;
+int invoked = 0;
 pid_t pid2;
 
 	FORK(pid2);
-	avs_xt_hier("Tstmclktm1", "XtSetMultiClickTime");
+	avs_xt_hier("Trmvachok1", "XtRemoveActionHook");
+	tet_infoline("PREP: Register action table with resource manager");
+	XtAppAddActions(app_ctext, actions, XtNumber(actions) );
+	tet_infoline("PREP: Add an action hook procedure XtAHP_Proc");
+	id = (XtActionHookId) XtAppAddActionHook(app_ctext,
+			 XtAHP_Proc, (XtPointer)NULL);
+	tet_infoline("PREP: Remove procedure XtAHP_Proc");
+	XtRemoveActionHook(id);
+	tet_infoline("PREP: Invoke action procedure");
+	XtCallActionProc(topLevel, AVS_WID_ACTION, &event, NULL, 0);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	tet_infoline("PREP: Set the multiclick time to 400 milliseconds.");
-	display_good = XtDisplay(topLevel);
-	XtSetMultiClickTime(display_good, 400);
-	tet_infoline("TEST: Multiclick time is 400 milliseconds.");
-	click_time = XtGetMultiClickTime(display_good);
-	if (click_time != 400) {
-		sprintf(ebuf, "ERROR: Expected click time 400 Received %d", click_time);
+	LKROF(pid2, AVSXTTIMEOUT-2);
+	tet_infoline("TEST: Procedure XtAHP_Proc was not invoked");
+	invoked = avs_get_event(1);
+	if (invoked) {
+		sprintf(ebuf, "ERROR: Deleted procedure XtAHP_Proc was invoked");
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 	}
-	LKROF(pid2, AVSXTTIMEOUT-2);
+	tet_infoline("TEST: Action Procedure was invoked");
+	invoked = avs_get_event(2);
+	if ( !invoked ) {
+		sprintf(ebuf, "ERROR: Action procedure not invoked");
+		tet_infoline(ebuf);
+		tet_result(TET_FAIL);
+	}
 	tet_result(TET_PASS);

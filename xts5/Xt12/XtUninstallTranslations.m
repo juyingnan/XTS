@@ -25,14 +25,14 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt12/XtParseAcceleratorTable/XtParseAcceleratorTable.m
+>># File: xts/Xt12/XtUninstallTranslations.m
 >># 
 >># Description:
->>#	Tests for XtParseAcceleratorTable()
+>>#	Tests for XtUninstallTranslations()
 >># 
 >># Modifications:
->># $Log: tprsactbl.m,v $
->># Revision 1.1  2005-02-12 14:37:56  anderson
+>># $Log: tuntrnsls.m,v $
+>># Revision 1.1  2005-02-12 14:37:57  anderson
 >># Initial revision
 >>#
 >># Revision 8.0  1998/12/23 23:37:58  mar
@@ -44,13 +44,13 @@ All Rights Reserved.
 >># Revision 6.0  1998/03/02 05:29:01  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:25:35  tbr
+>># Revision 5.0  1998/01/26 03:25:34  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:21:04  tbr
+>># Revision 4.0  1995/12/15 09:21:02  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  02:16:42  andy
+>># Revision 3.1  1995/12/15  02:16:41  andy
 >># Prepare for GA Release
 >>#
 >>EXTERN
@@ -62,65 +62,61 @@ XtAppContext app_ctext;
 Widget topLevel, panedw, boxw1, boxw2;
 Widget labelw, rowcolw, click_quit;
 
-extern char *event_names[];
-
-/*
-** Procedure XtACT_Proc
-*/
 void XtACT_Proc(w, event, params, num_params)
 Widget w;
 XEvent *event;
 String *params;
 Cardinal *num_params;
 {
-	if ( event->type == ButtonPress )
-		avs_set_event(1,1);
-	else {
-		sprintf(ebuf, "ERROR: Expected ButtonPress event Received %s", event_names[event->type]);
-		tet_infoline(ebuf);
-		tet_result(TET_FAIL);
-	}
+	sprintf(ebuf, "ERROR: Translation <BtnDown> deleted, XtACT_Proc shall not be invoked");
+	tet_infoline(ebuf);
+	tet_result(TET_FAIL);
 	exit(0);
 }
->>SET tpstartup avs_alloc_sem
->>SET tpcleanup avs_free_sem
->>TITLE XtParseAcceleratorTable Xt12
-XtAccelarators
-XtParseAcceleratorTable(source)
+
+
+
+/* procedure XtTMO_Proc to be invoked */
+void XtTMO_Proc(client_data, id)
+XtPointer client_data;
+XtIntervalId *id;
+{
+	exit(0);
+}
+>>TITLE XtUninstallTranslations Xt12
+void
+XtUninstallTranslations(w)
 >>ASSERTION Good A
-A successful call to 
-XtAccelerators XtParseAcceleratorTable(source)
-shall compile the accelerator table specified by the string
-.A source
-into a representation of type XtAccelarators and return a pointer
-to it.
+A call to
+void XtUninstallTranslations(w) 
+shall cause the entire translation table for the widget
+.A w
+to be removed.
 >>CODE
-pid_t pid2;
-int invoked = 0;
-XtAccelerators accelerator;
-static char accel_good[] = "#override \n\
-	<ButtonPress>:	XtACT_Proc()";
+XtTranslations translations;
+static char trans_good[] = "<BtnDown>:	XtACT_Proc()";
 static XtActionsRec actions[] = {
-	 {"XtACT_Proc",	(XtActionProc)XtACT_Proc},
+	 {"XtACT_Proc", (XtActionProc) XtACT_Proc},
 };
+pid_t pid2;
 
 	FORK(pid2);
-	avs_xt_hier("Tprsactbl1", "XtParseAcceleratorTable");
-	tet_infoline("PREP: Register action table.");
+	avs_xt_hier("Tuntrnsls1", "XtUninstallTranslations");
+	tet_infoline("PREP: Add action table");
 	XtAppAddActions(app_ctext, actions, 1);
-	tet_infoline("PREP: Parse accelerator table.");
-	accelerator = XtParseAcceleratorTable(accel_good);
-	tet_infoline("PREP: Set accelerator table");
-	XtVaSetValues(rowcolw, XtNaccelerators, accelerator, NULL);
-	tet_infoline("PREP: Install accelerator destination = boxw1 source = rowcolw");
-	XtInstallAccelerators(boxw1, rowcolw);
+	tet_infoline("PREP: Parse translation table.");
+	translations = XtParseTranslationTable(trans_good);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
-	tet_infoline("PREP: Send ButtonPress event over wire to boxw1 widget");
+	tet_infoline("PREP: Add new translations into boxw1 widget.");
+	XtAugmentTranslations(boxw1, translations);
+	tet_infoline("PREP: Uninstall traslations");
+	XtUninstallTranslations(boxw1);
+	tet_infoline("PREP: Send ButtonPress event over wire");
 	send_event(boxw1, ButtonPress, ButtonPressMask, TRUE);
+	tet_infoline("PREP: Register timeout procedure");
+	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTMO_Proc, topLevel);
+	tet_infoline("TEST: Action procedure not invoked");
 	XtAppMainLoop(app_ctext);
 	LKROF(pid2, AVSXTTIMEOUT-2);
-	tet_infoline("TEST: Procedure XtACT_Proc of rowcolw was invoked");
-	invoked = avs_get_event(1);
-	check_dec(1, invoked, "XtACT_Proc invoked status");
 	tet_result(TET_PASS);

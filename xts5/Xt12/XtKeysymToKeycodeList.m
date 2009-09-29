@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt12/XtKeysymToKeycodeList/XtKeysymToKeycodeList.m
+>># File: xts/Xt12/XtKeysymToKeycodeList.m
 >># 
 >># Description:
 >>#	Tests for XtKeysymToKeycodeList()

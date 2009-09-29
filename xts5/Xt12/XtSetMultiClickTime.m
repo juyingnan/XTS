@@ -25,32 +25,32 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt12/XtParseTranslationTable/XtParseTranslationTable.m
+>># File: xts/Xt12/XtSetMultiClickTime.m
 >># 
 >># Description:
->>#	Tests for XtParseTranslationTable()
+>>#	Tests for XtSetMultiClickTime()
 >># 
 >># Modifications:
->># $Log: tprsttbl.m,v $
+>># $Log: tstmclktm.m,v $
 >># Revision 1.1  2005-02-12 14:37:56  anderson
 >># Initial revision
 >>#
->># Revision 8.0  1998/12/23 23:37:56  mar
+>># Revision 8.0  1998/12/23 23:37:55  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 23:00:55  mar
+>># Revision 7.0  1998/10/30 23:00:54  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:28:59  tbr
+>># Revision 6.0  1998/03/02 05:28:58  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:25:33  tbr
+>># Revision 5.0  1998/01/26 03:25:32  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:20:58  tbr
+>># Revision 4.0  1995/12/15 09:20:56  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  02:16:36  andy
+>># Revision 3.1  1995/12/15  02:16:32  andy
 >># Prepare for GA Release
 >>#
 >>EXTERN
@@ -61,60 +61,37 @@ All Rights Reserved.
 XtAppContext app_ctext;
 Widget topLevel, panedw, boxw1, boxw2;
 Widget labelw, rowcolw, click_quit;
+>>TITLE XtSetMultiClickTime Xt12
+void
+XtSetMultiClickTime(display_good, time)
+>>ASSERTION Good A
+A successful call to 
+void XtSetMultiClickTime(display, time) 
+shall set 
+.A time
+as the time interval in milliseconds that will be the
+maximum permissible time between two consecutive sets of one or
+more identical events to be interpreted as repeated events in 
+order for the translation actions to be taken for the display
+.A display.
+>>CODE
+int click_time;
+Display *display_good;
+pid_t pid2;
 
-extern char *event_names[];
-
-XtActionProc XtACT_Proc(w, event, params, num_params)
-Widget w;
-XEvent *event;
-String *params;
-Cardinal *num_params;
-{
-	if (event->type == ButtonPress)
-		avs_set_event(1,1);
-	else {
-		sprintf(ebuf, "ERROR: Expected ButtonPress event Received %s", event_names[event->type]);
+	FORK(pid2);
+	avs_xt_hier("Tstmclktm1", "XtSetMultiClickTime");
+	tet_infoline("PREP: Create windows for widgets and map them");
+	XtRealizeWidget(topLevel);
+	tet_infoline("PREP: Set the multiclick time to 400 milliseconds.");
+	display_good = XtDisplay(topLevel);
+	XtSetMultiClickTime(display_good, 400);
+	tet_infoline("TEST: Multiclick time is 400 milliseconds.");
+	click_time = XtGetMultiClickTime(display_good);
+	if (click_time != 400) {
+		sprintf(ebuf, "ERROR: Expected click time 400 Received %d", click_time);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 	}
-	exit(0);
-}
->>SET tpstartup avs_alloc_sem
->>SET tpcleanup avs_free_sem
->>TITLE XtParseTranslationTable Xt12
-XtTranslations
-XtParseTranslationTable(table)
->>ASSERTION Good A
-A successful call to 
-XtTranslations XtParseTranslationTable(table)
-shall compile the translation table specified by the string
-.A table
-into a representation of type XtTranslations and return a pointer
-to it.
->>CODE
-pid_t pid2;
-int invoked = 0;
-XtTranslations translations;
-static char trans_good[] = "<BtnDown>:	XtACT_Proc()";
-static XtActionsRec actions[] = {
-	 {"XtACT_Proc", (XtActionProc)XtACT_Proc},
-};
-
-	FORK(pid2);
-	avs_xt_hier("Tprsttbl1", "XtParseTranslationTable");
-	tet_infoline("PREP: Add action table");
-	XtAppAddActions(app_ctext, actions, 1);
-	tet_infoline("PREP: Parse translation table.");
-	translations = XtParseTranslationTable(trans_good);
-	tet_infoline("PREP: Create windows for widgets and map them");
-	XtRealizeWidget(topLevel);
-	tet_infoline("PREP: Add new translations into boxw1 widget.");
-	XtAugmentTranslations(boxw1, translations);
-	tet_infoline("PREP: Send ButtonPress event over wire");
-	send_event(boxw1, ButtonPress, ButtonPressMask, TRUE);
-	XtAppMainLoop(app_ctext);
 	LKROF(pid2, AVSXTTIMEOUT-2);
-	tet_infoline("TEST: Procedure XtACT_Proc was invoked.");
-	invoked = avs_get_event(1);
-	check_dec(1, invoked, "XtACT_Proc invoked status");
 	tet_result(TET_PASS);

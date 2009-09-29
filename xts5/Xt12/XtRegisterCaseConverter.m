@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/Xt12/XtRegisterCaseConverter/XtRegisterCaseConverter.m
+>># File: xts/Xt12/XtRegisterCaseConverter.m
 >># 
 >># Description:
 >>#	Tests for XtRegisterCaseConverter()
