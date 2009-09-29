@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/XtE/StringDefs.h/StringDefs.h.m
+>># File: xts/XtE/StringDefs.h.m
 >># 
 >># Description:
 >>#	Tests for StringDefs.h contents
