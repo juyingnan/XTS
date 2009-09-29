@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib4/XSetWindowBackgroundPixmap/XSetWindowBackgroundPixmap.m
+>># File: xts5/Xlib4/XSetWindowBackgroundPixmap.m
 >># 
 >># Description:
 >># 	Tests for XSetWindowBackgroundPixmap()

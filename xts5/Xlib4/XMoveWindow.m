@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib4/XMoveWindow/XMoveWindow.m
+>># File: xts5/Xlib4/XMoveWindow.m
 >># 
 >># Description:
 >># 	Tests for XMoveWindow()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib4/XUnmapWindow/XUnmapWindow.m
+>># File: xts5/Xlib4/XUnmapWindow.m
 >># 
 >># Description:
 >># 	Tests for XUnmapWindow()

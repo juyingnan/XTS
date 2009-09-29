@@ -16,25 +16,25 @@ tprogs = \
 	XCirculateSubwindowsUp/XCirculateSubwindowsUp \
 	XCreateSimpleWindow/XCreateSimpleWindow \
 	XCreateWindow/XCreateWindow \
-	XDefineCursor/XDefineCursor \
-	XDestroySubwindows/XDestroySubwindows \
-	XDestroyWindow/XDestroyWindow \
+	XDefineCursor \
+	XDestroySubwindows \
+	XDestroyWindow \
 	XLowerWindow/XLowerWindow \
 	XMapRaised/XMapRaised \
 	XMapSubwindows/XMapSubwindows \
 	XMapWindow/XMapWindow \
 	XMoveResizeWindow/XMoveResizeWindow \
-	XMoveWindow/XMoveWindow \
+	XMoveWindow \
 	XRestackWindows/XRestackWindows \
 	XRaiseWindow/XRaiseWindow \
 	XResizeWindow/XResizeWindow \
-	XSetWindowBackground/XSetWindowBackground \
-	XSetWindowBackgroundPixmap/XSetWindowBackgroundPixmap \
-	XSetWindowBorder/XSetWindowBorder \
+	XSetWindowBackground \
+	XSetWindowBackgroundPixmap \
+	XSetWindowBorder \
 	XSetWindowBorderPixmap/XSetWindowBorderPixmap \
 	XSetWindowBorderWidth/XSetWindowBorderWidth \
-	XSetWindowColormap/XSetWindowColormap \
-	XUndefineCursor/XUndefineCursor \
-	XUnmapSubwindows/XUnmapSubwindows \
-	XUnmapWindow/XUnmapWindow \
-	XVisualIDFromVisual/XVisualIDFromVisual
+	XSetWindowColormap \
+	XUndefineCursor \
+	XUnmapSubwindows \
+	XUnmapWindow \
+	XVisualIDFromVisual

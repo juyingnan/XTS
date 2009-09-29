@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib4/XDefineCursor/XDefineCursor.m
+>># File: xts5/Xlib4/XDefineCursor.m
 >># 
 >># Description:
 >># 	Tests for XDefineCursor()

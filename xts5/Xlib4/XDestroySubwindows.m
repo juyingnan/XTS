@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib4/XDestroySubwindows/XDestroySubwindows.m
+>># File: xts5/Xlib4/XDestroySubwindows.m
 >># 
 >># Description:
 >># 	Tests for XDestroySubwindows()

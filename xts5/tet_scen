@@ -2340,15 +2340,15 @@ XCreateWindow
 
 XDefineCursor
 	"VSW5TESTSUITE CASE XDefineCursor 6"
-	/Xlib4/XDefineCursor/XDefineCursor
+	/Xlib4/XDefineCursor
 
 XDestroySubwindows
 	"VSW5TESTSUITE CASE XDestroySubwindows 5"
-	/Xlib4/XDestroySubwindows/XDestroySubwindows
+	/Xlib4/XDestroySubwindows
 
 XDestroyWindow
 	"VSW5TESTSUITE CASE XDestroyWindow 6"
-	/Xlib4/XDestroyWindow/XDestroyWindow
+	/Xlib4/XDestroyWindow
 
 XLowerWindow
 	"VSW5TESTSUITE CASE XLowerWindow 4"
@@ -2372,7 +2372,7 @@ XMoveResizeWindow
 
 XMoveWindow
 	"VSW5TESTSUITE CASE XMoveWindow 8"
-	/Xlib4/XMoveWindow/XMoveWindow
+	/Xlib4/XMoveWindow
 
 XRestackWindows
 	"VSW5TESTSUITE CASE XRestackWindows 6"
@@ -2388,15 +2388,15 @@ XResizeWindow
 
 XSetWindowBackground
 	"VSW5TESTSUITE CASE XSetWindowBackground 4"
-	/Xlib4/XSetWindowBackground/XSetWindowBackground
+	/Xlib4/XSetWindowBackground
 
 XSetWindowBackgroundPixmap
 	"VSW5TESTSUITE CASE XSetWindowBackgroundPixmap 11"
-	/Xlib4/XSetWindowBackgroundPixmap/XSetWindowBackgroundPixmap
+	/Xlib4/XSetWindowBackgroundPixmap
 
 XSetWindowBorder
 	"VSW5TESTSUITE CASE XSetWindowBorder 5"
-	/Xlib4/XSetWindowBorder/XSetWindowBorder
+	/Xlib4/XSetWindowBorder
 
 XSetWindowBorderPixmap
 	"VSW5TESTSUITE CASE XSetWindowBorderPixmap 9"
@@ -2408,23 +2408,23 @@ XSetWindowBorderWidth
 
 XSetWindowColormap
 	"VSW5TESTSUITE CASE XSetWindowColormap 4"
-	/Xlib4/XSetWindowColormap/XSetWindowColormap
+	/Xlib4/XSetWindowColormap
 
 XUndefineCursor
 	"VSW5TESTSUITE CASE XUndefineCursor 3"
-	/Xlib4/XUndefineCursor/XUndefineCursor
+	/Xlib4/XUndefineCursor
 
 XUnmapSubwindows
 	"VSW5TESTSUITE CASE XUnmapSubwindows 5"
-	/Xlib4/XUnmapSubwindows/XUnmapSubwindows
+	/Xlib4/XUnmapSubwindows
 
 XUnmapWindow
 	"VSW5TESTSUITE CASE XUnmapWindow 6"
-	/Xlib4/XUnmapWindow/XUnmapWindow
+	/Xlib4/XUnmapWindow
 
 XVisualIDFromVisual
 	"VSW5TESTSUITE CASE XVisualIDFromVisual 1"
-	/Xlib4/XVisualIDFromVisual/XVisualIDFromVisual
+	/Xlib4/XVisualIDFromVisual
 
 
 # Discrete tests for Xlib Chapter 5-Window Information Functions

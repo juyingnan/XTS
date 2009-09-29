@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib4/XDestroyWindow/XDestroyWindow.m
+>># File: xts5/Xlib4/XDestroyWindow.m
 >># 
 >># Description:
 >># 	Tests for XDestroyWindow()
