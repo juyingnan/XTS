@@ -23,38 +23,38 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib5/XGetSelectionOwner/XGetSelectionOwner.m
+>># File: xts5/Xlib5/XGetAtomName.m
 >># 
 >># Description:
->># 	Tests for XGetSelectionOwner()
+>># 	Tests for XGetAtomName()
 >># 
 >># Modifications:
->># $Log: gtslctnown.m,v $
->># Revision 1.2  2005-11-03 08:43:39  jmichael
+>># $Log: gtatmnm.m,v $
+>># Revision 1.2  2005-11-03 08:43:38  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:27  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:26:45  mar
+>># Revision 8.0  1998/12/23 23:26:44  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:45:02  mar
+>># Revision 7.0  1998/10/30 22:45:01  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:18:59  tbr
+>># Revision 6.0  1998/03/02 05:18:58  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:15:30  tbr
+>># Revision 5.0  1998/01/26 03:15:29  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.1  1996/05/09 00:34:18  andy
+>># Revision 4.1  1996/05/09 00:34:17  andy
 >># Corrected Xatom include
 >>#
->># Revision 4.0  1995/12/15  08:48:36  tbr
+>># Revision 4.0  1995/12/15  08:48:32  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:47:20  andy
+>># Revision 3.1  1995/12/15  00:47:16  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -100,71 +100,64 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XGetSelectionOwner Xlib5
-Window
+>>TITLE XGetAtomName Xlib5
+char *
 
 Display *display = Dsp;
-Atom selection = XA_COPYRIGHT;
+Atom atom;
 >>EXTERN
 #include "X11/Xatom.h"
->>ASSERTION Good A
-A call to xname returns the window ID associated with the window that
-currently owns the specified
-.A selection .
->>STRATEGY
-Create a window with a selection.
-Call xname to obtain the window ID of the selection owner.
-Verify the window ID returned was that of the selection owner.
->>CODE
-Window owner, ret;
 
-/* Create a window with a selection. */
-	owner = defwin(display);
-	XSetSelectionOwner(display, selection, owner, CurrentTime);
-
-/* Call xname to obtain the window ID of the selection owner. */
-	ret = XCALL;
-
-/* Verify the window ID returned was that of the selection owner. */
-	if (ret != owner) {
-		FAIL;
-		report("%s did not return the window ID of the selection owner",
-			TestName);
-		trace("Expected window ID: %0x", owner);
-		trace("Returned window ID: %0x", ret);
-	} else
-		CHECK;
-
-	CHECKPASS(1);
+static struct xga_struct {
+	char *name;
+	Atom atom;
+} xga_list[] = {
+	 "PRIMARY", XA_PRIMARY, 
+	 "CUT_BUFFER0", XA_CUT_BUFFER0, 
+	 "RECTANGLE", XA_RECTANGLE,
+	 "COPYRIGHT", XA_COPYRIGHT,
+};
+static int xga_nlist = NELEM(xga_list);
 
 >>ASSERTION Good A
-When the
-.A selection
-is not owned by a window, then a call to xname returns
-.S None . 
+A call to xname returns the name, which can be freeed with XFree,
+associated with the specified
+.A atom .
 >>STRATEGY
-Ensure the selection has no owner.
-Call xname to obtain selection owner.
-Verify that xname returned None.
+For some predefined atoms:
+	Call xname to obtain the name associated with the atom.
+	Verify the strings returned were as expected.
 >>CODE
-Window ret;
+char *ret_str;
+int l;
 
-/* Ensure the selection has no owner. */
-	XSetSelectionOwner(display, selection, None, CurrentTime);
+/* For some predefined atoms: */
+	for(l=0; l<xga_nlist; l++) {
 
-/* Call xname to obtain selection owner. */
-	ret = XCALL;
+/* 	Call xname to obtain the name associated with the atom. */
+		atom = xga_list[l].atom;
+		trace("checking atom %d (%s)", atom, atomname(atom));
+		ret_str = XCALL;
 
-/* Verify that xname returned None. */
-	if(ret != None) {
-		FAIL;
-		report("%s returned %0x on a selection with no owner.",
-			TestName);
-		report("Expecting None.");
-	} else
-		CHECK;
+		if (ret_str == NULL) {
+			FAIL;
+			report("%s returned a null string with atom name %s",
+				TestName, xga_list[l].name);
+			continue;
+		} else
+			CHECK;
 
-	CHECKPASS(1);
+/* 	Verify the strings returned were as expected. */
+		if (strcmp(xga_list[l].name, ret_str) != 0 ) {
+			FAIL;
+			report("%s returned an unexpected string");
+			report("Expected: '%s'", xga_list[l].name);
+			report("Returned: '%s'", ret_str);
+		} else
+			CHECK;
+		XFree(ret_str);
+	}
 
+	CHECKPASS(2*xga_nlist);
 >>ASSERTION Bad A
 .ER BadAtom

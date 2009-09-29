@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib5/XTranslateCoordinates/XTranslateCoordinates.m
+>># File: xts5/Xlib5/XTranslateCoordinates.m
 >># 
 >># Description:
 >># 	Tests for XTranslateCoordinates()

@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib5/XQueryTree/XQueryTree.m
+>># File: xts5/Xlib5/XQueryTree.m
 >># 
 >># Description:
 >># 	Tests for XQueryTree()

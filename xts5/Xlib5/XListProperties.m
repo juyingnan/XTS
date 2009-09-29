@@ -23,38 +23,38 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib5/XGetAtomName/XGetAtomName.m
+>># File: xts5/Xlib5/XListProperties.m
 >># 
 >># Description:
->># 	Tests for XGetAtomName()
+>># 	Tests for XListProperties()
 >># 
 >># Modifications:
->># $Log: gtatmnm.m,v $
->># Revision 1.2  2005-11-03 08:43:38  jmichael
+>># $Log: lstprprts.m,v $
+>># Revision 1.2  2005-11-03 08:43:39  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
->># Revision 1.1.1.2  2005/04/15 14:05:27  anderson
+>># Revision 1.1.1.2  2005/04/15 14:05:28  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:26:44  mar
+>># Revision 8.0  1998/12/23 23:26:47  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:45:01  mar
+>># Revision 7.0  1998/10/30 22:45:05  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:18:58  tbr
+>># Revision 6.0  1998/03/02 05:19:01  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:15:29  tbr
+>># Revision 5.0  1998/01/26 03:15:32  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.1  1996/05/09 00:34:17  andy
+>># Revision 4.1  1996/05/09 00:34:22  andy
 >># Corrected Xatom include
 >>#
->># Revision 4.0  1995/12/15  08:48:32  tbr
+>># Revision 4.0  1995/12/15  08:48:43  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:47:16  andy
+>># Revision 3.1  1995/12/15  00:47:32  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -100,64 +100,151 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XGetAtomName Xlib5
-char *
+>>TITLE XListProperties Xlib5
+Atom *
 
 Display *display = Dsp;
-Atom atom;
+Window w = defwin(display);
+int *num_prop_return = &num_prop;
 >>EXTERN
 #include "X11/Xatom.h"
 
-static struct xga_struct {
-	char *name;
-	Atom atom;
-} xga_list[] = {
-	 "PRIMARY", XA_PRIMARY, 
-	 "CUT_BUFFER0", XA_CUT_BUFFER0, 
-	 "RECTANGLE", XA_RECTANGLE,
-	 "COPYRIGHT", XA_COPYRIGHT,
+static int num_prop;
+
+static Atom xlp_list[] = {
+          XA_PRIMARY,
+         XA_CUT_BUFFER0,
+         XA_RECTANGLE,
+         XA_COPYRIGHT,
 };
-static int xga_nlist = NELEM(xga_list);
+static int xlp_nlist = NELEM(xlp_list);
 
 >>ASSERTION Good A
-A call to xname returns the name, which can be freeed with XFree,
-associated with the specified
-.A atom .
+When the specified window
+.A w
+has properties defined, then a call to xname
+returns a pointer to an array of atom properties that are defined for 
+the specified window
+.A w 
+and can be freed with XFree,
+and returns the number of properties in the
+array in
+.A num_prop_return .
 >>STRATEGY
-For some predefined atoms:
-	Call xname to obtain the name associated with the atom.
-	Verify the strings returned were as expected.
+Create a window with properties.
+Call xname to obtain the property list for the window.
+Verify that the number of properties returned was as expected.
+Verify that the correct properties were returned.
+Verify the list may be XFree'd.
 >>CODE
-char *ret_str;
-int l;
+int loop,loop2;
+int found;
+char *data = "a tested property";
+Atom *ret;
 
-/* For some predefined atoms: */
-	for(l=0; l<xga_nlist; l++) {
+/* Create a window with properties. */
+	for(loop=0; loop<xlp_nlist; loop++)
+		XChangeProperty(display, w, xlp_list[loop], XA_STRING, 8,
+			PropModeReplace,(unsigned char *)data, strlen(data));
 
-/* 	Call xname to obtain the name associated with the atom. */
-		atom = xga_list[l].atom;
-		trace("checking atom %d (%s)", atom, atomname(atom));
-		ret_str = XCALL;
+/* Call xname to obtain the property list for the window. */
+	num_prop = -1;
+	ret = XCALL;
 
-		if (ret_str == NULL) {
-			FAIL;
-			report("%s returned a null string with atom name %s",
-				TestName, xga_list[l].name);
-			continue;
-		} else
-			CHECK;
+/* Verify that the number of properties returned was as expected. */
+	if (num_prop != xlp_nlist) {
+		FAIL;
+		report("%s returned an unexpected num_prop_return",
+			TestName);
+		trace("Expected value: %d", xlp_nlist);
+		trace("Returned value: %d", num_prop);
+	} else
+		CHECK;
 
-/* 	Verify the strings returned were as expected. */
-		if (strcmp(xga_list[l].name, ret_str) != 0 ) {
-			FAIL;
-			report("%s returned an unexpected string");
-			report("Expected: '%s'", xga_list[l].name);
-			report("Returned: '%s'", ret_str);
-		} else
-			CHECK;
-		XFree(ret_str);
+	if (ret == (Atom *)NULL) {
+		FAIL;
+		report("%s returned a NULL pointer.", TestName);
+		report("Expecting a pointer to a list of atoms.");
+		return;
+	} else
+		CHECK;
+		
+	
+	found = 0;
+
+/* Verify that the correct properties were returned. */
+	for (loop=0; loop<num_prop; loop++) {
+		for(loop2=0; loop2<xlp_nlist; loop2++) {
+			if( ret[loop] == xlp_list[loop2] ) {
+				found++;
+				break;
+			}
+		}
 	}
 
-	CHECKPASS(2*xga_nlist);
+#ifdef TESTING
+	found = 0;
+#endif
+
+	if (found != num_prop) {
+		FAIL;
+		report("%s returned unexpected properties", TestName);
+		trace("Expected properties");
+		for (loop=0; loop<xlp_nlist; loop++)
+			trace(" %s", atomname(xlp_list[loop]));
+		trace("Returned properties");
+		for (loop=0; loop<num_prop; loop++)
+			trace(" %s", atomname(ret[loop]));
+	} else
+		CHECK;
+
+/* Verify the list may be XFree'd. */
+	if (num_prop != 0)
+	{
+		XFree((char*)ret);
+		CHECK;
+	}
+
+	CHECKPASS(4);
+>>ASSERTION Good A
+When the specified window
+.A w
+has no properties defined, then a call to xname returns
+.S NULL ,
+and zero in
+.A num_prop_return .
+>>STRATEGY
+Create a window with no properties.
+Call xname to obtain the property list for the window.
+Verify that a NULL pointer was returned.
+Verify that num_prop_return was zero.
+>>CODE
+Atom *ret;
+
+/* Create a window with no properties. */
+/* Call xname to obtain the property list for the window. */
+	num_prop = -1;
+	ret = XCALL;
+
+/* Verify that a NULL pointer was returned. */
+	if (ret != (Atom *)NULL) {
+		FAIL;
+		report("%s returned an unexpected value", TestName);
+		trace("Expected value: NULL pointer");
+		trace("Returned value: non-NULL pointer");
+	} else
+		CHECK;
+
+/* Verify that num_prop_return was zero. */
+	if (num_prop != 0) {
+		FAIL;
+		report("%s returned an unexpected num_prop_return",
+			TestName);
+		trace("Expected value: 0");
+		trace("Returned value: %d", num_prop);
+	} else
+		CHECK;
+
+	CHECKPASS(2);
 >>ASSERTION Bad A
-.ER BadAtom
+.ER BadWindow

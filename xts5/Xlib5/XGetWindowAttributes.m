@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib5/XGetWindowAttributes/XGetWindowAttributes.m
+>># File: xts5/Xlib5/XGetWindowAttributes.m
 >># 
 >># Description:
 >># 	Tests for XGetWindowAttributes()

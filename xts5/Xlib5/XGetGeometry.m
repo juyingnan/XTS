@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib5/XGetGeometry/XGetGeometry.m
+>># File: xts5/Xlib5/XGetGeometry.m
 >># 
 >># Description:
 >># 	Tests for XGetGeometry()

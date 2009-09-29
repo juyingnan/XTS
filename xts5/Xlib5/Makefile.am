@@ -9,18 +9,18 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	XChangeProperty/XChangeProperty \
-	XConvertSelection/XConvertSelection \
-	XDeleteProperty/XDeleteProperty \
-	XGetAtomName/XGetAtomName \
-	XGetGeometry/XGetGeometry \
-	XGetSelectionOwner/XGetSelectionOwner \
-	XGetWindowAttributes/XGetWindowAttributes \
-	XGetWindowProperty/XGetWindowProperty \
-	XInternAtom/XInternAtom \
-	XListProperties/XListProperties \
-	XQueryPointer/XQueryPointer \
-	XQueryTree/XQueryTree \
-	XRotateWindowProperties/XRotateWindowProperties \
-	XSetSelectionOwner/XSetSelectionOwner \
-	XTranslateCoordinates/XTranslateCoordinates
+	XChangeProperty \
+	XConvertSelection \
+	XDeleteProperty \
+	XGetAtomName \
+	XGetGeometry \
+	XGetSelectionOwner \
+	XGetWindowAttributes \
+	XGetWindowProperty \
+	XInternAtom \
+	XListProperties \
+	XQueryPointer \
+	XQueryTree \
+	XRotateWindowProperties \
+	XSetSelectionOwner \
+	XTranslateCoordinates

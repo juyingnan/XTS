@@ -23,13 +23,13 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib5/XConvertSelection/XConvertSelection.m
+>># File: xts5/Xlib5/XDeleteProperty.m
 >># 
 >># Description:
->># 	Tests for XConvertSelection()
+>># 	Tests for XDeleteProperty()
 >># 
 >># Modifications:
->># $Log: cnvrtslctn.m,v $
+>># $Log: dltprprty.m,v $
 >># Revision 1.2  2005-11-03 08:43:38  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
@@ -39,22 +39,22 @@ All Rights Reserved.
 >># Revision 8.0  1998/12/23 23:26:43  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:45:00  mar
+>># Revision 7.0  1998/10/30 22:45:01  mar
 >># Branch point for Release 5.0.2b1
 >>#
 >># Revision 6.0  1998/03/02 05:18:57  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:15:28  tbr
+>># Revision 5.0  1998/01/26 03:15:29  tbr
 >># Branch point for Release 5.0.1b1
 >>#
 >># Revision 4.1  1996/05/09 00:34:16  andy
 >># Corrected Xatom include
 >>#
->># Revision 4.0  1995/12/15  08:48:30  tbr
+>># Revision 4.0  1995/12/15  08:48:31  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:47:11  andy
+>># Revision 3.1  1995/12/15  00:47:13  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -100,199 +100,142 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XConvertSelection Xlib5
+>>TITLE XDeleteProperty Xlib5
 void
 
 Display *display = Dsp;
-Atom selection = XA_COPYRIGHT;
-Atom target = XA_NOTICE;
-Atom property = XA_INTEGER;
-Window requestor = defwin(display);
-Time  thetime = CurrentTime;
+Window w = defwin(display);
+Atom property = XA_COPYRIGHT;
 >>EXTERN
 #include "X11/Xatom.h"
 >>ASSERTION Good A
 When the specified
-.A selection
-has an owner, then a call to xname generates a
-.S SelectionRequest 
-event to the selection owner, with
-.A selection ,
-.A target ,
-.A property ,
-.A requestor ,
-and
-.A time
-arguments passed unchanged as event structure members.
+.A property
+exists on the specified window
+.A w ,
+then
+a call to xname deletes the
+.A property
+and a
+.S PropertyNotify
+event is generated on the window
+.A w .
 >>STRATEGY
-Create a new client.
-Create a window with a selection which it owns on client2.
-Call xname to convert the selection.
-Verify that the correct SelectionNotify event was delivered to client2
-Verify no events were delivered to client1.
+Create a window with a property and  PropertyChangeMask events selected. 
+Call xname to delete the property.
+Verify that a good PropertyNotify event occurred.
+Verify that the window property was deleted.
 >>CODE
-Display *client1, *client2;
-Window owner;
-int num_ev;
+char *data="a tested property";
+int num = 0;
 XEvent ev;
 
-/* Create a new client. */
-	client1 = display;
-	client2 = opendisplay();
-	if (client2 == (Display *)NULL) {
-		delete("Could not create client2");
-		return;
-	} else
-		CHECK;
+/* Create a window with a property and  PropertyChangeMask events selected.  */
+	XChangeProperty(display, w, property, XA_STRING, 8,
+		PropModeReplace,(unsigned char *)data, strlen(data));
+	XSync(display, True);
+        XSelectInput(display, w, PropertyChangeMask);
 
-/* Create a window with a selection which it owns on client2. */
-	owner = defwin(client2);
-	XSetSelectionOwner(client2, selection, owner, CurrentTime);
-	XSync(client2, True);
-
-/* Call xname to convert the selection. */
+/* Call xname to delete the property. */
 	XCALL;
-	XSync(client1, False);
-	XSync(client2, False);
 
-/* Verify that the correct SelectionNotify event was delivered to client2 */
-	num_ev = getevent(client2, &ev);
-	if (num_ev != 1) {
+/* Verify that a good PropertyNotify event occurred. */
+
+	num = getevent(display, &ev);
+	if (num != 1) {
 		FAIL;
-		report("%s did not cause a single SelectionNotify event",
-			TestName);
-		trace("Received %d events", num_ev);
-		while (num_ev > 0) {
-			trace("Event %s", eventname(ev.type));
-			num_ev = getevent(client2, &ev);
-		}
+		report("%s caused %d events", num);
+		trace("Expecting a single PropertyNotify event");
 	} else {
 		XEvent good;
+		
+		good.type = PropertyNotify;
+		good.xproperty.type = PropertyNotify;
+		good.xproperty.display= display;
+		good.xproperty.serial = 0;
+		good.xproperty.send_event = False;
+		good.xproperty.window = w;
+		good.xproperty.atom = property;
+		good.xproperty.time = 0;
+		good.xproperty.state = PropertyDelete;
 
-		good.type = SelectionRequest;
-		good.xselectionrequest.type = SelectionRequest;
-		good.xselectionrequest.display = client2;
-		good.xselectionrequest.owner = owner;
-		good.xselectionrequest.requestor = requestor;
-		good.xselectionrequest.selection = selection;
-		good.xselectionrequest.target = target;
-		good.xselectionrequest.property = property; 
-		good.xselectionrequest.time	= -1;
+#ifdef TESTING
+	good.xproperty.atom--;
+#endif
 
 		if (checkevent(&good, &ev)) {
 			FAIL;
-			report("SelectionNotify event was incorrect");
 		} else
 			CHECK;
 	}
 
-/* Verify no events were delivered to client1. */
-	num_ev = getevent(client1, &ev);
-	if (num_ev != 0) {
+/* Verify that the window property was deleted. */
+	(void)XListProperties(display, w, &num);
+	if (num != 0) {
 		FAIL;
-		report("%s generated unexpected events on client1",
-			TestName);
-		trace("Expected 0 events");
-		trace("Received %d events", num_ev);
-		do {
-			trace("Event: %s", eventname(ev.type));
-		} while(getevent(client1, &ev));
+		report("%s did not delete a window property", TestName);
+		trace("Expected: 0 properties");
+		trace("Returned: %d propert%s", num, (num==1?"y":"ies"));
 	} else
 		CHECK;
 
-	CHECKPASS(3);
-
+	CHECKPASS(2);
 >>ASSERTION Good A
 When the specified
-.A selection
-has no owner, then a call to xname generates a
-.S SelectionNotify 
-event to the
-.A requestor 
-window with
-.A selection ,
-.A target 
-and
-.A time
-arguments passed unchanged as event structure members, and with
 .A property
-set to
-.S None . 
+does not exist on the specified window
+.A w ,
+then a call to xname deletes no property of the window
+.A w
+and no
+.S PropertyNotify
+event is generated.
 >>STRATEGY
-Call xname to convert the selection.
-Verify that the correct SelectionNotify event was delivered to display.
+Create a window with a property and PropertyChangeMask events selected. 
+Call xname to delete a non-existant property.
+Verify that no PropertyNotify events occurred.
+Verify that the window property was not deleted.
 >>CODE
-int num_ev;
+char *data="a tested property";
+int num = 0;
 XEvent ev;
 
-/* Call xname to convert the selection. */
+/* Create a window with a property and PropertyChangeMask events selected.  */
+	XChangeProperty(display, w, XA_NOTICE, XA_STRING, 8,
+		PropModeReplace,(unsigned char *)data, strlen(data));
+	XSync(display, True);
+        XSelectInput(display, w, PropertyChangeMask);
+
+/* Call xname to delete a non-existant property. */
+#ifdef TESTING
+	property = XA_NOTICE;
+#endif
 	XCALL;
-	XSync(display, False);
 
-/* Verify that the correct SelectionNotify event was delivered to display. */
-	num_ev = getevent(display, &ev);
-	if (num_ev != 1) {
+/* Verify that no PropertyNotify events occurred. */
+	if (getevent(display, &ev) != 0) {
 		FAIL;
-		report("%s did not cause a single SelectionNotify event",
-			TestName);
-		trace("Received %d events", num_ev);
-		while (num_ev > 0) {
-			trace("Event %s", eventname(ev.type));
-			num_ev = getevent(display, &ev);
-		}
-	} else {
-		XEvent good;
-
-		good.type = SelectionNotify;
-		good.xselection.type = SelectionNotify;
-		good.xselection.display = display;
-		good.xselection.requestor = requestor;
-		good.xselection.selection = selection;
-		good.xselection.target = target;
-		good.xselection.property = None; /* is passed with no owner */
-		good.xselection.time	= -1;
-
-		if (checkevent(&good, &ev)) {
-			FAIL;
-			report("SelectionNotify event was incorrect");
-		} else
-			CHECK;
-	}
-
-	CHECKPASS(1);
-
->>ASSERTION Good A
-The atoms
-.S PRIMARY
-and
-.S SECONDARY
-are predefined selection atoms.
->>STRATEGY
-Obtain the server representation for the PRIMARY and SECONDARY atoms.
-Verify that the atoms were defined.
->>CODE
-Atom primary, secondary;
-
-/* Obtain the server representation for the PRIMARY and SECONDARY atoms. */
-	primary = XInternAtom(display, "PRIMARY", True);
-	secondary = XInternAtom(display, "SECONDARY", True);
-
-/* Verify that the atoms were defined. */
-	if (primary == None) {
-		FAIL;
-		report("PRIMARY was not defined");
+		report("%s caused unexpected event(s)", TestName);
+		do {
+			trace("Event: %s", eventname(ev.type));
+		} while(getevent(display, &ev));
 	} else
 		CHECK;
 
-	if (secondary == None) {
+/* Verify that the window property was not deleted. */
+	(void)XListProperties(display, w, &num);
+	if (num != 1) {
 		FAIL;
-		report("SECONDARY was not defined");
+		report("%s unexpectedly changed the window properties",
+			TestName);
+		trace("Expected: 1 property");
+		trace("Returned: %d properties", num);
 	} else
 		CHECK;
 
 	CHECKPASS(2);
 
 >>ASSERTION Bad A
-.ER BadWindow
->>ASSERTION Bad A
 .ER BadAtom
+>>ASSERTION Bad A
+.ER BadWindow

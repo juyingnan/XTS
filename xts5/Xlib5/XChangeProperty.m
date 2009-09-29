@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib5/XChangeProperty/XChangeProperty.m
+>># File: xts5/Xlib5/XChangeProperty.m
 >># 
 >># Description:
 >># 	Tests for XChangeProperty()

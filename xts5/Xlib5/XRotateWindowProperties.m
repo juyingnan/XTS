@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib5/XRotateWindowProperties/XRotateWindowProperties.m
+>># File: xts5/Xlib5/XRotateWindowProperties.m
 >># 
 >># Description:
 >># 	Tests for XRotateWindowProperties()
