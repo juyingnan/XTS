@@ -786,135 +786,135 @@ XUninstallColormap
 
 ButtonPress
 	"VSW5TESTSUITE CASE ButtonPress 12"
-	/Xlib11/ButtonPress/ButtonPress
+	/Xlib11/ButtonPress
 
 ButtonRelease
 	"VSW5TESTSUITE CASE ButtonRelease 9"
-	/Xlib11/ButtonRelease/ButtonRelease
+	/Xlib11/ButtonRelease
 
 ClientMessage
 	"VSW5TESTSUITE CASE ClientMessage 1"
-	/Xlib11/ClientMessage/ClientMessage
+	/Xlib11/ClientMessage
 
 ColormapNotify
 	"VSW5TESTSUITE CASE ColormapNotify 2"
-	/Xlib11/ColormapNotify/ColormapNotify
+	/Xlib11/ColormapNotify
 
 ConfigureNotify
 	"VSW5TESTSUITE CASE ConfigureNotify 3"
-	/Xlib11/ConfigureNotify/ConfigureNotify
+	/Xlib11/ConfigureNotify
 
 ConfigureRequest
 	"VSW5TESTSUITE CASE ConfigureRequest 7"
-	/Xlib11/ConfigureRequest/ConfigureRequest
+	/Xlib11/ConfigureRequest
 
 CirculateNotify
 	"VSW5TESTSUITE CASE CirculateNotify 3"
-	/Xlib11/CirculateNotify/CirculateNotify
+	/Xlib11/CirculateNotify
 
 CirculateRequest
 	"VSW5TESTSUITE CASE CirculateRequest 2"
-	/Xlib11/CirculateRequest/CirculateRequest
+	/Xlib11/CirculateRequest
 
 CreateNotify
 	"VSW5TESTSUITE CASE CreateNotify 2"
-	/Xlib11/CreateNotify/CreateNotify
+	/Xlib11/CreateNotify
 
 DestroyNotify
 	"VSW5TESTSUITE CASE DestroyNotify 3"
-	/Xlib11/DestroyNotify/DestroyNotify
+	/Xlib11/DestroyNotify
 
 EnterNotify
 	"VSW5TESTSUITE CASE EnterNotify 13"
-	/Xlib11/EnterNotify/EnterNotify
+	/Xlib11/EnterNotify
 
 Expose
 	"VSW5TESTSUITE CASE Expose 7"
-	/Xlib11/Expose/Expose
+	/Xlib11/Expose
 
 FocusIn
 	"VSW5TESTSUITE CASE FocusIn 21"
-	/Xlib11/FocusIn/FocusIn
+	/Xlib11/FocusIn
 
 FocusOut
 	"VSW5TESTSUITE CASE FocusOut 19"
-	/Xlib11/FocusOut/FocusOut
+	/Xlib11/FocusOut
 
 GraphicsExpose
 	"VSW5TESTSUITE CASE GraphicsExpose 1"
-	/Xlib11/GraphicsExpose/GraphicsExpose
+	/Xlib11/GraphicsExpose
 
 GravityNotify
 	"VSW5TESTSUITE CASE GravityNotify 3"
-	/Xlib11/GravityNotify/GravityNotify
+	/Xlib11/GravityNotify
 
 KeymapNotify
 	"VSW5TESTSUITE CASE KeymapNotify 4"
-	/Xlib11/KeymapNotify/KeymapNotify
+	/Xlib11/KeymapNotify
 
 KeyPress
 	"VSW5TESTSUITE CASE KeyPress 9"
-	/Xlib11/KeyPress/KeyPress
+	/Xlib11/KeyPress
 
 KeyRelease
 	"VSW5TESTSUITE CASE KeyRelease 9"
-	/Xlib11/KeyRelease/KeyRelease
+	/Xlib11/KeyRelease
 
 LeaveNotify
 	"VSW5TESTSUITE CASE LeaveNotify 15"
-	/Xlib11/LeaveNotify/LeaveNotify
+	/Xlib11/LeaveNotify
 
 MapNotify
 	"VSW5TESTSUITE CASE MapNotify 4"
-	/Xlib11/MapNotify/MapNotify
+	/Xlib11/MapNotify
 
 MappingNotify
 	"VSW5TESTSUITE CASE MappingNotify 1"
-	/Xlib11/MappingNotify/MappingNotify
+	/Xlib11/MappingNotify
 
 MapRequest
 	"VSW5TESTSUITE CASE MapRequest 2"
-	/Xlib11/MapRequest/MapRequest
+	/Xlib11/MapRequest
 
 MotionNotify
 	"VSW5TESTSUITE CASE MotionNotify 19"
-	/Xlib11/MotionNotify/MotionNotify
+	/Xlib11/MotionNotify
 
 NoExpose
 	"VSW5TESTSUITE CASE NoExpose 1"
-	/Xlib11/NoExpose/NoExpose
+	/Xlib11/NoExpose
 
 PropertyNotify
 	"VSW5TESTSUITE CASE PropertyNotify 2"
-	/Xlib11/PropertyNotify/PropertyNotify
+	/Xlib11/PropertyNotify
 
 ReparentNotify
 	"VSW5TESTSUITE CASE ReparentNotify 4"
-	/Xlib11/ReparentNotify/ReparentNotify
+	/Xlib11/ReparentNotify
 
 ResizeRequest
 	"VSW5TESTSUITE CASE ResizeRequest 2"
-	/Xlib11/ResizeRequest/ResizeRequest
+	/Xlib11/ResizeRequest
 
 SelectionClear
 	"VSW5TESTSUITE CASE SelectionClear 1"
-	/Xlib11/SelectionClear/SelectionClear
+	/Xlib11/SelectionClear
 
 SelectionNotify
 	"VSW5TESTSUITE CASE SelectionNotify 1"
-	/Xlib11/SelectionNotify/SelectionNotify
+	/Xlib11/SelectionNotify
 
 SelectionRequest
 	"VSW5TESTSUITE CASE SelectionRequest 1"
-	/Xlib11/SelectionRequest/SelectionRequest
+	/Xlib11/SelectionRequest
 
 UnmapNotify
 	"VSW5TESTSUITE CASE UnmapNotify 3"
-	/Xlib11/UnmapNotify/UnmapNotify
+	/Xlib11/UnmapNotify
 
 VisibilityNotify
 	"VSW5TESTSUITE CASE VisibilityNotify 9"
-	/Xlib11/VisibilityNotify/VisibilityNotify
+	/Xlib11/VisibilityNotify
 
 
 # Discrete tests for Xlib Chapter 12-Event Handling Functions
