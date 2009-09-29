@@ -1032,131 +1032,131 @@ XWindowEvent
 
 XAllowEvents
 	"VSW5TESTSUITE CASE XAllowEvents 29"
-	/Xlib13/XAllowEvents/XAllowEvents
+	/Xlib13/XAllowEvents
 
 XAutoRepeatOff
 	"VSW5TESTSUITE CASE XAutoRepeatOff 1"
-	/Xlib13/XAutoRepeatOff/XAutoRepeatOff
+	/Xlib13/XAutoRepeatOff
 
 XAutoRepeatOn
 	"VSW5TESTSUITE CASE XAutoRepeatOn 1"
-	/Xlib13/XAutoRepeatOn/XAutoRepeatOn
+	/Xlib13/XAutoRepeatOn
 
 XBell
 	"VSW5TESTSUITE CASE XBell 3"
-	/Xlib13/XBell/XBell
+	/Xlib13/XBell
 
 XChangeActivePointerGrab
 	"VSW5TESTSUITE CASE XChangeActivePointerGrab 5"
-	/Xlib13/XChangeActivePointerGrab/XChangeActivePointerGrab
+	/Xlib13/XChangeActivePointerGrab
 
 XChangeKeyboardControl
 	"VSW5TESTSUITE CASE XChangeKeyboardControl 20"
-	/Xlib13/XChangeKeyboardControl/XChangeKeyboardControl
+	/Xlib13/XChangeKeyboardControl
 
 XChangeKeyboardMapping
 	"VSW5TESTSUITE CASE XChangeKeyboardMapping 7"
-	/Xlib13/XChangeKeyboardMapping/XChangeKeyboardMapping
+	/Xlib13/XChangeKeyboardMapping
 
 XChangePointerControl
 	"VSW5TESTSUITE CASE XChangePointerControl 11"
-	/Xlib13/XChangePointerControl/XChangePointerControl
+	/Xlib13/XChangePointerControl
 
 XDeleteModifiermapEntry
 	"VSW5TESTSUITE CASE XDeleteModifiermapEntry 1"
-	/Xlib13/XDeleteModifiermapEntry/XDeleteModifiermapEntry
+	/Xlib13/XDeleteModifiermapEntry
 
 XDisplayKeycodes
 	"VSW5TESTSUITE CASE XDisplayKeycodes 3"
-	/Xlib13/XDisplayKeycodes/XDisplayKeycodes
+	/Xlib13/XDisplayKeycodes
 
 XFreeModifiermap
 	"VSW5TESTSUITE CASE XFreeModifiermap 1"
-	/Xlib13/XFreeModifiermap/XFreeModifiermap
+	/Xlib13/XFreeModifiermap
 
 XGrabButton
 	"VSW5TESTSUITE CASE XGrabButton 39"
-	/Xlib13/XGrabButton/XGrabButton
+	/Xlib13/XGrabButton
 
 XGrabKey
 	"VSW5TESTSUITE CASE XGrabKey 16"
-	/Xlib13/XGrabKey/XGrabKey
+	/Xlib13/XGrabKey
 
 XGrabKeyboard
 	"VSW5TESTSUITE CASE XGrabKeyboard 25"
-	/Xlib13/XGrabKeyboard/XGrabKeyboard
+	/Xlib13/XGrabKeyboard
 
 XGrabPointer
 	"VSW5TESTSUITE CASE XGrabPointer 34"
-	/Xlib13/XGrabPointer/XGrabPointer
+	/Xlib13/XGrabPointer
 
 XGetInputFocus
 	"VSW5TESTSUITE CASE XGetInputFocus 1"
-	/Xlib13/XGetInputFocus/XGetInputFocus
+	/Xlib13/XGetInputFocus
 
 XGetKeyboardControl
 	"VSW5TESTSUITE CASE XGetKeyboardControl 1"
-	/Xlib13/XGetKeyboardControl/XGetKeyboardControl
+	/Xlib13/XGetKeyboardControl
 
 XGetKeyboardMapping
 	"VSW5TESTSUITE CASE XGetKeyboardMapping 6"
-	/Xlib13/XGetKeyboardMapping/XGetKeyboardMapping
+	/Xlib13/XGetKeyboardMapping
 
 XGetModifierMapping
 	"VSW5TESTSUITE CASE XGetModifierMapping 2"
-	/Xlib13/XGetModifierMapping/XGetModifierMapping
+	/Xlib13/XGetModifierMapping
 
 XGetPointerControl
 	"VSW5TESTSUITE CASE XGetPointerControl 1"
-	/Xlib13/XGetPointerControl/XGetPointerControl
+	/Xlib13/XGetPointerControl
 
 XGetPointerMapping
 	"VSW5TESTSUITE CASE XGetPointerMapping 3"
-	/Xlib13/XGetPointerMapping/XGetPointerMapping
+	/Xlib13/XGetPointerMapping
 
 XInsertModifiermapEntry
 	"VSW5TESTSUITE CASE XInsertModifiermapEntry 1"
-	/Xlib13/XInsertModifiermapEntry/XInsertModifiermapEntry
+	/Xlib13/XInsertModifiermapEntry
 
 XNewModifiermap
 	"VSW5TESTSUITE CASE XNewModifiermap 1"
-	/Xlib13/XNewModifiermap/XNewModifiermap
+	/Xlib13/XNewModifiermap
 
 XQueryKeymap
 	"VSW5TESTSUITE CASE XQueryKeymap 1"
-	/Xlib13/XQueryKeymap/XQueryKeymap
+	/Xlib13/XQueryKeymap
 
 XSetInputFocus
 	"VSW5TESTSUITE CASE XSetInputFocus 13"
-	/Xlib13/XSetInputFocus/XSetInputFocus
+	/Xlib13/XSetInputFocus
 
 XSetModifierMapping
 	"VSW5TESTSUITE CASE XSetModifierMapping 8"
-	/Xlib13/XSetModifierMapping/XSetModifierMapping
+	/Xlib13/XSetModifierMapping
 
 XSetPointerMapping
 	"VSW5TESTSUITE CASE XSetPointerMapping 7"
-	/Xlib13/XSetPointerMapping/XSetPointerMapping
+	/Xlib13/XSetPointerMapping
 
 XUngrabButton
 	"VSW5TESTSUITE CASE XUngrabButton 6"
-	/Xlib13/XUngrabButton/XUngrabButton
+	/Xlib13/XUngrabButton
 
 XUngrabKey
 	"VSW5TESTSUITE CASE XUngrabKey 7"
-	/Xlib13/XUngrabKey/XUngrabKey
+	/Xlib13/XUngrabKey
 
 XUngrabKeyboard
 	"VSW5TESTSUITE CASE XUngrabKeyboard 3"
-	/Xlib13/XUngrabKeyboard/XUngrabKeyboard
+	/Xlib13/XUngrabKeyboard
 
 XUngrabPointer
 	"VSW5TESTSUITE CASE XUngrabPointer 3"
-	/Xlib13/XUngrabPointer/XUngrabPointer
+	/Xlib13/XUngrabPointer
 
 XWarpPointer
 	"VSW5TESTSUITE CASE XWarpPointer 9"
-	/Xlib13/XWarpPointer/XWarpPointer
+	/Xlib13/XWarpPointer
 
 # Discrete tests for Xlib Chapter 14-Locales and Internationalized Text Functions
 
