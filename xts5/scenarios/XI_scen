@@ -55,74 +55,74 @@
 #
 
 	"VSW5TESTSUITE CASE XAllowDeviceEvents 22"
-	/XI/AllowDeviceEvents/AllowDeviceEvents
+	/XI/AllowDeviceEvents
 	"VSW5TESTSUITE CASE XChangeDeviceControl 10"
-	/XI/ChangeDeviceControl/ChangeDeviceControl
+	/XI/ChangeDeviceControl
 	"VSW5TESTSUITE CASE XChangeFeedbackControl 8"
-	/XI/ChangeFeedbackControl/ChangeFeedbackControl
+	/XI/ChangeFeedbackControl
 	"VSW5TESTSUITE CASE XChangeKeyboardDevice 10"
-	/XI/ChangeKeyboardDevice/ChangeKeyboardDevice
+	/XI/ChangeKeyboardDevice
 	"VSW5TESTSUITE CASE XChangeDeviceDontPropagateList 7"
-	/XI/XChangeDeviceDontPropagateList/XChangeDeviceDontPropagateList
+	/XI/XChangeDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XChangePointerDevice 10"
-	/XI/ChangePointerDevice/ChangePointerDevice
+	/XI/ChangePointerDevice
 	"VSW5TESTSUITE CASE XChangeDeviceKeyMapping 7"
-	/XI/ChangeDeviceKeyMapping/ChangeDeviceKeyMapping
+	/XI/ChangeDeviceKeyMapping
 	"VSW5TESTSUITE CASE XCloseDevice 7"
-	/XI/CloseDevice/CloseDevice
+	/XI/CloseDevice
 	"VSW5TESTSUITE CASE XDeviceBell 6"
-	/XI/DeviceBell/DeviceBell
+	/XI/DeviceBell
 	"VSW5TESTSUITE CASE XGetDeviceControl 4"
-	/XI/XGetDeviceControl/XGetDeviceControl
+	/XI/XGetDeviceControl
 	"VSW5TESTSUITE CASE XGetFeedbackControl 3"
-	/XI/GetFeedbackControl/GetFeedbackControl
+	/XI/GetFeedbackControl
 	"VSW5TESTSUITE CASE XGetDeviceFocus 2"
-	/XI/XGetDeviceFocus/XGetDeviceFocus
+	/XI/XGetDeviceFocus
 	"VSW5TESTSUITE CASE XGetDeviceDontPropagateList 2"
-	/XI/XGetDeviceDontPropagateList/XGetDeviceDontPropagateList
+	/XI/XGetDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XGetExtensionVersion 2"
-	/XI/GetExtensionVersion/GetExtensionVersion
+	/XI/GetExtensionVersion
 	"VSW5TESTSUITE CASE XGrabDevice 18"
-	/XI/GrabDevice/GrabDevice
+	/XI/GrabDevice
 	"VSW5TESTSUITE CASE XGrabDeviceButton 21"
-	/XI/GrabDeviceButton/GrabDeviceButton
+	/XI/GrabDeviceButton
 	"VSW5TESTSUITE CASE XGrabDeviceKey 21"
-	/XI/GrabDeviceKey/GrabDeviceKey
+	/XI/GrabDeviceKey
 	"VSW5TESTSUITE CASE XGetDeviceButtonMapping 5"
-	/XI/GetDeviceButtonMapping/GetDeviceButtonMapping
+	/XI/GetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XGetDeviceKeyMapping 10"
-	/XI/XGetDeviceKeyMapping/XGetDeviceKeyMapping
+	/XI/XGetDeviceKeyMapping
 	"VSW5TESTSUITE CASE XGetDeviceModifierMapping 4"
-	/XI/XGetDeviceModifierMapping/XGetDeviceModifierMapping
+	/XI/XGetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XGetDeviceMotionEvents 9"
-	/XI/GetDeviceMotionEvents/GetDeviceMotionEvents
+	/XI/GetDeviceMotionEvents
 	"VSW5TESTSUITE CASE XGetSelectedExtensionEvents 2"
-	/XI/XGetSelectedExtensionEvents/XGetSelectedExtensionEvents
+	/XI/XGetSelectedExtensionEvents
 	"VSW5TESTSUITE CASE XListInputDevices 2"
-	/XI/ListInputDevices/ListInputDevices
+	/XI/ListInputDevices
 	"VSW5TESTSUITE CASE Miscellaneous 6"
-	/XI/Miscellaneous/Miscellaneous
+	/XI/Miscellaneous
 	"VSW5TESTSUITE CASE XOpenDevice 4"
-	/XI/OpenDevice/OpenDevice
+	/XI/OpenDevice
 	"VSW5TESTSUITE CASE XQueryDeviceState 8"
-	/XI/XQueryDeviceState/XQueryDeviceState
+	/XI/XQueryDeviceState
 	"VSW5TESTSUITE CASE XSetDeviceValuators 6"
-	/XI/SetDeviceValuators/SetDeviceValuators
+	/XI/SetDeviceValuators
 	"VSW5TESTSUITE CASE XSetDeviceButtonMapping 8"
-	/XI/SetDeviceButtonMapping/SetDeviceButtonMapping
+	/XI/SetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XSetDeviceFocus 17"
-	/XI/XSetDeviceFocus/XSetDeviceFocus
+	/XI/XSetDeviceFocus
 	"VSW5TESTSUITE CASE XSetDeviceModifierMapping 9"
-	/XI/SetDeviceModifierMapping/SetDeviceModifierMapping
+	/XI/SetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XSetDeviceMode 6"
-	/XI/SetDeviceMode/SetDeviceMode
+	/XI/SetDeviceMode
 	"VSW5TESTSUITE CASE XSelectExtensionEvent 13"
-	/XI/XSelectExtensionEvent/XSelectExtensionEvent
+	/XI/XSelectExtensionEvent
 	"VSW5TESTSUITE CASE XSendExtensionEvent 20"
-	/XI/SendExtensionEvent/SendExtensionEvent
+	/XI/SendExtensionEvent
 	"VSW5TESTSUITE CASE XUngrabDevice 4"
-	/XI/XUngrabDevice/XUngrabDevice
+	/XI/XUngrabDevice
 	"VSW5TESTSUITE CASE XUngrabDeviceButton 11"
-	/XI/UngrabDeviceButton/UngrabDeviceButton
+	/XI/UngrabDeviceButton
 	"VSW5TESTSUITE CASE XUngrabDeviceKey 12"
-	/XI/UngrabDeviceKey/UngrabDeviceKey
+	/XI/UngrabDeviceKey

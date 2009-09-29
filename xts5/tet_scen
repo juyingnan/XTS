@@ -500,147 +500,147 @@ ShapeExt
 
 XAllowDeviceEvents
 	"VSW5TESTSUITE CASE XAllowDeviceEvents 22"
-	/XI/AllowDeviceEvents/AllowDeviceEvents
+	/XI/AllowDeviceEvents
 
 XChangeDeviceControl
 	"VSW5TESTSUITE CASE XChangeDeviceControl 10"
-	/XI/ChangeDeviceControl/ChangeDeviceControl
+	/XI/ChangeDeviceControl
 
 XChangeFeedbackControl
 	"VSW5TESTSUITE CASE XChangeFeedbackControl 8"
-	/XI/ChangeFeedbackControl/ChangeFeedbackControl
+	/XI/ChangeFeedbackControl
 
 XChangeKeyboardDevice
 	"VSW5TESTSUITE CASE XChangeKeyboardDevice 10"
-	/XI/ChangeKeyboardDevice/ChangeKeyboardDevice
+	/XI/ChangeKeyboardDevice
 
 XChangeDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XChangeDeviceDontPropagateList 7"
-	/XI/XChangeDeviceDontPropagateList/XChangeDeviceDontPropagateList
+	/XI/XChangeDeviceDontPropagateList
 
 XChangePointerDevice
 	"VSW5TESTSUITE CASE XChangePointerDevice 10"
-	/XI/ChangePointerDevice/ChangePointerDevice
+	/XI/ChangePointerDevice
 
 XChangeDeviceKeyMapping
 	"VSW5TESTSUITE CASE XChangeDeviceKeyMapping 7"
-	/XI/ChangeDeviceKeyMapping/ChangeDeviceKeyMapping
+	/XI/ChangeDeviceKeyMapping
 
 XCloseDevice
 	"VSW5TESTSUITE CASE XCloseDevice 7"
-	/XI/CloseDevice/CloseDevice
+	/XI/CloseDevice
 
 XDeviceBell
 	"VSW5TESTSUITE CASE XDeviceBell 6"
-	/XI/DeviceBell/DeviceBell
+	/XI/DeviceBell
 
 XGetDeviceControl
 	"VSW5TESTSUITE CASE XGetDeviceControl 4"
-	/XI/XGetDeviceControl/XGetDeviceControl
+	/XI/XGetDeviceControl
 
 XGetFeedbackControl
 	"VSW5TESTSUITE CASE XGetFeedbackControl 3"
-	/XI/GetFeedbackControl/GetFeedbackControl
+	/XI/GetFeedbackControl
 
 XGetDeviceFocus
 	"VSW5TESTSUITE CASE XGetDeviceFocus 2"
-	/XI/XGetDeviceFocus/XGetDeviceFocus
+	/XI/XGetDeviceFocus
 
 XGetDeviceDontPropagateList
 	"VSW5TESTSUITE CASE XGetDeviceDontPropagateList 2"
-	/XI/XGetDeviceDontPropagateList/XGetDeviceDontPropagateList
+	/XI/XGetDeviceDontPropagateList
 
 XGetExtensionVersion
 	"VSW5TESTSUITE CASE XGetExtensionVersion 2"
-	/XI/GetExtensionVersion/GetExtensionVersion
+	/XI/GetExtensionVersion
 
 XGrabDevice
 	"VSW5TESTSUITE CASE XGrabDevice 18"
-	/XI/GrabDevice/GrabDevice
+	/XI/GrabDevice
 
 XGrabDeviceButton
 	"VSW5TESTSUITE CASE XGrabDeviceButton 21"
-	/XI/GrabDeviceButton/GrabDeviceButton
+	/XI/GrabDeviceButton
 
 XGrabDeviceKey
 	"VSW5TESTSUITE CASE XGrabDeviceKey 21"
-	/XI/GrabDeviceKey/GrabDeviceKey
+	/XI/GrabDeviceKey
 
 XGetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XGetDeviceButtonMapping 5"
-	/XI/GetDeviceButtonMapping/GetDeviceButtonMapping
+	/XI/GetDeviceButtonMapping
 
 XGetDeviceKeyMapping
 	"VSW5TESTSUITE CASE XGetDeviceKeyMapping 10"
-	/XI/XGetDeviceKeyMapping/XGetDeviceKeyMapping
+	/XI/XGetDeviceKeyMapping
 
 XGetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XGetDeviceModifierMapping 4"
-	/XI/XGetDeviceModifierMapping/XGetDeviceModifierMapping
+	/XI/XGetDeviceModifierMapping
 
 XGetDeviceMotionEvents
 	"VSW5TESTSUITE CASE XGetDeviceMotionEvents 9"
-	/XI/GetDeviceMotionEvents/GetDeviceMotionEvents
+	/XI/GetDeviceMotionEvents
 
 XGetSelectedExtensionEvents
 	"VSW5TESTSUITE CASE XGetSelectedExtensionEvents 2"
-	/XI/XGetSelectedExtensionEvents/XGetSelectedExtensionEvents
+	/XI/XGetSelectedExtensionEvents
 
 XListInputDevices
 	"VSW5TESTSUITE CASE XListInputDevices 2"
-	/XI/ListInputDevices/ListInputDevices
+	/XI/ListInputDevices
 
 Miscellaneous
 	"VSW5TESTSUITE CASE Miscellaneous 6"
-	/XI/Miscellaneous/Miscellaneous
+	/XI/Miscellaneous
 
 XOpenDevice
 	"VSW5TESTSUITE CASE XOpenDevice 4"
-	/XI/OpenDevice/OpenDevice
+	/XI/OpenDevice
 
 XQueryDeviceState
 	"VSW5TESTSUITE CASE XQueryDeviceState 8"
-	/XI/XQueryDeviceState/XQueryDeviceState
+	/XI/XQueryDeviceState
 
 XSetDeviceValuators
 	"VSW5TESTSUITE CASE XSetDeviceValuators 6"
-	/XI/SetDeviceValuators/SetDeviceValuators
+	/XI/SetDeviceValuators
 
 XSetDeviceButtonMapping
 	"VSW5TESTSUITE CASE XSetDeviceButtonMapping 8"
-	/XI/SetDeviceButtonMapping/SetDeviceButtonMapping
+	/XI/SetDeviceButtonMapping
 
 XSetDeviceFocus
 	"VSW5TESTSUITE CASE XSetDeviceFocus 17"
-	/XI/XSetDeviceFocus/XSetDeviceFocus
+	/XI/XSetDeviceFocus
 
 XSetDeviceModifierMapping
 	"VSW5TESTSUITE CASE XSetDeviceModifierMapping 9"
-	/XI/SetDeviceModifierMapping/SetDeviceModifierMapping
+	/XI/SetDeviceModifierMapping
 
 XSetDeviceMode
 	"VSW5TESTSUITE CASE XSetDeviceMode 6"
-	/XI/SetDeviceMode/SetDeviceMode
+	/XI/SetDeviceMode
 
 XSelectExtensionEvent
 	"VSW5TESTSUITE CASE XSelectExtensionEvent 13"
-	/XI/XSelectExtensionEvent/XSelectExtensionEvent
+	/XI/XSelectExtensionEvent
 
 XSendExtensionEvent
 	"VSW5TESTSUITE CASE XSendExtensionEvent 20"
-	/XI/SendExtensionEvent/SendExtensionEvent
+	/XI/SendExtensionEvent
 
 XUngrabDevice
 	"VSW5TESTSUITE CASE XUngrabDevice 4"
-	/XI/XUngrabDevice/XUngrabDevice
+	/XI/XUngrabDevice
 
 XUngrabDeviceButton
 	"VSW5TESTSUITE CASE XUngrabDeviceButton 11"
-	/XI/UngrabDeviceButton/UngrabDeviceButton
+	/XI/UngrabDeviceButton
 
 XUngrabDeviceKey
 	"VSW5TESTSUITE CASE XUngrabDeviceKey 12"
-	/XI/UngrabDeviceKey/UngrabDeviceKey
+	/XI/UngrabDeviceKey
 
 # Discrete tests for Shape Extension Tests
 
