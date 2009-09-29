@@ -9,11 +9,11 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	XCreateFontCursor/XCreateFontCursor \
-	XCreateGlyphCursor/XCreateGlyphCursor \
-	XCreatePixmap/XCreatePixmap \
-	XCreatePixmapCursor/XCreatePixmapCursor \
-	XFreeCursor/XFreeCursor \
-	XFreePixmap/XFreePixmap \
-	XQueryBestCursor/XQueryBestCursor \
-	XRecolorCursor/XRecolorCursor
+	XCreateFontCursor \
+	XCreateGlyphCursor \
+	XCreatePixmap \
+	XCreatePixmapCursor \
+	XFreeCursor \
+	XFreePixmap \
+	XQueryBestCursor \
+	XRecolorCursor

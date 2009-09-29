@@ -23,35 +23,35 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib6/XFreeCursor/XFreeCursor.m
+>># File: xts5/Xlib6/XCreatePixmap.m
 >># 
 >># Description:
->># 	Tests for XFreeCursor()
+>># 	Tests for XCreatePixmap()
 >># 
 >># Modifications:
->># $Log: frcrsr.m,v $
+>># $Log: crtpxmp.m,v $
 >># Revision 1.2  2005-11-03 08:43:41  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:29  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:26:52  mar
+>># Revision 8.0  1998/12/23 23:26:50  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:45:11  mar
+>># Revision 7.0  1998/10/30 22:45:08  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:19:06  tbr
+>># Revision 6.0  1998/03/02 05:19:04  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:15:37  tbr
+>># Revision 5.0  1998/01/26 03:15:35  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 08:49:00  tbr
+>># Revision 4.0  1995/12/15 08:48:53  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:48:01  andy
+>># Revision 3.1  1995/12/15  00:47:49  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -97,116 +97,184 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XFreeCursor Xlib6
+>>TITLE XCreatePixmap Xlib6
 void
-XFreeCursor(display, cursor)
+XCreatePixmap(display, d, width, height, depth)
 Display *display = Dsp;
-Cursor cursor;
->>SET startup fontstartup
->>SET cleanup fontcleanup
->>ASSERTION Good B 1
-When another resource ID references the 
-.A cursor ,
-then a call to xname
-deletes the association between the
-.A cursor
-resource ID 
-and the specified cursor.
+Drawable d = DRW(display);
+unsigned int width = 13;
+unsigned int height = 17;
+unsigned int depth;
+>>ASSERTION Good A
+A call to xname creates a pixmap of width
+.A width ,
+height
+.A height ,
+and depth
+.A depth
+on the same screen as the drawable argument
+.A d ,
+and returns a pixmap ID.
 >>STRATEGY
-Create cursor and cursor2 as same cursors.
-Create window.
-Define cursor for window.
-Call XFreeCursor with cursor.
-Call XFreeCursor with cursor2.
+For each supported pixmap depth:
+  Create a pixmap of height 13, width 17.
+  Verify the depth, height and width with XGetGeometry.
 >>CODE
-Cursor cursor2;
-Window w;
-XVisualInfo *vp;
-unsigned int shape;
+XVisualInfo	*vp;
+Status 		gstat;
+Window		root_ret;
+int		x_ret, y_ret;
+unsigned int	w_ret, h_ret, bw_ret, bh_ret, dep_ret;
+Pixmap		pmap;
 
 
-	/* UNSUPPORTED is not allowed */
-	shape = config.fontcursor_good;
-	if (shape == -1) {
-		delete("A value of UNSUPPORTED is not allowed for XT_FONTCURSOR_GOOD");
-		return;
-	}
+	for(resetvinf(VI_PIX); nextvinf(&vp); ) {
+		depth = vp->depth;
+		d = DRW(display);
+		pmap = XCALL;
+		gstat = XGetGeometry(display, pmap, &root_ret, &x_ret, &y_ret, &w_ret, &h_ret, &bw_ret, &dep_ret);
 
-	for (resetvinf(VI_WIN); nextvinf(&vp); ) {
-/* Create cursor and cursor2 as same cursors. */
-		cursor = XCreateFontCursor(display, shape);
-		cursor2 = XCreateFontCursor(display, shape);
-
-/* Create window. */
-		w = makewin(display, vp);
-
-/* Define cursor for window. */
-		XDefineCursor(display, w, cursor);
-
-/* Call XFreeCursor with cursor. */
-		XCALL;
-		if (geterr() == Success)
+		if(gstat != True) {
+			delete("XGetGeometry did not return True for pixmap ID 0x%x",pmap);
+			return;
+		} else
 			CHECK;
-		else
+
+		if(w_ret != width) {
+			report("XGetGeometry returned width of %u instead of %u for pixmap of depth %u", w_ret, width, depth);
 			FAIL;
-
-/* Call XFreeCursor with cursor2. */
-		cursor = cursor2;
-		XCALL;
-
-		if (geterr() == Success)
+		} else 
 			CHECK;
-		else
+
+		if(h_ret != height) {
+			report("XGetGeometry returned height of %u instead of %u for pixmap of depth %u", h_ret, height, depth);
 			FAIL;
-	}
-	
-	CHECKUNTESTED(2*nvinf());
->>ASSERTION Good B 1
-When no other resource ID references the 
-.A cursor ,
-then a call to xname
-deletes the association between the
-.A cursor
-resource ID 
-and the specified cursor,
-and the cursor storage is freed.
+		} else 
+			CHECK;
+
+		if(dep_ret != depth) {
+			report("XGetGeometry returned depth of %u instead of depth %u", dep_ret, depth);
+			FAIL;
+		} else 
+			CHECK;
+
+ 	}
+
+	CHECKPASS(4 * nvinf());
+
+>>ASSERTION Good A
+When the drawable argument
+.A d
+is an
+.S InputOnly
+window, then no error occurs.
 >>STRATEGY
-Create cursor and cursor2 as same cursors.
-Call XFreeCursor with cursor.
-Call XFreeCursor with cursor2.
+For each supported pixmap depth:
+  Create an InputOnly window.
+  Call XCreatePixmap with the window as the drawable argument.
+  Verify that no error occurred.
 >>CODE
-Cursor cursor2;
-unsigned int shape;
+XVisualInfo	*vp;
 
-	/* UNSUPPORTED is not allowed */
-	shape = config.fontcursor_good;
-	if (shape == -1) {
-		delete("A value of UNSUPPORTED is not allowed for XT_FONTCURSOR_GOOD");
-		return;
+	for(resetvinf(VI_PIX); nextvinf(&vp); ) {
+		d = iponlywin(display);
+		depth = vp->depth;
+		XCALL;
+
+		if(geterr() != Success) {
+			report("XCreatePixmap() produced error %s with an InputOnly Window as the drawable",errorname(geterr()));
+			FAIL;
+		} else
+			CHECK;
 	}
 
-/* Create cursor and cursor2 as same cursors. */
-	cursor = XCreateFontCursor(display, shape);
-	cursor2 = XCreateFontCursor(display, shape);
+	CHECKPASS(nvinf());
 
-/* Call XFreeCursor with cursor. */
-	XCALL;
-	if (geterr() == Success)
-		CHECK;
-	else
-		FAIL;
-
-/* Call XFreeCursor with cursor2. */
-	cursor = cursor2;
-	XCALL;
-
-	if (geterr() == Success)
-		CHECK;
-	else
-		FAIL;
-	
-	CHECKUNTESTED(2);
 >>ASSERTION Bad A
-.ER BadCursor 
->># HISTORY kieron Completed    Check format and pass ac
->>#HISTORY peterc Completed Wrote STRATEGY and CODE
+When either the
+.A width
+argument or 
+.A height
+argument is zero, then a
+.S BadValue 
+error occurs.
+>>STRATEGY
+For each supported pixmap depth:
+  Create a pixmap with height = 17 and width = 0 with XCreatePixmap.
+  Verify that a BadValue error occurred.
+  Create a pixmap with height = 0 and width = 19 with XCreatePixmap.
+  Verify that a BadValue error occurred.
+>>CODE BadValue
+XVisualInfo	*vp;
+unsigned int	depth;
+
+	for(resetvinf(VI_PIX); nextvinf(&vp); ) {
+		depth = vp->depth;
+
+		d = DRW(display); 
+		height = 17;
+		width = 0;
+		XCALL;
+		if(geterr() != BadValue) {
+			report("When XCreatePixmap called with zero width");
+			report("Got %s, Expecting BadValue error", 
+							errorname(geterr()));
+			FAIL;
+		} else
+			CHECK;
+
+		width = 19;
+		height = 0;
+		XCALL;
+		if(geterr() != BadValue) {
+			report("When XCreatePixmap called with zero height");
+			report("Got %s, Expecting BadValue error", 
+							errorname(geterr()));
+			FAIL;
+		} else
+			CHECK;
+	}	
+
+	CHECKPASS(nvinf() * 2);
+
+>>ASSERTION Bad A
+When the depth
+.A depth
+is not supported by the screen of the drawable
+.A d,
+then a
+.S BadValue 
+error occurs.
+>>STRATEGY
+Call XCreatePixmap with depth argument set to the 
+	sum of all supported pixmap depths plus 1.
+Verify that a BadValue error occurred.
+>>CODE BadValue
+XVisualInfo	*vp;
+unsigned int	depth, nondepth;
+
+	nondepth = 1;
+	for(resetvinf(VI_PIX); nextvinf(&vp); )
+		nondepth += vp->depth;	
+
+	trace("Selected unsupported depth is %u", nondepth);
+	d = DRW(display);
+	depth = nondepth;
+	XCALL;
+	if(geterr() != BadValue) {
+		report("When XCreatePixmap called with unsupported depth %d",
+								depth);
+		report("Got %s, Expecting BadValue error", errorname(geterr()));
+		FAIL;
+	} else
+		CHECK;
+
+	CHECKPASS(1);
+
+>>ASSERTION Bad B 1
+.ER Alloc
+>>ASSERTION Bad A
+.ER Drawable
+>>#HISTORY	Cal	Completed	Written in new format and style.
+>>#HISTORY	Kieron	Action		<Have a look>
+>>#HISTORY	Cal	Action		Writing code.

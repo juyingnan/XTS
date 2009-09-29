@@ -2494,35 +2494,35 @@ XTranslateCoordinates
 
 XCreatePixmap
 	"VSW5TESTSUITE CASE XCreatePixmap 6"
-	/Xlib6/XCreatePixmap/XCreatePixmap
+	/Xlib6/XCreatePixmap
 
 XCreateFontCursor
 	"VSW5TESTSUITE CASE XCreateFontCursor 3"
-	/Xlib6/XCreateFontCursor/XCreateFontCursor
+	/Xlib6/XCreateFontCursor
 
 XCreateGlyphCursor
 	"VSW5TESTSUITE CASE XCreateGlyphCursor 17"
-	/Xlib6/XCreateGlyphCursor/XCreateGlyphCursor
+	/Xlib6/XCreateGlyphCursor
 
 XCreatePixmapCursor
 	"VSW5TESTSUITE CASE XCreatePixmapCursor 13"
-	/Xlib6/XCreatePixmapCursor/XCreatePixmapCursor
+	/Xlib6/XCreatePixmapCursor
 
 XFreeCursor
 	"VSW5TESTSUITE CASE XFreeCursor 3"
-	/Xlib6/XFreeCursor/XFreeCursor
+	/Xlib6/XFreeCursor
 
 XFreePixmap
 	"VSW5TESTSUITE CASE XFreePixmap 3"
-	/Xlib6/XFreePixmap/XFreePixmap
+	/Xlib6/XFreePixmap
 
 XQueryBestCursor
 	"VSW5TESTSUITE CASE XQueryBestCursor 2"
-	/Xlib6/XQueryBestCursor/XQueryBestCursor
+	/Xlib6/XQueryBestCursor
 
 XRecolorCursor
 	"VSW5TESTSUITE CASE XRecolorCursor 3"
-	/Xlib6/XRecolorCursor/XRecolorCursor
+	/Xlib6/XRecolorCursor
 
 
 # Discrete tests for Xlib Chapter 7-Color Management Functions

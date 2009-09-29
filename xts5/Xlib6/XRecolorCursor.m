@@ -23,35 +23,35 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib6/XCreateFontCursor/XCreateFontCursor.m
+>># File: xts5/Xlib6/XRecolorCursor.m
 >># 
 >># Description:
->># 	Tests for XCreateFontCursor()
+>># 	Tests for XRecolorCursor()
 >># 
 >># Modifications:
->># $Log: crtfntcrsr.m,v $
->># Revision 1.2  2005-11-03 08:43:40  jmichael
+>># $Log: rclrcrsr.m,v $
+>># Revision 1.2  2005-11-03 08:43:41  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:29  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:26:51  mar
+>># Revision 8.0  1998/12/23 23:26:54  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:45:09  mar
+>># Revision 7.0  1998/10/30 22:45:12  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:19:04  tbr
+>># Revision 6.0  1998/03/02 05:19:07  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:15:35  tbr
+>># Revision 5.0  1998/01/26 03:15:38  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 08:48:54  tbr
+>># Revision 4.0  1995/12/15 08:49:04  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:47:51  andy
+>># Revision 3.1  1995/12/15  00:48:08  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -97,87 +97,70 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XCreateFontCursor Xlib6
-Cursor
-XCreateFontCursor(display, shape)
+>>TITLE XRecolorCursor Xlib6
+void
+XRecolorCursor(display, cursor, foreground_color, background_color)
 Display *display = Dsp;
-unsigned int shape;
+Cursor cursor;
+XColor *foreground_color = mkcolor(1);
+XColor *background_color = mkcolor(0);
 >>SET startup fontstartup
 >>SET cleanup fontcleanup
->>ASSERTION Good B 1
-When the
-.A shape 
-argument is
-a defined glyph in the standard cursor font,
-then a call to xname creates a
-.S Cursor
-with a black foreground and a white background
-corresponding to the 
-.A shape
-argument
-and returns the cursor ID.
->>STRATEGY
-Get TET variable XT_FONTCURSOR_GOOD.
-Call XCreateFontCursor with shape of this value.
-Verify that XCreateFontCursor returns non-zero.
->>CODE
-Cursor	qstat;
+>>EXTERN
 
-/* Get TET variable XT_FONTCURSOR_GOOD */
-	/* UNSUPPORTED is not allowed */
-	shape = config.fontcursor_good;
-	if (shape == -1) {
-		delete("A value of UNSUPPORTED is not allowed for XT_FONTCURSOR_GOOD");
-		return;
+/*
+ * mkcolor() -	return a pointer to a color structure.
+ *		flag indicates whether or not color is foreground
+ */
+static XColor *
+mkcolor(flag)
+{
+	static	XColor	fore;
+	static	XColor	back;
+	static	int	first = 1;
+
+	if (first)
+	{
+		first = 0;
+
+		fore.pixel = BlackPixel(display, DefaultScreen(display));
+		XQueryColor(display, DefaultColormap(display, DefaultScreen(display)), &fore);
+		back.pixel = WhitePixel(display, DefaultScreen(display));
+		XQueryColor(display, DefaultColormap(display, DefaultScreen(display)), &back);
 	}
+	return(flag ? &fore : &back);
+}
+>>ASSERTION Good B 1
+A call to xname changes the color of the specified cursor,
+.A cursor ,
+to the specified
+.A foreground_color
+and
+.A background_color .
+>>STRATEGY
+Create cursor.
+Call XRecolorCursor to change foreground to W_BG and
+background to W_FG.
+>>CODE
 
-	trace("Shape used is %x", shape);
-/* Call XCreateFontCursor with shape of this value, */
-/* else call XCreateFontCursor with shape of zero. */
-	
-	qstat = XCALL;
+/* Create cursor. */
+	cursor = makecur(display);
 
-/* Verify that XCreateFontCursor returns non-zero. */
-	if (qstat == 0) {
-		report("Returned wrong value %ld", (long) qstat);
+/* Call XRecolorCursor to change foreground to W_BG and */
+/* background to W_FG. */
+
+	XCALL;
+
+	if (geterr() != Success)
 		FAIL;
-	} else
+	else
 		CHECK;
 
 	CHECKUNTESTED(1);
+>>ASSERTION Good B 1
+When the cursor is being displayed on a screen, then
+the change is visible immediately.
 >>ASSERTION Bad A
-When the
-.A shape 
-argument is not
-a defined glyph in the standard cursor font,
-then a
-.S BadValue
-error occurs.
->>STRATEGY
-Get TET variable XT_FONTCURSOR_BAD.
-Call XCreateFontCursor with shape of this value.
-Verify that a BadValue error occurs.
->>CODE BadValue
-Cursor	qstat;
-
-/* Get TET variable XT_FONTCURSOR_BAD */
-	shape = config.fontcursor_bad;
-	if (shape == -1) {
-		unsupported("There are no invalid cursor glyph values");
-		return;
-	}
-
-	trace("Shape used is %x", shape);
-/* Call XCreateFontCursor with shape of this value, */
-/* else call XCreateFontCursor with shape of zero. */
-	XCALL;
-
-/* Verify that a BadValue error occurs. */
-	if (geterr() == BadValue)
-		PASS;
-	else
-		FAIL;
->>ASSERTION Bad B 1
-.ER BadAlloc
->># HISTORY kieron Completed	Reformat to pass ca, plus correction
->># HISTORY peterc Completed	Wrote STRATEGY and CODE.
+.ER BadCursor 
+>># HISTORY kieron Completed    Reformat and tidy to ca pass
+>># HISTORY peterc Completed Wrote STRATEGY and CODE

@@ -23,35 +23,35 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib6/XRecolorCursor/XRecolorCursor.m
+>># File: xts5/Xlib6/XFreePixmap.m
 >># 
 >># Description:
->># 	Tests for XRecolorCursor()
+>># 	Tests for XFreePixmap()
 >># 
 >># Modifications:
->># $Log: rclrcrsr.m,v $
+>># $Log: frpxmp.m,v $
 >># Revision 1.2  2005-11-03 08:43:41  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:29  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:26:54  mar
+>># Revision 8.0  1998/12/23 23:26:53  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:45:12  mar
+>># Revision 7.0  1998/10/30 22:45:11  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:19:07  tbr
+>># Revision 6.0  1998/03/02 05:19:06  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:15:38  tbr
+>># Revision 5.0  1998/01/26 03:15:37  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 08:49:04  tbr
+>># Revision 4.0  1995/12/15 08:49:01  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:48:08  andy
+>># Revision 3.1  1995/12/15  00:48:03  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -97,70 +97,93 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XRecolorCursor Xlib6
+>>TITLE XFreePixmap Xlib6
 void
-XRecolorCursor(display, cursor, foreground_color, background_color)
+XFreePixmap(display, pixmap)
 Display *display = Dsp;
-Cursor cursor;
-XColor *foreground_color = mkcolor(1);
-XColor *background_color = mkcolor(0);
->>SET startup fontstartup
->>SET cleanup fontcleanup
->>EXTERN
-
-/*
- * mkcolor() -	return a pointer to a color structure.
- *		flag indicates whether or not color is foreground
- */
-static XColor *
-mkcolor(flag)
-{
-	static	XColor	fore;
-	static	XColor	back;
-	static	int	first = 1;
-
-	if (first)
-	{
-		first = 0;
-
-		fore.pixel = BlackPixel(display, DefaultScreen(display));
-		XQueryColor(display, DefaultColormap(display, DefaultScreen(display)), &fore);
-		back.pixel = WhitePixel(display, DefaultScreen(display));
-		XQueryColor(display, DefaultColormap(display, DefaultScreen(display)), &back);
-	}
-	return(flag ? &fore : &back);
-}
->>ASSERTION Good B 1
-A call to xname changes the color of the specified cursor,
-.A cursor ,
-to the specified
-.A foreground_color
-and
-.A background_color .
+Pixmap  pixmap;
+>>ASSERTION Good A
+A call to xname removes the association between the pixmap ID
+.A pixmap
+and the specified pixmap.
 >>STRATEGY
-Create cursor.
-Call XRecolorCursor to change foreground to W_BG and
-background to W_FG.
+For all supported depths of pixmap:
+   Create a pixmap.
+   Create a gc using the pixmap as the drawable.
+   Free the pixmap with XFreePixmap.
+   Plot (0,0) in the pixmap.
+   Verify that a BadDrawable error occurred.
 >>CODE
+XGCValues	gcv;
+XVisualInfo	*vp;
+GC		gc;
 
-/* Create cursor. */
-	cursor = makecur(display);
+	for(resetvinf(VI_PIX); nextvinf(&vp); ) {
+		pixmap = XCreatePixmap(display, DRW(display), 1, 1, vp->depth);
+		gc = makegc(display, pixmap);
+		XCALL;
+		
+		startcall(Dsp);
+		XDrawPoint(display, pixmap, gc, 0, 0);
+		endcall(Dsp);
+		if(geterr() != BadDrawable) {
+			report("Got %s instead of BadDrawable when drawing on a freed pixmap. ", errorname(geterr()));
+			FAIL;
+		} else
+			CHECK;
+	}
 
-/* Call XRecolorCursor to change foreground to W_BG and */
-/* background to W_FG. */
+	CHECKPASS(nvinf());
 
-	XCALL;
+>>ASSERTION Good A
+The storage allocated to the pixmap is not recovered until all references to it
+have been removed.
+>>STRATEGY
+Create a window.
+Create a pixmap of the same dimensions as the window.
+Pattern the pixmap.
+Create a gc with the pixmap as the tile and the fill_mode set to FillTiled.
+Free the pixmap with XFreePixmap.
+Tile the entire window with XFillRectangle.
+Verify that the tiled pattern matches the pixmap.
+>>CODE
+Window		win;
+XVisualInfo	*vp;
+XGCValues	gcv;
+GC		gc, gc2;
 
-	if (geterr() != Success)
-		FAIL;
-	else
-		CHECK;
+	for(resetvinf(VI_WIN); nextvinf(&vp);) {
+		win = makewin(display, vp);	
+		pixmap = XCreatePixmap(display, DRW(display), W_STDWIDTH, W_STDHEIGHT, vp->depth);
+		dset(display, pixmap, W_BG);
+		pattern(display, pixmap);
+	
+		gcv.fill_style = FillTiled;
+		gcv.tile = pixmap;
+		gcv.foreground = W_FG;
+		gcv.background = W_BG;
 
-	CHECKUNTESTED(1);
->>ASSERTION Good B 1
-When the cursor is being displayed on a screen, then
-the change is visible immediately.
->>ASSERTION Bad A
-.ER BadCursor 
->># HISTORY kieron Completed    Reformat and tidy to ca pass
->># HISTORY peterc Completed Wrote STRATEGY and CODE
+                /*
+                 * Create the GC with the window of the same depth because
+                 * the root window could be of a different depth.
+                 */
+		gc = XCreateGC(display, win, GCFillStyle|GCTile|GCForeground|GCBackground, &gcv);
+		XCALL;
+	
+		XFillRectangle(display, win, gc, 0, 0, W_STDWIDTH+1, W_STDHEIGHT+1);		
+		
+		if( checkpattern(display, win, (struct area *) 0 ) != True) {
+			report("Tiled pattern on window was not correct after");
+			report("tile component in GC was freed by XFreePixmap");
+			FAIL;
+		} else
+			CHECK;
+	
+	}
+	CHECKPASS(nvinf());
+
+>>ASSERTION Bad A	
+.ER BadPixmap
+>>#HISTORY	Cal	Completed	Written in new format and style.
+>>#HISTORY	Kieron	Completed		<Have a look>
+>>#HISTORY	Cal	Action		Writing code.

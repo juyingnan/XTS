@@ -23,35 +23,35 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib6/XFreePixmap/XFreePixmap.m
+>># File: xts5/Xlib6/XCreateFontCursor.m
 >># 
 >># Description:
->># 	Tests for XFreePixmap()
+>># 	Tests for XCreateFontCursor()
 >># 
 >># Modifications:
->># $Log: frpxmp.m,v $
->># Revision 1.2  2005-11-03 08:43:41  jmichael
+>># $Log: crtfntcrsr.m,v $
+>># Revision 1.2  2005-11-03 08:43:40  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:29  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:26:53  mar
+>># Revision 8.0  1998/12/23 23:26:51  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:45:11  mar
+>># Revision 7.0  1998/10/30 22:45:09  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:19:06  tbr
+>># Revision 6.0  1998/03/02 05:19:04  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:15:37  tbr
+>># Revision 5.0  1998/01/26 03:15:35  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 08:49:01  tbr
+>># Revision 4.0  1995/12/15 08:48:54  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:48:03  andy
+>># Revision 3.1  1995/12/15  00:47:51  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -97,93 +97,87 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XFreePixmap Xlib6
-void
-XFreePixmap(display, pixmap)
+>>TITLE XCreateFontCursor Xlib6
+Cursor
+XCreateFontCursor(display, shape)
 Display *display = Dsp;
-Pixmap  pixmap;
->>ASSERTION Good A
-A call to xname removes the association between the pixmap ID
-.A pixmap
-and the specified pixmap.
+unsigned int shape;
+>>SET startup fontstartup
+>>SET cleanup fontcleanup
+>>ASSERTION Good B 1
+When the
+.A shape 
+argument is
+a defined glyph in the standard cursor font,
+then a call to xname creates a
+.S Cursor
+with a black foreground and a white background
+corresponding to the 
+.A shape
+argument
+and returns the cursor ID.
 >>STRATEGY
-For all supported depths of pixmap:
-   Create a pixmap.
-   Create a gc using the pixmap as the drawable.
-   Free the pixmap with XFreePixmap.
-   Plot (0,0) in the pixmap.
-   Verify that a BadDrawable error occurred.
+Get TET variable XT_FONTCURSOR_GOOD.
+Call XCreateFontCursor with shape of this value.
+Verify that XCreateFontCursor returns non-zero.
 >>CODE
-XGCValues	gcv;
-XVisualInfo	*vp;
-GC		gc;
+Cursor	qstat;
 
-	for(resetvinf(VI_PIX); nextvinf(&vp); ) {
-		pixmap = XCreatePixmap(display, DRW(display), 1, 1, vp->depth);
-		gc = makegc(display, pixmap);
-		XCALL;
-		
-		startcall(Dsp);
-		XDrawPoint(display, pixmap, gc, 0, 0);
-		endcall(Dsp);
-		if(geterr() != BadDrawable) {
-			report("Got %s instead of BadDrawable when drawing on a freed pixmap. ", errorname(geterr()));
-			FAIL;
-		} else
-			CHECK;
+/* Get TET variable XT_FONTCURSOR_GOOD */
+	/* UNSUPPORTED is not allowed */
+	shape = config.fontcursor_good;
+	if (shape == -1) {
+		delete("A value of UNSUPPORTED is not allowed for XT_FONTCURSOR_GOOD");
+		return;
 	}
 
-	CHECKPASS(nvinf());
+	trace("Shape used is %x", shape);
+/* Call XCreateFontCursor with shape of this value, */
+/* else call XCreateFontCursor with shape of zero. */
+	
+	qstat = XCALL;
 
->>ASSERTION Good A
-The storage allocated to the pixmap is not recovered until all references to it
-have been removed.
+/* Verify that XCreateFontCursor returns non-zero. */
+	if (qstat == 0) {
+		report("Returned wrong value %ld", (long) qstat);
+		FAIL;
+	} else
+		CHECK;
+
+	CHECKUNTESTED(1);
+>>ASSERTION Bad A
+When the
+.A shape 
+argument is not
+a defined glyph in the standard cursor font,
+then a
+.S BadValue
+error occurs.
 >>STRATEGY
-Create a window.
-Create a pixmap of the same dimensions as the window.
-Pattern the pixmap.
-Create a gc with the pixmap as the tile and the fill_mode set to FillTiled.
-Free the pixmap with XFreePixmap.
-Tile the entire window with XFillRectangle.
-Verify that the tiled pattern matches the pixmap.
->>CODE
-Window		win;
-XVisualInfo	*vp;
-XGCValues	gcv;
-GC		gc, gc2;
+Get TET variable XT_FONTCURSOR_BAD.
+Call XCreateFontCursor with shape of this value.
+Verify that a BadValue error occurs.
+>>CODE BadValue
+Cursor	qstat;
 
-	for(resetvinf(VI_WIN); nextvinf(&vp);) {
-		win = makewin(display, vp);	
-		pixmap = XCreatePixmap(display, DRW(display), W_STDWIDTH, W_STDHEIGHT, vp->depth);
-		dset(display, pixmap, W_BG);
-		pattern(display, pixmap);
-	
-		gcv.fill_style = FillTiled;
-		gcv.tile = pixmap;
-		gcv.foreground = W_FG;
-		gcv.background = W_BG;
-
-                /*
-                 * Create the GC with the window of the same depth because
-                 * the root window could be of a different depth.
-                 */
-		gc = XCreateGC(display, win, GCFillStyle|GCTile|GCForeground|GCBackground, &gcv);
-		XCALL;
-	
-		XFillRectangle(display, win, gc, 0, 0, W_STDWIDTH+1, W_STDHEIGHT+1);		
-		
-		if( checkpattern(display, win, (struct area *) 0 ) != True) {
-			report("Tiled pattern on window was not correct after");
-			report("tile component in GC was freed by XFreePixmap");
-			FAIL;
-		} else
-			CHECK;
-	
+/* Get TET variable XT_FONTCURSOR_BAD */
+	shape = config.fontcursor_bad;
+	if (shape == -1) {
+		unsupported("There are no invalid cursor glyph values");
+		return;
 	}
-	CHECKPASS(nvinf());
 
->>ASSERTION Bad A	
-.ER BadPixmap
->>#HISTORY	Cal	Completed	Written in new format and style.
->>#HISTORY	Kieron	Completed		<Have a look>
->>#HISTORY	Cal	Action		Writing code.
+	trace("Shape used is %x", shape);
+/* Call XCreateFontCursor with shape of this value, */
+/* else call XCreateFontCursor with shape of zero. */
+	XCALL;
+
+/* Verify that a BadValue error occurs. */
+	if (geterr() == BadValue)
+		PASS;
+	else
+		FAIL;
+>>ASSERTION Bad B 1
+.ER BadAlloc
+>># HISTORY kieron Completed	Reformat to pass ca, plus correction
+>># HISTORY peterc Completed	Wrote STRATEGY and CODE.
