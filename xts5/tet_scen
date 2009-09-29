@@ -4613,11 +4613,11 @@ XtResolvePathname
 
 ObjectObject
 	"VSW5TESTSUITE CASE ObjectObject 9"
-	/Xt14/ObjectObject/ObjectObject
+	/Xt14/ObjectObject
 
 RectangleObject
 	"VSW5TESTSUITE CASE RectangleObject 9"
-	/Xt14/RectangleObject/RectangleObject
+	/Xt14/RectangleObject
 
 #Discrete tests for Xt Chapter 15
 
