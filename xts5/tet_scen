@@ -1162,67 +1162,67 @@ XWarpPointer
 
 XBaseFontNameListOfFontSet
 	"VSW5TESTSUITE CASE XBaseFontNameListOfFontSet 1"
-	/Xlib14/XBaseFontNameListOfFontSet/XBaseFontNameListOfFontSet
+	/Xlib14/XBaseFontNameListOfFontSet
 
 XCloseIM
 	"VSW5TESTSUITE CASE XCloseIM 1"
-	/Xlib14/XCloseIM/XCloseIM
+	/Xlib14/XCloseIM
 
 XContextDependentDrawing
 	"VSW5TESTSUITE CASE XContextDependentDrawing 1"
-	/Xlib14/XContextDependentDrawing/XContextDependentDrawing
+	/Xlib14/XContextDependentDrawing
 
 XCreateFontSet
 	"VSW5TESTSUITE CASE XCreateFontSet 1"
-	/Xlib14/XCreateFontSet/XCreateFontSet
+	/Xlib14/XCreateFontSet
 
 XCreateIC
 	"VSW5TESTSUITE CASE XCreateIC 1"
-	/Xlib14/XCreateIC/XCreateIC
+	/Xlib14/XCreateIC
 
 XDestroyIC
 	"VSW5TESTSUITE CASE XDestroyIC 1"
-	/Xlib14/XDestroyIC/XDestroyIC
+	/Xlib14/XDestroyIC
 
 XDisplayOfIM
 	"VSW5TESTSUITE CASE XDisplayOfIM 1"
-	/Xlib14/XDisplayOfIM/XDisplayOfIM
+	/Xlib14/XDisplayOfIM
 
 XExtentsOfFontSet
 	"VSW5TESTSUITE CASE XExtentsOfFontSet 1"
-	/Xlib14/XExtentsOfFontSet/XExtentsOfFontSet
+	/Xlib14/XExtentsOfFontSet
 
 XFilterEvent
 	"VSW5TESTSUITE CASE XFilterEvent 1"
-	/Xlib14/XFilterEvent/XFilterEvent
+	/Xlib14/XFilterEvent
 
 XFontsOfFontSet
 	"VSW5TESTSUITE CASE XFontsOfFontSet 1"
-	/Xlib14/XFontsOfFontSet/XFontsOfFontSet
+	/Xlib14/XFontsOfFontSet
 
 XFreeFontSet
 	"VSW5TESTSUITE CASE XFreeFontSet 1"
-	/Xlib14/XFreeFontSet/XFreeFontSet
+	/Xlib14/XFreeFontSet
 
 XGetICValues
 	"VSW5TESTSUITE CASE XGetICValues 3"
-	/Xlib14/XGetICValues/XGetICValues
+	/Xlib14/XGetICValues
 
 XGetIMValues
 	"VSW5TESTSUITE CASE XGetIMValues 1"
-	/Xlib14/XGetIMValues/XGetIMValues
+	/Xlib14/XGetIMValues
 
 XIMOfIC
 	"VSW5TESTSUITE CASE XIMOfIC 1"
-	/Xlib14/XIMOfIC/XIMOfIC
+	/Xlib14/XIMOfIC
 
 XLocaleOfFontSet
 	"VSW5TESTSUITE CASE XLocaleOfFontSet 1"
-	/Xlib14/XLocaleOfFontSet/XLocaleOfFontSet
+	/Xlib14/XLocaleOfFontSet
 
 XLocaleOfIM
 	"VSW5TESTSUITE CASE XLocaleOfIM 1"
-	/Xlib14/XLocaleOfIM/XLocaleOfIM
+	/Xlib14/XLocaleOfIM
 
 XmbDrawImageString
 	"VSW5TESTSUITE CASE XmbDrawImageString 1"
@@ -1238,63 +1238,63 @@ XmbDrawText
 
 XmbLookupString
 	"VSW5TESTSUITE CASE XmbLookupString 3"
-	/Xlib14/XmbLookupString/XmbLookupString
+	/Xlib14/XmbLookupString
 
 XmbResetIC
 	"VSW5TESTSUITE CASE XmbResetIC 1"
-	/Xlib14/XmbResetIC/XmbResetIC
+	/Xlib14/XmbResetIC
 
 XmbSetWMProperties
 	"VSW5TESTSUITE CASE XmbSetWMProperties 2"
-	/Xlib14/XmbSetWMProperties/XmbSetWMProperties
+	/Xlib14/XmbSetWMProperties
 
 XmbTextEscapement
 	"VSW5TESTSUITE CASE XmbTextEscapement 1"
-	/Xlib14/XmbTextEscapement/XmbTextEscapement
+	/Xlib14/XmbTextEscapement
 
 XmbTextExtents
 	"VSW5TESTSUITE CASE XmbTextExtents 1"
-	/Xlib14/XmbTextExtents/XmbTextExtents
+	/Xlib14/XmbTextExtents
 
 XmbTextListToTextProperty
 	"VSW5TESTSUITE CASE XmbTextListToTextProperty 1"
-	/Xlib14/XmbTextListToTextProperty/XmbTextListToTextProperty
+	/Xlib14/XmbTextListToTextProperty
 
 XmbTextPerCharExtents
 	"VSW5TESTSUITE CASE XmbTextPerCharExtents 1"
-	/Xlib14/XmbTextPerCharExtents/XmbTextPerCharExtents
+	/Xlib14/XmbTextPerCharExtents
 
 XmbTextPropertyToTextList
 	"VSW5TESTSUITE CASE XmbTextPropertyToTextList 1"
-	/Xlib14/XmbTextPropertyToTextList/XmbTextPropertyToTextList
+	/Xlib14/XmbTextPropertyToTextList
 
 XOpenIM
 	"VSW5TESTSUITE CASE XOpenIM 1"
-	/Xlib14/XOpenIM/XOpenIM
+	/Xlib14/XOpenIM
 
 XSetICFocus
 	"VSW5TESTSUITE CASE XSetICFocus 1"
-	/Xlib14/XSetICFocus/XSetICFocus
+	/Xlib14/XSetICFocus
 
 XSetICValues
 	"VSW5TESTSUITE CASE XSetICValues 4"
-	/Xlib14/XSetICValues/XSetICValues
+	/Xlib14/XSetICValues
 
 XSupportsLocale
 	"VSW5TESTSUITE CASE XSupportsLocale 1"
-	/Xlib14/XSupportsLocale/XSupportsLocale
+	/Xlib14/XSupportsLocale
 
 XSetLocaleModifiers
 	"VSW5TESTSUITE CASE XSetLocaleModifiers 1"
-	/Xlib14/XSetLocaleModifiers/XSetLocaleModifiers
+	/Xlib14/XSetLocaleModifiers
 
 XUnsetICFocus
 	"VSW5TESTSUITE CASE XUnsetICFocus 1"
-	/Xlib14/XUnsetICFocus/XUnsetICFocus
+	/Xlib14/XUnsetICFocus
 
 XVaCreateNestedList
 	"VSW5TESTSUITE CASE XVaCreateNestedList 4"
-	/Xlib14/XVaCreateNestedList/XVaCreateNestedList
+	/Xlib14/XVaCreateNestedList
 
 XwcDrawImageString
 	"VSW5TESTSUITE CASE XwcDrawImageString 1"
@@ -1310,35 +1310,35 @@ XwcDrawText
 
 XwcFreeStringList
 	"VSW5TESTSUITE CASE XwcFreeStringList 1"
-	/Xlib14/XwcFreeStringList/XwcFreeStringList
+	/Xlib14/XwcFreeStringList
 
 XwcLookupString
 	"VSW5TESTSUITE CASE XwcLookupString 3"
-	/Xlib14/XwcLookupString/XwcLookupString
+	/Xlib14/XwcLookupString
 
 XwcResetIC
 	"VSW5TESTSUITE CASE XwcResetIC 1"
-	/Xlib14/XwcResetIC/XwcResetIC
+	/Xlib14/XwcResetIC
 
 XwcTextEscapement
 	"VSW5TESTSUITE CASE XwcTextEscapement 1"
-	/Xlib14/XwcTextEscapement/XwcTextEscapement
+	/Xlib14/XwcTextEscapement
 
 XwcTextListToTextProperty
 	"VSW5TESTSUITE CASE XwcTextListToTextProperty 1"
-	/Xlib14/XwcTextListToTextProperty/XwcTextListToTextProperty
+	/Xlib14/XwcTextListToTextProperty
 
 XwcTextPerCharExtents
 	"VSW5TESTSUITE CASE XwcTextPerCharExtents 1"
-	/Xlib14/XwcTextPerCharExtents/XwcTextPerCharExtents
+	/Xlib14/XwcTextPerCharExtents
 
 XwcTextPropertyToTextList
 	"VSW5TESTSUITE CASE XwcTextPropertyToTextList 1"
-	/Xlib14/XwcTextPropertyToTextList/XwcTextPropertyToTextList
+	/Xlib14/XwcTextPropertyToTextList
 
 XwcTextExtents
 	"VSW5TESTSUITE CASE XwcTextExtents 1"
-	/Xlib14/XwcTextExtents/XwcTextExtents
+	/Xlib14/XwcTextExtents
 
 
 # Discrete tests for Xlib Chapter 15-Inter-Client Communication Functions
