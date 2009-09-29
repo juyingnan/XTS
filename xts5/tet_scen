@@ -692,95 +692,95 @@ XShapeSelectInput
 
 XActivateScreenSaver
 	"VSW5TESTSUITE CASE XActivateScreenSaver 2"
-	/Xlib10/XActivateScreenSaver/XActivateScreenSaver
+	/Xlib10/XActivateScreenSaver
 
 XAddHost
 	"VSW5TESTSUITE CASE XAddHost 3"
-	/Xlib10/XAddHost/XAddHost
+	/Xlib10/XAddHost
 
 XAddHosts
 	"VSW5TESTSUITE CASE XAddHosts 3"
-	/Xlib10/XAddHosts/XAddHosts
+	/Xlib10/XAddHosts
 
 XAddToSaveSet
 	"VSW5TESTSUITE CASE XAddToSaveSet 8"
-	/Xlib10/XAddToSaveSet/XAddToSaveSet
+	/Xlib10/XAddToSaveSet
 
 XChangeSaveSet
 	"VSW5TESTSUITE CASE XChangeSaveSet 5"
-	/Xlib10/XChangeSaveSet/XChangeSaveSet
+	/Xlib10/XChangeSaveSet
 
 XDisableAccessControl
 	"VSW5TESTSUITE CASE XDisableAccessControl 2"
-	/Xlib10/XDisableAccessControl/XDisableAccessControl
+	/Xlib10/XDisableAccessControl
 
 XEnableAccessControl
 	"VSW5TESTSUITE CASE XEnableAccessControl 2"
-	/Xlib10/XEnableAccessControl/XEnableAccessControl
+	/Xlib10/XEnableAccessControl
 
 XForceScreenSaver
 	"VSW5TESTSUITE CASE XForceScreenSaver 3"
-	/Xlib10/XForceScreenSaver/XForceScreenSaver
+	/Xlib10/XForceScreenSaver
 
 XGrabServer
 	"VSW5TESTSUITE CASE XGrabServer 1"
-	/Xlib10/XGrabServer/XGrabServer
+	/Xlib10/XGrabServer
 
 XGetScreenSaver
 	"VSW5TESTSUITE CASE XGetScreenSaver 1"
-	/Xlib10/XGetScreenSaver/XGetScreenSaver
+	/Xlib10/XGetScreenSaver
 
 XInstallColormap
 	"VSW5TESTSUITE CASE XInstallColormap 6"
-	/Xlib10/XInstallColormap/XInstallColormap
+	/Xlib10/XInstallColormap
 
 XKillClient
 	"VSW5TESTSUITE CASE XKillClient 4"
-	/Xlib10/XKillClient/XKillClient
+	/Xlib10/XKillClient
 
 XListHosts
 	"VSW5TESTSUITE CASE XListHosts 2"
-	/Xlib10/XListHosts/XListHosts
+	/Xlib10/XListHosts
 
 XListInstalledColormaps
 	"VSW5TESTSUITE CASE XListInstalledColormaps 2"
-	/Xlib10/XListInstalledColormaps/XListInstalledColormaps
+	/Xlib10/XListInstalledColormaps
 
 XRemoveFromSaveSet
 	"VSW5TESTSUITE CASE XRemoveFromSaveSet 3"
-	/Xlib10/XRemoveFromSaveSet/XRemoveFromSaveSet
+	/Xlib10/XRemoveFromSaveSet
 
 XRemoveHost
 	"VSW5TESTSUITE CASE XRemoveHost 3"
-	/Xlib10/XRemoveHost/XRemoveHost
+	/Xlib10/XRemoveHost
 
 XRemoveHosts
 	"VSW5TESTSUITE CASE XRemoveHosts 3"
-	/Xlib10/XRemoveHosts/XRemoveHosts
+	/Xlib10/XRemoveHosts
 
 XReparentWindow
 	"VSW5TESTSUITE CASE XReparentWindow 13"
-	/Xlib10/XReparentWindow/XReparentWindow
+	/Xlib10/XReparentWindow
 
 XResetScreenSaver
 	"VSW5TESTSUITE CASE XResetScreenSaver 2"
-	/Xlib10/XResetScreenSaver/XResetScreenSaver
+	/Xlib10/XResetScreenSaver
 
 XSetAccessControl
 	"VSW5TESTSUITE CASE XSetAccessControl 4"
-	/Xlib10/XSetAccessControl/XSetAccessControl
+	/Xlib10/XSetAccessControl
 
 XSetScreenSaver
 	"VSW5TESTSUITE CASE XSetScreenSaver 17"
-	/Xlib10/XSetScreenSaver/XSetScreenSaver
+	/Xlib10/XSetScreenSaver
 
 XUngrabServer
 	"VSW5TESTSUITE CASE XUngrabServer 1"
-	/Xlib10/XUngrabServer/XUngrabServer
+	/Xlib10/XUngrabServer
 
 XUninstallColormap
 	"VSW5TESTSUITE CASE XUninstallColormap 5"
-	/Xlib10/XUninstallColormap/XUninstallColormap
+	/Xlib10/XUninstallColormap
 
 # Discrete tests for Xlib Chapter 11-Events
 
