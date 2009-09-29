@@ -23,35 +23,35 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib9/XUnloadFont/XUnloadFont.m
+>># File: xts5/Xlib9/XFreeFontPath.m
 >># 
 >># Description:
->># 	Tests for XUnloadFont()
+>># 	Tests for XFreeFontPath()
 >># 
 >># Modifications:
->># $Log: unldfnt.m,v $
->># Revision 1.2  2005-11-03 08:44:00  jmichael
+>># $Log: frfntpth.m,v $
+>># Revision 1.2  2005-11-03 08:43:57  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:39  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:30:52  mar
+>># Revision 8.0  1998/12/23 23:30:39  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:50:09  mar
+>># Revision 7.0  1998/10/30 22:49:44  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:22:37  tbr
+>># Revision 6.0  1998/03/02 05:22:27  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:19:09  tbr
+>># Revision 5.0  1998/01/26 03:18:58  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:00:23  tbr
+>># Revision 4.0  1995/12/15 08:59:47  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:55:56  andy
+>># Revision 3.1  1995/12/15  00:54:50  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -97,64 +97,35 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XUnloadFont Xlib9
+>>TITLE XFreeFontPath Xlib9
 void
 
-Display	*display = Dsp;
-Font	font;
->>SET startup fontstartup
->>SET cleanup fontcleanup
->>ASSERTION Good A
-When another resource or resource ID references the
-.A font ,
-then a call to xname
-deletes the association between the
-.A font
-resource ID 
-and the specified font.
+char	**list;
+>>ASSERTION Good B 3
+>># NOTE	kieron	Untestable.
+When
+.A list
+is an array of strings allocated by a call to
+.S XGetFontPath ,
+then a call to xname frees
+.A list 
+and the strings specified by
+.A list .
 >>STRATEGY
-Load a font.
-Call XUnloadFont.
-Verify that the font ID is no longer usable.
+Touch test.
+Get a font path with XGetFontPath.
+Call XFreeFontPath.
+Result is UNTESTED.
 >>CODE
-GC		gc;
+int 	n;
 
-	gc = makegc(display, DRW(display));
-	if (isdeleted())
+	list = XGetFontPath(Dsp, &n);
+	if (list == NULL || isdeleted()) {
+		delete("Could not get font path to free");
 		return;
-	font = XLoadFont(display, "xtfont0");
+	}
 
 	XCALL;
 
-	/* Try to use the font */
-	XSetErrorHandler(error_status);
-	reseterr();
-	XSetFont(display, gc, font);
-	XDrawString(display, DRW(display), gc, 30, 30, "abc", 3);
-	XSync(display, 0);
-	switch (geterr()) {
-	case Success:
-		report("font ID was still usable");
-		FAIL;
-		break;
-	case BadFont:
-		PASS;
-		break;
-	default:
-		delete("Unexpected error in draw string");
-		break;
-	}
-	XSetErrorHandler(unexp_err);
-	
->>ASSERTION Good B 3
-When no other resource or resource ID references the
-.A font ,
-then a call to xname
-deletes the association between the
-.A font
-resource ID 
-and the specified font 
-and the font itself will be freed.
->>ASSERTION Bad A
-.ER BadFont bad-font
+	tet_result(TET_UNTESTED);
 >># HISTORY kieron Completed	Reformat and tidy to ca pass

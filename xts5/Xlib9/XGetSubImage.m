@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib9/XGetSubImage/XGetSubImage.m
+>># File: xts5/Xlib9/XGetSubImage.m
 >># 
 >># Description:
 >># 	Tests for XGetSubImage()

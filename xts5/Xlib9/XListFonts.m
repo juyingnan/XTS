@@ -23,23 +23,23 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib9/XListFontsWithInfo/XListFontsWithInfo.m
+>># File: xts5/Xlib9/XListFonts.m
 >># 
 >># Description:
->># 	Tests for XListFontsWithInfo()
+>># 	Tests for XListFonts()
 >># 
 >># Modifications:
->># $Log: lstfntswth.m,v $
+>># $Log: lstfnts.m,v $
 >># Revision 1.2  2005-11-03 08:43:58  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:39  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:30:45  mar
+>># Revision 8.0  1998/12/23 23:30:44  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:49:54  mar
+>># Revision 7.0  1998/10/30 22:49:53  mar
 >># Branch point for Release 5.0.2b1
 >>#
 >># Revision 6.0  1998/03/02 05:22:31  tbr
@@ -48,10 +48,10 @@ All Rights Reserved.
 >># Revision 5.0  1998/01/26 03:19:03  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:00:02  tbr
+>># Revision 4.0  1995/12/15 09:00:00  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:55:22  andy
+>># Revision 3.1  1995/12/15  00:55:18  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -97,71 +97,60 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XListFontsWithInfo Xlib9
-char **
+>>TITLE XListFonts Xlib9
+char	**
 
 Display	*display = Dsp;
 char	*patternarg;
-int 	maxnames = 9999;
-int 	*count_return = &count;
-XFontStruct	**info_return = &finfo;
+int 	maxnames = 1000;
+int 	*actual_count_return = &Count;
 >>SET startup fontstartup
 >>SET cleanup fontcleanup
 >>EXTERN
-#include    <ctype.h>
-#include    <string.h>
+#include	<ctype.h>
+#include	<string.h>
 
-static	int 	count;
-static	XFontStruct *finfo;
+static	int 	Count;
 
-extern	XFontStruct	xtfont0;
-extern	char	*xtfont0cpright;
 extern	struct	fontinfo	fontinfo[];
 extern	int 	nfontinfo;
 
 static lowerstring(str)
-char    *str;
+char	*str;
 {
 	for (; *str; str++) {
 		if (isupper(*str))
 			tolower(*str);
 	}
 }
-
 >>ASSERTION Good A
 When the
-.A pattern
+.A patternarg
 argument
 is a string in ISO Latin-1 encoding terminated with ASCII nul,
 then a call to xname returns an array of
 strings terminated with ASCII nul which are available font names 
 that match the
-.A pattern
+.A patternarg
 argument
 and returns the number of fonts in the
-.A count_return
-argument
-and their associated font information 
-excluding the per-character metrics
-in the 
-.A info_return
+.A actual_count_return
 argument.
 >>STRATEGY
 Set patternarg to \"xtfont0\"
-Call XListFontsWithInfo.
+Call XListFonts.
 Verify that returned count was 1.
 Verify that the returned names pointer was non-NULL.
 Lower-case the returned string.
 Verify that xtfont0 was returned.
-Verify that font information is correct.
 >>CODE
-char    **names;
+char	**names;
 
 	patternarg = "xtfont0";
 	names = XCALL;
 
-	if (count != 1) {
-		report("count_return was %d, expecting 1", count);
+	if (Count != 1) {
+		report("actual_count_return was %d, expecting 1", Count);
 		FAIL;
 	} else
 		CHECK;
@@ -180,36 +169,27 @@ char    **names;
 	} else
 		CHECK;
 
-	xtfont0.per_char = NULL;
-	if (checkfsp(finfo, &xtfont0, xtfont0cpright))
-		CHECK;
-	else {
-		report("font information was incorrect");
-		FAIL;
-	}
-
-	CHECKPASS(4);
+	CHECKPASS(3);
 
 >>ASSERTION Good A
-Upper and lower case character in the
-.A pattern
+Upper and lower case characters in the
+.A patternarg
 argument refer to the same font.
 >>STRATEGY
 Try matching with XtFoNt0
-Call XListFontsWithInfo.
+Call XListFonts.
 Verify that returned count was 1.
 Verify that the returned names pointer was non-NULL.
 Lower-case the returned string.
 Verify that xtfont0 was returned.
-Verify that the font information was correct.
 >>CODE
 char	**names;
 
 	patternarg = "XtFoNt0";
 	names = XCALL;
 
-	if (count != 1) {
-		report("count_return was %d, expecting 1", count);
+	if (Count != 1) {
+		report("actual_count_return was %d, expecting 1", Count);
 		FAIL;
 	} else
 		CHECK;
@@ -229,20 +209,12 @@ char	**names;
 	} else
 		CHECK;
 
-	xtfont0.per_char = NULL;
-	if (checkfsp(finfo, &xtfont0, xtfont0cpright))
-		CHECK;
-	else {
-		report("font infomation was incorrect");
-		FAIL;
-	}
-
-	CHECKPASS(4);
+	CHECKPASS(3);
 >>ASSERTION Good A
 Each asterisk (*) in the string is a wildcard for any number of characters.
 >>STRATEGY
 Set patternarg to \"x*t*t*\"
-Call XListFontsWithInfo.
+Call XListFonts.
 Verify that at least all the VSW5 fonts are returned, and
 that any other returned string matches the patternarg.
 >>CODE
@@ -254,8 +226,8 @@ int 	j;
 	patternarg = "x*t*t*";
 	names = XCALL;
 
-	if (count < XT_NFONTS) {
-		report("returned count was %d, expecting at least %d", count,XT_NFONTS);
+	if (Count < XT_NFONTS) {
+		report("returned count was %d, expecting at least %d", Count,XT_NFONTS);
 		FAIL;
 	} else
 		CHECK;
@@ -267,7 +239,7 @@ int 	j;
 	} else
 		CHECK;
 
-	for (i = 0; i < count; i++) {
+	for (i = 0; i < Count; i++) {
 		curname = names[i];
 		lowerstring(curname);
 		for (j = 0; j < nfontinfo; j++) {
@@ -277,18 +249,8 @@ int 	j;
 					report("name %s repeated in list", curname);
 					FAIL;
 				} else {
-					fontinfo[j].flag = 1;
-
-					/* Check font infomation */
-					trace("checking font %s", curname);
-					fontinfo[j].fontstruct->per_char = NULL;
-					if (checkfsp(&finfo[i], fontinfo[j].fontstruct,
-							*fontinfo[j].string)) {
-						CHECK;
-					} else {
-						report("font information was incorrect");
-						FAIL;
-					}
+					fontinfo[j].flag++;
+					CHECK;
 				}
 				break;
 			}
@@ -323,17 +285,15 @@ int 	j;
 			CHECK;
 		}
 	}
-
-	CHECKPASS(2+count+nfontinfo);
+	CHECKPASS(2+Count+nfontinfo);
 >>ASSERTION Good A
 Each question mark (?) in the string is a wildcard for a single character.
 >>STRATEGY
 Set patternarg to \"x?f?nt?\"
-Call XListFontsWithInfo.
+Call XListFonts.
 Verify that returned count is at least XT_NFONTS
 Verify that the VSW5 font names are returned.
 Verify that any other name returned matches the patternarg.
-Verify that font information is correct for the VSW5 fonts.
 >>CODE
 char	**names;
 char	*curname;
@@ -343,8 +303,8 @@ int 	j;
 	patternarg = "x?f?nt?";
 	names = XCALL;
 
-	if (count < XT_NFONTS) {
-		report("returned count was %d, expecting at least %d", count,XT_NFONTS);
+	if (Count < XT_NFONTS) {
+		report("returned count was %d, expecting at least %d", Count,XT_NFONTS);
 		FAIL;
 	} else
 		CHECK;
@@ -356,27 +316,19 @@ int 	j;
 	} else
 		CHECK;
 
-	for (i = 0; i < count; i++) {
+	for (i = 0; i < Count; i++) {
 		curname = names[i];
 		lowerstring(curname);
 		for (j = 0; j < nfontinfo; j++) {
 			if (strcmp(curname, fontinfo[j].name) == 0) {
 				/* Check if we have already seen this one */
+				/* XXX I am assuming that duplicates are not allowed ??? */
 				if (fontinfo[j].flag) {
 					report("name %s repeated in list", curname);
 					FAIL;
 				} else {
 					fontinfo[j].flag++;
-
-					trace("checking font %s", curname);
-					fontinfo[j].fontstruct->per_char = NULL;
-					if (checkfsp(&finfo[i], fontinfo[j].fontstruct,
-							*fontinfo[j].string)) {
-						CHECK;
-					} else {
-						report("font information was incorrect");
-						FAIL;
-					}
+					CHECK;
 				}
 				break;
 			}
@@ -415,10 +367,10 @@ int 	j;
 			CHECK;
 		}
 	}
-	CHECKPASS(2+count+nfontinfo);
+	CHECKPASS(2+Count+nfontinfo);
 
 >>ASSERTION Good A
-The number of fonts returned in the count_return argument will not
+The number of fonts returned in the actual_count_return argument will not
 exceed maxnames.
 >>STRATEGY
 Set maxnames to 1
@@ -432,26 +384,23 @@ char	**names;
 
 	names = XCALL;
 
-	if (count > maxnames) {
-		report("returned count was %d, not expecting it to exceed %d", count, maxnames);
+	if (Count > maxnames) {
+		report("returned count was %d, not expecting it to exceed %d", Count, maxnames);
 		FAIL;
 	} else {
 		PASS;
 	}
-
 >>ASSERTION Bad A
-When there are no available font names that
-match the pattern
-argument,
-then a call to xname
-returns NULL.
+When there are no available font names that match the patternarg argument,
+then a call to xname returns NULL.
 >>STRATEGY
 Set patternarg to a bad name.
-Call XListFontsWithInfo.
-Verify tht NULL is returned.
+Call XListFonts.
+Verify that NULL is returned.
 >>CODE
 char	**names;
 
+	/* Of course if someone deliberately adds such a name.. */
 	patternarg = "xtfont non existant name";
 
 	names = XCALL;
@@ -461,6 +410,5 @@ char	**names;
 		FAIL;
 	} else
 		PASS;
->>ASSERTION Bad A
-.ER BadAlloc 
+
 >># HISTORY kieron Completed	Reformat and tidy to ca pass

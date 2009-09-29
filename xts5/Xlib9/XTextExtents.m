@@ -23,13 +23,13 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib9/XTextExtents16/XTextExtents16.m
+>># File: xts5/Xlib9/XTextExtents.m
 >># 
 >># Description:
->># 	Tests for XTextExtents16()
+>># 	Tests for XTextExtents()
 >># 
 >># Modifications:
->># $Log: txtextnt16.m,v $
+>># $Log: txtextnts.m,v $
 >># Revision 1.2  2005-11-03 08:43:59  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
@@ -39,7 +39,7 @@ All Rights Reserved.
 >># Revision 8.0  1998/12/23 23:30:50  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:50:05  mar
+>># Revision 7.0  1998/10/30 22:50:06  mar
 >># Branch point for Release 5.0.2b1
 >>#
 >># Revision 6.0  1998/03/02 05:22:36  tbr
@@ -48,10 +48,10 @@ All Rights Reserved.
 >># Revision 5.0  1998/01/26 03:19:08  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:00:18  tbr
+>># Revision 4.0  1995/12/15 09:00:19  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:55:44  andy
+>># Revision 3.1  1995/12/15  00:55:47  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -97,31 +97,23 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XTextExtents16 Xlib9
+>>TITLE XTextExtents Xlib9
 void
 
 XFontStruct	*font_struct;
-XChar2b	*string;
+char	*string;
 int 	nchars;
-int 	*direction_return;
-int 	*font_ascent_return;
-int 	*font_descent_return;
-XCharStruct	*overall_return;
+int 	*direction_return = &direction;
+int 	*font_ascent_return = &font_ascent;
+int 	*font_descent_return = &font_descent;
+XCharStruct	*overall_return = &overall;
 >>EXTERN
-
-static	XChar2b	ch1[] = {
-	{0, 34}, {0, 54}, {0, 89}, {0, 100}, {0, 130}, {0, 201}, {0, 234}, {0, 255},
-	{1, 34}, {1, 54}, {1, 89}, {1, 100}, {1, 130}, {1, 201}, {1, 234}, {1, 255},
-	{2, 34}, {2, 54}, {2, 89}, {2, 100}, {2, 130}, {2, 201}, {2, 234}, {2, 255},
-	{33, 34}, {33, 54}, {33, 89}, {33, 100}, {33, 130}, {33, 201}, {33, 234}, {33, 255},
-	{36, 34}, {36, 54}, {36, 89}, {36, 100}, {36, 130}, {36, 201}, {36, 234}, {36, 255},
-	{38, 34}, {38, 54}, {38, 89}, {38, 100}, {38, 130}, {38, 201}, {38, 234}, {38, 255},
-	{48, 34}, {48, 54}, {48, 89}, {48, 100}, {48, 130}, {48, 201}, {48, 234}, {48, 255},
-	{120, 34}, {120, 54}, {120, 89}, {120, 100}, {120, 130}, {120, 201}, {120, 234}, {120, 255},
-};
-
+static	int 	direction;
+static	int 	font_ascent;
+static	int 	font_descent;
+static	XCharStruct	overall;
 >>ASSERTION Good A
-A call to xname returns the bounding box of the specified 16-bit or 2-byte
+A call to xname returns the bounding box of the specified 8-bit
 character string,
 .A string ,
 as rendered in the font referenced by
@@ -129,47 +121,36 @@ as rendered in the font referenced by
 >>STRATEGY
 The known good font information structures are used so that these tests
 are isolated from XLoadQueryFont.
-For each 16 bit VSW5 font
-  Call XTextExtents16.
-  Verify by direct calculation from the metrics.
+Make a string consisting of all characters from 0 to 255
+Call XTextExtents.
+Verify by direct calculation from the metrics.
 >>CODE
 extern	struct	fontinfo	fontinfo[];
 extern	int 	nfontinfo;
 int 	i;
 char	buf[256];
-int 	direction;
-int 	font_ascent;
-int 	font_descent;
-XCharStruct	overall;
 int 	good_direction;
 int 	good_font_ascent;
 int 	good_font_descent;
 XCharStruct	good_overall;
-int 	n16;
 
-	string = ch1;;
-	nchars  = NELEM(ch1);
-	direction_return = &direction;
-	font_ascent_return = &font_ascent;
-	font_descent_return = &font_descent;
-	overall_return = &overall;
+	for (i = 0; i < 256; i++)
+		buf[i] = i;
+	string = buf;
+	nchars  = 256;
 
-	n16 = 0;
 	for (i = 0; i < nfontinfo; i++) {
 		font_struct = fontinfo[i].fontstruct;
-		if (font_struct->max_byte1 == 0)
-			continue;
-
-		n16++;
 
 		XCALL;
 
-		txtextents16(font_struct, string, nchars, &good_direction,
-			&good_font_ascent, &good_font_descent, &good_overall);
+		txtextents(font_struct, (unsigned char *)string, nchars,
+			&good_direction, &good_font_ascent, &good_font_descent,
+			&good_overall);
 
 		/*
 		 * Don't check this because not well enough defined.
-		 * Just check it is a good value.
+		 * Just check that it is one of the allowed values.
 		 */
 		if (direction != FontLeftToRight && direction != FontRightToLeft) {
 			report("Font %s - Direction was %d", fontinfo[i].name);
@@ -220,14 +201,7 @@ int 	n16;
 		} else
 			CHECK;
 	}
-	CHECKPASS(8*n16);
->>ASSERTION def
-When the
-font is defined with linear indexing rather than 2-byte matrix indexing,
-then each 
-.S XChar2b 
-structure is interpreted as a 16-bit number with byte1 as the 
-most-significant byte.
+	CHECKPASS(8*nfontinfo);
 >>ASSERTION def
 The
 .M ascent

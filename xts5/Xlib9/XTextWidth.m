@@ -23,35 +23,35 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib9/XTextExtents/XTextExtents.m
+>># File: xts5/Xlib9/XTextWidth.m
 >># 
 >># Description:
->># 	Tests for XTextExtents()
+>># 	Tests for XTextWidth()
 >># 
 >># Modifications:
->># $Log: txtextnts.m,v $
+>># $Log: txtwdth.m,v $
 >># Revision 1.2  2005-11-03 08:43:59  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:39  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:30:50  mar
+>># Revision 8.0  1998/12/23 23:30:51  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:50:06  mar
+>># Revision 7.0  1998/10/30 22:50:07  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:22:36  tbr
+>># Revision 6.0  1998/03/02 05:22:37  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:19:08  tbr
+>># Revision 5.0  1998/01/26 03:19:09  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:00:19  tbr
+>># Revision 4.0  1995/12/15 09:00:20  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:55:47  andy
+>># Revision 3.1  1995/12/15  00:55:50  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -97,160 +97,50 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XTextExtents Xlib9
-void
+>>TITLE XTextWidth Xlib9
+int
 
 XFontStruct	*font_struct;
 char	*string;
-int 	nchars;
-int 	*direction_return = &direction;
-int 	*font_ascent_return = &font_ascent;
-int 	*font_descent_return = &font_descent;
-XCharStruct	*overall_return = &overall;
->>EXTERN
-static	int 	direction;
-static	int 	font_ascent;
-static	int 	font_descent;
-static	XCharStruct	overall;
+int 	count;
 >>ASSERTION Good A
-A call to xname returns the bounding box of the specified 8-bit
-character string,
+A call to xname returns the sum of the character-width metrics of all
+characters in the 8-bit character string,
 .A string ,
 as rendered in the font referenced by
 .A font_struct .
 >>STRATEGY
 The known good font information structures are used so that these tests
-are isolated from XLoadQueryFont.
-Make a string consisting of all characters from 0 to 255
-Call XTextExtents.
+  are isolated from XLoadQueryFont.
+Make a string consisting of all characters from 0 to 255.
+Call XTextWidth.
 Verify by direct calculation from the metrics.
 >>CODE
 extern	struct	fontinfo	fontinfo[];
 extern	int 	nfontinfo;
 int 	i;
+int 	width;
+int 	calcwidth;
 char	buf[256];
-int 	good_direction;
-int 	good_font_ascent;
-int 	good_font_descent;
-XCharStruct	good_overall;
 
 	for (i = 0; i < 256; i++)
 		buf[i] = i;
 	string = buf;
-	nchars  = 256;
+	count  = 256;
 
 	for (i = 0; i < nfontinfo; i++) {
 		font_struct = fontinfo[i].fontstruct;
 
-		XCALL;
+		width = XCALL;
 
-		txtextents(font_struct, (unsigned char *)string, nchars,
-			&good_direction, &good_font_ascent, &good_font_descent,
-			&good_overall);
+		calcwidth = txtwidth(font_struct, (unsigned char *)string, count);
 
-		/*
-		 * Don't check this because not well enough defined.
-		 * Just check that it is one of the allowed values.
-		 */
-		if (direction != FontLeftToRight && direction != FontRightToLeft) {
-			report("Font %s - Direction was %d", fontinfo[i].name);
-			FAIL;
-		} else
-			CHECK;
-
-		if (good_font_ascent != font_ascent) {
-			report("Font %s: font ascent was %d, expecting %d",
-				fontinfo[i].name, font_ascent, good_font_ascent);
-			FAIL;
-		} else
-			CHECK;
-		if (good_font_descent != font_descent) {
-			report("Font %s: font descent was %d, expecting %d",
-				fontinfo[i].name, font_descent, good_font_descent);
-			FAIL;
-		} else
-			CHECK;
-		if (good_overall.lbearing != overall.lbearing) {
-			report("Font %s: lbearing was %d, expecting %d",
-				fontinfo[i].name, overall.lbearing, good_overall.lbearing);
-			FAIL;
-		} else
-			CHECK;
-		if (good_overall.rbearing != overall.rbearing) {
-			report("Font %s: rbearing was %d, expecting %d",
-				fontinfo[i].name, overall.rbearing, good_overall.rbearing);
-			FAIL;
-		} else
-			CHECK;
-		if (good_overall.ascent != overall.ascent) {
-			report("Font %s: ascent was %d, expecting %d",
-				fontinfo[i].name, overall.ascent, good_overall.ascent);
-			FAIL;
-		} else
-			CHECK;
-		if (good_overall.descent != overall.descent) {
-			report("Font %s: descent was %d, expecting %d",
-				fontinfo[i].name, overall.descent, good_overall.descent);
-			FAIL;
-		} else
-			CHECK;
-		if (good_overall.width != overall.width) {
-			report("Font %s: width was %d, expecting %d",
-				fontinfo[i].name, overall.width, good_overall.width);
+		if (width != calcwidth) {
+			report("Font %s - width was %d, expecting %d", fontinfo[i].name,
+				width, calcwidth);
 			FAIL;
 		} else
 			CHECK;
 	}
-	CHECKPASS(8*nfontinfo);
->>ASSERTION def
-The
-.M ascent
-field of
-.A overall
-is set to the maximum of the ascent metrics 
-of all characters in the string.
->>ASSERTION def
-The
-.M descent
-field of
-.A overall
-is set to the maximum of the descent metrics
-of all characters in the string.
->>ASSERTION def
-The
-.M width
-field of
-.A overall
-is set to the sum of the character-width metrics 
-of all characters in the string.
->>ASSERTION def
-The
-.M lbearing
-field of
-.A overall
-is set to the minimum L of all characters in the string, where for each
-character L is the left-side-metric plus the sum of the character
-widths of all preceding characters in the string.
->>ASSERTION def
-The
-.M rbearing
-field of
-.A overall
-is set to the maximum R of all characters in the string, where for each
-character R is the right-side-bearing metric plus the sum of the
-character widths of all preceding characters in the string.
->>ASSERTION def
-The font_ascent_return argument is set to the logical ascent of the font,
-the font_descent_return argument is set to the logical descent of the font and
-the direction_return argument is set to either FontLeftToRight
-or FontRightToLeft.
->>ASSERTION def
-When the font has no defined default character, then
-undefined characters in the string are taken to have all zero metrics.
->>ASSERTION def
-Characters with all zero metrics are ignored.
->>ASSERTION def
-When the font has no defined
-.M default_char ,
-then the undefined characters in the string are also ignored.
->># HISTORY kieron Completed	Reformat and tidy to ca pass
+	CHECKPASS(nfontinfo);
+>># HISTORY kieron Completed    Reformat and tidy to ca pass

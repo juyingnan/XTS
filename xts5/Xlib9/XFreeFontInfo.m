@@ -23,35 +23,35 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib9/XTextWidth/XTextWidth.m
+>># File: xts5/Xlib9/XFreeFontInfo.m
 >># 
 >># Description:
->># 	Tests for XTextWidth()
+>># 	Tests for XFreeFontInfo()
 >># 
 >># Modifications:
->># $Log: txtwdth.m,v $
->># Revision 1.2  2005-11-03 08:43:59  jmichael
+>># $Log: frfntinf.m,v $
+>># Revision 1.2  2005-11-03 08:43:56  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:39  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:30:51  mar
+>># Revision 8.0  1998/12/23 23:30:38  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:50:07  mar
+>># Revision 7.0  1998/10/30 22:49:42  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:22:37  tbr
+>># Revision 6.0  1998/03/02 05:22:26  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:19:09  tbr
+>># Revision 5.0  1998/01/26 03:18:58  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:00:20  tbr
+>># Revision 4.0  1995/12/15 08:59:44  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:55:50  andy
+>># Revision 3.1  1995/12/15  00:54:45  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -97,50 +97,73 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XTextWidth Xlib9
-int
+>>TITLE XFreeFontInfo Xlib9
+void
 
-XFontStruct	*font_struct;
-char	*string;
-int 	count;
->>ASSERTION Good A
-A call to xname returns the sum of the character-width metrics of all
-characters in the 8-bit character string,
-.A string ,
-as rendered in the font referenced by
-.A font_struct .
+char	**names;
+XFontStruct	*free_info;
+int 	actual_count;
+>>SET startup fontstartup
+>>SET cleanup fontcleanup
+>>ASSERTION Good B 3
+>># NOTE	kieron	Untestable, really. No font IDs or other server
+>>#			resident stuff is affected.
+>># NOTE	kieron	The names and info *must* have been allocated
+>>#			in the same way as by XListFontsWithInfo. More
+>>#			accurately the names *cannot* have been returned by
+>>#			XListFontNames or the XFree's won't match the Xalloc's
+>>#			and subsequent, untestable and unpredictable, nastiness
+>>#			will occur.
+When
+.A names
+is a list of font names and
+.A free_info
+is a pointer to the font information
+both returned by a call to 
+.S XListFontsWithInfo ,
+then a call to xname frees
+.A names ,
+the font names specified by 
+.A names
+and
+.A free_info .
 >>STRATEGY
-The known good font information structures are used so that these tests
-  are isolated from XLoadQueryFont.
-Make a string consisting of all characters from 0 to 255.
-Call XTextWidth.
-Verify by direct calculation from the metrics.
+Get names and free_info with XListFontsWithInfo.
+Call XFreeFontInfo.
+Result is UNTESTED, unless an error should occur.
 >>CODE
-extern	struct	fontinfo	fontinfo[];
-extern	int 	nfontinfo;
-int 	i;
-int 	width;
-int 	calcwidth;
-char	buf[256];
 
-	for (i = 0; i < 256; i++)
-		buf[i] = i;
-	string = buf;
-	count  = 256;
+	names = XListFontsWithInfo(Dsp, "xtfont?", 4, &actual_count, &free_info);
+	if (names == NULL) {
+		delete("No VSW5 fonts found, check that they have been installed");
+		return;
+	} else
+		CHECK;
 
-	for (i = 0; i < nfontinfo; i++) {
-		font_struct = fontinfo[i].fontstruct;
+	XCALL;
 
-		width = XCALL;
+	CHECKUNTESTED(1);
+>>ASSERTION Good B 3
+When names is NULL and free_info is a pointer to the font information
+structure returned by an Xlib routine, then a call to xname frees
+the storage associated with free_info.
+>>STRATEGY
+Get font information with XLoadQueryFont.
+Call XFreeFontInfo.
+Result is UNTESTED, unless some error should occur.
+>>CODE
+XFontStruct	*fsp;
 
-		calcwidth = txtwidth(font_struct, (unsigned char *)string, count);
-
-		if (width != calcwidth) {
-			report("Font %s - width was %d, expecting %d", fontinfo[i].name,
-				width, calcwidth);
-			FAIL;
-		} else
-			CHECK;
+	fsp = XLoadQueryFont(Dsp, "xtfont0");
+	if (fsp == NULL) {
+		delete("Could not open xtfont0, check that VSW5 fonts are installed");
+		return;
 	}
-	CHECKPASS(nfontinfo);
->># HISTORY kieron Completed    Reformat and tidy to ca pass
+
+	names = NULL;
+	free_info = fsp;
+	actual_count = 1;
+	XCALL;
+
+	tet_result(TET_UNTESTED);
+>># HISTORY kieron Completed	Reformat and tidy to ca pass

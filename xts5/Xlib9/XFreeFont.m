@@ -23,38 +23,35 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib9/XGetFontProperty/XGetFontProperty.m
+>># File: xts5/Xlib9/XFreeFont.m
 >># 
 >># Description:
->># 	Tests for XGetFontProperty()
+>># 	Tests for XFreeFont()
 >># 
 >># Modifications:
->># $Log: gtfntprprt.m,v $
->># Revision 1.2  2005-11-03 08:43:57  jmichael
+>># $Log: frfnt.m,v $
+>># Revision 1.2  2005-11-03 08:43:56  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:39  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:30:39  mar
+>># Revision 8.0  1998/12/23 23:30:37  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:49:45  mar
+>># Revision 7.0  1998/10/30 22:49:41  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:22:27  tbr
+>># Revision 6.0  1998/03/02 05:22:25  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:18:59  tbr
+>># Revision 5.0  1998/01/26 03:18:57  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.1  1996/05/09 00:32:33  andy
->># Corrected Xatom include
->>#
->># Revision 4.0  1995/12/15  08:59:48  tbr
+>># Revision 4.0  1995/12/15 08:59:43  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:54:53  andy
+>># Revision 3.1  1995/12/15  00:54:42  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -100,138 +97,105 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XGetFontProperty Xlib9
-Bool
+>>TITLE XFreeFont Xlib9
+void
 
-XFontStruct	*font_struct;
-Atom	atom;
-unsigned long	*value_return;
+Display	*display = Dsp;
+XFontStruct *font_struct;
 >>SET startup fontstartup
 >>SET cleanup fontcleanup
 >>EXTERN
-#include	"X11/Xatom.h"
+#define FNAME	"xtfont1"
+#define	TEXTSTRING "AbyZ?@"
 >>ASSERTION Good A
-When the property specified by the
-.A atom
-argument
-is defined,
-then a call to xname returns
-the value of the property
-.A atom
+When another resource references the font with ID
+.M fid 
 in the
-.S XFontStruct
-named by the argument
+.A font_struct 
+argument,
+then a call to xname frees all storage associated with the
 .A font_struct
-and returns
-.S True .
+structure and destroys the association between the Font ID and the font.
 >>STRATEGY
-Retrieve properties that are known to be defined for the test fonts.
-Verify that True is returned.
-Verify that the value of the properties are correct.
+Only the part about destroying the association between Font ID and font
+is testable.
+Create font_struct.
+Save font ID from font_struct.
+Call XFreeFont.
+Create scratch drawable and gc.
+Set font into gc.
+Attempt to draw some text.
+Verify that a BadFont error occurred.
 >>CODE
-unsigned long	val;
-Bool	ret;
-int 	i;
-XFontProp	*fprop;
-extern	XFontStruct	xtfont0;	/* Known good version */
-extern	char	*xtfont0cpright;	/* Known good version */
+Font	font;
+Drawable	d;
+GC		gc;
 
-	font_struct = XLoadQueryFont(Dsp, "xtfont0");
-	if (font_struct == NULL || isdeleted()) {
-		delete("Could not load font, check that VSW5 fonts are installed");
+	font_struct = XLoadQueryFont(display, FNAME);
+	if (isdeleted() || font_struct == NULL) {
+		delete("Failed to load %s, check that VSW5 fonts are installed",FNAME);
 		return;
 	}
+	font = font_struct->fid;
 
-	value_return = &val;
+	XCALL;
 
-	for (i = 0; i < xtfont0.n_properties; i++) {
-		fprop = &xtfont0.properties[i];
-		atom = fprop->name;
+	/* Now try to use the font, should get BadFont */
+	d = defdraw(display, VI_WIN_PIX);
+	gc = makegc(display, d);
 
-		ret = XCALL;
-		if (ret != True) {
-			report("call did not return True for atom %s", atomname(atom));
-			FAIL;
-			continue;
-		} else
-			CHECK;
-
-		if (atom == XA_COPYRIGHT) {
-		char	*crstr;
-
-			XSetErrorHandler(error_status);
-			reseterr();
-			crstr = XGetAtomName(Dsp, val);
-			XSetErrorHandler(unexp_err);
-			switch (geterr()) {
-			case Success:
-				break;
-			case BadAtom:
-				report("copyright string atom did not exist");
-				FAIL;
-				break;
-			default:
-				delete("Call to XGetAtomName failed");
-				return;
-			}
-
-			if (strcmp(crstr, xtfont0cpright) == 0)
-				CHECK;
-			else {
-				report("XA_COPYRIGHT was '%s',", crstr);
-				report(" expecting '%s'", xtfont0cpright);
-				FAIL;
-			}
-
-		} else {
-			/* Compare value */
-			if (fprop->card32 == val)
-				CHECK;
-			else {
-				report("value of %s was %d, expecting %d",
-					atomname(atom), val, fprop->card32);
-				FAIL;
-			}
-		}
-	}
-	CHECKPASS(2*xtfont0.n_properties);
-
->>ASSERTION Good A
->># NOTE	kieron	Have to have defined fonts (bdf format)
->>#			loaded as the pre-defined properties (in X11/Xatom.h)
->>#			are likely, but not guaranteed, to be present on any
->>#			server.
-When the property specified by the
-.A atom
-argument
-is not defined,
-then a call to xname returns
-.S False .
->>STRATEGY
-Use the XA_RGB_DEFAULT_MAP atom which is not defined in the VSW5 fonts,
-(and is unlikely to be defined in a font..)
-Verify that False is returned.
->>CODE
-unsigned long	val;
-Bool	ret;
-int 	i;
-extern	XFontStruct	xtfont0;	/* Known good version */
-
-	font_struct = XLoadQueryFont(Dsp, "xtfont0");
-	if (font_struct == NULL || isdeleted()) {
-		delete("Could not load font, check that VSW5 fonts are installed");
+	if (isdeleted())
 		return;
-	}
 
-	value_return = &val;
+	/*
+	 * Since gc's can be cached then error can occur anytime between the
+	 * XSetFont and the XSync
+	 */
+	reseterr();
+	XSetErrorHandler(error_status);
+	XSetFont(display, gc, font);
+	XDrawString(display, d, gc, 30, 30, TEXTSTRING, strlen(TEXTSTRING));
+	XSync(display, False);
+	XSetErrorHandler(unexp_err);
 
-	atom = XA_RGB_DEFAULT_MAP;
-
-	ret = XCALL;
-
-	if (ret != False)
-		FAIL;
-	else
+	if (geterr() == BadFont) {
 		PASS;
+	} else {
+		report("Association between Font ID and font was not destroyed");
+		FAIL;
+	}
 
->># HISTORY	kieron	Completed	Reformat and tidy to ca pass
+>>ASSERTION Good B 3
+When no other resource ID references the font with ID
+.M fid 
+in the
+.A font_struct 
+argument,
+then a call to xname frees all storage associated with the
+.A font_struct
+structure, destroys the association between the Font ID and the font
+and that font is unloaded.
+>>ASSERTION Bad A
+.ER BadFont bad-font
+>>STRATEGY
+Call XLoadQueryFont to get font_struct.
+Unload the font using the font ID.
+Call XFreeFont.
+Verify that a BadFont error is generated.
+>>CODE BadFont
+
+	font_struct = XLoadQueryFont(display, FNAME);
+	if (isdeleted() || font_struct == NULL) {
+		delete("Failed to load %s, check that VSW5 fonts are installed",FNAME);
+		return;
+	}
+	XUnloadFont(display, font_struct->fid);
+
+	XCALL;
+
+	if (geterr() == BadFont)
+		PASS;
+	else
+		FAIL;
+
+>>#HISTORY	Kieron	Completed	Reformat and tidy to ca pass

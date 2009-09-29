@@ -23,35 +23,35 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib9/XQueryFont/XQueryFont.m
+>># File: xts5/Xlib9/XFreeFontNames.m
 >># 
 >># Description:
->># 	Tests for XQueryFont()
+>># 	Tests for XFreeFontNames()
 >># 
 >># Modifications:
->># $Log: qryfnt.m,v $
->># Revision 1.2  2005-11-03 08:43:58  jmichael
+>># $Log: frfntnms.m,v $
+>># Revision 1.2  2005-11-03 08:43:56  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:39  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:30:48  mar
+>># Revision 8.0  1998/12/23 23:30:38  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:50:01  mar
+>># Revision 7.0  1998/10/30 22:49:43  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:22:34  tbr
+>># Revision 6.0  1998/03/02 05:22:26  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:19:06  tbr
+>># Revision 5.0  1998/01/26 03:18:58  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:00:12  tbr
+>># Revision 4.0  1995/12/15 08:59:46  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:55:31  andy
+>># Revision 3.1  1995/12/15  00:54:47  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -97,127 +97,72 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XQueryFont Xlib9
-XFontStruct *
+>>TITLE XFreeFontNames Xlib9
+void
 
-Display	*display = Dsp;
-XID 	font_ID;
+char	**list;
 >>SET startup fontstartup
 >>SET cleanup fontcleanup
->>EXTERN
-extern	int 	checkfsp();
-extern	struct	fontinfo fontinfo[];
-extern	int 	nfontinfo;
->>ASSERTION Good A
->># Improved the wording a bit from that approved ....
->># When the font with font_ID
->># .A font_ID
-When the
-.A font_ID
-argument
-is a valid Font resource,
-then a call to xname returns a pointer to an
-.S XFontStruct 
-structure which contains information on
-the font
-with font ID
-.A font_ID .
+>>ASSERTION Good B 3
+>># As resolved by MIT, this test is now done using 
+>># the return value from XListFonts and XListFontsWithInfo.
+>>#
+>># Some X11R4 implementations may give memory faults when the return 
+>># value of XListFontsWithInfo is passed to XFreeFontNames, but this 
+>># is an implementation fault which should be fixed in X11R5.
+>>#
+>># DPJ Cater	5/4/91
+When 
+.A list
+is a list of font names 
+returned by a call to XListFonts,
+then a call to xname
+frees
+.A list
+and the font names specified by
+.A list .
 >>STRATEGY
-For each VSW5 font
-  Load font with XLoadFont.
-  Set font_ID to font
-  Call XQueryFont.
-  Verify returned XFontStruct with known good one.
+Get list of names with XListFonts.
+Call XFreeFontNames to free list of names.
+Verify that no error occurred.
+Get list of names with XListFontsWithInfo.
+Call XFreeFontNames to free list of names.
+Verify that no error occurred.
+Result is UNTESTED, unless an error should occur.
 >>CODE
-XFontStruct	*fsp;
-Font	font;
-int 	i;
+int 	count;
+XFontStruct	*info;
 
-	for (i = 0; i < nfontinfo; i++) {
-		trace("Loading font %s", fontinfo[i].name);
-		font = XLoadFont(Dsp, fontinfo[i].name);
-		if (isdeleted())
-			return;
-
-		font_ID = font;
-		fsp = XCALL;
-		if (checkfsp(fsp, fontinfo[i].fontstruct, *fontinfo[i].string))
-			CHECK;
-		else {
-			report("Returned XFontStruct was incorrect");
-			FAIL;
-		}
-	}
-	CHECKPASS(nfontinfo);
->>ASSERTION Good A
-When the
-.A font_ID
-argument
-specifies a
-.S GContext ,
-then a call to xname returns a pointer to an
-.S XFontStruct 
-structure which contains information on
-the font in the corresponding GC's
-.M font
-field.
->>STRATEGY
-Load font with 
->>CODE
-XFontStruct	*fsp;
-Font	font;
-GC		gc;
-Drawable	d;
-int 	i;
-
-	d = defdraw(Dsp, VI_WIN_PIX);
-	gc = makegc(Dsp, d);
-	if (isdeleted())
+	list = XListFonts(Dsp, "xtfont?", 4, &count);
+	if (list == NULL) {
+		delete("XListFonts failed");
 		return;
-
-	for (i = 0; i < nfontinfo; i++) {
-		trace("Loading font %s", fontinfo[i].name);
-		font = XLoadFont(Dsp, fontinfo[i].name);
-		if (isdeleted())
-			return;
-
-		XSetFont(Dsp, gc, font);
-
-		font_ID = XGContextFromGC(gc);
-		fsp = XCALL;
-		if (checkfsp(fsp, fontinfo[i].fontstruct, *fontinfo[i].string))
-			CHECK;
-		else {
-			report("Returned XFontStruct was incorrect");
-			FAIL;
-		}
 	}
-	CHECKPASS(nfontinfo);
->>ASSERTION Good A
-When the
-.A font_ID
-argument
-does not name a valid GContext or Font resource,
-then a call to xname returns
-.S NULL .
->>STRATEGY
-Obtain a bad font ID.
-Call XQueryFont.
-Verify that null is returned.
->>CODE
-Font	font;
-XFontStruct	*fsp;
 
-	font_ID = badfont(Dsp);
-	fsp = XCALL;
+	XCALL;
 
-	if (fsp != NULL) {
-		report("A non-NULL pointer was returned");
+	if (geterr() == Success)
+		CHECK;
+	else {
+		report("Got %s, Expecting Success", errorname(geterr()));
 		FAIL;
-	} else
-		PASS;
-		
->># The following has been removed, because it is not true. ..sr
->># >>ASSERTION Bad A
->># .ER BadFont bad-fontable
+	}
+
+	list = XListFontsWithInfo(Dsp, "xtfont?", 4, &count, &info);
+	if (list == NULL) {
+		delete("XListFontsWithInfo failed");
+		return;
+	}
+
+	XCALL;
+
+	if (geterr() == Success)
+		CHECK;
+	else {
+		report("Got %s, Expecting Success", errorname(geterr()));
+		FAIL;
+	}
+
+	CHECKUNTESTED(2);
+
 >># HISTORY kieron Completed	Reformat and tidy to ca pass

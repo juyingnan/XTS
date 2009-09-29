@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib9/XClearArea/XClearArea.m
+>># File: xts5/Xlib9/XClearArea.m
 >># 
 >># Description:
 >># 	Tests for XClearArea()

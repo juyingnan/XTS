@@ -9,8 +9,8 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	XClearArea/XClearArea \
-	XClearWindow/XClearWindow \
+	XClearArea \
+	XClearWindow \
 	XCopyArea/XCopyArea \
 	XCopyPlane/XCopyPlane \
 	XDrawArc/XDrawArc \
@@ -33,25 +33,25 @@ tprogs = \
 	XFillPolygon/XFillPolygon \
 	XFillRectangle/XFillRectangle \
 	XFillRectangles/XFillRectangles \
-	XFreeFont/XFreeFont \
-	XFreeFontInfo/XFreeFontInfo \
-	XFreeFontNames/XFreeFontNames \
-	XFreeFontPath/XFreeFontPath \
-	XGetFontProperty/XGetFontProperty \
-	XGetFontPath/XGetFontPath \
-	XGetImage/XGetImage \
-	XGetSubImage/XGetSubImage \
+	XFreeFont \
+	XFreeFontInfo \
+	XFreeFontNames \
+	XFreeFontPath \
+	XGetFontProperty \
+	XGetFontPath \
+	XGetImage \
+	XGetSubImage \
 	XLoadFont/XLoadFont \
 	XLoadQueryFont/XLoadQueryFont \
-	XListFonts/XListFonts \
-	XListFontsWithInfo/XListFontsWithInfo \
+	XListFonts \
+	XListFontsWithInfo \
 	XPutImage/XPutImage \
-	XQueryFont/XQueryFont \
-	XQueryTextExtents16/XQueryTextExtents16 \
-	XQueryTextExtents/XQueryTextExtents \
-	XSetFontPath/XSetFontPath \
-	XTextExtents16/XTextExtents16 \
-	XTextExtents/XTextExtents \
-	XTextWidth/XTextWidth \
-	XTextWidth16/XTextWidth16 \
-	XUnloadFont/XUnloadFont
+	XQueryFont \
+	XQueryTextExtents16 \
+	XQueryTextExtents \
+	XSetFontPath \
+	XTextExtents16 \
+	XTextExtents \
+	XTextWidth \
+	XTextWidth16 \
+	XUnloadFont

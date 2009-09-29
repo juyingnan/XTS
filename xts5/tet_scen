@@ -2882,11 +2882,11 @@ XFlushGC
 
 XClearArea
 	"VSW5TESTSUITE CASE XClearArea 11"
-	/Xlib9/XClearArea/XClearArea
+	/Xlib9/XClearArea
 
 XClearWindow
 	"VSW5TESTSUITE CASE XClearWindow 7"
-	/Xlib9/XClearWindow/XClearWindow
+	/Xlib9/XClearWindow
 
 XCopyArea
 	"VSW5TESTSUITE CASE XCopyArea 36"
@@ -2978,35 +2978,35 @@ XFillRectangles
 
 XFreeFont
 	"VSW5TESTSUITE CASE XFreeFont 3"
-	/Xlib9/XFreeFont/XFreeFont
+	/Xlib9/XFreeFont
 
 XFreeFontInfo
 	"VSW5TESTSUITE CASE XFreeFontInfo 2"
-	/Xlib9/XFreeFontInfo/XFreeFontInfo
+	/Xlib9/XFreeFontInfo
 
 XFreeFontNames
 	"VSW5TESTSUITE CASE XFreeFontNames 1"
-	/Xlib9/XFreeFontNames/XFreeFontNames
+	/Xlib9/XFreeFontNames
 
 XFreeFontPath
 	"VSW5TESTSUITE CASE XFreeFontPath 1"
-	/Xlib9/XFreeFontPath/XFreeFontPath
+	/Xlib9/XFreeFontPath
 
 XGetFontProperty
 	"VSW5TESTSUITE CASE XGetFontProperty 2"
-	/Xlib9/XGetFontProperty/XGetFontProperty
+	/Xlib9/XGetFontProperty
 
 XGetFontPath
 	"VSW5TESTSUITE CASE XGetFontPath 1"
-	/Xlib9/XGetFontPath/XGetFontPath
+	/Xlib9/XGetFontPath
 
 XGetImage
 	"VSW5TESTSUITE CASE XGetImage 17"
-	/Xlib9/XGetImage/XGetImage
+	/Xlib9/XGetImage
 
 XGetSubImage
 	"VSW5TESTSUITE CASE XGetSubImage 17"
-	/Xlib9/XGetSubImage/XGetSubImage
+	/Xlib9/XGetSubImage
 
 XLoadFont
 	"VSW5TESTSUITE CASE XLoadFont 5"
@@ -3018,11 +3018,11 @@ XLoadQueryFont
 
 XListFonts
 	"VSW5TESTSUITE CASE XListFonts 6"
-	/Xlib9/XListFonts/XListFonts
+	/Xlib9/XListFonts
 
 XListFontsWithInfo
 	"VSW5TESTSUITE CASE XListFontsWithInfo 7"
-	/Xlib9/XListFontsWithInfo/XListFontsWithInfo
+	/Xlib9/XListFontsWithInfo
 
 XPutImage
 	"VSW5TESTSUITE CASE XPutImage 40"
@@ -3030,39 +3030,39 @@ XPutImage
 
 XQueryFont
 	"VSW5TESTSUITE CASE XQueryFont 3"
-	/Xlib9/XQueryFont/XQueryFont
+	/Xlib9/XQueryFont
 
 XQueryTextExtents16
 	"VSW5TESTSUITE CASE XQueryTextExtents16 13"
-	/Xlib9/XQueryTextExtents16/XQueryTextExtents16
+	/Xlib9/XQueryTextExtents16
 
 XQueryTextExtents
 	"VSW5TESTSUITE CASE XQueryTextExtents 12"
-	/Xlib9/XQueryTextExtents/XQueryTextExtents
+	/Xlib9/XQueryTextExtents
 
 XSetFontPath
 	"VSW5TESTSUITE CASE XSetFontPath 4"
-	/Xlib9/XSetFontPath/XSetFontPath
+	/Xlib9/XSetFontPath
 
 XTextExtents16
 	"VSW5TESTSUITE CASE XTextExtents16 11"
-	/Xlib9/XTextExtents16/XTextExtents16
+	/Xlib9/XTextExtents16
 
 XTextExtents
 	"VSW5TESTSUITE CASE XTextExtents 10"
-	/Xlib9/XTextExtents/XTextExtents
+	/Xlib9/XTextExtents
 
 XTextWidth
 	"VSW5TESTSUITE CASE XTextWidth 1"
-	/Xlib9/XTextWidth/XTextWidth
+	/Xlib9/XTextWidth
 
 XTextWidth16
 	"VSW5TESTSUITE CASE XTextWidth16 2"
-	/Xlib9/XTextWidth16/XTextWidth16
+	/Xlib9/XTextWidth16
 
 XUnloadFont
 	"VSW5TESTSUITE CASE XUnloadFont 3"
-	/Xlib9/XUnloadFont/XUnloadFont
+	/Xlib9/XUnloadFont
 
 
 # Discrete tests for XOpen Specific Requirements

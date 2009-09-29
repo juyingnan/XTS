@@ -23,7 +23,7 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib9/XGetImage/XGetImage.m
+>># File: xts5/Xlib9/XGetImage.m
 >># 
 >># Description:
 >># 	Tests for XGetImage()

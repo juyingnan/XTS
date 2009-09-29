@@ -55,9 +55,9 @@
 #
 
 	"VSW5TESTSUITE CASE XClearArea 11"
-	/Xlib9/XClearArea/XClearArea
+	/Xlib9/XClearArea
 	"VSW5TESTSUITE CASE XClearWindow 7"
-	/Xlib9/XClearWindow/XClearWindow
+	/Xlib9/XClearWindow
 	"VSW5TESTSUITE CASE XCopyArea 36"
 	/Xlib9/XCopyArea/XCopyArea
 	"VSW5TESTSUITE CASE XCopyPlane 43"
@@ -103,46 +103,46 @@
 	"VSW5TESTSUITE CASE XFillRectangles 44"
 	/Xlib9/XFillRectangles/XFillRectangles
 	"VSW5TESTSUITE CASE XFreeFont 3"
-	/Xlib9/XFreeFont/XFreeFont
+	/Xlib9/XFreeFont
 	"VSW5TESTSUITE CASE XFreeFontInfo 2"
-	/Xlib9/XFreeFontInfo/XFreeFontInfo
+	/Xlib9/XFreeFontInfo
 	"VSW5TESTSUITE CASE XFreeFontNames 1"
-	/Xlib9/XFreeFontNames/XFreeFontNames
+	/Xlib9/XFreeFontNames
 	"VSW5TESTSUITE CASE XFreeFontPath 1"
-	/Xlib9/XFreeFontPath/XFreeFontPath
+	/Xlib9/XFreeFontPath
 	"VSW5TESTSUITE CASE XGetFontProperty 2"
-	/Xlib9/XGetFontProperty/XGetFontProperty
+	/Xlib9/XGetFontProperty
 	"VSW5TESTSUITE CASE XGetFontPath 1"
-	/Xlib9/XGetFontPath/XGetFontPath
+	/Xlib9/XGetFontPath
 	"VSW5TESTSUITE CASE XGetImage 17"
-	/Xlib9/XGetImage/XGetImage
+	/Xlib9/XGetImage
 	"VSW5TESTSUITE CASE XGetSubImage 17"
-	/Xlib9/XGetSubImage/XGetSubImage
+	/Xlib9/XGetSubImage
 	"VSW5TESTSUITE CASE XLoadFont 5"
 	/Xlib9/XLoadFont/XLoadFont
 	"VSW5TESTSUITE CASE XLoadQueryFont 5"
 	/Xlib9/XLoadQueryFont/XLoadQueryFont
 	"VSW5TESTSUITE CASE XListFonts 6"
-	/Xlib9/XListFonts/XListFonts
+	/Xlib9/XListFonts
 	"VSW5TESTSUITE CASE XListFontsWithInfo 7"
-	/Xlib9/XListFontsWithInfo/XListFontsWithInfo
+	/Xlib9/XListFontsWithInfo
 	"VSW5TESTSUITE CASE XPutImage 40"
 	/Xlib9/XPutImage/XPutImage
 	"VSW5TESTSUITE CASE XQueryFont 3"
-	/Xlib9/XQueryFont/XQueryFont
+	/Xlib9/XQueryFont
 	"VSW5TESTSUITE CASE XQueryTextExtents16 13"
-	/Xlib9/XQueryTextExtents16/XQueryTextExtents16
+	/Xlib9/XQueryTextExtents16
 	"VSW5TESTSUITE CASE XQueryTextExtents 12"
-	/Xlib9/XQueryTextExtents/XQueryTextExtents
+	/Xlib9/XQueryTextExtents
 	"VSW5TESTSUITE CASE XSetFontPath 4"
-	/Xlib9/XSetFontPath/XSetFontPath
+	/Xlib9/XSetFontPath
 	"VSW5TESTSUITE CASE XTextExtents16 11"
-	/Xlib9/XTextExtents16/XTextExtents16
+	/Xlib9/XTextExtents16
 	"VSW5TESTSUITE CASE XTextExtents 10"
-	/Xlib9/XTextExtents/XTextExtents
+	/Xlib9/XTextExtents
 	"VSW5TESTSUITE CASE XTextWidth 1"
-	/Xlib9/XTextWidth/XTextWidth
+	/Xlib9/XTextWidth
 	"VSW5TESTSUITE CASE XTextWidth16 2"
-	/Xlib9/XTextWidth16/XTextWidth16
+	/Xlib9/XTextWidth16
 	"VSW5TESTSUITE CASE XUnloadFont 3"
-	/Xlib9/XUnloadFont/XUnloadFont
+	/Xlib9/XUnloadFont

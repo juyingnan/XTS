@@ -23,35 +23,35 @@ All Rights Reserved.
 
 >># Project: VSW5
 >># 
->># File: xts5/Xlib9/XFreeFont/XFreeFont.m
+>># File: xts5/Xlib9/XGetFontPath.m
 >># 
 >># Description:
->># 	Tests for XFreeFont()
+>># 	Tests for XGetFontPath()
 >># 
 >># Modifications:
->># $Log: frfnt.m,v $
->># Revision 1.2  2005-11-03 08:43:56  jmichael
+>># $Log: gtfntpth.m,v $
+>># Revision 1.2  2005-11-03 08:43:57  jmichael
 >># clean up all vsw5 paths to use xts5 instead.
 >>#
 >># Revision 1.1.1.2  2005/04/15 14:05:39  anderson
 >># Reimport of the base with the legal name in the copyright fixed.
 >>#
->># Revision 8.0  1998/12/23 23:30:37  mar
+>># Revision 8.0  1998/12/23 23:30:40  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:49:41  mar
+>># Revision 7.0  1998/10/30 22:49:46  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:22:25  tbr
+>># Revision 6.0  1998/03/02 05:22:27  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:18:57  tbr
+>># Revision 5.0  1998/01/26 03:18:59  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 08:59:43  tbr
+>># Revision 4.0  1995/12/15 08:59:49  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.1  1995/12/15  00:54:42  andy
+>># Revision 3.1  1995/12/15  00:54:57  andy
 >># Prepare for GA Release
 >>#
 /*
@@ -97,105 +97,53 @@ software without specific, written prior permission.  UniSoft
 makes no representations about the suitability of this software for any
 purpose.  It is provided "as is" without express or implied warranty.
 */
->>TITLE XFreeFont Xlib9
-void
+>>TITLE XGetFontPath Xlib9
+char	**
 
 Display	*display = Dsp;
-XFontStruct *font_struct;
->>SET startup fontstartup
->>SET cleanup fontcleanup
+int 	*npaths_return = &npaths;
 >>EXTERN
-#define FNAME	"xtfont1"
-#define	TEXTSTRING "AbyZ?@"
+int 	npaths;
 >>ASSERTION Good A
-When another resource references the font with ID
-.M fid 
-in the
-.A font_struct 
-argument,
-then a call to xname frees all storage associated with the
-.A font_struct
-structure and destroys the association between the Font ID and the font.
+>># NOTE kieron		names are impl. dependent but should match those set
+>>#			by XSetFontPath....
+A call to xname
+allocates and returns an array of strings containing the search path
+for font lookup and returns the number of strings in the
+.A npaths_return
+argument.
 >>STRATEGY
-Only the part about destroying the association between Font ID and font
-is testable.
-Create font_struct.
-Save font ID from font_struct.
-Call XFreeFont.
-Create scratch drawable and gc.
-Set font into gc.
-Attempt to draw some text.
-Verify that a BadFont error occurred.
+Touch test - the ability to read back the path that was set is checked
+  in XSetFont.
+Call XGetFontPath.
+Verify that return is non-NULL.
+Verify that npaths_return is non-zero.
+Verify that there are at least that many strings.
 >>CODE
-Font	font;
-Drawable	d;
-GC		gc;
-
-	font_struct = XLoadQueryFont(display, FNAME);
-	if (isdeleted() || font_struct == NULL) {
-		delete("Failed to load %s, check that VSW5 fonts are installed",FNAME);
-		return;
-	}
-	font = font_struct->fid;
-
-	XCALL;
-
-	/* Now try to use the font, should get BadFont */
-	d = defdraw(display, VI_WIN_PIX);
-	gc = makegc(display, d);
-
-	if (isdeleted())
-		return;
+char	**paths;
+int 	i;
 
 	/*
-	 * Since gc's can be cached then error can occur anytime between the
-	 * XSetFont and the XSync
+	 * Assuming that the path is set to something here.
 	 */
-	reseterr();
-	XSetErrorHandler(error_status);
-	XSetFont(display, gc, font);
-	XDrawString(display, d, gc, 30, 30, TEXTSTRING, strlen(TEXTSTRING));
-	XSync(display, False);
-	XSetErrorHandler(unexp_err);
-
-	if (geterr() == BadFont) {
-		PASS;
-	} else {
-		report("Association between Font ID and font was not destroyed");
+	paths = XCALL;
+	if (paths == NULL) {
+		report("return value was NULL");
 		FAIL;
+	} else
+		CHECK;
+
+	if (npaths == 0) {
+		report("npaths_return was 0");
+		FAIL;
+	} else
+		CHECK;
+
+	for (i = 0; i < npaths; i++) {
+		trace("got path component '%s'", paths[i]);
 	}
 
->>ASSERTION Good B 3
-When no other resource ID references the font with ID
-.M fid 
-in the
-.A font_struct 
-argument,
-then a call to xname frees all storage associated with the
-.A font_struct
-structure, destroys the association between the Font ID and the font
-and that font is unloaded.
->>ASSERTION Bad A
-.ER BadFont bad-font
->>STRATEGY
-Call XLoadQueryFont to get font_struct.
-Unload the font using the font ID.
-Call XFreeFont.
-Verify that a BadFont error is generated.
->>CODE BadFont
+	CHECKPASS(2);
 
-	font_struct = XLoadQueryFont(display, FNAME);
-	if (isdeleted() || font_struct == NULL) {
-		delete("Failed to load %s, check that VSW5 fonts are installed",FNAME);
-		return;
-	}
-	XUnloadFont(display, font_struct->fid);
 
-	XCALL;
-
-	if (geterr() == BadFont)
-		PASS;
-	else
-		FAIL;
-
->>#HISTORY	Kieron	Completed	Reformat and tidy to ca pass
+>># HISTORY kieron Completed	Reformat and tidy to ca pass
