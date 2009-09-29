@@ -25,32 +25,32 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: xts/SHAPE/XShapeOffsetShape/XShapeOffsetShape.m
+>># File: xts/SHAPE/XShapeCombineRectangles.m
 >>#
 >># Description:
->>#     Tests for XShapeOffsetShape()
+>>#     Tests for XShapeCombineRectangles()
 >>#
 >># Modifications:
->># $Log: tshoffshp.m,v $
+>># $Log: tshpcrect.m,v $
 >># Revision 1.1  2005-02-12 14:37:16  anderson
 >># Initial revision
 >>#
->># Revision 8.0  1998/12/23 23:31:26  mar
+>># Revision 8.0  1998/12/23 23:31:27  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:51:07  mar
+>># Revision 7.0  1998/10/30 22:51:09  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:23:05  tbr
+>># Revision 6.0  1998/03/02 05:23:06  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:19:38  tbr
+>># Revision 5.0  1998/01/26 03:19:39  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:02:07  tbr
+>># Revision 4.0  1995/12/15 09:02:10  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.2  1995/12/15  01:47:50  andy
+>># Revision 3.2  1995/12/15  01:47:51  andy
 >># Prepare for GA Release
 >>#
 
@@ -58,15 +58,18 @@ All Rights Reserved.
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <X11/extensions/shape.h>
-extern Display *display ;
+extern Display *display;
 
->>TITLE XShapeOffsetShape ShapeExt
+>>TITLE XShapeCombineRectangles ShapeExt
 void
-XShapeOffsetShape(display, dest, dest_kind, x_off, y_off) 
+XShapeCombineRectangles(display, dest, dest_kind, x_off, y_off, rectangles, n_rects, op, ordering)
 >>ASSERTION Good A
-A call to XShapeOffsetShape(display, dest, dest_kind, x_off, y_off) shall
-perform an OffsetShape operation by moving the client region, specified
-by dest, relative to its current position by the amounts x_off and y_off.
+A call to void XShapeCombineRectangles(display, dest, dest_kind, x_off,
+y_off, rectangles, n_rects, op, ordering) shall perform a
+CombineRectangles operation by combining rectangles as
+specified by operator op relative to origin of the window plus the
+specified offset x_off and y_off and the result shall be stored as
+the specified client region of the destination window dest.
 >>CODE
 Window  window;
 XRectangle rects[] = { 0,0, 100, 100, 100, 100, 100, 100 };
@@ -81,8 +84,6 @@ XSetWindowAttributes xswa;
 unsigned long   mask;
 XRectangle *rect_return;
 int count, order;
-int x_off;
-int y_off;
 pid_t pid2;
 
 	FORK(pid2);
@@ -98,7 +99,8 @@ pid_t pid2;
 		   );
 	tet_infoline("PREP: Create destination window");
 	xswa.event_mask = ExposureMask;
-	xswa.background_pixel = XBlackPixel(display, XDefaultScreen (display));
+	xswa.background_pixel = XBlackPixel(display,
+			  XDefaultScreen (display));
 	mask = CWEventMask | CWBackPixel;
 	window_good = XCreateWindow(display, window,
 		     (x+10), (y+10),
@@ -108,22 +110,13 @@ pid_t pid2;
 		     CopyFromParent,
 		     mask, &xswa
 		     );
-	tet_infoline("PREP: Combine two rectangles");
+	tet_infoline("PREP: Combine two rectangles and map window");
 	XShapeCombineRectangles(display,
 			window_good,
 			ShapeBounding, 0, 0,
 			rects,
 			sizeof (rects) / sizeof (rects[0]),
 			ShapeSet, YXBanded);
-	tet_infoline("PREP: Perform offset operation of x_off = 100 and y = 100");
-	x_off = 100;
-	y_off = 100;
-	XShapeOffsetShape(display,
-		  window_good,
-		  ShapeBounding,
-		  x_off,
-		  y_off
-		  );
 	XMapWindow(display, window_good);
 	XSync(display, 0);
 	tet_infoline("PREP: Get count and order of rectangles");
@@ -133,24 +126,21 @@ pid_t pid2;
 	tet_infoline("TEST: Count and order values");
 	check_dec(2, count, "count");
 	check_dec(YXBanded, order, "order");
-	tet_infoline("TEST: First rectangle values after offset");
-	check_dec((rects[0].x + x_off), rect_return->x,
-			"rect_return->x");
-	check_dec((rects[0].y + y_off), rect_return->y,
-			"rect_return->y");
+	tet_infoline("TEST: First rectangle values");
+	check_dec(rects[0].x, rect_return->x, "rect_return->x");
+	check_dec(rects[0].y, rect_return->y, "rect_return->y");
 	check_dec(rects[0].width, rect_return->width,
 			 "rect_return->width");
 	check_dec(rects[0].height, rect_return->height,
 			"rect_return->height");
-	tet_infoline("TEST: Second rectangle values after offset");
+	tet_infoline("TEST: Second rectangle values");
 	rect_return++;
-	check_dec((rects[1].x + x_off), rect_return->x,
-			"rect_return->x");
-	check_dec((rects[1].y + y_off), rect_return->y,
-			"rect_return->y");
+	check_dec(rects[1].x, rect_return->x, "rect_return->x");
+	check_dec(rects[1].y, rect_return->y, "rect_return->y");
 	check_dec(rects[1].width, rect_return->width,
 			 "rect_return->width");
 	check_dec(rects[1].height, rect_return->height,
 			"rect_return->height");
+
 	LKROF(pid2, AVSXTTIMEOUT);
 	tet_result(TET_PASS);

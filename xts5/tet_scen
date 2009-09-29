@@ -646,47 +646,47 @@ XUngrabDeviceKey
 
 XShapeOffsetShape
 	"VSW5TESTSUITE CASE XShapeOffsetShape 1"
-	/SHAPE/XShapeOffsetShape/XShapeOffsetShape
+	/SHAPE/XShapeOffsetShape
 
 XShapeCombineMask
 	"VSW5TESTSUITE CASE XShapeCombineMask 1"
-	/SHAPE/XShapeCombineMask/XShapeCombineMask
+	/SHAPE/XShapeCombineMask
 
 XShapeCombineRectangles
 	"VSW5TESTSUITE CASE XShapeCombineRectangles 1"
-	/SHAPE/XShapeCombineRectangles/XShapeCombineRectangles
+	/SHAPE/XShapeCombineRectangles
 
 XShapeCombineRegion
 	"VSW5TESTSUITE CASE XShapeCombineRegion 1"
-	/SHAPE/XShapeCombineRegion/XShapeCombineRegion
+	/SHAPE/XShapeCombineRegion
 
 XShapeCombineShape
 	"VSW5TESTSUITE CASE XShapeCombineShape 1"
-	/SHAPE/XShapeCombineShape/XShapeCombineShape
+	/SHAPE/XShapeCombineShape
 
 XShapeGetRectangles
 	"VSW5TESTSUITE CASE XShapeGetRectangles 1"
-	/SHAPE/XShapeGetRectangles/XShapeGetRectangles
+	/SHAPE/XShapeGetRectangles
 
 XShapeInputSelected
 	"VSW5TESTSUITE CASE XShapeInputSelected 1"
-	/SHAPE/XShapeInputSelected/XShapeInputSelected
+	/SHAPE/XShapeInputSelected
 
 XShapeQueryExtension
 	"VSW5TESTSUITE CASE XShapeQueryExtension 1"
-	/SHAPE/XShapeQueryExtension/XShapeQueryExtension
+	/SHAPE/XShapeQueryExtension
 
 XShapeQueryExtents
 	"VSW5TESTSUITE CASE XShapeQueryExtents 1"
-	/SHAPE/XShapeQueryExtents/XShapeQueryExtents
+	/SHAPE/XShapeQueryExtents
 
 XShapeQueryVersion
 	"VSW5TESTSUITE CASE XShapeQueryVersion 1"
-	/SHAPE/XShapeQueryVersion/XShapeQueryVersion
+	/SHAPE/XShapeQueryVersion
 
 XShapeSelectInput
 	"VSW5TESTSUITE CASE XShapeSelectInput 1"
-	/SHAPE/XShapeSelectInput/XShapeSelectInput
+	/SHAPE/XShapeSelectInput
 
 # Discrete tests for Xlib Chapter 10-Window and Session Manager Functions
 

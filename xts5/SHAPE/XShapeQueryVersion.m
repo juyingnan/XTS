@@ -25,35 +25,32 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: xts/SHAPE/XShapeOffsetShape/tshpinsel.m
+>># File: xts/SHAPE/XShapeQueryVersion.m
 >>#
 >># Description:
->>#     Tests for XShapeInputSelected()
+>>#     Tests for XShapeQueryVersion()
 >>#
 >># Modifications:
->># $Log: tshpinsel.m,v $
+>># $Log: tshpqyver.m,v $
 >># Revision 1.1  2005-02-12 14:37:16  anderson
 >># Initial revision
 >>#
->># Revision 8.0  1998/12/23 23:31:29  mar
+>># Revision 8.0  1998/12/23 23:31:30  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:51:14  mar
+>># Revision 7.0  1998/10/30 22:51:16  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:23:08  tbr
+>># Revision 6.0  1998/03/02 05:23:09  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:19:40  tbr
+>># Revision 5.0  1998/01/26 03:19:42  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.1  1997/10/26 22:38:10  andy
->># Corrected file name
->>#
->># Revision 4.0  1995/12/15  09:02:15  tbr
+>># Revision 4.0  1995/12/15 09:02:19  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.2  1995/12/15  01:47:53  andy
+>># Revision 3.2  1995/12/15  01:47:55  andy
 >># Prepare for GA Release
 >>#
 
@@ -63,25 +60,44 @@ All Rights Reserved.
 #include <X11/extensions/shape.h>
 extern Display *display ;
 
->>TITLE XShapeInputSelected ShapeExt
-unsigned long
-XShapeInputSelected(display, window)
+>>TITLE XShapeQueryVersion ShapeExt
+Status
+XShapeQueryVersion(display, major_version, minor_version)
 >>ASSERTION Good A
-A call to unsigned long XShapeInputSelected(display, window) shall return the
-current input mask for extension events on the specified window.
+A call to Status XShapeQueryVersion(display, major_version, minor_version)
+shall return a non-zero value and  set the major and minor version
+numbers of the extension supported by the display.
 >>CODE
-Window  window ;
-unsigned long mask_good ;
+Window  window;
+int   value_good;
+int   major_version;
+int   minor_version;
 pid_t pid2;
 
 	FORK(pid2);
 	tet_infoline("PREP: Open display and create window");
 	window = (Window) avs_xext_init();
-	tet_infoline("PREP: Set ShapeNotifyMask mask");
-	XShapeSelectInput(display, window, ShapeNotifyMask) ;
-	tet_infoline("PREP: Get mask of current window");
-	mask_good = XShapeInputSelected(display, window);
-	tet_infoline("TEST: Mask value is ShapeNotifyMask");
-	check_dec(ShapeNotifyMask,mask_good, "mask value");
+	tet_infoline("TEST: XShapeQueryVersion");
+	value_good = XShapeQueryVersion(display,
+		     &major_version, &minor_version) ;
+	tet_infoline("TEST: Non zero value is returned");
+	if (value_good <=0 ) {
+		sprintf(ebuf, "ERROR: Expected non zero, returned %d", value_good);
+		tet_infoline(ebuf);
+		tet_result(TET_FAIL);
+	}
+	tet_infoline("TESTING: major_version is set to valid value");
+	if (major_version <= 0) {
+		sprintf(ebuf, "ERROR: Expected non zero returned %d", major_version);
+		tet_infoline(ebuf);
+		tet_result(TET_FAIL);
+	}
+	tet_infoline("TESTING: minor_version is set to valid value");
+	if (minor_version < 0) {
+		sprintf(ebuf, "ERROR: Expected positive number returned %d", minor_version);
+		tet_infoline(ebuf);
+		tet_result(TET_FAIL);
+	}
+
 	LKROF(pid2, AVSXTTIMEOUT);
         tet_result(TET_PASS);

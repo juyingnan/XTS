@@ -25,32 +25,32 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: xts/SHAPE/XShapeCombineMask/XShapeCombineMask.m
+>># File: xts/SHAPE/XShapeGetRectangles.m
 >>#
 >># Description:
->>#     Tests for XShapeCombineMask()
+>>#     Tests for XShapeGetRectangles()
 >>#
 >># Modifications:
->># $Log: tshpcmask.m,v $
+>># $Log: tshpgtrec.m,v $
 >># Revision 1.1  2005-02-12 14:37:16  anderson
 >># Initial revision
 >>#
->># Revision 8.0  1998/12/23 23:31:26  mar
+>># Revision 8.0  1998/12/23 23:31:28  mar
 >># Branch point for Release 5.0.2
 >>#
->># Revision 7.0  1998/10/30 22:51:08  mar
+>># Revision 7.0  1998/10/30 22:51:13  mar
 >># Branch point for Release 5.0.2b1
 >>#
->># Revision 6.0  1998/03/02 05:23:06  tbr
+>># Revision 6.0  1998/03/02 05:23:07  tbr
 >># Branch point for Release 5.0.1
 >>#
->># Revision 5.0  1998/01/26 03:19:38  tbr
+>># Revision 5.0  1998/01/26 03:19:40  tbr
 >># Branch point for Release 5.0.1b1
 >>#
->># Revision 4.0  1995/12/15 09:02:09  tbr
+>># Revision 4.0  1995/12/15 09:02:14  tbr
 >># Branch point for Release 5.0.0
 >>#
->># Revision 3.2  1995/12/15  01:47:50  andy
+>># Revision 3.2  1995/12/15  01:47:53  andy
 >># Prepare for GA Release
 >>#
 
@@ -58,48 +58,30 @@ All Rights Reserved.
 #include <X11/Xlib.h>
 #include <X11/Xutil.h>
 #include <X11/extensions/shape.h>
-
 extern Display *display;
 
-int avs2;
-
-/*
-** Pixmaps
-** essentially a rect with dimensions 16x16
-*/
-#define rect_width 16
-#define rect_height 16
-static unsigned char rect_bits[] = {
-   0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-   0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff,
-   0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff};
->>TITLE XShapeCombineMask ShapeExt
-void
-XShapeCombineMask(display, dest, dest_kind, x_off, y_off, src, op)
+>>TITLE XShapeGetRectangles ShapeExt
+XRectangle *
+XShapeGetRectangles(display, window, kind, count, ordering)
 >>ASSERTION Good A
-A call to  XShapeCombineMask(display, dest, dest_kind, x_off, y_off, src, op)
-shall perform a CombineMask operation by converting the pixmap src to a
-region with bits set to one included in the region and bits set to zero
-excluded with an offset from the window origin by amount x_off and y_off,
-the resulting region shall be combined as specified by the operator
-op with the existing client region as specified by dest_kind of the
-destination window dest, and the result shall be stored as the client
-region of the destination window.
+A call to XRectangle *XShapeGetRectangles(display, window, kind, count,
+ordering) shall return the list of rectangles as specified by count
+and ordering order
+describing the region specified by kind.");
 >>CODE
-Window window;
+Window  window;
+XRectangle rects[] = { 0,0, 100, 100, 100, 100, 100, 100 };
 GC gc;
 Window root_window;
 int x, y;
 unsigned int width, height;
 unsigned int border_width;
 unsigned int depth;
-Window dest;
+Window window_good;
 XSetWindowAttributes xswa;
-unsigned long  mask;
-Pixmap src_pixmap;
+unsigned long   mask;
 XRectangle *rect_return;
 int count, order;
-int BorderPixel, BackgroundPixel;
 pid_t pid2;
 
 	FORK(pid2);
@@ -113,41 +95,50 @@ pid_t pid2;
 		   &border_width,
 		   &depth
 		   );
-	tet_infoline("PREP: Create source pixmap");
-	src_pixmap = XCreateBitmapFromData(display, window,
-		 (char *)rect_bits, rect_width,
-		 rect_height);
 	tet_infoline("PREP: Create destination window");
-	BorderPixel = XWhitePixel(display,XDefaultScreen(display));
-	BackgroundPixel = XBlackPixel(display,XDefaultScreen(display));
-	dest  = XCreateSimpleWindow(display, window,
+	xswa.event_mask = ExposureMask;
+	xswa.background_pixel = XBlackPixel(display,
+			  XDefaultScreen (display));
+	mask = CWEventMask | CWBackPixel;
+	window_good = XCreateWindow(display, window,
 		     (x+10), (y+10),
-		     (width - 200 ), (height - 200 ), 0,
-		     BorderPixel,
-		     BackgroundPixel
+		     (width - 50 ), (height - 50 ), 0,
+		     CopyFromParent,
+		     CopyFromParent,
+		     CopyFromParent,
+		     mask, &xswa
 		     );
-	XSync(display, 0);
-	/*
-	** Combining a pixmap with defaut shapeclip region shall yield
-	** region which is a pixmap only, the number of rectangles is
-	** one on destination window.
-	*/
-	tet_infoline("PREP: Combine pixmap with default region");
-	XShapeCombineMask(display,
-		  dest,
-		  ShapeClip,
-		  100,
-		  100,
-		  src_pixmap,
-		  ShapeSet);
-	XMapWindow(display, dest);
+	tet_infoline("PREP: Combine two rectangles and map window");
+	XShapeCombineRectangles(display,
+		        window_good,
+		        ShapeBounding, 0, 0,
+		        rects,
+		        sizeof (rects) / sizeof (rects[0]),
+		        ShapeSet, YXBanded);
+	XMapWindow(display, window_good);
 	XSync(display, 0);
 	tet_infoline("PREP: Get count and order of rectangles");
 	rect_return = (XRectangle *)XShapeGetRectangles(display,
-			    dest, ShapeClip,
+			    window_good, ShapeBounding,
 			    &count, &order);
 	tet_infoline("TEST: Count and order values");
-	check_dec(1, count, "count");
+	check_dec(2, count, "count");
 	check_dec(YXBanded, order, "order");
+	tet_infoline("TEST: Check first rectangle values");
+	check_dec(rects[0].x, rect_return->x, "rect_return->x");
+	check_dec(rects[0].y, rect_return->y, "rect_return->y");
+	check_dec(rects[0].width, rect_return->width,
+		         "rect_return->width");
+	check_dec(rects[0].height, rect_return->height,
+			"rect_return->height");
+	tet_infoline("TEST: Second rectangle values");
+	rect_return++;
+	check_dec(rects[1].x, rect_return->x, "rect_return->x");
+	check_dec(rects[1].y, rect_return->y, "rect_return->y");
+	check_dec(rects[1].width, rect_return->width,
+		         "rect_return->width");
+	check_dec(rects[1].height, rect_return->height,
+			"rect_return->height");
+
 	LKROF(pid2, AVSXTTIMEOUT);
         tet_result(TET_PASS);

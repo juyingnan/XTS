@@ -25,7 +25,7 @@ All Rights Reserved.
 >>#
 >># Project: VSW5
 >>#
->># File: xts/SHAPE/XShapeQueryExtension/XShapeQueryExtension.m
+>># File: xts/SHAPE/XShapeQueryExtension.m
 >>#
 >># Description:
 >>#     Tests for XShapeQueryExtension()
