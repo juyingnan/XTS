@@ -8,39 +8,39 @@ libexec_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
-XrmCombineDatabase_XrmCombineDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
-XrmCombineFileDatabase_XrmCombineFileDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
-XrmEnumerateDatabase_XrmEnumerateDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
-XrmPermStringToQuark_XrmPermStringToQuark_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
+XrmCombineDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
+XrmCombineFileDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
+XrmEnumerateDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
+XrmPermStringToQuark_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
 
 tprogs = \
-	XrmCombineDatabase/XrmCombineDatabase \
-	XrmCombineFileDatabase/XrmCombineFileDatabase \
-	XrmDestroyDatabase/XrmDestroyDatabase \
-	XrmEnumerateDatabase/XrmEnumerateDatabase \
-	XrmGetDatabase/XrmGetDatabase \
-	XrmGetFileDatabase/XrmGetFileDatabase \
-	XrmGetResource/XrmGetResource \
-	XrmGetStringDatabase/XrmGetStringDatabase \
-	XrmInitialize/XrmInitialize \
-	XrmLocaleOfDatabase/XrmLocaleOfDatabase \
-	XrmMergeDatabases/XrmMergeDatabases \
-	XrmParseCommand/XrmParseCommand \
-	XrmPermStringToQuark/XrmPermStringToQuark \
-	XrmPutFileDatabase/XrmPutFileDatabase \
-	XrmPutLineResource/XrmPutLineResource \
-	XrmPutResource/XrmPutResource \
-	XrmPutStringResource/XrmPutStringResource \
-	XrmQGetResource/XrmQGetResource \
-	XrmQGetSearchList/XrmQGetSearchList \
-	XrmQGetSearchResource/XrmQGetSearchResource \
-	XrmQPutResource/XrmQPutResource \
-	XrmQPutStringResource/XrmQPutStringResource \
-	XrmQuarkToString/XrmQuarkToString \
-	XrmSetDatabase/XrmSetDatabase \
-	XrmStringToBindingQuarkList/XrmStringToBindingQuarkList \
-	XrmStringToQuark/XrmStringToQuark \
-	XrmStringToQuarkList/XrmStringToQuarkList \
-	XrmUniqueQuark/XrmUniqueQuark \
-	XResourceManagerString/XResourceManagerString \
-	XScreenResourceString/XScreenResourceString
+	XrmCombineDatabase \
+	XrmCombineFileDatabase \
+	XrmDestroyDatabase \
+	XrmEnumerateDatabase \
+	XrmGetDatabase \
+	XrmGetFileDatabase \
+	XrmGetResource \
+	XrmGetStringDatabase \
+	XrmInitialize \
+	XrmLocaleOfDatabase \
+	XrmMergeDatabases \
+	XrmParseCommand \
+	XrmPermStringToQuark \
+	XrmPutFileDatabase \
+	XrmPutLineResource \
+	XrmPutResource \
+	XrmPutStringResource \
+	XrmQGetResource \
+	XrmQGetSearchList \
+	XrmQGetSearchResource \
+	XrmQPutResource \
+	XrmQPutStringResource \
+	XrmQuarkToString \
+	XrmSetDatabase \
+	XrmStringToBindingQuarkList \
+	XrmStringToQuark \
+	XrmStringToQuarkList \
+	XrmUniqueQuark \
+	XResourceManagerString \
+	XScreenResourceString
