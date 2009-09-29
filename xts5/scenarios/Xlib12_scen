@@ -55,56 +55,56 @@
 #
 
 	"VSW5TESTSUITE CASE XCheckIfEvent 6"
-	/Xlib12/XCheckIfEvent/XCheckIfEvent
+	/Xlib12/XCheckIfEvent
 	"VSW5TESTSUITE CASE XCheckMaskEvent 6"
-	/Xlib12/XCheckMaskEvent/XCheckMaskEvent
+	/Xlib12/XCheckMaskEvent
 	"VSW5TESTSUITE CASE XCheckTypedEvent 6"
-	/Xlib12/XCheckTypedEvent/XCheckTypedEvent
+	/Xlib12/XCheckTypedEvent
 	"VSW5TESTSUITE CASE XCheckTypedWindowEvent 6"
-	/Xlib12/XCheckTypedWindowEvent/XCheckTypedWindowEvent
+	/Xlib12/XCheckTypedWindowEvent
 	"VSW5TESTSUITE CASE XCheckWindowEvent 6"
-	/Xlib12/XCheckWindowEvent/XCheckWindowEvent
+	/Xlib12/XCheckWindowEvent
 	"VSW5TESTSUITE CASE XDisplayMotionBufferSize 2"
-	/Xlib12/XDisplayMotionBufferSize/XDisplayMotionBufferSize
+	/Xlib12/XDisplayMotionBufferSize
 	"VSW5TESTSUITE CASE XDisplayName 1"
 	/Xlib12/XDisplayName/XDisplayName
 	"VSW5TESTSUITE CASE XEventsQueued 6"
-	/Xlib12/XEventsQueued/XEventsQueued
+	/Xlib12/XEventsQueued
 	"VSW5TESTSUITE CASE XFlush 1"
-	/Xlib12/XFlush/XFlush
+	/Xlib12/XFlush
 	"VSW5TESTSUITE CASE XGetErrorDatabaseText 5"
-	/Xlib12/XGetErrorDatabaseText/XGetErrorDatabaseText
+	/Xlib12/XGetErrorDatabaseText
 	"VSW5TESTSUITE CASE XGetErrorText 2"
-	/Xlib12/XGetErrorText/XGetErrorText
+	/Xlib12/XGetErrorText
 	"VSW5TESTSUITE CASE XGetMotionEvents 7"
-	/Xlib12/XGetMotionEvents/XGetMotionEvents
+	/Xlib12/XGetMotionEvents
 	"VSW5TESTSUITE CASE XIfEvent 4"
-	/Xlib12/XIfEvent/XIfEvent
+	/Xlib12/XIfEvent
 	"VSW5TESTSUITE CASE XMaskEvent 3"
-	/Xlib12/XMaskEvent/XMaskEvent
+	/Xlib12/XMaskEvent
 	"VSW5TESTSUITE CASE XNextEvent 3"
-	/Xlib12/XNextEvent/XNextEvent
+	/Xlib12/XNextEvent
 	"VSW5TESTSUITE CASE XPeekEvent 3"
-	/Xlib12/XPeekEvent/XPeekEvent
+	/Xlib12/XPeekEvent
 	"VSW5TESTSUITE CASE XPeekIfEvent 4"
-	/Xlib12/XPeekIfEvent/XPeekIfEvent
+	/Xlib12/XPeekIfEvent
 	"VSW5TESTSUITE CASE XPending 3"
-	/Xlib12/XPending/XPending
+	/Xlib12/XPending
 	"VSW5TESTSUITE CASE XPutBackEvent 2"
-	/Xlib12/XPutBackEvent/XPutBackEvent
+	/Xlib12/XPutBackEvent
 	"VSW5TESTSUITE CASE XSelectInput 8"
-	/Xlib12/XSelectInput/XSelectInput
+	/Xlib12/XSelectInput
 	"VSW5TESTSUITE CASE XSendEvent 22"
-	/Xlib12/XSendEvent/XSendEvent
+	/Xlib12/XSendEvent
 	"VSW5TESTSUITE CASE XSetAfterFunction 3"
-	/Xlib12/XSetAfterFunction/XSetAfterFunction
+	/Xlib12/XSetAfterFunction
 	"VSW5TESTSUITE CASE XSetErrorHandler 9"
-	/Xlib12/XSetErrorHandler/XSetErrorHandler
+	/Xlib12/XSetErrorHandler
 	"VSW5TESTSUITE CASE XSetIOErrorHandler 7"
-	/Xlib12/XSetIOErrorHandler/XSetIOErrorHandler
+	/Xlib12/XSetIOErrorHandler
 	"VSW5TESTSUITE CASE XSync 5"
-	/Xlib12/XSync/XSync
+	/Xlib12/XSync
 	"VSW5TESTSUITE CASE XSynchronize 5"
-	/Xlib12/XSynchronize/XSynchronize
+	/Xlib12/XSynchronize
 	"VSW5TESTSUITE CASE XWindowEvent 3"
-	/Xlib12/XWindowEvent/XWindowEvent
+	/Xlib12/XWindowEvent

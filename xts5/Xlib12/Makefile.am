@@ -9,33 +9,33 @@ BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
-	XCheckIfEvent/XCheckIfEvent \
-	XCheckMaskEvent/XCheckMaskEvent \
-	XCheckTypedEvent/XCheckTypedEvent \
-	XCheckTypedWindowEvent/XCheckTypedWindowEvent \
-	XCheckWindowEvent/XCheckWindowEvent \
-	XDisplayMotionBufferSize/XDisplayMotionBufferSize \
+	XCheckIfEvent \
+	XCheckMaskEvent \
+	XCheckTypedEvent \
+	XCheckTypedWindowEvent \
+	XCheckWindowEvent \
+	XDisplayMotionBufferSize \
 	XDisplayName/XDisplayName \
-	XEventsQueued/XEventsQueued \
-	XFlush/XFlush \
-	XGetErrorDatabaseText/XGetErrorDatabaseText \
-	XGetErrorText/XGetErrorText \
-	XGetMotionEvents/XGetMotionEvents \
-	XIfEvent/XIfEvent \
-	XMaskEvent/XMaskEvent \
-	XNextEvent/XNextEvent \
-	XPeekEvent/XPeekEvent \
-	XPeekIfEvent/XPeekIfEvent \
-	XPending/XPending \
-	XPutBackEvent/XPutBackEvent \
-	XSelectInput/XSelectInput \
-	XSendEvent/XSendEvent \
-	XSetAfterFunction/XSetAfterFunction \
-	XSetErrorHandler/XSetErrorHandler \
-	XSetIOErrorHandler/XSetIOErrorHandler \
-	XSync/XSync \
-	XSynchronize/XSynchronize \
-	XWindowEvent/XWindowEvent
+	XEventsQueued \
+	XFlush \
+	XGetErrorDatabaseText \
+	XGetErrorText \
+	XGetMotionEvents \
+	XIfEvent \
+	XMaskEvent \
+	XNextEvent \
+	XPeekEvent \
+	XPeekIfEvent \
+	XPending \
+	XPutBackEvent \
+	XSelectInput \
+	XSendEvent \
+	XSetAfterFunction \
+	XSetErrorHandler \
+	XSetIOErrorHandler \
+	XSync \
+	XSynchronize \
+	XWindowEvent
 
 # Auxiliary programs run from tests
 libexec_PROGRAMS += XDisplayName/Test1
