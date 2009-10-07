@@ -248,6 +248,7 @@ char	**argv;
 	char *cp;
 	struct iclist *icp;
 	int iccount, tpcount, icnum, rc, status = TET_EXIT_SUCCESS;
+	char *tsname, *tcname;
 #ifndef TET_LITE	/* -START-LITE-CUT */
 	int nsys;
 #endif			/* -END-LITE-CUT- */
@@ -294,6 +295,14 @@ char	**argv;
 		tet_activity = 0;
 	else
 		tet_activity = atol(cp);
+
+	/* get the test suite and test case names from environment */
+	tsname = getenv("TET_TSNAME");
+	if (!tsname)
+		tsname = "";
+	tcname = getenv("TET_TCNAME");
+	if (!tcname)
+		tcname = tet_pname;
 
 #ifdef TET_LITE
 	/* open execution results file (do early, so tet_error() can use it) */
@@ -373,14 +382,15 @@ char	**argv;
 				if (rc < 0)
 					tet_docleanup(EXIT_FAILURE);
 				ret = call_tps(icnum, &tpcount);
-				printf("%s (%d/%d): %s\n", tet_pname,
+				printf("%s%s (%d/%d): %s\n",
+					tsname, tcname,
 					icnum, icp->ic_end,
 					tet_get_code(ret, NULL));
 				status = tet_addstatus(status,
 						tet_resulttostatus(ret));
 				tet_icend(icnum, tpcount);
 			}
-	printf("%s: %s\n", tet_pname, tet_getstatusname(status));
+	printf("%s%s: %s\n", tsname, tcname, tet_getstatusname(status));
 
 	/* unexpected signals are fatal during cleanup */
 	setsigs(sigabandon);

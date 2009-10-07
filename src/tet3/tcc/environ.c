@@ -92,6 +92,7 @@ struct systab *sp;
 		"TET_ROOT",
 		"TET_EXECUTE",
 		"TET_SUITE_ROOT",
+		"TET_TSNAME",
 		"TET_RUN"
 	};
 

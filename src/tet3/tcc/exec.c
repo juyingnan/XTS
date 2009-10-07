@@ -76,6 +76,7 @@ char *path, **argv, *tcdir, *outfile;
 #endif /* TET_LITE */	/* -LITE-CUT-LINE- */
 		char buf[sizeof fmt + LNUMSZ];
 	char resbuf[MAXPATH + sizeof("TET_RESFILE=")];
+	char tcbuf[MAXPATH + sizeof("TET_TCNAME=")];
 	struct systab *sp;
 	long remid;
 #ifdef TET_LITE	/* -LITE-CUT-LINE- */
@@ -112,6 +113,16 @@ char *path, **argv, *tcdir, *outfile;
 	if (tcc_putenv(*prp->pr_sys, resbuf) < 0) {
 		prperror(prp, *prp->pr_sys, tet_tcerrno,
 			"tcc_putenv(TET_RESDIR) failed", NULL);
+		return(-1L);
+	}
+
+	/* put the test case name into the environment */
+	sprintf(tcbuf, "TET_TCNAME=%.*s", MAXPATH, prp->pr_scen->sc_tcname);
+	TRACE3(tet_Ttcc, 6, "putenv \"%s\" on system %s",
+		tcbuf, tet_i2a(*prp->pr_sys));
+	if (tcc_putenv(*prp->pr_sys, tcbuf) < 0) {
+		prperror(prp, *prp->pr_sys, tet_tcerrno,
+			"tcc_putenv(TET_TCNAME) failed", NULL);
 		return(-1L);
 	}
 

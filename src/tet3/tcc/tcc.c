@@ -121,7 +121,6 @@ char **argv;
 	char *jopt = (char *) 0;
 	char *sopt = (char *) 0;
 	char *xopt = (char *) 0;
-	char *tsname = (char *) 0;
 	char *codelist = (char *) 0;
 	char *old_journal_file = (char *) 0;
 	char *scenario = "all";
@@ -326,39 +325,39 @@ char **argv;
 	/* pick up the test suite name and the scenario name
 		if they have been specified on the command line */
 	if (--argc > 0)
-		tsname = *++argv;
+		tet_tsname = *++argv;
 	if (--argc > 0)
 		scenario = *++argv;
 
 	/* determine the test suite root */
-	if (!tsname) {
+	if (!tet_tsname) {
 		len = strlen(tet_suite_root);
 		if (
 			!strncmp(cwd, tet_suite_root, len)
 			&&
 			isdirsep(*(cwd + len))
 		) {
-			tsname = cwd + strlen(tet_suite_root);
-			while (isdirsep(*tsname))
-				tsname++;
+			tet_tsname = cwd + strlen(tet_suite_root);
+			while (isdirsep(*tet_tsname))
+				tet_tsname++;
 			(void) sprintf(fname, "%.*s",
-				(int) sizeof fname - 1, tsname);
+				(int) sizeof fname - 1, tet_tsname);
 			for (p = fname; *p; p++)
 				if (isdirsep(*p)) {
 					*p = '\0';
 					break;
 				}
-			tsname = rstrstore(fname);
+			tet_tsname = rstrstore(fname);
 		}
 	}
-	if (tsname && *tsname) {
-		fullpath(tet_suite_root, tsname, fname, sizeof fname, 0);
+	if (tet_tsname && *tet_tsname) {
+		fullpath(tet_suite_root, tet_tsname, fname, sizeof fname, 0);
 		tet_tsroot = rstrstore(fname);
 	}
 	else
 		fatal(0, "can't determine test suite name", (char *) 0);
 	TRACE3(tet_Ttcc, 1, "test suite name = %s, test suite root = %s",
-		tsname, tet_tsroot);
+		tet_tsname, tet_tsroot);
 
 	/* fix up tet_execute */
 	if (aopt && *aopt) {

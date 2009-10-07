@@ -161,16 +161,18 @@ static char *ecfname, *dcfname, *ccfname;
 struct dvar {
 	char *dv_name;		/* variable name */
 	int dv_needed;		/* variable is needed on each system */
+	int dv_pathvar;		/* variable is a path */
 	int dv_len;		/* strlen(mv_name) */
 	char *dv_value;		/* value on master system */
 };
 static struct dvar dvar[] = {
-	{ "TET_ROOT",		1 },
-	{ "TET_SUITE_ROOT",	0 },
-	{ "TET_TSROOT",		1 },
-	{ "TET_EXECUTE",	0 },
-	{ "TET_TMP_DIR",	0 },
-	{ "TET_RUN",		0 }
+	{ "TET_ROOT",		1,	1 },
+	{ "TET_SUITE_ROOT",	0,	1 },
+	{ "TET_TSNAME",		0,	0 },
+	{ "TET_TSROOT",		1,	1 },
+	{ "TET_EXECUTE",	0,	1 },
+	{ "TET_TMP_DIR",	0,	1 },
+	{ "TET_RUN",		0,	1 }
 };
 #define Ndvar	(sizeof dvar / sizeof dvar[0])
 
@@ -179,9 +181,9 @@ static struct dvar dvar[] = {
 ** but should not be copied to the per-system distributed configurations
 */
 static struct dvar mdvar[] = {
-	{ "TET_LOCALHOST", 	0 },
-	{ "TET_XTI_MODE",	0 },
-	{ "TET_XTI_TPI",	0 }
+	{ "TET_LOCALHOST", 	0,	1 },
+	{ "TET_XTI_MODE",	0,	1 },
+	{ "TET_XTI_TPI",	0,	1 }
 };
 #define Nmdvar	(sizeof mdvar / sizeof mdvar[0])
 
@@ -720,14 +722,16 @@ void distcfg()
 		for (dvp = dvar; dvp < dvar + Ndvar; dvp++) {
 			p = getdcfg(dvp->dv_name, sysid);
 			if (p && *p) {
-				if (sysid == 0)
-					ASSERT(isabspathloc(p));
-				else if (!isabspathrem(p)) {
-					(void) sprintf(buf, fmt1,
-						dvp->dv_name, sysid);
-					error(0, buf,
-						"is not an absolute path name");
-					conferrors++;
+				if (dvp->dv_pathvar) {
+					if (sysid == 0)
+						ASSERT(isabspathloc(p));
+					else if (!isabspathrem(p)) {
+						(void) sprintf(buf, fmt1,
+							dvp->dv_name, sysid);
+						error(0, buf, "is not an "
+							"absolute path name");
+						conferrors++;
+					}
 				}
 			}
 			else if (dvp->dv_needed) {
@@ -2588,6 +2592,7 @@ static void initdvar()
 	*/
 	(dvp++)->dv_value = tet_root;
 	(dvp++)->dv_value = tet_suite_root;
+	(dvp++)->dv_value = tet_tsname;
 	(dvp++)->dv_value = tet_tsroot;
 	(dvp++)->dv_value = tet_execute;
 	(dvp++)->dv_value = tet_tmp_dir;

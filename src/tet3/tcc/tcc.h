@@ -52,6 +52,9 @@ extern char *tet_execute;
 /* test suite root on the local system */
 extern char *tet_tsroot;
 
+/* test suite name */
+extern char *tet_tsname;
+
 /* test suite root on the local system from the environment
 ** (defaults to tet_root)
 */

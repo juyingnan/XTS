@@ -67,6 +67,9 @@ int tet_compat;
 */
 char *tet_execute;
 
+/* test suite name */
+char *tet_tsname;
+
 /* test suite root on the local system */
 char *tet_tsroot;
 
