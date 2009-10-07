@@ -15,19 +15,13 @@ AM_V_mc_0 = @echo "  MC    " $@;
 .m_m.c:
 	$(AM_V_mc)TET_ROOT='$(TET_ROOT)' $(MC) -m -o $@ $<
 
-# Test scenario executor - The tests are run by tcc where the argument
-# is the scenario name in the tet_scen file.
-TCC = $(top_builddir)/src/tet3/tcc/tcc$(EXEEXT)
-TESTS_ENVIRONMENT = TET_ROOT='$(TET_ROOT)' $(TCC) -e -j '' -i '' \
-	-s $(top_srcdir)/xts5/tet_scen xts5
-
 ##################
 # TET locations
 ##################
 
 # The location of TET_ROOT.  This must not contain variable expansions.
 # This must be set in the environment
-TET_ROOT = $(abs_top_builddir)
+TET_ROOT = $(abs_top_srcdir)
 
 # The location of the TET directories
 TETSRC = $(top_srcdir)/src/tet3
