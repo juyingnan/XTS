@@ -4,7 +4,8 @@ AUTOMAKE_OPTIONS = subdir-objects
 AM_CFLAGS = $(XP_LCFLAGS) $(XP_CFLAGS)
 LDADD = $(TCM) $(XP_LLIBS) $(XP_LIBS)
 
-libexec_PROGRAMS = $(tprogs)
+testprogdir = $(libexecdir)/$(subdir)
+nobase_testprog_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 

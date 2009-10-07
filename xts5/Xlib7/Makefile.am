@@ -5,7 +5,8 @@ AM_CFLAGS = $(XTS_LCFLAGS) $(XTS_CFLAGS)
 LDADD = $(TCM) $(XTS_LLIBS) $(XTS_LIBS) \
 	$(top_builddir)/xts5/src/libXR5/libXR5.a
 
-libexec_PROGRAMS = $(tprogs)
+testprogdir = $(libexecdir)/$(subdir)
+nobase_testprog_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
