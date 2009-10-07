@@ -2,8 +2,9 @@ include common.mk
 
 SUBDIRS = . src fonts scenarios
 
-xts5_DATA = tetexec.cfg tet_scen
+xts5_DATA = tetexec.cfg.in tet_scen
 xts5dir = $(datadir)/xts5
+check_DATA = tetexec.cfg
 
 XTS_CONFIG = TET_ROOT='$(TET_ROOT)' DISPLAY='$(XT_DISPLAY)' \
 	XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
