@@ -19,11 +19,9 @@ run_tcc = TET_ROOT='$(TET_ROOT)' $(TCC) -e -a $(abs_builddir) \
 scenario =
 XTS_CONFIG = TET_ROOT='$(TET_ROOT)' XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
 	$(PERL) -p $(srcdir)/bin/xts-config
-# We make this depend on Makefile so that it's regenerated after the
-# Makefile is created or updated by config.status
-tetexec.cfg: tetexec.cfg.in $(srcdir)/bin/xts-config Makefile
-	$(XTS_CONFIG) < $< > $@ || rm -f $@
 
+tetexec.cfg: tetexec.cfg.in $(srcdir)/bin/xts-config
+	$(XTS_CONFIG) < $< > $@ || rm -f $@
 check-local: tetexec.cfg
 	$(run_tcc) $(scenario)
 
