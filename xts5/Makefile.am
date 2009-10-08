@@ -21,7 +21,7 @@ XTS_CONFIG = TET_ROOT='$(TET_ROOT)' XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
 	$(PERL) -p $(srcdir)/bin/xts-config
 
 tetexec.cfg: tetexec.cfg.in $(srcdir)/bin/xts-config
-	$(AM_V_GEN)$(XTS_CONFIG) < $< > $@ || rm -f $@
+	$(AM_V_GEN)$(XTS_CONFIG) < $< > $@.tmp && mv -f $@.tmp $@ || rm -f $@.tmp
 check-local: tetexec.cfg
 	$(run_tcc) $(scenario)
 
