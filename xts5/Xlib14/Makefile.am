@@ -56,3 +56,6 @@ tprogs = \
 	XwcTextPerCharExtents \
 	XwcTextPropertyToTextList \
 	XwcTextExtents
+
+# Data files for test programs
+nobase_testprog_DATA = */*.dat

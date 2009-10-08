@@ -56,3 +56,6 @@ tprogs = \
 	XTextWidth \
 	XTextWidth16 \
 	XUnloadFont
+
+# Data files for test programs
+nobase_testprog_DATA = */*.dat

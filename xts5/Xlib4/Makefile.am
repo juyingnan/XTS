@@ -39,3 +39,6 @@ tprogs = \
 	XUnmapSubwindows \
 	XUnmapWindow \
 	XVisualIDFromVisual
+
+# Data files for test programs
+nobase_testprog_DATA = */*.dat
