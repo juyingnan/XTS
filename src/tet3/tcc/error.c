@@ -133,8 +133,9 @@ char *file, *s1, *s2;
 		text[0] = '\0';
 	errfmt(errnum, file, line, s1, s2, text, msg);
 
-	/* punt the message for printing to the current journal */
+	/* print errors to journal and stderr */
 	jnl_tcc_prpmsg(prp, msg);
+	fprintf(stderr, "tcc %s\n", msg);
 }
 
 /*
