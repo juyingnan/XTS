@@ -63,4 +63,4 @@ if [ ! -d "$outdir" ] && ! mkdir -p "$outdir"; then
 	exit 1
 fi
 
-"$TCC" -e -i "$outdir" -j "$outdir/journal" -x "$config" xts5 $scenario
+"$TCC" -e -i "$outdir" -x "$config" xts5 $scenario
