@@ -13,6 +13,15 @@ xts5_DATA = tetexec.cfg.in tet_scen
 xts5dir = $(datadir)/xts5
 check_DATA = tetexec.cfg
 
+# Script substitutions
+EDIT = $(SED) -e 's,%bindir%,$(bindir),g' \
+	-e 's,%libexecdir%,$(libexecdir),g' \
+	-e 's,%DEFAULT_TET_ROOT%,$(DEFAULT_TET_ROOT),g'
+bin/xts-config: bin/xts-config.in
+	$(AM_V_GEN)$(EDIT) < $< > $@
+bin/xts-run: bin/xts-run.in
+	$(AM_V_GEN)$(EDIT) < $< > $@
+
 # Setup for testing
 TCC = $(top_builddir)/src/tet3/tcc/tcc$(EXEEXT)
 run_tcc = TET_ROOT='$(TET_ROOT)' $(TCC) -e -a $(abs_builddir) \

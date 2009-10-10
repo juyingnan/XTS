@@ -100,6 +100,10 @@ char tcc_options[] = "IT:Va:bcef:g:i:j:l:m:n:pr:s:t:v:x:y:";
 static void badusage PROTOLIST((void));
 static void prversioninfo PROTOLIST((void));
 
+/* default root directory */
+#ifndef DEFAULT_TET_ROOT
+#define DEFAULT_TET_ROOT "/usr/local/share"
+#endif
 
 int main(argc, argv)
 int argc;
@@ -146,8 +150,8 @@ char **argv;
 
 	/* determine the tet_root directory */
 	if ((p = getenv("TET_ROOT")) == (char *) 0 || !*p) {
-		fatal(0, "TET_ROOT environment variable NULL or not set",
-			(char *) 0);
+		strncpy(tet_root, DEFAULT_TET_ROOT, sizeof(tet_root));
+		tet_root[sizeof(tet_root) - 1] = '\0';
 	}
 	else
 		fullpath(cwd, p, tet_root, sizeof tet_root, 0);

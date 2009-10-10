@@ -1,23 +1,17 @@
 #!/bin/sh
 
-prefix="@prefix@"
-exec_prefix="@exec_prefix@"
-bindir="@bindir@"
-libexecdir="@libexecdir@"
-datarootdir="@datarootdir@"
-datadir="@datadir@"
+bindir="%bindir%"
+libexecdir="%libexecdir%"
 xtsexecdir="${libexecdir}/xts5"
+DEFAULT_TET_ROOT="%DEFAULT_TET_ROOT%"
 
 TCC=${TCC-tcc}
 PERL=${PERL-perl}
 XTS_CONFIG="${XTS_CONFIG-${bindir}/xts-config}"
 
-TET_ROOT=${TET_ROOT-$datadir}
-export TET_ROOT
-
 prog=$0
 config=
-config_in="$TET_ROOT/xts5/tetexec.cfg.in"
+config_in="${TET_ROOT-$DEFAULT_TET_ROOT}/xts5/tetexec.cfg.in"
 outdir=
 scenario=
 

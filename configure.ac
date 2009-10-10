@@ -34,6 +34,9 @@ AM_MAINTAINER_MODE
 
 AM_CONFIG_HEADER([config.h])
 
+# Directory setup
+AC_SUBST([DEFAULT_TET_ROOT], ['${datadir}'])
+
 # Checks for programs.
 AC_DISABLE_STATIC
 AC_PROG_LIBTOOL
@@ -114,7 +117,6 @@ src/tet3/tcm/Makefile
 src/tet3/tcc/Makefile
 src/tet3/tcclib/Makefile
 xts5/Makefile
-xts5/bin/xts-run
 xts5/scenarios/Makefile
 xts5/src/Makefile
 xts5/src/lib/Makefile

@@ -10,13 +10,15 @@ BEGIN
 	$xset = $ENV{"XSET"} or $xset = "xset";
 	my $xdpyinfo;
 	$xdpyinfo = $ENV{"XDPYINFO"} or $xdpyinfo = "xdpyinfo";
+	my $tet_root;
+	$tet_root = $ENV{"TET_ROOT"} or $tet_root = "%DEFAULT_TET_ROOT%";
 
 	open(XSET, "$xset q |") or die "$xset q failed, giving up.\n";
 	while(<XSET>)
 	{
 		next unless /^Font Path:/;
 		<XSET> =~ /^\s*(.*)/;
-		$::vars{"XT_FONTPATH"} = $ENV{"TET_ROOT"} . '/xts5/fonts,' . $1;
+		$::vars{"XT_FONTPATH"} = $tet_root . '/xts5/fonts,' . $1;
 		$::vars{"XT_FONTPATH_GOOD"} = $1;
 	}
 	close(XSET);
