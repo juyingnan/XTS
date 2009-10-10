@@ -1,0 +1,75 @@
+#!/bin/sh
+
+prefix="@prefix@"
+exec_prefix="@exec_prefix@"
+bindir="@bindir@"
+libexecdir="@libexecdir@"
+datarootdir="@datarootdir@"
+datadir="@datadir@"
+xtsexecdir="${libexecdir}/xts5"
+
+TCC=${TCC-tcc}
+PERL=${PERL-perl}
+XTS_CONFIG="${XTS_CONFIG-${bindir}/xts-config}"
+
+TET_ROOT=${TET_ROOT-$datadir}
+export TET_ROOT
+
+prog=$0
+config=
+config_in="$TET_ROOT/xts5/tetexec.cfg.in"
+outdir=
+scenario=
+
+while [ -n "$1" ]; do
+	case "$1" in
+	-c)
+		config=$2
+		shift
+		;;
+	-o)
+		outdir=$2
+		shift
+		;;
+	-h|--help)
+		echo "Usage: $prog [options] [scenario]"
+		exit 0
+		;;
+	-*)
+		echo "error: unrecognized option \"$1\"" >&2
+		exit 1
+		;;
+	*)
+		if [ -n "$scenario" ]; then
+			echo "error: only one scenario allowed" >&2
+			exit 1
+		fi
+		scenario=$1
+	esac
+	shift
+done
+
+# Create the config file if necessary
+if [ -z "$config" ]; then
+	config=`mktemp tetexec.cfg.XXXXXXXXXX`
+	trap 'rm -f "$config"' 0 1 2 3 15
+	if ! "$PERL" "$XTS_CONFIG" < "$config_in" > "$config"; then
+		echo "error: failed to create config file $config" >&2
+		exit 1
+	fi		
+else
+	if [ ! -r "$config" ]; then
+		echo "error: cannot read config file $config" >&2
+		exit 1
+	fi
+fi
+
+# Create the output directory
+[ -n "$outdir" ] || outdir="xts-`date +%F-%R`"
+if [ ! -d "$outdir" ] && ! mkdir -p "$outdir"; then
+	echo "error: failed to create output directory $outdir" >&2
+	exit 1
+fi
+
+"$TCC" -e -a "$xtsexecdir" -i "$outdir" -j "$outdir/journal" \
+	-x "$config" xts5 $scenario

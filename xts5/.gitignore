@@ -7,3 +7,4 @@ results
 tet_lock
 tet_xres
 tetexec.cfg
+bin/xts-run

@@ -8,7 +8,7 @@ CLEANFILES = */*/tet_lock
 LOGFILES = */*/*.log
 DISTCLEANFILES = $(LOGFILES) */*/*.log.tmp
 
-bin_SCRIPTS = bin/xts-config
+bin_SCRIPTS = bin/xts-config bin/xts-run
 xts5_DATA = tetexec.cfg.in tet_scen
 xts5dir = $(datadir)/xts5
 check_DATA = tetexec.cfg
