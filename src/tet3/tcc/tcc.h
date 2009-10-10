@@ -43,6 +43,11 @@ MODIFICATIONS:
 /* tell tcclib.h that it has been included in a tcc source file */
 #define TCC	1
 
+/* root directory for execution from TET_EXEC_ROOT
+** used when the binaries are not in TET_ROOT
+*/
+extern char *tet_exec_root;
+
 /*
 ** alternate execution directory on the local system
 ** from TET_EXECUTE in the environment or from the -a command-line option

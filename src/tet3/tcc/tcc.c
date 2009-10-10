@@ -100,9 +100,12 @@ char tcc_options[] = "IT:Va:bcef:g:i:j:l:m:n:pr:s:t:v:x:y:";
 static void badusage PROTOLIST((void));
 static void prversioninfo PROTOLIST((void));
 
-/* default root directory */
+/* default root directories */
 #ifndef DEFAULT_TET_ROOT
 #define DEFAULT_TET_ROOT "/usr/local/share"
+#endif
+#ifndef DEFAULT_TET_EXEC_ROOT
+#define DEFAULT_TET_EXEC_ROOT "/usr/local/libexec"
 #endif
 
 int main(argc, argv)
@@ -157,6 +160,15 @@ char **argv;
 		fullpath(cwd, p, tet_root, sizeof tet_root, 0);
 	TRACE2(tet_Ttcc, 1, "tet_root = %s", tet_root);
 	TRACE2(tet_Ttcc, 1, "cwd = %s", cwd);
+
+	/* determine the tet_exec_root directory */
+	if ((p = getenv("TET_EXEC_ROOT")) == NULL || !*p)
+		tet_exec_root = rstrstore(DEFAULT_TET_EXEC_ROOT);
+	else {
+		fullpath(cwd, p, fname, sizeof(fname), 0);
+		tet_exec_root = rstrstore(fname);
+	}
+	TRACE2(tet_Ttcc, 1, "tet_exec_root = %s", tet_exec_root);
 
 	/* determine the tet_suite_root directory */
 	if ((p = getenv("TET_SUITE_ROOT")) != (char *) 0 && *p) {
@@ -367,11 +379,12 @@ char **argv;
 	if (aopt && *aopt) {
 		fullpath(cwd, aopt, fname, sizeof fname, 0);
 		tet_execute = rstrstore(fname);
-		TRACE2(tet_Ttcc, 1, "alternate execution directory = %s",
-			tet_execute);
 	}
-
-
+	else {
+		fullpath(tet_exec_root, tet_tsname, fname, sizeof(fname), 0);
+		tet_execute = rstrstore(fname);
+	}
+	TRACE2(tet_Ttcc, 1, "execution directory = %s", tet_execute);
 
 	/*
 	** here we have finished processing the command-line arguments

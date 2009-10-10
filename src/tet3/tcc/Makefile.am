@@ -1,5 +1,6 @@
 AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include \
-	-DDEFAULT_TET_ROOT='"$(DEFAULT_TET_ROOT)"'
+	-DDEFAULT_TET_ROOT='"$(DEFAULT_TET_ROOT)"' \
+	-DDEFAULT_TET_EXEC_ROOT='"$(DEFAULT_TET_EXEC_ROOT)"'
 bin_PROGRAMS = tcc
 tcc_LDADD = ../tcclib/libtcc.la
 tcc_SOURCES = cleanup.c \

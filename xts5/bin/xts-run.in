@@ -1,8 +1,6 @@
 #!/bin/sh
 
 bindir="%bindir%"
-libexecdir="%libexecdir%"
-xtsexecdir="${libexecdir}/xts5"
 DEFAULT_TET_ROOT="%DEFAULT_TET_ROOT%"
 
 TCC=${TCC-tcc}
@@ -65,5 +63,4 @@ if [ ! -d "$outdir" ] && ! mkdir -p "$outdir"; then
 	exit 1
 fi
 
-"$TCC" -e -a "$xtsexecdir" -i "$outdir" -j "$outdir/journal" \
-	-x "$config" xts5 $scenario
+"$TCC" -e -i "$outdir" -j "$outdir/journal" -x "$config" xts5 $scenario

@@ -62,6 +62,15 @@ int tcc_modes;
 */
 int tet_compat;
 
+/*
+
+/* root directory for execution from TET_EXEC_ROOT
+** used when the binaries are not in TET_ROOT
+*/
+char *tet_exec_root;
+
+/*
+
 /* alternate execution directory on the local system
 ** from TET_EXECUTE in the environment or from the -a command-line option
 */

@@ -167,6 +167,7 @@ struct dvar {
 };
 static struct dvar dvar[] = {
 	{ "TET_ROOT",		1,	1 },
+	{ "TET_EXEC_ROOT",	1,	1 },
 	{ "TET_SUITE_ROOT",	0,	1 },
 	{ "TET_TSNAME",		0,	0 },
 	{ "TET_TSROOT",		1,	1 },
@@ -2591,6 +2592,7 @@ static void initdvar()
 	** correspond to the variables in the dvar array
 	*/
 	(dvp++)->dv_value = tet_root;
+	(dvp++)->dv_value = tet_exec_root;
 	(dvp++)->dv_value = tet_suite_root;
 	(dvp++)->dv_value = tet_tsname;
 	(dvp++)->dv_value = tet_tsroot;

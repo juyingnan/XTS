@@ -36,6 +36,7 @@ AM_CONFIG_HEADER([config.h])
 
 # Directory setup
 AC_SUBST([DEFAULT_TET_ROOT], ['${datadir}'])
+AC_SUBST([DEFAULT_TET_EXEC_ROOT], ['${libexecdir}'])
 
 # Checks for programs.
 AC_DISABLE_STATIC
