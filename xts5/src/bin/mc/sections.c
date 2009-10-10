@@ -109,6 +109,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 #include <config.h>
 #endif
 
+#include	<stdlib.h>
 #include	<stdio.h>
 #include	<ctype.h>
 #include	"string.h"

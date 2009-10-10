@@ -106,7 +106,8 @@ purpose.  It is provided "as is" without express or implied warranty.
 #include <config.h>
 #endif
 
-#include	"stdio.h"
+#include	<stdio.h>
+#include	<string.h>
 #include	"mc.h"
 
 #define	F_BANNER	"mepbanner.tmc"

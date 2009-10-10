@@ -4,6 +4,8 @@
 #endif
 
 #include	<stdlib.h>
+#include	<stdio.h>
+#include	<string.h>
 #include	"xtest.h"
 #include	"tet_api.h"
 #ifdef INPUTEXTENSION

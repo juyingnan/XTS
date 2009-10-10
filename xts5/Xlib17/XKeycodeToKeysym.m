@@ -102,10 +102,10 @@ purpose.  It is provided "as is" without express or implied warranty.
 */
 >>TITLE XKeycodeToKeysym Xlib17
 KeySym
-XKeyCodeToKeysym(display, keycode, index)
+XKeyCodeToKeysym(display, keycode, idx)
 Display	*display = Dsp;
 KeyCode	keycode;
-int	index;
+int	idx;
 >>EXTERN
 #define XK_LATIN1
 #include	"X11/keysymdef.h"
@@ -139,23 +139,23 @@ KeySym	ks;
 		CHECK;
 
 	keycode = kc;
-	index = 0;
+	idx = 0;
 	ks = XCALL;
 
 	if(ks != XK_a) {
 		report("%s() returned KeySym %lu instead of %lu for KeyCode %lu and index %d.",
-			TestName, (long) ks, (long) XK_a, (long) kc, index);
+			TestName, (long) ks, (long) XK_a, (long) kc, idx);
 		FAIL;
 	} else
 		CHECK;
 
 
-	index = 1;
+	idx = 1;
 	ks = XCALL;
 
 	if(ks != XK_A) {
 		report("%s() returned KeySym %lu instead of %lu for KeyCode %lu and index %d.",
-			TestName, (long) ks, (long) XK_A, (long) kc, index);
+			TestName, (long) ks, (long) XK_A, (long) kc, idx);
 		FAIL;
 	} else
 		CHECK;
@@ -188,24 +188,24 @@ int	kspkc;
 	minkc = (KeyCode)mini;
 	maxkc = (KeyCode)maxi;
 
-	index = 0;		
+	idx = 0;
 	keycode = maxkc + 1;
 	ks = XCALL;
 
 	if(ks != NoSymbol) {
 		report("%s() returned KeySym value %ul instead of NoSymbol (%lu) for KeyCode %lu and index %d.",
-			TestName, (long) ks, (long) NoSymbol, (long) keycode, index);
+			TestName, (long) ks, (long) NoSymbol, (long) keycode, idx);
 		FAIL;
 	} else
 		CHECK;
 
 	keycode = minkc;
-	index = 9; /* only 0-8 are valid. */
+	idx = 9; /* only 0-8 are valid. */
 	ks = XCALL;
 
 	if(ks != NoSymbol) {
 		report("%s() returned KeySym value %ul instead of NoSymbol (%lu) for KeyCode %lu and index %d.",
-			TestName, (long) ks, (long) NoSymbol, (long) keycode, index);
+			TestName, (long) ks, (long) NoSymbol, (long) keycode, idx);
 		FAIL;
 	} else
 		CHECK;

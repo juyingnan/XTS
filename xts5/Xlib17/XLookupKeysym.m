@@ -99,9 +99,9 @@ purpose.  It is provided "as is" without express or implied warranty.
 */
 >>TITLE XLookupKeysym Xlib17
 KeySym
-XLookupKeysym(key_event, index)
+XLookupKeysym(key_event, idx)
 XKeyEvent	*key_event;
-int		index = 0;
+int		idx = 0;
 >>ASSERTION Good A
 A call to xname returns the
 .S KeySym
@@ -138,12 +138,12 @@ int		i;
 	ke.display = Dsp;
 
 	for(i=minkc; i<=maxkc; i++)
-		for(index = 0; index < syms_per_kc; index++) {
-			ks = XKeycodeToKeysym(Dsp, i, index);
+		for(idx = 0; idx < syms_per_kc; idx++) {
+			ks = XKeycodeToKeysym(Dsp, i, idx);
 			ke.keycode = i;
 			res = XCALL;
 			if(res != ks){
-				report("%s() returned KeySym %lu instead of %lu for KeyCode %lu with index %d.", TestName, (long) res, (long) ks, (long) i, index);
+				report("%s() returned KeySym %lu instead of %lu for KeyCode %lu with index %d.", TestName, (long) res, (long) ks, (long) i, idx);
 				FAIL;
 			} else
 				CHECK;
@@ -190,12 +190,12 @@ XKeyEvent	ke;
 	ke.display = Dsp;
 	ke.keycode = kc;
 
-	for(index=0; index < syms_per_kc; index++) {
+	for(idx=0; idx < syms_per_kc; idx++) {
 
 		res = XCALL;
 
 		if(res != NoSymbol) {
-			report("%s() returned %lu instead of NoSymbol (%lu) for invalid KeyCode %lu with index %d.", TestName, (long) res, (long) NoSymbol, (long) kc, index);
+			report("%s() returned %lu instead of NoSymbol (%lu) for invalid KeyCode %lu with index %d.", TestName, (long) res, (long) NoSymbol, (long) kc, idx);
 			FAIL;
 		} else
 			CHECK;
