@@ -4,13 +4,13 @@ AUTOMAKE_OPTIONS = subdir-objects
 AM_CFLAGS = -I$(top_srcdir)/include \
 	-I$(top_srcdir)/src/tet3/inc \
 	-I$(top_srcdir)/xts5/include \
-	$(XP_CFLAGS)
+	$(XTS_CFLAGS)
 LDADD = $(top_builddir)/src/tet3/tcm/libtcmmain.la \
 	$(top_builddir)/xts5/src/libproto/libXst.a \
 	$(top_builddir)/xts5/src/lib/libxtest.a \
 	$(top_builddir)/xts5/fonts/libfont.a \
 	$(top_builddir)/src/tet3/apilib/libapi.la \
-	$(XP_LIBS)
+	$(XTS_LIBS)
 
 testprogdir = $(libexecdir)/$(subdir)
 nobase_testprog_PROGRAMS = $(tprogs)

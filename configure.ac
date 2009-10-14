@@ -45,7 +45,6 @@ AC_PROG_CC
 AM_PROG_CC_C_O
 
 PKG_CHECK_MODULES([XTS], [x11 xext xi xtst])
-PKG_CHECK_MODULES([XP], [x11 xext xi xtst])
 PKG_CHECK_MODULES([XT], [x11 xext xt xtst])
 dnl PKG_CHECK_MODULES([XAW], [x11 xext xt xtst xaw7])
 
