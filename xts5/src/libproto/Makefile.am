@@ -1,6 +1,38 @@
 include ../../common.mk
 
-AM_CFLAGS = $(XP_LCFLAGS) $(XP_CFLAGS)
+# XP_OPEN_DIS - A choice of which code to build in the X Protocol library
+# to make an X server connection.
+# This must be set to one of three possible values:
+#
+#	XlibXtst.c	Your Xlib includes enhancements to _XConnectDisplay
+#			ensuring maximum portable protocol test coverage.
+#	XlibOpaque.c	You have a normal R4 Xlib or early R5 Xlib which you
+#			cannot patch to include the enhancements to
+#			_XConnectDisplay, and you cannot emulate these by
+#			building XlibNoXtst.c, so only client-native testing
+#			can be done portably, and no failure testing of
+#			XOpenDisplay can be done.
+#			This option uses XOpenDisplay to make the connection,
+#			from which the file descriptor is recovered for
+#			our own use. XCloseDisplay shuts down the connection.
+#	XlibNoXtst.c	As for XlibOpaque.c but you can use the R4/R5
+#			connection emulation supplied. (Note: R4/R5 independent)
+#			This will ensure maximum protocol test coverage
+#			but may not be portable to all platforms.
+#
+# Reasons for not being able to build XlibNoXtst.c might include:
+# i)  different interfaces to connection setup and connection read/write;
+# ii) different access control mechanisms.
+# Refer to your Xlib documentation for further details.
+#
+XP_OPEN_DIS=XlibXtst.c
+#XP_OPEN_DIS=XlibNoXtst.c
+#XP_OPEN_DIS=XlibOpaque.c
+
+AM_CFLAGS = -I$(top_srcdir)/include \
+	-I$(top_srcdir)/src/tet3/inc \
+	-I$(top_srcdir)/xts5/include \
+	$(XP_CFLAGS)
 noinst_LIBRARIES = libXst.a
 libXst_a_SOURCES =\
 	XstlibInt.h\

@@ -120,8 +120,8 @@ AUXCLEAN=Test1.o Test1
 
 all: Test
 
-Test1 : Test1.o $(LIBS) $(TCMCHILD)
-	$(CC) $(LDFLAGS) -o $@ Test1.o $(TCMCHILD) $(LIBLOCAL) $(LIBS) $(SYSLIBS)
+Test1 : Test1.o $(LIBS) $(top_builddir)/src/tet3/tcm/libtcmchild.la
+	$(CC) $(LDFLAGS) -o $@ Test1.o $(top_builddir)/src/tet3/tcm/libtcmchild.la $(LIBLOCAL) $(LIBS) $(SYSLIBS)
 
 #
 # End of section copied from the .m file.

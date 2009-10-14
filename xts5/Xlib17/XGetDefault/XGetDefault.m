@@ -124,14 +124,14 @@ all: Test
 	$(CP) Xdefaults .Xdefaults
 	$(CP) HstXdefaults ./.Xdefaults-$(XTESTHOST)
 
-Test3 : Test3.o $(LIBS) $(TCMCHILD)
-	$(CC) $(LDFLAGS) -o $@ Test3.o $(TCMCHILD) $(LIBLOCAL) $(LIBS) $(SYSLIBS)
+Test3 : Test3.o $(LIBS) $(top_builddir)/src/tet3/tcm/libtcmchild.la
+	$(CC) $(LDFLAGS) -o $@ Test3.o $(top_builddir)/src/tet3/tcm/libtcmchild.la $(LIBLOCAL) $(LIBS) $(SYSLIBS)
 
-Test4 : Test4.o $(LIBS) $(TCMCHILD)
-	$(CC) $(LDFLAGS) -o $@ Test4.o $(TCMCHILD) $(LIBLOCAL) $(LIBS) $(SYSLIBS)
+Test4 : Test4.o $(LIBS) $(top_builddir)/src/tet3/tcm/libtcmchild.la
+	$(CC) $(LDFLAGS) -o $@ Test4.o $(top_builddir)/src/tet3/tcm/libtcmchild.la $(LIBLOCAL) $(LIBS) $(SYSLIBS)
 
-Test5 : Test5.o $(LIBS) $(TCMCHILD)
-	$(CC) $(LDFLAGS) -o $@ Test5.o $(TCMCHILD) $(LIBLOCAL) $(LIBS) $(SYSLIBS)
+Test5 : Test5.o $(LIBS) $(top_builddir)/src/tet3/tcm/libtcmchild.la
+	$(CC) $(LDFLAGS) -o $@ Test5.o $(top_builddir)/src/tet3/tcm/libtcmchild.la $(LIBLOCAL) $(LIBS) $(SYSLIBS)
 
 >># end of included makefile section
 >>EXTERN

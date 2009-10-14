@@ -24,10 +24,10 @@ bin/xts-run: bin/xts-run.in
 
 # Setup for testing
 TCC = $(top_builddir)/src/tet3/tcc/tcc$(EXEEXT)
-run_tcc = TET_ROOT='$(TET_ROOT)' $(TCC) -e -a $(abs_builddir) \
+run_tcc = TET_ROOT='$(top_srcdir)' $(TCC) -e -a $(abs_builddir) \
 	-x tetexec.cfg xts5
 scenario =
-XTS_CONFIG = TET_ROOT='$(TET_ROOT)' XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
+XTS_CONFIG = TET_ROOT='$(top_srcdir)' XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
 	$(PERL) -p $(srcdir)/bin/xts-config
 
 tetexec.cfg: tetexec.cfg.in $(srcdir)/bin/xts-config

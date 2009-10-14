@@ -1,6 +1,10 @@
 include ../../common.mk
 
-AM_CFLAGS = $(XTS_LCFLAGS) $(XTS_CFLAGS) -DDEBUG
+AM_CFLAGS = -I$(top_srcdir)/include \
+	-I$(top_srcdir)/src/tet3/inc \
+	-I$(top_srcdir)/xts5/include \
+	$(XTS_CFLAGS) \
+	-DDEBUG
 noinst_LIBRARIES = libXR5.a
 libXR5_a_SOURCES = \
 	r5startup.c \

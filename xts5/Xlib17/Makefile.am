@@ -1,8 +1,16 @@
 include ../common.mk
 AUTOMAKE_OPTIONS = subdir-objects
 
-AM_CFLAGS = $(XTS_LCFLAGS) $(XTS_CFLAGS)
-LDADD = $(TCM) $(XTS_LLIBS) $(XTS_LIBS)
+AM_CFLAGS = -I$(top_srcdir)/include \
+	-I$(top_srcdir)/src/tet3/inc \
+	-I$(top_srcdir)/xts5/include \
+	$(XTS_CFLAGS)
+LDADD = $(top_builddir)/src/tet3/tcm/libtcmmain.la \
+	$(top_builddir)/xts5/src/xim/libximtest.a \
+	$(top_builddir)/xts5/src/lib/libxtest.a \
+	$(top_builddir)/xts5/fonts/libfont.a \
+	$(top_builddir)/src/tet3/apilib/libapi.la \
+	$(XTS_LIBS)
 
 testprogdir = $(libexecdir)/$(subdir)
 nobase_testprog_PROGRAMS = $(tprogs)
@@ -67,10 +75,16 @@ tprogs = \
 	XXorRegion
 
 # Auxiliary programs run from tests
+CHILD_LDADD = $(top_builddir)/src/tet3/tcm/libtcmchild.la \
+	$(top_builddir)/xts5/src/xim/libximtest.a \
+	$(top_builddir)/xts5/src/lib/libxtest.a \
+	$(top_builddir)/xts5/fonts/libfont.a \
+	$(top_builddir)/src/tet3/apilib/libapi.la \
+	$(XTS_LIBS)
 nobase_testprog_PROGRAMS += \
 	XGetDefault/Test3 \
 	XGetDefault/Test4 \
 	XGetDefault/Test5
-XGetDefault_Test3_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
-XGetDefault_Test4_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
-XGetDefault_Test5_LDADD = $(TCMCHILD) $(XTS_LLIBS) $(XTS_LIBS)
+XGetDefault_Test3_LDADD = $(CHILD_LDADD)
+XGetDefault_Test4_LDADD = $(CHILD_LDADD)
+XGetDefault_Test5_LDADD = $(CHILD_LDADD)
