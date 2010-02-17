@@ -3,7 +3,7 @@
 bindir="%bindir%"
 DEFAULT_TET_ROOT="%DEFAULT_TET_ROOT%"
 
-TCC=${TCC-tcc}
+TCC="${TCC-${bindir}/tcc}"
 PERL=${PERL-perl}
 XTS_CONFIG="${XTS_CONFIG-${bindir}/xts-config}"
 
