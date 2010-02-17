@@ -1,1 +1,1 @@
-SUBDIRS = mc
+SUBDIRS = mc reports
