@@ -209,7 +209,7 @@ XT_RESET_DELAY=1
 # Set this to Yes if the XTEST extension is available on your system,
 # and you have configured the test suite to use the XTEST extension,
 # and you want to execute these tests, otherwise set to No.
-XT_EXTENSIONS=No
+XT_EXTENSIONS=Yes
 
 ###########################################################
 # Configuration parameters for specific tests
