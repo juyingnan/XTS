@@ -5,8 +5,8 @@ AM_CFLAGS = -I$(top_srcdir)/include \
 	-I$(top_srcdir)/xts5/include \
 	$(XTS_CFLAGS) \
 	-DDEBUG
-noinst_LIBRARIES = libXR5.a
-libXR5_a_SOURCES = \
+noinst_LTLIBRARIES = libXR5.la
+libXR5_la_SOURCES = \
 	r5startup.c \
 	message.c \
 	dumpbuf.c \

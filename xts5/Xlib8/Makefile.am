@@ -6,9 +6,9 @@ AM_CFLAGS = -I$(top_srcdir)/include \
 	-I$(top_srcdir)/xts5/include \
 	$(XTS_CFLAGS)
 LDADD = $(top_builddir)/src/tet3/tcm/libtcmmain.la \
-	$(top_builddir)/xts5/src/xim/libximtest.a \
-	$(top_builddir)/xts5/src/lib/libxtest.a \
-	$(top_builddir)/xts5/fonts/libfont.a \
+	$(top_builddir)/xts5/src/xim/libximtest.la \
+	$(top_builddir)/xts5/src/lib/libxtest.la \
+	$(top_builddir)/xts5/fonts/libfont.la \
 	$(top_builddir)/src/tet3/apilib/libapi.la \
 	$(XTS_LIBS)
 
@@ -17,7 +17,7 @@ nobase_testprog_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
-XFlushGC_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.a
+XFlushGC_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.la
 
 tprogs = \
 	XChangeGC \

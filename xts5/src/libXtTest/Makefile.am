@@ -4,8 +4,8 @@ AM_CFLAGS = -I$(top_srcdir)/include \
 	-I$(top_srcdir)/src/tet3/inc \
 	-I$(top_srcdir)/xts5/include \
 	$(XT_CFLAGS)
-noinst_LIBRARIES = libXtTest.a
-libXtTest_a_SOURCES = avs_def.c \
+noinst_LTLIBRARIES = libXtTest.la
+libXtTest_la_SOURCES = avs_def.c \
 		avs_func.c \
 		avs_hier.c \
 		avs_hierd.c \

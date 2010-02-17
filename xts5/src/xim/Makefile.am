@@ -4,8 +4,8 @@ AM_CFLAGS = -I$(top_srcdir)/include \
 	-I$(top_srcdir)/src/tet3/inc \
 	-I$(top_srcdir)/xts5/include \
 	$(XTS_CFLAGS)
-noinst_LIBRARIES = libximtest.a
-libximtest_a_SOURCES = \
+noinst_LTLIBRARIES = libximtest.la
+libximtest_la_SOURCES = \
 	linklocale.c \
 	clnlocale.c \
 	ic.c \

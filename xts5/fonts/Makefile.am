@@ -4,8 +4,8 @@ AM_CFLAGS = -I$(top_srcdir)/include \
 	-I$(top_srcdir)/src/tet3/inc \
 	-I$(top_srcdir)/xts5/include \
 	$(XTS_CFLAGS)
-noinst_LIBRARIES = libfont.a
-libfont_a_SOURCES = xtfont0.c xtfont1.c xtfont2.c xtfont3.c xtfont4.c \
+noinst_LTLIBRARIES = libfont.la
+libfont_la_SOURCES = xtfont0.c xtfont1.c xtfont2.c xtfont3.c xtfont4.c \
 	xtfont5.c xtfont6.c
 
 FONTBDFS = xtfont0.bdf xtfont1.bdf xtfont2.bdf xtfont3.bdf xtfont4.bdf \

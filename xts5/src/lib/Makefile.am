@@ -4,8 +4,8 @@ AM_CFLAGS = -I$(top_srcdir)/include \
 	-I$(top_srcdir)/src/tet3/inc \
 	-I$(top_srcdir)/xts5/include \
 	$(XTS_CFLAGS)
-noinst_LIBRARIES = libxtest.a
-libxtest_a_SOURCES = badcmap.c \
+noinst_LTLIBRARIES = libxtest.la
+libxtest_la_SOURCES = badcmap.c \
 			badfont.c\
 			badgc.c\
 			badpixm.c\
@@ -41,7 +41,6 @@ libxtest_a_SOURCES = badcmap.c \
 			gettime.c\
 			iponlywin.c\
 			issuppvis.c\
-			linkstart.c\
 			lookupname.c\
 			makecolmap.c\
 			makecur.c\

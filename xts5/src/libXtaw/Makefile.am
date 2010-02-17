@@ -1,8 +1,8 @@
 include ../../common.mk
 
 AM_CFLAGS = $(XTS_CFLAGS)
-noinst_LIBRARIES = libXtaw.a
-libXtaw_a_SOURCES = AllWidgets.c \
+noinst_LTLIBRARIES = libXtaw.la
+libXtaw_la_SOURCES = AllWidgets.c \
 		Box.c \
 		Command.c \
 		Form.c \

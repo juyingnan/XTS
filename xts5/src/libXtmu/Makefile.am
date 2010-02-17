@@ -1,8 +1,8 @@
 include ../../common.mk
 
 AM_CFLAGS = $(XTS_CFLAGS)
-noinst_LIBRARIES = libXtmu.a
-libXtmu_a_SOURCES = Initer.c \
+noinst_LTLIBRARIES = libXtmu.la
+libXtmu_la_SOURCES = Initer.c \
 		StrToShap.c \
 		StrToJust.c \
 		ShapeWidg.c \

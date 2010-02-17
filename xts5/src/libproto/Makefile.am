@@ -33,8 +33,8 @@ AM_CFLAGS = -I$(top_srcdir)/include \
 	-I$(top_srcdir)/src/tet3/inc \
 	-I$(top_srcdir)/xts5/include \
 	$(XTS_CFLAGS)
-noinst_LIBRARIES = libXst.a
-libXst_a_SOURCES =\
+noinst_LTLIBRARIES = libXst.la
+libXst_la_SOURCES =\
 	XstlibInt.h\
 	XstosInt.h\
 	DataMove.h\
@@ -77,5 +77,4 @@ libXst_a_SOURCES =\
 	Validate.c\
 	tpstartup.c\
 	startup.c\
-	linkstart.c\
 	delete.c
