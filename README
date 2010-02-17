@@ -1,0 +1,22 @@
+This is a revamped version of X Test Suite (XTS) which removes some of
+the ugliness of building and running the tests. The build and install
+are now straightforward:
+
+	$ ./configure
+	$ make
+	$ make install
+
+Required libraries: libX11, libXext, libXi, libXtst
+Required utilities: xdpyinfo, xset, perl, bdftopcf, mkfontdir
+
+The tests can be run from the source tree with "make check" or from the
+installed package. A wrapper script, xts-run, is the easiest way to run
+the installed tests.
+
+	$ xts-run # run all the tests
+	$ xts-run XI # run just the XI test scenario
+
+The test output will go to a dated directory in the current directory by
+default. This can be changed with the xts-run -o parameter. The output
+contains the full journal of all test output plus individual logs for
+each test program.
