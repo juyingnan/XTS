@@ -19,4 +19,7 @@ the installed tests.
 The test output will go to a dated directory in the current directory by
 default. This can be changed with the xts-run -o parameter. The output
 contains the full journal of all test output plus individual logs for
-each test program.
+each test program. Journal files from completed runs can be analyzed by
+the xts-report tool (formerly vswrpt):
+
+	$ xts-report -f /xts/output/dir/journal
