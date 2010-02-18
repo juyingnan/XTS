@@ -35,7 +35,10 @@ AM_MAINTAINER_MODE
 AM_CONFIG_HEADER([config.h])
 
 # Directory setup
+AX_DEFINE_DIR([DEFAULT_TET_ROOT], [datadir], [Default TET root directory])
 AC_SUBST([DEFAULT_TET_ROOT], ['${datadir}'])
+AX_DEFINE_DIR([DEFAULT_TET_EXEC_ROOT], [libexecdir],
+    [Default TET root execution directory])
 AC_SUBST([DEFAULT_TET_EXEC_ROOT], ['${libexecdir}'])
 
 # Checks for programs.
