@@ -13,6 +13,9 @@ xts5_DATA = tetexec.cfg.in tet_scen tet_code
 xts5dir = $(datadir)/xts5
 check_DATA = tetexec.cfg
 
+xts5docdir = $(xts5dir)/doc
+dist_xts5doc_DATA = doc/release_notes doc/VSW_RELEASE doc/VSW_SPEC
+
 # Script substitutions
 EDIT = $(SED) -e 's,%bindir%,$(bindir),g' \
 	-e 's,%libexecdir%,$(libexecdir),g' \

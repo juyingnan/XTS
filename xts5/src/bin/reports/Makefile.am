@@ -1,1 +1,1 @@
-bin_PROGRAMS = vswrpt
+bin_PROGRAMS = xts-report

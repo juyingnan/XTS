@@ -285,6 +285,12 @@ int	 lineno;
 /*pointer into where we are in the message*/
 char	*pline2, *pline3;
 
+/* TET_ROOT */
+char	*tet_root;
+#ifndef DEFAULT_TET_ROOT
+#define DEFAULT_TET_ROOT "."
+#endif
+
 static void whatj(void)
 {
 	int	jfileno = 0;
@@ -301,11 +307,7 @@ static void whatj(void)
 
 
 	/*find the results directory*/
-	if (getenv("TET_ROOT") == NULL) {
-		fprintf(stderr, "$TET_ROOT is not set\n");
-		exit(2);
-	}
-	sprintf(tmpbuf, "%s/%s/results", getenv("TET_ROOT"), test_dir);
+	sprintf(tmpbuf, "%s/%s/results", tet_root, test_dir);
 	if ((dirp = opendir(tmpbuf)) == NULL) {
 		perror("cannot open results directory");
 		exit(2);
@@ -322,7 +324,8 @@ static void whatj(void)
 	dp = readdir(dirp);
 
 	while ((dp = readdir(dirp)) != NULL) {
-			sprintf(tmpbuf, "%s/%s/results/%s", getenv("TET_ROOT"), test_dir, dp->d_name);
+		sprintf(tmpbuf, "%s/%s/results/%s", tet_root, test_dir,
+			dp->d_name);
 #ifdef CDEBUG
 fprintf(stderr, "dir: %s\n", tmpbuf);
 #endif
@@ -1320,7 +1323,7 @@ static void parseinexec(void)
 			pline = strtok(NULL, "|");
 			pline = strtok(NULL, " ");
 			if (strcmp(pline, test_flag) != 0) {
-				fprintf(stderr, "Output before test for %s ~Purpose %d, journal line %d\n", areaname, actualtests, lineno);
+				/* fprintf(stderr, "Output before test for %s ~Purpose %d, journal line %d\n", areaname, actualtests, lineno); */
 				return;
 			}
 			pline = strtok(NULL, " ");
@@ -1508,7 +1511,7 @@ static void print_summary(void)
 	char	strbuf[64];
 
 	if (xopen_report == 0) {
-	printf("\f");
+	/* printf("\f"); */
 /*
 	printf("                          %s\n", vendor_name);
 */
@@ -1709,6 +1712,11 @@ static void print_summary(void)
 extern int optind, opterr, optopt;
 extern char *optarg;
 
+/*
+ * This is a common report generator use in VSU, VSW, and VSM. It can be
+ * invoked as vsurpt (or creport), vswrpt (or xts-report), or vsmrpt, and
+ * customizes itself to find the results for the appropriate test suite.
+ */
 int main(int argc, char * const argv[])
 {
 	int	optlet;
@@ -1725,10 +1733,9 @@ int main(int argc, char * const argv[])
 	FILE *verfile;
 	char *vernum;
 
-/*this is a common report generator use in VSU, VSW, and VSM*/
-/*it can be invoked as vsurpt (or creport), vswrpt, or vsmrpt*/
-/*and customizes itself to find the results for the appropriate*/
-/*test suite*/
+	tet_root = getenv("TET_ROOT");
+	if (!tet_root)
+		tet_root = strdup(DEFAULT_TET_ROOT);
 
 	strcpy(tmpbuf, argv[0]);
 	if (strstr(tmpbuf, "/") != NULL)
@@ -1752,7 +1759,8 @@ int main(int argc, char * const argv[])
 		strcpy(special2, "CASE");
 		strcpy(doc_dir, "DOC");
 	} else {
-		if (strcmp(bname, "vswrpt") == 0) {
+		if ((strcmp(bname, "vswrpt") == 0) ||
+		    (strcmp(bname, "xts-report") == 0)) {
 			strcpy(test_dir, "xts5");
 			strcpy(test_flag, "VSW5TESTSUITE");
 			strcpy(test_name, "VSW5");
@@ -1865,11 +1873,7 @@ int main(int argc, char * const argv[])
 		sprintf(jbuf, "%04d", jfileno);
 		jbuf[4] = 0;
 		/*find the results directory*/
-		if (getenv("TET_ROOT") == NULL) {
-			fprintf(stderr, "$TET_ROOT is not set\n");
-			exit(2);
-		}
-		sprintf(inbuf, "%s/%s/results", getenv("TET_ROOT"), test_dir);
+		sprintf(inbuf, "%s/%s/results", tet_root, test_dir);
 		if ((dirp = opendir(inbuf)) == NULL) {
 			perror("cannot open results directory");
 			exit(2);
@@ -1882,7 +1886,8 @@ int main(int argc, char * const argv[])
 		/*find a matching results sub-directory, ignoring tcc mode*/
 		while ((dp = readdir(dirp)) != NULL) {
 			if (strstr(dp->d_name, jbuf) != 0) {
-				sprintf(inbuf, "%s/%s/results/%s/journal", getenv("TET_ROOT"), test_dir, dp->d_name);
+				sprintf(inbuf, "%s/%s/results/%s/journal",
+					tet_root, test_dir, dp->d_name);
 				infile = inbuf;
 				if (access(infile, R_OK) != 0) {
 					perror("Cannot access journal file");
@@ -1905,11 +1910,7 @@ int main(int argc, char * const argv[])
 	/* -u option or no -f or -j*/
 	if ((infile == 0) || (fuser)) {
 		/*find the results directory*/
-		if (getenv("TET_ROOT") == NULL) {
-			fprintf(stderr, "$TET_ROOT is not set\n");
-			exit(2);
-		}
-		sprintf(tmpbuf, "%s/%s/results", getenv("TET_ROOT"), test_dir);
+		sprintf(tmpbuf, "%s/%s/results", tet_root, test_dir);
 		if ((dirp = opendir(tmpbuf)) == NULL) {
 			perror("cannot open results directory");
 			exit(2);
@@ -1921,7 +1922,8 @@ int main(int argc, char * const argv[])
 
 		/*find the most recently modified results sub-directory*/
 		while ((dp = readdir(dirp)) != NULL) {
-			sprintf(tmpbuf, "%s/%s/results/%s", getenv("TET_ROOT"), test_dir, dp->d_name);
+			sprintf(tmpbuf, "%s/%s/results/%s", tet_root,
+				test_dir, dp->d_name);
 #ifdef CDEBUG
 fprintf(stderr, "dir: %s\n", tmpbuf);
 #endif
@@ -1983,7 +1985,8 @@ fprintf(stderr, "dir: %s\n", tmpbuf);
 		}
 	}
 
-	sprintf(tmpbuf, "%s/%s/%s/%s_RELEASE", getenv("TET_ROOT"), test_dir, doc_dir, test_prefix);
+	sprintf(tmpbuf, "%s/%s/%s/%s_RELEASE", tet_root, test_dir, doc_dir,
+		test_prefix);
 
 	verfile = fopen(tmpbuf, "r");
 	if (verfile == 0) {
@@ -1995,7 +1998,8 @@ fprintf(stderr, "dir: %s\n", tmpbuf);
 		if (vernum == 0)
 			fprintf(stderr, "WARNING: Cannot read version\n");
 	}
-	sprintf(tmpbuf, "%s/%s/%s/%s_SPEC", getenv("TET_ROOT"), test_dir, doc_dir, test_prefix);
+	sprintf(tmpbuf, "%s/%s/%s/%s_SPEC", tet_root, test_dir, doc_dir,
+		test_prefix);
 	verfile = fopen(tmpbuf, "r");
 	if (verfile == 0) {
 		fprintf(stderr, "WARNING: Cannot open file: %s\n", tmpbuf);
