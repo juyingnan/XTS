@@ -7,13 +7,13 @@
 # The code generator for turning .m files to .c files.
 SUFFIXES = .m _m.c .c
 MC = $(top_builddir)/xts5/src/bin/mc/mc
-AM_V_mc = $(AM_V_mc_$(V))
-AM_V_mc_ = $(AM_V_mc_$(AM_DEFAULT_VERBOSITY))
-AM_V_mc_0 = @echo "  MC    " $@;
+AM_V_MC = $(am__v_MC_$(V))
+am__v_MC_ = $(am__v_MC_$(AM_DEFAULT_VERBOSITY))
+am__v_MC_0 = @echo "  MC    " $@;
 .m.c:
-	$(AM_V_mc)TET_ROOT='$(abs_top_srcdir)' $(MC) -o $@ $<
+	$(AM_V_MC)TET_ROOT='$(abs_top_srcdir)' $(MC) -o $@ $<
 .m_m.c:
-	$(AM_V_mc)TET_ROOT='$(abs_top_srcdir)' $(MC) -m -o $@ $<
+	$(AM_V_MC)TET_ROOT='$(abs_top_srcdir)' $(MC) -m -o $@ $<
 
 ####################
 # Xtest variables
