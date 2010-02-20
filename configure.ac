@@ -106,7 +106,8 @@ if test "x$PERL" = x || test "x$XSET" = x || test "x$XDPYINFO" = x; then
     AC_MSG_ERROR([perl, xset and xdpyinfo are required to run xts-config])
 fi
 
-m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])])
+m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])],
+    [AC_SUBST([AM_DEFAULT_VERBOSITY], [1])])
 
 AC_CONFIG_FILES([
 Makefile
