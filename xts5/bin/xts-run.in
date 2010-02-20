@@ -2,6 +2,7 @@
 
 bindir="%bindir%"
 DEFAULT_TET_ROOT="%DEFAULT_TET_ROOT%"
+PACKAGE_VERSION="%PACKAGE_VERSION%"
 
 TCC="${TCC-${bindir}/tcc}"
 PERL=${PERL-perl}
@@ -22,6 +23,7 @@ Execute the XTS tests in SCENARIO (all by default).
   -c, --config CONFIG		use the tet config file CONFIG
   -h, --help			display this help text and exit
   -o, --output DIRECTORY	write log files to DIRECTORY
+  -V, --version			display the version and exit
 EOF
 }
 
@@ -37,6 +39,10 @@ while [ -n "$1" ]; do
 		;;
 	-h|--help)
 		help
+		exit 0
+		;;
+	-V|--version)
+		echo $PACKAGE_VERSION
 		exit 0
 		;;
 	-*)

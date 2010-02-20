@@ -291,6 +291,11 @@ char	*tet_root;
 #define DEFAULT_TET_ROOT "."
 #endif
 
+/* version */
+#ifndef PACKAGE_VERSION
+#define PACKAGE_VERSION ""
+#endif
+
 static void whatj(void)
 {
 	int	jfileno = 0;
@@ -1828,7 +1833,8 @@ int main(int argc, char * const argv[])
 			fuser++;
 			break;
 		case 'v':
-			fprintf(stderr, "%s Report Generator V%s\n", test_name, verbuf);
+			fprintf(stderr, "%s Report Generator %s\n",
+				test_name, PACKAGE_VERSION);
 			exit(0);
 		case ':':
 			fprintf(stderr, "Option -%c requires an operand\n", optopt);
