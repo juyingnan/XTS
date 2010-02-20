@@ -7,6 +7,7 @@ PACKAGE_VERSION="%PACKAGE_VERSION%"
 TCC="${TCC-${bindir}/tcc}"
 PERL=${PERL-perl}
 XTS_CONFIG="${XTS_CONFIG-${bindir}/xts-config}"
+XTS_REPORT="${XTS_REPORT-${bindir}/xts-report}"
 
 prog=$0
 config=
@@ -82,4 +83,12 @@ if [ ! -d "$outdir" ] && ! mkdir -p "$outdir"; then
 	exit 1
 fi
 
+# run the tests
 "$TCC" -e -i "$outdir" -x "$config" xts5 $scenario
+ret=$?
+
+# generate a short report
+"$XTS_REPORT" -d2 -f "$outdir/journal" > "$outdir/summary"
+
+# return the tcc exit code
+exit $ret

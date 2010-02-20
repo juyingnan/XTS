@@ -28,8 +28,9 @@ bin/xts-run: bin/xts-run.in
 
 # Setup for testing
 TCC = $(top_builddir)/src/tet3/tcc/tcc$(EXEEXT)
-run_tcc = TET_ROOT='$(top_srcdir)' $(TCC) -e -a $(abs_builddir) \
-	-i "$(top_builddir)/xts-`date +%F-%R`" -x tetexec.cfg xts5
+run_tcc = TET_ROOT='$(top_srcdir)' $(TCC) -e -a '$(abs_builddir)' \
+	-x tetexec.cfg
+report = $(builddir)/src/bin/reports/xts-report$(EXEEXT) -d2
 scenario =
 XTS_CONFIG = TET_ROOT='$(top_srcdir)' XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
 	$(PERL) -p $(srcdir)/bin/xts-config
@@ -37,7 +38,13 @@ XTS_CONFIG = TET_ROOT='$(top_srcdir)' XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
 tetexec.cfg: tetexec.cfg.in $(srcdir)/bin/xts-config
 	$(AM_V_GEN)$(XTS_CONFIG) < $< > $@.tmp && mv -f $@.tmp $@ || rm -f $@.tmp
 check-local: tetexec.cfg
-	$(run_tcc) $(scenario)
+	@outdir="$(top_builddir)/xts-`date +%F-%R`"; \
+	  echo $(run_tcc) -i "$$outdir" xts5 $(scenario); \
+	  $(run_tcc) -i "$$outdir" xts5 $(scenario); \
+	  ret=$$?; \
+	  echo $(report) -f "$$outdir/journal" ">" "$$outdir/summary"; \
+	  $(report) -f "$$outdir/journal" > "$$outdir/summary"; \
+	  exit $$ret
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
