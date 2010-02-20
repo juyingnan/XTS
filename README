@@ -1,20 +1,45 @@
 This is a revamped version of X Test Suite (XTS) which removes some of
-the ugliness of building and running the tests. The build and install
-are now straightforward:
+the ugliness of building and running the tests.
 
-	$ ./configure
-	$ make
-	$ make install
+Downloading
+===========
+Currently xts it is only available from a git repository.
 
+	$ git clone git://people.freedesktop.org/~dbn/xtest.git
+
+Eventually there will be a tarball release when it is stabilized.
+
+Requirements
+============
 Required libraries: libX11, libXext, libXi, libXtst
 Required utilities: xdpyinfo, xset, perl, bdftopcf, mkfontdir
 
-The tests can be run from the source tree with "make check" or from the
-installed package. A wrapper script, xts-run, is the easiest way to run
-the installed tests.
+If you are using packages outside of the standard system directories,
+make sure to set PATH and PKG_CONFIG_PATH appropriately. See
+pkg-config(1) for details on the latter.
 
-	$ xts-run # run all the tests
-	$ xts-run XI # run just the XI test scenario
+Build and Install
+=================
+The build and install are now straightforward:
+
+	$ ./autogen.sh	# using a git checkout
+	$ ./configure	# using a tarball
+	$ make
+	$ make install
+
+Running the Tests
+=================
+The tests can be run from the build directory or from the installed
+package. The "make check" framework can be used from the build tree.
+
+	$ make check			# run all the tests
+	$ make check scenario=XI	# run just the XI test scenario
+	$ make test-XI			# shortcut for the previous
+
+A wrapper script, xts-run, is the easiest way to run the installed tests.
+
+	$ xts-run	# run all the tests
+	$ xts-run XI	# run just the XI test scenario
 
 The test output will go to a dated directory in the current directory by
 default. This can be changed with the xts-run -o parameter. The output
