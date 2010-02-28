@@ -38,7 +38,7 @@ XTS_CONFIG = TET_ROOT='$(top_srcdir)' XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
 tetexec.cfg: tetexec.cfg.in $(srcdir)/bin/xts-config
 	$(AM_V_GEN)$(XTS_CONFIG) < $< > $@.tmp && mv -f $@.tmp $@ || rm -f $@.tmp
 check-local: tetexec.cfg
-	@outdir="$(top_builddir)/xts-`date +%F-%R`"; \
+	@outdir="$(top_builddir)/results/`date +%F-%T`"; \
 	  echo $(run_tcc) -i "$$outdir" xts5 $(scenario); \
 	  $(run_tcc) -i "$$outdir" xts5 $(scenario); \
 	  ret=$$?; \

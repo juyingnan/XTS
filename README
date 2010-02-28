@@ -41,8 +41,8 @@ A wrapper script, xts-run, is the easiest way to run the installed tests.
 	$ xts-run	# run all the tests
 	$ xts-run XI	# run just the XI test scenario
 
-The test output will go to a dated directory in the current directory by
-default. This can be changed with the xts-run -o parameter. The output
+By default, the test output will go to xts-results/<date> in the current
+directory. This can be changed with the xts-run -o parameter. The output
 contains the full journal of all test output plus individual logs for
 each test program. Journal files from completed runs can be analyzed by
 the xts-report tool (formerly vswrpt):
