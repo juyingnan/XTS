@@ -12,7 +12,7 @@ XTS_REPORT="${XTS_REPORT-${bindir}/xts-report}"
 prog=$0
 config=
 config_in="${TET_ROOT-$DEFAULT_TET_ROOT}/xts5/tetexec.cfg.in"
-outdir=
+basedir=xts-results
 scenario=
 
 help()
@@ -23,7 +23,8 @@ Execute the XTS tests in SCENARIO (all by default).
 
   -c, --config CONFIG		use the tet config file CONFIG
   -h, --help			display this help text and exit
-  -o, --output DIRECTORY	write log files to DIRECTORY
+  -o, --output DIRECTORY	output results in DIRECTORY
+				  (default: $basedir)
   -V, --version			display the version and exit
 EOF
 }
@@ -35,7 +36,7 @@ while [ -n "$1" ]; do
 		shift
 		;;
 	-o|--output)
-		outdir=$2
+		basedir=$2
 		shift
 		;;
 	-h|--help)
@@ -77,7 +78,7 @@ else
 fi
 
 # Create the output directory
-[ -n "$outdir" ] || outdir="xts-results/`date +%F-%T`"
+outdir="$basedir/`date +%F-%T`"
 if [ ! -d "$outdir" ] && ! mkdir -p "$outdir"; then
 	echo "error: failed to create output directory $outdir" >&2
 	exit 1
