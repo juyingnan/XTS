@@ -15,7 +15,7 @@ LDADD = $(top_builddir)/src/tet3/tcm/libtcmmain.la \
 
 testprogdir = $(libexecdir)/$(subdir)
 nobase_testprog_PROGRAMS = $(tprogs)
-BUILT_SOURCES = $(tprogs:$(EXEEXT)=.c)
+BUILT_SOURCES = $(tprogs:=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
 tprogs = \
