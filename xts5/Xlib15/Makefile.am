@@ -17,7 +17,7 @@ nobase_testprog_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
-XDefaultString_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.la
+XDefaultString_LDADD = $(top_builddir)/xts5/src/libXR5/libXR5.la $(LDADD)
 
 tprogs = \
 	XAllocClassHint \

@@ -17,7 +17,7 @@ nobase_testprog_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
-XFlushGC_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.la
+XFlushGC_LDADD = $(top_builddir)/xts5/src/libXR5/libXR5.la $(LDADD)
 
 tprogs = \
 	XChangeGC \

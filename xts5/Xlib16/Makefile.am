@@ -17,10 +17,10 @@ nobase_testprog_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:=.c)
 CLEANFILES = $(BUILT_SOURCES)
 
-XrmCombineDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.la
-XrmCombineFileDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.la
-XrmEnumerateDatabase_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.la
-XrmPermStringToQuark_LDADD = $(LDADD) $(top_builddir)/xts5/src/libXR5/libXR5.la
+XrmCombineDatabase_LDADD = $(top_builddir)/xts5/src/libXR5/libXR5.la $(LDADD)
+XrmCombineFileDatabase_LDADD = $(top_builddir)/xts5/src/libXR5/libXR5.la $(LDADD)
+XrmEnumerateDatabase_LDADD = $(top_builddir)/xts5/src/libXR5/libXR5.la $(LDADD)
+XrmPermStringToQuark_LDADD = $(top_builddir)/xts5/src/libXR5/libXR5.la $(LDADD)
 
 tprogs = \
 	XrmCombineDatabase \
