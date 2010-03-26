@@ -1,9 +1,15 @@
 AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include
+
+# libapi_s is the shared portion of the library
+xtslibdir = $(libexecdir)/xts5
+xtslib_LTLIBRARIES = libapi_s.la
 noinst_LTLIBRARIES = libapi.la
+
 # If we weren't building TeT lite, this could also add inetlib, servlib
 # and xtilib
-libapi_la_LIBADD = ../tcm/libtcm.la ../dtet2lib/libdtet2.la
-libapi_la_SOURCES = \
+libapi_s_la_LIBADD = ../tcm/libtcm_s.la ../dtet2lib/libdtet2.la
+libapi_s_la_LDFLAGS = -avoid-version
+libapi_s_la_SOURCES = \
 		dcancel.c \
 		dconfig.c \
 		dresfile.c \
@@ -19,8 +25,10 @@ libapi_la_SOURCES = \
 		remwait.c \
 		rtab.c \
 		sync.c \
-		tciface.c \
 		tdiscon.c \
 		tet_exec.c \
 		tet_fork.c \
 		tet_spawn.c
+libapi_la_LIBADD = ../tcm/libtcm.la
+libapi_la_SOURCES = \
+		tciface.c

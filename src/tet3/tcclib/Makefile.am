@@ -1,6 +1,6 @@
 AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include
 noinst_LTLIBRARIES = libtcc.la
-libtcc_la_LIBADD = ../apilib/libapi.la
+libtcc_la_LIBADD = ../apilib/libapi.la ../apilib/libapi_s.la
 libtcc_la_SOURCES = \
 		lockfile.c \
 		lsdir.c \

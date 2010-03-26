@@ -71,6 +71,7 @@ MODIFICATIONS:
 #include <errno.h>
 #include <signal.h>
 #  include <unistd.h>
+#include "tet_api.h"
 #include "dtmac.h"
 #include "dtmsg.h"
 #include "error.h"
@@ -89,6 +90,10 @@ char tcc_options[] = "IT:Va:bcef:g:i:j:l:m:n:pr:s:t:v:x:y:";
 /* static function declarations */
 static void badusage PROTOLIST((void));
 static void prversioninfo PROTOLIST((void));
+
+/* satisfy libapi symbol resolution */
+TET_EXPORT char *tet_pname;
+TET_EXPORT int tet_thistest;
 
 /* default root directories */
 #ifndef DEFAULT_TET_ROOT

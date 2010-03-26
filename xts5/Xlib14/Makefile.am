@@ -10,6 +10,7 @@ LDADD = $(top_builddir)/src/tet3/tcm/libtcmmain.la \
 	$(top_builddir)/xts5/src/lib/libxtest.la \
 	$(top_builddir)/xts5/fonts/libfont.la \
 	$(top_builddir)/src/tet3/apilib/libapi.la \
+	$(top_builddir)/src/tet3/apilib/libapi_s.la \
 	$(top_builddir)/xts5/src/libXR5/libXR5.la \
 	$(XTS_LIBS)
 

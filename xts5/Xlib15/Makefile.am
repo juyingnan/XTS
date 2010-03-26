@@ -10,6 +10,7 @@ LDADD = $(top_builddir)/src/tet3/tcm/libtcmmain.la \
 	$(top_builddir)/xts5/src/lib/libxtest.la \
 	$(top_builddir)/xts5/fonts/libfont.la \
 	$(top_builddir)/src/tet3/apilib/libapi.la \
+	$(top_builddir)/src/tet3/apilib/libapi_s.la \
 	$(XTS_LIBS)
 
 testprogdir = $(libexecdir)/$(subdir)
@@ -72,6 +73,7 @@ CHILD_LDADD = $(top_builddir)/src/tet3/tcm/libtcmchild.la \
 	$(top_builddir)/xts5/src/lib/libxtest.la \
 	$(top_builddir)/xts5/fonts/libfont.la \
 	$(top_builddir)/src/tet3/apilib/libapi.la \
+	$(top_builddir)/src/tet3/apilib/libapi_s.la \
 	$(XTS_LIBS)
 nobase_testprog_PROGRAMS += \
 	XSetWMProperties/Test1 \

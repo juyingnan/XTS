@@ -41,7 +41,8 @@ XTESTHOST = `hostname`
 PVXTESTLIB = ${XTESTLIBDIR}/libxtstpv.a
 PIXLIB = ${XTESTLIBDIR}/libpvt.a
 PVLIBS = ${PVXTESTLIB} $(top_builddir)/xts/fonts/libfont.la ${PIXLIB} \
-	$(top_builddir)/src/tet3/apilib/libapi.la
+	$(top_builddir)/src/tet3/apilib/libapi.la \
+	$(top_builddir)/src/tet3/apilib/libapi_s.la
 
 # SYSMATHLIB - system math library.  Directive to be given to the C compiler
 # to cause the maths routines to be available.
