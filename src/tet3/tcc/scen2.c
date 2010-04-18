@@ -115,11 +115,12 @@ int proc2sclist()
 	TRACE1(tet_Tscen, 1, "proc2sclist(): building the scenario tree");
 	skip = 0;
 	while ((ep = scpop(&sclist)) != (struct scentab *) 0) {
-		if (skip)
+		if (skip) {
 			if (ep->sc_type == SC_SCENARIO)
 				skip = 0;
 			else
 				continue;
+		}
 		ASSERT(ep->sc_type == SC_SCENARIO);
 		if (find2scen(ep->sc_scenario)) {
 			scenerror(ep->sc_scenario, "is multiply defined",

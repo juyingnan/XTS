@@ -110,8 +110,9 @@ char *iopt, *cwd;
 
 char *resdirname()
 {
-	if (results_dir)
+	if (results_dir) {
 		ASSERT(isabspathloc(results_dir));
+	}
 	return(results_dir);
 }
 

@@ -307,7 +307,7 @@ char **argv;
 	}
 
 	/* pick up the name of the old journal file in rerun or resume mode */
-	if (tcc_modes & (TCC_RERUN | TCC_RESUME))
+	if (tcc_modes & (TCC_RERUN | TCC_RESUME)) {
 		if (--argc > 0) {
 			fullpath(cwd, *++argv, fname, sizeof fname, 0);
 			old_journal_file = rstrstore(fname);
@@ -321,6 +321,7 @@ char **argv;
 				tet_progname);
 			errors++;
 		}
+	}
 
 	/* exit now if there have been command-line syntax errors */
 	if (errors)

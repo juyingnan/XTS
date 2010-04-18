@@ -130,7 +130,7 @@ char *subdir;
 	TRACE2(Ttcclib, 6, "tcf_mktmpdir(): try \"%s\"", subdir);
 
 	/* attempt to make the directory */
-	if (tet_mkdir(subdir, MODEANY) < 0)
+	if (tet_mkdir(subdir, MODEANY) < 0) {
 		if (errno == EEXIST)
 			return(0);
 		else {
@@ -140,10 +140,9 @@ char *subdir;
 			errno = errsave;
 			return(rc);
 		}
-
+	}
 
 	/* here if the directory could be created successfully */
 	TRACE2(Ttcclib, 4, "tcf_mktmpdir(): return \"%s\"", subdir);
 	return(1);
 }
-

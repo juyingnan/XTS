@@ -109,8 +109,9 @@ register struct proctab *prp;
 		tet_l2a(prp->pr_scen->sc_ref), prtccmode(prp->pr_currmode));
 
 #ifndef NOTRACE
-	if ((tcc_modes & TCC_RESUME) && !resume_found)
+	if ((tcc_modes & TCC_RESUME) && !resume_found) {
 		TRACE1(tet_Texec, 4, "RESUME point not yet found");
+	}
 #endif
 
 	/* step on to the next processing mode first time through */

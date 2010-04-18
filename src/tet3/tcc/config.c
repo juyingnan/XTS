@@ -1525,12 +1525,14 @@ struct cfstack *stp;
 	for (;;) {
 		p = tet_equindex(*cp);
 		ASSERT(p);
-		for (p += 1; *p; p++)
-			if (*p == '$')
+		for (p += 1; *p; p++) {
+			if (*p == '$') {
 				if (*(p + 1) == '$')
 					p++;
 				else
 					break;
+			}
+		}
 		if (!*p)
 			break;
 		s = rstrstore(*cp);
@@ -1576,12 +1578,14 @@ struct cfstack *stp;
 	** again, a $$ is left in place for now
 	*/
 	head = value;
-	for (p = value; *p; p++)
-		if (*p == '$')
+	for (p = value; *p; p++) {
+		if (*p == '$') {
 			if (*(p + 1) == '$')
 				p++;
 			else
 				break;
+		}
+	}
 	ASSERT(*p == '$');
 	*p++ = '\0';
 	if (*p == '{') {

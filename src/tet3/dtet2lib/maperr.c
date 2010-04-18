@@ -57,15 +57,16 @@ register int errnum;
 {
 	register struct errmap *ep, *ee;
 
-	for (ep = tet_errmap, ee = &tet_errmap[tet_Nerrmap]; ep < ee; ep++)
-		if (errnum == ep->em_errno)
+	for (ep = tet_errmap, ee = &tet_errmap[tet_Nerrmap]; ep < ee; ep++) {
+		if (errnum == ep->em_errno) {
 			if (ep->em_repcode)
 				return(ep->em_repcode);
 			else
 				break;
+		}
+	}
 
 	error(errnum, ep < ee ? ep->em_errname : tet_errname(errnum),
 		"has no equivalent DTET message reply code");
 	return(ER_ERR);
 }
-

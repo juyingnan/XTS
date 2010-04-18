@@ -308,8 +308,9 @@ char *text;
 	static char null[] = "NULL";
 	register int n;
 
-	if (text)
+	if (text) {
 		TRACE3(flag, level, "%s %s", text, tet_i2x(ep));
+	}
 
 	if (!ep || ep->sc_magic != SC_MAGIC)
 		return;

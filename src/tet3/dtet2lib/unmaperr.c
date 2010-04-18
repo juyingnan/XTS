@@ -56,8 +56,8 @@ register int repcode;
 {
 	register struct errmap *ep, *ee;
 
-	for (ep = tet_errmap, ee = &tet_errmap[tet_Nerrmap]; ep < ee; ep++)
-		if (repcode == ep->em_repcode)
+	for (ep = tet_errmap, ee = &tet_errmap[tet_Nerrmap]; ep < ee; ep++) {
+		if (repcode == ep->em_repcode) {
 			if (ep->em_errno >= 0)
 				return(ep->em_errno);
 			else {
@@ -65,7 +65,8 @@ register int repcode;
 					"has no equivalent local errno value");
 				break;
 			}
+		}
+	}
 
 	return(0);
 }
-
