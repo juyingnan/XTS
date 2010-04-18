@@ -72,14 +72,14 @@ MODIFICATIONS:
 
 /* default result code table */
 static struct restab restab_dflt[] = {
-	"PASS",		TET_PASS,	0,
-	"FAIL",		TET_FAIL,	0,
-	"UNRESOLVED",	TET_UNRESOLVED,	0,
-	"NOTINUSE",	TET_NOTINUSE,	0,
-	"UNSUPPORTED",	TET_UNSUPPORTED,0,
-	"UNTESTED",	TET_UNTESTED,	0,
-	"UNINITIATED",	TET_UNINITIATED,0,
-	"NORESULT",	TET_NORESULT,	0,
+    { "PASS",           TET_PASS,               0 },
+    { "FAIL",           TET_FAIL,               0 },
+    { "UNRESOLVED",     TET_UNRESOLVED,         0 },
+    { "NOTINUSE",       TET_NOTINUSE,           0 },
+    { "UNSUPPORTED",    TET_UNSUPPORTED,        0 },
+    { "UNTESTED",       TET_UNTESTED,           0 },
+    { "UNINITIATED",    TET_UNINITIATED,        0 },
+    { "NORESULT",       TET_NORESULT,           0 },
 };
 
 #define Nrestab_dflt	(sizeof restab_dflt / sizeof restab_dflt[0])
@@ -99,9 +99,9 @@ struct statustab {
 
 /* default status code table */
 static struct statustab tet_statustab[] = {
-	"PASS",	TET_EXIT_SUCCESS,
-	"FAIL",	TET_EXIT_FAILURE,
-	"SKIP",	TET_EXIT_SKIP,
+    { "PASS",     TET_EXIT_SUCCESS      },
+    { "FAIL",     TET_EXIT_FAILURE      },
+    { "SKIP",     TET_EXIT_SKIP         },
 };
 
 #define Ntet_statustab	(sizeof(tet_statustab) / sizeof(tet_statustab[0]))

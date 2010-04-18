@@ -39,6 +39,8 @@ MODIFICATIONS:
  
 ************************************************************************/
 
+#include "tet_api.h"
+
 
 /* tell tcclib.h that it has been included in a tcc source file */
 #define TCC	1
@@ -219,8 +221,8 @@ extern int tcc_access PROTOLIST((int, char *, int));
 extern int tcc_chdir PROTOLIST((int, char *));
 extern void tcc_dirname PROTOLIST((char *, char [], int));
 extern void tcc_error PROTOLIST((int, const char *, int, const char *, const char *));
-extern void tcc_exit PROTOLIST((int));
-extern void tcc_fatal PROTOLIST((int, const char *, int, const char *, const char *));
+extern TET_NORETURN void tcc_exit PROTOLIST((int));
+extern TET_NORETURN void tcc_fatal PROTOLIST((int, const char *, int, const char *, const char *));
 extern int tcc_kill PROTOLIST((int, long, int));
 extern int tcc_mkdir PROTOLIST((int, char *));
 extern int tcc_putenv PROTOLIST((int, char *));

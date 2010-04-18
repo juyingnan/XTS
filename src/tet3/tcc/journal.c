@@ -1058,7 +1058,7 @@ time_t now;
 	struct tm *tp = localtime(&now);
 	static char buf[DATESZ + 1];
 
-	(void) sprintf(buf, "%4.4d%02.2d%02.2d",
+	(void) sprintf(buf, "%4.4d%.2d%.2d",
 		tp->tm_year + 1900, tp->tm_mon + 1, tp->tm_mday);
 
 	return(buf);
@@ -1075,7 +1075,7 @@ time_t now;
 	struct tm *tp = localtime(&now);
 	static char buf[TIMESZ + 1];
 
-	(void) sprintf(buf, "%02.2d:%02.2d:%02.2d",
+	(void) sprintf(buf, "%.2d:%.2d:%.2d",
 		tp->tm_hour, tp->tm_min, tp->tm_sec);
 
 	return(buf);

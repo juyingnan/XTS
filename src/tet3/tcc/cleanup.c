@@ -53,8 +53,7 @@ MODIFICATIONS:
 **	tcc_exit() - clean up and exit
 */
 
-void tcc_exit(status)
-int status;
+TET_NORETURN void tcc_exit(int status)
 {
 	static int been_here;
 
@@ -81,4 +80,3 @@ int status;
 	/* log off servers, close connections and exit */
 	tet_exit(status);
 }
-

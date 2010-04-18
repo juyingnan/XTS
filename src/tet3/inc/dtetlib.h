@@ -54,6 +54,8 @@ MODIFICATIONS:
 
 ************************************************************************/
 
+#include "tet_api.h"
+
 /* extern function declarations */
 extern char **tet_addargv PROTOLIST((char **, char **));
 extern int tet_addresult PROTOLIST((int, int));
@@ -71,7 +73,7 @@ extern int tet_fcopy PROTOLIST((char *, char *));
 extern int tet_fgetargs PROTOLIST((FILE *, char **, int));
 extern int tet_fioclex PROTOLIST((int));
 extern void tet_generror PROTOLIST((int, char *, int, char *, char *));
-TET_IMPORT_FUNC(void, tet_genfatal,
+TET_NORETURN TET_IMPORT_FUNC(void, tet_genfatal,
 	PROTOLIST((int, const char *, int, const char *, const char *)));
 TET_IMPORT_FUNC(int, tet_getargs, PROTOLIST((char *, char **, int)));
 extern int tet_getdtablesize PROTOLIST((void));

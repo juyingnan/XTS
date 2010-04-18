@@ -43,6 +43,8 @@ MODIFICATIONS:
 
 ************************************************************************/
 
+#include "tet_api.h"
+
 TET_IMPORT_DATA(const char *, tet_progname); /* my program name */
 TET_IMPORT_DATA(int, tet_mypid);	/* my process ID */
 TET_IMPORT_DATA(int, tet_myptype);	/* my process type */
@@ -54,6 +56,5 @@ TET_IMPORT_ARRAY(char, tet_root, [MAXPATH]);
 TET_IMPORT_FUNC(void, tet_init_globals, PROTOLIST((
 	const char *, int, int, 
 	void (*) PROTOLIST((int, const char *, int, const char *, const char *)),
-	void (*) PROTOLIST((int, const char *, int, const char *, const char *))
+	void TET_NORETURN (*) PROTOLIST((int, const char *, int, const char *, const char *))
 )));
-

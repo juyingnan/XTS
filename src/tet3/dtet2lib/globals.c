@@ -61,11 +61,11 @@ TET_IMPORT int tet_mysysid = -1;	/* my system ID */
 TET_IMPORT char tet_root[MAXPATH];	/* TET_ROOT from the environment */
 TET_IMPORT void (*tet_liberror) PROTOLIST((int, const char *, int, const char *, const char *));
 					/* ptr to error handler function */
-TET_IMPORT void (*tet_libfatal) PROTOLIST((int, const char *, int, const char *, const char *));
+TET_IMPORT TET_NORETURN void (*tet_libfatal) PROTOLIST((int, const char *, int, const char *, const char *));
 					/* ptr to fatal error handler */
 
 /* static function declarations */
-static void minfatal PROTOLIST((int, const char *, int, const char *, const char *));
+static TET_NORETURN void minfatal PROTOLIST((int, const char *, int, const char *, const char *));
 
 
 /*
@@ -84,7 +84,7 @@ static void minfatal PROTOLIST((int, const char *, int, const char *, const char
 
 TET_IMPORT void tet_init_globals(const char *progname, int ptype, int sysid,
         void (*liberror) PROTOLIST((int, const char *, int, const char *, const char *)),
-        void (*libfatal) PROTOLIST((int, const char *, int, const char *, const char *)))
+        void TET_NORETURN (*libfatal) PROTOLIST((int, const char *, int, const char *, const char *)))
 {
 	char *p;
 
@@ -116,7 +116,7 @@ TET_IMPORT void tet_init_globals(const char *progname, int ptype, int sysid,
 **	sufficient for use by the ASSERT() macro calls above
 */
 
-static void minfatal(int err, const char *file, int line, const char *s1, const char *s2)
+static TET_NORETURN void minfatal(int err, const char *file, int line, const char *s1, const char *s2)
 {
 	if (tet_liberror)
 		(*tet_liberror)(err, file, line, s1, s2);

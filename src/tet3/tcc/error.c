@@ -92,8 +92,8 @@ void tcc_error(int errnum, const char *file, int line, const char *s1,
 **	tcc_fatal() - TCC fatal error handler
 */
 
-void tcc_fatal(int errnum, const char *file, int line, const char *s1,
-               const char *s2)
+TET_NORETURN void tcc_fatal(int errnum, const char *file, int line,
+                            const char *s1, const char *s2)
 {
 	tcc_error(errnum, file, line, s1, s2);
 	tcc_exit(1);

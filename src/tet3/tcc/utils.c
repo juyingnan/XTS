@@ -48,6 +48,7 @@ MODIFICATIONS:
 #include <ctype.h>
 #include <string.h>
 #include <errno.h>
+#include <unistd.h>
 #include "dtmac.h"
 #include "error.h"
 #include "globals.h"

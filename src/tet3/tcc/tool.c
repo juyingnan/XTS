@@ -660,7 +660,7 @@ int xrfnamelen;
 	const char *tcname = tet_basename(tcpath);
 	char logname[64];
 
-	sprintf(logname, "%.*s.log", sizeof(logname) - 5, tcname);
+	sprintf(logname, "%.*s.log", (int)(sizeof(logname) - 5), tcname);
 	tcdirfname(tcpath, logname, xrfname, xrfnamelen);
 }
 

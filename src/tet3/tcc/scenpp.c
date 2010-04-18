@@ -480,7 +480,7 @@ struct scentab *ep;
 **	tcc_exit() - clean up and exit
 */
 
-void tcc_exit(status)
+TET_NORETURN void tcc_exit(status)
 int status;
 {
 	exit(status);

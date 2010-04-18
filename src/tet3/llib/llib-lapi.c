@@ -69,7 +69,7 @@ char *file, *argv[], *envp[];
 	return(0);
 }
 
-void tet_exit(status)
+TET_NORETURN void tet_exit(status)
 int status;
 {
 	;

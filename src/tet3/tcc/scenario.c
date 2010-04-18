@@ -54,6 +54,7 @@ MODIFICATIONS:
 #include <errno.h>
 #  include <unistd.h>
 #include "dtmac.h"
+#include "dtetlib.h"
 #include "error.h"
 #include "scentab.h"
 #include "dirtab.h"
@@ -183,7 +184,7 @@ int execscen()
 
 	/* return now if the scenario is empty */
 	if (!sctree || !sctree->sc_child)
-		return;
+		return status;
 
 	TRACE2(tet_Ttcc, 1, "about to execute scenario '%s'",
 		sctree->sc_scenario);

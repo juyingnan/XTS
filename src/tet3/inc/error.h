@@ -48,10 +48,12 @@ MODIFICATIONS:
 
 ************************************************************************/
 
+#include "tet_api.h"
+
 
 TET_IMPORT_FUNC_PTR(void, tet_liberror,
 	PROTOLIST((int, const char *, int, const char *, const char *)));
-TET_IMPORT_FUNC_PTR(void, tet_libfatal,
+TET_NORETURN TET_IMPORT_FUNC_PTR(void, tet_libfatal,
 	PROTOLIST((int, const char *, int, const char *, const char *)));
 
 #define error(errnum, s1, s2) \

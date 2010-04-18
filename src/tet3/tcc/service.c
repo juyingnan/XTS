@@ -41,6 +41,7 @@ MODIFICATIONS:
 #include <sys/types.h>
 #include <time.h>
 #include "dtmac.h"
+#include "dtetlib.h"
 #include "error.h"
 #include "proctab.h"
 #include "scentab.h"

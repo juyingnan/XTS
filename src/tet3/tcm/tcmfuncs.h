@@ -45,6 +45,7 @@ MODIFICATIONS:
 extern void tet_tcminit PROTOLIST((int, char **));
 extern char *tet_callfuncname PROTOLIST((void));
 extern void tet_check_apilib_version PROTOLIST((void));
+extern char *tet_getstatusname PROTOLIST((int));
 
 #ifndef TET_LITE        /* -START-LITE-CUT- */
    extern int tet_tcmptype PROTOLIST((void));

@@ -1877,9 +1877,9 @@ static void cve_error(name, mode, sysid, text)
 char *name, *text;
 int mode, sysid;
 {
-	static char fmt1[] = "%.80s in %.40s assignment in the %s";
-	static char fmt2[] = "%.14s for system %d";
-	static char conf[] = "configuration";
+	static const char fmt1[] = "%.80s in %.40s assignment in the %s";
+	static const char fmt2[] = "%.14s for system %d";
+	static const char conf[] = "configuration";
 	char msg1[sizeof fmt1 + 80 + 40 + 14 + LNUMSZ];
 	char msg2[sizeof fmt2 + 14 + LNUMSZ];
 	char *p;

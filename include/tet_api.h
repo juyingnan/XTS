@@ -240,6 +240,12 @@ extern "C" {
 #  define TET_PROTOLIST(list)	()
 #endif
 
+#if defined(__GNUC__) && ((__GNUC__ * 100 + __GNUC_MINOR__) >= 205)
+# define TET_NORETURN __attribute__((noreturn))
+#else
+# define TET_NORETURN
+#endif /* GNUC */
+
 
 /* NULL function pointer - may be used as an argument to tet_fork() */
 #define TET_NULLFP	((void (*) ()) 0)
@@ -304,7 +310,7 @@ extern "C" {
 
 /* functions in TETware-Lite and in Distrubuted TETware */
 TET_IMPORT_FUNC(void, tet_delete, TET_PROTOLIST((int, char *)));
-TET_IMPORT_FUNC(void, tet_exit, TET_PROTOLIST((int)));
+TET_NORETURN TET_IMPORT_FUNC(void, tet_exit, TET_PROTOLIST((int)));
 TET_IMPORT_FUNC(char *, tet_getvar, TET_PROTOLIST((char *)));
 TET_IMPORT_FUNC(void, tet_infoline,  TET_PROTOLIST((char *)));
 TET_IMPORT_FUNC(int, tet_kill, TET_PROTOLIST((pid_t, int)));

@@ -95,8 +95,7 @@ MODIFICATIONS:
 **	tet_exit() - log off all servers and exit
 */
 
-TET_IMPORT void tet_exit(status)
-int status;
+TET_IMPORT TET_NORETURN void tet_exit(int status)
 {
 	tet_logoff();
 	exit(status);
