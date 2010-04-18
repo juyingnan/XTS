@@ -229,11 +229,11 @@ FILE *fout;
 	 */
 	for (i = 1; i <= Testnum; i++) {
 		if (!gbflag)
-			(void) fprintf(FpCode, "\tt%03d, %d,\n", Icnum[i], Icnum[i]);
+			(void) fprintf(FpCode, "\t{ t%03d, %d },\n", Icnum[i], Icnum[i]);
 		else
-			(void) fprintf(FpCode, "\tt%03d, %s,\n", Icnum[i], Ictype[i]);
+			(void) fprintf(FpCode, "\t{ t%03d, %s },\n", Icnum[i], Ictype[i]);
 	}
-	(void) fprintf(FpCode, "\tNULL, 0\n};\n\n");
+	(void) fprintf(FpCode, "\t{ NULL, 0 }\n};\n\n");
 	(void) fprintf(FpCode, "%sint \tntests = sizeof(tet_testlist)/sizeof(struct tet_testlist)-1;\n\n",
 		(lflag)?"static ": "");
 

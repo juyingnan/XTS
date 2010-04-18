@@ -112,10 +112,10 @@ static struct xga_struct {
 	char *name;
 	Atom atom;
 } xga_list[] = {
-	 "PRIMARY", XA_PRIMARY, 
-	 "CUT_BUFFER0", XA_CUT_BUFFER0, 
-	 "RECTANGLE", XA_RECTANGLE,
-	 "COPYRIGHT", XA_COPYRIGHT,
+	{ "PRIMARY", XA_PRIMARY },
+	{ "CUT_BUFFER0", XA_CUT_BUFFER0 },
+	{ "RECTANGLE", XA_RECTANGLE },
+	{ "COPYRIGHT", XA_COPYRIGHT },
 };
 static int xga_nlist = NELEM(xga_list);
 

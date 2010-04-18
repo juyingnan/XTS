@@ -151,13 +151,13 @@ static	int 	Nclass;
 static char classbuf[CLASSBUFLEN+1];
 
 static struct valname S_displayclass[] = {
-	StaticGray, "StaticGray",
-	GrayScale, "GrayScale",
-	StaticColor, "StaticColor",
-	PseudoColor, "PseudoColor",
-	TrueColor, "TrueColor",
-	DirectColor, "DirectColor",
-	0, (char*)0,
+	{ StaticGray, "StaticGray" },
+	{ GrayScale, "GrayScale" },
+	{ StaticColor, "StaticColor" },
+	{ PseudoColor, "PseudoColor" },
+	{ TrueColor, "TrueColor" },
+	{ DirectColor, "DirectColor" },
+	{ 0, (char*)0 },
 };
 
 /*

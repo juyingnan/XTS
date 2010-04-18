@@ -131,7 +131,7 @@ extern	Display	*Dsp;
 char	*TestName = "XGetDefault";
 int     tet_thistest;
 struct tet_testlist tet_testlist[] = {
-	NULL, 0
+	{ NULL, 0 }
 };
 int 	ntests = sizeof(tet_testlist)/sizeof(struct tet_testlist)-1;
 

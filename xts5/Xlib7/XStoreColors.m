@@ -714,21 +714,21 @@ XColor		*refp;
 unsigned long	*reds, *greens, *blues;
 int		pathcnt = 0;
 static XColor triples[] = {
-		(unsigned long)~0L, 0,0,0, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 1,0,0, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 0,1,0, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 0,0,1, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 3,2,1, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 1,3,0, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 7,3,1, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 7,8,5, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 15,11,12, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 42,99,13, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 112,127,64, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 255,64,33, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 64,255,33, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 64,33,255, DoRed|DoGreen|DoBlue, 0,
-		(unsigned long)~0L, 255,255,255, DoRed|DoGreen|DoBlue, 0
+		{ ~0UL, 0,0,0, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 1,0,0, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 0,1,0, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 0,0,1, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 3,2,1, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 1,3,0, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 7,3,1, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 7,8,5, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 15,11,12, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 42,99,13, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 112,127,64, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 255,64,33, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 64,255,33, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 64,33,255, DoRed|DoGreen|DoBlue, 0 },
+		{ ~0UL, 255,255,255, DoRed|DoGreen|DoBlue, 0 },
 	};
 
 /* If visual class DirectColor is supported: */
