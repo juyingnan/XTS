@@ -49,10 +49,6 @@ MODIFICATIONS:
 
 #define	N_PARTS	4
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 unsigned long tet_inetoul(cp)
 register char *cp;
 {

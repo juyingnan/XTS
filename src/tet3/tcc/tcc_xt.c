@@ -86,11 +86,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "tslib.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 char *tet_tpname = "/dev/tcp";	/* Transport provider name for XTI based tcc */
 int  tet_tpi_mode = -1;		/* Transport provider mode */
 

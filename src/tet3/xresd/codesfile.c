@@ -52,10 +52,6 @@ MODIFICATIONS:
 #include "xresd.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 static char *codesfile;			/* the stored config file name */
 
 

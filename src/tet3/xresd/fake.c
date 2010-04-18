@@ -43,10 +43,6 @@ MODIFICATIONS:
 #include "xresd.h"
 #include "server.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_ss_timeout() - server-specific timeout processing
 **

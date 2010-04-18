@@ -69,10 +69,6 @@ MODIFICATIONS:
 #include "tslib.h"
 #include "server_bs.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 #ifndef NOTRACE
 static char msghdr[] = "message header";
 static char msgdata[] = "message data";

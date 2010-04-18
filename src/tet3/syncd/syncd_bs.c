@@ -52,10 +52,6 @@ MODIFICATIONS:
 #include "avmsg.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 static char reqerr[] = "unknown request code";
 
 /*

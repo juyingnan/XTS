@@ -54,10 +54,6 @@ MODIFICATIONS:
 #include "systab.h"
 #include "tcc.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* name of the temporary master results code file name */
 static char *rcftmp;
 

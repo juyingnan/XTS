@@ -42,10 +42,6 @@ MODIFICATIONS:
 #include "servlib.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_sdsnget() - get a sync id from SYNCD
 **

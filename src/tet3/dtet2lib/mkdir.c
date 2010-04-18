@@ -49,9 +49,6 @@ MODIFICATIONS:
 
 #ifdef NOMKDIR
 #  include "error.h"
-#  ifdef NEEDsrcFile
-     static char srcFile[] = __FILE__;	/* file name for error reporting */
-#  endif /* NEEDsrcFile */
 #else
 #    include <unistd.h>
 #    define MKDIR(A, B)		mkdir((A), (mode_t) (B))

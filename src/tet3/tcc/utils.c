@@ -55,10 +55,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "tcc.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /*
 **	rstrstore() - reliable strstore() call
@@ -97,9 +93,7 @@ int *lp, newlen;
 **	rbuftrace() - reliable tet_buftrace() call
 */
 
-void rbuftrace(bpp, lp, newlen, file, line)
-char **bpp, *file;
-int *lp, newlen, line;
+void rbuftrace(char **bpp, int *lp, int newlen, const char *file, int line)
 {
 	if (tet_buftrace(bpp, lp, newlen, file, line) < 0)
 		fatal(0, "can't continue", (char *) 0);
@@ -208,9 +202,7 @@ int dirlen;
 **	on return up to pathlen bytes are copied to the path array
 */
 
-void fullpath(dir, file, path, pathlen, remote)
-char *dir, *file, path[];
-int pathlen, remote;
+void fullpath(const char *dir, const char *file, char path[], int pathlen, int remote)
 {
 	register char *p = path;
 	register int len;

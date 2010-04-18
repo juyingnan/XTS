@@ -47,10 +47,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* global variables in trace.c */
 extern struct tflags tet_tflags[];
 extern int tet_Ntflags;

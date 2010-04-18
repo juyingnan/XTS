@@ -54,12 +54,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "tet_api.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /*
 ** deletion reason structure
 **

@@ -85,11 +85,6 @@ MODIFICATIONS:
 #include "sigsafe.h"
 
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /* global variables, values inhereted from tet_exec() and tet_remexec() */
 #ifdef TET_THREADS
 static	int	start_errno;

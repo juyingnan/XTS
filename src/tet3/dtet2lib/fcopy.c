@@ -82,11 +82,6 @@ MODIFICATIONS:
 #  endif		/* -END-LITE-CUT- */
 #endif
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;       /* file name for error reporting */
-#endif
-
 /* mask used to extract the permissions bits from st_mode */
 #define MODEMASK	(S_IRWXU | S_IRWXG | S_IRWXO)
 

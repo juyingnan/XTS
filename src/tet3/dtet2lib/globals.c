@@ -51,25 +51,21 @@ MODIFICATIONS:
 #include "error.h"
 #include "globals.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /* global data items */
-TET_IMPORT char *tet_progname = "<unknown>";
+TET_IMPORT const char *tet_progname = "<unknown>";
 					/* my program name */
 TET_IMPORT int tet_mypid = -1;		/* my program ID */
 TET_IMPORT int tet_myptype = PT_NOPROC;	/* my process type */
 TET_IMPORT int tet_mysysid = -1;	/* my system ID */
 TET_IMPORT char tet_root[MAXPATH];	/* TET_ROOT from the environment */
-TET_IMPORT void (*tet_liberror) PROTOLIST((int, char *, int, char *, char *));
+TET_IMPORT void (*tet_liberror) PROTOLIST((int, const char *, int, const char *, const char *));
 					/* ptr to error handler function */
-TET_IMPORT void (*tet_libfatal) PROTOLIST((int, char *, int, char *, char *));
+TET_IMPORT void (*tet_libfatal) PROTOLIST((int, const char *, int, const char *, const char *));
 					/* ptr to fatal error handler */
 
 /* static function declarations */
-static void minfatal PROTOLIST((int, char *, int, char *, char *));
+static void minfatal PROTOLIST((int, const char *, int, const char *, const char *));
 
 
 /*
@@ -86,11 +82,9 @@ static void minfatal PROTOLIST((int, char *, int, char *, char *));
 **	they have to fill in the information by hand later on
 */
 
-TET_IMPORT void tet_init_globals(progname, ptype, sysid, liberror, libfatal)
-char *progname;
-int ptype, sysid;
-void (*liberror) PROTOLIST((int, char *, int, char *, char *));
-void (*libfatal) PROTOLIST((int, char *, int, char *, char *));
+TET_IMPORT void tet_init_globals(const char *progname, int ptype, int sysid,
+        void (*liberror) PROTOLIST((int, const char *, int, const char *, const char *)),
+        void (*libfatal) PROTOLIST((int, const char *, int, const char *, const char *)))
 {
 	char *p;
 
@@ -122,9 +116,7 @@ void (*libfatal) PROTOLIST((int, char *, int, char *, char *));
 **	sufficient for use by the ASSERT() macro calls above
 */
 
-static void minfatal(err, file, line, s1, s2)
-int err, line;
-char *file, *s1, *s2;
+static void minfatal(int err, const char *file, int line, const char *s1, const char *s2)
 {
 	if (tet_liberror)
 		(*tet_liberror)(err, file, line, s1, s2);
@@ -133,4 +125,3 @@ char *file, *s1, *s2;
 			tet_progname, file, line, s1, s2 ? s2 : "");
 	exit(1);
 }
-

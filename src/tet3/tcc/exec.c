@@ -53,10 +53,6 @@ MODIFICATIONS:
 #include "tcc.h"
 #include "tcclib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /*
 **	tcc_texec() - execute a test case on the specified system

@@ -47,10 +47,6 @@ MODIFICATIONS:
 #include "ftoa.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_f2a() - return printable representation of ptab pt_flags value
 **

@@ -143,10 +143,6 @@ MODIFICATIONS:
 #  include "ltoa.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;
-#endif
-
 #define KILLWAIT	5	/* seconds to wait for child to exit */
 #define THRKILLWAIT	12	/* secs to wait for thread after forcing
 				   it to exit (should be > 2*KILLWAIT) */

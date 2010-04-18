@@ -104,10 +104,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 #ifndef TET_LITE /* -START-LITE-CUT- */
 extern int tet_psysid;			/* parent's system id */
 #endif /* -END-LITE-CUT- */
@@ -359,10 +355,9 @@ char **argv;
 **	note that this function might be called recursively
 */
 
-void tet_dtcmerror(errnum, file, line, s1, s2)
-int errnum, line;
-char *file;
-register char *s1, *s2;
+void tet_dtcmerror(int errnum, const char *file, int line,
+                   register const char *s1,
+                   register const char *s2)
 {
 	char msg[MAXPATH + 128];
 	register char *p = msg;

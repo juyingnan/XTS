@@ -46,10 +46,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "tcc.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* the lists of -y and -n strings from the command line */
 static char **ylcmd, **nlcmd;
 static int Nylcmd, Nnlcmd;

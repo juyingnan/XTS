@@ -66,10 +66,6 @@ MODIFICATIONS:
 #include "dirtab.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* command-line options */
 static int printscrefs = 0;
 

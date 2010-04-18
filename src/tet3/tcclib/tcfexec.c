@@ -75,10 +75,6 @@ MODIFICATIONS:
 #define MODEANY \
 	((mode_t) (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH))
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 #ifndef TET_LITE	/* -START-LITE-CUT- */
 extern void tet_disconnect();

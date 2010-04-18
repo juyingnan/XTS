@@ -45,10 +45,6 @@ MODIFICATIONS:
 #include "servlib.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_ti_msgbuf() - return a pointer to a ptab message data buffer,
 **		growing it if necessary

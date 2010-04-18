@@ -70,10 +70,6 @@ MODIFICATIONS:
 #include "tet_jrnl.h"
 #include "tcc.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /* static function declarations */
 static void ocf2jnl2 PROTOLIST((struct proctab *, char *));
@@ -251,8 +247,11 @@ int tcnamelen;
 	** or tool
 	*/
 	if (pass_tcname) {
+		/* XXX[aplattner]: This cast casts away constness.  This should
+		** be fixed correctly at some point.
+		*/
 		tooladdargv(&argv, &argvlen, &argc,
-			argc > 0 ? tet_basename(tcname) : tcname, 0);
+			argc > 0 ? (char*)tet_basename(tcname) : tcname, 0);
 		if (pass_iclist)
 			tooladdargv(&argv, &argvlen, &argc, prp->pr_exiclist, 0);
 	}
@@ -658,7 +657,7 @@ static void xresfilename(tcpath, xrfname, xrfnamelen)
 char *tcpath, *xrfname;
 int xrfnamelen;
 {
-	char *tcname = tet_basename(tcpath);
+	const char *tcname = tet_basename(tcpath);
 	char logname[64];
 
 	sprintf(logname, "%.*s.log", sizeof(logname) - 5, tcname);

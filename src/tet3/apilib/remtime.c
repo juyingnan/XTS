@@ -63,10 +63,6 @@ MODIFICATIONS:
 #include "sysent.h"
 #include "servlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 TET_IMPORT int tet_remtime(sysid, tp)
 int sysid;
 time_t *tp;

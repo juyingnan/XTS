@@ -52,11 +52,6 @@ MODIFICATIONS:
 #include "tcclib.h"
 
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /* lock file mode */
 #define MODEANY \
 	((mode_t) (S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH | S_IWOTH))

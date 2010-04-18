@@ -61,11 +61,6 @@ MODIFICATIONS:
 #include "valmsg.h"
 #include "servlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 int tet_remkill(remoteid)
 int remoteid;
 {

@@ -56,11 +56,6 @@ MODIFICATIONS:
 #include "tcc.h"
 #include "tcclib.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* signal dispositions on startup */
 static void (*orig_sighup) PROTOLIST((int));
 static void (*orig_sigquit) PROTOLIST((int));

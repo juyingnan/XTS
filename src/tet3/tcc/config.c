@@ -79,10 +79,6 @@ MODIFICATIONS:
 #include "tcc.h"
 #include "dtcc.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* default config file names on each system */
 static char *defcfname[] = {
 	"tetbuild.cfg",

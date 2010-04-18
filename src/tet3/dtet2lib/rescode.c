@@ -69,10 +69,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /* default result code table */
 static struct restab restab_dflt[] = {

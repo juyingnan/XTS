@@ -54,11 +54,6 @@ MODIFICATIONS:
 #endif
 
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /* static function declarations */
 static void add_scenrefs PROTOLIST((struct scentab *));
 static void copy_r2 PROTOLIST((struct scentab *, struct scentab *,

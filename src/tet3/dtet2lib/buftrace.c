@@ -46,19 +46,13 @@ MODIFICATIONS:
 #include "ltoa.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_buftrace() - call tet_bufchk, emit trace information
 **
 **	return 0 if successful or -1 on error
 */
 
-TET_IMPORT int tet_buftrace(bpp, lp, newlen, file, line)
-char **bpp, *file;
-int *lp, newlen, line;
+TET_IMPORT int tet_buftrace(char **bpp, int *lp, int newlen, const char *file, int line)
 {
 	register int rc;
 

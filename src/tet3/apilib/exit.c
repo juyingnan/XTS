@@ -91,12 +91,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "sigsafe.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /*
 **	tet_exit() - log off all servers and exit
 */

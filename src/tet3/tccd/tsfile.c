@@ -77,11 +77,6 @@ MODIFICATIONS:
 /* creation mode for diretories */
 #define DIRMODE		((mode_t) (S_IRWXU | S_IRWXG | S_IRWXO))
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* static variables */
 static char *sfdir;			/* saved files directory */
 

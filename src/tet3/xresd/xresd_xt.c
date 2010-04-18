@@ -55,10 +55,6 @@ MODIFICATIONS:
 #include "server_xt.h"
 #include "xtilib_xt.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;       /* file name for error reporting */
-#endif
-
 struct t_call *tet_calls[MAX_CONN_IND];	/* to hold connection indications */
 int tet_listen_fd = 0;			/* descriptor on which to listen  */
 char *tet_tpname = (char *) 0;		/* Transport provider name */

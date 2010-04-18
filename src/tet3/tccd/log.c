@@ -57,11 +57,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /* the log file stream pointer */
 static FILE *lfp;
 
@@ -138,9 +133,7 @@ char *s1, *s2;
 **	logerror() - TCCD error printing routine
 */
 
-void logerror(errnum, file, line, s1, s2)
-int errnum, line;
-char *file, *s1, *s2;
+void logerror(int errnum, const char *file, int line, const char *s1, const char *s2)
 {
 	tet_prerror(getlogfp(), errnum, loghdr(), file, line, s1, s2);
 }

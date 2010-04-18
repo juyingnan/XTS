@@ -62,11 +62,6 @@ MODIFICATIONS:
 #include "sysent.h"
 #include "tet_api.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 TET_IMPORT int tet_getsysbyid(sysid, sysp)
 int sysid;
 struct tet_sysent *sysp;

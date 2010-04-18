@@ -396,12 +396,7 @@ MODIFICATIONS:
 	if ((flag) >= (level)) tet_tdump(from, count, title); else
 
 #  define BUFCHK(bpp, lp, newlen) \
-	tet_buftrace(bpp, lp, newlen, srcFile, __LINE__)
-
-#  ifndef NEEDsrcFile
-#    define NEEDsrcFile
-#  endif
-
+	tet_buftrace(bpp, lp, newlen, __FILE__, __LINE__)
 
    /*
    **	declarations of extern functions and data items
@@ -420,7 +415,8 @@ MODIFICATIONS:
    extern void tet_tdump PROTOLIST((char *, int, char *));
    TET_IMPORT_FUNC(void, tet_tfclear, PROTOLIST((void)));
    TET_IMPORT_FUNC(void, tet_trace,
-	PROTOLIST((char *, char *, char *, char *, char *, char *)));
+        PROTOLIST((const char *, const char *, const char *, const char *,
+                   const char *, const char *)));
    extern char **tet_traceargs PROTOLIST((int, char **));
    TET_IMPORT_FUNC(void, tet_traceinit, PROTOLIST((int, char **)));
 

@@ -76,10 +76,6 @@ extern "C" {
 #include "dtetlib.h"
 #include "sigsafe.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;
-#endif
-
 extern int	tet_tcmc_main PROTOLIST((int, char **));
 extern void	tet_dtcmerror PROTOLIST((int, char *, int, char *, char *));
 

@@ -81,10 +81,6 @@ MODIFICATIONS:
 
 char *Tet_savedir;			/* saved files directory */
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /************************************************************************
 **									*

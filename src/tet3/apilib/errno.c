@@ -72,10 +72,6 @@ MODIFICATIONS:
 #include "error.h"
 #include "dtthr.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;
-#endif
-
 #ifndef TET_THREADS
 TET_IMPORT int tet_errno;
 #else /* !TET_THREADS */

@@ -52,10 +52,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "tslib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* static function declarations */
 static int ti_lo2 PROTOLIST((struct ptab *));
 

@@ -56,10 +56,6 @@ MODIFICATIONS:
 #include "globals.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 static FILE *sfp = NULL;		/* systems file stream pointer */
 
 /*

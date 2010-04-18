@@ -64,11 +64,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #include "inetlib_in.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_gettccdaddr() - look up the INET address and port number for
 **		a TCCD and store it in the related tptab entry

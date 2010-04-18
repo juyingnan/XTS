@@ -43,10 +43,6 @@ MODIFICATIONS:
 #include "error.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* mode for created directories */
 #define MODEANY		((mode_t) (S_IRWXU | S_IRWXG | S_IRWXO))
 

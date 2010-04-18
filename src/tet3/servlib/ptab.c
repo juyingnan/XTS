@@ -53,10 +53,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 struct ptab *tet_ptab;			/* ptr to start of process table */
 
 

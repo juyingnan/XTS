@@ -51,10 +51,6 @@ MODIFICATIONS:
 #include "ptab.h"
 #include "inetlib_in.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 #define NHCACHE		2	/* no of host cache entries - one for localhost
 				   and one for the master system */

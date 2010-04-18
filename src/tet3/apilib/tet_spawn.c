@@ -100,10 +100,6 @@ MODIFICATIONS:
 
 #define	KILLWAIT	10
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;
-#endif
-
 static pid_t	childpid;
 #ifdef TET_THREADS
 static sigset_t oldset;

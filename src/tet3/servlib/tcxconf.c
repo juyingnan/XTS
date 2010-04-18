@@ -46,10 +46,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "tet3_config.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* scratchpad variable lists */
 static struct cflist scfg, tcfg;
 

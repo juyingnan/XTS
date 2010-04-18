@@ -70,11 +70,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "tcc.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* some limits which apply to directives */
 /* max number of semicolon-delimited fields in group execution */
 #define MAXFLDS	(LBUFLEN / 8)

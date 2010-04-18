@@ -57,10 +57,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "tcclib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /* creation modes for files and directories */
 #define FILEMODE \

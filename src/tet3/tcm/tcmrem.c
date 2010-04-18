@@ -85,10 +85,6 @@ TET_EXPORT struct ptab *tet_sdptab, *tet_xdptab;
 
 TET_EXPORT sigset_t tet_blockable_sigs;
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	main() is the main program for processes started by tet_remexec().
 **	It is simply a wrapper for tet_tcmc_main().

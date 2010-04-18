@@ -63,10 +63,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /*
 ** compatability for systems with pre-BSD4.3 select() call -

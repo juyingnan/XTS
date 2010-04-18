@@ -54,10 +54,6 @@ MODIFICATIONS:
 #include "error.h"
 #include "ltoa.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_ts_nbio() - establish non-blocking i/o on an XTI fd
 **

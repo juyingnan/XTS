@@ -55,11 +55,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /* static function declarations */
 static int check_grouplist PROTOLIST((struct STAT_ST *, int));
 

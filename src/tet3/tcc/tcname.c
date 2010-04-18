@@ -50,10 +50,6 @@ MODIFICATIONS:
 #include "proctab.h"
 #include "tcc.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tcsrcname() - return the full path name of a testcase below the
 **		source directory

@@ -49,10 +49,6 @@ MODIFICATIONS:
 #include "server_in.h"
 #include "inetlib_in.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* socket on which to listen */
 SOCKET tet_listen_sd = 0;
 

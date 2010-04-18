@@ -39,10 +39,6 @@ MODIFICATIONS:
 #include "llist.h"
 #include "error.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_listinsert() - insert new element at the head of a linked list
 */

@@ -87,7 +87,7 @@ extern "C" {
 #include "sigsafe.h"
 
 extern int	tet_tcm_main PROTOLIST((int, char **));
-extern void	tet_dtcmerror PROTOLIST((int, char *, int, char *, char *));
+extern void	tet_dtcmerror PROTOLIST((int, const char *, int, const char *, const char *));
 
 TET_EXPORT char *tet_pname = "<unknown>";
 TET_EXPORT int tet_thistest = 0;
@@ -153,10 +153,6 @@ char	**argv;
 
 #ifdef __cplusplus
 extern "C" {
-#endif
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
 #endif
 
 /*

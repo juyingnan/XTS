@@ -195,10 +195,6 @@ MODIFICATIONS:
 
 #define	KILLWAIT	10
 
-#  ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;
-#  endif
-
 #  ifndef TET_THREADS
 static	int	alrm_flag; /* threads version is #defined in alarm.h */
 #  endif

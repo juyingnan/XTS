@@ -45,10 +45,6 @@ MODIFICATIONS:
 #include "servlib.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_xdxrclose() - send an OP_XRCLOSE message to XRESD and receive
 **		a reply

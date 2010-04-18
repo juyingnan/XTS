@@ -70,10 +70,6 @@ MODIFICATIONS:
 #include "avmsg.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 TET_IMPORT int tet_sderrno;		/* tet_sdtalk reply code */
 
 /* static function declarations */

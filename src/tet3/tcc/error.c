@@ -61,25 +61,18 @@ MODIFICATIONS:
 #include "proctab.h"
 #include "tcc.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 #define MSGSIZE	((MAXPATH * 2) + 128)	/* size of a message buffer */
 
 /* static function declarations */
-static void errfmt PROTOLIST((int, char *, int, char *, char *, char *,
-	char []));
-
+static void errfmt PROTOLIST((int, const char *, int, const char *,
+                              const char *, const char *, char []));
 
 /*
 **	tcc_error() - TCC error handler
 */
 
-void tcc_error(errnum, file, line, s1, s2)
-int errnum, line;
-char *file, *s1, *s2;
+void tcc_error(int errnum, const char *file, int line, const char *s1,
+              const char *s2)
 {
 	char msg[MSGSIZE];
 
@@ -99,10 +92,8 @@ char *file, *s1, *s2;
 **	tcc_fatal() - TCC fatal error handler
 */
 
-void tcc_fatal(errnum, file, line, s1, s2)
-int errnum, line;
-char *file;
-char *s1, *s2;
+void tcc_fatal(int errnum, const char *file, int line, const char *s1,
+               const char *s2)
 {
 	tcc_error(errnum, file, line, s1, s2);
 	tcc_exit(1);
@@ -113,10 +104,8 @@ char *s1, *s2;
 **		for use during test case execution
 */
 
-void tcc_prperror(prp, sysid, errnum, file, line, s1, s2)
-struct proctab *prp;
-int sysid, errnum, line;
-char *file, *s1, *s2;
+void tcc_prperror(struct proctab *prp, int sysid, int errnum, const char *file,
+                  int line, const char *s1, const char *s2)
 {
 	static char fmt[] = "on system %03d";
 	char text[sizeof fmt + LNUMSZ];
@@ -138,9 +127,8 @@ char *file, *s1, *s2;
 **	errfmt() - format an error message into the msg buffer
 */
 
-static void errfmt(errnum, file, line, s1, s2, s3, msg)
-int errnum, line;
-char *file, *s1, *s2, *s3, msg[];
+static void errfmt(int errnum, const char *file, int line, const char *s1,
+                   const char *s2, const char *s3, char msg[])
 {
 	register char *p = msg;
 

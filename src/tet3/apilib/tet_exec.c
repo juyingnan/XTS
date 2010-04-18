@@ -127,12 +127,6 @@ MODIFICATIONS:
 #include "dtthr.h"
 #include "ltoa.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;
-#endif
-
-
 extern char **ENVIRON;
 
 static struct envlist {

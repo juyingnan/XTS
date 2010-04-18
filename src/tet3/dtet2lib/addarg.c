@@ -34,11 +34,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /*
 **	tet_addargv() - concatenate two argv argument lists and return
 **		a pointer to the results

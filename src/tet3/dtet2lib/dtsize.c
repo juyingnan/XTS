@@ -59,10 +59,6 @@ MODIFICATIONS:
 #endif /* !_WIN32 && !HAS_GETDTABLESIZE */
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_getdtablesize() - return size of file descriptor table
 */

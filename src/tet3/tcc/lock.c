@@ -54,10 +54,6 @@ MODIFICATIONS:
 #include "tcc.h"
 #include "tcclib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tcc_lock() - acquire a shared lock or an exclusive lock
 **

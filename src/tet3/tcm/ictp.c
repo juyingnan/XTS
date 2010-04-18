@@ -148,10 +148,6 @@ MODIFICATIONS:
 #include "tet_jrnl.h"
 #include "apilib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 #define MODE666 (mode_t) (S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH)
 
 #ifdef TET_LITE	/* -LITE-CUT-LINE- */

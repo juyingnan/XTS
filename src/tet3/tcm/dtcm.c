@@ -168,11 +168,6 @@ MODIFICATIONS:
 #include "apilib.h"
 
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 #ifdef TET_LITE /* -LITE-CUT-LINE- */
 #  define	TET_VERSION		"3.3-lite"
 #else /* -START-LITE-CUT- */

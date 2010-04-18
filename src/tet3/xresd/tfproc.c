@@ -63,11 +63,6 @@ MODIFICATIONS:
 #endif
 
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /*
 **	Transfer file table.
 **

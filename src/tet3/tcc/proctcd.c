@@ -53,10 +53,6 @@ MODIFICATIONS:
 #include "systab.h"
 #include "tcc.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* static function declarations */
 static int conf1tccd PROTOLIST((struct proctab *, int, int));
 static void rm_snid PROTOLIST((struct proctab *));

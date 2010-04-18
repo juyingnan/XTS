@@ -50,12 +50,7 @@ MODIFICATIONS:
 #include "ltoa.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 static struct rtab *rtab;	/* ptr to head of remote execution table */
-
 
 /*
 **	tet_rtalloc() - allocate a remote execution table element and return

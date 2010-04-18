@@ -42,10 +42,6 @@ MODIFICATIONS:
 #include "ptab.h"
 #include "error.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_getptbysyspid() - find a ptab element by sysid/pid
 **		and return a pointer thereto

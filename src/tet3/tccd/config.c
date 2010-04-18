@@ -65,10 +65,6 @@ MODIFICATIONS:
 #include "config.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /* values for cflags below (a bit field) */
 #define CF_SINPROGRESS	001		/* sndconf in progress */

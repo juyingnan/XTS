@@ -102,12 +102,6 @@ MODIFICATIONS:
 #include "tet_api.h"
 #include "apilib.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /* the configuration variable list */
 static char **varptrs;
 static int lvarptrs, nvarptrs;

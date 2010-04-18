@@ -72,10 +72,6 @@ MODIFICATIONS:
 int tet_tcerrno;	/* fake TCCD reply code */
 #endif	/* -LITE-CUT-LINE- */
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	all these functions set tet_tcerrno on return
 **

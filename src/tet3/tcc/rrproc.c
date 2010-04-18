@@ -64,10 +64,6 @@ MODIFICATIONS:
 #include "tcc.h"
 #include "tet_jrnl.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* rescodes and modes of operation from the command-line */
 static int *rrcodes;
 static int lrrcodes, nrrcodes;

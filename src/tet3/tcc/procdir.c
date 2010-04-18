@@ -63,10 +63,6 @@ MODIFICATIONS:
 #include "proctab.h"
 #include "tcc.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /* static function declarations */
 static int count_tc PROTOLIST((struct scentab *, int));

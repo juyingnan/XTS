@@ -78,10 +78,6 @@ MODIFICATIONS:
 #include "servlib.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 char *tet_tpname = "/dev/tcp";		/* transport interface provider name */
 int tet_tpi_mode = -1;			/* transport provider mode */
 

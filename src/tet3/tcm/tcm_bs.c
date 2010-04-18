@@ -59,10 +59,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "tcmfuncs.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 static char reqerr[] = "unknown request code";
 
 /*

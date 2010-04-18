@@ -62,10 +62,6 @@ MODIFICATIONS:
 #include "tcc.h"
 #include "dtcc.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 extern char **ENVIRON;
 
 /* ptrs to syncd and xresd ptabs */

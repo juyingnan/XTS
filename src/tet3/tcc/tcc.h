@@ -134,12 +134,9 @@ extern int tet_tcerrno;
 extern void rbufchk PROTOLIST((char **, int *, int));
 #  define RBUFCHK(bpp, lp, newlen)	rbufchk(bpp, lp, newlen)
 #else /* NOTRACE */
-extern void rbuftrace PROTOLIST((char **, int *, int, char *, int));
+extern void rbuftrace PROTOLIST((char **, int *, int, const char *, int));
 #  define RBUFCHK(bpp, lp, newlen) \
-	rbuftrace(bpp, lp, newlen, srcFile, __LINE__)
-#  ifndef NEEDsrcFile
-#    define NEEDsrcFile
-#  endif /* NEEDsrcFile */
+	rbuftrace(bpp, lp, newlen, __FILE__, __LINE__)
 #endif /* NOTRACE */
 
 /* flag values used with yesstr(), nostr() and okstr() calls */
@@ -157,7 +154,7 @@ extern void exec_block_signals PROTOLIST((void));
 extern int execscen PROTOLIST((void));
 extern void execsigtrap PROTOLIST((void));
 extern void exec_unblock_signals PROTOLIST((void));
-extern void fullpath PROTOLIST((char *, char *, char [], int, int));
+extern void fullpath PROTOLIST((const char *, const char *, char [], int, int));
 extern char *get_runtime_tsroot PROTOLIST((int));
 extern char *getcfg PROTOLIST((char *, int, int));
 extern int getcflag PROTOLIST((char *, int, int));
@@ -221,9 +218,9 @@ extern int symax PROTOLIST((void));
 extern int tcc_access PROTOLIST((int, char *, int));
 extern int tcc_chdir PROTOLIST((int, char *));
 extern void tcc_dirname PROTOLIST((char *, char [], int));
-extern void tcc_error PROTOLIST((int, char *, int, char *, char *));
+extern void tcc_error PROTOLIST((int, const char *, int, const char *, const char *));
 extern void tcc_exit PROTOLIST((int));
-extern void tcc_fatal PROTOLIST((int, char *, int, char *, char *));
+extern void tcc_fatal PROTOLIST((int, const char *, int, const char *, const char *));
 extern int tcc_kill PROTOLIST((int, long, int));
 extern int tcc_mkdir PROTOLIST((int, char *));
 extern int tcc_putenv PROTOLIST((int, char *));

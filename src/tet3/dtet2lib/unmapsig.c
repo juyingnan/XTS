@@ -43,10 +43,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "sigmap.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_unmapsignal() - map DTET signal number to local signal number
 **

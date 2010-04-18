@@ -238,13 +238,9 @@ MODIFICATIONS:
 
 
    /* top-level API mutex with calls that can be nested */
-#  define API_LOCK	tet_api_lock(1, srcFile, __LINE__)
-#  define API_UNLOCK	tet_api_lock(0, srcFile, __LINE__)
-   extern void tet_api_lock();
-
-#  ifndef NEEDsrcFile
-#    define NEEDsrcFile
-#  endif
+#  define API_LOCK	tet_api_lock(1, __FILE__, __LINE__)
+#  define API_UNLOCK	tet_api_lock(0, __FILE__, __LINE__)
+   void tet_api_lock(int getlock, const char *file, int line);
 
 #else /* TET_THREADS */
 

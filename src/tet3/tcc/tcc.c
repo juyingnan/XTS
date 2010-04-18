@@ -78,10 +78,6 @@ MODIFICATIONS:
 #include "tcc.h"
 #include "keys.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 sigset_t tet_blockable_sigs;	/* signals blocked by tet_sigsafe_start() */
 
@@ -527,10 +523,10 @@ char **argv;
 
 static void badusage()
 {
-	static char *options[] = {
-		(char *) 0,	/* placeholder for tet_progname */
+	static const char *options[] = {
+		0,	/* placeholder for tet_progname */
 		"-{bec}",
-		(char *) 0,	/* placeholder for "-{m|r} codelist" */
+		0,	/* placeholder for "-{m|r} codelist" */
 		"[-I]",
 		"[-a alt-exec-dir]",
 		"[-f clean-config-file]",
@@ -549,7 +545,7 @@ static void badusage()
 		"[test-suite [scenario]]"
 	};
 	int n, pos;
-	char *opt, *sep;
+	const char *opt, *sep;
 
 	options[0] = tet_progname;
 

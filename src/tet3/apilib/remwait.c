@@ -67,11 +67,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "sigsafe.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 int tet_remwait(remoteid, waittime, statloc)
 int remoteid, waittime, *statloc;
 {

@@ -62,10 +62,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* structure used when re-ordering xres lines */
 struct xrlist {
 	int xr_id;		/* xres line id */

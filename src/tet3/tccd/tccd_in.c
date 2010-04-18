@@ -86,10 +86,6 @@ MODIFICATIONS:
 
 /* only the INETD version on supported on WIN32 platforms */
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 static char rhostname[256];		/* remote host name */
 
 #ifdef INETD

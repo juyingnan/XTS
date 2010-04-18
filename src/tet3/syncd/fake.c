@@ -41,10 +41,6 @@ MODIFICATIONS:
 #include "error.h"
 #include "server.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_ss_connect() - fake connect routine for syncd
 **

@@ -58,13 +58,9 @@ MODIFICATIONS:
 #define T_ALLOC_DIS(fd)  ((struct t_discon *) t_alloc(fd, T_DIS,  T_ADDR))
 
 #define xt_error(errnum, s1, s2) \
-	tet_xtierror(errnum, srcFile, __LINE__, s1, s2)
+	tet_xtierror(errnum, __FILE__, __LINE__, s1, s2)
 #define xt_fatal(errnum, s1, s2) \
-	tet_xtifatal(errnum, srcFile, __LINE__, s1, s2)
-
-#ifndef NEEDsrcFile
-#  define NEEDsrcFile
-#endif
+	tet_xtifatal(errnum, __FILE__, __LINE__, s1, s2)
 
 /* extern data items */
 TET_EXPORT_DATA(char *, tet_tpname);
@@ -82,6 +78,6 @@ extern int tet_ts_nbio PROTOLIST((struct ptab *));
 extern void tet_ts_accept PROTOLIST((int));
 extern char *tet_xterrno2a PROTOLIST((int));
 extern char *tet_xtev2a PROTOLIST((int));
-extern void tet_xtierror PROTOLIST((int, char *, int, char *, char *));
-extern void tet_xtifatal PROTOLIST((int, char *, int, char *, char *));
+extern void tet_xtierror PROTOLIST((int, const char *, int, const char *, const char *));
+extern void tet_xtifatal PROTOLIST((int, const char *, int, const char *, const char *));
 

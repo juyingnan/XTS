@@ -83,11 +83,6 @@ MODIFICATIONS:
 
 #ifndef TET_LITE /* -START-LITE-CUT- */
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 TET_IMPORT int tet_remgetlist(sysnames)
 int **sysnames;
 {

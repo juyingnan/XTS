@@ -43,10 +43,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "errmap.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /*
 **	tet_unmaperrno() - map DTET message reply code values to local errno

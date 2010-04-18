@@ -80,12 +80,9 @@ extern "C" {
 #include "dtetlib.h"
 #include "sigsafe.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;
-#endif
-
 extern int	tet_tcmc_main PROTOLIST((int, char **));
-extern void	tet_dtcmerror PROTOLIST((int, char *, int, char *, char *));
+extern void	tet_dtcmerror PROTOLIST((int, const char *, int, const char *,
+                                         const char *));
 
 TET_EXPORT char *tet_pname = "<unknown>";
 TET_EXPORT int tet_thistest = -1;

@@ -66,10 +66,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 #include "sigsafe.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 int tet_tcerrno;			/* tet_tctalk message reply code */
 
 

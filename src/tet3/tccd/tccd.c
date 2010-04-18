@@ -96,11 +96,6 @@ MODIFICATIONS:
 #include "tccd.h"
 
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /* global variables */
 struct ptab *tet_sdptab;		/* ptr to SYNCD ptab element */
 struct ptab *tet_xdptab;		/* ptr to XRESD ptab element */

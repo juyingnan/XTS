@@ -43,10 +43,6 @@ MODIFICATIONS:
 #include "error.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_si_clientloop() - perform a simple client service loop iteration
 **		for a single process, waiting for it to complete

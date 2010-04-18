@@ -63,11 +63,6 @@ MODIFICATIONS:
 #include "tsinfo_xt.h"
 
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /* global variables */
 TET_EXPORT int tet_tpi_mode = -1;	/* transport provider mode	*/
 TET_EXPORT char *tet_tpname = (char *) 0;

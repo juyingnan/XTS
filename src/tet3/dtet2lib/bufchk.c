@@ -45,10 +45,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /*
 **	tet_bufchk() - check that there is enough space in a data buffer

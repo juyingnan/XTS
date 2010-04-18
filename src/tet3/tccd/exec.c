@@ -71,11 +71,6 @@ MODIFICATIONS:
 #include "tcclib.h"
 
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /* static function declarations */
 static int op_e2 PROTOLIST((struct ptab *));
 static int op_e3 PROTOLIST((struct ptab *, struct etab *));

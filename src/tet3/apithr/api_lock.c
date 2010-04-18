@@ -31,7 +31,7 @@ AUTHOR:		Geoff Clare, UniSoft Ltd.
 DATE CREATED:	July 1996
 SYNOPSIS:
 
-	void	tet_api_lock(int getlock, char *file, int line);
+	void	tet_api_lock(int getlock, const char *file, int line);
 
 DESCRIPTION:
 
@@ -70,17 +70,10 @@ MODIFICATIONS:
 #include "ltoa.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;
-#endif
-
 extern tet_mutex_t tet_top_mtx;
 
 void
-tet_api_lock(getlock, file, line)
-int getlock;
-char *file;
-int line;
+tet_api_lock(int getlock, const char *file, int line)
 {
 	sigset_t tmpset;
 	static sigset_t oset;

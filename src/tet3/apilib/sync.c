@@ -106,10 +106,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 #define REPORT_YES	1
 #define REPORT_NO	0
 

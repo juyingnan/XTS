@@ -51,11 +51,6 @@ MODIFICATIONS:
 #include "tcclib.h"
 
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /*
 **	tcf_lsdir() - return a pointer to a list of pointers to directory entries
 **

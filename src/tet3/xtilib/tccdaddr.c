@@ -54,11 +54,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #include "xtilib_xt.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_gettccdaddr() - look up the XTI address for a TCCD
 **		and store it in the related tptab entry

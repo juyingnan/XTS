@@ -70,10 +70,6 @@ MODIFICATIONS:
 #include "tccd.h"
 #include "tcclib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* mode for created directories */
 #define DIRMODE	((mode_t) (S_IRWXU | S_IRWXG | S_IRWXO))
 

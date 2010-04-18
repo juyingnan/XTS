@@ -44,10 +44,6 @@ MODIFICATIONS:
 #include "servlib.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_xdxrsend() - send an OP_XRSEND message to XRESD and receive
 **		a reply

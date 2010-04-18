@@ -46,10 +46,6 @@ MODIFICATIONS:
 #include "btmsg.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 static struct stdesc st[] = {
 	BTMSG_DESC
 };

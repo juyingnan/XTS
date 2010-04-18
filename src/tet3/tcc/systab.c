@@ -57,10 +57,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 static struct systab *systab;		/* head of the system table */
 
 /* static function declarations */

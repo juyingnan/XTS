@@ -161,15 +161,11 @@ struct proctab {
 /* context-dependent error handler */
 #ifdef TET_LITE	/* -LITE-CUT-LINE- */
 #  define prperror(prp, sysid, errnum, s1, s2) \
-	tcc_prperror(prp, -1, errnum, srcFile, __LINE__, s1, s2)
+	tcc_prperror(prp, -1, errnum, __FILE__, __LINE__, s1, s2)
 #else	/* -START-LITE-CUT- */
 #  define prperror(prp, sysid, errnum, s1, s2) \
-	tcc_prperror(prp, sysid, errnum, srcFile, __LINE__, s1, s2)
+	tcc_prperror(prp, sysid, errnum, __FILE__, __LINE__, s1, s2)
 #endif /* TET_LITE */	/* -END-LITE-CUT- */
-
-#ifndef NEEDsrcFile
-#define NEEDsrcFile
-#endif
 
 /* the execution engine's run queue */
 extern struct proctab *runq;
@@ -238,8 +234,8 @@ extern int sfproc PROTOLIST((struct proctab *, char **, int));
 extern int tcc_lock PROTOLIST((struct proctab *, int, char *, char [], int));
 extern int tcc_mkalldirs PROTOLIST((struct proctab *, char *));
 extern int tcc_mktmpdir PROTOLIST((struct proctab *, char *, char **));
-extern void tcc_prperror PROTOLIST((struct proctab *, int, int, char *, int,
-	char *, char *));
+extern void tcc_prperror PROTOLIST((struct proctab *, int, int, const char *, int,
+	const char *, const char *));
 extern int tcc_rmtmpdir PROTOLIST((struct proctab *, char *));
 extern int tccopy PROTOLIST((struct proctab *, char *, char *));
 extern long tcc_texec PROTOLIST((struct proctab *, char *, char **, char *,

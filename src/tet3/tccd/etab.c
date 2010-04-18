@@ -54,10 +54,6 @@ MODIFICATIONS:
 
 static struct etab *etab;		/* ptr to head of exec table */
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /*
 **	etalloc() - allocate an exec table element and return a pointer thereto

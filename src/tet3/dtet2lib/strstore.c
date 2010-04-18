@@ -45,10 +45,6 @@ MODIFICATIONS:
 #include "error.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 #ifndef NOTRACE
 #include "ltoa.h"
 #endif

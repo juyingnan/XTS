@@ -57,11 +57,6 @@ MODIFICATIONS:
 #include "error.h"
 #include "dtetlib.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_tiocnotty() - dissociate from control terminal
 **		and start a new process group

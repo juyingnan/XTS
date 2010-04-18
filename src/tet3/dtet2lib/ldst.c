@@ -45,10 +45,6 @@ MODIFICATIONS:
 #include "error.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /* static function declarations */
 static int bs2char PROTOLIST((char *, char *, int));

@@ -106,10 +106,6 @@ MODIFICATIONS:
 #include "sigsafe.h"
 #include "bitset.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* the maximum number of systems (0 -> 999) */
 #define NUMSYS		1000
 

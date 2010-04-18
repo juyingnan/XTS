@@ -64,11 +64,10 @@ MODIFICATIONS:
 **	tet_xtierror() - XTI/TLI generic error handler
 */
 
-void tet_xtierror(errnum, file, line, s1, s2)
-int errnum, line;
-char *file, *s1, *s2;
+void tet_xtierror(int errnum, const char *file, int line, const char *s1,
+                  const char *s2)
 {
-	char *s3;
+	const char *s3;
 	int save_errno = errno;
 
 	(void) fprintf(stderr, "%s (%s, %d): %s",
@@ -98,9 +97,8 @@ char *file, *s1, *s2;
 /*
 **	tet_xtifatal - XTI/TLI generic fatal error handler
 */
-void tet_xtifatal(errnum, file, line, s1, s2)
-int errnum, line;
-char *file, *s1, *s2;
+void tet_xtifatal(int errnum, const char *file, int line, const char *s1,
+                  const char *s2)
 {
 	tet_xtierror(errnum, file, line, s1, s2);
 	exit(1);

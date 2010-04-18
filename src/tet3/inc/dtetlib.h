@@ -59,10 +59,10 @@ extern char **tet_addargv PROTOLIST((char **, char **));
 extern int tet_addresult PROTOLIST((int, int));
 extern int tet_resulttostatus PROTOLIST((int));
 extern int tet_addstatus PROTOLIST((int, int));
-TET_IMPORT_FUNC(char *, tet_basename, PROTOLIST((char *)));
+TET_IMPORT_FUNC(const char *, tet_basename, PROTOLIST((const char *)));
 TET_IMPORT_FUNC(int, tet_bufchk, PROTOLIST((char **, int *, int)));
 TET_IMPORT_FUNC(int, tet_buftrace,
-	PROTOLIST((char **, int *, int, char *, int)));
+	PROTOLIST((char **, int *, int, const char *, int)));
 extern int tet_eaccess PROTOLIST((char *, int));
 extern char *tet_equindex PROTOLIST((char *));
 extern char *tet_errname PROTOLIST((int));
@@ -72,7 +72,7 @@ extern int tet_fgetargs PROTOLIST((FILE *, char **, int));
 extern int tet_fioclex PROTOLIST((int));
 extern void tet_generror PROTOLIST((int, char *, int, char *, char *));
 TET_IMPORT_FUNC(void, tet_genfatal,
-	PROTOLIST((int, char *, int, char *, char *)));
+	PROTOLIST((int, const char *, int, const char *, const char *)));
 TET_IMPORT_FUNC(int, tet_getargs, PROTOLIST((char *, char **, int)));
 extern int tet_getdtablesize PROTOLIST((void));
 extern int tet_getrescode PROTOLIST((char *, int *));
@@ -86,8 +86,8 @@ extern int tet_mkalldirs PROTOLIST((char *));
 extern int tet_mkdir PROTOLIST((char *, int));
 extern int tet_mkoptarg PROTOLIST((char *, int, char *, int));
 extern char *tet_mktfname PROTOLIST((char *));
-extern void tet_prerror PROTOLIST((FILE *, int, char *, char *, int, char *,
-	char *));
+extern void tet_prerror PROTOLIST((FILE *, int, const char *, const char *, int,
+                                   const char *, const char *));
 extern char *tet_ptflags PROTOLIST((int));
 TET_IMPORT_FUNC(char *, tet_ptptype, PROTOLIST((int)));
 TET_IMPORT_FUNC(char *, tet_ptrepcode, PROTOLIST((int)));

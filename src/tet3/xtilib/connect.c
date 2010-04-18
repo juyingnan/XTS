@@ -64,10 +64,6 @@ MODIFICATIONS:
 #include "server_xt.h"
 #include "xtilib_xt.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_ts_connect() - make a connection to a remote process
 */

@@ -45,10 +45,6 @@ MODIFICATIONS:
 #include "ptab.h"
 #include "inetlib_in.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /*
 **	tet_ts_listen() - arrange to listen on the incoming message socket

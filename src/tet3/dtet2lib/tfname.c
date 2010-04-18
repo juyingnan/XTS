@@ -54,10 +54,6 @@ MODIFICATIONS:
 #include "bstring.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 static char *dirs[] = { (char *) 0, "/usr/tmp", "/tmp", (char *) 0 };
 
 static char **tmpdirs;

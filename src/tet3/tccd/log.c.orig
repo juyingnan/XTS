@@ -53,11 +53,6 @@ MODIFICATIONS:
 #include "dtetlib.h"
 
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
-
 /* the log file stream pointer */
 static FILE *lfp = stderr;
 

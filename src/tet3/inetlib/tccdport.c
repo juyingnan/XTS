@@ -48,10 +48,6 @@ MODIFICATIONS:
 #include "ptab.h"
 #include "inetlib_in.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 #ifndef NOTRACE
 #include "ltoa.h"
 #endif

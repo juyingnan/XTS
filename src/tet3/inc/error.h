@@ -27,10 +27,6 @@ DESCRIPTION:
 	error message printing macros
 	avoids cluttering source files with long function call lines
 
-	each .c file that includes this file needs a line of the form
-
-		static char srcFile[] = __FILE__;
-
 	the file containing main() should contain pointers called
 	(*tet_liberror)() and (*tet_libfatal)() which should be initialised
 	to point to the error handler and fatal error handler routines to use
@@ -54,18 +50,14 @@ MODIFICATIONS:
 
 
 TET_IMPORT_FUNC_PTR(void, tet_liberror,
-	PROTOLIST((int, char *, int, char *, char *)));
+	PROTOLIST((int, const char *, int, const char *, const char *)));
 TET_IMPORT_FUNC_PTR(void, tet_libfatal,
-	PROTOLIST((int, char *, int, char *, char *)));
+	PROTOLIST((int, const char *, int, const char *, const char *)));
 
 #define error(errnum, s1, s2) \
-	(*tet_liberror)(errnum, srcFile, __LINE__, s1, s2)
+	(*tet_liberror)(errnum, __FILE__, __LINE__, s1, s2)
 #define fatal(errnum, s1, s2) \
-	(*tet_libfatal)(errnum, srcFile, __LINE__, s1, s2)
-
-#ifndef NEEDsrcFile
-#define NEEDsrcFile
-#endif
+	(*tet_libfatal)(errnum, __FILE__, __LINE__, s1, s2)
 
 /* test an assertion, exit if it fails */
 TET_IMPORT_ARRAY(char, tet_assertmsg, []);

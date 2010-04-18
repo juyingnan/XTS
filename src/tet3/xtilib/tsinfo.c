@@ -51,10 +51,6 @@ MODIFICATIONS:
 #include "tsinfo_xt.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 static struct stdesc *st = (struct stdesc *)0;
 #ifdef TCPTPI
 static struct stdesc st_in[] = {

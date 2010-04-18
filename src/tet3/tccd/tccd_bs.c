@@ -53,10 +53,6 @@ MODIFICATIONS:
 #include "server_bs.h"
 #include "tccd_bs.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 static char reqerr[] = "unknown request code";
 
 

@@ -148,10 +148,6 @@ char	**argv;
 extern "C" {
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_tcm_async() - do an automatic sync from the MTCM
 */

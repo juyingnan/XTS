@@ -57,12 +57,10 @@ MODIFICATIONS:
 **	tet_prerror() - format and print an error message
 */
 
-void tet_prerror(fp, errnum, hdr, file, line, s1, s2)
-FILE *fp;
-int errnum, line;
-char *hdr, *file, *s1, *s2;
+void tet_prerror(FILE *fp, int errnum, const char *hdr, const char *file,
+                 int line, const char *s1, const char *s2)
 {
-	char *s3, *s4;
+	const char *s3, *s4;
 
 	(void) fprintf(fp, "%s (%s, %d): %s",
 		hdr, tet_basename(file), line, s1);
@@ -70,8 +68,6 @@ char *hdr, *file, *s1, *s2;
 		(void) fprintf(fp, " %s", s2);
 	if (errnum > 0) {
 		s3 = ":";
-#ifndef TET_LITE	/* -START-LITE-CUT- */
-#endif /* !TET_LITE */	/* -END-LITE-CUT- */
 			if ((s4 = strerror(errnum)) == (char *) 0) {
 				s3 = ", errno =";
 				s4 = tet_errname(errnum);
@@ -83,4 +79,3 @@ char *hdr, *file, *s1, *s2;
 
 	errno = 0;
 }
-

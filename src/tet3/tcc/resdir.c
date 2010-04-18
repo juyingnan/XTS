@@ -48,11 +48,6 @@ MODIFICATIONS:
 #include "tetdir.h"
 #include "tcc.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* results directory name - gets overwritten by initresdir() */
 static char *results_dir = "results";
 

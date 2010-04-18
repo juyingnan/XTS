@@ -65,10 +65,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 /* static function declarations */
 static int nexttcstate PROTOLIST((struct proctab *, int));

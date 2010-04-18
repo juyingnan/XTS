@@ -90,10 +90,6 @@ MODIFICATIONS:
 #include "ftoa.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* the largest sync point number */
 #define SPMAX	((long) ((unsigned long) ~0 >> 1))
 

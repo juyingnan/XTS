@@ -52,9 +52,7 @@ MODIFICATIONS:
 **	tet_genfatal() - generic fatal error handler
 */
 
-TET_IMPORT void tet_genfatal(errnum, file, line, s1, s2)
-int errnum, line;
-char *file, *s1, *s2;
+TET_IMPORT void tet_genfatal(int errnum, const char *file, int line, const char *s1, const char *s2)
 {
 	(*tet_liberror)(errnum, file, line, s1, s2);
 
@@ -64,4 +62,3 @@ char *file, *s1, *s2;
 
 	exit(1);
 }
-

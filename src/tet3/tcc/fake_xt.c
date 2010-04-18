@@ -43,10 +43,6 @@ MODIFICATIONS:
 #include "ptab.h"
 #include "server_xt.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* tcc does not listen for or accept incoming connections */
 int tet_listen_fd = -1;
 

@@ -70,10 +70,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 FILE *tet_tfp = NULL;			/* trace file pointer */
 
 /* the trace flags themselves */
@@ -329,8 +325,8 @@ void tet_tftrace()
 **	tet_trace() - print trace info to a file, opening it if necessary
 */
 
-TET_IMPORT void tet_trace(s1, s2, s3, s4, s5, s6)
-char *s1, *s2, *s3, *s4, *s5, *s6;
+TET_IMPORT void tet_trace(const char *s1, const char *s2, const char *s3,
+                          const char *s4, const char *s5, const char *s6)
 {
 	register int save_errno;
 	time_t now;

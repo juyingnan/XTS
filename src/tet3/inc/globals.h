@@ -43,7 +43,7 @@ MODIFICATIONS:
 
 ************************************************************************/
 
-TET_IMPORT_DATA(char *, tet_progname);	/* my program name */
+TET_IMPORT_DATA(const char *, tet_progname); /* my program name */
 TET_IMPORT_DATA(int, tet_mypid);	/* my process ID */
 TET_IMPORT_DATA(int, tet_myptype);	/* my process type */
 TET_IMPORT_DATA(int, tet_mysysid);	/* my system ID */
@@ -52,8 +52,8 @@ TET_IMPORT_ARRAY(char, tet_root, [MAXPATH]);
 
 /* extern function declarations */
 TET_IMPORT_FUNC(void, tet_init_globals, PROTOLIST((
-	char *, int, int, 
-	void (*) PROTOLIST((int, char *, int, char *, char *)),
-	void (*) PROTOLIST((int, char *, int, char *, char *))
+	const char *, int, int, 
+	void (*) PROTOLIST((int, const char *, int, const char *, const char *)),
+	void (*) PROTOLIST((int, const char *, int, const char *, const char *))
 )));
 

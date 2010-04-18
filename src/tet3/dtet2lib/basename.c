@@ -53,11 +53,10 @@ MODIFICATIONS:
 **	directory separator character
 */
 
-TET_IMPORT char *tet_basename(path)
-char *path;
+TET_IMPORT const char *tet_basename(const char *path)
 {
-	register char *p;
-	register char *retval = path;
+	register const char *p;
+	register const char *retval = path;
 
 	if (path)
 		for (p = path; *p; p++)
@@ -66,4 +65,3 @@ char *path;
 
 	return(retval);
 }
-

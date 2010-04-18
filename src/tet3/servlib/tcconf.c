@@ -47,10 +47,6 @@ MODIFICATIONS:
 #include "servlib.h"
 #include "dtetlib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* static function declarations */
 static int tc_cs PROTOLIST((int, int, char **, int, int));
 static int tc_cs2 PROTOLIST((int, int, char **, int, int, int));

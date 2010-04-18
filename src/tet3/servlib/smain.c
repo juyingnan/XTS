@@ -51,10 +51,6 @@ MODIFICATIONS:
 #include "servlib.h"
 #include "tslib.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_si_main() - generic server main processing function
 **

@@ -74,10 +74,6 @@ MODIFICATIONS:
 #include "tslib.h"
 #include "server_in.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /*
 **	tet_ts_connect() - make a connection to a remote process
 */

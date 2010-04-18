@@ -82,10 +82,6 @@ MODIFICATIONS:
 #include "tet3_config.h"
 #include "tet_jrnl.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* TETware version number */
 #ifdef TET_LITE		/* -LITE-CUT-LINE- */
 char tcc_version[] = "3.3-lite";

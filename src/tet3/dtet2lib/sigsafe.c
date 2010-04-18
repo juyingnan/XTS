@@ -56,10 +56,6 @@ MODIFICATIONS:
 #include "error.h"
 #include "sigsafe.h"
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 
 static int init_done = 0;
 

@@ -81,11 +81,6 @@ MODIFICATIONS:
 #include "server_xt.h"
 #include "tslib.h"
 
-
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;	/* file name for error reporting */
-#endif
-
 /* declarations for static functions */
 static int doaccept PROTOLIST((void));
 #ifndef SVID3_POLL

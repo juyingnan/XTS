@@ -97,10 +97,6 @@ MODIFICATIONS:
 #include "ltoa.h"
 #endif
 
-#ifdef NEEDsrcFile
-static char srcFile[] = __FILE__;
-#endif
-
 #ifdef TET_THREADS
 
 #define ALRMWAIT	5	/* seconds to wait for tet_clr_alarm() to
