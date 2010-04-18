@@ -19,10 +19,6 @@
 #include <config.h>
 #endif
 
-#ifndef lint
-static char sccsid[] = "@(#)hexdump.c	1.5 (98/08/28) TET3 release 3.3";
-#endif
-
 /************************************************************************
 
 SCCS:   	@(#)hexdump.c	1.5 98/08/28 TETware release 3.3

@@ -15,10 +15,6 @@
  * the UK and other countries.
  */
 
-#ifndef lint
-static char sccsid[] = "@(#)tcm.c	1.17 (98/09/01) TET3 release 3.3";
-#endif
-
 /************************************************************************
 
 SCCS:   	@(#)tcm.c	1.17 98/09/01 TETware release 3.3

@@ -19,10 +19,6 @@
 #include <config.h>
 #endif
 
-#ifndef lint
-static char sccsid[] = "@(#)putenv.c	1.9 (97/07/28) TET3 release 3.3";
-#endif
-
 /************************************************************************
 
 SCCS:   	@(#)putenv.c	1.9 97/07/28 TETware release 3.3

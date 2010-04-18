@@ -17,10 +17,6 @@
  * $XConsortium: getopt.c,v 1.2 92/07/01 11:59:04 rws Exp $
  */
 
-#ifndef lint
-static char sccsid[] = "@(#)getopt.c	1.3 (97/07/21) TET3 release 3.3";
-#endif
-
 /************************************************************************
 
 SCCS:   	@(#)getopt.c	1.3 97/07/21 TETware release 3.3

@@ -21,14 +21,6 @@
 #include <config.h>
 #endif
 
-#ifndef lint
-static char sccsid[] = "@(#)tccdstart.c	1.5 (98/09/01) TET3 release 3.3";
-static char *copyright[] = {
-	"(C) Copyright 1996 X/Open Company Limited",
-	"All rights reserved"
-};
-#endif
-
 /************************************************************************
 
 SCCS:   	@(#)tccdstart.c	1.5 98/09/01 TETware release 3.3

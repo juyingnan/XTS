@@ -21,10 +21,6 @@
 #include <config.h>
 #endif
 
-#ifndef lint
-static char sccsid[] = "%W% (%E%) TETware release %Q%";
-#endif
-
 /************************************************************************
 
 SCCS:   	%W% %E% TETware release %Q%

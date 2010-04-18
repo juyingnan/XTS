@@ -3,7 +3,7 @@
  *
  *	UniSoft Ltd., London, England
  *
- * (C) Copyright 1992 X/Open Company Limited
+ * (C) Copyright 1992, 1996 X/Open Company Limited
  * (C) Copyright 1994 UniSoft Limited
  *
  * All rights reserved.  No part of this source code may be reproduced,
@@ -18,14 +18,6 @@
 
 #ifdef HAVE_CONFIG_H
 #include <config.h>
-#endif
-
-#ifndef lint
-static char sccsid[] = "@(#)xresd.c	1.12 (98/09/01) TET3 release 3.3";
-static char *copyright[] = {
-	"(C) Copyright 1996 X/Open Company Limited",
-	"All rights reserved"
-};
 #endif
 
 /************************************************************************

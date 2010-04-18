@@ -21,10 +21,6 @@
 #include <config.h>
 #endif
 
-#ifndef lint
-static char sccsid[] = "@(#)lsdir.c	1.4 (99/07/07) TETware release 3.4";
-#endif
-
 /************************************************************************
 
 SCCS:   	@(#)lsdir.c	1.4 99/07/07 TETware release 3.4

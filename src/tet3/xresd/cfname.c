@@ -20,10 +20,6 @@
 #include <config.h>
 #endif
 
-#ifndef lint
-static char sccsid[] = "@(#)cfname.c	1.6 (96/11/04) TET3 release 3.3";
-#endif
-
 /************************************************************************
 
 SCCS:   	@(#)cfname.c	1.6 96/11/04 TETware release 3.3
