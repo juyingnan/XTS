@@ -137,7 +137,6 @@ Window	win;
 char	*str1 = "Xtest test string1";
 char	*str2 = "Xtest test string2";
 char	*str[2];
-Status	status;
 char	**list_return;
 int	count_return;
 XTextProperty	tp, rtp;

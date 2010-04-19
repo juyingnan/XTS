@@ -174,11 +174,8 @@ static	Bool
 ispfrozen(disp)
 Display	*disp;
 {
-int i, axisval=0, ret=True;
-XDeviceState *state;
-XInputClass *data;
+int axisval=0, ret=True;
 XEvent ev;
-Window w;
 
 	 XSync(display, True); /* Flush previous events */
 	SimulateDeviceMotionEvent(display, Devs.Button, False, 1, &axisval, 0);
@@ -1367,7 +1364,6 @@ mode is invalid.
 Invoke xname with an invalid mode.
 Verify BadValue
 >>CODE BadValue
-Display	*client2;
 int ret;
 
 	if (!grabstartup())

@@ -153,7 +153,6 @@ char *plocale;
 XVisualInfo *vp;
 char *font_list;
 XFontSet pfs;
-char *fontset;
 char *defstr;
 int missing_cnt;
 int	skipped;

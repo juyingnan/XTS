@@ -134,7 +134,6 @@ Verify that the value of the property is correct.
 Release the allocated memory using XFree.
 >>CODE
 Status		status;
-Window		rwin;
 XVisualInfo	*vp;
 int		nwins = 7;
 Window		pwins[7];

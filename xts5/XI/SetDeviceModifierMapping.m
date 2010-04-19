@@ -367,7 +367,6 @@ error was returned.
 >>CODE
 int 	i, ret;
 int 	kpm;
-XModifierKeymap	*newmap;
 
 	if (!Devs.Mod) {
 	    untested("%s: No input extension key device.\n", TestName);

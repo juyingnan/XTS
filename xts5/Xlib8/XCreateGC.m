@@ -118,9 +118,7 @@ For pixmaps and windows:
    Verify that the pixel was set.
 >>CODE
 XVisualInfo	*vp;
-Window		win;
 int		nvis;
-Pixmap		pmap;
 GC		gc;
 
 	for(resetvinf(VI_WIN); 	nextvinf(&vp);) {
@@ -177,9 +175,6 @@ Plot point (0,0) with XDrawPoint.
 Verify that pixel at (0,0) is W_BG.
 >>CODE
 GC gc;
-XWindowAttributes atts;
-Status  s;
-Pixmap pm;
 XGCValues vals;
 XVisualInfo *vp;
 
@@ -408,8 +403,6 @@ Create a bad pixmap for the root window and free pixmap with XFreePixmap.
 Create a GC with window as the drawable and pixmap as the clip_mask.
 Verify that a BadPixmap error occurs. 
 >>CODE BadPixmap
-Window w;
-Pixmap pm;
 XGCValues vals;
 
 	vals.clip_mask = badpixm(display);
@@ -774,7 +767,6 @@ Create a GC with valuemask = GCFunction | GCForeground |
 	  GCDashOffset | GCDashList | GCArcMode.
 Verify that a BadValue error occurred.
 >>CODE BadValue
-Window w;
 XGCValues vals;
 int i;
 unsigned char *p;

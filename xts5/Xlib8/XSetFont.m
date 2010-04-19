@@ -125,10 +125,9 @@ Draw string with glyph differing between font 1 and 2.
 Verify that not all pixels in the window are set to bg.
 >>CODE
 XVisualInfo	*vp;
-XFontStruct	*fs1, *fs2, *rfs;
-XCharStruct	*cs1,*cs2,*maxchar;
+XFontStruct	*fs1, *fs2;
+XCharStruct	*cs1, *cs2;
 XGCValues	values;
-GContext	gcctxt;
 int		xmin, ymax;
 
 	resetvinf(VI_WIN);

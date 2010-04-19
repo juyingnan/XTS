@@ -122,11 +122,8 @@ char	*s;
 #undef XK_LATIN4 
 
 strtsym4()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_kra
 	if(test(XK_kra, "kra") == 1)

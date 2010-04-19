@@ -114,7 +114,6 @@ For all supported depths of pixmap:
    Plot (0,0) in the pixmap.
    Verify that a BadDrawable error occurred.
 >>CODE
-XGCValues	gcv;
 XVisualInfo	*vp;
 GC		gc;
 
@@ -150,7 +149,7 @@ Verify that the tiled pattern matches the pixmap.
 Window		win;
 XVisualInfo	*vp;
 XGCValues	gcv;
-GC		gc, gc2;
+GC		gc;
 
 	for(resetvinf(VI_WIN); nextvinf(&vp);) {
 		win = makewin(display, vp);	

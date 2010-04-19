@@ -122,11 +122,8 @@ char	*s;
 #undef XK_HEBREW 
 
 strtsymH()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_hebrew_doublelowline
 	if(test(XK_hebrew_doublelowline, "hebrew_doublelowline") == 1)

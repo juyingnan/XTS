@@ -140,10 +140,8 @@ For each visual class DirectColor, PseudoColor and GrayScale:
 >>CODE
 XVisualInfo *vp;
 XColor color, qcolor;
-Visual *visual;
 Status status;
-Colormap cmap;
-unsigned long vmask, pmask, mask, planemask;
+unsigned long vmask, mask, planemask;
 int i, j, k, cells;
 int pathcnt;
 
@@ -314,9 +312,7 @@ For each supported visual with r/w colour cells:
     Verify that the bitwise AND of the planemask and the OR of the colours is 0.
 >>CODE
 XVisualInfo *vp;
-Visual *visual;
 Status status;
-Colormap cmap;
 unsigned long vmask, planemask, pixelmask;
 int i, j, cells, pathcnt = 0;
 
@@ -410,9 +406,7 @@ For the visuals PseudoColor and GrayScale:
   Verify that the number of bits set in each planemask is exactly 1.
 >>CODE
 XVisualInfo *vp;
-Visual *visual;
 Status status;
-Colormap cmap;
 unsigned long vmask;
 int j, cells, pathcnt = 0;
 
@@ -486,9 +480,7 @@ For the visual class DirectColor:
   Verify that for each planemask exactly three bits are set.
 >>CODE
 XVisualInfo *vp;
-Visual *visual;
 Status status;
-Colormap cmap;
 unsigned long vmask;
 int j, cells;
 
@@ -571,9 +563,7 @@ For the visual types PseudoColor and GreyScale:
   Verify that the returned planemasks were contiguous.
 >>CODE
 XVisualInfo *vp;
-Visual *visual;
 Status status;
-Colormap cmap;
 unsigned long vmask;
 unsigned long planeor;
 int j, cells;
@@ -663,11 +653,8 @@ For the visual class DirectColor:
     were contiguous and distinct.
 >>CODE
 XVisualInfo *vp;
-Visual *visual;
 Status status;
-Colormap cmap;
 unsigned long vmask;
-unsigned long planeor;
 int j, cells;
 
 

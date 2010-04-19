@@ -122,11 +122,8 @@ char	*s;
 #undef XK_PUBLISHING
 
 strtsymP()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_emspace
 	if(test(XK_emspace, "emspace") == 1)

@@ -205,7 +205,6 @@ Obtain a bad font ID.
 Call XQueryFont.
 Verify that null is returned.
 >>CODE
-Font	font;
 XFontStruct	*fsp;
 
 	font_ID = badfont(Dsp);

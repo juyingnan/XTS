@@ -774,8 +774,6 @@ XImage *image;
 XImage *zimage;
 static struct area area1 =
 	{ -1, -1, 1, 1 };
-static struct area area2 =
-	{ W_STDWIDTH, W_STDHEIGHT, 1, 1 };
 static struct area aread =
 	{ 1, 1, 0, 0 };
 
@@ -1212,15 +1210,11 @@ Verify that BadMatch error occurred.
 >>CODE BadMatch
 XVisualInfo *vp;
 Window w;
-Window w2;
-int wx, wy;		/* coordinates of window */
 static struct area area1 =
 	{ 0, 0, W_STDWIDTH, W_STDHEIGHT };
 static struct area area2 =
 	{ 0, 0, W_STDWIDTH, W_STDHEIGHT };
 XImage *image;
-unsigned int tmpui;	/* uninteresting XGetGeometry return values */
-Window	tmpw;
 
 	resetvinf(VI_WIN);
 	nextvinf(&vp);	/* use first visual */

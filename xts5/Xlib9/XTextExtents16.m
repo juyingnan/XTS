@@ -136,7 +136,6 @@ For each 16 bit VSW5 font
 extern	struct	fontinfo	fontinfo[];
 extern	int 	nfontinfo;
 int 	i;
-char	buf[256];
 int 	direction;
 int 	font_ascent;
 int 	font_descent;

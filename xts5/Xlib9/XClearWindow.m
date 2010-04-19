@@ -222,7 +222,6 @@ Set background pixmap to None.
 Call XClearWindow.
 Check that the whole window is left alone.
 >>CODE
-struct  area    area;
 XVisualInfo	*vp;
 
 	for (resetvinf(VI_WIN); nextvinf(&vp); ) {

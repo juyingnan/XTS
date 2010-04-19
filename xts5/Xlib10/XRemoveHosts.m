@@ -119,7 +119,6 @@ If call fails with a BadAccess:
 Get new acl.
 Verify that host is not in new acl.
 >>CODE
-XHostAddress	*oldhosts;
 XHostAddress	*newhosts;
 int 	nhosts;
 Bool	state;

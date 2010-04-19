@@ -156,19 +156,12 @@ XClassHint		 *classh_good ;
         extern int  chkflg;
 	extern int  signal_status();
 	extern int  unexp_err();
-	extern char *svc_user_arg;
 	extern char *strcpy();
-
-	char fmtstr[256], *call_string;
-	union msglst fmt_lst[1];        
-        int skip_pixcheck;
 
 	int
 		ss_status,		/* save stat return status */	
-		stat_status,		/* check stat return status */
   		setup_status,
-  		cleanup_status,
-		i1;
+		stat_status;		/* check stat return status */
 
 
 /*
@@ -195,7 +188,6 @@ static Atom actual_type;
 static int actual_format, idx, i;
 static unsigned long nitems, fitems;
 static unsigned long leftover;
-XEvent good_event, event_return_good;                 
 
 	/******
  	* Turn on buffering and buffer parameter information

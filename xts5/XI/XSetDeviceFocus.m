@@ -218,7 +218,6 @@ static char	*WindowTree[]= {
 static int NWindowTree = NELEM(WindowTree);
 
 >>CODE
-int	keycode;
 XEvent	ev;
 int	dkp, dkr;
 XEventClass classes[2];
@@ -322,9 +321,8 @@ else
   report untested.
 >>CODE
 Window	win, root, altroot;
-int	keycode;
 XEvent	ev;
-int	dkp, dkr, nev;
+int	dkp, dkr;
 XEventClass classes[2], nevclass;
 
 	if (noext(0))
@@ -340,7 +338,7 @@ XEventClass classes[2], nevclass;
 	device = Devs.Key;
 	DeviceKeyPress(device, dkp, classes[0]);
 	DeviceKeyRelease(device, dkr, classes[1]);
-	NoExtensionEvent(device, nev, nevclass);
+	NoExtensionEvent(device, unused, nevclass);
 
 	win = defwin(display);
 	XSelectExtensionEvent(display, win, classes, 2);
@@ -601,7 +599,7 @@ XEvent	ev;
 Window	newfocus;
 int 	newrevert;
 Time	newtime;
-int	dfi, dfo, nev;
+int	dfi, dfo;
 XEventClass classes[2], nevclass;
 
 	if (!Setup_Extension_DeviceInfo(FocusMask))
@@ -612,7 +610,7 @@ XEventClass classes[2], nevclass;
 	device = Devs.Focus;
 	DeviceFocusIn(device, dfi, classes[0]);
 	DeviceFocusOut(device, dfo, classes[1]);
-	NoExtensionEvent(device, nev, nevclass);
+	NoExtensionEvent(device, unused, nevclass);
 
 	/*
 	 * Use a non-default display, because we are setting the event mask

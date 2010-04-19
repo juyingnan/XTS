@@ -369,8 +369,7 @@ Do a valid ChangeDeviceControl request, specifying DEVICE_RESOLUTION,
 and resolutions beyond the minimum and maximum allowed.
 Verify that a BadValue error occurs.
 >>CODE BadValue
-int ret, i,j,k, count=0, ndevices;
-XDeviceResolutionState *state;
+int ret, i, j, k, ndevices;
 XAnyClassPtr any;
 XDeviceInfo *list;
 
@@ -419,8 +418,7 @@ Do a valid ChangeDeviceControl request, specifying DEVICE_RESOLUTION,
 and a device with valuators that does not support having its resolution
 changed
 >>CODE BadMatch
-int ret, i,j,k, count=0, ndevices;
-XDeviceResolutionState *state;
+int ret, i,j,k, ndevices;
 XAnyClassPtr any;
 XDeviceInfo *list;
 

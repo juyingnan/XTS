@@ -122,11 +122,8 @@ char	*s;
 #undef XK_APL
 
 strtsymL()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_leftcaret
 	if(test(XK_leftcaret, "leftcaret") == 1)

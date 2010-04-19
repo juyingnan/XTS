@@ -327,8 +327,6 @@ Configure the window to have a width of zero using XReconfigureWMWindow
 Verify that a BadValue error was generated.
 >>CODE BadValue
 Status			status;
-XEvent			ev;
-int			nevents = 0;
 XVisualInfo		*vp;
 XWindowChanges		changes;
 

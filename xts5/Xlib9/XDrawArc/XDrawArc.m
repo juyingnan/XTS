@@ -122,7 +122,7 @@ int	 ax1, ay1, ax2, ay2;
 {
 int 	negw = 0;
 int 	negh = 0;
-int 	pass = 0, fail = 0;
+int 	fail = 0;
 
 	x = ax1; y = ay1;
 

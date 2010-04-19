@@ -162,7 +162,7 @@ protostartup()
 int 	i;
 char	*disp;
 char	*cp;
-extern	char	*TestName;
+/* extern	char	*TestName; */
 extern	struct	tet_testlist	tet_testlist[];
 
 /* error handlers from libxtest */
@@ -172,8 +172,6 @@ extern	int	io_err(),	unexp_err();
 	 * Set the debug level first (it is used in initconfig).
 	 */
 	if ((cp = tet_getvar("XT_DEBUG")) != NULL) {
-	extern	int 	DebugLevel;
-
 		setdblev(atoi(cp));
 	} else {
 		setdblev(0);

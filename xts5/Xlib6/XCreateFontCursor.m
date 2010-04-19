@@ -158,7 +158,6 @@ Get TET variable XT_FONTCURSOR_BAD.
 Call XCreateFontCursor with shape of this value.
 Verify that a BadValue error occurs.
 >>CODE BadValue
-Cursor	qstat;
 
 /* Get TET variable XT_FONTCURSOR_BAD */
 	shape = config.fontcursor_bad;

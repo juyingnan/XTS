@@ -247,11 +247,9 @@ For each supported visual class:
   Verify that a ColorMapnotify event was generated with XNextEvent.
   Verify that the window's colourmap is set to none with XGetWindowAttributes.
 >>CODE
-int i, len, notfound;
 XVisualInfo *vi;
 XWindowAttributes watts;
 XEvent ev;
-Colormap *maplist;
 unsigned long vmask;
 XColor col;
 Window win;

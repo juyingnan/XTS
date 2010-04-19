@@ -142,8 +142,7 @@ Reset the keycode to map onto XK_a using XChangeKeyboardMapping.
 >>CODE
 XEvent		ev;
 KeyCode		kc;
-KeySym		ks, res, old, new;
-XKeyEvent	ke;
+KeySym		res, old, new;
 
 	old = XK_a;
 	new = XK_b;
@@ -217,10 +216,7 @@ Await the mapping event.
 Update the modifier mappings using xname.
 Release the map storage using XFreeModifiermap.
 >>CODE
-int		i;
 XEvent		ev;
-KeyCode		*kcptr;
-KeyCode		*tkcptr;
 XModifierKeymap	*savemap = XGetModifierMapping(Dsp);
 XModifierKeymap	*mmap;
 
@@ -297,14 +293,9 @@ Await the mapping event.
 Set the request component of the event structure to MappingModifier + MappingKeyboard + MappingPointer
 Update the modifier mappings using xname.
 >>CODE
-int		i;
-int		set;
 XEvent		ev;
 XModifierKeymap	*savemap = XGetModifierMapping(Dsp);
 XModifierKeymap	*mmap1;
-KeyCode		minkc;
-KeyCode		maxkc;
-KeyCode		*kcp;
 
 	if(savemap == (XModifierKeymap *) NULL) {
 		delete("XGetModifierMapping() returned NULL.");

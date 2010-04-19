@@ -522,9 +522,6 @@ int client;   /* */
 			(Xst_clients[client].cl_dpy) -> byte_order;
 		long flip = my_sex ^ server_sex;  /* assume MSBFirst == 1 */
 		int server_pad = (Xst_clients[client].cl_dpy) -> bitmap_pad;
-		int server_unit = (Xst_clients[client].cl_dpy) -> bitmap_unit;
-		int server_bitorder =
-			(Xst_clients[client].cl_dpy) -> bitmap_bit_order;
 		int dst_width /*in bytes*/ =
 			(Xst_clients[client].cl_imagewidth + 7) >> 3;
 		int src_width /*in bytes*/ = dst_width +
@@ -542,12 +539,6 @@ int client;   /* */
                     Length_Error(max(bytes_there,calculated_length<<2),client,rp,type,"GetImage",calculated_length);
 	                    break;
                 }
-/*****
-		if (server_bitorder != MSBFirst) {
-			Log_Err("LSBFirst bit ordering not supported in Rcv_Rep()\n");
-			Finish(client);
-		}
-*****/
 
 		rp->generic.length =
 			(dst_width * Xst_clients[client].cl_imageheight) >> 2;

@@ -550,7 +550,6 @@ int	(*proc)();
 Display	*display = Dsp;
 int	oldcounter;
 Window	w;
-unsigned long	nextrequest;
 
 /* Call XSetErrorHandler to set error handler to errorhandler. */
 	handler = errorhandler;

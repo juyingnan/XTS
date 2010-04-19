@@ -158,7 +158,6 @@ For each supported visual:
   Verify that a call to XSetWindowColormap generates a BadMatch error.
 >>CODE BadMatch
 XVisualInfo *vi;
-XWindowAttributes watts;
 int i, nvisuals;
 Visual **visuals;
 

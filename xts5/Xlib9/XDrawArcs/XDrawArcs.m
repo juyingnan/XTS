@@ -129,7 +129,7 @@ int	 ax1, ay1, ax2, ay2;
 XArc	arc;
 int 	negw = 0;
 int 	negh = 0;
-int 	pass = 0, fail = 0;
+int 	fail = 0;
 
 	arc.x = ax1; arc.y = ay1;
 

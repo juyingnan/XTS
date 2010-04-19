@@ -162,7 +162,6 @@ Verify that background has not changed.
 Pixmap	pm;
 XEvent event;
 XVisualInfo	*vp;
-XSetWindowAttributes	attributes;
 
 	for(resetvinf(VI_WIN); nextvinf(&vp); ) {
 		parent = makewin(display, vp);

@@ -621,7 +621,6 @@ xim_open_files(locale,pstyle)
 	char *locale;
 	XIMStyle *pstyle;
 {
-	char resp_locale[MAXIDLEN];
 	XIMStyle style,resp_style;
 
 	/* open stimulus file for the given locale and the get the styles */

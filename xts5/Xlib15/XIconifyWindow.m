@@ -151,7 +151,6 @@ XEvent			ev, rev;
 int			i;
 int			nevents = 0;
 XVisualInfo		*vp;
-XWindowAttributes	watts;
 unsigned long		event_mask[2];
 
 	resetvinf(VI_WIN);

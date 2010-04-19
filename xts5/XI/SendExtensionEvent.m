@@ -135,12 +135,11 @@ Verify that event was received.
 Verify that send_event was not set to False.
 Repeat for each event-type.
 >>CODE
-int	i,j;
+int	i;
 Window	w;
 XAnyEvent *event;
 XEvent	event_return;
 int	return_value;
-int noextensionevent;
 XEventClass noextensioneventclass;
 
 /* Create window. */
@@ -150,7 +149,7 @@ XEventClass noextensioneventclass;
 	    return;
 	    }
 	device = Devs.Button;
-	NoExtensionEvent(device, noextensionevent, noextensioneventclass);
+	NoExtensionEvent(device, unused, noextensioneventclass);
 	w = mkwin(display, (XVisualInfo *) NULL, (struct area *) NULL, False);
 	propagate = False;
 	event_list = &noextensioneventclass;
@@ -590,7 +589,7 @@ Verify that no events were received.
 >>CODE
 Display	*client2;
 int	return_value;
-int dbp, noextensionevent;
+int dbp;
 XEventClass dbpc, noextensioneventclass;
 
 	if (!Setup_Extension_DeviceInfo(BtnMask))
@@ -599,7 +598,7 @@ XEventClass dbpc, noextensioneventclass;
 	    return;
 	    }
 	device = Devs.Button;
-	NoExtensionEvent(device, noextensionevent, noextensioneventclass);
+	NoExtensionEvent(device, unused, noextensioneventclass);
 	DeviceButtonPress(Devs.Button, dbp, dbpc);
 /* Create client2. */
 
@@ -676,7 +675,7 @@ Verify that no events were received.
 XVisualInfo *vp;
 XEvent	event_return;
 int	return_value;
-int dbp, noextensionevent;
+int dbp;
 XEventClass dbpc, noextensioneventclass;
 
 /* Create window. */
@@ -686,7 +685,7 @@ XEventClass dbpc, noextensioneventclass;
 	    return;
 	    }
 	device = Devs.Button;
-	NoExtensionEvent(device, noextensionevent, noextensioneventclass);
+	NoExtensionEvent(device, unused, noextensioneventclass);
 	DeviceButtonPress(device, dbp, dbpc);
 	resetvinf(VI_WIN);
 	nextvinf(&vp);
@@ -766,7 +765,7 @@ Winh	*parent;
 Winh	*child;
 XSetWindowAttributes attrs;
 int	return_value;
-int dbp, noextensionevent;
+int dbp;
 XEventClass dbpc, noextensioneventclass;
 
 /* Create a window hierarchy. */
@@ -777,7 +776,7 @@ XEventClass dbpc, noextensioneventclass;
 	    }
 	device = Devs.Button;
 	DeviceButtonPress(Devs.Button, dbp, dbpc);
-	NoExtensionEvent(device, noextensionevent, noextensioneventclass);
+	NoExtensionEvent(device, unused, noextensioneventclass);
 	grandparent = winh_adopt(display, (Winh *) NULL, 0L, (XSetWindowAttributes *) NULL, (Winhg *) NULL, WINH_NOMASK);
 	if (grandparent == (Winh *) NULL) {
 		delete("Could not create grandparent");
@@ -960,7 +959,7 @@ Window wtmp;		/* useless XQueryPointer return values */
 unsigned int width;
 unsigned int height;
 struct area a;
-int noextensionevent, dbp;
+int dbp;
 XEventClass noextensioneventclass, dbpc;
 
 /* Create client2. */
@@ -971,7 +970,7 @@ XEventClass noextensioneventclass, dbpc;
 	    }
 	device = Devs.Button;
 	DeviceButtonPress(device, dbp, dbpc);
-	NoExtensionEvent(device, noextensionevent, noextensioneventclass);
+	NoExtensionEvent(device, unused, noextensioneventclass);
 	client2 = opendisplay();
 	if (client2 == (Display *) NULL) {
 		delete("Can't create new client.");
@@ -1129,7 +1128,6 @@ Verify that no event was received.
 >>CODE
 XVisualInfo *vp;
 Window	nfocus;
-XEvent	event_return;
 int	return_value;
 int root_x, root_y;	/* pointer location after XSendExtensionEvent */
 int oroot_x, oroot_y;	/* pointer location before XSendExtensionEvent */
@@ -1138,7 +1136,7 @@ Window oldroot;		/* initial root window */
 int itmp;		/* useless XQueryPointer return values */
 unsigned int uitmp;	/* useless XQueryPointer return values */
 Window wtmp;		/* useless XQueryPointer return values */
-int noextensionevent, dbp;
+int dbp;
 XEventClass noextensioneventclass, dbpc;
 
 /* Create window. */
@@ -1149,7 +1147,7 @@ XEventClass noextensioneventclass, dbpc;
 	    }
 	device = Devs.Button;
 	DeviceButtonPress(device, dbp, dbpc);
-	NoExtensionEvent(device, noextensionevent, noextensioneventclass);
+	NoExtensionEvent(device, unused, noextensioneventclass);
 	resetvinf(VI_WIN);
 	nextvinf(&vp);
 	nfocus = makewin(display, vp);
@@ -1347,7 +1345,7 @@ Winh	*child;
 int	return_value;
 XEvent	event_return;
 XAnyEvent *event;
-int noextensionevent, dbp;
+int dbp;
 XEventClass noextensioneventclass, dbpc;
 
 /* Set event_list to devicebuttonpressclass. */
@@ -1358,7 +1356,7 @@ XEventClass noextensioneventclass, dbpc;
 	    }
 	device = Devs.Button;
 	DeviceButtonPress(device, dbp, dbpc);
-	NoExtensionEvent(device, noextensionevent, noextensioneventclass);
+	NoExtensionEvent(device, unused, noextensioneventclass);
 	event_list = &dbpc;
 /* Set propagate to True. */
 	propagate = True;
@@ -1525,7 +1523,7 @@ Winh	*child;
 int	return_value;
 XEvent	event_return;
 XAnyEvent *event;
-int noextensionevent, dbp;
+int dbp;
 XEventClass noextensioneventclass, dbpc;
 
 /* Set event_list to devicebuttonpressclass.*/
@@ -1536,7 +1534,7 @@ XEventClass noextensioneventclass, dbpc;
 	    }
 	device = Devs.Button;
 	DeviceButtonPress(device, dbp, dbpc);
-	NoExtensionEvent(device, noextensionevent, noextensioneventclass);
+	NoExtensionEvent(device, unused, noextensioneventclass);
 	count = 1;
 	event_list = &dbpc;
 /* Set propagate to True. */
@@ -1946,7 +1944,7 @@ int	i;
 XAnyEvent *event;
 XEvent	event_return;
 int	return_value;
-int noextensionevent, cdn, dmn, dsn;
+int cdn, dmn, dsn;
 XEventClass noextensioneventclass, cdnc, dmnc, dsnc;
 
 /* Create window. */
@@ -1959,7 +1957,7 @@ XEventClass noextensioneventclass, cdnc, dmnc, dsnc;
 	ChangeDeviceNotify(Devs.Button, cdn, cdnc);
 	DeviceMappingNotify(Devs.Button, dmn, dmnc);
 	DeviceStateNotify(Devs.Button, dsn, dsnc);
-	NoExtensionEvent(device, noextensionevent, noextensioneventclass);
+	NoExtensionEvent(device, unused, noextensioneventclass);
 	w = mkwin(display, (XVisualInfo *) NULL, (struct area *) NULL, False);
 	propagate = False;
 	count=1;
@@ -2084,7 +2082,7 @@ int	correctserial;
 XAnyEvent *event;
 XEvent	event_return;
 int	return_value;
-int noextensionevent, dbp;
+int dbp;
 XEventClass noextensioneventclass, dbpc;
 
 /* Create window. */
@@ -2100,7 +2098,7 @@ XEventClass noextensioneventclass, dbpc;
 	XGetExtensionVersion(display,"XInputExtension");
 	device = Devs.Button;
 	DeviceButtonPress(device, dbp, dbpc);
-	NoExtensionEvent(device, noextensionevent, noextensioneventclass);
+	NoExtensionEvent(device, unused, noextensioneventclass);
 	w = mkwin(display, (XVisualInfo *) NULL, (struct area *) NULL, False);
 	propagate = False;
 	count = 1;
@@ -2175,7 +2173,6 @@ int	n;
 int	return_value;
 int	good_event_types[XInputNumEvents];
 long	bad_event_types[NM_LEN+2];
-int noextensionevent;
 XEventClass noextensioneventclass;
 
 	if (!Setup_Extension_DeviceInfo(BtnMask))
@@ -2184,7 +2181,7 @@ XEventClass noextensioneventclass;
 	    return;
 	    }
 	device = Devs.Button;
-	NoExtensionEvent(device, noextensionevent, noextensioneventclass);
+	NoExtensionEvent(device, unused, noextensioneventclass);
 	propagate = False;
 	event_list = &noextensioneventclass;
 

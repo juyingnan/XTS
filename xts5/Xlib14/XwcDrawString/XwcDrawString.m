@@ -165,7 +165,6 @@ XVisualInfo     *vp;
 unsigned int    width, height;
 char *font_list;
 XFontSet pfs;
-char *fontset;
 char *defstr;
 int missing_cnt;
 int	skipped;

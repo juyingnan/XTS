@@ -126,7 +126,6 @@ Display *dpy;
 char *plocale;
 char *font_list;
 XFontSet pfs;
-char *fontset;
 char *defstr;
 int missing_cnt;
 char **missing_chars;

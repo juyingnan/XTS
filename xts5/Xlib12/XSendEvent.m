@@ -1100,7 +1100,6 @@ Verify that no event was received.
 >>CODE
 XVisualInfo *vp;
 Window	nfocus;
-XEvent	event_return;
 int	return_value;
 int root_x, root_y;	/* pointer location after XSendEvent */
 int oroot_x, oroot_y;	/* pointer location before XSendEvent */

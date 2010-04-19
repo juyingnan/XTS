@@ -133,7 +133,6 @@ XcmsColorFormat      format ;
         extern int  chkflg;
 	extern int  signal_status();
 	extern int  unexp_err();
-	extern char *svc_user_arg;
 	extern char *strcpy();
 
 /******
@@ -141,14 +140,11 @@ XcmsColorFormat      format ;
  ******/
 	char fmtstr[256], *call_string;
 	union msglst fmt_lst[1];        
-        int skip_pixcheck;
 
 	int
 		ss_status,			  /* save stat return status */	
 		stat_status,			  /* check stat return status */
-  		setup_status,
-  		cleanup_status,
-		i1;
+		cleanup_status;
 
         Status           svc_ret_value;
 

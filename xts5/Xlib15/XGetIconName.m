@@ -132,9 +132,6 @@ Window	win;
 char	*iconname = "Xtest Icon Name";
 char	*iconnameret;
 Status	status;
-char	**list_return;
-int	count_return;
-XTextProperty	tp, rtp;
 XVisualInfo	*vp;
 
 	resetvinf(VI_WIN);
@@ -197,8 +194,6 @@ Verify that the returned name was set to NULL.
 char	*iconnameret = "XTestUninit";
 char	*name = "XTestIconName";
 Status	status;
-char	**list_return;
-int	count_return;
 XVisualInfo	*vp;
 
 	resetvinf(VI_WIN);

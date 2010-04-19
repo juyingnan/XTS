@@ -298,11 +298,9 @@ char	*tet_root;
 
 static void whatj(void)
 {
-	int	jfileno = 0;
 	DIR	*dirp;
 	struct	 dirent	*dp;
 	struct	 stat	sbuf;
-	char	jbuf[5];
 	char	ttmp[5];
 	struct tm mytm;
 	time_t	mytime;
@@ -1508,8 +1506,7 @@ static void print_ecount(int errcnt, char *errstring)
 static void print_summary(void)
 {
 
-	int	i,j, k;
-	struct passwd *pwdp;
+	int	i;
 	char	ttmp[5];
 	struct tm mytm;
 	time_t	mytime;

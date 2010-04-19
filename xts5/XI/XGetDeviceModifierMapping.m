@@ -194,12 +194,9 @@ int minkc, maxkc, numkeys;
 XModifierKeymap *map;
 XModifierKeymap *savemap;
 int k;
-int j;
 int i;
 int row;
 int non_zero = 0;
-int ndevices;
-int ret;
 
 	if (!Setup_Extension_DeviceInfo(KeyMask | ModMask | BtnMask))
 	    {

@@ -122,11 +122,8 @@ char	*s;
 #undef XK_MISCELLANY
 
 strtsymM()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_BackSpace
 	if(test(XK_BackSpace, "BackSpace") == 1)

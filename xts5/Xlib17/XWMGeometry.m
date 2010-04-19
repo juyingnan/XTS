@@ -232,7 +232,7 @@ Verify that the returned y-coordinate is DisplayHeight -1 - (base_height + 10 * 
 >>CODE
 int	rval;
 int	xr, yr, wr, hr, gr;
-int	x,  y,  w,  h,  g;
+int	x,  y,  w,  h;
 
 	bwidth = 10;
 	szhints.flags= PAllHints|PBaseSize|PWinGravity;

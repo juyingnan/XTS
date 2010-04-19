@@ -394,7 +394,6 @@ Verify that only a single entry was added to the database.
 char tbuf[256], *tptr;
 char *type_ret;
 XrmValue value_ret;
-int k;
 
 /* Create empty database for testing. */
 	xplr_database=xrm_create_database("");
@@ -584,7 +583,7 @@ Create empty database for testing.
 Call xname to test comments.
 Verify that comments did not affect the database contents.
 >>CODE
-int i,j,k;
+int i,j;
 char tbuf[256], *tptr;
 
 /* Create empty database for testing. */

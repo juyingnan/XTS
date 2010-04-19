@@ -191,7 +191,6 @@ Verify that Expose events are contiguously delivered.
 >>CODE
 Display	*display;
 Winh	*eventw;
-Winh	*child;
 Winhe	*winhe;
 int	expected;
 int	lastcount;
@@ -309,7 +308,6 @@ Verify that no Expose events are received for client3.
 Display	*display = Dsp;
 Display	*client2, *client3;
 Winh	*eventw;
-int	events;
 Window	w;
 XEvent	event_return;
 

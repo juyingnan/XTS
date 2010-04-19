@@ -122,11 +122,8 @@ char	*s;
 #undef XK_SPECIAL
 
 strtsymS()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_blank
 	if(test(XK_blank, "blank") == 1)

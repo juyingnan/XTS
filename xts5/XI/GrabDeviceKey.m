@@ -1115,7 +1115,6 @@ BadValue error results.
 >>STRATEGY
 Specify an invalid event class.
 >>CODE badclass
-Display	*client2;
 XEventClass eclass = -1;
 XID badclass;
 

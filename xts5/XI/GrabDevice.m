@@ -263,7 +263,6 @@ int 	ret;
 XID	badclass;
 int	dkp;
 XEventClass dkpclass;
-XEvent	ev;
 
 	if (!Setup_Extension_DeviceInfo(KeyMask | NKeysMask))
 	    {

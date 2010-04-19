@@ -138,7 +138,7 @@ Verify that the value is correct.
 >>CODE
 Window		win;
 XVisualInfo	*vp;
-XClassHint	classhint, retchint;
+XClassHint	classhint;
 int		reslen;
 char		*propp = NULL, *s;
 unsigned long	leftover, nitems, len;

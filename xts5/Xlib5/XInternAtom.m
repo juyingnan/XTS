@@ -478,7 +478,6 @@ Atom atom_return;
 /* Open a new connection to the server. */
 	Dsp = XOpenDisplay(config.display);
 	if (Dsp == (Display *)NULL) {
-		int i;
 		delete("Could not open display");
 		cancelrest("Could not open display");
 		return;

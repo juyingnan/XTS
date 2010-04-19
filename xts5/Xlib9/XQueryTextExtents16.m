@@ -156,7 +156,6 @@ For each VSW5 font
 extern	struct	fontinfo	fontinfo[];
 extern	int 	nfontinfo;
 int 	i;
-char	buf[256];
 int 	good_direction;
 int 	good_font_ascent;
 int 	good_font_descent;
@@ -258,7 +257,6 @@ For each VSW5 font
 extern	struct	fontinfo	fontinfo[];
 extern	int 	nfontinfo;
 int 	i;
-char	buf[256];
 int 	good_direction;
 int 	good_font_ascent;
 int 	good_font_descent;

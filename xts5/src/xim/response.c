@@ -254,7 +254,7 @@ Bool xim_response_open(plocale,style)
 	char str[MAXLINELEN];
 	int key;
 	Bool got_responses;
-	int pe_style,status_style,tstyle;
+	int pe_style, status_style;
 	char *pstr;
 	char id[MAXIDLEN];
 
@@ -562,7 +562,6 @@ static wchar_t *read_wcstr(cnt)
 {
 	int n,num;
 	Bool data_end,in_data;
-	unsigned long *pf;
 	char *tstr;
 	wchar_t *pwc,*pn;
 
@@ -724,7 +723,7 @@ static XIMText *read_ximtext()
 {
 	Bool data_end,in_data;
 	XIMText *pt;
-	int key,num,n;
+	int key, num;
 	char *tstr;
 	char id[MAXIDLEN];
 
@@ -1082,9 +1081,7 @@ static Pixmap read_pixmap()
 {
 	Bool data_end,in_data;
 	XIMText *pt;
-	int key,num;
 	char *tstr;
-	char id[MAXIDLEN];
 
 	/* allocate some space */
 	pt = (XIMText *)malloc(sizeof(XIMText)); 
@@ -1254,7 +1251,6 @@ Bool xim_response_read()
 	Bool response_end;
 	Bool got_response_key;
 	Bool in_response;
-	char str[MAXLINELEN];
 	char *pdata,*tstr;
 	char id[MAXIDLEN];
 	int key;

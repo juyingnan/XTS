@@ -246,8 +246,6 @@ Verify that in the returned structure the encoding field was none,
 >>CODE
 Window	win;
 Status	status;
-char	**list_return;
-int	count_return;
 XTextProperty	tp;
 XVisualInfo	*vp;
 

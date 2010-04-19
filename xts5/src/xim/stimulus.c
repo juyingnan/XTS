@@ -206,8 +206,8 @@ Bool xim_stimulus_open(plocale,style)
 	char str[MAXLINELEN];
 	int key;
 	Bool got_stimulus;
-	int pe_style,status_style,tstyle;
-	char *tstr,*pstr;
+	int pe_style, status_style;
+	char *pstr;
 
 	/* build a file name */
 	/* form is im<test#>.<locale>.stimulus */
@@ -328,7 +328,6 @@ Bool xim_stimulus_open(plocale,style)
 Bool xim_stimulus_read(ic)
 	XIC ic;
 {
-	char str[MAXLINELEN];
 	char *pstr,*tstr;
 	char id[MAXIDLEN];
 	Bool in_stimulus,got_stimulus_key,stimulus_end;
@@ -337,7 +336,6 @@ Bool xim_stimulus_read(ic)
 	wchar_t *pe_wstr;
 	Window win,old_win;
 	int revert_to;
-	char *p;
 
 	if(fp_stimulus == NULL)
 		return(False);

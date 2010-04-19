@@ -123,7 +123,6 @@ The default GC has the same depth as the root window of the screen
 Draw the point (0,0) using the default GC on the default root window.
 Verify that a BadMatch error did not occur.
 >>CODE
-XWindowAttributes	atts;
 GC			dgc;
 
 	dgc = XCALL;

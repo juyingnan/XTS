@@ -297,7 +297,7 @@ Generate some motion events, verify only one is sent.
 Now call xname.
 Generate some motion events, verify another one is sent.
 >>CODE
-int	dmn, dmnh;
+int	dmn;
 XEventClass classes[2];
 Window w;
 int axes=0, n, ret, i;
@@ -318,7 +318,7 @@ XDeviceMotionEvent *d;
 /* Set start to a past time. */
 	start = gettime(display);
 	DeviceMotionNotify(device, dmn, classes[0]);
-	DevicePointerMotionHint(device, dmnh, classes[1]);
+	DevicePointerMotionHint(device, unused, classes[1]);
 	w = defwin(display);
 	XSelectExtensionEvent(display, w, classes, 2);
 	warppointer (display, w, 1, 1);

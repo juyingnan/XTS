@@ -112,12 +112,10 @@ extern int  unexp_err();
  ******/
 	char fmtstr[256], *call_string;
 	union msglst fmt_lst[1];        
-        int skip_pixcheck;
 
 	int
 		ss_status,			  /* save stat return status */	
 		stat_status,			  /* check stat return status */
-  		setup_status,
   		cleanup_status,
 		i1;
 

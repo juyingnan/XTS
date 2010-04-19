@@ -411,7 +411,6 @@ Verify that the flags component of the returned XColor structure was DoRed|DoGre
 >>CODE
 Status	ret;
 char	flags;
-XColor	dcol;
 
 	spec = "#000";
 	ret = XCALL;
@@ -496,11 +495,7 @@ then a call to xname returns zero.
 Parse the string XT_BAD_COLORNAME using xname.
 Verify that the call returns zero.
 >>CODE
-char		*ptr;
-char		*str;
 Status		result;
-XColor		dcol;
-unsigned short	red, green, blue;
 
 	spec = config.bad_colorname;
 	result = XCALL;

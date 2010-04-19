@@ -131,7 +131,6 @@ static XPoint		tri1[] = { {5,5}, {30,5}, {5,20} };
 static XPoint		tri2[] = { {5,20}, {30,20}, {30,5} };
 static XRectangle	rect1 = { 5,5, 25,15};
 XRectangle		rect2;
-XRectangle		rrect;
 
 	R1 = makeregion();
 	R2 = makeregion();

@@ -128,8 +128,6 @@ extern char	ebuf[];
 void 
 dumpbuf(void)
 {
-	static char	dbuf[4096];
-	FILE *fp, *fopen();
 	char tempbuf[256], *tempptr;
 
 	if (errflg && (errcnt <= errlmt)) 

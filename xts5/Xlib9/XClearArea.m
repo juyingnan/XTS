@@ -300,7 +300,6 @@ Set background pixmap to None.
 Call XClearArea.
 Check that the window is not changed.
 >>CODE
-struct	area	area;
 XVisualInfo	*vp;
 
 	for (resetvinf(VI_WIN); nextvinf(&vp); ) {

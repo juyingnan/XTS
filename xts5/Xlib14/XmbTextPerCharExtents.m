@@ -146,7 +146,6 @@ extents of the characters.  Make sure the returned status is good.
 #if XT_X_RELEASE > 4
 Display *dpy;
 char *plocale;
-char *fontset;
 char *font_list;
 XFontSet pfs;
 char *defstr;

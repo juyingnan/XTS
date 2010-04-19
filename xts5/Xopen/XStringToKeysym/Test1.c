@@ -122,11 +122,8 @@ char	*s;
 #undef XK_LATIN1 
 
 strtsym1()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_space
 	if(test(XK_space, "space") == 1)

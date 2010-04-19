@@ -122,7 +122,7 @@ static void
 drawline(ax1, ay1, ax2, ay2)
 int 	ax1, ay1, ax2, ay2;
 {
-int 	pass = 0, fail = 0;
+int	fail = 0;
 int	x2 = MAX(ax1,ax2), y2 = MAX(ay1,ay2);
 	/*
 	 * Draw a rectangle that has the two given points as vertices.

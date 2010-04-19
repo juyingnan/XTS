@@ -761,8 +761,6 @@ device has no keys.
 Attempt to change the keyboard to a device that has no keys.
 Verify BadMatch
 >>CODE BadMatch
-Display	*client2;
-Window grab_window;
 
 	if (!Setup_Extension_DeviceInfo(NKeysMask))
 	    {

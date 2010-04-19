@@ -414,7 +414,6 @@ Call XCreatePixmapCursor with source pixmap.
 Verify that BadMatch error occurred.
 >>CODE BadMatch
 XVisualInfo *vp;
-Cursor qstat;
 
 	depth1.depth = 1;
 /* If only one depth supported report UNSUPPORTED. */
@@ -460,7 +459,6 @@ Call XCreatePixmapCursor with mask pixmap.
 Verify that BadMatch error occurred.
 >>CODE BadMatch
 XVisualInfo *vp;
-Cursor qstat;
 
 	depth1.depth = 1;
 /* If only one depth supported report UNSUPPORTED. */
@@ -507,7 +505,6 @@ Create mask pixmap of size 2x2.
 Call XCreatePixmapCursor with mask pixmap.
 Verify that BadMatch error occurred.
 >>CODE BadMatch
-Cursor qstat;
 
 	depth1.depth = 1;
 /* Create source pixmap of size 1x1. */
@@ -538,7 +535,6 @@ Create mask pixmap.
 Call XCreatePixmapCursor with hotspot outside the source pixmap.
 Verify that BadMatch error occurred.
 >>CODE BadMatch
-Cursor qstat;
 
 	depth1.depth = 1;
 /* Create source pixmap. */

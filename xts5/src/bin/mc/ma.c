@@ -158,16 +158,6 @@ maassertion(fp, buf)
 FILE	*fp;
 char	*buf;
 {
-static char	*reasons[] = {
-	"Temporarily can't be implemented",
-	"There is no known portable test method for this assertion",
-	"The statement in the X11 specification is not specific enough to write a test",
-	"There is no known reliable test method for this assertion",
-	"Testing the assertion would require setup procedures that involve an unreasonable amount of effort by the user of the test suite.",
-	"Testing the assertion would require an unreasonable amount of time or resources on most systems",
-	"Creating a test would require an unreasonable amount of test development time.",
-};
-
 	(void) fprintf(FpText, ".TI ");
 	if (State.category != CAT_NONE)
 		(void) fprintf(FpText, "%c ", (char)State.category);

@@ -122,11 +122,8 @@ char	*s;
 #undef XK_LATIN2 
 
 strtsym2()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_Aogonek
 	if(test(XK_Aogonek, "Aogonek") == 1)

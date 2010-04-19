@@ -285,7 +285,6 @@ verify that it is not copied.
 >>CODE
 Window  w1, w2;
 XVisualInfo *vp;
-Pixmap  pm;
 struct  area	area;
 
 	/*

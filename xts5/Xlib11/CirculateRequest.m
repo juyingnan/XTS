@@ -131,7 +131,7 @@ Verify that no events were delivered to client3.
 >>CODE
 Display	*display = Dsp;
 Display	*client2, *client3;
-Winh	*parent, *lastw, *winh;
+Winh	*parent, *lastw;
 Winhg	winhg;
 XEvent	event;
 int	i;

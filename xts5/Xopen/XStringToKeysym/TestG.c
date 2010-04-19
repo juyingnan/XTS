@@ -122,11 +122,8 @@ char	*s;
 #undef XK_GREEK 
 
 strtsymG()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_Greek_ALPHAaccent
 	if(test(XK_Greek_ALPHAaccent, "Greek_ALPHAaccent") == 1)

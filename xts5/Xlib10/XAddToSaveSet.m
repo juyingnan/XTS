@@ -163,7 +163,7 @@ struct	buildtree	*bt1;
 struct	buildtree	*btp;
 XWindowAttributes	batts;
 int 	i, j;
-int 	pass = 0, fail = 0;
+int	fail = 0;
 
 	client1 = XOpenDisplay(config.display);
 	client2 = opendisplay();

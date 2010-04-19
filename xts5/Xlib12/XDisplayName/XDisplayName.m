@@ -160,7 +160,6 @@ char	*argv[2];
 char	*str;
 char	*dstr;
 char	*mstr = "DISPLAY=%s";
-int	pass = 0, fail = 0;
 
 	if((dstr = getenv("DISPLAY")) == (char *) NULL) {
 		delete("DISPLAY configuration variable is not defined.");

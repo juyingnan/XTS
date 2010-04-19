@@ -138,7 +138,6 @@ Display *display_struc;
 Drawable  drawable_id;
 {
 	extern int unexp_err();
-	extern Display *dpy_save;
 	extern Window wid_save;
 	extern Pixmap pid_save;
 	extern GC gc_save;
@@ -156,8 +155,6 @@ Drawable  drawable_id;
 		    GCGraphicsExposures | GCClipXOrigin | GCClipYOrigin |
 		    GCClipMask | GCDashOffset | GCDashList | GCArcMode,
 		    gc_save);
-/*	if ((dpy_msk & save_mask) != 0) 		* disable display structure checking for now *
-	    dpy_save = display_struc; */
 	if ((win_msk & save_mask) != 0) {		/* window attributes for default window*/
 	    XGetWindowAttributes (display_struc, drawable_id, &wat_save);
 	    wid_save = drawable_id;         

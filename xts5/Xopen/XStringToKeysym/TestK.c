@@ -122,11 +122,8 @@ char	*s;
 #undef XK_KATAKANA 
 
 strtsymK()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_overline
 	if(test(XK_overline, "overline") == 1)

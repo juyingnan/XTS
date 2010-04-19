@@ -188,7 +188,6 @@ For all pixmaps
 >>CODE
 Window	w1, w2;
 XVisualInfo	*vp;
-Pixmap	pm;
 struct	area	area;
 
 	for (resetvinf(VI_PIX); nextvinf(&vp); ) {

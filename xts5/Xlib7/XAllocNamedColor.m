@@ -163,7 +163,6 @@ char *goodname;
 Status status;
 XColor screencol, exactcol, testcol;
 unsigned long vmask;
-unsigned short trunc;
 
 	if( (vmask = visualsupported(display, 0L)) == 0L) {
 		delete("No visuals reported as valid.");
@@ -241,9 +240,8 @@ For each supported visual type:
 XVisualInfo *vp;
 char *goodname;
 Status status;
-XColor screencol, exactcol, testcol;
+XColor screencol, exactcol;
 unsigned long vmask;
-unsigned short trunc;
 
 	if( (vmask = visualsupported(display, 0L)) == 0L) {
 		delete("No visuals reported as valid.");
@@ -287,9 +285,8 @@ For each supported visual type:
 XVisualInfo *vp;
 char *badname;
 Status status;
-XColor screencol, exactcol, testcol;
+XColor screencol, exactcol;
 unsigned long vmask;
-unsigned short trunc;
 
 	if( (vmask = visualsupported(display, 0L)) == 0L) {
 		delete("No visuals reported as valid.");
@@ -342,7 +339,6 @@ char *cp, *goodname, *casename;
 Status status;
 XColor screencol, exactcol, alscreencol, alexactcol;
 unsigned long vmask;
-unsigned short trunc;
 int i;
 
 	if( (vmask = visualsupported(display, 0L)) == 0L) {

@@ -152,7 +152,6 @@ Verify that the returned value is \"OPT\".
 unsigned char 	*pval = (unsigned char *) "VAL*VAl\nXT.LEO:CAL\nXT.OPT:VAL\nXT.Bezoomny:Cal\n";
 char		*valstr;
 char		*res = (char *) NULL;
-Display		*client;
 
 	valstr = "VAL";
 
@@ -195,7 +194,6 @@ Verify that the call returned NULL.
 unsigned char 	*pval = (unsigned char *) "XT.LEO:CAL\nXT.OPT:VAL\nXT.Bezoomny:Cal\n";
 char		*nullstr = "<NULL>";
 char		*res = (char *) NULL;
-Display		*client;
 
 
 	XChangeProperty (Dsp, RootWindow(Dsp, 0), XA_RESOURCE_MANAGER, XA_STRING, 8, PropModeReplace, pval, 1+strlen((char *)pval));

@@ -133,7 +133,7 @@ drawline(x1, y1, x2, y2)
 int 	x1, y1, x2, y2;
 {
 XPoint	pnts[2];
-int 	pass = 0, fail = 0;
+int	fail = 0;
 
 	pnts[0].x = x1;
 	pnts[0].y = y1;

@@ -121,7 +121,6 @@ char		*str3 = "TestString3";
 int		argc = 3;
 char		*argv[3];
 int		rargc;
-int		rargc1;
 char		**rargv = (char **) NULL;
 char		**rargv1 = (char **) NULL;
 Window		w;

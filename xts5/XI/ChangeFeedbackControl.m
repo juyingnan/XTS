@@ -569,7 +569,6 @@ If the device has no feedbacks, we will get a BadMatch error.
 >>STRATEGY
 Do a ChangeFeedbackControl, specifying a device that has no feedbacks.
 >>CODE BadMatch
-int i,j,k,ndevices,Nfeed;
 
 if (Setup_Extension_DeviceInfo(NFeedMask))
     {
@@ -774,7 +773,6 @@ else
 
 if (SetFeedbackInfo (PFeedMask, 0))
     {
-    XPtrFeedbackState *P2;
     XPtrFeedbackControl ptrf;
     mask = DvAccelNum | DvAccelDenom | DvThreshold;
     ptrf.class = PtrFeedbackClass;
@@ -797,7 +795,6 @@ else
 if (SetFeedbackInfo (BFeedMask, 0))
     {
     XBellFeedbackControl belf;
-    XBellFeedbackState *B2;
     belf.class = BellFeedbackClass;
     belf.length = sizeof (XBellFeedbackControl);
     belf.id = 255;
@@ -840,7 +837,6 @@ else
 if (SetFeedbackInfo (LFeedMask, 0))
     {
     XLedFeedbackControl ledf;
-    XLedFeedbackState *L2;
     ledf.class = LedFeedbackClass;
     ledf.length = sizeof (XLedFeedbackControl);
     ledf.id = 255;

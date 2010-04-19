@@ -118,7 +118,6 @@ XVisualInfo *vp;
 Window	win;
 XGCValues	values;
 XRectangle 	drects[2];
-int		i, j;
 int		pass = 0, fail = 0;
 
 	resetvinf(VI_WIN);
@@ -179,7 +178,6 @@ XVisualInfo *vp;
 Window	win;
 XGCValues	values;
 XRectangle 	drects[3];
-int		i, j;
 int		pass = 0, fail = 0;
 
 	resetvinf(VI_WIN);
@@ -238,7 +236,6 @@ XVisualInfo *vp;
 Window	win;
 XGCValues	values;
 XRectangle 	drects[3];
-int		i, j;
 int		pass = 0, fail = 0;
 
 	resetvinf(VI_WIN);
@@ -377,7 +374,6 @@ For all supported visuals:
 XVisualInfo	*vp;
 Window		win;
 XGCValues	values;
-GC		pgc;
 int	i, j;
 
 	values.foreground = W_FG;

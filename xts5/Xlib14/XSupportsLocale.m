@@ -121,9 +121,7 @@ For every Locale specified by the user in the configuration file, set
 LC_CTYPE to that locale, call XSupportsLocale to see if is supported.
 >>CODE
 #if XT_X_RELEASE > 4
-Display *dpy;
 char *plocale;
-char str[128];
 Bool res;
 char	*p;
 #endif

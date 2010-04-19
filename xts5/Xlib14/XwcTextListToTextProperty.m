@@ -91,12 +91,6 @@ int x_init,
  *****/
 mod_stat()
 {
-	extern Display *dpy_save;
-	extern Window wid_save;
-	extern Pixmap pid_save;
-	extern GC gc_save;
-	extern XWindowAttributes wat_save;
-
 	/*
 	 * insert modifications to saved data here
 	 */
@@ -118,20 +112,15 @@ XTextProperty	text_prop_good;
         extern int  chkflg;
 	extern int  signal_status();
 	extern int  unexp_err();
-	extern char *svc_user_arg;
 	extern char *strcpy();
 
-	char fmtstr[256], *call_string;
-	union msglst fmt_lst[1];        
-        int skip_pixcheck;
         Status ret_status ;
 
 	int
 		ss_status,	/* save stat return status */	
 		stat_status,	/* check stat return status */
   		setup_status,
-  		cleanup_status,
-		i1;
+		cleanup_status;
 
 
 	regr_args.l_flags.bufrout = 1;
@@ -265,7 +254,6 @@ int ret;
                 {
 			int i ;
 			XTextProperty 	text_prop ;
-			int count = 1;
 
         		memset(string_good, 0, sizeof(string_good));
                     	for (i = 0 ; i < 10 ; i++)

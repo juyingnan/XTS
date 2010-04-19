@@ -127,7 +127,6 @@ Display *display;
 static	void
 closer()
 {
-Window	w;
 int	cnn;	
 
 	path_checker = 0;
@@ -181,7 +180,6 @@ If the system is POSIX compliant:
 Otherwise:
   UNTESTED
 >>CODE
-char	*posix;
 int	child_exit;
 
 	if(config.posix_system == 1) {

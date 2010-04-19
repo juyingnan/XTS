@@ -124,7 +124,7 @@ status.
 #if XT_X_RELEASE > 4
 int ncheck;
 char *plocale;
-Bool res,status;
+Bool status;
 #endif
 
 #if XT_X_RELEASE > 4

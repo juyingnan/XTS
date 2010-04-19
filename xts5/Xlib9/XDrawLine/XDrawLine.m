@@ -118,7 +118,7 @@ static void
 drawline(ax1, ay1, ax2, ay2)
 int 	ax1, ay1, ax2, ay2;
 {
-int 	pass = 0, fail = 0;
+int	 fail = 0;
 
 	x1 = ax1; y1 = ay1;
 	x2 = ax2; y2 = ay2;

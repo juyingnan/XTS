@@ -408,7 +408,7 @@ Verify selected events have not changed.
 Display *client2;
 int tcount, acount;
 XEventClass *this_client, *all_clients, dkpclass, nevclass, classes[5];
-int dkp, nev, tmp;
+int dkp, tmp;
 
 	if (!Setup_Extension_DeviceInfo(KeyMask))
 	    {
@@ -416,7 +416,7 @@ int dkp, nev, tmp;
 	    return;
 	    }
 	DeviceKeyPress(Devs.Key, dkp, dkpclass);
-	NoExtensionEvent(Devs.Key, nev, nevclass);
+	NoExtensionEvent(Devs.Key, unused, nevclass);
 	classes[0] = dkpclass;
 	DeviceKeyRelease(Devs.Key, tmp, classes[1]);
 	DeviceStateNotify(Devs.Key, tmp, classes[2]);
@@ -724,7 +724,7 @@ DeviceButtonPress event class, automatic passive grabs are done for the
 requesting client.
 >>STRATEGY
 >>CODE
-int dbp, dmn, dbr, dbpg;
+int dbp, dmn, dbr;
 XEventClass class[4];
 Window w;
 int axes[2];
@@ -740,7 +740,7 @@ XEvent event;
 	DeviceButtonPress(Devs.Button, dbp, class[0]);
 	DeviceMotionNotify(Devs.Button, dmn, class[1]);
 	DeviceButtonRelease(Devs.Button, dbr, class[2]);
-	DeviceButtonPressGrab(Devs.Button, dbpg, class[3]);
+	DeviceButtonPressGrab(Devs.Button, unused, class[3]);
 	w = defwin(display);
 	XSelectExtensionEvent(display, w, class, 4);
 	warppointer(display, w, 1, 1);
@@ -808,7 +808,7 @@ DeviceButtonPress event class, automatic passive grabs activate with
 owner_events equal to False.
 >>STRATEGY
 >>CODE
-int dbp, dmn, dbr, dbpg;
+int dbp, dmn, dbr;
 XEventClass class[4];
 Window w;
 int axes[2];
@@ -824,7 +824,7 @@ XEvent event;
 	DeviceButtonPress(Devs.Button, dbp, class[0]);
 	DeviceMotionNotify(Devs.Button, dmn, class[1]);
 	DeviceButtonRelease(Devs.Button, dbr, class[2]);
-	DeviceButtonPressGrab(Devs.Button, dbpg, class[3]);
+	DeviceButtonPressGrab(Devs.Button, unused, class[3]);
 	w = defwin(display);
 	XSelectExtensionEvent(display, w, class, 4);
 	XSync(display,0);
@@ -898,7 +898,7 @@ grabs activate with owner_events equal to True.
 requesting client.
 >>STRATEGY
 >>CODE
-int dbp, dmn, dbr, dbpg, dbpog;
+int dbp, dmn, dbr;
 XEventClass class[5];
 Window w;
 int axes[2];
@@ -914,8 +914,8 @@ XEvent event;
 	DeviceButtonPress(Devs.Button, dbp, class[0]);
 	DeviceMotionNotify(Devs.Button, dmn, class[1]);
 	DeviceButtonRelease(Devs.Button, dbr, class[2]);
-	DeviceButtonPressGrab(Devs.Button, dbpg, class[3]);
-	DeviceOwnerGrabButton(Devs.Button, dbpog, class[4]);
+	DeviceButtonPressGrab(Devs.Button, unused, class[3]);
+	DeviceOwnerGrabButton(Devs.Button, unused, class[4]);
 	w = defwin(display);
 	XSelectExtensionEvent(display, w, class, 5);
 
@@ -1009,8 +1009,8 @@ when the specified button is down.
 >>STRATEGY
 >>CODE
 XEventClass dbmclasses[6];
-int dbm1, dbm2, dbm3, dbm4, dbm5;
-int i, axes[2];
+int dbm1;
+int axes[2];
 XEvent event;
 
 
@@ -1023,11 +1023,11 @@ XEvent event;
 	    }
 	DeviceMotionNotify(Devs.Button, dbm1, dbmclasses[0]);
 	DeviceButton1Motion(Devs.Button, dbm1, dbmclasses[0]);
-	DeviceButton2Motion(Devs.Button, dbm2, dbmclasses[1]);
-	DeviceButton3Motion(Devs.Button, dbm3, dbmclasses[2]);
-	DeviceButton4Motion(Devs.Button, dbm4, dbmclasses[3]);
-	DeviceButton5Motion(Devs.Button, dbm5, dbmclasses[4]);
-	DeviceButtonMotion(Devs.Button, dbm5, dbmclasses[5]);
+	DeviceButton2Motion(Devs.Button, unused, dbmclasses[1]);
+	DeviceButton3Motion(Devs.Button, unused, dbmclasses[2]);
+	DeviceButton4Motion(Devs.Button, unused, dbmclasses[3]);
+	DeviceButton5Motion(Devs.Button, unused, dbmclasses[4]);
+	DeviceButtonMotion(Devs.Button, unused, dbmclasses[5]);
 	w = defwin(display);
 	XSetDeviceFocus(display, Devs.Button, w, RevertToPointerRoot, 
 	    CurrentTime);
@@ -1230,7 +1230,7 @@ until a button is pressed on that device.
 >>STRATEGY
 >>CODE
 XEventClass classes[3];
-int dmn, dmh;
+int dmn;
 int i, axes[2];
 XEvent event;
 
@@ -1242,7 +1242,7 @@ XEvent event;
 	    return;
 	    }
 	DeviceMotionNotify(Devs.Button, dmn, classes[0]);
-	DevicePointerMotionHint(Devs.Button,dmh,classes[1]);
+	DevicePointerMotionHint(Devs.Button, unused, classes[1]);
 	w = defwin(display);
 	XSetDeviceFocus(display, Devs.Button, w, RevertToPointerRoot, 
 	    CurrentTime);
@@ -1332,7 +1332,6 @@ window for which another client has already specified DeviceButtonPressGrab.
 >>CODE
 Display *client1;
 Display *client2;
-int dbpgtype;
 XEventClass dbpgclass;
 
 	if (!Setup_Extension_DeviceInfo(BtnMask))
@@ -1351,7 +1350,7 @@ XEventClass dbpgclass;
 /* Create window with client1. */
 	w = mkwin(client1, (XVisualInfo *) NULL, (struct area *) NULL, False);
 /* Select DeviceButtonPressGrab class with client1 on this window. */
-	DeviceButtonPressGrab(Devs.Button, dbpgtype, dbpgclass);
+	DeviceButtonPressGrab(Devs.Button, unused, dbpgclass);
 	BASIC_STARTCALL(client1);
 	eclass = &dbpgclass;
 	ecount = 1;

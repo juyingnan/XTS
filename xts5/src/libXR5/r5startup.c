@@ -164,7 +164,7 @@ r5_startup()
 int 	i;
 char	*disp;
 char	*cp;
-extern	char	*TestName;
+/* extern	char	*TestName; */
 extern	struct	tet_testlist	tet_testlist[];
 extern	int 	unexp_err();
 extern	int 	io_err();
@@ -174,8 +174,6 @@ extern	int 	io_err();
 	 */
 	if ((cp = tet_getvar("XT_DEBUG")) != NULL) 
 	{
-		extern	int 	DebugLevel;
-
 		setdblev(atov(cp));
 	} else {
 		setdblev(0);

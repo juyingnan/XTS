@@ -124,8 +124,6 @@ XPoint poly[] = { {0,0} , {0,1}, {1,1}, {1,0}, {0,0}, {0,1}, {1,1}, {1,0} };
 XVisualInfo	*vp;
 Window		win;
 XGCValues	values;
-Pixmap		stip;
-GC		sgc;
 
 	resetvinf(VI_WIN);
 	nextvinf(&vp);

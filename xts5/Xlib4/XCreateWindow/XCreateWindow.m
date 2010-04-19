@@ -462,7 +462,6 @@ Select NoEventMask on parent window.
 Verify that a single CreateNotify event was generated.
 Verify that the returned event structure was correct.
 >>CODE
-XSetWindowAttributes	atts;
 XCreateWindowEvent	ge;
 XEvent	event;
 Window	win;

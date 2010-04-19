@@ -852,7 +852,6 @@ else
   Report untested.
 >>CODE
 extern	struct	valname	S_button[];
-extern	int 	NS_button;
 int 	i;
 
 	button = AnyButton;

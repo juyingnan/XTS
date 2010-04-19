@@ -123,7 +123,7 @@ drawline(ax1, ay1, ax2, ay2)
 int 	ax1, ay1, ax2, ay2;
 {
 XSegment segs[1];
-int 	pass = 0, fail = 0;
+int	fail = 0;
 
 	segs[0].x1 = ax1; segs[0].y1 = ay1;
 	segs[0].x2 = ax2; segs[0].y2 = ay2;

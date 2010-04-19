@@ -151,7 +151,6 @@ exec_startup()
 {
 char	*disp;
 char	*cp;
-extern	char	*TestName;
 #ifdef __STDC__
 extern	int 	unexp_err(Display *, XErrorEvent *ep);
 extern	int 	io_err(Display *);
@@ -166,8 +165,6 @@ extern	int 	io_err();
 	 * Set the debug level first.
 	 */
 	if ((cp = tet_getvar("XT_DEBUG")) != NULL) {
-	extern	int 	DebugLevel;
-
 		setdblev(atov(cp));
 	} else {
 		setdblev(0);

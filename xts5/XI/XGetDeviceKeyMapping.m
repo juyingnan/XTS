@@ -131,8 +131,6 @@ static	KeySym	Keys[MAXKPK*MAXCODES];
 static void
 savekeymap()
 {
-int	tmp;
-int 	last;
 int 	i;
 int 	numkeys;
 

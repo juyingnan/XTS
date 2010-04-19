@@ -165,7 +165,6 @@ For visual class DirectColor:
 >>CODE
 XVisualInfo	*vp;
 unsigned long	vmask = (1<<DirectColor);
-unsigned long	*pixm, *rr, *gr, *br;
 unsigned long	rm, gm, bm, pm, rgbmask, pixel, r, g, b;
 XColor 		color, qcolor;
 Status		status;
@@ -333,7 +332,6 @@ For the visual class DirectColor:
 >>CODE
 XVisualInfo	*vp;
 unsigned long	vmask = (1<<DirectColor);
-unsigned long	*pixm, *rr, *gr, *br;
 unsigned long	rm, gm, bm, pm, rgbmask;
 unsigned long	pm_array[3], i;
 Status		status;
@@ -490,8 +488,7 @@ For the visual class DirectColor:
 >>CODE
 XVisualInfo	*vp;
 unsigned long	vmask = (1<<DirectColor);
-unsigned long	*pixm, *rr, *gr, *br;
-unsigned long	rm, gm, bm, pm, rgbmask, pixel, i;
+unsigned long	rm, gm, bm, pm;
 Status		status;
 int		cells;
 
@@ -565,9 +562,7 @@ For the visual class DirectColor:
 >>CODE
 XVisualInfo	*vp;
 unsigned long	vmask = (1<<DirectColor);
-unsigned long	*pixm, *rr, *gr, *br;
-unsigned long	rm, gm, bm, pm, rgbmask, pixel, i;
-XColor 		color;
+unsigned long	rm, gm, bm, pm;
 Status		status;
 int		cells;
 
@@ -635,7 +630,6 @@ For all supported visual classes:
   Call XAllocColorPlanes with ncolors = 0.
 >>CODE BadValue
 XVisualInfo *vp;
-Visual *visual;
 unsigned long vmask = (1<<DirectColor);
 
 	if( (vmask = visualsupported(display, vmask)) == 0L) {

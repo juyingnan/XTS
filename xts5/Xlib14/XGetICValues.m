@@ -713,7 +713,7 @@ For all locales, create an input method and for all supported styles
 create an input context, then fetch the status ic values.  
 >>CODE
 #if XT_X_RELEASE > 4
-ic_val_def icv,*picv;
+ic_val_def *picv;
 Display *dpy;
 char *plocale;
 XrmDatabase db = NULL;

@@ -146,16 +146,10 @@ Verify that the number and value of the returned strings is correct.
 Release the allocated memory using XFreeStringList.
 >>CODE
 XVisualInfo	*vp;
-char	*nullstr = "<NULL>";
-char	**strpp, *strp;
 char	*str1 = "XTest string 1";
 char	*str2 = "XTest string 2";
 char	*prop[2];
-char	**rstrings = (char**) NULL;
-int	rcount = 0;
-int	i;
 XTextProperty	rtp;
-Status	status;
 char	**list_return;
 int	count_return;
 int	len;

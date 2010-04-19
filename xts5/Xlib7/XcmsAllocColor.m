@@ -108,15 +108,11 @@ extern int  unexp_err();
 
 char fmtstr[256], *call_string;
 union msglst fmt_lst[1];        
-int skip_pixcheck;
-int red, green, blue;
 int tmpRGB;
 
 int     ss_status,			  /* save stat return status */	
 	stat_status,			  /* check stat return status */
-	setup_status,
-	cleanup_status,
-	i1;
+	cleanup_status;
 
 Status           svc_ret_value;
 

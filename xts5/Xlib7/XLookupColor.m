@@ -223,7 +223,6 @@ char *cp, *goodname, *casename;
 Status status;
 XColor screencol, exactcol, alscreencol, alexactcol;
 unsigned long vmask;
-unsigned short trunc;
 int i;
 
 	if( (vmask = visualsupported(display, 0L)) == 0L) {

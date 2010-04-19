@@ -124,7 +124,7 @@ XVisualInfo	*vp;
 Status 		gstat;
 Window		root_ret;
 int		x_ret, y_ret;
-unsigned int	w_ret, h_ret, bw_ret, bh_ret, dep_ret;
+unsigned int	w_ret, h_ret, bw_ret, dep_ret;
 Pixmap		pmap;
 
 

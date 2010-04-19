@@ -130,7 +130,6 @@ tester()
 {
 Window	w;
 Display	*client1, *opendisplay();
-int 	ret;
 
 	Create_Client(CLIENT);
 

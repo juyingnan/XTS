@@ -169,14 +169,12 @@ XVisualInfo     *vp;
 unsigned int    width, height;
 char *font_list;
 XFontSet pfs;
-char *fontset;
 char *defstr;
 int missing_cnt;
 char **missing_chars;
 char  buf[256];
 int   delta;
 int	skipped;
-char *charstr;
 wchar_t wcharstr[T1_NITEMS][T1_GROUPSIZE];
 XwcTextItem ti[T1_NITEMS];
 #endif

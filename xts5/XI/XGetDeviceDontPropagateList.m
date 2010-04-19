@@ -152,7 +152,6 @@ A call to xname with an invalid window returns a BadWindow error.
 >>STRATEGY
 Call xname with an invalid window.
 >>CODE BadWindow
-Window	w;
 Display	*client1;
 XEventClass 	*ret;
 

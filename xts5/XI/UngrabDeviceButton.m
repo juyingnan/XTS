@@ -226,8 +226,6 @@ static Bool dgrabbed(dev, win)
 	}
 
 >>CODE
-int ret;
-
 	if (!Setup_Extension_DeviceInfo(KeyMask | BtnMask))
 	    {
 	    untested("%s: Required input extension device not present.\n", TestName);

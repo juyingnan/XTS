@@ -125,7 +125,6 @@ XEvent event;
 XVisualInfo *vp;
 Window	win;
 XGCValues	values;
-struct area ar;
 
 	resetvinf(VI_WIN);
 	nextvinf(&vp);

@@ -136,7 +136,6 @@ Verify that window is at top of stacking order.
 >>CODE
 int 	so;
 Window	base;
-struct	buildtree	*btp;
 struct	buildtree	*btlist;
 XWindowAttributes	atts;
 
@@ -305,7 +304,6 @@ XWindowAttributes	atts;
 XMapRequestEvent	good;
 XEvent	ev;
 struct	area	area;
-int 	n;
 
 	base = defwin(display);
 	setarea(&area, 20, 20, 40, 40);
@@ -384,7 +382,6 @@ struct	area	area;
 struct	area	charea;
 int 	origso;
 XEvent	ev;
-int 	n;
 
 	base = defwin(display);
 	setarea(&area, 20, 20, 40, 40);
@@ -477,7 +474,6 @@ XConfigureEvent	confgood;
 XMapEvent	mapgood;
 struct	buildtree	*btlist;
 struct	buildtree	*btp;
-struct	area	area;
 XEvent	ev;
 int 	gotmap;
 int 	gotconf;
@@ -650,7 +646,6 @@ XConfigureEvent	confgood;
 XMapEvent	mapgood;
 struct	buildtree	*btlist;
 struct	buildtree	*btp;
-struct	area	area;
 XEvent	ev;
 int 	gotmap;
 int 	gotconf;

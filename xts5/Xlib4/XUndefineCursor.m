@@ -270,7 +270,6 @@ Otherwise:
 >>CODE
 Window		altroot;
 Cursor		cursor;
-XVisualInfo	*vp;
 Bool		samedefcursor;
 
 	/* If extended testing is required: */

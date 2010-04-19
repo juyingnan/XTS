@@ -122,7 +122,6 @@ Verify (arc origin-1, arc origin-1) is set to fg.
 XVisualInfo *vp;
 Window	win;
 XGCValues values;
-struct area ar;
 
 	resetvinf(VI_WIN);
 	nextvinf(&vp);

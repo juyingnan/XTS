@@ -211,8 +211,7 @@ void
 mcend(buf)
 char	*buf;
 {
-int 	i;
-FILE *fout;
+	int i;
 
 	/* Finish the copyright banner */
 	(void) fprintf(FpBanner, "*/\n");

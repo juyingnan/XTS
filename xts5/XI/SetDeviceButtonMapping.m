@@ -227,7 +227,7 @@ Verify that a DeviceMappingNotify event is generated.
 >>CODE
 XEvent	ev;
 XDeviceMappingEvent	good;
-int 	i,n,dbmn;
+int	n, dbmn;
 XEventClass dbmnc;
 
 	if (!Devs.Button) {

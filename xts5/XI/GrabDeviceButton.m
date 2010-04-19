@@ -826,7 +826,7 @@ Press the equivalent modifiers on the core keyboard
 Press the specified button.
 Verify that the grab is not activated.
 >>CODE
-int i, ret, coremask, devmask;
+int ret, coremask, devmask;
 Display *client1;
 
 	if (!Setup_Extension_DeviceInfo(BtnMask | ModMask))
@@ -1056,7 +1056,6 @@ a BadMatch error will result.
 >>STRATEGY
 Specify a device with no keys as the modifier device.
 >>CODE BadMatch
-Display	*client2;
 
 	if (!Setup_Extension_DeviceInfo(BtnMask | NKeysMask))
 	    {
@@ -1133,7 +1132,6 @@ a BadClass error will result.
 >>STRATEGY
 Specify an invalid event class.
 >>CODE badclass
-Display	*client2;
 XEventClass eclass = -1;
 XID badclass;
 

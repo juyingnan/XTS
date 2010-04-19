@@ -128,7 +128,7 @@ Verify that the property value was correct.
 Window		win, pwin;
 XVisualInfo	*vp;
 Window		*retwin = (Window *) NULL;
-unsigned long	leftover, nitems, len;
+unsigned long	leftover, nitems;
 int		actual_format;
 Atom		actual_type;
 

@@ -74,7 +74,6 @@ XSetLocaleModifiers for every locale modifier set specified by the user
 in the configuration file.
 >>CODE
 #if XT_X_RELEASE > 4
-Display *dpy;
 char *plocale,*plclmod;
 char *modstr;
 Bool supported;

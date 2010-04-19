@@ -115,7 +115,6 @@ Drawable	d;
 unsigned long	fg;
 {
 XImage			*im;
-unsigned long		pix;
 unsigned int		width;
 unsigned int		height;
 int			x;

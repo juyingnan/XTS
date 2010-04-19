@@ -140,7 +140,6 @@ Obtain the display string using xname.
 Verify that the value of the string is the parameter used in XOpenDisplay.
 Close the display using XCloseDisplay.
 >>CODE
-char	*dispstr;
 char	*rdispstr;
 
 	rdispstr = XCALL;
@@ -194,7 +193,6 @@ char	*argv[2];
 char	*str;
 char	*dstr;
 char	*mstr = "DISPLAY=%s";
-int	pass = 0, fail = 0;
 
 	if((dstr = getenv("DISPLAY")) == (char *) NULL) {
 		delete("DISPLAY configuration variable is not defined.");

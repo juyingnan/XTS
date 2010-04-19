@@ -238,7 +238,6 @@ Create a valid, readable, bitmap file.
 Call xname to read the bitmap file.
 Verify that BitmapSuccess was returned.
 >>CODE
-int ret;
 
 /* Create a valid, readable, bitmap file. */
 	if (xrbf_create(filename, xrbf_two, xrbf_n_two)) {
@@ -276,7 +275,7 @@ Verify that the bitmap was of the correct height, width and depth.
 Verify that the bitmap contents were correct.
 Verify that the bitmap was created on the correct screen.
 >>CODE
-Window w_tmp, rw_ret, rw2_ret;
+Window rw_ret, rw2_ret;
 int i_tmp;
 unsigned int h_ret, w_ret, d_ret, ui_tmp;
 
@@ -372,9 +371,6 @@ Call xname to read the bitmap file.
 Verify that the x_hot_return was returned as expected.
 Verify that the y_hot_return was returned as expected.
 >>CODE
-Window w_tmp;
-int i_tmp;
-unsigned int h_ret, w_ret, d_ret, ui_tmp;
 
 /* Create a valid, readable, bitmap file containing a hotspot. */
 	if (xrbf_create(filename, xrbf_two, xrbf_n_two)) {
@@ -428,9 +424,6 @@ Call xname to read the bitmap file.
 Verify that the x_hot_return was returned as expected.
 Verify that the y_hot_return was returned as expected.
 >>CODE
-Window w_tmp;
-int i_tmp;
-unsigned int h_ret, w_ret, d_ret, ui_tmp;
 
 /* Create a valid, readable, bitmap file containing no hotspot. */
 	if (xrbf_create(filename, xrbf_one, xrbf_n_one)) {

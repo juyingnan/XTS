@@ -122,11 +122,8 @@ char	*s;
 #undef XK_TECHNICAL
 
 strtsymT()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_leftradical
 	if(test(XK_leftradical, "leftradical") == 1)

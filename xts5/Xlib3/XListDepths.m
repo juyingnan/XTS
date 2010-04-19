@@ -126,7 +126,6 @@ int	 	number;
 int		*dlst;
 int		*dptr;
 int		i;
-XVisualInfo	vp;
 Pixmap	pixm;
 long	notmem[NM_LEN];
 

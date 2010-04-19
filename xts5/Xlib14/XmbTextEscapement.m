@@ -135,7 +135,6 @@ pixels to the origin of the next character in the primary draw direction.
 #if XT_X_RELEASE > 4
 Display *dpy;
 char *plocale;
-char *fontset;
 char *font_list;
 XFontSet pfs;
 char *defstr;

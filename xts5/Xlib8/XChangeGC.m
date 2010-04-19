@@ -130,8 +130,6 @@ Verify that pixel at (0,0) is W_BG.
 >>CODE
 XVisualInfo	*vp;
 Window		win;
-XRectangle	rect;
-Pixmap		pmap;
 XGCValues	gcv;
 
 	resetvinf(VI_WIN);
@@ -375,8 +373,6 @@ Create a GC with root window as the drawable.
 Change GC using XChangeGC with bad font as the font component.
 Verify that a BadFont error occurs. 
 >>CODE BadFont
-Window w;
-Font font;
 XGCValues vals;
 
 	vals.font = badfont(Dsp);
@@ -471,8 +467,6 @@ Create a GC with window as the drawable.
 Change GC using XChangeGC with pixmap as the clip_mask.
 Verify that a BadPixmap error occurs. 
 >>CODE BadPixmap
-Window w;
-Pixmap pm;
 XGCValues vals;
 
 	vals.clip_mask = badpixm(display);
@@ -849,7 +843,6 @@ Change GC using XChangeGC with function component GXcopy
     GCDashOffset | GCDashList | GCArcMode)
 Verify that a bad value error occurred.
 >>CODE BadValue
-Window w;
 XGCValues srcgcv;
 int i;
 unsigned char *p;

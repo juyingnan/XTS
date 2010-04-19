@@ -156,28 +156,18 @@ xReply *rp;   /* pointer to XLIB-format reply structure */
 char rbuf[];  /* receive buffer for reply data */
 int type;     /* */
 int client;   /* */
-{       /*
-	needswap           
-	rbp                pointer to first byte of receive buffer after header
-	valuePtr           pointer to first byte of rp after fixed-size part
-	                   of reply
-	i                  
-	nlen               
-	valid              
-	nitems             
-	calculated_length  
-	*/
+{
 #ifdef INPUTEXTENSION
 
 	int needswap = Xst_clients[client].cl_swap;
 	char *nptr;
+	/* pointer to first byte of receive buffer after header */
 	char *rbp = (char *) ((char *)rbuf + REPLY_HEADER);
+	/* pointer to first byte of rp after fixed-size part of reply */
 	unsigned char *valuePtr = (unsigned char *) ((unsigned char *)rp +
 	    sizeof(xReply));
 	int i, j;
-	int nlen;
 	int valid = 1;		/* assume all is OK */
-	int nitems;
 	int calculated_length = 0;
 	int extension;
 	unsigned long bytes_there = (long)(rp->generic.length<<2) + sizeof(xReply);
@@ -197,7 +187,6 @@ int client;   /* */
 		{
 	        /* rp->generic.data1 is the number of extension strings in
 		   the returned list of strings. */
-	        int value_len = 0;       /* total bytes in returned value */
 		xDeviceInfo *list =(xDeviceInfoPtr)(rbuf + sizeof (xReply));
 		xAnyClassPtr any;
 		int ndevices;

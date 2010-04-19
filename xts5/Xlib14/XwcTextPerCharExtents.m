@@ -146,7 +146,6 @@ extents of the characters.  Make sure the returned status is good.
 #if XT_X_RELEASE > 4
 Display *dpy;
 char *plocale;
-char *fontset;
 char *font_list;
 XFontSet pfs;
 char *defstr;
@@ -154,7 +153,7 @@ int missing_cnt;
 char **missing_chars;
 XFontSetExtents *ext;
 int escapement;
-int nbytes,nchars,maxescape;
+int nchars, maxescape;
 Status status;
 XRectangle ink[MAX_CHARS];
 XRectangle logical[MAX_CHARS];

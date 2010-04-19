@@ -592,8 +592,6 @@ Window w;
 XImage *im1, *im2;
 static struct area area1 =
 	{ -1, -1, 1, 1 };
-static struct area area2 =
-	{ W_STDWIDTH, W_STDHEIGHT, 1, 1 };
 
 	for (resetvinf(VI_WIN); nextvinf(&vp); ) {
 		im1 = im2 = (XImage *) 0;
@@ -1018,15 +1016,11 @@ Verify that BadMatch error occurred.
 >>CODE BadMatch
 XVisualInfo *vp;
 Window w;
-Window w2;
-int wx, wy;		/* coordinates of window */
 static struct area area1 =
 	{ 0, 0, W_STDWIDTH, W_STDHEIGHT };
 static struct area area2 =
 	{ 0, 0, W_STDWIDTH, W_STDHEIGHT };
 XImage *image;
-unsigned int tmpui;	/* uninteresting XGetGeometry return values */
-Window	tmpw;		/* uninteresting XGetGeometry return values */
 
 	resetvinf(VI_WIN);
 	nextvinf(&vp);	/* use first one we come to */

@@ -616,9 +616,8 @@ int ncheck = 0;
 char *pstr;
 ic_val_def icv,*picv,*ret_icv;
 ic_list_def *ils;
-int type,dummy;
+int dummy;
 att_def *att,ret_att;
-char name_sub[128];
 char name[128];
 #endif
 
@@ -843,9 +842,8 @@ ic_val_def icv,*picv,*ret_icv;
 int nstyles = 0;
 int ncheck = 0;
 ic_list_def *ils;
-int type,dummy;
+int dummy;
 att_def *att,ret_att;
-char name_sub[128];
 char name[128];
 #endif
 
@@ -1053,7 +1051,6 @@ XIM im = NULL;
 XFontSet fs = NULL;
 XrmDatabase db = NULL;
 int ncheck = 0;
-char *pstr;
 int cur_cnt;
 XEvent ev;
 #endif

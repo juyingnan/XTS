@@ -136,7 +136,6 @@ Get the border-pixel.
 Verify the border pixel was set.
 >>CODE
 unsigned long	pixel;
-Pixmap	pm;
 XEvent	event;
 
 	parent = defdraw(display, VI_WIN);
@@ -192,7 +191,6 @@ Get the border-pixel.
 Verify the border pixel was set.
 >>CODE
 unsigned long	pixel;
-Pixmap	pm;
 XEvent	event;
 
 /* Create windows */

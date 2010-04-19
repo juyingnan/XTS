@@ -125,7 +125,6 @@ For each KeyCode and index:
 >>CODE
 int		minkc, maxkc;
 int		syms_per_kc;
-KeyCode		kc;
 KeySym		ks, res;
 KeySym		*keysyms;
 XKeyEvent	ke;

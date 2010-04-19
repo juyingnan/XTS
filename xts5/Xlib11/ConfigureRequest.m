@@ -670,7 +670,6 @@ int	i;
 int	status;
 int	numchildren = 4;
 int	count;
-XWindowChanges	values;
 XSetWindowAttributes attrs;
 unsigned long valuemask;
 

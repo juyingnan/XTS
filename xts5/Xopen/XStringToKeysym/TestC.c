@@ -122,11 +122,8 @@ char	*s;
 #undef XK_CYRILLIC 
 
 strtsymC()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_Serbian_dje
 	if(test(XK_Serbian_dje, "Serbian_dje") == 1)

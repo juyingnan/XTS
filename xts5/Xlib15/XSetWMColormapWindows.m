@@ -135,7 +135,6 @@ Verify that the returned number of elements was correct.
 Verify that the property value was correct.
 >>CODE
 Status		status;
-Window		rwin;
 XVisualInfo	*vp;
 Atom		xa_wm_colormap_windows;
 Atom		actual_type;
@@ -146,7 +145,6 @@ int		nwins = 7;
 Window		pwins[7];
 Window		*rwins = (Window *) NULL;
 Window		*wp;
-int		rcnt = 0;
 int		i;
 
 	for(i=0; i<nwins; i++)

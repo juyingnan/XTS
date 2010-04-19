@@ -122,11 +122,8 @@ char	*s;
 #undef XK_ARABIC 
 
 strtsymA()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_Arabic_comma
 	if(test(XK_Arabic_comma, "Arabic_comma") == 1)

@@ -117,7 +117,6 @@ Obtain the contents of cut buffer 0 using XFetchBuffer.
 Verify that the buffer contents is correct.
 >>CODE
 char	*bp;
-char	*bpr = (char *) NULL;
 int	i;
 int	br;
 

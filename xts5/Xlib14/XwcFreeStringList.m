@@ -89,12 +89,10 @@ extern int  errflg;
 extern int  chkflg;
 extern int  signal_status();
 extern int  unexp_err();
-extern char *svc_user_arg;
 extern char *strcpy();
 
 char fmtstr[256], *call_string;
 union msglst fmt_lst[1];        
-int skip_pixcheck;
 
 
 int
@@ -203,7 +201,6 @@ shall free the string list and component strings allocated by
 XwcTextPropertyToTextList.
 >>CODE
 #if XT_X_RELEASE > 4
-int i,j;
 XTextProperty prop_return;
 wchar_t **list_return;
 int count_return;

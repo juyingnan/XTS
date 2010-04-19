@@ -591,7 +591,6 @@ int     client;
 {
     XstDisplay * dpy = Get_Display (client);
     xReq * req;
-    int     type;
     TestType tt = Get_Test_Type(client);
 
     switch (tt) {

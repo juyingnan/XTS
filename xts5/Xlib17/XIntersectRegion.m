@@ -130,7 +130,6 @@ Set two of the regions to disjoint polygons using XPolygonRegion.
 Obtain the intersection of the regions using xname.
 Verify that the returned region was empty using XEmptyRegion.
 >>CODE
-static	XPoint	noninter1[] = { {-25,-5}, {-15,-10}, {-10,-25}, {-20,-35}, {-30,-30}, {-35,-20}, {-30,-10} };
 static	XPoint	inter1[] = { {25,5}, {15,10}, {10,25}, {20,35}, {30,30}, {35,20}, {30,10} };
 static	XPoint	inter2[] = { {25,20}, {37,22}, {40,30}, {35,37}, {30,40}, {25,38}, {18,32}, {20,25} };
 Region		R1;

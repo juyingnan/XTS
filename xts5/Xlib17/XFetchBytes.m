@@ -121,7 +121,6 @@ Verify that the data is correct.
 Free the returned data using XFree.
 >>CODE
 char	*bp;
-char	*bpr = (char *) NULL;
 int	i;
 int	br;
 

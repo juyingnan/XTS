@@ -457,7 +457,6 @@ If multiple roots are supported:
    Copy from the second to the first.
    Verify that a BadMatch error occurred.
 >>CODE BadMatch
-XVisualInfo     vi;
 char    *altroot;
 int     scr_num;
 

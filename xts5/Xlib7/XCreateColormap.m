@@ -121,9 +121,6 @@ For each visual type
 >>CODE
 XVisualInfo *vp;
 Colormap	cmap;
-Display		*d2;
-Window		w2;
-int i;
 
 
 	alloc = AllocNone;
@@ -431,10 +428,9 @@ For the visual Directcolor:
 Colormap	cmap;
 XVisualInfo	*vi;
 XColor		colarr[NUM_COLS];
-unsigned long	plane, count;
-unsigned long		vmask = (1L<<DirectColor), b, planemask;
-int 		n, i, j, bitsum;
-int		bitpos[sizeof(long) * 8];
+unsigned long	count;
+unsigned long		vmask = (1L<<DirectColor);
+int		n, i,  bitsum;
 
 
 	if( (vmask = visualsupported(display, vmask)) == 0L) {

@@ -242,7 +242,6 @@ Verify the event contained correct window.
 >>CODE
 XEvent	event;
 XAnyEvent *ep;
-int	callcnt;
 Block_Info info;
 int	block_status;
 Pixmap	pm;

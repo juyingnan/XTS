@@ -891,9 +891,6 @@ int pollreq;
 			(Xst_clients[client].cl_dpy) -> byte_order;
 		long flip = my_sex ^ server_sex;  /* assume MSBFirst == 1 */
 		int server_pad = (Xst_clients[client].cl_dpy) -> bitmap_pad;
-		int server_unit = (Xst_clients[client].cl_dpy) -> bitmap_unit;
-		int server_bitorder =
-			(Xst_clients[client].cl_dpy) -> bitmap_bit_order;
 		int src_width /*in bytes*/ =
 			(int)(((xPutImageReq *)rp)->width + 7) >> 3;
 		int dst_width /*in bytes*/ = src_width +
@@ -903,12 +900,6 @@ int pollreq;
 		char **dst = (&(Get_Display(client)->bufptr));
 		char *drop;
 
-/*****
-		if (server_bitorder != MSBFirst) {
-			Log_Err("LSBFirst bit ordering not supported in Send_Req()\n");
-			Abort();
-		}
-*****/
 		if (((xPutImageReq *)rp)->leftPad != 0)  {
 			Log_Err("leftPad != 0; not supported in Send_Req()\n");
 			Abort();

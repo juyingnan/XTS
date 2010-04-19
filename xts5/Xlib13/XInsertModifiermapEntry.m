@@ -135,7 +135,6 @@ static	struct	kcmod	kcmod[] = {
 };
 int 	i;
 int 	set;
-extern	int 	NS_modifier;
 
 	modmap = XNewModifiermap(0);
 	if (modmap == 0) {

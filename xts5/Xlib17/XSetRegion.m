@@ -137,7 +137,6 @@ Window			win;
 GC			gc;
 unsigned int    	width;
 unsigned int    	height;
-static XRectangle	cliprect2 = { 23, 13, 53, 63 };
 static XRectangle	cliprect = { 0,0, 1,1};
 
 	resetvinf(VI_WIN);

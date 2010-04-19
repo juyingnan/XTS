@@ -455,14 +455,8 @@ For all locales, build a variable list of one element,
 verify that a nested list is returned. 
 >>CODE
 #if XT_X_RELEASE > 4
-char cmd[32];
-int a1,cnt,tmp;
 char *plocale;
-XVaNestedList va;
-char *p;
-int *pi;
 /* SetICValues stuff */
-char 		*ic_name1, *ic_name2, *ic_name3;
 XIC ic;
 char *ic_name;
 ic_val_def *ic_val;
@@ -476,9 +470,8 @@ ic_val_def icv,*picv,*ret_icv;
 int nstyles = 0;
 int ncheck = 0;
 ic_list_def *ils;
-int type,dummy;
+int dummy;
 att_def *att,ret_att;
-char name_sub[128];
 char name[128];
 #endif
 
@@ -661,19 +654,13 @@ For all locales, build a variable list of two elements,
 verify that a nested list is returned. 
 >>CODE
 #if XT_X_RELEASE > 4
-char cmd[2][32];
-int a[2],cnt;
 char *plocale;
-XVaNestedList va;
-char *p;
-int *pi;
-int j,tmp;
 /* SetICValues stuff */
 XIC ic;
 char *ic_name;
 ic_val_def 	*ic_val;
 char 		*ic_name1, *ic_name2;
-ic_val_def 	icv1, icv2, *picv, *ret_icv1, *ret_icv2;
+ic_val_def	*picv;
 char *endlist = NULL;
 Display *dpy;
 XIM im = NULL;
@@ -684,13 +671,11 @@ ic_val_def icv,*ret_icv;
 int nstyles = 0;
 int ncheck = 0;
 ic_list_def *ils;
-int type, dummy;
+int dummy;
 att_def *att, ret_att;
-char name_sub[128];
 char name[128];
 XPointer	val1, val2;
 int		index1, index2;
-ic_val_def 	ic_val1, ic_val2, ic_val3;
 #endif
 
 #if XT_X_RELEASE > 4
@@ -898,20 +883,13 @@ argument as a parameter to a second nested list, verify that a nested
 list is returned. 
 >>CODE
 #if XT_X_RELEASE > 4
-int a1,cnt;
 char *plocale;
-XVaNestedList va,va2;
-char cmd[32];
-char va_cmd[32];
-char *p;
-int *pi;
-int tmp;
 /* SetICValues stuff */
 XIC ic;
 char *ic_name;
 ic_val_def 	*ic_val;
 char 		*ic_name1, *ic_name2;
-ic_val_def 	icv1, icv2, *picv, *ret_icv1, *ret_icv2;
+ic_val_def	*picv;
 char *endlist = NULL;
 Display *dpy;
 XIM im = NULL;
@@ -922,13 +900,11 @@ ic_val_def icv,*ret_icv;
 int nstyles = 0;
 int ncheck = 0;
 ic_list_def *ils;
-int type, dummy;
-att_def 	*att, *att1, ret_att;
-char name_sub[128];
+int dummy;
+att_def 	*att, ret_att;
 char 	name[128];
 XPointer	val1, val2;
 int		index1, index2;
-ic_val_def 	ic_val1, ic_val2, ic_val3;
 XVaNestedList	va_temp;
 #endif
 

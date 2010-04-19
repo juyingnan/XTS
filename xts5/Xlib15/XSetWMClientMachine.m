@@ -142,7 +142,6 @@ Release the allocated memory using XFree.
 Window	win;
 char	*str1 = "Xtest Client Machine String";
 char	*str[1];
-Status	status;
 char	**list_return;
 int	count_return;
 XTextProperty	tp, rtp;

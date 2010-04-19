@@ -299,7 +299,6 @@ XVisualInfo *vp;
 char *cp, *goodname, *casename;
 XColor casecol, testcol;
 unsigned long vmask = (1<<DirectColor)|(1<<PseudoColor)|(1<<GrayScale);
-unsigned short trunc;
 int		i;
 
 	if( (vmask = visualsupported(display, vmask)) == 0L) {
@@ -375,7 +374,6 @@ For each visual class DirectColor, PseudoColor and GrayScale:
 >>CODE BadValue
 XVisualInfo *vp;
 char *goodname;
-XColor namedcol, testcol, storedcol;
 unsigned long vmask = (1<<DirectColor)|(1<<PseudoColor)|(1<<GrayScale);
 
 	if( (vmask = visualsupported(display, vmask)) == 0L) {
@@ -498,7 +496,6 @@ For the visual classes DirectColor, PseudoColor and GrayScale :
 >>CODE BadName
 XVisualInfo *vp;
 char *badname;
-Status status;
 unsigned long vmask = (1<<DirectColor)|(1<<PseudoColor)|(1<<GrayScale);
 
 	if( (vmask = visualsupported(display, vmask)) == 0L) {

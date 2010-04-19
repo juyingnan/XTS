@@ -131,7 +131,6 @@ Setup_Extension_DeviceInfo(dmask)
     XDevice *dev;
     Bool nokeys, nobuttons, novaluators;
     unsigned int mask=0;
-    extern Display *Dsp;
     XDeviceInfoPtr list;
     XAnyClassPtr	any;
     XInputClassInfo *ip;

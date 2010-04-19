@@ -146,14 +146,12 @@ For a convex, concave and complex polygon :
       Verify that the entire drawable is W_BG.
 >>CODE
 int     loop;
-XImage		im;
 XVisualInfo	*vi;
 Region	reg;
 Window	win;
 GC	gc;
 unsigned int    width;
 unsigned int    height;
-int x;
 
 	resetvinf(VI_WIN);
 	nextvinf(&vi);

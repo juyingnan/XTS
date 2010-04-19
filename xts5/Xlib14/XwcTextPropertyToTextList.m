@@ -90,12 +90,6 @@ int x_init,
  *****/
     mod_stat()
     {
-	extern Display *dpy_save;
-	extern Window wid_save;
-	extern Pixmap pid_save;
-	extern GC gc_save;
-	extern XWindowAttributes wat_save;
-
         /*
          * insert modifications to saved data here
          */
@@ -120,7 +114,6 @@ int x_init,
         extern int  chkflg;
 	extern int  signal_status();
 	extern int  unexp_err();
-	extern char *svc_user_arg;
 	extern char *strcpy();
 
 /******
@@ -128,10 +121,7 @@ int x_init,
  ******/
 	char fmtstr[256], *call_string;
 	union msglst fmt_lst[1];        
-        int skip_pixcheck;
         Status ret_status ;
-
-        wchar_t *s  ;
 
 	int
 		ss_status,			  /* save stat return status */	

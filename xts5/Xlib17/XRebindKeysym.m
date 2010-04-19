@@ -157,7 +157,6 @@ XKeyEvent	ev;
 char	*astring = "Bound String";
 char	*modstring = "String to bind to modified key";
 static char	rstring[MAXRES] = "UninitializedBoundString."; 
-int		bb;
 KeySym	ksr;
 KeySym	modlist[5];
 KeySym	keylist[6];

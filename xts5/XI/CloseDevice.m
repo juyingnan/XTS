@@ -131,7 +131,7 @@ Try to grab the device from another client.
 >>CODE
 int 	ret;
 Window	w;
-int devicekeypress, saveid;
+int devicekeypress;
 XEventClass devicekeypressclass;
 Display *client1;
 XDevice *dev2;
@@ -248,7 +248,6 @@ to CloseDevice thaws the device and releases the queued events.
 >>CODE
 int 	ret, count=0;
 Window	w, w2;
-int saveid;
 XEventClass dkpclass, dkrclass;
 int dkp, dkr;
 Display *client1;

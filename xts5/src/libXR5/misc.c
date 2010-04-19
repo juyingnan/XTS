@@ -210,7 +210,6 @@ Colormap cmap;
 	extern void blowup();                                          
         extern int blowup_size,region_mode,PixPerCM;
         extern struct args regr_args;
-	extern Display *dpy_save;
 	extern XWindowAttributes wat_save;
 
 	Window b_win, n_win, key_win, highlight;

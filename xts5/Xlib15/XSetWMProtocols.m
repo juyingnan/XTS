@@ -137,7 +137,7 @@ Verify that the property value is correct.
 >>CODE
 Status		status;
 XVisualInfo	*vp;
-unsigned long	leftover, nitems, len;
+unsigned long	leftover, nitems;
 int		actual_format;
 Atom		actual_type;
 int		nats = 5;

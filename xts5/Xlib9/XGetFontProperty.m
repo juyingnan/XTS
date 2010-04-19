@@ -214,7 +214,6 @@ Verify that False is returned.
 >>CODE
 unsigned long	val;
 Bool	ret;
-int 	i;
 extern	XFontStruct	xtfont0;	/* Known good version */
 
 	font_struct = XLoadQueryFont(Dsp, "xtfont0");

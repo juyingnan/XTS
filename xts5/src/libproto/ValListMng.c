@@ -319,7 +319,6 @@ unsigned long mask;
 unsigned long value;
 {
     unsigned long rmask;
-    unsigned long new_size;
     CARD32 *valuePtr;
     int before;		/* number of values before this one */
     int after;		/* number of values after this one */
@@ -451,7 +450,6 @@ CARD16 *rmaskp16;
 unsigned long mask;
 {
     unsigned long rmask;
-    unsigned long   new_size;
     CARD32 *valuePtr;
     int before;		/* number of values before this one */
     int after;		/* number of values after this one */
@@ -1149,7 +1147,6 @@ Add_Counted_Bytes (reqp, bytep, nbytes)
 {
     unsigned long   nominal_size;
     unsigned char   *valuePtr;
-    unsigned long   valueLen;
 
     switch (reqp -> reqType) {
 	case X_ChangeHosts:

@@ -182,7 +182,6 @@ Verify that the call returned NoSymbol.
 int	maxi,mini;
 KeyCode	maxkc, minkc;
 KeySym	ks;
-int	kspkc;
 
 	XDisplayKeycodes(display, &mini, &maxi);
 	minkc = (KeyCode)mini;

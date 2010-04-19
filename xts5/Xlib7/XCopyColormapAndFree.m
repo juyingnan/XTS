@@ -121,11 +121,9 @@ XVisualInfo	*vp;
 unsigned long 	vmask = (1<<DirectColor)|(1<<PseudoColor)|(1<<GrayScale);
 XColor		*cellmap, *cellptr;
 XColor		cell;
-unsigned long	l;
 unsigned int	i;
-int		pathcnt = 0, size;
-XColor		color, color1, color2, ncol1, ncol2;
-Display		*disp2;
+int		size;
+XColor		color1, color2;
 
 
 	if( (vmask = visualsupported(display, vmask)) == 0L) {
@@ -233,7 +231,6 @@ unsigned long 	vmask = (1<<DirectColor)|(1<<PseudoColor)|(1<<GrayScale);
 XColor		*cellmap, *cellptr;
 XColor		cell;
 unsigned long	l;
-int		i;
 int		pathcnt = 0;
 int 	size;
 
@@ -360,12 +357,9 @@ static Bool check_rgb(dpy, cmap, xcp)
 Colormap	testcmap;
 XVisualInfo	*vp;
 unsigned long 	vmask = (1<<DirectColor)|(1<<PseudoColor)|(1<<GrayScale);
-XColor		*cellmap, *cellptr;
-XColor		cell;
-unsigned long	l;
 int	i;
-int		pathcnt = 0, size;
-XColor		color, ncol1, ncol2, cols[4];
+int		size;
+XColor		cols[4];
 Display		*disp2;
 unsigned long	pix[2];
 unsigned long	*copypix;

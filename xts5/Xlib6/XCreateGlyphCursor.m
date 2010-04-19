@@ -620,7 +620,6 @@ Call XCreateGlyphCursor with a source_char which is
 an undefined glyph in source_font.
 Verify that a BadValue error occurs.
 >>CODE BadValue
-Cursor qstat;
 
 /* Load xtfont0 using XLoadFont. */
 	source_font = XLoadFont(display, xtfont0);
@@ -653,7 +652,6 @@ Call XCreateGlyphCursor with a mask_char which is
 an undefined glyph in mask_font.
 Verify that a BadValue error occurs.
 >>CODE BadValue
-Cursor qstat;
 
 /* Load xtfont0 using XLoadFont. */
 	source_font = XLoadFont(display, xtfont0);

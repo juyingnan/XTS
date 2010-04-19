@@ -524,11 +524,9 @@ int compare_color;
 		    show_color = (!show_color);                           
      		else if ((kgi) &&(xev.xbutton.window == key[4]))	/* move to next error */
                 {
-              	    XEvent fake; 
                     int x_scan,y_scan;
                     XImage *ximage;                
                     unsigned long test_pixel, good_pixel;
-                    unsigned char test_monopix, good_monopix;
                     int begin_x;
                     short found_mismatch;
                     int old_x_scan,old_y_scan;      

@@ -122,11 +122,8 @@ char	*s;
 #undef XK_LATIN3 
 
 strtsym3()
-{ 
-int 	pass = 0, fail = 0;
-char	*symstr;
-KeySym	rsym;
-
+{
+	int	pass = 0, fail = 0;
 
 #ifdef XK_Hstroke
 	if(test(XK_Hstroke, "Hstroke") == 1)

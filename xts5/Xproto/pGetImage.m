@@ -130,10 +130,6 @@ static
 void
 tester()
 {
-	unsigned char *from;
-	unsigned char *to;
-	unsigned int len;
-
 	Create_Client(CLIENT);
 
 	win = Create_Default_Window(CLIENT);

@@ -203,7 +203,6 @@ Set child window border-pixmap to CopyFromParent.
 Ensure that window is mapped.
 Pixmap verify to check that border is correct.
 >>CODE
-Pixmap	pm;
 XVisualInfo	*vp;
 
 	for (resetvinf(VI_WIN); nextvinf(&vp); ) {

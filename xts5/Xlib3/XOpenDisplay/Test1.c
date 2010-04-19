@@ -139,7 +139,6 @@ int argc;
 char *argv[];
 {
 int		pass = 0, fail = 0;
-char		*res_name;
 char		*dispstr;
 char		*rdispstr;
 Display		*display;

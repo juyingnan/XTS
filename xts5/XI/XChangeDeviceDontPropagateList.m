@@ -298,7 +298,6 @@ Call xname with an invalid window id.  Verify that a BadWindow error is
 generated.
 >>CODE BadWindow
 int 	ret;
-int ximajor, first, err;
 
 	if (!Setup_Extension_DeviceInfo(KeyMask))
 	    {
@@ -324,7 +323,6 @@ Call xname with an invalid window id.  Verify that a BadWindow error is
 generated.
 >>CODE badmode
 int 	ret, badmode;
-int ximajor, first, err;
 
 	if (!Setup_Extension_DeviceInfo(KeyMask))
 	    {

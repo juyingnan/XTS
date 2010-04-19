@@ -172,7 +172,6 @@ int pollreq;
 {
 	XstDisplay *dpy = Get_Display(client);
 	unsigned long bytesToSend = rp->length << 2;
-	unsigned long n;
 	unsigned long newlen;
 	unsigned long bigRequestLength = 0;
 	unsigned long bigRequestsAreEnabled = 0;
@@ -522,7 +521,6 @@ int pollreq;
 	case X_ChangeFeedbackControl:
 		{
 		XID class;
-		extern char *FeedbackData;
 		send1(client,(long) ((xChangeFeedbackControlReq *)rp)->reqType);
 		send1(client,(long) ((xChangeFeedbackControlReq *)rp)->ReqType);
 		send2(client,(short) ((xChangeFeedbackControlReq *)rp)->length);
@@ -536,9 +534,6 @@ int pollreq;
 		send1(client,(long) ((xChangeFeedbackControlReq *)rp)->pad2);
 		class = *((char *)((xChangeFeedbackControlReq *)rp+1));
 		Send_Feedback_Control (client, class, (xChangeFeedbackControlReq *)rp+1);
-		/*
-		Send_Feedback_Control (client, class, FeedbackData);
-		*/
 		}
 		break;
 	case X_GetDeviceKeyMapping:

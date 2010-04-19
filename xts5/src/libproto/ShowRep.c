@@ -559,7 +559,6 @@ long bytes_given;
 		{
 		    unsigned short nhosts;
 		    xHostEntry *hp;
-		    char scratch[132];
 		    unsigned long hostname;
 		    int i;
 

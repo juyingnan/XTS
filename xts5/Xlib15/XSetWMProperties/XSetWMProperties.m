@@ -178,7 +178,6 @@ Window	win;
 char	*str1 = "Xtest test string1";
 char	*str2 = "Xtest test string2";
 char	*str[2];
-Status	status;
 char	**list_return;
 int	count_return;
 XTextProperty	tp, rtp;
@@ -285,7 +284,6 @@ Window	win;
 char	*str1 = "Xtest test string1";
 char	*str2 = "Xtest test string2";
 char	*str[2];
-Status	status;
 char	**list_return;
 int	count_return;
 XTextProperty	tp, rtp;
@@ -381,16 +379,10 @@ Verify that the number and value of the returned strings is correct.
 Release the allocated memory using XFreeStringList.
 >>CODE
 XVisualInfo	*vp;
-char	*nullstr = "<NULL>";
-char	**strpp, *strp;
 char	*str1 = "XTest string 1";
 char	*str2 = "XTest string 2";
 char	*prop[2];
-char	**rstrings = (char**) NULL;
-int	rcount = 0;
-int	i;
 XTextProperty	rtp;
-Status	status;
 char	**list_return;
 int	count_return;
 int	len;
@@ -798,7 +790,7 @@ Verify that the value is correct.
 >>CODE
 Window		win;
 XVisualInfo	*vp;
-XClassHint	classhint, retchint;
+XClassHint	classhint;
 int		reslen;
 char		*propp = NULL, *s;
 unsigned long	leftover, nitems, len;
