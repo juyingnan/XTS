@@ -38,6 +38,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., May 1998
 	Use tet_basename() instead of a local static version.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 

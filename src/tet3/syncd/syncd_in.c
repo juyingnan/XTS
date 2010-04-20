@@ -34,6 +34,8 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., November 1993
 	added transport-specific argument processing function
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

@@ -56,6 +56,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., December 1998
 	fixed a bug in the recursive copy detection code
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

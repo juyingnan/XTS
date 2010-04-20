@@ -41,6 +41,9 @@ MODIFICATIONS:
 	is now part of a test case's execution context
 	(see struct proctab in proctab.h)
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

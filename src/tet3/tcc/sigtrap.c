@@ -39,6 +39,8 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., March 1998
 	Arrange to interrupt looping directives on abort.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

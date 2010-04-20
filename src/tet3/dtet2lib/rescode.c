@@ -52,6 +52,9 @@ MODIFICATIONS:
 	Geoff Clare, UniSoft Ltd., Sept 1996
 	Moved tet_addresult() to here from xresd.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <string.h>

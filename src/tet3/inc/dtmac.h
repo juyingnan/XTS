@@ -51,6 +51,9 @@ MODIFICATIONS:
 	Added support for shared API libraries.
 	Changed MAX() and MIN() to TET_MAX() and TET_MIN().
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 /*

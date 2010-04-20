@@ -40,6 +40,8 @@ MODIFICATIONS:
 	In dofclose(), mark file as closed so that it doesn't get closed
 	again in ftfree().
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

@@ -39,6 +39,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., May 1998
 	Use tet_basename() in dtet2lib instead of tcc_basename().
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

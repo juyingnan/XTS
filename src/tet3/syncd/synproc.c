@@ -50,6 +50,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., July 1998
 	Always decode ASYNC request IC/TP numbers in trace messages.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

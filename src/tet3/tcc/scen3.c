@@ -37,6 +37,9 @@ MODIFICATIONS:
 	in remove_unneeded_scenarios(), restart the "for" loop after
 	removing a scenario
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

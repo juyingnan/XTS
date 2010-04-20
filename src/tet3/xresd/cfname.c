@@ -35,6 +35,8 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., November 1993
 	enhancements for FIFO transport interface
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

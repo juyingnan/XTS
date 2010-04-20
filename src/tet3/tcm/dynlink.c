@@ -50,6 +50,9 @@ DESCRIPTION:
 
 MODIFICATIONS:
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 /* TET_SHLIB_SOURCE implies TET_SHLIB */

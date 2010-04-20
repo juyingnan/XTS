@@ -55,6 +55,9 @@ MODIFICATIONS:
 	fixed bug whereby an existing journal file could be overwritten
 	when the -i option was used
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

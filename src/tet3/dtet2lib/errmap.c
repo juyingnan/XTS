@@ -44,6 +44,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., February 1998
 	Corrected mapping of ENOENT.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <errno.h>

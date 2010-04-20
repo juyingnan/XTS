@@ -35,6 +35,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., August 1996
 	added tet_tcmkalldirs(), tet_tcrmalldirs()
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include "dtmac.h"

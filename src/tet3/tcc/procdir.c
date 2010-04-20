@@ -49,6 +49,9 @@ MODIFICATIONS:
 	a test case that marked to be skipped.
 	Interrupt looping directives on abort.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

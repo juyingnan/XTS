@@ -35,6 +35,9 @@ MODIFICATIONS:
 	add a pool of re-usable buffers so that more than one tet_f2a()
 	value may be passed to a reporting function
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

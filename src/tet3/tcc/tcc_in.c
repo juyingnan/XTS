@@ -48,6 +48,9 @@ MODIFICATIONS:
 	(This must refer to an external interface - not "localhost"!)
 	Always use localhost when connecting to tccd on the local system.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #ifndef TET_LITE	/* -START-LITE-CUT- */

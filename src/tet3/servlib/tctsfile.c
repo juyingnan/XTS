@@ -42,6 +42,9 @@ MODIFICATIONS:
 	removed savedir parameter from tet_tctsmfiles()
 	(it doesn't do anything!)
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

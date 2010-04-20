@@ -45,6 +45,9 @@ MODIFICATIONS:
 	added a work-around for LINUX getopt() which scribbles on the argv
 	that is passed to it
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

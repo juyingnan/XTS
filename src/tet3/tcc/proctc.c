@@ -46,6 +46,9 @@ MODIFICATIONS:
 	Set pr_jnlstatus after each failure that skips to the end of the
 	current mode.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

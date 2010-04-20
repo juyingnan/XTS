@@ -35,6 +35,8 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., October 1994
 	added support for tet_msync()
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

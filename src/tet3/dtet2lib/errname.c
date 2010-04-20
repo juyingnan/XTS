@@ -37,6 +37,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., January 1993
 	Re-written to use the errmap structure.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

@@ -38,6 +38,9 @@ MODIFICATIONS:
 	Rewritten to use the errmap structure -
 	this avoids compiler "duplicate case in switch" messages.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

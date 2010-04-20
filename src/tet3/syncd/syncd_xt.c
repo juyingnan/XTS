@@ -39,6 +39,8 @@ MODIFICATIONS:
 	added t_sync() call to refresh the TP endpoint after the
 	dup/fork/exec in the parent
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

@@ -44,6 +44,9 @@ MODIFICATIONS:
 	Corrected return value for non-zero exit status on Win32 systems
 	where low 8 bits are zero.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

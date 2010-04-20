@@ -48,7 +48,10 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., July 1998
 	Added support for shared API libraries.
 	Changes for conformance with UNIX98.
- 
+
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

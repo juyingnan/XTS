@@ -39,6 +39,8 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., February 1995
 	changed to use O_NONBLOCK since XTI may not support FIONBIO
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

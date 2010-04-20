@@ -36,6 +36,8 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., December 1993
 	moved function from connect.c to here
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

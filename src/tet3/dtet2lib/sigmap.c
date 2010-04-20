@@ -50,6 +50,9 @@ MODIFICATIONS:
 	is visible when _POSIX_SOURCE is defined, where xx is a non-posix
 	signal and yy is not defined
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #ifndef _POSIX_SOURCE

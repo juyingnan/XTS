@@ -38,6 +38,9 @@ MODIFICATIONS:
 	use get_runtime_tsroot() instead of getdcfg("TET_TSROOT") to
 	determine the location of the runtime test suite root directory
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

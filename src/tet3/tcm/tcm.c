@@ -62,6 +62,9 @@ MODIFICATIONS:
 	Andrew Josey, The Open Group, February 2000
 	Add a cast to the call on tet_init_globals to placate the
 	latest g++ compiler.
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #ifdef __cplusplus

@@ -50,6 +50,9 @@ MODIFICATIONS:
 	Make rtab updates signal safe.
 	Changes for TETWare-Lite.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #ifndef TET_LITE /* -START-LITE-CUT- */

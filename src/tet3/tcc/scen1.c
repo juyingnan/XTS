@@ -50,6 +50,8 @@ MODIFICATIONS:
 	Functions previously in getline_tcc.c moved to here, and enhanced to
 	support multiple input files.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

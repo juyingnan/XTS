@@ -36,6 +36,9 @@ MODIFICATIONS:
 	Geoff Clare, UniSoft Ltd., August 1996
 	Missing <string.h>.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

@@ -43,6 +43,9 @@ MODIFICATIONS:
 	This is to cater for tests that alter the system time, and might
 	make tcc more robust on a heavily-loaded system as well.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

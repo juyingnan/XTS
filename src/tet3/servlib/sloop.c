@@ -37,6 +37,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., December 1996
 	removed (time_t == unsigned long) assumption for n-bit portability
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

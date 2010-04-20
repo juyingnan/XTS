@@ -47,6 +47,8 @@ MODIFICATIONS:
 	Changes for TETware.
 	This file is derived from d_tcc_bs.c in dTET2 R2.3.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

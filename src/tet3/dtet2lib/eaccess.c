@@ -41,6 +41,9 @@ MODIFICATIONS:
 	On UNIX systems, check group permissions w.r.t. supplementary
 	group IDs as well as against the egid.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

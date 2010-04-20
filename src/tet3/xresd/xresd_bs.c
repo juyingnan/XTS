@@ -38,6 +38,8 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., June 1997
 	added support for OP_XRSEND
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

@@ -37,6 +37,9 @@ MODIFICATIONS:
 	Geoff Clare, UniSoft Ltd., July 1996
 	Changes for TETWare.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

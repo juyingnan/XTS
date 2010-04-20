@@ -42,6 +42,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., July 1998
 	moved tet_root[] to dtet2lib/globals.c
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

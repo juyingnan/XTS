@@ -67,6 +67,9 @@ MODIFICATIONS:
 	handle the largest +ve syncpoint number correctly;
 	prevent syncpoint numbers from wrapping round zero
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

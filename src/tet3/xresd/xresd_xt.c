@@ -41,7 +41,9 @@ MODIFICATIONS:
 
 	Andrew Dingwall, UniSoft Ltd., July 1998
 	Changed tet_calls[] from (struct t_call) to (struct t_call *).
- 
+
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

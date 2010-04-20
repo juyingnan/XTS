@@ -41,6 +41,9 @@ MODIFICATIONS:
 	added support the MT DLL version of the C runtime support library
 	on Win32 systems
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #if defined(SVR2) || defined(BSD42) || defined(BSD43)

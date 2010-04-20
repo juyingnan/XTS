@@ -34,6 +34,9 @@ MODIFICATIONS:
 	Geoff Clare, UniSoft Ltd., August 1996
 	Forward trace flags from MTCC to MTCM via TCCD.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #ifndef NOTRACE

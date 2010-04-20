@@ -39,6 +39,8 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., May 1997
 	port to Windows 95
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

@@ -37,6 +37,9 @@ MODIFICATIONS:
 		needed for transports (like FIFO) that don't use the
 		byte stream routines
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

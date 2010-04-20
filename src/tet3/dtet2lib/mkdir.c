@@ -36,7 +36,9 @@ MODIFICATIONS:
 
 	Andrew Dingwall, UniSoft Ltd., July 1998
 	Extended the Windows 95 errno band-aid code to Windows NT as well.
- 
+
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

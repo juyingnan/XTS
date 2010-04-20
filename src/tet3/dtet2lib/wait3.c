@@ -37,6 +37,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., November 1992
 	Made call to waitpid() the default.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 

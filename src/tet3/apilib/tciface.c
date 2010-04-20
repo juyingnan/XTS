@@ -101,6 +101,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., January 1998
 	Permit the iclist to include IC 0.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include "dtmac.h"

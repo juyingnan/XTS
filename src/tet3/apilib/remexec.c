@@ -78,7 +78,10 @@ MODIFICATIONS:
 	Added support for shared API libraries.
 	Send TET_ROOT and TET_EXECUTE environment variables to tccd
 	as part of the remote configuration process.
- 
+
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #ifndef TET_LITE /* -START-LITE-CUT- */

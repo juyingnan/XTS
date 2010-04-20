@@ -30,6 +30,9 @@ MODIFICATIONS:
 	Use tet_remsync() instead of (deprecated) tet_sync().
 	Added tp2.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdlib.h>

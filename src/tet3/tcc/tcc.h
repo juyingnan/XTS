@@ -36,7 +36,10 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., July 1998
 	Changes to support %include in scenario files.
 	Added support for shared API libraries.
- 
+
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include "tet_api.h"

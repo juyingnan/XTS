@@ -32,6 +32,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., December 1997
 	added pr_distflag flag to the proctab execution context
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 /*

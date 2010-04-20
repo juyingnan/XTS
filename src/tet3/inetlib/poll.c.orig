@@ -37,7 +37,10 @@ MODIFICATIONS:
 	modifications any more.
 	Provision of FD_SET macro and friends now only if _XOPEN_SOURCE
 	is not defined.
- 
+
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <errno.h>

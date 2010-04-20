@@ -36,6 +36,9 @@ MODIFICATIONS:
 	added setsid() call to support POSIX-only systems
 	(mainly for the FIFO implementation)
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

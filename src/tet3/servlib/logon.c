@@ -39,6 +39,8 @@ MODIFICATIONS:
 	enhancements for FIFO transport interface
 	removed disconnect stuff
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

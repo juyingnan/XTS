@@ -41,7 +41,9 @@ MODIFICATIONS:
 	Protected references to constants defined in XTI but not in TLI
 	with #ifdefs so as to enable this file to be compiled on a system
 	that only supports TLI.
- 
+
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

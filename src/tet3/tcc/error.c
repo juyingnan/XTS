@@ -44,6 +44,9 @@ MODIFICATIONS:
 	replaced references to sys_errlist[] and sys_nerr with
 	a call to strerror()
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

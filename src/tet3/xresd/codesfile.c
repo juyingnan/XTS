@@ -38,6 +38,8 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., August 1996
 	moved rescode stuff to dtet2lib
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

@@ -45,7 +45,10 @@ MODIFICATIONS:
 	Enable the tccd port number to be specified in the systems file.
 	Added support for shared API libraries.
 	Changes to conform to UNIX98.
- 
+
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdlib.h>

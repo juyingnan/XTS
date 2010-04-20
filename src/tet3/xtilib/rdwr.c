@@ -40,6 +40,9 @@ MODIFICATIONS:
 	Geoff Clare, UniSoft Ltd., Oct 1996
 	Added tet_ts_startup().
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

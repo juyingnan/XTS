@@ -36,6 +36,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., March 1998
 	added support for number ranges in directive arguments
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <string.h>

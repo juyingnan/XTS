@@ -35,6 +35,9 @@ MODIFICATIONS:
 	moved the ioctl() call from dtet2lib/fionbio.c to here
 	(this is to make dtet2lib POSIX-clean)
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <sys/types.h>

@@ -50,7 +50,10 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., July 1998
 	Added support for shared API libraries.
 	Moved tet_getsysbyid() to a separate file.
- 
+
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include "dtmac.h"

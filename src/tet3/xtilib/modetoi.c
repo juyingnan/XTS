@@ -36,7 +36,10 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., July 1998
 	Renamed the local variable tet_tpi_mode as tpi_mode so as to
 	avoid confusion with the global variable called tet_tpi_mode.
- 
+
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <sys/types.h>

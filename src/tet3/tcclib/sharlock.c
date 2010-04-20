@@ -39,6 +39,8 @@ MODIFICATIONS:
 	Added an extra salt character to the unique file name in order
 	to enable more processes to share a lock.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

@@ -55,7 +55,10 @@ MODIFICATIONS:
 	Added support for shared API libraries.
 	Note that this includes a change to the calling convention for
 	child processes.
- 
+
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #ifdef __cplusplus

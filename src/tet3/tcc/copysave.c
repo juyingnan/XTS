@@ -43,6 +43,9 @@ MODIFICATIONS:
 	in tcc_rmtmpdir(), don't check for being in the tmpdir subtree
 	if we haven't changed directory yet
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

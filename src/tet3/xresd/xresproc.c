@@ -68,6 +68,8 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., October 1997
 	if a TP doesn't register a result, use NORESULT instead of UNRESOLVED
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
 
 ************************************************************************/
 

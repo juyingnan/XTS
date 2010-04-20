@@ -56,6 +56,9 @@ MODIFICATIONS:
 	In TETware-Lite, write the local system's per-system configurations
 	to the temporary files instead of the master configurations.
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>

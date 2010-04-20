@@ -38,6 +38,9 @@ MODIFICATIONS:
 	check each environment string for valid format before sending
 	it to tccd on system 0
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #ifndef TET_LITE	/* -START-LITE-CUT- */

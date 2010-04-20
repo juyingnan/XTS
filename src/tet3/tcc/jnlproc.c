@@ -40,6 +40,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., December 1997
 	replaced SCF_DIST scenario flag with pr_distflag proctab flag
 
+	Aaron Plattner, April 2010
+	Fixed warnings when compiled with GCC's -Wall option.
+
 ************************************************************************/
 
 #include <stdio.h>
