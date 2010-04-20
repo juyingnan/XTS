@@ -694,7 +694,7 @@ int compare_color;
                 XDrawRectangle(vdisplay,window,rect_gc,start_x-windx,start_y-windy,pixels_across,pixels_across);
                 if ((pixel_wrong)&&(show_color))
                 {                                                
-      	            (void)sprintf(xypair, " Expect = %X        ",expected_pixel);
+      	            (void)sprintf(xypair, " Expect = %lX        ", expected_pixel);
 	    	    XDrawImageString(vdisplay, exp_win, textgc, 2, 10, xypair, 18);
                 }
                 else

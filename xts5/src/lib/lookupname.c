@@ -209,7 +209,7 @@ unsigned long	masks;
 	bp = (char*)malloc(size+sizeof("UNDEFINED BITS(0xffffffff)"));
 	if (bp == (char*)0) {
 		/* Just return the value */
-		sprintf(buf, "(0x%x)", val);
+		sprintf(buf, "(0x%lx)", val);
 		return(buf);
 	}
 
@@ -230,7 +230,7 @@ unsigned long	masks;
 	if (val & (~masks)) {
 		if (*bp != 0)
 			strcat(bp, "|");
-		sprintf(buf, "UNDEFINED BITS(0x%x)", val & (~masks));
+		sprintf(buf, "UNDEFINED BITS(0x%lx)", val & (~masks));
 		strcat(bp, buf);
 	}
 	return(bp);
@@ -348,7 +348,7 @@ unsigned long	masks;
 	bp = (char*)malloc(size+sizeof("UNDEFINED BITS(0xffffffff)"));
 	if (bp == (char*)0) {
 		/* Just return the value */
-		sprintf(buf, "(0x%x)", val);
+		sprintf(buf, "(0x%lx)", val);
 		return(buf);
 	}
 
@@ -369,7 +369,7 @@ unsigned long	masks;
 	if (val & (~masks)) {
 		if (*bp != 0)
 			strcat(bp, "|");
-		sprintf(buf, "UNDEFINED BITS(0x%x)", val & (~masks));
+		sprintf(buf, "UNDEFINED BITS(0x%lx)", val & (~masks));
 		strcat(bp, buf);
 	}
 	return(bp);
@@ -431,7 +431,7 @@ unsigned long	masks;
 	bp = (char*)malloc(size+sizeof("UNDEFINED BITS(0xffffffff)"));
 	if (bp == (char*)0) {
 		/* Just return the value */
-		sprintf(buf, "(0x%x)", val);
+		sprintf(buf, "(0x%lx)", val);
 		return(buf);
 	}
 
@@ -452,7 +452,7 @@ unsigned long	masks;
 	if (val & (~masks)) {
 		if (*bp != 0)
 			strcat(bp, "|");
-		sprintf(buf, "UNDEFINED BITS(0x%x)", val & (~masks));
+		sprintf(buf, "UNDEFINED BITS(0x%lx)", val & (~masks));
 		strcat(bp, buf);
 	}
 	return(bp);
@@ -1307,7 +1307,7 @@ unsigned long	masks;
 	bp = (char*)malloc(size+sizeof("UNDEFINED BITS(0xffffffff)"));
 	if (bp == (char*)0) {
 		/* Just return the value */
-		sprintf(buf, "(0x%x)", val);
+		sprintf(buf, "(0x%lx)", val);
 		return(buf);
 	}
 
@@ -1328,7 +1328,7 @@ unsigned long	masks;
 	if (val & (~masks)) {
 		if (*bp != 0)
 			strcat(bp, "|");
-		sprintf(buf, "UNDEFINED BITS(0x%x)", val & (~masks));
+		sprintf(buf, "UNDEFINED BITS(0x%lx)", val & (~masks));
 		strcat(bp, buf);
 	}
 	return(bp);

@@ -109,6 +109,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 #include <config.h>
 #endif
 
+#include <inttypes.h>
 #include <stdio.h>                                   
 #include <string.h>
 #include <r5structs.h>                                   
@@ -148,19 +149,19 @@ message(char *fmtstr, union msglst f_lst[], int f_cnt)
                     tmpptr1 = &tmpstr1[0]; 
 		    switch (char_type) {		             
 		    case 'd' :
-                        (void)sprintf(tmpstr1,"%d",f_lst[i].typ_dec);
+                        (void)sprintf(tmpstr1,"%ld", f_lst[i].typ_dec);
 		     	break;
 		    case 'o' :
-		   	(void)sprintf(tmpstr1,"%o",f_lst[i].typ_oct);
+		   	(void)sprintf(tmpstr1,"%lo", f_lst[i].typ_oct);
 		    	break;
 		    case 'x' :
-		    	(void)sprintf(tmpstr1,"%x",f_lst[i].typ_hex);
+		    	(void)sprintf(tmpstr1,"%lx", f_lst[i].typ_hex);
 		    	break;
 		    case 'u' :
-		    	(void)sprintf(tmpstr1,"%u",f_lst[i].typ_uns);
+		    	(void)sprintf(tmpstr1,"%lu", f_lst[i].typ_uns);
 		    	break;
 		    case 'c' :
-		        (void)sprintf(tmpstr1,"%c",f_lst[i].typ_cha);
+		        (void)sprintf(tmpstr1,"%c", f_lst[i].typ_cha);
 		    	break;
 		    case 's' :
                         tmpptr1 = f_lst[i].typ_str;
@@ -172,7 +173,7 @@ message(char *fmtstr, union msglst f_lst[], int f_cnt)
 		    	(void)sprintf(tmpstr1,"%e",f_lst[i].typ_dou);
 		    	break;
 		    case 'a' :			/* this is for addresses - type ADDRESS is regrdef.h */
-		    	(void)sprintf(tmpstr1,"%u",f_lst[i].typ_adr); /* DEC address are unsigned long */
+			(void)sprintf(tmpstr1,"%" PRIuPTR, (uintptr_t)f_lst[i].typ_adr);
 			break;
 		    default:
 		        sprintf(ebuf, "Programming error calling message type %%%c not supported or\n",*fmtptr);

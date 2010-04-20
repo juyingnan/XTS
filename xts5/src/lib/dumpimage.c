@@ -152,9 +152,9 @@ static	int 	lasttest;
 			/* count is 0 on the first time through */
 			if (pix != lastpix || count == 0) {
 				if (count == 1) {
-					fprintf(fp, "%x\n", lastpix);
+					fprintf(fp, "%lx\n", lastpix);
 				} else if (count != 0) {
-					fprintf(fp, "%x,%x\n", count, lastpix);
+					fprintf(fp, "%lx,%lx\n", count, lastpix);
 				}
 				lastpix = pix;
 				count = 1;
@@ -164,9 +164,9 @@ static	int 	lasttest;
 		}
 	}
 	if (count == 1) {
-		fprintf(fp, "%x\n", lastpix);
+		fprintf(fp, "%lx\n", lastpix);
 	} else if (count != 0) {
-		fprintf(fp, "%x,%x\n", count, lastpix);
+		fprintf(fp, "%lx,%lx\n", count, lastpix);
 	}
 	fclose(fp);
 }

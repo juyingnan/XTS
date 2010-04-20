@@ -1286,16 +1286,16 @@ Winh	*winh;
 		(void) fprintf(stderr, "%sWindow: None",
 			in);
 	else
-		(void) fprintf(stderr, "%sWindow: 0x%x",
-			in, winh->window);
+		(void) fprintf(stderr, "%sWindow: 0x%lx",
+			in, (unsigned long)winh->window);
 	if (winh->parent == (Winh *) NULL)
 		(void) fprintf(stderr, ", Parent: None\n");
 	else
-		(void) fprintf(stderr, ", Parent: 0x%x\n",winh->parent->window);
+		(void) fprintf(stderr, ", Parent: 0x%lx\n", (unsigned long)winh->parent->window);
 	(void) fprintf(stderr, "%sFirstborn: %s, Children: %2d\n",
 		in,
 		(FIRSTBORN(winh) ? "Yes" : "No "), winh->numchildren);
-	(void) fprintf(stderr, "%sValuemask: 0x%04x, Winhmask: 0x%04x\n",
+	(void) fprintf(stderr, "%sValuemask: 0x%04lx, Winhmask: 0x%04lx\n",
 		in,
 		winh->valuemask, winh->winhmask);
 	if (winh->valuemask != 0) {

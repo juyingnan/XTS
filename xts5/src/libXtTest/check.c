@@ -150,7 +150,7 @@ size_t	ref_size;
 	tet_infoline(ebuf);
 
 	if (data_size != ref_size) {
-		sprintf(ebuf, "ERROR: Size of %s is %d, expected %d (size of %s)", data_object, data_size, ref_size, ref_object);
+		sprintf(ebuf, "ERROR: Size of %s is %zd, expected %zd (size of %s)", data_object, data_size, ref_size, ref_object);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
 		return 1;
