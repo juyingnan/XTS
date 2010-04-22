@@ -38,6 +38,10 @@ XTS_CONFIG = TET_ROOT='$(top_srcdir)' XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
 tetexec.cfg: tetexec.cfg.in $(srcdir)/bin/xts-config
 	$(AM_V_GEN)$(XTS_CONFIG) < $< > $@.tmp && mv -f $@.tmp $@ || rm -f $@.tmp
 check-local: tetexec.cfg
+	@if test -z "$$DISPLAY"; then \
+		echo "DISPLAY not set"; \
+		exit 1; \
+	fi
 	@outdir="$(top_builddir)/results/`date +%F-%T`"; \
 	  echo $(run_tcc) -i "$$outdir" xts5 $(scenario); \
 	  $(run_tcc) -i "$$outdir" xts5 $(scenario); \
@@ -45,6 +49,7 @@ check-local: tetexec.cfg
 	  echo $(report) -f "$$outdir/journal" ">" "$$outdir/summary"; \
 	  $(report) -f "$$outdir/journal" > "$$outdir/summary"; \
 	  exit $$ret
+
 
 # Helpful pattern target for testing subsets (test-Xopen, etc.)
 test-%:
