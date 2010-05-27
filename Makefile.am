@@ -6,9 +6,14 @@ tetexec.cfg:
 	@rm -f xts5/$@
 	@cd xts5 && $(MAKE) $(AM_MAKEFLAGS) $@
 
-# Helper target for testing subsets
+# "make check" testing. Override the test set with scenario.
+scenario =
+check-local: check.sh
+	$(SHELL) $(builddir)/check.sh $(scenario)
+
+# Helper target for testing subsets (test-Xopen, etc.)
 test-%:
-	@cd xts5 && $(MAKE) $(AM_MAKEFLAGS) $@
+	@$(MAKE) $(AM_MAKEFLAGS) check scenario='$*'
 
 logfile:
 	cd xts5 && $(MAKE) logfile

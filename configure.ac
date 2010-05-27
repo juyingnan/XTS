@@ -111,6 +111,7 @@ m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])],
 
 AC_CONFIG_FILES([
 Makefile
+check.sh
 src/Makefile
 src/tet3/Makefile
 src/tet3/apilib/Makefile
@@ -153,6 +154,10 @@ xts5/Xlib16/Makefile
 xts5/Xlib17/Makefile
 xts5/XIproto/Makefile
 xts5/XI/Makefile
+])
+
+AC_CONFIG_COMMANDS([mode],[
+chmod +x check.sh
 ])
 
 AC_OUTPUT

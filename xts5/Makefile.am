@@ -26,29 +26,11 @@ bin/xts-config: bin/xts-config.in
 bin/xts-run: bin/xts-run.in
 	$(AM_V_GEN)$(EDIT) < $< > $@
 
-# Setup for testing
-TCC = $(top_builddir)/src/tet3/tcc/tcc$(EXEEXT)
-run_tcc = TET_ROOT='$(top_srcdir)' $(TCC) -e -a '$(abs_builddir)' \
-	-x tetexec.cfg
-report = $(builddir)/src/bin/reports/xts-report$(EXEEXT) -d2
-scenario =
+# Config file generation for in-tree testing
 XTS_CONFIG = TET_ROOT='$(top_srcdir)' XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
 	$(PERL) -p $(srcdir)/bin/xts-config
-
 tetexec.cfg: tetexec.cfg.in $(srcdir)/bin/xts-config
 	$(AM_V_GEN)$(XTS_CONFIG) < $< > $@.tmp && mv -f $@.tmp $@ || rm -f $@.tmp
-check-local: tetexec.cfg
-	@outdir="$(top_builddir)/results/`date +%F-%T`"; \
-	  echo $(run_tcc) -i "$$outdir" xts5 $(scenario); \
-	  $(run_tcc) -i "$$outdir" xts5 $(scenario); \
-	  ret=$$?; \
-	  echo $(report) -f "$$outdir/journal" ">" "$$outdir/summary"; \
-	  $(report) -f "$$outdir/journal" > "$$outdir/summary"; \
-	  exit $$ret
-
-# Helpful pattern target for testing subsets (test-Xopen, etc.)
-test-%:
-	@$(MAKE) $(AM_MAKEFLAGS) check scenario='$*'
 
 # Store results in xts5/results/YYYY-mm-dd-HH:mm.xzy
 logfile:

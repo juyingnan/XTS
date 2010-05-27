@@ -1,0 +1,42 @@
+#!/bin/sh
+
+# Various source tree directories
+srcdir="@srcdir@"
+builddir="@builddir@"
+
+# xts variables
+TET_ROOT="$srcdir"
+TET_EXECUTE="$builddir/xts5"
+export TET_ROOT TET_EXECUTE
+
+# Program variables
+EXEEXT=@EXEEXT@
+SHELL="@SHELL@"
+PERL="@PERL@"
+XSET="@XSET@"
+XDPYINFO="@XDPYINFO@"
+export XSET XDPYINFO
+
+TCC="$builddir/src/tet3/tcc/tcc$EXEEXT"
+XTS_REPORT="$builddir/xts5/src/bin/reports/xts-report$EXEEXT"
+XTS_CONFIG="$builddir/xts5/bin/xts-config"
+XTS_RUN="$builddir/xts5/bin/xts-run"
+export TCC XTS_REPORT XTS_CONFIG
+
+config="$builddir/xts5/tetexec.cfg"
+config_in="$srcdir/xts5/tetexec.cfg.in"
+
+#run_tcc = TET_ROOT='$(top_srcdir)' $(TCC) -e -a '$(abs_builddir)' \
+#        -x tetexec.cfg
+#XTS_CONFIG = TET_ROOT='$(top_srcdir)' XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
+#        $(PERL) -p $(srcdir)/bin/xts-config
+
+if [ ! -f "$config" ]; then
+    trap 'rm -f "$config"' 0 1 2 3 15
+    if ! "$PERL" "$XTS_CONFIG" < "$config_in" > "$config"; then
+        echo "error: failed to create config file $config" >&2
+        exit 1
+    fi
+fi
+
+exec "$SHELL" "$XTS_RUN" -c "$config" -o results "$@"

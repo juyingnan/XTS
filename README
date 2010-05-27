@@ -30,7 +30,13 @@ The build and install are now straightforward:
 Running the Tests
 =================
 The tests can be run from the build directory or from the installed
-package. The "make check" framework can be used from the build tree.
+package. The check.sh script sets up the environment to run tests from
+the build tree.
+
+	$ ./check.sh	# run all the tests
+	$ ./check.sh XI	# run just the XI test scenario
+
+The "make check" framework can also be used from the build tree.
 
 	$ make check			# run all the tests
 	$ make check scenario=XI	# run just the XI test scenario
