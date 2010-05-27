@@ -31,9 +31,3 @@ XTS_CONFIG = TET_ROOT='$(top_srcdir)' XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
 	$(PERL) -p $(srcdir)/bin/xts-config
 tetexec.cfg: tetexec.cfg.in $(srcdir)/bin/xts-config
 	$(AM_V_GEN)$(XTS_CONFIG) < $< > $@.tmp && mv -f $@.tmp $@ || rm -f $@.tmp
-
-# Store results in xts5/results/YYYY-mm-dd-HH:mm.xzy
-logfile:
-	date=`date +%F-%R`.XXXXX && \
-	XTS_RESULTS_DIR=`mktemp -d --tmpdir=$(top_srcdir)/xts5/results $$date` && \
-	cat $(LOGFILES) > $$XTS_RESULTS_DIR/xts.log

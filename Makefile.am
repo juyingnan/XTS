@@ -14,6 +14,3 @@ check-local: check.sh
 # Helper target for testing subsets (test-Xopen, etc.)
 test-%:
 	@$(MAKE) $(AM_MAKEFLAGS) check scenario='$*'
-
-logfile:
-	cd xts5 && $(MAKE) logfile
