@@ -21,10 +21,10 @@
 # Process this file with autoconf to produce a configure script
 
 AC_PREREQ(2.57)
-AC_INIT([xtest],
+AC_INIT([X Test Suite],
         1.0.0,
         [http://xorg.freedesktop.org/wiki/BuildingXtest],
-        XTest)
+        [xts])
 
 AC_CONFIG_SRCDIR([Makefile.am])
 AC_CONFIG_AUX_DIR(.)
