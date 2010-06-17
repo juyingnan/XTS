@@ -22,7 +22,7 @@
 
 AC_PREREQ(2.57)
 AC_INIT([X Test Suite],
-        1.0.0,
+        [0.99.0],
         [http://xorg.freedesktop.org/wiki/BuildingXtest],
         [xts])
 
