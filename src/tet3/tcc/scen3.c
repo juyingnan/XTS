@@ -83,19 +83,13 @@ char *scenario;
 {
 	register struct scentab *ep;
 	struct scentab *myscen = (struct scentab *) 0;
-	int cwd_prefix;
-
-	/* If the scenario has the current directory "./" prefix,
-	 * also check for the non-prefixed name */
-	cwd_prefix = (!strncmp(scenario, "./", 2)) ? 1 : 0;
 
 	/* set the SCF_NEEDED flag in the chosen scenario */
 	TRACE1(tet_Tscen, 1, "proc3sctree(): marking needed scenarios");
 	for (ep = sctree; ep; ep = ep->sc_forw) {
 		ASSERT(ep->sc_magic == SC_MAGIC);
 		ASSERT(ep->sc_type == SC_SCENARIO);
-		if (!strcmp(ep->sc_scenario, scenario) ||
-		    (cwd_prefix && !strcmp(ep->sc_scenario, &scenario[2]))) {
+		if (!strcmp(ep->sc_scenario, scenario)) {
 			TRACE2(tet_Tscen, 6, "chosen scenario %s is needed",
 				ep->sc_scenario);
 			ep->sc_flags |= SCF_NEEDED;
