@@ -315,7 +315,7 @@ static void print_summary(struct proctab *prp)
 	if (prp->pr_nfail > 0)
 		rlen = snprintf(report, sizeof(report),
 				"%d of %d %s failed",
-				prp->pr_ntests, prp->pr_nfail,
+				prp->pr_nfail, prp->pr_ntests,
 				(prp->pr_ntests > 0) ? "tests" : "test");
 	else
 		rlen = snprintf(report, sizeof(report),
