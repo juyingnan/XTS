@@ -381,7 +381,6 @@ char	**argv;
 						tet_resulttostatus(ret));
 				tet_icend(icnum, tpcount);
 			}
-	printf("%s%s: %s\n", tsname, tcname, tet_getstatusname(status));
 
 	/* unexpected signals are fatal during cleanup */
 	setsigs(sigabandon);

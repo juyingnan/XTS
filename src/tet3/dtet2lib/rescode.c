@@ -94,23 +94,6 @@ struct restab *tet_restab;
 int tet_nrestab;
 static int lrestab;
 
-/* structure of an entry in the status code table */
-struct statustab {
-	char *st_name;	/* status name */
-	int st_code;	/* status code */
-};
-
-/* default status code table */
-static struct statustab tet_statustab[] = {
-    { "PASS",     TET_EXIT_SUCCESS      },
-    { "FAIL",     TET_EXIT_FAILURE      },
-    { "SKIP",     TET_EXIT_SKIP         },
-};
-
-#define Ntet_statustab	(sizeof(tet_statustab) / sizeof(tet_statustab[0]))
-
-static char invalid_status[] = "INVALID STATUS";
-
 /* static function declarations */
 static void badresline PROTOLIST((char *, int, char *));
 static struct restab *getrtbycode PROTOLIST((int));
@@ -511,22 +494,6 @@ register int lastresult, thisresult;
 			return(lastresult);
 		}
 	}
-}
-
-/*
-**	tet_getstatusname() - look up status code in the status table;
-**		return name if found, otherwise a default string
-*/
-
-char *tet_getstatusname(status)
-int status;
-{
-	register struct statustab *stp;
-
-	for (stp = tet_statustab; stp < tet_statustab + Ntet_statustab; stp++)
-		if (stp->st_code == status)
-			return stp->st_name;
-	return invalid_status;
 }
 
 /*
