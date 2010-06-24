@@ -2,17 +2,20 @@
 #
 # $XConsortium: pt,v 1.2 92/06/30 17:32:56 rws Exp $
 #
-# Flags accepted.
-#  -v XT_VARIABLE_NAME=Value       Add a variable setting
-#  -d display                      Set the display
-#  -i <IC's>                       List of IC's to do
-#  -p                              Do pixmaps only.
-#  -w                              Do windows only.
-#  -P                              Pause after each drawing.
-#  -D                              Do default depth of screen only.
-#  -x <lev>                        Set debug level
-#  -g                              Generate pixmaps.
-#  -m                              Use macro version of function.
+usage () {
+echo "Flags accepted.
+      -v XT_VARIABLE_NAME=Value       Add a variable setting
+      -d display                      Set the display
+      -i <IC's>                       List of IC's to do
+      -p                              Do pixmaps only.
+      -w                              Do windows only.
+      -P                              Pause after each drawing.
+      -D                              Do default depth of screen only.
+      -x <lev>                        Set debug level
+      -g                              Generate pixmaps.
+      -m                              Use macro version of function.
+"
+}
 
 # The display defaults to $DISPLAY
 #
@@ -64,6 +67,10 @@ do
 	-m)
 		PROG=./MTest
 		;;
+        -h)
+                usage
+                exit 0
+                ;;
 	*)
 		PROG=$1
 		;;
