@@ -22,6 +22,7 @@ SOFTWARE.
 Modifications:
 	2010/06/24 - add config setting retrieval from environment.
 		   - make all config parameters optional.
+		   - set some sane defaults
 
 */
 
@@ -377,7 +378,19 @@ struct	getparam	*gp;
 void
 initconfig(void)
 {
+        /* set some sane defaults. the strdups might leak, I don't care */
+	config.coverage = 1;
+	config.display = strdup(":0");
+	config.extensions = 1;
+	config.tcp = 1;
+	config.fontpath_bad = strdup("built-ins");
+	config.speedfactor = 1;
+	config.reset_delay = 1;
+	config.protocol_version = 11;
+	config.protocol_revision = 0;
+	config.posix_system = 1;
+	config.local = 1;
+
 	_initconfig(tet_getvar);
 	_initconfig(getenv);
-
 }
