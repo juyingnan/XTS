@@ -1,4 +1,30 @@
 /*
+Copyright (c) 2010 Red Hat, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Modifications:
+	2010/06/24 - add config setting retrieval from environment.
+
+*/
+
+/*
 Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -289,6 +315,7 @@ struct	getparam parm[] = {
 	{"XT_FONTSET", T_STRING, (char*)&ximconfig.fontsets, 0},
 	{"XT_SAVE_IM", T_YESNO, (char*)&ximconfig.save_im, 0},
 
+	{"DISPLAY", T_STRING, (char*)&config.display, 0}
 };
 
 /*
@@ -296,13 +323,13 @@ struct	getparam parm[] = {
  * parameters.
  */
 void
-initconfig()
+_initconfig(char* (*getvar)(const char *))
 {
 char	*var;
 struct	getparam	*gp;
 
 	for (gp = parm; gp < parm+NELEM(parm); gp++) {
-		var = tet_getvar(gp->name);
+		var = getvar(gp->name);
 		if (var == NULL) {
 			if (!(gp->flags&(FL_OPTIONAL|FL_DEBUG)))
 				report("Required parameter %s was not set", gp->name);
@@ -344,4 +371,12 @@ struct	getparam	*gp;
 			break;
 		}
 	}
+}
+
+void
+initconfig(void)
+{
+	_initconfig(tet_getvar);
+	_initconfig(getenv);
+
 }
