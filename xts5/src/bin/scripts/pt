@@ -22,6 +22,8 @@ trap "rm -f CONFIG" 0
 ICS=
 echo > CONFIG
 
+GDB=""
+
 while [ $# -gt 0 ]
 do
 	case $1 in
@@ -55,6 +57,9 @@ do
 		;;
 	-g)
 		PROG=./pvgen
+		;;
+	-gdb)
+		GDB=gdb
 		;;
 	-m)
 		PROG=./MTest
@@ -101,5 +106,5 @@ export TET_CODE
 rm -f Err*.err
 
 env | grep TET
-$PROG $ICS
+$GDB $PROG $ICS
 
