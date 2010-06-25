@@ -104,7 +104,7 @@ int NumKeys,
     ButtonMapLength,
     nclass,
     nevent,
-    event_types[32],
+    event_types[LASTEvent - 2], /* 0 and 1 are reply/error */
     MinKeyCode, 
     MaxKeyCode,
     Feedback_Class, 
