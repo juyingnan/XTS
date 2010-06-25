@@ -852,6 +852,7 @@ else
   Report untested.
 >>CODE
 extern	struct	valname	S_button[];
+extern	int	NS_button;
 int 	i;
 
 	button = AnyButton;
@@ -865,7 +866,7 @@ int 	i;
 
 	(void) warppointer(display, grab_window, 10, 10);
 
-	for (i = 0; i < nbuttons(); i++) {
+	for (i = 0; i < NS_button; i++) {
 		buttonpress(display, (unsigned int)S_button[i].val);
 		if (pgrabbed())
 			CHECK;
@@ -886,7 +887,7 @@ int 	i;
 			CHECK;
 	}
 
-	CHECKPASS(1+2*nbuttons());
+	CHECKPASS(1+2*NS_button);
 >>ASSERTION Good B 3
 It is not required that the specified button currently be assigned
 to a physical button.
