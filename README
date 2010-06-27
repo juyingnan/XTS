@@ -54,3 +54,12 @@ each test program. Journal files from completed runs can be analyzed by
 the xts-report tool (formerly vswrpt):
 
 	$ xts-report -f /xts/output/dir/journal
+
+
+Bugs
+====
+Some tests provide different results when run as a set versus run
+one-by-one with the pt script. This has been observed with
+Xlib13/XGrabButton where the modifier state is not reset correctly.
+When debugging tests, it is recommended that failing tests are run
+separately to verify the result.
