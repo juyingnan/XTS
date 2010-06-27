@@ -55,6 +55,24 @@ the xts-report tool (formerly vswrpt):
 
 	$ xts-report -f /xts/output/dir/journal
 
+Running a Single Test
+=====================
+The pt script can be used to run a single set of tests or a single test case
+only. For example, to run only the XGrabButton tests, run
+        $ pt ./XGrabButton
+
+The logs for the test are saved in a file <testcase>.log, for the example
+above the log file would be ./XGrabButton.log.
+
+The pt script sets up some environment variables, based on TET_ROOT and
+other settings. To start the debugger automatically after the environment is
+set up, run:
+        $ pt -gdb ./XGrabButton
+
+To run only a single test-case inside one test set, use the -i flag.
+        $ pt -i 10 ./XGrabButton
+
+This command only runs test case 10 (t010() in the source).
 
 Bugs
 ====
