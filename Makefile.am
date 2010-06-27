@@ -18,3 +18,27 @@ check-local: check.sh
 # Helper target for testing subsets (test-Xopen, etc.)
 test-%:
 	@$(MAKE) $(AM_MAKEFLAGS) check scenario='$*'
+
+if HAVE_DOCTOOLS
+miscmandir = $(MISC_MAN_DIR)
+xtsman_txt = XTS.txt
+xtsman_xml = $(xtsman_txt:.txt=.xml)
+xtsman_pre = $(xtsman_txt:.txt=.man)
+miscman_DATA = $(xtsman_pre:.man=.$(MISC_MAN_SUFFIX))
+
+SUFFIXES = .man .$(MISC_MAN_SUFFIX) .txt .xml
+
+XTS.txt: README
+	cp $(srcdir)/README XTS.txt
+
+.man.$(MISC_MAN_SUFFIX):
+	sed -e 's|miscmansuffix|$(MISC_MAN_SUFFIX)|' < $< > $@
+.txt.xml:
+	$(ASCIIDOC) -b docbook -d manpage -o $@ $<
+.xml.man:
+	$(XMLTO) man $<
+	mv -f $(@:.man=.miscmansuffix) $@
+
+MAINTAINERCLEANFILES = *.xml $(xtsman_pre) $(xtsman_txt)
+endif
+

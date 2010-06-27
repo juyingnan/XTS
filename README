@@ -1,8 +1,18 @@
+XTS(miscmansuffix)
+==================
+
+Name
+----
+    XTS - The X Test Suite
+
+Description
+-----------
+
 This is a revamped version of X Test Suite (XTS) which removes some of
 the ugliness of building and running the tests.
 
 Downloading
-===========
+-----------
 Currently xts it is only available from a git repository.
 
 	$ git clone git://people.freedesktop.org/~dbn/xtest.git
@@ -10,8 +20,9 @@ Currently xts it is only available from a git repository.
 Eventually there will be a tarball release when it is stabilized.
 
 Requirements
-============
+------------
 Required libraries: libX11, libXext, libXi, libXtst
+
 Required utilities: xdpyinfo, xset, perl, bdftopcf, mkfontdir
 
 If you are using packages outside of the standard system directories,
@@ -19,7 +30,7 @@ make sure to set PATH and PKG_CONFIG_PATH appropriately. See
 pkg-config(1) for details on the latter.
 
 Build and Install
-=================
+-----------------
 The build and install are now straightforward:
 
 	$ ./autogen.sh	# using a git checkout
@@ -28,7 +39,7 @@ The build and install are now straightforward:
 	$ make install
 
 Running the Tests
-=================
+-----------------
 The tests can be run from the build directory or from the installed
 package. The check.sh script sets up the environment to run tests from
 the build tree.
@@ -56,7 +67,7 @@ the xts-report tool (formerly vswrpt):
 	$ xts-report -f /xts/output/dir/journal
 
 Running a Single Test
-=====================
+---------------------
 The pt script can be used to run a single set of tests or a single test case
 only. For example, to run only the XGrabButton tests, run
         $ pt ./XGrabButton
@@ -75,7 +86,7 @@ To run only a single test-case inside one test set, use the -i flag.
 This command only runs test case 10 (t010() in the source).
 
 Bugs
-====
+----
 Some tests provide different results when run as a set versus run
 one-by-one with the pt script. This has been observed with
 Xlib13/XGrabButton where the modifier state is not reset correctly.

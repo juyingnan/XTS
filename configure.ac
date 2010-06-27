@@ -109,6 +109,25 @@ fi
 m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])],
     [AC_SUBST([AM_DEFAULT_VERBOSITY], [1])])
 
+# Generate man page if asciidoc and xmlto are available.
+AC_ARG_VAR([XMLTO], [Path to xmlto command])
+AC_PATH_PROG([XMLTO], [xmlto])
+AC_ARG_VAR([ASCIIDOC], [Path to asciidoc command])
+AC_PATH_PROG([ASCIIDOC], [asciidoc])
+
+AM_CONDITIONAL([HAVE_DOCTOOLS], [test "x$XMLTO" != "x" && test "x$ASCIIDOC" != "x"])
+if test "x$XMLTO" = "x" || test "x$ASCIIDOC" = "x"; then
+    AC_MSG_WARN([xmlto or asciidoc not found - cannot create man pages without it])
+else
+    if test x$MISC_MAN_SUFFIX = x    ; then
+        case $host_os in
+            solaris*)       MISC_MAN_SUFFIX=5  ;;
+            *)              MISC_MAN_SUFFIX=7  ;;
+        esac
+    fi
+    AC_SUBST(MISC_MAN_SUFFIX)
+fi
+
 AC_CONFIG_FILES([
 Makefile
 check.sh
