@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include
+AM_CPPFLAGS = -I$(srcdir)/../inc -I$(top_srcdir)/include
 
 # libapi_s is the shared portion of the library
 xtslibdir = $(libexecdir)/xts5

@@ -1,4 +1,4 @@
-AM_CPPFLAGS = -I../inc -I$(top_srcdir)/include
+AM_CPPFLAGS = -I$(srcdir)/../inc -I$(top_srcdir)/include
 
 # libtcm_s is the shared part of the library pulled into libapi_s.
 # libtcmmain and libtcmchild basically provide main() for tests or their
