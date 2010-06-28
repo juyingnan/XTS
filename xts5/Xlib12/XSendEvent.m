@@ -151,7 +151,8 @@ static	int	event_types[] = {
 	SelectionNotify,
 	ColormapNotify,
 	ClientMessage,
-	MappingNotify
+	MappingNotify,
+	GenericEvent
 };
 >>ASSERTION Good A
 A call to xname

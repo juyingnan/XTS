@@ -1,4 +1,32 @@
 /*
+Copyright (c) 2010 Red Hat, Inc.
+
+Permission is hereby granted, free of charge, to any person obtaining a copy of
+this software and associated documentation files (the "Software"), to deal in
+the Software without restriction, including without limitation the rights to
+use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+of the Software, and to permit persons to whom the Software is furnished to do
+so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+Modifications:
+	2010/06/24 - add config setting retrieval from environment.
+		   - make all config parameters optional.
+		   - set some sane defaults
+
+*/
+
+/*
 Copyright (c) 2005 X.Org Foundation L.L.C.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
@@ -208,46 +236,46 @@ struct	getparam parm[] = {
 
 	/* General configuration parameters */
 
-	{"XT_COVERAGE", T_INT, (char*)&config.coverage, 0},
-	{"XT_ALT_SCREEN", T_INT, (char*)&config.alt_screen, 0},
-	{"XT_FONTPATH", T_STRING, (char*)&config.fontpath, 0},
-	{"XT_SPEEDFACTOR", T_INT, (char*)&config.speedfactor, 0},
-	{"XT_RESET_DELAY", T_INT, (char*)&config.reset_delay, 0},
-	{"XT_EXTENSIONS", T_YESNO, (char*)&config.extensions, 0},
+	{"XT_COVERAGE", T_INT, (char*)&config.coverage, FL_OPTIONAL},
+	{"XT_ALT_SCREEN", T_INT, (char*)&config.alt_screen, FL_OPTIONAL},
+	{"XT_FONTPATH", T_STRING, (char*)&config.fontpath, FL_OPTIONAL},
+	{"XT_SPEEDFACTOR", T_INT, (char*)&config.speedfactor, FL_OPTIONAL},
+	{"XT_RESET_DELAY", T_INT, (char*)&config.reset_delay, FL_OPTIONAL},
+	{"XT_EXTENSIONS", T_YESNO, (char*)&config.extensions, FL_OPTIONAL},
 
 	/* Configuration parameters for specific tests */
 
-	{"XT_VISUAL_CLASSES", T_STRING, (char*)&config.visual_classes, 0},
-	{"XT_FONTCURSOR_GOOD", T_INT, (char*)&config.fontcursor_good, 0},
-	{"XT_FONTCURSOR_BAD", T_INT, (char*)&config.fontcursor_bad, 0},
-	{"XT_FONTPATH_GOOD", T_STRING, (char*)&config.fontpath_good, 0},
-	{"XT_FONTPATH_BAD", T_STRING, (char*)&config.fontpath_bad, 0},
-	{"XT_BAD_FONT_NAME", T_STRING, (char*)&config.bad_font_name, 0},
-	{"XT_GOOD_COLORNAME", T_STRING, (char*)&config.good_colorname, 0},
-	{"XT_BAD_COLORNAME", T_STRING, (char*)&config.bad_colorname, 0},
-	{"XT_DISPLAYMOTIONBUFFERSIZE", T_INT, (char*)&config.displaymotionbuffersize, 0},
+	{"XT_VISUAL_CLASSES", T_STRING, (char*)&config.visual_classes, FL_OPTIONAL},
+	{"XT_FONTCURSOR_GOOD", T_INT, (char*)&config.fontcursor_good, FL_OPTIONAL},
+	{"XT_FONTCURSOR_BAD", T_INT, (char*)&config.fontcursor_bad, FL_OPTIONAL},
+	{"XT_FONTPATH_GOOD", T_STRING, (char*)&config.fontpath_good, FL_OPTIONAL},
+	{"XT_FONTPATH_BAD", T_STRING, (char*)&config.fontpath_bad, FL_OPTIONAL},
+	{"XT_BAD_FONT_NAME", T_STRING, (char*)&config.bad_font_name, FL_OPTIONAL},
+	{"XT_GOOD_COLORNAME", T_STRING, (char*)&config.good_colorname, FL_OPTIONAL},
+	{"XT_BAD_COLORNAME", T_STRING, (char*)&config.bad_colorname, FL_OPTIONAL},
+	{"XT_DISPLAYMOTIONBUFFERSIZE", T_INT, (char*)&config.displaymotionbuffersize, FL_OPTIONAL},
 
 	/* Configuration parameters for Display functions */
 
-	{"XT_SCREEN_COUNT", T_INT, (char*)&config.screen_count, 0},
-	{"XT_PIXMAP_DEPTHS", T_STRING, (char*)&config.pixmap_depths, 0},
-	{"XT_BLACK_PIXEL", T_INT, (char*)&config.black_pixel, 0},
-	{"XT_WHITE_PIXEL", T_INT, (char*)&config.white_pixel, 0},
-	{"XT_HEIGHT_MM", T_INT, (char*)&config.height_mm, 0},
-	{"XT_WIDTH_MM", T_INT, (char*)&config.width_mm, 0},
-	{"XT_SERVER_VENDOR", T_STRING, (char*)&config.server_vendor, 0},
-	{"XT_PROTOCOL_VERSION", T_INT, (char *)&config.protocol_version, 0},
-	{"XT_PROTOCOL_REVISION", T_INT, (char *)&config.protocol_revision, 0},
-	{"XT_VENDOR_RELEASE", T_INT, (char *)&config.vendor_release, 0},
-	{"XT_DOES_SAVE_UNDERS", T_YESNO, (char *)&config.does_save_unders, 0},
-	{"XT_DOES_BACKING_STORE", T_INT, (char *)&config.does_backing_store, 0},
+	{"XT_SCREEN_COUNT", T_INT, (char*)&config.screen_count, FL_OPTIONAL},
+	{"XT_PIXMAP_DEPTHS", T_STRING, (char*)&config.pixmap_depths, FL_OPTIONAL},
+	{"XT_BLACK_PIXEL", T_INT, (char*)&config.black_pixel, FL_OPTIONAL},
+	{"XT_WHITE_PIXEL", T_INT, (char*)&config.white_pixel, FL_OPTIONAL},
+	{"XT_HEIGHT_MM", T_INT, (char*)&config.height_mm, FL_OPTIONAL},
+	{"XT_WIDTH_MM", T_INT, (char*)&config.width_mm, FL_OPTIONAL},
+	{"XT_SERVER_VENDOR", T_STRING, (char*)&config.server_vendor, FL_OPTIONAL},
+	{"XT_PROTOCOL_VERSION", T_INT, (char *)&config.protocol_version, FL_OPTIONAL},
+	{"XT_PROTOCOL_REVISION", T_INT, (char *)&config.protocol_revision, FL_OPTIONAL},
+	{"XT_VENDOR_RELEASE", T_INT, (char *)&config.vendor_release, FL_OPTIONAL},
+	{"XT_DOES_SAVE_UNDERS", T_YESNO, (char *)&config.does_save_unders, FL_OPTIONAL},
+	{"XT_DOES_BACKING_STORE", T_INT, (char *)&config.does_backing_store, FL_OPTIONAL},
 
 	/* Configuration parameters for connection tests */
 
-	{"XT_POSIX_SYSTEM", T_YESNO, (char*)&config.posix_system, 0},
-	{"XT_TCP", T_YESNO, (char *)&config.tcp, 0},
-	{"XT_DISPLAYHOST", T_STRING, (char *)&config.displayhost, 0},
-	{"XT_LOCAL", T_YESNO, (char *)&config.local, 0},
+	{"XT_POSIX_SYSTEM", T_YESNO, (char*)&config.posix_system, FL_OPTIONAL},
+	{"XT_TCP", T_YESNO, (char *)&config.tcp, FL_OPTIONAL},
+	{"XT_DISPLAYHOST", T_STRING, (char *)&config.displayhost, FL_OPTIONAL},
+	{"XT_LOCAL", T_YESNO, (char *)&config.local, FL_OPTIONAL},
 
 	/* Parameters which do not affect test results */
 
@@ -283,12 +311,13 @@ struct	getparam parm[] = {
 	/* Parameters only used during test development */
 	{"XT_FONTDIR", T_STRING, (char*)&config.fontdir, FL_OPTIONAL},
 
-	{"XT_LOCALE", T_STRING, (char*)&ximconfig.locale, 0},
+	{"XT_LOCALE", T_STRING, (char*)&ximconfig.locale, FL_OPTIONAL},
 	{"XT_LOCALE_MODIFIERS", T_STRING,
-		(char*)&ximconfig.locale_modifiers, 0},
-	{"XT_FONTSET", T_STRING, (char*)&ximconfig.fontsets, 0},
-	{"XT_SAVE_IM", T_YESNO, (char*)&ximconfig.save_im, 0},
+		(char*)&ximconfig.locale_modifiers, FL_OPTIONAL},
+	{"XT_FONTSET", T_STRING, (char*)&ximconfig.fontsets, FL_OPTIONAL},
+	{"XT_SAVE_IM", T_YESNO, (char*)&ximconfig.save_im, FL_OPTIONAL},
 
+	{"DISPLAY", T_STRING, (char*)&config.display, 0}
 };
 
 /*
@@ -296,13 +325,13 @@ struct	getparam parm[] = {
  * parameters.
  */
 void
-initconfig()
+_initconfig(char* (*getvar)(const char *))
 {
 char	*var;
 struct	getparam	*gp;
 
 	for (gp = parm; gp < parm+NELEM(parm); gp++) {
-		var = tet_getvar(gp->name);
+		var = getvar(gp->name);
 		if (var == NULL) {
 			if (!(gp->flags&(FL_OPTIONAL|FL_DEBUG)))
 				report("Required parameter %s was not set", gp->name);
@@ -344,4 +373,24 @@ struct	getparam	*gp;
 			break;
 		}
 	}
+}
+
+void
+initconfig(void)
+{
+        /* set some sane defaults. the strdups might leak, I don't care */
+	config.coverage = 1;
+	config.display = strdup(":0");
+	config.extensions = 1;
+	config.tcp = 1;
+	config.fontpath_bad = strdup("built-ins");
+	config.speedfactor = 1;
+	config.reset_delay = 1;
+	config.protocol_version = 11;
+	config.protocol_revision = 0;
+	config.posix_system = 1;
+	config.local = 1;
+
+	_initconfig(tet_getvar);
+	_initconfig(getenv);
 }

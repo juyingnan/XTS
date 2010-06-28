@@ -9,6 +9,10 @@ tetexec.cfg:
 # "make check" testing. Override the test set with scenario.
 scenario =
 check-local: check.sh
+	@if test -z "$$DISPLAY"; then \
+		echo "DISPLAY not set"; \
+		exit 1; \
+	fi
 	$(SHELL) $(builddir)/check.sh $(scenario)
 
 # Helper target for testing subsets (test-Xopen, etc.)

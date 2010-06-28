@@ -145,7 +145,7 @@ char **argv;
 
 	/* get TET_ROOT out of the environment */
 	if ((envstring = getenv(tetroot_name)) == (char *) 0 || !*envstring)
-		fatal(0, tetroot_name, envmsg);
+		envstring = strdup(".");
 	(void) sprintf(tet_root, "%.*s", (int) sizeof tet_root - 1, envstring);
 
 	/* get the dtet ti args out of the environment and count them */
