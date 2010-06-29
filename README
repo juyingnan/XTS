@@ -92,3 +92,9 @@ one-by-one with the pt script. This has been observed with
 Xlib13/XGrabButton where the modifier state is not reset correctly.
 When debugging tests, it is recommended that failing tests are run
 separately to verify the result.
+
+XTS was only recently resurrected after a period of neglect. Tests have not
+been verified. At this point, XTS results should only be used to notice
+differences between server versions. A failing test may not necessarily
+indicate a bug in the server and a successful test may not necessarily
+indicate correct functioning of the server.
