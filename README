@@ -15,7 +15,7 @@ Downloading
 -----------
 Currently xts it is only available from a git repository.
 
-	$ git clone git://people.freedesktop.org/~dbn/xtest.git
+	$ git clone git://anongit.freedesktop.org/git/xorg/test/xts
 
 Eventually there will be a tarball release when it is stabilized.
 
