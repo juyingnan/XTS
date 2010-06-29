@@ -38,6 +38,9 @@ The build and install are now straightforward:
 	$ make
 	$ make install
 
+It is not be necessary to install the suite. Tests may be run from the build
+directories.
+
 Running the Tests
 -----------------
 The tests can be run from the build directory or from the installed
