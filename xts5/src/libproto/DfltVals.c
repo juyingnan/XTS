@@ -392,6 +392,7 @@ Gen_Good_Event(client,rp)
 int client;
 xReq *rp;
 {
+    return (0);
 }
 
 /* func. to give min of 3 vars */
