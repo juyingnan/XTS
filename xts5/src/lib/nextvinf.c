@@ -159,8 +159,8 @@ XVisualInfo	vi;
 	if (flags == 0)
 		flags = VI_WIN_PIX;
 
-	if ((flags & (VI_WIN_PIX|VI_ALT_WIN_PIX)  == 0 ) ||
-	    ((flags & ~(VI_WIN_PIX|VI_ALT_WIN_PIX) ) != 0)) {
+	if (((flags & (VI_WIN_PIX|VI_ALT_WIN_PIX))  == 0 ) ||
+	    (((flags & ~(VI_WIN_PIX|VI_ALT_WIN_PIX)) ) != 0)) {
 		printf("Programming error detected in resetvinf\n");
 		exit(1);
 	}
