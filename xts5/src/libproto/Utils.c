@@ -186,16 +186,6 @@ register length;
     }
 }
 
-wbcmp (b1, b2, length)
-register unsigned char *b1, *b2;
-register length;
-{
-    while (length--) {
-	if (*b1++ != *b2++) return 1;
-    }
-    return 0;
-}
-
 /* Find the first set bit
  * i.e. least signifigant 1 bit:
  * 0 => 0
