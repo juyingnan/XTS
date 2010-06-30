@@ -123,6 +123,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., July 1998
 	Added support for shared API libraries.
 
+	Peter Hutterer, Red Hat, Inc., June 2010
+	Guess TET_RESFILE if it's not in the environment.
+
 ************************************************************************/
 
 #include <stdio.h>
@@ -798,7 +801,13 @@ char *progname;
 	/* get results filename from the environment */
 	resfile = getenv("TET_RESFILE");
 	if (!resfile)
-		fatal(0, "TET_RESFILE not set in the environment", NULL);
+	{
+		/* just assume progname.log. */
+		char *new_resfile = malloc(strlen(progname) + 5);
+		sprintf(new_resfile, "%s.log", progname);
+		resfile = new_resfile; /* XXX: leaking memory */
+		printf("TET_RESFILE not set in the environment, using '%s'.\n", resfile);
+	}
 
 	tmpresenv = malloc(strlen(tmpvar) + strlen(resfile) +
 				strlen("=.tmp") + 1);
