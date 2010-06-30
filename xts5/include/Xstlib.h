@@ -262,7 +262,7 @@ extern CL Xst_clients[MAX_CLIENTS];
 #define Expect_Error(client,type)	((xError *)Expect(client,EXPECT_ERROR,type))
 #define Expect_Event(client,type)	((xEvent *)Expect(client,EXPECT_EVENT,type))
 #define Expect_01Event(client,type)	((xEvent *)Expect(client,EXPECT_01EVENT,type))
-#define Expect_Nothing(client)	((int) Expect(client,EXPECT_NOTHING,0))
+#define Expect_Nothing(client)		Expect(client,EXPECT_NOTHING,0)
 #define Expect_Reply(client,type)	((xReply *)Expect(client,EXPECT_REPLY,type))
 #define Expect_Ext_Reply(client,type,major)((xReply *)Expect(client,EXPECT_REPLY,((type<<8)|major)))
 
