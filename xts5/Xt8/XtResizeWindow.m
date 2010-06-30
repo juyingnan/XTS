@@ -743,7 +743,7 @@ pid_t pid2;
 
 	FORK(pid2);
 	avs_xt_hier("Trszwindw2", "XtResizeWindow");
-	(void) ConfigureDimension(topLevel, boxw2);
+	ConfigureDimension(topLevel, boxw2);
 	tet_infoline("PREP: Invoke Realize and create widget's working window");
 	squarew = XtVaCreateManagedWidget("squarew",
 			squareCellWidgetClass, boxw1, NULL);

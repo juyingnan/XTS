@@ -404,7 +404,7 @@ int 	i, j;
 			oldy = bt[0][0].y + bt[0][0].borderwidth +
 				cli1btp->y + cli1btp->borderwidth + btp->y;
 
-			(void) XGetWindowAttributes(Dsp, btp->wid, &atts);
+			XGetWindowAttributes(Dsp, btp->wid, &atts);
 
 			newx = batts.x + batts.border_width + atts.x;
 			newy = batts.y + batts.border_width + atts.y;

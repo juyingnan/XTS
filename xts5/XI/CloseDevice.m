@@ -276,7 +276,7 @@ int Min_KeyCode, Max_KeyCode, numkeys;
 
 	w = defwin(display);
 	w2 = defwin(client1);
-	(void) warppointer(client1, w2, 1, 1);
+	warppointer(client1, w2, 1, 1);
 	DeviceKeyPress(dev2, dkp, dkpclass);
 	DeviceKeyRelease(dev2, dkr, dkrclass);
 	XSelectExtensionEvent(client1, w2, &dkpclass, 1);
@@ -359,7 +359,7 @@ int Min_KeyCode, Max_KeyCode, numkeys;
 	dev2 = XOpenDevice(client1,Devs.Key->device_id);
 
 	w = defwin(client1);
-	(void) warppointer(client1, w, 1, 1);
+	warppointer(client1, w, 1, 1);
 	DeviceKeyPress(dev2, dkp, dkpclass);
 	DeviceKeyRelease(dev2, dkr, dkrclass);
 	XSelectExtensionEvent(client1, w, &dkpclass, 1);

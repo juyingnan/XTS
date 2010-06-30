@@ -139,14 +139,14 @@ tester()
 {
 	Create_Client(CLIENT);
 
-	(void) Create_Default_Window(CLIENT);
+	Create_Default_Window(CLIENT);
 
 	Set_Test_Type(CLIENT, test_type);
 	req = (xCreateColormapReq *) Make_Req(CLIENT, X_CreateColormap);
 	if(test_type == BAD_IDCHOICE1) {
         	Send_Req(CLIENT, (xReq *) req);
         	Log_Trace("client %d sent CreateColormap request\n", CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_Nothing(CLIENT);
 	}
 	if(test_type == BAD_IDCHOICE2) {
         	req->mid = 0xffffffff; /* top 2 bits set ==> invalid */
@@ -156,28 +156,28 @@ tester()
 	switch(test_type) {
 	case GOOD:
 		Log_Trace("client %d sent default CreateColormap request\n", CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case BAD_IDCHOICE1:
         	Log_Trace("client %d sent CreateColormap request with same resource ID\n", CLIENT);
-		(void) Expect_BadIDChoice(CLIENT);
-        	(void) Expect_Nothing(CLIENT);
+		Expect_BadIDChoice(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case BAD_IDCHOICE2:
 		Log_Trace("client %d sent CreateColormap request with out-of-range resource ID\n", CLIENT);
-		(void) Expect_BadIDChoice(CLIENT);
-        	(void) Expect_Nothing(CLIENT);
+		Expect_BadIDChoice(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case BAD_LENGTH:
 		Log_Trace("client %d sent CreateColormap request with bad length (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
 		Log_Trace("client %d sent overlong CreateColormap request (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	default:
 		Log_Err("INTERNAL ERROR: test_type %d not one of GOOD(%d), BAD_LENGTH(%d), TOO_LONG(%d) or JUST_TOO_LONG(%d)\n",

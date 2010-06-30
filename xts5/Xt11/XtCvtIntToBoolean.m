@@ -99,7 +99,7 @@ pid_t pid2;
 #if XT_X_RELEASE > 4
 	FORK(pid2);
 	avs_xt_hier("Tcinboln1", "XtCvtIntToBoolean");
-	(void) ConfigureDimension(topLevel, boxw2);
+	ConfigureDimension(topLevel, boxw2);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
 	tet_infoline("PREP: Get display");

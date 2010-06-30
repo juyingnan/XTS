@@ -801,7 +801,7 @@ XWindowAttributes	atts, batts;
 			oldx = bt[0][0].x + bt[0][0].borderwidth + cli1btp->x + cli1btp->borderwidth + btp->x;
 			oldy = bt[0][0].y + bt[0][0].borderwidth + cli1btp->y + cli1btp->borderwidth + btp->y;
 
-			(void) XGetWindowAttributes(Dsp, btp->wid, &atts);
+			XGetWindowAttributes(Dsp, btp->wid, &atts);
 
 			newx = batts.x + batts.border_width + atts.x;
 			newy = batts.y + batts.border_width + atts.y;
@@ -1267,7 +1267,7 @@ int	i;
 
 	display = Dsp;
 	XSetCloseDownMode(display, DestroyAll);
-	(void) XInternAtom(display, atname, False);
+	XInternAtom(display, atname, False);
 	PROTECT(XCloseDisplay(display));
 
 	/*
@@ -1693,7 +1693,7 @@ XWindowAttributes	atts;
 				oldx = btp->x;
 				oldy = btp->y;
 	
-				(void) XGetWindowAttributes(Dsp, btp->wid, &atts);
+				XGetWindowAttributes(Dsp, btp->wid, &atts);
 	
 				newx = atts.x;
 				newy = atts.y;
@@ -1879,7 +1879,7 @@ char		*name;
 	for(k=0; k<2; k++) {
 
 		XSetCloseDownMode(Dsp, closemodes[k]);
-		(void) XInternAtom(Dsp, atname, False);
+		XInternAtom(Dsp, atname, False);
 		PROTECT(XCloseDisplay(Dsp));
 
 		/*

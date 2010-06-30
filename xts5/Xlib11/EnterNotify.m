@@ -704,7 +704,7 @@ is set to
 >>#REMOVED         w2 = defdraw(Dsp, VI_ALT_WIN);
 >>#REMOVED 
 >>#REMOVED 			/* Warp the pointer into the first window. */
->>#REMOVED 	(void) warppointer(Dsp, wg, 13, 17);
+>>#REMOVED 	warppointer(Dsp, wg, 13, 17);
 >>#REMOVED 	XSync(Dsp, True);
 >>#REMOVED 
 >>#REMOVED 			/* Grab the pointer for the first window. */
@@ -716,7 +716,7 @@ is set to
 >>#REMOVED 
 >>#REMOVED 			/* Warp the pointer into the alternate screen window. */
 >>#REMOVED 	XSync(Dsp, True);
->>#REMOVED 	(void) warppointer(Dsp, w2, 7,11);
+>>#REMOVED 	warppointer(Dsp, w2, 7,11);
 >>#REMOVED 	XSync(Dsp, False);
 >>#REMOVED 
 >>#REMOVED 			/* Verify that an xname event was generated relative to the grab window. */
@@ -1315,7 +1315,7 @@ set to
 >>#REMOVED         w2 = defdraw(Dsp, VI_ALT_WIN);
 >>#REMOVED 
 >>#REMOVED 			/* Warp the pointer into the first window. */
->>#REMOVED 	(void) warppointer(Dsp, wg, 13, 17);
+>>#REMOVED 	warppointer(Dsp, wg, 13, 17);
 >>#REMOVED 	XSync(Dsp, True);
 >>#REMOVED 
 >>#REMOVED 			/* Grab the pointer for the first window. */
@@ -1327,7 +1327,7 @@ set to
 >>#REMOVED 
 >>#REMOVED 			/* Warp the pointer into the alternate screen window. */
 >>#REMOVED 	XSync(Dsp, True);
->>#REMOVED 	(void) warppointer(Dsp, w2, 7,11);
+>>#REMOVED 	warppointer(Dsp, w2, 7,11);
 >>#REMOVED 	XSync(Dsp, False);
 >>#REMOVED 
 >>#REMOVED 			/* Verify that an xname event was generated relative to the grab window. */

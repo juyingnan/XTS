@@ -851,7 +851,7 @@ Bool		samedefcursor;
 		return;
 
 	if(config.alt_screen != -1) {
-		(void) warppointer(display, DRW(display), 0,0);
+		warppointer(display, DRW(display), 0,0);
 		altroot = RootWindow(display, config.alt_screen);
 		samedefcursor = spriteiswin(display, altroot);
 	}
@@ -872,7 +872,7 @@ Bool		samedefcursor;
 			CHECK;
 
 			/* Warp the pointer into the root window. */
-		(void) warppointer(display, w, 0,0);
+		warppointer(display, w, 0,0);
 
 			/* Verify that the current cursor is that of the root window. */
 		if(spriteiswin(display, w) == False) {
@@ -882,7 +882,7 @@ Bool		samedefcursor;
 			CHECK;
 
 			/* Warp the pointer to the alternate root window. */
-		(void) warppointer(display, altroot, 0,0);
+		warppointer(display, altroot, 0,0);
 
 			/* Verify that the current cursor is not the same as that of the default root window. */
 		if(spriteiswin(display, DRW(display)) != False) {
@@ -921,7 +921,7 @@ Bool		samedefcursor;
 			CHECK;
 
 			/* Warp the pointer to the root window. */
-		(void) warppointer(display, w, 0,0);
+		warppointer(display, w, 0,0);
 
 			/* Verify that the current cursor is that of the root window. */
 		if(spriteiswin(display, w) == False) {

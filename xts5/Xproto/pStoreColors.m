@@ -156,8 +156,8 @@ tester_rw()
 		Exit_OK();
 	}
 
-	(void) Create_Default_Window(CLIENT);
-	(void) Create_Default_Colormap(CLIENT);
+	Create_Default_Window(CLIENT);
+	Create_Default_Colormap(CLIENT);
 
 	/* allocate a color and store pixel from reply in global */
 
@@ -177,7 +177,7 @@ tester_rw()
 		Free_Reply(acreply);
 	}
 
-	(void) Expect_Nothing(CLIENT);
+	Expect_Nothing(CLIENT);
 	Free_Req(req);
 
 	/* store a color in the pixel from the reply */
@@ -187,7 +187,7 @@ tester_rw()
 	Send_Req(CLIENT, (xReq *) req);
 	Set_Test_Type(CLIENT, GOOD);
 	Log_Trace("client %d sent default StoreColors request\n", CLIENT);
-	(void) Expect_Nothing(CLIENT);
+	Expect_Nothing(CLIENT);
 	Free_Req(req);
 	
 	Exit_OK();
@@ -210,8 +210,8 @@ tester()
 {
 	Create_Client(CLIENT);
 
-	(void) Create_Default_Window(CLIENT);
-	(void) Create_Default_Colormap(CLIENT);
+	Create_Default_Window(CLIENT);
+	Create_Default_Colormap(CLIENT);
 
 	/* allocate a color and store pixel from reply in global */
 
@@ -227,7 +227,7 @@ tester()
 		Free_Reply(anreply);
 	}
 
-	(void) Expect_Nothing(CLIENT);
+	Expect_Nothing(CLIENT);
 	Free_Req(req);
 
 	/* store a color in the pixel from the reply */
@@ -243,19 +243,19 @@ tester()
 		 * not the case here, we expect BadAccess error.
 		 */
 		Log_Trace("client %d sent default StoreColors request\n", CLIENT);
-		(void) Expect_BadAccess(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadAccess(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case BAD_LENGTH:
 		Log_Trace("client %d sent StoreColors request with bad length (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
 		Log_Trace("client %d sent overlong StoreColors request (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	default:
 		Log_Err("INTERNAL ERROR: test_type %d not one of GOOD(%d), BAD_LENGTH(%d), TOO_LONG(%d) or JUST_TOO_LONG(%d)\n",

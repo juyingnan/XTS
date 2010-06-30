@@ -271,7 +271,7 @@ int 	ret, n;
 	DeviceKeyRelease(device, dkr, dkrclass);
 	XSelectExtensionEvent(display, grab_window, &dkpclass, 1);
 
-	(void) warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 1);
 	XSync(display, True);	/* Discard any events */
 	devicekeypress(display, device, MinKeyCode);
 	XSync(display, False);

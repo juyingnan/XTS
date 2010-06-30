@@ -190,7 +190,7 @@ char	msgbuf[512];
 /* Set name to "XProtoError". */
 	name = "XProtoError";
 /* Set message to the string representation of BadWindow. */
-	(void) sprintf(msgbuf, "%d", BadWindow);
+	sprintf(msgbuf, "%d", BadWindow);
 	message = msgbuf;
 /* Call XGetErrorText. */
 	XCALL;
@@ -241,7 +241,7 @@ char	msgbuf[512];
 /* Set name to "XRequest". */
 	name = "XRequest";
 /* Set message to the string representation of X_DestroyWindow. */
-	(void) sprintf(msgbuf, "%d", X_DestroyWindow);
+	sprintf(msgbuf, "%d", X_DestroyWindow);
 	message = msgbuf;
 /* Call XGetErrorText. */
 	XCALL;

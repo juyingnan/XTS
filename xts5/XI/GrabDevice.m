@@ -309,7 +309,7 @@ XEvent ev;
 	device = Devs.NoKeys;
 
 	grab_window = defwin(display);
-	(void) warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 1);
 	DeviceKeyRelease(Devs.Key, dkr, dkrclass);
 	XSelectExtensionEvent(display, grab_window, &dkrclass, 1);
 	other_devices_mode = GrabModeAsync;
@@ -367,7 +367,7 @@ XEvent ev;
 	device = Devs.NoKeys;
 
 	grab_window = defwin(display);
-	(void) warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 1);
 	DeviceKeyRelease(Devs.Key, dkr, dkrclass);
 	XSelectExtensionEvent(display, grab_window, &dkrclass, 1);
 	other_devices_mode = GrabModeSync;
@@ -465,7 +465,7 @@ XEventClass dmnc;
 	    return;
 	    }
 	DeviceMotionNotify(Devs.Valuator, dmn, dmnc);
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	client2 = opendisplay();
 
@@ -488,7 +488,7 @@ XEventClass dmnc;
 	 * If the grab has been released then this will generate
 	 * an event for client2.
 	 */
-	(void) warppointer(display, win, 0, 0);
+	warppointer(display, win, 0, 0);
 	XSync(client2, False);
 
 	if (XCheckWindowEvent(client2, win, PointerMotionMask|EnterWindowMask, &ev))

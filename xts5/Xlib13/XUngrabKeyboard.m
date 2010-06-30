@@ -136,7 +136,7 @@ XEvent	ev;
 		CHECK;
 
 	key = getkeycode(display);
-	(void) warppointer(display, win, 10, 10);
+	warppointer(display, win, 10, 10);
 	keypress(display, key);
 	keyrel(display, key);
 
@@ -155,7 +155,7 @@ XEvent	ev;
 		FAIL;
 	} else {
 		first = ev.type;
-		(void) getevent(display, &ev);
+		getevent(display, &ev);
 
 		if (ev.type != KeyPress && first != KeyPress) {
 			report("Did not get KeyPress event after releasing grab");
@@ -171,7 +171,7 @@ XEvent	ev;
 
 	win = defwin(display);
 	XSelectInput(display, win, KeyPressMask);
-	(void) warppointer(display, win, 5, 5);
+	warppointer(display, win, 5, 5);
 	keypress(display, key);
 	if (XCheckWindowEvent(display, win, KeyPressMask, &ev))
 		CHECK;
@@ -208,8 +208,8 @@ XEvent	ev;
 	win = defwin(display);
 	XSelectInput(display, win, PointerMotionMask);
 
-	(void) warppointer(display, win, 0, 0);
-	(void) warppointer(display, win, 1, 1);
+	warppointer(display, win, 0, 0);
+	warppointer(display, win, 1, 1);
 
 	if (XCheckWindowEvent(display, win, PointerMotionMask, &ev))
 		return(False);

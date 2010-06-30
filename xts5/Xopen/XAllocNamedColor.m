@@ -780,7 +780,7 @@ static char	*list[] = { "gray", "grey", "dark gray", "dark grey" };
 	if( (vmask = visualsupported(display, 1L<<GrayScale)) != 0L) {
 
 		resetsupvis(vmask);
-		(void) nextsupvis(&vp);
+		nextsupvis(&vp);
 		if(vp->colormap_size < 4)
 			vmask = 0L;
 	}
@@ -789,7 +789,7 @@ static char	*list[] = { "gray", "grey", "dark gray", "dark grey" };
 	if( (vmask |= visualsupported(display, 1L<<StaticGray)) | StaticGray) {
 
 		resetsupvis(1L<<StaticGray);
-		(void) nextsupvis(&vp);
+		nextsupvis(&vp);
 		if(vp->colormap_size < 4)
 			vmask &= ~(1L<<StaticGray);
 	}

@@ -131,14 +131,14 @@ tester()
 {
 	Create_Client(CLIENT);
 
-	(void) Create_Default_Window(CLIENT);
+	Create_Default_Window(CLIENT);
 	gc1 = Create_Default_GContext(CLIENT);
 	gc2 = Create_GContext(CLIENT);
 
 	cgcr = (xChangeGCReq *) Make_Req(CLIENT, X_ChangeGC);
 	Send_Req(CLIENT, (xReq *) cgcr);
 	Log_Trace("client %d sent default ChangeGC request\n", CLIENT);
-	(void) Expect_Nothing(CLIENT);
+	Expect_Nothing(CLIENT);
 	Free_Req(cgcr);
 
 	Set_Test_Type(CLIENT, test_type);
@@ -153,23 +153,23 @@ tester()
 	switch(test_type) {
 	case GOOD:
 		Log_Trace("client %d sent default CopyGC request\n", CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case BAD_VALUE:
 		Log_Trace("client %d sent CopyGC request with illegal mask\n", CLIENT);
-		(void) Expect_BadValue(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadValue(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case BAD_LENGTH:
 		Log_Trace("client %d sent CopyGC request with bad length (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
 		Log_Trace("client %d sent overlong CopyGC request (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	default:
 		Log_Err("INTERNAL ERROR: test_type %d not one of GOOD(%d), BAD_LENGTH(%d), TOO_LONG(%d) or JUST_TOO_LONG(%d)\n",

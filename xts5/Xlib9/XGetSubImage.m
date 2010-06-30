@@ -932,10 +932,10 @@ static struct area area =
 	XGrabServer(display);
 
 /* Enable synchronization. */
-	(void) XSynchronize(display, True);
+	XSynchronize(display, True);
 
 /* Save initial pointer location. */
-	(void) XQueryPointer(display, w, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
+	XQueryPointer(display, w, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
 
 /* Warp pointer to drawable. */
 	XWarpPointer(display, None, w, 0, 0, 0, 0, 0, 0);
@@ -979,7 +979,7 @@ static struct area area =
 	XWarpPointer(display, None, w, W_STDWIDTH*2, W_STDHEIGHT*2, 0, 0, 0, 0);
 
 /* Get new pointer location. */
-	(void) XQueryPointer(display, w, &wtmp, &wtmp, &oroot_x, &oroot_y, &itmp, &itmp, &uitmp);
+	XQueryPointer(display, w, &wtmp, &wtmp, &oroot_x, &oroot_y, &itmp, &itmp, &uitmp);
 
 /* Call XGetSubImage with pointer outside drawable. */
 	pre_xcall(w, &area, AllPlanes, ZPixmap, &area);
@@ -1013,7 +1013,7 @@ static struct area area =
 	XWarpPointer(display, None, oldroot, 0, 0, 0, 0, sroot_x, sroot_y);
 
 /* Disable synchronization. */
-	(void) XSynchronize(display, False);
+	XSynchronize(display, False);
 
 /* Ungrab server. */
 	XUngrabServer(display);

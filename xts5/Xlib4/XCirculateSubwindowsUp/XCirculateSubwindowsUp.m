@@ -140,7 +140,7 @@ Window	parent;
 
 /* Create a window hierarchy using buildtree. */
 	parent =  defwin(display);
-	(void) buildtree(display, parent, SimpleTemplate, NSimpleTemplate);
+	buildtree(display, parent, SimpleTemplate, NSimpleTemplate);
 
 /* Call xname upon the parent. */
 	w = parent;
@@ -173,7 +173,7 @@ Window	parent, zero;
 
 /* Call setforexpose on window 'zero' to allow Expose event checking. */
 	setforexpose(display, zero);	
-	(void) buildtree(display, parent, Expose2Template, NExpose2Template);
+	buildtree(display, parent, Expose2Template, NExpose2Template);
 
 /* Select Expose events on window 'zero'. */
 	XSelectInput(display, zero, ExposureMask);

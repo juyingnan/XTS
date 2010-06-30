@@ -175,7 +175,7 @@ long	mask;
 	XSelectInput(display, win, mask = KeyPressMask|KeyReleaseMask);
 	focus = None;
 	XCALL;
-	(void) warppointer(display, win, 2, 2);
+	warppointer(display, win, 2, 2);
 	XSync(display, True); /* clear out event queue */
 	keypress(display, getkeycode(display));
 	if (n=getevent(display, &ev)) /* assignment intentional */ {
@@ -338,7 +338,7 @@ long	mask;
 	trace("Test with toplevel window and PointerRoot.");
 	focus = PointerRoot;
 	XCALL;
-	(void) warppointer(display, win, 2, 2);
+	warppointer(display, win, 2, 2);
 	XSync(display, True); /* clear out event queue */
 	keypress(display, keycode=getkeycode(display));
 	if (!getevent(display, &ev)) {
@@ -354,7 +354,7 @@ long	mask;
 	} else
 		CHECK;
 	trace("Test with root and PointerRoot.");
-	(void) warppointer(display, root, 0,0);
+	warppointer(display, root, 0,0);
 	XSync(display, True); /* clear out event queue */
 	relalldev();
 	if (!getevent(display, &ev)) {
@@ -375,7 +375,7 @@ long	mask;
 		trace("Testing with root of alternate screen as source (0x%x) and PointerRoot.",
 				(unsigned)altroot);
 		XSelectInput(display, altroot, mask);
-		(void) warppointer(display, altroot, 0,0);
+		warppointer(display, altroot, 0,0);
 		XSync(display, True); /* clear out event queue */
 		keypress(display, keycode);
 		relalldev();
@@ -545,7 +545,7 @@ int 	newrevert;
 	focus = crechild(display, base, (struct area *)0);
 	revert_to = RevertToPointerRoot;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	if (isdeleted())
 		return;
@@ -693,7 +693,7 @@ int 	newrevert;
 	focus = crechild(display, base, (struct area *)0);
 	revert_to = RevertToNone;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	if (isdeleted())
 		return;
@@ -924,7 +924,7 @@ int	junk;
 	} else
 		CHECK;
 
-	(void) sleep(1);  /* make sure the current time is != t1 */
+	sleep(1);  /* make sure the current time is != t1 */
 
 	thetime = CurrentTime;
 	focus = win;

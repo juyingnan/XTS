@@ -136,7 +136,7 @@ grabstartup()
 	DeviceButtonPress(device, dbp, class[1]);
 	DeviceButtonRelease(device, dbr, class[2]);
 	XSelectExtensionEvent(Dsp, grabwin, class, 3);
-	(void) warppointer(Dsp, grabwin, 1, 1);
+	warppointer(Dsp, grabwin, 1, 1);
 	XSync(Dsp,0);
 	return (1);
 }
@@ -541,7 +541,7 @@ struct  area    area;
 	/*
 	 * Set up a device freeze as a result of a button press.
 	 */
-	(void) warppointer(display, grabwin, 1, 1);
+	warppointer(display, grabwin, 1, 1);
 	setarea(&area, 50, 50, 5, 5);
 	chwin = crechild(display, grabwin, &area);
 
@@ -557,7 +557,7 @@ struct  area    area;
 	 * Activate the grab.
 	 */
 	XSync(display, True);	/* Discard any events */
-	(void) warppointer(display, chwin, 1, 1);
+	warppointer(display, chwin, 1, 1);
 	devicebuttonpress(display, Devs.Button, Button1);
 	XSync(display,False);
 
@@ -643,7 +643,7 @@ Verify device is not frozen.
 	    return;
 	device = Devs.Button;
 	event_mode = ReplayThisDevice;
-	(void) warppointer(display, grabwin, 1, 1);
+	warppointer(display, grabwin, 1, 1);
 
 	XCALL;
 	if (!ispfrozen(display))
@@ -678,7 +678,7 @@ int 	key;
 	if (noext(1))
 		return;
 
-	(void) warppointer(display, grabwin, 1, 1);
+	warppointer(display, grabwin, 1, 1);
 	XSync(display,0);
 
 	key = getkeycode(display);
@@ -777,7 +777,7 @@ int 	key;
 	 */
 	win = defwin(display);
 	XSelectInput(display, win, KeyPressMask);
-	(void) warppointer(display, win, 1, 1);
+	warppointer(display, win, 1, 1);
 	keypress(display, key);
 	if (XCheckMaskEvent(display, (long)KeyPressMask, &ev))
 		res = False;
@@ -797,7 +797,7 @@ bothset()
 	XUngrabDevice(display, device, CurrentTime);
 	XUngrabKeyboard(display, CurrentTime);
 
-	(void) warppointer(display, grabwin, 5, 5);
+	warppointer(display, grabwin, 5, 5);
 
 	XGrabDevice(display, device, grabwin, False, 3, 
 		class, GrabModeSync, GrabModeAsync, CurrentTime);
@@ -976,7 +976,7 @@ int 	key;
 	    False, PointerMotionMask, GrabModeSync, GrabModeSync,
 	    None, None);
 
-	(void) warppointer(display, grabwin, 1, 1);
+	warppointer(display, grabwin, 1, 1);
 	devicebuttonpress(display, Devs.Button, Button1);
 
 	if (ispfrozen(display))

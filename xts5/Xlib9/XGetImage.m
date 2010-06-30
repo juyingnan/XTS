@@ -294,9 +294,9 @@ static struct area area2 =
 	
 /* Destroy images using XDestroyImage. */
 		if (im1 != (XImage *) 0)
-			(void) XDestroyImage(im1);
+			XDestroyImage(im1);
 		if (im2 != (XImage *) 0)
-			(void) XDestroyImage(im2);
+			XDestroyImage(im2);
 
 /* Repeat for each visual. */
 	}
@@ -402,9 +402,9 @@ unsigned long pix;
 				CHECK;
 /* Destroy images using XDestroyImage. */
 			if (im1 != (XImage *) 0)
-				(void) XDestroyImage(im1);
+				XDestroyImage(im1);
 			if (im2 != (XImage *) 0)
-				(void) XDestroyImage(im2);
+				XDestroyImage(im2);
 
 /* Repeat for each planemask. */
 		}
@@ -533,9 +533,9 @@ unsigned long pix;
 				CHECK;
 /* Destroy images using XDestroyImage. */
 			if (im1 != (XImage *) 0)
-				(void) XDestroyImage(im1);
+				XDestroyImage(im1);
 			if (im2 != (XImage *) 0)
-				(void) XDestroyImage(im2);
+				XDestroyImage(im2);
 
 /* Repeat for each planemask. */
 		}
@@ -660,9 +660,9 @@ static struct area area1 =
 
 /* Destroy images using XDestroyImage. */
 		if (im1 != (XImage *) 0)
-			(void) XDestroyImage(im1);
+			XDestroyImage(im1);
 		if (im2 != (XImage *) 0)
-			(void) XDestroyImage(im2);
+			XDestroyImage(im2);
 
 /* Repeat for each type-window visual. */
 	}
@@ -740,10 +740,10 @@ static struct area area =
 	XGrabServer(display);
 
 /* Enable synchronization. */
-	(void) XSynchronize(display, True);
+	XSynchronize(display, True);
 
 /* Save initial pointer location. */
-	(void) XQueryPointer(display, w, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
+	XQueryPointer(display, w, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
 
 /* Warp pointer to drawable. */
 	XWarpPointer(display, None, w, 0, 0, 0, 0, 0, 0);
@@ -791,7 +791,7 @@ static struct area area =
 	XWarpPointer(display, None, w, W_STDWIDTH*2, W_STDHEIGHT*2, 0, 0, 0, 0);
 
 /* Get new pointer location. */
-	(void) XQueryPointer(display, w, &wtmp, &wtmp, &oroot_x, &oroot_y, &itmp, &itmp, &uitmp);
+	XQueryPointer(display, w, &wtmp, &wtmp, &oroot_x, &oroot_y, &itmp, &itmp, &uitmp);
 
 /* Call XGetImage with pointer outside drawable. */
 	pre_xcall(w, &area, AllPlanes, ZPixmap);
@@ -829,7 +829,7 @@ static struct area area =
 	XWarpPointer(display, None, oldroot, 0, 0, 0, 0, sroot_x, sroot_y);
 
 /* Disable synchronization. */
-	(void) XSynchronize(display, False);
+	XSynchronize(display, False);
 
 /* Ungrab server. */
 	XUngrabServer(display);

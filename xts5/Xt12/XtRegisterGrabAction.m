@@ -206,7 +206,7 @@ static XtActionsRec actions[] = {
 	tet_infoline("PREP: Create boxw2 widget in panedw widget");
 	boxw2 = (Widget) CreateBoxWidget(panedw);
 	tet_infoline("PREP: Set height and width of boxw2 widget");
-	(void) ConfigureDimension(topLevel, boxw2);
+	ConfigureDimension(topLevel, boxw2);
 	sprintf(ebuf, "PREP: Create label in boxw1 widget");
 	tet_infoline(ebuf);
 	labelw_msg = (Widget) CreateLabelWidget(msg, boxw1);

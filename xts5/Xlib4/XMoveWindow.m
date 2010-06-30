@@ -201,7 +201,7 @@ Verify that window contents are unchanged.
 >>CODE
 XImage	*imp;
 
-	(void) onewin();
+	onewin();
 
 	pattern(display, w);
 
@@ -384,7 +384,7 @@ XConfigureEvent	good;
 XEvent	ev;
 int 	n;
 
-	(void) onewin();
+	onewin();
 
 	XSelectInput(display, w, StructureNotifyMask);
 

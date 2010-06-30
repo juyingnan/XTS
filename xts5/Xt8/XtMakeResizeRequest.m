@@ -242,8 +242,8 @@ int	invoked;
                         labelw_good,
                         NULL
                         );
-        (void) ConfigureDimension(topLevel, labelw_good);
-        (void) ConfigureDimension(topLevel, labelw_good2);
+        ConfigureDimension(topLevel, labelw_good);
+        ConfigureDimension(topLevel, labelw_good2);
 	tet_infoline("TEST: Call XtMakeResizeRequest");
 	result = XtMakeResizeRequest(labelw_good2, width, height, &width_return, &height_return);
         LKROF(pid2, AVSXTTIMEOUT-2);

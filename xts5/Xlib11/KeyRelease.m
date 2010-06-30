@@ -412,7 +412,7 @@ int			kc;
 	XSelectInput(client2, w, EVENTMASK);
 
 		/* Simulate a xname event on the window. */
-	(void) warppointer(Dsp, w, 0, 0);
+	warppointer(Dsp, w, 0, 0);
 	XSync(Dsp, True);
 	XSync(client2, True);
 
@@ -496,7 +496,7 @@ int			kc;
 	XSelectInput(Dsp, DRW(Dsp), EVENTMASK);	
 
 		/* Simulate a xname event on the grandchild. */
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	kc = keycode();
 	presskey(Dsp, w2, kc);
 	
@@ -666,7 +666,7 @@ int		kc;
 	w1 = crechild(Dsp, w, (struct area *) NULL);
 		/* Select xname events on the parent. */
 	XSelectInput(Dsp, w, EVENTMASK);	
-	(void) warppointer(Dsp, w1, 1,1);
+	warppointer(Dsp, w1, 1,1);
 	
 		/* Simulate a xname event on the child. */
 	kc=keycode();
@@ -729,7 +729,7 @@ int		kc;
 	w2 = crechild(Dsp, w1, &area);
 		/* Create a great-grandchild. */
 	w3 = crechild(Dsp, w2, &area);
-	(void) warppointer(Dsp, w3, 1,1);
+	warppointer(Dsp, w3, 1,1);
 
 		/* Select xname events on the great-grandparent. */
 	XSelectInput(Dsp, w, EVENTMASK);
@@ -786,7 +786,7 @@ int		kc;
 
 		/* Create a window. */
         w = defwin(Dsp);
-	(void) warppointer(Dsp, w, 1,1);
+	warppointer(Dsp, w, 1,1);
 
 		/* Select xname events on the window. */
 	XSelectInput(Dsp, w, EVENTMASK);
@@ -820,7 +820,7 @@ int		kc;
 		CHECK;
 
 		/* Simulate a xname event on the second window. */
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	presskey(Dsp, w2, kc);
 	
 		/* Verify that a xname event was generated on the grabbing window. */
@@ -900,7 +900,7 @@ int		kc;
         w = defwin(Dsp);
 	
 			/* Select xname events on the window. */
-	(void) warppointer(Dsp, w, 1,1);
+	warppointer(Dsp, w, 1,1);
 	XSelectInput(Dsp, w, EVENTMASK);
 	
 			/* Create a window on the alternative screen. */
@@ -915,7 +915,7 @@ int		kc;
 	
 	kc=keycode();
 			/* Simulate a xname event on the alternate window. */
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	presskey(Dsp, w2, kc);
 	
 			/* Verify that a xname event was generated on the grabbing window. */
@@ -1020,7 +1020,7 @@ int		kc;
 			/* Create a window on the default screen. */
         w = defwin(Dsp);
 	
-	(void) warppointer(Dsp, w, 1,1);
+	warppointer(Dsp, w, 1,1);
 			/* Select xname events on the window. */
 	XSelectInput(Dsp, w, EVENTMASK);
 	
@@ -1036,7 +1036,7 @@ int		kc;
 	
 	kc=keycode();
 			/* Simulate a xname event on the alternate window. */
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	presskey(Dsp, w2, kc);
 	
 			/* Verify that a xname event was generated on the grabbing window. */

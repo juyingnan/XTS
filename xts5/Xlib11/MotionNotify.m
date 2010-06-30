@@ -332,7 +332,7 @@ PointerPlace		*ptr;
 	XSelectInput(client2, w, Button1MotionMask);
 	XSelectInput(client3, w, Button1MotionMask);
 
-	(void) warppointer(Dsp, w, 0,0);
+	warppointer(Dsp, w, 0,0);
 	XSync(Dsp, True);
 	XSync(client2, True);
 	XSync(client3, True);
@@ -463,7 +463,7 @@ PointerPlace		*ptr;
 	XSelectInput(client2, w, Button2MotionMask);
 	XSelectInput(client3, w, Button2MotionMask);
 
-	(void) warppointer(Dsp, w, 0,0);
+	warppointer(Dsp, w, 0,0);
 	XSync(Dsp, True);
 	XSync(client2, True);
 	XSync(client3, True);
@@ -594,7 +594,7 @@ PointerPlace		*ptr;
 	XSelectInput(client2, w, Button3MotionMask);
 	XSelectInput(client3, w, Button3MotionMask);
 
-	(void) warppointer(Dsp, w, 0,0);
+	warppointer(Dsp, w, 0,0);
 	XSync(Dsp, True);
 	XSync(client2, True);
 	XSync(client3, True);
@@ -725,7 +725,7 @@ PointerPlace		*ptr;
 	XSelectInput(client2, w, Button4MotionMask);
 	XSelectInput(client3, w, Button4MotionMask);
 
-	(void) warppointer(Dsp, w, 0,0);
+	warppointer(Dsp, w, 0,0);
 	XSync(Dsp, True);
 	XSync(client2, True);
 	XSync(client3, True);
@@ -856,7 +856,7 @@ PointerPlace		*ptr;
 	XSelectInput(client2, w, Button5MotionMask);
 	XSelectInput(client3, w, Button5MotionMask);
 
-	(void) warppointer(Dsp, w, 0,0);
+	warppointer(Dsp, w, 0,0);
 	XSync(Dsp, True);
 	XSync(client2, True);
 	XSync(client3, True);
@@ -987,7 +987,7 @@ PointerPlace		*ptr;
 	XSelectInput(client2, w, ButtonMotionMask);
 	XSelectInput(client3, w, ButtonMotionMask);
 
-	(void) warppointer(Dsp, w, 0,0);
+	warppointer(Dsp, w, 0,0);
 	XSync(Dsp, True);
 	XSync(client2, True);
 	XSync(client3, True);
@@ -1120,10 +1120,10 @@ XEvent		ev;
 	XSelectInput(Dsp, w, MOTIONMASK);
 
 		/* Simulate a Motion event with Button1 depressed on the window. */
-	(void) warppointer(Dsp, w, 0,0);
+	warppointer(Dsp, w, 0,0);
 	XSync(Dsp, True);
 	buttonpress(Dsp, Button1);
-	(void) warppointer(Dsp, w, 10, 10);
+	warppointer(Dsp, w, 10, 10);
 	XSync(Dsp, False);
 	buttonrel(Dsp, Button1);
 
@@ -1161,9 +1161,9 @@ XEvent		ev;
 		buttonpress(Dsp, Button5);
 
 
-	(void) warppointer(Dsp, w, 0,0);
+	warppointer(Dsp, w, 0,0);
 	XSync(Dsp, True);
-	(void) warppointer(Dsp, w, 10, 10);
+	warppointer(Dsp, w, 10, 10);
 	XSync(Dsp, False);
 
 	for(i=0; i < NELEM(motionmasks); i++) {
@@ -1267,12 +1267,12 @@ int			i;
 		XSelectInput(Dsp, w, buttonmask[i]);
 
 			/* Simulate the motion event. */
-		(void) warppointer(Dsp, w, 0,0);
+		warppointer(Dsp, w, 0,0);
 		XSync(Dsp, False);
 		XSync(client2, False);
 		if(buttonmask[i] != PointerMotionMask)
 			buttonpress(Dsp, buttons[i]);
-		(void) warppointer(Dsp, w, 10,10);
+		warppointer(Dsp, w, 10,10);
 		XSync(Dsp, False);
 		XSync(client2, False);
 			
@@ -1611,11 +1611,11 @@ int			i;
 		XSelectInput(Dsp, DRW(Dsp), buttonmask[i]);	
 
 /* Simulate a xname event on the grandchild. */
-		(void) warppointer(Dsp, w2, 0,0);
+		warppointer(Dsp, w2, 0,0);
 		XSync(Dsp, False);
 		if(buttonmask[i] != PointerMotionMask)
 			buttonpress(Dsp, buttons[i]);
-		(void) warppointer(Dsp, w2, 1,1);
+		warppointer(Dsp, w2, 1,1);
 		if(buttonmask[i] != PointerMotionMask)
 			buttonrel(Dsp, buttons[i]);
 		XSync(Dsp, False);
@@ -1637,11 +1637,11 @@ int			i;
 		XChangeWindowAttributes(Dsp, w1, CWDontPropagate, &atts);
 	
 /* Simulate a xname event on the grandchild. */
-		(void) warppointer(Dsp, w2, 0,0);
+		warppointer(Dsp, w2, 0,0);
 		XSync(Dsp, False);
 		if(buttonmask[i] != PointerMotionMask)
 			buttonpress(Dsp, buttons[i]);
-		(void) warppointer(Dsp, w2, 1,1);
+		warppointer(Dsp, w2, 1,1);
 		if(buttonmask[i] != PointerMotionMask)
 			buttonrel(Dsp, buttons[i]);
 		XSync(Dsp, False);
@@ -1675,11 +1675,11 @@ int			i;
 		XChangeWindowAttributes(Dsp, w1, CWDontPropagate, &atts);
 
 /* Simulate a xname event on the grandchild. */
-		(void) warppointer(Dsp, w2, 0,0);
+		warppointer(Dsp, w2, 0,0);
 		XSync(Dsp, False);
 		if(buttonmask[i] != PointerMotionMask)
 			buttonpress(Dsp, buttons[i]);
-		(void) warppointer(Dsp, w2, 1,1);
+		warppointer(Dsp, w2, 1,1);
 		if(buttonmask[i] != PointerMotionMask)
 			buttonrel(Dsp, buttons[i]);
 		XSync(Dsp, False);
@@ -2069,9 +2069,9 @@ XEvent			ev;
 		CHECK;
 	
 /* Generate a PointerMotion event on the alternate window. */
-	(void) warppointer(Dsp, w2, 0,0);
+	warppointer(Dsp, w2, 0,0);
 	XSync(Dsp, True);
-	(void) warppointer(Dsp, w2, 10, 10);
+	warppointer(Dsp, w2, 10, 10);
 	XSync(Dsp, False);
 
 /* Verify that a PointerMotion event was generated with respect to the grabbing window. */
@@ -2090,10 +2090,10 @@ XEvent			ev;
 	}
 
 /* Generate a ButtonMotion mask on the alternate window. */
-	(void) warppointer(Dsp, w2, 0,0);
+	warppointer(Dsp, w2, 0,0);
 	XSync(Dsp, True);
 	buttonpress(Dsp, Button1);
-	(void) warppointer(Dsp, w2, 10, 10);
+	warppointer(Dsp, w2, 10, 10);
 	XSync(Dsp, False);
 	buttonrel(Dsp, Button1);
 
@@ -2210,9 +2210,9 @@ XEvent			ev;
 		CHECK;
 	
 /* Generate a PointerMotion event on the alternate window. */
-	(void) warppointer(Dsp, w2, 0,0);
+	warppointer(Dsp, w2, 0,0);
 	XSync(Dsp, True);
-	(void) warppointer(Dsp, w2, 10, 10);
+	warppointer(Dsp, w2, 10, 10);
 	XSync(Dsp, False);
 
 /* Verify that a PointerMotion event was generated with respect to the grabbing window. */
@@ -2230,10 +2230,10 @@ XEvent			ev;
 	}
 
 /* Generate a ButtonMotion event on the alternate window. */
-	(void) warppointer(Dsp, w2, 0,0);
+	warppointer(Dsp, w2, 0,0);
 	XSync(Dsp, True);
 	buttonpress(Dsp, Button1);
-	(void) warppointer(Dsp, w2, 10, 10);
+	warppointer(Dsp, w2, 10, 10);
 	XSync(Dsp, False);
 	buttonrel(Dsp, Button1);
 

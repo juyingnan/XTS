@@ -124,12 +124,12 @@ unsigned int 	mask = PointerMotionMask;
 
 	win = defwin(display);
 	XSelectInput(display, win, PointerMotionMask);
-	(void) warppointer(display, win, 0, 0);
+	warppointer(display, win, 0, 0);
 
 	XGrabPointer(display, win, False, mask, GrabModeSync, GrabModeAsync,
 		None, None, CurrentTime);
 
-	(void) warppointer(display, win, 1, 1);
+	warppointer(display, win, 1, 1);
 	if (XCheckMaskEvent(display, (unsigned long)mask, &ev)) {
 		delete("Pointer event was received while frozen");
 		return;
@@ -177,7 +177,7 @@ unsigned int 	mask;
 	client2 = opendisplay();
 
 	win = defwin(display);
-	(void) warppointer(display, win, 0, 0);
+	warppointer(display, win, 0, 0);
 	XSelectInput(client2, win, (unsigned long)mask);
 
 	grabwin = defwin(display);
@@ -193,7 +193,7 @@ unsigned int 	mask;
 	thetime -= 100;
 	XCALL;
 
-	(void) warppointer(display, win, 8, 8);
+	warppointer(display, win, 8, 8);
 	if (XCheckMaskEvent(client2, (unsigned long)mask, &ev)) {
 		report("Grab was released when time was earlier than last-pointer-grab time");
 		FAIL;
@@ -211,7 +211,7 @@ unsigned int 	mask;
 
 	XCALL;
 
-	(void) warppointer(display, win, 12, 1);
+	warppointer(display, win, 12, 1);
 	if (XCheckMaskEvent(client2, (unsigned long)mask, &ev)) {
 		report("Grab was released when time was earlier than last-pointer-grab time");
 		FAIL;
@@ -245,7 +245,7 @@ XLeaveWindowEvent	leavegood;
 	grabwin = defwin(display);
 	win = defwin(display);
 
-	(void) warppointer(display, win, 0, 0);
+	warppointer(display, win, 0, 0);
 
 	XGrabPointer(display, grabwin, False, (unsigned int)PointerMotionMask,
 		GrabModeSync, GrabModeAsync, None, None, CurrentTime);

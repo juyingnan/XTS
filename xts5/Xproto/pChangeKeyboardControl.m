@@ -142,7 +142,7 @@ tester()
 		Log_Trace("client %d received GetKeyboardControl reply\n", CLIENT);
 		/* do any reply checking here */
 	}
-	(void) Expect_Nothing(CLIENT);
+	Expect_Nothing(CLIENT);
 
 	Set_Test_Type(CLIENT, test_type);
 	req = (xChangeKeyboardControlReq *) Make_Req(CLIENT, X_ChangeKeyboardControl);
@@ -157,23 +157,23 @@ tester()
 	switch(test_type) {
 	case GOOD:
 		Log_Trace("client %d sent default ChangeKeyboardControl request\n", CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case BAD_VALUE:
 		Log_Trace("client %d sent ChangeKeyboardControl request with illegal mask\n", CLIENT);
-		(void) Expect_BadValue(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadValue(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case BAD_LENGTH:
 		Log_Trace("client %d sent ChangeKeyboardControl request with bad length (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
 		Log_Trace("client %d sent overlong ChangeKeyboardControl request (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	default:
 		Log_Err("INTERNAL ERROR: test_type %d not one of GOOD(%d), BAD_LENGTH(%d), TOO_LONG(%d) or JUST_TOO_LONG(%d)\n",

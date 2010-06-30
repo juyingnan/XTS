@@ -148,7 +148,7 @@ int dkp, dkr;
 	} else
 		CHECK;
 
-	(void) warppointer(display, win, 10, 10);
+	warppointer(display, win, 10, 10);
 	XSync(display,1);
 	devicekeypress(display, Devs.Key, MinKeyCode);
 	devicekeyrel(display, Devs.Key, MinKeyCode);
@@ -170,7 +170,7 @@ int dkp, dkr;
 		FAIL;
 	} else {
 		first = ev.type;
-		(void) getevent(display, &ev);
+		getevent(display, &ev);
 
 		if (ev.type != dkp && first != dkp) {
 			report("Did not get DeviceKeyPress event after releasing grab");
@@ -186,7 +186,7 @@ int dkp, dkr;
 
 	win = defwin(display);
 	XSelectExtensionEvent(display, win, &dkclass[0], 1);
-	(void) warppointer(display, win, 5, 5);
+	warppointer(display, win, 5, 5);
 	devicekeypress(display, Devs.Key, MinKeyCode);
 	if (XPending(display)) {
 		XNextEvent(display, &ev);
@@ -230,8 +230,8 @@ XEvent	ev;
 	win = defwin(display);
 	XSelectInput(display, win, PointerMotionMask);
 
-	(void) warppointer(display, win, 0, 0);
-	(void) warppointer(display, win, 1, 1);
+	warppointer(display, win, 0, 0);
+	warppointer(display, win, 1, 1);
 
 	if (XCheckWindowEvent(display, win, PointerMotionMask, &ev))
 		return(False);

@@ -176,7 +176,7 @@ Verify that new position is offset from old by dest_x, dest_y.
 struct	coord	old;
 struct	coord	new;
 
-	(void) warppointer(display, DRW(display), 100, 100);
+	warppointer(display, DRW(display), 100, 100);
 
 	dest_w = None;
 	src_w = None;
@@ -229,7 +229,7 @@ Verify that pointer is at (dest_x,dest_y) from origin of dest_w.
 >>CODE
 struct	coord	pos;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	dest_w = defwin(display);
 	src_w = None;
@@ -274,7 +274,7 @@ struct	coord	pos;
 	dest_w = defwin(display);
 	src_w = defwin(display);
 
-	(void) warppointer(display, src_w, src_x, src_y);
+	warppointer(display, src_w, src_x, src_y);
 
 	XCALL;
 
@@ -347,7 +347,7 @@ struct	coord	pos;
 
 	getsize(display, src_w, &width, &height);
 
-	(void) warppointer(display, src_w, src_x+3, (int)height-3);
+	warppointer(display, src_w, src_x+3, (int)height-3);
 
 	XCALL;
 
@@ -388,7 +388,7 @@ struct	coord	pos;
 
 	getsize(display, src_w, &width, &height);
 
-	(void) warppointer(display, src_w, (int)width-3, src_y+3);
+	warppointer(display, src_w, (int)width-3, src_y+3);
 
 	XCALL;
 
@@ -422,7 +422,7 @@ int 	n;
 	dest_w = defwin(display);
 	src_w = None;
 
-	(void) warppointer(display, dest_w, 0, 0);
+	warppointer(display, dest_w, 0, 0);
 
 	XSelectInput(display, dest_w, PointerMotionMask);
 
@@ -482,7 +482,7 @@ unsigned int 	width, height;
 	getsize(display, confine, &width, &height);
 
 	/* May as well put the pointer there to begin with */
-	(void) warppointer(display, confine, 1, 1);
+	warppointer(display, confine, 1, 1);
 
 	XGrabPointer(display, grabwin, False, 0, GrabModeAsync, GrabModeAsync,
 		confine, None, CurrentTime);

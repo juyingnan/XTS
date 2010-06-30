@@ -390,7 +390,7 @@ Verify expose or backing store restore occurred with exposecheck().
 >>CODE
 
 	w = defwin(display);
-	(void) buildtree(display, w, T1, NT1);
+	buildtree(display, w, T1, NT1);
 
 	setforexpose(display, w);
 	XSelectInput(display, w, ExposureMask);

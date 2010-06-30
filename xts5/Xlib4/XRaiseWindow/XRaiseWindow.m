@@ -173,7 +173,7 @@ Window	parent, one;
 
 /* Call setforexpose on window 'one' to allow Expose event checking. */
 	setforexpose(display, one);	
-	(void) buildtree(display, parent, Expose2Template, NExpose2Template);
+	buildtree(display, parent, Expose2Template, NExpose2Template);
 
 /* Select Expose events on window 'one'. */
 	XSelectInput(display, one, ExposureMask);

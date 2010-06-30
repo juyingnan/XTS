@@ -134,7 +134,7 @@ struct	area	area;
 
 	XCALL;
 
-	(void) XGetWindowAttributes(display, w, &atts);
+	XGetWindowAttributes(display, w, &atts);
 	if (atts.map_state != IsViewable) {
 		report("map state after map was %s, expecting %s",
 			mapstatename(atts.map_state), mapstatename(IsViewable));
@@ -175,7 +175,7 @@ XWindowAttributes	atts;
 
 	XCALL;
 
-	(void) XGetWindowAttributes(display, w, &atts);
+	XGetWindowAttributes(display, w, &atts);
 	if (atts.map_state != IsUnviewable) {
 		report("map state after map was %s, expecting %s",
 			mapstatename(atts.map_state), mapstatename(IsUnviewable));
@@ -293,7 +293,7 @@ XImage	*imp;
 		FAIL;
 	}
 
-	(void) XGetWindowAttributes(display, w, &atts);
+	XGetWindowAttributes(display, w, &atts);
 	if (atts.map_state != IsViewable) {
 		report("map state after map was %s, expecting %s",
 			mapstatename(atts.map_state), mapstatename(IsViewable));
@@ -369,7 +369,7 @@ int 	n;
 	else
 		CHECK;
 
-	(void) XGetWindowAttributes(display, w, &atts);
+	XGetWindowAttributes(display, w, &atts);
 	if (atts.map_state != IsUnmapped) {
 		report("map state after map was %s, expecting %s",
 			mapstatename(atts.map_state), mapstatename(IsUnmapped));
@@ -461,7 +461,7 @@ int 	n;
 	else
 		CHECK;
 
-	(void) XGetWindowAttributes(display, w, &atts);
+	XGetWindowAttributes(display, w, &atts);
 	if (atts.map_state != IsViewable) {
 		report("map state after map was %s, expecting %s",
 			mapstatename(atts.map_state), mapstatename(IsViewable));
@@ -554,7 +554,7 @@ int 	n;
 	else
 		CHECK;
 
-	(void) XGetWindowAttributes(display, w, &atts);
+	XGetWindowAttributes(display, w, &atts);
 	if (atts.map_state != IsViewable) {
 		report("map state after map was %s, expecting %s",
 			mapstatename(atts.map_state), mapstatename(IsViewable));
@@ -819,7 +819,7 @@ XSetWindowAttributes	setatts;
 		CHECK;
 
 	if (n == 1) {
-		(void) getevent(display, &ev);
+		getevent(display, &ev);
 		if (ev.type != Expose) {
 			/* Only Expose events were enabled */
 			delete("Unexpected event received (%s)", eventname(ev.type));

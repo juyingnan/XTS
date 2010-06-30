@@ -128,8 +128,8 @@ XEvent	ev;
 	/*
 	 * Ensure that pointer either enters or moves within grab_window.
 	 */
-	(void) warppointer(display, grab_window, 1, 1);
-	(void) warppointer(display, grab_window, 1, 2);
+	warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 2);
 
 	XSync(client2, False);
 	if (getevent(client2, &ev)) {
@@ -158,7 +158,7 @@ XEvent	ev;
 static
 activate()
 {
-	(void) warppointer(display, grab_window, ACTPOSX, ACTPOSY);
+	warppointer(display, grab_window, ACTPOSX, ACTPOSY);
 	if (modifiers)
 		modpress(display, modifiers);
 	buttonpress(display, button);

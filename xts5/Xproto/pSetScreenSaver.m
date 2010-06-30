@@ -142,7 +142,7 @@ tester()
 		Log_Trace("client %d received GetScreenSaver reply\n", CLIENT);
 		/* do any reply checking here */
 	}
-	(void) Expect_Nothing(CLIENT);
+	Expect_Nothing(CLIENT);
 
 	Set_Test_Type(CLIENT, test_type);
 	req = (xSetScreenSaverReq *) Make_Req(CLIENT, X_SetScreenSaver);
@@ -155,18 +155,18 @@ tester()
 	switch(test_type) {
 	case GOOD:
 		Log_Trace("client %d sent default SetScreenSaver request\n", CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case BAD_LENGTH:
 		Log_Trace("client %d sent SetScreenSaver request with bad length (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
 		Log_Trace("client %d sent overlong SetScreenSaver request (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	default:
 		Log_Err("INTERNAL ERROR: test_type %d not one of GOOD(%d), BAD_LENGTH(%d), TOO_LONG(%d) or JUST_TOO_LONG(%d)\n",

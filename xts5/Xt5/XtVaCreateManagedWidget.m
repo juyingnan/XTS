@@ -966,7 +966,7 @@ int invoked;
 			boxw1,
 			NULL
 			);
-	(void) ConfigureDimension(topLevel, labelw_good);
+	ConfigureDimension(topLevel, labelw_good);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
 	tet_infoline("TEST: Create a widget with non-composite parent");

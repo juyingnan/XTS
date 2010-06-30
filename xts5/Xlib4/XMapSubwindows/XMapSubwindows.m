@@ -140,7 +140,7 @@ int 	i;
 	XCALL;
 
 	for (i = 1; i < NELEM(T1); i++) {
-		(void) XGetWindowAttributes(display, btlist[i].wid, &atts);
+		XGetWindowAttributes(display, btlist[i].wid, &atts);
 		if (atts.map_state != IsViewable) {
 			report("map state after map was %s, expecting %s",
 				mapstatename(atts.map_state), mapstatename(IsViewable));
@@ -182,7 +182,7 @@ int 	i;
 	XCALL;
 
 	for (i = 1; i < NELEM(T1); i++) {
-		(void) XGetWindowAttributes(display, btp[i].wid, &atts);
+		XGetWindowAttributes(display, btp[i].wid, &atts);
 		if (atts.map_state != IsUnviewable) {
 			report("map state after map was %s, expecting %s",
 				mapstatename(atts.map_state), mapstatename(IsUnviewable));
@@ -242,7 +242,7 @@ int 	i;
 	}
 
 	for (i = 1; i < NELEM(T1); i++) {
-		(void) XGetWindowAttributes(display, bt[i].wid, &atts);
+		XGetWindowAttributes(display, bt[i].wid, &atts);
 		if (atts.map_state != IsViewable) {
 			report("map state after map was %s, expecting %s",
 				mapstatename(atts.map_state), mapstatename(IsViewable));
@@ -351,7 +351,7 @@ int 	i;
 		} else
 			CHECK;
 
-		(void) XGetWindowAttributes(display, bt[i].wid, &atts);
+		XGetWindowAttributes(display, bt[i].wid, &atts);
 		if (atts.map_state != IsUnmapped) {
 			report("map state after map was %s, expecting %s",
 				mapstatename(atts.map_state), mapstatename(IsUnmapped));
@@ -511,7 +511,7 @@ int 	i;
 			report("No map notify received on parent of window '%s'", bt[i].name);
 			FAIL;
 		}
-		(void) XGetWindowAttributes(display, w, &atts);
+		XGetWindowAttributes(display, w, &atts);
 		if (atts.map_state != IsViewable) {
 			report("map state after map was %s, expecting %s",
 				mapstatename(atts.map_state), mapstatename(IsViewable));
@@ -669,7 +669,7 @@ int 	i;
 			report("No map notify received on parent of window '%s'", bt[i].name);
 			FAIL;
 		}
-		(void) XGetWindowAttributes(display, w, &atts);
+		XGetWindowAttributes(display, w, &atts);
 		if (atts.map_state != IsViewable) {
 			report("map state after map was %s, expecting %s",
 				mapstatename(atts.map_state), mapstatename(IsViewable));
@@ -964,7 +964,7 @@ XSetWindowAttributes	setatts;
 		CHECK;
 
 	if (n == 1) {
-		(void) getevent(display, &ev);
+		getevent(display, &ev);
 		if (ev.type != Expose) {
 			/* Only Expose events were enabled */
 			delete("Unexpected event received (%s)", eventname(ev.type));

@@ -404,7 +404,7 @@ Display *display2;
 		CHECK;
 
 /* Close display2. */
-	(void) XCloseDisplay(display2);
+	XCloseDisplay(display2);
 
 /* Allow sufficient time for the server to register the close display */
 	reset_delay();
@@ -470,7 +470,7 @@ Atom atom_return;
 		CHECK;
 
 /* Close the last connection to the server. */
-	(void) XCloseDisplay(display);
+	XCloseDisplay(display);
 
 /* Allow sufficient time for the server to register the close display */
 	reset_delay();

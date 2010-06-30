@@ -316,7 +316,7 @@ XWindowAttributes	atts;
 	setarea(&area, 5, 5, 10, 10);
 	ch = crechild(display, w, &area);
 
-	(void) XGetWindowAttributes(display, ch, &atts);
+	XGetWindowAttributes(display, ch, &atts);
 	if (atts.map_state != IsViewable) {
 		delete("Before unmapping parent map-state of child was %s, expecting IsViewable", mapstatename(atts.map_state));
 		return;
@@ -325,7 +325,7 @@ XWindowAttributes	atts;
 
 	XCALL;
 
-	(void) XGetWindowAttributes(display, ch, &atts);
+	XGetWindowAttributes(display, ch, &atts);
 	if (atts.map_state != IsUnviewable) {
 		report("After unmap map-state was %s, expecting IsUnviewable",
 			mapstatename(atts.map_state));

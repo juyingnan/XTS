@@ -166,7 +166,7 @@ XEventClass classes[2];
 	XSelectExtensionEvent(display, win, classes, 2);
 	focus = None;
 	XCALL;
-	(void) warppointer(display, win, 2, 2);
+	warppointer(display, win, 2, 2);
 	XSync(display, True); /* clear out event queue */
 	devicekeypress(display, device, MinKeyCode);
 	if (n=getevent(display, &ev)) /* assignment intentional */ {
@@ -346,7 +346,7 @@ XEventClass classes[2], nevclass;
 	trace("Test with toplevel window and PointerRoot.");
 	focus = PointerRoot;
 	XCALL;
-	(void) warppointer(display, win, 2, 2);
+	warppointer(display, win, 2, 2);
 	XSync(display, True); /* clear out event queue */
 	devicekeypress(display, device, MinKeyCode);
 	if (!getevent(display, &ev)) {
@@ -362,7 +362,7 @@ XEventClass classes[2], nevclass;
 	} else
 		CHECK;
 	trace("Test with root and PointerRoot.");
-	(void) warppointer(display, root, 0,0);
+	warppointer(display, root, 0,0);
 	XSync(display, True); /* clear out event queue */
 	devicekeyrel(display, device, MinKeyCode);
 	if (!getevent(display, &ev)) {
@@ -383,7 +383,7 @@ XEventClass classes[2], nevclass;
 		trace("Testing with root of alternate screen as source (0x%x) and PointerRoot.",
 				(unsigned)altroot);
 		XSelectExtensionEvent(display, altroot, classes, 2);
-		(void) warppointer(display, altroot, 0,0);
+		warppointer(display, altroot, 0,0);
 		XSync(display, True); /* clear out event queue */
 		devicekeypress(display, device, MinKeyCode);
 		devicekeyrel(display, device, MinKeyCode);
@@ -622,7 +622,7 @@ XEventClass classes[2], nevclass;
 	focus = crechild(display, base, (struct area *)0);
 	revert_to = RevertToPointerRoot;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	if (isdeleted())
 		return;
@@ -781,7 +781,7 @@ XEventClass classes[2];
 	focus = crechild(display, base, (struct area *)0);
 	revert_to = RevertToFollowKeyboard;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	if (isdeleted())
 		return;
@@ -934,7 +934,7 @@ XEventClass classes[2];
 	focus = crechild(display, base, (struct area *)0);
 	revert_to = RevertToNone;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	if (isdeleted())
 		return;

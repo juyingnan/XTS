@@ -207,18 +207,18 @@ debug(3,"post-send length of req = %d, req at 0x%lx\n",req->length,(unsigned lon
 	case GOOD:
 		Log_Trace("client %d sent default ChangeHosts request\n", CLIENT);
 		Log_Trace("\t(BadAccess probably indicates not on local/privileged machine)\n");
-		(void) Expect_Nothing(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case BAD_LENGTH:
 		Log_Trace("client %d sent ChangeHosts request with bad length (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
 		Log_Trace("client %d sent overlong ChangeHosts request (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	default:
 		Log_Err("INTERNAL ERROR: test_type %d not one of GOOD(%d), BAD_LENGTH(%d), TOO_LONG(%d) or JUST_TOO_LONG(%d)\n",
@@ -235,7 +235,7 @@ debug(3,"post-send length of req = %d, req at 0x%lx\n",req->length,(unsigned lon
 	    Set_Test_Type(CLIENT, SETUP);
 	    req->mode = (mode == HostInsert) ? HostDelete : HostInsert;
 	    Send_Req(CLIENT, (xReq *) req);
-	    (void) Expect_Nothing(CLIENT);
+	    Expect_Nothing(CLIENT);
 	}
 
 	Free_Req(hosts_req);

@@ -737,7 +737,7 @@ Atom atm;
 	XCALL;
 
 /* Close new client. */
-	(void) XCloseDisplay(display2);
+	XCloseDisplay(display2);
 
 /* Allow time for the client to close. */
 	reset_delay();

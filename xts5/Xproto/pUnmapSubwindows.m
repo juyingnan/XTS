@@ -137,7 +137,7 @@ tester()
 	cwr->parent = Default_Window;
 	Send_Req(CLIENT, (xReq *) cwr);
 	Log_Trace("client %d sent additional CreateWindow request\n", CLIENT);
-        (void) Expect_Nothing(CLIENT);
+        Expect_Nothing(CLIENT);
 	Free_Req(cwr);
 
 	req = (xResourceReq *) Make_Req(CLIENT, X_MapSubwindows);
@@ -146,7 +146,7 @@ tester()
 
 	/* Don't expect to see Expose event because the parent is not
 	   mapped. */
-        (void) Expect_Nothing(CLIENT);
+        Expect_Nothing(CLIENT);
 	Free_Req(req);
 
 	Set_Test_Type(CLIENT, test_type);
@@ -156,18 +156,18 @@ tester()
 	switch(test_type) {
 	case GOOD:
 		Log_Trace("client %d sent default UnmapSubwindows request\n", CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case BAD_LENGTH:
 		Log_Trace("client %d sent UnmapSubwindows request with bad length (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
 		Log_Trace("client %d sent overlong UnmapSubwindows request (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	default:
 		Log_Err("INTERNAL ERROR: test_type %d not one of GOOD(%d), BAD_LENGTH(%d), TOO_LONG(%d) or JUST_TOO_LONG(%d)\n",

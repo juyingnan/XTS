@@ -790,7 +790,7 @@ int 	supported;
 
 	class = InputOutput;
 
-	(void) XCALL;
+	XCALL;
 
 	if (geterr() == BadMatch)
 		PASS;
@@ -817,7 +817,7 @@ Verify that a BadMatch error occurs.
 	parent = iponlywin(display);
 	class = InputOutput;
 
-	(void) XCALL;
+	XCALL;
 
 	if (geterr() == BadMatch)
 		PASS;
@@ -845,7 +845,7 @@ Verify that BadMatch error occurs.
 	depth = 1;
 	border_width = 0;
 
-	(void) XCALL;
+	XCALL;
 
 	if (geterr() == BadMatch)
 		PASS;
@@ -877,7 +877,7 @@ Verify that a BadValue error occurs.
 	width = 0;
 	height = 10;
 
-	(void) XCALL;
+	XCALL;
 
 	if (geterr() == BadValue)
 		CHECK;
@@ -887,7 +887,7 @@ Verify that a BadValue error occurs.
 	width = 10;
 	height = 0;
 
-	(void) XCALL;
+	XCALL;
 
 	if (geterr() == BadValue)
 		CHECK;

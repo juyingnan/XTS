@@ -530,7 +530,7 @@ Cursor	pcur;
 	XMapWindow(display, w);
 
 		/* Warp the pointer to the child window. */
-	(void) warppointer(display, w, 0,0);
+	warppointer(display, w, 0,0);
 
 		/* Verify that the current cursor is that of the parent. */
 	if(spriteiswin(display, parent) == False) {	

@@ -458,7 +458,7 @@ char *contents = "ApTest.customization:CUSTOM";
 	trace("Create boxw2 widget in panedw widget");
 	boxw2 = (Widget) CreateBoxWidget(panedw);
 	trace("Set the height and width of boxw2 widget");
-	(void) ConfigureDimension(topLevel, boxw2);
+	ConfigureDimension(topLevel, boxw2);
 }
 >>SET tpstartup avs_alloc_sem
 >>SET tpcleanup avs_free_sem

@@ -241,7 +241,7 @@ PointerPlace	*warp;
 	area.y = 0;
 	area.width = W_STDWIDTH;
 	area.height = W_STDHEIGHT;
-	(void) mkwin(display, (XVisualInfo *) NULL, &area, True);
+	mkwin(display, (XVisualInfo *) NULL, &area, True);
 /* Create window2 on top of window1. */
 	w2 = mkwin(display, (XVisualInfo *) NULL, &area, True);
 /* Select for xname and UnmapNotify events on window2. */
@@ -781,7 +781,7 @@ int		gr;
 	w2 = defdraw(Dsp, VI_ALT_WIN);
 
 			/* Warp the pointer into the first window. */
-	(void) warppointer(Dsp, w, 2,3);
+	warppointer(Dsp, w, 2,3);
 
 			/* Grab the pointer for the first window. */
 	if((gr=XGrabPointer(Dsp, w, False, EVENTMASK, GrabModeAsync, GrabModeAsync, None, None, CurrentTime)) != GrabSuccess) {
@@ -792,7 +792,7 @@ int		gr;
 
 			/* Warp the pointer to the alternate window. */
 	XSync(Dsp, True);
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	XSync(Dsp, False);
 
 			/* Verify that an xname event was generated relative to the grab window. */
@@ -1518,7 +1518,7 @@ int		gr;
 	w2 = defdraw(Dsp, VI_ALT_WIN);
 
 			/* Warp the pointer into the first window. */
-	(void) warppointer(Dsp, w, 2,3);
+	warppointer(Dsp, w, 2,3);
 
 			/* Grab the pointer for the first window. */
 	if((gr=XGrabPointer(Dsp, w, False, EVENTMASK, GrabModeAsync, GrabModeAsync, None, None, CurrentTime)) != GrabSuccess) {
@@ -1529,7 +1529,7 @@ int		gr;
 
 			/* Warp the pointer to the alternate window. */
 	XSync(Dsp, True);
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	XSync(Dsp, False);
 
 			/* Verify that an xname event was generated relative to the grab window. */

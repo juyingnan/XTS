@@ -220,8 +220,8 @@ int invoked;
                         labelw_good,
                         NULL
                         );
-        (void) ConfigureDimension(topLevel, labelw_good);
-        (void) ConfigureDimension(topLevel, labelw_good2);
+        ConfigureDimension(topLevel, labelw_good);
+        ConfigureDimension(topLevel, labelw_good2);
 	tet_infoline("TEST: Call XtMakeGeometryRequest");
 	result = XtMakeGeometryRequest(labelw_good2, &request, &reply_return);
         LKROF(pid2, AVSXTTIMEOUT-2);

@@ -205,7 +205,7 @@ char			*unexpstr = "Unexpected event on a child window.";
 	setarea(&area, 10, 10, 30, 30);
 	w1 = crechild(Dsp, w, &area);
 	w2 = crechild(Dsp, w1, &area);
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 
 	XSelectInput(Dsp, w, EnterWindowMask);
 	XSelectInput(Dsp, w1, EnterWindowMask);
@@ -282,7 +282,7 @@ int			count;
 /* Create window. */
 	w = defwin(display);
 
-	(void) warppointer(display, w, PTRX, PTRY);
+	warppointer(display, w, PTRX, PTRY);
 	XSelectInput(display, w, ALLEVENTS & ~ButtonPressMask);
 	XSync(display, True);
 /* Generate xname event. */
@@ -428,7 +428,7 @@ int			count;
 /* Create window. */
 	w = defwin(display);
 
-	(void) warppointer(display, w, PTRX, PTRY);
+	warppointer(display, w, PTRX, PTRY);
 	XSelectInput(display, w, ALLEVENTS & ~ButtonPressMask);
 	XSelectInput(client2, w, ButtonPressMask);
 	XSync(display, True);
@@ -504,7 +504,7 @@ XSetWindowAttributes	atts;
 	w1 = crechild(Dsp, w, (struct area *) NULL);
 	w2 = crechild(Dsp, w1, (struct area *) NULL);
 	XSelectInput(Dsp, DRW(Dsp), ButtonPressMask);	
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 
 	XSync(Dsp, True);
 	buttonpress(Dsp, Button1);
@@ -656,7 +656,7 @@ Window			w1;
 	w = defwin(Dsp);
 	w1 = crechild(Dsp, w, (struct area *) NULL);
 	XSelectInput(Dsp, w, ButtonPressMask);	
-	(void) warppointer(Dsp, w1, 1,1);
+	warppointer(Dsp, w1, 1,1);
 
 	XSync(Dsp, True);
 	buttonpress(Dsp, Button1);
@@ -707,7 +707,7 @@ struct area		area;
 	setarea(&area, 10, 10, 30, 30);
 	w1 = crechild(Dsp, w, &area);
 	w2 = crechild(Dsp, w1, &area);
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	XSelectInput(Dsp, w, ButtonPressMask);
 
 	XSync(Dsp, True);
@@ -757,7 +757,7 @@ XEvent			ev;
 
         w = defwin(Dsp);
 
-	(void) warppointer(Dsp, w, 1,1);
+	warppointer(Dsp, w, 1,1);
 	XSelectInput(Dsp, w, ButtonPressMask);
 
 	XSync(Dsp, True);
@@ -783,7 +783,7 @@ XEvent			ev;
 	} else
 		CHECK;
 
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	XSync(Dsp, True);
 	buttonpress(Dsp, Button1);
 	
@@ -856,7 +856,7 @@ XEvent			ev;
 
         w = defwin(Dsp);
 	
-	(void) warppointer(Dsp, w, 1,1);
+	warppointer(Dsp, w, 1,1);
 	XSelectInput(Dsp, w, ButtonPressMask);
 	
 	w2 = defdraw(Dsp, VI_ALT_WIN);
@@ -867,7 +867,7 @@ XEvent			ev;
 	} else
 		CHECK;
 	
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	XSync(Dsp, True);
 	buttonpress(Dsp, Button1);
 	
@@ -972,7 +972,7 @@ XEvent			ev;
 
         w = defwin(Dsp);
 	
-	(void) warppointer(Dsp, w, 1,1);
+	warppointer(Dsp, w, 1,1);
 	XSelectInput(Dsp, w, ButtonPressMask);
 	
 	w2 = defdraw(Dsp, VI_ALT_WIN);
@@ -983,7 +983,7 @@ XEvent			ev;
 	} else
 		CHECK;
 	
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	XSync(Dsp, True);
 	buttonpress(Dsp, Button1);
 	

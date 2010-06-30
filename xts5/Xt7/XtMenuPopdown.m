@@ -369,11 +369,11 @@ static char trans_good[] = "#replace	\n\
 	display = XtDisplay(topLevel);
 	tet_infoline("PREP: Create a popup shell");
 	test_w = (Widget) XtCreateWidget("test", compositeWidgetClass, boxw1, (ArgList)NULL, 0);
-	(void) ConfigureDimension(topLevel, test_w);
+	ConfigureDimension(topLevel, test_w);
 	test2_w = (Widget) XtCreateWidget("test2", compositeWidgetClass, test_w, (ArgList)NULL, 0);
-	(void) ConfigureDimension(topLevel, test2_w);
+	ConfigureDimension(topLevel, test2_w);
 	test3_w = CreateRowColWidget(test2_w);
-	(void) ConfigureDimension(topLevel, test3_w);
+	ConfigureDimension(topLevel, test3_w);
 	menuw = (ShellWidget)XtVaCreatePopupShell("menuw",
 				overrideShellWidgetClass,
 				test_w, NULL);
@@ -420,11 +420,11 @@ static char trans_good[] = "#replace	\n\
 	display = XtDisplay(topLevel);
 	tet_infoline("PREP: Create a popup shell");
 	test_w = (Widget) XtCreateWidget("test", compositeWidgetClass, boxw1, (ArgList)NULL, 0);
-	(void) ConfigureDimension(topLevel, test_w);
+	ConfigureDimension(topLevel, test_w);
 	test2_w = (Widget) XtCreateWidget("test2", compositeWidgetClass, test_w, (ArgList)NULL, 0);
-	(void) ConfigureDimension(topLevel, test2_w);
+	ConfigureDimension(topLevel, test2_w);
 	test3_w = CreateRowColWidget(test2_w);
-	(void) ConfigureDimension(topLevel, test3_w);
+	ConfigureDimension(topLevel, test3_w);
 	menuw = (ShellWidget)XtVaCreatePopupShell("menuw",
 				overrideShellWidgetClass,
 				test_w, NULL);
@@ -526,9 +526,9 @@ static char trans_good[] = "#replace	\n\
 	display = XtDisplay(topLevel);
 	tet_infoline("PREP: Create a popup shell");
 	test_w = (Widget) XtCreateWidget("test", compositeWidgetClass, boxw1, (ArgList)NULL, 0);
-	(void) ConfigureDimension(topLevel, test_w);
+	ConfigureDimension(topLevel, test_w);
 	test2_w = CreateRowColWidget(test_w);
-	(void) ConfigureDimension(topLevel, test2_w);
+	ConfigureDimension(topLevel, test2_w);
 	menuw = (ShellWidget)XtVaCreatePopupShell("menuw",
 				overrideShellWidgetClass,
 				test_w, NULL);
@@ -573,9 +573,9 @@ static char trans_good[] = "#replace	\n\
 	display = XtDisplay(topLevel);
 	tet_infoline("PREP: Create a popup shell");
 	test_w = (Widget) XtCreateWidget("test", compositeWidgetClass, boxw1, (ArgList)NULL, 0);
-	(void) ConfigureDimension(topLevel, test_w);
+	ConfigureDimension(topLevel, test_w);
 	test2_w = CreateRowColWidget(test_w);
-	(void) ConfigureDimension(topLevel, test2_w);
+	ConfigureDimension(topLevel, test2_w);
 	menuw = (ShellWidget)XtVaCreatePopupShell("menuw",
 				overrideShellWidgetClass,
 				test_w, NULL);
@@ -629,9 +629,9 @@ static char trans_good[] = "#replace	\n\
 	display = XtDisplay(topLevel);
 	tet_infoline("PREP: Create a popup shell");
 	test_w = (Widget) XtCreateWidget("test", compositeWidgetClass, boxw1, (ArgList)NULL, 0);
-	(void) ConfigureDimension(topLevel, test_w);
+	ConfigureDimension(topLevel, test_w);
 	test2_w = CreateRowColWidget(test_w);
-	(void) ConfigureDimension(topLevel, test2_w);
+	ConfigureDimension(topLevel, test2_w);
 	menuw = (ShellWidget)XtVaCreatePopupShell("menuw",
 				overrideShellWidgetClass,
 				test_w, NULL);
@@ -676,9 +676,9 @@ static char trans_good[] = "#replace	\n\
 	display = XtDisplay(topLevel);
 	tet_infoline("PREP: Create a popup shell");
 	test_w = (Widget) XtCreateWidget("test", compositeWidgetClass, boxw1, (ArgList)NULL, 0);
-	(void) ConfigureDimension(topLevel, test_w);
+	ConfigureDimension(topLevel, test_w);
 	test2_w = CreateRowColWidget(test_w);
-	(void) ConfigureDimension(topLevel, test2_w);
+	ConfigureDimension(topLevel, test2_w);
 	menuw = (ShellWidget)XtVaCreatePopupShell("menuw",
 				overrideShellWidgetClass,
 				test_w, NULL);
@@ -728,9 +728,9 @@ static char trans_good[] = "#replace	\n\
 	display = XtDisplay(topLevel);
 	tet_infoline("PREP: Create a popup shell");
 	test_w = (Widget) XtCreateWidget("test", compositeWidgetClass, boxw1, (ArgList)NULL, 0);
-	(void) ConfigureDimension(topLevel, test_w);
+	ConfigureDimension(topLevel, test_w);
 	test2_w = CreateRowColWidget(test_w);
-	(void) ConfigureDimension(topLevel, test2_w);
+	ConfigureDimension(topLevel, test2_w);
 	menuw = (ShellWidget)XtVaCreatePopupShell("menuw",
 				overrideShellWidgetClass,
 				test_w, NULL);
@@ -779,11 +779,11 @@ static char trans_good[] = "#replace	\n\
 	display = XtDisplay(topLevel);
 	tet_infoline("PREP: Create a popup shell");
 	test_w = (Widget) XtCreateWidget("test", compositeWidgetClass, boxw1, (ArgList)NULL, 0);
-	(void) ConfigureDimension(topLevel, test_w);
+	ConfigureDimension(topLevel, test_w);
 	test2_w = (Widget) XtCreateWidget("test2", compositeWidgetClass, test_w, (ArgList)NULL, 0);
-	(void) ConfigureDimension(topLevel, test2_w);
+	ConfigureDimension(topLevel, test2_w);
 	test3_w = CreateRowColWidget(test2_w);
-	(void) ConfigureDimension(topLevel, test3_w);
+	ConfigureDimension(topLevel, test3_w);
 	menuw = (ShellWidget)XtVaCreatePopupShell("menuw",
 				overrideShellWidgetClass,
 				test_w, NULL);

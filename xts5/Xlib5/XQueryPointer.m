@@ -147,7 +147,7 @@ Verify that the correct root window and pointer position were returned
 Bool ret;
 
 /* Call XWarpPointer to move pointer to a known position */
-	(void) warppointer(display, DefaultRootWindow(display), XQP_X, XQP_Y);
+	warppointer(display, DefaultRootWindow(display), XQP_X, XQP_Y);
 
 /* Call xname to obtain pointer position */
 	w = DefaultRootWindow(display);
@@ -215,7 +215,7 @@ Bool ret;
 	}
 
 /* 	Ensure that pointer is not on the alternate screen */
-	(void) warppointer(display, DefaultRootWindow(display), XQP_X, XQP_Y);
+	warppointer(display, DefaultRootWindow(display), XQP_X, XQP_Y);
 
 /* 	Call xname to obtain pointer position on alternate screen */
 	set_variables();
@@ -289,7 +289,7 @@ Bool ret;
 	rc = makewinpos(display, vp, XQP_X-1, XQP_Y-1);
 
 /* Ensure the pointer is over the child by calling warppointer() */
-	(void) warppointer(display, DefaultRootWindow(display),
+	warppointer(display, DefaultRootWindow(display),
 		XQP_X+10, XQP_Y+5);
 
 /* Call xname to obtain pointer position */
@@ -362,7 +362,7 @@ Bool ret;
 	w = defwin(display);
 
 /* Ensure the pointer is over the window by calling warppointer() */
-	(void) warppointer(display, w, 10, 5);
+	warppointer(display, w, 10, 5);
 
 /* Call xname to obtain pointer position */
 	set_variables();

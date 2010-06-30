@@ -158,7 +158,7 @@ restoremap()
 	device = Devs.Button;
 	if(Dsp && Devs.Button)
 		{
-		(void) XSetDeviceButtonMapping(Dsp, device, oldmap, nbtns);
+		XSetDeviceButtonMapping(Dsp, device, oldmap, nbtns);
 		XSync(Dsp,0);
 		}
 	cleanup();
@@ -200,7 +200,7 @@ int 	i;
 
 	XCALL;
 
-	(void) XGetDeviceButtonMapping(display, device, newmap, MAPSIZE);
+	XGetDeviceButtonMapping(display, device, newmap, MAPSIZE);
 	if (isdeleted()) {
 		delete("Could not get device button mapping");
 		return;
@@ -304,7 +304,7 @@ int	dbp;
 	win = defwin(display);
 	device = Devs.Button;
 	DeviceButtonPress(device, dbp, dbpclass);
-	(void) warppointer(display, win, 2,2);
+	warppointer(display, win, 2,2);
 	XSelectExtensionEvent(display, win, &dbpclass, 1);
 
 	for(i=0; i<nbtns; i++) {

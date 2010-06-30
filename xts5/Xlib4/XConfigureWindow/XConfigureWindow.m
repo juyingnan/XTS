@@ -450,7 +450,7 @@ int 	pass = 0, fail = 0;
 			gravgood.window = gnp->window;
 			gravgood.x = btp->x;
 			gravgood.y = btp->y;
-			(void) calcxy(top, evtype, &gravgood.x, &gravgood.y);
+			calcxy(top, evtype, &gravgood.x, &gravgood.y);
 
 			if (checkevent((XEvent*)&gravgood, &ev) == 0)
 				CHECK;
@@ -1865,7 +1865,7 @@ XConfigureEvent	good;
 XEvent	ev;
 int 	n;
 
-	(void) onewin();
+	onewin();
 
 	XSelectInput(display, w, StructureNotifyMask);
 
@@ -1931,7 +1931,7 @@ Resize window with xname.
 Verify that correct expose events were received with exposecheck().
 >>CODE
 
-	(void) onewin();
+	onewin();
 
 	XSetWindowBackground(display, w, W_BG);
 	XClearWindow(display, w);
@@ -2015,7 +2015,7 @@ Verify that window contents are unchanged.
 >>CODE
 XImage	*imp;
 
-	(void) onewin();
+	onewin();
 
 	pattern(display, w);
 
@@ -2126,7 +2126,7 @@ Call xname.
 Verify BadValue error.
 >>CODE BadValue
 
-	(void) onewin();
+	onewin();
 
 	values->width = 0;
 	values->height = 0;

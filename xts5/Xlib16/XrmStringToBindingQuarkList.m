@@ -238,8 +238,8 @@ char *buffer2;
 
 /* Create the test string. */
 	for(t=0; t<xstbql_ns1; t++) {
-		(void) strcat(buffer1, xstbql_s1prefix[t]);
-		(void) strcat(buffer1, xstbql_s1[t]);
+		strcat(buffer1, xstbql_s1prefix[t]);
+		strcat(buffer1, xstbql_s1[t]);
 	}
 	trace("Testing with '%s'", buffer1);
 
@@ -275,9 +275,9 @@ char *buffer2;
 				trace("Quark array[%d]=%d. Represents: '%s' as expected.",
 					t, xstbql_qret[t], ts );
 			}
-			(void) strcat(buffer2, ts);
+			strcat(buffer2, ts);
 		}
-		(void) strcat(buffer2, " ");
+		strcat(buffer2, " ");
 	}
 
 	if (fail) {
@@ -326,8 +326,8 @@ char *buffer2;
 
 /* Create the test string. */
 	for(t=0; t<xstbql_ns2; t++) {
-		(void) strcat(buffer1, xstbql_s2[t]);
-		(void) strcat(buffer1, xstbql_s2sep[t]);
+		strcat(buffer1, xstbql_s2[t]);
+		strcat(buffer1, xstbql_s2sep[t]);
 	}
 	trace("Testing with '%s'", buffer1);
 
@@ -363,9 +363,9 @@ char *buffer2;
 				trace("Quark array[%d]=%d. Represents: '%s' as expected.",
 					t, xstbql_qret[t], ts );
 			}
-			(void) strcat(buffer2, ts);
+			strcat(buffer2, ts);
 		}
-		(void) strcat(buffer2, " ");
+		strcat(buffer2, " ");
 	}
 
 	if (fail) {
@@ -457,8 +457,8 @@ char *buffer2, *buffer3;
 
 /* Create the test string. */
 	for(t=0; t<xstbql_ns4; t++) {
-		(void) strcat(buffer1, xstbql_s4prefix[t]);
-		(void) strcat(buffer1, xstbql_s4[t]);
+		strcat(buffer1, xstbql_s4prefix[t]);
+		strcat(buffer1, xstbql_s4[t]);
 	}
 	trace("Testing with '%s'", buffer1);
 
@@ -492,11 +492,11 @@ char *buffer2, *buffer3;
 				t, retstr);
 		}
 
-		(void) strcat(buffer2, expstr);
-		(void) strcat(buffer2, " ");
+		strcat(buffer2, expstr);
+		strcat(buffer2, " ");
 
-		(void) strcat(buffer3, retstr);
-		(void) strcat(buffer3, " ");
+		strcat(buffer3, retstr);
+		strcat(buffer3, " ");
 	}
 
 	if (fail) {
@@ -538,7 +538,7 @@ int t;
 
 /* Create the test string. */
 	for(t=0; t<xstbql_ns5; t++) {
-		(void) strcat(buffer1, xstbql_s5[t]);
+		strcat(buffer1, xstbql_s5[t]);
 	}
 	trace("Testing with '%s'", buffer1);
 

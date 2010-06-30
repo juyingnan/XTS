@@ -148,7 +148,7 @@ bad_request()
 		Free_Error(err);
 	}
 
-	(void) Expect_Nothing(CLIENT);
+	Expect_Nothing(CLIENT);
 
 	Exit_OK();
 }

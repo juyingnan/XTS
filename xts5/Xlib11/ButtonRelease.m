@@ -359,7 +359,7 @@ int			count;
 /* Create window. */
 	w = defwin(display);
 
-	(void) warppointer(display, w, PTRX, PTRY);
+	warppointer(display, w, PTRX, PTRY);
 
 	buttonpress(display, Button1);
 
@@ -440,7 +440,7 @@ XSetWindowAttributes	atts;
 	w1 = crechild(Dsp, w, (struct area *) NULL);
 	w2 = crechild(Dsp, w1, (struct area *) NULL);
 	XSelectInput(Dsp, DRW(Dsp), EVENTMASK);	
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 
 	buttonpress(Dsp, Button1);
 	XSync(Dsp, True);
@@ -599,7 +599,7 @@ Window			w1;
 	w1 = crechild(Dsp, w, (struct area *) NULL);
 		/* Select xname events on the child. */
 	XSelectInput(Dsp, w, EVENTMASK);	
-	(void) warppointer(Dsp, w1, 1,1);
+	warppointer(Dsp, w1, 1,1);
 
 		/* Simulate a xname event on the child. */
 	buttonpress(Dsp, Button1);
@@ -656,7 +656,7 @@ struct area		area;
 	setarea(&area, 10, 10, 30, 30);
 	w1 = crechild(Dsp, w, &area);
 	w2 = crechild(Dsp, w1, &area);
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	XSelectInput(Dsp, w, EVENTMASK);
 
 	buttonpress(Dsp, Button1);
@@ -708,7 +708,7 @@ XEvent			ev;
 
         w = defwin(Dsp);
 
-	(void) warppointer(Dsp, w, 1,1);
+	warppointer(Dsp, w, 1,1);
 	XSelectInput(Dsp, w, EVENTMASK);
 
 	buttonpress(Dsp, Button1);
@@ -735,7 +735,7 @@ XEvent			ev;
 	} else
 		CHECK;
 
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	buttonpress(Dsp, Button1);
 	XSync(Dsp, True);
 	buttonrel(Dsp, Button1);
@@ -811,7 +811,7 @@ XEvent			ev;
 			/* Create a window. */
         w = defwin(Dsp);
 	
-	(void) warppointer(Dsp, w, 1,1);
+	warppointer(Dsp, w, 1,1);
 			/* Select for xname events. */
 	XSelectInput(Dsp, w, EVENTMASK);
 	
@@ -826,7 +826,7 @@ XEvent			ev;
 		CHECK;
 	
 			/* Simulate a xname event on the alternate window. */
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	buttonpress(Dsp, Button1);
 	XSync(Dsp, True);
 	buttonrel(Dsp, Button1);
@@ -938,7 +938,7 @@ XEvent			ev;
 			/* Create a window on the default screen. */
         w = defwin(Dsp);
 	
-	(void) warppointer(Dsp, w, 1,1);
+	warppointer(Dsp, w, 1,1);
 			/* Select xname events on the window. */
 	XSelectInput(Dsp, w, EVENTMASK);
 	
@@ -953,7 +953,7 @@ XEvent			ev;
 		CHECK;
 	
 			/* Simulate a xname event on the alternate window. */
-	(void) warppointer(Dsp, w2, 1,1);
+	warppointer(Dsp, w2, 1,1);
 	buttonpress(Dsp, Button1);
 	XSync(Dsp, True);
 	buttonrel(Dsp, Button1);

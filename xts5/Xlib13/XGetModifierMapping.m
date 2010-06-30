@@ -163,8 +163,8 @@ Window win;
 	XSync(display, True);
 	XSelectInput(display, win, PointerMotionMask);
 	p = warppointer(display, win, 0,0);
-	(void) warppointer(display, win, 10,10);
-	(void) warppointer(display, p->oroot, p->ox, p->oy);
+	warppointer(display, win, 10,10);
+	warppointer(display, p->oroot, p->ox, p->oy);
 	result = (getevent(display, &ev) == 0);
 	XSync(display, True);
 	return result;
@@ -228,7 +228,7 @@ int non_zero = 0;
 		return;
 	} else
 		CHECK;
-	(void) warppointer(display, win, 2,2); /* pgrabbed restores pointer */
+	warppointer(display, win, 2,2); /* pgrabbed restores pointer */
 	for(k=minkc; k <= maxkc; k++) {
 		keypress(display, k);
 		buttonpress(display, Button1);

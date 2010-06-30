@@ -339,8 +339,8 @@ int ret;
 
 	CHECKPASS(2);
 
-	(void) unlink(XWBF_FILE);
-	(void) rmdir(XWBF_DIR);
+	unlink(XWBF_FILE);
+	rmdir(XWBF_DIR);
 
 >>ASSERTION Bad B 1
 When insufficient memory is allocated, then a call to xname returns

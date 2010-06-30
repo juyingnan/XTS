@@ -129,7 +129,7 @@ void
 tester()
 {
 	Create_Client(CLIENT);
-	(void) Create_Default_Window(CLIENT);
+	Create_Default_Window(CLIENT);
 	if (!Setup_Extension_DeviceInfo(BtnMask))
 	    {
 	    Log_Err("Required extension devices are not present\n");
@@ -140,7 +140,7 @@ tester()
 	gbr = (xGrabButtonReq *) Make_XInput_Req(CLIENT, X_GrabDeviceButton);
 	Send_XInput_Req(CLIENT, (xReq *) gbr);
 	Log_Trace("client %d sent default GrabDeviceButton request\n", CLIENT);
-	(void) Expect_Nothing(CLIENT);
+	Expect_Nothing(CLIENT);
 	Free_Req(gbr);
 
 	Set_Test_Type(CLIENT, test_type);
@@ -150,18 +150,18 @@ tester()
 	switch(test_type) {
 	case GOOD:
 		Log_Trace("client %d sent default UngrabDeviceButton request\n", CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case BAD_LENGTH:
 		Log_Trace("client %d sent UngrabDeviceButton request with bad length (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
 		Log_Trace("client %d sent overlong UngrabDeviceButton request (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	default:
 		Log_Err("INTERNAL ERROR: test_type %d not one of GOOD(%d), BAD_LENGTH(%d), TOO_LONG(%d) or JUST_TOO_LONG(%d)\n",

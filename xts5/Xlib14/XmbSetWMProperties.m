@@ -315,7 +315,7 @@ static unsigned long leftover;
 		 * in the service invocation 
 		 */ 
                     
-		(void) XGetWMNormalHints(display, window_id, &hints_return, &supplied);
+		XGetWMNormalHints(display, window_id, &hints_return, &supplied);
 
 		check_dec((long)hints->flags, (long)hints_return.flags , "XSizeHints->flags");
 		check_dec((long)hints->x, (long)hints_return.x , "XSizeHints->x");

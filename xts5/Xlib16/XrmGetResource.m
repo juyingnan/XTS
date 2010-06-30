@@ -197,7 +197,7 @@ Bool ret;
 					strcpy(tb, "<NULL POINTER>");
 					l = strlen(tb);
 				} else {
-					(void) strncpy(tb, (char*)value.addr, value.size);
+					strncpy(tb, (char*)value.addr, value.size);
 					tb[value.size]='\0';
 					l = value.size;
 				}
@@ -275,7 +275,7 @@ Bool ret;
 				strcpy(tb, "<NULL POINTER>");
 				l = strlen(tb);
 			} else {
-				(void) strncpy(tb, (char*)value.addr, value.size);
+				strncpy(tb, (char*)value.addr, value.size);
 				tb[value.size]='\0';
 				l = value.size;
 			}

@@ -184,7 +184,7 @@ XrmDatabase rdb;
 			CHECK;
 		}
 		*tptr = '\0';
-		(void) fprintf(f, "%s\n", tbuf);
+		fprintf(f, "%s\n", tbuf);
 	}
 	fclose(f);
 
@@ -213,7 +213,7 @@ XrmDatabase rdb;
 
 /* Remove test database file. */
 #ifndef TESTING
-	(void) unlink(XGFD_TEST_FILE);	/* Compiling with CFLOCAL=-DTESTING  */
+	unlink(XGFD_TEST_FILE);	/* Compiling with CFLOCAL=-DTESTING  */
 					/* allows inspection of the testfile */
 #endif
 
@@ -273,7 +273,7 @@ XrmDatabase rdb;
 			CHECK;
 		}
 		*tptr = '\0';
-		(void) fprintf(f, "%s\n", tbuf);
+		fprintf(f, "%s\n", tbuf);
 	}
 	fclose(f);
 

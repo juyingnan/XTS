@@ -181,7 +181,7 @@ int elements;
 
 	a = 0;
 	while( a<elements ) {
-		(void) fprintf(fp, "%s\n", data[a++]);
+		fprintf(fp, "%s\n", data[a++]);
 	}
 
 	fclose(fp);
@@ -191,13 +191,13 @@ int elements;
 static void
 xrbf_b_start() {
 	tpstartup();
-	(void) xrbf_create(xrbf_name, xrbf_one, xrbf_n_one);
+	xrbf_create(xrbf_name, xrbf_one, xrbf_n_one);
 }
 
 
 static void
 xrbf_b_end()  {
-	(void) unlink(xrbf_name);
+	unlink(xrbf_name);
 	tpcleanup();
 }
 
@@ -248,7 +248,7 @@ Verify that BitmapSuccess was returned.
 /* Call xname to read the bitmap file. */
 	XCALL;
 
-	(void) unlink(filename);
+	unlink(filename);
 	CHECKPASS(1);
 
 >>ASSERTION Good A
@@ -346,7 +346,7 @@ unsigned int h_ret, w_ret, d_ret, ui_tmp;
 	} else
 		CHECK;
 		
-	(void) unlink(filename);
+	unlink(filename);
 
 	CHECKPASS(6);
 
@@ -403,7 +403,7 @@ Verify that the y_hot_return was returned as expected.
 	} else
 		CHECK;
 
-	(void) unlink(filename);
+	unlink(filename);
 
 	CHECKPASS(3);
 
@@ -456,7 +456,7 @@ Verify that the y_hot_return was returned as expected.
 	} else
 		CHECK;
 
-	(void) unlink(filename);
+	unlink(filename);
 
 	CHECKPASS(3);
 >>ASSERTION Bad A
@@ -520,7 +520,7 @@ int ret;
 	} else
 		CHECK;
 
-	(void) unlink(filename);
+	unlink(filename);
 
 	CHECKPASS(2);
 

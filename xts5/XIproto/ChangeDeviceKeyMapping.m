@@ -162,7 +162,7 @@ XEventClass dmncl;
 		Log_Trace("client %d received GetDeviceKeyMapping reply\n", CLIENT);
 		/* do any reply checking here */
 	}
-	(void) Expect_Nothing(CLIENT);
+	Expect_Nothing(CLIENT);
 
 	/* ... then make a request to duplicate that mapping. */
 
@@ -199,18 +199,18 @@ XEventClass dmncl;
 			/* do any event checking here */
 			Free_Event(ev);
 		}
-		(void) Expect_Nothing(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case BAD_LENGTH:
 		Log_Trace("client %d sent ChangeDeviceKeyMapping request with bad length (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
 		Log_Trace("client %d sent overlong ChangeDeviceKeyMapping request (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	default:
 		Log_Err("INTERNAL ERROR: test_type %d not one of GOOD(%d), BAD_LENGTH(%d), TOO_LONG(%d) or JUST_TOO_LONG(%d)\n",

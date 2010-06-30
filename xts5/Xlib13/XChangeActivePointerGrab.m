@@ -119,15 +119,15 @@ Verify that now only motion events are reported.
 XEvent	ev;
 Window	win;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	win = defwin(display);
 
 	XGrabPointer(display, win, False, EnterWindowMask, GrabModeAsync,
 		GrabModeAsync, None, None, CurrentTime);
 
-	(void) warppointer(display, win, 0, 0);
-	(void) warppointer(display, win, 2, 2);
+	warppointer(display, win, 0, 0);
+	warppointer(display, win, 2, 2);
 
 	/*
 	 * This is just a check to see that the grab is behaving as expected.
@@ -147,13 +147,13 @@ Window	win;
 		return;
 	}
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	XCALL;
 
 	XSync(display, True);	/* Flush any remaining event */
-	(void) warppointer(display, win, 0, 0);
-	(void) warppointer(display, win, 2, 2);
+	warppointer(display, win, 0, 0);
+	warppointer(display, win, 2, 2);
 	if (isdeleted())
 		return;
 
@@ -189,7 +189,7 @@ XEvent	ev;
 Window	win;
 Time	t;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	win = defwin(display);
 	t = gettime(Dsp);
@@ -202,8 +202,8 @@ Time	t;
 	XCALL;
 
 	XSync(display, True);	/* Flush any event */
-	(void) warppointer(display, win, 0, 0);
-	(void) warppointer(display, win, 2, 2);
+	warppointer(display, win, 0, 0);
+	warppointer(display, win, 2, 2);
 	if (isdeleted())
 		return;
 
@@ -220,7 +220,7 @@ Time	t;
 		FAIL;
 	}
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	/* Later than X server time */
 	t = gettime(Dsp);
@@ -228,8 +228,8 @@ Time	t;
 	XCALL;
 
 	XSync(display, True);	/* Flush any event */
-	(void) warppointer(display, win, 0, 0);
-	(void) warppointer(display, win, 2, 2);
+	warppointer(display, win, 0, 0);
+	warppointer(display, win, 2, 2);
 	if (isdeleted())
 		return;
 
@@ -294,9 +294,9 @@ Window win;
 	XSelectInput(client2, win, PointerMotionMask);
 	XSync(client2, True);
 	p = warppointer(client2, win, 1,1);
-	(void) warppointer(client2, win, 10,10);
-	(void) warppointer(client2, win, 1,1);
-	(void) warppointer(client2, p->oroot, p->ox, p->oy);
+	warppointer(client2, win, 10,10);
+	warppointer(client2, win, 1,1);
+	warppointer(client2, p->oroot, p->ox, p->oy);
 	return (!getevent(client2, &ev));
 }
 >>CODE
@@ -319,9 +319,9 @@ Cursor	cur;
 	} else
 		CHECK;
 	XSync(display, True);
-	(void) warppointer(display, win, 1,1);
-	(void) warppointer(display, win, 10,10);
-	(void) warppointer(display, win, 1,1);
+	warppointer(display, win, 1,1);
+	warppointer(display, win, 10,10);
+	warppointer(display, win, 1,1);
 	if (n=getevent(display, &ev)) {
 		delete("Unexpectedly received %d events, first was type %s.",
 				n, eventname(ev.type));
@@ -332,9 +332,9 @@ Cursor	cur;
 	cursor = cur;
 	XCALL;
 	XSync(display, True);
-	(void) warppointer(display, win, 1,1);
-	(void) warppointer(display, win, 10,10);
-	(void) warppointer(display, win, 1,1);
+	warppointer(display, win, 1,1);
+	warppointer(display, win, 10,10);
+	warppointer(display, win, 1,1);
 	if (n=getevent(display, &ev)) {
 		report("event_mask changed passive grab, received %d events, first was type %s.",
 				n, eventname(ev.type));
@@ -358,9 +358,9 @@ Cursor	cur;
 			return;
 		}
 		XSync(display, True);
-		(void) warppointer(display, win, 1,1);
-		(void) warppointer(display, win, 10,10);
-		(void) warppointer(display, win, 1,1);
+		warppointer(display, win, 1,1);
+		warppointer(display, win, 10,10);
+		warppointer(display, win, 1,1);
 		if (n=getevent(display, &ev)) {
 			report("event_mask changed on grab activation, received %d events, first was type %s.",
 					n, eventname(ev.type));
@@ -376,9 +376,9 @@ Cursor	cur;
 		cursor = cur;
 		XCALL;
 		XSync(display, True);
-		(void) warppointer(display, win, 1,1);
-		(void) warppointer(display, win, 10,10);
-		(void) warppointer(display, win, 1,1);
+		warppointer(display, win, 1,1);
+		warppointer(display, win, 10,10);
+		warppointer(display, win, 1,1);
 		if (!(n=getevent(display, &ev)) || ev.type != MotionNotify) {
 			report("event_mask not changed properly for active grab.");
 			if (n)

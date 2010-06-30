@@ -241,7 +241,7 @@ char *data = "a tested property";
 	} else 
 		FAIL;
 
-	(void) strncpy((char *)cbuf, &(data[12]), 4);
+	strncpy((char *)cbuf, &(data[12]), 4);
 	cbuf[4] = '\0';
 
 	if (prop == (unsigned char *)NULL) {

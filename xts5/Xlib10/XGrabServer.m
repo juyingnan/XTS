@@ -158,7 +158,7 @@ static Window	win;
 	 * and reported as such.  There is nothing further that we can
 	 * do with it.
 	 */
-	(void) tet_fork(cproc, pproc, 1, ~0);
+	tet_fork(cproc, pproc, 1, ~0);
 	/* Test now continues in pproc */
 >>EXTERN
 static void

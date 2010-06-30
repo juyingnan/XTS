@@ -148,7 +148,7 @@ Display	*disp;
 {
 PointerPlace	*pp;
 
-	(void) warppointer(disp, grabwin, 0, 0);
+	warppointer(disp, grabwin, 0, 0);
 	pp = warppointer(disp, grabwin, 1, 1);
 	if (pp->ox == pp->nx)
 		return True;
@@ -449,7 +449,7 @@ struct  area    area;
 	 * Activate the grab.
 	 */
 	XSync(display, True);	/* Discard any events */
-	(void) warppointer(display, chwin, 1, 1);
+	warppointer(display, chwin, 1, 1);
 	buttonpress(display, Button1);
 
 	/*
@@ -541,7 +541,7 @@ int 	key;
 		return;
 
 	grabwin = defwin(display);
-	(void) warppointer(display, grabwin, 1, 1);
+	warppointer(display, grabwin, 1, 1);
 
 	key = getkeycode(display);
 	XGrabKey(display, key, 0, grabwin, False, GrabModeSync, GrabModeAsync);
@@ -599,7 +599,7 @@ int 	key;
 	 */
 	win = defwin(display);
 	XSelectInput(display, win, KeyPressMask);
-	(void) warppointer(display, win, 1, 1);
+	warppointer(display, win, 1, 1);
 	keypress(display, key);
 	if (XCheckMaskEvent(display, (long)KeyPressMask, &ev))
 		res = False;
@@ -885,7 +885,7 @@ int 	key;
 	XGrabKey(display, key, 0, win, False, GrabModeAsync, GrabModeSync);
 	XGrabKey(display, key, 0, chwin, False, GrabModeAsync, GrabModeSync);
 
-	(void) warppointer(display, chwin, 1, 1);
+	warppointer(display, chwin, 1, 1);
 
 	XSync(display, True);
 	/* This should activate the grab */
@@ -980,7 +980,7 @@ int 	key;
 	XGrabKey(display, key, 0, win, False, GrabModeAsync, GrabModeAsync);
 	XGrabKey(display, key, 0, chwin, False, GrabModeAsync, GrabModeAsync);
 
-	(void) warppointer(display, chwin, 1, 1);
+	warppointer(display, chwin, 1, 1);
 
 	XSync(display, True);
 	/* This should activate the grab */
@@ -1035,7 +1035,7 @@ int	key;
 		return;
 
 	grabwin = defwin(display);
-	(void) warppointer(display, grabwin, 1, 1);
+	warppointer(display, grabwin, 1, 1);
 
 	XGrabButton(display, Button1, 0, grabwin,
 		False, PointerMotionMask, GrabModeSync, GrabModeAsync,
@@ -1166,7 +1166,7 @@ int bothset()
 
 	grabwin = defwin(display);
 	XSelectInput(display, grabwin, ButtonPressMask|ButtonReleaseMask|KeyPressMask|KeyReleaseMask);
-	(void) warppointer(display, grabwin, 5, 5);
+	warppointer(display, grabwin, 5, 5);
 
 	/* this grabs the pointer AND ALL OTHER DEVICES */
 	XGrabPointer(display, grabwin, False,
@@ -1333,7 +1333,7 @@ If extension available:
 		False, PointerMotionMask, GrabModeSync, GrabModeAsync,
 		None, None);
 
-	(void) warppointer(display, grabwin, 1, 1);
+	warppointer(display, grabwin, 1, 1);
 	buttonpress(display, Button1);
 
 	if (ispfrozen(display))

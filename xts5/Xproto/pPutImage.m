@@ -148,13 +148,13 @@ tester()
 	Create_Client(CLIENT);
 
 	win = Create_Default_Window(CLIENT);
-	(void) Create_Default_GContext(CLIENT);
+	Create_Default_GContext(CLIENT);
 	Map_Window(CLIENT, win);
 
 	prr = (xPolyRectangleReq *) Make_Req(CLIENT, X_PolyRectangle);
 	Send_Req(CLIENT, (xReq *) prr);
 	Log_Trace("client %d sent pixmap PolyRectangle request\n", CLIENT);
-	(void) Expect_Nothing(CLIENT);
+	Expect_Nothing(CLIENT);
 	Free_Req(req);
 
 	req = (xGetImageReq *) Make_Req(CLIENT, X_GetImage);
@@ -168,7 +168,7 @@ tester()
 		Log_Trace("client %d received GetImage reply\n", CLIENT);
 		/* do any reply checking here */
 	}
-	(void) Expect_Nothing(CLIENT);
+	Expect_Nothing(CLIENT);
 
 	win = Create_Default_Window(CLIENT);
 	Map_Window(CLIENT, win);
@@ -212,19 +212,19 @@ tester()
 	switch(test_type) {
 	case GOOD:
 		Log_Trace("client %d sent default PutImage request\n", CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_Nothing(CLIENT);
 		Visual_Check();
 		break;
 	case BAD_LENGTH:
 		Log_Trace("client %d sent PutImage request with bad length (%d)\n", CLIENT, pir->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
 		Log_Trace("client %d sent overlong PutImage request (%d)\n", CLIENT, pir->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	default:
 		Log_Err("INTERNAL ERROR: test_type %d not one of GOOD(%d), BAD_LENGTH(%d), TOO_LONG(%d) or JUST_TOO_LONG(%d)\n",

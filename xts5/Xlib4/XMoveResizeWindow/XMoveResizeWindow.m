@@ -397,7 +397,7 @@ int 	pass = 0, fail = 0;
 			gravgood.window = gnp->window;
 			gravgood.x = btp->x;
 			gravgood.y = btp->y;
-			(void) calcxy(top, evtype, &gravgood.x, &gravgood.y);
+			calcxy(top, evtype, &gravgood.x, &gravgood.y);
 
 			if (checkevent((XEvent*)&gravgood, &ev) == 0)
 				CHECK;

@@ -150,7 +150,7 @@ static void
 restoremap()
 {
 	if(Dsp)
-		(void) XSetPointerMapping(Dsp, oldmap, numbuttons);
+		XSetPointerMapping(Dsp, oldmap, numbuttons);
 	cleanup();
 }
 
@@ -184,7 +184,7 @@ int 	i;
 
 	XCALL;
 
-	(void) XGetPointerMapping(display, newmap, MAPSIZE);
+	XGetPointerMapping(display, newmap, MAPSIZE);
 	if (isdeleted()) {
 		delete("Could not get pointer mapping");
 		return;
@@ -269,7 +269,7 @@ Window	win;
 	for(i=0; i<numbuttons; i++)
 		zmap[i] = map[i];
 	win = defwin(display);
-	(void) warppointer(display, win, 2,2);
+	warppointer(display, win, 2,2);
 	XSelectInput(display, win, ButtonPressMask);
 
 	for(i=0; i<numbuttons; i++) {

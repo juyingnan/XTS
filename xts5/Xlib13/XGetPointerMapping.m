@@ -159,7 +159,7 @@ Window	win;
 		return;
 	} else
 		CHECK;
-	(void) warppointer(display, win, 2, 2);
+	warppointer(display, win, 2, 2);
 	for (i=0; i<nbuttons; i++) {
 		XEvent ev;
 

@@ -177,7 +177,7 @@ XEvent	ev;
 	client2 = opendisplay();
 
 	grab_window = defwin(display);
-	(void) warppointer(display, grab_window, 0, 0);
+	warppointer(display, grab_window, 0, 0);
 
 	XSelectInput(display, grab_window, PointerMotionMask);
 	XSelectInput(client2, grab_window, PointerMotionMask);
@@ -185,7 +185,7 @@ XEvent	ev;
 
 	XCALL;
 
-	(void) warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 1);
 
 	if (getevent(display, &ev) == 0 || ev.type != MotionNotify) {
 		report("No pointer event occurred on the grabbing client");
@@ -212,7 +212,7 @@ Verify that pointer is within the other window.
 Window	w1, w2;
 
 	/* Move pointer, mainly so that its position will be restored */
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	w1 = defwin(display);
 	w2 = defwin(display);
@@ -267,11 +267,11 @@ XMotionEvent	*mp;
 	event_mask = PointerMotionMask;
 
 	win = defwin(display);
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	XCALL;
-	(void) warppointer(display, win, 0, 0);
-	(void) warppointer(display, win, 1, 1);
+	warppointer(display, win, 0, 0);
+	warppointer(display, win, 1, 1);
 
 	if (!XCheckMaskEvent(display, (long)event_mask, &ev)) {
 		delete("No pointer event was received");
@@ -316,11 +316,11 @@ XMotionEvent	*mp;
 
 	owner_events = True;
 	XSelectInput(display, window2, PointerMotionMask);
-	(void) warppointer(display, window2, 0, 0);
+	warppointer(display, window2, 0, 0);
 
 	XCALL;
 
-	(void) warppointer(display, window2, 1, 0);
+	warppointer(display, window2, 1, 0);
 
 	if (!XCheckMaskEvent(display, PointerMotionMask, &ev)) {
 		delete("No pointer event was received");
@@ -371,11 +371,11 @@ XMotionEvent	*mp;
 
 	owner_events = True;
 	event_mask = PointerMotionMask;
-	(void) warppointer(display, window2, 0, 0);
+	warppointer(display, window2, 0, 0);
 
 	XCALL;
 
-	(void) warppointer(display, window2, 1, 0);
+	warppointer(display, window2, 1, 0);
 
 	if (!XCheckMaskEvent(display, (long)event_mask, &ev)) {
 		delete("No pointer event was received");
@@ -413,11 +413,11 @@ XEvent	ev;
 	grab_window = defwin(display);
 	event_mask = PointerMotionMask;
 	pointer_mode = GrabModeAsync;
-	(void) warppointer(display, grab_window, 0, 0);
+	warppointer(display, grab_window, 0, 0);
 
 	XCALL;
 
-	(void) warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 1);
 
 	if (!XCheckMaskEvent(display, (long)event_mask, &ev)) {
 		delete("No pointer event was received");
@@ -446,13 +446,13 @@ XEvent	ev;
 	grab_window = defwin(display);
 	event_mask = PointerMotionMask;
 	pointer_mode = GrabModeAsync;
-	(void) warppointer(display, grab_window, 0, 0);
+	warppointer(display, grab_window, 0, 0);
 
 	/*
 	 * Freeze the pointer by grabbing the keyboard.
 	 */
 	XGrabKeyboard(display, grab_window, False, GrabModeSync, GrabModeAsync, thetime);
-	(void) warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 1);
 	if (XCheckMaskEvent(display, (long)event_mask, &ev)) {
 		delete("Pointer event was received while frozen");
 		return;
@@ -489,11 +489,11 @@ XEvent	ev;
 	grab_window = defwin(display);
 	event_mask = PointerMotionMask;
 	pointer_mode = GrabModeSync;
-	(void) warppointer(display, grab_window, 0, 0);
+	warppointer(display, grab_window, 0, 0);
 
 	XCALL;
 
-	(void) warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 1);
 	if (XCheckMaskEvent(display, (long)event_mask, &ev)) {
 		delete("Pointer event was received while frozen");
 		return;
@@ -519,12 +519,12 @@ XEvent	ev;
 	grab_window = defwin(display);
 	event_mask = PointerMotionMask;
 	pointer_mode = GrabModeSync;
-	(void) warppointer(display, grab_window, 0, 0);
+	warppointer(display, grab_window, 0, 0);
 	XSelectInput(display, grab_window, PointerMotionMask);
 
 	XCALL;
 
-	(void) warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 1);
 	if (XCheckMaskEvent(display, (long)event_mask, &ev)) {
 		delete("Pointer event was received while frozen");
 		return;
@@ -574,7 +574,7 @@ static int 	key;
 	/*
 	 * Try to provoke a keypress on grab_window.
 	 */
-	(void) warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 1);
 	keypress(display, key);
 	if (XCheckMaskEvent(display, KeyPressMask, &ev))
 		res = False;
@@ -675,7 +675,7 @@ XEvent	ev;
 	keyboard_mode = GrabModeSync;
 	XCALL;
 
-	(void) warppointer(display, grab_window, 10, 10);
+	warppointer(display, grab_window, 10, 10);
 	keypress(display, key);
 	keyrel(display, key);
 
@@ -697,7 +697,7 @@ XEvent	ev;
 		FAIL;
 	} else {
 		first = ev.type;
-		(void) getevent(display, &ev);
+		getevent(display, &ev);
 
 		if (ev.type != KeyPress && first != KeyPress) {
 			report("Did not get KeyPress event after releasing grab");
@@ -907,7 +907,7 @@ Warp pointer outside confine_to window.
 Verify that pointer is still within the confine_to window.
 >>CODE
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	grab_window = defwin(display);
 	confine_to = defwin(display);
@@ -921,7 +921,7 @@ Verify that pointer is still within the confine_to window.
 		CHECK;
 
 	/* It is known that no window gets created at (0,0) */
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	if (getpointerwin(display, DRW(display)) != confine_to) {
 		report("Pointer moved out of confine_to window after warp");
@@ -952,13 +952,13 @@ XCrossingEvent	*cp;
 XEnterWindowEvent	entergood;
 XLeaveWindowEvent	leavegood;
 
-	(void) warppointer(Dsp, DRW(Dsp), 0, 0);
+	warppointer(Dsp, DRW(Dsp), 0, 0);
 
 	grab_window = defwin(display);
 	confine_to = defwin(display);
 	win = defwin(display);
 
-	(void) warppointer(display, win, 0, 0);
+	warppointer(display, win, 0, 0);
 
 	XSelectInput(display, win, EnterWindowMask|LeaveWindowMask);
 	XSelectInput(display, grab_window, EnterWindowMask|LeaveWindowMask);
@@ -1090,7 +1090,7 @@ Verify that pointer has been warped to the new position.
 >>CODE
 struct	area	area;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	grab_window = defwin(display);
 
@@ -1144,7 +1144,7 @@ Bool 	s;
 		return;
 	}
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	grab_window = defwin(display);
 	confine_to = defdraw(display, VI_ALT_WIN);
@@ -1209,8 +1209,8 @@ XEvent	ev;
 	/*
 	 * Ensure that pointer either enters or moves within win.
 	 */
-	(void) warppointer(display, win, 1, 1);
-	(void) warppointer(display, win, 1, 2);
+	warppointer(display, win, 1, 1);
+	warppointer(display, win, 1, 2);
 
 	XSync(client2, False);
 	if (getevent(client2, &ev)) {
@@ -1363,7 +1363,7 @@ Display	*client2;
 Window	win;
 XEvent	ev;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	client2 = opendisplay();
 
@@ -1383,7 +1383,7 @@ XEvent	ev;
 	 * If the grab has been released then this will generate
 	 * an event for client2.
 	 */
-	(void) warppointer(display, win, 0, 0);
+	warppointer(display, win, 0, 0);
 	XSync(client2, False);
 
 	if (XCheckWindowEvent(client2, win, PointerMotionMask|EnterWindowMask, &ev))
@@ -1404,7 +1404,7 @@ XEvent	ev;
 	XUnmapWindow(display, confine_to);
 
 	/* Warp to win and check for events on client2 */
-	(void) warppointer(display, win, 0, 0);
+	warppointer(display, win, 0, 0);
 	XSync(client2, False);
 
 	if (XCheckWindowEvent(client2, win, PointerMotionMask|EnterWindowMask, &ev))
@@ -1435,7 +1435,7 @@ Display	*client2;
 Window	win;
 XEvent	ev;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	client2 = opendisplay();
 
@@ -1449,7 +1449,7 @@ XEvent	ev;
 	XCALL;
 
 	XMoveWindow(display, confine_to, -9000, -9000);
-	(void) warppointer(display, win, 0, 0);
+	warppointer(display, win, 0, 0);
 	XSync(client2, False);
 
 	if (isdeleted())
@@ -1497,7 +1497,7 @@ Verify that xname fails and returns GrabNotViewable.
 >>CODE
 int 	ret;
 
-	(void) warppointer(Dsp, DRW(Dsp), 0, 0);
+	warppointer(Dsp, DRW(Dsp), 0, 0);
 
 	grab_window = defwin(display);
 	confine_to = defwin(display);
@@ -1524,7 +1524,7 @@ Verify that xname fails and returns GrabNotViewable.
 >>CODE
 int 	ret;
 
-	(void) warppointer(Dsp, DRW(Dsp), 0, 0);
+	warppointer(Dsp, DRW(Dsp), 0, 0);
 
 	grab_window = defwin(display);
 	confine_to = defwin(display);

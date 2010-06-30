@@ -371,8 +371,8 @@ FILE    *fp;
 	if (waitstatus != child) {
 		report("Child did not exit.");
 		FAIL;
-		(void) kill(child, SIGKILL);
-		(void) waitpid(child, &stat_loc, WNOHANG);
+		kill(child, SIGKILL);
+		waitpid(child, &stat_loc, WNOHANG);
 	}
 	else
 		CHECK;

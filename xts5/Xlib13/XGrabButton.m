@@ -140,8 +140,8 @@ XEvent	ev;
 	/*
 	 * Ensure that pointer either enters or moves within win.
 	 */
-	(void) warppointer(display, win, 1, 1);
-	(void) warppointer(display, win, 1, 2);
+	warppointer(display, win, 1, 1);
+	warppointer(display, win, 1, 2);
 
 	XSync(client2, False);
 	if (getevent(client2, &ev)) {
@@ -194,7 +194,7 @@ Bool 	s;
 static
 activate()
 {
-	(void) warppointer(display, grab_window, ACTPOSX, ACTPOSY);
+	warppointer(display, grab_window, ACTPOSX, ACTPOSY);
 	if (modifiers)
 		modpress(display, modifiers);
 	buttonpress(display, button);
@@ -219,8 +219,8 @@ Window	win;
 
 	win = defwin(display);
 	XSelectInput(display, win, PointerMotionMask);
-	(void) warppointer(display, win, 1, 1);
-	(void) warppointer(display, win, 2, 2);
+	warppointer(display, win, 1, 1);
+	warppointer(display, win, 2, 2);
 	if (XCheckMaskEvent(display, (long)PointerMotionMask, &ev))
 		return False;
 	else
@@ -248,7 +248,7 @@ int 	res;
 	 */
 	win = defwin(display);
 	XSelectInput(display, win, KeyPressMask);
-	(void) warppointer(display, win, 1, 1);
+	warppointer(display, win, 1, 1);
 	keypress(display, minkc);
 	if (XCheckMaskEvent(display, (long)KeyPressMask, &ev))
 		res = False;
@@ -336,7 +336,7 @@ int 	onemod;
 		button = Button1;
 		XCALL;
 
-		(void) warppointer(display, grab_window, 2, 2);
+		warppointer(display, grab_window, 2, 2);
 		buttonpress(display, button+1);
 		buttonpress(display, button);
 		if (pgrabbed()) {
@@ -383,7 +383,7 @@ int 	onemod;
 	grab_window = defwin(display);
 	XCALL;
 
-	(void) warppointer(display, grab_window, 2, 2);
+	warppointer(display, grab_window, 2, 2);
 	/* Pressing an extra modifier */
 	modpress(display, mask);
 	buttonpress(display, button);
@@ -547,8 +547,8 @@ XEvent	ev;
 	 * have become active on the parent -- therefore we expect the events
 	 * to show up on the parent.
 	 */
-	(void) warppointer(display, grab_window, 1, 1);
-	(void) warppointer(display, grab_window, 8, 8);
+	warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 8, 8);
 
 	/*
 	 * Since no events are selected on the windows, any event must
@@ -596,7 +596,7 @@ int 	n;
 
 	XSelectInput(display, grab_window, ALLEVENTS);
 
-	(void) warppointer(display, grab_window, ACTPOSX, ACTPOSY);
+	warppointer(display, grab_window, ACTPOSX, ACTPOSY);
 	XSync(display, True);	/* Discard any events */
 	buttonpress(display, button);
 
@@ -864,7 +864,7 @@ int 	i;
 	} else
 		CHECK;
 
-	(void) warppointer(display, grab_window, 10, 10);
+	warppointer(display, grab_window, 10, 10);
 
 	for (i = 0; i < NS_button; i++) {
 		buttonpress(display, (unsigned int)S_button[i].val);
@@ -980,8 +980,8 @@ XMotionEvent	*mp;
 
 	win = defwin(display);
 	XSelectInput(display, win, PointerMotionMask);
-	(void) warppointer(display, win, 1, 2);
-	(void) warppointer(display, win, 2, 3);
+	warppointer(display, win, 1, 2);
+	warppointer(display, win, 2, 3);
 
 	if (getevent(display, &ev) == 0) {
 		report("No events received");
@@ -1046,8 +1046,8 @@ XMotionEvent	*mp;
 
 	win = defwin(display);
 	XSelectInput(display, win, PointerMotionMask);
-	(void) warppointer(display, win, 1, 2);
-	(void) warppointer(display, win, 1, 6);
+	warppointer(display, win, 1, 2);
+	warppointer(display, win, 1, 6);
 
 	if (getevent(display, &ev) == 0) {
 		report("No events received");
@@ -1113,8 +1113,8 @@ XMotionEvent	*mp;
 	XSync(display, True);
 
 	win = defwin(display);
-	(void) warppointer(display, win, 1, 2);
-	(void) warppointer(display, win, 4, 12);
+	warppointer(display, win, 1, 2);
+	warppointer(display, win, 4, 12);
 
 	if (getevent(display, &ev) == 0) {
 		report("No events received");
@@ -1333,7 +1333,7 @@ XEvent	ev;
 	activate();
 
 	XSync(display, True);	/* Flush events */
-	(void) warppointer(display, grab_window, ACTPOSX+3, ACTPOSY+4);
+	warppointer(display, grab_window, ACTPOSX+3, ACTPOSY+4);
 	if (XCheckMaskEvent(display, (long)event_mask, &ev)) {
 		delete("Pointer event was received while pointer was frozen");
 		trace("ev.type = %s", eventname(ev.type));
@@ -1369,7 +1369,7 @@ XEvent	ev;
 	activate();
 
 	XSync(display, True);
-	(void) warppointer(display, grab_window, ACTPOSX+3, ACTPOSY+4);
+	warppointer(display, grab_window, ACTPOSX+3, ACTPOSY+4);
         if (XCheckMaskEvent(display, (long)event_mask, &ev)) {
                 delete("Pointer event was received while pointer was frozen");
 		trace("ev.type = %s", eventname(ev.type));
@@ -1845,7 +1845,7 @@ XLeaveWindowEvent	leavegood;
 	owner_events = True;
 	XCALL;
 
-	(void) warppointer(display, grab_window, ACTPOSX, ACTPOSY);
+	warppointer(display, grab_window, ACTPOSX, ACTPOSY);
 	XSync(display, True);	/* Discard events so far */
 	buttonpress(display, button);
 
@@ -1932,7 +1932,7 @@ struct	area	area;
 	if (noext(1))
 		return;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	/*
 	 * This time make confine_to a child of grab_window, also make it small
@@ -2110,8 +2110,8 @@ XEvent	ev;
 	/* This sets the grab on grab_window */
 	XCALL;
 
-	(void) warppointer(display, grab_window, 1, 1);
-	(void) warppointer(display, grab_window, 3, 3);
+	warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 3, 3);
 
 	if (getevent(display, &ev) < 1) {
 		delete("Could not get motion event");
@@ -2159,7 +2159,7 @@ XEvent	ev;
 	if (noext(1))
 		return;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	client2 = opendisplay();
 	win = defwin(display);
@@ -2178,7 +2178,7 @@ XEvent	ev;
 	 * If the grab has been released then this will generate
 	 * an event for client2.
 	 */
-	(void) warppointer(display, win, 0, 0);
+	warppointer(display, win, 0, 0);
 	XSync(client2, False);
 
 	if (XCheckWindowEvent(client2, win, (long)PointerMotionMask|EnterWindowMask, &ev))
@@ -2199,7 +2199,7 @@ XEvent	ev;
 	XUnmapWindow(display, confine_to);
 
 	/* Warp to win and check for events on client2 */
-	(void) warppointer(display, win, 0, 0);
+	warppointer(display, win, 0, 0);
 	XSync(client2, False);
 
 	if (XCheckWindowEvent(client2, win, (long)PointerMotionMask|EnterWindowMask, &ev))
@@ -2232,7 +2232,7 @@ XEvent	ev;
 	if (noext(1))
 		return;
 
-	(void) warppointer(display, DRW(display), 0, 0);
+	warppointer(display, DRW(display), 0, 0);
 
 	client2 = opendisplay();
 
@@ -2246,7 +2246,7 @@ XEvent	ev;
 	activate();
 
 	XMoveWindow(display, confine_to, -9000, -9000);
-	(void) warppointer(display, win, 0, 0);
+	warppointer(display, win, 0, 0);
 	XSync(client2, False);
 
 	if (isdeleted())

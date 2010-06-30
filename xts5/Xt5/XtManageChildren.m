@@ -197,8 +197,8 @@ pid_t pid2;
 			labelw_good,
 			NULL
 			);
-	(void) ConfigureDimension(topLevel, labelw_good);
-	(void) ConfigureDimension(topLevel, labelw_good2);
+	ConfigureDimension(topLevel, labelw_good);
+	ConfigureDimension(topLevel, labelw_good2);
 	tet_infoline("PREP: Create windows for widgets and map them");
 	XtRealizeWidget(topLevel);
 	tet_infoline("TEST: Manage a widget with a non-composite parent");

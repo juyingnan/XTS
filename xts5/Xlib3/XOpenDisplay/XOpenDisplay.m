@@ -648,7 +648,7 @@ In child:
 	if(config.posix_system == 0) {
 		unsupported("This assertion can only be tested on a POSIX system.");
 	} else
-		(void) tet_fork(t005exec, TET_NULLFP, 0 , ~0);
+		tet_fork(t005exec, TET_NULLFP, 0 , ~0);
 
 >>EXTERN
 extern char **environ;
@@ -675,7 +675,7 @@ char	*mstr = "DISPLAY=%s";
 		return;
 	}
 
-	(void) tet_exec("./Test1", argv, environ);
+	tet_exec("./Test1", argv, environ);
 
 	delete("Exec of file ./Test1 failed");
 	free( (char *) str);

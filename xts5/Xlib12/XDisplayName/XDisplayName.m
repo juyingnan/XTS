@@ -181,7 +181,7 @@ char	*mstr = "DISPLAY=%s";
 		return;
 	}
 
-	(void) tet_exec("./Test1", argv, environ);
+	tet_exec("./Test1", argv, environ);
 
 	delete("Exec of file ./Test1 failed");
 	free( (char *) str);

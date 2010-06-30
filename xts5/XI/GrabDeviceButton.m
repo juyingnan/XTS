@@ -367,7 +367,7 @@ int 	n;
 
 	XSelectExtensionEvent(display, grab_window, &dbrclass, 1);
 
-	(void) warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 1);
 	XSync(display, True);	/* Discard any events */
 	devicebuttonpress(display, Devs.Button, Button1);
 

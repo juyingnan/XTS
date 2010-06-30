@@ -134,7 +134,7 @@ int	oldcounter;
 
 	oldcounter = counter;
 /* Create window. */
-	(void) mkwin(display, (XVisualInfo *) NULL, (struct area *) NULL, False);
+	mkwin(display, (XVisualInfo *) NULL, (struct area *) NULL, False);
 /* Verify that afterfunction was not called. */
 	if (counter != oldcounter) {
 		delete("After function already set to afterfunction.");
@@ -143,9 +143,9 @@ int	oldcounter;
 	else
 		CHECK;
 /* Call XSetAfterFunction to set the after function to afterfunction. */
-	(void) XCALL;
+	XCALL;
 /* Create window. */
-	(void) mkwin(display, (XVisualInfo *) NULL, (struct area *) NULL, False);
+	mkwin(display, (XVisualInfo *) NULL, (struct area *) NULL, False);
 /* Verify that the after function was called. */
 	if (counter == oldcounter) {
 		report("After function not called.");
@@ -168,7 +168,7 @@ int	(*proc)();
 
 /* Call XSetAfterFunction to set after function to afterfunction. */
 	procedure = afterfunction;
-	(void) XCALL;
+	XCALL;
 /* Call XSetAfterFunction to set after function to _afterfunction. */
 	procedure = _afterfunction;
 	proc = XCALL;

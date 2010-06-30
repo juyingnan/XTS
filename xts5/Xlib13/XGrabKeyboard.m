@@ -237,7 +237,7 @@ XEvent	ev;
 
 	XCALL;
 
-	(void) warppointer(client2, grab_window, 1, 1);
+	warppointer(client2, grab_window, 1, 1);
 	keypress(display, getkeycode(display));
 
 	if (XCheckMaskEvent(display, KeyPressMask, &ev))
@@ -312,7 +312,7 @@ XEvent	ev;
 	owner_events = False;
 	XCALL;
 
-	(void) warppointer(display, window2, 1, 1);
+	warppointer(display, window2, 1, 1);
 	keypress(display, getkeycode(display));
 
 	if (XCheckWindowEvent(display, grab_window, KeyPressMask, &ev))
@@ -358,7 +358,7 @@ XEvent	ev;
 	owner_events = True;
 	XCALL;
 
-	(void) warppointer(display, window2, 1, 1);
+	warppointer(display, window2, 1, 1);
 	keypress(display, getkeycode(display));
 
 	if (XCheckWindowEvent(display, window2, KeyPressMask, &ev))
@@ -403,7 +403,7 @@ XEvent	ev;
 	owner_events = True;
 	XCALL;
 
-	(void) warppointer(display, window2, 1, 1);
+	warppointer(display, window2, 1, 1);
 	keypress(display, getkeycode(display));
 
 	if (XCheckWindowEvent(display, grab_window, KeyPressMask, &ev))
@@ -442,7 +442,7 @@ int 	key;
 
 	XCALL;
 
-	(void) warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 1);
 	key = getkeycode(display);
 	keypress(display, key);
 
@@ -490,7 +490,7 @@ static int 	key;
 	/*
 	 * Try to provoke a keypress on grab_window.
 	 */
-	(void) warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 1);
 	keypress(display, key);
 	if (XCheckMaskEvent(display, (long)KeyPressMask, &ev))
 		res = False;
@@ -617,7 +617,7 @@ XEvent	ev;
 	keyboard_mode = GrabModeSync;
 	XCALL;
 
-	(void) warppointer(display, grab_window, 10, 10);
+	warppointer(display, grab_window, 10, 10);
 	keypress(display, key);
 	keyrel(display, key);
 
@@ -638,7 +638,7 @@ XEvent	ev;
 		FAIL;
 	} else {
 		first = ev.type;
-		(void) getevent(display, &ev);
+		getevent(display, &ev);
 		/* (We have already checked that there is another event) */
 
 		if (ev.type != KeyPress && first != KeyPress) {
@@ -676,12 +676,12 @@ XEvent	ev;
 Window	win;
 
 	win = defwin(Dsp);
-	(void) warppointer(Dsp, win, 0, 0);
+	warppointer(Dsp, win, 0, 0);
 	XSync(Dsp, True);	/* discard events */
 
 	XSelectInput(Dsp, win, PointerMotionMask);
 
-	(void) warppointer(Dsp, win, 1, 4);
+	warppointer(Dsp, win, 1, 4);
 	XSync(Dsp, False);
 
 	if (XCheckWindowEvent(Dsp, win, PointerMotionMask, &ev))
@@ -745,13 +745,13 @@ Verify that events are now received.
 >>CODE
 XEvent	ev;
 
-	(void) warppointer(display, grab_window, 0, 0);
+	warppointer(display, grab_window, 0, 0);
 	XSelectInput(display, grab_window, PointerMotionMask);
 
 	pointer_mode = GrabModeSync;
 	XCALL;
 
-	(void) warppointer(display, grab_window, 1, 1);
+	warppointer(display, grab_window, 1, 1);
 	XSync(display, False);	/* warppointer has effectivly done this */
 	if (!XCheckWindowEvent(display, grab_window, PointerMotionMask, &ev))
 		CHECK;

@@ -728,7 +728,7 @@ Widget rowcolw_good;
 	avs_xt_hier("Tcrtwdgt1", "XtCreateWidget");
 	tet_infoline("PREP: Create rowcolw_good widget in box1w widget");
 	rowcolw_good = (Widget) CreateRowColWidget(boxw1);
-	(void) CreateLabelWidget("Failsafe widget", rowcolw_good);
+	CreateLabelWidget("Failsafe widget", rowcolw_good);
 	tet_infoline("TEST: Create label widget Hello");
 	labelw_good = XtCreateWidget(
 		"Hello",
@@ -866,7 +866,7 @@ Widget widget_good;
 	avs_xt_hier("Tcrtwdgt3", "XtCreateWidget");
 	tet_infoline("TEST: Create formw_good widget subclass of constraintWidgetClass");
 	formw_good = (Widget) CreateFormWidget(boxw1);
-	(void) CreateLabelWidget("failsafe widget", formw_good);
+	CreateLabelWidget("failsafe widget", formw_good);
 	tet_infoline("PREP: Create labelw_good widget Hello");
 	setargs[0].name = XtNresizable;
 	setargs[0].value = (XtArgVal) TRUE;
@@ -887,7 +887,7 @@ Widget widget_good;
 	avs_xt_hier("Tcrtwdgt4", "XtCreateWidget");
 	tet_infoline("PREP: Create formw_good widget subclass of constraintWidgetClass");
 	formw_good = (Widget) CreateFormWidget(boxw1);
-	(void) CreateLabelWidget("Failsafe widget", formw_good);
+	CreateLabelWidget("Failsafe widget", formw_good);
 	tet_infoline("TEST: Create labelw_good widget Hello");
 	labelw_good = XtCreateWidget(
 			  "Hello",

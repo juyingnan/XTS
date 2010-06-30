@@ -255,7 +255,7 @@ int non_zero = 0;
 		return;
 	} else
 		CHECK;
-	(void) warppointer(display, win, 2,2); /* dgrabbed restores pointer */
+	warppointer(display, win, 2,2); /* dgrabbed restores pointer */
 	for(k=minkc; k <= maxkc; k++) {
 		devicekeypress(display, Devs.Mod, k);
 		devicebuttonpress(display, Devs.Button, Button1);

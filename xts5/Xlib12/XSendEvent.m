@@ -267,15 +267,15 @@ Window wtmp;		/* useless XQueryPointer return values */
 /* Grab server. */
 	XGrabServer(display);
 /* Enable synchronization. */
-	(void) XSynchronize(display, True);
+	XSynchronize(display, True);
 /* Save initial pointer location. */
-	(void) XQueryPointer(display, ptrwin, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
+	XQueryPointer(display, ptrwin, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
 /* Warp pointer to window. */
 	XWarpPointer(display, None, ptrwin, 0, 0, 0, 0, 0, 0);
 /* Get new pointer location. */
 	if (XQueryPointer(display, ptrwin, &wtmp, &wtmp, &oroot_x, &oroot_y, &itmp, &itmp, &uitmp) == False) {
 		delete("Pointer on wrong root.");
-		(void) XSynchronize(display, False);
+		XSynchronize(display, False);
 		XUngrabServer(display);
 		return;
 	} else
@@ -291,7 +291,7 @@ Window wtmp;		/* useless XQueryPointer return values */
 /* Get current pointer location. */
 	if (XQueryPointer(display, ptrwin, &wtmp, &wtmp, &root_x, &root_y, &itmp, &itmp, &uitmp) == False) {
 		delete("Pointer moved.");
-		(void) XSynchronize(display, False);
+		XSynchronize(display, False);
 		XUngrabServer(display);
 		return;
 	}
@@ -310,7 +310,7 @@ Window wtmp;		/* useless XQueryPointer return values */
 /* Warp pointer back to where it started. */
 	XWarpPointer(display, None, oldroot, 0, 0, 0, 0, sroot_x, sroot_y);
 /* Disable synchronization. */
-	(void) XSynchronize(display, False);
+	XSynchronize(display, False);
 /* Ungrab server. */
 	XUngrabServer(display);
 /* Verify that XSendEvent returned non-zero. */
@@ -416,18 +416,18 @@ struct area a;
 /* Grab server. */
 	XGrabServer(display);
 /* Enable synchronization. */
-	(void) XSynchronize(display, True);
+	XSynchronize(display, True);
 /* Set input focus to parent window. */
 	XSetInputFocus(display, parent, RevertToPointerRoot, CurrentTime);
 /* Save initial pointer location. */
-	(void) XQueryPointer(display, child, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
+	XQueryPointer(display, child, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
 /* Warp pointer to inferior of focus window. */
 	XWarpPointer(display, None, child, 0, 0, 0, 0, 0, 0);
 
 /* Get new pointer location. */
 	if (XQueryPointer(display, child, &wtmp, &wtmp, &oroot_x, &oroot_y, &itmp, &itmp, &uitmp) == False) {
 		delete("Pointer on wrong root.");
-		(void) XSynchronize(display, False);
+		XSynchronize(display, False);
 		XUngrabServer(display);
 		return;
 	} else
@@ -444,7 +444,7 @@ struct area a;
 /* Get current pointer location. */
 	if (XQueryPointer(display, child, &wtmp, &wtmp, &root_x, &root_y, &itmp, &itmp, &uitmp) == False) {
 		delete("Pointer moved.");
-		(void) XSynchronize(display, False);
+		XSynchronize(display, False);
 		XUngrabServer(display);
 		return;
 	}
@@ -463,7 +463,7 @@ struct area a;
 /* Warp pointer back to where it started. */
 	XWarpPointer(display, None, oldroot, 0, 0, 0, 0, sroot_x, sroot_y);
 /* Disable synchronization. */
-	(void) XSynchronize(display, False);
+	XSynchronize(display, False);
 /* Ungrab server. */
 	XUngrabServer(display);
 /* Verify that XSendEvent returned non-zero. */
@@ -972,18 +972,18 @@ struct area a;
 /* Grab server. */
 	XGrabServer(display);
 /* Enable synchronization. */
-	(void) XSynchronize(display, True);
+	XSynchronize(display, True);
 /* Set input focus to parent window. */
 	XSetInputFocus(display, parent, RevertToPointerRoot, CurrentTime);
 /* Save initial pointer location. */
-	(void) XQueryPointer(display, child, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
+	XQueryPointer(display, child, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
 /* Warp pointer to inferior of focus window. */
 	XWarpPointer(display, None, child, 0, 0, 0, 0, 0, 0);
 
 /* Get new pointer location. */
 	if (XQueryPointer(display, child, &wtmp, &wtmp, &oroot_x, &oroot_y, &itmp, &itmp, &uitmp) == False) {
 		delete("Pointer on wrong root.");
-		(void) XSynchronize(display, False);
+		XSynchronize(display, False);
 		XUngrabServer(display);
 		return;
 	} else
@@ -1000,7 +1000,7 @@ struct area a;
 /* Get current pointer location. */
 	if (XQueryPointer(display, child, &wtmp, &wtmp, &root_x, &root_y, &itmp, &itmp, &uitmp) == False) {
 		delete("Pointer moved.");
-		(void) XSynchronize(display, False);
+		XSynchronize(display, False);
 		XUngrabServer(display);
 		return;
 	}
@@ -1019,7 +1019,7 @@ struct area a;
 /* Warp pointer back to where it started. */
 	XWarpPointer(display, None, oldroot, 0, 0, 0, 0, sroot_x, sroot_y);
 /* Disable synchronization. */
-	(void) XSynchronize(display, False);
+	XSynchronize(display, False);
 /* Ungrab server. */
 	XUngrabServer(display);
 /* Verify that XSendEvent returned non-zero. */
@@ -1117,18 +1117,18 @@ Window wtmp;		/* useless XQueryPointer return values */
 /* Grab server. */
 	XGrabServer(display);
 /* Enable synchronization. */
-	(void) XSynchronize(display, True);
+	XSynchronize(display, True);
 /* Set input focus to new focus window. */
 	XSetInputFocus(display, nfocus, RevertToPointerRoot, CurrentTime);
 /* Save initial pointer location. */
-	(void) XQueryPointer(display, nfocus, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
+	XQueryPointer(display, nfocus, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
 /* Warp pointer away from inferior of focus window; to root. */
 	XWarpPointer(display, None, DRW(display), 0, 0, 0, 0, 0, 0);
 
 /* Get new pointer location. */
 	if (XQueryPointer(display, nfocus, &wtmp, &wtmp, &oroot_x, &oroot_y, &itmp, &itmp, &uitmp) == False) {
 		delete("Pointer on wrong root.");
-		(void) XSynchronize(display, False);
+		XSynchronize(display, False);
 		XUngrabServer(display);
 		return;
 	} else
@@ -1147,7 +1147,7 @@ Window wtmp;		/* useless XQueryPointer return values */
 /* Get current pointer location. */
 	if (XQueryPointer(display, nfocus, &wtmp, &wtmp, &root_x, &root_y, &itmp, &itmp, &uitmp) == False) {
 		delete("Pointer moved.");
-		(void) XSynchronize(display, False);
+		XSynchronize(display, False);
 		XUngrabServer(display);
 		return;
 	}
@@ -1166,7 +1166,7 @@ Window wtmp;		/* useless XQueryPointer return values */
 /* Warp pointer back to where it started. */
 	XWarpPointer(display, None, oldroot, 0, 0, 0, 0, sroot_x, sroot_y);
 /* Disable synchronization. */
-	(void) XSynchronize(display, False);
+	XSynchronize(display, False);
 /* Ungrab server. */
 	XUngrabServer(display);
 /* Verify that XSendEvent returned non-zero. */
@@ -1191,18 +1191,18 @@ Window wtmp;		/* useless XQueryPointer return values */
 /* Grab server. */
 	XGrabServer(display);
 /* Enable synchronization. */
-	(void) XSynchronize(display, True);
+	XSynchronize(display, True);
 /* Set input focus to new focus window. */
 	XSetInputFocus(display, nfocus, RevertToPointerRoot, CurrentTime);
 /* Save initial pointer location. */
-	(void) XQueryPointer(display, nfocus, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
+	XQueryPointer(display, nfocus, &oldroot, &wtmp, &sroot_x, &sroot_y, &itmp, &itmp, &uitmp);
 /* Warp pointer away from inferior of focus window; to root. */
 	XWarpPointer(display, None, DRW(display), 0, 0, 0, 0, 0, 0);
 
 /* Get new pointer location. */
 	if (XQueryPointer(display, nfocus, &wtmp, &wtmp, &oroot_x, &oroot_y, &itmp, &itmp, &uitmp) == False) {
 		delete("Pointer on wrong root.");
-		(void) XSynchronize(display, False);
+		XSynchronize(display, False);
 		XUngrabServer(display);
 		return;
 	} else
@@ -1213,7 +1213,7 @@ Window wtmp;		/* useless XQueryPointer return values */
 /* Get current pointer location. */
 	if (XQueryPointer(display, nfocus, &wtmp, &wtmp, &root_x, &root_y, &itmp, &itmp, &uitmp) == False) {
 		delete("Pointer moved.");
-		(void) XSynchronize(display, False);
+		XSynchronize(display, False);
 		XUngrabServer(display);
 		return;
 	}
@@ -1232,7 +1232,7 @@ Window wtmp;		/* useless XQueryPointer return values */
 /* Warp pointer back to where it started. */
 	XWarpPointer(display, None, oldroot, 0, 0, 0, 0, sroot_x, sroot_y);
 /* Disable synchronization. */
-	(void) XSynchronize(display, False);
+	XSynchronize(display, False);
 /* Ungrab server. */
 	XUngrabServer(display);
 /* Verify that XSendEvent returned non-zero. */

@@ -131,7 +131,7 @@ tester()
 	Create_Client(CLIENT);
 
 	win = Create_Default_Window(CLIENT);
-	(void) Create_Default_GContext(CLIENT);
+	Create_Default_GContext(CLIENT);
 	Map_Window(CLIENT, win);
 
 	Set_Test_Type(CLIENT, test_type);
@@ -141,19 +141,19 @@ tester()
 	switch(test_type) {
 	case GOOD:
 		Log_Trace("client %d sent default PolyPoint request\n", CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_Nothing(CLIENT);
 		Visual_Check();
 		break;
 	case BAD_LENGTH:
 		Log_Trace("client %d sent PolyPoint request with bad length (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
 		Log_Trace("client %d sent overlong PolyPoint request (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	default:
 		Log_Err("INTERNAL ERROR: test_type %d not one of GOOD(%d), BAD_LENGTH(%d), TOO_LONG(%d) or JUST_TOO_LONG(%d)\n",

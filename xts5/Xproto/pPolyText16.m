@@ -151,7 +151,7 @@ tester()
 	font_req = (xOpenFontReq *) Add_Counted_Value (font_req, '2');
 	Send_Req(CLIENT, (xReq *) font_req);
 	Log_Trace("client %d sent default OpenFont request\n", CLIENT);
-	(void) Expect_Nothing(CLIENT);
+	Expect_Nothing(CLIENT);
 
 	/* create a default GContext with xtfont2 as the font */
 
@@ -175,19 +175,19 @@ tester()
 	switch(test_type) {
 	case GOOD:
 		Log_Trace("client %d sent default PolyText16 request\n", CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_Nothing(CLIENT);
 		Visual_Check();
 		break;
 	case BAD_LENGTH:
 		Log_Trace("client %d sent PolyText16 request with bad length (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	case TOO_LONG:
 	case JUST_TOO_LONG:
 		Log_Trace("client %d sent overlong PolyText16 request (%d)\n", CLIENT, req->length);
-		(void) Expect_BadLength(CLIENT);
-		(void) Expect_Nothing(CLIENT);
+		Expect_BadLength(CLIENT);
+		Expect_Nothing(CLIENT);
 		break;
 	default:
 		Log_Err("INTERNAL ERROR: test_type %d not one of GOOD(%d), BAD_LENGTH(%d), TOO_LONG(%d) or JUST_TOO_LONG(%d)\n",

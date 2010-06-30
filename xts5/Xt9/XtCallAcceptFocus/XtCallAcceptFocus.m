@@ -723,7 +723,7 @@ pid_t pid2;
 
 	FORK(pid2);
 	avs_xt_hier("Tcalafocs1", "XtCallAcceptFocus");
-	(void) ConfigureDimension(topLevel, boxw2);
+	ConfigureDimension(topLevel, boxw2);
 	tet_infoline("PREP: Create Square Cell widget");
 	squarew = XtVaCreateManagedWidget("squarew",
 			squareCellWidgetClass, boxw1, NULL);
