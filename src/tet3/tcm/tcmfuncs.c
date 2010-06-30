@@ -80,6 +80,9 @@ MODIFICATIONS:
 	Aaron Plattner, April 2010
 	Fixed warnings when compiled with GCC's -Wall option.
 
+	Peter Hutterer, June 2010
+	Move envmsg into ifndef TET_LITE define, fixes warning.
+
 ************************************************************************/
 
 #include <stdio.h>
@@ -131,10 +134,10 @@ char **argv;
 	struct synreq *synreq, *sp;
 	int count;
 	int nsys;
+	static char envmsg[] = "null or not set";
 #endif /* -END-LITE-CUT- */
 	static char tiargs_name[] = "TET_TIARGS";
 	static char tetroot_name[] = "TET_ROOT";
-	static char envmsg[] = "null or not set";
 #ifdef NOTRACE
 	int twarn = 0;
 #else
