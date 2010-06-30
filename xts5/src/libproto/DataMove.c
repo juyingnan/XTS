@@ -219,7 +219,7 @@ char **bufpp;
 int cnt;
 {
 
-    wbzero(*bufpp,(unsigned)cnt);
+    memset(*bufpp, 0, (size_t)cnt);
     *bufpp += cnt;
 }
 

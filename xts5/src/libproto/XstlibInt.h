@@ -189,7 +189,7 @@ to do GetRootImage on NCD terminal) */
 
 #define send2_lsb(cl,val)  pack2_lsb(&(Get_Display(cl)->bufptr),(short)val)
 
-#define sendpad(cl,cnt)	wbzero(Get_Display(cl)->bufptr,cnt);\
+#define sendpad(cl,cnt)	memset(Get_Display(cl)->bufptr, 0, cnt);\
 			Get_Display(cl)->bufptr += cnt
 
 

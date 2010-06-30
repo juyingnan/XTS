@@ -196,16 +196,6 @@ register length;
     return 0;
 }
 
-void
-wbzero (b, length)
-register unsigned char *b;
-register length;
-{
-    while (length--) {
-	*b++ = '\0';
-    }
-}
-
 /* Find the first set bit
  * i.e. least signifigant 1 bit:
  * 0 => 0
