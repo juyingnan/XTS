@@ -23,10 +23,10 @@ EDIT = $(SED) -e 's,%bindir%,$(bindir),g' \
 	-e 's,%libexecdir%,$(libexecdir),g' \
 	-e 's,%DEFAULT_TET_ROOT%,$(DEFAULT_TET_ROOT),g' \
 	-e 's,%PACKAGE_VERSION%,$(PACKAGE_VERSION),g'
-bin/xts-config: bin/xts-config.in
+bin/xts-config: $(srcdir)/bin/xts-config.in
 	$(AM_V_at)$(MKDIR_P) bin
 	$(AM_V_GEN)$(EDIT) < $< > $@
-bin/xts-run: bin/xts-run.in
+bin/xts-run: $(srcdir)/bin/xts-run.in
 	$(AM_V_at)$(MKDIR_P) bin
 	$(AM_V_GEN)$(EDIT) < $< > $@
 
