@@ -584,7 +584,7 @@ int	cl; /* client number */
 	dpy -> wire_vec[i] = NULL;
     }
     dpy -> resource_id = 0;
-    dpy -> resource_shift = wffs ((int) dpy -> resource_mask) - 1;
+    dpy -> resource_shift = ffs ((int) dpy -> resource_mask) - 1;
 /*  dpy -> db = (struct _XrmHashBucketRec *) NULL; */
 /* 
  * Initialize pointers to NULL so that XstFreeDisplayStructure will
