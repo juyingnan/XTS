@@ -406,7 +406,6 @@ Window	Create_Window();
 void	XstExit();
 void	Exit_OK();
 xReply *Expect();
-char	*Get_Date();
 int	Get_Timer();
 XID	Get_Resource_Id();
 int	Log_Close();

@@ -144,26 +144,6 @@ char *  asctime();
 
 
 /*
- * Return a character string with the current date and time.
- */
-
-char *
-Get_Date()
-{
-	struct  tm *tp;
-	struct  tm *localtime();
-	time_t tim;
-	static char buf[26];
-
-	tim = time(0);
-	tp = localtime(&tim);
-	(void) strcpy(buf, asctime(tp));
-	buf[24] = '\0';
-	return(buf);
-}
-
-
-/*
  * These are routines found in BSD and not found in SYSV.
  */
 
