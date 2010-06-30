@@ -132,166 +132,207 @@ SOFTWARE.
 #include "XstlibInt.h"
 
 /*ARGSUSED*/
+int
 Gen_Good_accelDenum (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_accelNum (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_backBlue (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_backGreen (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_backRed (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_bitPlane (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_blue (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_colors (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_contiguous (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_count (client) {
     return (0);
 }
+int
 Gen_Good_depth (client) {
 XstDisplay	*dpy = Get_Display(client);
     return (XstDefaultDepth(dpy, XstDefaultScreen(dpy)));
 }
 /*ARGSUSED*/
+int
 Gen_Good_doAccel (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_doThresh (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_dstDrawable (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_dstX (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_dstY (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_firstKeyCode (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_foreBlue (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_foreGreen (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_foreRed (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_green (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_hostLength (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_id (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_interval (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_leftPad (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_mask (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_maskChar (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_mid (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_pixel (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_planeMask (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_planes (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_red (client) {
     return(0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_source (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_sourceChar (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_srcCmap (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_srcDrawable (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_srcX (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_srcY (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_threshold (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_time (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_timeout (client) {
     return (0);
 }
@@ -327,10 +368,12 @@ Gen_Good_Visual (client,scr)
 }
 
 /*ARGSUSED*/
+int
 Gen_Good_x (client) {
     return (0);
 }
 /*ARGSUSED*/
+int
 Gen_Good_y (client) {
     return (0);
 }
@@ -344,6 +387,7 @@ int client;
 }
 
 /*ARGSUSED*/
+int
 Gen_Good_Event(client,rp)
 int client;
 xReq *rp;
@@ -365,6 +409,7 @@ int min3(a, b, c)
 /*
  * Get a suitable number of colormap entries to allocate.
  */
+int
 Get_Maxsize(client)
 	int 	client;
 {
