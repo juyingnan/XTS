@@ -194,6 +194,7 @@ static struct	cmdinfo	defcmd = {
 	"mtool -c <command> [-o <output-file>] [other-options]"
 };
 
+int
 main(argc, argv)
 int 	argc;
 char	**argv;
@@ -315,7 +316,7 @@ newcmd:
 		free(source);
 	}
 
-	exit(0);
+	return 0;
 }
 
 static char	putbackbuf[MAXLINE];
