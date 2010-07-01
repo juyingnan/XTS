@@ -274,9 +274,6 @@ int XstDisconnectDisplay (server)
     return close(server);
 }
 
-#undef NULL
-#define NULL ((char *) 0)
-
 _XstWaitForReadable(dpy)
   XstDisplay *dpy;
 {
