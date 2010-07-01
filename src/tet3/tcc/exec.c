@@ -90,7 +90,7 @@ char *path, **argv, *tcdir, *outfile;
 	sp = syfind(*prp->pr_sys);
 	ASSERT(sp);
 	if (sp->sy_activity != prp->pr_activity) {
-		(void) sprintf(buf, fmt, prp->pr_activity);
+		sprintf(buf, fmt, prp->pr_activity);
 		TRACE3(tet_Ttcc, 6, "putenv \"%s\" on system %s",
 			buf, tet_i2a(*prp->pr_sys));
 		if (tcc_putenv(*prp->pr_sys, buf) < 0) {

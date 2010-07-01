@@ -175,7 +175,7 @@ static	char	*sep = " ,\t";
 
 	if (*mp == NULL) {
 		err("Bad .ER error code");
-		(void) fprintf(stderr, " (%s)\n", type);
+		fprintf(stderr, " (%s)\n", type);
 		errexit();
 	}
 
@@ -190,8 +190,8 @@ static	char	*sep = " ,\t";
 			break;
 	}
 
-	(void) strcpy(errfile, "error/");
-	(void) strcat(errfile, *(mp+1));
+	strcpy(errfile, "error/");
+	strcat(errfile, *(mp+1));
 
 	/* BadValue is a special case to be dealt with */
 	if (strncmp(type, "Value", 5) == 0) {
@@ -215,8 +215,8 @@ char	*tmpfile;
 
 	fp = cretmpfile(F_TVAL, &tmpfile);
 
-	(void) fprintf(fp, ">>ASSERTION Bad A\n");
-	(void) fprintf(fp, "When the value of\n.A %s\n", Alts[1]);
+	fprintf(fp, ">>ASSERTION Bad A\n");
+	fprintf(fp, "When the value of\n.A %s\n", Alts[1]);
 
 	i = 2;
 	if (strcmp(Alts[i], "mask") == 0) {
@@ -226,32 +226,32 @@ char	*tmpfile;
 		wasmasktype = 0;
 
 	if (wasmasktype)
-		(void) fprintf(fp, "is not a bitwise combination of\n");
+		fprintf(fp, "is not a bitwise combination of\n");
 	else
-		(void) fprintf(fp, "is other than\n");
+		fprintf(fp, "is other than\n");
 
 	for (; i < Nalts; i++) {
-		(void) fprintf(fp, ".S %s", Alts[i]);
+		fprintf(fp, ".S %s", Alts[i]);
 		if (i == Nalts-2)
-			(void) fprintf(fp, "%s", "\nor\n");
+			fprintf(fp, "%s", "\nor\n");
 		else
-			(void) fprintf(fp, "%s", " ,\n");
+			fprintf(fp, "%s", " ,\n");
 	}
 
-	(void) fprintf(fp, "then a\n.S BadValue\nerror occurs.\n");
+	fprintf(fp, "then a\n.S BadValue\nerror occurs.\n");
 
-	(void) fprintf(fp, ">>EXTERN\n\n");
-	(void) fprintf(fp, "/* Value list for use in test t%03d */\n", State.assertion+1);
-	(void) fprintf(fp, "static %s	%svallist[] = {\n",
+	fprintf(fp, ">>EXTERN\n\n");
+	fprintf(fp, "/* Value list for use in test t%03d */\n", State.assertion+1);
+	fprintf(fp, "static %s	%svallist[] = {\n",
 		wasmasktype? "unsigned long": "int ", Alts[1]);
 
 
 	for (i = (wasmasktype)? 3: 2; i < Nalts; i++) {
-		(void) fprintf(fp, "\t%s,\n", Alts[i]);
+		fprintf(fp, "\t%s,\n", Alts[i]);
 	}
 
-	(void) fprintf(fp, "};\n\n");
-	(void) fclose(fp);
+	fprintf(fp, "};\n\n");
+	fclose(fp);
 
 	includefile(tmpfile, buf);
 }
@@ -264,18 +264,18 @@ char	line[MAXLINE];
 	 * Do the define bits.
 	 */
 	line[0] = '\0';
-	(void) strcat(line, "#undef\tVALUE_ARG\n");
-	(void) sprintf(line+strlen(line), "#define\tVALUE_ARG %s\n", Alts[1]);
-	(void) strcat(line, "#undef\tVALUE_LIST\n");
-	(void) sprintf(line+strlen(line), "#define\tVALUE_LIST %svallist\n", Alts[1]);
-	(void) sprintf(line+strlen(line), "#undef NOTMEMTYPE\n");
-	(void) sprintf(line+strlen(line), "#define NOTMEMTYPE %s\n",
+	strcat(line, "#undef\tVALUE_ARG\n");
+	sprintf(line+strlen(line), "#define\tVALUE_ARG %s\n", Alts[1]);
+	strcat(line, "#undef\tVALUE_LIST\n");
+	sprintf(line+strlen(line), "#define\tVALUE_LIST %svallist\n", Alts[1]);
+	sprintf(line+strlen(line), "#undef NOTMEMTYPE\n");
+	sprintf(line+strlen(line), "#define NOTMEMTYPE %s\n",
 		(wasmasktype)? "unsigned": "");
-	(void) strcat(line, "#undef\tNOTMEMBER\n");
+	strcat(line, "#undef\tNOTMEMBER\n");
 	if (wasmasktype)
-		(void) strcat(line, "#define\tNOTMEMBER notmaskmember\n");
+		strcat(line, "#define\tNOTMEMBER notmaskmember\n");
 	else
-		(void) strcat(line, "#define\tNOTMEMBER notmember\n");
+		strcat(line, "#define\tNOTMEMBER notmember\n");
 
 	putbackline(line);
 }
@@ -294,16 +294,16 @@ char	*word;
 	*out = '\0';
 	for (i = 0; i < Nalts; i++) {
 		word = Alts[i];
-		(void) strcat(out, word);
+		strcat(out, word);
 
 		if (i < Nalts-2)
-			(void) strcat(out, ",\n.S ");
+			strcat(out, ",\n.S ");
 		if (i == Nalts-2)
-			(void) strcat(out, "\nor\n.S ");
+			strcat(out, "\nor\n.S ");
 	}
 	if (Nalts > 1)
-		(void) strcat(out, " ");
-	(void) strcat(out, ",\n");
+		strcat(out, " ");
+	strcat(out, ",\n");
 
 	return(strlen(out));
 }

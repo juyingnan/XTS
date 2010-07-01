@@ -474,7 +474,7 @@ static Boolean TryNewLayout(bbw)
 		     * almost.
 		     *
 		     */
-		    (void) XtMakeResizeRequest( (Widget)bbw,
+		    XtMakeResizeRequest( (Widget)bbw,
 				       proposed_width, proposed_height,
 				       &proposed_width, &proposed_height);
 		    return(TRUE);
@@ -575,7 +575,7 @@ static void ChangeManaged(w)
     Widget w;
 {
     /* Reconfigure the box */
-    (void) TryNewLayout((BoxWidget)w);
+    TryNewLayout((BoxWidget)w);
     Resize(w);
 }
 

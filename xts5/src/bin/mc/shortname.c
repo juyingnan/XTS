@@ -150,23 +150,23 @@ int 	n;
 
 	cp = strinstr(name, "Background");
 	if (cp) {
-		(void) strcpy(cp, "Bg");
-		(void) strcpy(cp+2, cp+10);
+		strcpy(cp, "Bg");
+		strcpy(cp+2, cp+10);
 	}
 	cp = strinstr(name, "Subwindow");
 	if (cp) {
-		(void) strcpy(cp, "Sbw");
-		(void) strcpy(cp+3, cp+9);
+		strcpy(cp, "Sbw");
+		strcpy(cp+3, cp+9);
 	}
 	cp = strinstr(name, "String");
 	if (cp) {
-		(void) strcpy(cp, "Str");
-		(void) strcpy(cp+3, cp+6);
+		strcpy(cp, "Str");
+		strcpy(cp+3, cp+6);
 	}
 	cp = strinstr(name, "Window");
 	if (cp) {
-		(void) strcpy(cp, "Wdw");
-		(void) strcpy(cp+3, cp+6);
+		strcpy(cp, "Wdw");
+		strcpy(cp+3, cp+6);
 	}
 
 	/*

@@ -389,7 +389,7 @@ struct cflist *lp;
 			proccfline(buf, lp, lcount, fname);
 	}
 
-	(void) fclose(fp);
+	fclose(fp);
 }
 
 /*
@@ -407,7 +407,7 @@ int lineno;
 
 	/* check the format of the config line */
 	if (!tet_equindex(line) || !tet_remvar(line, -1)) {
-		(void) sprintf(msg, fmt, lineno);
+		sprintf(msg, fmt, lineno);
 		error(0, msg, fname);
 		conferrors++;
 		return;
@@ -487,7 +487,7 @@ int mode;
 		return;
 
 	/* here to add a default value of !TET_OUTPUT_CAPTURE */
-	(void) sprintf(line, "%s=%s", name,
+	sprintf(line, "%s=%s", name,
 		getmcflag("TET_OUTPUT_CAPTURE", mode) ? "False" : "True");
 	proccfl2(line, &MCFLIST(mode));
 }
@@ -511,7 +511,7 @@ int mode;
 		return;
 
 	/* here to add a default value of TET_OUTPUT_CAPTURE */
-	(void) sprintf(line, "%s=%s", name,
+	sprintf(line, "%s=%s", name,
 		getmcflag("TET_OUTPUT_CAPTURE", mode) ? "True" : "False");
 	proccfl2(line, &MCFLIST(mode));
 }
@@ -634,7 +634,7 @@ void distcfg()
 		for (dvp = dvar; dvp < dvar + Ndvar; dvp++) {
 			if (!dvp->dv_value || !*dvp->dv_value)
 				continue;
-			(void) sprintf(buf, "%s=%.*s",dvp->dv_name,
+			sprintf(buf, "%s=%.*s",dvp->dv_name,
 				(int) sizeof buf - dvp->dv_len - 1,
 				dvp->dv_value);
 			proccfl2(buf, &CFLIST(sp, CONF_DIST));
@@ -722,7 +722,7 @@ void distcfg()
 					if (sysid == 0)
 						ASSERT(isabspathloc(p));
 					else if (!isabspathrem(p)) {
-						(void) sprintf(buf, fmt1,
+						sprintf(buf, fmt1,
 							dvp->dv_name, sysid);
 						error(0, buf, "is not an "
 							"absolute path name");
@@ -731,7 +731,7 @@ void distcfg()
 				}
 			}
 			else if (dvp->dv_needed) {
-				(void) sprintf(buf, fmt2, dvp->dv_name);
+				sprintf(buf, fmt2, dvp->dv_name);
 				error(0, buf, tet_i2a(sysid)); 
 				conferrors++;
 			}
@@ -899,7 +899,7 @@ void doconfig()
 		for (cp = lp->cf_conf; cp < lp->cf_conf + lp->cf_nconf; cp++) {
 			if (!*cp)
 				continue;
-			(void) sprintf(buf, fmt, sysid % 1000,
+			sprintf(buf, fmt, sysid % 1000,
 				(int) (sizeof buf - sizeof fmt), *cp);
 			RBUFCHK((char **) &tmp.cf_conf, &tmp.cf_lconf,
 				(int) ((tmp.cf_nconf + 1) * sizeof *tmp.cf_conf));
@@ -1106,7 +1106,7 @@ int mode;
 
 	/* make sure that the remote config file is accessible */
 	if (tcc_access(sp->sy_sysid, fname, 04) < 0) {
-		(void) sprintf(msg, fmt1, prcfmode(mode), MAXPATH, fname);
+		sprintf(msg, fmt1, prcfmode(mode), MAXPATH, fname);
 		error(errno ? errno : tet_tcerrno, msg, tet_i2a(sp->sy_sysid));
 		conferrors++;
 		return;
@@ -1137,7 +1137,7 @@ int mode;
 
 	/* perform a config variable exchange with the remote system */
 	if (tet_tcxconfig(sp->sy_sysid, fname, tp, &vopts, to) < 0) {
-		(void) sprintf(msg, fmt2, prcfmode(mode));
+		sprintf(msg, fmt2, prcfmode(mode));
 		error(tet_tcerrno, msg, tet_i2a(sp->sy_sysid));
 		conferrors++;
 	}
@@ -1215,7 +1215,7 @@ int mode;
 			case 'f':
 				break;
 			default:
-				(void) sprintf(msg, fmt, vp->bv_name,
+				sprintf(msg, fmt, vp->bv_name,
 					prcfmode(mode));
 				error(0, msg, tet_i2a(sysid));
 				conferrors++;
@@ -1293,7 +1293,7 @@ static void reportdcfg()
 		lp = &CFLIST(sp, CONF_DIST);
 		for (cp = lp->cf_conf; cp < lp->cf_conf + lp->cf_nconf; cp++) {
 			RBUFCHK(&buf, &buflen, (int) strlen(*cp) + 12);
-			(void) sprintf(buf, "TET_REM%03d_%s",
+			sprintf(buf, "TET_REM%03d_%s",
 				sysid % 1000, *cp);
 			jnl_cfg(buf);
 		}
@@ -1372,11 +1372,11 @@ char *fname, *type;
 	}
 
 	/* write out the variables */
-	(void) fprintf(fp, "# %s configuration variables\n\n", type);
+	fprintf(fp, "# %s configuration variables\n\n", type);
 	for (cp = lp->cf_conf; cp < lp->cf_conf + lp->cf_nconf; cp++)
 		if (fprintf(fp, "%s\n", *cp) < 0) {
 			error(errno, "write error on", fname);
-			(void) fclose(fp);
+			fclose(fp);
 			return(-1);
 		}
 
@@ -1509,7 +1509,7 @@ struct cfstack *stp;
 				p = tet_equindex(*cp);
 				ASSERT(*p == '=');
 				*p = '\0';
-				(void) sprintf(msg, fmt, *cp);
+				sprintf(msg, fmt, *cp);
 				*p = '=';
 				error(0, msg,
 		"variable assignment in the distributed configuration");
@@ -1633,7 +1633,7 @@ struct cfstack *stp;
 		len += (int) strlen(p);
 	buflen = (int) strlen(*cp) + 1;
 	RBUFCHK(cp, &buflen, len);
-	(void) sprintf(*cp, "%s=%s%s%s", name, head, p ? p : "", tail);
+	sprintf(*cp, "%s=%s%s%s", name, head, p ? p : "", tail);
 
 	TRACE2(tet_Ttcc, 8, "cve3(): assignment after expansion: \"%s\"", *cp);
 }
@@ -1692,7 +1692,7 @@ struct cfstack *stp1;
 		p = cve3_opmode(name, var, mmm, sysid, mode, stp1);
 
 	if (!p) {
-		(void) sprintf(msg, fmt, fullvar);
+		sprintf(msg, fmt, fullvar);
 		cve_error(name, mode, sysid, msg);
 	}
 
@@ -1889,18 +1889,18 @@ int mode, sysid;
 
 	if (mode == CONF_DIST) {
 		p = "Distributed";
-		(void) sprintf(msg2, conf);
+		sprintf(msg2, conf);
 	}
 	else {
 		p = prcfmode(mode);
 		if (sysid < 0) {
-			(void) sprintf(msg2, "%s %s", p, conf);
+			sprintf(msg2, "%s %s", p, conf);
 			p = "master";
 		}
 		else
-			(void) sprintf(msg2, fmt2, conf, sysid);
+			sprintf(msg2, fmt2, conf, sysid);
 	}
-	(void) sprintf(msg1, fmt1, text, name, p);
+	sprintf(msg1, fmt1, text, name, p);
 	error(0, msg1, msg2);
 
 	conferrors++;
@@ -2221,7 +2221,7 @@ int sysid;
 	ASSERT(IS_CFSETUP(sp, CONF_DIST));
 	lp = &CFLIST(sp, CONF_DIST);
 
-	(void) sprintf(buf, "%s=%.*s", name,
+	sprintf(buf, "%s=%.*s", name,
 		(int) sizeof buf - (int) strlen(name) - 2, value);
 	proccfl2(buf, lp);
 }
@@ -2416,7 +2416,7 @@ int mode;
 	case CONF_DIST:
 		return("DIST");
 	default:
-		(void) sprintf(msg, "%s%d", text, mode);
+		sprintf(msg, "%s%d", text, mode);
 		return(msg);
 	}
 }
@@ -2478,7 +2478,7 @@ int opmode;
 	ASSERT(TCFNAME(cfmode));
 	if (BUFCHK(&var, &lvar, (int) (sizeof envname + strlen(TCFNAME(cfmode)) + 1)) < 0)
 		return(-1);
-	(void) sprintf(var, "%s=%s", envname, TCFNAME(cfmode));
+	sprintf(var, "%s=%s", envname, TCFNAME(cfmode));
 
 	/* put the variable in the environment */
 	if (tet_putenv(var) < 0)
@@ -2499,7 +2499,7 @@ int opmode;
 
 static void confgiveup()
 {
-	(void) fprintf(stderr,
+	fprintf(stderr,
 		"%s: giving up after %d configuration error%s\n",
 		tet_progname, conferrors, conferrors == 1 ? "" : "s");
 	tcc_exit(1);
@@ -2518,16 +2518,16 @@ void config_cleanup()
 
 	for (fname = tcfname; fname < &tcfname[Ntcfname]; fname++)
 		if (*fname)
-			(void) UNLINK(*fname);
+			UNLINK(*fname);
 
 #else 	/* -START-LITE-CUT- */
 
 	if (ecfname)
-		(void) UNLINK(ecfname);
+		UNLINK(ecfname);
 	if (dcfname)
-		(void) UNLINK(dcfname);
+		UNLINK(dcfname);
 	if (ccfname)
-		(void) UNLINK(ccfname);
+		UNLINK(ccfname);
 
 #endif /* TET_LITE */	/* -END-LITE-CUT- */
 

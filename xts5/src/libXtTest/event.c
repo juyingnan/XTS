@@ -115,7 +115,7 @@ void avs_free_sem()
 	vsw_debug_enter("libXtTest/event.c:avs_free_sem()",0);
 
 	if(semid != -1) {
-		(void) semctl(semid, 0, IPC_RMID, NULL);
+		semctl(semid, 0, IPC_RMID, NULL);
 		semid = -1;
 	}
 
@@ -183,7 +183,7 @@ int t;
 			return -1;
 		}
 #endif
-		(void) alarm((unsigned int)t);
+		alarm((unsigned int)t);
 	}
 
 	s2 = semop(semid, &mysembuf, 1);

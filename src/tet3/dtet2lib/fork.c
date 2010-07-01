@@ -63,7 +63,7 @@ int tet_dofork()
 	register int rc, try;
 
 	for (try = 0; (rc = fork()) < 0 && try < 5; try++)
-		(void) sleep((unsigned) TET_MAX(1 << try, 2));
+		sleep((unsigned) TET_MAX(1 << try, 2));
 
 	if (rc == 0)
 		tet_mypid = (int) getpid();

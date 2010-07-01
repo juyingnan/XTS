@@ -117,7 +117,7 @@ char **argv;
 	    TET_THR_KEYCREATE(&tet_sequence_key) != 0)
 	{
 		/* can't use tet_error() yet */
-		(void) fprintf(stderr,
+		fprintf(stderr,
 			"%s: TET_THR_KEYCREATE() failed in TCM startup",
 			tet_progname);
 		exit(EXIT_FAILURE);

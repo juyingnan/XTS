@@ -209,7 +209,7 @@ int icno, tpcount;
 {
 	char buf[128];
 
-	(void) sprintf(buf, "%d %d %s", icno, tpcount, curtime());
+	sprintf(buf, "%d %d %s", icno, tpcount, curtime());
 	lite_output(TET_JNL_IC_START, buf, "IC Start");
 	return(0);
 }
@@ -241,7 +241,7 @@ int icno, tpcount;
 	ASSERT(tet_synreq);
 	if (tet_tcm_async(MK_ASPNO(icno, 0, S_ICSTART), SV_YES, SV_SYNC_TIMEOUT,
 		tet_synreq, &nsys) < 0) {
-			(void) sprintf(errmsg,
+			sprintf(errmsg,
 				"Auto Sync failed at start of IC %d", icno);
 			tet_error(tet_sderrno, errmsg);
 			tet_exit(EXIT_FAILURE);
@@ -264,7 +264,7 @@ int icno, tpcount;
 				break;
 			/* else fall through */
 		default:
-			(void) sprintf(errmsg,
+			sprintf(errmsg,
 		"Auto sync error at start of IC %d, sysid = %d, state = %s",
 				icno, sp->sy_sysid, tet_systate(sp->sy_state));
 			tet_error(tet_sderrno, errmsg);
@@ -306,7 +306,7 @@ int icno, tpcount;
 {
 	char buf[128];
 
-	(void) sprintf(buf, "%d %d %s", icno, tpcount, curtime());
+	sprintf(buf, "%d %d %s", icno, tpcount, curtime());
 	lite_output(TET_JNL_IC_END, buf, "IC End");
 }
 
@@ -355,17 +355,17 @@ int icno, tpno, testnum;
 {
 	char buf[128];
 
-	(void) sprintf(buf, "%d %s", testnum, curtime());
+	sprintf(buf, "%d %s", testnum, curtime());
 	lite_output(TET_JNL_TP_START, buf, "TP Start");
 
 	/* create temporary result file */
-	(void) remove(tet_tmpresfile);
+	remove(tet_tmpresfile);
 	if ((tet_tmpresfp = fopen(tet_tmpresfile, "a+b")) == (FILE *) 0)
 		fatal(errno, "cannot create temporary result file:",
 			tet_tmpresfile);
 
 	/* override umask (must be writable by set-uid children) */
-	(void) CHMOD(tet_tmpresfile, MODE666);
+	CHMOD(tet_tmpresfile, MODE666);
 
 	/*
 	** put pathname in environment to be picked up by tet_result() in
@@ -403,7 +403,7 @@ int icno, tpno, testnum;
 	ASSERT(tet_synreq);
 	if (tet_tcm_async(MK_ASPNO(icno, tpno, S_TPSTART), vote,
 		SV_SYNC_TIMEOUT, tet_synreq, &nsys) < 0) {
-			(void) sprintf(errmsg,
+			sprintf(errmsg,
 				"Auto Sync failed at start of TP %d", testnum);
 			tet_error(tet_sderrno, errmsg);
 			tet_exit(EXIT_FAILURE);
@@ -425,7 +425,7 @@ int icno, tpno, testnum;
 			tet_XSync_del = 1;
 			break;
 		default:
-			(void) sprintf(errmsg,
+			sprintf(errmsg,
 		"Auto Sync error at start of TP %d, sysid = %d, state = %s",
 				testnum, sp->sy_sysid,
 				tet_systate(sp->sy_state));
@@ -515,9 +515,9 @@ int icno, tpno, testnum;
 		have_result = 0;
 	}
 
-	(void) fclose(tet_tmpresfp);
-	(void) UNLINK(tet_tmpresfile);
-	(void) tet_putenv("TET_TMPRESFILE=");
+	fclose(tet_tmpresfp);
+	UNLINK(tet_tmpresfile);
+	tet_putenv("TET_TMPRESFILE=");
 
 	if (!have_result)
 	{
@@ -539,7 +539,7 @@ int icno, tpno, testnum;
 		}
 	}
 
-	(void) sprintf(buf, "%d %d %s", testnum, result, curtime());
+	sprintf(buf, "%d %d %s", testnum, result, curtime());
 	lite_output(TET_JNL_TP_RESULT, buf, res);
 
 	/*
@@ -555,7 +555,7 @@ int icno, tpno, testnum;
 		tet_mtx_destroy();
 		tet_mtx_init();
 #  endif
-		(void) sprintf(buf, "ABORT on result code %d \"%s\"",
+		sprintf(buf, "ABORT on result code %d \"%s\"",
 			result, res);
 		lite_output(TET_JNL_TCM_INFO, "", buf);
 		return(-1);
@@ -585,7 +585,7 @@ int icno, tpno, testnum;
 	ASSERT(tet_synreq);
 	if (tet_tcm_async(MK_ASPNO(icno, tpno, S_TPEND), SV_YES,
 		SV_SYNC_TIMEOUT * 10, tet_synreq, &nsys) < 0) {
-			(void) sprintf(errmsg, 
+			sprintf(errmsg,
 				"Auto Sync failed at end of TP %d", testnum);
 			tet_error(tet_sderrno, errmsg);
 			tet_exit(EXIT_FAILURE);
@@ -609,7 +609,7 @@ int icno, tpno, testnum;
 		case SS_SYNCYES:
 			break;
 		default:
-			(void) sprintf(errmsg,
+			sprintf(errmsg,
 		"Auto Sync error at end of TP %d, sysid = %d, state = %s",
 				testnum, sp->sy_sysid,
 				tet_systate(sp->sy_state));
@@ -638,7 +638,7 @@ static int mtcm_tpend2()
 	register struct synreq *sp;
 
 	/* signal TP end to XRESD */
-	(void) tet_xdtpend(tet_xrid);
+	tet_xdtpend(tet_xrid);
 	switch (tet_xderrno) {
 	case ER_OK:
 		return(0);
@@ -686,7 +686,7 @@ static int mtcm_tpend2()
 			case SS_SYNCNO:
 				break;
 			default:
-				(void) sprintf(errmsg,
+				sprintf(errmsg,
 			"Abort Auto Sync error, sysid = %d, state = %s",
 					sp->sy_sysid,
 					tet_systate(sp->sy_state));
@@ -717,7 +717,7 @@ int no_ics;
 
 #ifdef TET_LITE	/* -LITE-CUT-LINE- */
 
-	(void) sprintf(buf, "%s %d", versn, no_ics);
+	sprintf(buf, "%s %d", versn, no_ics);
 	lite_output(TET_JNL_TCM_START, buf, "TCM Start");
 
 #else		/* -START-LITE-CUT- */
@@ -725,7 +725,7 @@ int no_ics;
 	if (!ismaster()) 
 		return;
 
-	(void) sprintf(buf, "%d|%ld %s %d|TCM Start", 
+	sprintf(buf, "%d|%ld %s %d|TCM Start",
 		TET_JNL_TCM_START, tet_activity, versn, no_ics);
 
 	if (tet_xdxres(tet_xrid, buf) < 0) {
@@ -826,13 +826,13 @@ char *progname;
 
 	/* create the execution results file and open in append mode */
 
-	(void) remove(resfile);
+	remove(resfile);
 	tet_resfp = fopen(resfile, "a");
 	if (tet_resfp == NULL)
 		fatal(errno, "cannot create results file:", resfile);
 
 	/* override umask (must be writable by set-uid children) */
-	(void) CHMOD(resfile, MODE666);
+	CHMOD(resfile, MODE666);
 
 	tet_combined_ok = 1;
 }
@@ -854,7 +854,7 @@ char *data;
 	if (data == NULL)
 		data = "";
 
-	(void) sprintf(header, fmt, mtype, tet_activity,
+	sprintf(header, fmt, mtype, tet_activity,
 		fields[0] == '\0' ? "" : " ", fields);
 	tet_msgform(header, data, outbuf);
 	obp = outbuf;
@@ -871,9 +871,9 @@ static char *curtime()
 	struct tm *tp;
 	static char s[10];
 
-	(void) time(&t);
+	time(&t);
 	tp = localtime(&t);
-	(void) sprintf(s, "%02d:%02d:%02d", tp->tm_hour,
+	sprintf(s, "%02d:%02d:%02d", tp->tm_hour,
 		tp->tm_min, tp->tm_sec);
 
 	return s;

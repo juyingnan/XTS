@@ -126,7 +126,7 @@ struct ptab *pp;
 	for (n = 0; n < OP_PUTENV_NLINE(mp); n++) {
 		p1 = tet_equindex(AV_ENVAR(mp, n));
 		ASSERT(p1);
-		(void) sprintf(buf, "%.*s",
+		sprintf(buf, "%.*s",
 			TET_MIN((int) (p1 - AV_ENVAR(mp, n)), (int) sizeof buf - 1),
 			AV_ENVAR(mp, n));
 		if (!strcmp(buf, "TET_ROOT") && tetrootset(p1 + 1) < 0)

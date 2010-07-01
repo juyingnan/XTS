@@ -242,7 +242,7 @@ int 	i, j;
 			subwins[i] = crechild(A_DISPLAY, A_DRAW, &area);
 			for (j = 0; j < swmheight; j += 10) {
 				setarea(&area, 0, j, swmwidth, 6);
-				(void) crechild(A_DISPLAY, subwins[i], &area);
+				crechild(A_DISPLAY, subwins[i], &area);
 			}
 		}
 

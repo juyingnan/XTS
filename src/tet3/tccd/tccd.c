@@ -129,9 +129,9 @@ int argc;
 char **argv;
 {
 	/* ignore certain signals */
-	(void) signal(SIGHUP, SIG_IGN);
-	(void) signal(SIGINT, SIG_IGN);
-	(void) signal(SIGQUIT, SIG_IGN);
+	signal(SIGHUP, SIG_IGN);
+	signal(SIGINT, SIG_IGN);
+	signal(SIGQUIT, SIG_IGN);
 
 	/* initialise the global variables for the library code */
 	tet_init_globals("tccd", PT_STCC, -1, logerror, tet_genfatal);
@@ -141,12 +141,12 @@ char **argv;
 	tet_init_blockable_sigs();
 
 	/* open the error log file */
-	(void) umask((mode_t) 022);
+	umask((mode_t) 022);
 	loginit();
 
 	/* catch SIGTERM */
 	if (signal(SIGTERM, SIG_IGN) != SIG_IGN)
-		(void) signal(SIGTERM, terminate);
+		signal(SIGTERM, terminate);
 
 	/* call the generic server */
 	return(tet_si_main(argc, argv, 0));
@@ -184,7 +184,7 @@ char *firstarg, *nextarg;
 		mask = 0;
 		while (*p >= '0' && *p <= '7')
 			mask = (mask << 3) | (*p++ & 07);
-		(void) umask((mode_t)(mask & 077));
+		umask((mode_t)(mask & 077));
 		break;
 	case 'l':
 		if (*(firstarg + 2))
@@ -266,7 +266,7 @@ void tet_ss_initdaemon()
 
 	/* fix up HOME environment variable if necessary */
 	if ((p = getenv(home)) == (char *) 0 || strcmp(p, pw->pw_dir)) {
-		(void) sprintf(buf, "%s=%.*s", home,
+		sprintf(buf, "%s=%.*s", home,
 			(int) sizeof buf - (int) sizeof home - 2, pw->pw_dir);
 		if ((p = tet_strstore(buf)) == (char *) 0 || tet_putenv(p) < 0)
 			exit(1);
@@ -274,7 +274,7 @@ void tet_ss_initdaemon()
 
 	/* provide a default PATH variable if necessary */
 	if ((p = getenv(path)) == (char *) 0) {
-		(void) sprintf(buf, "%s=%.*s", path,
+		sprintf(buf, "%s=%.*s", path,
 			(int) sizeof buf - (int) sizeof path - 2, defpath);
 		TRACE2(tet_Ttccd, 4, "no PATH env var, using default: \"%s\"",
 			buf);
@@ -296,11 +296,11 @@ void tet_ss_initdaemon()
 
 	/* attach stdin to /dev/null and stdout to stderr (which goes
 		to the log file */
-	(void) CLOSE(0);
+	CLOSE(0);
 	errno = 0;
 	if (OPEN(null, O_RDONLY, 0) != 0)
 		fatal(errno, "can't open", null);
-	(void) CLOSE(1);
+	CLOSE(1);
 	errno = 0;
 	if (FCNTL_F_DUPFD(FILENO(stderr), 1) != 1)
 		fatal(errno, "can't attach stdout to stderr", (char *) 0);
@@ -351,7 +351,7 @@ register struct ptab *pp;
 
 	/* emit a diagnostic message if this is unexpected */
 	if ((pp->pt_flags & PF_LOGGEDOFF) == 0) {
-		(void) sprintf(msg, fmt, (pp->pt_flags & PF_SERVER) ? se : cl);
+		sprintf(msg, fmt, (pp->pt_flags & PF_SERVER) ? se : cl);
 		error(0, msg, tet_r2a(&pp->pt_rid));
 	}
 
@@ -640,7 +640,7 @@ struct ptab *pp;
 void tet_ss_cleanup()
 {
 	config_cleanup();
-	(void) tet_xdlogoff();
+	tet_xdlogoff();
 	tet_ts_cleanup();
 	exit(0);
 }
@@ -689,7 +689,7 @@ int sig;
 int tetrootset(s)
 char *s;
 {
-	(void) sprintf(tet_root, "%.*s", (int) sizeof tet_root - 1, s);
+	sprintf(tet_root, "%.*s", (int) sizeof tet_root - 1, s);
 	return(0);
 }
 

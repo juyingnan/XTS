@@ -137,7 +137,7 @@ int flag, *pidp;
 			return(ER_ERR);
 		}
 		else if (tet_fioclex(fd) < 0) {
-			(void) close(fd);
+			close(fd);
 			return(ER_ERR);
 		}
 	}
@@ -154,14 +154,14 @@ int flag, *pidp;
 	if ((pid = tet_dofork()) == 0) {
 		/* in child */
 		if (fd >= 0) {
-			(void) fflush(stdout);
-			(void) close(1);
+			fflush(stdout);
+			close(1);
 			if (fcntl(fd, F_DUPFD, 1) != 1) {
 				error(errno, "can't dup stdout", (char *) 0);
 				_exit(~0);
 			}
-			(void) fflush(stderr);
-			(void) close(2);
+			fflush(stderr);
+			close(2);
 			if (fcntl(fd, F_DUPFD, 2) != 2) {
 				error(errno, "can't dup stderr", (char *) 0);
 				_exit(~0 - 1);
@@ -169,10 +169,10 @@ int flag, *pidp;
 		}
 		for (n = tet_getdtablesize() - 1; n > 2; n--) {
 			if (n != fd)
-				(void) close(n);
+				close(n);
 		}
 		tcc_exec_signals();
-		(void) execvp(path, argv);
+		execvp(path, argv);
 		error(errno, "can't exec", path);
 		switch (flag) {
 		case TCF_EXEC_TEST:
@@ -194,7 +194,7 @@ int flag, *pidp;
 
 	/* close outfile in the parent if one was specified */
 	if (fd >= 0)
-		(void) close(fd);
+		close(fd);
 
 
 	TRACE3(Ttcclib, 4, "after exec: pid = %s, return %s",
@@ -242,7 +242,7 @@ char *file;
 			if (p2 > fname && p2 < &fname[sizeof fname - 2])
 				*p2++ = '/';
 			*p2 = '\0';
-			(void) sprintf(p2, "%.*s",
+			sprintf(p2, "%.*s",
 				(int) (&fname[sizeof fname - 1] - p2), file);
 			TRACE2(Ttcclib, 6, "checkexec: try \"%s\"", fname);
 			if (tet_eaccess(fname, 01) == 0)
@@ -282,7 +282,7 @@ long snid;
 			tet_ptrepcode(tet_sderrno));
 
 	SLEEP(2);
-	(void) tet_sdlogoff(0);
+	tet_sdlogoff(0);
 
 #endif /* !TET_LITE */	/* -END-LITE-CUT- */
 }

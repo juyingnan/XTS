@@ -59,7 +59,7 @@ int len;
 	if (!tet_tfp)
 		tet_tfopen();
 
-	(void) fprintf(tet_tfp, "%s:\n",
+	fprintf(tet_tfp, "%s:\n",
 		title && *title ? title : "data dump:");
 
 	tet_hexdump(from, len, tet_tfp);

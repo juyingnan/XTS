@@ -155,7 +155,7 @@ char *scenario, *sopt, *cwd;
 		else {
 			if (proc1scfile(fp, scenario_file) < 0)
 				tcc_exit(1);
-			(void) fclose(fp);
+			fclose(fp);
 		}
 		if (scenerrors)
 			scengiveup();

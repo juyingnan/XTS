@@ -97,7 +97,7 @@ static void rptversion PROTOLIST((char *, char **));
 void tet_check_apilib_version()
 {
 	if (mstrcmp(tet_apilib_version, expected_apilib_version)) {
-		(void) fprintf(stderr,
+		fprintf(stderr,
 			"%s: using wrong version of the API library\n",
 			tet_progname);
 		rptversion("expected", expected_apilib_version);
@@ -137,10 +137,10 @@ char **sp1, **sp2;
 static void rptversion(s, sp)
 char *s, **sp;
 {
-	(void) fprintf(stderr, "%s: %s version:", tet_progname, s);
+	fprintf(stderr, "%s: %s version:", tet_progname, s);
 	while (*sp)
-		(void) fprintf(stderr, " %s", *sp++);
-	(void) putc('\n', stderr);
-	(void) fflush(stderr);
+		fprintf(stderr, " %s", *sp++);
+	putc('\n', stderr);
+	fflush(stderr);
 }
 

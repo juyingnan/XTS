@@ -203,7 +203,7 @@ char	*buf;
 	FpAssertion = (FILE *)-1;
 	FpStrategy = (FILE *)-1;
 	setoutline();
-	(void) fprintf(FpCode, "%sint 	tet_thistest;\n\n", (lflag)? "extern ": "");
+	fprintf(FpCode, "%sint 	tet_thistest;\n\n", (lflag)? "extern ": "");
 }
 
 /*ARGSUSED*/
@@ -214,13 +214,13 @@ char	*buf;
 	int i;
 
 	/* Finish the copyright banner */
-	(void) fprintf(FpBanner, "*/\n");
+	fprintf(FpBanner, "*/\n");
 
 	/* Finish the code section */
-	(void) fprintf(FpCode, "/* End of Test Cases */\n\n\n");
+	fprintf(FpCode, "/* End of Test Cases */\n\n\n");
 
 	setoutline();
-	(void) fprintf(FpCode, "%sstruct tet_testlist tet_testlist[] = {\n",
+	fprintf(FpCode, "%sstruct tet_testlist tet_testlist[] = {\n",
 		(lflag)? "static ": "");
 
 	/*
@@ -228,12 +228,12 @@ char	*buf;
 	 */
 	for (i = 1; i <= Testnum; i++) {
 		if (!gbflag)
-			(void) fprintf(FpCode, "\t{ t%03d, %d },\n", Icnum[i], Icnum[i]);
+			fprintf(FpCode, "\t{ t%03d, %d },\n", Icnum[i], Icnum[i]);
 		else
-			(void) fprintf(FpCode, "\t{ t%03d, %s },\n", Icnum[i], Ictype[i]);
+			fprintf(FpCode, "\t{ t%03d, %s },\n", Icnum[i], Ictype[i]);
 	}
-	(void) fprintf(FpCode, "\t{ NULL, 0 }\n};\n\n");
-	(void) fprintf(FpCode, "%sint \tntests = sizeof(tet_testlist)/sizeof(struct tet_testlist)-1;\n\n",
+	fprintf(FpCode, "\t{ NULL, 0 }\n};\n\n");
+	fprintf(FpCode, "%sint \tntests = sizeof(tet_testlist)/sizeof(struct tet_testlist)-1;\n\n",
 		(lflag)?"static ": "");
 
 	/*
@@ -241,22 +241,22 @@ char	*buf;
 	 * entry.
 	 */
 	if (lflag) {
-		(void) fprintf(FpCode, "struct linkinfo E%s = {\n", name12(State.name));
-		(void) fprintf(FpCode, "\t\"%s%s\",\n",
+		fprintf(FpCode, "struct linkinfo E%s = {\n", name12(State.name));
+		fprintf(FpCode, "\t\"%s%s\",\n",
 			(mflag)? "m": "",name10lc(State.name));
-		(void) fprintf(FpCode, "\t\"%s\",\n", State.name);
-		(void) fprintf(FpCode, "\t&ntests,\n");
-		(void) fprintf(FpCode, "\ttet_testlist,\n");
+		fprintf(FpCode, "\t\"%s\",\n", State.name);
+		fprintf(FpCode, "\t&ntests,\n");
+		fprintf(FpCode, "\ttet_testlist,\n");
 		if (Settings.startup)
-			(void) fprintf(FpCode, "\t%s,\n", Settings.startup);
+			fprintf(FpCode, "\t%s,\n", Settings.startup);
 		else
-			(void) fprintf(FpCode, "\t0,\n");
+			fprintf(FpCode, "\t0,\n");
 
 		if (Settings.cleanup)
-			(void) fprintf(FpCode, "\t%s,\n", Settings.cleanup);
+			fprintf(FpCode, "\t%s,\n", Settings.cleanup);
 		else
-			(void) fprintf(FpCode, "\t0,\n");
-		(void) fprintf(FpCode, "};\n\n");
+			fprintf(FpCode, "\t0,\n");
+		fprintf(FpCode, "};\n\n");
 	}
 
 	/*
@@ -264,28 +264,28 @@ char	*buf;
 	 * is a linked binary or not.
 	 */
 	if (lflag) {
-		(void) fprintf(FpCode, "extern void	(*tet_startup)();\n");
-		(void) fprintf(FpCode, "extern void	(*tet_cleanup)();\n");
+		fprintf(FpCode, "extern void	(*tet_startup)();\n");
+		fprintf(FpCode, "extern void	(*tet_cleanup)();\n");
 	} else {
 		if (State.xtoolkit != 0)
 		{
-			(void) fprintf(FpCode, "void	(*tet_startup)() = %s;\n"
+			fprintf(FpCode, "void	(*tet_startup)() = %s;\n"
 				, Settings.startup? Settings.startup: "NULL" );
-			(void) fprintf(FpCode, "void	(*tet_cleanup)() = %s;\n"
+			fprintf(FpCode, "void	(*tet_cleanup)() = %s;\n"
 				, Settings.cleanup? Settings.cleanup: "NULL");
 		} 
 		else if (State.xcms != 0)
 		{
-			(void) fprintf(FpCode, "void	(*tet_startup)() = %s;\n"
+			fprintf(FpCode, "void	(*tet_startup)() = %s;\n"
 				, Settings.startup? Settings.startup: "r5_startup" );
-			(void) fprintf(FpCode, "void	(*tet_cleanup)() = %s;\n"
+			fprintf(FpCode, "void	(*tet_cleanup)() = %s;\n"
 				, Settings.cleanup? Settings.cleanup: "r5_cleanup");
 		} 
 		else 
 		{
-			(void) fprintf(FpCode, "void	(*tet_startup)() = %s;\n"
+			fprintf(FpCode, "void	(*tet_startup)() = %s;\n"
 			 	, Settings.startup? Settings.startup: "startup");
-			(void) fprintf(FpCode, "void	(*tet_cleanup)() = %s;\n"
+			fprintf(FpCode, "void	(*tet_cleanup)() = %s;\n"
 				, Settings.cleanup? Settings.cleanup: "cleanup");
 		}
 	}
@@ -373,8 +373,8 @@ static	int 	oncethrough;
 	oncethrough = 1;
 
 	setoutline();
-	(void) fprintf(FpExtern, "\n#define T_%s\t1\n", State.name);
-	(void) fprintf(FpExtern, "%schar    *TestName = \"%s\";\n\n",
+	fprintf(FpExtern, "\n#define T_%s\t1\n", State.name);
+	fprintf(FpExtern, "%schar    *TestName = \"%s\";\n\n",
 			(lflag)? "static ": "", State.name);
 
 	Nargs = 0;
@@ -435,39 +435,39 @@ static	int 	oncethrough;
 	 * here.
 	 */
 	if (Nargs > 2)
-		(void) fprintf(FpExtern, "/*\n * Arguments to the %s %s\n */\n",
+		fprintf(FpExtern, "/*\n * Arguments to the %s %s\n */\n",
 			State.name, (mflag)? "macro": "function");
 	for (i = 2; i < Nargs; i++) {
-		(void) fprintf(FpExtern, "static ");
+		fprintf(FpExtern, "static ");
 		for (cp = Arglines[i]; *cp; cp++) {
 			if ((*cp == ' ' && cp[1] == '=') || *cp == '=') {
-				(void) fprintf(FpExtern, ";\n");
+				fprintf(FpExtern, ";\n");
 				break;
 			}
-			(void) fputc(*cp, FpExtern);
+			fputc(*cp, FpExtern);
 		}
 	}
 	if (Nargs > 2)
-		(void) fprintf(FpExtern, "\n\n");
+		fprintf(FpExtern, "\n\n");
 
 	if (NeedStatus)
-		(void) fprintf(FpExtern, "static int 	StatusReturn;\n");
+		fprintf(FpExtern, "static int 	StatusReturn;\n");
 	if (NeedValue)
-		(void) fprintf(FpExtern, "static int 	ValueReturn;\n");
+		fprintf(FpExtern, "static int 	ValueReturn;\n");
 	if (NeedStatus || NeedValue)
-		(void) fprintf(FpExtern, "\n");
+		fprintf(FpExtern, "\n");
 
 	if (Nargs > 2) {
-		(void) fprintf(FpCode, "/*\n * Called at the beginning of each test purpose to reset the\n * arguments to their initial values\n */\n");
-		(void) fprintf(FpCode, "static void\nsetargs()\n{\n");
+		fprintf(FpCode, "/*\n * Called at the beginning of each test purpose to reset the\n * arguments to their initial values\n */\n");
+		fprintf(FpCode, "static void\nsetargs()\n{\n");
 
 		for (i = 2; i < Nargs; i++) {
 			if (Arginit[i])
-				(void) fprintf(FpCode, "\t%s = %s", Argnames[i], Arginit[i]);
+				fprintf(FpCode, "\t%s = %s", Argnames[i], Arginit[i]);
 			else
-				(void) fprintf(FpCode, "\t%s = 0;\n", Argnames[i]);
+				fprintf(FpCode, "\t%s = 0;\n", Argnames[i]);
 		}
-		(void) fprintf(FpCode, "}\n\n");
+		fprintf(FpCode, "}\n\n");
 	}
 
 	/*
@@ -475,8 +475,8 @@ static	int 	oncethrough;
 	 * for the server resources for testing error funtcions.
 	 */
 	if (Nargs) {
-		(void) fprintf(FpCode, "/*\n * Set the arguments to default values for error tests\n */\n");
-		(void) fprintf(FpCode, "static void\nseterrdef()\n{\n");
+		fprintf(FpCode, "/*\n * Set the arguments to default values for error tests\n */\n");
+		fprintf(FpCode, "static void\nseterrdef()\n{\n");
 	}
 
 	for (i = 2; i < Nargs; i++) {
@@ -498,35 +498,35 @@ static	int 	oncethrough;
 
 		for (cp = errdeftypes; *cp; cp++) {
 			if (strncmp(Arglines[i], *cp, strlen(*cp)) == 0)
-				(void) fprintf(FpCode, "\t%s = Errdef%s;\n", Argnames[i], *cp);
+				fprintf(FpCode, "\t%s = Errdef%s;\n", Argnames[i], *cp);
 		}
 	}
 	if (Nargs)
-		(void) fprintf(FpCode, "}\n\n");
+		fprintf(FpCode, "}\n\n");
 
 	/*
 	 * If this is testing a particular function then put out a
 	 * synopsis in the header.
 	 */
 	if (Nargs > 1) {
-		(void) fprintf(FpSynopsis, "/*\n * SYNOPSIS:\n");
-		(void) fprintf(FpSynopsis, " *   %s", Arglines[0]); /* return type */
-		(void) fprintf(FpSynopsis, " *   %s(", State.name);
+		fprintf(FpSynopsis, "/*\n * SYNOPSIS:\n");
+		fprintf(FpSynopsis, " *   %s", Arglines[0]); /* return type */
+		fprintf(FpSynopsis, " *   %s(", State.name);
 		for (i = 2; i < Nargs; i++) {
-			(void) fprintf(FpSynopsis, "%s%s", Argnames[i], (i == Nargs-1)? "": ", ");
+			fprintf(FpSynopsis, "%s%s", Argnames[i], (i == Nargs-1)? "": ", ");
 		}
-		(void) fprintf(FpSynopsis, ")\n");
+		fprintf(FpSynopsis, ")\n");
 		for (i = 2; i < Nargs; i++) {
-			(void) fprintf(FpSynopsis, " *   ");
+			fprintf(FpSynopsis, " *   ");
 			for (cp = Arglines[i]; *cp; cp++) {
 				if ((*cp == ' ' && cp[1] == '=') || *cp == '=') {
-					(void) fprintf(FpSynopsis, ";\n");
+					fprintf(FpSynopsis, ";\n");
 					break;
 				}
-				(void) fputc(*cp, FpSynopsis);
+				fputc(*cp, FpSynopsis);
 			}
 		}
-		(void) fprintf(FpSynopsis, " */\n\n");
+		fprintf(FpSynopsis, " */\n\n");
 	}
 }
 
@@ -551,7 +551,7 @@ int 	window = 0;
 int 	image = 0;
 
 	if (Nargs > 2)
-		(void) fprintf(FpDefines, "/*\n * Defines for different argument types\n */\n");
+		fprintf(FpDefines, "/*\n * Defines for different argument types\n */\n");
 
 	for (i = 2; i < Nargs; i++) {
 
@@ -566,17 +566,17 @@ int 	image = 0;
 
 		if (STRPRECMP(Arglines[i], "Atom") == 0) {
 			if (atom == 0)
-				(void) fprintf(FpDefines, "#define A_ATOM %s\n", Argnames[i]);
+				fprintf(FpDefines, "#define A_ATOM %s\n", Argnames[i]);
 			atom++;
 			defargtype("A_ATOM", atom);
 		} else if (STRPRECMP(Arglines[i], "Colormap") == 0) {
 			if (colormap == 0)
-				(void) fprintf(FpDefines, "#define A_COLORMAP %s\n", Argnames[i]);
+				fprintf(FpDefines, "#define A_COLORMAP %s\n", Argnames[i]);
 			colormap++;
 			defargtype("A_COLORMAP", colormap);
 		} else if (STRPRECMP(Arglines[i], "Cursor") == 0) {
 			if (cursor == 0)
-				(void) fprintf(FpDefines, "#define A_CURSOR %s\n", Argnames[i]);
+				fprintf(FpDefines, "#define A_CURSOR %s\n", Argnames[i]);
 			cursor++;
 			defargtype("A_CURSOR", cursor);
 		} else if (STRPRECMP(Arglines[i], "Display") == 0) {
@@ -585,23 +585,23 @@ int 	image = 0;
 				errexit();
 			}
 			defargtype("A_DISPLAY", display);
-			(void) fprintf(FpDefines, "#define A_DISPLAY %s\n", Argnames[i]);
+			fprintf(FpDefines, "#define A_DISPLAY %s\n", Argnames[i]);
 		} else if (STRPRECMP(Arglines[i], "Drawable") == 0) {
 			if (drawable > 0)
-				(void) fprintf(FpDefines, "#define A_DRAWABLE%d %s\n",
+				fprintf(FpDefines, "#define A_DRAWABLE%d %s\n",
 					drawable+1, Argnames[i]);
 			else
-				(void) fprintf(FpDefines, "#define A_DRAWABLE %s\n", Argnames[i]);
+				fprintf(FpDefines, "#define A_DRAWABLE %s\n", Argnames[i]);
 			drawable++;
 			defargtype("A_DRAWABLE", drawable);
 		} else if (STRPRECMP(Arglines[i], "Font") == 0) {
 			if (font == 0)
-				(void) fprintf(FpDefines, "#define A_FONT %s\n", Argnames[i]);
+				fprintf(FpDefines, "#define A_FONT %s\n", Argnames[i]);
 			font++;
 			defargtype("A_FONT", font);
 		} else if (STRPRECMP(Arglines[i], "GC") == 0) {
 			if (gc == 0)
-				(void) fprintf(FpDefines, "#define A_GC %s\n", Argnames[i]);
+				fprintf(FpDefines, "#define A_GC %s\n", Argnames[i]);
 			gc++;
 			defargtype("A_GC", gc);
 		} else if (STRPRECMP(Arglines[i], "XImage") == 0) {
@@ -614,35 +614,35 @@ int 	image = 0;
 			defargtype("A_IMAGE", image);
 		} else if (STRPRECMP(Arglines[i], "Pixmap") == 0) {
 			if (pixmap == 0)
-				(void) fprintf(FpDefines, "#define A_PIXMAP %s\n", Argnames[i]);
+				fprintf(FpDefines, "#define A_PIXMAP %s\n", Argnames[i]);
 			else
-				(void) fprintf(FpDefines, "#define A_PIXMAP%d %s\n", pixmap+1, Argnames[i]);
+				fprintf(FpDefines, "#define A_PIXMAP%d %s\n", pixmap+1, Argnames[i]);
 			if (drawable > 0)
-				(void) fprintf(FpDefines, "#define A_DRAWABLE%d %s\n",
+				fprintf(FpDefines, "#define A_DRAWABLE%d %s\n",
 					drawable+1, Argnames[i]);
 			else
-				(void) fprintf(FpDefines, "#define A_DRAWABLE %s\n", Argnames[i]);
+				fprintf(FpDefines, "#define A_DRAWABLE %s\n", Argnames[i]);
 			drawable++;
 			defargtype("A_DRAWABLE", drawable);
 			pixmap++;
 			defargtype("A_PIXMAP", pixmap);
 		} else if (STRPRECMP(Arglines[i], "Window") == 0) {
 			if (window == 0)
-				(void) fprintf(FpDefines, "#define A_WINDOW %s\n", Argnames[i]);
+				fprintf(FpDefines, "#define A_WINDOW %s\n", Argnames[i]);
 			else
-				(void) fprintf(FpDefines, "#define A_WINDOW%d %s\n", window+1, Argnames[i]);
+				fprintf(FpDefines, "#define A_WINDOW%d %s\n", window+1, Argnames[i]);
 			if (drawable > 0)
-				(void) fprintf(FpDefines, "#define A_DRAWABLE%d %s\n",
+				fprintf(FpDefines, "#define A_DRAWABLE%d %s\n",
 					drawable+1, Argnames[i]);
 			else
-				(void) fprintf(FpDefines, "#define A_DRAWABLE %s\n", Argnames[i]);
+				fprintf(FpDefines, "#define A_DRAWABLE %s\n", Argnames[i]);
 			drawable++;
 			defargtype("A_DRAWABLE", drawable);
 			window++;
 			defargtype("A_WINDOW", window);
 		}
 	}
-	(void) fprintf(FpDefines, "\n\n");
+	fprintf(FpDefines, "\n\n");
 }
 
 /*
@@ -680,7 +680,7 @@ char	**cpp;
 		errexit();
 	}
 
-	(void) fprintf(FpAssertion, "Assertion %s-%d.(%c)\n", State.name,
+	fprintf(FpAssertion, "Assertion %s-%d.(%c)\n", State.name,
 		State.assertion, State.category);
 
 	Testnum++;
@@ -695,7 +695,7 @@ char	**cpp;
 			State.reason = "No reason code supplied";
 		}
 
-		(void) fprintf(FpAssertion, "\nReason for omission: %s\n", State.reason);
+		fprintf(FpAssertion, "\nReason for omission: %s\n", State.reason);
 	}
 
 
@@ -737,7 +737,7 @@ char	*endl;
 			if (strcmp(tok, ".tL") == 0) {
 				break;	/* ie. skip this line altogether. */
 #if 0
-				(void) fprintf(outfp, "\n%s", prefix);
+				fprintf(outfp, "\n%s", prefix);
 				assertpos = 0;
 				inmacro = 1;
 #endif
@@ -769,10 +769,10 @@ char	*endl;
 			assertpos += strlen(tok) + 1;
 			if (assertpos > ASLENGTH && !joinpunct(*tok)) {
 				assertpos = strlen(tok);
-				(void) fprintf(outfp, "\n%s", prefix);
+				fprintf(outfp, "\n%s", prefix);
 			} else if (oldpos > 0 && needscrunch < 2 && !joinpunct(*tok))
-				(void) fputc(' ', outfp);
-			(void) fprintf(outfp, "%s", tok);
+				fputc(' ', outfp);
+			fprintf(outfp, "%s", tok);
 			if (needscrunch)
 				needscrunch++;
 		}
@@ -836,7 +836,7 @@ char	*buf;
 	}
 	FpStrategy = cretmpfile(F_STRATEGY, NULL);
 	while (newline(fp, buf) != NULL && !SECSTART(buf)) {
-		(void) fprintf(FpStrategy, "%s", buf);
+		fprintf(FpStrategy, "%s", buf);
 	}
 	return;
 
@@ -868,16 +868,16 @@ int 	indecs = 1;
 			indecs = 0;
 			setoutline();
 			if (State.xtoolkit != 0)
-				(void) fprintf(FpCode, "pid_t	pid;\n");
+				fprintf(FpCode, "pid_t	pid;\n");
 			else if (State.xcms == 0)
-				(void) fprintf(FpCode, "int 	pass = 0, fail = 0;\n");
-			(void) fprintf(FpCode, "\n 	report_purpose(%d);\n\n", State.assertion);
+				fprintf(FpCode, "int 	pass = 0, fail = 0;\n");
+			fprintf(FpCode, "\n 	report_purpose(%d);\n\n", State.assertion);
 			(void)fseek(FpAssertion, 0 , SEEK_SET);
 			while (newline(FpAssertion, buf) != NULL && !SECSTART(buf)) {
 					/*strip newlines*/
 					if (buf[strlen(buf)-1] == '\n')
 						buf[strlen(buf)-1] = 0;
-				(void) fprintf(FpCode, "	report_assertion(\"%s\");\n", buf);
+				fprintf(FpCode, "	report_assertion(\"%s\");\n", buf);
 			}
 			buf[0] = 0;
 
@@ -889,24 +889,24 @@ int 	indecs = 1;
 					/*strip newlines*/
 					if (buf[strlen(buf)-1] == '\n')
 						buf[strlen(buf)-1] = 0;
-					(void) fprintf(FpCode, "	report_strategy(\"%s\");\n", buf);
+					fprintf(FpCode, "	report_strategy(\"%s\");\n", buf);
 				}
 				buf[0] = 0;
 			}
 
 			if ((Settings.tpstartup != NULL) && (strlen(Settings.tpstartup) != 0))
-				(void) fprintf(FpCode, "\n	%s();\n", Settings.tpstartup);
+				fprintf(FpCode, "\n	%s();\n", Settings.tpstartup);
 			if ((State.xtoolkit == 0) && (State.xcms == 0))
 			{
 				if (Nargs > 2)
-					(void) fprintf(FpCode, "	setargs();\n");
+					fprintf(FpCode, "	setargs();\n");
 			}
 			if (Settings.beginfunc)
-				(void) fprintf(FpCode, "	%s();\n", Settings.beginfunc);
+				fprintf(FpCode, "	%s();\n", Settings.beginfunc);
 			if (State.xtoolkit != 0) 
 			{
-				(void) fprintf(FpCode, "	FORK(pid);\n");
-				(void) fprintf(FpCode, "	initconfig();\n\n");
+				fprintf(FpCode, "	FORK(pid);\n");
+				fprintf(FpCode, "	initconfig();\n\n");
 			}
 			NeedTpcleanup = 1;
 			Resyncline = 1;
@@ -948,14 +948,14 @@ char	*buf;
 		}
 	}
 
-	(void) fputc('\n', FpExtern);
+	fputc('\n', FpExtern);
 
 }
 
 funcstart()
 {
 
-	(void) fprintf(FpCode, "%svoid t%03d(){\n\n", (dflag)?"" : "static ",  State.assertion);
+	fprintf(FpCode, "%svoid t%03d(){\n\n", (dflag)?"" : "static ",  State.assertion);
 	NeedTpcleanup = 0;
 	Resyncline = 1;
 }
@@ -963,20 +963,20 @@ funcstart()
 funcend()
 {
 	if (NeedTpcleanup && Settings.endfunc)
-		(void) fprintf(FpCode, "\t%s();\n", Settings.endfunc);
+		fprintf(FpCode, "\t%s();\n", Settings.endfunc);
 	if (NeedTpcleanup) 
 	{
 		if (State.xtoolkit != 0) 
-			(void) fprintf(FpCode, "\n	LKROF(pid, AVSXTTIMEOUT*xt_tomultiple);\n");
+			fprintf(FpCode, "\n	LKROF(pid, AVSXTTIMEOUT*xt_tomultiple);\n");
 		if ((Settings.tpcleanup != NULL) && (strlen(Settings.tpcleanup) != 0))
-			(void) fprintf(FpCode, "\t%s();\n", Settings.tpcleanup);
+			fprintf(FpCode, "\t%s();\n", Settings.tpcleanup);
 		if ((State.xtoolkit == 0) && (State.xcms == 0))
-			(void) fprintf(FpCode, "\tpfcount(pass, fail);\n");
+			fprintf(FpCode, "\tpfcount(pass, fail);\n");
 	}
 /*
 	}
 */
-	(void) fprintf(FpCode, "}\n\n");
+	fprintf(FpCode, "}\n\n");
 }
 
 
@@ -1002,10 +1002,10 @@ int 	insertval = 0;
 
 	fputs(prefix, fp);
 	if (Settings.display)
-		(void) fprintf(fp, "startcall(%s);\n", Settings.display);
+		fprintf(fp, "startcall(%s);\n", Settings.display);
 	else
 		fputs("startcall(Dsp);\n", fp);
-	(void) fprintf(fp, "%sif (isdeleted())\n%s\treturn;\n",
+	fprintf(fp, "%sif (isdeleted())\n%s\treturn;\n",
 		prefix, prefix);
 
 	setline(fp);
@@ -1030,22 +1030,22 @@ int 	insertval = 0;
 		insertval = 1;
 		fputs("ValueReturn = ", fp);
 	}
-	(void) fprintf(fp, "%s(", State.name);
+	fprintf(fp, "%s(", State.name);
 	for (i = 2; i < Nargs; i++) {
-		(void) fprintf(fp, "%s%s", Argnames[i], (i == Nargs-1)? "": ", ");
+		fprintf(fp, "%s%s", Argnames[i], (i == Nargs-1)? "": ", ");
 	}
-	(void) fprintf(fp, ")");
+	fprintf(fp, ")");
 	cp += strlen(XCALLSYM);
 	fputs(cp, fp);
 
 	setoutline();
 
 	if (Settings.needgcflush)
-		(void) fprintf(fp, "%sgcflush(A_DISPLAY, A_GC);\n", prefix);
+		fprintf(fp, "%sgcflush(A_DISPLAY, A_GC);\n", prefix);
 	if (Settings.display)
-		(void) fprintf(fp, "%sendcall(%s);\n", prefix, Settings.display);
+		fprintf(fp, "%sendcall(%s);\n", prefix, Settings.display);
 	else
-		(void) fprintf(fp, "%sendcall(Dsp);\n", prefix);
+		fprintf(fp, "%sendcall(Dsp);\n", prefix);
 
 	/*
 	 * If we are generating code to check for the Status return, then
@@ -1054,54 +1054,54 @@ int 	insertval = 0;
 	 * on failure.  Also need to use tpcleanup if returning.
 	 */
 	if (insertstat) {
-		(void) fprintf(fp, "%sif (StatusReturn %s 0) {\n", prefix,
+		fprintf(fp, "%sif (StatusReturn %s 0) {\n", prefix,
 			(strcmp(Ictype[Testnum], "Good") == 0)? "==": "!=");
-		(void) fprintf(fp, "%s\treport(\"Status returned was %%d\", StatusReturn);\n",
+		fprintf(fp, "%s\treport(\"Status returned was %%d\", StatusReturn);\n",
 			prefix);
-		(void) fprintf(fp, "%s\tFAIL;\n", prefix);
+		fprintf(fp, "%s\tFAIL;\n", prefix);
 		if (Settings.failreturn) {
 			if (NeedTpcleanup && Settings.endfunc)
-				(void) fprintf(fp, "%s\t%s();\n", prefix, Settings.endfunc);
+				fprintf(fp, "%s\t%s();\n", prefix, Settings.endfunc);
 			if (NeedTpcleanup)
-				(void) fprintf(fp, "%s\t%s();\n", prefix, Settings.tpcleanup);
-			(void) fprintf(fp, "%s\treturn;\n", prefix);
+				fprintf(fp, "%s\t%s();\n", prefix, Settings.tpcleanup);
+			fprintf(fp, "%s\treturn;\n", prefix);
 		}
-		(void) fprintf(fp, "%s}\n", prefix);
+		fprintf(fp, "%s}\n", prefix);
 	}
 
 	/* As above, but for a value return */
 	if (insertval && Settings.valreturn && *Settings.valreturn) {
-		(void) fprintf(fp, "%sif (ValueReturn != %s) {\n", prefix,
+		fprintf(fp, "%sif (ValueReturn != %s) {\n", prefix,
 			Settings.valreturn);
-		(void) fprintf(fp,
+		fprintf(fp,
 		  "%s\treport(\"Returned value was %%d, expecting %s\", ValueReturn);\n"
 		  , prefix, Settings.valreturn);
-		(void) fprintf(fp, "%s\tFAIL;\n", prefix);
+		fprintf(fp, "%s\tFAIL;\n", prefix);
 		if (Settings.failreturn) {
 			if (NeedTpcleanup && Settings.endfunc)
-				(void) fprintf(fp, "%s\t%s();\n", prefix, Settings.endfunc);
+				fprintf(fp, "%s\t%s();\n", prefix, Settings.endfunc);
 			if (NeedTpcleanup)
-				(void) fprintf(fp, "%s\t%s();\n", prefix, Settings.tpcleanup);
-			(void) fprintf(fp, "%s\treturn;\n", prefix);
+				fprintf(fp, "%s\t%s();\n", prefix, Settings.tpcleanup);
+			fprintf(fp, "%s\treturn;\n", prefix);
 		}
-		(void) fprintf(fp, "%s}\n", prefix);
+		fprintf(fp, "%s}\n", prefix);
 	}
 
 	/*
 	 * If wanted check the error status.
 	 */
 	if (Settings.noerrcheck == 0) {
-		(void) fprintf(fp, "%sif (geterr() != %s) {\n", prefix, ExpectError);
-		(void) fprintf(fp, "%s\treport(\"Got %%s, Expecting %s\", errorname(geterr()));\n", prefix, ExpectError);
-		(void) fprintf(fp, "%s\tFAIL;\n", prefix);
+		fprintf(fp, "%sif (geterr() != %s) {\n", prefix, ExpectError);
+		fprintf(fp, "%s\treport(\"Got %%s, Expecting %s\", errorname(geterr()));\n", prefix, ExpectError);
+		fprintf(fp, "%s\tFAIL;\n", prefix);
 		if (Settings.failreturn) {
 			if (NeedTpcleanup && Settings.endfunc)
-				(void) fprintf(fp, "%s\t%s();\n", prefix, Settings.endfunc);
+				fprintf(fp, "%s\t%s();\n", prefix, Settings.endfunc);
 			if (NeedTpcleanup)
-				(void) fprintf(fp, "%s\t%s();\n", prefix, Settings.tpcleanup);
-			(void) fprintf(fp, "%s\treturn;\n", prefix);
+				fprintf(fp, "%s\t%s();\n", prefix, Settings.tpcleanup);
+			fprintf(fp, "%s\treturn;\n", prefix);
 		}
-		(void) fprintf(fp, "%s}\n", prefix);
+		fprintf(fp, "%s}\n", prefix);
 	}
 
 	/* These settings only apply for one xcall */
@@ -1120,13 +1120,13 @@ char	*buf;
 	memset(buf2, 0, sizeof(buf2));
 	mcassertion(fp, buf);
 	funcstart();
-	(void) fprintf(FpCode, "\n 	report_purpose(%d);\n\n", State.assertion);
+	fprintf(FpCode, "\n 	report_purpose(%d);\n\n", State.assertion);
 
 	(void)fseek(FpAssertion, 0 , SEEK_SET);
 	while (newline(FpAssertion, buf2)) {
 		if (buf2[strlen(buf2)-1] == '\n')
 			buf2[strlen(buf2)-1] = 0;
-		(void) fprintf(FpCode, "	report_assertion(\"%s\");\n", buf2);
+		fprintf(FpCode, "	report_assertion(\"%s\");\n", buf2);
 	}
 
 	fprintf(FpCode, "\treport_assertion(\"The assertion is descriptive or is tested elsewhere.\");\n");
@@ -1143,7 +1143,7 @@ mcincstart(buf)
 char	*buf;
 {
 	if (strcmp(buf+strlen(buf)-4, ".tmc") != 0)
-		(void) fprintf(FpCode, "/* Including from file %s */\n", buf);
+		fprintf(FpCode, "/* Including from file %s */\n", buf);
 }
 
 void
@@ -1151,7 +1151,7 @@ mcincend(buf)
 char	*buf;
 {
 	if (strcmp(buf+strlen(buf)-4, ".tmc") != 0)
-		(void) fprintf(FpCode, "/* End of included file %s */\n\n", buf);
+		fprintf(FpCode, "/* End of included file %s */\n\n", buf);
 }
 
 static void
@@ -1162,7 +1162,7 @@ static	int 	lastline;
 
 	if (pflag) {
 		if (Resyncline || lastline+1 != Lineno) {
-			(void) fprintf(fp, "#line %d \"%s\"\n",
+			fprintf(fp, "#line %d \"%s\"\n",
 				Lineno, Filename? Filename: "stdin");
 			Resyncline = 0;
 		}
@@ -1174,7 +1174,7 @@ static void
 setoutline()
 {
 	if (pflag) {
-		(void) fprintf(FpCode, ">>G\n");
+		fprintf(FpCode, ">>G\n");
 		Resyncline = 1;
 	}
 }

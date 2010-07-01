@@ -137,7 +137,7 @@ char *dest;
 	if (dest_exists) {
 		dest_is_directory = S_ISDIR(st_dest.st_mode);
 		if (S_ISDIR(st_src.st_mode) && !dest_is_directory) {
-			(void) sprintf(msg, fmt1, MAXPATH, src);
+			sprintf(msg, fmt1, MAXPATH, src);
 			error(ENOTDIR, msg, dest);
 			errno = ENOTDIR;
 			return(-1);
@@ -165,7 +165,7 @@ char *dest;
 		}
 		else {
 			len = (int) sizeof destfile - (int) strlen(dest) - 2;
-			(void) sprintf(destfile, "%.*s/%.*s",
+			sprintf(destfile, "%.*s/%.*s",
 				(int) (sizeof destfile - 2), dest,
 				TET_MAX(len, 0), tet_basename(src));
 			dest = destfile;
@@ -177,7 +177,7 @@ char *dest;
 	** ignore files other than regular files
 	*/
 	if (!S_ISREG(st_src.st_mode)) {
-		(void) sprintf(msg, fmt2, MAXPATH, src, MAXPATH, dest);
+		sprintf(msg, fmt2, MAXPATH, src, MAXPATH, dest);
 		error(0, msg, "(source is not a plain file)");
 		return(0);
 	}
@@ -210,12 +210,12 @@ char *dest;
 
 	if (dest_exists && !dest_is_directory) {
 		if (SRC_IS_DEST) {
-			(void) sprintf(msg, fmt2, MAXPATH, src, MAXPATH, dest);
+			sprintf(msg, fmt2, MAXPATH, src, MAXPATH, dest);
 			error(0, msg, "(source and destination are identical)");
 			return(-1);
 		}
 		if (!S_ISREG(st_dest.st_mode)) {
-			(void) sprintf(msg, fmt2, MAXPATH, src, MAXPATH, dest);
+			sprintf(msg, fmt2, MAXPATH, src, MAXPATH, dest);
 			error(0, msg,
 				"(destination exists and is not a plain file)");
 			return(-1);
@@ -240,14 +240,14 @@ char *dest;
 	if ((ofp = fopen(dest, "wb")) == (FILE *) 0) {
 		save_errno = errno;
 		error(errno, "can't open", dest);
-		(void) fclose(ifp);
+		fclose(ifp);
 		errno = save_errno;
 		return(-1);
 	}
 
 	rc = 0;
 	while ((nread = fread(buf, sizeof buf[0], sizeof buf, ifp)) > 0) {
-		(void) fwrite(buf, sizeof buf[0], (size_t) nread, ofp);
+		fwrite(buf, sizeof buf[0], (size_t) nread, ofp);
 		if (ferror(ofp)) {
 			save_errno = errno;
 			error(errno, "write error on", dest);
@@ -264,7 +264,7 @@ char *dest;
 		rc = -1;
 	}
 
-	(void) fclose(ifp);
+	fclose(ifp);
 	if (fclose(ofp) < 0) {
 		save_errno = errno;
 		error(errno, "close error on", dest);
@@ -315,7 +315,7 @@ char *to;
 		&&
 		(len1 == len2 || isdirsep(*(to + len1)))
 	) {
-		(void) sprintf(msg, fmt, MAXPATH, from, MAXPATH, to);
+		sprintf(msg, fmt, MAXPATH, from, MAXPATH, to);
 		error(0, msg, "would never return!");
 		return(-1);
 	}
@@ -337,10 +337,10 @@ char *to;
 	while ((dp = READDIR(dirp)) != (struct dirent *) 0) {
                 if (!strcmp(dp->d_name, ".") || !strcmp(dp->d_name, ".."))
                         continue;
-		(void) sprintf(fromname, "%.*s/%.*s",
+		sprintf(fromname, "%.*s/%.*s",
 			(int) (sizeof fromname - 2), from,
 			TET_MAX(len1, 0), dp->d_name);
-		(void) sprintf(toname, "%.*s/%.*s",
+		sprintf(toname, "%.*s/%.*s",
 			(int) (sizeof toname - 2), to,
 			TET_MAX(len2, 0), dp->d_name);
 		if ((tet_fcopy(fromname, toname) != 0) && (errno != ENOENT))
@@ -348,7 +348,7 @@ char *to;
         }
 
 	save_errno = errno;
-	(void) CLOSEDIR(dirp);
+	CLOSEDIR(dirp);
 	errno = save_errno;
 	return (errcount > 0 ? -1 : 0);
 }

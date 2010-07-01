@@ -253,13 +253,13 @@ int sig;
 	struct sigaction sa;
 
 	if (tet_child > 0)
-		(void) tet_killw(tet_child, KILLWAIT);
+		tet_killw(tet_child, KILLWAIT);
 
 	sa.sa_handler = SIG_DFL;
 	sa.sa_flags = 0; 
-	(void) sigemptyset(&sa.sa_mask); 
-	(void) sigaction(SIGTERM, &sa, (struct sigaction *)NULL);
-	(void) kill(getpid(), SIGTERM);
+	sigemptyset(&sa.sa_mask);
+	sigaction(SIGTERM, &sa, (struct sigaction *)NULL);
+	kill(getpid(), SIGTERM);
 }
 
 #  ifdef FORK1
@@ -288,8 +288,8 @@ int	exitvals;
 #    endif
 #  endif /* TET_THREADS */
 
-	(void) fflush(stdout);
-	(void) fflush(stderr);
+	fflush(stdout);
+	fflush(stderr);
 
 	/* Save old value of tet_child in case of recursive calls
 	   to tet_fork().  RESTORE tet_child BEFORE ALL RETURNS. */
@@ -342,10 +342,10 @@ int	exitvals;
 #    else
 		TET_MUTEX_UNLOCK(&tet_top_mtx);
 #    endif
-		(void) TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *)0);
+		TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *)0);
 #  endif /* TET_THREADS */
 
-		(void) sprintf(buf,
+		sprintf(buf,
 #  ifdef FORK1
 #    ifdef TET_POSIX_THREADS
 			"fork() failed in tet_fork1() - errno %d (%s)",
@@ -386,7 +386,7 @@ int	exitvals;
 					new_sa.sa_handler != SIG_IGN)
 				{
 					new_sa.sa_handler = SIG_DFL;
-					(void) sigaction(i, &new_sa,
+					sigaction(i, &new_sa,
 						(struct sigaction *)NULL);
 				}
 			}
@@ -398,8 +398,8 @@ int	exitvals;
 
 		/* logon again to XRESD and SYNCD */
 		if (tet_xdlogon() == 0)
-			(void) tet_xdxrsend(tet_xrid);
-		(void) tet_sdlogon();
+			tet_xdxrsend(tet_xrid);
+		tet_sdlogon();
 #  endif /* -END-LITE-CUT- */
 
 #  ifdef TET_THREADS
@@ -408,7 +408,7 @@ int	exitvals;
 #    else
 		TET_MUTEX_UNLOCK(&tet_top_mtx);
 #    endif
-		(void) TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *)0);
+		TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *)0);
 #  endif /* TET_THREADS */
 
 		/* change context to distinguish output from parent's */
@@ -438,7 +438,7 @@ int	exitvals;
 		new_sa.sa_handler == SIG_DFL)
 	{
 		new_sa.sa_handler = sig_term;
-		(void) sigaction(SIGTERM, &new_sa, (struct sigaction *)NULL);
+		sigaction(SIGTERM, &new_sa, (struct sigaction *)NULL);
 	}
 
 #  ifdef TET_THREADS
@@ -447,7 +447,7 @@ int	exitvals;
 #    else
 	TET_MUTEX_UNLOCK(&tet_top_mtx);
 #    endif
-	(void) TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *)0);
+	TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *)0);
 #  endif /* TET_THREADS */
 
 	if (parentproc != NULL)
@@ -465,7 +465,7 @@ int	exitvals;
 
 	if (waittime < 0)
 	{
-		(void) tet_killw(tet_child, KILLWAIT);
+		tet_killw(tet_child, KILLWAIT);
 		tet_child = savchild;
 		return 0;
 	}
@@ -477,7 +477,7 @@ int	exitvals;
 		new_aa.waittime = waittime; 
 		new_aa.sa.sa_handler = alrm; 
 		new_aa.sa.sa_flags = 0; 
-		(void) sigemptyset(&new_aa.sa.sa_mask); 
+		sigemptyset(&new_aa.sa.sa_mask);
 		alrm_flag = 0; 
 		if (tet_set_alarm(&new_aa, &old_aa) == -1)
 			fatal(errno, "failed to set alarm", (char *)0);
@@ -487,7 +487,7 @@ int	exitvals;
 	err = errno; 
 
 	if (waittime > 0)
-		(void) tet_clr_alarm(&old_aa);
+		tet_clr_alarm(&old_aa);
 
 	/* check child wait status shows valid exit code, if not
 	   report wait status and give UNRESOLVED result */
@@ -495,13 +495,13 @@ int	exitvals;
 	if (rtval == -1)
 	{
 		if (alrm_flag > 0)
-			(void) sprintf(buf, "child process timed out");
+			sprintf(buf, "child process timed out");
 		else
-			(void) sprintf(buf, "waitpid() failed - errno %d (%s)",
+			sprintf(buf, "waitpid() failed - errno %d (%s)",
 				err, tet_errname(err));
 		tet_infoline(buf);
 		tet_result(TET_UNRESOLVED);
-		(void) tet_killw(tet_child, KILLWAIT);
+		tet_killw(tet_child, KILLWAIT);
 
 		switch (err)
 		{
@@ -534,7 +534,7 @@ int	exitvals;
 		}
 		else
 		{
-			(void) sprintf(buf,
+			sprintf(buf,
 				"child process gave unexpected exit code %d",
 				status);
 			tet_infoline(buf);
@@ -543,7 +543,7 @@ int	exitvals;
 	else if (WIFSIGNALED(status))
 	{
 		status = WTERMSIG(status);
-		(void) sprintf(buf,
+		sprintf(buf,
 			"child process was terminated by signal %d (%s)",
 			status, tet_signame(status));
 		tet_infoline(buf);
@@ -551,15 +551,15 @@ int	exitvals;
 	else if (WIFSTOPPED(status))
 	{
 		status = WSTOPSIG(status);
-		(void) sprintf(buf,
+		sprintf(buf,
 			"child process was stopped by signal %d (%s)",
 			status, tet_signame(status));
 		tet_infoline(buf);
-		(void) tet_killw(tet_child, KILLWAIT);
+		tet_killw(tet_child, KILLWAIT);
 	}
 	else
 	{
-		(void) sprintf(buf,
+		sprintf(buf,
 			"child process returned bad wait status (%#x)", status);
 		tet_infoline(buf);
 	}
@@ -589,7 +589,7 @@ unsigned int timeout;
 	new_aa.waittime = timeout; 
 	new_aa.sa.sa_handler = alrm; 
 	new_aa.sa.sa_flags = 0; 
-	(void) sigemptyset(&new_aa.sa.sa_mask); 
+	sigemptyset(&new_aa.sa.sa_mask);
 
 	for (count = 0; count < 2; count++)
 	{
@@ -604,7 +604,7 @@ unsigned int timeout;
 			fatal(errno, "failed to set alarm", (char *)0);
 		pid = waitpid(child, &status, 0);
 		err = errno;
-		(void) tet_clr_alarm(&old_aa);
+		tet_clr_alarm(&old_aa);
 
 		if (pid == child)
 		{

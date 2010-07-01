@@ -141,7 +141,7 @@ int	*dest_y_return;
 {
 	Window	window;
 
-	(void) XTranslateCoordinates(display, src_w, dest_w, src_x, src_y, dest_x_return, dest_y_return, &window);
+	XTranslateCoordinates(display, src_w, dest_w, src_x, src_y, dest_x_return, dest_y_return, &window);
 }
 
 /*

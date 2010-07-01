@@ -72,23 +72,23 @@ TET_IMPORT void tet_init_blockable_sigs()
 	/* start with full set, and then remove signals that
 	   should not be blocked */
 
-	(void) sigfillset(&tet_blockable_sigs);
+	sigfillset(&tet_blockable_sigs);
 
 	/* the system won't allow these to be blocked */
-	(void) sigdelset(&tet_blockable_sigs, SIGKILL);
-	(void) sigdelset(&tet_blockable_sigs, SIGSTOP);
+	sigdelset(&tet_blockable_sigs, SIGKILL);
+	sigdelset(&tet_blockable_sigs, SIGSTOP);
 
 	/* blocking this could give problems, and it is unlikely
 	   anyone would longjmp out of a SIGCHLD handler (no TET
 	   code does), so it should be safe to leave it unblocked */
-	(void) sigdelset(&tet_blockable_sigs, SIGCHLD);
+	sigdelset(&tet_blockable_sigs, SIGCHLD);
 
 	/* hardware signals that give undefined behaviour if blocked */
-	(void) sigdelset(&tet_blockable_sigs, SIGSEGV);
-	(void) sigdelset(&tet_blockable_sigs, SIGILL);
-	(void) sigdelset(&tet_blockable_sigs, SIGFPE);
+	sigdelset(&tet_blockable_sigs, SIGSEGV);
+	sigdelset(&tet_blockable_sigs, SIGILL);
+	sigdelset(&tet_blockable_sigs, SIGFPE);
 #  ifdef SIGBUS
-	(void) sigdelset(&tet_blockable_sigs, SIGBUS);
+	sigdelset(&tet_blockable_sigs, SIGBUS);
 #  endif
 
 

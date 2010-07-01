@@ -303,7 +303,7 @@ Dimension *ret_width, *ret_height;
     result = XtMakeGeometryRequest(w, &request, &return_request);
     if (result == XtGeometryAlmost) {
 	request = return_request;
-	(void) XtMakeGeometryRequest(w, &request, &return_request);
+	XtMakeGeometryRequest(w, &request, &return_request);
 	always_resize_children = FALSE;
     }
     else

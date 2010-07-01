@@ -351,7 +351,7 @@ register struct ptab *pp;
 		done = 1;
 		for (ftp = ftab; ftp; ftp = ftp->ft_next)
 			if (ftp->ft_ptab == pp) {
-				(void) dofclose(ftp);
+				dofclose(ftp);
 				done = 0;
 				break;
 			}
@@ -416,7 +416,7 @@ register struct ftab *ftp;
 
 	if (ftp) {
 		if (ftp->ft_fp)
-			(void) fclose(ftp->ft_fp);
+			fclose(ftp->ft_fp);
 		if (ftp->ft_name) {
 			TRACE2(tet_Tbuf, 6, "free ftab fname = %s",
 				tet_i2x(ftp->ft_name));

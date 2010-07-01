@@ -174,7 +174,7 @@ register struct cflist *mlp, *vlp;
 	for (cp1 = vlp->cf_conf; cp1 < vlp->cf_conf + vlp->cf_nconf; cp1++) {
 		if (tet_remvar(*cp1, -1) != *cp1)
 			continue;
-		(void) sprintf(buf, fmt, sysid % 1000,
+		sprintf(buf, fmt, sysid % 1000,
 			sizeof buf - sizeof fmt, *cp1);
 		if (BUFCHK((char **) &tcfg.cf_conf, &tcfg.cf_lconf, (int) ((tcfg.cf_nconf + 1) * sizeof *tcfg.cf_conf)) < 0)
 			return(-1);

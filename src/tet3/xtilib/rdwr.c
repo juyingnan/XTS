@@ -112,7 +112,7 @@ register struct ptab *pp;
 		}
 		TDUMP(tet_Tio, 10, tp->tp_buf, DM_HDRSZ, msghdr);
 		pp->pt_flags &= ~PF_RCVHDR;
-		(void) tet_bs2dtmhdr(tp->tp_buf, &pp->ptm_hdr, DM_HDRSZ);
+		tet_bs2dtmhdr(tp->tp_buf, &pp->ptm_hdr, DM_HDRSZ);
 		if (pp->ptm_magic != DTM_MAGIC && pp->ptm_len) {
 			/* we are probably out of sync with sender */
 			error(0, "received bad message header,",
@@ -271,7 +271,7 @@ register struct ptab *pp;
 					rc, msgdata);
 				tp->tp_cnt += rc;
 			}
-			(void) tet_dmlen2bs(rc, tp->tp_buf);
+			tet_dmlen2bs(rc, tp->tp_buf);
 		} while (err);
 		tp->tp_ptr = tp->tp_buf;
 		pp->pt_flags |= PF_INPROGRESS;
@@ -428,7 +428,7 @@ register struct ptab *pp;
 
 	TRACE2(tet_Tio, 4, "tet_ts_dead: close fd %s", tet_i2a(tp->tp_fd));
 
-	(void) t_close(tp->tp_fd);
+	t_close(tp->tp_fd);
 	tp->tp_fd = -1;
 	pp->pt_flags &= ~(PF_CONNECTED | PF_INPROGRESS);
 }

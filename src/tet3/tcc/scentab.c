@@ -412,7 +412,7 @@ int type;
 	case SC_SCEN_NAME:
 		return("REFERENCED SCENARIO NAME");
 	default:
-		(void) sprintf(msg, fmt, type);
+		sprintf(msg, fmt, type);
 		return(msg);
 	}
 }
@@ -459,7 +459,7 @@ int directive;
 		if (dp && dp->dt_name)
 			return(dp->dt_name);
 		else {
-			(void) sprintf(msg, fmt, directive);
+			sprintf(msg, fmt, directive);
 			return(msg);
 		}
 	}

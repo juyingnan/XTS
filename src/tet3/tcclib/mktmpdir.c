@@ -90,7 +90,7 @@ char *dir, **subdp;
 	ASSERT(dir && *dir);
 
 	/* format the pid string */
-	(void) sprintf(pidstr, "%05u", tet_mypid);
+	sprintf(pidstr, "%05u", tet_mypid);
 
 	/* get a buffer for the tmp dir name */
 	needlen = strlen(dir) + strlen(pidstr) + 4;
@@ -100,7 +100,7 @@ char *dir, **subdp;
 	/* try to make the directory a few times */
 	for (salt1 = 'a'; salt1 <= 'z'; salt1++)
 		for (salt2 = 'a'; salt2 <= 'z'; salt2++) {
-			(void) sprintf(subdir, "%s/%s%c%c",
+			sprintf(subdir, "%s/%s%c%c",
 				dir, pidstr, salt1, salt2);
 			if ((rc = tcf_mktd2(subdir)) < 0)
 				return(rc);

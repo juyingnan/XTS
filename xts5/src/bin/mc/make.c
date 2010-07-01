@@ -197,84 +197,84 @@ char	*lp;
 int 	i;
 int 	linepos;
 
-	(void) fprintf(FpDefines, "SOURCES=");
+	fprintf(FpDefines, "SOURCES=");
 	linepos = strlen("SOURCES=");
 	for (i = 0; lp = getmclistitem(Sources, i); i++) {
 		linepos += strlen(lp);
 		if (linepos > CFILELINELEN) {
-			(void) fprintf(FpDefines, "\\\n\t");
+			fprintf(FpDefines, "\\\n\t");
 			linepos = 8;
 		}
-		(void) fprintf(FpDefines, "%s ", lp);
+		fprintf(FpDefines, "%s ", lp);
 		
 	}
-	(void) fprintf(FpDefines, "\n");
-	(void) fprintf(FpDefines, "CFILES=Test.c ");
+	fprintf(FpDefines, "\n");
+	fprintf(FpDefines, "CFILES=Test.c ");
 	linepos = strlen("CFILES=Test.c ");
 	for (i = 0; lp = getmclistitem(filenames, i); i++) {
 		linepos += strlen(lp);
 		if (linepos > CFILELINELEN) {
-			(void) fprintf(FpDefines, "\\\n\t");
+			fprintf(FpDefines, "\\\n\t");
 			linepos = 8;
 		}
-		(void) fprintf(FpDefines, "%s ", lp);
+		fprintf(FpDefines, "%s ", lp);
 		
 	}
-	(void) fprintf(FpDefines, "\n");
+	fprintf(FpDefines, "\n");
 
-	(void) fprintf(FpDefines, "OFILES=Test.o ");
+	fprintf(FpDefines, "OFILES=Test.o ");
 	linepos = strlen("OFILES=Test.o ");
 	for (i = 0; lp = getmclistitem(filenames, i); i++) {
 		linepos += strlen(lp);
 		if (linepos > CFILELINELEN) {
-			(void) fprintf(FpDefines, "\\\n\t");
+			fprintf(FpDefines, "\\\n\t");
 			linepos = 8;
 		}
 		/* Convert to dot-o */
 		lp[strlen(lp)-1] = 'o';
-		(void) fprintf(FpDefines, "%s ", lp);
+		fprintf(FpDefines, "%s ", lp);
 		
 	}
-	(void) fprintf(FpDefines, "\n");
+	fprintf(FpDefines, "\n");
 
 	if (Settings.macro) {
-		(void) fprintf(FpDefines, "MOFILES=MTest.o ");
+		fprintf(FpDefines, "MOFILES=MTest.o ");
 		linepos = strlen("OFILES=MTest.o ");
 		for (i = 0; lp = getmclistitem(filenames, i); i++) {
 			linepos += strlen(lp);
 			if (linepos > CFILELINELEN) {
-				(void) fprintf(FpDefines, "\\\n\t");
+				fprintf(FpDefines, "\\\n\t");
 				linepos = 8;
 			}
 			/* Convert to dot-o */
 			lp[strlen(lp)-1] = 'o';
-			(void) fprintf(FpDefines, "%s ", lp);
+			fprintf(FpDefines, "%s ", lp);
 			
 		}
-		(void) fprintf(FpDefines, "\n");
+		fprintf(FpDefines, "\n");
 	}
 
-	(void) fprintf(FpDefines, "LOFILES=link.o ");
+	fprintf(FpDefines, "LOFILES=link.o ");
 	if (Settings.macro)
 		fprintf(FpDefines, "mlink.o ");
 	linepos = strlen("LOFILES=link.o ");
 	for (i = 0; lp = getmclistitem(filenames, i); i++) {
 		linepos += strlen(lp);
 		if (linepos > CFILELINELEN) {
-			(void) fprintf(FpDefines, "\\\n\t");
+			fprintf(FpDefines, "\\\n\t");
 			linepos = 8;
 		}
 		/* Convert to dot-o */
 		lp[strlen(lp)-1] = 'o';
-		(void) fprintf(FpDefines, "%s ", lp);
+		fprintf(FpDefines, "%s ", lp);
 	}
-	(void) fprintf(FpDefines, "\n");
+	fprintf(FpDefines, "\n");
 
 
-	(void) fprintf(FpDefines, "LINKOBJ=%s.o\n", name10lc(State.name));
-	(void) fprintf(FpDefines, "LINKEXEC=%s\n", name10lc(State.name));
+	fprintf(FpDefines, "LINKOBJ=%s.o\n", name10lc(State.name));
+	fprintf(FpDefines, "LINKEXEC=%s\n", name10lc(State.name));
 
-	(void) fprintf(FpDefines, "\n\n");
+	fprintf(FpDefines, "\n\n");
 
 	/*
 	 * Now the makefile is output using the saved information and
@@ -378,8 +378,8 @@ char	*buf;
 	 * built for.
 	 */
 	if (State.name) {
-		(void) fprintf(FpDefines, "#\n# Makefile for %s\n", State.name);
-		(void) fprintf(FpDefines, "#\n\n");
+		fprintf(FpDefines, "#\n# Makefile for %s\n", State.name);
+		fprintf(FpDefines, "#\n\n");
 	}
 	skip(fp, buf);
 }
@@ -436,7 +436,7 @@ struct	mclist	*mclp;
 
 	mclp = (struct mclist *)malloc(sizeof(struct mclist)+MCLINIT*sizeof(char*));
 	if (mclp == NULL) {
-		(void) fprintf(stderr, "Out of memory\n");
+		fprintf(stderr, "Out of memory\n");
 		errexit();
 	}
 
@@ -464,7 +464,7 @@ int 	size;
 		size = sizeof(struct mclist) + (list->size-1)*sizeof(char*);
 		list = (struct mclist *)realloc((char*)list, (unsigned)size);
 		if (list == NULL) {
-			(void) fprintf(stderr, "Out of memory\n");
+			fprintf(stderr, "Out of memory\n");
 			errexit();
 		}
 	}

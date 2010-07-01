@@ -71,7 +71,7 @@ struct ptab *pp;
 		tet_i2a(tp->tp_sd));
 
 	if (tp->tp_sd != INVALID_SOCKET) {
-		(void) SOCKET_CLOSE(tp->tp_sd);
+		SOCKET_CLOSE(tp->tp_sd);
 		tp->tp_sd = INVALID_SOCKET;
 	}
 

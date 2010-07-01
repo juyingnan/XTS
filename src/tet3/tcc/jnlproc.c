@@ -132,7 +132,7 @@ struct proctab *prp;
 	if ((fp = open_xresdfile(prp)) != (FILE *) 0) {
 		TRACE2(tet_Ttcc, 6, "using XRESD file %s", prp->pr_xfname);
 		rc = jp_xres(prp, fp, prp->pr_xfname);
-		(void) fclose(fp);
+		fclose(fp);
 	}
 	else
 #endif /* !TET_LITE */	/* -END-LITE-CUT- */
@@ -185,7 +185,7 @@ struct proctab *prp;
 		||
 			(getremfile(prp, prp->pr_tetxres, tet_basename(fname)) < 0)
 		) {
-			(void) UNLINK(fname);
+			UNLINK(fname);
 			return(-1);
 		}
 	}
@@ -208,7 +208,7 @@ struct proctab *prp;
 
 	/* process it */
 	rc = jp_xres(prp, fp, prp->pr_tetxres);
-	(void) fclose(fp);
+	fclose(fp);
 
 
 #ifndef TET_LITE	/* -START-LITE-CUT- */
@@ -217,7 +217,7 @@ struct proctab *prp;
 	** from a remote system, unlink it now
 	*/
 	if (fname != prp->pr_tetxres)
-		(void) UNLINK(fname);
+		UNLINK(fname);
 #endif /* !TET_LITE */	/* -END-LITE-CUT- */
 
 	return(rc);
@@ -265,7 +265,7 @@ char *fname;
 #endif /* !TET_LITE */	/* -END-LITE-CUT- */
 		) {
 			tpno = -1;
-			(void) sscanf(flds[1], "%*s %d", &tpno);
+			sscanf(flds[1], "%*s %d", &tpno);
 			if (jp_reorder(prp, fp, fname, tpno, line, buf) < 0)
 				rc = -1;
 		}
@@ -311,14 +311,14 @@ int tpno;
 		}
 		switch (id = atoi(flds[0])) {
 		case TET_JNL_TP_RESULT:
-			(void) sscanf(flds[1], "%*s %*s %d", &result);
+			sscanf(flds[1], "%*s %*s %d", &result);
 			done = 1;
 			break;
 		case TET_JNL_IC_START:
 		case TET_JNL_IC_END:
 		case TET_JNL_TP_START:
 			line[0] = '\0';
-			(void) fseek(fp, offs, SEEK_SET);
+			fseek(fp, offs, SEEK_SET);
 			done = 1;
 			break;
 		}
@@ -331,7 +331,7 @@ int tpno;
 		lp1->xr_block = 0L;
 		lp1->xr_sequence = 0L;
 		if (id == TET_JNL_TC_INFO)
-			(void) sscanf(flds[1], "%*s %*s %ld %ld %ld",
+			sscanf(flds[1], "%*s %*s %ld %ld %ld",
 				&lp1->xr_context, &lp1->xr_block,
 				&lp1->xr_sequence);
 		lp1->xr_id = id;
@@ -547,7 +547,7 @@ struct proctab *prp;
 	if (fgets(buf, sizeof buf, fp) == (char *) 0) {
 		TRACE2(tet_Ttcc, 6, "open_xresdfile(): %s is empty",
 			prp->pr_xfname);
-		(void) fclose(fp);
+		fclose(fp);
 		return((FILE *) 0);
 	}
 	

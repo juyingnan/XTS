@@ -70,7 +70,7 @@ struct ptab *pp;
 		tet_i2a(tp->tp_fd));
 
 	if (tp->tp_fd >= 0) {
-		(void) t_close(tp->tp_fd);
+		t_close(tp->tp_fd);
 		tp->tp_fd = -1;
 	}
 

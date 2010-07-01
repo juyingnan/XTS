@@ -150,11 +150,11 @@ int	dest_y;
 	}
 
 	/* Save initial pointer location. */
-	(void) XQueryPointer(display, DRW(display), &(ptr->oroot), &wtmp, &(ptr->ox), &(ptr->oy), &itmp, &itmp, &uitmp);
+	XQueryPointer(display, DRW(display), &(ptr->oroot), &wtmp, &(ptr->ox), &(ptr->oy), &itmp, &itmp, &uitmp);
 	/* Warp pointer to window. */
 	XWarpPointer(display, None, dest_w, 0, 0, 0, 0, dest_x, dest_y);
 	/* Get new pointer location. */
-	(void) XQueryPointer(display, DRW(display), &(ptr->nroot), &wtmp, &(ptr->nx), &(ptr->ny), &itmp, &itmp, &uitmp);
+	XQueryPointer(display, DRW(display), &(ptr->nroot), &wtmp, &(ptr->nx), &(ptr->ny), &itmp, &itmp, &uitmp);
 
 	regid(display, (union regtypes *)&ptr, REG_POINTER);
 	return(ptr);
@@ -175,7 +175,7 @@ PointerPlace	*ptr;
 	int	itmp;
 	unsigned int uitmp;
 
-	(void) XQueryPointer(display, DRW(display), &root, &wtmp, &x, &y, &itmp, &itmp, &uitmp);
+	XQueryPointer(display, DRW(display), &root, &wtmp, &x, &y, &itmp, &itmp, &uitmp);
 	if (root != ptr->nroot || x != ptr->nx || y != ptr->ny)
 		return(True);
 	else
@@ -209,7 +209,7 @@ PointerPlace	*ptr;
 	int	itmp;
 	unsigned int uitmp;
 
-	(void) XQueryPointer(display, DRW(display), &root, &wtmp, &x, &y, &itmp, &itmp, &uitmp);
+	XQueryPointer(display, DRW(display), &root, &wtmp, &x, &y, &itmp, &itmp, &uitmp);
 	ptr->nx = x;
 	ptr->ny = y;
 }

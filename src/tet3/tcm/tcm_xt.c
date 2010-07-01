@@ -176,7 +176,7 @@ int ptype;
 	
 	tp->tp_call.maxlen = np->maxlen;
 	tp->tp_call.len    = np->len;
-	(void) memcpy(tp->tp_call.buf, np->buf, np->len);
+	memcpy(tp->tp_call.buf, np->buf, np->len);
 
 	*paddr = pp;
 }
@@ -268,7 +268,7 @@ register int ptype;
 		return (-1);
 	  }
 	  mp->ts.osico.ts_len = tp->tp_call.len;
-	  (void) memcpy(mp->ts.osico.ts_nsap, tp->tp_call.buf, tp->tp_call.len);
+	  memcpy(mp->ts.osico.ts_nsap, tp->tp_call.buf, tp->tp_call.len);
 
 	  break;
 #endif

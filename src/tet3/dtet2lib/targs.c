@@ -158,7 +158,7 @@ char **argv;
 					*p++ = sp->st_name;
 			*p++ = ',';
 		}
-		(void) sprintf(p, "%c%d", tp->tf_name, tp->tf_value);
+		sprintf(p, "%c%d", tp->tf_name, tp->tf_value);
 		TRACE2(tet_Ttrace, 4, "trace arg = \"%s\"", *(ap - 1));
 		p += strlen(p) + 1;
 	}

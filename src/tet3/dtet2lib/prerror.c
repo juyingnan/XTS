@@ -65,20 +65,20 @@ void tet_prerror(FILE *fp, int errnum, const char *hdr, const char *file,
 {
 	const char *s3, *s4;
 
-	(void) fprintf(fp, "%s (%s, %d): %s",
+	fprintf(fp, "%s (%s, %d): %s",
 		hdr, tet_basename(file), line, s1);
 	if (s2 && *s2)
-		(void) fprintf(fp, " %s", s2);
+		fprintf(fp, " %s", s2);
 	if (errnum > 0) {
 		s3 = ":";
 			if ((s4 = strerror(errnum)) == (char *) 0) {
 				s3 = ", errno =";
 				s4 = tet_errname(errnum);
 			}
-		(void) fprintf(fp, "%s %s", s3, s4);
+		fprintf(fp, "%s %s", s3, s4);
 	}
-	(void) putc('\n', fp);
-	(void) fflush(fp);
+	putc('\n', fp);
+	fflush(fp);
 
 	errno = 0;
 }

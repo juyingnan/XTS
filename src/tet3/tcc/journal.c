@@ -231,7 +231,7 @@ struct proctab *prp;
 		return(-1);
 	}
 	else if (tet_fioclex(FILENO(fp)) < 0) {
-		(void) fclose(fp);
+		fclose(fp);
 		return(-1);
 	}
 
@@ -264,11 +264,11 @@ char *dir, *prefix;
 	int fd;
 
 	for (try = 0; try < trymax; try++) {
-		(void) sprintf(fname, fmt, (int) sizeof fname - 14,
+		sprintf(fname, fmt, (int) sizeof fname - 14,
 			dir, prefix, tet_mypid, salt);
 		errno = 0;
 		if ((fd = OPEN(fname, O_WRONLY|O_CREAT|O_EXCL, MODEANY)) >= 0)
-			(void) CLOSE(fd);
+			CLOSE(fd);
 		if (fd >= 0 || errno != EEXIST)
 			return(fname);
 		for (p = &salt[sizeof salt - 2]; p >= salt; p--)
@@ -307,7 +307,7 @@ char **argv;
 	int sp;
 
 	/* generate the first part */
-	(void) sprintf(s1, "%s %s %s", tcc_version,
+	sprintf(s1, "%s %s %s", tcc_version,
 		jnl_time(now), jnl_date(now));
 
 	/* determine the user id and name */
@@ -321,7 +321,7 @@ char **argv;
 	}
 
 	/* generate the second part */
-	(void) sprintf(p2, "User: %s (%d) TCC Start, Command line:",
+	sprintf(p2, "User: %s (%d) TCC Start, Command line:",
 		user, (int) uid);
 	p2 += strlen(p2);
 
@@ -391,7 +391,7 @@ void jnl_uname()
 		return;
 	}
 
-	(void) sprintf(s1, "%.*s %.*s %.*s %.*s %.*s",
+	sprintf(s1, "%.*s %.*s %.*s %.*s %.*s",
 		(int) sizeof uts.sysname, uts.sysname,
 		(int) sizeof uts.nodename, uts.nodename,
 		(int) sizeof uts.release, uts.release,
@@ -413,7 +413,7 @@ register struct proctab *prp;
 	register char *p;
 	register int needlen;
 
-	(void) sprintf(s1, "%d %.*s %s", prp->pr_activity,
+	sprintf(s1, "%d %.*s %s", prp->pr_activity,
 		MAXPATH, prp->pr_scen->sc_tcname, jnl_time(time((time_t *) 0)));
 
 	needlen = sizeof s2p1fmt + REFSZ;
@@ -423,10 +423,10 @@ register struct proctab *prp;
 	RBUFCHK(&s2, &s2len, needlen);
 	p = s2;
 
-	(void) sprintf(p, s2p1fmt, jnl_scenref(prp));
+	sprintf(p, s2p1fmt, jnl_scenref(prp));
 	if (prp->pr_exiclist) {
 		p += strlen(p);
-		(void) sprintf(p, s2p2fmt, prp->pr_exiclist);
+		sprintf(p, s2p2fmt, prp->pr_exiclist);
 	}
 
 	jnl_write(TET_JNL_INVOKE_TC, s1, s2, prp->pr_jfp, prp->pr_jfname);
@@ -439,7 +439,7 @@ int mode;
 {
 	char s1[MAXPATH + LONUMSZ + 2];
 
-	(void) sprintf(s1, "%.*s %s", MAXPATH, fname, jnl_mode(mode));
+	sprintf(s1, "%.*s %s", MAXPATH, fname, jnl_mode(mode));
 	jnl_cfg_start(s1);
 }
 
@@ -452,7 +452,7 @@ int sysid, mode;
 	static char fmt[] = "remote_%03d %s";
 	char s1[sizeof fmt + LNUMSZ + LONUMSZ];
 
-	(void) sprintf(s1, fmt, sysid, jnl_mode(mode));
+	sprintf(s1, fmt, sysid, jnl_mode(mode));
 	jnl_cfg_start(s1);
 }
 
@@ -522,9 +522,9 @@ struct proctab *prp;
 	static char fmt[] = "TC End, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s1, "%d %d %s", prp->pr_activity, prp->pr_jnlstatus,
+	sprintf(s1, "%d %d %s", prp->pr_activity, prp->pr_jnlstatus,
 		jnl_time(time((time_t *) 0)));
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_write(TET_JNL_TC_END, s1, s2, prp->pr_jfp, prp->pr_jfname);
 	jnl_itrace(TET_JNL_TC_END, s1, s2);
 }
@@ -554,7 +554,7 @@ struct proctab *prp;
 	static char fmt[] = "Build Start, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_bc_start(prp, TET_JNL_BUILD_START, s2);
 }
 
@@ -564,7 +564,7 @@ struct proctab *prp;
 	static char fmt[] = "Clean Start, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_bc_start(prp, TET_JNL_CLEAN_START, s2);
 }
 
@@ -575,7 +575,7 @@ char *s2;
 {
 	char s1[LNUMSZ + MAXPATH + TIMESZ + 3];
 
-	(void) sprintf(s1, "%d %.*s %s", prp->pr_activity, MAXPATH,
+	sprintf(s1, "%d %.*s %s", prp->pr_activity, MAXPATH,
 		prp->pr_scen->sc_tcname, jnl_time(time((time_t *) 0)));
 
 	jnl_write(id, s1, s2, prp->pr_jfp, prp->pr_jfname);
@@ -588,7 +588,7 @@ struct proctab *prp;
 	static char fmt[] = "Build End, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_bc_end(prp, TET_JNL_BUILD_END, s2);
 }
 
@@ -598,7 +598,7 @@ struct proctab *prp;
 	static char fmt[] = "Clean End, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_bc_end(prp, TET_JNL_CLEAN_END, s2);
 }
 
@@ -609,7 +609,7 @@ char *s2;
 {
 	char s1[(LNUMSZ * 2) + TIMESZ + 3];
 
-	(void) sprintf(s1, "%d %d %s", prp->pr_activity, prp->pr_jnlstatus,
+	sprintf(s1, "%d %d %s", prp->pr_activity, prp->pr_jnlstatus,
 		jnl_time(time((time_t *) 0)));
 
 	jnl_write(id, s1, s2, prp->pr_jfp, prp->pr_jfname);
@@ -623,7 +623,7 @@ struct proctab *prp;
 	char *s1 = tet_i2a(prp->pr_scen->sc_count);
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_write(TET_JNL_PRL_START, s1, s2, prp->pr_jfp, prp->pr_jfname);
 }
 
@@ -633,7 +633,7 @@ struct proctab *prp;
 	static char fmt[] = "Parallel End, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_write(TET_JNL_PRL_END, (char *) 0, s2,
 		prp->pr_jfp, prp->pr_jfname);
 }
@@ -645,7 +645,7 @@ struct proctab *prp;
 	static char fmt[] = "%sSequential Start, %s";
 	char s2[sizeof fmt + sizeof implied + REFSZ];
 
-	(void) sprintf(s2, fmt,
+	sprintf(s2, fmt,
 		prp->pr_scen->sc_flags & SCF_IMPLIED ? implied : "",
 		jnl_scenref(prp));
 	jnl_write(TET_JNL_SEQ_START, (char *) 0, s2,
@@ -659,7 +659,7 @@ struct proctab *prp;
 	static char fmt[] = "%sSequential End, %s";
 	char s2[sizeof fmt + sizeof implied + REFSZ];
 
-	(void) sprintf(s2, fmt,
+	sprintf(s2, fmt,
 		prp->pr_scen->sc_flags & SCF_IMPLIED ? implied : "",
 		jnl_scenref(prp));
 	jnl_write(TET_JNL_SEQ_END, (char *) 0, s2,
@@ -673,7 +673,7 @@ struct proctab *prp;
 	char *s1 = tet_i2a(prp->pr_scen->sc_count);
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_write(TET_JNL_RPT_START, s1, s2, prp->pr_jfp, prp->pr_jfname);
 }
 
@@ -683,7 +683,7 @@ struct proctab *prp;
 	static char fmt[] = "Repeat End, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_write(TET_JNL_RPT_END, (char *) 0, s2,
 		prp->pr_jfp, prp->pr_jfname);
 }
@@ -695,7 +695,7 @@ struct proctab *prp;
 	char *s1 = tet_l2a(prp->pr_scen->sc_seconds);
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_write(TET_JNL_TLOOP_START, s1, s2, prp->pr_jfp, prp->pr_jfname);
 }
 
@@ -705,7 +705,7 @@ struct proctab *prp;
 	static char fmt[] = "Timed Loop End, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_write(TET_JNL_TLOOP_END, (char *) 0, s2,
 		prp->pr_jfp, prp->pr_jfname);
 }
@@ -716,7 +716,7 @@ struct proctab *prp;
 	static char fmt[] = "Random Start, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_write(TET_JNL_RND_START, (char *) 0, s2,
 		prp->pr_jfp, prp->pr_jfname);
 }
@@ -727,7 +727,7 @@ struct proctab *prp;
 	static char fmt[] = "Random End, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_write(TET_JNL_RND_END, (char *) 0, s2,
 		prp->pr_jfp, prp->pr_jfname);
 }
@@ -741,7 +741,7 @@ struct proctab *prp;
 	static char fmt[] = "Remote Start, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_rd_start(prp, TET_JNL_RMT_START, s2);
 }
 
@@ -751,7 +751,7 @@ struct proctab *prp;
 	static char fmt[] = "Remote End, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_write(TET_JNL_RMT_END, (char *) 0, s2,
 		prp->pr_jfp, prp->pr_jfname);
 }
@@ -762,7 +762,7 @@ struct proctab *prp;
 	static char fmt[] = "Distributed Start, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_rd_start(prp, TET_JNL_DIST_START, s2);
 }
 
@@ -772,7 +772,7 @@ struct proctab *prp;
 	static char fmt[] = "Distributed End, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_write(TET_JNL_DIST_END, (char *) 0, s2,
 		prp->pr_jfp, prp->pr_jfname);
 }
@@ -803,7 +803,7 @@ char *s2;
 	for (ip = ep->sc_sys; ip < ep->sc_sys + ep->sc_nsys; ip++) {
 		if (ip > ep->sc_sys)
 			*p++ = ',';
-		(void) sprintf(p, "%03d", *ip);
+		sprintf(p, "%03d", *ip);
 		p += strlen(p);
 	}
 
@@ -821,7 +821,7 @@ struct proctab *prp;
 	register struct scentab *ep = prp->pr_scen;
 	register char **vp;
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_write(TET_JNL_VAR_START, (char *) 0, s2,
 		prp->pr_jfp, prp->pr_jfname);
 	for (vp = ep->sc_vars; vp < ep->sc_vars + ep->sc_nvars; vp++)
@@ -834,7 +834,7 @@ struct proctab *prp;
 	static char fmt[] = "Variable End, %s";
 	char s2[sizeof fmt + REFSZ];
 
-	(void) sprintf(s2, fmt, jnl_scenref(prp));
+	sprintf(s2, fmt, jnl_scenref(prp));
 	jnl_write(TET_JNL_VAR_END, (char *) 0, s2,
 		prp->pr_jfp, prp->pr_jfname);
 }
@@ -858,7 +858,7 @@ struct proctab *prp;
 	char s1[LNUMSZ + sizeof tcc_version + 4];
 	static char s2[] = "TCM Start (auto-generated by TCC)";
 
-	(void) sprintf(s1, "%d %s 1", prp->pr_activity, tcc_version);
+	sprintf(s1, "%d %s 1", prp->pr_activity, tcc_version);
 	jnl_write(TET_JNL_TCM_START, s1, s2, prp->pr_jfp, prp->pr_jfname);
 }
 
@@ -885,7 +885,7 @@ char *s2;
 {
 	char s1[LNUMSZ + TIMESZ + 6];
 
-	(void) sprintf(s1, "%d 1 1 %s",
+	sprintf(s1, "%d 1 1 %s",
 		prp->pr_activity, jnl_time(time((time_t *) 0)));
 	jnl_write(id, s1, s2, prp->pr_jfp, prp->pr_jfname);
 }
@@ -896,7 +896,7 @@ struct proctab *prp;
 	char s1[LNUMSZ + TIMESZ + 4];
 	static char s2[] = "TP Start (auto-generated by TCC)";
 
-	(void) sprintf(s1, "%d 1 %s",
+	sprintf(s1, "%d 1 %s",
 		prp->pr_activity, jnl_time(time((time_t *) 0)));
 	jnl_write(TET_JNL_TP_START, s1, s2, prp->pr_jfp, prp->pr_jfname);
 }
@@ -912,13 +912,13 @@ int tpno, result;
 	static char s2p2[] = "(auto-generated by TCC)";
 	int needlen;
 
-	(void) sprintf(s1, "%d %d %d %s", prp->pr_activity, tpno, result,
+	sprintf(s1, "%d %d %d %s", prp->pr_activity, tpno, result,
 		jnl_time(time((time_t *) 0)));
 
 	s2p1 = tet_getresname(result, (int *) 0);
 	needlen = strlen(s2p1) + sizeof s2p2 + 1;
 	RBUFCHK(&s2, &s2len, needlen);
-	(void) sprintf(s2, "%s %s", s2p1, s2p2);
+	sprintf(s2, "%s %s", s2p1, s2p2);
 
 	jnl_write(TET_JNL_TP_RESULT, s1, s2, prp->pr_jfp, prp->pr_jfname);
 }
@@ -967,7 +967,7 @@ FILE *fp;
 		TET_MAX(s2max, 0), s2) < 0 || fflush(fp) < 0) {
 			error(errno, "write error on", fname);
 			s2max = (int) sizeof msg - len0 - len1 - 3;
-			(void) sprintf(msg, "%s|%.*s|%.*s", s0,
+			sprintf(msg, "%s|%.*s|%.*s", s0,
 				(int) sizeof msg - len0 - 3, s1,
 				TET_MAX(s2max, 0), s2);
 			error(0, "the journal line that cannot be written is:",
@@ -979,9 +979,9 @@ FILE *fp;
 		if (jnl_usable())
 			error(0, "the previous journal line has been truncated",
 				(char *) 0);
-		(void) fprintf(stderr, "%s: a journal line has been truncated - the complete line is:\n%s|%s|%s\n",
+		fprintf(stderr, "%s: a journal line has been truncated - the complete line is:\n%s|%s|%s\n",
 			tet_progname, s0, s1, s2);
-		(void) fflush(stderr);
+		fflush(stderr);
 	}
 }
 
@@ -1021,7 +1021,7 @@ FILE *fp;
 			while (p > s2 && isspace(*(p - 1)))
 				p--;
 			n = (p > s2) ? p - s2 : space;
-			(void) sprintf(msg, "%.*s", n, s2);
+			sprintf(msg, "%.*s", n, s2);
 			jnl_write(id, s1, msg, fp, fname);
 			s2 += n;
 			while (isspace(*s2))
@@ -1045,8 +1045,8 @@ int id;
 char *s1, *s2;
 {
 	if (tcc_Iflag) {
-		(void) fprintf(stderr, "tcc:%d|%s|%s\n", id, s1, s2);
-		(void) fflush(stderr);
+		fprintf(stderr, "tcc:%d|%s|%s\n", id, s1, s2);
+		fflush(stderr);
 	}
 }
 
@@ -1061,7 +1061,7 @@ time_t now;
 	struct tm *tp = localtime(&now);
 	static char buf[DATESZ + 1];
 
-	(void) sprintf(buf, "%4.4d%.2d%.2d",
+	sprintf(buf, "%4.4d%.2d%.2d",
 		tp->tm_year + 1900, tp->tm_mon + 1, tp->tm_mday);
 
 	return(buf);
@@ -1078,7 +1078,7 @@ time_t now;
 	struct tm *tp = localtime(&now);
 	static char buf[TIMESZ + 1];
 
-	(void) sprintf(buf, "%.2d:%.2d:%.2d",
+	sprintf(buf, "%.2d:%.2d:%.2d",
 		tp->tm_hour, tp->tm_min, tp->tm_sec);
 
 	return(buf);
@@ -1147,7 +1147,7 @@ register struct proctab *prp;
 				error(errno, werrmsg, prp->pr_jfname);
 		if (fflush(prp->pr_jfp) < 0)
 			error(errno, werrmsg, prp->pr_jfname);
-		(void) fclose(child->pr_jfp);
+		fclose(child->pr_jfp);
 		child->pr_jfp = prp->pr_jfp;
 		if (UNLINK(child->pr_jfname) < 0)
 			error(errno, "can't unlink", child->pr_jfname);
@@ -1168,7 +1168,7 @@ struct proctab *prp;
 {
 	static char scenref[REFSZ];
 
-	(void) sprintf(scenref, tcc_scenref_fmt,
+	sprintf(scenref, tcc_scenref_fmt,
 		prp->pr_scen->sc_ref,
 		prp->pr_sys ? *prp->pr_sys : 0);
 

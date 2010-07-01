@@ -72,24 +72,24 @@ void tet_xtierror(int errnum, const char *file, int line, const char *s1,
 	const char *s3;
 	int save_errno = errno;
 
-	(void) fprintf(stderr, "%s (%s, %d): %s",
+	fprintf(stderr, "%s (%s, %d): %s",
 		tet_progname, tet_basename(file), line, s1);
 	if (s2 && *s2)
-		(void) fprintf(stderr, " %s", s2);
+		fprintf(stderr, " %s", s2);
 	if (errnum > 0) {
 		if (errnum == TSYSERR) {
 			if ((s3 = strerror(save_errno)) == (char *) 0)
-				(void) fprintf(stderr, ", errno = %s",
+				fprintf(stderr, ", errno = %s",
 					tet_errname(save_errno));
 			else
-				(void) fprintf(stderr, ": %s", s3);
+				fprintf(stderr, ": %s", s3);
 		}
 		else 
-			(void) fprintf(stderr, ": %s", tet_xterrno2a(errnum));
+			fprintf(stderr, ": %s", tet_xterrno2a(errnum));
 	}
 
-	(void) putc('\n', stderr);
-	(void) fflush(stderr);
+	putc('\n', stderr);
+	fflush(stderr);
 
 	errno = 0;
 	t_errno = 0;
@@ -195,7 +195,7 @@ int n;
 #endif
 
 	default :
-		(void) sprintf(buf, fmt, n);
+		sprintf(buf, fmt, n);
 		return (buf);
 	}
 }
@@ -243,7 +243,7 @@ int n;
 #endif
 
 	default :
-		(void) sprintf(buf, fmt, n);
+		sprintf(buf, fmt, n);
 		return (buf);
 	
 	}

@@ -72,7 +72,7 @@ char *s;
 	if ((p = malloc(len)) == (char *) 0)
 		error(errno, "can't get memory for string:", s);
 	else
-		(void) strcpy(p, s);
+		strcpy(p, s);
 
 	TRACE4(tet_Tbuf, 6, "tet_strstore(\"%.24s%s\") returns %s",
 		s, len > 25 ? " ..." : "", tet_i2x(p));

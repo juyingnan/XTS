@@ -197,8 +197,8 @@ extern	int 	io_err();
 	/*
 	 * Set up the error handlers.
 	 */
-	(void) XSetErrorHandler(unexp_err);
-	(void) XSetIOErrorHandler(io_err);
+	XSetErrorHandler(unexp_err);
+	XSetIOErrorHandler(io_err);
 
 	/*
 	 * Set up the default resources for error tests. At present

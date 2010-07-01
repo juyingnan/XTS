@@ -116,7 +116,7 @@ char *dir, lkname[];
 			err = errno ? errno : tet_tcerrno;
 			break;
 		}
-		(void) sprintf(msg, fmt, lktype);
+		sprintf(msg, fmt, lktype);
 		prperror(prp, *prp->pr_sys, err, msg, lkpath);
 		return(-1);
 	}
@@ -124,7 +124,7 @@ char *dir, lkname[];
 	TRACE4(tet_Ttcc, 4, "created %s lock %s on system %s",
 		lktype, lnp, tet_i2a(*prp->pr_sys));
 
-	(void) sprintf(lkname, "%.*s", lknamelen, lnp);
+	sprintf(lkname, "%.*s", lknamelen, lnp);
 	return(0);
 }
 
@@ -153,7 +153,7 @@ char *lkname;
 	/* remove the lock file */
 	errno = 0;
 	if (tcc_unlink(*prp->pr_sys, lkname) < 0) {
-		(void) sprintf(msg, fmt, lktype, "");
+		sprintf(msg, fmt, lktype, "");
 		prperror(prp, *prp->pr_sys, errno ? errno : tet_tcerrno,
 			msg, lkname);
 		rc = -1;
@@ -183,7 +183,7 @@ char *lkname;
 #endif
 			break;
 		default:
-			(void) sprintf(msg, fmt, lktype, " directory");
+			sprintf(msg, fmt, lktype, " directory");
 			prperror(prp, *prp->pr_sys, errno ? errno : tet_tcerrno,
 				msg, lkdir);
 			rc = -1;

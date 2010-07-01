@@ -172,7 +172,7 @@ char *tfname;
 
 	/* construct the transfer file name and store it */
 	len = (int) sizeof tfpath - (int) strlen(Tet_savedir) - 2;
-	(void) sprintf(tfpath, "%.*s/%.*s",
+	sprintf(tfpath, "%.*s/%.*s",
 		(int) sizeof tfpath - 2, Tet_savedir, TET_MAX(len, 0), tfname);
 	if ((tp->tf_name = tet_strstore(tfpath)) == (char *) 0)
 		return(ER_ERR);
@@ -288,7 +288,7 @@ register struct ptab *pp;
 		done = 1;
 		for (tp = tftab; tp; tp = tp->tf_next)
 			if (tp->tf_ptab == pp) {
-				(void) dotfclose(tp);
+				dotfclose(tp);
 				done = 0;
 				break;
 			}

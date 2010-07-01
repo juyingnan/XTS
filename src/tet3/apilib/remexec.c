@@ -176,10 +176,10 @@ register char **argv;
 		tet_errno = TET_ER_ERR;
 		return(-1);
 	}
-	(void) sprintf(thistest, "%d", tet_thistest);
-	(void) sprintf(activity, "%ld", tet_activity);
-	(void) sprintf(context, "%ld", tet_context);
-	(void) sprintf(block, "%ld", tet_block);
+	sprintf(thistest, "%d", tet_thistest);
+	sprintf(activity, "%ld", tet_activity);
+	sprintf(context, "%ld", tet_context);
+	sprintf(block, "%ld", tet_block);
 	*newargv = file;
 	*(newargv + TET_TCMC_THISTEST) = thistest;
 	*(newargv + TET_TCMC_ACTIVITY) = activity;
@@ -275,8 +275,8 @@ char *file, **argv;
 	/* do an auto-sync with the new process, kill the process and wait
 		for it a bit if this fails */
 	if (tet_sdasync(snid, tet_xrid, SV_EXEC_SPNO, SV_YES, SV_EXEC_TIMEOUT, (struct synreq *) 0, (int *) 0) < 0) {
-		(void) tet_tckill(sysid, pid, SIGTERM);
-		(void) tet_tcwait(sysid, pid, 10, (int *) 0);
+		tet_tckill(sysid, pid, SIGTERM);
+		tet_tcwait(sysid, pid, 10, (int *) 0);
 		errno = ENOEXEC;
 		tet_errno = -tet_sderrno;
 		return(-1L);
@@ -394,14 +394,14 @@ int *lconfp, *nconfp;
 
 	/* open the master config file */
 	if ((fid = tet_xdfopen(cfname)) < 0) {
-		(void) sprintf(msg, fmt, MAXPATH, cfname);
+		sprintf(msg, fmt, MAXPATH, cfname);
 		error(0, msg, tet_ptrepcode(tet_xderrno));
 		return(-1);
 	}
 
 	/* get the config lines and close the file */
 	rc = getcf3(fid, confp, lconfp, nconfp);
-	(void) tet_xdfclose(fid);
+	tet_xdfclose(fid);
 
 	return(rc);
 }
@@ -569,14 +569,14 @@ int sysid;
 	for (ep = envs; ep < &envs[Nenvs]; ep++)
 		*ep = (char *) 0;
 	ep = &envs[0];
-	(void) sprintf(buf, "%s=%.*s",
+	sprintf(buf, "%s=%.*s",
 		tetroot_name,
 		(int) sizeof buf - (int) sizeof tetroot_name - 1,
 		tetroot_value);
 	if ((*ep++ = tet_strstore(buf)) == (char *) 0)
 		rc = -1;
 	if (!rc && tetexec_value) {
-		(void) sprintf(buf, "%s=%.*s",
+		sprintf(buf, "%s=%.*s",
 			tetexec_name,
 			(int) sizeof buf - (int) sizeof tetexec_name - 1,
 			tetexec_value);
@@ -598,7 +598,7 @@ int sysid;
 		return(rc);
 
 	/* construct target system exec config file name and send it to TCCD */
-	(void) sprintf(buf, "%.*s/%s",
+	sprintf(buf, "%.*s/%s",
 		(int) sizeof buf - (int) sizeof ecfname - 1,
 			tsroot_value, ecfname);
 	TRACE3(tet_Ttcm, 6, "send exec config file name \"%s\" to system %s",
@@ -640,7 +640,7 @@ int sysid;
 	for (p1 = cconf, n = ncconf; n > 0; p1++, n--) {
 		if (tet_remvar(*p1, -1) != *p1)
 			continue;
-		(void) sprintf(buf, "TET_REM%03d_%.*s", sysid % 1000,
+		sprintf(buf, "TET_REM%03d_%.*s", sysid % 1000,
 			(int) sizeof buf - 12, *p1);
 		if (BUFCHK((char **) &tconf, &ltconf, (int) ((ntconf + 1) * sizeof *tconf)) < 0)
 			return(-1);

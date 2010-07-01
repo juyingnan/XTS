@@ -103,7 +103,7 @@ TET_IMPORT void tet_init_globals(const char *progname, int ptype, int sysid,
 		tet_mysysid = sysid;
 
 	if ((p = getenv("TET_ROOT")) != (char *) 0)
-		(void) sprintf(tet_root, "%.*s", (int) sizeof tet_root - 1, p);
+		sprintf(tet_root, "%.*s", (int) sizeof tet_root - 1, p);
 
 	if (!tet_libfatal)
 		tet_libfatal = minfatal;
@@ -124,7 +124,7 @@ static TET_NORETURN void minfatal(int err, const char *file, int line, const cha
 	if (tet_liberror)
 		(*tet_liberror)(err, file, line, s1, s2);
 	else
-		(void) fprintf(stderr, "%s (%s, %d): %s %s\n",
+		fprintf(stderr, "%s (%s, %d): %s %s\n",
 			tet_progname, file, line, s1, s2 ? s2 : "");
 	exit(1);
 }

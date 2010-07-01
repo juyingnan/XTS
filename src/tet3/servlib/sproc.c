@@ -269,11 +269,11 @@ register struct ptab *pp;
 	register struct avmsg *mp = (struct avmsg *) pp->ptm_data;
 	register int n;
 
-	(void) printf("%s: call to op_print(): argc = %d\n",
+	printf("%s: call to op_print(): argc = %d\n",
 		tet_progname, mp->av_argc);
 	for (n = 0; n < (int) mp->av_argc; n++)
-		(void) printf("%s\n", mp->av_argv[n]);
-	(void) fflush(stdout);
+		printf("%s\n", mp->av_argv[n]);
+	fflush(stdout);
 
 	pp->ptm_rc = ER_OK;
 	pp->ptm_mtype = MT_NODATA;

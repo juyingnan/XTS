@@ -94,7 +94,7 @@ struct tet_sysent *sysp;
 #if TET_SNAMELEN != SNAMELEN
 #error "TET_SNAMELEN != SNAMELEN"
 #endif
-	(void) strncpy(sysp->ts_name, entp->sy_name, sizeof(sysp->ts_name));
+	strncpy(sysp->ts_name, entp->sy_name, sizeof(sysp->ts_name));
 	sysp->ts_name[sizeof(sysp->ts_name) - 1] = '\0';
 
 	/* ignore the sy_tccd */

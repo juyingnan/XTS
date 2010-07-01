@@ -101,7 +101,7 @@ int mode;
 			break;
 	if (p > path) {
 		n = p - path;
-		(void) sprintf(dir, "%.*s",
+		sprintf(dir, "%.*s",
 			TET_MIN(n, (int) sizeof dir - 1), path);
 		if (stat(dir, &stbuf) < 0)
 			return(-1);
@@ -162,7 +162,7 @@ char *path;
 			break;
 	if (p > path) {
 		n = p - path;
-		(void) sprintf(dir, "%.*s",
+		sprintf(dir, "%.*s",
 			TET_MIN(n, (int) sizeof dir - 1), path);
 		if (tet_eaccess(dir, 02) < 0)
 			return(-1);
@@ -223,15 +223,15 @@ int mode;
 		argv[0] = prog;
 		argv[1] = path;
 		argv[2] = (char *) 0;
-		(void) umask(~(mode & ~umask(0)) & 077);
-		(void) execvp(prog, argv);
-		(void) sprintf(msg, "can't exec: %s", prog);
+		umask(~(mode & ~umask(0)) & 077);
+		execvp(prog, argv);
+		sprintf(msg, "can't exec: %s", prog);
 		error(errno, msg, path);
 		_exit(~0);
 		/* NOTREACHED */
 	case -1:
 		save_errno = errno;
-		(void) sprintf(msg, "can't fork: %s", prog);
+		sprintf(msg, "can't fork: %s", prog);
 		error(errno, msg, path);
 		errno = save_errno;
 		return(-2);
@@ -242,14 +242,14 @@ int mode;
 				break;
 		if (rc < 0) {
 			save_errno = errno;
-			(void) sprintf(msg, "wait failed: %s", prog);
+			sprintf(msg, "wait failed: %s", prog);
 			error(errno, prog, msg);
 			errno = save_errno;
 			return(-2);
 		}
 		if (status & 0xffff) {
 			if ((status & 0xff00) != 0xff00) {
-				(void) sprintf(msg, "%s failed:", prog);
+				sprintf(msg, "%s failed:", prog);
 				error(0, msg, path);
 			}
 			return(-1);

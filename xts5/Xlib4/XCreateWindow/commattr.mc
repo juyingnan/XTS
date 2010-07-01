@@ -613,7 +613,7 @@ Cursor pcur;
 #endif
 
 		/* Warp the pointer to the child window. */
-	(void) warppointer(display, w, 0,0);
+	warppointer(display, w, 0,0);
 
 		/* Verify that the current cursor is that of the parent. */
 	if(spriteiswin(display, parent) == False) {	
@@ -1263,7 +1263,7 @@ static	unsigned long	validbits[] = {
 
 		attributes->bit_gravity = vals[i];
 
-		(void) XCALL;
+		XCALL;
 
 		if(geterr() == BadValue)
 			CHECK;
@@ -1329,7 +1329,7 @@ static	unsigned long	validbits[] = {
 
 		attributes->win_gravity = vals[i];
 
-		(void) XCALL;
+		XCALL;
 
 		if(geterr() == BadValue)
 			CHECK;
@@ -1380,7 +1380,7 @@ static	int 	validvalues[] = {
 
 		attributes->backing_store = vals[i];
 
-		(void) XCALL;
+		XCALL;
 
 		if(geterr() == BadValue)
 			CHECK;
@@ -1428,7 +1428,7 @@ static	int 	validvalues[] = {
 
 		attributes->save_under= vals[i];
 
-		(void) XCALL;
+		XCALL;
 
 		if(geterr() == BadValue)
 			CHECK;
@@ -1525,7 +1525,7 @@ static	unsigned long	validbits[] = {
 
 		attributes->event_mask = vals[i];
 
-		(void) XCALL;
+		XCALL;
 
 		if(geterr() == BadValue)
 			CHECK;
@@ -1622,7 +1622,7 @@ static	unsigned long	validbits[] = {
 
 		attributes->do_not_propagate_mask = vals[i];
 
-		(void) XCALL;
+		XCALL;
 
 		if(geterr() == BadValue)
 			CHECK;
@@ -1670,7 +1670,7 @@ static	int 	validvalues[] = {
 
 		attributes->override_redirect= vals[i];
 
-		(void) XCALL;
+		XCALL;
 
 		if(geterr() == BadValue)
 			CHECK;
@@ -1759,7 +1759,7 @@ static	int 	validvalues[] = {
 >># 
 >># 		valuemask = vals[i];
 >># 
->># 		(void) XCALL;
+>># 		XCALL;
 >># 
 >># 		if(geterr() == BadValue)
 >># 			CHECK;

@@ -74,7 +74,7 @@ int ptype;
 	case PT_STAND:
 		return("STANDALONE");
 	default:
-		(void) sprintf(msg, "%s%d", text, ptype);
+		sprintf(msg, "%s%d", text, ptype);
 		return(msg);
 	}
 }

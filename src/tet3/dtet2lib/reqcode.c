@@ -185,7 +185,7 @@ int request;
 		return("PRINT");
 #endif
 	default:
-		(void) sprintf(msg, "%s%d", text, request);
+		sprintf(msg, "%s%d", text, request);
 		return(msg);
 	}
 }

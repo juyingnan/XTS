@@ -72,7 +72,7 @@ void tet_tiocnotty()
 #  ifdef HAS_SETSID
 
 	/* easy - use setsid() to start a new session */
-	(void) setsid();
+	setsid();
 
 #  else /* HAS_SETSID */
 
@@ -83,10 +83,10 @@ void tet_tiocnotty()
 #    endif
 
 #    if defined(SVR2) || defined(SVR3) || defined(SVR4) || defined(__hpux) || defined(_AIX)
-	(void) setpgrp();
+	setpgrp();
 #    else
 	int pid = getpid();
-	(void) setpgrp(pid, pid);
+	setpgrp(pid, pid);
 #    endif
 
 
@@ -96,8 +96,8 @@ void tet_tiocnotty()
 	** control terminal
 	*/
 	if ((ttyfd = open("/dev/tty", O_RDONLY | O_NDELAY)) >= 0) {
-		(void) ioctl(ttyfd, TIOCNOTTY, 0);
-		(void) close(ttyfd);
+		ioctl(ttyfd, TIOCNOTTY, 0);
+		close(ttyfd);
 	}
 #    endif /* TIOCNOTTY */
 

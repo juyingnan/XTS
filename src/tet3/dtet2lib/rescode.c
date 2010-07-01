@@ -257,7 +257,7 @@ char *fname;
 			break;
 	}
 
-	(void) fclose(fp);
+	fclose(fp);
 	return(rc);
 }
 
@@ -329,7 +329,7 @@ int line;
 {
 	char buf[128];
 
-	(void) sprintf(buf, "%s in line %d, file", msg, line);
+	sprintf(buf, "%s in line %d, file", msg, line);
 	error(0, buf, file);
 }
 

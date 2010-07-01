@@ -147,7 +147,7 @@ struct ptab *pp;
 		for (ep = etab; ep; ep = ep->et_next)
 			if (ep->et_ptab == pp) {
 				if (ep->et_state == ES_RUNNING)
-					(void) KILL(ep->et_pid, SIGHUP);
+					KILL(ep->et_pid, SIGHUP);
 				etrm(ep);
 				etfree(ep);
 				done = 0;

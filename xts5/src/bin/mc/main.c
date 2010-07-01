@@ -257,8 +257,8 @@ newcmd:
 			argv[0] = optarg;
 			goto newcmd;
 		case '?':
-			(void) fprintf(stderr, "Invalid option\n");
-			(void) fprintf(stderr, "%s\n", cip->usage);
+			fprintf(stderr, "Invalid option\n");
+			fprintf(stderr, "%s\n", cip->usage);
 			errexit();
 			break;
 		}
@@ -302,7 +302,7 @@ newcmd:
 
 		dosections(FpSource, Ibuf);
 		dodefaults(Ibuf);
-		(void) fclose(FpSource);
+		fclose(FpSource);
 
 		dohook((char*)0, HOOK_END);
 		remfiles();
@@ -375,7 +375,7 @@ char	*line;
 		err("Internal error: one line already pushed back\n");
 		errexit();
 	}
-	(void) strcpy(putbackbuf, line);
+	strcpy(putbackbuf, line);
 }
 
 /*
@@ -406,9 +406,9 @@ char	*np;
 				    State.sectype == SEC_DEFASSERT) {
 					if (cp != line)
 						*np++ = '\n';
-					(void) strcpy(np, ".F "); np += 3;
+					strcpy(np, ".F "); np += 3;
 				}
-				(void) strcpy(np, State.name); np += strlen(State.name);
+				strcpy(np, State.name); np += strlen(State.name);
 				cp += 5;/* len of xname XXX */
 				if (State.sectype == SEC_ASSERTION ||
 				    State.sectype == SEC_DEFASSERT) {
@@ -436,7 +436,7 @@ char	*np;
 		}
 	}
 	*np++ = '\0';
-	(void) strcpy(line, buf);
+	strcpy(line, buf);
 }
 
 /*
@@ -483,7 +483,7 @@ char	*bp;
 
 	bp = malloc((size_t)(strlen(s)+1));
 	if (bp)
-		(void) strcpy(bp, s);
+		strcpy(bp, s);
 
 	return(bp);
 }

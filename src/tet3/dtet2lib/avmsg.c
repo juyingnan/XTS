@@ -108,7 +108,7 @@ register char *to;
 	for (n = 0; n < (int) from->av_argc; n++)
 		if (from->av_argv[n]) {
 			offset = sp - to;
-			(void) tet_st2bs((char *) &offset,
+			tet_st2bs((char *) &offset,
 				to + AV_AVMSGSZ(n), &offst[0], 1);
 			for (p = from->av_argv[n]; *p; p++)
 				*sp++ = *p;

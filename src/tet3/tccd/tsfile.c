@@ -113,7 +113,7 @@ register struct ptab *pp;
 		AV_DIR(mp), AV_SUFFIX(mp));
 
 	/* construct the specified directory path name */
-	(void) sprintf(dir, "%.*s", (int) sizeof dir - 1, AV_DIR(mp));
+	sprintf(dir, "%.*s", (int) sizeof dir - 1, AV_DIR(mp));
 
 	/* open the directory */
 	if ((dirp = OPENDIR(dir)) == (DIR *) 0) {
@@ -129,7 +129,7 @@ register struct ptab *pp;
 	while ((dp = READDIR(dirp)) != (struct dirent *) 0)
 		if ((n = atoi(dp->d_name)) > nmax)
 			nmax = n;
-	(void) CLOSEDIR(dirp);
+	CLOSEDIR(dirp);
 
 	/* make the directory first without the suffix (try a few times) */
 	for (n = 0; n < 5; n++) {
@@ -141,7 +141,7 @@ register struct ptab *pp;
 			pp->ptm_len = 0;
 			return;
 		}
-		(void) sprintf(lokdir, "%s/%04d", dir, nmax);
+		sprintf(lokdir, "%s/%04d", dir, nmax);
 		TRACE2(tet_Ttccd, 6, "mksdir: try lokdir = \"%s\"", lokdir);
 		if (tet_mkdir(lokdir, DIRMODE) == 0 || errno != EEXIST)
 			break;
@@ -156,11 +156,11 @@ register struct ptab *pp;
 
 	/* then make the directory with the suffix
 		and remove the other one */
-	(void) sprintf(savdir, "%s%.3s", lokdir, AV_SUFFIX(mp));
+	sprintf(savdir, "%s%.3s", lokdir, AV_SUFFIX(mp));
 	TRACE2(tet_Ttccd, 6, "mksdir: make savdir = \"%s\"", savdir);
 	if ((rc = tet_mkdir(savdir, DIRMODE)) < 0)
 		error(errno, errmsg, savdir);
-	(void) tet_rmdir(lokdir);
+	tet_rmdir(lokdir);
 	if (rc < 0) {
 		pp->ptm_rc = ER_ERR;
 		pp->ptm_mtype = MT_NODATA;
@@ -174,7 +174,7 @@ register struct ptab *pp;
 		free(sfdir);
 	}
 	if ((sfdir = tet_strstore(savdir)) == (char *) 0) {
-		(void) tet_rmdir(savdir);
+		tet_rmdir(savdir);
 		pp->ptm_rc = ER_ERR;
 		pp->ptm_mtype = MT_NODATA;
 		pp->ptm_len = 0;
@@ -253,7 +253,7 @@ struct ptab *pp;
 			todir = sfdir;
 		else {
 			len = (int) sizeof dir - (int) strlen(sfdir) - 2;
-			(void) sprintf(dir, "%.*s/%.*s",
+			sprintf(dir, "%.*s/%.*s",
 				(int) sizeof dir - 2, sfdir,
 				TET_MAX(len, 0), AV_SUBDIR(mp));
 			todir = dir;

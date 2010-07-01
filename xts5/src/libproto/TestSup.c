@@ -169,7 +169,7 @@ Map_a_Window(client, win)	/* use when no expose events are expected */
         req->id = win;
 	Send_Req(client, (xReq *) req);
         Log_Trace("client %d MapWindow request on window %d\n", client, win);
-	(void) Expect_Nothing(client);
+	Expect_Nothing(client);
         Free_Req(req);
 }
 
@@ -194,7 +194,7 @@ Unmap_Window(client, win)
 		/* do any event checking here */
 		Free_Event(ev);
 	}
-	(void) Expect_Nothing(client);
+	Expect_Nothing(client);
         Free_Req(req);
 }
 
@@ -209,7 +209,7 @@ Unmap_a_Window(client, win)
         req->id = win;
 	Send_Req(client, (xReq *) req);
         Log_Trace("client %d UnmapWindow request on window %d\n", client, win);
-	(void) Expect_Nothing(client);
+	Expect_Nothing(client);
         Free_Req(req);
 }
 
@@ -244,6 +244,6 @@ Destroy_Window(client, win)
         req->id = win;
 	Send_Req(client, (xReq *) req);
         Log_Trace("client %d DestroyWindow request on window %d\n", client, win);
-	(void) Expect_Nothing(client);
+	Expect_Nothing(client);
         Free_Req(req);
 }

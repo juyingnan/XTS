@@ -158,7 +158,7 @@ char **np;
 	TRACE2(tet_Tbuf, 6, "allocate tfname = %s", tet_i2x(fname));
 
 	/* generate the file name */
-	(void) sprintf(fname, "%s/%s%s%s", dir, prefix, &salt[1], pidstr);
+	sprintf(fname, "%s/%s%s%s", dir, prefix, &salt[1], pidstr);
 
 	/* try to open the file */
 	if ((fd = OPEN(fname, O_RDWR|O_CREAT|O_EXCL|O_BINARY, MODEANY)) < 0)
@@ -187,7 +187,7 @@ char **np;
 				break;
 			}
 		/* close the file and unlink it */
-		(void) CLOSE(fd);
+		CLOSE(fd);
 		if (UNLINK(fname) < 0)
 			error(errno, "can't unlink", fname);
 	}

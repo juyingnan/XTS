@@ -241,7 +241,7 @@ int XstConnectDisplay (display_name, expanded_name, screen_num,
 	 * NOTE - if DECnet is to be used, the display name is formatted
 	 * as "host::number"
 	 */
-	(void) strncpy(displaybuf, display_name, sizeof(displaybuf));
+	strncpy(displaybuf, display_name, sizeof(displaybuf));
 	if ((display_ptr = SearchString(displaybuf,':')) == (char *)NULL) 
 		return (-1);
 #ifdef DNETCONN
@@ -304,13 +304,13 @@ int XstConnectDisplay (display_name, expanded_name, screen_num,
 	if (displaybuf[0] == '\0')
 #ifdef DNETCONN
 	    if (dnet) 
-		(void) strcpy (displaybuf, "0");
+		strcpy (displaybuf, "0");
             else
 #endif
 #ifdef UNIXCONN
 		;	/* Do nothing if UNIX DOMAIN. Will be handled below. */
 #else
-		(void) gethostname (displaybuf, sizeof(displaybuf));
+		gethostname (displaybuf, sizeof(displaybuf));
 #endif
 
 #ifdef DNETCONN
@@ -333,7 +333,7 @@ int XstConnectDisplay (display_name, expanded_name, screen_num,
 		(strcmp("unix", displaybuf) == 0)) {
 		/* Connect locally using Unix domain. */
 		unaddr.sun_family = AF_UNIX;
-		(void) strcpy(unaddr.sun_path, X_UNIX_PATH);
+		strcpy(unaddr.sun_path, X_UNIX_PATH);
 		strcat(unaddr.sun_path, display_ptr);
 		addr = (struct sockaddr *) &unaddr;
 		addrlen = strlen(unaddr.sun_path) + 2;
@@ -389,7 +389,7 @@ int XstConnectDisplay (display_name, expanded_name, screen_num,
  
 
 	    if (connect(fd, addr, addrlen) == -1) {
-		(void) close (fd);
+		close (fd);
 		return(-1); 	    /* errno set by system call. */
 	    }
 #ifdef FIOSNBIO
@@ -398,7 +398,7 @@ int XstConnectDisplay (display_name, expanded_name, screen_num,
 		    ioctl (fd, FIOSNBIO, &arg);
 		}
 #else
-		(void) fcntl (fd, F_SETFL, FNDELAY);
+		fcntl (fd, F_SETFL, FNDELAY);
 #endif /* FIOSNBIO */
 
         }
@@ -418,7 +418,7 @@ int XstConnectDisplay (display_name, expanded_name, screen_num,
 	while (*numbuf_ptr != '\0')
 	    *(display_ptr++) = *(numbuf_ptr++);
 	*display_ptr = '\0';
-	(void) strcpy(expanded_name, displaybuf);
+	strcpy(expanded_name, displaybuf);
 	return(fd);
 }
 
@@ -526,7 +526,7 @@ XstSendClientPrefix (dpy, client, auth_proto, auth_string, needswap)
 	BPRINTF2 ("\tTotal OpenDisplay message length = %d bytes\n", bytes);
 	BPRINTF2 ("\t\ton fd %d\n", dpy->fd);
 	BPRINTF2 ("\t\t%d bytes used of buffer\n", bptr - buffer);
-	(void) WriteToServer(dpy->fd, buffer, bytes);
+	WriteToServer(dpy->fd, buffer, bytes);
 	return;
 }
 

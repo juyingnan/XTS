@@ -120,14 +120,14 @@ TET_IMPORT void tet_logoff()
 	while (tet_ptab) {
 		pp = tet_ptab;
 		TET_SIGSAFE_START;
-		(void) tet_ti_logoff(pp, 0);
+		tet_ti_logoff(pp, 0);
 		tet_ptrm(pp);
 		tet_ptfree(pp);
 		TET_SIGSAFE_END;
 	}
 
-	(void) tet_sdlogoff(0);
-	(void) tet_xdlogoff();
+	tet_sdlogoff(0);
+	tet_xdlogoff();
 
 	tet_ts_cleanup();
 

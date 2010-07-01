@@ -98,8 +98,8 @@ SOFTWARE.
 
 static int _DQCloseDisplay();
 
-#define CallCloseCallback(q,e) (void) (*((q)->closefunc)) ((q), (e))
-#define CallFreeCallback(q) (void) (*((q)->freefunc)) ((q))
+#define CallCloseCallback(q,e) (*((q)->closefunc)) ((q), (e))
+#define CallFreeCallback(q) (*((q)->freefunc)) ((q))
 
 /*
  * XmuDQCreate - create a display queue
@@ -215,7 +215,7 @@ Bool XmuDQRemoveDisplay (q, dpy)
 	      q->tail = e->prev;	/* if at tail, then bump tail */
 	    else
 	      e->next->prev = e->prev;	/* else splice out */
-	    (void) XmuRemoveCloseDisplayHook (dpy, e->closehook,
+	    XmuRemoveCloseDisplayHook (dpy, e->closehook,
 					      _DQCloseDisplay, (caddr_t) q);
 	    free ((char *) e);
 	    q->nentries--;
@@ -244,7 +244,7 @@ static int _DQCloseDisplay (dpy, arg)
     for (e = q->head; e; e = e->next) {
 	if (e->display == dpy) {
 	    if (q->closefunc) CallCloseCallback (q, e);
-	    (void) XmuDQRemoveDisplay (q, dpy);
+	    XmuDQRemoveDisplay (q, dpy);
 	    if (q->nentries == 0 && q->freefunc) CallFreeCallback (q);
 	    return 1;
 	}

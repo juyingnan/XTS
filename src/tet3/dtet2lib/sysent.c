@@ -114,7 +114,7 @@ int tet_libsetsysent()
 	}
 
 	ASSERT(tet_root[0]);
-	(void) sprintf(path, "%.*s/%s",
+	sprintf(path, "%.*s/%s",
 		(int) sizeof path - (int) sizeof file - 1, tet_root, file);
 
 	if ((sfp = fopen(path, "r")) == NULL) {
@@ -122,7 +122,7 @@ int tet_libsetsysent()
 		return(-1);
 	}
 
-	(void) tet_fioclex(FILENO(sfp));
+	tet_fioclex(FILENO(sfp));
 	return(0);
 }
 
@@ -133,7 +133,7 @@ int tet_libsetsysent()
 void tet_libendsysent()
 {
 	if (sfp != NULL) {
-		(void) fclose(sfp);
+		fclose(sfp);
 		sfp = NULL;
 	}
 }

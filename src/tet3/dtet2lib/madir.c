@@ -68,7 +68,7 @@ char *path;
 
 	if (STAT(path, &stbuf) < 0) {
 		if (errno == ENOENT) {
-			(void) sprintf(buf, "%.*s", (int)sizeof buf - 1, path);
+			sprintf(buf, "%.*s", (int)sizeof buf - 1, path);
 			rc = mkad2(buf);
 		}
 		else {

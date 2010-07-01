@@ -58,21 +58,21 @@ FILE *fp;
 
 	start = dp;
 	do {
-		(void) fprintf(fp, "%#lx:", (long) start);
+		fprintf(fp, "%#lx:", (long) start);
 		if (start >= end)
 			continue;
 		p2 = TET_MIN(start + 16, end);
 		for (p1 = start; p1 < p2; p1++)
-			(void) fprintf(fp, " %02x", (unsigned char) *p1);
+			fprintf(fp, " %02x", (unsigned char) *p1);
 		while (p1++ <= start + 16)
-			(void) fprintf(fp, "   ");
+			fprintf(fp, "   ");
 		for (p1 = start; p1 < p2; p1++)
-			(void) fprintf(fp, "%c",
+			fprintf(fp, "%c",
 				*p1 > '\040' && *p1 < '\177' ? *p1 : '.');
-		(void) fprintf(fp, "\n");
+		fprintf(fp, "\n");
 	} while ((start += 16) < end);
 
-	(void) fprintf(fp, "\n");
-	(void) fflush(fp);
+	fprintf(fp, "\n");
+	fflush(fp);
 }
 

@@ -67,7 +67,7 @@ struct netbuf *np;
 		return (char *)0;
 
 	while (len--) {
-		(void) sprintf(p,"%02x", (unsigned char) *q++);
+		sprintf(p,"%02x", (unsigned char) *q++);
 		p += 2;
 	}
 	*p = '\0';

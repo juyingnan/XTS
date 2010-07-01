@@ -389,8 +389,8 @@ char *file, *argv[], *envp[];
 #  ifndef TET_LITE	/* -START-LITE-CUT- */
 		API_LOCK;
 		if (tet_xdlogon() == 0)
-			(void) tet_xdxrsend(tet_xrid);
-		(void) tet_sdlogon();
+			tet_xdxrsend(tet_xrid);
+		tet_sdlogon();
 		API_UNLOCK;
 #  endif		/* -END-LITE-CUT- */
 		switch (errsave) {

@@ -101,14 +101,14 @@ register struct ptab *pp;
 			pp->pt_flags |= PF_ATTENTION;
 			return;
 		}
-		(void) t_close(fd);
+		t_close(fd);
 		fd = nfd;
 	}
 
 	/* bind this endpoint to an arbitrary protocol address */
 	if (t_bind(fd, (struct t_bind *)0, (struct t_bind *)0) < 0) {
 		xt_error(t_errno, "can't bind fd", tet_i2a(fd));
-		(void) t_close(fd);
+		t_close(fd);
 		pp->pt_state = PS_DEAD;
 		pp->pt_flags |= PF_ATTENTION;
 		return;
@@ -153,11 +153,11 @@ register struct ptab *pp;
 		default:
 			event = tet_xtev2a(t_look(fd));
 			TRACE2(tet_Tio, 6, "connect failed:%s", event);
-			(void) sprintf(buf, "%s(%.*s)", "connect failed",
+			sprintf(buf, "%s(%.*s)", "connect failed",
 				(int) sizeof buf - (int) strlen(event) - 17,
 				event);
 			xt_error(t_errno, buf, tet_r2a(&pp->pt_rid));
-			(void) t_close(fd);
+			t_close(fd);
 			pp->pt_state  = PS_DEAD;
 			break;	
 		}

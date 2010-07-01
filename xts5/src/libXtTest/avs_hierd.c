@@ -115,6 +115,6 @@ char *stitle, *slabel;
 	trace("Create boxw2 widget in panedw widget");
 	boxw2 = (Widget) CreateBoxWidget(panedw);
 	trace("Set the height and width of boxw2 widget");
-	(void) ConfigureDimension(topLevel, boxw2);
+	ConfigureDimension(topLevel, boxw2);
 	return topLevel;
 }

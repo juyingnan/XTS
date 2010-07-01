@@ -42,8 +42,8 @@ MODIFICATIONS:
 ** and how to call the functions themselves
 */
 #  define TET_SIGSAFE_DEF	sigset_t oldset;
-#  define TET_SIGSAFE_START	(void) tet_sigsafe_start(&oldset)
-#  define TET_SIGSAFE_END	(void) tet_sigsafe_end(&oldset)
+#  define TET_SIGSAFE_START	tet_sigsafe_start(&oldset)
+#  define TET_SIGSAFE_END	tet_sigsafe_end(&oldset)
 
 /* set of all blockable signals (to be blocked during critical code) */
    TET_EXPORT_DATA(sigset_t, tet_blockable_sigs);

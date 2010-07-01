@@ -277,9 +277,9 @@ static void Initialize(request, new)
         return;		 /* If we are not forcing the bars then we are done. */
 
     if (w->viewport.allowhoriz) 
-      (void) CreateScrollbar(w, True);
+      CreateScrollbar(w, True);
     if (w->viewport.allowvert) 
-      (void) CreateScrollbar(w, False);
+      CreateScrollbar(w, False);
 
     h_bar = w->viewport.horiz_bar;
     v_bar = w->viewport.vert_bar;
@@ -564,7 +564,7 @@ static void ComputeLayout(widget, query, destroy_scrollbars)
 	do { /* while intended != prev  */
 
 	    if (query) {
-	        (void) XtQueryGeometry( child, &intended, &preferred );
+	        XtQueryGeometry( child, &intended, &preferred );
 		if ( !(preferred.request_mode & CWWidth) )
 		    preferred.width = intended.width;
 		if ( !(preferred.request_mode & CWHeight) )

@@ -144,9 +144,9 @@ char *firstarg, *nextarg;
 		/* all ok - copy static data to safer place */
 		np.maxlen	= p->maxlen;
 		np.len		= p->len;
-		(void) memcpy(np.buf, p->buf, p->len);
+		memcpy(np.buf, p->buf, p->len);
 		if (np.maxlen > np.len)
-			(void) memset(np.buf + np.len, '\0',
+			memset(np.buf + np.len, '\0',
 				np.maxlen - np.len);
 	
 		Tccdaddr = &np;
@@ -203,7 +203,7 @@ void ss_tsinitb4fork()
 		errno = 0;
 		if ((tet_listen_fd = fcntl(fd, F_DUPFD, 3)) < 3)
 			fatal(errno, "can't dup listen fd", (char *) 0);
-		(void) close(fd);
+		close(fd);
 	}
 	else
 		tet_listen_fd = fd;
@@ -236,7 +236,7 @@ void ss_tsinitb4fork()
 	tet_ts_listen(tet_listen_fd);
 
 	/* arrange to reap child daemon processes */
-	(void) signal(SIGCHLD, waitchild);
+	signal(SIGCHLD, waitchild);
 }
 
 /*
@@ -321,9 +321,9 @@ struct ptab *pp;
 	else if (!pid) {
 		/* in child */
 		tet_mypid = getpid();
-		(void) close(tet_listen_fd);
+		close(tet_listen_fd);
 		tet_listen_fd = -1;
-		(void) signal(SIGCHLD, SIG_DFL);
+		signal(SIGCHLD, SIG_DFL);
 	}
 	else {
 		/* in parent - return -1 to close the connection and
@@ -362,7 +362,7 @@ int sig;
 	register int pid;
 #endif
 
-	(void) signal(SIGCHLD, SIG_DFL);
+	signal(SIGCHLD, SIG_DFL);
 
 #ifdef NOTRACE
 	while (tet_dowait3(&status, WNOHANG) > 0)
@@ -375,7 +375,7 @@ int sig;
 			tet_i2a(status & 0xff));
 #endif
 
-	(void) signal(SIGCHLD, waitchild);
+	signal(SIGCHLD, waitchild);
 }
 
 
@@ -454,7 +454,7 @@ register struct ptab *pp;
 		}
 		TRACE2(tet_Tbuf, 6, "allocate TCP tsinfo buffer = %s",
 			tet_i2x(ap->buf));
-		(void) memset((char *) ap->buf, '\0',
+		memset((char *) ap->buf, '\0',
 			sizeof (struct sockaddr_in));
 
 		((struct sockaddr_in *)ap->buf)->sin_family
@@ -488,7 +488,7 @@ register struct ptab *pp;
 		}
 		TRACE2(tet_Tbuf, 6, "allocate OSICO tsinfo buffer = %s",
 			tet_i2x(ap->buf));
-		(void) memcpy(ap->buf, mp->ts.osico.ts_nsap, ap->len);
+		memcpy(ap->buf, mp->ts.osico.ts_nsap, ap->len);
 
 		TRACE4(tet_Ttccd, 2,
 			"received tsinfo for %s: len  = %s, addr = %s",

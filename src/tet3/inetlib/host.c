@@ -112,7 +112,7 @@ char *host;
 
 	cp2->hc_addr = *((struct in_addr *) hp->h_addr);
 	cp2->hc_refcnt = 1;
-	(void) sprintf(cp2->hc_host, "%.*s",
+	sprintf(cp2->hc_host, "%.*s",
 		(int) sizeof cp2->hc_host - 1, host);
 
 	return(&cp2->hc_addr);

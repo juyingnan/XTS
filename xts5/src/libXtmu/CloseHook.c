@@ -352,7 +352,7 @@ static Bool _MakeExtension (dpy, extensionp)
     codes = XAddExtension (dpy);
     if (!codes) return False;
 
-    (void) XESetCloseDisplay (dpy, codes->extension, _DoCallbacks);
+    XESetCloseDisplay (dpy, codes->extension, _DoCallbacks);
 
     *extensionp = codes->extension;
     return True;

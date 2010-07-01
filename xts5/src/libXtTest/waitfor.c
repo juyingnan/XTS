@@ -110,11 +110,11 @@ int	timeout;
 	SIGNAL_RET(SIGALRM, SIG_DFL);
 
 	if (got_sigalrm) {
-		(void) kill(pid, SIGKILL);
+		kill(pid, SIGKILL);
 
 		sleep(2);
 
-		(void) waitpid(pid, &child, WNOHANG);
+		waitpid(pid, &child, WNOHANG);
 		sprintf(ebuf, "ERROR: wait_for: Timed-out waiting for child to exit.");
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);

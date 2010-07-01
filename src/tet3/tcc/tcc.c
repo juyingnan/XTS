@@ -240,7 +240,7 @@ char **argv;
 			if (*optarg)
 				nostr(optarg, YN_CMDLINE);
 			else {
-				(void) fprintf(stderr,
+				fprintf(stderr,
 					"%s: no-string may not be empty\n",
 					tet_progname);
 				errors++;
@@ -259,7 +259,7 @@ char **argv;
 		case 't':	/* timeout for test case processing and
 				   lock acqusition */
 			if ((tcc_timeout = atoi(optarg)) <= 0) {
-				(void) fprintf(stderr,
+				fprintf(stderr,
 					"%s: timeout must be +ve\n", tet_progname);
 				errors++;
 			}
@@ -275,7 +275,7 @@ char **argv;
 			if (*optarg)
 				yesstr(optarg, YN_CMDLINE);
 			else {
-				(void) fprintf(stderr,
+				fprintf(stderr,
 					"%s: yes-string may not be empty\n",
 					tet_progname);
 				errors++;
@@ -299,7 +299,7 @@ char **argv;
 	*/
 	TRACE2(tet_Ttcc, 1, "tcc_modes = %s", prtccmode(tcc_modes));
 	if ((tcc_modes & (TCC_BUILD | TCC_EXEC | TCC_CLEAN)) == 0) {
-		(void) fprintf(stderr,
+		fprintf(stderr,
 			"%s: at least one of -b, -c, -e and -V must be specified\n",
 			tet_progname);
 		errors++;
@@ -307,7 +307,7 @@ char **argv;
 
 	/* ensure that only one of rerun and resume mode has been specified */
 	if ((tcc_modes & TCC_RERUN) && (tcc_modes & TCC_RESUME)) {
-		(void) fprintf(stderr,
+		fprintf(stderr,
 			"%s: only one of -m and -r may be specified\n",
 			tet_progname);
 		errors++;
@@ -323,7 +323,7 @@ char **argv;
 				codelist, old_journal_file);
 		}
 		else {
-			(void) fprintf(stderr,
+			fprintf(stderr,
 	"%s: need an old journal file name when -m or -r is specified\n",
 				tet_progname);
 			errors++;
@@ -352,7 +352,7 @@ char **argv;
 			tet_tsname = cwd + strlen(tet_suite_root);
 			while (isdirsep(*tet_tsname))
 				tet_tsname++;
-			(void) sprintf(fname, "%.*s",
+			sprintf(fname, "%.*s",
 				(int) sizeof fname - 1, tet_tsname);
 			for (p = fname; *p; p++)
 				if (isdirsep(*p)) {
@@ -502,7 +502,7 @@ char **argv;
 	jnl_init(jopt, cwd);
 	if (jnl_jfname())
 		printf("%s: journal file is %s\n", tet_progname, jnl_jfname());
-	(void) fflush(stdout);
+	fflush(stdout);
 	jnl_tcc_start(argcsave, argvsave);
 	jnl_uname();
 
@@ -557,7 +557,7 @@ static void badusage()
 
 	options[0] = tet_progname;
 
-	(void) fprintf(stderr, "\nusage:\t");
+	fprintf(stderr, "\nusage:\t");
 	pos = 8;
 	for (n = 0; n < sizeof options / sizeof options[0]; n++) {
 		if ((opt = options[n]) == (char *) 0)
@@ -568,10 +568,10 @@ static void badusage()
 		}
 		else
 			sep = n ? " " : "";
-		(void) fprintf(stderr, "%s%s", sep, opt);
+		fprintf(stderr, "%s%s", sep, opt);
 		pos += strlen(opt) + 1;
 	}
-	(void) fprintf(stderr, "\n\nor:\t");
+	fprintf(stderr, "\n\nor:\t");
 	pos = 8;
 	for (n = 0; n < sizeof options / sizeof options[0]; n++) {
 		if ((opt = options[n]) == (char *) 0)
@@ -589,10 +589,10 @@ static void badusage()
 		}
 		else
 			sep = n ? " " : "";
-		(void) fprintf(stderr, "%s%s", sep, opt);
+		fprintf(stderr, "%s%s", sep, opt);
 		pos += strlen(opt) + 1;
 	}
-	(void) fprintf(stderr, "\n\nor:\ttcc -V\n\n");
+	fprintf(stderr, "\n\nor:\ttcc -V\n\n");
 
 	tcc_exit(2);
 	/* NOTREACHED */
@@ -607,7 +607,7 @@ static void prversioninfo()
 	static char product_name[] =
 						"TET3";
 
-	(void) fprintf(stderr, "%s: %s%s Release %s\n",
+	fprintf(stderr, "%s: %s%s Release %s\n",
 		tet_progname,
 #ifdef TET_LITE		/* -LITE-CUT-LINE */
 		product_name, "-Lite",

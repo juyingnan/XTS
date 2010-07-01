@@ -323,10 +323,10 @@ int num;
 
 	for(i=0; i<NERRS; i++) {
 		if(errz[i].err == num) {
-			(void) sprintf(foo, "%d(%s)", num, errz[i].errname);
+			sprintf(foo, "%d(%s)", num, errz[i].errname);
 			return foo;
 		}
 	}
-	(void) sprintf(foo, "%d(error definition not known)", num);
+	sprintf(foo, "%d(error definition not known)", num);
 	return foo;
 }

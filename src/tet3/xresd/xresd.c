@@ -191,7 +191,7 @@ register struct ptab *pp;
 
 	/* emit a diagnostic message if this is unexpected */
 	if ((pp->pt_flags & PF_LOGGEDOFF) == 0) {
-		(void) sprintf(msg, fmt, (pp->pt_flags & PF_SERVER) ? se : cl);
+		sprintf(msg, fmt, (pp->pt_flags & PF_SERVER) ? se : cl);
 		error(0, msg, tet_r2a(&pp->pt_rid));
 	}
 

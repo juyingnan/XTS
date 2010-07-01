@@ -446,7 +446,7 @@ long	winhmask;
 	Winh	*winh;
 
 	if (winh_qdel != (Winhe *) NULL)
-		(void) free_eventlist();
+		free_eventlist();
 	if (event == (XEvent *) NULL)
 		return(0);
 	if ((_eindex_ = winh_eventindex(event->type)) == -1)
@@ -874,7 +874,7 @@ Display	*display;
 	Winh	*winh;
 	Winh	*awinh;
 
-	(void) free_eventlist();
+	free_eventlist();
 	if ((winh = (Winh *) winhmalloc(sizeof(*winh), "initguardian")) == (Winh *) NULL)
 		return((Winh *) NULL);
 	winh->window = DRW(display);
@@ -987,12 +987,12 @@ void
 winh_free(winh)
 Winh *winh;
 {
-	(void) free_eventlist();
+	free_eventlist();
 	if (winh == (Winh *) NULL)
 		winh = guardian;
 	if (winh == (Winh *) NULL)
 		return;
-	(void) winh_walk(winh, 1, _winh_free);
+	winh_walk(winh, 1, _winh_free);
 	guardian = (Winh *) NULL;
 }
 
@@ -1272,7 +1272,7 @@ Winh	*winh;
 
 	if (_winh_walk_first_time_) {
 		_winh_walk_first_time_ = 0;
-		(void) fprintf(stderr, "\n\n\n");
+		fprintf(stderr, "\n\n\n");
 	}
 	if (winh == (Winh *) NULL)
 		return(-1);
@@ -1280,52 +1280,52 @@ Winh	*winh;
 	for (i = 0; i < (NELEM(in)-1) && i < winh->depth; i++)
 		in[i] = '\t';
 	in[i] = '\0';
-	(void) fprintf(stderr, "%s========================================\n",
+	fprintf(stderr, "%s========================================\n",
 		in);
 	if (winh->window == WINH_BAD)
-		(void) fprintf(stderr, "%sWindow: None",
+		fprintf(stderr, "%sWindow: None",
 			in);
 	else
-		(void) fprintf(stderr, "%sWindow: 0x%lx",
+		fprintf(stderr, "%sWindow: 0x%lx",
 			in, (unsigned long)winh->window);
 	if (winh->parent == (Winh *) NULL)
-		(void) fprintf(stderr, ", Parent: None\n");
+		fprintf(stderr, ", Parent: None\n");
 	else
-		(void) fprintf(stderr, ", Parent: 0x%lx\n", (unsigned long)winh->parent->window);
-	(void) fprintf(stderr, "%sFirstborn: %s, Children: %2d\n",
+		fprintf(stderr, ", Parent: 0x%lx\n", (unsigned long)winh->parent->window);
+	fprintf(stderr, "%sFirstborn: %s, Children: %2d\n",
 		in,
 		(FIRSTBORN(winh) ? "Yes" : "No "), winh->numchildren);
-	(void) fprintf(stderr, "%sValuemask: 0x%04lx, Winhmask: 0x%04lx\n",
+	fprintf(stderr, "%sValuemask: 0x%04lx, Winhmask: 0x%04lx\n",
 		in,
 		winh->valuemask, winh->winhmask);
 	if (winh->valuemask != 0) {
-		(void) fprintf(stderr, "%sValuemask strings:\n",
+		fprintf(stderr, "%sValuemask strings:\n",
 			in);
 		for (i = 0; i<NELEM(attrinfo); i++)
 			if (winh->valuemask & attrinfo[i].value)
-				(void) fprintf(stderr, "%s    %s\n",
+				fprintf(stderr, "%s    %s\n",
 					in,
 					attrinfo[i].name);
 	}
 	if (winh->winhmask != WINH_NOMASK) {
-		(void) fprintf(stderr, "%sWinhmask strings:\n",
+		fprintf(stderr, "%sWinhmask strings:\n",
 			in);
 		for (i = 0; i<NELEM(winhmaskinfo); i++)
 			if (winh->winhmask & winhmaskinfo[i].value)
-				(void) fprintf(stderr, "%s    %s\n",
+				fprintf(stderr, "%s    %s\n",
 					in,
 					winhmaskinfo[i].name);
 	}
-	(void) fprintf(stderr, "%sClients: %s, Expected: %s, Delivered: %s\n",
+	fprintf(stderr, "%sClients: %s, Expected: %s, Delivered: %s\n",
 		in,
 		((winh->clients == (Winhc *) NULL) ? "No " : "Yes"),
 		((winh->expected == (Winhe *) NULL) ? "No " : "Yes"),
 		((winh->delivered == (Winhe *) NULL) ? "No " : "Yes"));
-	(void) fprintf(stderr, "%sDepth: %2d, Screen: %2d\n",
+	fprintf(stderr, "%sDepth: %2d, Screen: %2d\n",
 		in,
 		winh->depth, winh->screen);
 	if (!(winh->winhmask & WINH_IGNORE_GEOMETRY)) {
-		(void) fprintf(stderr, "%s%dx%d (%d,%d) border width: %d\n",
+		fprintf(stderr, "%s%dx%d (%d,%d) border width: %d\n",
 			in,
 			winh->winhg.area.width, winh->winhg.area.height,
 			winh->winhg.area.x, winh->winhg.area.y,

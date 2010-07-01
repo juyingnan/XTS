@@ -83,7 +83,7 @@ time_t *tp;
 	/* do something sensible if sysid is the local system */
 	if (sysid == tet_mysysid)
 	{
-		(void) time(tp);
+		time(tp);
 		API_UNLOCK;
 		return 0;
 	}

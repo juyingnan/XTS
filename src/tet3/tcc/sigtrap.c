@@ -106,7 +106,7 @@ int sig;
 
 
 	if (jnl_usable())
-		(void) fprintf(stderr, "%s %d\n", text, sig);
+		fprintf(stderr, "%s %d\n", text, sig);
 
 	fatal(0, text, tet_i2a(sig));
 }
@@ -118,10 +118,10 @@ int sig;
 void execsigtrap()
 {
 	exec_block_signals();
-	(void) install_handler(SIGHUP, engine_sigterm);
-	(void) install_handler(SIGQUIT, engine_abort);
-	(void) install_handler(SIGPIPE, engine_sigterm);
-	(void) install_handler(SIGTERM, engine_sigterm);
+	install_handler(SIGHUP, engine_sigterm);
+	install_handler(SIGQUIT, engine_abort);
+	install_handler(SIGPIPE, engine_sigterm);
+	install_handler(SIGTERM, engine_sigterm);
 }
 
 /*
@@ -151,11 +151,11 @@ int how;
 {
 	sigset_t mask;
 
-	(void) sigemptyset(&mask);
-	(void) sigaddset(&mask, SIGHUP);
-	(void) sigaddset(&mask, SIGQUIT);
-	(void) sigaddset(&mask, SIGPIPE);
-	(void) sigaddset(&mask, SIGTERM);
+	sigemptyset(&mask);
+	sigaddset(&mask, SIGHUP);
+	sigaddset(&mask, SIGQUIT);
+	sigaddset(&mask, SIGPIPE);
+	sigaddset(&mask, SIGTERM);
 
 	if (sigprocmask(how, &mask, (sigset_t *) 0) < 0)
 		fatal(errno, "sigprocmask() failed: how =", tet_i2a(how));
@@ -191,8 +191,8 @@ int sig;
 	register struct proctab *prp;
 
 
-	(void) fprintf(stderr, "TCC: user abort called\n");
-	(void) fflush(stderr);
+	fprintf(stderr, "TCC: user abort called\n");
+	fflush(stderr);
 
 	/*
 	** this flag tells the execution engine not to start processing
@@ -212,7 +212,7 @@ int sig;
 	** test cases have terminated and any save files and journal
 	** processing has completed
 	*/
-	(void) engine_tcinterrupt(sig);
+	engine_tcinterrupt(sig);
 
 }
 
@@ -247,7 +247,7 @@ int sig;
 			prp->pr_modes |= TCC_ABORT;
 			if (prp->pr_state == PRS_WAIT) {
 				count++;
-				(void) RUN_PROCTABS(prp, eng1_tcinterrupt);
+				RUN_PROCTABS(prp, eng1_tcinterrupt);
 				prp->pr_flags |= PRF_ATTENTION;
 			}
 		}
@@ -316,7 +316,7 @@ void engine_shutdown()
 	for (prp = runq; prp; prp = prp->pr_rqforw)
 		if (prp->pr_scen->sc_type == SC_TESTCASE) {
 			count++;
-			(void) RUN_PROCTABS(prp, quick_killtc);
+			RUN_PROCTABS(prp, quick_killtc);
 		}
 
 	/* give the tools a chance to terminate */
@@ -355,7 +355,7 @@ struct proctab *prp;
 		tet_i2x(prp), prtoolstate(prp->pr_toolstate));
 
 	if (prp->pr_toolstate == PTS_RUNNING) {
-		(void) tcc_kill(*prp->pr_sys, prp->pr_remid, SIGTERM);
+		tcc_kill(*prp->pr_sys, prp->pr_remid, SIGTERM);
 		prp->pr_toolstate = PTS_EXITED;
 	}
 
@@ -381,7 +381,7 @@ void (*func) PROTOLIST((int));
 	if ((rc = sa.sa_handler) != SIG_IGN) {
 		sa.sa_handler = func;
 		sa.sa_flags = 0;
-		(void) sigemptyset(&sa.sa_mask); 
+		sigemptyset(&sa.sa_mask);
 		if (sigaction(sig, &sa, (struct sigaction *) 0) < 0)
 			fatal(errno, "can't install handler for signal",
 				tet_i2a(sig));
@@ -422,14 +422,14 @@ void (*func) PROTOLIST((int));
 	/* ignore the signal */
 	sa.sa_handler = SIG_IGN;
 	sa.sa_flags = 0;
-	(void) sigemptyset(&sa.sa_mask); 
+	sigemptyset(&sa.sa_mask);
 	if (sigaction(sig, &sa, (struct sigaction *) 0) < 0)
 		fatal(errno, "sigaction(SIG_IGN) failed for signal",
 			tet_i2a(sig));
 
 	/* unblock the signal */
-	(void) sigemptyset(&sa.sa_mask);
-	(void) sigaddset(&sa.sa_mask, sig);
+	sigemptyset(&sa.sa_mask);
+	sigaddset(&sa.sa_mask, sig);
 	if (sigprocmask(SIG_UNBLOCK, &sa.sa_mask, (sigset_t *) 0) < 0)
 		fatal(errno, "sigprocmask(SIG_UNBLOCK) failed for signal",
 			tet_i2a(sig));
@@ -438,7 +438,7 @@ void (*func) PROTOLIST((int));
 	if (func != SIG_IGN) {
 		sa.sa_handler = func;
 		sa.sa_flags = 0;
-		(void) sigemptyset(&sa.sa_mask); 
+		sigemptyset(&sa.sa_mask);
 		if (sigaction(sig, &sa, (struct sigaction *) 0) < 0)
 			fatal(errno, "sigaction() failed for signal",
 				tet_i2a(sig));

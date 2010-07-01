@@ -63,7 +63,7 @@ int main()
 	char **tp;
 
 	for (tp = text; tp < &text[sizeof text / sizeof text[0]]; tp++)
-		(void) fprintf(stderr, "%s\n", *tp);
+		fprintf(stderr, "%s\n", *tp);
 
 	return(1);
 }

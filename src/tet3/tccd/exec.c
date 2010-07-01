@@ -268,12 +268,12 @@ struct etab *ep;
 
 void tcc_exec_signals()
 {
-	(void) signal(SIGHUP, SIG_DFL);
-	(void) signal(SIGINT, SIG_DFL);
-	(void) signal(SIGQUIT, SIG_DFL);
-	(void) signal(SIGTSTP, SIG_DFL);
-	(void) signal(SIGTTIN, SIG_DFL);
-	(void) signal(SIGTTOU, SIG_DFL);
+	signal(SIGHUP, SIG_DFL);
+	signal(SIGINT, SIG_DFL);
+	signal(SIGQUIT, SIG_DFL);
+	signal(SIGTSTP, SIG_DFL);
+	signal(SIGTTIN, SIG_DFL);
+	signal(SIGTTOU, SIG_DFL);
 }
 
 
@@ -529,8 +529,8 @@ register int timeout;
 			else
 				alarm_save = 2;
 		}
-		(void) alarm(alarm_save);
-		(void) signal(SIGALRM, (SIG_FUNC_T (*)()) sig_save);
+		alarm(alarm_save);
+		signal(SIGALRM, (SIG_FUNC_T (*)()) sig_save);
 	}
 
 	return(rc);
@@ -558,11 +558,11 @@ time_t start;
 	for (;;) {
 		status = 0;
 		if (timeout > 0)
-			(void) alarm((unsigned) TET_MAX(tleft, 2));
+			alarm((unsigned) TET_MAX(tleft, 2));
 		rc = tet_dowait3(&status, timeout ? 0 : WNOHANG);
 		save_errno = errno;
 		if (timeout > 0)
-			(void) alarm(0);
+			alarm(0);
 		TRACE4(tet_Ttccd, 4,
 			"wait3 returned pid = %s, status = %s, signal %s",
 			tet_i2a(rc), tet_i2a((status >> 8) & 0xff),
@@ -605,7 +605,7 @@ time_t start;
 static SIG_FUNC_T catchalarm(sig)
 int sig;
 {
-	(void) signal(SIGALRM, SIG_IGN);
+	signal(SIGALRM, SIG_IGN);
 	wait_timedout = 1;
 	longjmp(wait_env, 1);
 }

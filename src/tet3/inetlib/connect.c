@@ -124,7 +124,7 @@ register struct ptab *pp;
 			pp->pt_flags |= PF_ATTENTION;
 			return;
 		}
-        	(void) close(sd);
+		close(sd);
 		sd = nsd;
 	}
 
@@ -164,7 +164,7 @@ register struct ptab *pp;
 			}
 			/* else fall through */
 		default:
-			(void) sprintf(msg, fmt,
+			sprintf(msg, fmt,
 				inet_ntoa(tp->tp_sin.sin_addr),
 				(int) ntohs(tp->tp_sin.sin_port));
 			error(err, msg, tet_r2a(&pp->pt_rid));

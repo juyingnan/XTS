@@ -249,7 +249,7 @@ int incperror;	/* include system error info */
     char emsg[132];
 
     if (incperror)
-	(void) strcpy(emsg,strerror(errno));
+	strcpy(emsg,strerror(errno));
     else {
 	emsg[0]='\0';
     }

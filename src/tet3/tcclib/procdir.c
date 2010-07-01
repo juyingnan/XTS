@@ -142,10 +142,10 @@ int flag;
 
 	/* construct the path name to this file */
 	if (!*fromdir || (*fromdir == '.' && !*(fromdir + 1)))
-		(void) sprintf(path, "%.*s", (int) sizeof path - 1, fromfile);
+		sprintf(path, "%.*s", (int) sizeof path - 1, fromfile);
 	else {
 		len = (int) sizeof path - (int) strlen(fromdir) - 2;
-		(void) sprintf(path, "%.*s/%.*s",
+		sprintf(path, "%.*s/%.*s",
 			(int) sizeof path - 2, fromdir,
 			TET_MAX(len, 0), fromfile);
 	}
@@ -227,7 +227,7 @@ int flag;
 	rc = ER_OK;
 	len = (int) sizeof path - (int) strlen(fromdir) - 2;
 	for (fip = fromfiles; *fip; fip++) {
-		(void) sprintf(path, "%.*s/%.*s",
+		sprintf(path, "%.*s/%.*s",
 			(int) sizeof path - 2, fromdir,
 			TET_MAX(len, 0), *fip);
 		if (STAT(path, &stbuf) < 0) {
@@ -274,11 +274,11 @@ int flag;
 				return(ER_ERR);
 		p = tofile;
 		if (todir) {
-			(void) sprintf(tofile, "%.*s/",
+			sprintf(tofile, "%.*s/",
 				(int) sizeof tofile - 2, todir);
 			p += strlen(tofile);
 		}
-		(void) sprintf(p, "%.*s",
+		sprintf(p, "%.*s",
 			(int) sizeof tofile - (int) (p - tofile) - 1, fromfile);
 		TRACE3(Ttcclib, 8, "call xd_rxfile: from = \"%s\", to = \"%s\"",
 			fromfile, tofile);
@@ -311,7 +311,7 @@ char *fromfile, *todir;
 
 	/* construct the destination file name */
 	len = (int) sizeof tofile - (int) strlen(todir) - 2;
-	(void) sprintf(tofile, "%.*s/%.*s",
+	sprintf(tofile, "%.*s/%.*s",
 		(int) sizeof tofile - 2, todir, TET_MAX(len, 0), fromfile);
 
 	TRACE3(Ttcclib, 8, "tscopy(): fromfile = \"%s\", tofile = \"%s\"",
@@ -340,7 +340,7 @@ char *fromfile, *todir;
 	}
 	else {
 		rc = tsc2(ifd, fromfile, tofile);
-		(void) CLOSE(ifd);
+		CLOSE(ifd);
 	}
 
 	TRACE2(Ttcclib, 9, "tscopy() return %s", tet_ptrepcode(rc));
@@ -389,7 +389,7 @@ char *fromfile, *tofile;
 	else if (CHMOD(tofile, (mode_t) (stbuf.st_mode & MODEMASK)) < 0)
 		error(errno, "warning: can't chmod", tofile);
 
-	(void) CLOSE(ofd);
+	CLOSE(ofd);
 	return(rc);
 }
 

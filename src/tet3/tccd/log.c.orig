@@ -89,7 +89,7 @@ void loginit()
 		fatal(errno, "can't open log file", Logfile);
 
 	/* allow anyone to read/write to the logfile */
-	(void) CHMOD(Logfile, (mode_t)S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH);
+	CHMOD(Logfile, (mode_t)S_IRUSR|S_IWUSR|S_IRGRP|S_IWGRP|S_IROTH|S_IWOTH);
 
 	/* attach stderr to the logfile */
 	errno = 0;
@@ -98,7 +98,7 @@ void loginit()
 		fatal(errno, "can't reopen stderr as", Logfile);
 	}
 
-	(void) fclose(fp);
+	fclose(fp);
 
 	setbuf(lfp, buf);
 
@@ -117,11 +117,11 @@ char *s1, *s2;
 
 	fp = getlogfp();
 
-	(void) fprintf(fp, "%s: %s", loghdr(), s1);
+	fprintf(fp, "%s: %s", loghdr(), s1);
 	if (s2 && *s2)
-		(void) fprintf(fp, " %s", s2);
-	(void) putc('\n', fp);
-	(void) fflush(fp);
+		fprintf(fp, " %s", s2);
+	putc('\n', fp);
+	fflush(fp);
 }
 
 /*
@@ -150,7 +150,7 @@ static char *loghdr()
 
 	t = time((time_t *) 0);
 	tp = localtime(&t);
-	(void) sprintf(header, "%.16s (%d) %d %s %d:%02d:%02d",
+	sprintf(header, "%.16s (%d) %d %s %d:%02d:%02d",
 		tet_progname, tet_mypid, tp->tm_mday, month[tp->tm_mon],
 		tp->tm_hour, tp->tm_min, tp->tm_sec);
 

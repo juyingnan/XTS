@@ -231,7 +231,7 @@ int client;
 	}  else  {
 		Log_Trace("client %d received startup GetFontPath reply\n", client);
 	}
-	(void) Expect_Nothing(client);
+	Expect_Nothing(client);
 	Free_Req(req);
 
 	return put_in_commas(rep);
@@ -283,7 +283,7 @@ char *prevpath;
 
 	Send_Req(client, (xReq *) req);
 	Log_Trace("client %d sent startup SetFontPath request\n", client);
-	(void) Expect_Nothing(client);
+	Expect_Nothing(client);
 
 	Free_Req(req);
 }

@@ -590,7 +590,7 @@ Direction dir;
 	    else
 	        AssignMin(pane->size, start_size);
 
-	    if (pane->size == start_size) (void) PopPaneStack(pw);
+	    if (pane->size == start_size) PopPaneStack(pw);
 	}
 	else if (rule3_ok) {
 	    if (shrink) {

@@ -189,7 +189,7 @@ Pixmap XmuLocatePixmapFile (screen, name, fore, back, depth,
 	    xrm_class[1] = NULLQUARK;
 	    if (!XrmGetDatabase(dpy)) {
 		/* what a hack; need to initialize it */
-		(void) XGetDefault (dpy, "", "");
+		XGetDefault (dpy, "", "");
 	    }
 	    if (XrmQGetResource (XrmGetDatabase(dpy), xrm_name, xrm_class, 
 				 &rep_type, &value) &&

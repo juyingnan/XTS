@@ -134,11 +134,11 @@ struct alrmaction *new_aa, *old_aa;
 
 	/* SIGALRM is blocked between tet_sigsafe_start/end calls,
 	   so unblock it.  (This means the handler mustn't longjmp.) */
-	(void) sigemptyset(&alrmset);
-	(void) sigaddset(&alrmset, SIGALRM);
-	(void) sigprocmask(SIG_UNBLOCK, &alrmset, &old_aa->mask);
+	sigemptyset(&alrmset);
+	sigaddset(&alrmset, SIGALRM);
+	sigprocmask(SIG_UNBLOCK, &alrmset, &old_aa->mask);
 
-	(void) alarm(new_aa->waittime);
+	alarm(new_aa->waittime);
 
 #else /* TET_THREADS */
 
@@ -166,7 +166,7 @@ struct alrmaction *new_aa, *old_aa;
 	TRACE2(tet_Tbuf, 6, "allocate condition variable = %s",
 		tet_i2x(alrmarg->cvp));
 
-	(void) TET_COND_INIT(alrmarg->cvp);
+	TET_COND_INIT(alrmarg->cvp);
 
 	/* call alrm_thr() in a new thread */
 	alrmarg->waittime = new_aa->waittime;
@@ -176,7 +176,7 @@ struct alrmaction *new_aa, *old_aa;
 	err = TET_THR_CREATE(alrm_thr, (void *) alrmarg, &old_aa->join_tid);
 	if (err != 0)
 	{
-		(void) TET_COND_DESTROY(alrmarg->cvp);
+		TET_COND_DESTROY(alrmarg->cvp);
 		TRACE2(tet_Tbuf, 6, "free condition variable = %s",
 			tet_i2x(alrmarg->cvp));
 		free((void *)alrmarg->cvp);
@@ -193,9 +193,9 @@ struct alrmaction *new_aa, *old_aa;
 	 * action and send a SIGALRM to this thread.
 	 */
 
-	(void) sigemptyset(&alrmset);
-	(void) sigaddset(&alrmset, SIGALRM);
-	(void) TET_THR_SIGSETMASK(SIG_UNBLOCK, &alrmset, &old_aa->mask);
+	sigemptyset(&alrmset);
+	sigaddset(&alrmset, SIGALRM);
+	TET_THR_SIGSETMASK(SIG_UNBLOCK, &alrmset, &old_aa->mask);
 	old_aa->cvp = alrmarg->cvp;
 
 	/* note alrmarg is freed in alrm_thr() */
@@ -253,7 +253,7 @@ void *varg;
 	MTX_UNLOCK(&tet_alarm_mtx);
 	if (err == 0)
 	{
-		(void) TET_COND_DESTROY(cvp);
+		TET_COND_DESTROY(cvp);
 		TRACE2(tet_Tbuf, 6, "free condition variable = %s",
 			tet_i2x(cvp));
 		free((void *)cvp);
@@ -293,11 +293,11 @@ void *varg;
 			"second TET_COND_TIMEDWAIT() timed out in alrm_thr()",
 			(char *)0);
 
-	(void) sigaction(SIGALRM, &oldsigact, (struct sigaction *)0);
+	sigaction(SIGALRM, &oldsigact, (struct sigaction *)0);
 
 	MTX_UNLOCK(&tet_sigalrm_mtx);
 
-	(void) TET_COND_DESTROY(cvp);
+	TET_COND_DESTROY(cvp);
 	TRACE2(tet_Tbuf, 6, "free condition variable = %s", tet_i2x(cvp));
 	free((void *)cvp);
 
@@ -312,8 +312,8 @@ struct alrmaction *old_aa;
 {
 #ifndef TET_THREADS
 
-	(void) alarm(0);
-	(void) sigprocmask(SIG_SETMASK, &old_aa->mask, (sigset_t *)0);
+	alarm(0);
+	sigprocmask(SIG_SETMASK, &old_aa->mask, (sigset_t *)0);
 	if (sigaction(SIGALRM, &old_aa->sa, (struct sigaction *)0) == -1)
 		return -1;
 
@@ -326,10 +326,10 @@ struct alrmaction *old_aa;
 		return -1;
 	}
 
-	(void) TET_THR_SIGSETMASK(SIG_SETMASK, &old_aa->mask, (sigset_t *) 0);
+	TET_THR_SIGSETMASK(SIG_SETMASK, &old_aa->mask, (sigset_t *) 0);
 	MTX_LOCK(&tet_alarm_mtx);
 	old_aa->waittime = 0;	/* used as condition var */
-	(void) TET_COND_SIGNAL(old_aa->cvp);
+	TET_COND_SIGNAL(old_aa->cvp);
 	MTX_UNLOCK(&tet_alarm_mtx);
 	old_aa->cvp = NULL;	/* so a second call will give EINVAL */
 

@@ -72,7 +72,7 @@ int state;
 	case SS_DEAD:
 		return("DEAD");
 	default:
-		(void) sprintf(msg, "%s%d", text, state);
+		sprintf(msg, "%s%d", text, state);
 		return(msg);
 	}
 }

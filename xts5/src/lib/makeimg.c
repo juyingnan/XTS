@@ -182,7 +182,7 @@ unsigned long pixel;
 
 	for (x = 0; x < ximage->width; x++)
 		for (y = 0; y < ximage->height; y++)
-			(void) XPutPixel(ximage, x, y, pixel);
+			XPutPixel(ximage, x, y, pixel);
 }
 
 /*
@@ -200,5 +200,5 @@ unsigned long pixel;
 
 	for (x = 0; x < ximage->width; x += 5)
 		for (y = 0; y < ximage->height; y++)
-			(void) XPutPixel(ximage, x, y, pixel);
+			XPutPixel(ximage, x, y, pixel);
 }

@@ -364,7 +364,7 @@ char *data;
 
 	if (tet_minfoline(&data, 1) != 0)
 	{
-		(void) sprintf(errbuf, fmt, data);
+		sprintf(errbuf, fmt, data);
 		tet_error(-tet_errno, errbuf);
 		tet_exit(EXIT_FAILURE);
 	}
@@ -414,7 +414,7 @@ int nlines;
 			continue;
 
 		/* generate the info line preamble and format the line */
-		(void) sprintf(header, "%d|%ld %d %03d%05ld %ld %ld|", 
+		sprintf(header, "%d|%ld %d %03d%05ld %ld %ld|",
 			TET_JNL_TC_INFO, tet_activity, tet_thistest, 
 			tet_mysysid, tet_context, tet_block, tet_sequence++);
 		tet_msgform(header, lines[lnum], linebuf);
@@ -441,7 +441,7 @@ int nlines;
 			API_UNLOCK;
 			return(-1);
 		}
-		(void) strcpy(&outbuf[bufpos], linebuf);
+		strcpy(&outbuf[bufpos], linebuf);
 
 		/* remember offset from start of outbuf */
 		/* (can't save pointer, as outbuf may move when grown) */
@@ -537,7 +537,7 @@ va_list ap;
 	else
 	{
 		inbuflen = vfprintf(fp, format, ap) + 1;
-		(void) fclose(fp);
+		fclose(fp);
 
 		if (inbuflen <= (int) sizeof(defaultbuf))
 		{
@@ -591,7 +591,7 @@ va_list ap;
 			len = endp - inptr;
 
 		/* generate the info line preamble */
-		(void) sprintf(linebuf, "%d|%ld %d %03d%05ld %ld %ld|", 
+		sprintf(linebuf, "%d|%ld %d %03d%05ld %ld %ld|",
 			TET_JNL_TC_INFO, tet_activity, tet_thistest, 
 			tet_mysysid, tet_context, tet_block, tet_sequence++);
 
@@ -616,7 +616,7 @@ va_list ap;
 
 		/* assemble the complete line and add it to output buffer */
 
-		(void) strncat(linebuf, inptr, (size_t)len);
+		strncat(linebuf, inptr, (size_t)len);
 		if (*(inptr += len) == '\n')
 			inptr++; /* now points to start of next line */
 		len = strlen(linebuf) + 1; /* length including the null */
@@ -645,7 +645,7 @@ va_list ap;
 			API_UNLOCK;
 			return(-1);
 		}
-		(void) strcpy(&outbuf[outpos], linebuf);
+		strcpy(&outbuf[outpos], linebuf);
 
 		/* remember offset from start of outbuf */
 		/* (can't save pointer, as outbuf may move when grown) */
@@ -746,7 +746,7 @@ int result;
 
 	if (tet_thistest == 0)
 	{
-		(void) sprintf(errmsg,
+		sprintf(errmsg,
 			"tet_result(%d) called from test case startup or cleanup function",
 			result);
 		tet_error(0, errmsg);
@@ -770,7 +770,7 @@ int result;
 			tet_combined_ok = 0;
 			break;
 		}
-		(void) sprintf(errmsg,
+		sprintf(errmsg,
 			"tet_result(): can't send result %d to XRESD",
 			result);
 		tet_error(tet_xderrno, errmsg);
@@ -790,7 +790,7 @@ int result;
 	resname = tet_get_code(result, (int *)NULL);
 	if (resname == NULL)
 	{
-		(void) sprintf(errmsg,
+		sprintf(errmsg,
 			"INVALID result code %d passed to tet_result()",
 			result);
 		tet_error(0, errmsg);
@@ -932,20 +932,20 @@ char **msgs;
 	for (; nmsgs > 0; nmsgs--, msgs++) {
 		if (!*msgs && !errnum)
 			continue;
-		(void) fprintf(stderr, "%s: %s",
+		fprintf(stderr, "%s: %s",
 			tet_pname, *msgs ? *msgs : "(NULL)");
 		if (errnum > 0) {
-			(void) fprintf(stderr, ", errno = %d (%s)", 
+			fprintf(stderr, ", errno = %d (%s)",
 				errnum, tet_errname(errnum));
 		}
 		else if (errnum < 0) {
-			(void) fprintf(stderr, ", reply code = %s",
+			fprintf(stderr, ", reply code = %s",
 				tet_ptrepcode(errnum));
 		}
-		(void) fprintf(stderr, "\n");
+		fprintf(stderr, "\n");
 		errnum = 0;
 	}
-	(void) fflush(stderr);
+	fflush(stderr);
 }
 
 /*
@@ -1073,17 +1073,17 @@ char *msg, *outbuf;
 	** put errno first so as to avoid it being lost by truncation
 	*/
 	p = header;
-	(void) sprintf(p, "%d|%ld|system %d", TET_JNL_TCM_INFO,
+	sprintf(p, "%d|%ld|system %d", TET_JNL_TCM_INFO,
 		tet_activity, tet_mysysid);
 	p += strlen(p);
 	if (errnum > 0)
-		(void) sprintf(p, ", errno = %d (%s)",
+		sprintf(p, ", errno = %d (%s)",
 			errnum, tet_errname(errnum));
 	else if (errnum < 0)
-		(void) sprintf(p, ", reply code = %s", 
+		sprintf(p, ", reply code = %s",
 			tet_ptrepcode(errnum));
 	p += strlen(p);
-	(void) sprintf(p, ": ");
+	sprintf(p, ": ");
 
 	/* Check the message format and write it into outbuf */
 	tet_msgform(header, msg ? msg : "(NULL)", outbuf);
@@ -1180,7 +1180,7 @@ char *header, *data, *outbuf;
 
 	/* see if the line was truncated */
 	if (*p1) {
-		(void) sprintf(errmsg, fmt, (int) (sizeof errmsg - sizeof fmt),
+		sprintf(errmsg, fmt, (int) (sizeof errmsg - sizeof fmt),
 			header);
 		tet_error(0, errmsg);
 	}
@@ -1207,7 +1207,7 @@ int *abortflag;
 		/* file name is specified by TET_CODE communication variable */
 		fname = getenv("TET_CODE");
 		if (fname != NULL && *fname != '\0')
-			(void) tet_readrescodes(fname);
+			tet_readrescodes(fname);
 		read_done++;
 	}
 

@@ -193,7 +193,7 @@ Block_Info	*info;
 	}
 	if (setjmp(jumptohere)) {
 		delete("Timeout in block routine");
-		(void) unlink(block_file);
+		unlink(block_file);
 		return(-1);
 	}
 	parent_status = 1;
@@ -201,7 +201,7 @@ Block_Info	*info;
 	/*
 	 * try removing block file just in case it still exists...
 	 */
-	(void) unlink(block_file);
+	unlink(block_file);
 	/*
 	 * check for problems in block_parent_proc
 	 */
@@ -292,7 +292,7 @@ block_child_proc()
 static void
 block_parent_proc()
 {
-	(void) signal(SIGALRM, block_alarm);
+	signal(SIGALRM, block_alarm);
 	alarm(TIMEOUT_TIME);
 	parent_status = blocker(gdisplay, ginfo);
 	alarm(0);

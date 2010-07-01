@@ -96,7 +96,7 @@ int timeout;
 	ASSERT(dir && *dir);
 
 	/* format the pid string */
-	(void) sprintf(pidstr, "%05lu", pid);
+	sprintf(pidstr, "%05lu", pid);
 
 	/* allocate storage for the lock file name */
 	if (BUFCHK(&fname, &fnamelen, (int) (strlen(dir) + strlen(pidstr)) + 4) < 0)
@@ -119,7 +119,7 @@ int timeout;
 		}
 		for (salt1 = 'a'; salt1 <= 'z'; salt1++) {
 			for (salt2 = 'a'; salt2 <= 'z'; salt2++) {
-				(void) sprintf(fname, "%s/%s%c%c",
+				sprintf(fname, "%s/%s%c%c",
 					dir, pidstr, salt1, salt2);
 				if ((fd = OPEN(fname, O_RDONLY | O_CREAT | O_EXCL, FILEMODE)) >= 0 || errno != EEXIST)
 					break;
@@ -149,11 +149,11 @@ int timeout;
 		}
 		if (timeout > 0 && time((time_t *) 0) > start + timeout)
 			return(ER_TIMEDOUT);
-		(void) SLEEP(2);
+		SLEEP(2);
 	}
 
 	/* all ok so close the file and return success */
-	(void) CLOSE(fd);
+	CLOSE(fd);
 	*lnp = fname;
 	return(ER_OK);
 }

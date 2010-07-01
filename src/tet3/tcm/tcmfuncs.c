@@ -149,7 +149,7 @@ char **argv;
 	/* get TET_ROOT out of the environment */
 	if ((envstring = getenv(tetroot_name)) == (char *) 0 || !*envstring)
 		envstring = strdup(".");
-	(void) sprintf(tet_root, "%.*s", (int) sizeof tet_root - 1, envstring);
+	sprintf(tet_root, "%.*s", (int) sizeof tet_root - 1, envstring);
 
 	/* get the dtet ti args out of the environment and count them */
 	if ((envstring = getenv(tiargs_name)) == (char *) 0 || !*envstring) {
@@ -339,7 +339,7 @@ char **argv;
 			case SS_SYNCYES:
 				break;
 			default:
-				(void) sprintf(errmsg,
+				sprintf(errmsg,
 				"initial sync error, sysid = %d, state = %s",
 					sp->sy_sysid,
 					tet_systate(sp->sy_state));
@@ -371,7 +371,7 @@ void tet_dtcmerror(int errnum, const char *file, int line,
 	int combined_save = 0;
 
 	/* start the buffer with filename and line number */
-	(void) sprintf(p, "(%s, %d): ", tet_basename(file), line);
+	sprintf(p, "(%s, %d): ", tet_basename(file), line);
 	p += strlen(p);
 
 	/* append the first message string */

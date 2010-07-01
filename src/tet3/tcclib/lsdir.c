@@ -109,7 +109,7 @@ char *dir;
 		*++fip = (char *) 0;
 		nfiles++;
 	}
-	(void) CLOSEDIR(dirp);
+	CLOSEDIR(dirp);
 
 	return(files);
 }

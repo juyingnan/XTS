@@ -265,7 +265,7 @@ register struct ptab *pp;
 			rc = ER_ERR;
 	}
 
-	(void) fclose(fp);
+	fclose(fp);
 	cflags = (cflags & ~CF_SINPROGRESS) | CF_SDONE;
 	pp->ptm_rc = rc;
 }
@@ -413,7 +413,7 @@ int mode;
 
 	if ((rc = op_c3(fname)) == ER_OK) {
 		if (tet_config[mode]) {
-			(void) UNLINK(tet_config[mode]);
+			UNLINK(tet_config[mode]);
 			TRACE3(tet_Tbuf, 6, "free tet_config[%s] = %s",
 				tet_i2a(mode), tet_i2x(tet_config[mode]));
 			free(tet_config[mode]);
@@ -457,7 +457,7 @@ char *fname;
 
 	/* remove the file if any of the above failed */
 	if (rc != ER_OK)
-		(void) UNLINK(fname);
+		UNLINK(fname);
 
 	return(rc);
 }
@@ -797,7 +797,7 @@ register struct ptab *pp;
 		pp->ptm_rc = ER_ERR;
 		return;
 	}
-	(void) sprintf(var, "%s=%s", envname, tet_config[mode]);
+	sprintf(var, "%s=%s", envname, tet_config[mode]);
 	if (tet_putenv(var) < 0) {
 		pp->ptm_rc = ER_ERR;
 		return;
@@ -818,6 +818,6 @@ void config_cleanup()
 
 	for (n = 0; n < sizeof tet_config / sizeof tet_config[0]; n++)
 		if (tet_config[n])
-			(void) UNLINK(tet_config[n]);
+			UNLINK(tet_config[n]);
 }
 

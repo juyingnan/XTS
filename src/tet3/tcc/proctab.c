@@ -214,7 +214,7 @@ int state;
 	case PRS_WAIT:
 		return("WAIT");
 	default:
-		(void) sprintf(msg, "%s%d", text, state);
+		sprintf(msg, "%s%d", text, state);
 		return(msg);
 	}
 }
@@ -256,7 +256,7 @@ int state;
 	case TCS_END:
 		return("END");
 	default:
-		(void) sprintf(msg, "%s%d", text, state);
+		sprintf(msg, "%s%d", text, state);
 		return(msg);
 	}
 }
@@ -308,7 +308,7 @@ int state;
 	case PTS_SIGKILL:
 		return("SIGKILL");
 	default:
-		(void) sprintf(msg, "%s%d", text, state);
+		sprintf(msg, "%s%d", text, state);
 		return(msg);
 	}
 }

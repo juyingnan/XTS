@@ -168,7 +168,7 @@ va_list args;
 
 
 	if (mess && *mess) {
-		(void) vsprintf(buf, mess, args);
+		vsprintf(buf, mess, args);
 		report(buf);
 	} else
 		report("Test deleted");

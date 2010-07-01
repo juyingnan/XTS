@@ -725,7 +725,7 @@ register struct ptab *pp;
 		text = tet_getresname(result, &abflag);
 		if (abflag && (xp->xt_flags & XF_TCABORT) == 0) {
 			xp->xt_flags |= XF_TCABORT;
-			(void) sprintf(buf, fmt, result);
+			sprintf(buf, fmt, result);
 			xrinfo(xp, buf, text ? text : gcerr);
 		}
 	}
@@ -830,19 +830,19 @@ register int code;
 	/* format the variable part of the message */
 	switch (code) {
 	case TET_JNL_IC_START:
-		(void) sprintf(buf, "%d %d", xp->xt_icno, xp->xt_tpcount);
+		sprintf(buf, "%d %d", xp->xt_icno, xp->xt_tpcount);
 		text = "IC Start";
 		break;
 	case TET_JNL_IC_END:
-		(void) sprintf(buf, "%d %d", xp->xt_icno, xp->xt_tpcount);
+		sprintf(buf, "%d %d", xp->xt_icno, xp->xt_tpcount);
 		text = "IC End";
 		break;
 	case TET_JNL_TP_START:
-		(void) sprintf(buf, "%d", xp->xt_tpno);
+		sprintf(buf, "%d", xp->xt_tpno);
 		text = "TP Start";
 		break;
 	case TET_JNL_TP_RESULT:
-		(void) sprintf(buf, "%d %d", xp->xt_tpno, xp->xt_result);
+		sprintf(buf, "%d %d", xp->xt_tpno, xp->xt_result);
 		if ((text = tet_getresname(xp->xt_result, (int *) 0)) == (char *) 0)
 			text = "(NO RESULT NAME)";
 		break;
@@ -938,7 +938,7 @@ int state;
 	case XS_DEAD:
 		return("DEAD");
 	default:
-		(void) sprintf(msg, "%s%d", text, state);
+		sprintf(msg, "%s%d", text, state);
 		return(msg);
 	}
 }

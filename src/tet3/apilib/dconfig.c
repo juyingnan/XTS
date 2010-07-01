@@ -150,7 +150,7 @@ TET_IMPORT void tet_config()
 	/* open the file */
 	if ((fp = fopen(file, "r")) == (FILE *) 0) {
 		err = errno;
-		(void) sprintf(msg, "could not open config file \"%.*s\"",
+		sprintf(msg, "could not open config file \"%.*s\"",
 			MAXPATH, file);
 		tet_error(err, msg);
 		return;
@@ -181,7 +181,7 @@ TET_IMPORT void tet_config()
 		if (p < buf)
 			continue;
 		if (!tet_equindex(buf)) {
-			(void) sprintf(msg, fmt, lcount, MAXPATH, file);
+			sprintf(msg, fmt, lcount, MAXPATH, file);
 			tet_error(0, msg);
 			continue;
 		}
@@ -195,6 +195,6 @@ TET_IMPORT void tet_config()
 	}
 
 	/* finally, close the file and return */
-	(void) fclose(fp);
+	fclose(fp);
 }
 

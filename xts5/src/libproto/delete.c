@@ -173,7 +173,7 @@ va_list args;
 	Xst_delete_count++;
 
 	if (mess && *mess) {
-		(void) vsprintf(buf, mess, args);
+		vsprintf(buf, mess, args);
 		report(buf);
 	} else
 		report("Test deleted");

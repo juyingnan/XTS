@@ -247,7 +247,7 @@ struct tet_synmsg *msgp;
 			char buf[100];
 			switch (tet_sderrno) {
 			case ER_DONE:
-				(void) sprintf(buf,
+				sprintf(buf,
 				    "sync event already happened, syncptno = %ld",
 				    syncptno);
 				tet_error(0, buf);
@@ -362,19 +362,19 @@ int nsys;
 	** written out all at once;
 	** if this is not possible they are written out one-at-a-time
 	*/
-	(void) sprintf(buf, "sync operation failed, syncptno = %ld, ",
+	sprintf(buf, "sync operation failed, syncptno = %ld, ",
 		syncptno);
 	p = buf + strlen(buf);
 	if (tet_errno == TET_ER_SYNCERR)
-		(void) sprintf(p, "%sother system%s did not sync or timed out",
+		sprintf(p, "%sother system%s did not sync or timed out",
 			nsys > 1 ? "one or more of the " : nullstr,
 			nsys == 1 ? nullstr : sstr);
 	else if (tet_errno == TET_ER_TIMEDOUT)
-		(void) sprintf(p, "request timed out");
+		sprintf(p, "request timed out");
 	else if (tet_errno >= 0 && tet_errno < tet_nerr)
-		(void) sprintf(p, "%s", tet_errlist[tet_errno]);
+		sprintf(p, "%s", tet_errlist[tet_errno]);
 	else
-		(void) sprintf(p, "tet_errno = %d (unknown value)", tet_errno);
+		sprintf(p, "tet_errno = %d (unknown value)", tet_errno);
 	if (lines)
 		*lp++ = tet_strstore(buf);
 	else
@@ -382,7 +382,7 @@ int nsys;
 
 	/* generate the per-system diagnostics */
 	for (tsp = statp; tsp < statp + nsys; tsp++) {
-		(void) sprintf(buf, "system = %2d, state = %s",
+		sprintf(buf, "system = %2d, state = %s",
 			tsp->tsy_sysid, tet_systate(tsp->tsy_state));
 		if (lines)
 			*lp++ = tet_strstore(buf);

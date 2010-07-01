@@ -270,7 +270,7 @@ int proc2sclist()
 			continue;
 		TRACE3(tet_Tscen, 4, "tloop check loop TOP: descend tree below scenario %s at %s",
 			ep->sc_scenario, tet_i2x(ep));
-		(void) check_timed_loops(ep->sc_child);
+		check_timed_loops(ep->sc_child);
 	}
 	if (scenerrors)
 		return(0);
@@ -517,7 +517,7 @@ char *fname;
 	static char fmt[] = "found unmatched %.20s directive";
 	char msg[sizeof fmt + 20];
 
-	(void) sprintf(msg, fmt, prscdir(directive));
+	sprintf(msg, fmt, prscdir(directive));
 	scenerror(msg, (char *) 0, lineno, fname);
 }
 
@@ -1109,7 +1109,7 @@ register struct scentab *ep1;
 		s1 = prsctype(ep1->sc_type);
 		s2 = "element";
 	}
-	(void) sprintf(msg, fmt, s1, s2);
+	sprintf(msg, fmt, s1, s2);
 	TRACESCELEM(tet_Tscen, 6, ep1, msg);
 #endif
 
@@ -1294,7 +1294,7 @@ struct scentab **sctp;
 		if (edp >= dp->dt_enc + dp->dt_nenc) {
 			scenermsg(prscdir(q->sc_directive), "directive",
 				q->sc_lineno, q->sc_fname);
-			(void) sprintf(msg, fmt, prscdir(ep->sc_directive));
+			sprintf(msg, fmt, prscdir(ep->sc_directive));
 			scenerror(msg, "directive", ep->sc_lineno,
 				ep->sc_fname);
 		}
@@ -1308,7 +1308,7 @@ struct scentab **sctp;
 
 void check_empty_timed_loops()
 {
-	(void) check_timed_loops(sctree->sc_child);
+	check_timed_loops(sctree->sc_child);
 	if (scenerrors)
 		scengiveup();
 }

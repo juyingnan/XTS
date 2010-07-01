@@ -700,7 +700,7 @@ void XSetAuthorization (name, namelen, data, datalen)
     if (datalen > 0)  {
 	tmpdata = Xmalloc ((unsigned) datalen);
 	if (!tmpdata) {
-	    if (tmpname) (void) Xfree (tmpname);
+	    if (tmpname) Xfree (tmpname);
 	    return;
 	}
 	memcpy (tmpdata, data, datalen);
@@ -1054,7 +1054,7 @@ GetAuthorization(
 	auth_data = (unsigned char *) xauth_data;
     } else {
 	char dpynumbuf[40];		/* big enough to hold 2^64 and more */
-	(void) sprintf (dpynumbuf, "%d", idisplay);
+	sprintf (dpynumbuf, "%d", idisplay);
 
 	authptr = XauGetBestAuthByAddr ((unsigned short) family,
 				    (unsigned short) saddrlen,

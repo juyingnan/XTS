@@ -163,7 +163,7 @@ va_list args;
 
 
 	if (mess && *mess) {
-		(void) vsprintf(buf, mess, args);
+		vsprintf(buf, mess, args);
 		report(buf);
 	} else
 		report("Test unsupported");
@@ -196,7 +196,7 @@ va_list args;
 
 
 	if (mess && *mess) {
-		(void) vsprintf(buf, mess, args);
+		vsprintf(buf, mess, args);
 		report(buf);
 	} else
 		report("Test not in use");
@@ -229,7 +229,7 @@ va_list args;
 
 
 	if (mess && *mess) {
-		(void) vsprintf(buf, mess, args);
+		vsprintf(buf, mess, args);
 		report(buf);
 	} else
 		report("Test is untested");

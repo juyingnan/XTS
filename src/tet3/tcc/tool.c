@@ -299,7 +299,7 @@ char *s;
 	*/
 	ap = *avp + *anp;
 	if (splitflds && nflds > 1) {
-		(void) sprintf(buf, "%.*s", (int) sizeof buf - 1, s);
+		sprintf(buf, "%.*s", (int) sizeof buf - 1, s);
 		nflds = tet_getargs(buf, ap, nflds);
 	}
 	else
@@ -360,7 +360,7 @@ char *tcname, **argv, *ocfname;
 	case TCS_EXEC:
 	case TCS_CLEAN:
 		xresfilename(prp->pr_scen->sc_tcname, buf, sizeof buf);
-		(void) tcc_unlink(*prp->pr_sys, buf);
+		tcc_unlink(*prp->pr_sys, buf);
 		prp->pr_tetxres = rstrstore(buf);
 		break;
 	}
@@ -391,7 +391,7 @@ char *tcname, **argv, *ocfname;
 
 	/* unlink an existing output capture file if one is specified */
 	if (ocfname)
-		(void) tcc_unlink(*prp->pr_sys, ocfname);
+		tcc_unlink(*prp->pr_sys, ocfname);
 
 	/*
 	** do the exec:
@@ -715,7 +715,7 @@ char *ocfname;
 		}
 		if (getremfile(prp, ocfname, tet_basename(tfname)) == 0)
 			ocf2jnl2(prp, tfname);
-		(void) UNLINK(tfname);
+		UNLINK(tfname);
 	}
 	else
 #endif /* !TET_LITE */	/* -END-LITE-CUT- */
@@ -753,7 +753,7 @@ char *ocfname;
 		jnl_captured(prp, buf);
 	}
 
-	(void) fclose(fp);
+	fclose(fp);
 }
 
 
@@ -784,7 +784,7 @@ char *fromfile, *tofile;
 	** directory on the local system
 	*/
 	if (tet_tcrxfile(*prp->pr_sys, fromfile, tofile) < 0) {
-		(void) sprintf(msg, fmt, sizeof msg - sizeof fmt, tofile);
+		sprintf(msg, fmt, sizeof msg - sizeof fmt, tofile);
 		prperror(prp, *prp->pr_sys, tet_tcerrno, msg, fromfile);
 		return(-1);
 	}

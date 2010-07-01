@@ -341,25 +341,25 @@ TET_IMPORT void tet_trace(const char *s1, const char *s2, const char *s3,
 		tet_tfopen();
 
 #ifndef TET_THREADS
-	(void) fprintf(tet_tfp, "%s (%ld)", tet_progname, (long) GETPID());
+	fprintf(tet_tfp, "%s (%ld)", tet_progname, (long) GETPID());
 #else
-	(void) fprintf(tet_tfp, "%s (%ld.%ld)", tet_progname, (long) GETPID(),
+	fprintf(tet_tfp, "%s (%ld.%ld)", tet_progname, (long) GETPID(),
 		(long) TET_THR_SELF());
 #endif
 	if (tet_Ttrace > 0) {
 		now = time((time_t *) 0);
 		tp = localtime(&now);
 		if (tet_Ttrace > 1)
-			(void) fprintf(tet_tfp, " %d:%02d:%02d",
+			fprintf(tet_tfp, " %d:%02d:%02d",
 				tp->tm_hour, tp->tm_min, tp->tm_sec);
 		else
-			(void) fprintf(tet_tfp, " %d:%02d",
+			fprintf(tet_tfp, " %d:%02d",
 				tp->tm_min, tp->tm_sec);
 	}
-	(void) fprintf(tet_tfp, ": ");
-	(void) fprintf(tet_tfp, s1, s2, s3, s4, s5, s6);
-	(void) putc('\n', tet_tfp);
-	(void) fflush(tet_tfp);
+	fprintf(tet_tfp, ": ");
+	fprintf(tet_tfp, s1, s2, s3, s4, s5, s6);
+	putc('\n', tet_tfp);
+	fflush(tet_tfp);
 
 	errno = save_errno;
 }

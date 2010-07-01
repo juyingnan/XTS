@@ -77,7 +77,7 @@ int state;
 	case PS_CONNECT:
 		return("CONNECT");
 	default:
-		(void) sprintf(msg, "%s%d", text, state);
+		sprintf(msg, "%s%d", text, state);
 		return(msg);
 	}
 }

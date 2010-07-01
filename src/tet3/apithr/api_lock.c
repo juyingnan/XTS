@@ -100,7 +100,7 @@ tet_api_lock(int getlock, const char *file, int line)
 			ownertid = TET_THR_SELF();
 
 			/* now it's safe to store the old signal set */
-			(void) memcpy((void *)&oset, (void *)&tmpset, sizeof oset);
+			memcpy((void *)&oset, (void *)&tmpset, sizeof oset);
 		}
 		nestlevel++;
 
@@ -118,11 +118,11 @@ tet_api_lock(int getlock, const char *file, int line)
 		if (nestlevel == 0)
 		{
 			/* copy signal set to safe storage before unlocking */
-			(void) memcpy((void *)&tmpset, (void *)&oset, sizeof oset);
+			memcpy((void *)&tmpset, (void *)&oset, sizeof oset);
 
 			TET_MUTEX_UNLOCK(&tet_top_mtx);
 
-			(void) TET_THR_SIGSETMASK(SIG_SETMASK, &tmpset, (sigset_t *)0);
+			TET_THR_SIGSETMASK(SIG_SETMASK, &tmpset, (sigset_t *)0);
 		}
 	}
 }

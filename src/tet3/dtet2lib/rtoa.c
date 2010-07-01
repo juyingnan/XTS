@@ -71,7 +71,7 @@ struct remid *rp;
 		count = 0;
 	p = buf[count];
 
-	(void) sprintf(p, fmt, rp->re_sysid, rp->re_pid,
+	sprintf(p, fmt, rp->re_sysid, rp->re_pid,
 		tet_ptptype(rp->re_ptype));
 	return(p);
 }

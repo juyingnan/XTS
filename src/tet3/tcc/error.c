@@ -86,8 +86,8 @@ void tcc_error(int errnum, const char *file, int line, const char *s1,
 	if (jnl_usable())
 		jnl_tcc_msg(msg);
 	else {
-		(void) fprintf(stderr, "%s %s\n", tet_progname, msg);
-		(void) fflush(stderr);
+		fprintf(stderr, "%s %s\n", tet_progname, msg);
+		fflush(stderr);
 	}
 }
 
@@ -116,7 +116,7 @@ void tcc_prperror(struct proctab *prp, int sysid, int errnum, const char *file,
 
 	/* format the message */
 	if (sysid >= 0)
-		(void) sprintf(text, fmt, sysid);
+		sprintf(text, fmt, sysid);
 	else
 		text[0] = '\0';
 	errfmt(errnum, file, line, s1, s2, text, msg);
@@ -136,7 +136,7 @@ static void errfmt(int errnum, const char *file, int line, const char *s1,
 	register char *p = msg;
 
 	/* generate the source file and line number */
-	(void) sprintf(p, "(%s, %d): ", file, line);
+	sprintf(p, "(%s, %d): ", file, line);
 	p += strlen(p);
 
 	/* append the first message string */

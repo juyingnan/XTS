@@ -160,7 +160,7 @@ void ss_tsinitb4fork()
 	errno = 0;
 	if ((sd = fcntl(0, F_DUPFD, 3)) < 3)
 		fatal(errno, "can't dup stdin socket", (char *) 0);
-	(void) close(0);
+	close(0);
 
 
 	/* allocate a ptab entry for the incoming request */
@@ -176,7 +176,7 @@ void ss_tsinitb4fork()
 			(char *) 0);
 
 	/* log the connection */
-	(void) tet_ss_tsafteraccept(pp);
+	tet_ss_tsafteraccept(pp);
 
 	/* register the ptab entry */
 	tet_ss_newptab(pp);
@@ -207,7 +207,7 @@ void ss_tsinitb4fork()
 		errno = 0;
 		if ((tet_listen_sd = fcntl(sd, F_DUPFD, 3)) < 3)
 			fatal(errno, "can't dup listen socket", (char *) 0);
-		(void) close(sd);
+		close(sd);
 	}
 	else
 		tet_listen_sd = sd;
@@ -222,7 +222,7 @@ void ss_tsinitb4fork()
 	tet_ts_listen(tet_listen_sd);
 
 	/* arrange to reap child daemon processes */
-	(void) signal(SIGCHLD, waitchild);
+	signal(SIGCHLD, waitchild);
 
 #endif /* INETD */
 }
@@ -327,7 +327,7 @@ struct ptab *pp;
 		p = hp->h_name;
 	else
 		p = inet_ntoa(tp->tp_sin.sin_addr);
-	(void) sprintf(rhostname, "%.*s", (int) sizeof rhostname - 1, p);
+	sprintf(rhostname, "%.*s", (int) sizeof rhostname - 1, p);
 	logent("connection received from", rhostname);
 
 #ifdef INETD
@@ -344,9 +344,9 @@ struct ptab *pp;
 	else if (!pid) {
 		/* in child */
 		tet_mypid = getpid();
-		(void) close(tet_listen_sd);
+		close(tet_listen_sd);
 		tet_listen_sd = INVALID_SOCKET;
-		(void) signal(SIGCHLD, SIG_DFL);
+		signal(SIGCHLD, SIG_DFL);
 	}
 	else {
 		/* in parent - return -1 to close the socket and
@@ -376,7 +376,7 @@ int ss_tslogon()
 	FILE *fp;
 
 	ASSERT(tet_root[0]);
-	(void) sprintf(fname, "%.*s/%s",
+	sprintf(fname, "%.*s/%s",
 		(int) sizeof fname - (int) sizeof equiv - 1,
 		tet_root, equiv);
 
@@ -401,7 +401,7 @@ int ss_tslogon()
 	if (rc != ER_OK)
 		error(0, "refused login request from", rhostname);
 
-	(void) fclose(fp);
+	fclose(fp);
 	return(rc);
 }
 
@@ -424,7 +424,7 @@ int sig;
 	register int pid;
 #endif
 
-	(void) signal(SIGCHLD, SIG_DFL);
+	signal(SIGCHLD, SIG_DFL);
 
 #ifdef NOTRACE
 	while (tet_dowait3(&status, WNOHANG) > 0)
@@ -437,7 +437,7 @@ int sig;
 			tet_i2a(status & 0xff));
 #endif
 
-	(void) signal(SIGCHLD, waitchild);
+	signal(SIGCHLD, waitchild);
 }
 
 #endif

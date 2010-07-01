@@ -149,7 +149,7 @@ maheader(fp, buf)
 FILE	*fp;
 char	*buf;
 {
-	(void) fprintf(FpText, ".TH %s %s\n", State.name, State.chap);
+	fprintf(FpText, ".TH %s %s\n", State.name, State.chap);
 	skip(fp, buf);
 }
 
@@ -158,10 +158,10 @@ maassertion(fp, buf)
 FILE	*fp;
 char	*buf;
 {
-	(void) fprintf(FpText, ".TI ");
+	fprintf(FpText, ".TI ");
 	if (State.category != CAT_NONE)
-		(void) fprintf(FpText, "%c ", (char)State.category);
-	(void) fprintf(FpText, "\\\" %s-%d\n",
+		fprintf(FpText, "%c ", (char)State.category);
+	fprintf(FpText, "\\\" %s-%d\n",
 		State.name, State.assertion);
 	echon(fp, buf, FpText);
 	if (State.category == CAT_B || State.category == CAT_D) {
@@ -175,7 +175,7 @@ madefassertion(fp, buf)
 FILE	*fp;
 char	*buf;
 {
-	(void) fprintf(FpText, ".TI def \\\" %s-%d\n", State.name, State.assertion);
+	fprintf(FpText, ".TI def \\\" %s-%d\n", State.name, State.assertion);
 	echon(fp, buf, FpText);
 }
 
@@ -199,7 +199,7 @@ char	*buf;
 	if (hflag) {
 		if (sflag) {
 			FpHeader = cretmpfile(F_HEADER, NULL);
-			(void) fprintf(FpHeader, ".so head.t\n");
+			fprintf(FpHeader, ".so head.t\n");
 			outfile(FpHeader);
 		} else {
 			outcopy(F_STDHEADER);

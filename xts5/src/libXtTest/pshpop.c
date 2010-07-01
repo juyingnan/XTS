@@ -162,7 +162,7 @@ void pop_stdout()
 		return;
 	}
 
-	(void) fflush(stdout);
+	fflush(stdout);
 	if (dup2(Dup_stdout,fileno(stdout)) == -1) {
 		sprintf(ebuf, "ERROR: pop_stdout: could not restore stdout");
 		tet_infoline(ebuf);
@@ -237,7 +237,7 @@ void pop_stderr()
 		return;
 	}
 
-	(void) fflush(stderr);
+	fflush(stderr);
 	if (dup2(Dup_stderr,fileno(stderr)) == -1) {
 		sprintf(ebuf, "ERROR: pop_stderr: could not restore stderr");
 		tet_infoline(ebuf);
@@ -305,7 +305,7 @@ int restore_from_devnull()
 		return -1;
 	}
 
-	(void) fflush(stdout);
+	fflush(stdout);
 	if (dup2(Dup_stdout,fileno(stdout)) == -1) {
 		sprintf(ebuf, "ERROR: restore_from_devnull: could not restore stdout");
 		tet_infoline(ebuf);
@@ -323,7 +323,7 @@ int restore_from_devnull()
 		return -1;
 	}
 
-	(void) fflush(stderr);
+	fflush(stderr);
 	if (dup2(Dup_stderr,fileno(stderr)) == -1) {
 		sprintf(ebuf, "ERROR: restore_from_devnull: could not restore stderr");
 		tet_infoline(ebuf);

@@ -96,7 +96,7 @@ void rtlcopy()
 	/* do the copy */
 	errno = 0;
 	if (tet_fcopy(tet_tsroot, dest) < 0) {
-		(void) sprintf(msg, fmt, MAXPATH, tet_tsroot, MAXPATH, dest);
+		sprintf(msg, fmt, MAXPATH, tet_tsroot, MAXPATH, dest);
 		fatal(errno, msg, "the local system");
 	}
 
@@ -151,7 +151,7 @@ char *rtdir;
 	/* do the copy */
 	errno = 0;
 	if (tet_tcrcopy(sysid, tsroot, dest) < 0) {
-		(void) sprintf(msg, fmt, MAXPATH, tsroot, MAXPATH, dest);
+		sprintf(msg, fmt, MAXPATH, tsroot, MAXPATH, dest);
 		if (!IS_ER_ERRNO(tet_tcerrno))
 			errno = 0;
 		fatal(errno ? errno : tet_tcerrno, msg, tet_i2a(sysid));
@@ -235,7 +235,7 @@ char tdir[];
 	/* here to create the tmpdir */
 	errno = 0;
 	if (tcc_mkdir(sysid, tdir) < 0) {
-		(void) sprintf(msg, fmt, MAXPATH, tdir);
+		sprintf(msg, fmt, MAXPATH, tdir);
 		fatal(errno ? errno : tet_tcerrno, msg, tet_i2a(sysid));
 	}
 
@@ -398,7 +398,7 @@ char *from, *to;
 		err = IS_ER_ERRNO(tet_tcerrno) ? errno : tet_tcerrno;
 #endif /* TET_LITE */	/* -END-LITE-CUT- */
 	if (rc < 0) {
-		(void) sprintf(msg, fmt, MAXPATH, from);
+		sprintf(msg, fmt, MAXPATH, from);
 		prperror(prp, *prp->pr_sys, err, msg, to);
 		return(-1);
 	}
@@ -459,7 +459,7 @@ struct systab *sp;
 
 	/* create the results directory on the remote system if necessary */
 	if (tet_tcmkalldirs(sp->sy_sysid, resroot) < 0) {
-		(void) sprintf(msg, fmt, "",
+		sprintf(msg, fmt, "",
 			sizeof msg - sizeof fmt, resroot);
 		if (!IS_ER_ERRNO(tet_tcerrno))
 			errno = 0;
@@ -469,7 +469,7 @@ struct systab *sp;
 
 	/* create the saved files directory on the remote system */
 	if ((sfdir = tet_tcmksdir(sp->sy_sysid, resroot, resdirsuffix())) == (char *) 0) {
-		(void) sprintf(msg, fmt, below,
+		sprintf(msg, fmt, below,
 			sizeof msg - sizeof fmt - sizeof below, resroot);
 		error(tet_tcerrno, msg, tet_i2a(sp->sy_sysid));
 		return(-1);
@@ -548,7 +548,7 @@ int nsfiles;
 		prp->pr_currmode);
 
 	if (tsfiles) {
-		(void) sprintf(subdir, remote, *prp->pr_sys % 1000);
+		sprintf(subdir, remote, *prp->pr_sys % 1000);
 		fullpath(resdirname(), subdir, path, sizeof path,
 			*prp->pr_sys ? 1 : 0);
 		tcexecdir(prp, path, savedir, sizeof savedir);
@@ -571,7 +571,7 @@ int nsfiles;
 #endif /* TET_LITE */	/* -END-LITE-CUT- */
 
 	if (rc < 0) {
-		(void) sprintf(msg, fmt, MAXPATH, prp->pr_tcedir, *prp->pr_sys);
+		sprintf(msg, fmt, MAXPATH, prp->pr_tcedir, *prp->pr_sys);
 		prperror(prp, tsfiles ? 0 : *prp->pr_sys, tet_tcerrno,
 			msg, savedir);
 	}

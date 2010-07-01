@@ -104,7 +104,7 @@ struct xtab *xp;
 
 	if (xp) {
 		if (xp->xt_xfp)
-			(void) fclose(xp->xt_xfp);
+			fclose(xp->xt_xfp);
 		if (xp->xt_xfname) {
 			TRACE2(tet_Tbuf, 6, "free xtab xfname = %s",
 				tet_i2x(xp->xt_xfname));
@@ -164,9 +164,9 @@ void xtrm(xp)
 struct xtab *xp;
 {
 	if (xp->xt_flags & XF_TPINPROGRESS)
-		(void) tpend(xp);
+		tpend(xp);
 	if (xp->xt_flags & XF_ICINPROGRESS)
-		(void) icend(xp);
+		icend(xp);
 
 	tet_listremove((struct llist **) &xtab, (struct llist *) xp);
 }
@@ -219,9 +219,9 @@ register struct ptab *pp;
 					count++;
 			if (count == xp->xt_nud) {
 				if (xp->xt_flags & XF_TPINPROGRESS)
-					(void) tpend(xp);
+					tpend(xp);
 				if (xp->xt_flags & XF_ICINPROGRESS)
-					(void) icend(xp);
+					icend(xp);
 				if (!xp->xt_ptab) {
 					xtrm(xp);
 					xtfree(xp);

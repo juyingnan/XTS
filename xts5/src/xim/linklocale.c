@@ -154,8 +154,8 @@ char buf[BUF_LEN];
 		return(True);
 
    ic = tet_testlist[tet_thistest-1].icref;
-   (void) sprintf(name1, "a%d.%s.dat", ic, plocale);
-   (void) sprintf(name2, "a%d.dat", ic);
+   sprintf(name1, "a%d.%s.dat", ic, plocale);
+   sprintf(name2, "a%d.dat", ic);
 
 	fp1 = fopen(name1, "r");
 	if (fp1 == NULL)
@@ -189,7 +189,7 @@ char name[128];
 	if(config.debug_no_pixcheck) return;
 
    ic = tet_testlist[tet_thistest-1].icref;
-   (void) sprintf(name, "a%d.dat", ic);
+   sprintf(name, "a%d.dat", ic);
 
-	(void) unlink(name);
+	unlink(name);
 }

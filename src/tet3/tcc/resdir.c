@@ -143,7 +143,7 @@ char *resroot;
 		while ((dp = READDIR(dirp)) != (struct dirent *) 0)
 			if ((thisval = atoi(dp->d_name)) > maxval)
 				maxval = thisval;
-		(void) CLOSEDIR(dirp);
+		CLOSEDIR(dirp);
 	}
 
 	/*
@@ -156,7 +156,7 @@ char *resroot;
 
 	/* construct the name of the subdirectory for the selected
 		modes of operation */
-	(void) sprintf(buf, "%04d%s", maxval, resdirsuffix());
+	sprintf(buf, "%04d%s", maxval, resdirsuffix());
 
 	return(buf);
 }

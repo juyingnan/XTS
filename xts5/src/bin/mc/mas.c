@@ -153,7 +153,7 @@ masheader(fp, buf)
 FILE	*fp;
 char	*buf;
 {
-	(void) fprintf(FpText, ">>TITLE %s %s\n", State.name, State.chap);
+	fprintf(FpText, ">>TITLE %s %s\n", State.name, State.chap);
 	skip(fp, buf);
 }
 
@@ -162,13 +162,13 @@ masassertion(fp, buf)
 FILE	*fp;
 char	*buf;
 {
-	(void) fprintf(FpText, ">>ASSERTION ");
+	fprintf(FpText, ">>ASSERTION ");
 	if (State.category != CAT_NONE)
-		(void) fprintf(FpText, "%c ", (char)State.category);
-	(void) fprintf(FpText, "%s-%d\n",
+		fprintf(FpText, "%c ", (char)State.category);
+	fprintf(FpText, "%s-%d\n",
 		State.name, State.assertion);
 	assertfill(fp, buf, FpText, "");
-	(void) fprintf(FpText, "\n");
+	fprintf(FpText, "\n");
 }
 
 void
@@ -176,7 +176,7 @@ masstrategy(fp, buf)
 FILE	*fp;
 char	*buf;
 {
-	(void) fprintf(FpText, ">>STRATEGY\n");
+	fprintf(FpText, ">>STRATEGY\n");
 	echon(fp, buf, FpText);
 }
 
@@ -185,7 +185,7 @@ masdefassertion(fp, buf)
 FILE	*fp;
 char	*buf;
 {
-	(void) fprintf(FpText, ">>ASSERTION def %s-%d\n",
+	fprintf(FpText, ">>ASSERTION def %s-%d\n",
 		State.name, State.assertion);
 	echon(fp, buf, FpText);
 }

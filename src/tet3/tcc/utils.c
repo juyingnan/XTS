@@ -157,11 +157,11 @@ void scenermsg(s1, s2, lineno, fname)
 char *s1, *s2, *fname;
 int lineno;
 {
-	(void) fprintf(stderr, "%s: %s", tet_progname, s1);
+	fprintf(stderr, "%s: %s", tet_progname, s1);
 	if (s2 && *s2)
-		(void) fprintf(stderr, " %s", s2);
-	(void) fprintf(stderr, " at line %d in file %s\n", lineno, fname);
-	(void) fflush(stderr);
+		fprintf(stderr, " %s", s2);
+	fprintf(stderr, " at line %d in file %s\n", lineno, fname);
+	fflush(stderr);
 }
 
 /*
@@ -170,7 +170,7 @@ int lineno;
 
 void scengiveup()
 {
-	(void) fprintf(stderr,
+	fprintf(stderr,
 		"%s: giving up after finding %d scenario error%s\n",
 		tet_progname, scenerrors, scenerrors == 1 ? "" : "s");
 	tcc_exit(1);
@@ -196,7 +196,7 @@ int dirlen;
 		len = 1;
 	}
 
-	(void) sprintf(dir, "%.*s", TET_MIN(len, dirlen - 1), path);
+	sprintf(dir, "%.*s", TET_MIN(len, dirlen - 1), path);
 }
 
 /*
@@ -240,7 +240,7 @@ void fullpath(const char *dir, const char *file, char path[], int pathlen, int r
 			ASSERT(isabspathrem(dir));
 		else
 			ASSERT(isabspathloc(dir));
-		(void) sprintf(p, "%.*s", pathlen - 2, dir);
+		sprintf(p, "%.*s", pathlen - 2, dir);
 		len = strlen(p);
 		p += len;
 		pathlen -= len;
@@ -255,7 +255,7 @@ void fullpath(const char *dir, const char *file, char path[], int pathlen, int r
 	}
 
 
-	(void) sprintf(p, "%.*s", pathlen - 1, file);
+	sprintf(p, "%.*s", pathlen - 1, file);
 
 	if ((dir ? (int) strlen(dir) : 0) + (int) strlen(file) > pathlen - 2)
 		error(0, "path name is too long and has been truncated:",

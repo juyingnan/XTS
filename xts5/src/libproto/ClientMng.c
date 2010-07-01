@@ -607,7 +607,7 @@ int	cl; /* client number */
     vendorlen = u.setup -> nbytesVendor;
     u.setup += 1;		/* can't touch information in XConnSetup
 				   anymore.. */
-    (void) strncpy (dpy -> vendor, u.vendor, vendorlen);
+    strncpy (dpy -> vendor, u.vendor, vendorlen);
     u.vendor += (vendorlen + 3) & ~3;
 /*
  * Now iterate down setup information.....
@@ -727,7 +727,7 @@ int	cl; /* client number */
 	OutOfMemory (dpy, setup);
 	return (NULL);
     }
-    (void) strcpy (dpy -> display_name, displaybuf);
+    strcpy (dpy -> display_name, displaybuf);
 
 /* Set up the output buffers. */
     if ((dpy -> bufptr = dpy -> buffer = (char *) Xstmalloc (OBUFSIZE)) == NULL) {
@@ -840,7 +840,7 @@ register    XstDisplay * dpy;
 	free (dpy -> xdefaults);
 
 
-    (void) free ((char *) dpy);
+    free ((char *) dpy);
 }
 
 static
@@ -872,5 +872,5 @@ int client;
 	XstFreeDisplayStructure(dpy);
 
 	if (tmpfd != -1)
-		(void) close(tmpfd);
+		close(tmpfd);
 }

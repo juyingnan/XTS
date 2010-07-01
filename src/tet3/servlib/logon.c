@@ -140,7 +140,7 @@ register struct ptab *pp;
 		error(0, "wanted to log on to", tet_ptptype(wantptype));
 		error(0, "but found", tet_r2a(&pp->pt_rid));
 		if (pp->pt_flags & PF_LOGGEDON)
-			(void) tet_ti_logoff(pp, 1);
+			tet_ti_logoff(pp, 1);
 		tet_ts_dead(pp);
 	}
 

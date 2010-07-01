@@ -207,7 +207,7 @@ extern	int 	io_err();
 	 * Put out the NAME info line for the report generator.
 	 */
 /*APTEST
-	(void) sprintf(buf, "TRACE:NAME: %s", TestName);
+	sprintf(buf, "TRACE:NAME: %s", TestName);
 	tet_infoline(buf);
 */
 
@@ -256,15 +256,15 @@ extern	int 	io_err();
 	/*
 	 * Set up the error handlers.
 	 */
-	(void) XSetErrorHandler(unexp_err);
-	(void) XSetIOErrorHandler(io_err);
+	XSetErrorHandler(unexp_err);
+	XSetIOErrorHandler(io_err);
 
 	/*
 	 * Initialize the errors for the input device extension.
 	 */
 
 #ifdef INPUTEXTENSION
-	 (void) init_xinput(Dsp);
+	 init_xinput(Dsp);
 #endif
 
 	/*

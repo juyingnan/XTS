@@ -81,9 +81,9 @@ for sig in $std_sigs1 $std_sigs2
 do
 	cat <<!EOF
 #ifdef $sig
-	(void) printf(" %d", $sig);
+	printf(" %d", $sig);
 #else
-	(void) printf(" $sig");
+	printf(" $sig");
 #endif
 !EOF
 done > $tmp1_c
@@ -92,9 +92,9 @@ for sig in $spec_sigs
 do
 	cat <<!EOF
 #ifdef $sig
-	(void) printf(" %d", $sig);
+	printf(" %d", $sig);
 #else
-	(void) printf(" $sig");
+	printf(" $sig");
 #endif
 !EOF
 done > $tmp2_c
@@ -104,21 +104,21 @@ cat > $tmp3_c <<!EOF
 #include <signal.h>
 int main()
 {
-	(void) printf("SH_STD_SIGNALS =");
+	printf("SH_STD_SIGNALS =");
 #include "$tmp1_c"
-	(void) printf("\nSH_SPEC_SIGNALS =");
+	printf("\nSH_SPEC_SIGNALS =");
 #include "$tmp2_c"
-	(void) printf("\nSH_NSIG = ");
+	printf("\nSH_NSIG = ");
 #ifdef NSIG
-	(void) printf("%d", NSIG);
+	printf("%d", NSIG);
 #else
 #  ifdef _NSIG
-	(void) printf("%d", _NSIG);
+	printf("%d", _NSIG);
 #  else
-	(void) printf("NSIG");
+	printf("NSIG");
 #  endif
 #endif
-	(void) printf("\n");
+	printf("\n");
 	return(0);
 }
 !EOF

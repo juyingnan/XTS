@@ -141,8 +141,8 @@ extern  int     unexp_err();
 extern  int     io_err();
 #endif
 
-	(void) XSetErrorHandler(unexp_err);
-	(void) XSetIOErrorHandler(io_err);
+	XSetErrorHandler(unexp_err);
+	XSetIOErrorHandler(io_err);
 
 	resetdelete();
 

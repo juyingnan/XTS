@@ -147,12 +147,12 @@ struct	sigaction	act;
 #else
 	act.sa_handler = alrm_exit;
 	act.sa_flags = 0;
-	(void) sigemptyset(&act.sa_mask);
+	sigemptyset(&act.sa_mask);
 
 	if (sigaction(SIGALRM, &act, &oact) == -1)
 		delete("Could not set signal handler in settimeout");
 #endif
-	(void) alarm((unsigned long)to);
+	alarm((unsigned long)to);
 }
 
 /*
@@ -168,7 +168,7 @@ unsigned long	timeleft;
 
 	timeleft = alarm(0);
 #if OLDSIGNALS
-	(void) signal(SIGALRM, osig);
+	signal(SIGALRM, osig);
 #else
 	if (sigaction(SIGALRM, &oact, (struct sigaction *)0) == -1)
 		delete("Could not reset signal handler in cleartimeout");

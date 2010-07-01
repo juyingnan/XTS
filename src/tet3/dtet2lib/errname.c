@@ -63,6 +63,6 @@ register int errnum;
 		if (errnum == ep->em_errno)
 			return(ep->em_errname);
 
-	(void) sprintf(text, fmt, errnum);
+	sprintf(text, fmt, errnum);
 	return(text);
 }

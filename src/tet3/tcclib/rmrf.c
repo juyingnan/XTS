@@ -98,12 +98,12 @@ char *path;
 	** otherwise, this is a file so just unlink it
 	*/
 	if (S_ISDIR(stbuf.st_mode)) {
-		(void) sprintf(file, "%.*s/", (int) sizeof file - 2, path);
+		sprintf(file, "%.*s/", (int) sizeof file - 2, path);
 		p = file + strlen(file);
 		if ((files = tcf_lsdir(path)) == (char **) 0)
 			return(-1);
 		for (fip = files; *fip; fip++) {
-			(void) sprintf(p, "%.*s",
+			sprintf(p, "%.*s",
 				(int) sizeof file - (int) (p - file) - 1, *fip);
 			if (tcf_rmrf(file) < 0)
 				rc = -1;

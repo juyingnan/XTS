@@ -209,7 +209,7 @@ MODIFICATIONS:
 #    define TET_THR_EQUAL(a, b)		((a) == (b))
 #    define TET_THR_EXIT(sp)		thr_exit((sp))
 #    define TET_THR_GETSPECIFIC(key, vp) \
-	(*(vp) = (void *) 0, (void) thr_getspecific((key), (vp)))
+	(*(vp) = (void *) 0, thr_getspecific((key), (vp)))
 #    define TET_THR_JOIN(tid, sp)	thr_join((tid), (thread_t *) 0, (sp))
 #    define TET_THR_KEYCREATE(kp)	thr_keycreate((kp), TET_NULLFP)
 #    define TET_THR_KILL(tid, sig)	thr_kill((tid), (sig))
@@ -237,7 +237,7 @@ MODIFICATIONS:
 	TET_THR_SIGSETMASK(SIG_BLOCK, &tet_blockable_sigs, &MTX_LOCK_oss); \
 	TET_MUTEX_LOCK(mp);
 #    define MTX_UNLOCK(mp) TET_MUTEX_UNLOCK(mp); if (MTX_LOCK_maskret == 0) \
-	(void) TET_THR_SIGSETMASK(SIG_SETMASK, &MTX_LOCK_oss, (sigset_t *)0); }
+	TET_THR_SIGSETMASK(SIG_SETMASK, &MTX_LOCK_oss, (sigset_t *)0); }
 
 
    /* top-level API mutex with calls that can be nested */

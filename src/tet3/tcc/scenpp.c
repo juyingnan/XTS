@@ -205,7 +205,7 @@ char **argv;
 				error(errno, "can't open", *argv);
 			else {
 				rc = proc1scfile(ifp, *argv);
-				(void) fclose(ifp);
+				fclose(ifp);
 				if (rc < 0)
 					tcc_exit(1);
 			}
@@ -242,13 +242,13 @@ char **argv;
 		ASSERT(ep->sc_magic == SC_MAGIC);
 		ASSERT(ep->sc_type == SC_SCENARIO);
 		printloc(ep->sc_lineno, ep->sc_fname, 0);
-		(void) fprintf(ofp, "scenario%s(\"%s\")\n{\n",
+		fprintf(ofp, "scenario%s(\"%s\")\n{\n",
 			printaddr(ep), ep->sc_scenario);
 		lastlineno += 2;
 		printsctree(ep->sc_child, 1);
-		(void) fprintf(ofp, "}\n\n");
+		fprintf(ofp, "}\n\n");
 		lastlineno += 2;
-		(void) fflush(ofp);
+		fflush(ofp);
 	}
 
 	tcc_exit(0);
@@ -274,7 +274,7 @@ static void badusage()
 	char msg[1024];
 	register char *p = msg;
 
-	(void) sprintf(p, "\t%s", tet_progname);
+	sprintf(p, "\t%s", tet_progname);
 	len = strlen(p);
 	p += len;
 	pos = len + 7;
@@ -286,7 +286,7 @@ static void badusage()
 		}
 		else
 			sep = " ";
-		(void) sprintf(p, "%s[%s]", sep, options[n]);
+		sprintf(p, "%s[%s]", sep, options[n]);
 		len = strlen(p);
 		p += len;
 		pos += len;
@@ -307,19 +307,19 @@ int indent;
 			break;
 		case SC_TESTCASE:
 			printloc(ep->sc_lineno, ep->sc_fname, indent);
-			(void) fprintf(ofp,
+			fprintf(ofp,
 				"testcase%s(\"%s\", \"%s\");\n",
 				printaddr(ep), ep->sc_tcname,
 				ep->sc_exiclist ? ep->sc_exiclist : "all");
 			break;
 		case SC_SCENINFO:
 			printloc(ep->sc_lineno, ep->sc_fname, indent);
-			(void) fprintf(ofp, "sceninfo%s(%s);\n",
+			fprintf(ofp, "sceninfo%s(%s);\n",
 				printaddr(ep), ep->sc_sceninfo);
 			break;
 		case SC_SCEN_NAME:
 			printloc(ep->sc_lineno, ep->sc_fname, indent);
-			(void) fprintf(ofp, "call%s(\"%s\");\n",
+			fprintf(ofp, "call%s(\"%s\");\n",
 				printaddr(ep), ep->sc_scen_name);
 			break;
 		default:
@@ -376,16 +376,16 @@ int indent;
 #endif
 	case SD_VARIABLE:
 		doindent(indent);
-		(void) fprintf(ofp, "{\n");
+		fprintf(ofp, "{\n");
 		lastlineno++;
 		for (vp = ep->sc_vars; vp < ep->sc_vars + ep->sc_nvars; vp++) {
 			printloc(ep->sc_lineno, ep->sc_fname, indent + 1);
-			(void) fprintf(ofp, "variable%s %s\n",
+			fprintf(ofp, "variable%s %s\n",
 				printaddr(ep), *vp);
 		}
 		printsctree(ep->sc_child, indent + 1);
 		doindent(indent);
-		(void) fprintf(ofp, "}\n");
+		fprintf(ofp, "}\n");
 		lastlineno++;
 		return;
 	default:
@@ -396,27 +396,27 @@ int indent;
 	}
 
 	printloc(ep->sc_lineno, ep->sc_fname, indent);
-	(void) fprintf(ofp, "%s%s(", func, printaddr(ep));
+	fprintf(ofp, "%s%s(", func, printaddr(ep));
 	switch (ep->sc_directive) {
 	case SD_TIMED_LOOP:
-		(void) fprintf(ofp, "%ld", ep->sc_seconds);
+		fprintf(ofp, "%ld", ep->sc_seconds);
 		break;
 	default:
 		for (ap = argv; ap < argv + argc; ap++) {
 			if (ap > argv)
-				(void) fprintf(ofp, ", ");
-			(void) fprintf(ofp, "%d", *ap);
+				fprintf(ofp, ", ");
+			fprintf(ofp, "%d", *ap);
 		}
 		break;
 	}
-	(void) fprintf(ofp, ")\n");
+	fprintf(ofp, ")\n");
 
 	doindent(indent);
-	(void) fprintf(ofp, "{\n");
+	fprintf(ofp, "{\n");
 	lastlineno++;
 	printsctree(ep->sc_child, indent + 1);
 	doindent(indent);
-	(void) fprintf(ofp, "}\n");
+	fprintf(ofp, "}\n");
 	lastlineno++;
 }
 
@@ -437,7 +437,7 @@ char *thisfname;
 			doit = 1;
 		}
 		if (doit)
-			(void) fprintf(ofp, "# %d \"%s\"\n",
+			fprintf(ofp, "# %d \"%s\"\n",
 				thislineno, thisfname);
 	}
 
@@ -450,10 +450,10 @@ int indent;
 	register int space;
 
 	for (space = indent * tabwidth; space > 7; space -= 8)
-		(void) putc('\t', ofp);
+		putc('\t', ofp);
 
 	while (space-- > 0)
-		(void) putc(' ', ofp);
+		putc(' ', ofp);
 }
 
 static char *printaddr(ep)
@@ -465,13 +465,13 @@ struct scentab *ep;
 	buf[0] = '\0';
 
 	if (printscrefs) {
-		(void) sprintf(p, "-%ld", ep->sc_ref);
+		sprintf(p, "-%ld", ep->sc_ref);
 		p += strlen(p);
 	}
 
 #ifndef NOTRACE
 	if (tet_Tscen) {
-		(void) sprintf(p, "@%#lx", (long) ep);
+		sprintf(p, "@%#lx", (long) ep);
 		p += strlen(p);
 	}
 #endif

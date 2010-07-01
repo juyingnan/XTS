@@ -262,7 +262,7 @@ char	**argv;
 	    TET_THR_KEYCREATE(&tet_sequence_key) != 0)
 	{
 		/* can't use tet_error() yet */
-		(void) fprintf(stderr,
+		fprintf(stderr,
 			"%s: TET_THR_KEYCREATE() failed in TCM startup",
 			tet_pname);
 		exit(EXIT_FAILURE);
@@ -449,13 +449,13 @@ int icnum, tpnum, testnum;
 	if (sigsetjmp(skipjmp, 1) != 0)
 	{
 		/* we've caught an unexpected signal! */
-		(void) sprintf(buf, "unexpected signal %d (%s) received",
+		sprintf(buf, "unexpected signal %d (%s) received",
 			signum, tet_signame(signum));
 		tet_infoline(buf);
 		tet_result(TET_UNRESOLVED);
 		if (tet_child > 0)
 		{
-			(void) tet_killw(tet_child, KILLWAIT);
+			tet_killw(tet_child, KILLWAIT);
 			tet_child = 0;
 		}
 #  ifdef TET_THREADS
@@ -523,7 +523,7 @@ int icnum, tpnum, testnum;
 			TRACE3(tet_Ttcm, 1,
 				"about to call tet_invoketp(%s, %s)",
 				tet_i2a(icnum), tet_i2a(tpnum));
-			(void) tet_invoketp(icnum, tpnum);
+			tet_invoketp(icnum, tpnum);
 #ifdef TET_THREADS
 			tet_cln_threads(0);
 			tet_mtx_destroy();
@@ -560,19 +560,19 @@ int	sig;
 #  ifdef TET_THREADS
 	if (!TET_THR_EQUAL(TET_THR_SELF(), tet_start_tid))
 	{
-		(void) TET_THR_KILL(tet_start_tid, sig);
+		TET_THR_KILL(tet_start_tid, sig);
 		TET_THR_EXIT((void *)0);
 	}
 #  endif /* TET_THREADS */
 
-	(void) sprintf(mbuf,
+	sprintf(mbuf,
 		"Abandoning testset: caught unexpected signal %d (%s)",
 		sig, tet_signame(sig));
 	tet_error(0, mbuf);
 
 #  ifdef TET_LITE	/* -LITE-CUT-LINE- */
 	if (tet_tmpresfile != NULL)
-		(void) UNLINK(tet_tmpresfile);
+		UNLINK(tet_tmpresfile);
 #  endif		/* -LITE-CUT-LINE- */
 
 	/* log off all the servers and exit */
@@ -589,14 +589,14 @@ sigterm()
 	/* terminate [per-thread] child, if any */
 	if (tet_child > 0)
 	{
-		(void) tet_killw(tet_child, KILLWAIT);
+		tet_killw(tet_child, KILLWAIT);
 		tet_child = 0;
 	}
 
 #  ifdef TET_THREADS
 	if (!TET_THR_EQUAL(TET_THR_SELF(), tet_start_tid))
 	{
-		(void) TET_THR_KILL(tet_start_tid, SIGTERM);
+		TET_THR_KILL(tet_start_tid, SIGTERM);
 		TET_THR_EXIT((void *)0);
 	}
 
@@ -608,7 +608,7 @@ sigterm()
 
 #  ifdef TET_LITE	/* -LITE-CUT-LINE- */
 	if (tet_tmpresfile != NULL)
-		(void) UNLINK(tet_tmpresfile);
+		UNLINK(tet_tmpresfile);
 #  endif /* TET_LITE */	/* -LITE-CUT-LINE- */
 
 	/* call user-supplied cleanup function */
@@ -648,7 +648,7 @@ int sig;
 #  ifdef TET_THREADS
 	if (!TET_THR_EQUAL(TET_THR_SELF(), tet_start_tid))
 	{
-		(void) TET_THR_KILL(tet_start_tid, sig);
+		TET_THR_KILL(tet_start_tid, sig);
 		TET_THR_EXIT((void *)0);
 	}
 #  endif /* TET_THREADS */
@@ -671,7 +671,7 @@ sigset_t *set;
 	char	*list, *sname;
 	int	snum;
 
-	(void) sigemptyset(set);
+	sigemptyset(set);
 
 	list = tet_getvar(var);
 	if (list == NULL)
@@ -685,14 +685,14 @@ sigset_t *set;
 		/* Check it's not a standard signal */
 		if (strncmp(tet_signame(snum), "SIG", (size_t)3) == 0)
 		{
-			(void) sprintf(buf,
+			sprintf(buf,
 			    "warning: illegal entry \"%s\" in %s ignored",
 			    sname, var);
 			tet_error(0, buf);
 		}
 		else if (sigaddset(set, snum) == -1)
 		{
-			(void) sprintf(buf,
+			sprintf(buf,
 			    "warning: sigaddset() failed on entry \"%s\" in %s",
 			    sname, var);
 			tet_error(0, buf);
@@ -725,7 +725,7 @@ void	(*func)();
 		init_done = 1;
 	}
 
-	(void) sigemptyset(&tet_blockable_sigs);
+	sigemptyset(&tet_blockable_sigs);
 
 	/* NSIG is not provided by POSIX.1:  it must be defined via
 	   an extra feature-test macro, or on the compiler command line */
@@ -740,13 +740,13 @@ void	(*func)();
 		else
 			sig.sa_handler = func;
 		sig.sa_flags = 0;
-		(void) sigemptyset(&sig.sa_mask);
+		sigemptyset(&sig.sa_mask);
 		if (sigaction(i, &sig, (struct sigaction *)NULL) == 0 &&
 #  ifdef SIGBUS
 		    i != SIGBUS &&
 #  endif
 		    i != SIGSEGV && i != SIGILL && i != SIGFPE)
-			(void) sigaddset(&tet_blockable_sigs, i);
+			sigaddset(&tet_blockable_sigs, i);
 	}
 }
 
@@ -823,7 +823,7 @@ char *functype;
 		case SS_SYNCYES:
 			break;
 		default:
-			(void) sprintf(errmsg,
+			sprintf(errmsg,
 		"%s function Auto Sync error, sysid = %d, state = %s",
 				functype, sp->sy_sysid,
 				tet_systate(sp->sy_state));
@@ -879,12 +879,12 @@ int nicspec;
 	*/
 	err = 0;
 	if (!tet_isdefic(icmin)) {
-		(void) sprintf(msg, fmt, "min", icmin, icmin);
+		sprintf(msg, fmt, "min", icmin, icmin);
 		tet_error(0, msg);
 		err = 1;
 	}
 	if (!tet_isdefic(icmax)) {
-		(void) sprintf(msg, fmt, "max", icmax, icmax);
+		sprintf(msg, fmt, "max", icmax, icmax);
 		tet_error(0, msg);
 		icmax = 1;
 		err = 1;
@@ -934,7 +934,7 @@ int icmin, icmax;
 		for (p = icspec; *p; p++)
 			if (*p == ',')
 				break;
-		(void) sprintf(buf, "%.*s",
+		sprintf(buf, "%.*s",
 			TET_MIN((int) (p - icspec), (int) sizeof buf - 1),
 			icspec);
 		build_icl3(buf, icmin, icmax);
@@ -1008,7 +1008,7 @@ int icmin, icmax;
 	** print a diagnostic if the specified start IC does not exist
 	*/
 	if (!tet_isdefic(icstart)) {
-		(void) sprintf(msg, fmt, icstart);
+		sprintf(msg, fmt, icstart);
 		tet_error(0, msg);
 		while (++icstart <= icend)
 			if (tet_isdefic(icstart))
@@ -1032,7 +1032,7 @@ int icmin, icmax;
 	** print a diagnostic if the specified end IC does not exist
 	*/
 	if (icstart != icend && !tet_isdefic(icend)) {
-		(void) sprintf(msg, fmt, icend);
+		sprintf(msg, fmt, icend);
 		tet_error(0, msg);
 		while (--icend > icstart)
 			if (tet_isdefic(icend))

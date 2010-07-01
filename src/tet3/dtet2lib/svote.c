@@ -63,7 +63,7 @@ int vote;
 	case SV_NO:
 		return("NO");
 	default:
-		(void) sprintf(msg, "%s%d", text, vote);
+		sprintf(msg, "%s%d", text, vote);
 		return(msg);
 	}
 }

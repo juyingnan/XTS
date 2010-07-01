@@ -106,7 +106,7 @@ register struct proctab *prp;
 		prperror(prp, -1, tet_xderrno,
 			"can't send system list to XRESD", (char *) 0);
 		rm_snid_xrid(prp);
-		(void) UNLINK(fname);
+		UNLINK(fname);
 		return(-1);
 	}
 
@@ -240,7 +240,7 @@ void unlink_xres(prp)
 struct proctab *prp;
 {
 	if (prp->pr_xfname) {
-		(void) UNLINK(prp->pr_xfname);
+		UNLINK(prp->pr_xfname);
 		TRACE2(tet_Tbuf, 6, "free prp->pr_xfname = %s",
 			tet_i2x(prp->pr_xfname));
 		free(prp->pr_xfname);

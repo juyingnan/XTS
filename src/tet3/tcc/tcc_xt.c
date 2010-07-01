@@ -195,7 +195,7 @@ char **argv;
 
 	rc = ts_ss3(pp, argv, fd);
 
-	(void) t_close(fd);
+	t_close(fd);
 
 	return(rc);
 }
@@ -237,7 +237,7 @@ int fd;
 
 	if ((ret = T_ALLOC_BIND(fd)) == (struct t_bind *)0) {
 		xt_error(t_errno, "can't allocate T_BIND", (char *) 0);
-		(void) t_close(fd);
+		t_close(fd);
 		return(-1);
 	}
 	TRACE2(tet_Tbuf, 6, "t_alloc() = %s", tet_i2x(ret));
@@ -246,8 +246,8 @@ int fd;
 		xt_error(t_errno, "can't bind to server fd", (char *)0);
 
 		TRACE2(tet_Tbuf, 6, "t_free ret = %s", tet_i2x(ret));
-		(void) t_free((char *)ret, T_BIND);
-		(void) t_close(fd);
+		t_free((char *)ret, T_BIND);
+		t_close(fd);
 		return (-1);
 	}
 
@@ -255,8 +255,8 @@ int fd;
 	if (ret->addr.len == 0) {
 		xt_error(t_errno, "address not generated", (char *)0);
 		TRACE2(tet_Tbuf, 6, "t_free ret = %s", tet_i2x(ret));
-		(void) t_free((char *)ret, T_BIND);
-		(void) t_close(fd);
+		t_free((char *)ret, T_BIND);
+		t_close(fd);
 		return (-1);
 	}
 		
@@ -284,7 +284,7 @@ int fd;
 	}
 	else if (pid == 0) {
 		/* in child */
-		(void) sprintf(path, "%.*s/bin/%s",
+		sprintf(path, "%.*s/bin/%s",
 			(int) sizeof path - (int) strlen(*argv) - 6,
 			tet_root, *argv);
 #ifndef NOTRACE
@@ -296,9 +296,9 @@ int fd;
 #endif
 		/* dup the connection on to fd 0 and close all other
 			files except 1 and 2 */
-		(void) close(0);
+		close(0);
 		TRACE2(tet_Tbuf, 6, "t_free ret = %s", tet_i2x(ret));
-		(void) t_free((char *)ret, T_BIND);
+		t_free((char *)ret, T_BIND);
 
 		if ((rc = fcntl(fd, F_DUPFD, 0)) != 0) {
 			error(errno, "server socket: fcntl(F_DUPFD) returned",
@@ -306,8 +306,8 @@ int fd;
 			_exit(~0);
 		}
 		for (fd = tet_getdtablesize() - 1; fd > 2; fd--)
-			(void) close(fd);
-		(void) execv(path, argv);
+			close(fd);
+		execv(path, argv);
 		error(errno, "can't exec", path);
 		_exit(~0);
 	}
@@ -338,18 +338,18 @@ int fd;
 	if ((tp->tp_call.buf = (char *) malloc(tp->tp_call.maxlen)) == (char *) 0) {
 		error(errno, "can't malloc server address", (char *)0);
 		TRACE2(tet_Tbuf, 6, "t_free ret = %s", tet_i2x(ret));
-		(void) t_free((char *)ret, T_BIND);	
+		t_free((char *)ret, T_BIND);
 		return (-1);
 	}
 	TRACE2(tet_Tbuf, 6, "allocate tp_call.buf = %s",
 		tet_i2x(tp->tp_call.buf));
 
-	(void) memcpy(tp->tp_call.buf, ret->addr.buf, ret->addr.len);
+	memcpy(tp->tp_call.buf, ret->addr.buf, ret->addr.len);
 	if (ret->addr.maxlen > ret->addr.len)
-		(void) memset(tp->tp_call.buf + ret->addr.len, '\0',
+		memset(tp->tp_call.buf + ret->addr.len, '\0',
 			ret->addr.maxlen - ret->addr.len);
 
-	(void) t_free((char *)ret, T_BIND);	
+	t_free((char *)ret, T_BIND);
 	return (0);
 }
 
@@ -441,7 +441,7 @@ register int ptype;
 		}
 
 		mp->ts.osico.ts_len = tp->tp_call.len;
-		(void) memcpy(mp->ts.osico.ts_nsap, tp->tp_call.buf,
+		memcpy(mp->ts.osico.ts_nsap, tp->tp_call.buf,
 			tp->tp_call.len);
 
 		break;

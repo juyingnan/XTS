@@ -156,7 +156,7 @@ static	int 	firsttime = 1;
 			fp = NULL;
 	} else {
 		if ((fp = fopen(Filename, "r")) == NULL) {
-			(void) fprintf(stderr, "Could not open %s\n", Filename);
+			fprintf(stderr, "Could not open %s\n", Filename);
 			errexit();
 		}
 	}
@@ -179,7 +179,7 @@ char 	buf[BUFSIZ];
 	/*
 	 * Look for a corresponding file with name lib/mc/*.mc .
 	 */
-	(void) sprintf(buf, "mc/%s", file);
+	sprintf(buf, "mc/%s", file);
 	file = buf;
 	if (strcmp(file+strlen(file)-3, ".mc") != 0) {
 		/*
@@ -220,7 +220,7 @@ char *tmpfile;
 
 	snprintf(tmpfile, PATH_MAX, "%s.%d", file, (int)getpid());
 	if ((fp = fopen(tmpfile, "w+")) == NULL) {
-		(void) fprintf(stderr, "Could not open %s\n", tmpfile);
+		fprintf(stderr, "Could not open %s\n", tmpfile);
 		errexit();
 	}
 
@@ -251,7 +251,7 @@ extern	int 	Cmdname;
 	if (!fout) {
 		if (OutFileName) {
 			if ((fout = fopen(OutFileName, "w")) == NULL) {
-				(void) fprintf(stderr, "Could not open %s for output\n", OutFileName);
+				fprintf(stderr, "Could not open %s for output\n", OutFileName);
 				errexit();
 			}
 			ofilename = OutFileName;
@@ -272,12 +272,12 @@ extern	int 	Cmdname;
 		while (fgets(buf, BUFSIZ, fp) != NULL) {
 			olineno++;
 			if (buf[0] == '>' && buf[1] == '>' && buf[2] == 'G')
-				(void) sprintf(buf, "#line %d \"%s\"\n", olineno+1, ofilename);
+				sprintf(buf, "#line %d \"%s\"\n", olineno+1, ofilename);
 			fputs(buf, fout);
 		}
 	} else {
 		while ((n = fread(buf, sizeof(char), BUFSIZ, fp)) > 0)
-			(void) fwrite(buf, n, 1, fout);
+			fwrite(buf, n, 1, fout);
 	}
 }
 
@@ -286,7 +286,7 @@ remfiles()
 int 	i;
 
 	for (i = 0; i < Filetind; i++) {
-		(void) unlink(Filetemp[i]);
+		unlink(Filetemp[i]);
 		free(Filetemp[i]);
 		Filetemp[i] = NULL;
 	}
@@ -318,7 +318,7 @@ int 	savlineno;
 		path = mcpath(name);
 		if ((fp = fopen(path, "r")) == NULL) {
 			err("");
-			(void) fprintf(stderr, "Cannot open include file %s\n", name);
+			fprintf(stderr, "Cannot open include file %s\n", name);
 			errexit();
 		}
 	}
@@ -330,7 +330,7 @@ int 	savlineno;
 
 	dohook(name, HOOK_INCSTART);
 	dosections(fp, bp);
-	(void) fclose(fp);
+	fclose(fp);
 	dohook(name, HOOK_INCEND);
 
 	Filename = savfilename;
@@ -370,18 +370,18 @@ int 	size;
 
 	rp = getenv("TET_ROOT");
 	if (rp == NULL) {
-		(void) fprintf(stderr, "TET_ROOT not set in environment\n");
+		fprintf(stderr, "TET_ROOT not set in environment\n");
 		errexit();
 	}
 	size = strlen(rp)+strlen(MC_LOC)+strlen(file)+1;
 	path = malloc((size_t)size);
 	if (path == NULL) {
-		(void) fprintf(stderr, "Out of memory\n");
+		fprintf(stderr, "Out of memory\n");
 		errexit();
 	}
-	(void) strcpy(path, rp);
-	(void) strcat(path, MC_LOC);
-	(void) strcat(path, file);
+	strcpy(path, rp);
+	strcat(path, MC_LOC);
+	strcat(path, file);
 
 	return(path);
 }

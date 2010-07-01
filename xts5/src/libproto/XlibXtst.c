@@ -366,7 +366,7 @@ void XstSendClientPrefix (dpy, client, auth_proto, auth_string, needswap)
 	BPRINTF2 ("\tTotal OpenDisplay message length = %d bytes\n", bytes);
 	BPRINTF2 ("\t\ton fd %d\n", dpy->fd);
 	BPRINTF2 ("\t\t%d bytes used of buffer\n", bptr - buffer);
-	(void) WriteToServer(dpy->fd, buffer, bytes);
+	WriteToServer(dpy->fd, buffer, bytes);
 	return;
 }
 
@@ -707,7 +707,7 @@ int     needswap;
     BPRINTF2 ("\t\ton fd %d\n", dpy->fd);
     BPRINTF2 ("\t\t%d bytes used of buffer\n", bptr - buffer);
     dpy->request++; /* increment sequence counter */
-    (void) WriteToServer(dpy->fd, buffer, bytes);
+    WriteToServer(dpy->fd, buffer, bytes);
     if (Get_Req_Type(client) == OPEN_DISPLAY_REQUEST_TYPE) {
 	if (Get_Test_Type(client) == OPEN_DISPLAY) {
 		Log_Msg ("INTERNAL ERROR: should not be getting QueryExtensionReply with TestType == OPEN_DISPLAY.");
@@ -765,7 +765,7 @@ int     needswap;
 	BPRINTF2 ("\t\ton fd %d\n", dpy->fd);
 	BPRINTF2 ("\t\t%d bytes used of buffer\n", bptr - buffer);
 	dpy->request++; /* increment sequence counter */
-	(void) WriteToServer(dpy->fd, buffer, bytes);
+	WriteToServer(dpy->fd, buffer, bytes);
 
 	/* time_proc already set */
 	Set_Timer (CONNECT_TIMER_ID, Xst_timeout_value, time_proc);

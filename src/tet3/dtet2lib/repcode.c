@@ -179,7 +179,7 @@ int rc;
 	case ER_ENOTEMPTY:
 		return("ER_ENOTEMPTY");
 	default:
-		(void) sprintf(msg, "%s%d", text, rc);
+		sprintf(msg, "%s%d", text, rc);
 		return(msg);
 	}
 }

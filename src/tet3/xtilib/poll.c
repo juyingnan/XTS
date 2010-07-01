@@ -115,7 +115,7 @@ int timeout;
 	while ((rc = ts_poll2(pp)) == 0) {
 		if (timeout >= 0 && time((time_t *) 0) >= start + timeout)
 			break;
-		(void) sleep((unsigned) 1);
+		sleep((unsigned) 1);
 	}
 	return (rc);
 #else
@@ -310,7 +310,7 @@ static int doaccept()
 			}
 			TRACE3(tet_Tbuf, 6, "t_free tet_calls[%s] = %s",
 				tet_i2a(i), tet_i2x(tet_calls[i]));
-			(void) t_free((char *) tet_calls[i], T_CALL);
+			t_free((char *) tet_calls[i], T_CALL);
 			tet_calls[i] = (struct t_call *) 0;
 			return (rc);
 		}
@@ -330,7 +330,7 @@ static int doaccept()
 		if (t_rcvdis(tet_listen_fd, discon) < 0) {
 			xt_error(t_errno, "t_rcvdis() failed", (char *) 0);
 			TRACE2(tet_Tbuf, 6, "free discon = %s", tet_i2x(discon));
-			(void) t_free((char *) discon, T_DIS);
+			t_free((char *) discon, T_DIS);
 			return(-1);
 		}
 
@@ -341,10 +341,10 @@ static int doaccept()
 			) {
 				TRACE3(tet_Tbuf, 6, "t_free tet_calls[%s] = %s",
 					tet_i2a(i), tet_i2x(tet_calls[i]));
-				(void) t_free((char *) tet_calls[i], T_CALL);
+				t_free((char *) tet_calls[i], T_CALL);
 				TRACE2(tet_Tbuf, 6, "free discon = %s",
 					tet_i2x(discon));
-				(void) t_free((char *) discon, T_DIS);
+				t_free((char *) discon, T_DIS);
 				tet_calls[i] = (struct t_call *) 0;
 			}
 		}

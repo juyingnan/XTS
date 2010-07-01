@@ -82,19 +82,19 @@ register int *sname, nsname;
 #endif
 
 	/* start with the sysid and parent sysid arguments */
-	(void) sprintf(sysidstr, "%d", tet_mysysid);
-	(void) sprintf(psysidstr, "%d", psysid);
+	sprintf(sysidstr, "%d", tet_mysysid);
+	sprintf(psysidstr, "%d", psysid);
 	needlen = sizeof envname + strlen(sysidstr) + strlen(psysidstr) + 6;
 
 	/* add the snid argument */
 	if (snid >= 0L) {
-		(void) sprintf(snidstr, "%ld", snid);
+		sprintf(snidstr, "%ld", snid);
 		needlen += strlen(snidstr) + 3;
 	}
 
 	/* add the xrid argument */
 	if (xrid >= 0L) {
-		(void) sprintf(xridstr, "%ld", xrid);
+		sprintf(xridstr, "%ld", xrid);
 		needlen += strlen(xridstr) + 3;
 	}
 

@@ -440,7 +440,7 @@ int sig;
 	/* wrong thread received SIGABRT signal - try to do what it
 	   would have done */
 
-	(void) sigaction(SIGABRT, &oldsigact, (struct sigaction *)NULL);
+	sigaction(SIGABRT, &oldsigact, (struct sigaction *)NULL);
 	if (oldsigact.sa_handler == SIG_DFL)
 	{
 		abort();
@@ -468,7 +468,7 @@ int sig;
 	}
 
 	if (tet_child > 0)
-		(void) tet_killw(tet_child, KILLWAIT);
+		tet_killw(tet_child, KILLWAIT);
 
 	TET_THR_EXIT((void *)0);
 }
@@ -489,7 +489,7 @@ int signum;
 
 	MTX_LOCK(&tet_thrtab_mtx);
 
-	(void) TET_COND_INIT(&thrwait_cv);
+	TET_COND_INIT(&thrwait_cv);
 
 	/* Start at the end of the table and work backwards.  This is
 	   so that if a call to tet_pthread_join() is in progress, the
@@ -537,19 +537,19 @@ int signum;
 		 */
 
 		if (!TET_THR_EQUAL(ttp->tid, tid2))
-			(void) TET_THR_JOIN(ttp->tid, (void **) NULL);
+			TET_THR_JOIN(ttp->tid, (void **) NULL);
 		TET_MUTEX_LOCK(&tet_thrwait_mtx);
 		joined = 1;
-		(void) TET_COND_SIGNAL(&thrwait_cv);
+		TET_COND_SIGNAL(&thrwait_cv);
 		TET_MUTEX_UNLOCK(&tet_thrwait_mtx);
-		(void) TET_THR_JOIN(tid2, (void **) NULL);
+		TET_THR_JOIN(tid2, (void **) NULL);
 		tet_listremove((struct llist **) &thrtab, (struct llist *) ttp);
 		TRACE2(tet_Tbuf, 6, "free thrtab entry = %s", tet_i2x(ttp));
 		free((void *)ttp);
 	}
 	thrtab = NULL;
 
-	(void) TET_COND_DESTROY(&thrwait_cv);
+	TET_COND_DESTROY(&thrwait_cv);
 
 	MTX_UNLOCK(&tet_thrtab_mtx);
 }
@@ -591,8 +591,8 @@ void *arg;
 	target_tid = carg->tid;
 	sa.sa_handler = make_thr_exit;
 	sa.sa_flags = 0; 
-	(void) sigemptyset(&sa.sa_mask); 
-	(void) sigaction(SIGABRT, &sa, &oldsigact);
+	sigemptyset(&sa.sa_mask);
+	sigaction(SIGABRT, &sa, &oldsigact);
 	err = TET_THR_KILL(carg->tid, SIGABRT);
 	switch (err)
 	{
@@ -600,7 +600,7 @@ void *arg;
 		break;
 	case ESRCH:
 		/* thread has gone away already */
-		(void) sigaction(SIGABRT, &oldsigact, (struct sigaction *)0);
+		sigaction(SIGABRT, &oldsigact, (struct sigaction *)0);
 		return (void *)0;
 	default:
 		fatal(err, "TET_THR_KILL() failed in cln_thr2()", (char *)0);
@@ -620,7 +620,7 @@ void *arg;
 		err = 0;
 	TET_MUTEX_UNLOCK(&tet_thrwait_mtx);
 	if (err == 0)
-		(void) sigaction(SIGABRT, &oldsigact, (struct sigaction *)0);
+		sigaction(SIGABRT, &oldsigact, (struct sigaction *)0);
 	else if (1
 #ifdef ETIME
 		 && err != ETIME

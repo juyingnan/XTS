@@ -112,7 +112,7 @@ int lfd;
 		/* bind this endpoint to an arbitrary protocol address */
 		if (t_bind(nfd, (struct t_bind *) 0, (struct t_bind *) 0) < 0) {
 			xt_error(t_errno, "can't bind fd", tet_i2a(nfd));
-			(void) t_close(nfd);
+			t_close(nfd);
 			tet_ptfree(pp);
 			return;
 		}	
@@ -130,7 +130,7 @@ int lfd;
 				xt_error(t_errno,"unexpected event",
 					tet_xtev2a(c_event));
 			}
-			(void) t_close(nfd);
+			t_close(nfd);
 			tet_ptfree(pp);
 			return;
 		}
@@ -152,12 +152,12 @@ int lfd;
 		TRACE2(tet_Tbuf, 6, "allocate tp_call.buf = %s",
 			tet_i2x(tp->tp_call.buf));
 
-		(void) memcpy(tp->tp_call.buf, tet_calls[i]->addr.buf,
+		memcpy(tp->tp_call.buf, tet_calls[i]->addr.buf,
 			(size_t)tet_calls[i]->addr.len);	
 
 		TRACE3(tet_Tbuf, 6, "t_free tet_calls[%s] = %s",
 			tet_i2a(i), tet_i2x(tet_calls[i]));
-		(void) t_free((char *)tet_calls[i], T_CALL);
+		t_free((char *)tet_calls[i], T_CALL);
  		tet_calls[i] = (struct t_call *)0;
 
 

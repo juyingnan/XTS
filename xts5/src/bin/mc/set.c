@@ -118,7 +118,7 @@ char	*bp;
 char	*tok;
 char	*arg1;
 
-	(void) strtok(bp, SEPS);
+	strtok(bp, SEPS);
 
 	tok = strtok((char *)0, SEPS);
 	arg1 = strtok((char *)0, SEPS);

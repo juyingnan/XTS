@@ -106,14 +106,14 @@ struct systab *sp;
 	for (cvp = comvar; cvp < comvar + Ncomvar; cvp++) {
 		if ((val = getdcfg(*cvp, sp->sy_sysid)) == (char *) 0)
 			val = "";
-		(void) sprintf(buf, "%s=%.*s", *cvp,
+		sprintf(buf, "%s=%.*s", *cvp,
 			(int) sizeof buf - (int) strlen(*cvp) - 2, val);
 		ASSERT(ep < &envstr[Nenvstr]);
 		*ep++ = rstrstore(buf);
 	}
 
 	/* then add in TET_CODE */
-	(void) sprintf(buf, "TET_CODE=%.*s", MAXPATH, sp->sy_rcfname);
+	sprintf(buf, "TET_CODE=%.*s", MAXPATH, sp->sy_rcfname);
 	ASSERT(ep < &envstr[Nenvstr]);
 	*ep++ = rstrstore(buf);
 

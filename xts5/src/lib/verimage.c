@@ -181,7 +181,7 @@ extern	int CurVinf;
 	}
 
 	ic = tet_testlist[tet_thistest-1].icref;
-	(void) sprintf(name, "a%d.dat", ic);
+	sprintf(name, "a%d.dat", ic);
 
 #ifdef GENERATE_PIXMAPS
 	if (tet_thistest != lasttest || CurVinf == lastvinf) {
@@ -207,7 +207,7 @@ extern	int CurVinf;
 	 * here.
 	 */
 	if (config.save_server_image) {
-		(void) sprintf(name, "a%d.sav", ic);
+		sprintf(name, "a%d.sav", ic);
 		dumpimage(imp, name, ap);
 		trace("Created server image file %s", name);
 	}
@@ -303,8 +303,8 @@ ok:
 	FILE	*errfp;
 
 		report("A total of %d out of %d pixels were bad", bad, good+bad);
-		(void) sprintf(errfile, "Err%04d.err", Errnum);
-		(void) unlink(errfile);
+		sprintf(errfile, "Err%04d.err", Errnum);
+		unlink(errfile);
 		dumpimage(imp, errfile, ap);
 	
 		newpos = ftell(fp);

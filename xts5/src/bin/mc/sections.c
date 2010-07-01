@@ -408,7 +408,7 @@ static char	*reasons[] = {
 			newline(fp, buf);
 		} else {
 			putbackline(buf);
-			(void) strcpy(buf, line);
+			strcpy(buf, line);
 			State.defaultreq = NEED_STRAT|NEED_CODE;
 			do1sec(fp, buf, SEC_ASSERTION);
 		}
@@ -431,7 +431,7 @@ int	i;
 	State.sectype = sec;
 
 	if (sec >= NSEC) {
-		(void) fprintf(stderr, "Internal error: invalid command\n");
+		fprintf(stderr, "Internal error: invalid command\n");
 		errexit();
 	}
 
@@ -537,11 +537,11 @@ char	*buf;
 int 	hook;
 {
 	if (hook >= NHOOK) {
-		(void) fprintf(stderr, "Internal error: invalid hook\n");
+		fprintf(stderr, "Internal error: invalid hook\n");
 		errexit();
 	}
 	if (Cmdname >= NCMDS) {
-		(void) fprintf(stderr, "Internal error: command not implemented\n");
+		fprintf(stderr, "Internal error: command not implemented\n");
 		errexit();
 	}
 
@@ -619,28 +619,28 @@ char	*tmpfile;
 	switch (State.category) {
 	case CAT_B: case CAT_D:	/* Untested */
 		if (needed & NEED_STRAT) {
-			(void) fprintf(fp, ">>STRATEGY\n");
-			(void) fprintf(fp, "Report UNTESTED\n");
+			fprintf(fp, ">>STRATEGY\n");
+			fprintf(fp, "Report UNTESTED\n");
 		}
 		if (needed & NEED_CODE) {
-			(void) fprintf(fp, ">>CODE\n\n");
+			fprintf(fp, ">>CODE\n\n");
 /*
-			(void) fprintf(fp, "\treport(\"%s\");\n", State.reason);
+			fprintf(fp, "\treport(\"%s\");\n", State.reason);
 */
-			(void) fprintf(fp, "\tUNTESTED;\n");
+			fprintf(fp, "\tUNTESTED;\n");
 		}
 		break;
 	default:	/* No code written */
 		if (needed & NEED_STRAT) {
-			(void) fprintf(fp, ">>STRATEGY\n");
+			fprintf(fp, ">>STRATEGY\n");
 			if (needed & NEED_CODE)
-				(void) fprintf(fp, "Report that no code has been written for this test.\n");
+				fprintf(fp, "Report that no code has been written for this test.\n");
 			else
-				(void) fprintf(fp, "No strategy has been written for this test\n");
+				fprintf(fp, "No strategy has been written for this test\n");
 		}
 		if (needed & NEED_CODE) {
-			(void) fprintf(fp, ">>CODE\n");
-			(void) fprintf(fp, "\treport(\"No code written for this assertion.\");\n");
+			fprintf(fp, ">>CODE\n");
+			fprintf(fp, "\treport(\"No code written for this assertion.\");\n");
 		}
 		break;
 	}

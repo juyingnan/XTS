@@ -172,11 +172,11 @@ char	*cp;
 
 		if (lp == gclookup+NGCCOMP) {
 			err("");
-			(void) fprintf(stderr, "Unrecognised gc component name %s\n", cp);
+			fprintf(stderr, "Unrecognised gc component name %s\n", cp);
 			errexit();
 		}
 
-		(void) sprintf(buf, "gc/%.9s.mc\n", lp->include);
+		sprintf(buf, "gc/%.9s.mc\n", lp->include);
 		includefile(buf, buf);
 	}
 }

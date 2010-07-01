@@ -191,7 +191,7 @@ extern	int	io_err(),	unexp_err();
 	 * Put out the NAME info line for the report generator.
 	 */
 /* VSW5 does not need this
-        (void) sprintf(buf, "TRACE:NAME: %s", TestName);
+        sprintf(buf, "TRACE:NAME: %s", TestName);
         tet_infoline(buf);
 */
 
@@ -215,9 +215,9 @@ extern	int	io_err(),	unexp_err();
 	 * opening a connection here is to prevent further server resets
 	 * between test purposes.
 	 */
-	(void) XSetErrorHandler(unexp_err); /* unexp_err() can rely
+	XSetErrorHandler(unexp_err); /* unexp_err() can rely
 				on Dsp as not called unless set */
-	(void) XSetIOErrorHandler(io_err); /* io_err() mustn't & doesn't.... */
+	XSetIOErrorHandler(io_err); /* io_err() mustn't & doesn't.... */
 	Dsp = XOpenDisplay(disp);
 
 	if (Dsp == (Display *)0) {
@@ -247,7 +247,7 @@ protocleanup()
 		/* At present this causes needless problems... */
 #ifndef GENERATE_PIXMAPS
 		/* about to exit anyway... */
-		(void) close(ConnectionNumber(Dsp));
+		close(ConnectionNumber(Dsp));
 #endif
 	}
 }

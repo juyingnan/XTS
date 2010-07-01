@@ -89,10 +89,10 @@ char **argv;
 
 	if (needtetroot) {
 		if (argc > 0)
-			(void) sprintf(tet_root, "%.*s",
+			sprintf(tet_root, "%.*s",
 				(int) sizeof tet_root - 1, *argv);
 		else {
-			(void) sprintf(buf, "%.14s [options] tetrootdir",
+			sprintf(buf, "%.14s [options] tetrootdir",
 				tet_progname);
 			fatal(0, "usage:", buf);
 		}

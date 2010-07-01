@@ -155,7 +155,7 @@ void
 mepend(buf)
 char	*buf;
 {
-	(void) fprintf(FpBanner, " */\n");
+	fprintf(FpBanner, " */\n");
 	outfile(FpBanner);
 	outfile(FpExp);
 	fclose(FpExp);

@@ -174,8 +174,8 @@ va_list	args;
 	va_start(args);
 #endif
 
-	(void) strcpy(buf, "REPORT: ");
-	(void) vsprintf(buf+strlen("REPORT: "), fmt, args);
+	strcpy(buf, "REPORT: ");
+	vsprintf(buf+strlen("REPORT: "), fmt, args);
 	tet_infoline(buf);
 
 	va_end(args);
@@ -243,8 +243,8 @@ va_list	args;
 	va_start(args);
 #endif
 
-	(void) strcpy(buf, "TRACE: ");
-	(void) vsprintf(buf+strlen("TRACE: "), fmt, args);
+	strcpy(buf, "TRACE: ");
+	vsprintf(buf+strlen("TRACE: "), fmt, args);
 	tet_infoline(buf);
 
 	va_end(args);
@@ -273,8 +273,8 @@ va_list	args;
 	va_start(args);
 #endif
 
-	(void) strcpy(buf, "CHECK: ");
-	(void) vsprintf(buf+strlen("CHECK: "), fmt, args);
+	strcpy(buf, "CHECK: ");
+	vsprintf(buf+strlen("CHECK: "), fmt, args);
 	tet_infoline(buf);
 
 	va_end(args);
@@ -304,8 +304,8 @@ va_list	args;
 	va_start(args);
 #endif
 
-	(void) strcpy(buf, "DEBUG: ");
-	(void) vsprintf(buf+strlen("DEBUG: "), fmt, args);
+	strcpy(buf, "DEBUG: ");
+	vsprintf(buf+strlen("DEBUG: "), fmt, args);
 	tet_infoline(buf);
 
 	va_end(args);
@@ -340,8 +340,8 @@ va_list	args;
 
 	if (purpose_reported == 0)
 		report_purpose((tet_thistest  == 0) ? 1: tet_thistest);
-	(void) strcpy(buf, "REPORT: ");
-	(void) vsprintf(buf+strlen("REPORT: "), fmt, args);
+	strcpy(buf, "REPORT: ");
+	vsprintf(buf+strlen("REPORT: "), fmt, args);
 	tet_infoline(buf);
 
 	va_end(args);

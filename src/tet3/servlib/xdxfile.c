@@ -95,7 +95,7 @@ char *ifile, *ofile;
 
 	/* open the transfer file on the master system */
 	if ((xfid = xd_tfopen(ofile, (int) stbuf.st_mode)) < 0) {
-		(void) fclose(ifp);
+		fclose(ifp);
 		return(-1);
 	}
 
@@ -103,7 +103,7 @@ char *ifile, *ofile;
 	rc = xd_wrloop(ifp, xfid, ifile);
 
 	/* close the local file and the transfer file on the master system */
-	(void) fclose(ifp);
+	fclose(ifp);
 	return(xd_tfclose(xfid) < 0 ? -1 : rc);
 }
 

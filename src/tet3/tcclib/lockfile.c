@@ -88,7 +88,7 @@ int timeout;
 			errno = 0;
 			return(ER_TIMEDOUT);
 		}
-		(void) SLEEP(2);
+		SLEEP(2);
 	}
 
 	/* handle unexpected errors */
@@ -100,7 +100,7 @@ int timeout;
 	}
 
 	/* all ok so close the file and return success */
-	(void) CLOSE(fd);
+	CLOSE(fd);
 	return(ER_OK);
 }
 

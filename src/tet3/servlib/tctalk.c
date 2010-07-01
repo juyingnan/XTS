@@ -149,7 +149,7 @@ int sysid;
 
 	/* do the rest of the logon processing */
 	if (tc_l3(pp) < 0) {
-		(void) tet_ti_logoff(pp, 0);
+		tet_ti_logoff(pp, 0);
 		return(-1);
 	}
 

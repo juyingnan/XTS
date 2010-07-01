@@ -488,13 +488,13 @@ struct proctab *prp;
 		timestr = jnl_time(time((time_t *) 0));
 		ep = prp->pr_scen;
 #ifdef TET_LITE	/* -LITE-CUT-LINE- */
-		(void) printf("%s  %-7s %s\n", timestr, action, ep->sc_tcname);
+		printf("%s  %-7s %s\n", timestr, action, ep->sc_tcname);
 #else	/* -START-LITE-CUT- */
 		for (ip = prp->pr_sys; ip < prp->pr_sys + prp->pr_nsys; ip++)
-			(void) printf("%s  %-7s %s on system %03d\n",
+			printf("%s  %-7s %s on system %03d\n",
 				timestr, action, ep->sc_tcname, *ip);
 #endif /* TET_LITE */	/* -END-LITE-CUT- */
-		(void) fflush(stdout);
+		fflush(stdout);
 	}
 
 	/* start a new activity */
@@ -689,7 +689,7 @@ register struct proctab *prp;
 
 	/* unlock the execution directory */
 	if (prp->pr_execlock) {
-		(void) tcc_unlock(prp, prp->pr_flags & PRF_SHLOCK,
+		tcc_unlock(prp, prp->pr_flags & PRF_SHLOCK,
 			prp->pr_execlock);
 		TRACE2(tet_Tbuf, 6, "free pr_execlock = %s",
 			tet_i2x(prp->pr_execlock));
@@ -699,7 +699,7 @@ register struct proctab *prp;
 
 	/* unlock the source directory */
 	if (prp->pr_srclock) {
-		(void) tcc_unlock(prp, prp->pr_flags & PRF_SHLOCK,
+		tcc_unlock(prp, prp->pr_flags & PRF_SHLOCK,
 			prp->pr_srclock);
 		TRACE2(tet_Tbuf, 6, "free pr_srclock = %s",
 			tet_i2x(prp->pr_srclock));
@@ -1282,25 +1282,25 @@ register struct proctab *prp;
 	/* perform per-proctab journal end processing */
 #ifndef TET_LITE	/* -START-LITE-CUT- */
 	if (prp->pr_flags & PRF_JNL_CHILD) {
-		(void) run_child_proctabs(prp, tcs1_jnlend);
+		run_child_proctabs(prp, tcs1_jnlend);
 		jnl_consolidate(prp);
 		prp->pr_flags &= ~PRF_JNL_CHILD;
 	}
 	else
 #endif /* !TET_LITE */	/* -END-LITE-CUT- */
-		(void) tcs1_jnlend(prp);
+		tcs1_jnlend(prp);
 
 	/* remove the temporary directory if there is one */
-	(void) RUN_PROCTABS(prp, tcs1_rmtmpdir);
+	RUN_PROCTABS(prp, tcs1_rmtmpdir);
 
 	/* ensure that all locks are removed */
-	(void) RUN_PROCTABS(prp, tcs1_unlock);
+	RUN_PROCTABS(prp, tcs1_unlock);
 
 	/* free the tet_xres file names */
-	(void) RUN_PROCTABS(prp, tcs1_freetetxres);
+	RUN_PROCTABS(prp, tcs1_freetetxres);
 
 	/* free the execution directory names */
-	(void) RUN_PROCTABS(prp, tcs1_freetcedir);
+	RUN_PROCTABS(prp, tcs1_freetcedir);
 
 #ifdef TET_LITE	/* -LITE-CUT-LINE- */
 	ASSERT(prp->pr_child == (struct proctab *) 0);
@@ -1374,7 +1374,7 @@ struct proctab *prp;
 		tet_i2x(prp), prpflags(prp->pr_flags));
 
 	if (prp->pr_tmpdir) {
-		(void) tcc_rmtmpdir(prp, prp->pr_tmpdir);
+		tcc_rmtmpdir(prp, prp->pr_tmpdir);
 		TRACE2(tet_Tbuf, 6, "free pr_tmpdir = %s",
 			tet_i2x(prp->pr_tmpdir));
 		free(prp->pr_tmpdir);

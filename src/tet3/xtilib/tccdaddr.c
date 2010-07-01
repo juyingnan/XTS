@@ -95,7 +95,7 @@ struct ptab *pp;
 	/* all ok so fill in the address details */
 	tp->tp_call.maxlen	= np->maxlen;
 	tp->tp_call.len		= np->len;
-	(void) memcpy(tp->tp_call.buf, np->buf, (size_t)np->len);
+	memcpy(tp->tp_call.buf, np->buf, (size_t)np->len);
 
 	return(0);
 }

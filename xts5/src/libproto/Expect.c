@@ -570,7 +570,7 @@ unsigned long   size;
 	    continue;
 	}
 	else {
-		(void) strcpy (emsg, strerror(errno));
+		strcpy (emsg, strerror(errno));
 	    Log_Msg ("Expect: wanted %s, got SYSTEM ERROR - %s\n", wanted, emsg);
 	    Finish (client);
 	}

@@ -131,13 +131,13 @@ int sig;
 	struct sigaction sa;
 
 	if (childpid > 0)
-		(void) tet_killw(childpid, KILLWAIT);
+		tet_killw(childpid, KILLWAIT);
 
 	sa.sa_handler = SIG_DFL;
 	sa.sa_flags = 0; 
-	(void) sigemptyset(&sa.sa_mask); 
-	(void) sigaction(SIGTERM, &sa, (struct sigaction *)NULL);
-	(void) kill(getpid(), SIGTERM);
+	sigemptyset(&sa.sa_mask);
+	sigaction(SIGTERM, &sa, (struct sigaction *)NULL);
+	kill(getpid(), SIGTERM);
 }
 
 
@@ -158,8 +158,8 @@ char *envp[];
 		return(-1);
 	}
 
-	(void) fflush(stdout);
-	(void) fflush(stderr);
+	fflush(stdout);
+	fflush(stderr);
 
 
 #  ifdef TET_THREADS
@@ -187,7 +187,7 @@ char *envp[];
 #  ifdef TET_THREADS
 	/* release all the mutexes and restore the signal mask */
 	tet_mtx_unlock();
-	(void) TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *)0);
+	TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *)0);
 #  endif /* TET_THREADS */
 
 
@@ -226,9 +226,9 @@ char *envp[];
 
 	/* close the pipe and return */
 	if (pfd[0] >= 0)
-		(void) close(pfd[0]);
+		close(pfd[0]);
 	if (pfd[1] >= 0)
-		(void) close(pfd[1]);
+		close(pfd[1]);
 	return(pid);
 }
 
@@ -279,7 +279,7 @@ int pfd[];
 		tet_mypid = getpid();
 
 		/* close the read side of the pipe */
-		(void) close(pfd[0]);
+		close(pfd[0]);
 		pfd[0] = -1;
 
 #  ifdef TET_THREADS
@@ -300,7 +300,7 @@ int pfd[];
 				new_sa.sa_handler != SIG_IGN)
 			{
 				new_sa.sa_handler = SIG_DFL;
-				(void) sigaction(i, &new_sa,
+				sigaction(i, &new_sa,
 					(struct sigaction *)NULL);
 			}
 		}
@@ -310,12 +310,12 @@ int pfd[];
 		tet_disconnect();
 		/* logon again to XRESD */
 		if (tet_xdlogon() == 0)
-			(void) tet_xdxrsend(tet_xrid);
+			tet_xdxrsend(tet_xrid);
 #  endif /* -END-LITE-CUT- */
 
 #  ifdef TET_THREADS
 		tet_mtx_unlock();
-		(void) TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *)0);
+		TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *)0);
 #  endif /* TET_THREADS */
 
 		/* change context to distinguish output from parent's */
@@ -330,19 +330,19 @@ int pfd[];
 
 		/* execute specified file */
 		errno = 0;
-		(void) tet_exec(file, argv, envp);
+		tet_exec(file, argv, envp);
 		if (errno == ENOMEM)
 		{
 			/* This message is to distinguish malloc()
 			   failure from exec() failure */
 			error(errno, "tet_exec() failed:", file);
-			(void) fflush(stderr);
+			fflush(stderr);
 		}
 		/* send tet_errno to the parent process */
 		if ((rc = write(pfd[1], (void *) &tet_errno, sizeof tet_errno)) != sizeof tet_errno)
 			error(rc < 0 ? errno : 0,
 				"pipe write error in tet_spawn()", (char *) 0);
-		(void) close(pfd[1]);
+		close(pfd[1]);
 		pfd[1] = -1;
 		tet_logoff();
 		_exit(127);
@@ -351,7 +351,7 @@ int pfd[];
 	/* parent process */
 
 	/* close the write side of the pipe */
-	(void) close(pfd[1]);
+	close(pfd[1]);
 	pfd[1] = -1;
 
 	/*
@@ -378,7 +378,7 @@ int pfd[];
 			new_sa.sa_handler == SIG_DFL)
 		{
 			new_sa.sa_handler = sig_term;
-			(void) sigaction(SIGTERM, &new_sa,
+			sigaction(SIGTERM, &new_sa,
 				(struct sigaction *)NULL);
 		}
 	}
@@ -462,7 +462,7 @@ int *statp;
 			new_sa.sa_handler == sig_term)
 		{
 			new_sa.sa_handler = SIG_DFL;
-			(void) sigaction(SIGTERM, &new_sa,
+			sigaction(SIGTERM, &new_sa,
 				(struct sigaction *)NULL);
 		}
 

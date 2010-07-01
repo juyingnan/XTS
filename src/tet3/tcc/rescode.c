@@ -148,7 +148,7 @@ static void irc2()
 		fatal(errno, "can't open combined rescode file", rcftmp);
 
 	/* write out the default results codes */
-	(void) fprintf(fp, "# master results code file\n\n");
+	fprintf(fp, "# master results code file\n\n");
 	for (rtp = tet_restab; rtp < tet_restab + tet_nrestab; rtp++)
 		if (fprintf(fp, "%d \"%s\" %s\n", rtp->rt_code, rtp->rt_name,
 			rtp->rt_abrt ? "Abort" : "Continue") < 0)
@@ -192,7 +192,7 @@ static void rescode_distribute()
 		*(lines + nlines++) = rstrstore(line);
 	}
 
-	(void) fclose(fp);
+	fclose(fp);
 
 	/* distribute the lines to each remote system */
 	for (sysid = 1, sysmax = symax(); sysid <= sysmax; sysid++)
@@ -241,7 +241,7 @@ int nlines;
 
 	/* open the remote file */
 	if ((fid = tet_tcfopen(sp->sy_sysid, cfname)) < 0) {
-		(void) sprintf(msg, fmt, sizeof msg - sizeof fmt, cfname);
+		sprintf(msg, fmt, sizeof msg - sizeof fmt, cfname);
 		if (!IS_ER_ERRNO(tet_tcerrno))
 			errno = 0;
 		error(errno ? errno : tet_tcerrno, msg, tet_i2a(sp->sy_sysid));
@@ -282,14 +282,14 @@ void rescode_cleanup()
 #endif /* !TET_LITE */	/* -END-LITE-CUT- */
 
 	/* remove the local tmp result code file */
-	(void) UNLINK(rcftmp);
+	UNLINK(rcftmp);
 
 #ifndef TET_LITE	/* -START-LITE-CUT- */
 	/* remove all the remote tmp rescode files */
 	for (sysid = 1, sysmax = symax(); sysid <= sysmax; sysid++)
 		if ((sp = syfind(sysid)) != (struct systab *) 0 &&
 			sp->sy_rcfname)
-				(void) tet_tcunlink(sysid, sp->sy_rcfname);
+				tet_tcunlink(sysid, sp->sy_rcfname);
 #endif /* !TET_LITE */	/* -END-LITE-CUT- */
 
 }

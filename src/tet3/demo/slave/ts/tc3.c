@@ -55,12 +55,12 @@ char *rptstr;	/* failure to report */
 	else if (err > 0 && err < tet_nerr)
 		errstr = tet_errlist[err];
 	else {
-		(void) sprintf(errbuf, "unknown tet_errno value %d", tet_errno);
+		sprintf(errbuf, "unknown tet_errno value %d", tet_errno);
 		errstr = errbuf;
 	}
 
 	if (tet_printf("%s%s%s", rptstr, colonstr, errstr) < 0) {
-		(void) fprintf(stderr, "tet_printf() failed: tet_errno %d\n",
+		fprintf(stderr, "tet_printf() failed: tet_errno %d\n",
 			tet_errno);
 		exit(EXIT_FAILURE);
 	}
@@ -70,7 +70,7 @@ static void tp1()
 {
 	tet_infoline("This is tp1 in the third test case (tc3, slave)");
 
-	(void) tet_printf("sync with master (sysid: %d)", *sys0);
+	tet_printf("sync with master (sysid: %d)", *sys0);
 
 	if (tet_remsync(101L, sys0, 1, TIMEOUT, TET_SV_YES,
 				(struct tet_synmsg *)0) != 0) {
@@ -89,7 +89,7 @@ static void tp2()
 
 	tet_infoline("This is tp2 in the third test case (tc3, slave)");
 
-	(void) tet_printf("sync with master (sysid: %d) and receive data",
+	tet_printf("sync with master (sysid: %d) and receive data",
 			  *sys0);
 
 	msg.tsm_flags = TET_SMRCVMSG;
@@ -106,7 +106,7 @@ static void tp2()
 		error(0, "tet_remsync() set tsm_dlen <= 0 on slave");
 	else
 	{
-		(void) tet_printf("received message \"%.*s\" from master",
+		tet_printf("received message \"%.*s\" from master",
 			msg.tsm_dlen, rcvbuf);
 		rescode = TET_PASS;
 	}

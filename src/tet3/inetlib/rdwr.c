@@ -119,7 +119,7 @@ register struct ptab *pp;
 		}
 		TDUMP(tet_Tio, 10, tp->tp_buf, DM_HDRSZ, msghdr);
 		pp->pt_flags &= ~PF_RCVHDR;
-		(void) tet_bs2dtmhdr(tp->tp_buf, &pp->ptm_hdr, DM_HDRSZ);
+		tet_bs2dtmhdr(tp->tp_buf, &pp->ptm_hdr, DM_HDRSZ);
 		if (pp->ptm_magic != DTM_MAGIC && pp->ptm_len) {
 			/* we are probably out of sync with sender */
 			error(0, "received bad message header,",
@@ -249,7 +249,7 @@ register struct ptab *pp;
 
 	ignsa.sa_handler = SIG_IGN;
 	ignsa.sa_flags = 0;
-	(void) sigemptyset(&ignsa.sa_mask);
+	sigemptyset(&ignsa.sa_mask);
 
 	/* set up variables for this message on first time through */
 	if ((pp->pt_flags & PF_INPROGRESS) == 0) {
@@ -278,7 +278,7 @@ register struct ptab *pp;
 					rc, msgdata);
 				tp->tp_cnt += rc;
 			}
-			(void) tet_dmlen2bs(rc, tp->tp_buf);
+			tet_dmlen2bs(rc, tp->tp_buf);
 		} while (err);
 		tp->tp_ptr = tp->tp_buf;
 		pp->pt_flags |= PF_INPROGRESS;
@@ -292,13 +292,13 @@ register struct ptab *pp;
 		Signals just cause the write to be restarted (in an attempt
 		to cope with systems without restartable system calls) */
 #  ifndef TET_THREADS
-	(void) sigaction(SIGPIPE, &ignsa, &oldsa);
+	sigaction(SIGPIPE, &ignsa, &oldsa);
 #  else
 	/* just block the signal for now so as to avoid interfering with
 	   another thread's usage of SIGPIPE */
-	(void) sigemptyset(&newset);
-	(void) sigaddset(&newset, SIGPIPE);
-	(void) TET_THR_SIGSETMASK(SIG_BLOCK, &newset, &oldset);
+	sigemptyset(&newset);
+	sigaddset(&newset, SIGPIPE);
+	TET_THR_SIGSETMASK(SIG_BLOCK, &newset, &oldset);
 #  endif /* TET_THREADS */
 
 	do {
@@ -308,7 +308,7 @@ register struct ptab *pp;
 	} while (rc < 0 && err == SOCKET_EINTR);
 
 #  ifndef TET_THREADS
-	(void) sigaction(SIGPIPE, &oldsa, (struct sigaction *)NULL);
+	sigaction(SIGPIPE, &oldsa, (struct sigaction *)NULL);
 #  else
 	if (rc < 0 && (err == EPIPE || err == ECONNRESET))
 	{
@@ -317,15 +317,15 @@ register struct ptab *pp;
 		   with another thread's usage of SIGPIPE, but the
 		   chances are very small.  Note that we unblock SIGPIPE
 		   explicitly, since it may be a member of "oldset". */
-		(void) sigaction(SIGPIPE, &ignsa, &oldsa);
-		(void) TET_THR_SIGSETMASK(SIG_UNBLOCK, &newset, (sigset_t *) 0);
+		sigaction(SIGPIPE, &ignsa, &oldsa);
+		TET_THR_SIGSETMASK(SIG_UNBLOCK, &newset, (sigset_t *) 0);
 
 		/* now restore the original mask and handler */
-		(void) TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *) 0);
-		(void) sigaction(SIGPIPE, &oldsa, (struct sigaction *)NULL);
+		TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *) 0);
+		sigaction(SIGPIPE, &oldsa, (struct sigaction *)NULL);
 	}
 	else
-		(void) TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *) 0);
+		TET_THR_SIGSETMASK(SIG_SETMASK, &oldset, (sigset_t *) 0);
 #  endif /* TET_THREADS */
 
 	/* set state and flags according to results */
@@ -452,7 +452,7 @@ register struct ptab *pp;
 
 	TRACE2(tet_Tio, 4, "tet_ts_dead: close sd %s", tet_i2a(tp->tp_sd));
 
-	(void) SOCKET_CLOSE(tp->tp_sd);
+	SOCKET_CLOSE(tp->tp_sd);
 	tp->tp_sd = INVALID_SOCKET;
 	pp->pt_flags &= ~(PF_CONNECTED | PF_INPROGRESS);
 }

@@ -133,7 +133,7 @@ char **argv;
 	}
 
 	rc = ts_ss2(pp, argv, sd);
-	(void) SOCKET_CLOSE(sd);
+	SOCKET_CLOSE(sd);
 
 	return(rc);
 }
@@ -185,7 +185,7 @@ SOCKET sd;
 	** the value of the listen socket's handle is passed to the daemon
 	** using the -l command-line option
 	*/
-	(void) sprintf(path, "%.*s/bin/%s",
+	sprintf(path, "%.*s/bin/%s",
 		(int) sizeof path - (int) strlen(*argv) - 6,
 		tet_root, *argv);
 
@@ -211,15 +211,15 @@ SOCKET sd;
 		** dup the socket on to fd 0 and close all other files
 		** except 1 and 2
 		*/
-		(void) close(0);
+		close(0);
 		if ((rc = fcntl(sd, F_DUPFD, 0)) != 0) {
 			error(errno, "server socket: fcntl(F_DUPFD) returned",
 				tet_i2a(rc));
 			_exit(~0);
 		}
 		for (fd = tet_getdtablesize() - 1; fd > 2; fd--)
-			(void) close(fd);
-		(void) execv(path, argv);
+			close(fd);
+		execv(path, argv);
 		error(errno, "can't exec", path);
 		_exit(~0);
 	}

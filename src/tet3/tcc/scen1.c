@@ -206,7 +206,7 @@ char *fname;
 	ifstp = ifstack;
 	while (ifstack) {
 		if (ifstack->if_next && ifstack->if_fp)
-			(void) fclose(ifstack->if_fp);
+			fclose(ifstack->if_fp);
 		ifsfree(ifspop());
 	}
 
@@ -243,7 +243,7 @@ static int find1scen()
 			/* start of new scenario */
 			if (skipstart) {
 				n = ifstp->if_lcount - skipstart;
-				(void) sprintf(msg, fmt, n, n == 1 ? "" : "s");
+				sprintf(msg, fmt, n, n == 1 ? "" : "s");
 				scenermsg(msg, (char *) 0, ifstp->if_lcount,
 					ifstp->if_fname);
 			}
@@ -470,7 +470,7 @@ int type, flags, lineno;
 		lsceninfo = 0;
 		RBUFCHK(&ep->sc_sceninfo, &lsceninfo,
 			(int) strlen(element) + 3);
-		(void) sprintf(ep->sc_sceninfo, "\"%s\"", element);
+		sprintf(ep->sc_sceninfo, "\"%s\"", element);
 		break;
 	case SC_TESTCASE:
 		tcname = element;
@@ -574,7 +574,7 @@ int lineno;
 	for (dirp = dirs; dirp < &dirs[ndirs]; dirp++) {
 		/* count the number of comma-separated arguments
 			associated with this directive */
-		(void) strcpy(buf, *dirp);
+		strcpy(buf, *dirp);
 		args[0] = "";
 		nargs = split(buf, args, MAXARGS, ',') - 1;
 
@@ -1035,7 +1035,7 @@ int currline;
 	}
 
 	/* finally, close the file and return (but don't free fname!) */
-	(void) fclose(fp);
+	fclose(fp);
 	TRACE1(tet_Tscen, 4, "includefile(): return");
 }
 
@@ -1188,7 +1188,7 @@ static char *getline_tcc()
 	** if there is one
 	*/
 	if ((lcp = lcpop()) != (struct lcache *) 0) {
-		(void) strcpy(buf, lcp->lc_line);
+		strcpy(buf, lcp->lc_line);
 		lcfree(lcp);
 		TRACE2(tet_Tscen, 10, "getline_tcc(): line = <%s>", firstpart(buf));
 		return(buf);
@@ -1224,7 +1224,7 @@ static char *getline_tcc()
 					"getline_tcc(): encountered EOF on %s",
 					ifstp->if_fname);
 			if (ifstp->if_next) {
-				(void) fclose(ifstp->if_fp);
+				fclose(ifstp->if_fp);
 				ifsfree(ifspop());
 				continue;
 			}
@@ -1525,7 +1525,7 @@ char *s;
 	static char dots[] = " ...";
 	static char buf[PLEN + sizeof dots];
 
-	(void) sprintf(buf, "%.*s%s", PLEN, s,
+	sprintf(buf, "%.*s%s", PLEN, s,
 		(int) strlen(s) > PLEN ? dots : "");
 
 	return(buf);

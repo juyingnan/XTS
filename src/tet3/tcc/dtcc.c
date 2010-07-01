@@ -238,7 +238,7 @@ static int tccdlogon()
 			dir = getdcfg("TET_ROOT", sysid);
 			ASSERT(dir && *dir);
 			if (tcc_access(sysid, dir, 04) < 0) {
-				(void) sprintf(msg, fmt,
+				sprintf(msg, fmt,
 					sizeof msg - sizeof fmt, dir);
 				error(errno, msg, tet_i2a(sysid));
 				return(-1);
@@ -246,7 +246,7 @@ static int tccdlogon()
 			dir = getdcfg("TET_TSROOT", sysid);
 			ASSERT(dir && *dir);
 			if (tcc_access(sysid, dir, 04) < 0) {
-				(void) sprintf(msg, fmt,
+				sprintf(msg, fmt,
 					sizeof msg - sizeof fmt, dir);
 				error(errno, msg, tet_i2a(sysid));
 				return(-1);
