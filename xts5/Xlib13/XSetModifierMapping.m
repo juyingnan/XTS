@@ -171,15 +171,33 @@ XModifierKeymap	*newmap;
 			modmap->max_keypermod);
 		FAIL;
 	}
-	for (i = 0; i < kpm*8; i++) {
-		if (modmap->modifiermap[i] == newmap->modifiermap[i])
-			CHECK;
-		else {
+
+	for (i = 0; i < kpm*8; i += kpm) {
+            int j, k;
+
+            /*
+             * "The order of keycodes within each set is chosen arbitrarily by
+             * the server," so loop over all of the keycodes in both lists to
+             * see if any match because the server might have reordered them.
+             */
+            for (j = i; j < i + kpm; j++) {
+                int found = 0;
+
+                for (k = i; !found && k < i + kpm; k++) {
+                    if (modmap->modifiermap[j] == newmap->modifiermap[k]) {
+                        CHECK;
+                        found = 1;
+                    }
+                }
+
+                if (!found) {
 			report("Modifier map was not set correctly");
 			FAIL;
 			break;
-		}
-	}
+                }
+            }
+        }
+
 	CHECKPASS(1+kpm*8);
 
 	XFreeModifiermap(newmap);
