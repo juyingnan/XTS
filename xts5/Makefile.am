@@ -22,12 +22,14 @@ EDIT = $(SED) -e 's,%bindir%,$(bindir),g' \
 	-e 's,%DEFAULT_TET_ROOT%,$(DEFAULT_TET_ROOT),g' \
 	-e 's,%PACKAGE_VERSION%,$(PACKAGE_VERSION),g'
 bin/xts-config: bin/xts-config.in
+	$(AM_V_at)$(MKDIR_P) bin
 	$(AM_V_GEN)$(EDIT) < $< > $@
 bin/xts-run: bin/xts-run.in
+	$(AM_V_at)$(MKDIR_P) bin
 	$(AM_V_GEN)$(EDIT) < $< > $@
 
 # Config file generation for in-tree testing
 XTS_CONFIG = TET_ROOT='$(top_srcdir)' XSET='$(XSET)' XDPYINFO='$(XDPYINFO)' \
-	$(PERL) -p $(srcdir)/bin/xts-config
-tetexec.cfg: tetexec.cfg.in $(srcdir)/bin/xts-config
+	$(PERL) -p $(builddir)/bin/xts-config
+tetexec.cfg: tetexec.cfg.in $(builddir)/bin/xts-config
 	$(AM_V_GEN)$(XTS_CONFIG) < $< > $@.tmp && mv -f $@.tmp $@ || rm -f $@.tmp
