@@ -3,6 +3,7 @@
 use warnings;
 use strict;
 use Sys::Hostname;
+use Cwd 'abs_path';
 
 BEGIN
 {
@@ -12,6 +13,7 @@ BEGIN
 	$xdpyinfo = $ENV{"XDPYINFO"} or $xdpyinfo = "xdpyinfo";
 	my $tet_root;
 	$tet_root = $ENV{"TET_ROOT"} or $tet_root = "%DEFAULT_TET_ROOT%";
+	$tet_root = abs_path($tet_root);
 
 	open(XSET, "$xset q |") or die "$xset q failed, giving up.\n";
 	while(<XSET>)
