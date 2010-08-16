@@ -39,4 +39,10 @@ if [ ! -f "$config" ]; then
     fi
 fi
 
-exec "$SHELL" "$XTS_RUN" -c "$config" -o results "$@"
+"$SHELL" "$XTS_RUN" -c "$config" -o results "$@"
+case $? in
+    # Treat TET_EXIT_SUCCESS and TET_EXIT_SKIP as success.  SKIP just means that
+    # not all of the tests could be run.
+    0|77) exit 0;;
+    *)    exit 1;;
+esac
