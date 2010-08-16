@@ -75,14 +75,14 @@ BEGIN
 
 	$::vars{"XT_VISUAL_CLASSES"} = join ' ', keys %visuals;
 
-	if($::vars{"DISPLAY"} =~ /^:(\d+)\.(\d+)$/)
+	if($::vars{"DISPLAY"} =~ /^:\d+(\.\d+)?$/)
 	{
 		$::vars{"XT_LOCAL"} = "Yes";
 		my $hostname = hostname();
 
 		# have xdpyinfo try connecting to the same display via TCP;
 		# just check its exit status.
-		$ENV{"DISPLAY"} = "$hostname:$1.$2";
+		$ENV{"DISPLAY"} = $hostname . $::vars{"DISPLAY"};
 		open(INFO, "$xset q 2>/dev/null |") or die "$xset q on TCP failed, giving up.\n";
 		<INFO>; # discard output
 		close(INFO);
