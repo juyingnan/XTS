@@ -47,6 +47,21 @@ AC_PROG_LIBTOOL
 AC_PROG_CC
 AM_PROG_CC_C_O
 
+# Set up the build system compiler, if we're cross-compiling.  This is used for
+# building tools like mc that are executed during the build.
+if test x"$CC_FOR_BUILD" = x; then
+        if test x"$cross_compiling" = xyes; then
+                AC_CHECK_PROGS(CC_FOR_BUILD, gcc cc)
+        else
+                CC_FOR_BUILD="$CC"
+        fi
+fi
+AC_SUBST([CC_FOR_BUILD])
+CFLAGS_FOR_BUILD=${CFLAGS_FOR_BUILD-${CFLAGS}}
+AC_SUBST(CFLAGS_FOR_BUILD)
+LDFLAGS_FOR_BUILD=${LDFLAGS_FOR_BUILD-${LDFLAGS}}
+AC_SUBST(LDFLAGS_FOR_BUILD)
+
 PKG_CHECK_MODULES([XTS], [x11 xext xi xtst])
 PKG_CHECK_MODULES([XT], [x11 xext xt xtst])
 dnl PKG_CHECK_MODULES([XAW], [x11 xext xt xtst xaw7])
