@@ -154,36 +154,6 @@ all
 	:include:/scenarios/Xlib17_scen
 	"VSW5TESTSUITE SECTION Xopen 8 127 0 0"
 	:include:/scenarios/Xopen_scen
-	"VSW5TESTSUITE SECTION Xt3 21 73 0 0"
-	:include:/scenarios/Xt3_scen
-	"VSW5TESTSUITE SECTION Xt4 33 192 0 0"
-	:include:/scenarios/Xt4_scen
-	"VSW5TESTSUITE SECTION Xt5 10 69 0 0"
-	:include:/scenarios/Xt5_scen
-	"VSW5TESTSUITE SECTION Xt6 7 71 0"
-	:include:/scenarios/Xt6_scen
-	"VSW5TESTSUITE SECTION Xt7 11 106 0"
-	:include:/scenarios/Xt7_scen
-	"VSW5TESTSUITE SECTION Xt8 7 43 0"
-	:include:/scenarios/Xt8_scen
-	"VSW5TESTSUITE SECTION Xt9 33 189 0"
-	:include:/scenarios/Xt9_scen
-	"VSW5TESTSUITE SECTION Xt10 8 17 0"
-	:include:/scenarios/Xt10_scen
-	"VSW5TESTSUITE SECTION Xt11 58 285 0 0"
-	:include:/scenarios/Xt11_scen
-	"VSW5TESTSUITE SECTION Xt12 22 67 0 0"
-	:include:/scenarios/Xt12_scen
-	"VSW5TESTSUITE SECTION Xt13 39 178 0 0"
-	:include:/scenarios/Xt13_scen
-	"VSW5TESTSUITE SECTION Xt14 2 18 0 0"
-	:include:/scenarios/Xt14_scen
-	"VSW5TESTSUITE SECTION Xt15 1 2 0 0"
-	:include:/scenarios/Xt15_scen
-	"VSW5TESTSUITE SECTION XtC 29 147 0 0"
-	:include:/scenarios/XtC_scen
-	"VSW5TESTSUITE SECTION XtE 1 1 0 0"
-	:include:/scenarios/XtE_scen
 
 Interface
 	"VSW5TESTSUITE SECTION Xlib3 109 161 0 0"
