@@ -7,6 +7,7 @@ AM_CFLAGS = -I$(top_srcdir)/include \
 	$(XTS_CFLAGS)
 LDADD = $(top_builddir)/src/tet3/tcm/libtcmmain.la \
 	$(top_builddir)/xts5/src/libxts5proto.la \
+	$(top_builddir)/xts5/src/libxts5.la \
 	$(top_builddir)/src/tet3/apilib/libapi.la \
 	$(top_builddir)/src/tet3/apilib/libapi_s.la \
 	$(XTS_LIBS)
