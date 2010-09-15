@@ -4,7 +4,7 @@ SUBDIRS = . fonts src scenarios Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 \
 	Xlib7 Xlib8 Xlib9 Xlib10 Xlib11 Xlib12 Xlib13 Xlib14 Xlib15 \
 	Xlib16 Xlib17 XIproto XI
 
-CLEANFILES = */*/tet_lock
+CLEANFILES = */*/tet_lock bin/xts-config bin/xts-run tetexec.cfg
 LOGFILES = */*/*.log
 DISTCLEANFILES = $(LOGFILES) */*/*.log.tmp
 
