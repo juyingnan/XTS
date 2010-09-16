@@ -150,8 +150,6 @@ src/Makefile
 src/tet3/Makefile
 src/tet3/apilib/Makefile
 src/tet3/dtet2lib/Makefile
-src/tet3/inetlib/Makefile
-src/tet3/servlib/Makefile
 src/tet3/tcm/Makefile
 src/tet3/tcc/Makefile
 src/tet3/tcclib/Makefile
@@ -161,8 +159,6 @@ xts5/src/Makefile
 xts5/src/lib/Makefile
 xts5/src/libproto/Makefile
 xts5/src/libXR5/Makefile
-xts5/src/libXtaw/Makefile
-xts5/src/libXtmu/Makefile
 xts5/src/libXtTest/Makefile
 xts5/src/xim/Makefile
 xts5/src/bin/Makefile
