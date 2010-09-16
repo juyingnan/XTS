@@ -77,4 +77,7 @@ libdtet2_la_SOURCES = \
 		valmsg.c \
 		w32err.c \
 		wait3.c \
-		wsaerr.c
+		wsaerr.c \
+		errmap.h \
+		sigmap.h \
+		trace.h

@@ -3,13 +3,15 @@ include common.mk
 SUBDIRS = . fonts src scenarios Xproto Xopen Xlib3 Xlib4 Xlib5 Xlib6 \
 	Xlib7 Xlib8 Xlib9 Xlib10 Xlib11 Xlib12 Xlib13 Xlib14 Xlib15 \
 	Xlib16 Xlib17 XIproto XI
+noinst_HEADERS = include
 
 CLEANFILES = */*/tet_lock bin/xts-config bin/xts-run tetexec.cfg
 LOGFILES = */*/*.log
 DISTCLEANFILES = $(LOGFILES) */*/*.log.tmp
+EXTRA_DIST = bin/xts-config.in bin/xts-run.in
 
 bin_SCRIPTS = bin/xts-config bin/xts-run
-xts5_DATA = tetexec.cfg.in tet_scen tet_code
+dist_xts5_DATA = tetexec.cfg.in tet_scen tet_code
 xts5dir = $(datadir)/xts5
 check_DATA = tetexec.cfg
 

@@ -65,4 +65,4 @@ tprogs = \
 	XUnloadFont
 
 # Data files for test programs
-nobase_testprog_DATA = $(srcdir)/*/*.dat
+nobase_dist_testprog_DATA = $(srcdir)/*/*.dat

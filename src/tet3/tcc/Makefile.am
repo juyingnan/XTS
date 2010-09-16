@@ -37,7 +37,14 @@ tcc_SOURCES = cleanup.c \
 		tcname.c \
 		tool.c \
 		utils.c \
-		ynstr.c
+		ynstr.c \
+		dirtab.h \
+		dtcc.h \
+		keys.h \
+		proctab.h \
+		scentab.h \
+		systab.h \
+		tcc.h
 
 # These didn't get compiled before the autotools conversion.
 #		fake_in.c 

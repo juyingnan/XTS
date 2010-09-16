@@ -10,7 +10,8 @@ libtcm_la_SOURCES = \
 		child.c \
 		ckversion.c \
 		dynlink.c \
-		tcmfuncs.c
+		tcmfuncs.c \
+		tcmfuncs.h
 
 # When linking to either of these libraries, remember to link libapi.la
 # after them

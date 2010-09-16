@@ -13,7 +13,7 @@ FONTBDFS = xtfont0.bdf xtfont1.bdf xtfont2.bdf xtfont3.bdf xtfont4.bdf \
 FONTPCFS = $(FONTBDFS:.bdf=.pcf)
 
 xts5fontsdir = $(datadir)/xts5/fonts
-xts5fonts_DATA = $(FONTPCFS) fonts.dir
+dist_xts5fonts_DATA = $(FONTPCFS) fonts.dir
 
 .bdf.pcf:
 	$(BDFTOPCF) -t -o $@ $<

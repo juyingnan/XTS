@@ -1,4 +1,5 @@
 SUBDIRS = src xts5
+noinst_HEADERS = include
 
 # Helper target to force generation of tetexec.cfg
 .PHONY: tetexec.cfg

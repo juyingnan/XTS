@@ -32,3 +32,6 @@ libapi_s_la_SOURCES = \
 libapi_la_LIBADD = ../tcm/libtcm.la
 libapi_la_SOURCES = \
 		tciface.c
+
+EXTRA_DIST = \
+		version.c

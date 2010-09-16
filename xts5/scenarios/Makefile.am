@@ -1,6 +1,6 @@
 include ../common.mk
 
-scenarios_DATA = \
+dist_scenarios_DATA = \
 		shape_scen \
 		XIproto_scen \
 		XI_scen \
