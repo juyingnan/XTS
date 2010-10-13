@@ -8,7 +8,7 @@ noinst_HEADERS = include
 CLEANFILES = */*/tet_lock bin/xts-config bin/xts-run tetexec.cfg
 LOGFILES = */*/*.log
 DISTCLEANFILES = $(LOGFILES) */*/*.log.tmp
-EXTRA_DIST = bin/xts-config.in bin/xts-run.in
+EXTRA_DIST = bin/xts-config.in bin/xts-run.in lib
 
 bin_SCRIPTS = bin/xts-config bin/xts-run
 dist_xts5_DATA = tetexec.cfg.in tet_scen tet_code

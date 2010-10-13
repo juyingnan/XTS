@@ -14,6 +14,11 @@ LDADD = $(top_builddir)/src/tet3/tcm/libtcmmain.la \
 testprogdir = $(libexecdir)/$(subdir)
 nobase_testprog_PROGRAMS = $(tprogs)
 BUILT_SOURCES = $(tprogs:=.c)
+EXTRA_DIST = \
+	$(addsuffix .m,$(filter-out %_m,$(tprogs))) \
+	getres.mc \
+	putres.mc \
+	rescommon.mc
 DISTCLEANFILES = $(BUILT_SOURCES)
 
 XrmCombineDatabase_LDADD = $(top_builddir)/xts5/src/libXR5/libXR5.la $(LDADD)
