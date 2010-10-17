@@ -1279,7 +1279,17 @@ int type;
 	case BAD_LENGTH:
 	case JUST_TOO_LONG:
 	case TOO_LONG:
-		rp->length = bad_len;
+		if (bad_len == 0 && dpy->bigreq_size > 0) {
+		    Log_Msg("This test sends an invalid request with size zero\n");
+		    Log_Msg("  which would be interpreted as a Big Request by this\n");
+		    Log_Msg("  server, so this test cannot be performed.\n");
+		    Free_Req(rp);
+		    rp = NULL;
+		    Destroy_Client(client);
+		    Untested();
+		} else {
+		    rp->length = bad_len;
+		}
 		break;
 	default:
 		Log_Msg ("INTERNAL ERROR: Make_Req - bad test type %d\n", Get_Test_Type(client));
