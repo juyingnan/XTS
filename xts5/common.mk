@@ -10,6 +10,10 @@ MC = $(top_builddir)/xts5/src/bin/mc/mc
 AM_V_MC = $(am__v_MC_$(V))
 am__v_MC_ = $(am__v_MC_$(AM_DEFAULT_VERBOSITY))
 am__v_MC_0 = @echo "  MC    " $@;
+
+# empty rules to turn off objc magic.  grr.
+%.o : %.m
+
 .m.c:
 	$(AM_V_MC)TET_ROOT='$(abs_top_srcdir)' $(MC) -o $@ $<
 .m_m.c:
