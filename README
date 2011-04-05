@@ -50,10 +50,10 @@ the build tree.
 	$ ./check.sh	# run all the tests
 	$ ./check.sh XI	# run just the XI test scenario
 
-The "make check" framework can also be used from the build tree.
+The "make run-tests" framework can also be used from the build tree.
 
-	$ make check			# run all the tests
-	$ make check scenario=XI	# run just the XI test scenario
+	$ make run-tests		# run all the tests
+	$ make run-tests scenario=XI	# run just the XI test scenario
 	$ make test-XI			# shortcut for the previous
 
 A wrapper script, xts-run, is the easiest way to run the installed tests.

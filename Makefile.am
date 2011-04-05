@@ -7,18 +7,20 @@ tetexec.cfg:
 	@rm -f xts5/$@
 	@cd xts5 && $(MAKE) $(AM_MAKEFLAGS) $@
 
-# "make check" testing. Override the test set with scenario.
+# Helpers for running the test suite in-tree. Override the test set with
+# scenario.
 scenario =
-check-local: check.sh
+run-tests: check.sh all
 	@if test -z "$$DISPLAY"; then \
 		echo "DISPLAY not set"; \
 		exit 1; \
 	fi
 	$(SHELL) $(builddir)/check.sh $(scenario)
+.PHONY: run-tests
 
 # Helper target for testing subsets (test-Xopen, etc.)
 test-%:
-	@$(MAKE) $(AM_MAKEFLAGS) check scenario='$*'
+	@$(MAKE) $(AM_MAKEFLAGS) run-tests scenario='$*'
 
 if HAVE_DOCTOOLS
 miscmandir = $(MISC_MAN_DIR)
