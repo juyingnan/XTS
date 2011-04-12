@@ -153,7 +153,7 @@ extern	int 	NXI_event;
 int XInputMajorOpcode;
 int XInputFirstError;
 int XInputFirstEvent;
-XID baddevice;
+int baddevice;
 
 Display	*Dsp;
 Window	Win;
