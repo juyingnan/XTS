@@ -101,10 +101,9 @@ struct tet_sysent *sysp;
 	return 0;
 }
 
-char *tet_getvar(name)
-char *name;
+char *tet_getvar(const char *name)
 {
-	return((char *) 0);
+	return((const char *) 0);
 }
 
 void tet_infoline(data)

@@ -54,7 +54,7 @@ AUTHOR:		Geoff Clare, UniSoft Ltd.
 DATE CREATED:	27 July 1990
 SYNOPSIS:
 
-	char *tet_getvar(char *name);
+	char *tet_getvar(const char *name);
 
 	void tet_config(void);
 
@@ -106,8 +106,7 @@ MODIFICATIONS:
 static char **varptrs;
 static int lvarptrs, nvarptrs;
 
-TET_IMPORT char *tet_getvar(name)
-char *name;
+TET_IMPORT char *tet_getvar(const char *name)
 {
 	/* return value of specified configuration variable */
 

@@ -659,9 +659,7 @@ int sig;
 
 
 static void
-sig_init(var, set)
-char *var;
-sigset_t *set;
+sig_init(const char *var, sigset_t *set)
 {
 	/* initialise signal set from list in specified variable */
 

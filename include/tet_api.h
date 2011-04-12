@@ -104,6 +104,9 @@ MODIFICATIONS:
 	Andrew Dingwall, UniSoft Ltd., August 1998
 	Added support for shared libraries.
 
+	Aaron Plattner, NVIDIA Corporation, April 2011
+	tet_getvar needs to take a const char* argument.
+
 ************************************************************************/
 
 #ifndef TET_API_H_INCLUDED
@@ -311,7 +314,7 @@ extern "C" {
 /* functions in TETware-Lite and in Distrubuted TETware */
 TET_IMPORT_FUNC(void, tet_delete, TET_PROTOLIST((int, char *)));
 TET_NORETURN TET_IMPORT_FUNC(void, tet_exit, TET_PROTOLIST((int)));
-TET_IMPORT_FUNC(char *, tet_getvar, TET_PROTOLIST((char *)));
+TET_IMPORT_FUNC(char *, tet_getvar, TET_PROTOLIST((const char *)));
 TET_IMPORT_FUNC(void, tet_infoline,  TET_PROTOLIST((char *)));
 TET_IMPORT_FUNC(int, tet_kill, TET_PROTOLIST((pid_t, int)));
 TET_IMPORT_FUNC(void, tet_logoff, TET_PROTOLIST((void)));
