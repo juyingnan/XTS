@@ -112,6 +112,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 #include	<stdlib.h>
 #include	"xtest.h"
 #include	<signal.h>
+#include	<unistd.h>
 
 static int 	Alarm_set;
 

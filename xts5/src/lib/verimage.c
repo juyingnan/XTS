@@ -117,6 +117,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 
 #include	"stdio.h"
 #include	"string.h"
+#include	"unistd.h"
 
 #include	"xtest.h"
 #include	"X11/Xlib.h"
