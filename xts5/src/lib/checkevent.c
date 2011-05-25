@@ -240,6 +240,10 @@ SOFTWARE.
 	fail++; \
 	} else pass++;
 
+#ifdef INPUTEXTENSION
+int check_ext_event(XEvent*, XEvent*);
+#endif
+
 /*
  * Compare two events.
  * Returns the number of fields that compared false.
