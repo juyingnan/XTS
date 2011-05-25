@@ -75,7 +75,7 @@ AC_DEFINE([XT_X_RELEASE], [6], [The X11 Release, e.g. 6 for X11R6])
 AC_DEFINE([XTESTEXTENSION], [1], [Build tests using the XTEST extension])
 AC_DEFINE([INPUTEXTENSION], [1], [Build tests using the XI extension])
 
-m4_pattern_forbid(XTRANS_CONNECTION_FLAGS)
+m4_pattern_forbid([XTRANS_CONNECTION_FLAGS])
 
 # Transport selection macro from xtrans.m4
 XTRANS_CONNECTION_FLAGS
