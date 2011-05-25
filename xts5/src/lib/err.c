@@ -177,6 +177,7 @@ char	text[TEXTLEN];
 
 	/* Cause to test to not pass */
 	delete("Unexpected Xlib error");
+	return(0);
 }
 
 /*
