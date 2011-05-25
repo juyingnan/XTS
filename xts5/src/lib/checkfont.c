@@ -152,11 +152,11 @@ int 	nfontinfo = NELEM(fontinfo);
 #ifdef __STDC__
 static int checkprops(XFontStruct *fsp, XFontStruct *good, char *str);
 static XCharStruct *getmetric(XFontStruct *fsp, unsigned int c);
-static check1prop(XFontStruct *fsp, XFontProp *fp, char *str);
+static int check1prop(XFontStruct *fsp, XFontProp *fp, char *str);
 #else
 static int checkprops();
 static XCharStruct *getmetric();
-static check1prop();
+static int check1prop();
 #endif
 
 /*
@@ -447,7 +447,7 @@ int 	pass = 0, fail = 0;
 /*
  * Check a single property
  */
-static
+static int
 check1prop(fsp, fp, str)
 XFontStruct	*fsp;
 XFontProp	*fp;

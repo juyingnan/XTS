@@ -661,7 +661,7 @@ char	tempstr[50];
 }
 
 #ifdef INPUTEXTENSION
-check_ext_event(good,ev)
+int check_ext_event(good,ev)
 XEvent *good, *ev;
 {
 int i;

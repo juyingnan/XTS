@@ -398,7 +398,7 @@ int 	i;
 	keyind = 0;
 }
 #ifdef INPUTEXTENSION
-devicerelkeys(dev)
+void devicerelkeys(dev)
 XDevice *dev;
 {
 int 	i, id=dev->device_id;
@@ -534,7 +534,7 @@ static void devmodthing(/* disp, dev, mask */);
  * function should be made of bits obtained by a previous call to wantmods,
  * to ensure that they have assigned keycodes.
  */
-modpress(disp, mask)
+void modpress(disp, mask)
 Display	*disp;
 unsigned int 	mask;
 {
@@ -542,7 +542,7 @@ unsigned int 	mask;
 }
 
 #ifdef INPUTEXTENSION
-devmodpress(disp, dev, mask)
+void devmodpress(disp, dev, mask)
 Display	*disp;
 XDevice *dev;
 unsigned int 	mask;
@@ -556,7 +556,7 @@ unsigned int 	mask;
  * function should be made of bits obtained by a previous call to wantmods,
  * to ensure that they have assigned keycodes.
  */
-modrel(disp, mask)
+void modrel(disp, mask)
 Display	*disp;
 unsigned int 	mask;
 {
@@ -564,7 +564,7 @@ unsigned int 	mask;
 }
 
 #ifdef INPUTEXTENSION
-devmodrel(disp, dev, mask)
+void devmodrel(disp, dev, mask)
 Display	*disp;
 XDevice *dev;
 unsigned int 	mask;
@@ -641,7 +641,7 @@ void	(*func)();
  * Check if a keycode corresponds to any of mods in a mask, returned by
  * wantmods.
  */
-ismodkey(mask, kc)
+int ismodkey(mask, kc)
 unsigned int 	mask;
 int kc;
 {
@@ -666,7 +666,7 @@ int 	mod;
  * This routine should be called at the end of a test after any of the
  * device press routines have been called.
  */
-restoredevstate()
+void restoredevstate()
 {
 extern	Display	*Dsp;
 
@@ -678,7 +678,7 @@ extern	Display	*Dsp;
 /*
  * Returns True if we don't want to do extended testing for any reason.
  */
-noext(needbutton)
+int noext(needbutton)
 int 	needbutton;
 {
 
@@ -700,7 +700,7 @@ int 	needbutton;
 /*
  * Returns the number of physical buttons.
  */
-nbuttons()
+int nbuttons()
 {
 static int 	Nbuttons = -1;
 unsigned	char	pmap[5];
@@ -715,7 +715,7 @@ extern	Display	*Dsp;
  * Returns a valid keycode for the server.  A different one is returned
  * every time (until it wraps round).
  */
-getkeycode(display)
+int getkeycode(display)
 Display	*display;
 {
 static	int 	minkc, maxkc;
@@ -738,7 +738,7 @@ static	int 	curkey;
  * every time (until it wraps round).
  */
 #ifdef INPUTEXTENSION
-getdevkeycode(display,dev)
+int getdevkeycode(display,dev)
 Display	*display;
 XDevice *dev;
 {

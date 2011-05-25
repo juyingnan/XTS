@@ -309,11 +309,11 @@ struct	regid	*rp;
  * Functions to enable and disable resource registration.  After disabling
  * it then resources can be freed explicitly.
  */
-regenable()
+void regenable()
 {
 	Regenabled = 1;
 }
-regdisable()
+void regdisable()
 {
 	Regenabled = 0;
 }

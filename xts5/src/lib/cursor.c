@@ -120,7 +120,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 
 /* does this cursor match that of the window? */
 
-curofwin(display, cursor, window)
+int curofwin(display, cursor, window)
 Display	*display;
 Cursor	cursor;
 Window	window;
@@ -130,7 +130,7 @@ Window	window;
 
 /* has this window the default cursor? */
 
-defcur(display, window)
+int defcur(display, window)
 Display	*display;
 Window	window;
 {
@@ -162,7 +162,7 @@ Window	window;
 
 /* is the current cursor the same as that of window? */
 
-spriteiswin(display, window)
+int spriteiswin(display, window)
 Display	*display;
 Window	window;
 {
