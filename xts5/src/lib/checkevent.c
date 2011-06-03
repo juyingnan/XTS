@@ -250,9 +250,7 @@ int check_ext_event(XEvent*, XEvent*);
  * On error (eg. no such event type) returns -1.
  */
 int
-checkevent(good, ev)
-XEvent *good;
-XEvent *ev;
+checkevent(XEvent *good, XEvent *ev)
 {
 int 	i;
 int 	fail;
@@ -665,8 +663,8 @@ char	tempstr[50];
 }
 
 #ifdef INPUTEXTENSION
-int check_ext_event(good,ev)
-XEvent *good, *ev;
+int
+check_ext_event(XEvent *good, XEvent *ev)
 {
 int i;
 int 	fail;
