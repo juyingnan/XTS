@@ -221,7 +221,8 @@ int	Lclass;
 		}
 		Lclass = Nclass;
 		for (s = left_bracket; s; s = comma) {
-			if ((comma = strchr(++s, COMMA)))
+			comma = strchr(++s, COMMA);
+			if (comma)
 				*comma = '\0';
 			if (*s == '\0')
 				break;
