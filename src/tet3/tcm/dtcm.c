@@ -720,6 +720,14 @@ void	(*func)();
 	{
 		sig_init("TET_SIG_IGN", &sig_ign);
 		sig_init("TET_SIG_LEAVE", &sig_leave);
+#if defined(SIGWINCH)
+		/*
+		 * Ignore terminal window size changes, which don't affect the
+		 * test environment.
+		 */
+		sigaddset(&sig_ign, SIGWINCH);
+#endif
+
 		init_done = 1;
 	}
 
