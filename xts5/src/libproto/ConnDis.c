@@ -36,6 +36,9 @@ in this Software without prior written authorization from The Open Group.
 #ifdef HAVE_CONFIG_H
 #include <config.h>
 #endif
+
+#define X11_t
+#define TRANS_CLIENT
 #include <X11/Xlibint.h>
 #include <X11/Xtrans/Xtrans.h>
 #include <X11/Xauth.h>
