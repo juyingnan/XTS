@@ -313,6 +313,13 @@ Verify that a BitmapOpenFailed error occurred.
 >>CODE
 int ret;
 
+/* Writing won't fail even if the permissions say it should if we're root. */
+	if(geteuid() == 0) {
+	    report("File permissions cannot be tested as root.");
+	    UNTESTED;
+	    return;
+	}
+
 /* Create a suitable bitmap. */
 /* Create an unwritable directory. */
 	if(mkdir(XWBF_DIR, XWBF_MODE)) {
