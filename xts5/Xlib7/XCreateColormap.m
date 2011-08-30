@@ -600,20 +600,20 @@ error occurs.
 >>ASSERTION Bad A
 When xname is called with an invalid visual,
 then a
-.S BadValue
+.S BadMatch
 error occurs.
 >>STRATEGY
 Make a visual structure invalid using badvis.
 Create a colourmap for this visual with XCreateColorMap.
-Verify that a BadValue error occurred.
->>CODE BadValue
+Verify that a BadMatch error occurred.
+>>CODE BadMatch
 Visual	vi;
 
 	alloc = AllocNone;
 	badvis(&vi);
 	visual = &vi;
 	XCALL;
-	if(geterr() == BadValue)
+	if(geterr() == BadMatch)
 		PASS;
 >>ASSERTION Bad A
 .ER BadWindow
