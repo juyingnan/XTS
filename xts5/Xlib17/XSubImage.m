@@ -115,11 +115,19 @@ int		dep;
 {
 int		i;
 int		j;
-int		mod;
+unsigned int	mod;
 GC		gc;
 unsigned long	val;
 
 	gc = makegc(display, d);
+
+/*
+	Since 'mod' is a 32-bit integer, 'dep>=32' will result in 'mod=0'.
+	Hence restrict 'dep' to 31. This does not change anything
+	functionally as window size is restricted to '17x19', rendering 'dep'
+	values greater than 6 pointless.
+*/
+	dep = (dep > 31) ? 31 : dep;
 	mod = 1<<dep;
 	for(j=0; j<h; j++)
 		for(i=0; i<w; i++) {
@@ -141,8 +149,9 @@ int	i;
 int	j;
 int	a;
 int	b;
-int	mod;
+unsigned int	mod;
 
+	dep = (dep > 31) ? 31 : dep;
 	mod = 1<<dep;
 	for(j=0, b=y; j<h; j++, b++)
 		for(i=0, a=x; i<w; i++, a++)
