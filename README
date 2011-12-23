@@ -21,7 +21,7 @@ Eventually there will be a tarball release when it is stabilized.
 
 Requirements
 ------------
-Required libraries: libX11, libXext, libXi, libXtst
+Required libraries: libX11, libXau, libXext, libXi, libXtst
 
 Required utilities: xdpyinfo, xset, perl, bdftopcf, mkfontdir
 
