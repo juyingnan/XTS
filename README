@@ -13,7 +13,7 @@ the ugliness of building and running the tests.
 
 Downloading
 -----------
-Currently xts it is only available from a git repository.
+Currently xts is only available from a git repository:
 
 	$ git clone git://anongit.freedesktop.org/git/xorg/test/xts
 
@@ -31,7 +31,7 @@ pkg-config(1) for details on the latter.
 
 Build and Install
 -----------------
-The build and install are now straightforward:
+The build and install steps are now straightforward:
 
 	$ ./autogen.sh	# using a git checkout
 	$ ./configure	# using a tarball
