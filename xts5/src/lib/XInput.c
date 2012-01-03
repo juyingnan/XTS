@@ -189,7 +189,9 @@ Setup_Extension_DeviceInfo(dmask)
 	    SavID = list->id;
 	if (list->use == IsXPointer)
 	    SavPID = list->id;
-	if (list->use != IsXExtensionDevice)
+	if (list->use != IsXExtensionDevice &&
+	    list->use != IsXExtensionPointer &&
+	    list->use != IsXExtensionKeyboard)
 	    continue;
 	dev = XOpenDevice (dpy2, list->id);
 	nokeys = True;
