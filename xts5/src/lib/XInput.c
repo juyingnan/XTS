@@ -68,6 +68,7 @@ SOFTWARE.
 #endif
 
 #include <stdio.h>
+#include <stdlib.h>
 #ifdef INPUTEXTENSION
 #include "X11/extensions/XIproto.h"
 #include "X11/extensions/XInput.h"
