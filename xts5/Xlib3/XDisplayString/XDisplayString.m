@@ -194,7 +194,7 @@ char	*str;
 char	*dstr;
 char	*mstr = "DISPLAY=%s";
 
-	if((dstr = getenv("DISPLAY")) == (char *) NULL) {
+	if((dstr = getenv("DISPLAY")) == NULL) {
 		delete("DISPLAY configuration variable is not defined.");
 		return;
 	}		

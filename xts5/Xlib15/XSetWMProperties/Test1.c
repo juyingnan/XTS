@@ -154,7 +154,7 @@ XClassHint	rclass_hints;
 	class_hints.res_name = NULL;
 	class_hints.res_class = "XTest_Undefined.";
 
-	if( (res_name = (char *) getenv("RESOURCE_NAME")) == NULL) {
+	if( (res_name = getenv("RESOURCE_NAME")) == NULL) {
 		delete("RESOURCE_NAME environment variable is not set.");
 		return;
 	} else

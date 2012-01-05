@@ -155,13 +155,13 @@ static	char	*result[]  = { "pVAL_1",    "hVAL_5",    "hVAL_6" , "hVAL_7"};
 	tpstartup();
 	trace("Exec'd file ./Test5 with HOME = \"%s\".", getenv("HOME"));
 
-	if(getenv("XENVIRONMENT") != (char *) NULL) {
+	if(getenv("XENVIRONMENT") != NULL) {
 		delete("XENVIRONMENT environment variable was set.");
 		return;
 	} else
 		CHECK;
 
-	if(getenv("HOME") == (char *) NULL) {
+	if(getenv("HOME") == NULL) {
 		delete("HOME environment variable was not set.");
 		return;
 	} else

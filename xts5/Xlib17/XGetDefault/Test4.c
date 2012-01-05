@@ -152,7 +152,7 @@ static	char	*result[]  = { "pVAL_1",    "eVAL_5",    "eVAL_6" };
 	tpstartup();
 	trace("Exec'd file ./Test4 with XENVIRONMENT = \"%s\".", getenv("XENVIRONMENT"));
 
-	if(getenv("XENVIRONMENT") == (char *) NULL) {
+	if(getenv("XENVIRONMENT") == NULL) {
 		delete("XENVIRONMENT environment variable not set.");
 		return;
 	} else

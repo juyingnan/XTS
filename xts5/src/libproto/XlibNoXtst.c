@@ -219,7 +219,6 @@ int XstConnectDisplay (display_name, expanded_name, screen_num,
 	struct sockaddr *addr;		/* address to connect to */
         struct hostent *host_ptr;
 	int addrlen;			/* length of address */
-	extern char *getenv();
 	extern struct hostent *gethostbyname();
         int fd;				/* Network socket */
 	char numberbuf[16];

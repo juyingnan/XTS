@@ -132,6 +132,7 @@ SOFTWARE.
 #include <config.h>
 #endif
 
+#include <stdlib.h>
 #include "XstlibInt.h"
 #include <X11/Xatom.h>
 
@@ -339,7 +340,6 @@ int	cl; /* client number */
 
     extern int  XstSendClientPrefix ();
     extern int  XstConnectDisplay ();
-    extern char *getenv ();
     extern  XID Get_Resource_Id();
 
  /* 

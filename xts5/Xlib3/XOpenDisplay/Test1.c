@@ -147,7 +147,7 @@ Display		*display;
 	tpstartup();
 	trace("Exec'd file ./Test1.");
 
-	if((dispstr = getenv("DISPLAY")) == (char *) NULL) {
+	if((dispstr = getenv("DISPLAY")) == NULL) {
 		delete("Environment variable DISPLAY is not set.");
 		return;
 	} else

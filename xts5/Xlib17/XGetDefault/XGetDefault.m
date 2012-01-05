@@ -350,7 +350,7 @@ char	*envp;
 		return;
 	}
 
-	if (getenv("XENVIRONMENT") != (char *)NULL) {
+	if (getenv("XENVIRONMENT") != NULL) {
 		char **newenv = environ; /* Remove XENVIRONMENT */
 	
 		trace("Removing XENVIRONMENT from environment");

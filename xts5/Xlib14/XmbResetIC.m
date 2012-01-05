@@ -344,7 +344,7 @@ A call to xname shall reset an input context to its initial state.
                 regr_args.l_flags.cleanup = 1;
                 regr_args.l_flags.check = 1;
                 regr_args.l_flags.chksta = 0;
-                if ( (xmodifier = (char *)getenv("XMODIFIERS") ) != (char *)0)
+                if ( (xmodifier = getenv("XMODIFIERS") ) != NULL)
                 {
                     XIM  input_method ;
                     XIC  input_context ;

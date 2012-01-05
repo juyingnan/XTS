@@ -364,7 +364,7 @@ input is expected on the foucs window attached to that input context.
                 regr_args.l_flags.cleanup = 0;
                 regr_args.l_flags.check = 0;
                 regr_args.l_flags.chksta = 0;
-                if ( (xmodifier = (char *)getenv("XMODIFIERS") ) != (char *)0)
+                if ( (xmodifier = getenv("XMODIFIERS") ) != 0)
                 {
                     XIC ic ;
                     svcUnsetICFocus(ic);
