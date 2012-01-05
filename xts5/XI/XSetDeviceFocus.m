@@ -430,6 +430,7 @@ XEvent	ev;
 int	n, sav_revert;
 int	dkp, dkr;
 XEventClass classes[2];
+XEventClass none_class;
 
 	if (noext(0))
 		return;
@@ -446,6 +447,9 @@ XEventClass classes[2];
 	DeviceKeyRelease(device, dkr, classes[1]);
 	win = defwin(display);
 	XSelectExtensionEvent(display, win, classes, 2);
+	/* previous test selected for events on the root window */
+	NoExtensionEvent(device, 0, none_class);
+	XSelectExtensionEvent(display, DRW(display), &none_class, 1);
 
 	focus = FollowKeyboard;
 	XCALL;
