@@ -379,6 +379,7 @@ XEventClass classes[2], nevclass;
 		CHECK;
 
 	if (config.alt_screen != -1) {
+		XDeviceKeyEvent *kev;
 		altroot = RootWindow(display, config.alt_screen);
 		trace("Testing with root of alternate screen as source (0x%x) and PointerRoot.",
 				(unsigned)altroot);
@@ -391,22 +392,25 @@ XEventClass classes[2], nevclass;
 		if (!getevent(display, &ev)) {
 			report("No event received.");
 			FAIL;
-		} else if (ev.type != dkp && ev.type != dkr) {
-			report("First event was of unexpected type: %s.", eventname(ev.type));
-			FAIL;
-		} else if (ev.xkey.window != altroot) {
-			report("First event had unexpected window: 0x%x instead of focus (altroot) 0x%x.",
-				(unsigned)ev.xkey.window, (unsigned)altroot);
-			FAIL;
-		} else if (!ev.xkey.same_screen) {
-			report("same_screen unexpectedly False.");
-			FAIL;
-		} else if (ev.xkey.root != altroot) {
-			report("First event had unexpected root window: 0x%x instead of 0x%x.",
-				(unsigned)ev.xkey.root, (unsigned)altroot);
-			FAIL;
-		} else
-			CHECK;
+		} else {
+			kev = (XDeviceKeyEvent*)&ev;
+			if (ev.type != dkp && ev.type != dkr) {
+				report("First event was of unexpected type: %s.", eventname(ev.type));
+				FAIL;
+			} else if (kev->window != altroot) {
+				report("First event had unexpected window: 0x%x instead of focus (altroot) 0x%x.",
+						(unsigned)ev.xkey.window, (unsigned)altroot);
+				FAIL;
+			} else if (!kev->same_screen) {
+				report("same_screen unexpectedly False.");
+				FAIL;
+			} else if (kev->root != altroot) {
+				report("First event had unexpected root window: 0x%x instead of 0x%x.",
+						(unsigned)ev.xkey.root, (unsigned)altroot);
+				FAIL;
+			} else
+				CHECK;
+		}
 		CHECKPASS(4);
 	} else {
 		report("Tested as far as possible with just one screen.");
