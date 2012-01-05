@@ -221,7 +221,7 @@ int status;
 			&base,
 			resources2,
 			XtNumber(resources),
-			(char *)NULL);
+			NULL);
 	tet_infoline("TEST: Retrieved resource value");
 	if (strcmp(base.label, "2002") != 0) {
 		sprintf(ebuf, "ERROR: Expected \"2002\", received \"%s\"", base.label);

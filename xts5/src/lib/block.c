@@ -270,12 +270,12 @@ block_child_proc()
 	XAnyEvent *event = (XAnyEvent *) gevent;
 
 	display = opendisplay();
-	if (display == (Display *) NULL)
+	if (display == NULL)
 		exit(CHILD_EXIT_ERROR);
 	sleep(CHILD_SLEEP_TIME);
 	if (access(block_file, F_OK))
 		exit(CHILD_EXIT_NOBLOCKING);
-	if (gevent == (XEvent *) NULL) {
+	if (gevent == NULL) {
 		int	retval;
 		unsigned char	buf[512];
 

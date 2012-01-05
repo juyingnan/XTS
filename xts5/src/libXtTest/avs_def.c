@@ -105,10 +105,10 @@ char *string;
 	root_widget = (Widget)XtInitialize (
 		   NULL, 
 		  "Tmainloop1",
-		   (XrmOptionDescRec *)NULL,  /* cmd options */
+		   NULL,  /* cmd options */
 		   (Cardinal)0,			 /* num cmd */
 		   &argcount,
-		   (String *)NULL
+		   NULL
 		   );
 
 	if (root_widget == NULL) {

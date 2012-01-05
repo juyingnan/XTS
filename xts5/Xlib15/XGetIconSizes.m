@@ -139,7 +139,7 @@ int		v;
 XIconSize	sizelist[5];
 int		count = 5;
 int		rcount;
-XIconSize	*sp = (XIconSize *) NULL, *sref;
+XIconSize	*sp = NULL, *sref;
 
 
 	resetvinf(VI_WIN);

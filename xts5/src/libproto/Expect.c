@@ -527,7 +527,7 @@ int     type;     /* request type */
 		return ((xReply *) & dummy_reply);
 	    }
 	    if (class == EXPECT_01EVENT)
-		return ((xReply *) NULL);
+		return (NULL);
 	    got = enames (EXPECT_NOTHING, 0);
 	    (*Log_Rtn) ("Expect: wanted %s, got %s\n", wanted, got);
 	    return (NULL);
@@ -552,7 +552,7 @@ int     type;     /* request type */
 	default: 
 	    break;
     }
-    return ((xReply *) NULL);
+    return (NULL);
 }
 
 

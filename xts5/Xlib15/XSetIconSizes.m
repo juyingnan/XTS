@@ -137,7 +137,7 @@ XVisualInfo	*vp;
 unsigned long	leftover, nitems, len;
 int		actual_format;
 Atom		actual_type;
-long		*rsizelist = (long *) NULL, *rsp;
+long		*rsizelist = NULL, *rsp;
 XIconSize	sizelist[7], *sp;
 int		cnt = 7;
 int		i, v;

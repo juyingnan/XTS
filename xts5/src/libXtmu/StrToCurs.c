@@ -163,7 +163,7 @@ void XmuCvtStringToCursor(args, num_args, fromVal, toVal)
     if (*num_args != 1)
      XtErrorMsg("wrongParameters","cvtStringToCursor","XtToolkitError",
              "String to cursor conversion needs screen argument",
-              (String *)NULL, (Cardinal *)NULL);
+              NULL, NULL);
 
     screen = *((Screen **) args[0].addr);
 
@@ -301,7 +301,7 @@ XmuCvtStringToColorCursor(dpy, args, num_args, fromVal, toVal, converter_data)
 	XtAppWarningMsg(XtDisplayToApplicationContext(dpy),
 	    "wrongParameters","cvtStringToColorCursor","XmuError",
             "String to color cursor conversion needs four arguments",
-	    (String *)NULL, (Cardinal *)NULL);
+	    NULL, NULL);
 	return False;
     }
 

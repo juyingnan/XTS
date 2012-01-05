@@ -143,7 +143,7 @@ unsigned long	nitems;
 unsigned long	leftover;
 int		nwins = 7;
 Window		pwins[7];
-Window		*rwins = (Window *) NULL;
+Window		*rwins = NULL;
 Window		*wp;
 int		i;
 

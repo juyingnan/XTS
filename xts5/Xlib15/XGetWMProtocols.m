@@ -138,7 +138,7 @@ Status		status;
 XVisualInfo	*vp;
 int		nats = 5;
 Atom		prots[5];
-Atom		*retprots = (Atom *) NULL;
+Atom		*retprots = NULL;
 Atom		at, *atp;
 int 		i, cntret;
 

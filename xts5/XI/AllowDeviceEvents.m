@@ -122,7 +122,7 @@ static int
 grabstartup()
 {
 
-	if (Dsp==(Display *)NULL)
+	if (Dsp==NULL)
 		return;
 
 	if (!Setup_Extension_DeviceInfo(BtnMask))

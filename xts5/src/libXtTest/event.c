@@ -176,7 +176,7 @@ int t;
 		sigemptyset(&(nact.sa_mask));
 		nact.sa_handler = lsah;
 		nact.sa_flags = 0;
-		s2 = sigaction(SIGALRM,&nact,(struct sigaction *)NULL);
+		s2 = sigaction(SIGALRM,&nact,NULL);
 		if (s2 == -1) {
 			uwerrno("sigaction");
 			vsw_debug_exit("libXtTest/event.c:avs_wait_event()",0);
@@ -200,7 +200,7 @@ int t;
 		sigemptyset(&(nact.sa_mask));
 		nact.sa_handler = SIG_DFL;
 		nact.sa_flags = 0;
-		s2 = sigaction(SIGALRM,&nact,(struct sigaction *)NULL);
+		s2 = sigaction(SIGALRM,&nact,NULL);
 		if (s2 == -1) {
 			uwerrno("sigaction");
 			vsw_debug_exit("libXtTest/event.c:avs_wait_event()",0);

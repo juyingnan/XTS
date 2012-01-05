@@ -137,7 +137,7 @@ XDevice *dev;
 	Create_Default_Window(CLIENT);
 
 	dpy2 = opendisplay();
-	if (dpy2 == (Display *) NULL) {
+	if (dpy2 == NULL) {
 		delete("Can not open display");
 		return;
 	}

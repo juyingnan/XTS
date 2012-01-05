@@ -117,7 +117,7 @@ int invoked = 0;
 	tet_infoline("TEST: Call XtWarningMsg");
 	push_stdout("outfile", "w");
 	XtWarningMsg("This", "is a", "test", "Hello World",
-			(String *)NULL, (Cardinal)0);
+			NULL, (Cardinal)0);
 	pop_stdout();
 	tet_infoline("PREP: Open the temporary file and read the message");
 	stream = (FILE *)fopen(msg, "r");

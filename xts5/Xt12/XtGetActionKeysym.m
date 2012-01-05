@@ -79,7 +79,7 @@ Cardinal *num_params;
 	 * KeyPress or KeyRelease
 	*/
 	tet_infoline("TEST: XtGetActionKeysym returns correct keysym");
-	k = XtGetActionKeysym(event, (Modifiers*)NULL);
+	k = XtGetActionKeysym(event, NULL);
 	if (k != keysym) {
 		sprintf(ebuf, "ERROR: XtGetActionKeysym did not return correct keysym (got %ld, wanted %ld", k, keysym);
 		tet_infoline(ebuf);

@@ -195,7 +195,7 @@ int XstConnectDisplay (display_name, expanded_name, screen_num,
 	*auth_string = "";
 	*auth_strlen = 0;
 	*xlib_dpy = XOpenDisplay(display_name);
-	if (*xlib_dpy == (Display *)NULL)
+	if (*xlib_dpy == NULL)
 		return -1;
 	(void)strcpy(expanded_name, display_name);
 	*screen_num = DefaultScreen(*xlib_dpy);

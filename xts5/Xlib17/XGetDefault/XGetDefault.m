@@ -193,7 +193,7 @@ Verify that the call returned NULL.
 >>CODE
 unsigned char 	*pval = (unsigned char *) "XT.LEO:CAL\nXT.OPT:VAL\nXT.Bezoomny:Cal\n";
 char		*nullstr = "<NULL>";
-char		*res = (char *) NULL;
+char		*res = NULL;
 
 
 	XChangeProperty (Dsp, RootWindow(Dsp, 0), XA_RESOURCE_MANAGER, XA_STRING, 8, PropModeReplace, pval, 1+strlen((char *)pval));
@@ -296,7 +296,7 @@ char	*argv[2];
 char	*envp;
 
 	argv[0] = "./Test4";
-	argv[1] = (char *) NULL;
+	argv[1] = NULL;
 	envp = "XENVIRONMENT=./EnvXdefaults";
 	if (xtest_putenv(envp)) {
 		delete("xtest_putenv failed to add XENVIRONMENT to the environment");

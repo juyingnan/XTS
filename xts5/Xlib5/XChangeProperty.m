@@ -109,7 +109,7 @@ Atom property = xcp_list[0];
 Atom type = XA_INTEGER;
 int format = 32;
 int mode = PropModeReplace;
-unsigned char *data = (unsigned char *)NULL;
+unsigned char *data = NULL;
 int nelements = 0;
 >>EXTERN
 #include "X11/Xatom.h"

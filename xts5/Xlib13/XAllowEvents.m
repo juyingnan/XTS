@@ -1127,7 +1127,7 @@ int bothset()
 	XDevice *xDevice;
 	XDeviceInfo *list;
 
-	if ((list = XListInputDevices (display, &ndevices)) == (XDeviceInfo *)NULL)
+	if ((list = XListInputDevices (display, &ndevices)) == NULL)
 		{
 		report("ERROR: XListInputDevices failed");
 		tet_result(TET_FAIL);
@@ -1146,7 +1146,7 @@ int bothset()
 				XUngrabKeyboard(display, CurrentTime);
 				break;
 			case IsXExtensionDevice:
-				if ((xDevice = XOpenDevice(display, list->id)) == (XDevice *)NULL)
+				if ((xDevice = XOpenDevice(display, list->id)) == NULL)
 					{
 					report("WARNING: XOpenDevice(%s) failed", list->name);
 					continue;

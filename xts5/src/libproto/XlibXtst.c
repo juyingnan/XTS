@@ -256,7 +256,7 @@ int XstConnectDisplay (display_name, expanded_name, screen_num,
 {
     int idisplay;
 
-    *xlib_dpy = (Display *)NULL;
+    *xlib_dpy = NULL;
     XSetIOErrorHandler(complain);
     return _XConnectDisplay(display_name, expanded_name, &idisplay, screen_num,
 			    auth_proto, auth_length, auth_string, auth_strlen);

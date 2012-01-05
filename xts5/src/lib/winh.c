@@ -128,7 +128,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 #define	WEED_MARKED	(1<<0)	/* matches with an expected/delivered event */
 #define	WEED_IGNORE	(1<<1)	/* ignore this event */
 
-#define	FIRSTBORN(winh)	((winh)->prevsibling == (Winh *) NULL)
+#define	FIRSTBORN(winh)	((winh)->prevsibling == NULL)
 
 #define	ADD_TO_EXPECTED_GLOBAL(e)	\
 	if ((winh_qexp = addto(winh_qexp, (e))) == (Winhe *) NULL)\
@@ -239,10 +239,10 @@ static	int	sequence = 0;
  */
 static	int	expected_events = 0;
 
-Winhe	*winh_qexp = (Winhe *) NULL;	/* list of expected events */
-Winhe	*winh_qdel = (Winhe *) NULL;	/* list of delivered events */
+Winhe	*winh_qexp = NULL;	/* list of expected events */
+Winhe	*winh_qdel = NULL;	/* list of delivered events */
 
-Winh	*guardian = (Winh *) NULL;
+Winh	*guardian = NULL;
 
 /*
  * static globals used to communicate between winh_walk() procedures and
@@ -1055,16 +1055,16 @@ free_eventlist()
 		winh_event_stats[i].count = 0;
 	}
 	/* Free global queue members */
-	if (winh_qexp != (Winhe *) NULL) {
+	if (winh_qexp != NULL) {
 		winhe_free(winh_qexp);
-		winh_qexp = (Winhe *) NULL;
+		winh_qexp = NULL;
 	}
-	if (winh_qdel != (Winhe *) NULL) {
+	if (winh_qdel != NULL) {
 		winhe_free(winh_qdel);
-		winh_qdel = (Winhe *) NULL;
+		winh_qdel = NULL;
 	}
-	if (guardian != (Winh *) NULL &&
-	    (i = winh_walk((Winh *) NULL, 0, _free_eventlist)))
+	if (guardian != NULL &&
+	    (i = winh_walk(NULL, 0, _free_eventlist)))
 		return(i);
 	sequence = 0;
 	expected_events = 0;

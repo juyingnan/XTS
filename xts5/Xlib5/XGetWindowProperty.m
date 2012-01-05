@@ -138,7 +138,7 @@ set_vars()
 	actual_format = -1;
 	nitems = -1;
 	bytes_after = -1;
-	prop = (unsigned char *)NULL;
+	prop = NULL;
 }
 
 static int

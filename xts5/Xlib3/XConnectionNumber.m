@@ -133,7 +133,7 @@ int	cnn;
 	XSetIOErrorHandler( errorhandler );
 	client = opendisplay();
 
-	if (client == (Display *) NULL) {
+	if (client == NULL) {
 		report("Cannot open display.");
 		exit(exit_status + 1);
 	} else

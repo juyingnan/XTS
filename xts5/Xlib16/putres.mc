@@ -118,10 +118,10 @@ static char *t1_specifiers[XRM_T1_TESTS] = {
 	"Cutter.John.was*here" };
 
 static char *qt1_specifiers[XRM_T1_TESTS][5] = {
-	{ "opus" , "hodgepodge", "portnoy" , (char *)NULL, (char *)NULL },
-	{ "calvin", "and", "hobbes", (char *)NULL, (char *)NULL },
-	{ "The", "Far", "Side" , (char *)NULL, (char *)NULL },
-	{ "Cutter", "John", "was", "here", (char *)NULL } };
+	{ "opus" , "hodgepodge", "portnoy" , NULL, NULL },
+	{ "calvin", "and", "hobbes", NULL, NULL },
+	{ "The", "Far", "Side" , NULL, NULL },
+	{ "Cutter", "John", "was", "here", NULL } };
 
 static XrmBinding qt1_bindings[XRM_T1_TESTS][4] = {
 	{ XrmBindTightly, XrmBindTightly, XrmBindTightly },
@@ -158,7 +158,7 @@ static char *t2_specifiers[2] = {
 	"A.b*C" };
 
 static char *qt2_specifier[] = {
-	"A", "b", "C", (char *)NULL }; 
+	"A", "b", "C", NULL };
 
 static XrmBinding qt2_bindings[] = {
 	XrmBindTightly, XrmBindTightly, XrmBindLoosely };

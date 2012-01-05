@@ -143,7 +143,7 @@ Display	*client1, *opendisplay();
 	    return;
 	    }
 	client1 = opendisplay();
-	if (client1 == (Display *) NULL) {
+	if (client1 == NULL) {
 		delete("Can not open display");
 		return;
 	}

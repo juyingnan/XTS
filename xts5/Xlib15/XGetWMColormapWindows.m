@@ -137,7 +137,7 @@ Status		status;
 XVisualInfo	*vp;
 int		nwins = 7;
 Window		pwins[7];
-Window		*rwins = (Window *) NULL;
+Window		*rwins = NULL;
 Window		*wp;
 int		rcnt = 0;
 int		i;

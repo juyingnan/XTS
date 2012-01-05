@@ -107,7 +107,7 @@ XIfEvent(display, event_return, predicate, arg)
 Display *display = Dsp;
 XEvent	*event_return = &_event;
 Predicate predicate = _predicate;
-char *arg = (char *) NULL;
+char *arg = NULL;
 >>EXTERN
 /*
  * Can not use "xcall" because it empties the event queue.

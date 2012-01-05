@@ -751,7 +751,7 @@ auth_ezencode(
 #else
         a = (AUTH *)authdes_create(servername, window, NULL, NULL);
 #endif
-        if (a == (AUTH *)NULL) {
+        if (a == NULL) {
                 perror("auth_create");
                 return 0;
         }

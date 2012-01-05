@@ -142,7 +142,7 @@ int		actual_format;
 Atom		actual_type;
 int		nats = 5;
 Atom		xa_wm_protocols;
-Atom		prots[5], *rprots = (Atom *) NULL;
+Atom		prots[5], *rprots = NULL;
 Atom		at, *atp;
 int		i;
 

@@ -144,7 +144,7 @@ Window	window;
 				(unsigned)window);
 		return False;
 	}
-	withdefault = crechild(display, root, (struct area *)NULL);
+	withdefault = crechild(display, root, NULL);
 	/* that window should have default Cursor, whatever that is */
 
 	/*

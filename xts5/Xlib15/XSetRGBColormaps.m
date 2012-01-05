@@ -139,7 +139,7 @@ int			actual_format;
 unsigned long		leftover;
 unsigned long		nitems;
 XVisualInfo		*vp;
-XStandardColormap	*rcmap = (XStandardColormap *) NULL;
+XStandardColormap	*rcmap = NULL;
 
 	resetvinf(VI_WIN);
 	nextvinf(&vp);

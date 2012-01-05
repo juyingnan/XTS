@@ -140,7 +140,7 @@ char	*str2 = "XTest string 2__";
 char	*str3 = "XTest string 3___";
 int	nstrs = 3;
 char	*prop[3];
-char	**rstrings = (char**) NULL;
+char	**rstrings = NULL;
 int	rcount = 0;
 int	i;
 
@@ -218,7 +218,7 @@ Verify that the call returned zero.
 Status		status;
 char		*s = "XTestString1";
 XVisualInfo	*vp;
-char		**rstrings = (char **) NULL;
+char		**rstrings = NULL;
 int		rcount = 0;
 
 	resetvinf(VI_WIN);

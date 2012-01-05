@@ -125,7 +125,7 @@ unsigned int	width;
 	nextvinf(&vp);
 		
 	winpair(display, vp, &w1, &w2);
-	getsize(display, w1, &width, (unsigned int *) NULL);
+	getsize(display, w1, &width, NULL);
 /* Create a gc with graphics-exposures flag set to True. */
 	gc = makegc(display, w2);
 	XSetGraphicsExposures(display, gc, True);

@@ -112,7 +112,7 @@ void (*handler)(int);
 	}
         nact.sa_handler = handler;
         nact.sa_flags = 0;
-        s2 = sigaction(sig,&nact,(struct sigaction *)NULL);
+        s2 = sigaction(sig,&nact,NULL);
 	if (s2 == -1) {
 		uwerrno("sigaction");
 		vsw_debug_exit("libXtTest/signals.c:avs_signal()",0);

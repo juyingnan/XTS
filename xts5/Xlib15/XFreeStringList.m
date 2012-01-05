@@ -100,7 +100,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 >>TITLE XFreeStringList Xlib15
 void
 XFreeStringList(list)
-char	**list = (char **) NULL;
+char	**list = NULL;
 >>ASSERTION Good A
 A call to xname frees the memory allocated by a call to
 .S XTextPropertyToStringList
@@ -121,8 +121,8 @@ char		*str3 = "TestString3";
 int		argc = 3;
 char		*argv[3];
 int		rargc;
-char		**rargv = (char **) NULL;
-char		**rargv1 = (char **) NULL;
+char		**rargv = NULL;
+char		**rargv1 = NULL;
 Window		w;
 XVisualInfo	*vp;
 XTextProperty	tp;

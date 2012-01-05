@@ -164,12 +164,12 @@ int ret;
 Display *client1;
 
 /* Create client1, without causing resource registration. */
-	if (config.display == (char *) NULL) {
+	if (config.display == NULL) {
 		delete("config.display not set");
 		return;
 	}
 	client1 = XOpenDisplay(config.display);
-	if (client1 == (Display *) NULL) {
+	if (client1 == NULL) {
 		delete("Couldn't create client1.");
 		return;
 	}

@@ -113,7 +113,7 @@ long invoked = 0;
 	tet_infoline("TEST: Call XtAppWarningMsg");
  	push_stdout("outfile", "w");
 	XtAppWarningMsg(app_ctext, "This", "is a", "test",
-		"Hello World", (String *)NULL, (Cardinal *)0);
+		"Hello World", NULL, (Cardinal *)0);
 	pop_stdout();
 	tet_infoline("TEST: Open the temporary file and read the message");
 	stream = (FILE *)fopen(msg, "r");

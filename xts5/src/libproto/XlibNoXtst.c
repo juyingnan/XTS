@@ -233,7 +233,7 @@ int XstConnectDisplay (display_name, expanded_name, screen_num,
 	*auth_length = 0;
 	*auth_string = "";
 	*auth_strlen = 0;
-	*xlib_dpy = (Display *)NULL;
+	*xlib_dpy = NULL;
 	/* 
 	 * Find the ':' seperator and extract the hostname and the
 	 * display number.
@@ -241,7 +241,7 @@ int XstConnectDisplay (display_name, expanded_name, screen_num,
 	 * as "host::number"
 	 */
 	strncpy(displaybuf, display_name, sizeof(displaybuf));
-	if ((display_ptr = SearchString(displaybuf,':')) == (char *)NULL) 
+	if ((display_ptr = SearchString(displaybuf,':')) == NULL)
 		return (-1);
 #ifdef DNETCONN
 	if (*(display_ptr + 1) == ':') {

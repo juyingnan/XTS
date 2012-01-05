@@ -87,7 +87,7 @@ Widget w;
 	  "mainw",			/* arbitrary widget name */
 		viewportWidgetClass,	 	/* widget class  */
 		w,				/* parent widget */
-		(char *)NULL			/* terminate list */
+		NULL			/* terminate list */
 		);
 
 	return((Widget)mainw);
@@ -103,7 +103,7 @@ Widget w;
 		"drawaw",		/* arbitrary widget name */
 		formWidgetClass,  	/* widget class  */
 		w,			/* parent widget */
-		(char *)NULL		/* terminate list */
+		NULL		/* terminate list */
 		);
 
 	return((Widget)drawaw);
@@ -119,7 +119,7 @@ Widget w;
 		"formw",		/* arbitrary widget name */
 		formWidgetClass,	/* widget class  */
 		w,			/* parent widget */
-		(char *)NULL	/* terminate list */
+		NULL	/* terminate list */
 		);
 
 	return((Widget)formw);
@@ -135,7 +135,7 @@ Widget w;
 		"scrollw",		/* arbitrary widget name */
 		viewportWidgetClass,	/* widget class  */
 		w,			/* parent widget */
-		(char *)NULL		/* terminate list */
+		NULL		/* terminate list */
 		);
 
 	return((Widget)scrollw);
@@ -152,7 +152,7 @@ Widget w;
 		"rowcolw",		/* arbitrary widget name */
 		formWidgetClass,	/* widget class  */
 		w,			/* parent widget */
-		(char *)NULL		/* terminate list */
+		NULL		/* terminate list */
 		);
 
 	return((Widget)rowcolw);
@@ -167,7 +167,7 @@ Widget w;
 		"framew",		/* arbitrary widget name */
 		boxWidgetClass,		/* widget class  */
 		w,			/* parent widget */
-		(char *)NULL		/* terminate list */
+		NULL		/* terminate list */
 		);
 
 	return((Widget)framew);
@@ -182,7 +182,7 @@ Widget w;
 		"panedw",		/* arbitrary widget name */
 		panedWidgetClass,	/* widget class  */
 		w,			/* parent widget */
-		(char *)NULL		/* terminate list */
+		NULL		/* terminate list */
 		);
 
 	return((Widget)panedw);
@@ -197,7 +197,7 @@ Widget w;
 		"panedw",		/* arbitrary widget name */
 		boxWidgetClass,	   	/* widget class  */
 		w,			/* parent widget */
-		(char *)NULL		/* terminate list */
+		NULL		/* terminate list */
 		);
 
 	return((Widget)boxw);
@@ -213,7 +213,7 @@ Widget w;
 		string,			/* arbitrary widget name */
 		labelWidgetClass,	/* widget class  */
 		w,			/* parent widget */
-		(char *)NULL		/* terminate list */
+		NULL		/* terminate list */
 		);
 
 	return((Widget)labelw);
@@ -230,7 +230,7 @@ Widget w;
 		string,			/* arbitrary widget name */
 		commandWidgetClass,	/* widget class  */
 		w,			/* parent widget */
-		(char *)NULL		/* terminate list */
+		NULL		/* terminate list */
 		);
 
 	return((Widget)pushb);
@@ -247,7 +247,7 @@ Widget w;
 		w,			/* parent widget */
 		XtNheight,100,
 		XtNwidth, 100,
-		(char *)NULL		/* terminate list */
+		NULL		/* terminate list */
 		);
 
 	return((Widget)menuw);
@@ -262,7 +262,7 @@ Widget w;
 		"dialogsw",		/* arbitrary widget name */
 		simpleMenuWidgetClass,	/* widget class  */
 		w,			/* parent widget */
-		(char *)NULL		/* terminate list */
+		NULL		/* terminate list */
 		);
 
 	return((Widget)dialogsw);

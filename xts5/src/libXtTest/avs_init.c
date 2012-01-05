@@ -144,7 +144,7 @@ int argcount;
 		 	(String)cfgdisplay,	/* display name */
 		 	"VSW5 X Toolkit Tests",	/*application name*/
 		 	app_class,		/* application class */
-		 	(XrmOptionDescRec *)NULL,/* command line options */
+			NULL,/* command line options */
 		 	(Cardinal)0,		/* num command line options */
 		 	&argcount,
 		 	argvector		/* command line args */
@@ -187,7 +187,7 @@ int argcount;
 		XtNy, y_origin,
 		XtNwidth, width,
 		XtNheight, height,
-		(char *)NULL
+		NULL
 		);
 
 	/* return toplevel shell widget */

@@ -184,7 +184,7 @@ int	pstatus;
     ** -synchronous on
     ** +synchronous off
     */
-char *argv[] = { "tinitlize", "-synchronous", (char *)NULL };
+char *argv[] = { "tinitlize", "-synchronous", NULL };
 Widget widget_good;
 
 	FORK(pid2);
@@ -549,7 +549,7 @@ int	pstatus;
     ** -synchronous on
     ** +synchronous off
     */
-char *argv[] = { "tinitlize", "-synchronous", (char *)NULL };
+char *argv[] = { "tinitlize", "-synchronous", NULL };
 Widget widget_good;
 
 	FORK(pid2);
@@ -716,7 +716,7 @@ XrmValue toVal;
 Boolean closure;
 XtPointer closure_ret = (XtPointer *) &closure;
 int argc = 2;
-char *argv[] = { "tdsplyintl2", "+rv", (char *)NULL };
+char *argv[] = { "tdsplyintl2", "+rv", NULL };
 Screen *screen;
 Colormap colormap;
 pid_t pid2;

@@ -500,7 +500,7 @@ int argc = 2;
     ** -synchronous on
     ** +synchronous off
     */
-char *argv[] = { "tdsplyintl2", "-synchronous", (char *)NULL };
+char *argv[] = { "tdsplyintl2", "-synchronous", NULL };
 
 	tet_infoline("PREP: Initialize the Xt toolkit");
 	XtToolkitInitialize();
@@ -725,7 +725,7 @@ XrmValue toVal;
 Boolean closure;
 XtPointer closure_ret = (XtPointer *) &closure;
 int argc = 2;
-char *argv[] = { "tdsplyintl2", "+rv", (char *)NULL };
+char *argv[] = { "tdsplyintl2", "+rv", NULL };
 Screen *screen;
 Colormap colormap;
 pid_t pid2;

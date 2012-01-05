@@ -88,12 +88,12 @@ char *s;
 	char *cp = s;
 	int  len = strlen(s);
 
-	if(s == (char *) NULL)
-		return((char *) NULL);
+	if(s == NULL)
+		return(NULL);
 
-	if((res = rp = (char*) malloc(len + 1)) == (char *) NULL) {
+	if((res = rp = (char*) malloc(len + 1)) == NULL) {
 		delete("Malloc returned NULL.");
-		return((char *) NULL);
+		return(NULL);
 	}
 
 	while(*cp == ' ')

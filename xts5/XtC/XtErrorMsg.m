@@ -118,7 +118,7 @@ int invoked= 0;
 	sprintf(ebuf, "TEST: Call XtErrorMsg");
 	tet_infoline(ebuf);
 	push_stdout("outfile", "w");
-	XtErrorMsg("This", "is a", "test", "Hello World", (String*)NULL, (Cardinal *)0);
+	XtErrorMsg("This", "is a", "test", "Hello World", NULL, (Cardinal *)0);
 	pop_stdout();
 	tet_infoline("TEST: Open the temporary file and read the message");
 	stream = (FILE *)fopen(msg, "r");

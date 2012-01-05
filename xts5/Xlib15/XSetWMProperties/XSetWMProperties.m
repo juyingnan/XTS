@@ -107,11 +107,11 @@ Display		*display = Dsp;
 Window		w = DRW(Dsp);
 XTextProperty	*window_name = (XTextProperty *) NULL;
 XTextProperty	*icon_name =  (XTextProperty *) NULL;
-char		**argv = (char **) NULL;
+char		**argv = NULL;
 int		argc = 0;
-XSizeHints	*normal_hints = (XSizeHints *) NULL;
-XWMHints	*wm_hints = (XWMHints *) NULL;
-XClassHint	*class_hints = (XClassHint *) NULL;
+XSizeHints	*normal_hints = NULL;
+XWMHints	*wm_hints = NULL;
+XClassHint	*class_hints = NULL;
 >>MAKE
 >>#
 >>#

@@ -303,7 +303,7 @@ int compare_color;
 
         /* initialize rectangle pixmap overlay gc */        
 
-        rect_gc = XCreateGC(vdisplay,window,(unsigned long)0,(XGCValues *)NULL);
+        rect_gc = XCreateGC(vdisplay,window,(unsigned long)0,NULL);
         XSetForeground(vdisplay,rect_gc,1L); /* this works well with xor function */
         XSetBackground(vdisplay,rect_gc,0L);
         XSetFunction(vdisplay,rect_gc,GXxor);                                    

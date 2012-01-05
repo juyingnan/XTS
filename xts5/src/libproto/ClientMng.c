@@ -377,7 +377,7 @@ int	cl; /* client number */
  * name in displaybuf.
  */
 
-    dpy -> xlib_dpy = (Display *)NULL;
+    dpy -> xlib_dpy = NULL;
     if ((dpy -> fd = XstConnectDisplay (display_name, displaybuf, &screen_num,
 					&auth_proto, &auth_length,
 					&auth_string, &auth_strlen,
@@ -389,7 +389,7 @@ int	cl; /* client number */
 	free ((char *) dpy);
 	return (NULL);		/* errno set by XConnectDisplay */
     }
-    using_xo = (dpy->xlib_dpy != (Display *)NULL);
+    using_xo = (dpy->xlib_dpy != NULL);
 
 
 /*
@@ -528,7 +528,7 @@ int	cl; /* client number */
 	return NULL;
     }
     if ((u.setup = (xConnSetup *) (setup = (char *) Xstmalloc ((unsigned) setuplength)))
-	    == (xConnSetup *)NULL) {
+	    == NULL) {
 	errno = ENOMEM;
 	Log_Msg ("Not enough memory to allocate rest of connection data (%d bytes)\n", setuplength);
 	if (using_xo)
@@ -551,11 +551,11 @@ int	cl; /* client number */
     dpy -> resource_mask = u.setup -> ridMask;
     dpy -> min_keycode = u.setup -> minKeyCode;
     dpy -> max_keycode = u.setup -> maxKeyCode;
-    dpy -> keysyms = (KeySym *) NULL;
+    dpy -> keysyms = NULL;
     dpy -> modifiermap = XstNewModifiermap (0);
     dpy -> keysyms_per_keycode = 0;
     dpy -> current = None;
-    dpy -> xdefaults = (char *) NULL;
+    dpy -> xdefaults = NULL;
     dpy -> scratch_length = 0L;
     dpy -> scratch_buffer = NULL;
     dpy -> motion_buffer = u.setup -> motionBufferSize;
@@ -567,10 +567,10 @@ int	cl; /* client number */
     dpy -> bitmap_bit_order = u.setup -> bitmapBitOrder;
     dpy -> max_request_size = u.setup -> maxRequestSize;
 #ifdef notrequired
-    dpy -> ext_procs = (struct _XExten *) NULL;
+    dpy -> ext_procs = NULL;
     dpy -> ext_number = 0;
 #endif
-    dpy -> ext_data = (XExtData *) NULL;
+    dpy -> ext_data = NULL;
     dpy -> event_vec[X_Error] = NULL;
     dpy -> event_vec[X_Reply] = NULL;
     dpy -> wire_vec[X_Error] = NULL;
@@ -719,7 +719,7 @@ int	cl; /* client number */
     dpy -> last_request_read = 0;
     dpy -> default_screen = screen_num;
 				/* Value returned by ConnectDisplay */
-    dpy -> last_req = (char *) NULL;
+    dpy -> last_req = NULL;
 
  /* Salt away the host:display string for later use */
     if ((dpy -> display_name = (char *) Xstmalloc (
@@ -863,7 +863,7 @@ int client;
 	XstDisplay *dpy = Get_Display(client);
 	int 	tmpfd = -1;
 
-	if (dpy == (XstDisplay *)NULL)
+	if (dpy == NULL)
 		return;
 
 	tmpfd = dpy->fd;

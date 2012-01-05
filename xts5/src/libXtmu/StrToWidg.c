@@ -201,7 +201,7 @@ Boolean XmuNewCvtStringToWidget(dpy, args, num_args, fromVal, toVal,
 	XtAppWarningMsg(XtDisplayToApplicationContext(dpy),
 			"wrongParameters","cvtStringToWidget","xtToolkitError",
 			"String To Widget conversion needs parent argument",
-			(String *)NULL, (Cardinal *)NULL);
+			NULL, NULL);
 
     parent = *(Widget*)args[0].addr;
     /* try to match names of normal children */

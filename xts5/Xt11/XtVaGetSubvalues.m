@@ -133,10 +133,10 @@ pid_t pid2;
 			(ArgList) NULL, (Cardinal)0);
 	tet_infoline("PREP: Set subvalues");
 	XtVaSetSubvalues(&base, resources, 2, XtNforeground, 1,
-		 XtNlabel, "Hello World", (char *)NULL);
+		 XtNlabel, "Hello World", NULL);
 	tet_infoline("PREP: Get subvalues");
 	XtVaGetSubvalues(&base, resources, 2, XtNforeground, &pixel,
-		 XtNlabel, &string, (char *)NULL);
+		 XtNlabel, &string, NULL);
 	tet_infoline("TEST: Retrieved subvalues");
 	check_dec(1, pixel , XtNforeground);
 	check_str("Hello World", string , XtNlabel);
@@ -168,11 +168,11 @@ int status;
 			(ArgList) NULL, (Cardinal)0);
 	tet_infoline("PREP: Set subvalues");
 	XtVaSetSubvalues(&base, resources, 2, XtNforeground, 1,
-		 XtNlabel, "Hello World", (char *)NULL);
+		 XtNlabel, "Hello World", NULL);
 	tet_infoline("PREP: Get subvalues");
 	
 	XtVaGetSubvalues(&base, resources, 2, XtNforeground, &pixel,
-		 XtVaTypedArg, XtNlabel, XtRString, string, 0, (char *)NULL);
+		 XtVaTypedArg, XtNlabel, XtRString, string, 0, NULL);
 	tet_infoline("TEST: Retrieved subvalues");
 	check_dec(1, pixel , XtNforeground);
 	LKROF(pid2, AVSXTTIMEOUT-2);
@@ -205,7 +205,7 @@ XtVarArgsList thelist;
 			(ArgList) NULL, (Cardinal)0);
 	tet_infoline("PREP: Set subvalues");
 	XtVaSetSubvalues(&base, resources, 2, XtNforeground, 1,
-		 XtNlabel, "Hello World", (char *)NULL);
+		 XtNlabel, "Hello World", NULL);
 	tet_infoline("PREP: Get subvalues");
 	thelist=XtVaCreateArgsList(NULL, XtNforeground, &pixel, NULL);
 	XtVaGetSubvalues(&base, resources, 2, XtVaNestedList, thelist,

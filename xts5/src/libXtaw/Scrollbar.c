@@ -504,7 +504,7 @@ static void Resize( gw )
     /* ForgetGravity has taken care of background, but thumb may
      * have to move as a result of the new size. */
     SetDimensions( (ScrollbarWidget)gw );
-    Redisplay( gw, (XEvent*)NULL, (Region)NULL );
+    Redisplay( gw, NULL, (Region)NULL );
 }
 
 

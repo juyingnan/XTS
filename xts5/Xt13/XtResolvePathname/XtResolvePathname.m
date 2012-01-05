@@ -372,7 +372,7 @@ char *contents = "ApTest.customization:CUSTOM";
 		 (String)cfgdisplay,		/* display name */
 		 (String)NULL,			/*application name use argv[0]*/
 		 app_class,			/* application class */
-		 (XrmOptionDescRec *)NULL,	/* command line options */
+		 NULL,	/* command line options */
 		 (Cardinal)0,			/* num command line options */
 		 &argcount,
 		 argvector			/* command line args */
@@ -424,7 +424,7 @@ char *contents = "ApTest.customization:CUSTOM";
 		XtNy, y_origin,
 		XtNwidth, width,
 		XtNheight, height,
-		(char *)NULL
+		NULL
 		);
 
 	trace("Set up the XtToolkitError handler");

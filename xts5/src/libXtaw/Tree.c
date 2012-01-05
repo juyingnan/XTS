@@ -974,7 +974,7 @@ static void set_tree_size (tw, insetvalues, width, height)
 	 */
 	if (result == XtGeometryAlmost)
 	  XtMakeResizeRequest ((Widget) tw, replyWidth, replyHeight,
-			       (Dimension *) NULL, (Dimension *) NULL);
+			       NULL, NULL);
     }
     return;
 }

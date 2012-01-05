@@ -140,7 +140,7 @@ int 	i;
 
 	startup();
 
-	if (Dsp==(Display *)NULL)
+	if (Dsp==NULL)
 		return;
 
 	XDisplayKeycodes(Dsp, &tmp, &last);
