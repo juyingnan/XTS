@@ -64,7 +64,7 @@ AC_SUBST(LDFLAGS_FOR_BUILD)
 
 PKG_CHECK_MODULES([XTS], [x11 xext xi xtst xau])
 PKG_CHECK_MODULES([XT], [x11 xext xt xtst])
-PKG_CHECK_MODULES([XAW], [x11 xext xt xtst xaw7])
+PKG_CHECK_MODULES([XAW], [x11 xext xt xtst xmu xaw7])
 
 dnl Checks for header files.
 AC_HEADER_STDC
