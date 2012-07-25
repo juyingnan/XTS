@@ -184,6 +184,8 @@ all
 	:include:/scenarios/XtC_scen
 	"VSW5TESTSUITE SECTION XtE 1 1 0 0"
 	:include:/scenarios/XtE_scen
+	"VSW5TESTSUITE SECTION ShapeExt 11 11 0 0"
+	:include:/scenarios/shape_scen
 
 Interface
 	"VSW5TESTSUITE SECTION Xlib3 109 161 0 0"
