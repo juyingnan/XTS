@@ -1,0 +1,11 @@
+XShapeCombineMask
+XShapeCombineRectangles
+XShapeCombineRegion
+XShapeCombineShape
+XShapeGetRectangles
+XShapeInputSelected
+XShapeOffsetShape
+XShapeQueryExtension
+XShapeQueryExtents
+XShapeQueryVersion
+XShapeSelectInput
