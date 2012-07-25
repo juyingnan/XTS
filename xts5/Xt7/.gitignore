@@ -1,0 +1,11 @@
+XtCallbackExclusive
+XtCallbackNone
+XtCallbackNonexclusive
+XtCallbackPopdown
+XtCreatePopupShell
+XtMenuPopdown
+XtMenuPopup
+XtPopdown
+XtPopup
+XtPopupSpringLoaded
+XtVaCreatePopupShell
