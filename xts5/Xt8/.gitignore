@@ -1,0 +1,7 @@
+XtConfigureWidget
+XtMakeGeometryRequest
+XtMakeResizeRequest
+XtMoveWidget
+XtQueryGeometry/XtQueryGeometry
+XtResizeWidget
+XtResizeWindow
