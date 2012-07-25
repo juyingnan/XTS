@@ -1,0 +1,10 @@
+XtCreateManagedWidget
+XtIsManaged
+XtManageChild
+XtManageChildren
+XtMapWidget
+XtSetMappedWhenManaged
+XtUnmanageChild
+XtUnmanageChildren
+XtUnmapWidget
+XtVaCreateManagedWidget

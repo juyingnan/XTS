@@ -185,6 +185,7 @@ xts5/Xlib16/Makefile
 xts5/Xlib17/Makefile
 xts5/Xt3/Makefile
 xts5/Xt4/Makefile
+xts5/Xt5/Makefile
 xts5/SHAPE/Makefile
 xts5/XIproto/Makefile
 xts5/XI/Makefile
