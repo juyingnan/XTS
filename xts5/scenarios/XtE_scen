@@ -57,5 +57,5 @@
 # Prepare for GA Release
 #
 
-	"VSW5TESTSUITE CASE StringDefs.h 1"
-	/XtE/StringDefs.h
+	"VSW5TESTSUITE CASE StringDefs 1"
+	/XtE/StringDefs

@@ -25,7 +25,7 @@ All Rights Reserved.
 >># 
 >># Project: VSW5
 >># 
->># File: xts/XtE/StringDefs.h.m
+>># File: xts/XtE/StringDefs.m
 >># 
 >># Description:
 >>#	Tests for StringDefs.h contents
@@ -54,7 +54,7 @@ All Rights Reserved.
 >># Prepare for GA Release
 >>#
 >>EXTERN
->>TITLE StringDefs.h XtE
+>>TITLE StringDefs XtE
 >>ASSERTION Good A
 The header file StringDefs.h shall contain the definitions
 specified in Appendix E of the Specification.

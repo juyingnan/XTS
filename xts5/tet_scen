@@ -4715,6 +4715,6 @@ XtError
 
 #Discrete tests for Xt Appendix E
 
-StringDefs.h
-	"VSW5TESTSUITE CASE StringDefs.h 1"
-	/XtE/StringDefs.h
+StringDefs
+	"VSW5TESTSUITE CASE StringDefs 1"
+	/XtE/StringDefs
