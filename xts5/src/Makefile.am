@@ -1,5 +1,5 @@
 #SUBDIRS = lib libproto libXR5 libXtaw libXtmu libXtTest pixval xim
-SUBDIRS = lib libproto libXR5 libXtTest xim bin
+SUBDIRS = lib libproto libXR5 libXtaw libXtTest xim bin
 
 xtslibdir = $(libexecdir)/xts5
 xtslib_LTLIBRARIES = libxts5.la libxts5proto.la

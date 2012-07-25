@@ -64,7 +64,7 @@ AC_SUBST(LDFLAGS_FOR_BUILD)
 
 PKG_CHECK_MODULES([XTS], [x11 xext xi xtst xau])
 PKG_CHECK_MODULES([XT], [x11 xext xt xtst])
-dnl PKG_CHECK_MODULES([XAW], [x11 xext xt xtst xaw7])
+PKG_CHECK_MODULES([XAW], [x11 xext xt xtst xaw7])
 
 dnl Checks for header files.
 AC_HEADER_STDC
@@ -159,6 +159,7 @@ xts5/src/Makefile
 xts5/src/lib/Makefile
 xts5/src/libproto/Makefile
 xts5/src/libXR5/Makefile
+xts5/src/libXtaw/Makefile
 xts5/src/libXtTest/Makefile
 xts5/src/xim/Makefile
 xts5/src/bin/Makefile

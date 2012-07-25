@@ -119,7 +119,8 @@ static XtResource resources[] = {
 
 static void Initialize(), ConstraintInitialize(),
     Realize(), Resize(), ChangeManaged();
-static Boolean SetValues(), Layout();
+static Boolean SetValues();
+static Boolean Layout(FormWidget w, Dimension width, Dimension height, Boolean force_relayout);
 static XtGeometryResult GeometryManager(), PreferredGeometry();
 
 #define superclass	(&formClassRec)
@@ -416,7 +417,7 @@ static void ChangeManaged(widget)
 	    }
 	    GetGeometry( widget, child->core.width, child->core.height );
 	    (*((ViewportWidgetClass)w->core.widget_class)->form_class.layout)
-		( (FormWidget)w, w->core.width, w->core.height );
+		( (FormWidget)w, w->core.width, w->core.height, False );
 	    /* %%% do we need to hide this child from Form?  */
 	}
     }
@@ -785,10 +786,7 @@ static void Resize(widget)
 }
 
 
-/* ARGSUSED */
-static Boolean Layout(w, width, height)
-    FormWidget w;
-    Dimension width, height;
+static Boolean Layout(FormWidget w, Dimension width, Dimension height, Boolean force_relayout)
 {
     ComputeLayout( (Widget)w, /*query=*/True, /*destroy=*/True );
     w->form.preferred_width = w->core.width;
