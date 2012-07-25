@@ -193,6 +193,7 @@ xts5/Xt9/Makefile
 xts5/Xt10/Makefile
 xts5/Xt11/Makefile
 xts5/Xt12/Makefile
+xts5/Xt13/Makefile
 xts5/SHAPE/Makefile
 xts5/XIproto/Makefile
 xts5/XI/Makefile
