@@ -180,7 +180,7 @@ int	return_value;
 	propagate = False;
 	event_mask = NoEventMask;
 	event = (XAnyEvent *) &event_return;
-	for (i = 0; i < NELEM(event_types); i++) {
+	for (i = 0; i < NELEM(event_types) - 1; i++) {
 
 /* Discard all events in the event queue. */
 		XSync(display, True);
@@ -219,7 +219,7 @@ int	return_value;
 
 /* Repeat for each event-type. */
 	}
-	CHECKPASS(3*NELEM(event_types));
+	CHECKPASS(3*(NELEM(event_types)-1));
 >>ASSERTION Good A
 When
 .A w
@@ -1878,7 +1878,7 @@ int	return_value;
 	propagate = False;
 	event_mask = NoEventMask;
 	event = (XAnyEvent *) &event_return;
-	for (i = 0; i < NELEM(event_types); i++) {
+	for (i = 0; i < NELEM(event_types) - 1; i++) {
 		char *en = eventname(event_types[i]);
 
 /* Set type member of event to KeyPress. */
@@ -1973,7 +1973,7 @@ int	return_value;
 
 /* Repeat for each event-type. */
 	}
-	CHECKPASS(8*NELEM(event_types));
+	CHECKPASS(8*(NELEM(event_types)-1));
 >>ASSERTION def
 On a call to xname
 the
