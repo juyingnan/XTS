@@ -97,6 +97,24 @@ BEGIN
 			$::vars{"XT_DISPLAYHOST"} = "";
 		}
 	}
+	else
+	{
+		# Not a local display; admin is responsible for placing
+		# xtest fonts on the font path before running xts-config.
+		$::vars{"XT_FONTPATH"} = $::vars{"XT_FONTPATH_GOOD"};
+		my @fp = split(/,/, $::vars{"XT_FONTPATH"});
+
+		# Remove xtest directory
+		my @fpg = grep(!/xtest/i, @fp);
+
+		# If xtest directory is not called "xtest", remove the
+		# last directory in the path (as it's less likely to
+		# be the path containing "default"/"cursor" than the
+		# first directory in the path).
+		pop @fpg if (scalar(@fp) == scalar(@fpg));
+
+		$::vars{"XT_FONTPATH_GOOD"} = join(',', @fpg);
+	}
 
 	if($::vars{"XT_SCREEN_COUNT"} > 1)
 	{
