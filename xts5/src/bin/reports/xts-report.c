@@ -219,7 +219,8 @@ int	fabort=0;
 /*message type*/
 int	mtype;
 /*messages read in here*/
-char	linebuf[512];
+/* max length 512, plus end-of-line, plus NUL terminator */
+char	linebuf[515];
 /*pointer into where we are in the message*/
 char	*pline;
 
