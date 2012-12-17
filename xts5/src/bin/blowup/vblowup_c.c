@@ -273,6 +273,8 @@ SOFTWARE.
 #endif
 
 #include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 #include "X11/Xlib.h"  		/* xlib defs */
 #include "X11/cursorfont.h"		/* cursor info */
 /* #include "drawutil.h"		// color thingys */
@@ -527,8 +529,6 @@ void (*expose_handler)();
 int	*winzoomp;
 char	*font_name;
 {                                                      
-	extern void free();
-	extern char *malloc();
         int	show_color = compare_color;
                                                                                      
 	Font	fid;

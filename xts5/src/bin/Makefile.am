@@ -1,1 +1,1 @@
-SUBDIRS = mc reports
+SUBDIRS = blowup mc reports
