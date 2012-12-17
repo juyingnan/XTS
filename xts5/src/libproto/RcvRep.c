@@ -507,26 +507,16 @@ int client;   /* */
 	case X_GetImage:
 		{
 /*
- *	Images are stored in the test programs in client byte order and
- *	unpadded.  This allows images to be independent of the server.
- *	However the server will send images in server byte order and 
- *	padded.  This routine unpacks from server form into client-normal
- *	form.  Note that we're assuming client-normal images are padded to
- *	byte boundary; otherwise the translation is more complicated.
- *	Similarly, left-pad must be zero.
+ *	Images are stored in the test programs in server byte order and
+ *	padding.
  */
 
-		int row, col = 1;
-		unsigned char my_sex = *((unsigned char *) &col) ^ 1;
-		unsigned char server_sex =
-			(Xst_clients[client].cl_dpy) -> byte_order;
-		long flip = my_sex ^ server_sex;  /* assume MSBFirst == 1 */
 		int server_pad = (Xst_clients[client].cl_dpy) -> bitmap_pad;
-		int dst_width /*in bytes*/ =
+		int byte_width /*in bytes*/ =
 			(Xst_clients[client].cl_imagewidth + 7) >> 3;
-		int src_width /*in bytes*/ = dst_width +
-			((dst_width % (server_pad>>3)) == 0 ? 0 :
-			 (server_pad>>3) - dst_width % (server_pad>>3));
+		int src_width /*in bytes*/ = byte_width +
+			((byte_width % (server_pad>>3)) == 0 ? 0 :
+			 (server_pad>>3) - byte_width % (server_pad>>3));
 			
 		char *dst = (char *)rp + sizeof(xReply);
 
@@ -540,17 +530,7 @@ int client;   /* */
 	                    break;
                 }
 
-		rp->generic.length =
-			(dst_width * Xst_clients[client].cl_imageheight) >> 2;
-
-		for (row = 0; row < Xst_clients[client].cl_imageheight; row++)
-			for(col = 0; col < src_width; col++)
-
-				if (col < dst_width)  {
-				    *(dst++) = *((char *)((long)rbp++ ^ flip));
-				}  else  {
-					rbp++;
-				}
+		memcpy(dst, rbp, calculated_length * 4);
 	        }
 		break;
 	case X_ListInstalledColormaps:

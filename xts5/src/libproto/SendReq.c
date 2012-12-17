@@ -876,34 +876,12 @@ int pollreq;
 	case X_PutImage:
 		{
 /*
- *	Images are stored in the test programs in client byte order and
- *	unpadded.  This allows images to be independent of the server.
- *	However the server will expect images in server byte order and 
- *	padded.  This routine sends an altered xPutImageReq which the server
- *	will like.  Note that we're assuming client-normal form means that
- *	rows are padded to a byte boundary; otherwise the translation is
- *	more complex.  Similarly, left-pad must be zero.
+ *	Images are stored in the test programs in server byte order and
+ *	padding.
  */
 
-		int row, col = 1;
-		unsigned char my_sex = *((unsigned char *) &col) ^ 1;
-		unsigned char server_sex =
-			(Xst_clients[client].cl_dpy) -> byte_order;
-		long flip = my_sex ^ server_sex;  /* assume MSBFirst == 1 */
-		int server_pad = (Xst_clients[client].cl_dpy) -> bitmap_pad;
-		int src_width /*in bytes*/ =
-			(int)(((xPutImageReq *)rp)->width + 7) >> 3;
-		int dst_width /*in bytes*/ = src_width +
-			((src_width % (server_pad>>3)) == 0 ? 0 :
-			 (server_pad>>3) - src_width % (server_pad>>3));
 		char *src = (char *)rp + sizeof(xPutImageReq);
 		char **dst = (&(Get_Display(client)->bufptr));
-		char *drop;
-
-		if (((xPutImageReq *)rp)->leftPad != 0)  {
-			Log_Err("leftPad != 0; not supported in Send_Req()\n");
-			Abort();
-		}
 
 		send1(client,(long) ((xPutImageReq *)rp)->reqType);
 		send1(client,(long) ((xPutImageReq *)rp)->format);
@@ -929,16 +907,8 @@ int pollreq;
 			break;
 		}
 		squeeze_me_in(client, n);
-		for (row = 0; n > 0 && row < (int)((xPutImageReq *)rp)->height; row++)
-			for(col = 0; col < dst_width; col++) {
-				if (col < src_width)  {
-					drop = (char *)((long)(*dst)++ ^ flip);
-					*drop = *(src++);
-				}  else  {
-					(*dst)++;
-				}
-				n--;
-			}
+		memcpy(*dst, src, n);
+		(*dst) += n;
 	        }
 		break;
 	case X_GetImage:
