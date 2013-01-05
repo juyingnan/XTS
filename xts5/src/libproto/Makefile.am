@@ -32,7 +32,7 @@ XP_OPEN_DIS=XlibXtst.c
 AM_CFLAGS = -I$(top_srcdir)/include \
 	-I$(top_srcdir)/src/tet3/inc \
 	-I$(top_srcdir)/xts5/include \
-	$(XTS_CFLAGS)
+	$(XTS_CFLAGS) $(XT_CFLAGS)
 noinst_LTLIBRARIES = libXst.la
 libXst_la_SOURCES =\
 	XstlibInt.h\
