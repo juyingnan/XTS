@@ -32,7 +32,7 @@ AM_INIT_AUTOMAKE([dist-bzip2 foreign])
 
 AM_MAINTAINER_MODE
 
-AM_CONFIG_HEADER([config.h])
+AC_CONFIG_HEADERS([config.h])
 
 # Directory setup
 AX_DEFINE_DIR([DEFAULT_TET_ROOT], [datadir], [Default TET root directory])
