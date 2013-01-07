@@ -99,6 +99,14 @@ BEGIN
 	}
 	else
 	{
+		$::vars{"XT_TCP"} = "Yes";
+		my $hostname = "";
+		my $offset = rindex($::vars{"DISPLAY"}, ':');
+		if ($offset >= 0) {
+			$hostname = substr($::vars{"DISPLAY"}, 0, $offset);
+		}
+		$::vars{"XT_DISPLAYHOST"} = $hostname;
+
 		# Not a local display; admin is responsible for placing
 		# xtest fonts on the font path before running xts-config.
 		$::vars{"XT_FONTPATH"} = $::vars{"XT_FONTPATH_GOOD"};
