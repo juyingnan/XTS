@@ -30,6 +30,12 @@ AC_CONFIG_SRCDIR([Makefile.am])
 AC_CONFIG_AUX_DIR(.)
 AM_INIT_AUTOMAKE([dist-bzip2 foreign])
 
+# Initialize X.Org macros
+m4_ifndef([XORG_MACROS_VERSION],
+          [m4_fatal([must install xorg-macros 1.3 or later before running autoconf/autogen])])
+XORG_MACROS_VERSION(1.3)
+XORG_DEFAULT_OPTIONS
+
 AM_MAINTAINER_MODE
 
 AC_CONFIG_HEADERS([config.h])
@@ -121,26 +127,11 @@ if test "x$PERL" = x || test "x$XSET" = x || test "x$XDPYINFO" = x; then
     AC_MSG_ERROR([perl, xset and xdpyinfo are required to run xts-config])
 fi
 
-m4_ifdef([AM_SILENT_RULES], [AM_SILENT_RULES([yes])],
-    [AC_SUBST([AM_DEFAULT_VERBOSITY], [1])])
-
-# Generate man page if asciidoc and xmlto are available.
-AC_ARG_VAR([XMLTO], [Path to xmlto command])
-AC_PATH_PROG([XMLTO], [xmlto])
-AC_ARG_VAR([ASCIIDOC], [Path to asciidoc command])
-AC_PATH_PROG([ASCIIDOC], [asciidoc])
-
-AM_CONDITIONAL([HAVE_DOCTOOLS], [test "x$XMLTO" != "x" && test "x$ASCIIDOC" != "x"])
+XORG_WITH_ASCIIDOC
+XORG_WITH_XMLTO
+AM_CONDITIONAL(HAVE_DOCTOOLS, [test "x$XMLTO" != "x" && test "x$ASCIIDOC" != "x"])
 if test "x$XMLTO" = "x" || test "x$ASCIIDOC" = "x"; then
     AC_MSG_WARN([xmlto or asciidoc not found - cannot create man pages without it])
-else
-    if test x$MISC_MAN_SUFFIX = x    ; then
-        case $host_os in
-            solaris*)       MISC_MAN_SUFFIX=5  ;;
-            *)              MISC_MAN_SUFFIX=7  ;;
-        esac
-    fi
-    AC_SUBST(MISC_MAN_SUFFIX)
 fi
 
 AC_CONFIG_FILES([

@@ -42,6 +42,6 @@ XTS.txt: README
 	$(XMLTO) man $<
 	mv -f $(@:.man=.miscmansuffix) $@
 
-MAINTAINERCLEANFILES = *.xml $(xtsman_pre) $(xtsman_txt)
+CLEANFILES = $(miscman_DATA) $(xtsman_xml) $(xtsman_pre) $(xtsman_txt)
 endif
 
