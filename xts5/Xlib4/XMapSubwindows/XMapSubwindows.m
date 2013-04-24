@@ -1,4 +1,5 @@
 Copyright (c) 2005 X.Org Foundation L.L.C.
+Copyright (c) Open Text SA and/or Open Text ULC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -822,7 +823,26 @@ int 	i;
 	for (i = 1; i < NELEM(T1); i++)
 		exposefill(display, bt[i].wid);
 	for (i = 1; i < NELEM(T1); i++) {
-		if (exposecheck(display, bt[i].wid))
+		/* Compute unobscured region */
+		int j;
+		XRectangle rect;
+		Region sub = makeregion();
+		Region rgn = makeregion();
+		rect.x = 0;
+		rect.y = 0;
+		rect.width = bt[i].width;
+		rect.height = bt[i].height;
+		XUnionRectWithRegion(&rect, rgn, rgn);
+		for (j = i+1; j < NELEM(T1); j++) {
+			XSubtractRegion(sub, sub, sub);
+			rect.x = bt[j].x - bt[i].x;
+			rect.y = bt[j].y - bt[i].y;
+			rect.width = bt[j].width;
+			rect.height = bt[j].height;
+			XUnionRectWithRegion(&rect, sub, sub);
+			XSubtractRegion(rgn, sub, rgn);
+		}
+		if (checkregion(display, bt[i].wid, rgn, W_FG, W_FG, CHECK_IN))
 			CHECK;
 		else {
 			report("Neither Expose events or backing store processing");

@@ -1,5 +1,6 @@
 /*
 Copyright (c) 2005 X.Org Foundation L.L.C.
+Copyright (c) Open Text SA and/or Open Text ULC
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of
 this software and associated documentation files (the "Software"), to deal in
@@ -122,6 +123,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 #include	"pixval.h"
 
 static	void	doerr();
+static	void	dorgnerr(XImage *im, Region rgn, unsigned long inpix, unsigned long outpix, int flags);
 
 #define	inarea(ap, x, y)	\
 (\
@@ -136,6 +138,7 @@ static	void	doerr();
  * If flags are CHECK_OUT only the outside is checked.
  * flags of 0 or CHECK_ALL check both.
  * If ap is NULL then the whole window is checked.  (See also checkclear)
+ * (See also checkregion)
  */
 Status
 checkarea(disp, d, ap, inpix, outpix, flags)
@@ -241,6 +244,94 @@ Drawable	d;
 }
 
 /*
+ * Same as checkarea, except it takes a 'Region' instead of an 'area'
+ */
+Status
+checkregion(Display *disp, Drawable d, Region rgn,
+            unsigned long inpix, unsigned long outpix, int flags)
+{
+int 	x, y;
+XImage	*im;
+int 	xorig;
+int 	yorig;
+unsigned int 	width;
+unsigned int 	height;
+unsigned long	pix;
+int 	inloopflag = 0;
+
+	if (flags == 0)
+		flags = CHECK_ALL;
+	if ((flags & CHECK_ALL) == 0) {
+		report("assert error in checkregion()");
+		printf("assert error in checkregion()\n");
+		exit(1);
+	}
+
+	getsize(disp, d, &width, &height);
+
+	/*
+	 * If a NULL region has been given then error out
+	 */
+	if (rgn == NULL) {
+		report("assert error in checkregion()");
+		printf("assert error in checkregion()\n");
+		exit(1);
+	}
+
+	im = XGetImage(disp, d, 0, 0, width, height, AllPlanes, ZPixmap);
+	if (im == (XImage*)0) {
+		delete("XGetImage failed");
+		return(False);
+	}
+
+	/*
+	 * If we are only checking inside then only examine that part.
+	 */
+	if ((flags & CHECK_ALL) == CHECK_IN) {
+		XRectangle rect;
+		XClipBox(rgn, &rect);
+		xorig = rect.x;
+		yorig = rect.y;
+		width = rect.width;
+		height = rect.height;
+	} else {
+		xorig = 0;
+		yorig = 0;
+	}
+
+	for (y = yorig; y < yorig+height; y++) {
+		for (x = xorig; x < xorig+width; x++) {
+			inloopflag = 1;
+			pix = XGetPixel(im, x, y);
+			if (XPointInRegion(rgn, x, y)) {
+				if (pix != inpix && (flags & CHECK_IN)) {
+					if (!(flags & CHECK_DIFFER))
+						dorgnerr(im, rgn, inpix, outpix, flags);
+					XDestroyImage(im);
+					return(False);
+				}
+			} else {
+				if (pix != outpix && (flags & CHECK_OUT)) {
+					if (!(flags & CHECK_DIFFER))
+						dorgnerr(im, rgn, inpix, outpix, flags);
+					XDestroyImage(im);
+					return(False);
+				}
+			}
+		}
+	}
+
+	/* This is to catch bugs */
+	if (inloopflag == 0) {
+		delete("No pixels checked in checkregion - internal error");
+		XDestroyImage(im);
+		return(False);
+	}
+	XDestroyImage(im);
+	return(True);
+}
+
+/*
  * Make up an error file by faking a known good image.
  */
 static void
@@ -273,6 +364,63 @@ extern	int 	Errnum;
 			 * Otherwise build up a good image.
 			 */
 			if (inarea(ap, x, y)) {
+				if (flags & CHECK_IN) {
+					XPutPixel(good, x, y, inpix);
+				} else {
+					XPutPixel(good, x, y, W_BG);
+					XPutPixel(bad, x, y, W_BG);
+				}
+			} else {
+				if (flags & CHECK_OUT) {
+					XPutPixel(good, x, y, outpix);
+				} else {
+					XPutPixel(good, x, y, W_BG);
+					XPutPixel(bad, x, y, W_BG);
+				}
+			}
+		}
+	}
+	report("Pixel mismatch in image");
+
+	/* Making up an error file should be a subroutine.. */
+	sprintf(name, "Err%04d.err", Errnum++);
+	report("See file %s for details", name);
+	unlink(name);
+	dumpimage(bad, name, (struct area *)0);
+	dumpimage(good, name, (struct area *)0);
+
+	XDestroyImage(good);
+	XDestroyImage(bad);
+}
+
+/*
+ * Make up an error file by faking a known good image.
+ */
+static void
+dorgnerr(XImage *im, Region rgn, unsigned long inpix, unsigned long outpix, int flags)
+{
+XImage	*good;
+XImage	*bad;
+int 	x, y;
+char	name[32];
+extern	int 	Errnum;
+
+	flags &= CHECK_ALL;
+
+	/*
+	 * Make copies of the image, because we are going to scribble into them.
+	 */
+	good = XSubImage(im, 0, 0, im->width, im->height);
+	bad = XSubImage(im, 0, 0, im->width, im->height);
+
+	for (y = 0; y < im->height; y++) {
+		for (x = 0; x < im->width; x++) {
+			/*
+			 * For parts of the image that we are not interested in
+			 * then we set both good and bad to W_BG.
+			 * Otherwise build up a good image.
+			 */
+			if (XPointInRegion(rgn, x, y)) {
 				if (flags & CHECK_IN) {
 					XPutPixel(good, x, y, inpix);
 				} else {
