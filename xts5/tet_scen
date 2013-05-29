@@ -186,6 +186,10 @@ all
 	:include:/scenarios/XtE_scen
 	"VSW5TESTSUITE SECTION ShapeExt 11 11 0 0"
 	:include:/scenarios/shape_scen
+	"VSW5TESTSUITE SECTION XI 36 316 0 0"
+	:include:/scenarios/XI_scen
+	"VSW5TESTSUITE SECTION XIproto 35 107 0 0"
+	:include:/scenarios/XIproto_scen
 
 Interface
 	"VSW5TESTSUITE SECTION Xlib3 109 161 0 0"
