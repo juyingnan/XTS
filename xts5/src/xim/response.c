@@ -455,8 +455,8 @@ void xim_response_pop_cb(pstk)
 				}
 				else
 				{
-					if(psd->data.bitmap != NULL)
-						free(psd->data.bitmap);
+					if(psd->data.bitmap != None)
+						XFreePixmap(Dsp, psd->data.bitmap);
 				}
 				break;
 			default:
@@ -1133,7 +1133,7 @@ static Pixmap read_pixmap()
 		parse_skwhite(&presponse);
 	}
 
-	return(NULL);
+	return(None);
 }
 
 /* read the callback data from a response file for */
