@@ -150,7 +150,7 @@ A call to xname with an invalid deviceid returns a BadDevice error.
 Call xname.
 >>CODE baddevice
 XDevice *dev;
-XID	baddevice;
+int	baddevice;
 int ximajor, first, err;
 
 	if (!XQueryExtension (display, INAME, &ximajor, &first, &err))
@@ -173,7 +173,7 @@ returns a BadDevice error.
 Call xname.
 >>CODE baddevice
 int 	i, ndevs;
-XID	baddevice;
+int	baddevice;
 XDeviceInfo *list;
 XDevice *ret;
 

@@ -1063,7 +1063,7 @@ BadMatch error results.
 When an invalid modifier_device is specified in an xname protocol request, a
 BadValue error results.
 >>CODE baddevice
-XID baddevice;
+int baddevice;
 XDevice bogus;
 
 	if (!Setup_Extension_DeviceInfo(KeyMask))
@@ -1088,7 +1088,7 @@ XDevice bogus;
 When an invalid device is specified in an xname protocol request, a
 BadValue error results.
 >>CODE baddevice
-XID baddevice;
+int baddevice;
 XDevice bogus;
 
 	if (!Setup_Extension_DeviceInfo(KeyMask))
@@ -1116,7 +1116,7 @@ BadValue error results.
 Specify an invalid event class.
 >>CODE badclass
 XEventClass eclass = -1;
-XID badclass;
+int badclass;
 
 	if (!Setup_Extension_DeviceInfo(KeyMask))
 	    {

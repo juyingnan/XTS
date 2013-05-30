@@ -111,7 +111,7 @@ int 	nmap = 255;
  */
 #define	MAPSIZE	256
 static	unsigned char	Map[MAPSIZE];
-static 	XID baddevice; 
+static 	int baddevice;
 
 static	int 	nbtns;
 extern ExtDeviceInfo Devs;

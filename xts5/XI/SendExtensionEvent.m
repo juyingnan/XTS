@@ -2282,7 +2282,7 @@ Specify a bad device.
 Initialise the event structure for the call.
 Verify that a baddevice error occurs.
 >>CODE baddevice
-XID baddevice;
+int baddevice;
 int	 dbp;
 XEventClass dbpc;
 XDevice bogus;
@@ -2329,7 +2329,7 @@ Specify a bad event class;
 Initialise the event structure for the call.
 Verify that a badclass error occurs.
 >>CODE badclass
-XID badclass;
+int badclass;
 int	dbp;
 XEventClass bogus=-1, dbpc;
 int	return_value;

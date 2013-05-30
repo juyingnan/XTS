@@ -1079,7 +1079,7 @@ a BadDevice error will result.
 Specify an invalid device.
 >>CODE baddevice
 XDevice bogus;
-XID baddevice;
+int baddevice;
 
 	if (!Setup_Extension_DeviceInfo(BtnMask))
 	    {
@@ -1106,7 +1106,7 @@ a BadDevice error will result.
 Specify an invalid modifier device.
 >>CODE baddevice
 XDevice bogus;
-XID baddevice;
+int baddevice;
 
 	if (!Setup_Extension_DeviceInfo(BtnMask))
 	    {
@@ -1133,7 +1133,7 @@ a BadClass error will result.
 Specify an invalid event class.
 >>CODE badclass
 XEventClass eclass = -1;
-XID badclass;
+int badclass;
 
 	if (!Setup_Extension_DeviceInfo(ModMask | BtnMask))
 	    {

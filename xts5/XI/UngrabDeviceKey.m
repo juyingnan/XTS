@@ -656,7 +656,7 @@ BadMatch error.
 A call to xname specifying an invalid modifier device results in a
 BadDevice error.
 >>CODE baddevice
-XID baddevice;
+int baddevice;
 XDevice bogus;
 
 	if (!Setup_Extension_DeviceInfo(KeyMask))
@@ -680,7 +680,7 @@ XDevice bogus;
 A call to xname specifying an invalid grab device results in a
 BadDevice error.
 >>CODE baddevice
-XID baddevice;
+int baddevice;
 XDevice bogus;
 
 	if (!Setup_Extension_DeviceInfo(KeyMask))

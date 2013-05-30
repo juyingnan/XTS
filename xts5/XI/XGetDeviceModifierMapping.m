@@ -301,7 +301,7 @@ If an invalid device is specified, a BadDevice error occurs.
 Specifiy an invalid device.
 >>CODE baddevice
 XModifierKeymap *ret;
-XID baddevice;
+int baddevice;
 XDevice bogus;
 int ximajor, first, err;
 

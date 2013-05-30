@@ -1382,7 +1382,7 @@ XEventClass dbpgclass;
 A call to xname specifying an invalid eventclass results in a BadClass
 error.
 >>CODE badclass
-XID badclass;
+int badclass;
 XEventClass bogus;
 
 	if (!Setup_Extension_DeviceInfo(BtnMask))

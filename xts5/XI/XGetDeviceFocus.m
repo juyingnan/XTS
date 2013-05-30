@@ -107,7 +107,7 @@ Time	*time1 = &focus_time;
 Window fwin;
 int revert;
 Time focus_time;
-XID baddevice;
+int baddevice;
 extern ExtDeviceInfo Devs;
 
 >>ASSERTION Good B 3

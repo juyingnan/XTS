@@ -358,7 +358,7 @@ Change the pointer to a new device.
 Verify that all input device extension requests that require a Device pointer
 fail with a BadDevice error, when the new pointer is specified.
 >>CODE
-XID baddevice;
+int baddevice;
 int devicemotionnotify;
 XDeviceInfo *list;
 int i, ndevices, revert, nfeed, mask, ksyms_per, savid;
@@ -722,7 +722,7 @@ When an invalid device is specified, a BadDevice error will result.
 Make the call with an invalid device.
 >>CODE baddevice
 XDevice nodevice;
-XID baddevice;
+int baddevice;
 int ximajor, first, err;
 
 	if (!XQueryExtension (display, INAME, &ximajor, &first, &err))

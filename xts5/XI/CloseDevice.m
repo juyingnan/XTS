@@ -400,7 +400,7 @@ Call xname to close a device.
 Call other input device extension requests.
 Verify a BadDevice error occurs.
 >>CODE
-XID 	baddevice; 
+int 	baddevice;
 int	devicekeypress;
 XDeviceInfo *list;
 int ret, i, j, ndevices, revert, nfeed, mask, ksyms_per;
@@ -813,7 +813,7 @@ is specified.
 >>STRATEGY
 Make the call with an invalid device.
 >>CODE baddevice
-XID baddevice;
+int baddevice;
 int ret;
 
 	if (!Setup_Extension_DeviceInfo(KeyMask))

@@ -593,7 +593,7 @@ is specified.
 Make the call with an invalid device.
 >>CODE baddevice
 XDevice nodevice;
-XID baddevice;
+int baddevice;
 int ximajor, first, err;
 
 	if (!XQueryExtension (display, INAME, &ximajor, &first, &err))

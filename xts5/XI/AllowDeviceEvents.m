@@ -1338,7 +1338,7 @@ is specified.
 Make the call with an invalid device.
 >>CODE baddevice
 XDevice nodevice;
-XID baddevice;
+int baddevice;
 int ret;
 
 	if (!grabstartup())

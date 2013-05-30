@@ -139,7 +139,7 @@ XFeedbackState *state;
 A call to xname
 returns a BadDevice error if an invalid device is specified.
 >>CODE baddevice
-XID 	baddevice;
+int 	baddevice;
 XDevice bogus;
 XFeedbackState *state;
 int ximajor, first, err;

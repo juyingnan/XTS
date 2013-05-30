@@ -590,7 +590,7 @@ If an invalid device is specified, a BadDevice error will result.
 Do a ChangeFeedbackControl, specifying an invalid device.
 >>CODE baddevice
 XDevice bogus;
-XID baddevice;
+int baddevice;
 int ximajor, first, err;
 
     if (!XQueryExtension (display, INAME, &ximajor, &first, &err)) {

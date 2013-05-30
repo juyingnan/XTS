@@ -648,7 +648,8 @@ BadMatch error.
 A call to xname specifying an invalid device results in a 
 BadDevice error.
 >>CODE baddevice
-XID baddevice, savedevice;
+int baddevice;
+XID savedevice;
 
 	if (!Setup_Extension_DeviceInfo(BtnMask))
 	    {
@@ -675,7 +676,7 @@ XID baddevice, savedevice;
 A call to xname specifying an invalid modifier device results in a 
 BadDevice error.
 >>CODE baddevice
-XID baddevice;
+int baddevice;
 XDevice bogus;
 
 	if (!Setup_Extension_DeviceInfo(BtnMask))

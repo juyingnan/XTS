@@ -104,7 +104,7 @@ Window	focus = PointerRoot;
 int	revert_to = RevertToPointerRoot;
 int	time1 = CurrentTime;
 >>EXTERN
-XID baddevice;
+int baddevice;
 extern ExtDeviceInfo Devs;
 extern int MinKeyCode;
 

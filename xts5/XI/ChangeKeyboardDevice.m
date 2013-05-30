@@ -351,7 +351,7 @@ Change the keyboard to a new device.
 Verify that all input device extension requests that require a Device pointer
 fail with a BadDevice error, when the new keyboard is specified.
 >>CODE
-XID baddevice;
+int baddevice;
 int devicekeypress;
 XDeviceInfo *list;
 int i, ndevices, revert, nfeed, mask, ksyms_per;
@@ -690,7 +690,7 @@ is specified.
 Make the call with an invalid device.
 >>CODE baddevice
 XDevice nodevice;
-XID baddevice;
+int baddevice;
 int ximajor, first, err;
 
 	if (!XQueryExtension (display, INAME, &ximajor, &first, &err))

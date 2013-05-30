@@ -465,7 +465,7 @@ If an invalid device is specified, a BadDevice error will result.
 Do a ChangeDeviceControl request, specifying an invalid device.
 >>CODE baddevice
 XDevice bogus;
-XID baddevice;
+int baddevice;
 int ximajor, first, err, ret, val;
 
     if (!XQueryExtension (display, INAME, &ximajor, &first, &err))

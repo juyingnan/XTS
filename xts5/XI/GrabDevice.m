@@ -260,7 +260,7 @@ Call xname, specifying event classes from another device.
 Verify that a BadClass error occurs.
 >>CODE badclass
 int 	ret;
-XID	badclass;
+int	badclass;
 int	dkp;
 XEventClass dkpclass;
 
@@ -679,7 +679,7 @@ a BadClass error will result.
 Verify that xname fails and returns BadValue.
 >>CODE badclass
 int 	ret;
-XID badclass;
+int badclass;
 XEventClass	bogus[2];
 
 	if (!Setup_Extension_DeviceInfo(AnyMask))
@@ -795,7 +795,7 @@ Verify that xname fails and returns BadDevice.
 >>CODE baddevice
 int 	ret;
 XDevice bogus;
-XID baddevice;
+int baddevice;
 
 	if (!Setup_Extension_DeviceInfo(AnyMask))
 	    {

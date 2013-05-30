@@ -448,7 +448,7 @@ results.
 Specify an invalid device.
 Verify that a BadDevice error results.
 >>CODE baddevice
-XID baddevice;
+int baddevice;
 XDevice nodevice;
 XDeviceTimeCoord *tc;
 int ximajor, first, err;
