@@ -112,7 +112,8 @@ Atom		property = XA_WM_NORMAL_HINTS;
 #include	"X11/Xatom.h"
 #define		NumPropSizeElements 18
 #define		OldNumPropSizeElements 15
-static XSizeHints	sizehints = {0,1,2,3,4,5,6,7,8,9,10, {11,12} ,  {13,14},  15, 16, 17};
+#define AllFlags (USPosition|USSize|PPosition|PSize|PMinSize|PMaxSize|PResizeInc|PAspect|PBaseSize|PWinGravity)
+static XSizeHints	sizehints = {AllFlags,1,2,3,4,5,6,7,8,9,10, {11,12} ,  {13,14},  15, 16, 17};
 static XSizeHints	rhints =    {100,101,102,103,104,105,106,107,108,109,110, {111,112} ,  {113,114},  115, 116, 117};
 static long		supret;
 >>ASSERTION Good A
@@ -161,8 +162,8 @@ XVisualInfo	*vp;
 	} else
 		CHECK;
 	
-	if(rhints.flags != 0) {
-		report("The flags component of the XSizeHints structure was %lu instead of 0.", rhints.flags);
+	if(rhints.flags != AllFlags) {
+		report("The flags component of the XSizeHints structure was %lX instead of %X.", rhints.flags, AllFlags);
 		FAIL;
 	} else
 		CHECK;

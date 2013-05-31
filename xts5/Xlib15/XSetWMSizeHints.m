@@ -110,8 +110,9 @@ Atom		property = XA_WM_NORMAL_HINTS;
 >>EXTERN
 #define		NumPropSizeElements 18       /* ICCCM v. 1 */
 #include	"X11/Xatom.h"
-static XSizeHints	sizehints_0 = { 0,0,0,0,0,0,0,0,0,0,0, {0,0}, {0,0}, 0,0,0};
-static XSizeHints	sizehints_1 = { 0,1,2,3,4,5,6,7,8,9,10, {11,12}, {13,14}, 15, 16, 17};
+#define AllFlags (USPosition|USSize|PPosition|PSize|PMinSize|PMaxSize|PResizeInc|PAspect|PBaseSize|PWinGravity)
+static XSizeHints	sizehints_0 = { AllFlags,0,0,0,0,0,0,0,0,0,0, {0,0}, {0,0}, 0,0,0};
+static XSizeHints	sizehints_1 = { AllFlags,1,2,3,4,5,6,7,8,9,10, {11,12}, {13,14}, 15, 16, 17};
 >>ASSERTION Good A
 A call to xname sets the
 property, specified by the
@@ -190,8 +191,8 @@ int		i;
 	pp.base_height = (int)uls[++i];	/* added by ICCCM version 1 */
 	pp.win_gravity = (int)uls[++i];	/* added by ICCCM version 1 */
 
-	if(pp.flags != 0) {
-		report("The flags component of the XSizeHints structure was %lu instead of 0.", pp.flags);
+	if(pp.flags != AllFlags) {
+		report("The flags component of the XSizeHints structure was %lX instead of %X.", pp.flags, AllFlags);
 		FAIL;
 	} else
 		CHECK;

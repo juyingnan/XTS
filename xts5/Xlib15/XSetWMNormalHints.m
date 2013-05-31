@@ -109,8 +109,8 @@ XSizeHints	*hints = &sizehints_0;
 >>EXTERN
 #include	"X11/Xatom.h"
 #define		NewNumPropSizeElements 18       /* ICCCM v. 1 */
-static XSizeHints	sizehints_0 = { PAllHints,0,0,0,0,0,0,0,0,0,0, {0,0}, {0,0}, 0,0,0};
-static XSizeHints	sizehints_1 = { PAllHints,1,2,3,4,5,6,7,8,9,10, {11,12}, {13,14}, 15, 16, 17};
+static XSizeHints	sizehints_0 = { PAllHints|PBaseSize|PWinGravity,0,0,0,0,0,0,0,0,0,0, {0,0}, {0,0}, 0,0,0};
+static XSizeHints	sizehints_1 = { PAllHints|PBaseSize|PWinGravity,1,2,3,4,5,6,7,8,9,10, {11,12}, {13,14}, 15, 16, 17};
 >>ASSERTION Good A
 A call to xname sets the
 .S WM_NORMAL_HINTS
@@ -188,8 +188,8 @@ int		i;
 	pp.base_height = (int)uls[++i];	/* added by ICCCM version 1 */
 	pp.win_gravity = (int)uls[++i];	/* added by ICCCM version 1 */
 
-	if(pp.flags != PAllHints) {
-		report("The flags component of the XSizeHints structure was %lu instead of PAllHints (%ld).", pp.flags, PAllHints);
+	if(pp.flags != (PAllHints|PBaseSize|PWinGravity)) {
+		report("The flags component of the XSizeHints structure was %lu instead of PAllHints|PBaseSize|PWinGravity (%ld).", pp.flags, PAllHints|PBaseSize|PWinGravity);
 		FAIL;
 	} else
 		CHECK;

@@ -147,8 +147,8 @@ Test2 : Test2.o $(LIBS) $(top_builddir)/src/tet3/tcm/libtcmchild.la
 #define		NewNumPropSizeElements 18       /* ICCCM v. 1 */
 #define		NumPropWMHintsElements 9
 #include	"X11/Xatom.h"
-static XSizeHints	sizehints = { PAllHints,1,2,3,4,5,6,7,8,9,10, {11,12}, {13,14}, 15, 16, 17};
-static XSizeHints	sizehints_1 = { PAllHints,1,2,3,4,5,6,7,8,9,10, {11,12}, {13,14}, 15, 16, 17};
+static XSizeHints	sizehints = { PAllHints|PBaseSize|PWinGravity,1,2,3,4,5,6,7,8,9,10, {11,12}, {13,14}, 15, 16, 17};
+static XSizeHints	sizehints_1 = { PAllHints|PBaseSize|PWinGravity,1,2,3,4,5,6,7,8,9,10, {11,12}, {13,14}, 15, 16, 17};
 >>ASSERTION Good A
 When the
 .A window_name
@@ -534,8 +534,8 @@ int		i;
 	pp.base_height = (int)uls[++i];	/* added by ICCCM version 1 */
 	pp.win_gravity = (int)uls[++i];	/* added by ICCCM version 1 */
 
-	if(pp.flags != PAllHints) {
-		report("The flags component of the XSizeHints structure was %lu instead of PAllHints (%ld).", pp.flags, PAllHints);
+	if(pp.flags != (PAllHints|PBaseSize|PWinGravity)) {
+		report("The flags component of the XSizeHints structure was %lu instead of PAllHints|PBaseSize|PWinGravity (%ld).", pp.flags, PAllHints|PBaseSize|PWinGravity);
 		FAIL;
 	} else
 		CHECK;
