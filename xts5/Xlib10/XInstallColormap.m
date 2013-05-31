@@ -207,6 +207,7 @@ Window	base;
 Window	w1, w2;
 Window	w3nocm;
 XEvent	ev;
+Screen *screen;
 XColormapEvent	good;
 XColormapEvent	*cmp;
 int 	got;
@@ -216,6 +217,13 @@ int 	got;
 	defsetevent(good, display, ColormapNotify);
 	good.new = False;
 	good.state = ColormapInstalled;
+
+	screen = ScreenOfDisplay(display, DefaultScreen(display));
+	if (MaxCmapsOfScreen(screen) > 1) {
+		untested("Cannot reliably test ColormapNotify when the server has implicit colormaps");
+		report("  Server supports more than one installed colormap");
+		return;
+	}
 
 	for (resetvinf(VI_WIN); nextvinf(&vp); ) {
 
