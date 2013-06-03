@@ -102,7 +102,7 @@ int
 
 Display *display = Dsp;
 Drawable d = (Drawable)defwin(display);
-char *filename = xrbf_name;
+const char *filename = outfile(xrbf_name);
 unsigned int *width_return = &width;
 unsigned int *height_return = &height;
 Pixmap *bitmap_return = &bitmap;
@@ -191,13 +191,13 @@ int elements;
 static void
 xrbf_b_start() {
 	tpstartup();
-	xrbf_create(xrbf_name, xrbf_one, xrbf_n_one);
+	xrbf_create(outfile(xrbf_name), xrbf_one, xrbf_n_one);
 }
 
 
 static void
 xrbf_b_end()  {
-	unlink(xrbf_name);
+	unlink(outfile(xrbf_name));
 	tpcleanup();
 }
 

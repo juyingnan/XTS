@@ -127,12 +127,12 @@ when the file descriptor
 .A source 
 has data to be read and return an identifier for it.
 >>CODE
-char *data;
+const char *data;
 int status;
 pid_t pid2;
 
 if (config.posix_system != 0) {
-	data = "tapaddinp.dat";
+	data = outfile("tapaddinp.dat");
 	FORK(pid2);
 	avs_xt_hier("Tapaddinp1", "XtAppAddInput");
 	sprintf(ebuf, "PREP: Open file %s for read", data);
@@ -171,13 +171,13 @@ when the file descriptor
 .A source 
 is ready for writing.
 >>CODE
-char *data;
+const char *data;
 int status;
 pid_t pid2;
 
 if (config.posix_system != 0) {
 	avs_xt_hier("Tapaddinp1", "XtAppAddInput");
-	data = "tapaddinp.dat";
+	data = outfile("tapaddinp.dat");
 	FORK(pid2);
 	sprintf(ebuf, "PREP: Open file %s for write", data);
 	tet_infoline(ebuf);
@@ -235,13 +235,13 @@ to be passed to
 .A proc
 when it is invoked.
 >>CODE
-char *data;
+const char *data;
 int status;
 pid_t pid2;
 
 if (config.posix_system != 0) {
 	avs_xt_hier("Tapaddinp1", "XtAppAddInput");
-	data = "tapaddinp.dat";
+	data = outfile("tapaddinp.dat");
 	FORK(pid2);
 	sprintf(ebuf, "PREP: Open file %s for read", data);
 	tet_infoline(ebuf);

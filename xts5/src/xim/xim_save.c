@@ -577,7 +577,7 @@ Bool xim_save_open(plocale,style)
 		pext);
 
 	/* figure out which file to open */
-	xim_save_fp = fopen(fname,"w");
+	xim_save_fp = fopen(outfile(fname),"w");
 	if(xim_save_fp == NULL)
 	{
 		report("Could not open %s to save responses",fname);

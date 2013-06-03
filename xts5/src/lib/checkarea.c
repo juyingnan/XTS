@@ -385,7 +385,7 @@ extern	int 	Errnum;
 	/* Making up an error file should be a subroutine.. */
 	sprintf(name, "Err%04d.err", Errnum++);
 	report("See file %s for details", name);
-	unlink(name);
+	unlink(outfile(name));
 	dumpimage(bad, name, (struct area *)0);
 	dumpimage(good, name, (struct area *)0);
 

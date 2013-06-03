@@ -185,7 +185,7 @@ unsigned long	pix1, pix2;
 						, x, y, pix1, pix2);
 					sprintf(name, "Err%04d.err", Errnum++);
 					report("See file %s for details", name);
-					unlink(name);
+					unlink(outfile(name));
 					dumpimage(newim, name, (struct area *)0);
 					dumpimage(im, name, (struct area *)0);
 					XDestroyImage(newim);

@@ -278,11 +278,11 @@ void XtAppMainLoop(app_context)
 while it is blocked to read an event from the queue the 
 designated input source callback procedure shall be called.
 >>CODE
-char *data;
+const char *data;
 int status;
 pid_t pid2;
 
-	data = "tapmnloop.dat";
+	data = outfile("tapmnloop.dat");
 	sprintf(ebuf, "PREP: Open file %s for read", data);
 	tet_infoline(ebuf);
 	if ((fid = (FILE *)fopen(data, "w+")) == NULL) {

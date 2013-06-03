@@ -131,10 +131,10 @@ void XtTMO4_Proc(client_data, id)
 XtPointer client_data;
 XtIntervalId *id;
 {
-char *data;
+const char *data;
 
 	avs_set_event(1, 1);
-	data = "data1";
+	data = outfile("data1");
 	sprintf(ebuf, "PREP: Open file %s for read", data);
 	tet_infoline(ebuf);
 	if ((fid = (FILE *)fopen(data, "w+")) == NULL) {
@@ -337,4 +337,4 @@ int pstatus;
 	else {
 		tet_result(TET_PASS);
 	}
-	unlink("data1");
+	unlink(outfile("data1"));

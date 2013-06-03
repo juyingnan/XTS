@@ -354,6 +354,7 @@ int xtest_putenv(char *envstr);
 int curofwin(Display *display, Cursor cursor, Window window);
 int defcur(Display *display, Window window);
 int spriteiswin(Display *display, Window window);
+const char *outfile(const char *fn);
 
 #else
 
@@ -593,6 +594,7 @@ int xtest_putenv();
 int curofwin();
 int defcur();
 int spriteiswin();
+char *outfile();
 
 #endif
 

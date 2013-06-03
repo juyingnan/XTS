@@ -264,7 +264,7 @@ void XtAppNextEvent(app_context, event_return)
 is blocked the designated callback procedure for the input source 
 shall be called.
 >>CODE
-char *data;
+const char *data;
 pid_t pid2;
 int i;
 int status, waited;
@@ -272,7 +272,7 @@ XEvent loop_event;
 Display *display;
 XtInputMask processing;
 
-	data = "tapnxevnt.dat";
+	data = outfile("tapnxevnt.dat");
 	FORK(pid2);
 	avs_xt_hier("Tapnxevnt4", "XtAppNextEvent");
 	sprintf(ebuf, "PREP: Open file %s for read", data);

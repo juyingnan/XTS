@@ -57,6 +57,7 @@ libxtest_la_SOURCES = badcmap.c \
 			notmember.c\
 			opendisp.c\
 			openfonts.c\
+			outfile.c\
 			pattern.c\
 			pfcount.c\
 			pointer.c\

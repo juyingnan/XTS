@@ -199,6 +199,9 @@ extern	int CurVinf;
 		if (fp)
 			fclose(fp);
 		fp = fopen(name, "r");
+		/* Image file may be generated. If not present, check outfile location: */
+		if (!fp)
+			fp = fopen(outfile(name), "r");
 		lasttest = tet_thistest;
 		lastvinf = CurVinf;
 	}
@@ -305,11 +308,11 @@ ok:
 
 		report("A total of %d out of %d pixels were bad", bad, good+bad);
 		sprintf(errfile, "Err%04d.err", Errnum);
-		unlink(errfile);
+		unlink(outfile(errfile));
 		dumpimage(imp, errfile, ap);
 	
 		newpos = ftell(fp);
-		errfp = fopen(errfile, "a");
+		errfp = fopen(outfile(errfile), "a");
 		if (errfp == NULL) {
 				report("Could not open pixel error file %s", errfile);
 		} else {

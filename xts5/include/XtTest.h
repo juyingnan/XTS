@@ -101,6 +101,7 @@ SOFTWARE.
 #include <X11/Shell.h>
 
 #include "XtTestProto.h"
+#include "xtestlib.h"
 
 /*
  * Options are all set into this structure.

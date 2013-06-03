@@ -107,7 +107,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 void
 
 XrmDatabase database = (XrmDatabase)NULL;
-char *stored_db = "xpfd_file";
+const char *stored_db = outfile("xpfd_file");
 >>SET startup rmstartup
 >>INCLUDE rescommon.mc
 >>EXTERN

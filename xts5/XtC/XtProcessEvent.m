@@ -123,7 +123,7 @@ Boolean *continue_to_dispatch;
 	}
 	sprintf(ebuf, "PREP: Open file %s for read", data);
 	tet_infoline(ebuf);
-	if ((fid = (FILE *)fopen(data, "w+")) == NULL) {
+	if ((fid = (FILE *)fopen(outfile(data), "w+")) == NULL) {
 		sprintf(ebuf, "ERROR: Could not open file %s", data);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
@@ -455,7 +455,7 @@ int pstatus;
 	avs_xt_hier_def("Tprocevnt1", "XtProcessEvent");
 	sprintf(ebuf, "PREP: Open file %s for read", data);
 	tet_infoline(ebuf);
-	if ((fid = (FILE *)fopen(data, "w+")) == NULL) {
+	if ((fid = (FILE *)fopen(outfile(data), "w+")) == NULL) {
 		sprintf(ebuf, "ERROR: Could not open file %s", data);
 		tet_infoline(ebuf);
 		tet_result(TET_FAIL);
@@ -472,7 +472,7 @@ int pstatus;
 	display = XtDisplay(rowcolw);
 	XtProcessEvent(XtIMAlternateInput);
 	LKROF(pid2, AVSXTTIMEOUT-4);
-	unlink(data);
+	unlink(outfile(data));
 	KROF3(pid3, pstatus, AVSXTTIMEOUT-2);
         if (pstatus != 0) {
 		tet_infoline("ERROR: Test process exited abnormally");
@@ -528,7 +528,7 @@ int pstatus;
 		XtProcessEvent(XtIMAlternateInput|XtIMXEvent|XtIMTimer);
 	}
 	LKROF(pid2, AVSXTTIMEOUT-4);
-	unlink(data);
+	unlink(outfile(data));
 	KROF3(pid3, pstatus, AVSXTTIMEOUT-2);
         if (pstatus != 0) {
 		tet_infoline("ERROR: Test process exited abnormally");
@@ -592,7 +592,7 @@ int pstatus;
 		XtProcessEvent(XtIMAll);
 	}
 	LKROF(pid2, AVSXTTIMEOUT-4);
-	unlink(data);
+	unlink(outfile(data));
 	KROF3(pid3, pstatus, AVSXTTIMEOUT-2);
         if (pstatus != 0) {
 		tet_infoline("ERROR: Test process exited abnormally");

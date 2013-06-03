@@ -222,9 +222,9 @@ XEvent loop_event;
 Display *display;
 XtInputMask processing;
 int i;
-char *data;
+const char *data;
 
-	data = "tappendng.dat";
+	data = outfile("tappendng.dat");
 	FORK(pid2);
 	avs_xt_hier("Tappendng1", "XtAppPending");
 	tet_infoline("PREP: Register timeout");
@@ -279,9 +279,9 @@ XEvent loop_event;
 Display *display;
 XtInputMask processing;
 int i;
-char *data;
+const char *data;
 
-	data = "tappendng.dat";
+	data = outfile("tappendng.dat");
 	FORK(pid2);
 	avs_xt_hier("Tappendng1", "XtAppPending");
 	tet_infoline("PREP: Register timeout");

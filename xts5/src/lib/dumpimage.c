@@ -136,7 +136,7 @@ unsigned long 	count;
 extern	int 	tet_thistest;
 static	int 	lasttest;
 
-	fp = fopen(name, (lasttest==tet_thistest)? "a": "w");
+	fp = fopen(outfile(name), (lasttest==tet_thistest)? "a": "w");
 	if (fp == NULL) {
 		report("Could not create image file %s", name);
 		return;

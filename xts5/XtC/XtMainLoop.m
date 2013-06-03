@@ -340,9 +340,9 @@ pid_t pid2;
 int invoked = 0;
 pid_t pid3;
 int pstatus;
-char *data;
+const char *data;
 
-	data = "data1";
+	data = outfile("data1");
 	FORK(pid3);
 	avs_xt_hier_def("Tmainloop1", "XtMainLoop");
 	tet_infoline("PREP: Create a test labelw_msg widget");

@@ -150,13 +150,13 @@ shall merge the contents of a resource file into a database.
 	gfd_return = XrmGetStringDatabase(src_spec1);
 
 	tet_infoline("PREP: Add data to resource file");
-	(void)XrmPutFileDatabase(gfd_return, file_name_good);
+	(void)XrmPutFileDatabase(gfd_return, outfile(file_name_good));
 	tet_infoline("PREP: Add to database");
 
 	(void)XrmPutLineResource(&dst_database_id, dst_spec);
 
 	tet_infoline("TEST: Call to XrmCombineFileDatabase merges resource file into database");
-	XrmCombineFileDatabase(file_name_good, &dst_database_id, True);
+	XrmCombineFileDatabase(outfile(file_name_good), &dst_database_id, True);
 
 	XSync(display_arg, 0);
 	XSetErrorHandler(unexp_err);          
@@ -234,13 +234,13 @@ the entry in target_db.
 	(void)XrmPutLineResource(&gfd_return, src_spec3);
 
 	tet_infoline("PREP: Add data to resource file");
-	(void)XrmPutFileDatabase(gfd_return, file_name_good);
+	(void)XrmPutFileDatabase(gfd_return, outfile(file_name_good));
 
 	tet_infoline("PREP: Add to database");
 	(void)XrmPutLineResource(&dst_database_id, dst_spec);
 
 	tet_infoline("TEST: Entry in the file replaces the database entry");
-	XrmCombineFileDatabase(file_name_good, &dst_database_id, True);
+	XrmCombineFileDatabase(outfile(file_name_good), &dst_database_id, True);
 
 	XSync(display_arg, 0);
 	XSetErrorHandler(unexp_err);          
@@ -318,13 +318,13 @@ replace the entry in target_db.
 	(void)XrmPutLineResource(&gfd_return, src_spec3);
 
 	tet_infoline("PREP: Add data to resource file");
-	(void)XrmPutFileDatabase(gfd_return, file_name_good);
+	(void)XrmPutFileDatabase(gfd_return, outfile(file_name_good));
 
 	tet_infoline("PREP: Add to database");
 	(void)XrmPutLineResource(&dst_database_id, dst_spec);
 
 	tet_infoline("TEST: Entry in the file does not replace the database entry");
-	XrmCombineFileDatabase(file_name_good, &dst_database_id, False);
+	XrmCombineFileDatabase(outfile(file_name_good), &dst_database_id, False);
 
 	XSync(display_arg, 0);
 	XSetErrorHandler(unexp_err);          
@@ -401,12 +401,12 @@ filename in it.
 	gfd_return = XrmGetStringDatabase(src_spec1);
 	(void)XrmPutLineResource(&gfd_return, src_spec2);
 	(void)XrmPutLineResource(&gfd_return, src_spec3);
-	(void)XrmPutFileDatabase(gfd_return, file_name_good);
+	(void)XrmPutFileDatabase(gfd_return, outfile(file_name_good));
 
 	dst_database_id = NULL;
 
 	tet_infoline("TEST: When target_db is NULL a new database is created");
-	XrmCombineFileDatabase(file_name_good, &dst_database_id, True);
+	XrmCombineFileDatabase(outfile(file_name_good), &dst_database_id, True);
 
 	XSync(display_arg, 0);
 	XSetErrorHandler(unexp_err);          

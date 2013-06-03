@@ -302,11 +302,11 @@ XtInputMask processing;
 int i;
 pid_t pid3;
 int pstatus;
-char *data;
+const char *data;
 
 	FORK(pid3);
 	avs_xt_hier_def("Tnxtevnt3", "XtNextEvent");
-	data = "data1";
+	data = outfile("data1");
 	sprintf(ebuf, "PREP: Open file %s for read", data);
 	tet_infoline(ebuf);
 	if ((fid = (FILE *)fopen(data, "w+")) == NULL) {

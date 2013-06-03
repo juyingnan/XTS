@@ -169,7 +169,7 @@ char tbuf[256], *tptr;
 XrmDatabase rdb;
 
 /* Create a test database file. */
-	f = fopen(XGFD_TEST_FILE, "w");
+	f = fopen(outfile(XGFD_TEST_FILE), "w");
 	if (f==(FILE *)NULL) {
 		delete("fopen() call to write database failed");
 		return;
@@ -189,7 +189,7 @@ XrmDatabase rdb;
 	fclose(f);
 
 /* Call xname to read the database. */
-	filename = XGFD_TEST_FILE;
+	filename = outfile(XGFD_TEST_FILE);
 	rdb = XCALL;
 
 /* Verify the database was non-NULL, and contained the test information. */
@@ -213,7 +213,7 @@ XrmDatabase rdb;
 
 /* Remove test database file. */
 #ifndef TESTING
-	unlink(XGFD_TEST_FILE);	/* Compiling with CFLOCAL=-DTESTING  */
+	unlink(outfile(XGFD_TEST_FILE));	/* Compiling with CFLOCAL=-DTESTING  */
 					/* allows inspection of the testfile */
 #endif
 
@@ -258,7 +258,7 @@ int	a,b;
 char tbuf[256], *tptr;
 XrmDatabase rdb;
 
-	f = fopen(XGFD_TEST_FILE, "w");
+	f = fopen(outfile(XGFD_TEST_FILE), "w");
 	if (f==(FILE *)NULL) {
 		delete("fopen() call to write database failed");
 		return;
@@ -290,7 +290,7 @@ XrmDatabase rdb;
 		}
 
 		/* Call xname to read the database. */
-		filename = XGFD_TEST_FILE;
+		filename = outfile(XGFD_TEST_FILE);
 		rdb = XCALL;
 
 		/* Verify the database was non-NULL, and contained the test information. */

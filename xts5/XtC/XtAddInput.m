@@ -135,7 +135,7 @@ the file descriptor
 .A source 
 has data to be read and return an identifier for it.
 >>CODE
-char *data;
+const char *data;
 int status = 0;
 pid_t pid2;
 pid_t pid3;
@@ -145,7 +145,7 @@ if (config.posix_system != 0) {
 	FORK(pid3);
 	avs_set_event(1, 0);
 	avs_xt_hier_def("Taddinput1", "XtAddInput");
-	data = "data1";
+	data = outfile("data1");
 	FORK(pid2);
 	sprintf(ebuf, "PREP: Open file %s for read", data);
 	tet_infoline(ebuf);
@@ -192,7 +192,7 @@ the procedure that will be called when the file descriptor
 .A source 
 is ready for writing.
 >>CODE
-char *data;
+const char *data;
 int status = 0;
 pid_t pid2;
 pid_t pid3;
@@ -202,7 +202,7 @@ if (config.posix_system != 0) {
 	FORK(pid3);
 	avs_set_event(1, 0);
 	avs_xt_hier_def("Taddinput1", "XtAddInput");
-	data = "data1";
+	data = outfile("data1");
 	FORK(pid2);
 	sprintf(ebuf, "PREP: Open file %s for write", data);
 	tet_infoline(ebuf);
@@ -268,7 +268,7 @@ to be passed to
 .A proc
 when it is invoked.
 >>CODE
-char *data;
+const char *data;
 int status = 0;
 pid_t pid2;
 pid_t pid3;
@@ -278,7 +278,7 @@ if (config.posix_system != 0) {
 	FORK(pid3);
 	avs_set_event(1, 0);
 	avs_xt_hier_def("Taddinput1", "XtAddInput");
-	data = "data1";
+	data = outfile("data1");
 	FORK(pid2);
 	sprintf(ebuf, "PREP: Open file %s for read", data);
 	tet_infoline(ebuf);

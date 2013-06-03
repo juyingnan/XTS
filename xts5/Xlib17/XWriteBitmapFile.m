@@ -101,7 +101,7 @@ purpose.  It is provided "as is" without express or implied warranty.
 int
 
 Display *display = Dsp;
-char *filename = xwbf_name;
+const char *filename = outfile(xwbf_name);
 Pixmap bitmap = xwbf_bm;
 unsigned int width = xwbf_width;
 unsigned int height = xwbf_height;
@@ -141,7 +141,7 @@ xwbf_start()
 		(char*)xwbf_data, xwbf_width, xwbf_height);
 	regid(Dsp, (union regtypes *)&xwbf_bm, REG_PIXMAP);
 
-	(void)unlink(xwbf_name);
+	(void)unlink(outfile(xwbf_name));
 }
 
 static void
@@ -189,7 +189,7 @@ Verify the bitmap was read back, and the details were correct.
 
 /* Read back bitmap with XReadBitmapFile. */
 	ret=XReadBitmapFile(display, DefaultRootWindow(display),
-		xwbf_name, &w_ret, &h_ret, &pm_ret, &x_h_ret, &y_h_ret);
+		outfile(xwbf_name), &w_ret, &h_ret, &pm_ret, &x_h_ret, &y_h_ret);
 
 /* Verify the bitmap was read back, and the details were correct. */
 	if (ret != BitmapSuccess) {
@@ -265,7 +265,7 @@ Verify the bitmap was read back, and the details were correct.
 
 /* Read back bitmap with XReadBitmapFile. */
 	ret=XReadBitmapFile(display, DefaultRootWindow(display),
-		xwbf_name, &w_ret, &h_ret, &pm_ret, &x_h_ret, &y_h_ret);
+		outfile(xwbf_name), &w_ret, &h_ret, &pm_ret, &x_h_ret, &y_h_ret);
 
 /* Verify the bitmap was read back, and the details were correct. */
 	if (ret != BitmapSuccess) {
@@ -322,7 +322,7 @@ int ret;
 
 /* Create a suitable bitmap. */
 /* Create an unwritable directory. */
-	if(mkdir(XWBF_DIR, XWBF_MODE)) {
+	if(mkdir(outfile(XWBF_DIR), XWBF_MODE)) {
 		int en = errno;
 		delete("Could not create the test subdirectory.");
 		report("errno %d", en);
@@ -331,7 +331,7 @@ int ret;
 		CHECK;
 
 /* Call xname to write the bitmap file. */
-	filename = XWBF_FILE;
+	filename = outfile(XWBF_FILE);
 	ret = XCALL;
 
 /* Verify that a BitmapOpenFailed error occurred. */
@@ -346,8 +346,8 @@ int ret;
 
 	CHECKPASS(2);
 
-	unlink(XWBF_FILE);
-	rmdir(XWBF_DIR);
+	unlink(outfile(XWBF_FILE));
+	rmdir(outfile(XWBF_DIR));
 
 >>ASSERTION Bad B 1
 When insufficient memory is allocated, then a call to xname returns

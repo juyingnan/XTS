@@ -185,9 +185,9 @@ Display *display;
 XtInputMask processing;
 Boolean status;
 int i;
-char *data;
+const char *data;
 
-	data = "tappkevnt.dat";
+	data = outfile("tappkevnt.dat");
 	avs_xt_hier("Tappkevnt2", "XtAppPeekEvent");
 	tet_infoline("PREP: Register timeout");
 	XtAppAddTimeOut(app_ctext, AVSXTLOOPTIMEOUT, XtTMO_Proc, topLevel);

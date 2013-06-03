@@ -186,14 +186,14 @@ Block_Info	*info;
 		delete("Unsupported speedfactor value: %d", config.speedfactor);
 		return(-1);
 	}
-	fp = fopen(block_file, "w");
+	fp = fopen(outfile(block_file), "w");
 	if (fp == (FILE *) NULL) {
 		delete("Could not create block file: %s", block_file);
 		return(-1);
 	}
 	if (setjmp(jumptohere)) {
 		delete("Timeout in block routine");
-		unlink(block_file);
+		unlink(outfile(block_file));
 		return(-1);
 	}
 	parent_status = 1;
@@ -201,7 +201,7 @@ Block_Info	*info;
 	/*
 	 * try removing block file just in case it still exists...
 	 */
-	unlink(block_file);
+	unlink(outfile(block_file));
 	/*
 	 * check for problems in block_parent_proc
 	 */
@@ -273,7 +273,7 @@ block_child_proc()
 	if (display == NULL)
 		exit(CHILD_EXIT_ERROR);
 	sleep(CHILD_SLEEP_TIME);
-	if (access(block_file, F_OK))
+	if (access(outfile(block_file), F_OK))
 		exit(CHILD_EXIT_NOBLOCKING);
 	if (gevent == NULL) {
 		int	retval;
@@ -298,17 +298,17 @@ block_parent_proc()
 	alarm(0);
 	if (parent_status == -1)
 		return;
-	if (access(block_file, F_OK)) {
+	if (access(outfile(block_file), F_OK)) {
 		delete("Block file mysteriously disappeared: %s", block_file);
 		parent_status = -1;
 		return;
 	}
-	if (unlink(block_file)) {
+	if (unlink(outfile(block_file))) {
 		/*
 		 * return value of unlink() does not always indicate
 		 * whether or not the file was removed...pc
 		 */
-		if (!access(block_file, F_OK)) {
+		if (!access(outfile(block_file), F_OK)) {
 			delete("Block file could not be removed: %s", block_file);
 			parent_status = -1;
 			return;

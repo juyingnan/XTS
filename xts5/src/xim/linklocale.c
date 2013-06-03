@@ -163,7 +163,7 @@ char buf[BUF_LEN];
 		report("Could not open data file for locale %s", plocale);
 		return(False);
 	}
-	fp2 = fopen(name2, "a+");
+	fp2 = fopen(outfile(name2), "a+");
 	if (fp2 == NULL)
 	{
 		report("Could not open data file %s", name2);
@@ -191,5 +191,5 @@ char name[128];
    ic = tet_testlist[tet_thistest-1].icref;
    sprintf(name, "a%d.dat", ic);
 
-	unlink(name);
+	unlink(outfile(name));
 }

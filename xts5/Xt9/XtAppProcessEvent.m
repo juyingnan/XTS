@@ -257,9 +257,9 @@ pid_t pid2;
 int status;
 Display *display;
 XEvent loop_event;
-char *data;
+const char *data;
 
-	data = "tapprcevt.dat";
+	data = outfile("tapprcevt.dat");
 	FORK(pid2);
 	avs_xt_hier("Tapprcevt1", "XtAppProcessEvent");
 	tet_infoline("PREP: Create a test labelw_msg widget");
@@ -302,10 +302,10 @@ pid_t pid2;
 int status;
 Display *display;
 XEvent loop_event;
-char *data;
+const char *data;
 int i;
 
-	data = "tapprcevt.dat";
+	data = outfile("tapprcevt.dat");
 	FORK(pid2);
 	avs_xt_hier("Tapprcevt1", "XtAppProcessEvent");
 	tet_infoline("PREP: Create a test labelw_msg widget");
@@ -366,10 +366,10 @@ pid_t pid2;
 int status;
 Display *display;
 XEvent loop_event;
-char *data;
+const char *data;
 int i;
 
-	data = "tapprcevt.dat";
+	data = outfile("tapprcevt.dat");
 	FORK(pid2);
 	avs_xt_hier("Tapprcevt1", "XtAppProcessEvent");
 	tet_infoline("PREP: Create a test labelw_msg widget");
