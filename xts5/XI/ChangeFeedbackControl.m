@@ -572,6 +572,16 @@ Do a ChangeFeedbackControl, specifying a device that has no feedbacks.
 
 if (Setup_Extension_DeviceInfo(NFeedMask))
     {
+    XBellFeedbackControl belf;
+    belf.class = BellFeedbackClass;
+    belf.length = sizeof (XBellFeedbackControl);
+    belf.pitch = 0;
+    belf.id = 0;
+    belf.percent = -2;
+    belf.pitch = 0;
+    belf.duration = 100;
+    f = (XFeedbackControl *) &belf;
+
     device = Devs.NoFeedback;
     XCALL;
     if (geterr() == BadMatch)
@@ -592,6 +602,7 @@ Do a ChangeFeedbackControl, specifying an invalid device.
 XDevice bogus;
 int baddevice;
 int ximajor, first, err;
+XBellFeedbackControl belf;
 
     if (!XQueryExtension (display, INAME, &ximajor, &first, &err)) {
 	    untested("%s: Input extension not supported.\n", TestName);
@@ -601,6 +612,16 @@ int ximajor, first, err;
     BadDevice (display, baddevice);
     bogus.device_id = -1;
     device = &bogus;
+
+    belf.class = BellFeedbackClass;
+    belf.length = sizeof (XBellFeedbackControl);
+    belf.pitch = 0;
+    belf.id = 0;
+    belf.percent = -2;
+    belf.pitch = 0;
+    belf.duration = 100;
+    f = (XFeedbackControl *) &belf;
+
     XCALL;
     if (geterr() == baddevice)
 	CHECK;
