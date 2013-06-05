@@ -112,8 +112,6 @@ Display *fdisplay, *client1;
 void xi_cleanup()
 {
       cleanup();
-      if (client1)
-        XCloseDisplay(client1);
       client1 = NULL;
 }
  
@@ -247,7 +245,6 @@ int	type;
 
         XSync(client1, 0);
         XSync(client2, 0);
-        XCloseDisplay(client2);
 	CHECKPASS(5);
 >>ASSERTION Good B 3
 A call to xname
@@ -277,11 +274,7 @@ XEventClass noextensionevent, devicefocusin;
 
 /* Create window with no events selected. */
 	getfocusdevice();
-        if (client1)
-	{
-            XCloseDisplay(client1);
-            client1 = NULL;
-	}
+	client1 = NULL;
 	if (!focusdevice) {
 	    report("%s: Required input devices not present\n",TestName);
 	    UNTESTED;
@@ -528,7 +521,6 @@ int dkp, tmp;
 	else
 		CHECK;
 
-        XCloseDisplay(client2);
 	CHECKPASS(12);
 >>ASSERTION Good A
 When multiple clients make a call to xname
@@ -632,7 +624,6 @@ int dkp;
 		CHECK;
 
 	devicerelkeys(Devs.Key);
-        XCloseDisplay(client2);
 	CHECKPASS(6);
 
 >>ASSERTION Good B 3
@@ -1376,7 +1367,6 @@ XEventClass dbpgclass;
 	else
 		CHECK;
 
-        XCloseDisplay(client2);
 	CHECKPASS(3);
 >>ASSERTION Bad B 3
 A call to xname specifying an invalid eventclass results in a BadClass

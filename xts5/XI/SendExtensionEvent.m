@@ -587,7 +587,7 @@ Call XSendExtensionEvent to send event to window.
 Verify that XSendExtensionEvent returned non-zero.
 Verify that no events were received.
 >>CODE
-Display	*client2;
+Display	*client2 = NULL;
 int	return_value;
 int dbp;
 XEventClass dbpc, noextensioneventclass;
@@ -606,7 +606,8 @@ XEventClass dbpc, noextensioneventclass;
 	   deallocation of closed connections and deleted resources. */
 	regdisable(); 
 
-	client2 = opendisplay();
+	if (config.display)
+		client2 = XOpenDisplay(config.display);
 	if (client2 == (Display *) NULL) {
 		delete("Can not open display");
 		regenable();

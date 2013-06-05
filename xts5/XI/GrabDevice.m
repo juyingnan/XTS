@@ -500,7 +500,6 @@ XEventClass dmnc;
 
 	/* Clear any extra events */
 	XSync(client2, True);
-        XCloseDisplay(client2);
 
 >>ASSERTION Bad B 3
 When the
@@ -572,8 +571,6 @@ int 	ret;
 		FAIL;
 	}
 
-        XCloseDisplay(client1);
-        XCloseDisplay(client2);
 	CHECKPASS(1);
 >>ASSERTION Bad B 3
 When the device is frozen by an active grab of another client, then
@@ -613,7 +610,6 @@ int 	ret;
 	}
 
 	XUngrabKeyboard (display, CurrentTime);
-        XCloseDisplay(client2);
 	CHECKPASS(1);
 >>ASSERTION Bad B 3
 When the specified time is earlier than the last-device-grab time or later

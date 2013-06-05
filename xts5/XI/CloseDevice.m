@@ -180,7 +180,6 @@ XDevice *dev2;
 	CHECKPASS(3);
         XUngrabDevice(client1, dev2, CurrentTime);
         XSync(client1, 0);
-        XCloseDisplay(client1);
 	Close_Extension_Display();
 
 >>ASSERTION Good B 3
@@ -239,7 +238,6 @@ int Min_KeyCode, Max_KeyCode, numkeys;
 	CHECKPASS(3);
         XUngrabDevice(client1, dev2, CurrentTime);
         XSync(client1, 0);
-        XCloseDisplay(client1);
 	Close_Extension_Display();
 
 >>ASSERTION Good B 3
@@ -323,7 +321,6 @@ int Min_KeyCode, Max_KeyCode, numkeys;
 	CHECKPASS(count+4);
         XUngrabDevice(client1, dev2, CurrentTime);
         XSync(client1, 0);
-        XCloseDisplay(client1);
 	Close_Extension_Display();
 
 
@@ -388,7 +385,6 @@ int Min_KeyCode, Max_KeyCode, numkeys;
 	    }
 	devicerelkeys(dev2);
 	CHECKPASS(6);
-        XCloseDisplay(client1);
 	Close_Extension_Display();
 
 >>ASSERTION Bad B 3

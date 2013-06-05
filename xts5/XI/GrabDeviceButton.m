@@ -161,7 +161,6 @@ Display *client1;
 	devicebuttonrel (display, Devs.Button, Button1);
 	devicerelbuttons (Devs.Button);
 	XUngrabDeviceButton(display, device, AnyButton, AnyModifier, modifier_device, grab_window);
-	XCloseDisplay(client1);
 
 >>ASSERTION Good B 3
 When the conditions for activating the grab are otherwise satisfied
@@ -223,7 +222,6 @@ Display *client1;
 	XUngrabDeviceButton(display, device, AnyButton, AnyModifier, modifier_device, grab_window);
         XSync(display, 0);
         XSync(client1, 0);
-        XCloseDisplay(client1);
 	CHECKPASS(3);
 
 >>ASSERTION Good B 3
@@ -326,7 +324,6 @@ Display *client1;
 	XUngrabDeviceButton(display, device, AnyButton, AnyModifier, modifier_device, grab_window);
         XUngrabDevice(client1, Devs.Button, CurrentTime);
         XSync(client1, 0);
-        XCloseDisplay(client1);
 	CHECKPASS(3);
 
 >>ASSERTION Good B 3
@@ -460,7 +457,6 @@ Display *client1;
 	XUngrabDeviceButton(display, device, AnyButton, AnyModifier, modifier_device, grab_window);
         XUngrabDevice (client1, Devs.Button, CurrentTime);
         XSync(client1, 0);
-        XCloseDisplay(client1);
 
 >>ASSERTION Good B 3
 A call to xname overrides all previous passive grabs by the same
@@ -622,7 +618,6 @@ Display *client1;
 	devicerelbuttons (Devs.Button);
 	relalldev();
 	XUngrabDeviceButton(display, device, AnyButton, AnyModifier, modifier_device, grab_window);
-        XCloseDisplay(client1);
 
 >>ASSERTION Good B 3
 When the
@@ -697,7 +692,6 @@ XAnyClassPtr any;
 	    devicebuttonrel (display, Devs.Button, i);
 	    }
 	devicerelbuttons (Devs.Button);
-        XCloseDisplay(client1);
 	CHECKPASS(count);
 
 >>ASSERTION Good B 3
@@ -755,7 +749,6 @@ Display *client1;
 	XUngrabDeviceButton(display, device, AnyButton, AnyModifier, modifier_device, grab_window);
         XUngrabDevice(client1, Devs.Button, CurrentTime);
         XSync(client1, 0);
-        XCloseDisplay(client1);
 	CHECKPASS(2);
 
 >>ASSERTION Good B 3
@@ -813,7 +806,6 @@ int ret;
 		NULL, grab_window);
         XUngrabDevice(client1, Devs.Button, CurrentTime);
         XSync(client1,0);
-        XCloseDisplay(client1);
 	CHECKPASS(2);
 
 >>ASSERTION Good B 3
@@ -882,7 +874,6 @@ Display *client1;
 	relalldev();
         XUngrabDevice(client1, Devs.Button, CurrentTime);
         XSync(client1,0);
-        XCloseDisplay(client1);
 	CHECKPASS(2);
 
 >>ASSERTION Bad B 3
@@ -1026,7 +1017,6 @@ Display	*client1;
 		FAIL;
         XUngrabDevice(Dsp, Devs.Button, CurrentTime);
         XSync(Dsp,0);
-        XCloseDisplay(client1);
 >>ASSERTION Bad B 3
 When a call to xname is made specifying an invalid window,
 a BadWindow error will result.
