@@ -415,7 +415,10 @@ XDevice bogus;
 	else
 		FAIL;
 
-	device = &bogus;
+	/*
+	 * Since xts5/XI does not clean up the devices created by
+	 * Setup_Extension_DeviceInfo, it is safe to XCloseDevice "device".
+	 */
 	XCloseDevice(display, device);
 	XSync(display,0);
 	if (geterr() == baddevice)
@@ -426,7 +429,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XSetDeviceMode(display, device, Absolute);
+	XSetDeviceMode(display, &bogus, Absolute);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -436,7 +439,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XGetDeviceMotionEvents(display, device, CurrentTime, CurrentTime,
+	XGetDeviceMotionEvents(display, &bogus, CurrentTime, CurrentTime,
 	    &nevents, &mode, &evcount);
 	if (geterr() == baddevice)
 		{
@@ -446,7 +449,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XChangeKeyboardDevice(display, device);
+	XChangeKeyboardDevice(display, &bogus);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -456,7 +459,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XChangePointerDevice(display, device, 0, 1);
+	XChangePointerDevice(display, &bogus, 0, 1);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -466,7 +469,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XGrabDevice(display, device, w, True, 1, &devicemotionnotifyclass,
+	XGrabDevice(display, &bogus, w, True, 1, &devicemotionnotifyclass,
 	   GrabModeAsync, GrabModeAsync, CurrentTime);
 	if (geterr() == baddevice)
 		{
@@ -476,7 +479,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XUngrabDevice(display, device, CurrentTime);
+	XUngrabDevice(display, &bogus, CurrentTime);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -486,7 +489,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XGrabDeviceKey(display, device, AnyKey, AnyModifier, NULL, 
+	XGrabDeviceKey(display, &bogus, AnyKey, AnyModifier, NULL,
 	   w, True, 0, NULL, GrabModeAsync, GrabModeAsync);
 	if (geterr() == baddevice)
 		{
@@ -496,7 +499,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XUngrabDeviceKey(display, device, AnyKey, AnyModifier, NULL, w);
+	XUngrabDeviceKey(display, &bogus, AnyKey, AnyModifier, NULL, w);
 	XSync(display,0);
 
 	if (geterr() == baddevice)
@@ -507,7 +510,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XGrabDeviceButton(display, device, AnyButton, AnyModifier, NULL, 
+	XGrabDeviceButton(display, &bogus, AnyButton, AnyModifier, NULL,
 	   w, True, 0, NULL, GrabModeAsync, GrabModeAsync);
 	if (geterr() == baddevice)
 		{
@@ -517,7 +520,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XUngrabDeviceButton(display, device, AnyButton, AnyModifier, NULL, w);
+	XUngrabDeviceButton(display, &bogus, AnyButton, AnyModifier, NULL, w);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -527,7 +530,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XAllowDeviceEvents(display, device, AsyncAll, CurrentTime);
+	XAllowDeviceEvents(display, &bogus, AsyncAll, CurrentTime);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -537,7 +540,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XGetDeviceFocus(display, device, &focus, &revert, &time);
+	XGetDeviceFocus(display, &bogus, &focus, &revert, &time);
 	if (geterr() == baddevice)
 		{
 		CHECK;
@@ -546,7 +549,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XSetDeviceFocus(display, device, None, RevertToNone, CurrentTime);
+	XSetDeviceFocus(display, &bogus, None, RevertToNone, CurrentTime);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -556,7 +559,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XGetFeedbackControl(display, device, &nfeed);
+	XGetFeedbackControl(display, &bogus, &nfeed);
 	if (geterr() == baddevice)
 		{
 		CHECK;
@@ -568,7 +571,7 @@ XDevice bogus;
 	feedctl.class = KbdFeedbackClass;
 	feedctl.percent = 0;
 	mask = DvPercent;
-	XChangeFeedbackControl(display, device, mask, (XFeedbackControl*) &feedctl);
+	XChangeFeedbackControl(display, &bogus, mask, (XFeedbackControl*) &feedctl);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -578,7 +581,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XGetDeviceKeyMapping(display, device, MinKeyCode, 1, &ksyms_per);
+	XGetDeviceKeyMapping(display, &bogus, MinKeyCode, 1, &ksyms_per);
 	if (geterr() == baddevice)
 		{
 		CHECK;
@@ -587,7 +590,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XChangeDeviceKeyMapping(display, device, MinKeyCode, 1, &ksyms, 1);
+	XChangeDeviceKeyMapping(display, &bogus, MinKeyCode, 1, &ksyms, 1);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -597,7 +600,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XGetDeviceModifierMapping(display, device);
+	XGetDeviceModifierMapping(display, &bogus);
 	if (geterr() == baddevice)
 		{
 		CHECK;
@@ -606,7 +609,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XSetDeviceModifierMapping(display, device, modmap);
+	XSetDeviceModifierMapping(display, &bogus, modmap);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -616,7 +619,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XGetDeviceButtonMapping(display, device, bmap, 8);
+	XGetDeviceButtonMapping(display, &bogus, bmap, 8);
 	if (geterr() == baddevice)
 		{
 		CHECK;
@@ -625,7 +628,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XSetDeviceButtonMapping(display, device, bmap, 8);
+	XSetDeviceButtonMapping(display, &bogus, bmap, 8);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -635,7 +638,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XQueryDeviceState(display, device);
+	XQueryDeviceState(display, &bogus);
 	if (geterr() == baddevice)
 		{
 		CHECK;
@@ -644,7 +647,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XSetDeviceValuators(display, device, &valuators, 0, 1);
+	XSetDeviceValuators(display, &bogus, &valuators, 0, 1);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -654,7 +657,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XDeviceBell(display, device, 0, 0, 100);
+	XDeviceBell(display, &bogus, 0, 0, 100);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -664,7 +667,7 @@ XDevice bogus;
 	else
 		FAIL;
 
-	XGetDeviceControl(display, device, DEVICE_RESOLUTION);
+	XGetDeviceControl(display, &bogus, DEVICE_RESOLUTION);
 	if (geterr() == baddevice)
 		{
 		CHECK;
@@ -678,7 +681,7 @@ XDevice bogus;
 	dctl.num_valuators=1;
 	dctl.first_valuator=0;
 	dctl.resolutions = &valuators;
-	XChangeDeviceControl(display, device, DEVICE_RESOLUTION, (XDeviceControl*) &dctl);
+	XChangeDeviceControl(display, &bogus, DEVICE_RESOLUTION, (XDeviceControl*) &dctl);
 	XSync(display,0);
 	if (geterr() == baddevice)
 		{
@@ -689,7 +692,7 @@ XDevice bogus;
 		FAIL;
 
 	ev.type = devicemotionnotify;
-	XSendExtensionEvent(display, device, PointerWindow, True, 0, NULL,
+	XSendExtensionEvent(display, &bogus, PointerWindow, True, 0, NULL,
 	    &ev);
 	XSync(display,0);
 	if (geterr() == baddevice)
