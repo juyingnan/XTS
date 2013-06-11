@@ -160,6 +160,11 @@ int i, ndevices, savid;
 	    FAIL;
 	    }
 	device = XOpenDevice(display, savid);
+	if (!device) {
+		tet_infoline("ERROR: XOpenDevice failed");
+		tet_result(TET_UNRESOLVED);
+		return;
+	}
 	XCALL;
 	if (verify_ptr(display, savid))
 	    CHECK;
@@ -210,6 +215,11 @@ char *buttons;
 	XCALL;
 	XSync(display, 0);
 	dev = XOpenDevice (display, savid);
+	if (!dev) {
+		tet_infoline("ERROR: XOpenDevice failed");
+		tet_result(TET_UNRESOLVED);
+		return;
+	}
 	DeviceMotionNotify(dev, dmn, dmnc);
 	XSelectExtensionEvent (display, DRW(display), &dmnc, 1);
 	XSync(display, 0);
@@ -314,6 +324,11 @@ int i, ndevices, savid;
 	    FAIL;
 	    }
 	device = XOpenDevice(display, savid);
+	if (!device) {
+		tet_infoline("ERROR: XOpenDevice failed");
+		tet_result(TET_UNRESOLVED);
+		return;
+	}
 	XCALL;
 	if (verify_ptr(display, savid))
 	    CHECK;
@@ -704,6 +719,11 @@ XDevice bogus;
 		FAIL;
 
 	device = XOpenDevice(display, savid);
+	if (!device) {
+		tet_infoline("ERROR: XOpenDevice failed");
+		tet_result(TET_UNRESOLVED);
+		return;
+	}
 	XCALL;
 	XSync(display,0);
 	if (verify_ptr(display, savid))
