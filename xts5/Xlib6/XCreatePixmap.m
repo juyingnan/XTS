@@ -275,6 +275,69 @@ unsigned int	depth, nondepth;
 .ER Alloc
 >>ASSERTION Bad A
 .ER Drawable
+>>ASSERTION Good A
+A call to xname creates a pixmap of width
+.A width ,
+height
+.A height ,
+and depth
+.A depth
+on the same screen as the drawable argument
+.A d ,
+and returns a pixmap ID.
+>>STRATEGY
+For each supported pixmap depth:
+  Create a pixmap of random height and width in (0,100], for 100 times
+  Verify the depth, height and width with XGetGeometry.
+>>CODE
+XVisualInfo	*vp;
+Status 		gstat;
+Window		root_ret;
+int		x_ret, y_ret;
+unsigned int	w_ret, h_ret, bw_ret, dep_ret;
+Pixmap		pmap;
+int 		FUZZ_MAX = 100;
+int 		count;
+
+
+	for(resetvinf(VI_PIX); nextvinf(&vp); ) {
+		for(count = 0; count < FUZZ_MAX; count ++){
+			width = rand() % 100 + 1;
+			height = rand() % 100 + 1;
+			depth = vp->depth;
+			d = DRW(display);
+			pmap = XCALL;
+			gstat = XGetGeometry(display, pmap, &root_ret, &x_ret, &y_ret, &w_ret, &h_ret, &bw_ret, &dep_ret);
+
+			if(gstat != True) {
+				delete("XGetGeometry did not return True for pixmap ID 0x%x",pmap);
+				return;
+			} else
+				CHECK;
+
+			if(w_ret != width) {
+				report("XGetGeometry returned width of %u instead of %u for pixmap of depth %u", w_ret, width, depth);
+				FAIL;
+			} else 
+				CHECK;
+
+			if(h_ret != height) {
+				report("XGetGeometry returned height of %u instead of %u for pixmap of depth %u", h_ret, height, depth);
+				FAIL;
+			} else 
+				CHECK;
+
+			if(dep_ret != depth) {
+				report("XGetGeometry returned depth of %u instead of depth %u", dep_ret, depth);
+				FAIL;
+			} else 
+				CHECK;
+		}
+ 	}
+
+	CHECKPASS(4 * nvinf() * FUZZ_MAX);
+	
+	
 >>#HISTORY	Cal	Completed	Written in new format and style.
 >>#HISTORY	Kieron	Action		<Have a look>
 >>#HISTORY	Cal	Action		Writing code.
