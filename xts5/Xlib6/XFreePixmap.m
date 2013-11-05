@@ -133,7 +133,6 @@ GC		gc;
 	}
 
 	CHECKPASS(nvinf());
-
 >>ASSERTION Good A
 The storage allocated to the pixmap is not recovered until all references to it
 have been removed.
@@ -183,6 +182,43 @@ GC		gc;
 
 >>ASSERTION Bad A	
 .ER BadPixmap
+>>ASSERTION Good A
+A call to xname removes the association between the pixmap ID
+.A pixmap
+and the specified pixmap.
+>>STRATEGY
+For all supported depths of pixmap:
+   Create a pixmap.
+   Create a gc using the pixmap as the drawable.
+   Free the pixmap with XFreePixmap.
+   Plot (0,0) in the pixmap.
+   Verify that a BadDrawable error occurred.
+>>CODE
+XVisualInfo	*vp;
+GC		gc;
+int 		FUZZ_MAX = 100;
+int 		count;
+
+	for(resetvinf(VI_PIX); nextvinf(&vp); ) {
+		for(count = 0; count < FUZZ_MAX; count ++){
+			int size = rand() % 1000 + 1;
+			pixmap = XCreatePixmap(display, DRW(display), size, size, vp->depth);
+			gc = makegc(display, pixmap);
+			XCALL;
+		
+			startcall(Dsp);
+			XDrawPoint(display, pixmap, gc, 0, 0);
+			endcall(Dsp);
+			if(geterr() != BadDrawable) {
+				report("Got %s instead of BadDrawable when drawing on a freed pixmap. ", errorname(geterr()));
+				FAIL;
+			} else
+				CHECK;
+		}
+	}
+
+	CHECKPASS(nvinf()*FUZZ_MAX);
+
 >>#HISTORY	Cal	Completed	Written in new format and style.
 >>#HISTORY	Kieron	Completed		<Have a look>
 >>#HISTORY	Cal	Action		Writing code.
