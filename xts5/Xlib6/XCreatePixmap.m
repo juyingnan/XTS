@@ -287,7 +287,7 @@ on the same screen as the drawable argument
 and returns a pixmap ID.
 >>STRATEGY
 For each supported pixmap depth:
-  Create a pixmap of random height and width in (0,100], for 100 times
+  Create a pixmap of random height and width in (0,1000], for 100 times
   Verify the depth, height and width with XGetGeometry.
 >>CODE
 XVisualInfo	*vp;
@@ -302,8 +302,8 @@ int 		count;
 
 	for(resetvinf(VI_PIX); nextvinf(&vp); ) {
 		for(count = 0; count < FUZZ_MAX; count ++){
-			width = rand() % 100 + 1;
-			height = rand() % 100 + 1;
+			width = rand() % 1000 + 1;
+			height = rand() % 1000 + 1;
 			depth = vp->depth;
 			d = DRW(display);
 			pmap = XCALL;
@@ -336,6 +336,56 @@ int 		count;
  	}
 
 	CHECKPASS(4 * nvinf() * FUZZ_MAX);
+>>ASSERTION Bad A
+When either the
+.A width
+argument or 
+.A height
+argument is zero, then a
+.S BadValue 
+error occurs.
+>>STRATEGY
+For each supported pixmap depth:
+  Create a pixmap with height = random and width = 0 with XCreatePixmap.
+  Verify that a BadValue error occurred.
+  Create a pixmap with height = 0 and width = ramdom with XCreatePixmap.
+  Verify that a BadValue error occurred.
+>>CODE BadValue
+XVisualInfo	*vp;
+unsigned int	depth;
+int 		FUZZ_MAX = 100;
+int 		count;
+
+	for(resetvinf(VI_PIX); nextvinf(&vp); ) {
+		for(count = 0; count < FUZZ_MAX; count ++){
+			depth = vp->depth;
+
+			d = DRW(display); 
+			height = rand() % 1000 + 1;
+			width = 0;
+			XCALL;
+			if(geterr() != BadValue) {
+				report("When XCreatePixmap called with zero width");
+				report("Got %s, Expecting BadValue error", 
+								errorname(geterr()));
+				FAIL;
+			} else
+				CHECK;
+
+			width = rand() % 1000 + 1;
+			height = 0;
+			XCALL;
+			if(geterr() != BadValue) {
+				report("When XCreatePixmap called with zero height");
+				report("Got %s, Expecting BadValue error", 
+								errorname(geterr()));
+				FAIL;
+			} else
+				CHECK;
+		}
+	}	
+
+	CHECKPASS(nvinf() * 2 * FUZZ_MAX);
 	
 	
 >>#HISTORY	Cal	Completed	Written in new format and style.
