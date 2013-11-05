@@ -556,6 +556,49 @@ Verify that BadMatch error occurred.
 >>ASSERTION Bad B 1
 .ER BadAlloc 
 >>ASSERTION Bad A
-.ER BadPixmap 
+.ER BadPixmap
+>>ASSERTION Bad A
+When
+.A mask
+is not
+.S None
+and both
+.A source
+and
+.A mask
+are not the same size, then a
+.S BadMatch 
+error occurs.
+>>STRATEGY
+Create source pixmap of size random.
+Create mask pixmap of size 2xsource pixmap.
+repeat for 100 times
+Call XCreatePixmapCursor with mask pixmap.
+Verify that BadMatch error occurred.
+>>CODE BadMatch
+
+	int FUZZ_MAX = 100;
+	int count;
+	for(count = 0; count < FUZZ_MAX; count ++){	
+	depth1.depth = 1;
+/* Create source pixmap of size 1x1. */
+	int size_1 = rand() % 10000 + 1;
+	source = XCreatePixmap(display, DRW(display), size_1, size_1, 1);
+	regid(display, (union regtypes *)&source, REG_PIXMAP);
+/* Create mask pixmap of size 2x2. */
+	int size_2 = size_1 * 2;
+	mask = XCreatePixmap(display, DRW(display), size_2, size_2, 1);
+	regid(display, (union regtypes *)&mask, REG_PIXMAP);
+
+/* Call XCreatePixmapCursor with mask pixmap. */
+	XCALL;
+
+/* Verify that BadMatch error occurred. */
+	if (geterr() != BadMatch)
+		FAIL;
+	else
+		CHECK; 
+	}
+	CHECKPASS(FUZZ_MAX);
 >>#HISTORY peterc Completed Updated as per RTCB#3
 >>#HISTORY peterc Completed Wrote STRATEGY and CODE
