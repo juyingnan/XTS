@@ -109,6 +109,7 @@ int	*dest_x_return	= &dest_x;
 int	*dest_y_return	= &dest_y;
 Window	*child_return	= &child;
 >>EXTERN
+#include "XFuzz.h"
 static	struct	area	c_ap;
 static	int	dest_x;
 static	int	dest_y;
@@ -452,48 +453,54 @@ For some values of border_width:
 Bool	ret;
 int	exp_x, exp_y;
 int	border_width;
-
+int 	count;
 /* Set up child window position coordinates */
 
 	for(border_width = 0; border_width < 5; border_width++) {
-		src_w = defdraw(display, VI_WIN);
-		XMapWindow(display, src_w);
+		for(count = 0; count < FUZZ_MAX / 10; count ++){
+			c_ap.x = rand() % 1000;
+			c_ap.y = rand() % 1000;
+			c_ap.width = rand() % 1000 + 1;
+			c_ap.height= rand() % 1000 + 1;
 
-	/* Child window: visual = CopyFromParent, and is mapped */
-		dest_w = crechild(display, src_w, &c_ap);
-		XSetWindowBorderWidth(display, dest_w, border_width);
-		XSetWindowBorder(display, dest_w, W_FG);
-		XMapWindow(display, dest_w);
+			src_w = defdraw(display, VI_WIN);
+			XMapWindow(display, src_w);
 
-/* Calculate expected return values */
-		exp_x = src_x - c_ap.x - border_width;
-		exp_y = src_y - c_ap.y - border_width;
+		/* Child window: visual = CopyFromParent, and is mapped */
+			dest_w = crechild(display, src_w, &c_ap);
+			XSetWindowBorderWidth(display, dest_w, border_width);
+			XSetWindowBorder(display, dest_w, W_FG);
+			XMapWindow(display, dest_w);
 
-		ret = XCALL;
+	/* Calculate expected return values */
+			exp_x = src_x - c_ap.x - border_width;
+			exp_y = src_y - c_ap.y - border_width;
 
-		if (ret == False)
-		{
-			report("%s returned False when expecting True.",
-				TestName);
-			report("src_x=%d", src_x); delete("src_y=%d", src_y);
-			report("exp_x=%d", exp_x); delete("exp_y=%d", exp_y);
-			report("border_width=%d", border_width);
-			FAIL;
-		} else
-		if ((dest_x != exp_x) || (dest_y != exp_y)) {
-			report("%s did not return expected coordinates",
-				TestName);
-			report("Expected: (*dest_x_return)=%d, (*dest_y_return)=%d",
-				exp_x, exp_y);
-			report("Got: (*dest_x_return)=%d, (*dest_y_return)=%d",
-				dest_x, dest_y);
-			if( (dest_x == -1) || (dest_y == -1) )
-				report("(*dest_x_return) and (*dest_y_return) were probably not set");
+			ret = XCALL;
 
-			FAIL;
-		} else
-			CHECK;
+			if (ret == False)
+			{
+				report("%s returned False when expecting True.",
+					TestName);
+				report("src_x=%d", src_x); delete("src_y=%d", src_y);
+				report("exp_x=%d", exp_x); delete("exp_y=%d", exp_y);
+				report("border_width=%d", border_width);
+				FAIL;
+			} else
+			if ((dest_x != exp_x) || (dest_y != exp_y)) {
+				report("%s did not return expected coordinates",
+					TestName);
+				report("Expected: (*dest_x_return)=%d, (*dest_y_return)=%d",
+					exp_x, exp_y);
+				report("Got: (*dest_x_return)=%d, (*dest_y_return)=%d",
+					dest_x, dest_y);
+				if( (dest_x == -1) || (dest_y == -1) )
+					report("(*dest_x_return) and (*dest_y_return) were probably not set");
 
+				FAIL;
+			} else
+				CHECK;
+		}
 	}
 
-	CHECKPASS(5);
+	CHECKPASS(5 * FUZZ_MAX / 10);
