@@ -105,6 +105,8 @@ Drawable d = DRW(display);
 unsigned int width = 13;
 unsigned int height = 17;
 unsigned int depth;
+>>EXTERN
+#include "XFuzz.h"
 >>ASSERTION Good A
 A call to xname creates a pixmap of width
 .A width ,
@@ -296,7 +298,6 @@ Window		root_ret;
 int		x_ret, y_ret;
 unsigned int	w_ret, h_ret, bw_ret, dep_ret;
 Pixmap		pmap;
-int 		FUZZ_MAX = 100;
 int 		count;
 
 
@@ -353,7 +354,6 @@ For each supported pixmap depth:
 >>CODE BadValue
 XVisualInfo	*vp;
 unsigned int	depth;
-int 		FUZZ_MAX = 100;
 int 		count;
 
 	for(resetvinf(VI_PIX); nextvinf(&vp); ) {

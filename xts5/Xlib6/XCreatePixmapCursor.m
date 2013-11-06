@@ -108,6 +108,7 @@ XColor *background_color = mkcolor(0);
 unsigned int x = 0;
 unsigned int y = 0;
 >>EXTERN
+#include "XFuzz.h"
 static XVisualInfo depth1;
 
 /*
@@ -577,7 +578,6 @@ Call XCreatePixmapCursor with mask pixmap.
 Verify that BadMatch error occurred.
 >>CODE BadMatch
 
-	int FUZZ_MAX = 100;
 	int count;
 	for(count = 0; count < FUZZ_MAX; count ++){	
 	depth1.depth = 1;

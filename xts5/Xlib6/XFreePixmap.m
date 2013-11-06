@@ -102,6 +102,8 @@ void
 XFreePixmap(display, pixmap)
 Display *display = Dsp;
 Pixmap  pixmap;
+>>EXTERN
+#include "XFuzz.h"
 >>ASSERTION Good A
 A call to xname removes the association between the pixmap ID
 .A pixmap
@@ -196,7 +198,6 @@ For all supported depths of pixmap:
 >>CODE
 XVisualInfo	*vp;
 GC		gc;
-int 		FUZZ_MAX = 100;
 int 		count;
 
 	for(resetvinf(VI_PIX); nextvinf(&vp); ) {
