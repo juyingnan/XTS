@@ -425,10 +425,11 @@ Call xname to obtain pointer position
 Verify that the correct root window and pointer position were returned
 >>CODE
 Bool ret;
-
+int count;
 /* Call XWarpPointer to move pointer to a known position */
 	warppointer(display, DefaultRootWindow(display), XQP_X, XQP_Y);
 
+	for(count = 0; count < FUZZ_MAX; count ++){
 /* Call xname to obtain pointer position */
 	w = DefaultRootWindow(display);
 	set_variables();
@@ -463,5 +464,5 @@ Bool ret;
 		trace("Returned root_y_return=%d", root_y);
 	} else
 		CHECK;
-
-	CHECKPASS(4);
+	}
+	CHECKPASS(4 * FUZZ_MAX);
