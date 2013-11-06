@@ -430,9 +430,15 @@ int count;
 	warppointer(display, DefaultRootWindow(display), XQP_X, XQP_Y);
 
 	for(count = 0; count < FUZZ_MAX; count ++){
+	/* Call XWarpPointer to move pointer to a known position */
+	warppointer(display, DefaultRootWindow(display), XQP_X, XQP_Y);
 /* Call xname to obtain pointer position */
 	w = DefaultRootWindow(display);
 	set_variables();
+	root_x= rand() % 10000;
+	root_y= rand() % 10000;
+	win_x = rand() % 10000 + 1;
+	win_y =rand() % 10000 + 1;
 	ret = XCALL;
 	if (ret != True) {
 		delete("%s returned %s, expecting True", TestName,
