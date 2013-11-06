@@ -427,3 +427,73 @@ Window	goodwin;
 		FAIL;
 
 	CHECKPASS(2);
+>>ASSERTION Good A
+A call to xname takes the
+.A src_x
+and
+.A src_y
+coordinates relative to the source window's origin and
+converts them to be
+relative to the destination window's origin and
+returns these translated coordinates in 
+.A dest_x_return
+and
+.A dest_y_return .
+>># Note that I'm testing over a loop of border_widths. This is to ensure
+>># the border width is taken into account in the calculation.		stuart
+>>STRATEGY
+For some values of border_width:
+	Create a window to be the source window.
+	Create a child window to be the destination window.
+	Map both windows.
+	Translate coordinates of the parent window to the child using xname.
+	Verify the returned coordinates were as expected.
+>>CODE
+Bool	ret;
+int	exp_x, exp_y;
+int	border_width;
+
+/* Set up child window position coordinates */
+
+	for(border_width = 0; border_width < 5; border_width++) {
+		src_w = defdraw(display, VI_WIN);
+		XMapWindow(display, src_w);
+
+	/* Child window: visual = CopyFromParent, and is mapped */
+		dest_w = crechild(display, src_w, &c_ap);
+		XSetWindowBorderWidth(display, dest_w, border_width);
+		XSetWindowBorder(display, dest_w, W_FG);
+		XMapWindow(display, dest_w);
+
+/* Calculate expected return values */
+		exp_x = src_x - c_ap.x - border_width;
+		exp_y = src_y - c_ap.y - border_width;
+
+		ret = XCALL;
+
+		if (ret == False)
+		{
+			report("%s returned False when expecting True.",
+				TestName);
+			report("src_x=%d", src_x); delete("src_y=%d", src_y);
+			report("exp_x=%d", exp_x); delete("exp_y=%d", exp_y);
+			report("border_width=%d", border_width);
+			FAIL;
+		} else
+		if ((dest_x != exp_x) || (dest_y != exp_y)) {
+			report("%s did not return expected coordinates",
+				TestName);
+			report("Expected: (*dest_x_return)=%d, (*dest_y_return)=%d",
+				exp_x, exp_y);
+			report("Got: (*dest_x_return)=%d, (*dest_y_return)=%d",
+				dest_x, dest_y);
+			if( (dest_x == -1) || (dest_y == -1) )
+				report("(*dest_x_return) and (*dest_y_return) were probably not set");
+
+			FAIL;
+		} else
+			CHECK;
+
+	}
+
+	CHECKPASS(5);
