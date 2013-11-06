@@ -110,6 +110,7 @@ int *win_x_return = &win_x;
 int *win_y_return = &win_y;
 unsigned int *mask_return = &mask;
 >>EXTERN
+#include "XFuzz.h"
 Window	root;
 Window	child;
 int	root_x;
@@ -411,3 +412,56 @@ of the button or modifier key bitmasks in
 .A mask_return .
 >>ASSERTION Bad A
 .ER BadWindow
+>>ASSERTION Good A
+A call to xname returns the root window the pointer is logically on in
+.A root_return ,
+and the pointer coordinates relative to the root window's origin in
+.A root_x_return
+and
+.A root_y_return .
+>>STRATEGY
+Call XWarpPointer to move pointer to a known position
+Call xname to obtain pointer position
+Verify that the correct root window and pointer position were returned
+>>CODE
+Bool ret;
+
+/* Call XWarpPointer to move pointer to a known position */
+	warppointer(display, DefaultRootWindow(display), XQP_X, XQP_Y);
+
+/* Call xname to obtain pointer position */
+	w = DefaultRootWindow(display);
+	set_variables();
+	ret = XCALL;
+	if (ret != True) {
+		delete("%s returned %s, expecting True", TestName,
+			boolname(ret));
+	} else
+		CHECK;
+
+/* Verify that the correct root window and pointer position were returned */
+	if (root != DefaultRootWindow(display)) {
+		FAIL;
+		report("%s did not return expected root window", TestName);
+		trace("Expected root window=%0x", DefaultRootWindow(display));
+		trace("Returned root window=%0x", root);
+	} else
+		CHECK;
+
+	if (root_x != XQP_X) {
+		FAIL;
+		report("%s did not return expected root_x_return", TestName);
+		trace("Expected root_x_return=%d", XQP_X);
+		trace("Returned root_x_return=%d", root_x);
+	} else
+		CHECK;
+
+	if (root_y != XQP_Y) {
+		FAIL;
+		report("%s did not return expected root_y_return", TestName);
+		trace("Expected root_y_return=%d", XQP_Y);
+		trace("Returned root_y_return=%d", root_y);
+	} else
+		CHECK;
+
+	CHECKPASS(4);
