@@ -105,6 +105,8 @@ Window	w;
 int 	change_mode = SetModeInsert;
 >># All things to do with what actually happens when the client
 >># dies are in XAddToSaveSet.m.
+>>EXTERN
+#include "XFuzz.h"
 >>ASSERTION Good A
 When a call to xname is made with a
 .A change_mode
@@ -236,3 +238,55 @@ Verify that a BadMatch error occurs.
 .ER BadValue change_mode SetModeInsert SetModeDelete
 >>ASSERTION Bad A
 .ER BadWindow
+>>ASSERTION Good A
+When a call to xname is made with a
+.A change_mode
+of
+.S SetModeInsert ,
+then the specified window is inserted into the client's save-set.
+>>STRATEGY
+Create client1.
+Client1 creates win window.
+Create test window as inferior of win window using different client.
+Call xname with change_mode SetModeInsert.
+Verify that window has been added by destroying client1.
+>>CODE
+Display	*client1;
+XWindowAttributes	atts;
+Window	win;
+Window	base;
+struct	area	area;
+int	count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+	client1 = XOpenDisplay(config.display);
+
+	base = defwin(Dsp);
+	if (isdeleted())
+		return;
+	
+		int size_1 = rand() % 10000 + 1;
+		int size_2 = rand() % 10000 + 1;
+		int size_3 = rand() % 10000 + 1;
+		int size_4 = rand() % 10000 + 1;
+		setarea(&area, size_1, size_2, size_3, size_4);
+		win = crechild(client1, base, &area);
+		XSync(client1, False);
+
+		w = crechild(Dsp, win, &area);
+		display = client1;
+		change_mode = SetModeInsert;
+
+		XCALL;
+
+		XCloseDisplay(client1);
+
+		CATCH_ERROR(Dsp);
+		if (XGetWindowAttributes(Dsp, w, &atts) == False) {
+			report("Save-set window was destroyed");
+			FAIL;
+		} else
+			CHECK;
+		RESTORE_ERROR(Dsp);
+	}
+	CHECKPASS(1 * FUZZ_MAX);
