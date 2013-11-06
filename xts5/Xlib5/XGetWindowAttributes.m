@@ -449,11 +449,11 @@ for(count = 0; count < FUZZ_MAX; count++){
 		CHECK;
 
 	parent = DefaultRootWindow(Dsp);
-	x = 5;
-	y = 10;
-	width = 15;
-	height = 20;
-	border_width = 3;
+	x = rand() % 10000 + 1;
+	y = rand() % 10000 + 1;
+	width = rand() % 10000 + 1;
+	height = rand() % 10000 + 1;
+	border_width = rand() % 1000 + 1;
 	depth = vinf->depth;
 	class = InputOutput;
 	visual= vinf->visual;
