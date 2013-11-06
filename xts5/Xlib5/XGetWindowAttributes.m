@@ -705,6 +705,5 @@ for(count = 0; count < FUZZ_MAX; count++){
 			TestName);
 	} else
 		CHECK;
-		
-	CHECKPASS(23);
 	}
+	CHECKPASS(23 * FUZZ_MAX);
