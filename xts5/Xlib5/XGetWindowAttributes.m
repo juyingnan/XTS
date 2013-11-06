@@ -438,6 +438,8 @@ Visual *visual;
 unsigned long valuemask;
 XSetWindowAttributes attributes;
 
+int count = 0;
+for(count = 0; count < FUZZ_MAX; count++){
 /* Create a window. */
 	resetvinf(VI_WIN);
 	if( !nextvinf(&vinf) ) {
@@ -705,3 +707,4 @@ XSetWindowAttributes attributes;
 		CHECK;
 		
 	CHECKPASS(23);
+	}
