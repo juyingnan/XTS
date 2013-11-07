@@ -142,6 +142,53 @@ Set screen saver values.
 Get screen saver values.
 Verify that returned values are as set.
 >>EXTERN
+#include "XFuzz.h"
+#define	TOUT	71
+#define	INTERVAL	57
+#define	BLANKING	PreferBlanking
+#define	EXPOSURES	AllowExposures
+>>CODE
+
+	XSetScreenSaver(display, TOUT, INTERVAL, BLANKING, EXPOSURES);
+
+	XCALL;
+
+	if (*timeout_return == TOUT)
+		CHECK;
+	else {
+		report("timeout_return was %d, expecting %d", *timeout_return, TOUT);
+		FAIL;
+	}
+	if (*interval_return == INTERVAL)
+		CHECK;
+	else {
+		report("interval_return was %d, expecting %d",
+			*interval_return, INTERVAL);
+		FAIL;
+	}
+	if (*prefer_blanking_return == BLANKING)
+		CHECK;
+	else {
+		report("prefer_blanking_return was %d, expecting %d",
+			*prefer_blanking_return, BLANKING);
+		FAIL;
+	}
+	if (*allow_exposures_return == EXPOSURES)
+		CHECK;
+	else {
+		report("allow_exposures_return was %d, expecting %d",
+			*allow_exposures_return, EXPOSURES);
+		FAIL;
+	}
+
+	CHECKPASS(4);
+>>ASSERTION Good A
+A call to xname returns the current screen saver values.
+>>STRATEGY
+Set screen saver values.
+Get screen saver values.
+Verify that returned values are as set.
+>>EXTERN
 #define	TOUT	71
 #define	INTERVAL	57
 #define	BLANKING	PreferBlanking
