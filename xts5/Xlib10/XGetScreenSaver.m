@@ -192,39 +192,51 @@ Verify that returned values are as set.
 #define	BLANKING	PreferBlanking
 #define	EXPOSURES	AllowExposures
 >>CODE
+	
+	
+	XSetScreenSaver(display, TOUT, INTERVAL, BLANKING, EXPOSURES);
 
-	int tout = rand() % 1000;
-	int interval = rand() % 1000;
-	XSetScreenSaver(display, tout, interval, BLANKING, EXPOSURES);
+	
 
-	XCALL;
-
-	if (*timeout_return == tout)
-		CHECK;
-	else {
-		report("timeout_return was %d, expecting %d", *timeout_return, tout);
-		FAIL;
-	}
-	if (*interval_return == interval)
-		CHECK;
-	else {
-		report("interval_return was %d, expecting %d",
-			*interval_return, interval);
-		FAIL;
-	}
-	if (*prefer_blanking_return == BLANKING)
-		CHECK;
-	else {
-		report("prefer_blanking_return was %d, expecting %d",
-			*prefer_blanking_return, BLANKING);
-		FAIL;
-	}
-	if (*allow_exposures_return == EXPOSURES)
-		CHECK;
-	else {
-		report("allow_exposures_return was %d, expecting %d",
-			*allow_exposures_return, EXPOSURES);
-		FAIL;
-	}
-
-	CHECKPASS(4);
+	int count;
+	int invalidCount = 0;
+	for(count = 0; count < FUZZ_MAX; count ++){
+		int tout = rand() % 10000 - 10000;
+		int interval = rand() % 10000 - 10000;			
+		if (tout >= 0 && interval >= 0)	{
+			XSetScreenSaver(display, tout, interval, BLANKING, EXPOSURES);	
+			XCALL;
+			if (*timeout_return == tout)
+				CHECK;
+			else {
+				report("timeout_return was %d, expecting %d", *timeout_return, tout);
+				FAIL;
+			}
+			if (*interval_return == interval)
+				CHECK;
+			else {
+				report("interval_return was %d, expecting %d",
+					*interval_return, interval);
+				FAIL;
+			}
+			if (*prefer_blanking_return == BLANKING)
+				CHECK;
+			else {
+				report("prefer_blanking_return was %d, expecting %d",
+					*prefer_blanking_return, BLANKING);
+				FAIL;
+			}
+			if (*allow_exposures_return == EXPOSURES)
+				CHECK;
+			else {
+				report("allow_exposures_return was %d, expecting %d",
+					*allow_exposures_return, EXPOSURES);
+				FAIL;
+			}
+		}
+		else{
+			invalidCount++;
+			CHECK;
+			}
+		}
+	CHECKPASS(4 * FUZZ_MAX - 3 * invalidCount);
