@@ -189,27 +189,27 @@ Set screen saver values.
 Get screen saver values.
 Verify that returned values are as set.
 >>EXTERN
-#define	TOUT	71
-#define	INTERVAL	57
 #define	BLANKING	PreferBlanking
 #define	EXPOSURES	AllowExposures
 >>CODE
 
-	XSetScreenSaver(display, TOUT, INTERVAL, BLANKING, EXPOSURES);
+	int tout = rand() % 1000;
+	int interval = rand() % 1000;
+	XSetScreenSaver(display, tout, interval, BLANKING, EXPOSURES);
 
 	XCALL;
 
-	if (*timeout_return == TOUT)
+	if (*timeout_return == tout)
 		CHECK;
 	else {
-		report("timeout_return was %d, expecting %d", *timeout_return, TOUT);
+		report("timeout_return was %d, expecting %d", *timeout_return, tout);
 		FAIL;
 	}
-	if (*interval_return == INTERVAL)
+	if (*interval_return == interval)
 		CHECK;
 	else {
 		report("interval_return was %d, expecting %d",
-			*interval_return, INTERVAL);
+			*interval_return, interval);
 		FAIL;
 	}
 	if (*prefer_blanking_return == BLANKING)
