@@ -102,6 +102,8 @@ void
 xname
 Display	*display = Dsp;
 Window	w;
+>>EXTERN
+#include "XFuzz.h"
 >>ASSERTION Good A
 A call to xname
 removes the specified window from the client's save-set.
@@ -175,3 +177,63 @@ Verify that a BadMatch error occurs.
 		FAIL;
 >>ASSERTION Bad A
 .ER BadWindow 
+>>ASSERTION Good A
+A call to xname
+removes the specified window from the client's save-set.
+>>STRATEGY
+Create client1.
+Add two windows to client1 save-set.
+Remove one of the windows with xname.
+Verify that window was removed by destroying client1.
+>>CODE
+Display	*client1;
+Window	win;
+Window	base;
+Window	w1, w2;
+XWindowAttributes	atts;
+struct	area	area;
+int count;
+
+	for(count = 0; count < FUZZ_MAX; count ++){	
+		client1 = XOpenDisplay(config.display);
+
+		base = defwin(Dsp);		
+		if (isdeleted())
+			return;
+	
+		int size_1 = rand() % 100;
+		int size_2 = rand() % 100;
+		int size_3 = rand() % 100;
+		int size_4 = rand() % 100;
+		setarea(&area, size_1, size_2, size_3, size_4);
+		win = crechild(client1, base, &area);
+		XSync(client1, False);
+
+		w1 = crechild(Dsp, win, &area);
+		w2 = crechild(Dsp, win, &area);
+		if (isdeleted())
+			return;
+		XAddToSaveSet(client1, w1);
+		XAddToSaveSet(client1, w2);
+
+		w = w1;
+		display = client1;
+		XCALL;
+		//sleep(1);
+		XCloseDisplay(client1);
+
+		CATCH_ERROR(Dsp);
+		if (XGetWindowAttributes(Dsp, w1, &atts) == True) {
+			report("Non save-set window was not destroyed");
+			FAIL;
+		} else
+			CHECK;
+		if (XGetWindowAttributes(Dsp, w2, &atts) == False) {
+			report("Save-set window was destroyed");
+			FAIL;
+		} else
+			CHECK;
+		RESTORE_ERROR(Dsp);
+	}
+	//CHECKUNTESTED(2* FUZZ_MAX);
+	CHECKPASS(2* FUZZ_MAX);
