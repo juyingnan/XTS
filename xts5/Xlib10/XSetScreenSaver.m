@@ -107,6 +107,7 @@ int 	prefer_blanking = PreferBlanking;
 int 	allow_exposures = AllowExposures;
 >>EXTERN
 
+#include "XFuzz.h"
 static	int 	origt;
 static	int 	origi;
 static	int 	origpb;
@@ -336,3 +337,57 @@ Verify that a BadValue error occurs.
 .ER BadValue prefer_blanking DontPreferBlanking PreferBlanking DefaultBlanking
 >>ASSERTION Bad A
 .ER BadValue allow_exposures DontAllowExposures AllowExposures DefaultExposures
+>>ASSERTION Good A
+When the
+.A timeout
+argument is greater than zero, then the screen saver is enabled
+and the value of
+.A timeout
+specifies the time in seconds, until the screen saver is activated.
+>>STRATEGY
+Touch test with FUZZ timeouts
+>>CODE 
+int count;
+//int invalidCount = 0;
+
+	for(count = 0; count < FUZZ_MAX; count ++){
+		timeout = rand() % 1000;
+		interval = rand() % 1000;
+		report("timeout = %d, interval = %d", timeout, interval);
+		XCALL;
+				
+		if (geterr() == BadValue){
+			report("Expecting NoError, was %s", errorname(geterr()));
+			FAIL;
+		}
+		else
+			CHECK;			
+	}
+	CHECKPASS(FUZZ_MAX);	
+>>ASSERTION Bad A
+When the
+.A timeout
+argument is greater than zero, then the screen saver is enabled
+and the value of
+.A timeout
+specifies the time in seconds, until the screen saver is activated.
+>>STRATEGY
+Touch test with FUZZ timeouts
+>>CODE BadValue
+int count;
+
+	for(count = 0; count < FUZZ_MAX; count ++){
+		timeout = rand() % 1000 - 1000;
+		interval = rand() % 1000 - 1000;
+		report("timeout = %d, interval = %d", timeout, interval);
+		XCALL;
+		
+		
+		if (geterr() == BadValue)				
+			CHECK;
+		else{
+		report("Expecting BadValue, was %s", errorname(geterr()));
+			//FAIL;
+		}			
+	}
+	CHECKPASS(FUZZ_MAX);
