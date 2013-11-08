@@ -591,39 +591,42 @@ int	callcnt;
 int	returnvalue;
 int 	count;
 
-/* Discard all events on the event queue. */
-	XSync(display, True);
-/* Call XPutBackEvent to put events on the event queue. */
-	for(count = 0; count < FUZZ_MAX; count ++){
-		event.type = rand() % 33;
-		XPutBackEvent(display, &event);
-	}
-/* Set up predicate procedure. */
-	PRED_SETUP(callcnt = rand() % 100 + 1);
-/* Call XCheckIfEvent. */
-	_xcall_(returnvalue);
-/* Verify that predicate was called the correct number of times. */
-	if (_pred_cnt != callcnt) {
-		report("predicate called %d times, expected %d", _pred_cnt, callcnt);
-		FAIL;
-	}
-	else
-		{CHECK;report("predicate called %d times, expected %d", _pred_cnt, callcnt);}
-/* Verify that predicate returned True at most recent invocation. */
-	if (_pred_retval != True) {
-		report("predicate returned %d, expecting %d", _pred_retval, True);
-		FAIL;
-	}
-	else
-		CHECK;
-/* Verify that XCheckIfEvent did not continue to call predicate */
-/* after predicate returned True. */
-	if (_pred_true == True) {	
-		report("Did not return when predicate returned True.");
-		FAIL;
-	}
-	else
-		CHECK;
+for(count = 0; count < FUZZ_MAX; count ++){
+	/* Discard all events on the event queue. */
+		XSync(display, True);
+	/* Call XPutBackEvent to put events on the event queue. */
+		int i;
+		for(i = 0; count < FUZZ_MAX; count ++){
+			event.type = rand() % 33;
+			XPutBackEvent(display, &event);
+		}
+	/* Set up predicate procedure. */
+		PRED_SETUP(callcnt = rand() % 10 + 1);
+	/* Call XCheckIfEvent. */
+		_xcall_(returnvalue);
+	/* Verify that predicate was called the correct number of times. */
+		if (_pred_cnt != callcnt) {
+			report("predicate called %d times, expected %d", _pred_cnt, callcnt);
+			FAIL;
+		}
+		else
+			{CHECK;report("predicate called %d times, expected %d", _pred_cnt, callcnt);}
+	/* Verify that predicate returned True at most recent invocation. */
+		if (_pred_retval != True) {
+			report("predicate returned %d, expecting %d", _pred_retval, True);
+			FAIL;
+		}
+		else
+			CHECK;
+	/* Verify that XCheckIfEvent did not continue to call predicate */
+	/* after predicate returned True. */
+		if (_pred_true == True) {	
+			report("Did not return when predicate returned True.");
+			FAIL;
+		}
+		else
+			CHECK;
+}		
 	/* empty event queue */
 	XSync(display, True);
 	
