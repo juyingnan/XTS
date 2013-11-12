@@ -104,6 +104,7 @@ Display *display = Dsp;
 int event_type;
 XEvent	*event_return = &_event;
 >>EXTERN
+#include "XFuzz.h"
 /*
  * Can not use "xcall" because it empties the event queue.
  */
@@ -300,6 +301,68 @@ Display *client2;
 	if (geterr() != Success) {
 		report("The output buffer was not flushed.");
 		XFreePixmap(display, pm);
+		FAIL;
+	}
+	else
+		CHECK;
+	CHECKPASS(3);
+>>ASSERTION Good A
+>>#NOTE	Similar assertions to chckmskevn.
+A call to xname
+returns in
+.A event_return
+the first event in the event queue that matches
+.A event_type .
+>>STRATEGY
+Discard all events on the event queue.
+Call XPutBackEvent to put events on the event queue.
+Call XCheckTypedEvent.
+Verify that XCheckTypedEvent returned True.
+Verify the correct event-type was returned.
+Verify the first matching event in event queue was returned.
+>>CODE
+XEvent	event;
+XAnyEvent *ep;
+Bool	return_value;
+
+/* Discard all events on the event queue. */
+	XSync(display, True);
+/* Call XPutBackEvent to put events on the event queue. */
+	ep = (XAnyEvent *) &event;
+	int i;
+	for(i = 0; i < FUZZ_MAX; i++){
+		ep->type = rand() % 32;
+		ep->send_event = False;
+		XPutBackEvent(display, &event);
+	}
+	int type = rand() % 32;
+	ep->type = type;
+	ep->send_event = True;	/* first occurrence has send_event True */
+	XPutBackEvent(display, &event);
+	ep->type = KeyPress;
+	ep->send_event = False;
+	XPutBackEvent(display, &event);
+/* Call XCheckTypedEvent. */
+	event_type = type;
+	_xcall_(return_value);
+/* Verify that XCheckTypedEvent returned True. */
+	if (return_value != True) {	
+		report("Did not return True: returned %d", return_value);
+		FAIL;
+	}
+	else
+		CHECK;
+/* Verify the correct event-type was returned. */
+	ep = (XAnyEvent *) event_return;
+	if (ep->type != type) {
+		report("Got %s, expected %s", eventname(ep->type), eventname(type));
+		FAIL;
+	}
+	else
+		CHECK;
+/* Verify the first matching event in event queue was returned. */
+	if (ep->send_event != True) {
+		report("First event in event queue was not returned.");
 		FAIL;
 	}
 	else
