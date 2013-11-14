@@ -104,6 +104,7 @@ Display *display = Dsp;
 long event_mask;
 XEvent	*event_return = &_event;
 >>EXTERN
+#include "XFuzz.h"
 /*
  * Can not use "xcall" because it empties the event queue.
  */
@@ -272,3 +273,54 @@ Display *client2;
 	XSync(display, True);
 
 	CHECKPASS(5);
+>>ASSERTION Good A
+A call to xname
+returns in
+.A event_return
+the first event in the event queue matching
+.A event_mask .
+>>STRATEGY
+Discard all events on the event queue.
+Call XPutBackEvent to put events on the event queue.
+Call XMaskEvent.
+Verify the correct event-type was returned.
+Verify the first matching event in event queue was returned.
+>>CODE
+XEvent	event;
+XAnyEvent *ep;
+
+/* Discard all events on the event queue. */
+	XSync(display, True);
+/* Call XPutBackEvent to put events on the event queue. */
+	ep = (XAnyEvent *) &event;
+	int i;
+	for(i = 0; i < FUZZ_MAX; i++){
+		ep->type = rand() % 32;
+		ep->send_event = False;
+		XPutBackEvent(display, &event);
+	}
+	ep->type = ButtonPress;
+	ep->send_event = True;	/* first occurrence has send_event True */
+	XPutBackEvent(display, &event);
+	ep->type = KeyPress;
+	ep->send_event = False;
+	XPutBackEvent(display, &event);
+/* Call XMaskEvent. */
+	event_mask = ButtonPressMask;
+	_xcall_();
+/* Verify the correct event-type was returned. */
+	ep = (XAnyEvent *) event_return;
+	if (ep->type != ButtonPress) {
+		report("Got %s, expected %s", eventname(ep->type), eventname(ButtonPress));
+		FAIL;
+	}
+	else
+		CHECK;
+/* Verify the first matching event in event queue was returned. */
+	if (ep->send_event != True) {
+		report("First event in event queue was not returned.");
+		FAIL;
+	}
+	else
+		CHECK;
+	CHECKPASS(2);
