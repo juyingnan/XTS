@@ -105,6 +105,7 @@ Window w;
 int event_type;
 XEvent	*event_return = &_event;
 >>EXTERN
+#include "XFuzz.h"
 /*
  * Can not use "xcall" because it empties the event queue.
  */
@@ -346,3 +347,84 @@ Display *client2;
 	else
 		CHECK;
 	CHECKPASS(3);
+>>ASSERTION Good A
+A call to xname
+returns in
+.A event_return
+the first event in the event queue that matches
+.A event_type
+and window
+.A w .
+>>STRATEGY
+Create a window.
+Discard all events on the event queue.
+Call XPutBackEvent to put events on the event queue.
+Call XCheckTypedWindowEvent.
+Verify that XCheckTypedWindowEvent returned True.
+Verify the correct event-type was returned.
+Verify the event contained correct window.
+Verify the first matching event in event queue was returned.
+>>CODE
+Window	w1;
+Window	w2;
+XEvent	event;
+XAnyEvent *ep;
+Bool	return_value;
+
+/* Create a window. */
+	w1 = mkwin(display, (XVisualInfo *) NULL, (struct area *) NULL, False);
+	w2 = mkwin(display, (XVisualInfo *) NULL, (struct area *) NULL, False);
+/* Discard all events on the event queue. */
+	XSync(display, True);
+/* Call XPutBackEvent to put events on the event queue. */
+	ep = (XAnyEvent *) &event;
+	ep->type = KeyPress;
+	ep->window = w1;
+	ep->send_event = False;
+	XPutBackEvent(display, &event);
+	ep->type = ButtonPress;
+	ep->window = w2;
+	ep->send_event = False;
+	XPutBackEvent(display, &event);
+	ep->type = ButtonPress;
+	ep->window = w2;
+	ep->send_event = True;	/* first occurrence has send_event True */
+	XPutBackEvent(display, &event);
+	ep->type = KeyPress;
+	ep->window = w1;
+	ep->send_event = False;
+	XPutBackEvent(display, &event);
+/* Call XCheckTypedWindowEvent. */
+	w = w2;
+	event_type = ButtonPress;
+	_xcall_(return_value);
+/* Verify that XCheckTypedWindowEvent returned True. */
+	if (return_value != True) {	
+		report("Did not return True: returned %d", return_value);
+		FAIL;
+	}
+	else
+		CHECK;
+/* Verify the correct event-type was returned. */
+	ep = (XAnyEvent *) event_return;
+	if (ep->type != event_type) {
+		report("Got %s, expected %s", eventname(ep->type), eventname(ButtonPress));
+		FAIL;
+	}
+	else
+		CHECK;
+/* Verify the event contained correct window. */
+	if (ep->window != w2) {
+		report("Got %d, expected %d", ep->window, w2);
+		FAIL;
+	}
+	else
+		CHECK;
+/* Verify the first matching event in event queue was returned. */
+	if (ep->send_event != True) {
+		report("First event in event queue was not returned.");
+		FAIL;
+	}
+	else
+		CHECK;
+	CHECKPASS(4);

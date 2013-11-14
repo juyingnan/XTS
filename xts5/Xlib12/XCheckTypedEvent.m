@@ -324,7 +324,9 @@ Verify the first matching event in event queue was returned.
 XEvent	event;
 XAnyEvent *ep;
 Bool	return_value;
+int count;
 
+for(count = 0; count < FUZZ_MAX; count ++){
 /* Discard all events on the event queue. */
 	XSync(display, True);
 /* Call XPutBackEvent to put events on the event queue. */
@@ -339,7 +341,11 @@ Bool	return_value;
 	ep->type = type;
 	ep->send_event = True;	/* first occurrence has send_event True */
 	XPutBackEvent(display, &event);
-	ep->type = KeyPress;
+	int another_type;
+	do{
+		another_type = rand() % 32;
+	}while(another_type == type);
+	ep->type = another_type;
 	ep->send_event = False;
 	XPutBackEvent(display, &event);
 /* Call XCheckTypedEvent. */
@@ -362,9 +368,11 @@ Bool	return_value;
 		CHECK;
 /* Verify the first matching event in event queue was returned. */
 	if (ep->send_event != True) {
+	report("Got %s, expected %s", eventname(ep->type), eventname(type));
 		report("First event in event queue was not returned.");
 		FAIL;
 	}
 	else
 		CHECK;
-	CHECKPASS(3);
+}
+	CHECKPASS(3 * FUZZ_MAX);
