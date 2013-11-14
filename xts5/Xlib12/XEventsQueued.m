@@ -107,6 +107,7 @@ Display *display = Dsp;
 int mode;
 >>EXTERN
 
+#include "XFuzz.h"
 /*
  * Can not use "xcall" because it empties the event queue.
  */
@@ -616,3 +617,240 @@ int	block_status;
 	else
 		CHECK;
 	CHECKPASS(6);
+>>ASSERTION Good A
+When the number of events already in the event queue is non-zero,
+then a call to xname
+returns the number of events
+in the event queue.
+>>STRATEGY
+Discard all events on the event queue.
+Call XPutBackEvent to put events on the event queue.
+Call XEventsQueued with mode QueuedAlready.
+Verify that XEventsQueued returned the correct number of events.
+Call XEventsQueued with mode QueuedAfterFlush.
+Verify that XEventsQueued returned the correct number of events.
+Call XEventsQueued with mode QueuedAfterReading.
+Verify that XEventsQueued returned the correct number of events.
+>>CODE
+int	eventsput;
+int	event_count;
+XEvent	event;
+int count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+/* Discard all events on the event queue. */
+	XSync(display, True);
+/* Call XPutBackEvent to put events on the event queue. */
+	event.type = MapNotify;
+	eventsput = 0;
+	int i;
+	int random = rand() % 10000 + 1;
+	for(i = 0; i < random; i ++){
+	XPutBackEvent(display, &event), eventsput++;
+	}
+/* Call XEventsQueued with mode QueuedAlready. */
+	mode = QueuedAlready;
+	_xcall_(event_count);
+/* Verify that XEventsQueued returned the correct number of events. */
+	if (event_count != eventsput) {
+		report("Returned %d, expected %d", event_count, eventsput);
+		FAIL;
+	}
+	else
+		CHECK;
+/* Call XEventsQueued with mode QueuedAfterFlush. */
+	mode = QueuedAfterFlush;
+	_xcall_(event_count);
+/* Verify that XEventsQueued returned the correct number of events. */
+	if (event_count != eventsput) {
+		report("Returned %d, expected %d", event_count, eventsput);
+		FAIL;
+	}
+	else
+		CHECK;
+/* Call XEventsQueued with mode QueuedAfterReading. */
+	mode = QueuedAfterReading;
+	_xcall_(event_count);
+/* Verify that XEventsQueued returned the correct number of events. */
+	if (event_count != eventsput) {
+		report("Returned %d, expected %d", event_count, eventsput);
+		FAIL;
+	}
+	else
+		CHECK;
+	/* empty event queue */
+	XSync(display, True);
+}
+
+	CHECKPASS(3 * FUZZ_MAX);
+>>ASSERTION Good A
+When the number of events already in the event queue is non-zero,
+then a call to xname
+does not flush the output buffer.
+>>STRATEGY
+Create client2.
+Discard all events on the event queue.
+Create pixmap.
+Call XPutBackEvent to put events on the event queue.
+Call XEventsQueued with mode QueuedAlready.
+Empty the buffer.
+Ensure the server has dealt with anything flushed to it: do XSync()
+Verify that the output buffer was not flushed by effect on server.
+Discard all events on the event queue.
+Create pixmap.
+Call XPutBackEvent to put events on the event queue.
+Call XEventsQueued with mode QueuedAfterFlush.
+Empty the buffer.
+Ensure the server has dealt with anything flushed to it: do XSync()
+Verify that the output buffer was not flushed by effect on server.
+Discard all events on the event queue.
+Create pixmap.
+Call XPutBackEvent to put events on the event queue.
+Call XEventsQueued with mode QueuedAfterReading.
+Empty the buffer.
+Ensure the server has dealt with anything flushed to it: do XSync()
+Verify that the output buffer was not flushed by effect on server.
+Discard all left-over events in the event queue.
+>>CODE
+XEvent	event;
+int	eventsput;
+int	event_count;
+Pixmap	pm;
+Display *client2;
+int count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+/* Create client2. */
+	client2 = opendisplay();
+	if (client2 == (Display *) NULL) {
+		delete("Can not open display");
+		return;
+	}
+	else
+		CHECK;
+/* Discard all events on the event queue. */
+	XSync(display, True);
+/* Check whether this Xlib auto-flushes. */
+	XNoOp(display);
+	if (!XTestDiscard(display))
+	{
+		report("Flushing appears to happen automatically");
+		UNTESTED;
+		return;
+	}
+/* Create pixmap. */
+	/* avoid using makepixm() */
+	pm = XCreatePixmap(display, DRW(display), 10, 10, 1);
+/* Call XPutBackEvent to put events on the event queue. */
+	event.type = MapNotify;
+	eventsput = 0;
+	int i;
+	int random = rand() % 10000 + 1;
+	for(i = 0; i < random; i ++){
+	XPutBackEvent(display, &event), eventsput++;
+	}
+/* Call XEventsQueued with mode QueuedAlready. */
+	mode = QueuedAlready;
+	_xcall_(event_count);
+/* Empty the buffer. */
+	(void)XTestDiscard(display);
+/* Ensure the server has dealt with anything flushed to it: do XSync() */
+	XSync(display, False);
+/* Verify that the output buffer was not flushed by effect on server. */
+	_startcall(client2);
+	XFreePixmap(client2, pm);
+	XSync(client2, True);
+	_endcall(client2);
+	if (geterr() == Success) {
+		/* pixmap was free'd */
+		report("The output buffer was flushed.");
+		FAIL;
+	}
+	else	/* no need to free as not created */
+		CHECK;
+
+	if (event_count != eventsput) {
+		report("Incorrect number of events returned.");
+		FAIL;
+	}
+	else
+		CHECK;
+/* Discard all events on the event queue. */
+	XSync(display, True);
+/* Create pixmap. */
+	/* avoid using makepixm() */
+	pm = XCreatePixmap(display, DRW(display), 10, 10, 1);
+/* Call XPutBackEvent to put events on the event queue. */
+	event.type = MapNotify;
+	eventsput = 0;
+	XPutBackEvent(display, &event), eventsput++;
+/* Call XEventsQueued with mode QueuedAfterFlush. */
+	mode = QueuedAfterFlush;
+	_xcall_(event_count);
+/* Empty the buffer. */
+	(void)XTestDiscard(display);
+/* Ensure the server has dealt with anything flushed to it: do XSync() */
+	XSync(display, False);
+/* Verify that the output buffer was not flushed by effect on server. */
+	_startcall(client2);
+	XFreePixmap(client2, pm);
+	XSync(client2, True);
+	_endcall(client2);
+	if (geterr() == Success) {
+		/* pixmap was free'd */
+		report("The output buffer was flushed.");
+		FAIL;
+	}
+	else	/* no need to free as not created */
+		CHECK;
+
+	if (event_count != eventsput) {
+		report("Incorrect number of events returned.");
+		FAIL;
+	}
+	else
+		CHECK;
+/* Discard all events on the event queue. */
+	XSync(display, True);
+/* Create pixmap. */
+	/* avoid using makepixm() */
+	pm = XCreatePixmap(display, DRW(display), 10, 10, 1);
+/* Call XPutBackEvent to put events on the event queue. */
+	event.type = MapNotify;
+	eventsput = 0;
+	for(i = 0; i < random; i ++){
+	XPutBackEvent(display, &event), eventsput++;
+	}
+/* Call XEventsQueued with mode QueuedAfterReading. */
+	mode = QueuedAfterReading;
+	_xcall_(event_count);
+/* Empty the buffer. */
+	(void)XTestDiscard(display);
+/* Ensure the server has dealt with anything flushed to it: do XSync() */
+	XSync(display, False);
+/* Verify that the output buffer was not flushed by effect on server. */
+	_startcall(client2);
+	XFreePixmap(client2, pm);
+	XSync(client2, True);
+	_endcall(client2);
+	if (geterr() == Success) {
+		/* pixmap was free'd */
+		report("The output buffer was flushed.");
+		FAIL;
+	}
+	else	/* no need to free as not created. */
+		CHECK;
+
+	if (event_count != eventsput) {
+		report("Incorrect number of events returned.");
+		FAIL;
+	}
+	else
+		CHECK;
+/* Discard all left-over events in the event queue. */
+	_startcall(display);
+	XSync(display, True);
+	_endcall(display);
+}
+
+	CHECKPASS(7 * FUZZ_MAX);
