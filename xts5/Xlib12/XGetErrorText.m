@@ -105,6 +105,7 @@ int code = 1;
 char *buffer_return = buffer;
 int length = sizeof(buffer);
 >>EXTERN
+#include "XFuzz.h"
 static char buffer[512];
 >>ASSERTION Good A
 A call to xname
@@ -149,3 +150,43 @@ After a call to xname
 .A buffer_return
 contains a textual description of
 .A code .
+>>ASSERTION Good A
+A call to xname
+returns in
+.A buffer_return
+a string terminated with ASCII NUL.
+>>STRATEGY
+Set each character in buffer_return to non-ASCII NUL.
+Call XGetErrorText.
+Verify that there exists at least one ASCII NUL
+character in buffer_return.
+>>CODE
+int	i;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+/* Set each character in buffer_return to non-ASCII NUL. */
+	for (i=0; i < sizeof(buffer); i++) {
+		if (!i)
+			CHECK;
+		buffer[i] = rand() % 256;
+	}
+	buffer_return = buffer;
+/* Call XGetErrorText. */
+	XCALL;
+/* Verify that there exists at least one ASCII NUL */
+/* character in buffer_return. */
+	for (i=0; i < sizeof(buffer); i++) {
+		if (buffer[i] == '\0') {
+			CHECK;
+			break;
+		}
+	}
+	if (i == sizeof(buffer)) {
+		report("Returned string not terminated with ASCII NUL.");
+		FAIL;
+	}
+	else
+		CHECK;
+}
+	CHECKPASS(3 * FUZZ_MAX);

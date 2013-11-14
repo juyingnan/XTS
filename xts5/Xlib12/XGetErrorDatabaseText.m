@@ -111,6 +111,7 @@ char *buffer_return = buffer;
 int length = sizeof(buffer);
 >>EXTERN
 #include "X11/Xproto.h"
+#include "XFuzz.h"
 
 static char buffer[512];
 >>ASSERTION Good A
@@ -271,3 +272,51 @@ then
 .A default_string
 is returned in
 .A buffer_return .
+>>ASSERTION Good A
+>>#NOTE	As the precise format of a message is not defined,
+>>#NOTE there is not too much which can be tested.
+>>#NOTE Therefore, this assertion is deliberately vague.
+A call to xname
+returns a string in
+.A buffer_return .
+>>STRATEGY
+Set each character in buffer_return to non-ASCII NUL.
+Set name to \"foo\".
+Set message to \"bar\".
+Call XGetErrorText.
+Verify that there exists at least one ASCII NUL
+character in buffer_return.
+>>CODE
+int	i;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+/* Set each character in buffer_return to non-ASCII NUL. */
+	for (i=0; i < sizeof(buffer); i++) {
+		if (!i)
+			CHECK;
+		buffer[i] = rand () % 255;
+	}
+	buffer_return = buffer;
+/* Set name to "foo". */
+	name = "foo";
+/* Set message to "bar". */
+	message = "bar";
+/* Call XGetErrorText. */
+	XCALL;
+/* Verify that there exists at least one ASCII NUL */
+/* character in buffer_return. */
+	for (i=0; i < sizeof(buffer); i++) {
+		if (buffer[i] == '\0') {
+			CHECK;
+			break;
+		}
+	}
+	if (i == sizeof(buffer)) {
+		report("String not returned.");
+		FAIL;
+	}
+	else
+		CHECK;
+}
+	CHECKPASS(3 * FUZZ_MAX);
