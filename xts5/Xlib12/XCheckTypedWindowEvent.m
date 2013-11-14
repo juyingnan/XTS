@@ -370,7 +370,9 @@ Window	w2;
 XEvent	event;
 XAnyEvent *ep;
 Bool	return_value;
+int count;
 
+for(count = 0; count < FUZZ_MAX; count ++){
 /* Create a window. */
 	w1 = mkwin(display, (XVisualInfo *) NULL, (struct area *) NULL, False);
 	w2 = mkwin(display, (XVisualInfo *) NULL, (struct area *) NULL, False);
@@ -386,17 +388,22 @@ Bool	return_value;
 	ep->window = w2;
 	ep->send_event = False;
 	XPutBackEvent(display, &event);
-	ep->type = ButtonPress;
+	int type = rand() % 32;
+	ep->type = type;
 	ep->window = w2;
 	ep->send_event = True;	/* first occurrence has send_event True */
 	XPutBackEvent(display, &event);
-	ep->type = KeyPress;
+	int another_type;
+	do{
+		another_type = rand() % 32;
+	}while(another_type == type);
+	ep->type = another_type;
 	ep->window = w1;
 	ep->send_event = False;
 	XPutBackEvent(display, &event);
 /* Call XCheckTypedWindowEvent. */
 	w = w2;
-	event_type = ButtonPress;
+	event_type = type;
 	_xcall_(return_value);
 /* Verify that XCheckTypedWindowEvent returned True. */
 	if (return_value != True) {	
@@ -408,7 +415,7 @@ Bool	return_value;
 /* Verify the correct event-type was returned. */
 	ep = (XAnyEvent *) event_return;
 	if (ep->type != event_type) {
-		report("Got %s, expected %s", eventname(ep->type), eventname(ButtonPress));
+		report("Got %s, expected %s", eventname(ep->type), eventname(type));
 		FAIL;
 	}
 	else
@@ -427,4 +434,5 @@ Bool	return_value;
 	}
 	else
 		CHECK;
-	CHECKPASS(4);
+}
+	CHECKPASS(4 * FUZZ_MAX);
