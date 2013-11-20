@@ -103,6 +103,7 @@ XNextEvent(display, event_return)
 Display *display = Dsp;
 XEvent	*event_return = &_event;
 >>EXTERN
+#include "XFuzz.h"
 static XEvent _event;
 /*
  * Can not use "xcall" because it empties the event queue.
@@ -265,3 +266,90 @@ Display *client2;
 		CHECK;
 
 	CHECKPASS(4);
+>>ASSERTION Good A
+When the event queue is not empty,
+the a call to xname
+returns the first event from the event queue in
+.A event_return .
+>>STRATEGY
+Discard all events on the event queue.
+Call XPutBackEvent to put events on the event queue.
+Call XNextEvent.
+Verify that XNextEvent returned the correct event.
+>>CODE
+XEvent	event;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+/* Discard all events on the event queue. */
+	XSync(display, True);
+/* Call XPutBackEvent to put events on the event queue. */
+	int i;
+	for(i = 0; i < FUZZ_MAX; i ++){
+	event.type = rand() % 32;
+	XPutBackEvent(display, &event);
+	}
+/* Call XNextEvent. */
+	_xcall_();
+/* Verify that XNextEvent returned the correct event. */
+	if (event_return->type != event.type) {
+		report("Returned %s, expected %s", eventname(event_return->type), eventname(event.type));
+		FAIL;
+	}
+	else
+		CHECK;
+	/* empty event queue */
+	XSync(display, True);
+}
+
+	CHECKPASS(1 * FUZZ_MAX);
+>>ASSERTION Good A
+A call to xname removes the returned event from the event queue.
+>>STRATEGY
+Discard all events on the event queue.
+Call XPutBackEvent to put a three events on the event queue.
+Call XNextEvent.
+Verify that XNextEvent returned the correct event.
+Call XNextEvent.
+Verify that XNextEvent returned the correct event.
+Call XNextEvent.
+Verify that XNextEvent returned the correct event.
+Verify that the event queue is now empty.
+>>CODE
+XEvent	event;
+int 	count;
+int 	checks = 0;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+/* Discard all events on the event queue. */
+	XSync(display, True);
+/* Call XPutBackEvent to put a three events on the event queue. */
+	event.type = KeyPress;   
+	int i;
+	int max = rand() % 100 + 1;
+	checks += max;
+	//int max = rand() % 100 + 1;
+	for(i = 0; i < max; i ++){
+		XPutBackEvent(display, &event);
+		/* Call XNextEvent. */
+		_xcall_();
+	/* Verify that XNextEvent returned the correct event. */
+		if (event_return->type != event.type) {
+			report("Returned %s, expected %s", eventname(event_return->type), eventname(event.type));
+			FAIL;
+		}
+		else
+			CHECK;
+	}
+/* Verify that the event queue is now empty. */
+	if (XPending(display) != 0) {
+		report("Events not removed from the event queue.");
+		FAIL;
+	}
+	else
+		CHECK;
+	/* empty event queue */
+	XSync(display, True);
+}
+
+	CHECKPASS(checks + FUZZ_MAX);
