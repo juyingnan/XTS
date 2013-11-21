@@ -108,6 +108,7 @@ XEvent	*event_return = &_event;
 Predicate predicate = _predicate;
 char *arg = (char *) 0;
 >>EXTERN
+#include "XFuzz.h"
 /*
  * Can not use "xcall" because it empties the event queue.
  */
@@ -434,3 +435,128 @@ Display *client2;
 	XSync(display, True);
 
 	CHECKPASS(6);
+>>ASSERTION Good A
+A call to xname
+calls
+.A predicate
+once for each event in the event queue until
+.A predicate
+returns
+.S True .
+>>STRATEGY
+Discard all events on the event queue.
+Call XPutBackEvent to put events on the event queue.
+Set up predicate procedure.
+Call XPeekIfEvent.
+Verify that predicate was called the correct number of times.
+Verify that predicate returned True at most recent invocation.
+Verify that XIfEvent did not continue to call predicate
+after predicate returned True.
+>>CODE
+XEvent	event;
+int	callcnt;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+/* Discard all events on the event queue. */
+	XSync(display, True);
+/* Call XPutBackEvent to put events on the event queue. */
+int i;
+for(i = 0; i < FUZZ_MAX; i ++){
+	event.type = rand() % 32;
+	XPutBackEvent(display, &event);
+	}
+/* Set up predicate procedure. */
+	PRED_SETUP(callcnt = 2);
+/* Call XPeekIfEvent. */
+	_xcall_();
+/* Verify that predicate was called the correct number of times. */
+	if (_pred_cnt != callcnt) {
+		report("predicate called %d times, expected %d", _pred_cnt, callcnt);
+		FAIL;
+	}
+	else
+		CHECK;
+/* Verify that predicate returned True at most recent invocation. */
+	if (_pred_retval != True) {
+		report("predicate returned %d, expecting %d", _pred_retval, True);
+		FAIL;
+	}
+	else
+		CHECK;
+/* Verify that XIfEvent did not continue to call predicate */
+/* after predicate returned True. */
+	if (_pred_true == True) {	
+		report("Did not return when predicate returned True.");
+		FAIL;
+	}
+	else
+		CHECK;
+	/* empty event queue */
+	XSync(display, True);
+}
+	
+	CHECKPASS(3 * FUZZ_MAX);
+>>ASSERTION Good A
+A call to xname
+does not remove
+.A event_return
+from the event queue.
+>>STRATEGY
+Discard all events on the event queue.
+Call XPutBackEvent to put events on the event queue.
+Call XPending to get the current event queue size.
+Set up predicate procedure.
+Call XPeekIfEvent.
+Call XPending to get the current event queue size.
+Verify that size of the event queue has not changed.
+Verify that the returned event was not removed from the event queue.
+>>CODE
+XEvent	event;
+XEvent	nextevent;
+int	callcnt;
+int	oldqsize;
+int	newqsize;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+/* Discard all events on the event queue. */
+	XSync(display, True);
+/* Call XPutBackEvent to put events on the event queue. */
+int i;
+for(i = 0; i < FUZZ_MAX; i ++){
+	event.type = rand() % 32;
+	XPutBackEvent(display, &event);
+	}
+	//event.type = KeyPress;
+	//XPutBackEvent(display, &event);
+	//event.type = KeyRelease;
+	//XPutBackEvent(display, &event);
+	//event.type = ButtonPress;
+	//XPutBackEvent(display, &event);
+/* Call XPending to get the current event queue size. */
+	oldqsize = XPending(display);
+/* Set up predicate procedure. */
+	PRED_SETUP(callcnt = 1);
+/* Call XPeekIfEvent. */
+	_xcall_();
+/* Call XPending to get the current event queue size. */
+	newqsize = XPending(display);
+/* Verify that size of the event queue has not changed. */
+	if (newqsize != oldqsize) {
+		report("Event queue size %d, expected %d", newqsize, oldqsize);
+		FAIL;
+	}
+	else
+		CHECK;
+/* Verify that the returned event was not removed from the event queue. */
+	XNextEvent(display, &nextevent);
+	if (event_return->type != nextevent.type) {
+		report("Event removed from queue, returned %s, expected %s", eventname(event_return->type), eventname(event.type));
+		FAIL;
+	}
+	else
+		CHECK;
+}
+
+	CHECKPASS(2 * FUZZ_MAX);

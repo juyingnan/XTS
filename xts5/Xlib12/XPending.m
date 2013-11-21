@@ -102,7 +102,7 @@ int
 XPending(display)
 Display *display = Dsp;
 >>EXTERN
-
+#include "XFuzz.h"
 /*
  * Can not use "xcall" because it empties the event queue.
  */
@@ -243,3 +243,44 @@ int	block_status;
 /* Discard all events on the event queue. */
 	XSync(display, True);
 	CHECKPASS(3);
+>>ASSERTION Good A
+>>#NOTE	These assertions are similar to those in
+>>#NOTE XEventsQueued for the QueuedAfterFlush tests.
+When the number of events already in the event queue is non-zero,
+then a call to xname
+returns the number of events in the event queue.
+>>STRATEGY
+Discard all events on the event queue.
+Call XPutBackEvent to put events on the event queue.
+Call XPending.
+Verify that XPending returned the correct number of events.
+>>CODE
+int	eventsput;
+int	event_count;
+XEvent	event;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+/* Discard all events on the event queue. */
+	XSync(display, True);
+/* Call XPutBackEvent to put events on the event queue. */
+	event.type = MapNotify;
+	eventsput = 0;
+	int i;
+	for(i = 0; i < FUZZ_MAX; i ++){
+	XPutBackEvent(display, &event), eventsput++;
+	}
+/* Call XPending. */
+	_xcall_(event_count);
+/* Verify that XPending returned the correct number of events. */
+	if (event_count != eventsput) {
+		report("Returned %d, expected %d", event_count, eventsput);
+		FAIL;
+	}
+	else
+		CHECK;
+	/* empty event queue */
+	XSync(display, True);
+}
+
+	CHECKPASS(1 * FUZZ_MAX);
