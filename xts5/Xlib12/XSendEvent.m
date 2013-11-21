@@ -108,6 +108,7 @@ XEvent	*event_send = &_event;
 >>SET startup focusstartup
 >>SET cleanup focuscleanup
 >>EXTERN
+#include "XFuzz.h"
 /*
  * Can not use "xcall" because it empties the event queue.
  */
@@ -2289,3 +2290,42 @@ int	return_value;
 		FAIL;
 
 	CHECKPASS(2);
+>>ASSERTION Bad A
+When a window argument does not name a valid window, then a 
+.S BadWindow
+>>STRATEGY
+Create a bad window by creating and destroying a window.
+Initialise the event structure for the call.
+Verify that a BadWindow error occurs.
+>>CODE BadWindow
+int	return_value;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+
+	seterrdef();
+
+/* Create a bad window by creating and destroying a window. */
+	w = badwin(display);
+
+/* Initialise the event structure for the call. */
+	propagate = False;
+	event_send->type = rand() % 30 + 2; // can't be 1, good window
+
+/* Call xname using bad window as the window argument.*/
+	return_value = XCALL;
+	if (return_value == 0) {
+		FAIL;
+		report("%s returned zero, expecting a non-zero result.",
+			TestName);
+	} else
+		CHECK;
+
+/* Verify that a BadWindow error occurs. */
+	if (geterr() == BadWindow)
+		CHECK;
+	else
+		FAIL;
+}
+
+	CHECKPASS(2 * FUZZ_MAX);
