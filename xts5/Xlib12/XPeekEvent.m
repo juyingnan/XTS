@@ -103,6 +103,7 @@ XPeekEvent(display, event_return)
 Display *display = Dsp;
 XEvent	*event_return = &_event;
 >>EXTERN
+#include "XFuzz.h"
 static XEvent _event;
 /*
  * Can not use "xcall" because it empties the event queue.
@@ -278,3 +279,39 @@ Display *client2;
 	XSync(display, True);
 
 	CHECKPASS(4);
+>>ASSERTION Good A
+A call to xname
+returns the first event from the event queue in
+.A event_return .
+>>STRATEGY
+Discard all events on the event queue.
+Call XPutBackEvent to put events on the event queue.
+Call XPeekEvent.
+Verify that XPeekEvent returned the correct event.
+>>CODE
+XEvent	event;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+/* Discard all events on the event queue. */
+	XSync(display, True);
+/* Call XPutBackEvent to put events on the event queue. */
+	int i;
+	for(i = 0; i < FUZZ_MAX; i ++){
+	event.type = rand() % 32;
+	XPutBackEvent(display, &event);
+	}
+/* Call XPeekEvent. */
+	_xcall_();
+/* Verify that XPeekEvent returned the correct event. */
+	if (event_return->type != event.type) {
+		report("Returned %s, expected %s", eventname(event_return->type), eventname(event.type));
+		FAIL;
+	}
+	else
+		CHECK;
+	/* empty event queue */
+	XSync(display, True);
+}
+
+	CHECKPASS(1 * FUZZ_MAX);
