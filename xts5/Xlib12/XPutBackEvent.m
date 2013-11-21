@@ -103,6 +103,7 @@ XPutBackEvent(display, event)
 Display *display = Dsp;
 XEvent	*event = &_event;
 >>EXTERN
+#include "XFuzz.h"
 /*
  * Can not use "xcall" because it empties the event queue.
  */
@@ -165,3 +166,36 @@ int	i;
 		_xcall_();
 	}
 	UNTESTED;
+>>ASSERTION Good A
+A call to xname pushes a copy of
+.A event
+onto the head of the display's event queue.
+>>STRATEGY
+Call XSync to empty event queue.
+Call XPutBackEvent to push event onto the head of the event queue.
+Call XPeekEvent to verify that first event is the event that was pushed.
+Call XPutBackEvent to push another event onto the head of the event queue.
+Call XPeekEvent to verify that first event is the event that was pushed.
+>>CODE
+XEvent	event_return;
+
+int 		count;
+
+for(count = 0; count < FUZZ_MAX * 10; count ++){
+/* Call XSync to empty event queue. */
+	XSync(display, True);
+/* Call XPutBackEvent to push event onto the head of the event queue. */
+	event->type = rand() % 32;
+	_xcall_();
+/* Call XPeekEvent to verify that first event is the event that was pushed. */
+	XPeekEvent(display, &event_return);
+	if (event_return.type != event->type) {
+		report("Returned %s, expected %s", eventname(event_return.type), eventname(event->type));
+		FAIL;
+	}
+	else
+		CHECK;
+	XSync(display, True);
+}
+	
+	CHECKPASS(1 * FUZZ_MAX * 10);
