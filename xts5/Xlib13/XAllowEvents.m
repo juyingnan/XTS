@@ -110,6 +110,7 @@ int 	event_mode = AsyncPointer;
 Time	thetime = CurrentTime;
 >>EXTERN
 
+#include "XFuzz.h"
 /*
  * The focus startup routines set the focus to the root window.
  */
@@ -1643,3 +1644,50 @@ int 	i;
 	CHECKPASS(NELEM(modes));
 >>ASSERTION Bad A
 .ER BadValue event_mode AsyncPointer SyncPointer AsyncKeyboard SyncKeyboard ReplayPointer ReplayKeyboard AsyncBoth SyncBoth
+>>ASSERTION Good A
+When the specified time is earlier than the last-grab
+time of the most recent active grab for the client or
+later than the current X server time, then a call to xname has no effect.
+>>STRATEGY
+Grab and freeze pointer with a given time.
+Call xname with earlier time and AsyncPointer.
+Verify that the pointer is still frozen.
+Get current server time.
+Call xname with a later time.
+Verify that the pointer is still frozen.
+>>CODE
+
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+	/* get time from the server */
+	thetime = gettime(display);
+	grabfreezepointer(display, thetime);
+	
+	thetime -= rand() % 100 + 1;
+	XCALL;
+
+	if (ispfrozen(display))
+		CHECK;
+	else {
+		report("Events allowed when time was earlier than last-grab time");
+		FAIL;
+	}
+
+	/*
+	 * Get current time again and add several minutes to get a time in the
+	 * future.
+	 */
+	thetime = gettime(display);
+	thetime += ((config.speedfactor+1) * 1000000);
+	XCALL;
+
+	if (ispfrozen(display))
+		CHECK;
+	else {
+		report("Events allowed when time was later than current server time");
+		FAIL;
+	}
+}
+
+	CHECKPASS(2 * FUZZ_MAX);

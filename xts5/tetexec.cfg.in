@@ -179,7 +179,7 @@ XT_ALT_SCREEN=UNSUPPORTED
 # for the X server enabling the cursor font to be accessed.  
 # One of the entries in the list must be the directory in which 
 # the test fonts were installed.
-XT_FONTPATH=
+XT_FONTPATH=/usr/share/xts5/fonts,catalogue:/etc/X11/fontpath.d,built-ins
 
 # XT_SPEEDFACTOR - Specifies a multiplier used for timing.
 # This should be set >= 1.
@@ -242,7 +242,7 @@ XT_FONTCURSOR_BAD=9999
 # This should be set to a comma separated list that is a valid font path
 # for the X server.  It should be different to the list specified by
 # XT_FONTPATH. It need not contain the test fonts.
-XT_FONTPATH_GOOD=
+XT_FONTPATH_GOOD=catalogue:/etc/X11/fontpath.d,built-ins
 
 # XT_FONTPATH_BAD - This should be set to a comma separated list that 
 # is an invalid font path for the X server.
