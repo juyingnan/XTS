@@ -104,6 +104,8 @@ Display	*display = Dsp;
 unsigned int 	event_mask = PointerMotionMask;
 Cursor	cursor = None;
 Time	thetime = CurrentTime;
+>>EXTERN
+#include "XFuzz.h"
 >>ASSERTION Good A
 When the pointer is actively grabbed by the client and the specified time is
 not earlier than the last-pointer-grab time nor later than
@@ -402,3 +404,81 @@ Cursor	cur;
 .ER BadCursor
 >>ASSERTION Bad A
 .ER BadValue event_mask mask ButtonPressMask ButtonReleaseMask EnterWindowMask LeaveWindowMask PointerMotionMask PointerMotionHintMask Button1MotionMask Button2MotionMask Button3MotionMask Button4MotionMask Button5MotionMask ButtonMotionMask KeymapStateMask
+>>ASSERTION Good A
+When the specified time is earlier than the last-pointer-grab time
+or later than the current X server time, then a call to xname
+does not change the parameters.
+>>STRATEGY
+Create grab_window.
+Grab pointer with XGrabPointer using an event_mask of EnterWindowMask.
+Use event_mask of PointerMotionMask.
+Call xname with time earlier that last pointer grab time.
+Verify that enter events are still being reported.
+
+Call xname with time later than current X server time.
+Verify that enter events are still being reported.
+>>CODE
+XEvent	ev;
+Window	win;
+Time	t;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+	warppointer(display, DRW(display), 0, 0);
+
+	win = defwin(display);
+	t = gettime(Dsp);
+
+	XGrabPointer(display, win, False, EnterWindowMask, GrabModeAsync,
+		GrabModeAsync, None, None, t);
+
+	/* Earlier than last-pointer-grab time */
+	thetime = t - rand() % 100 - 1;
+	XCALL;
+
+	XSync(display, True);	/* Flush any event */
+	warppointer(display, win, 0, 0);
+	warppointer(display, win, 2, 2);
+	if (isdeleted())
+		return;
+
+	if (XCheckMaskEvent(display, EnterWindowMask, &ev))
+		CHECK;
+	else {
+		report("Event mask was changed for time earlier than last-pointer-grab time");
+		FAIL;
+	}
+	if (!XCheckMaskEvent(display, PointerMotionMask, &ev))
+		CHECK;
+	else {
+		report("Event mask was changed for time earlier than last-pointer-grab time");
+		FAIL;
+	}
+
+	warppointer(display, DRW(display), 0, 0);
+
+	/* Later than X server time */
+	t = gettime(Dsp);
+	thetime = t + (config.speedfactor+1)*1000000;
+	XCALL;
+
+	XSync(display, True);	/* Flush any event */
+	warppointer(display, win, 0, 0);
+	warppointer(display, win, 2, 2);
+	if (isdeleted())
+		return;
+
+	if (XCheckMaskEvent(display, EnterWindowMask, &ev))
+		CHECK;
+	else {
+		report("Event mask was changed for time later than X server time");
+		FAIL;
+	}
+	if (!XCheckMaskEvent(display, PointerMotionMask, &ev))
+		CHECK;
+	else {
+		report("Event mask was changed for time later than X server time");
+		FAIL;
+	}
+}
+	CHECKPASS(4 * FUZZ_MAX);
