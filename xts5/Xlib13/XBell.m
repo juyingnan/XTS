@@ -102,6 +102,8 @@ void
 
 Display	*display = Dsp;
 int 	percent = 50;
+>>EXTERN
+#include "XFuzz.h"
 >>ASSERTION Good D 3
 If it is possible to ring a bell on the display:
 When the percent argument is nonnegative, then
@@ -165,3 +167,26 @@ Verify that BadValue error occurs.
 		CHECK;
 
 	CHECKPASS(2);
+>>ASSERTION Bad A
+When the value for the percent argument is not in the range \-100 to 100
+inclusive, then a
+.S BadValue
+error occurs.
+>>STRATEGY
+Call xname with invalid percent argument.
+Verify that BadValue error occurs.
+>>CODE BadValue
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+	//percent >= 155 or percent <=-155 will get a success
+	do{percent = rand() % 310 - 155 ;
+	}while(percent >= -100 && percent <= 100);
+	XCALL;
+	
+	report("percent is %d", percent);
+	if (geterr() == BadValue)
+		CHECK;
+}
+
+	CHECKPASS(1 * FUZZ_MAX);
