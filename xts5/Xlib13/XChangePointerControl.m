@@ -107,6 +107,7 @@ int 	accel_numerator;
 int 	accel_denominator;
 int 	threshold;
 >>EXTERN
+#include "XFuzz.h"
 
 static int 	oan, oad;
 static int 	othresh;
@@ -500,3 +501,84 @@ Verify that a BadValue error occurs.
 .ER Value do_accel True False
 >>ASSERTION Bad A
 .ER Value do_threshold True False
+>>ASSERTION Good A
+When
+.A do_accel
+is
+.S True ,
+then the acceleration of the pointer is set to the fraction
+.A accel_numerator
+over
+.A accel_denominator .
+>>STRATEGY
+Set do_accel to True.
+Set numerator and denominator values.
+Call xname.
+Verify that acceleration values have been set.
+>>CODE
+int 	newnum, newden, newthresh;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+	do_accel = True;
+	accel_numerator = rand () % 100 + 1;
+	accel_denominator = rand () % 100 + 1;
+
+	XCALL;
+
+	XGetPointerControl(display, &newnum, &newden, &newthresh);
+
+	if (newnum == accel_numerator)
+		CHECK;
+	else {
+		report("accel_numerator was %d, expecting %d", newnum, accel_numerator);
+		FAIL;
+	}
+	if (newden == accel_denominator)
+		CHECK;
+	else {
+		report("accel_denominator was %d, expecting %d", newden, accel_denominator);
+		FAIL;
+	}
+}
+
+	CHECKPASS(2 * FUZZ_MAX);
+>>ASSERTION Good A
+When
+.A do_threshold
+is
+.S True ,
+then the threshold
+is set to the value in the
+.A threshold
+argument.
+>># the acceleration only takes effect for pointer motions of more than
+>># .A threshold
+>># pixels at once and only applies to the number of pixels moved over the
+>># threshold value.
+>>STRATEGY
+Set do_threshold to True.
+Set value for threshold.
+Call xname.
+Verify that threshold value is set correctly.
+>>CODE
+int 	newnum, newden, newthresh;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+	do_threshold = True;
+	threshold = rand() % 100 + 1;
+
+	XCALL;
+
+	XGetPointerControl(display, &newnum, &newden, &newthresh);
+
+	if (newthresh == threshold)
+		CHECK;
+	else {
+		report("threshold was %d, expecting %d", newthresh, threshold);
+		FAIL;
+	}
+}
+
+	CHECKPASS(1 * FUZZ_MAX);
