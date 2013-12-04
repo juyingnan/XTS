@@ -104,6 +104,7 @@ Display	*display = Dsp;
 XKeyboardState	*values_return = &Ksvals;
 >>EXTERN
 
+#include "XFuzz.h"
 static XKeyboardState	Ksvals;
 
 >>ASSERTION Good A
@@ -166,6 +167,81 @@ XKeyboardState	oldkb;
 	}
 
 	CHECKPASS(4);
+
+	/*
+	 * Attempt to restore the original values.
+	 */
+	kset.key_click_percent = oldkb.key_click_percent;
+	kset.bell_percent = oldkb.bell_percent;
+	kset.bell_pitch = oldkb.bell_pitch;
+	kset.bell_duration = oldkb.bell_duration;
+
+	XChangeKeyboardControl(display, KBKeyClickPercent|KBBellPercent|KBBellPitch|KBBellDuration, &kset);
+
+	XSync(display, False);
+>>ASSERTION Good A
+A call to xname returns the current control values for the keyboard to
+.A values_return .
+>>STRATEGY
+Set some keyboard values with XChangeKeyboardControl.
+Call xname to get values.
+Verify values are as set.
+>>CODE
+XKeyboardControl	kset;
+XKeyboardState	oldkb;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+	/*
+	 * Actually first we save the original values.
+	 */
+	values_return = &oldkb;
+	XCALL;
+
+	kset.key_click_percent = rand() % 100 + 1;
+	kset.bell_percent = rand() % 100 + 1;
+	kset.bell_pitch = rand() % 1000 + 1;
+	kset.bell_duration = rand() % 1000 + 1;
+
+	XChangeKeyboardControl(display, KBKeyClickPercent|KBBellPercent|KBBellPitch|KBBellDuration, &kset);
+
+	if (isdeleted())
+		return;
+
+	values_return = &Ksvals;
+	XCALL;
+
+	if (values_return->key_click_percent == kset.key_click_percent)
+		CHECK;
+	else {
+		report("Value of key_click_percent was %d, expecting %d",
+			values_return->key_click_percent, kset.key_click_percent);
+		FAIL;
+	}
+	if (values_return->bell_percent == kset.bell_percent)
+		CHECK;
+	else {
+		report("Value of bell_percent was %d, expecting %d",
+			values_return->bell_percent, kset.bell_percent);
+		FAIL;
+	}
+	if (values_return->bell_pitch == kset.bell_pitch)
+		CHECK;
+	else {
+		report("Value of bell_pitch was %d, expecting %d",
+			values_return->bell_pitch, kset.bell_pitch);
+		FAIL;
+	}
+	if (values_return->bell_duration == kset.bell_duration)
+		CHECK;
+	else {
+		report("Value of bell_duration was %d, expecting %d",
+			values_return->bell_duration, kset.bell_duration);
+		FAIL;
+	}
+}
+
+	CHECKPASS(4 * FUZZ_MAX);
 
 	/*
 	 * Attempt to restore the original values.
