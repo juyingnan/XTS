@@ -102,6 +102,8 @@ void
 
 Display	*display = Dsp;
 Time	thetime = CurrentTime;
+>>EXTERN
+#include "XFuzz.h"
 >>ASSERTION Good A
 When
 the client has actively grabbed the pointer with
@@ -325,4 +327,80 @@ XLeaveWindowEvent	leavegood;
 		CHECK;
 	
 	CHECKPASS(4);
+>>ASSERTION Good A
+When the specified
+time is earlier than the last-pointer-grab time or is later than the
+current X server time, then a call to xname
+does not release the pointer grab.
+>>STRATEGY
+Create client2.
+Create window 'win'.
+Enable events for client2 on win.
+Create window for use as the grab window.
+Grab pointer with a given time.
+Call xname with earlier time.
+Warp pointer within win.
+Verify that no event is received for client2.
+
+Get current server time.
+Call xname with a later time than the current server time.
+Warp pointer within win.
+Verify that no event is received for client2.
+>>CODE
+Window	win;
+Window	grabwin;
+Display	*client2;
+XEvent	ev;
+unsigned int 	mask;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+	mask = PointerMotionMask;
+
+	client2 = opendisplay();
+
+	win = defwin(display);
+	warppointer(display, win, 0, 0);
+	XSelectInput(client2, win, (unsigned long)mask);
+
+	grabwin = defwin(display);
+
+	thetime = gettime(display);
+	XGrabPointer(display, grabwin, False, mask, GrabModeSync, GrabModeAsync,
+		None, None, thetime);
+
+	XSync(client2, True);
+	if (isdeleted())
+		return;
+
+	thetime -= (rand () % 100 + 1);
+	XCALL;
+
+	warppointer(display, win, 8, 8);
+	if (XCheckMaskEvent(client2, (unsigned long)mask, &ev)) {
+		report("Grab was released when time was earlier than last-pointer-grab time");
+		FAIL;
+	} else
+		CHECK;
+
+	XSync(client2, True);	/* Flush any remaining events */
+
+	/*
+	 * Get current time again and add several minutes to get a time in the
+	 * future.
+	 */
+	thetime = gettime(display);
+	thetime += ((config.speedfactor+1) * 1000000);
+
+	XCALL;
+
+	warppointer(display, win, 12, 1);
+	if (XCheckMaskEvent(client2, (unsigned long)mask, &ev)) {
+		report("Grab was released when time was earlier than last-pointer-grab time");
+		FAIL;
+	} else
+		CHECK;
+}
+
+	CHECKPASS(2 * FUZZ_MAX);
 >># Things about the grab being released --> grab{button,pointer}

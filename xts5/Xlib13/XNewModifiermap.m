@@ -101,6 +101,8 @@ purpose.  It is provided "as is" without express or implied warranty.
 XModifierKeymap *
 
 int 	max_keys_per_mod;
+>>EXTERN
+#include "XFuzz.h"
 >>ASSERTION Good A
 A call to xname returns a pointer to a
 .S XModifierKeymap
@@ -159,3 +161,64 @@ int 	i;
 	XFreeModifiermap(mkmp);
 
 	CHECKPASS(2);
+>>ASSERTION Good A
+A call to xname returns a pointer to a
+.S XModifierKeymap
+structure,
+that can be freed with
+.F XFreeModifiermap ,
+with
+.A max_keys_per_mod
+entries preallocated for each of the 8 modifiers.
+>>STRATEGY
+Create a XModifierKeymap structure with xname.
+Verify that the max_keypermod member is set correctly.
+Verify that the whole of the modifiermap array can be accessed.
+Free with XFreeModifiermap.
+
+Call xname with max_keys_per_mod of 0.
+Free with XFreeModifiermap.
+>>CODE
+XModifierKeymap	*mkmp;
+int 	i;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+	max_keys_per_mod = rand() % 100 + 1;
+
+	mkmp = XCALL;
+
+	if (mkmp->max_keypermod == max_keys_per_mod)
+		CHECK;
+	else {
+		report("max_keypermod was %d, expecting %d", mkmp->max_keypermod,
+			max_keys_per_mod);
+		FAIL;
+	}
+
+	/*
+	 * Access each member of the array.  If this fails (with a signal)
+	 * then the TET will delete the test.  This is not exactly right
+	 * because it should really fail. Anyway the problem still has to
+	 * be fixed to get a PASS so there is no real problem.
+	 */
+	for (i = 0; i < 8*mkmp->max_keypermod; i++) {
+		mkmp->modifiermap[i] = NoSymbol;
+	}
+
+	XFreeModifiermap(mkmp);
+
+	max_keys_per_mod = 0;
+
+	mkmp = XCALL;
+
+	if (mkmp->max_keypermod == 0)
+		CHECK;
+	else {
+		report("max_keypermod was %d, not zero", mkmp->max_keypermod);
+		FAIL;
+	}
+	XFreeModifiermap(mkmp);
+}
+
+	CHECKPASS(2 * FUZZ_MAX);

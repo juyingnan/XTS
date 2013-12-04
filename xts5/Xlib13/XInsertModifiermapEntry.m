@@ -105,6 +105,7 @@ KeyCode	keycode_entry;
 int 	modifier;
 >>EXTERN
 
+#include "XFuzz.h"
 static XModifierKeymap	*Modmap;
 
 >>ASSERTION Good A

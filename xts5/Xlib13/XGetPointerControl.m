@@ -106,6 +106,7 @@ int 	*accel_denominator_return = &denom;
 int 	*threshold_return = &thresh;
 >>EXTERN
 
+#include "XFuzz.h"
 static int 	num;
 static int 	denom;
 static int 	thresh;
@@ -160,6 +161,63 @@ int 	val = 34;
 	}
 
 	CHECKPASS(3);
+
+	XChangePointerControl(display, True, True, onum, odenom, othresh);
+	XSync(display, False);
+>>ASSERTION Good A
+A call to xname returns the current acceleration multiplier
+and acceleration threshold to
+.A accel_numerator_return ,
+.A accel_denominator_return
+and
+.A threshold_return .
+>>STRATEGY
+Set some values.
+Call xname.
+Verify values are as set.
+>>CODE
+int 	onum, odenom, othresh;
+int 	val = 34;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+	val = rand () % 1000;
+	/* First get original values */
+	accel_numerator_return = &onum;
+	accel_denominator_return = &odenom;
+	threshold_return = &othresh;
+	XCALL;
+
+	XChangePointerControl(display, True, True, val, val, val);
+	if (isdeleted())
+		return;
+
+	accel_numerator_return = &num;
+	accel_denominator_return = &denom;
+	threshold_return = &thresh;
+	XCALL;
+
+	if (num == val)
+		CHECK;
+	else {
+		report("accel_numerator_return was %d, expecting %d", num, val);
+		FAIL;
+	}
+	if (denom == val)
+		CHECK;
+	else {
+		report("accel_denominator_return was %d, expecting %d", denom, val);
+		FAIL;
+	}
+	if (thresh == val)
+		CHECK;
+	else {
+		report("threshold_return was %d, expecting %d", thresh, val);
+		FAIL;
+	}
+}
+
+	CHECKPASS(3 * FUZZ_MAX);
 
 	XChangePointerControl(display, True, True, onum, odenom, othresh);
 	XSync(display, False);
