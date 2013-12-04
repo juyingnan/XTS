@@ -101,6 +101,8 @@ purpose.  It is provided "as is" without express or implied warranty.
 void
 XFreeStringList(list)
 char	**list = NULL;
+>>EXTERN
+#include "XFuzz.h"
 >>ASSERTION Good A
 A call to xname frees the memory allocated by a call to
 .S XTextPropertyToStringList
@@ -161,3 +163,66 @@ XTextProperty	tp;
 	XFreeStringList(rargv);
 
 	CHECKPASS(3);
+>>ASSERTION Good A
+A call to xname frees the memory allocated by a call to
+.S XTextPropertyToStringList
+or
+.S XGetCommand . 
+>>STRATEGY
+Create a window using XCreateWindow.
+Allocate a text property structure using XStringListToTextProperty.
+Set the WM_COMMAND property using XSetCommand.
+Obtain the value of the WM_COMMAND property using XGetCommand.
+Obtain the strings from the XTextPropertyStructure using XTextPropertyToStringlist.
+Release the memory allocated in the call to XGetCommand.
+Release the memory allocated in the call to XTextPropertyToStringList.
+>>CODE
+int		rargc;
+char		**rargv = NULL;
+char		**rargv1 = NULL;
+Window		w;
+XVisualInfo	*vp;
+XTextProperty	tp;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+	int 		fuzz = rand () % 100 + 1;
+	char		*str[fuzz];
+	int		argc = fuzz;
+	char		*argv[fuzz];
+	int i;
+	for(i=0; i < fuzz; i++){
+		str[i] = "TestString";
+		argv[i] = str[i];	
+	}
+
+	if( XStringListToTextProperty(argv, fuzz, &tp) == 0) {
+		delete("XStringListToTextProperty() returned zero.");
+		return;
+	} else
+		CHECK;
+
+	if( XTextPropertyToStringList(&tp, &rargv, &rargc) == 0) {
+		delete("XTextPropertyToStringList() returned zero.");
+		return;
+	} else
+		CHECK;
+
+	XFree((char*)tp.value);
+	resetvinf(VI_WIN);
+	nextvinf(&vp);
+	w = makewin(Dsp, vp);
+
+	XSetCommand(Dsp, w, argv, argc);
+
+	if(XGetCommand(Dsp, w, &rargv1, &rargc) == 0 ) {
+		delete("XGetCommand() returned zero.");
+		return;
+	} else
+		CHECK;
+
+	XFreeStringList(rargv1);
+	XFreeStringList(rargv);
+}
+
+	CHECKPASS(3 * FUZZ_MAX);
