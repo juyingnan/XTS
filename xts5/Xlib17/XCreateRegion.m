@@ -100,6 +100,8 @@ purpose.  It is provided "as is" without express or implied warranty.
 >>TITLE XCreateRegion Xlib17
 Region
 XCreateRegion()
+>>EXTERN
+#include "XFuzz.h"
 >>ASSERTION Good A
 A call to xname returns a new, empty region.
 >>STRATEGY
@@ -156,3 +158,58 @@ Region			reg;
 >>ASSERTION Bad B 1
 When sufficient storage cannot be allocated, 
 then a call to xname returns NULL.
+>>ASSERTION Good A
+A call to xname returns a new, empty region.
+>>STRATEGY
+Create a region using xname.
+Verify that the call did not return NULL.
+Verify that the region is empty using XEmptyRegion.
+Obtain the smallest rectangle enclosing the region using XClipBox.
+Verify that the returned rectangle has width and height zero.
+Union a rectangle with the region using XUnionRectWithRegion.
+Obtain the smallest rectangle bounding the region using XClipBox.
+Verify that the bounding box is the same as the original rectangle.
+Destroy the region using XDestroyRegion.
+>>CODE
+XRectangle		bbox;
+Region			reg;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){	
+	XRectangle	rect = { rand() % 1000 - 500, rand() % 1000 - 500, rand() % 1000 - 500, rand() % 1000 - 500 };
+	reg = XCALL;
+
+	if(reg == (Region) NULL) {
+		delete("%s() returned NULL.", TestName);
+		return;
+	} else
+		CHECK;
+
+	if( XEmptyRegion(reg) != True) {
+		report("XEmptyRegion() returned True.");
+		FAIL;
+	} else
+		CHECK;
+
+	XClipBox(reg, &bbox);
+	if( (bbox.width != 0) || (bbox.height != 0)) {
+		report("%s() returned a region of width %d and height %d instead of 0.", TestName, bbox.width, bbox.height);
+		FAIL;
+	} else
+		CHECK;
+
+	XUnionRectWithRegion(&rect, reg, reg);
+	XClipBox(reg, &bbox);	
+	
+	if((rect.x != bbox.x) || (rect.y != bbox.y) || (rect.width != bbox.width) || (rect.height != bbox.height) ) {
+		report("%s() returned the rectangle x %d, y %d, height %d, width %d, instead of x %d, y %d, height %d, width %d.",
+                        "XClipBox",
+			rect.x, rect.y, rect.width, rect.height,
+			bbox.x, bbox.y, bbox.width, bbox.height );
+		FAIL;
+	} else
+		CHECK;
+
+	XDestroyRegion(reg);
+}
+	CHECKPASS(4 * FUZZ_MAX);
