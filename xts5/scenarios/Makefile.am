@@ -35,5 +35,6 @@ dist_scenarios_DATA = \
 		Xt8_scen \
 		Xt9_scen \
 		XtC_scen \
-		XtE_scen
+		XtE_scen \
+		XFuzz_scen
 scenariosdir = $(datadir)/xts5/scenarios

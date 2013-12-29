@@ -501,6 +501,22 @@ ShapeExt
 	"VSW5TESTSUITE SECTION ShapeExt 11 11 0 0"
 	:include:/scenarios/shape_scen
 
+XFuzz
+	"VSW5TESTSUITE SECTION Xlib5 3 3 0 0"
+	:include:/scenarios/XFuzz_scen
+	"VSW5TESTSUITE SECTION Xlib6 3 4 0 0"
+	:include:/scenarios/XFuzz_scen
+	"VSW5TESTSUITE SECTION Xlib10 4 5 0 0"
+	:include:/scenarios/XFuzz_scen
+	"VSW5TESTSUITE SECTION Xlib12 17 20 0 0"
+	:include:/scenarios/XFuzz_scen
+	"VSW5TESTSUITE SECTION Xlib13 8 9 0 0"
+	:include:/scenarios/XFuzz_scen
+	"VSW5TESTSUITE SECTION Xlib15 4 4 0 0"
+	:include:/scenarios/XFuzz_scen
+	"VSW5TESTSUITE SECTION Xlib17 2 2 0 0"
+	:include:/scenarios/XFuzz_scen
+
 # Discrete tests for Device Extensions
 
 

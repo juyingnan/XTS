@@ -1,0 +1,120 @@
+#
+# Copyright (c) 2005 X.Org Foundation LLC
+# 
+# Permission is hereby granted, free of charge, to any person obtaining a copy of
+# this software and associated documentation files (the "Software"), to deal in
+# the Software without restriction, including without limitation the rights to
+# use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies
+# of the Software, and to permit persons to whom the Software is furnished to do
+# so, subject to the following conditions:
+# 
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+# 
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
+#
+#
+# Copyright (c) Applied Testing and Technology, Inc. 1995
+# All Rights Reserved.
+#
+# Project:     VSW5
+#
+# File:        XFuzz_scen
+#
+# Description:
+#       Scenario file xfuzz
+#
+# Modifications:
+# $Log: Xlib4_scen,v $
+# Revision 1.0  2013-12-30 05:37:14  Yingnan Ju
+# Initial revision
+#
+
+	"VSW5TESTSUITE CASE XGetWindowAttributes 4"
+	/Xlib5/XGetWindowAttributes
+	"VSW5TESTSUITE CASE XQueryPointer 7"
+	/Xlib5/XQueryPointer
+	"VSW5TESTSUITE CASE XTranslateCoordinates 6"
+	/Xlib5/XTranslateCoordinates
+	"VSW5TESTSUITE CASE XCreatePixmap 8"
+	/Xlib6/XCreatePixmap
+	"VSW5TESTSUITE CASE XCreatePixmapCursor 14"
+	/Xlib6/XCreatePixmapCursor
+	"VSW5TESTSUITE CASE XFreePixmap 4"
+	/Xlib6/XFreePixmap
+	"VSW5TESTSUITE CASE XChangeSaveSet 6"
+	/Xlib10/XChangeSaveSet
+	"VSW5TESTSUITE CASE XGetScreenSaver 2"
+	/Xlib10/XGetScreenSaver
+	"VSW5TESTSUITE CASE XRemoveFromSaveSet 4"
+	/Xlib10/XRemoveFromSaveSet
+	"VSW5TESTSUITE CASE XSetScreenSaver 19"
+	/Xlib10/XSetScreenSaver
+	"VSW5TESTSUITE CASE XCheckIfEvent 7"
+	/Xlib12/XCheckIfEvent
+	"VSW5TESTSUITE CASE XCheckMaskEvent 7"
+	/Xlib12/XCheckMaskEvent
+	"VSW5TESTSUITE CASE XCheckTypedEvent 7"
+	/Xlib12/XCheckTypedEvent
+	"VSW5TESTSUITE CASE XCheckTypedWindowEvent 7"
+	/Xlib12/XCheckTypedWindowEvent
+	"VSW5TESTSUITE CASE XCheckWindowEvent 7"
+	/Xlib12/XCheckWindowEvent
+	"VSW5TESTSUITE CASE XEventsQueued 8"
+	/Xlib12/XEventsQueued
+	"VSW5TESTSUITE CASE XGetErrorDatabaseText 6"
+	/Xlib12/XGetErrorDatabaseText
+	"VSW5TESTSUITE CASE XGetErrorText 3"
+	/Xlib12/XGetErrorText
+	"VSW5TESTSUITE CASE XIfEvent 5"
+	/Xlib12/XIfEvent
+	"VSW5TESTSUITE CASE XMaskEvent 4"
+	/Xlib12/XMaskEvent
+	"VSW5TESTSUITE CASE XNextEvent 5"
+	/Xlib12/XNextEvent
+	"VSW5TESTSUITE CASE XPeekEvent 4"
+	/Xlib12/XPeekEvent
+	"VSW5TESTSUITE CASE XPeekIfEvent 6"
+	/Xlib12/XPeekIfEvent
+	"VSW5TESTSUITE CASE XPending 4"
+	/Xlib12/XPending
+	"VSW5TESTSUITE CASE XPutBackEvent 3"
+	/Xlib12/XPutBackEvent
+	"VSW5TESTSUITE CASE XSendEvent 23"
+	/Xlib12/XSendEvent
+	"VSW5TESTSUITE CASE XWindowEvent 4"
+	/Xlib12/XWindowEvent
+	"VSW5TESTSUITE CASE XAllowEvents 30"
+	/Xlib13/XAllowEvents
+	"VSW5TESTSUITE CASE XBell 4"
+	/Xlib13/XBell
+	"VSW5TESTSUITE CASE XChangeActivePointerGrab 6"
+	/Xlib13/XChangeActivePointerGrab
+	"VSW5TESTSUITE CASE XChangePointerControl 13"
+	/Xlib13/XChangePointerControl
+	"VSW5TESTSUITE CASE XGetKeyboardControl 2"
+	/Xlib13/XGetKeyboardControl
+	"VSW5TESTSUITE CASE XGetPointerControl 2"
+	/Xlib13/XGetPointerControl
+	"VSW5TESTSUITE CASE XNewModifiermap 2"
+	/Xlib13/XNewModifiermap
+	"VSW5TESTSUITE CASE XUngrabPointer 4"
+	/Xlib13/XUngrabPointer
+	"VSW5TESTSUITE CASE XFreeStringList 2"
+	/Xlib15/XFreeStringList
+	"VSW5TESTSUITE CASE XGetTextProperty 5"
+	/Xlib15/XGetTextProperty
+	"VSW5TESTSUITE CASE XGetWMHints 4"
+	/Xlib15/XGetWMHints
+	"VSW5TESTSUITE CASE XSetWMHints 4"
+	/Xlib15/XSetWMHints
+	"VSW5TESTSUITE CASE XCreateRegion 3"
+	/Xlib17/XCreateRegion
+	"VSW5TESTSUITE CASE XLookupString 4"
+	/Xlib17/XLookupString
