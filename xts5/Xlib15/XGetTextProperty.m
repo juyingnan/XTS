@@ -109,6 +109,7 @@ XTextProperty	*text_prop_return = &textprop;
 Atom		property = XA_WM_NAME;
 >>EXTERN
 #include	"X11/Xatom.h"
+#include 	"XFuzz.h"
 static XTextProperty	textprop = { (unsigned char *) 0, XA_STRING, 8, (unsigned long) 0 };
 >>ASSERTION Good A
 When the property specified by the 
@@ -298,6 +299,99 @@ XVisualInfo	*vp;
 .ER BadAtom 
 >>ASSERTION Bad A
 .ER BadWindow
+>>ASSERTION Good A
+When the property specified by the 
+.A property
+argument exists on the window specified by the
+.A w
+argument, then a call to xname stores
+the data, which can be freed with XFree, in the
+.M value
+field, the type of the data in the
+.M encoding
+field, the format of the data in the
+.M format
+field, and the number of items of data in the
+.M nitems
+field of the 
+.S XTextProperty 
+structure named by the
+.A text_prop_return
+argument and returns non-zero.
+>>STRATEGY
+Create a window with XCreateWindow.
+Set the property WM_NAME for the window with XSetTextProperty.
+Obtain the value of the WM_NAME property with XGetTextProperty.
+Verify that the encoding, format, value and nitems fields of the returned structure are correct.
+Release the allocated memory using XFree.
+>>CODE
+Window	win;
+Status	status;
+char	**list_return;
+int	count_return;
+XTextProperty	tp, rtp;
+XVisualInfo	*vp;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+	int 		fuzz = rand () % 100 + 1;
+	char		*str[fuzz];
+	int i;
+	for(i=0; i < fuzz; i++){
+		str[i] = "TestString";
+	}
+	
+	resetvinf(VI_WIN);
+	nextvinf(&vp);
+	win = makewin(display, vp);
+
+	if(XStringListToTextProperty(str, fuzz , &tp) == False) {
+		delete("XStringListToTextProperty() Failed.");
+		return;
+	} else 
+		CHECK;
+
+	XSetTextProperty(display, win, &tp, property);
+
+	text_prop_return = &rtp;
+	w = win;
+	status = XCALL;
+
+	if(status == False) {
+		report("XGetTextProperty() returned False.");
+		FAIL;
+	} else
+		CHECK;
+
+	if(rtp.encoding != XA_STRING) {
+		report("Property was not of type STRING");
+		FAIL;
+	} else
+		CHECK;
+
+	if(rtp.format != 8) {
+		report("Format was %d instead of 8", rtp.format);
+		FAIL;
+	} else
+		CHECK;
+
+	if(XTextPropertyToStringList( &rtp, &list_return, &count_return) == False) {
+		delete("XTextPropertyToStringList() returned False.");
+		return;
+	} else
+		CHECK;
+
+	if (count_return != fuzz) {
+		delete("count_return was %d instead of %d.", count_return, fuzz);
+		return;
+	} else
+		CHECK;
+
+	XFree((char*)tp.value);
+	XFree((char*)rtp.value);
+	XFreeStringList(list_return);
+}
+	CHECKPASS(6 * FUZZ_MAX);
 >># Does this contain the XStringListToTextProperty that crashes servers??
 >>#		kieron
 >># See comment in test 1 for the answer to that question.

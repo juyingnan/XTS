@@ -107,6 +107,7 @@ Display	*display = Dsp;
 Window	w = DRW(Dsp);
 >>EXTERN
 #include	"X11/Xatom.h"
+#include "XFuzz.h"
 >>ASSERTION Good A
 When the WM_HINTS property has been set for the window
 .A w ,
@@ -300,4 +301,113 @@ XWMHints	*hints_ret;
 
 >>ASSERTION Bad A
 .ER BadWindow
+>>ASSERTION Good A
+When the WM_HINTS property has been set for the window
+.A w ,
+and is format 32, length \(>= 9 elements, and of type
+.S WM_HINTS ,
+then a call to xname returns a pointer to a
+.S XWMHints
+structure which contains the window manager hints for the window
+and can be freed with XFree.
+>>STRATEGY
+Create a window with XCreateWindow.
+Set the WM_HINTS property for the window with XSetWMHints.
+Obtain the WM_HINTS property values with XGetWMHints.
+Verify the result is non-NULL.
+Verify that the returned values are correct.
+Release the allocated memory using XFree.
+>>CODE
+Window		win;
+XVisualInfo	*vp;
+XWMHints	hints;
+XWMHints	*hints_ret;
+int 		count;
+
+for(count = 0; count < FUZZ_MAX; count ++){
+	resetvinf(VI_WIN);
+	nextvinf(&vp);
+	win = makewin(display, vp);
+
+	hints.flags = AllHints;
+	hints.input = True;
+	hints.initial_state = IconicState;
+	hints.icon_pixmap =  1L;
+	hints.icon_window = 1L;
+	hints.icon_x = rand() % 1000;
+	hints.icon_y = rand() % 1000;
+	hints.icon_mask = 1L;
+	hints.window_group = 1L;
+
+	XSetWMHints(display, win, &hints);
+
+	w = win;
+	hints_ret = XCALL;
+
+	if(hints_ret == (XWMHints *) 0) {
+		report("XGetWMHints() returned NULL.");
+		FAIL;
+		return; /* failure invalidates rest of test, and no freeing */
+	} else
+		CHECK;
+
+	if(hints_ret->flags != AllHints) {
+		report("The flags component was %lu instead of AllHints.", hints_ret->flags);
+		FAIL;
+	} else
+		CHECK;
+
+	if(hints_ret->input != True) {
+		report("The hints_ret component of the XWMHints structure was %d instead of True.", (Bool) hints_ret->input);
+		FAIL;
+	} else
+		CHECK;
+
+	if(hints_ret->initial_state != IconicState) {
+		report("The initial_state component of the XWMHints structure was %d instead of IconicState.",
+			hints_ret->initial_state);
+		FAIL;
+	} else
+		CHECK;
+
+	if(hints_ret->icon_pixmap !=  1L) {
+		report("The icon_pixmap component of the XWMHints structure was %lu instead of 1.", hints_ret->icon_pixmap);
+		FAIL;
+	} else
+		CHECK;
+
+	if(hints_ret->icon_window != 1L) {
+		report("The icon_window component of the XWMHints structure was %lu instead of 1.", hints_ret->icon_window);
+		FAIL;
+	} else
+		CHECK;
+
+	if(hints_ret->icon_x != hints.icon_x) {
+		report("The icon_x component of the XWMHints structure was %d instead of 13.", hints_ret->icon_x);
+		FAIL;
+	} else
+		CHECK;
+
+	if(hints_ret->icon_y != hints.icon_y) {
+		report("The icon_y component of the XWMHints structure was %d instead of 7.", hints_ret->icon_y);
+		FAIL;
+	} else
+		CHECK;
+
+	if(hints_ret->icon_mask != 1L) {
+		report("The icon_mask component of the XWMHints structure was %lu instead of 1.", hints_ret->icon_mask);
+		FAIL;
+	} else
+		CHECK;
+
+	if(hints_ret->window_group != 1L) {
+		report("The window_group component of the XWMHints structure was %lu instead of 1.", hints_ret->window_group);
+		FAIL;
+	} else
+		CHECK;
+
+	XFree((char*)hints_ret);
+}
+
+	CHECKPASS(10 * FUZZ_MAX);
 >># Kieron	Completed	Review
